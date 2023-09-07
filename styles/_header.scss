@@ -1,0 +1,55 @@
+@import './variables';
+.FNV-Header {
+  background-image: url('/img/Header-bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 700px;
+  padding: 10px;
+
+  .container {
+    .row {
+      .FNV-HCard {
+        background-color: $TransparentWhite;
+        padding: 3%;
+
+        h2 {
+          margin-bottom: 2rem;
+        }
+
+        p {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .FNV-Header {
+    background-image: url('/img/Header-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 450px;
+    padding: 10px;
+
+    .container {
+      .row {
+        .FNV-HCard {
+          background-color: $TransparentWhite;
+          padding: 3%;
+
+          h2 {
+            font-size: 24px;
+            margin-bottom: 0.5rem;
+          }
+
+          p {
+            font-size: 14px;
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

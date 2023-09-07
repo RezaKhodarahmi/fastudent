@@ -1,0 +1,123 @@
+@import './variables';
+nav {
+  .container-fluid {
+    padding: 0 1rem;
+
+    &:first-child {
+      background-color: $WhiteColor;
+      padding: 0.75rem 1rem;
+
+      .OffCanvasMenu {
+        padding-right: 0.75rem;
+        padding-left: 0.5rem;
+
+        svg {
+          color: $PrimaryColor;
+        }
+      }
+
+      .navbar-brand {
+        width: 200px;
+        padding-left: 0.5rem;
+        border-left: 1px solid $GrayTwoColor;
+      }
+
+      .FNV-User {
+        .FNV-Btn {
+          background-color: unset;
+
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+          }
+        }
+
+        .dropdown-menu {
+          li {
+            padding-bottom: 0.3rem;
+            a {
+              svg {
+                color: $PrimaryColor;
+                width: 20px;
+                height: 20px;
+                margin-right: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      background-color: $GrayOneColor;
+      border-bottom: 2px solid $PrimaryColor;
+      border-top: 1px solid $GrayTwoColor;
+    }
+
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 40px;
+          padding: 0 0.75rem;
+        }
+
+        &:hover .nav-link {
+          background-color: $PrimaryColor;
+          color: $WhiteColor;
+        }
+      }
+    }
+
+    .FNV-MegaMenu {
+      position: static;
+
+      &:hover .dropdown-menu {
+        display: block;
+        margin-top: 1px;
+        width: 70%;
+        border-radius: 0;
+      }
+    }
+
+    .FNV-MegaMenu-Search {
+      position: static;
+      direction: rtl;
+
+      &:hover .dropdown-menu {
+        display: block;
+        margin-top: 1px;
+        width: 800px;
+        border-radius: 0;
+        right: 0;
+      }
+    }
+  }
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+  nav {
+    .container-fluid {
+      &:first-child {
+        background-color: #ffffff;
+        padding: 0.75rem;
+
+        .navbar-brand {
+          width: 200px;
+          padding-left: 0rem;
+          border-left: 0px;
+        }
+
+        .navbar-collapse {
+          padding: 0.5rem 0;
+          display: flex;
+          width: 100%;
+          justify-content: space-between !important;
+        }
+      }
+    }
+  }
+}

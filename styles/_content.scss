@@ -1,0 +1,388 @@
+@import './variables';
+.FNV-Header {
+  background-image: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url('/img/Course_Featured.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 5rem 0;
+  height: unset;
+
+  .container {
+    .row {
+      .col-12 {
+        h2 {
+          color: $WhiteColor;
+          text-align: center;
+          font-size: 35px;
+          line-height: 36px;
+        }
+
+        .FNV-Cat-Shorts {
+          margin-top: 0.5rem;
+          .row {
+            .col-md,
+            .col-md-6 {
+              display: flex;
+              align-items: center;
+
+              svg {
+                color: $SecondaryColor;
+                margin-right: 0.5rem;
+              }
+
+              h3 {
+                font-size: 14px;
+                line-height: 28px;
+                margin-bottom: 0;
+                color: $GrayTwoColor;
+
+                strong {
+                  color: $WhiteColor;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.FNV-Content-Detail {
+  margin-top: 1rem;
+  .container {
+    .row {
+      .col-md-8 {
+        .FNV-Card-Header {
+          margin-bottom: 1rem;
+
+          .col-12 {
+            padding: 0;
+
+            .FNV-Btn {
+              color: $GrayThreeColor;
+            }
+          }
+        }
+
+        .FNV-Card {
+          display: block;
+          border-radius: 5px;
+          background-color: $WhiteColor;
+          box-shadow: 0 0 20px $ShadowPrimary;
+          padding: 1rem;
+          margin-bottom: 1rem;
+          overflow: hidden;
+
+          .FNV-Card-Content {
+            h3 {
+              font-size: 22px;
+              font-weight: 500;
+            }
+
+            h4 {
+              font-size: 20px;
+              font-weight: 500;
+            }
+
+            p,
+            ul {
+              color: $GrayFiveColor;
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 25px;
+              margin-bottom: 2rem;
+              text-align: center;
+            }
+          }
+
+          .FNV-Cart-Content-Header {
+            padding: 1rem 0;
+            border-bottom: 1px solid $GrayOneColor;
+
+            .row {
+              .col-2 {
+                text-align: center;
+              }
+            }
+          }
+
+          .FNV-Cart-Content-Body {
+            padding: 0.1rem 0;
+
+            .row {
+              border-bottom: 1px solid $GrayOneColor;
+              padding-bottom: 0.1rem;
+
+              .col-6 {
+                .row {
+                  border-width: 0;
+                  .col-4 {
+                    img {
+                      border-radius: 5px;
+                    }
+                  }
+
+                  .col-8 {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    h4 {
+                      font-size: 16px;
+                    }
+
+                    p {
+                      margin-bottom: 0;
+                    }
+                  }
+                }
+              }
+
+              .col-2 {
+                text-align: center;
+
+                .FNV-Cart-Price {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  height: 100%;
+                }
+
+                .FNV-Cart-Quantity {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  height: 100%;
+                }
+
+                .FNV-Cart-Total {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  height: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575.98px) {
+  .FNV-Course-Detail {
+    .container {
+      .row {
+        .col-md-8 {
+          .FNV-Course-Video {
+            margin-top: 1rem;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            box-shadow: 0 0 20px $ShadowPrimary;
+            margin-bottom: 0rem;
+          }
+
+          .FNV-Course-Card {
+            display: block;
+            border-radius: 5px;
+            background-color: $WhiteColor;
+            box-shadow: 0 0 20px $ShadowPrimary;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            overflow: hidden;
+
+            .FNV-Course-Card-Content {
+              h3 {
+                font-size: 18px;
+                font-weight: 500;
+              }
+
+              h4 {
+                font-size: 16px;
+                font-weight: 500;
+              }
+
+              p,
+              ul {
+                color: $GrayFiveColor;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 25px;
+                margin-bottom: 2rem;
+                text-align: justify;
+              }
+            }
+
+            .FNV-Course-Card-Body {
+              h5 {
+                font-size: 18px;
+                font-weight: 400;
+              }
+
+              .accordion {
+                .accordion-item {
+                  border-width: 0;
+
+                  &:hover {
+                    background-color: $HoverOne;
+                  }
+
+                  button {
+                    border-radius: 0px;
+                    border-top: 1px solid #e9ecef;
+                    background-color: unset;
+                    position: relative;
+                    padding: 10px 0;
+                    font-size: 12px;
+
+                    &:focus {
+                      box-shadow: unset;
+                    }
+
+                    &::after {
+                      display: none !important;
+                    }
+
+                    svg {
+                      color: $GrayTwoColor;
+                      margin-right: 1rem;
+                    }
+
+                    .badge {
+                      margin-left: 0.2rem;
+                      border-radius: 2px;
+                      color: $WhiteColor;
+                      font-weight: 400;
+
+                      &.text-bg-info {
+                        color: $WhiteColor !important;
+                      }
+
+                      &.text-bg-practice {
+                        background-color: $SecondaryColor;
+                        color: $WhiteColor !important;
+
+                        svg {
+                          color: $WhiteColor;
+                          margin-right: 0rem;
+                        }
+                      }
+
+                      &.text-bg-quiz {
+                        background-color: $BgQuiz;
+                        color: $WhiteColor !important;
+
+                        svg {
+                          color: $WhiteColor;
+                          margin-right: 0rem;
+                        }
+                      }
+
+                      &.text-bg-primary {
+                        color: $WhiteColor !important;
+                        border-radius: 40px;
+
+                        svg {
+                          width: 16px;
+                        }
+                      }
+
+                      &.FNV-Badge-Preview {
+                        right: 0rem;
+                        position: absolute;
+
+                        svg {
+                          color: $WhiteColor;
+                          margin-right: 0rem;
+                        }
+                      }
+
+                      &.FNV-Badge-Private {
+                        background-color: transparent !important;
+                        right: 0rem;
+                        position: absolute;
+                        color: $GrayFiveColor !important;
+
+                        svg {
+                          color: $GrayFiveColor;
+                          margin-right: 0rem;
+                        }
+                      }
+                    }
+                  }
+                }
+
+                .accordion-body {
+                  padding: 10px 5px;
+                  &.FNV-Locked {
+                    color: $GrayFiveColor;
+                    font-size: 12px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .col-md-4 {
+          .FNV-Course-Card {
+            display: block;
+            background-color: $WhiteColor;
+            box-shadow: 0 0 20px $ShadowPrimary;
+            padding: 2rem;
+            margin-top: 0rem;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            border-radius: 5px;
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            top: 1rem;
+
+            img {
+              margin-bottom: 1rem;
+            }
+
+            .FNV-Btn {
+              font-weight: 600;
+              margin-top: 1rem;
+            }
+
+            h4 {
+              font-size: 20px;
+              line-height: 34px;
+              margin-top: 0.5rem;
+              font-weight: 400;
+              margin-bottom: 0;
+
+              &:last-child {
+                margin-top: 1rem;
+              }
+            }
+
+            p {
+              margin-bottom: 1rem;
+              font-size: 14px;
+              font-weight: 300;
+            }
+
+            h5 {
+              margin-bottom: 1rem;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+
+              price {
+                color: $SecondaryColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

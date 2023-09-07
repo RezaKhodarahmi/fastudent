@@ -1,0 +1,64 @@
+//Navbar
+@import './root';
+
+//Navbar
+@import './variables';
+
+body {
+  font-family: 'Poppins', YekanBakh;
+  font-weight: 400;
+
+  // General
+  @import './general';
+
+  // Buttons
+  @import './button';
+
+  // Alert
+  @import './alert';
+
+  // Navbar
+  @import './navbar';
+
+  // Header
+  @import './header';
+
+  // Membership
+  @import './homeCategory';
+
+  // Membership
+  @import './membership';
+
+  // Certifications
+  @import './certification';
+
+  // Events
+  @import './events';
+
+  // Events
+  @import './youtube';
+
+  &.FNV-Courses {
+    // All Courses Page
+    @import './courses';
+  }
+
+  &.FNV-SingleCourse {
+    // All Courses Page
+    @import './single-course';
+  }
+
+  &.FNV-Cart {
+    // Cart
+    @import './cart';
+  }
+
+  // OffCanvas
+  @import './offcanvas';
+
+  // Social Media Fixed
+  @import './social';
+
+  // Footer
+  @import './footer';
+}

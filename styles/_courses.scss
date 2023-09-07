@@ -1,0 +1,71 @@
+@import './variables';
+.courses .courses-FNV-Header {
+  background-image: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url('/img/Course_Featured.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 5rem 0;
+  height: unset;
+
+  .container {
+    .row {
+      .col-12.page-header {
+        h1 {
+          font-size: 14px;
+          color: $WhiteColor;
+        }
+        h2 {
+          color: $WhiteColor;
+        }
+      }
+    }
+  }
+}
+
+.courses .FNV-Course-List {
+  .container {
+    .row {
+      .col-md-8 {
+        .FNV-Course-Card {
+          display: block;
+          border-radius: 5px;
+          background-color: $GrayOneColor;
+          padding: 0;
+          margin: 1rem 0;
+          overflow: hidden;
+
+          .row {
+            padding: 0;
+            margin: 0;
+
+            .col-md-4 {
+              padding: 0;
+            }
+
+            .col-md-8 {
+              padding: 1rem;
+
+              h3 {
+                font-size: 1.5rem;
+                color: $GrayThreeColor;
+              }
+
+              h4 {
+                font-size: 14px;
+                font-weight: 600;
+                font-family: 'Poppins', YekanBakh;
+                color: $GrayThreeColor;
+              }
+
+              p {
+                font-size: 14px;
+                text-align: justify;
+                color: $GrayThreeColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

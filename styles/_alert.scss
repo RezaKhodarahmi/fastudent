@@ -1,0 +1,25 @@
+@import './variables';
+.alert {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+  &.alert-danger {
+    background-color: $DangerColor;
+    border-color: $DangerColor;
+    color: $WhiteColor;
+
+    a {
+      color: $GrayTwoColor;
+    }
+  }
+
+  &.alert-primary {
+    background-color: $PrimaryColor;
+    border-color: $PrimaryColor;
+    color: $WhiteColor;
+
+    a {
+      color: $GrayTwoColor;
+    }
+  }
+}
