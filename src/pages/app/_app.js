@@ -31,6 +31,7 @@ import ThemeComponent from 'src/@core/theme/ThemeComponent'
 import AuthGuard from 'src/@core/components/auth/AuthGuard'
 import GuestGuard from 'src/@core/components/auth/GuestGuard'
 import WindowWrapper from 'src/@core/components/window-wrapper'
+
 // ** Spinner Import
 import Spinner from 'src/@core/components/spinner'
 
@@ -53,9 +54,6 @@ import 'prismjs/components/prism-tsx'
 // ** React Perfect Scrollbar Style
 import 'react-perfect-scrollbar/dist/css/styles.css'
 import 'src/iconify-bundle/icons-bundle-react'
-
-// ** Global css styles
-import '../../styles/globals.css'
 
 const clientSideEmotionCache = createEmotionCache()
 

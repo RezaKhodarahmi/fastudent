@@ -28,6 +28,7 @@ const FreeUserCard = props => {
       setLoading(true)
       setAutoRenew(props.subscription)
       setUser(props.user)
+
       //calculate user vip days
       if (props.user?.vip) {
         const expirationDate = new Date(props.user?.vip)

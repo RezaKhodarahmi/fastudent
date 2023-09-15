@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Index = props => {
@@ -860,7 +861,7 @@ const Index = props => {
                       </ul>
                       <p>
                         For detailed information, I recommend visiting our project management page on the website:{' '}
-                        <a href='https://fanavaran.ca/project-manager/'>https://fanavaran.ca/project-manager/</a>
+                        <Link href='https://fanavaran.ca/project-manager/'>https://fanavaran.ca/project-manager/</Link>
                       </p>
                     </div>
                   </div>
@@ -1228,9 +1229,11 @@ const Index = props => {
     </div>
   )
 }
+
 export async function getStaticProps() {
   return { props: {} }
 }
+
 Index.guestGuard = true
 
 export default Index

@@ -48,6 +48,7 @@ const UserDropdown = props => {
     setUserName(JSON.parse(window.localStorage.getItem('userName' || '')))
     setUserImage(window.localStorage.getItem('userImage' || ''))
   }, [])
+
   // ** Hooks
   const router = useRouter()
   const { logout } = useAuth()

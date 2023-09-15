@@ -34,6 +34,7 @@ export const verifyCouponCode = params => async dispatch => {
   dispatch(getDataStart())
   try {
     const token = window.localStorage.getItem('accessToken')
+
     const response = await axios.post(`${BASE_URL}/student/coupon/verify`, params, {
       headers: {
         'Content-Type': 'application/json',
@@ -45,6 +46,7 @@ export const verifyCouponCode = params => async dispatch => {
     dispatch(getDataSuccess(response.data))
   } catch (error) {
     toast.error('Error! message:' + error.response.data.message)
+
     dispatch(getDataFailure(error.message))
   }
 }

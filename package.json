@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "cross-env TZ=America/Toronto next dev",
     "build": "cross-env TZ=America/Toronto next build",
-    "start": "cross-env TZ=America/Toronto next start",
-    "export": "cross-env TZ=America/Toronto next export",
+    "start": "cross-env TZ=America/Toronto next start &&  next export",
     "lint": "eslint --fix \"src/**/*.{js,jsx}\"",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "build:icons": "node src/iconify-bundle/bundle-icons-react.js"
@@ -38,6 +37,7 @@
     "@reduxjs/toolkit": "1.9.1",
     "@stripe/react-stripe-js": "^2.1.1",
     "@stripe/stripe-js": "^1.54.1",
+    "apexcharts": "^3.42.0",
     "apexcharts-clevision": "3.28.5",
     "axios": "1.2.2",
     "axios-mock-adapter": "1.21.2",
@@ -67,7 +67,7 @@
     "popper.js": "^1.16.1",
     "prismjs": "1.29.0",
     "react": "18.2.0",
-    "react-apexcharts": "1.4.0",
+    "react-apexcharts": "^1.4.0",
     "react-chartjs-2": "5.1.0",
     "react-credit-cards": "0.8.3",
     "react-datepicker": "4.8.0",

@@ -6,6 +6,7 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import Grid from '@mui/material/Grid'
 import Logo from 'src/views/logo.js'
+
 // ** MUI Components
 import Button from '@mui/material/Button'
 import Divider from '@mui/material/Divider'
@@ -94,6 +95,7 @@ const FormControlLabel = styled(MuiFormControlLabel)(({ theme }) => ({
 const TokenVerification = () => {
   const router = useRouter()
   const { token } = router.query
+
   // ** States
   const [showPassword, setShowPassword] = useState(false)
 
@@ -141,6 +143,7 @@ const TokenVerification = () => {
       }
     })
   }
+
   const imageSource = skin === 'bordered' ? 'auth-v2-register-illustration-bordered' : 'auth-v2-register-illustration'
 
   return (

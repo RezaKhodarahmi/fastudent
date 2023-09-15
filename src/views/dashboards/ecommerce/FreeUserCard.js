@@ -21,6 +21,7 @@ const FreeUserCard = props => {
       setUser(props.user)
     }
   }, [props])
+
   return (
     <Card sx={{ position: 'relative' }}>
       <CardContent>

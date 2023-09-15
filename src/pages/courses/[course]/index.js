@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { setCartItems } from 'src/store/apps/cart'
+import { getCourseWithSlug, getEnrolledCourse } from 'src/store/apps/course'
 import axios from 'axios'
 import BASE_URL from 'src/api/BASE_URL'
 import feather from 'feather-icons'
@@ -11,8 +12,9 @@ import Typography from '@mui/material/Typography'
 import { appConfig } from 'src/configs/appConfig'
 import ReactPlayer from 'react-player'
 
-const Course = ({ course }) => {
+const Course = () => {
   const [data, setData] = useState(null)
+  const [loading, setLoading] = useState(true)
   const [courseId, setCourseId] = useState(null)
   const [selectedCycle, setSelectedCycle] = useState('0') // Add state for the selected cycle
   const [inCart, setInCart] = useState(false)
@@ -20,6 +22,18 @@ const Course = ({ course }) => {
   const [remindedDays, setRemindedDays] = useState('0')
   const dispatch = useDispatch()
   const router = useRouter()
+  const courseData = useSelector(state => state.course)
+  const userEmail = localStorage.getItem('userData') || null
+  const token = localStorage.getItem('accessToken') || null
+  const { course } = router.query
+
+  useEffect(() => {
+    if (userEmail != null && token != null) {
+      dispatch(getEnrolledCourse({ course: course, user: userEmail }))
+    } else {
+      dispatch(getCourseWithSlug(course))
+    }
+  }, [dispatch, userEmail, token, course])
 
   useEffect(() => {
     const localCartItems = typeof window !== 'undefined' ? JSON.parse(window.localStorage.getItem('cartItems')) : []
@@ -32,27 +46,33 @@ const Course = ({ course }) => {
 
     window.addEventListener('storage', handleStorage)
     feather.replace()
+
     return () => window.removeEventListener('storage', handleStorage)
   }, [courseId, inCart, data])
+
   useEffect(() => {
-    if (course?.data) {
-      setData(course?.data)
-      setCourseId(course?.data.id)
-      setIsEnrolled(course.enrolled)
-      setRemindedDays(course?.remainingDays)
-      setSelectedCycle(course?.data?.cycles ? course?.data?.cycles[0]?.id : null) // Set the initial selected cycle to the first cycle
+    if (courseData?.data) {
+      console.log(courseData?.data)
+      setData(courseData?.data?.data)
+      setCourseId(courseData?.data?.data?.id)
+      setIsEnrolled(courseData?.data?.enrolled)
+      setRemindedDays(courseData?.data?.remainingDays)
+      setSelectedCycle(courseData?.data?.data?.cycles ? courseData?.data?.data?.cycles[0]?.id : null)
+      const cycles = courseData?.data?.data?.cycles?.id
 
       // Check if the course is in the cart
       const cartItems = JSON.parse(localStorage.getItem('cartItems')) || []
-      const existInCart = cartItems.includes(course?.data?.cycles[0]?.id)
+
+      const existInCart = cartItems.includes(cycles)
 
       if (existInCart) {
         setInCart(true)
       }
+      setLoading(false)
     } else {
       router.replace('/404')
     }
-  }, [course])
+  }, [courseData, setData, setCourseId, setIsEnrolled, setRemindedDays, setSelectedCycle, setInCart])
 
   const addToCart = id => {
     const cartItems = JSON.parse(localStorage.getItem('cartItems')) || []
@@ -73,6 +93,8 @@ const Course = ({ course }) => {
   const handleCycleChange = e => {
     setSelectedCycle(e.target.value)
   }
+
+  if (loading) return <h2>Loading...</h2>
 
   return (
     <div>
@@ -99,7 +121,7 @@ const Course = ({ course }) => {
                     </div>
                   </div>
 
-                  <h2>{data.title}</h2>
+                  <h2>{data?.title}</h2>
 
                   <div className='FNV-Cat-Shorts'>
                     <div className='row'>
@@ -163,9 +185,10 @@ const Course = ({ course }) => {
                             {data?.teachers ? (
                               <Link
                                 style={{ color: '#fff' }}
-                                href={`${appConfig.appUrl}/teachers/${data.teachers[0]?.id}`}
+                                href={`${appConfig.appUrl}/teachers/${data?.teachers[0]?.id}`}
+                                passHref
                               >
-                                {data.teachers[0]?.firstName + ' ' + data.teachers[0]?.lastName}
+                                {data?.teachers[0]?.firstName + ' ' + data?.teachers[0]?.lastName}
                               </Link>
                             ) : (
                               'Fanavaran'
@@ -222,7 +245,6 @@ const Course = ({ course }) => {
                                   className='FNV-Course-Video w-100'
                                   url={data?.introURL}
                                   controls={true}
-                                  // This will use the poster as a thumbnail until played
                                   width='100%'
                                   height='400px'
                                 />
@@ -274,7 +296,7 @@ const Course = ({ course }) => {
                         </div>
                         {data?.tests
                           ? data?.tests.map(test => (
-                              <div className='accordion-item'>
+                              <div key={test.id} className='accordion-item'>
                                 <h2 className='accordion-header'>
                                   <button
                                     className='accordion-button collapsed'
@@ -316,6 +338,7 @@ const Course = ({ course }) => {
                                         <Link
                                           className='FNV-Btn BtnPrimary BtnSmall mt-2'
                                           href={`${data?.slug}/${test.slug}/`}
+                                          passHref
                                         >
                                           Start
                                         </Link>
@@ -333,7 +356,7 @@ const Course = ({ course }) => {
                           : null}
                         {data?.videos
                           ? data?.videos.map(video => (
-                              <div className='accordion-item'>
+                              <div key={video.id} className='accordion-item'>
                                 <h2 className='accordion-header'>
                                   <button
                                     className='accordion-button collapsed'
@@ -390,7 +413,7 @@ const Course = ({ course }) => {
 
                 <div className='col-md-4 d-sm-none d-md-block'>
                   <div className='FNV-Course-Card'>
-                    <img src={data.image} className='img-fluid' />
+                    <img src={data?.image} className='img-fluid' />
                     {inEnrolled ? (
                       <>
                         {' '}
@@ -409,9 +432,9 @@ const Course = ({ course }) => {
                       <>
                         {' '}
                         <h4>Select a Cycle</h4>
-                        {data.cycles && (
+                        {data?.cycles && (
                           <select value={selectedCycle} onChange={handleCycleChange} className='form-select mt-3'>
-                            {data.cycles.map(cycle => (
+                            {data?.cycles.map(cycle => (
                               <option key={cycle.id} value={cycle.id}>
                                 {cycle.name}
                               </option>
@@ -477,35 +500,6 @@ const Course = ({ course }) => {
   )
 }
 
-export async function getServerSideProps(context) {
-  const { course } = context.query
-  const { req } = context
-  const userDataCookie = req.cookies.userData
-  const token = req.cookies.accessToken
-  var response = {}
-  if (userDataCookie != null && token != null) {
-    response = await axios.post(
-      `${BASE_URL}/student/courses/enrolled-check`,
-      { user: userDataCookie, course }, // This is the body of the request
-      {
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${token}`
-        },
-        withCredentials: true
-      }
-    )
-  } else {
-    response = await axios.get(`${BASE_URL}/student/courses/${course}`, {
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      withCredentials: true
-    })
-  }
-
-  return { props: { course: response?.data } }
-}
-
 Course.guestGuard = true
+
 export default Course

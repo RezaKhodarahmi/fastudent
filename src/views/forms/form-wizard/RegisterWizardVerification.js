@@ -19,7 +19,6 @@ import OutlinedInput from '@mui/material/OutlinedInput'
 import FormHelperText from '@mui/material/FormHelperText'
 import InputAdornment from '@mui/material/InputAdornment'
 import { Checkbox } from '@mui/material'
-import PhoneInput from 'react-phone-number-input'
 import 'react-phone-number-input/style.css'
 
 // ** Third Party Imports
@@ -115,6 +114,7 @@ const StepperLinearWithValidationVerification = props => {
       auth.verification({ token })
     }
   }, [token])
+
   //give response
   useEffect(() => {
     if (auth.response) {

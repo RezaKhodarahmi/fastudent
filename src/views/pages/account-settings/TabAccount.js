@@ -67,6 +67,7 @@ const TabAccount = () => {
   const [avatar, setAvatar] = useState(null)
   const [loading, setLoading] = useState(false)
   const [avatarURL, setAvatarURL] = useState(null)
+
   //Hooks
   const dispatch = useDispatch()
   const profileDetails = useSelector(state => state.profile)
@@ -113,6 +114,7 @@ const TabAccount = () => {
     setAvatar(e.target.files[0])
     setAvatarURL(URL.createObjectURL(e.target.files[0]))
   }
+
   return (
     <Grid container spacing={6}>
       <Grid item xs={12}>

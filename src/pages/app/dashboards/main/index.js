@@ -26,6 +26,7 @@ const AnalyticsDashboard = () => {
 
   //Hooks
   const dispatch = useDispatch()
+
   //give user data from state
   const profileDetails = useSelector(state => state.profile)
 

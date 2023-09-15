@@ -2,15 +2,11 @@ import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { useDispatch } from 'react-redux'
 import { paymentResult } from 'src/store/apps/stripe'
-import { Button, Container, Typography } from '@mui/material'
+import Link from 'next/link'
+
 const Index = () => {
   const dispatch = useDispatch()
   const router = useRouter()
-
-  const handleGoToProfile = () => {
-    // Replace '/profile' with the actual route to the user's profile page
-    router.push('/app/dashboards/main/')
-  }
 
   const [paymentIntent, setPaymentIntent] = useState(null)
   useEffect(() => {
@@ -19,6 +15,7 @@ const Index = () => {
       setPaymentIntent(payment_intent)
     }
   }, [router])
+
   useEffect(() => {
     if (paymentIntent != null) {
       dispatch(paymentResult({ paymentIntentId: paymentIntent }))
@@ -66,9 +63,9 @@ const Index = () => {
                       For any inquiries or assistance, contact our support team at{' '}
                       <a href='tel:+16473552255'>647 355 2255</a>
                     </p>
-                    <a href='/' className='FNV-Btn BtnOutline PrimaryColor w-25'>
+                    <Link href='/' className='FNV-Btn BtnOutline PrimaryColor w-25'>
                       Back to Home
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -79,5 +76,7 @@ const Index = () => {
     </div>
   )
 }
+
 Index.guestGuard = true
+
 export default Index

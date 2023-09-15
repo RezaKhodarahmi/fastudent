@@ -24,9 +24,9 @@ const Home = () => {
                 Up skill with live instructor-led training from our Fanavaran Authorized Training Partners. Prepare for
                 your certification exam or maintain your certification with PDUs.
               </p>
-              <a href={`${appConfig.appUrl}/courses`} className='FNV-Btn BtnPrimary BtnLarge'>
+              <Link href={`${appConfig.appUrl}/courses`} className='FNV-Btn BtnPrimary BtnLarge'>
                 Find a Course
-              </a>
+              </Link>
             </div>
           </div>
         </div>

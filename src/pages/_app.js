@@ -5,6 +5,7 @@ import Head from 'next/head'
 import { Router } from 'next/router'
 import { useRouter } from 'next/router'
 import MainLayout from 'src/layouts/MainLayout'
+
 // ** Store Imports
 import { store } from 'src/store'
 import { Provider } from 'react-redux'
@@ -34,6 +35,7 @@ import ThemeComponent from 'src/@core/theme/ThemeComponent'
 import AuthGuard from 'src/@core/components/auth/AuthGuard'
 import GuestGuard from 'src/@core/components/auth/GuestGuard'
 import WindowWrapper from 'src/@core/components/window-wrapper'
+
 // ** Spinner Import
 import Spinner from 'src/@core/components/spinner'
 
@@ -78,6 +80,7 @@ import '../../styles/_social.scss'
 import '../../styles/_youtube.scss'
 import '../../styles/_content.scss'
 import 'bootstrap/dist/css/bootstrap.css'
+
 const clientSideEmotionCache = createEmotionCache()
 
 // ** Pace Loader
@@ -164,4 +167,5 @@ const App = props => {
     </Provider>
   )
 }
+
 export default App

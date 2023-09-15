@@ -13,21 +13,23 @@ import { Grid, Box } from '@mui/material'
 import Button from '@mui/material/Button'
 import BASE_URL from '../../api/BASE_URL'
 import feather from 'feather-icons'
+import { fetchCourseData } from 'src/store/apps/course'
+import { useSelector, useDispatch } from 'react-redux'
 
-export async function getServerSideProps(context) {
-  const response = await axios.get(`${BASE_URL}/student/courses/all`, {
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    withCredentials: true
-  })
-  return { props: { course: response.data.data, category: response.data.category, teacher: response.data.teacher } }
-}
-
-const Index = ({ course, category, teacher }) => {
+const Index = () => {
   const [selectedCategories, setSelectedCategories] = useState([])
   const [selectedTeachers, setSelectedTeachers] = useState([])
   const [page, setPage] = useState(1)
+  const [category, setCategory] = useState([])
+  const [course, setCourse] = useState([])
+
+  //Hooks
+  const dispatch = useDispatch()
+  const courseData = useSelector(state => state.course)
+
+  useEffect(() => {
+    dispatch(fetchCourseData())
+  }, [dispatch])
 
   const handleCategoryChange = event => {
     setSelectedCategories(
@@ -38,11 +40,12 @@ const Index = ({ course, category, teacher }) => {
   }
   useEffect(() => {
     feather.replace()
-  }, course)
-
-  // const handleTeacherChange = event => {
-  //   setSelectedTeachers(event.target.value)
-  // }
+    if (courseData?.data) {
+      console.log(courseData?.data)
+      setCategory(courseData?.data?.category)
+      setCourse(courseData?.data?.data)
+    }
+  }, [courseData])
 
   const handleChangePage = (event, value) => {
     setPage(value)
@@ -57,6 +60,7 @@ const Index = ({ course, category, teacher }) => {
     if (words.length > wordLimit) {
       return words.slice(0, wordLimit).join(' ') + '...'
     }
+
     return content
   }
 
@@ -138,12 +142,11 @@ const Index = ({ course, category, teacher }) => {
                         )
                     )
                     .slice((page - 1) * 5, page * 5)
-                  console.log(filteredCourses)
 
                   return filteredCourses.length ? (
                     filteredCourses.map(course =>
                       course.cycles?.length ? (
-                        <a href={`/courses/${course.slug}`} key={course.id} passHref>
+                        <Link href={`/courses/${course.slug}`} key={course.id} passHref>
                           <div className='FNV-Course-Card'>
                             <div className='row'>
                               <div className='col-12 col-md-4'>
@@ -170,7 +173,7 @@ const Index = ({ course, category, teacher }) => {
                               </div>
                             </div>
                           </div>
-                        </a>
+                        </Link>
                       ) : null
                     )
                   ) : (
@@ -185,7 +188,7 @@ const Index = ({ course, category, teacher }) => {
 
               <Grid container justifyContent='center'>
                 <Pagination
-                  count={Math.ceil(course.length / 5)}
+                  count={Math.ceil(courseData?.data?.data?.length / 5)}
                   page={page}
                   onChange={handleChangePage}
                   color='primary'
@@ -199,4 +202,5 @@ const Index = ({ course, category, teacher }) => {
   )
 }
 Index.guestGuard = true
+
 export default Index

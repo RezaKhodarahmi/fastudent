@@ -60,6 +60,7 @@ const Test = () => {
       }
     })
   }
+
   const finishTest = () => {
     setFinished(true)
     clearInterval(timer)
@@ -75,6 +76,7 @@ const Test = () => {
 
     setCorrectAnswers(correctCount)
   }
+
   const retakeTest = () => {
     setStarted(false)
     setFinished(false)
@@ -100,8 +102,10 @@ const Test = () => {
     if (timer === 0 || finished) {
       clearInterval(interval)
     }
+
     return () => clearInterval(interval)
   }, [started, timer, finished])
+
   const handleShowAnswer = questionId => {
     setShowAnswerForQuestion(prev => ({ ...prev, [questionId]: true }))
   }
@@ -338,4 +342,5 @@ const Test = () => {
 }
 
 Test.guestGuard = true
+
 export default Test

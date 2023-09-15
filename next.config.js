@@ -7,7 +7,8 @@ const path = require('path')
 
 module.exports = {
   trailingSlash: true,
-  reactStrictMode: false,
+  reactStrictMode: true,
+  output: 'export',
   transpilePackages: [
     '@fullcalendar/common',
     '@fullcalendar/core',
@@ -18,13 +19,13 @@ module.exports = {
   ],
   experimental: {
     esmExternals: false
-  },
-  webpack: config => {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      apexcharts: path.resolve(__dirname, './node_modules/apexcharts-clevision')
-    }
-
-    return config
   }
+  // webpack: config => {
+  //   config.resolve.alias = {
+  //     ...config.resolve.alias,
+  //     apexcharts: path.resolve(__dirname, './node_modules/apexcharts-clevision')
+  //   }
+
+  //   return config
+  // }
 }

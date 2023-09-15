@@ -34,6 +34,7 @@ export const fetchTestData = slug => async dispatch => {
   dispatch(getDataStart())
   try {
     const token = window.localStorage.getItem('accessToken')
+
     const response = await axios.get(`${BASE_URL}/student/tests/${slug}`, {
       headers: {
         'Content-Type': 'application/json',
@@ -41,6 +42,7 @@ export const fetchTestData = slug => async dispatch => {
       },
       withCredentials: true
     })
+
     dispatch(getDataSuccess(response.data))
   } catch (error) {
     toast.error('Error! message:' + error.message)

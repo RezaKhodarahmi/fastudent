@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react'
 import feather from 'feather-icons'
 import Logo from 'src/views/logo.js'
+
 const Footer = props => {
   useEffect(() => {
     feather.replace()
   })
+
   return (
     <footer>
       <div className='container-fluid'>
@@ -39,7 +41,6 @@ const Footer = props => {
               </li>
             </ul>
           </div>
-
           <div className='col-12 col-sm-4 col-md-2'>
             <h6>Certifications</h6>
             <ul className='list-group list-group-flush'>
@@ -70,7 +71,6 @@ const Footer = props => {
               </li>
             </ul>
           </div>
-
           <div className='col-12 col-sm-4 col-md-2'>
             <h6>Community</h6>
             <ul className='list-group list-group-flush'>
@@ -101,7 +101,6 @@ const Footer = props => {
               </li>
             </ul>
           </div>
-
           <div className='col-12 col-sm-4 col-md-2'>
             <h6>Membership</h6>
             <ul className='list-group list-group-flush'>
@@ -132,7 +131,6 @@ const Footer = props => {
               </li>
             </ul>
           </div>
-
           <div className='col-12 col-sm-4 col-md-2'>
             <h6>Organization</h6>
             <ul className='list-group list-group-flush'>
@@ -163,7 +161,6 @@ const Footer = props => {
               </li>
             </ul>
           </div>
-
           <div className='col-12 col-sm-4 col-md-2'>
             <Logo />
             <h2 className='my-4'>Stay Connected</h2>
@@ -194,7 +191,6 @@ const Footer = props => {
                 </a>
               </li>
             </ul>
-
             <h2 className='my-4'>Support</h2>
             <ul className='list-group list-group-flush'>
               <li className='list-group-item'>
@@ -210,7 +206,6 @@ const Footer = props => {
           </div>
         </div>
       </div>
-
       <div className='container-fluid mt-3'>
         <div className='row'>
           <div className='col-6 col-md-6'></div>
@@ -222,7 +217,9 @@ const Footer = props => {
     </footer>
   )
 }
+
 export async function getStaticProps() {
   return { props: {} }
 }
+
 export default Footer

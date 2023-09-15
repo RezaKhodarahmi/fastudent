@@ -1,4 +1,5 @@
 import React from 'react'
+
 // ** MUI Imports
 import {
   Card,
@@ -114,6 +115,7 @@ const TabSecurity = () => {
                         )
                       }}
                     />
+
                     {detailErrors.password_confirmation && (
                       <FormHelperText sx={{ color: 'error.main' }} id='stepper-linear-account-confirmation'>
                         {detailErrors.password_confirmation.message}

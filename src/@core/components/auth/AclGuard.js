@@ -29,6 +29,7 @@ const AclGuard = props => {
   if (auth.loading) {
     return <Spinner />
   }
+
   // If guestGuard is true and user is not logged in or its an error page, render the page without checking access
   if (guestGuard || router.route === '/404' || router.route === '/500' || router.route === '/') {
     return <>{children}</>

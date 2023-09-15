@@ -37,11 +37,13 @@ const Index = () => {
   const [checkout, setCheckout] = useState(false)
   const [referralUser, setReferralUser] = useState({})
   const [isVIP, setIsVIP] = useState(false)
+
   //Hooks
   const courses = useSelector(state => state.course)
   const appliedCoupon = useSelector(state => state.coupon)
   const referralDiscount = useSelector(state => state.referral)
   const user = useSelector(state => state.user)
+
   //Get the cart item's from the API
   useEffect(() => {
     const cartItems = window.localStorage.getItem('cartItems')
@@ -51,6 +53,7 @@ const Index = () => {
     setEmail(JSON.parse(localStorage.getItem('userData')) || null)
     setFullName(JSON.parse(localStorage.getItem('userName')) || null)
   }, [])
+
   //give the user info
   useEffect(() => {
     if (email) {
@@ -141,9 +144,11 @@ const Index = () => {
         }
       }
     }
+
     if (referralDiscount?.data?.data?.referralCode) {
       setReferralUser(referralDiscount?.data?.data)
       const oldCoupons = [...usedCoupon]
+
       const newCoupon = {
         code: referralDiscount?.data?.data?.referralCode,
         discount: '$' + '5'
@@ -166,7 +171,7 @@ const Index = () => {
       if (clientSecret === null) {
         if (cartCourses.length && email) {
           const token = window.localStorage.getItem('accessToken')
-          // Create PaymentIntent as soon as the page loads
+
           fetch(`${BASE_URL}/student/transaction/create-payment-intent`, {
             method: 'POST',
             headers: {
@@ -191,6 +196,7 @@ const Index = () => {
       window.alert('error ')
     }
   }
+
   //Payment config(stripe)
   const appearance = {
     theme: 'flat'
@@ -223,6 +229,7 @@ const Index = () => {
       }
     }
   }
+
   const applyReferralHandler = e => {
     if (!referral) {
       window.alert('Please insert a valid Code!')
@@ -254,6 +261,7 @@ const Index = () => {
       window.alert('Cart is Empty')
     }
   }
+
   const handelRemoveItem = id => {
     if (cartCourses.length) {
       const confirmation = window.confirm('Are you sure you want to delete this item from the cart?')
@@ -264,9 +272,8 @@ const Index = () => {
         // Update the local storage with the updated cart items
         const updatedCartItems = newItems.map(item => ({
           id: item.course.id
-          // Add other necessary properties from the item object
-          // For example: title, image, regularPrice, etc.
         }))
+
         if (updatedCartItems.length) {
           localStorage.setItem('cartItems', JSON.stringify(updatedCartItems))
         } else {
@@ -293,6 +300,7 @@ const Index = () => {
       window.alert('Cart is Empty')
     }
   }
+
   // Function to calculate the total coupon discount
   const calculateTotalCouponDiscount = () => {
     let totalDiscount = 0
@@ -360,6 +368,7 @@ const Index = () => {
       setUsedCoupon(newCoupon)
     }
   }
+
   const handelRemoveVip = code => {
     const oldUsedCoupon = [...usedCoupon]
     const newCoupon = oldUsedCoupon.filter(coupon => coupon.code != code)
@@ -371,6 +380,7 @@ const Index = () => {
       dispatch(verifyReferralCode({ referral: referral, user: email }))
     }
   }, [])
+
   return (
     <div className='FNV-Cart'>
       <section className='FNV-Header'>
@@ -602,9 +612,9 @@ const Index = () => {
                   </Link>
                 )}
 
-                <a href='/courses' className='d-block text-center mt-2'>
+                <Link href='/courses' className='d-block text-center mt-2'>
                   Apply for other courses
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -641,5 +651,7 @@ const Index = () => {
     </div>
   )
 }
+
 Index.guestGuard = true
+
 export default Index

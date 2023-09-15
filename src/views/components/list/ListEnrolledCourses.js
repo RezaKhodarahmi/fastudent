@@ -15,6 +15,7 @@ import { appConfig } from 'src/configs/appConfig'
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
 
 const StyledList = styled(List)(({ theme }) => ({
   '& .MuiListItem-container': {
@@ -80,11 +81,11 @@ const ListCourses = props => {
             </Box>
           </div>
           <ListItemSecondaryAction>
-            <a href={`${appConfig.appUrl}/courses/${course?.slug}`} variant='contained' size='small'>
+            <Link href={`${appConfig.appUrl}/courses/${course?.slug}`} passHref variant='contained' size='small'>
               <Button variant='contained' size='small'>
                 View Course
               </Button>
-            </a>
+            </Link>
           </ListItemSecondaryAction>
         </ListItem>
       ))}

@@ -2,6 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 import axios from 'axios'
 import BASE_URL from 'src/api/BASE_URL'
 import toast from 'react-hot-toast'
+
 const initialState = {
   loading: false,
   error: null,
@@ -34,6 +35,7 @@ export const paymentResult = paymentIntentId => async dispatch => {
 
   try {
     const token = window.localStorage.getItem('accessToken')
+
     const response = await axios.post(`${BASE_URL}/student/transaction/confirm-payment`, paymentIntentId, {
       headers: {
         'Content-Type': 'application/json',
@@ -41,12 +43,15 @@ export const paymentResult = paymentIntentId => async dispatch => {
       },
       withCredentials: true
     })
+
     toast.success('Payment was successfully')
     dispatch(transactionSuccess(response.data))
   } catch (error) {
     console.log(error.response?.data?.message)
     dispatch(transactionError(error.message))
+
     toast.error('Error! message:' + error.response?.data?.message)
   }
 }
+
 export default stripeSlice.reducer

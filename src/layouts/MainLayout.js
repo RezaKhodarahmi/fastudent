@@ -12,4 +12,5 @@ const MainLayout = ({ children }, props) => (
 export async function getStaticProps() {
   return { props: {} }
 }
+
 export default MainLayout

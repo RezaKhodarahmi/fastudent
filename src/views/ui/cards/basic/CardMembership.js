@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+
 // ** MUI Imports
 import Card from '@mui/material/Card'
 import Grid from '@mui/material/Grid'
@@ -48,6 +49,7 @@ const CardMembership = props => {
         toast.error('Could not copy referral code to clipboard: ', err)
       })
   }
+
   return (
     <Card>
       <Grid container spacing={6}>

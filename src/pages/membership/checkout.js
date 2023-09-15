@@ -17,10 +17,13 @@ const StripeCheckoutButton = () => {
     const email = JSON.parse(userEmail)
     setEmail(email)
   }, [])
+
   const buyMembership = async () => {
     setIsLoading(true)
+
     try {
       const token = window.localStorage.getItem('accessToken')
+
       // Fetch the session ID from your backend
       const response = await fetch(`${BASE_URL}/student/membership/buy/${email}`, {
         method: 'GET',
@@ -28,7 +31,7 @@ const StripeCheckoutButton = () => {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${token}`
         }
-      }) // Update the route to point to your API route
+      })
 
       const { sessionId } = await response.json()
 
@@ -102,5 +105,7 @@ const StripeCheckoutButton = () => {
     </div>
   )
 }
+
 StripeCheckoutButton.guestGuard = true
+
 export default StripeCheckoutButton

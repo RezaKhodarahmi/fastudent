@@ -37,6 +37,7 @@ export const getProfileInfo = () => async dispatch => {
     const token = window.localStorage.getItem('accessToken')
     const user = window.localStorage.getItem('userData')
     const userEmail = JSON.parse(user)
+
     const response = await axios.get(`${BASE_URL}/student/profile/${userEmail}`, {
       headers: {
         'Content-Type': 'application/json',
@@ -44,17 +45,21 @@ export const getProfileInfo = () => async dispatch => {
       },
       withCredentials: true
     })
+
     dispatch(getDataSuccess(response.data))
   } catch (error) {
     dispatch(getDataFailure(error.message))
+
     toast.error('Error! message:' + error.response.data.message)
   }
 }
+
 export const getCourses = userEmail => async dispatch => {
   dispatch(getDataStart())
 
   try {
     const token = window.localStorage.getItem('accessToken')
+
     const response = await axios.post(`${BASE_URL}/student/profile/courses`, userEmail, {
       headers: {
         'Content-Type': 'application/json',
@@ -62,6 +67,7 @@ export const getCourses = userEmail => async dispatch => {
       },
       withCredentials: true
     })
+
     dispatch(getDataSuccess(response.data))
   } catch (error) {
     dispatch(getDataFailure(error.message))
@@ -74,6 +80,7 @@ export const autoRenewal = customerID => async dispatch => {
 
   try {
     const token = window.localStorage.getItem('accessToken')
+
     const response = await axios.post(`${BASE_URL}/student/profile/auto-renewal`, customerID, {
       headers: {
         'Content-Type': 'application/json',
@@ -81,9 +88,11 @@ export const autoRenewal = customerID => async dispatch => {
       },
       withCredentials: true
     })
+
     dispatch(getDataSuccess(response.data))
   } catch (error) {
     dispatch(getDataFailure(error.message))
+
     toast.error('Error! message:' + error?.response?.data?.message || 'Error!')
   }
 }
@@ -93,6 +102,7 @@ export const updateProfileDetails = data => async dispatch => {
 
   try {
     const token = window.localStorage.getItem('accessToken')
+
     const response = await axios.patch(`${BASE_URL}/student/profile/update`, data, {
       headers: {
         'Content-Type': 'multipart/form-data',
@@ -104,6 +114,7 @@ export const updateProfileDetails = data => async dispatch => {
     dispatch(getDataSuccess(response.data))
   } catch (error) {
     dispatch(getDataFailure(error.message))
+
     toast.error('Error! message:' + error?.response?.data?.message || 'Error!')
   }
 }
@@ -112,6 +123,7 @@ export const updatePassword = password => async dispatch => {
   dispatch(getDataStart())
   try {
     const token = window.localStorage.getItem('accessToken')
+
     const response = await axios.patch(`${BASE_URL}/student/profile/resetpassword`, password, {
       headers: {
         'Content-Type': 'application/json',
@@ -119,10 +131,12 @@ export const updatePassword = password => async dispatch => {
       },
       withCredentials: true
     })
+
     toast.success('Password updated successfully!')
     dispatch(getDataSuccess(response.data))
   } catch (error) {
     dispatch(getDataFailure(error.message))
+
     toast.error('Error! message:' + error?.response?.data?.message || 'Error!')
   }
 }

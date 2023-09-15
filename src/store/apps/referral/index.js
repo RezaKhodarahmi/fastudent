@@ -34,6 +34,7 @@ export const verifyReferralCode = params => async dispatch => {
   dispatch(getDataStart())
   try {
     const token = window.localStorage.getItem('accessToken')
+
     const response = await axios.post(`${BASE_URL}/student/coupon/referral`, params, {
       headers: {
         'Content-Type': 'application/json',
@@ -41,6 +42,7 @@ export const verifyReferralCode = params => async dispatch => {
       },
       withCredentials: true
     })
+
     toast.success('Coupon applied!')
     dispatch(getDataSuccess(response.data))
   } catch (error) {

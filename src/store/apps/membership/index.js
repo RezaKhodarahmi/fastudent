@@ -36,6 +36,7 @@ export const buyVipMembership = params => async dispatch => {
     const token = window.localStorage.getItem('accessToken')
     const userEmail = window.localStorage.getItem('userData')
     const email = JSON.parse(userEmail)
+
     const response = await axios.post(
       `${BASE_URL}/student/membership/buy`,
       { email },
@@ -47,10 +48,11 @@ export const buyVipMembership = params => async dispatch => {
         withCredentials: true
       }
     )
+
     dispatch(getDataSuccess(response.data))
   } catch (error) {
-    console.log(error)
     toast.error('Error! message:' + error.response.data.message)
+
     dispatch(getDataFailure(error.message))
   }
 }

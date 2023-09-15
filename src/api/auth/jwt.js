@@ -37,7 +37,7 @@ const jwtConfig = {
 }
 
 // Login
-mock.onPost( BASE_URL + '/auth/login' ).reply(request => {
+mock.onPost(BASE_URL + '/auth/login').reply(request => {
   const { user, pass } = JSON.parse(request.data)
 
   let error = {

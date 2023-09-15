@@ -2,6 +2,7 @@
 import { createContext, useEffect, useState } from 'react'
 import toast, { Toaster } from 'react-hot-toast'
 import Cookies from 'js-cookie'
+
 // ** Next Import
 import { useRouter } from 'next/router'
 
@@ -187,10 +188,11 @@ const AuthProvider = ({ children }) => {
         setResponse(null)
       })
   }
+
   const handleRequestForgetpassword = (params, errorCallback, successCallback) => {
     console.log(params)
     axios
-      .post('http://localhost:3200/api/v1/auth/forget-password', params)
+      .post(authConfig.requestfogetpasswordEndpoint, params)
       .then(res => {
         if (res.data.error) {
           if (errorCallback) errorCallback(res.data.error)
@@ -200,6 +202,7 @@ const AuthProvider = ({ children }) => {
       })
       .catch(err => (errorCallback ? errorCallback(err) : null))
   }
+
   const handleVerifyForgetpassword = (params, errorCallback, successCallback) => {
     axios
       .post(authConfig.verifyfogetpasswordEndpoint, params)
@@ -215,6 +218,7 @@ const AuthProvider = ({ children }) => {
       })
       .catch(err => (errorCallback ? errorCallback(err) : null))
   }
+
   const handleResetpassword = (params, errorCallback, successCallback) => {
     console.log(params)
     axios
