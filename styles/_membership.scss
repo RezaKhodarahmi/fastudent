@@ -1,4 +1,239 @@
 @import './variables';
-.FNV-Membership {
-  padding: 2rem 0;
+.FNV-Membership .FNV-Header {
+  background-image: unset;
+  padding: 3rem 0;
+  height: unset;
+
+  .container {
+    .row {
+      .col-12 {
+        h1 {
+          color: $FourthColor;
+          text-align: left;
+          font-size: 35px;
+          line-height: 36px;
+        }
+
+        .FNV-Cat-Shorts {
+          margin-top: 0.5rem;
+          .row {
+            .col-md,
+            .col-md-6 {
+              display: flex;
+              align-items: center;
+
+              svg {
+                color: $SecondaryColor;
+                margin-right: 0.5rem;
+              }
+
+              h3 {
+                font-size: 14px;
+                line-height: 28px;
+                margin-bottom: 0;
+                color: $GrayTwoColor;
+
+                strong {
+                  color: $WhiteColor;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.FNV-Membership-Page{
+  .container{
+    background-image: url('/img/membership.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 4rem;
+
+    .row{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 100%;
+
+      .col-12{
+        .card{
+          padding: 2rem;
+          border-radius: 0;
+          border-width: 0;
+          background-color: $ShadowSecondary;
+          transition: .3s all ease-in-out;
+
+          &:hover{
+            background-color: $ShadowThird;
+          }
+
+          .card-body{
+            h2{
+              font-size: 28px;
+              color: $WhiteColor;
+            }
+
+            p{
+              color: $WhiteColor;
+
+              price{
+                font-size: 22px;
+              }
+            }
+
+            .BtnPrimary{
+              font-weight: 700;
+              font-size: 18px;
+              color: $PrimaryColor;
+              background-color: #ede8f4;
+            }
+          }
+        }
+      }
+
+      h3{
+        text-align: center;
+        color: $FourthColor;
+      }
+    }
+
+    &:not(:first-child){
+      background-image: unset;
+      .row{
+        flex-direction: row;
+        text-align: center;
+
+        .col-md-3{
+          margin-top: 5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .FNV-Membership .FNV-Header {
+    background-image: unset;
+    padding: 3rem 0;
+    height: unset;
+  
+    .container {
+      .row {
+        .col-12 {
+          h1 {
+            color: $FourthColor;
+            text-align: center;
+            font-size: 25px;
+            line-height: 36px;
+          }
+  
+          .FNV-Cat-Shorts {
+            margin-top: 0.5rem;
+            .row {
+              .col-md,
+              .col-md-6 {
+                display: flex;
+                align-items: center;
+  
+                svg {
+                  color: $SecondaryColor;
+                  margin-right: 0.5rem;
+                }
+  
+                h3 {
+                  font-size: 14px;
+                  line-height: 28px;
+                  margin-bottom: 0;
+                  color: $GrayTwoColor;
+  
+                  strong {
+                    color: $WhiteColor;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .FNV-Membership-Page{
+    .container{
+      background-image: url('/img/membership.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      padding: 1rem;
+  
+      .row{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+  
+        .col-12{
+          .card{
+            padding: 2rem;
+            border-radius: 0;
+            border-width: 0;
+            background-color: $ShadowSecondary;
+            transition: .3s all ease-in-out;
+  
+            &:hover{
+              background-color: $ShadowThird;
+            }
+  
+            .card-body{
+              text-align: center;
+
+              h2{
+                font-size: 18px;
+                color: $WhiteColor;
+                text-align: center;
+              }
+  
+              p{
+                color: $WhiteColor;
+                text-align: center;
+  
+                price{
+                  font-size: 22px;
+                }
+              }
+  
+              .BtnPrimary{
+                font-weight: 700;
+                font-size: 18px;
+                color: $PrimaryColor;
+                background-color: #ede8f4;
+              }
+            }
+          }
+        }
+  
+        h3{
+          font-size: 16px;
+          text-align: center;
+          color: $FourthColor;
+        }
+      }
+  
+      &:not(:first-child){
+        background-image: unset;
+        .row{
+          flex-direction: row;
+          text-align: center;
+  
+          .col-md-3{
+            margin-top: 5rem;
+          }
+        }
+      }
+    }
+  }  
 }

@@ -3,7 +3,7 @@
   background-image: url('/img/Header-bg.jpg');
   background-size: cover;
   background-position: center center;
-  height: 700px;
+  height: 550px;
   padding: 10px;
 
   .container {
@@ -14,6 +14,8 @@
 
         h2 {
           margin-bottom: 2rem;
+          color: $ThirdColor;
+          text-align: left;
         }
 
         p {
