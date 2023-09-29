@@ -132,12 +132,12 @@ const App = props => {
       {/* <GoogleReCaptchaProvider reCaptchaKey='6LdOdHgdAAAAAGWsjsBrXmsXtpTviMp6sgVlB1ty'> */}
       <CacheProvider value={emotionCache}>
         <Head>
-          <title>{`${themeConfig.templateName} - Fanavaran-website`}</title>
+          <title>{`${themeConfig.templateName} - Institute of Technology and Engineering`}</title>
           <meta
             name='description'
-            content={`${themeConfig.templateName} – Material Design React Admin Dashboard Template – is the most developer friendly & highly customizable Admin Dashboard Template based on MUI v5.`}
+            content={`${themeConfig.templateName} – Our main goal at Fanavaran Technical and Engineering Institute is to provide quality education for Iranian immigrants in Canada to advance their careers and obtain the required licenses.`}
           />
-          <meta name='keywords' content='Material Design, MUI, Admin Template, React Admin Template' />
+          <meta name='keywords' content='Fanavaran, Engineering, Mechanical, Plumbing, Electrician, Architectural' />
           <meta name='viewport' content='initial-scale=1, width=device-width' />
         </Head>
         <AuthProvider>
