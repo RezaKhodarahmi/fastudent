@@ -105,7 +105,7 @@ const Header = props => {
   return (
     <>
       {user ? (
-        <nav className='navbar navbar-expand-lg bg-body-tertiary d-flex flex-column pb-0'>
+        <nav className='navbar navbar-expand-lg bg-body-tertiary d-flex flex-column pb-0 pt-0'>
           <div className='container-fluid'>
             <Link
               className='OffCanvasMenu'
@@ -154,7 +154,7 @@ const Header = props => {
                   </li>
                 </ul>
               </div>
-              <Link href='/cart' className='FNV-Btn PrimaryColor'>
+              <Link href='/cart' className='FNV-Btn SecondaryColor'>
                 <i data-feather='shopping-cart'></i>
                 <span className='position-absolute top-10 start-70 translate-middle badge rounded-pill bg-danger'>
                   {cartItems?.length ? cartItems.length : 0}
@@ -454,7 +454,7 @@ const Header = props => {
           </div>
         </nav>
       ) : (
-        <nav className='navbar navbar-expand-lg bg-body-tertiary d-flex flex-column pb-0'>
+        <nav className='navbar navbar-expand-lg FNV-MegaMenu d-flex flex-column pb-0 pt-0'>
           <div className='container-fluid'>
             <Link
               className='OffCanvasMenu2'
@@ -480,18 +480,21 @@ const Header = props => {
               <span className='navbar-toggler-icon'></span>
             </button>
 
-            <div className='navbar-collapse justify-content-end'>
-              <Link href='#' className='FNV-Btn PrimaryColor'>
-                نسخه فارسی
+            <div className='navbar-collapse FNV_QuickAccess justify-content-end'>
+              <Link href='/login' className='FNV-Btn BtnMedium PrimaryColor'>
+                Log In
               </Link>
-              <Link href='/cart' className='FNV-Btn PrimaryColor'>
+
+              <Link href='/register' className='FNV-Btn SecondaryColor BtnMedium'>
+                Register
+              </Link>
+              
+              <Link href='/cart' className='FNV-Btn LightColor BtnMedium'>
                 <i data-feather='shopping-cart'></i>
               </Link>
-              <Link href='/login' className='FNV-Btn PrimaryColor'>
-                Log in
-              </Link>
-              <Link href='/register' className='FNV-Btn BtnOutline PrimaryColor'>
-                Register
+
+              <Link href='#' className='FNV-Btn LightColor BtnMedium'>
+                نسخه فارسی
               </Link>
             </div>
           </div>
@@ -499,130 +502,151 @@ const Header = props => {
           <div className='container-fluid'>
             <div className='collapse navbar-collapse' id='FNV-Toggle'>
               <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
+                {/* Courses */}
                 <li className='nav-item dropdown FNV-MegaMenu'>
                   <Link className='nav-link' href='/courses' aria-expanded='false'>
-                    Courses
+                    Explore Courses
                   </Link>
-                  {/* <ul className='dropdown-menu'>
+                  <ul className='dropdown-menu'>
                     <div className='container-fluid'>
+                      <a>Explore Courses<span>See the latest that FANAVARAN has to offer</span></a>
                       <div className='row'>
-                        <div className='col-md-3'>
-                          <li>
-                            <a className='dropdown-item' href='#'>
-                              Action
-                            </a>
-                          </li>
+                        <div className='col'>
+                          <span><i data-feather="package"></i> Project Management</span>
+                          <li><Link className='dropdown-item' href='#'>Course Name</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Course Name</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Course Name</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Course Name</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Course Name</Link></li>
                         </div>
-                        <div className='col-md-3'>
-                          <li>
-                            <a className='dropdown-item' href='#'>
-                              Something else here
-                            </a>
-                          </li>
+                        <div className='col'>
+                          <span><i data-feather="package"></i> Engineering</span>
+                          <li><Link className='dropdown-item' href='#'>Course Name</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Course Name</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Course Name</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Course Name</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Course Name</Link></li>
                         </div>
-                        <div className='col-md-3'>
-                          <li>
-                            <a className='dropdown-item' href='#'>
-                              Something else here
-                            </a>
-                          </li>
+                        <div className='col'>
+                          <span><i data-feather="package"></i> Energy Advisory</span>
+                          <li><Link className='dropdown-item' href='#'>Course Name</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Course Name</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Course Name</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Course Name</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Course Name</Link></li>
                         </div>
-                        <div className='col-md-3'>
-                          <li>
-                            <a className='dropdown-item' href='#'>
-                              Something else here
-                            </a>
-                          </li>
+                        <div className='col'>
+                          <span><i data-feather="package"></i> Plumbing</span>
+                          <li><Link className='dropdown-item' href='#'>Course Name</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Course Name</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Course Name</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Course Name</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Course Name</Link></li>
+                        </div>
+                        <div className='col'>
+                          <span><i data-feather="package"></i> Electrician</span>
+                          <li><Link className='dropdown-item' href='#'>Course Name</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Course Name</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Course Name</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Course Name</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Course Name</Link></li>
                         </div>
                       </div>
                     </div>
-                  </ul> */}
+                  </ul>
                 </li>
-
+                {/* Certification */}
                 <li className='nav-item dropdown FNV-MegaMenu'>
                   <Link className='nav-link' href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
                     Certification
                   </Link>
                   <ul className='dropdown-menu'>
                     <div className='container-fluid'>
+                      <a>Certification<span>Get recognition for your skills and experience</span></a>
                       <div className='row'>
                         <div className='col-md-3'>
-                          <li>
-                            <Link className='dropdown-item' href='#'>
-                              Action
-                            </Link>
-                          </li>
+                          <span><i data-feather="award"></i> Certification Overview</span>
+                          <li><Link className='dropdown-item' href='#'>Compare Certification</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Certification FAQs</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Certification Registry</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Report PDUs</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Maintain Your Certification</Link></li>
                         </div>
                         <div className='col-md-3'>
-                          <li>
-                            <Link className='dropdown-item' href='#'>
-                              Something else here
-                            </Link>
-                          </li>
+                          <span><i data-feather="award"></i> PMP Certification</span>
+                          <li><Link className='dropdown-item' href='#'>Project Management Professional</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Item 2</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Item 3</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Item 4</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Item 5</Link></li>
                         </div>
                         <div className='col-md-3'>
-                          <li>
-                            <Link className='dropdown-item' href='#'>
-                              Something else here
-                            </Link>
-                          </li>
+                          <span><i data-feather="award"></i> P.Eng Certification</span>
+                          <li><Link className='dropdown-item' href='#'>Item 1</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Item 2</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Item 3</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Item 4</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Item 5</Link></li>
                         </div>
                         <div className='col-md-3'>
-                          <li>
-                            <Link className='dropdown-item' href='#'>
-                              Something else here
-                            </Link>
-                          </li>
+                          <span><i data-feather="award"></i> TEC Certification</span>
+                          <li><Link className='dropdown-item' href='#'>Item 1</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Item 2</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Item 3</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Item 4</Link></li>
+                          <li><Link className='dropdown-item' href='#'>Item 5</Link></li>
                         </div>
                       </div>
                     </div>
                   </ul>
                 </li>
-
+                {/* Membership */}
                 <li className='nav-item dropdown FNV-MegaMenu'>
                   <Link
                     className='nav-link'
                     href='/membership/checkout'
-
-                    // data-bs-toggle='dropdown'
-                    // aria-expanded='false'
+                    data-bs-toggle='dropdown'
+                    aria-expanded='false'
                   >
                     Membership
                   </Link>
-                  {/* <ul className='dropdown-menu'>
-                    <div className='container-fluid'>
+                  <ul className='dropdown-menu pe-0 pb-0 w-50'>
+                    <div className='container-fluid pe-0 pb-0'>
+                      <a>Membership<span>Become a part of the FANAVARAN family</span></a>
                       <div className='row'>
-                        <div className='col-md-3'>
-                          <li>
-                            <a className='dropdown-item' href='#'>
-                              Action
-                            </a>
-                          </li>
+                        <div className='col-md-6 pb-4'>
+                          <div className='row'>
+                            <div className='col-6'>
+                              <span><i data-feather="users"></i> Membership Overview</span>
+                              <li><Link className='dropdown-item' href='/membership/checkout'>Become a Member</Link></li>
+                              <li><Link className='dropdown-item' href='#'>Student Membership</Link></li>
+                              <li><Link className='dropdown-item' href='#'>Local Chapters</Link></li>
+                              <li><Link className='dropdown-item' href='#'>Membership FAQs</Link></li>
+                              <li><Link className='dropdown-item' href='#'>Business Reading Center</Link></li>
+                            </div>
+                            <div className='col-6'>
+                              <span><i data-feather="users"></i> Community</span>
+                              <li><Link className='dropdown-item' href='#'>Global Community</Link></li>
+                              <li><Link className='dropdown-item' href='#'>Volunteering</Link></li>
+                              <li><Link className='dropdown-item' href='#'>Career Central</Link></li>
+                              <li><Link className='dropdown-item' href='#'>Item 4</Link></li>
+                              <li><Link className='dropdown-item' href='#'>Item 5</Link></li>
+                            </div>
+                          </div>
                         </div>
-                        <div className='col-md-3'>
-                          <li>
-                            <a className='dropdown-item' href='#'>
-                              Something else here
-                            </a>
-                          </li>
-                        </div>
-                        <div className='col-md-3'>
-                          <li>
-                            <a className='dropdown-item' href='#'>
-                              Something else here
-                            </a>
-                          </li>
-                        </div>
-                        <div className='col-md-3'>
-                          <li>
-                            <a className='dropdown-item' href='#'>
-                              Something else here
-                            </a>
-                          </li>
+                        <div className='col-md-6'>
+                          <div className='row FNV-QuickAction'>
+                            <div className='col-12'>
+                              <Link className='dropdown-item' href='/membership/checkout'>
+                                <i data-feather="user"></i>
+                                <span>Become a Member</span>
+                              </Link>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </ul> */}
+                  </ul>
                 </li>
 
                 <li className='nav-item dropdown FNV-MegaMenu'>
@@ -669,7 +693,7 @@ const Header = props => {
                   <Link className='nav-link' href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
                     Business Solutions
                   </Link>
-                  <ul className='dropdown-menu'>
+                  <ul className='dropdown-menu w-50'>
                     <div className='container-fluid'>
                       <div className='row'>
                         <div className='col-md-3'>
