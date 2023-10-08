@@ -1,18 +1,30 @@
 @import './variables';
 .FNV-Btn {
   padding: 5px 15px;
-  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
   display: inline-block;
   text-align: center;
   border-width: 0;
+  border-radius: 10px;
+  transition: .3s all ease-in-out;
 
   &.BtnOutline {
     background-color: transparent;
-    border-radius: 0.25rem;
+    border-radius: 10px;
 
     &.PrimaryColor {
-      border: 2px solid $PrimaryColor;
+      border: 1px solid $PrimaryColor;
       color: $PrimaryColor;
+
+      &:hover{
+        color: $WhiteColor;
+      }
+    }
+
+    &:hover{
+      background-color: $PrimaryColor;
     }
   }
 
@@ -23,6 +35,18 @@
   }
 
   &.PrimaryColor {
+    color: $PrimaryColor;
+  }
+
+  &.SecondaryColor{
+    background-color: $SecondaryColor;
+    border-color: $SecondaryColor;
+    color: $WhiteColor;
+  }
+
+  &.LightColor{
+    background-color: $LightColor;
+    border-color: $LightColor;
     color: $PrimaryColor;
   }
 

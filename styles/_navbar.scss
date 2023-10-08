@@ -16,6 +16,11 @@ nav {
         }
       }
 
+      .OffCanvasMenu2{
+        margin-right: 1rem;
+        color: $PrimaryColor;
+      }
+
       .navbar-brand {
         width: 200px;
         padding-left: 0.5rem;
@@ -51,17 +56,42 @@ nav {
 
     &:nth-child(2) {
       background-color: $GrayOneColor;
-      border-bottom: 2px solid $PrimaryColor;
+      border-bottom: 5px solid $PrimaryColor;
       border-top: 1px solid $GrayTwoColor;
+
+      .collapse{
+        .navbar-nav{
+          .nav-item{
+            .nav-link{
+              font-size: 16px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+
+    .FNV_QuickAccess{
+      a{
+        margin-left: .5rem;
+        font-size: 14px;
+        line-height: 22px;
+
+        svg{
+          width: 20px;
+          height: 20px;
+        }
+      }
     }
 
     .navbar-nav {
       .nav-item {
+
         .nav-link {
           font-size: 16px;
           font-weight: 400;
           line-height: 40px;
-          padding: 0 0.75rem;
+          padding: .5rem 1rem;
         }
 
         &:hover .nav-link {
@@ -76,24 +106,120 @@ nav {
 
       &:hover .dropdown-menu {
         display: block;
-        margin-top: 1px;
-        width: 70%;
-        border-radius: 0;
+        margin-top: 0px;
+        width: 80%;
+        padding: 1.5rem;
+        border-width: 0;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: 0px 20px 20px $ShadowPrimary;
+        overflow: hidden;
+      }
+
+      .dropdown-menu{
+        .container-fluid{
+          a{
+            font-size: 24px;
+            color: $PrimaryColor;
+            font-weight: 600;
+
+            span{
+              border-left: 1px solid #ababab;
+              padding-left: 1rem;
+              margin-left: 1rem;
+              font-size: 14px;
+              color: $GrayThreeColor;
+              font-weight: 400;
+            }
+          }
+
+          .row{
+            padding-top: 1rem;
+            .col-md-3, .col-md-6, .col{
+              .row{
+                padding: 0;
+
+                &.FNV-QuickAction{
+                  height: 100%;
+
+                  .col-12{
+                    a{
+                      display: flex;
+                      flex-direction: column;
+                      height: 100%;
+                      justify-content: space-evenly;
+                      align-items: center;
+                      background-color: $LightColor;
+
+                      svg{
+                        width: 50px;
+                        height: 50px;
+                        color: $SecondaryColor;
+                      }
+
+                      span{
+                        font-size: 18px;
+                        border-width: 0;
+                        margin: 0;
+                        padding: 0;
+                        color: $PrimaryColor;
+                      }
+                    }
+                  }
+                }
+              }
+              
+              span{
+                font-size: 16px;
+                line-height: 32px;
+                font-weight: 700;
+                color: $FourthColor;
+                margin-bottom: .8rem;
+                display: block;
+
+                svg{
+                  color: $SecondaryColor;
+                  width: 12px;
+                  height: 12px;
+                }
+              }
+              
+              li{
+                a{
+                  font-size: 14px;
+                  font-weight: 300;
+                  color: $GrayThreeColor;
+                  transition: .1s all ease-in-out;
+
+                  &:hover{
+                    color: $SecondaryColor;
+                    border-radius: 5px;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
 
     .FNV-MegaMenu-Search {
       position: static;
-      direction: rtl;
 
       &:hover .dropdown-menu {
         display: block;
-        margin-top: 1px;
+        margin-top: 0px;
         width: 800px;
-        border-radius: 0;
+        border-width: 0;
         right: 0;
       }
     }
+  }
+
+  &.FNV-MegaMenu{
+    background-color: $LightColor;
   }
 }
 
