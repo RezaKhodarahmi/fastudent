@@ -38,17 +38,16 @@
 
     .container {
         .row {
-            .col-12 {
+            .col-7 {
                 .swiper {
+                    box-shadow: 0px 0px 20px $ShadowFour;
+                    border-radius: 10px;
+
                     .swiper-wrapper {
                         .swiper-slide {
-                            padding: 0 0 7rem;
-
-                            .card {
+                            .d-flex {
                                 border-width: 0;
                                 border-radius: 18px;
-                                overflow: hidden;
-                                position: relative;
                                 cursor: grab;
 
                                 &:active,
@@ -56,58 +55,51 @@
                                     cursor: grabbing;
                                 }
 
-                                badge {
-                                    position: absolute;
-                                    top: 1rem;
-                                    left: 1rem;
-                                    font-size: 14px;
-                                    line-height: 28px;
-                                    font-weight: 500;
-                                    color: $PrimaryColor;
-                                    background-color: $WhiteColor;
-                                    border-radius: 5px;
-                                    padding: .2rem 1rem;
-                                }
+                                .col-md-4{
+                                    padding: 1rem;
 
-                                .card-body {
-                                    background-color: $WhiteColor;
-                                    border-radius: 18px;
-                                    margin-top: -3rem;
+                                    badge{
+                                        &:first-child{
+                                            margin-left: 0;
+                                        }
+                                    }
 
-                                    h4 {
-                                        font-size: 22px;
-                                        line-height: 44px;
-                                        font-weight: 700;
+                                    h4{
+                                        font-size: 18px;
+                                        font-weight: bold;
+                                        line-height: 30px;
                                         color: $PrimaryColor;
-                                        text-align: center;
+                                        margin: 1.5rem 0;
                                     }
 
-                                    price {
-                                        font-size: 22px;
+                                    p{
+                                        font-weight: 14px;
                                         font-weight: 400;
-                                        line-height: 44px;
-                                        color: $SecondaryColor;
-                                        text-align: center;
-                                        width: 100%;
-                                        display: inline-block;
+                                        line-height: 20px;
+                                        color: $PrimaryColor;
+                                        padding-bottom: 1rem;
+                                        border-bottom: 1px solid $SecondaryColor;
                                     }
 
-                                    .d-flex {
-                                        margin-top: 1rem;
+                                    span{
+                                        display: inline-block;
+                                        font-size: 12px;
+                                        color: $PrimaryColor;
+                                        line-height: 20px;
+                                        font-weight: 400;
 
-                                        .FNV-Btn {
-                                            width: 100%;
-
-                                            &:first-child {
-                                                margin-right: 5px;
-                                            }
-
-                                            &:nth-child(2) {
-                                                margin-left: 5px;
-                                            }
+                                        svg{
+                                            color: $SecondaryColor;
+                                            width: 12px;
+                                            height: 12px;
                                         }
                                     }
                                 }
+
+                                .col-md-8{
+
+                                }
+
                             }
                         }
                     }
@@ -149,7 +141,7 @@
 
         .container {
             .row {
-                .col-12 {
+                .col-7 {
                     .swiper {
                         .swiper-wrapper {
                             .swiper-slide {
