@@ -21,6 +21,7 @@ import { styled, useTheme } from '@mui/material/styles'
 import FormHelperText from '@mui/material/FormHelperText'
 import InputAdornment from '@mui/material/InputAdornment'
 import MuiFormControlLabel from '@mui/material/FormControlLabel'
+import { useAuth0 } from '@auth0/auth0-react'
 
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
@@ -107,7 +108,6 @@ const LoginPage = () => {
 
   const {
     control,
-    setError,
     handleSubmit,
     formState: { errors }
   } = useForm({
@@ -121,6 +121,7 @@ const LoginPage = () => {
     auth.login({ email: user, password: pass })
   }
   const imageSource = skin === 'bordered' ? 'MainLogo' : 'MainLogo'
+  const { loginWithRedirect } = useAuth0()
 
   return (
     <Box className='content-right' sx={{ backgroundColor: 'background.paper' }}>
@@ -246,6 +247,10 @@ const LoginPage = () => {
               <Button fullWidth size='large' type='submit' variant='contained' sx={{ mb: 4 }}>
                 Login
               </Button>
+              <button type='button' onClick={() => loginWithRedirect()}>
+                Log In
+              </button>
+
               <Box sx={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
                 <Typography sx={{ color: 'text.secondary', mr: 2 }}>New on our platform?</Typography>
                 <Typography variant='body2'>

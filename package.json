@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "cross-env TZ=America/Toronto next dev",
+    "dev": "cross-env TZ=America/Toronto node server.js",
     "build": "cross-env TZ=America/Toronto next build",
     "start": "cross-env TZ=America/Toronto next start &&  next export",
     "lint": "eslint --fix \"src/**/*.{js,jsx}\"",
@@ -11,6 +11,7 @@
     "build:icons": "node src/iconify-bundle/bundle-icons-react.js"
   },
   "dependencies": {
+    "@auth0/auth0-react": "^2.2.1",
     "@babel/core": "7.20.12",
     "@babel/eslint-parser": "7.19.1",
     "@casl/ability": "6.3.3",
