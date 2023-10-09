@@ -23,8 +23,14 @@ body {
   // Header
   @import './header';
 
-  // Membership
+  // Top Categories
   @import './homeCategory';
+
+  // New Courses
+  @import './NewCoursesHome';
+
+  // New Webinars
+  @import './NewWebinarsHome';
 
   // Membership
   @import './membership';

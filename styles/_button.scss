@@ -3,7 +3,7 @@
   padding: 5px 15px;
   font-size: 14px;
   line-height: 22px;
-  font-weight: 300;
+  font-weight: 400;
   display: inline-block;
   text-align: center;
   border-width: 0;
@@ -17,6 +17,15 @@
     &.PrimaryColor {
       border: 1px solid $PrimaryColor;
       color: $PrimaryColor;
+
+      &:hover{
+        color: $WhiteColor;
+      }
+    }
+
+    &.SecondaryColor {
+      border: 1px solid $SecondaryColor;
+      color: $WhiteColor;
 
       &:hover{
         color: $WhiteColor;
@@ -57,7 +66,7 @@
 
   &.BtnLarge {
     font-size: 20px;
-    padding: 10px 20px;
+    padding: 15px 20px;
   }
 }
 
@@ -72,7 +81,7 @@
 
     &.BtnOutline {
       background-color: transparent;
-      border-radius: 0.25rem;
+      border-radius: 10px;
 
       &.PrimaryColor {
         border: 2px solid $PrimaryColor;
@@ -83,7 +92,7 @@
     &.BtnPrimary {
       background-color: $PrimaryColor;
       color: $WhiteColor;
-      border-radius: 0.25rem;
+      border-radius: 10px;
     }
 
     &.PrimaryColor {

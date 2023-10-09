@@ -42,6 +42,11 @@ body {
   /* For mobile phones: */
   /* For mobile phones: */
   /* For mobile phones: */
+  /* For mobile phones: */
+  /* For mobile phones: */
+}
+body * {
+  transition: 0.3s all ease-in-out;
 }
 body body {
   font-family: "Helvetica Neue", YekanBakh;
@@ -53,7 +58,7 @@ body .FNV-Btn {
   padding: 5px 15px;
   font-size: 14px;
   line-height: 22px;
-  font-weight: 300;
+  font-weight: 400;
   display: inline-block;
   text-align: center;
   border-width: 0;
@@ -69,6 +74,13 @@ body .FNV-Btn.BtnOutline.PrimaryColor {
   color: #003BBF;
 }
 body .FNV-Btn.BtnOutline.PrimaryColor:hover {
+  color: #ffffff;
+}
+body .FNV-Btn.BtnOutline.SecondaryColor {
+  border: 1px solid #FF772C;
+  color: #ffffff;
+}
+body .FNV-Btn.BtnOutline.SecondaryColor:hover {
   color: #ffffff;
 }
 body .FNV-Btn.BtnOutline:hover {
@@ -98,7 +110,7 @@ body .FNV-Btn.BtnMedium {
 }
 body .FNV-Btn.BtnLarge {
   font-size: 20px;
-  padding: 10px 20px;
+  padding: 15px 20px;
 }
 @media (max-width: 575.98px) {
   body .FNV-Btn {
@@ -110,7 +122,7 @@ body .FNV-Btn.BtnLarge {
   }
   body .FNV-Btn.BtnOutline {
     background-color: transparent;
-    border-radius: 0.25rem;
+    border-radius: 10px;
   }
   body .FNV-Btn.BtnOutline.PrimaryColor {
     border: 2px solid #003BBF;
@@ -119,7 +131,7 @@ body .FNV-Btn.BtnLarge {
   body .FNV-Btn.BtnPrimary {
     background-color: #003BBF;
     color: #ffffff;
-    border-radius: 0.25rem;
+    border-radius: 10px;
   }
   body .FNV-Btn.PrimaryColor {
     color: #003BBF;
@@ -411,7 +423,7 @@ body .FNV-Header .container .row .FNV-HCard p {
     background-image: linear-gradient(89.85deg, rgba(26, 48, 211, 0.8) 0.12%, rgba(26, 48, 211, 0.2) 50%, rgba(26, 48, 211, 0.8) 99.87%), url("/img/Header-bg.jpg");
     background-size: cover;
     background-position: center center;
-    height: 550px;
+    height: 350px;
     padding: 0.5rem;
   }
   body .FNV-Header .container {
@@ -485,7 +497,7 @@ body .FNV-Top_Categories {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom left;
-  padding: 0 0 5rem;
+  padding: 0 0 1rem;
 }
 body .FNV-Top_Categories .container {
   position: relative;
@@ -629,7 +641,7 @@ body .FNV-Top_Categories .container:nth-child(2) .row .col-12 p {
   body .FNV-Top_Categories .container:nth-child(2) .row .col-12 {
     margin: 1rem 0;
     background-color: #ffffff;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 0 25px rgba(0, 59, 191, 0.3);
   }
@@ -643,6 +655,366 @@ body .FNV-Top_Categories .container:nth-child(2) .row .col-12 p {
     font-size: 14px;
     line-height: 28px;
     color: #000000;
+  }
+}
+body .FNV-NewCourses {
+  background-color: rgba(0, 59, 191, 0.08);
+  padding: 5rem 0 0;
+  overflow: hidden;
+}
+body .FNV-NewCourses h3 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  color: #003BBF;
+  margin-bottom: 5rem;
+}
+body .FNV-NewCourses h3::before {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 2px;
+  background: #FF772C;
+  left: -1rem;
+  top: 50%;
+  position: absolute;
+}
+body .FNV-NewCourses h3::after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 2px;
+  background: #FF772C;
+  right: -1rem;
+  top: 50%;
+  position: absolute;
+}
+body .FNV-NewCourses .container .row .col-12 .swiper .swiper-wrapper .swiper-slide {
+  padding: 0 0 7rem;
+}
+body .FNV-NewCourses .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card {
+  border-width: 0;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  cursor: grab;
+}
+body .FNV-NewCourses .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card:active, body .FNV-NewCourses .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card:target {
+  cursor: grabbing;
+}
+body .FNV-NewCourses .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #003BBF;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 0.2rem 1rem;
+}
+body .FNV-NewCourses .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body {
+  background-color: #ffffff;
+  border-radius: 18px;
+  margin-top: -3rem;
+}
+body .FNV-NewCourses .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body h4 {
+  font-size: 22px;
+  line-height: 44px;
+  font-weight: 700;
+  color: #003BBF;
+  text-align: center;
+}
+body .FNV-NewCourses .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body price {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 44px;
+  color: #FF772C;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+body .FNV-NewCourses .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body .d-flex {
+  margin-top: 1rem;
+}
+body .FNV-NewCourses .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body .d-flex .FNV-Btn {
+  width: 100%;
+}
+body .FNV-NewCourses .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body .d-flex .FNV-Btn:first-child {
+  margin-right: 5px;
+}
+body .FNV-NewCourses .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body .d-flex .FNV-Btn:nth-child(2) {
+  margin-left: 5px;
+}
+body .FNV-NewCourses .container .row .col-12 .swiper-pagination {
+  top: unset;
+  bottom: 3rem;
+}
+@media only screen and (max-width: 768px) {
+  body .FNV-NewCourses {
+    background-color: rgba(0, 59, 191, 0.08);
+    padding: 2rem 0.5rem 0.5rem;
+    overflow: hidden;
+  }
+  body .FNV-NewCourses h3 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    color: #003BBF;
+    margin-bottom: 5rem;
+  }
+  body .FNV-NewCourses h3::before {
+    display: none;
+  }
+  body .FNV-NewCourses h3::after {
+    display: none;
+  }
+  body .FNV-NewCourses .container .row .col-12 .swiper .swiper-wrapper .swiper-slide {
+    padding: 0 0 7rem;
+  }
+  body .FNV-NewCourses .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card {
+    border-width: 0;
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+    cursor: grab;
+  }
+  body .FNV-NewCourses .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card:active, body .FNV-NewCourses .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card:target {
+    cursor: grabbing;
+  }
+  body .FNV-NewCourses .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #003BBF;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 0.2rem 1rem;
+  }
+  body .FNV-NewCourses .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body {
+    background-color: #ffffff;
+    border-radius: 18px;
+    margin-top: -3rem;
+  }
+  body .FNV-NewCourses .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body h4 {
+    font-size: 22px;
+    line-height: 44px;
+    font-weight: 700;
+    color: #003BBF;
+    text-align: center;
+  }
+  body .FNV-NewCourses .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body price {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 44px;
+    color: #FF772C;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+  }
+  body .FNV-NewCourses .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body .d-flex {
+    margin-top: 1rem;
+  }
+  body .FNV-NewCourses .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body .d-flex .FNV-Btn {
+    width: 100%;
+  }
+  body .FNV-NewCourses .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body .d-flex .FNV-Btn:first-child {
+    margin-right: 5px;
+  }
+  body .FNV-NewCourses .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body .d-flex .FNV-Btn:nth-child(2) {
+    margin-left: 5px;
+  }
+  body .FNV-NewCourses .container .row .col-12 .swiper-pagination {
+    top: unset;
+    bottom: 3rem;
+  }
+}
+body .FNV-NewWebinars {
+  background-color: #ffffff;
+  padding: 5rem 0 0;
+  overflow: hidden;
+}
+body .FNV-NewWebinars h3 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  color: #003BBF;
+  margin-bottom: 5rem;
+}
+body .FNV-NewWebinars h3::before {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 2px;
+  background: #FF772C;
+  left: -1rem;
+  top: 50%;
+  position: absolute;
+}
+body .FNV-NewWebinars h3::after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 2px;
+  background: #FF772C;
+  right: -1rem;
+  top: 50%;
+  position: absolute;
+}
+body .FNV-NewWebinars .container .row .col-12 .swiper .swiper-wrapper .swiper-slide {
+  padding: 0 0 7rem;
+}
+body .FNV-NewWebinars .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card {
+  border-width: 0;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  cursor: grab;
+}
+body .FNV-NewWebinars .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card:active, body .FNV-NewWebinars .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card:target {
+  cursor: grabbing;
+}
+body .FNV-NewWebinars .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #003BBF;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 0.2rem 1rem;
+}
+body .FNV-NewWebinars .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body {
+  background-color: #ffffff;
+  border-radius: 18px;
+  margin-top: -3rem;
+}
+body .FNV-NewWebinars .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body h4 {
+  font-size: 22px;
+  line-height: 44px;
+  font-weight: 700;
+  color: #003BBF;
+  text-align: center;
+}
+body .FNV-NewWebinars .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body price {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 44px;
+  color: #FF772C;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+body .FNV-NewWebinars .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body .d-flex {
+  margin-top: 1rem;
+}
+body .FNV-NewWebinars .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body .d-flex .FNV-Btn {
+  width: 100%;
+}
+body .FNV-NewWebinars .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body .d-flex .FNV-Btn:first-child {
+  margin-right: 5px;
+}
+body .FNV-NewWebinars .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body .d-flex .FNV-Btn:nth-child(2) {
+  margin-left: 5px;
+}
+body .FNV-NewWebinars .container .row .col-12 .swiper-pagination {
+  top: unset;
+  bottom: 3rem;
+}
+@media only screen and (max-width: 768px) {
+  body .FNV-NewWebinars {
+    background-color: #ffffff;
+    padding: 2rem 0.5rem 0.5rem;
+    overflow: hidden;
+  }
+  body .FNV-NewWebinars h3 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    color: #003BBF;
+    margin-bottom: 5rem;
+  }
+  body .FNV-NewWebinars h3::before {
+    display: none;
+  }
+  body .FNV-NewWebinars h3::after {
+    display: none;
+  }
+  body .FNV-NewWebinars .container .row .col-12 .swiper .swiper-wrapper .swiper-slide {
+    padding: 0 0 7rem;
+  }
+  body .FNV-NewWebinars .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card {
+    border-width: 0;
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+    cursor: grab;
+  }
+  body .FNV-NewWebinars .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card:active, body .FNV-NewWebinars .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card:target {
+    cursor: grabbing;
+  }
+  body .FNV-NewWebinars .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #003BBF;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 0.2rem 1rem;
+  }
+  body .FNV-NewWebinars .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body {
+    background-color: #ffffff;
+    border-radius: 18px;
+    margin-top: -3rem;
+  }
+  body .FNV-NewWebinars .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body h4 {
+    font-size: 22px;
+    line-height: 44px;
+    font-weight: 700;
+    color: #003BBF;
+    text-align: center;
+  }
+  body .FNV-NewWebinars .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body price {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 44px;
+    color: #FF772C;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+  }
+  body .FNV-NewWebinars .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body .d-flex {
+    margin-top: 1rem;
+  }
+  body .FNV-NewWebinars .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body .d-flex .FNV-Btn {
+    width: 100%;
+  }
+  body .FNV-NewWebinars .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body .d-flex .FNV-Btn:first-child {
+    margin-right: 5px;
+  }
+  body .FNV-NewWebinars .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body .d-flex .FNV-Btn:nth-child(2) {
+    margin-left: 5px;
+  }
+  body .FNV-NewWebinars .container .row .col-12 .swiper-pagination {
+    top: unset;
+    bottom: 3rem;
   }
 }
 body .FNV-Membership .FNV-Header {
