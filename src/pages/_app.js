@@ -5,7 +5,7 @@ import Head from 'next/head'
 import { Router } from 'next/router'
 import { useRouter } from 'next/router'
 import MainLayout from 'src/layouts/MainLayout'
-import { Auth0Provider } from '@auth0/auth0-react'
+import { SessionProvider } from 'next-auth/react'
 
 // ** Store Imports
 import { store } from 'src/store'
@@ -118,7 +118,7 @@ const App = props => {
   useEffect(() => {
     import('bootstrap/dist/js/bootstrap.bundle')
   }, [])
-  const { Component, emotionCache = clientSideEmotionCache, pageProps } = props
+  const { Component, emotionCache = clientSideEmotionCache, session, ...pageProps } = props
 
   // Variables
   const contentHeightFixed = Component.contentHeightFixed ?? false
@@ -133,16 +133,10 @@ const App = props => {
   const authGuard = false
   const guestGuard = Component.guestGuard ?? false
   const aclAbilities = Component.acl ?? defaultACLObj
-
+  console.log(process.env.API_BASE_URL)
   return (
     <Provider store={store}>
-      <Auth0Provider
-        domain='dev-okhqki3un83zco3x.us.auth0.com'
-        clientId='Rv5qpDWNuiKjyMTSw4kWUfMBJCHId8IU'
-        redirectUri='https://localhost:3000/callback'
-        scope='openid profile email'
-        // audience='https://your-api-identifier/'
-      >
+      <SessionProvider session={session}>
         {/* <GoogleReCaptchaProvider reCaptchaKey='6LdOdHgdAAAAAGWsjsBrXmsXtpTviMp6sgVlB1ty'> */}
         <CacheProvider value={emotionCache}>
           <Head>
@@ -177,8 +171,9 @@ const App = props => {
             </SettingsProvider>
           </AuthProvider>
         </CacheProvider>
+
         {/* </GoogleReCaptchaProvider> */}
-      </Auth0Provider>
+      </SessionProvider>
     </Provider>
   )
 }
