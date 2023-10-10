@@ -3,9 +3,9 @@ import feather from 'feather-icons'
 import Logo from 'src/views/logo.js'
 
 const Footer = props => {
-  // useEffect(() => {
-  //   feather.replace()
-  // })
+  useEffect(() => {
+    feather.replace()
+  })
 
   return (
     <footer>
