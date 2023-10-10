@@ -21,6 +21,7 @@ import { styled, useTheme } from '@mui/material/styles'
 import FormHelperText from '@mui/material/FormHelperText'
 import InputAdornment from '@mui/material/InputAdornment'
 import MuiFormControlLabel from '@mui/material/FormControlLabel'
+import { useSession, signIn, signOut } from 'next-auth/react'
 
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
