@@ -89,7 +89,7 @@ body .FNV-Btn.BtnOutline:hover {
 body .FNV-Btn.BtnPrimary {
   background-color: #003BBF;
   color: #ffffff;
-  border-radius: 0.25rem;
+  border-radius: 10px;
 }
 body .FNV-Btn.PrimaryColor {
   color: #003BBF;
@@ -855,7 +855,7 @@ body .FNV-NewCourses .container .row .col-12 .swiper-pagination {
 }
 body .FNV-NewWebinars {
   background-color: #ffffff;
-  padding: 5rem 0 0;
+  padding: 5rem 0 3rem;
   overflow: hidden;
 }
 body .FNV-NewWebinars h3 {
@@ -887,32 +887,39 @@ body .FNV-NewWebinars h3::after {
   top: 50%;
   position: absolute;
 }
-body .FNV-NewWebinars .container .row .col-7 .swiper {
+body .FNV-NewWebinars .container .row .col-md-7 .swiper {
+  padding: 0px 2rem 5rem 0rem;
+}
+body .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper {
+  padding: 1rem;
+}
+body .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide {
   box-shadow: 0px 0px 20px rgba(0, 59, 191, 0.1);
   border-radius: 10px;
+  overflow: hidden;
 }
-body .FNV-NewWebinars .container .row .col-7 .swiper .swiper-wrapper .swiper-slide .d-flex {
+body .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex {
   border-width: 0;
   border-radius: 18px;
   cursor: grab;
 }
-body .FNV-NewWebinars .container .row .col-7 .swiper .swiper-wrapper .swiper-slide .d-flex:active, body .FNV-NewWebinars .container .row .col-7 .swiper .swiper-wrapper .swiper-slide .d-flex:target {
+body .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex:active, body .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex:target {
   cursor: grabbing;
 }
-body .FNV-NewWebinars .container .row .col-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-4 {
+body .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 {
   padding: 1rem;
 }
-body .FNV-NewWebinars .container .row .col-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-4 badge:first-child {
+body .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 badge:first-child {
   margin-left: 0;
 }
-body .FNV-NewWebinars .container .row .col-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-4 h4 {
+body .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 h4 {
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
   color: #003BBF;
-  margin: 1.5rem 0;
+  margin: 1rem 0;
 }
-body .FNV-NewWebinars .container .row .col-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-4 p {
+body .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 p {
   font-weight: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -920,21 +927,68 @@ body .FNV-NewWebinars .container .row .col-7 .swiper .swiper-wrapper .swiper-sli
   padding-bottom: 1rem;
   border-bottom: 1px solid #FF772C;
 }
-body .FNV-NewWebinars .container .row .col-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-4 span {
+body .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 span {
   display: inline-block;
   font-size: 12px;
   color: #003BBF;
   line-height: 20px;
   font-weight: 400;
 }
-body .FNV-NewWebinars .container .row .col-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-4 span svg {
+body .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 span svg {
   color: #FF772C;
   width: 12px;
   height: 12px;
+  margin-right: 0.5rem;
 }
-body .FNV-NewWebinars .container .row .col-7 .swiper-pagination {
+body .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 .d-flex {
+  margin-top: 1rem;
+}
+body .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 .d-flex .FNV-Btn:first-child {
+  margin-right: 5px;
+}
+body .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 .d-flex .FNV-Btn:nth-child(2) {
+  margin-left: 5px;
+}
+body .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-7 {
+  display: flex;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+body .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-7 img {
+  border-radius: 10px;
+  width: 88%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .FNV-NewWebinars .container .row .col-md-7 .swiper-pagination {
   top: unset;
   bottom: 3rem;
+}
+body .FNV-NewWebinars .container .row .col-md-5 {
+  padding: 1rem 0;
+}
+body .FNV-NewWebinars .container .row .col-md-5 .col-12 {
+  box-shadow: 0px 0px 20px rgba(0, 59, 191, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+body .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-7 {
+  padding: 0rem;
+}
+body .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-7 h4 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #003BBF;
+  margin: 0.5rem 0;
+}
+body .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 {
+  padding: 0rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
 }
 @media only screen and (max-width: 768px) {
   body .FNV-NewWebinars {
