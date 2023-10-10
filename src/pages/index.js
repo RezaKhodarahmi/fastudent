@@ -663,7 +663,11 @@ const Home = () => {
       </section>
 
       {/* Youtube CTA */}
-      <div className='FNV-Youtube'></div>
+      <div className='FNV-YoutubeCTA'>
+        <div className='container'>
+          s
+        </div>
+      </div>
 
       <div className='FNV-FixedSocial'>
         <a href='https://www.instagram.com/fanavaran_ca/' className='FNV-Instagram'>
