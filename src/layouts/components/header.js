@@ -66,9 +66,9 @@ const Header = props => {
     searchCourses(e.target.value)
   }
 
-  // useEffect(() => {
-  //   feather.replace()
-  // }, [courses]);
+  useEffect(() => {
+    feather.replace()
+  }, [courses]);
 
   const searchCourses = query => {
     if (query) {
