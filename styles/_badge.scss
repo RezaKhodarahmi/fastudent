@@ -1,0 +1,18 @@
+badge{
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  padding: .2rem .5rem;
+  margin: .2rem;
+
+  &.PrimaryColor{
+    background-color: $LightColor;
+    color: $PrimaryColor;
+  }
+
+  &.SecondaryColor{
+    background-color: $LightSecond;
+    color: $SecondaryColor;
+  }
+}

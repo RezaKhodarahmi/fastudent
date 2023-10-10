@@ -34,7 +34,7 @@ const Home = () => {
             <div className='col-12 FNV-HCard'>
               <h2>You will succeed again <mark>in Canada</mark> with FANAVARAN!</h2>
 
-              <div class="FNV-HSearch input-group mb-3">
+              <div className="FNV-HSearch input-group mb-3">
                 <Input
                   type='text'
                   placeholder='Search for the desired word...'
@@ -44,7 +44,7 @@ const Home = () => {
                   autoFocus
                 />
                 <button className="FNV-Btn BtnMedium PrimaryColor" type="button" id="button-addon1">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                 </button>
               </div>
             </div>
@@ -150,7 +150,7 @@ const Home = () => {
 
       {/* New Courses */}
       <section className='FNV-NewCourses'>
-        <h3>جدیدترین دوره‌های فناوران</h3>
+        <h3>New Courses</h3>
         <div className='container'>
           <div className='row'>
             <div className='col-12'>
@@ -189,11 +189,11 @@ const Home = () => {
                 className="FNV-NewCoursesSwiper d-none d-sm-none d-md-block"
               >
                 <SwiperSlide>
-                  <div class="card">
+                  <div className="card">
                     <badge>درحال برگزاری</badge>
-                    <img src="img/course1.jpg" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h4 class="card-title">LEED GA Exam Preparation</h4>
+                    <img src="img/course1.jpg" className="card-img-top" alt="..." />
+                    <div className="card-body">
+                      <h4 className="card-title">LEED GA Exam Preparation</h4>
                       <price>$680.00</price>
                       
                       <div className='d-flex justify-content-between'>
@@ -205,11 +205,11 @@ const Home = () => {
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <div class="card">
+                  <div className="card">
                     <badge>درحال ثبت نام</badge>
-                    <img src="img/course2.jpg" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h4 class="card-title">LEED GA Exam Preparation</h4>
+                    <img src="img/course2.jpg" className="card-img-top" alt="..." />
+                    <div className="card-body">
+                      <h4 className="card-title">LEED GA Exam Preparation</h4>
                       <price>$680.00</price>
                       
                       <div className='d-flex justify-content-between'>
@@ -221,11 +221,11 @@ const Home = () => {
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <div class="card">
+                  <div className="card">
                     <badge>درحال ثبت نام</badge>
-                    <img src="img/course3.jpg" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h4 class="card-title">LEED GA Exam Preparation</h4>
+                    <img src="img/course3.jpg" className="card-img-top" alt="..." />
+                    <div className="card-body">
+                      <h4 className="card-title">LEED GA Exam Preparation</h4>
                       <price>$680.00</price>
                       
                       <div className='d-flex justify-content-between'>
@@ -237,11 +237,11 @@ const Home = () => {
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <div class="card">
+                  <div className="card">
                     <badge>درحال ثبت نام</badge>
-                    <img src="img/course1.jpg" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h4 class="card-title">LEED GA Exam Preparation</h4>
+                    <img src="img/course1.jpg" className="card-img-top" alt="..." />
+                    <div className="card-body">
+                      <h4 className="card-title">LEED GA Exam Preparation</h4>
                       <price>$680.00</price>
                       
                       <div className='d-flex justify-content-between'>
@@ -287,11 +287,11 @@ const Home = () => {
                 className="FNV-NewCoursesSwiper d-block d-sm-block d-md-none"
               >
                 <SwiperSlide>
-                  <div class="card">
+                  <div className="card">
                     <badge>درحال برگزاری</badge>
-                    <img src="img/course1.jpg" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h4 class="card-title">LEED GA Exam Preparation</h4>
+                    <img src="img/course1.jpg" className="card-img-top" alt="..." />
+                    <div className="card-body">
+                      <h4 className="card-title">LEED GA Exam Preparation</h4>
                       <price>$680.00</price>
                       
                       <div className='d-flex justify-content-between'>
@@ -303,11 +303,11 @@ const Home = () => {
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <div class="card">
+                  <div className="card">
                     <badge>درحال ثبت نام</badge>
-                    <img src="img/course2.jpg" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h4 class="card-title">LEED GA Exam Preparation</h4>
+                    <img src="img/course2.jpg" className="card-img-top" alt="..." />
+                    <div className="card-body">
+                      <h4 className="card-title">LEED GA Exam Preparation</h4>
                       <price>$680.00</price>
                       
                       <div className='d-flex justify-content-between'>
@@ -319,11 +319,11 @@ const Home = () => {
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <div class="card">
+                  <div className="card">
                     <badge>درحال ثبت نام</badge>
-                    <img src="img/course3.jpg" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h4 class="card-title">LEED GA Exam Preparation</h4>
+                    <img src="img/course3.jpg" className="card-img-top" alt="..." />
+                    <div className="card-body">
+                      <h4 className="card-title">LEED GA Exam Preparation</h4>
                       <price>$680.00</price>
                       
                       <div className='d-flex justify-content-between'>
@@ -335,11 +335,11 @@ const Home = () => {
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <div class="card">
+                  <div className="card">
                     <badge>درحال ثبت نام</badge>
-                    <img src="img/course1.jpg" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h4 class="card-title">LEED GA Exam Preparation</h4>
+                    <img src="img/course1.jpg" className="card-img-top" alt="..." />
+                    <div className="card-body">
+                      <h4 className="card-title">LEED GA Exam Preparation</h4>
                       <price>$680.00</price>
                       
                       <div className='d-flex justify-content-between'>
@@ -357,109 +357,11 @@ const Home = () => {
 
       {/* New Webinars */}
       <section className='FNV-NewWebinars'>
-        <h3>جدیدترین وبینارهای فناوران</h3>
+        <h3>New Webinars</h3>
         <div className='container'>
           <div className='row'>
-            <div className='col-12'>
+            <div className='col-7'>
               {/* Courses Desktop */}
-              <Swiper
-                slidesPerView={3}
-                spaceBetween={10}
-                centeredSlides={false}
-                loop={true}
-                autoplay={{
-                  delay: 2500,
-                  disableOnInteraction: false,
-                }}
-                pagination={{
-                  clickable: true,
-                }}
-
-                navigation={false}
-
-                breakpoints={{
-                  640: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                  },
-                  768: {
-                    slidesPerView: 2,
-                    spaceBetween: 40,
-                  },
-                  1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 50,
-                  },
-                }}
-
-                modules={[Autoplay, Pagination, Navigation]}
-                className="FNV-NewCoursesSwiper d-none d-sm-none d-md-block"
-              >
-                <SwiperSlide>
-                  <div class="card">
-                    <badge>درحال برگزاری</badge>
-                    <img src="img/course1.jpg" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h4 class="card-title">LEED GA Exam Preparation</h4>
-                      <price>$680.00</price>
-                      
-                      <div className='d-flex justify-content-between'>
-                        <Link href='#' className='FNV-Btn BtnOutline PrimaryColor BtnLarge'>See Details</Link>
-                        <Link href='#' className='FNV-Btn SecondaryColor BtnLarge'>Add to Cart</Link>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <div class="card">
-                    <badge>درحال ثبت نام</badge>
-                    <img src="img/course2.jpg" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h4 class="card-title">LEED GA Exam Preparation</h4>
-                      <price>$680.00</price>
-                      
-                      <div className='d-flex justify-content-between'>
-                        <Link href='#' className='FNV-Btn BtnOutline PrimaryColor BtnLarge'>See Details</Link>
-                        <Link href='#' className='FNV-Btn SecondaryColor BtnLarge'>Add to Cart</Link>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <div class="card">
-                    <badge>درحال ثبت نام</badge>
-                    <img src="img/course3.jpg" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h4 class="card-title">LEED GA Exam Preparation</h4>
-                      <price>$680.00</price>
-                      
-                      <div className='d-flex justify-content-between'>
-                        <Link href='#' className='FNV-Btn BtnOutline PrimaryColor BtnLarge'>See Details</Link>
-                        <Link href='#' className='FNV-Btn SecondaryColor BtnLarge'>Add to Cart</Link>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <div class="card">
-                    <badge>درحال ثبت نام</badge>
-                    <img src="img/course1.jpg" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h4 class="card-title">LEED GA Exam Preparation</h4>
-                      <price>$680.00</price>
-                      
-                      <div className='d-flex justify-content-between'>
-                        <Link href='#' className='FNV-Btn BtnOutline PrimaryColor BtnLarge'>See Details</Link>
-                        <Link href='#' className='FNV-Btn SecondaryColor BtnLarge'>Add to Cart</Link>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              </Swiper>
-
               <Swiper
                 slidesPerView={1}
                 spaceBetween={10}
@@ -475,249 +377,29 @@ const Home = () => {
 
                 navigation={false}
 
-                breakpoints={{
-                  640: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                  },
-                  768: {
-                    slidesPerView: 2,
-                    spaceBetween: 40,
-                  },
-                  1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 50,
-                  },
-                }}
-
-                modules={[Autoplay, Pagination]}
-                className="FNV-NewCoursesSwiper d-block d-sm-block d-md-none"
+                modules={[Autoplay, Pagination, Navigation]}
+                className="FNV-NewCoursesSwiper d-none d-sm-none d-md-block"
               >
                 <SwiperSlide>
-                  <div class="card">
-                    <badge>درحال برگزاری</badge>
-                    <img src="img/course1.jpg" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h4 class="card-title">LEED GA Exam Preparation</h4>
-                      <price>$680.00</price>
-                      
-                      <div className='d-flex justify-content-between'>
-                        <Link href='#' className='FNV-Btn BtnOutline PrimaryColor BtnLarge'>See Details</Link>
-                        <Link href='#' className='FNV-Btn SecondaryColor BtnLarge'>Add to Cart</Link>
-                      </div>
+                  <div className='d-flex flex-row'>
+                    <div className='col-md-4'>
+                      <badge className="PrimaryColor">FREE</badge>
+                      <badge className="SecondaryColor">REGISTERING</badge>
+                      <h4>Professional Project Management (PMP) Webinar</h4>
+                      <p>Sample Description About Webinar or Features and Oppotunities in webinar</p>
+                      <span><i data-feather="calendar"></i> 27 September 2023</span>
+                      <span><i data-feather="time"></i> 20:00 Toronto Time | 17:00 Vancouver</span>
+                    </div>
+                    <div className='col-md-8'>
+                      <img src='img/course3.jpg' className='img-fluid w-100' />
                     </div>
                   </div>
                 </SwiperSlide>
 
-                <SwiperSlide>
-                  <div class="card">
-                    <badge>درحال ثبت نام</badge>
-                    <img src="img/course2.jpg" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h4 class="card-title">LEED GA Exam Preparation</h4>
-                      <price>$680.00</price>
-                      
-                      <div className='d-flex justify-content-between'>
-                        <Link href='#' className='FNV-Btn BtnOutline PrimaryColor BtnLarge'>See Details</Link>
-                        <Link href='#' className='FNV-Btn SecondaryColor BtnLarge'>Add to Cart</Link>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <div class="card">
-                    <badge>درحال ثبت نام</badge>
-                    <img src="img/course3.jpg" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h4 class="card-title">LEED GA Exam Preparation</h4>
-                      <price>$680.00</price>
-                      
-                      <div className='d-flex justify-content-between'>
-                        <Link href='#' className='FNV-Btn BtnOutline PrimaryColor BtnLarge'>See Details</Link>
-                        <Link href='#' className='FNV-Btn SecondaryColor BtnLarge'>Add to Cart</Link>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <div class="card">
-                    <badge>درحال ثبت نام</badge>
-                    <img src="img/course1.jpg" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h4 class="card-title">LEED GA Exam Preparation</h4>
-                      <price>$680.00</price>
-                      
-                      <div className='d-flex justify-content-between'>
-                        <Link href='#' className='FNV-Btn BtnOutline PrimaryColor BtnLarge'>See Details</Link>
-                        <Link href='#' className='FNV-Btn SecondaryColor BtnLarge'>Add to Cart</Link>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
               </Swiper>
             </div>
-          </div>
-        </div>
-      </section>
 
-      <section className='FNV-Certification'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-12 col-sm-12 col-md-4 d-flex flex-column justify-content-center'>
-              <h3>Certifications</h3>
-              <p>
-                <strong>You, certified.</strong> The recognition you deserve; the credibility you need. PMI
-                certification is a mark of excellence — in any location, in any industry.
-              </p>
-              <a href='#' className='d-block my-4'>
-                Design Your Project Management Career
-              </a>
-            </div>
-            <div className='col-12 col-sm-12 col-md-4 d-flex flex-column justify-content-center'>
-              <h4>Explore Fanavaran Certifications</h4>
-              <p>Which Fanavaran Certification Is Right For You?</p>
-              <p>
-                Show employers you have the practical knowledge, insights and professional expertise to meet
-                increasingly complex project demands. Stand out with a Fanavaran certification.
-              </p>
-            </div>
-            <div className='col-12 col-sm-12 col-md-4 d-flex justify-content-center align-items-center'>
-              <img
-                src='https://marketplace.canva.com/EAFIEvneNCM/1/0/1600w/canva-golden-elegant-certificate-of-appreciation-0bN-aLORS9U.jpg'
-                className='img-fluid'
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className='FNV-Events'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-12 col-sm-12 col-md-4 d-flex flex-column justify-content-center'>
-              <h3>Events</h3>
-              <p>
-                Sign up for a PMI event to build your skills, develop lasting relationships and engage with experts.
-                Share best practices and gain practical insights.
-              </p>
-              <a href='#' className='d-block my-4'>
-                Explore Events
-              </a>
-            </div>
-            <div className='col-12 col-sm-12 col-md-4 d-flex flex-column justify-content-center'>
-              <h4>Promoted Event Title</h4>
-              <h5>Empowering Your Future – Register Today!</h5>
-              <p>
-                The project management landscape is changing fast. Join us to learn the key power skills you need to
-                succeed.
-              </p>
-            </div>
-            <div className='col-12 col-sm-12 col-md-4 d-flex justify-content-center align-items-center'>
-              <img
-                src='https://fanavaran.ca/wp-content/uploads/2023/04/LIVE-POSTER-persian-01.jpg'
-                className='img-fluid'
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className='FNV-Youtube2'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-6'>
-              <h3>Events</h3>
-            </div>
-            <div className='col-6'>
-              <a href='#'>
-                <i data-feather='menu'></i> SEE MORE
-              </a>
-            </div>
-          </div>
-          <div className='row'>
-            <div className='col-12 col-sm-12 col-md-3 d-flex flex-column justify-content-center'>
-              <a href='#'>
-                <img src='/img/webinar1.jpg' className='img-fluid' />
-                <i data-feather='play'></i>
-              </a>
-            </div>
-
-            <div className='col-12 col-sm-12 col-md-3 d-flex flex-column justify-content-center'>
-              <a href='#'>
-                <img src='/img/webinar2.jpg' className='img-fluid' />
-                <i data-feather='play'></i>
-              </a>
-            </div>
-
-            <div className='col-12 col-sm-12 col-md-3 d-flex flex-column justify-content-center'>
-              <a href='#'>
-                <img src='/img/webinar3.jpg' className='img-fluid' />
-                <i data-feather='play'></i>
-              </a>
-            </div>
-
-            <div className='col-12 col-sm-12 col-md-3 d-flex flex-column justify-content-center'>
-              <a href='#'>
-                <img src='/img/webinar1.jpg' className='img-fluid' />
-                <i data-feather='play'></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className='FNV-Youtube'>
-        <div className='container-fluid'>
-          <div className='row'>
-            <div className='col-12 col-sm-12 col-md-3 d-flex flex-column justify-content-center'>
-              <a href='#'>
-                <i data-feather='play'></i>
-              </a>
-            </div>
-
-            <div className='col-12 col-sm-12 col-md-3 d-flex flex-column justify-content-center'>
-              <a href='#'>
-                <i data-feather='play'></i>
-              </a>
-            </div>
-
-            <div className='col-12 col-sm-12 col-md-3 d-flex flex-column justify-content-center'>
-              <a href='#'>
-                <i data-feather='play'></i>
-              </a>
-            </div>
-
-            <div className='col-12 col-sm-12 col-md-3 d-flex flex-column justify-content-center'>
-              <a href='#'>
-                <i data-feather='play'></i>
-              </a>
-            </div>
-
-            <div className='col-12 col-sm-12 col-md-3 d-flex flex-column justify-content-center'>
-              <a href='#'>
-                <i data-feather='play'></i>
-              </a>
-            </div>
-
-            <div className='col-12 col-sm-12 col-md-3 d-flex flex-column justify-content-center'>
-              <a href='#'>
-                <i data-feather='play'></i>
-              </a>
-            </div>
-
-            <div className='col-12 col-sm-12 col-md-3 d-flex flex-column justify-content-center'>
-              <a href='#'>
-                <i data-feather='play'></i>
-              </a>
-            </div>
-
-            <div className='col-12 col-sm-12 col-md-3 d-flex flex-column justify-content-center'>
-              <a href='#'>
-                <i data-feather='menu'></i> See More
-              </a>
-            </div>
+            <div className='col-5'></div>
           </div>
         </div>
       </section>
