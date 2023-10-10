@@ -1086,6 +1086,19 @@ body .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 {
     bottom: 3rem;
   }
 }
+body .FNV-YoutubeCTA {
+  background-color: #ffffff;
+  padding: 4rem 0;
+}
+body .FNV-YoutubeCTA .container {
+  background: #eb01a5;
+  background-image: url("/img/YoutubeCTA.jpg"); /* fallback */
+  background-image: linear-gradient(rgba(255, 118, 44, 0.631372549), rgba(255, 118, 44, 0.631372549)), url("/img/YoutubeCTA.jpg");
+  background-size: cover;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+}
 body .FNV-Membership .FNV-Header {
   background-image: unset;
   padding: 3rem 0;
