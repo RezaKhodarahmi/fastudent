@@ -404,6 +404,9 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Youtube CTA */}
+      <div className='FNV-Youtube'></div>
+
       <div className='FNV-FixedSocial'>
         <a href='https://www.instagram.com/fanavaran_ca/' className='FNV-Instagram'>
           <i data-feather='instagram'></i>

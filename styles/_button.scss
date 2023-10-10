@@ -39,8 +39,19 @@
 
   &.BtnPrimary {
     background-color: $PrimaryColor;
+    border: 1px solid $PrimaryColor;
     color: $WhiteColor;
+<<<<<<< Updated upstream
     border-radius: 0.25rem;
+=======
+    border-radius: 10px;
+
+    &:hover{
+      background-color: $WhiteColor;
+      border: 1px solid $PrimaryColor;
+      color: $PrimaryColor;
+    }
+>>>>>>> Stashed changes
   }
 
   &.PrimaryColor {
@@ -49,8 +60,14 @@
 
   &.SecondaryColor{
     background-color: $SecondaryColor;
-    border-color: $SecondaryColor;
+    border: 1px solid $SecondaryColor;
     color: $WhiteColor;
+
+    &:hover{
+      background-color: $WhiteColor;
+      border: 1px solid $SecondaryColor;
+      color: $SecondaryColor;
+    }
   }
 
   &.LightColor{

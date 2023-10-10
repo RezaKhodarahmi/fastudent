@@ -88,16 +88,27 @@ body .FNV-Btn.BtnOutline:hover {
 }
 body .FNV-Btn.BtnPrimary {
   background-color: #003BBF;
+  border: 1px solid #003BBF;
   color: #ffffff;
   border-radius: 0.25rem;
+}
+body .FNV-Btn.BtnPrimary:hover {
+  background-color: #ffffff;
+  border: 1px solid #003BBF;
+  color: #003BBF;
 }
 body .FNV-Btn.PrimaryColor {
   color: #003BBF;
 }
 body .FNV-Btn.SecondaryColor {
   background-color: #FF772C;
-  border-color: #FF772C;
+  border: 1px solid #FF772C;
   color: #ffffff;
+}
+body .FNV-Btn.SecondaryColor:hover {
+  background-color: #ffffff;
+  border: 1px solid #FF772C;
+  color: #FF772C;
 }
 body .FNV-Btn.LightColor {
   background-color: #F0F3FB;
