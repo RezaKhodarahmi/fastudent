@@ -357,7 +357,7 @@ const Home = () => {
 
       {/* New Webinars */}
       <section className='FNV-NewWebinars'>
-        <h3>New Webinars</h3>
+        <h3>New Webinarsz</h3>
         <div className='container'>
           <div className='row'>
             <div className='col-7'>
