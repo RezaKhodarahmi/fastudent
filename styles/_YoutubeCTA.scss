@@ -1,0 +1,53 @@
+.FNV-YoutubeCTA{
+    background-color: $WhiteColor;
+    padding: 4rem 0 0;
+
+    .container{
+        background: #eb01a5;
+        background-image: url("/img/YoutubeCTA.jpg"); /* fallback */
+        background-image: linear-gradient($ShadowSecondary2, $ShadowSecondary2), url("/img/YoutubeCTA.jpg");
+        background-position: center center;
+        background-size: cover;
+        height: 400px;
+        border-radius: 10px;
+        overflow: hidden;
+        transition:all 0.5s ;
+        -webkit-transition:all 0.5s ;
+        -o-transition:all 0.5s ;
+        -moz-transition:all 0.5s ;
+        z-index: 10;
+        position: relative;
+
+        &:hover{
+            background-size: 110%;
+            background-position: center center;
+            transition: .3s all ease-in-out;
+            cursor: pointer;
+        }
+
+        svg{
+            color: $WhiteColor;
+            margin-bottom: 1rem;
+        }
+
+        p{
+            font-size: 18px;
+            line-height: 30px;   
+            font-weight: 500;
+            text-align: center;
+            color: $WhiteColor;
+            margin-bottom: 1rem;
+        }
+
+        a.BtnOutline{
+            border: 2px solid $WhiteColor;
+            color: $WhiteColor;
+            padding: 1rem 4rem;
+
+            &:hover{
+                background-color: $WhiteColor;
+                color: $SecondaryColor;
+            }
+        }
+    }
+}

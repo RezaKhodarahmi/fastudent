@@ -335,7 +335,8 @@ const Home = () => {
                   </div>
                 </SwiperSlide>
               </Swiper>
-
+              
+              {/* Courses Mobile */}
               <Swiper
                 slidesPerView={1}
                 spaceBetween={10}
@@ -663,7 +664,272 @@ const Home = () => {
       </section>
 
       {/* Youtube CTA */}
-      <div className='FNV-Youtube'></div>
+      <section className='FNV-YoutubeCTA'>
+        <div className='container d-flex justify-content-center align-items-center flex-column'>
+          <svg width="42" height="30" viewBox="0 0 42 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M41.1346 4.69428C40.6507 2.85867 39.232 1.41168 37.433 0.917412C34.1463 0 20.9995 0 20.9995 0C20.9995 0 7.85323 0 4.56659 0.88263C2.80214 1.37638 1.3489 2.85894 0.864919 4.69428C0 8.04697 0 15 0 15C0 15 0 21.9881 0.864919 25.3057C1.34942 27.1411 2.76753 28.5881 4.56684 29.0823C7.88783 30 21 30 21 30C21 30 34.1463 30 37.433 29.1174C39.2323 28.6234 40.6507 27.1764 41.1352 25.341C41.9998 21.9881 41.9998 15.0353 41.9998 15.0353C41.9998 15.0353 42.0344 8.04697 41.1346 4.69428ZM16.8139 21.4235V8.57655L27.7461 15L16.8139 21.4235Z" fill="white"/>
+          </svg>
+
+            <p>
+              We at Fanavaran provide useful and diverse content for your further information<br />
+              We have collected about Canadian courses, designations and certificates.<br />
+              It is enough to visit the YouTube channel of the technicians.
+            </p>
+
+            <a href='https://www.youtube.com/channel/UCKbfvGZBXPn2Y3LGb9YDiIA' target='_blank' className='FNV-Btn BtnOutline BtnLarge'>FANAVARAN Youtube Channel</a>
+        </div>
+      </section>
+
+      {/* Blog */}
+      <section className='FNV-LatestBlog'>
+        <h3>Latest Blogs</h3>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-12'>
+              {/* Blogs Desktop */}
+              <Swiper
+                slidesPerView={3}
+                spaceBetween={10}
+                centeredSlides={false}
+                loop={true}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false
+                }}
+                pagination={{
+                  clickable: true
+                }}
+                navigation={false}
+                breakpoints={{
+                  640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                  },
+                  768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40
+                  },
+                  1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50
+                  }
+                }}
+                modules={[Autoplay, Pagination, Navigation]}
+                className='FNV-NewCoursesSwiper d-none d-sm-none d-md-block'
+              >
+                <SwiperSlide>
+                  <div className='card'>
+                    <img src='img/course1.jpg' className='card-img-top' alt='...' />
+                    <div className='card-body'>
+                      <h4 className='card-title'>LEED GA Exam Preparation</h4>
+
+                      <span>
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10.4688 2.225V1.25C10.4688 0.99375 10.2563 0.78125 10 0.78125C9.74375 0.78125 9.53125 0.99375 9.53125 1.25V2.1875H5.46875V1.25C5.46875 0.99375 5.25625 0.78125 5 0.78125C4.74375 0.78125 4.53125 0.99375 4.53125 1.25V2.225C2.84375 2.38125 2.025 3.3875 1.9 4.88125C1.8875 5.0625 2.0375 5.2125 2.2125 5.2125H12.7875C12.9687 5.2125 13.1187 5.05625 13.1 4.88125C12.975 3.3875 12.1562 2.38125 10.4688 2.225Z" fill="#003BBF" fill-opacity="0.3"/>
+                          <path d="M12.5 6.15002H2.5C2.15625 6.15002 1.875 6.43127 1.875 6.77502V10.625C1.875 12.5 2.8125 13.75 5 13.75H10C12.1875 13.75 13.125 12.5 13.125 10.625V6.77502C13.125 6.43127 12.8438 6.15002 12.5 6.15002ZM9.275 9.36877L8.9625 9.68752H8.95625L7.0625 11.5813C6.98125 11.6625 6.8125 11.75 6.69375 11.7625L5.85 11.8875C5.54375 11.9313 5.33125 11.7125 5.375 11.4125L5.49375 10.5625C5.5125 10.4438 5.59375 10.2813 5.675 10.1938L7.575 8.30002L7.8875 7.98127C8.09375 7.77502 8.325 7.62502 8.575 7.62502C8.7875 7.62502 9.01875 7.72502 9.275 7.98127C9.8375 8.54377 9.65625 8.98752 9.275 9.36877Z" fill="#003BBF" fill-opacity="0.3"/>
+                        </svg>
+
+                        Date of Publish
+                      </span>
+
+                      <Link href='#' className='FNV-Btn BtnPrimary BtnLarge'>
+                        Read More
+                      </Link>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                
+                <SwiperSlide>
+                  <div className='card'>
+                    <img src='img/course2.jpg' className='card-img-top' alt='...' />
+                    <div className='card-body'>
+                      <h4 className='card-title'>LEED GA Exam Preparation</h4>
+
+                      <span>
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10.4688 2.225V1.25C10.4688 0.99375 10.2563 0.78125 10 0.78125C9.74375 0.78125 9.53125 0.99375 9.53125 1.25V2.1875H5.46875V1.25C5.46875 0.99375 5.25625 0.78125 5 0.78125C4.74375 0.78125 4.53125 0.99375 4.53125 1.25V2.225C2.84375 2.38125 2.025 3.3875 1.9 4.88125C1.8875 5.0625 2.0375 5.2125 2.2125 5.2125H12.7875C12.9687 5.2125 13.1187 5.05625 13.1 4.88125C12.975 3.3875 12.1562 2.38125 10.4688 2.225Z" fill="#003BBF" fill-opacity="0.3"/>
+                          <path d="M12.5 6.15002H2.5C2.15625 6.15002 1.875 6.43127 1.875 6.77502V10.625C1.875 12.5 2.8125 13.75 5 13.75H10C12.1875 13.75 13.125 12.5 13.125 10.625V6.77502C13.125 6.43127 12.8438 6.15002 12.5 6.15002ZM9.275 9.36877L8.9625 9.68752H8.95625L7.0625 11.5813C6.98125 11.6625 6.8125 11.75 6.69375 11.7625L5.85 11.8875C5.54375 11.9313 5.33125 11.7125 5.375 11.4125L5.49375 10.5625C5.5125 10.4438 5.59375 10.2813 5.675 10.1938L7.575 8.30002L7.8875 7.98127C8.09375 7.77502 8.325 7.62502 8.575 7.62502C8.7875 7.62502 9.01875 7.72502 9.275 7.98127C9.8375 8.54377 9.65625 8.98752 9.275 9.36877Z" fill="#003BBF" fill-opacity="0.3"/>
+                        </svg>
+
+                        Date of Publish
+                      </span>
+
+                      <Link href='#' className='FNV-Btn BtnPrimary BtnLarge'>
+                        Read More
+                      </Link>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className='card'>
+                    <img src='img/course3.jpg' className='card-img-top' alt='...' />
+                    <div className='card-body'>
+                      <h4 className='card-title'>LEED GA Exam Preparation</h4>
+
+                      <span>
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10.4688 2.225V1.25C10.4688 0.99375 10.2563 0.78125 10 0.78125C9.74375 0.78125 9.53125 0.99375 9.53125 1.25V2.1875H5.46875V1.25C5.46875 0.99375 5.25625 0.78125 5 0.78125C4.74375 0.78125 4.53125 0.99375 4.53125 1.25V2.225C2.84375 2.38125 2.025 3.3875 1.9 4.88125C1.8875 5.0625 2.0375 5.2125 2.2125 5.2125H12.7875C12.9687 5.2125 13.1187 5.05625 13.1 4.88125C12.975 3.3875 12.1562 2.38125 10.4688 2.225Z" fill="#003BBF" fill-opacity="0.3"/>
+                          <path d="M12.5 6.15002H2.5C2.15625 6.15002 1.875 6.43127 1.875 6.77502V10.625C1.875 12.5 2.8125 13.75 5 13.75H10C12.1875 13.75 13.125 12.5 13.125 10.625V6.77502C13.125 6.43127 12.8438 6.15002 12.5 6.15002ZM9.275 9.36877L8.9625 9.68752H8.95625L7.0625 11.5813C6.98125 11.6625 6.8125 11.75 6.69375 11.7625L5.85 11.8875C5.54375 11.9313 5.33125 11.7125 5.375 11.4125L5.49375 10.5625C5.5125 10.4438 5.59375 10.2813 5.675 10.1938L7.575 8.30002L7.8875 7.98127C8.09375 7.77502 8.325 7.62502 8.575 7.62502C8.7875 7.62502 9.01875 7.72502 9.275 7.98127C9.8375 8.54377 9.65625 8.98752 9.275 9.36877Z" fill="#003BBF" fill-opacity="0.3"/>
+                        </svg>
+
+                        Date of Publish
+                      </span>
+
+                      <Link href='#' className='FNV-Btn BtnPrimary BtnLarge'>
+                        Read More
+                      </Link>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className='card'>
+                    <img src='img/course1.jpg' className='card-img-top' alt='...' />
+                    <div className='card-body'>
+                      <h4 className='card-title'>LEED GA Exam Preparation</h4>
+
+                      <span>
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10.4688 2.225V1.25C10.4688 0.99375 10.2563 0.78125 10 0.78125C9.74375 0.78125 9.53125 0.99375 9.53125 1.25V2.1875H5.46875V1.25C5.46875 0.99375 5.25625 0.78125 5 0.78125C4.74375 0.78125 4.53125 0.99375 4.53125 1.25V2.225C2.84375 2.38125 2.025 3.3875 1.9 4.88125C1.8875 5.0625 2.0375 5.2125 2.2125 5.2125H12.7875C12.9687 5.2125 13.1187 5.05625 13.1 4.88125C12.975 3.3875 12.1562 2.38125 10.4688 2.225Z" fill="#003BBF" fill-opacity="0.3"/>
+                          <path d="M12.5 6.15002H2.5C2.15625 6.15002 1.875 6.43127 1.875 6.77502V10.625C1.875 12.5 2.8125 13.75 5 13.75H10C12.1875 13.75 13.125 12.5 13.125 10.625V6.77502C13.125 6.43127 12.8438 6.15002 12.5 6.15002ZM9.275 9.36877L8.9625 9.68752H8.95625L7.0625 11.5813C6.98125 11.6625 6.8125 11.75 6.69375 11.7625L5.85 11.8875C5.54375 11.9313 5.33125 11.7125 5.375 11.4125L5.49375 10.5625C5.5125 10.4438 5.59375 10.2813 5.675 10.1938L7.575 8.30002L7.8875 7.98127C8.09375 7.77502 8.325 7.62502 8.575 7.62502C8.7875 7.62502 9.01875 7.72502 9.275 7.98127C9.8375 8.54377 9.65625 8.98752 9.275 9.36877Z" fill="#003BBF" fill-opacity="0.3"/>
+                        </svg>
+
+                        Date of Publish
+                      </span>
+
+                      <Link href='#' className='FNV-Btn BtnPrimary BtnLarge'>
+                        Read More
+                      </Link>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              </Swiper>
+
+              {/* Blogs Mobile */}
+              <Swiper
+                slidesPerView={1}
+                spaceBetween={10}
+                centeredSlides={false}
+                loop={true}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false
+                }}
+                pagination={{
+                  clickable: true
+                }}
+                navigation={false}
+                breakpoints={{
+                  640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                  },
+                  768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40
+                  },
+                  1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50
+                  }
+                }}
+                modules={[Autoplay, Pagination]}
+                className='FNV-NewCoursesSwiper d-block d-sm-block d-md-none'
+              >
+
+                <SwiperSlide>
+                  <div className='card'>
+                    <img src='img/course1.jpg' className='card-img-top' alt='...' />
+                    <div className='card-body'>
+                      <h4 className='card-title'>LEED GA Exam Preparation</h4>
+
+                      <span>
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10.4688 2.225V1.25C10.4688 0.99375 10.2563 0.78125 10 0.78125C9.74375 0.78125 9.53125 0.99375 9.53125 1.25V2.1875H5.46875V1.25C5.46875 0.99375 5.25625 0.78125 5 0.78125C4.74375 0.78125 4.53125 0.99375 4.53125 1.25V2.225C2.84375 2.38125 2.025 3.3875 1.9 4.88125C1.8875 5.0625 2.0375 5.2125 2.2125 5.2125H12.7875C12.9687 5.2125 13.1187 5.05625 13.1 4.88125C12.975 3.3875 12.1562 2.38125 10.4688 2.225Z" fill="#003BBF" fill-opacity="0.3"/>
+                          <path d="M12.5 6.15002H2.5C2.15625 6.15002 1.875 6.43127 1.875 6.77502V10.625C1.875 12.5 2.8125 13.75 5 13.75H10C12.1875 13.75 13.125 12.5 13.125 10.625V6.77502C13.125 6.43127 12.8438 6.15002 12.5 6.15002ZM9.275 9.36877L8.9625 9.68752H8.95625L7.0625 11.5813C6.98125 11.6625 6.8125 11.75 6.69375 11.7625L5.85 11.8875C5.54375 11.9313 5.33125 11.7125 5.375 11.4125L5.49375 10.5625C5.5125 10.4438 5.59375 10.2813 5.675 10.1938L7.575 8.30002L7.8875 7.98127C8.09375 7.77502 8.325 7.62502 8.575 7.62502C8.7875 7.62502 9.01875 7.72502 9.275 7.98127C9.8375 8.54377 9.65625 8.98752 9.275 9.36877Z" fill="#003BBF" fill-opacity="0.3"/>
+                        </svg>
+
+                        Date of Publish
+                      </span>
+
+                      <Link href='#' className='FNV-Btn BtnPrimary BtnLarge'>
+                        Read More
+                      </Link>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className='card'>
+                    <img src='img/course2.jpg' className='card-img-top' alt='...' />
+                    <div className='card-body'>
+                      <h4 className='card-title'>LEED GA Exam Preparation</h4>
+
+                      <span>
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10.4688 2.225V1.25C10.4688 0.99375 10.2563 0.78125 10 0.78125C9.74375 0.78125 9.53125 0.99375 9.53125 1.25V2.1875H5.46875V1.25C5.46875 0.99375 5.25625 0.78125 5 0.78125C4.74375 0.78125 4.53125 0.99375 4.53125 1.25V2.225C2.84375 2.38125 2.025 3.3875 1.9 4.88125C1.8875 5.0625 2.0375 5.2125 2.2125 5.2125H12.7875C12.9687 5.2125 13.1187 5.05625 13.1 4.88125C12.975 3.3875 12.1562 2.38125 10.4688 2.225Z" fill="#003BBF" fill-opacity="0.3"/>
+                          <path d="M12.5 6.15002H2.5C2.15625 6.15002 1.875 6.43127 1.875 6.77502V10.625C1.875 12.5 2.8125 13.75 5 13.75H10C12.1875 13.75 13.125 12.5 13.125 10.625V6.77502C13.125 6.43127 12.8438 6.15002 12.5 6.15002ZM9.275 9.36877L8.9625 9.68752H8.95625L7.0625 11.5813C6.98125 11.6625 6.8125 11.75 6.69375 11.7625L5.85 11.8875C5.54375 11.9313 5.33125 11.7125 5.375 11.4125L5.49375 10.5625C5.5125 10.4438 5.59375 10.2813 5.675 10.1938L7.575 8.30002L7.8875 7.98127C8.09375 7.77502 8.325 7.62502 8.575 7.62502C8.7875 7.62502 9.01875 7.72502 9.275 7.98127C9.8375 8.54377 9.65625 8.98752 9.275 9.36877Z" fill="#003BBF" fill-opacity="0.3"/>
+                        </svg>
+
+                        Date of Publish
+                      </span>
+
+                      <Link href='#' className='FNV-Btn BtnPrimary BtnLarge'>
+                        Read More
+                      </Link>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className='card'>
+                    <img src='img/course3.jpg' className='card-img-top' alt='...' />
+                    <div className='card-body'>
+                      <h4 className='card-title'>LEED GA Exam Preparation</h4>
+
+                      <span>
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10.4688 2.225V1.25C10.4688 0.99375 10.2563 0.78125 10 0.78125C9.74375 0.78125 9.53125 0.99375 9.53125 1.25V2.1875H5.46875V1.25C5.46875 0.99375 5.25625 0.78125 5 0.78125C4.74375 0.78125 4.53125 0.99375 4.53125 1.25V2.225C2.84375 2.38125 2.025 3.3875 1.9 4.88125C1.8875 5.0625 2.0375 5.2125 2.2125 5.2125H12.7875C12.9687 5.2125 13.1187 5.05625 13.1 4.88125C12.975 3.3875 12.1562 2.38125 10.4688 2.225Z" fill="#003BBF" fill-opacity="0.3"/>
+                          <path d="M12.5 6.15002H2.5C2.15625 6.15002 1.875 6.43127 1.875 6.77502V10.625C1.875 12.5 2.8125 13.75 5 13.75H10C12.1875 13.75 13.125 12.5 13.125 10.625V6.77502C13.125 6.43127 12.8438 6.15002 12.5 6.15002ZM9.275 9.36877L8.9625 9.68752H8.95625L7.0625 11.5813C6.98125 11.6625 6.8125 11.75 6.69375 11.7625L5.85 11.8875C5.54375 11.9313 5.33125 11.7125 5.375 11.4125L5.49375 10.5625C5.5125 10.4438 5.59375 10.2813 5.675 10.1938L7.575 8.30002L7.8875 7.98127C8.09375 7.77502 8.325 7.62502 8.575 7.62502C8.7875 7.62502 9.01875 7.72502 9.275 7.98127C9.8375 8.54377 9.65625 8.98752 9.275 9.36877Z" fill="#003BBF" fill-opacity="0.3"/>
+                        </svg>
+
+                        Date of Publish
+                      </span>
+
+                      <Link href='#' className='FNV-Btn BtnPrimary BtnLarge'>
+                        Read More
+                      </Link>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className='card'>
+                    <img src='img/course1.jpg' className='card-img-top' alt='...' />
+                    <div className='card-body'>
+                      <h4 className='card-title'>LEED GA Exam Preparation</h4>
+
+                      <span>
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10.4688 2.225V1.25C10.4688 0.99375 10.2563 0.78125 10 0.78125C9.74375 0.78125 9.53125 0.99375 9.53125 1.25V2.1875H5.46875V1.25C5.46875 0.99375 5.25625 0.78125 5 0.78125C4.74375 0.78125 4.53125 0.99375 4.53125 1.25V2.225C2.84375 2.38125 2.025 3.3875 1.9 4.88125C1.8875 5.0625 2.0375 5.2125 2.2125 5.2125H12.7875C12.9687 5.2125 13.1187 5.05625 13.1 4.88125C12.975 3.3875 12.1562 2.38125 10.4688 2.225Z" fill="#003BBF" fill-opacity="0.3"/>
+                          <path d="M12.5 6.15002H2.5C2.15625 6.15002 1.875 6.43127 1.875 6.77502V10.625C1.875 12.5 2.8125 13.75 5 13.75H10C12.1875 13.75 13.125 12.5 13.125 10.625V6.77502C13.125 6.43127 12.8438 6.15002 12.5 6.15002ZM9.275 9.36877L8.9625 9.68752H8.95625L7.0625 11.5813C6.98125 11.6625 6.8125 11.75 6.69375 11.7625L5.85 11.8875C5.54375 11.9313 5.33125 11.7125 5.375 11.4125L5.49375 10.5625C5.5125 10.4438 5.59375 10.2813 5.675 10.1938L7.575 8.30002L7.8875 7.98127C8.09375 7.77502 8.325 7.62502 8.575 7.62502C8.7875 7.62502 9.01875 7.72502 9.275 7.98127C9.8375 8.54377 9.65625 8.98752 9.275 9.36877Z" fill="#003BBF" fill-opacity="0.3"/>
+                        </svg>
+
+                        Date of Publish
+                      </span>
+
+                      <Link href='#' className='FNV-Btn BtnPrimary BtnLarge'>
+                        Read More
+                      </Link>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              </Swiper>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <div className='FNV-FixedSocial'>
         <a href='https://www.instagram.com/fanavaran_ca/' className='FNV-Instagram'>

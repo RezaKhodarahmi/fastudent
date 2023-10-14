@@ -1086,6 +1086,137 @@ body .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 {
     bottom: 3rem;
   }
 }
+body .FNV-YoutubeCTA {
+  background-color: #ffffff;
+  padding: 4rem 0 0;
+}
+body .FNV-YoutubeCTA .container {
+  background: #eb01a5;
+  background-image: url("/img/YoutubeCTA.jpg"); /* fallback */
+  background-image: linear-gradient(rgba(255, 118, 44, 0.631372549), rgba(255, 118, 44, 0.631372549)), url("/img/YoutubeCTA.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  z-index: 10;
+  position: relative;
+}
+body .FNV-YoutubeCTA .container:hover {
+  background-size: 110%;
+  background-position: center center;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+body .FNV-YoutubeCTA .container svg {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+body .FNV-YoutubeCTA .container p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+body .FNV-YoutubeCTA .container a.BtnOutline {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 1rem 4rem;
+}
+body .FNV-YoutubeCTA .container a.BtnOutline:hover {
+  background-color: #ffffff;
+  color: #FF772C;
+}
+body .FNV-LatestBlog {
+  background: rgb(0, 59, 191);
+  background: linear-gradient(180deg, rgba(0, 59, 191, 0.1993172269) 0%, rgb(255, 255, 255) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003bbf",endColorstr="#ffffff",GradientType=1);
+  margin-top: -12rem;
+  padding-top: 20rem;
+  padding-bottom: 5rem;
+  z-index: 1;
+  overflow: hidden;
+}
+body .FNV-LatestBlog h3 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  color: #003BBF;
+  margin-bottom: 5rem;
+}
+body .FNV-LatestBlog h3::before {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 2px;
+  background: #FF772C;
+  left: -1rem;
+  top: 50%;
+  position: absolute;
+}
+body .FNV-LatestBlog h3::after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 2px;
+  background: #FF772C;
+  right: -1rem;
+  top: 50%;
+  position: absolute;
+}
+body .FNV-LatestBlog .container .row .col-12 .swiper .swiper-wrapper .swiper-slide {
+  padding: 0 0 10rem;
+}
+body .FNV-LatestBlog .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card {
+  border-width: 0;
+  border-radius: 18px;
+  overflow: visible;
+  cursor: grab;
+}
+body .FNV-LatestBlog .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card:active, body .FNV-LatestBlog .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card:target {
+  cursor: grabbing;
+}
+body .FNV-LatestBlog .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body {
+  background-color: #ffffff;
+  border-radius: 18px;
+  margin-top: -3rem;
+  height: 100px;
+}
+body .FNV-LatestBlog .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body h4 {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #003BBF;
+  text-align: left;
+}
+body .FNV-LatestBlog .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body span {
+  font-size: 14px;
+  line-height: 1px;
+  font-weight: 400;
+  color: #003BBF;
+  margin-bottom: 5rem;
+}
+body .FNV-LatestBlog .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body span svg {
+  width: 16px;
+  height: 16px;
+}
+body .FNV-LatestBlog .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body .FNV-Btn {
+  position: absolute;
+  bottom: -1.5rem;
+  z-index: 15;
+}
+body .FNV-LatestBlog .container .row .col-12 .swiper-pagination {
+  top: unset;
+  bottom: 3rem;
+}
 body .FNV-Membership .FNV-Header {
   background-image: unset;
   padding: 3rem 0;
