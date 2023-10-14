@@ -1172,6 +1172,51 @@ body .FNV-LatestBlog h3::after {
   top: 50%;
   position: absolute;
 }
+body .FNV-LatestBlog .container .row .col-12 .swiper .swiper-wrapper .swiper-slide {
+  padding: 0 0 10rem;
+}
+body .FNV-LatestBlog .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card {
+  border-width: 0;
+  border-radius: 18px;
+  overflow: visible;
+  cursor: grab;
+}
+body .FNV-LatestBlog .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card:active, body .FNV-LatestBlog .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card:target {
+  cursor: grabbing;
+}
+body .FNV-LatestBlog .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body {
+  background-color: #ffffff;
+  border-radius: 18px;
+  margin-top: -3rem;
+  height: 100px;
+}
+body .FNV-LatestBlog .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body h4 {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #003BBF;
+  text-align: left;
+}
+body .FNV-LatestBlog .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body span {
+  font-size: 14px;
+  line-height: 1px;
+  font-weight: 400;
+  color: #003BBF;
+  margin-bottom: 5rem;
+}
+body .FNV-LatestBlog .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body span svg {
+  width: 16px;
+  height: 16px;
+}
+body .FNV-LatestBlog .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body .FNV-Btn {
+  position: absolute;
+  bottom: -1.5rem;
+  z-index: 15;
+}
+body .FNV-LatestBlog .container .row .col-12 .swiper-pagination {
+  top: unset;
+  bottom: 3rem;
+}
 body .FNV-Membership .FNV-Header {
   background-image: unset;
   padding: 3rem 0;

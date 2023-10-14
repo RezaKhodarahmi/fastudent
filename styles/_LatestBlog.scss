@@ -43,4 +43,69 @@
             position: absolute;
         }
     }
+
+    .container {
+        .row {
+            .col-12 {
+                .swiper {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            padding: 0 0 10rem;
+
+                            .card {
+                                border-width: 0;
+                                border-radius: 18px;
+                                overflow: visible;
+                                cursor: grab;
+
+                                &:active,
+                                &:target {
+                                    cursor: grabbing;
+                                }
+
+                                .card-body {
+                                    background-color: $WhiteColor;
+                                    border-radius: 18px;
+                                    margin-top: -3rem;
+                                    height: 100px;
+
+                                    h4 {
+                                        font-size: 16px;
+                                        line-height: 32px;
+                                        font-weight: 700;
+                                        color: $PrimaryColor;
+                                        text-align: left;
+                                    }
+
+                                    span{
+                                        font-size: 14px;
+                                        line-height: 1px;
+                                        font-weight: 400;
+                                        color: $PrimaryColor;
+                                        margin-bottom: 5rem;
+
+                                        svg{
+                                            width: 16px;
+                                            height: 16px;
+                                        }
+                                    }
+
+                                    .FNV-Btn{
+                                        position: absolute;
+                                        bottom: -1.5rem;
+                                        z-index: 15;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .swiper-pagination {
+                    top: unset;
+                    bottom: 3rem;
+                }
+            }
+        }
+    }
 }
