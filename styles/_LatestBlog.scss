@@ -1,0 +1,46 @@
+.FNV-LatestBlog{
+    background: rgb(0,59,191);
+    background: -moz-linear-gradient(180deg, rgba(0,59,191,0.19931722689075626) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,59,191,0.19931722689075626) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(180deg, rgba(0,59,191,0.19931722689075626) 0%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003bbf",endColorstr="#ffffff",GradientType=1);
+
+    margin-top: -12rem;
+    padding-top: 20rem;
+    padding-bottom: 5rem;
+    z-index: 1;
+    overflow: hidden;
+
+    h3 {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        color: $PrimaryColor;
+        margin-bottom: 5rem;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 40%;
+            height: 2px;
+            background: $SecondaryColor;
+            left: -1rem;
+            top: 50%;
+            position: absolute;
+        }
+
+
+        &::after {
+            content: "";
+            display: block;
+            width: 40%;
+            height: 2px;
+            background: $SecondaryColor;
+            right: -1rem;
+            top: 50%;
+            position: absolute;
+        }
+    }
+}
