@@ -681,7 +681,7 @@ const Home = () => {
       </section>
 
       {/* Blog */}
-      <section className='FNV-LatestBlog'>
+      <section className='FNV-BlogTestiomonial'>
         <h3>Latest Blogs</h3>
         <div className='container'>
           <div className='row'>
@@ -697,25 +697,11 @@ const Home = () => {
                   disableOnInteraction: false
                 }}
                 pagination={{
-                  clickable: true
+                  clickable: false
                 }}
                 navigation={false}
-                breakpoints={{
-                  640: {
-                    slidesPerView: 1,
-                    spaceBetween: 20
-                  },
-                  768: {
-                    slidesPerView: 2,
-                    spaceBetween: 40
-                  },
-                  1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 50
-                  }
-                }}
                 modules={[Autoplay, Pagination, Navigation]}
-                className='FNV-NewCoursesSwiper d-none d-sm-none d-md-block'
+                className='d-none d-sm-none d-md-block'
               >
                 <SwiperSlide>
                   <div className='card'>
@@ -835,7 +821,7 @@ const Home = () => {
                   }
                 }}
                 modules={[Autoplay, Pagination]}
-                className='FNV-NewCoursesSwiper d-block d-sm-block d-md-none'
+                className='d-block d-sm-block d-md-none'
               >
 
                 <SwiperSlide>
@@ -922,6 +908,213 @@ const Home = () => {
                       <Link href='#' className='FNV-Btn BtnPrimary BtnLarge'>
                         Read More
                       </Link>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              </Swiper>
+            </div>
+          </div>
+
+          <div className='row justify-content-center'>
+            <Link href='#' className='FNV-Btn BtnOutline PrimaryColor BtnLarge FNV-SeeMore'>See All Blogs</Link>
+          </div>
+        </div>
+
+        <h3>Testimonials</h3>
+        <div className='container FNV-Testimonials'>
+          <div className='row'>
+            <div className='col-12'>
+              {/* Testimonial Desktop */}
+              <Swiper
+                slidesPerView={3}
+                spaceBetween={10}
+                centeredSlides={false}
+                loop={true}
+                autoplay={{
+                  delay: 3000,
+                  disableOnInteraction: false
+                }}
+                navigation={false}
+                breakpoints={{
+                  640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                  },
+                  768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40
+                  },
+                  1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50
+                  }
+                }}
+                modules={[Autoplay]}
+                className='FNV-NewCoursesSwiper d-none d-sm-none d-md-block'
+              >
+                {/* Slider */}
+                <SwiperSlide>
+                  <div className='card'>
+                    <div className='card-body'>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <div className='d-flex flex-row w-100'>
+                        <div className='col-3'>
+                          <img src='img/user.png' />
+                        </div>
+                        <div className='col-9'>
+                          <span className='FNV-PersonName'>Name</span>
+                          <span className='FNV-CourseName'>Course Name</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                {/* Slider */}
+                <SwiperSlide>
+                  <div className='card'>
+                    <div className='card-body'>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <div className='d-flex flex-row w-100'>
+                        <div className='col-3'>
+                          <img src='img/user.png' />
+                        </div>
+                        <div className='col-9'>
+                          <span className='FNV-PersonName'>Name</span>
+                          <span className='FNV-CourseName'>Course Name</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                {/* Slider */}
+                <SwiperSlide>
+                  <div className='card'>
+                    <div className='card-body'>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <div className='d-flex flex-row w-100'>
+                        <div className='col-3'>
+                          <img src='img/user.png' />
+                        </div>
+                        <div className='col-9'>
+                          <span className='FNV-PersonName'>Name</span>
+                          <span className='FNV-CourseName'>Course Name</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                {/* Slider */}
+                <SwiperSlide>
+                  <div className='card'>
+                    <div className='card-body'>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <div className='d-flex flex-row w-100'>
+                        <div className='col-3'>
+                          <img src='img/user.png' />
+                        </div>
+                        <div className='col-9'>
+                          <span className='FNV-PersonName'>Name</span>
+                          <span className='FNV-CourseName'>Course Name</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              </Swiper>
+
+              {/* Testimonial Mobile */}
+              <Swiper
+                slidesPerView={1}
+                spaceBetween={10}
+                centeredSlides={false}
+                loop={true}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false
+                }}
+                navigation={false}
+                breakpoints={{
+                  640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                  },
+                  768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40
+                  },
+                  1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50
+                  }
+                }}
+                modules={[Autoplay, Pagination]}
+                className='FNV-NewCoursesSwiper d-block d-sm-block d-md-none'
+              >
+                {/* Slider */}
+                <SwiperSlide>
+                  <div className='card'>
+                    <div className='card-body'>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <div className='d-flex flex-row w-100'>
+                        <div className='col-3'>
+                          <img src='img/user.png' />
+                        </div>
+                        <div className='col-9'>
+                          <span className='FNV-PersonName'>Name</span>
+                          <span className='FNV-CourseName'>Course Name</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                {/* Slider */}
+                <SwiperSlide>
+                  <div className='card'>
+                    <div className='card-body'>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <div className='d-flex flex-row w-100'>
+                        <div className='col-3'>
+                          <img src='img/user.png' />
+                        </div>
+                        <div className='col-9'>
+                          <span className='FNV-PersonName'>Name</span>
+                          <span className='FNV-CourseName'>Course Name</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                {/* Slider */}
+                <SwiperSlide>
+                  <div className='card'>
+                    <div className='card-body'>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <div className='d-flex flex-row w-100'>
+                        <div className='col-3'>
+                          <img src='img/user.png' />
+                        </div>
+                        <div className='col-9'>
+                          <span className='FNV-PersonName'>Name</span>
+                          <span className='FNV-CourseName'>Course Name</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                {/* Slider */}
+                <SwiperSlide>
+                  <div className='card'>
+                    <div className='card-body'>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <div className='d-flex flex-row w-100'>
+                        <div className='col-3'>
+                          <img src='img/user.png' />
+                        </div>
+                        <div className='col-9'>
+                          <span className='FNV-PersonName'>Name</span>
+                          <span className='FNV-CourseName'>Course Name</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </SwiperSlide>
