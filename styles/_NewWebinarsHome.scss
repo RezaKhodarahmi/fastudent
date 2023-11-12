@@ -188,97 +188,150 @@
             width: 100%;
             position: relative;
             color: $PrimaryColor;
-            margin-bottom: 5rem;
+            margin-bottom: 1rem;
 
             &::before {
                 display: none;
             }
 
+
             &::after {
                 display: none;
             }
         }
-
+    
         .container {
             .row {
-                .col-7 {
+                .col-md-7 {
+                    padding: 0rem;
                     .swiper {
+                        padding: 0rem;
                         .swiper-wrapper {
                             .swiper-slide {
-                                padding: 0 0 7rem;
-
-                                .card {
+                                box-shadow: 0px 0px 20px $ShadowFour;
+                                border-radius: 10px;
+                                overflow: hidden;
+                                width: 100%;
+    
+                                .d-flex {
                                     border-width: 0;
                                     border-radius: 18px;
-                                    overflow: hidden;
-                                    position: relative;
                                     cursor: grab;
-
+    
                                     &:active,
                                     &:target {
                                         cursor: grabbing;
                                     }
-
-                                    badge {
-                                        position: absolute;
-                                        top: 1rem;
-                                        left: 1rem;
-                                        font-size: 14px;
-                                        line-height: 28px;
-                                        font-weight: 500;
-                                        color: $PrimaryColor;
-                                        background-color: $WhiteColor;
-                                        border-radius: 5px;
-                                        padding: .2rem 1rem;
-                                    }
-
-                                    .card-body {
-                                        background-color: $WhiteColor;
-                                        border-radius: 18px;
-                                        margin-top: -3rem;
-
-                                        h4 {
-                                            font-size: 22px;
-                                            line-height: 44px;
-                                            font-weight: 700;
+    
+                                    .col-md-5{
+                                        padding: 1rem;
+    
+                                        badge{
+                                            font-size: 12px;
+                                            &:first-child{
+                                                margin-left: 0;
+                                            }
+                                        }
+    
+                                        h4{
+                                            font-size: 14px;
+                                            font-weight: bold;
+                                            line-height: 30px;
                                             color: $PrimaryColor;
-                                            text-align: center;
+                                            margin: 1rem 0;
                                         }
-
-                                        price {
-                                            font-size: 22px;
+    
+                                        p{
+                                            font-weight: 12px;
                                             font-weight: 400;
-                                            line-height: 44px;
-                                            color: $SecondaryColor;
-                                            text-align: center;
-                                            width: 100%;
-                                            display: inline-block;
+                                            line-height: 20px;
+                                            color: $PrimaryColor;
+                                            border-bottom: 1px solid $SecondaryColor;
                                         }
-
-                                        .d-flex {
+    
+                                        span{
+                                            display: inline-block;
+                                            font-size: 12px;
+                                            color: $PrimaryColor;
+                                            line-height: 20px;
+                                            font-weight: 400;
+    
+                                            svg{
+                                                color: $SecondaryColor;
+                                                width: 12px;
+                                                height: 12px;
+                                                margin-right: .5rem;
+                                            }
+                                        }
+    
+                                        .d-flex{
                                             margin-top: 1rem;
-
-                                            .FNV-Btn {
-                                                width: 100%;
-
-                                                &:first-child {
+    
+                                            .FNV-Btn{
+                                                &:first-child{
                                                     margin-right: 5px;
                                                 }
-
-                                                &:nth-child(2) {
+    
+                                                &:nth-child(2){
                                                     margin-left: 5px;
                                                 }
                                             }
                                         }
                                     }
+    
+                                    .col-md-7{
+                                        display: flex;
+                                        padding-right: 2rem;
+                                        padding-top: 1rem;
+                                        padding-bottom: 1rem;
+    
+                                        img{
+                                            border-radius: 10px;
+                                            width: 88%;
+                                            object-fit: cover;
+                                        }
+                                    }
+    
                                 }
                             }
                         }
                     }
-
+    
                     .swiper-pagination {
                         top: unset;
                         bottom: 3rem;
+                    }
+                }
+    
+                .col-md-5{
+                    padding: 1rem;
+                    .col-12{
+                        box-shadow: 0px 0px 20px $ShadowFour;
+                        border-radius: 10px;
+                        padding: 1rem;
+                        margin-bottom: 1rem;
+    
+                        .d-flex{
+                            .col-7{
+                                padding: 0rem;
+    
+                                h4{
+                                    font-size: 14px;
+                                    font-weight: bold;
+                                    line-height: 24px;
+                                    color: $PrimaryColor;
+                                    margin: .5rem 0;
+                                }
+                            }
+    
+                            .col-5{
+                                padding: 0rem;
+                                display: flex;
+                                flex-flow: column;
+                                justify-content: space-around;
+                            }
+                        }
+    
                     }
                 }
             }

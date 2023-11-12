@@ -461,7 +461,7 @@ const Home = () => {
               {/* Courses Desktop */}
               <Swiper
                 slidesPerView={1}
-                spaceBetween={10}
+                spaceBetween={20}
                 centeredSlides={true}
                 loop={true}
                 autoplay={{
