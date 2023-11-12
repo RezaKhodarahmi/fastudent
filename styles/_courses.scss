@@ -1,66 +1,405 @@
 @import './variables';
-.courses .courses-FNV-Header {
-  background-image: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url('/img/Course_Featured.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  padding: 5rem 0;
-  height: unset;
 
-  .container {
-    .row {
-      .col-12.page-header {
-        h1 {
-          font-size: 14px;
-          color: $WhiteColor;
+.FNV-Courses {
+  .FNV-Header {
+    background-image: radial-gradient(circle, rgba(255, 119, 44, 0.4) 0%, rgba(255, 119, 44, 0.9) 100%), url("/img/Course_Featured.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 5rem 0;
+    height: unset;
+
+    .container {
+      .row {
+        justify-content: center;
+
+        .col-12 {
+          h1 {
+            font-size: 48px;
+            font-weight: bold;
+            color: $WhiteColor;
+            text-align: center;
+            margin-bottom: 2rem;
+          }
+
+          .FNV-HSearch {
+            background-color: rgba(255, 255, 255, 0.6);
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            padding: .8rem;
+            border: 1px solid $WhiteColor;
+
+            .FNV-HSearchInput {
+              background-color: transparent !important;
+              border-width: 0;
+              box-shadow: unset;
+              border-radius: 15px;
+              color: $PrimaryColor;
+              font-size: 16px;
+              font-weight: 400;
+
+              &::after,
+              &::before {
+                display: none;
+              }
+
+              &::placeholder,
+              &:-ms-input-placeholder {
+                color: $PrimaryColor !important;
+              }
+            }
+
+            button {
+              background-color: $PrimaryColor;
+              color: $WhiteColor;
+              border-radius: 15px 15px 15px 15px !important;
+              width: 75px;
+
+              svg {
+                width: 30px;
+                height: 30px;
+                color: $WhiteColor
+              }
+            }
+          }
         }
-        h2 {
-          color: $WhiteColor;
+      }
+    }
+  }
+
+  .FNV-CourseList {
+    padding: 5rem 0;
+
+    .container {
+      .row {
+
+        // Nav Pills
+        .col-md-9 {
+          padding: 0;
+          &:first-child {
+            .nav {
+              margin-bottom: 2rem;
+
+              .nav-item {
+                margin: 0 7px;
+
+                .nav-link {
+                  background-color: $SecondPrimaryColor;
+                  color: $PrimaryColor;
+                  border-radius: 12px;
+                  font-size: 14px;
+                  font-weight: 400;
+
+                  &.active {
+                    background-color: $PrimaryColor !important;
+                    color: $WhiteColor;
+                  }
+                }
+              }
+            }
+          }
+
+          &:nth-child(2) {
+            margin: 1rem 0 4rem;
+
+            .row {
+              .col-md-4 {
+                select {
+                  border-radius: 8px;
+                  border: 1px solid $PrimaryColor;
+                  background-color: transparent;
+                  color: $PrimaryColor;
+
+                  option {
+                    border-radius: 8px;
+                    border: 1px solid $PrimaryColor;
+                    color: $PrimaryColor
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .tab-content {
+          .tab-pane{
+            .row {
+              .col-md-4{
+                padding: .8rem;
+                .card {
+                  border-width: 0;
+                  border-radius: 18px;
+                  overflow: hidden;
+                  position: relative;
+                  cursor: grab;
+
+                  &:active,
+                  &:target {
+                    cursor: grabbing;
+                  }
+
+                  badge {
+                    position: absolute;
+                    top: 1rem;
+                    left: 1rem;
+                    font-size: 14px;
+                    line-height: 28px;
+                    font-weight: 500;
+                    color: $PrimaryColor;
+                    background-color: $WhiteColor;
+                    border-radius: 5px;
+                    padding: .2rem 1rem;
+                  }
+
+                  .card-body {
+                    background-color: $WhiteColor;
+                    border-radius: 18px;
+                    margin-top: -3rem;
+
+                    h4 {
+                      font-size: 22px;
+                      line-height: 44px;
+                      font-weight: 700;
+                      color: $PrimaryColor;
+                      text-align: center;
+                    }
+
+                    price {
+                      font-size: 22px;
+                      font-weight: 400;
+                      line-height: 44px;
+                      color: $SecondaryColor;
+                      text-align: center;
+                      width: 100%;
+                      display: inline-block;
+                    }
+
+                    .d-flex {
+                      margin-top: 1rem;
+
+                      .FNV-Btn {
+                        width: 100%;
+
+                        &:first-child {
+                          margin-right: 5px;
+                        }
+
+                        &:nth-child(2) {
+                          margin-left: 5px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
   }
 }
 
-.courses .FNV-Course-List {
-  .container {
-    .row {
-      .col-md-8 {
-        .FNV-Course-Card {
-          display: block;
-          border-radius: 5px;
-          background-color: $GrayOneColor;
-          padding: 0;
-          margin: 1rem 0;
-          overflow: hidden;
-
-          .row {
-            padding: 0;
-            margin: 0;
-
-            .col-md-4 {
-              padding: 0;
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+  .FNV-Courses {
+    .FNV-Header {
+      background-image: radial-gradient(circle, rgba(255, 119, 44, 0.4) 0%, rgba(255, 119, 44, 0.9) 100%), url("/img/Course_Featured.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      padding: 2rem 0;
+      height: unset;
+  
+      .container {
+        .row {
+          justify-content: center;
+  
+          .col-12 {
+            h1 {
+              font-size: 28px;
+              font-weight: bold;
+              color: $WhiteColor;
+              text-align: center;
+              margin-bottom: 2rem;
             }
-
-            .col-md-8 {
-              padding: 1rem;
-
-              h3 {
-                font-size: 1.5rem;
-                color: $GrayThreeColor;
+  
+            .FNV-HSearch {
+              background-color: rgba(255, 255, 255, 0.6);
+              width: 100%;
+              border-radius: 15px;
+              overflow: hidden;
+              padding: .8rem;
+              border: 1px solid $WhiteColor;
+  
+              .FNV-HSearchInput {
+                background-color: transparent !important;
+                border-width: 0;
+                box-shadow: unset;
+                border-radius: 15px;
+                color: $PrimaryColor;
+                font-size: 16px;
+                font-weight: 400;
+  
+                &::after,
+                &::before {
+                  display: none;
+                }
+  
+                &::placeholder,
+                &:-ms-input-placeholder {
+                  color: $PrimaryColor !important;
+                }
               }
-
-              h4 {
-                font-size: 14px;
-                font-weight: 600;
-                font-family: 'Poppins', YekanBakh;
-                color: $GrayThreeColor;
+  
+              button {
+                background-color: $PrimaryColor;
+                color: $WhiteColor;
+                border-radius: 15px 15px 15px 15px !important;
+                width: 75px;
+  
+                svg {
+                  width: 30px;
+                  height: 30px;
+                  color: $WhiteColor
+                }
               }
+            }
+          }
+        }
+      }
+    }
+  
+    .FNV-CourseList {
+      padding: 1rem;
+  
+      .container {
+        .row {
+  
+          // Nav Pills
+          .col-md-9 {
+            padding: 1rem;
 
-              p {
-                font-size: 14px;
-                text-align: justify;
-                color: $GrayThreeColor;
+            &:first-child {
+              padding: 0;
+              .nav {
+                margin-bottom: 1rem;
+  
+                .nav-item {
+                  margin: .2rem;
+  
+                  .nav-link {
+                    background-color: $SecondPrimaryColor;
+                    color: $PrimaryColor;
+                    border-radius: 12px;
+                    font-size: 10px;
+                    font-weight: 400;
+  
+                    &.active {
+                      background-color: $PrimaryColor !important;
+                      color: $WhiteColor;
+                    }
+                  }
+                }
+              }
+            }
+  
+            &:nth-child(2) {
+              margin-bottom: 1rem;
+              .row {
+                .col-md-4 {
+                  padding: 0;
+
+                  select {
+                    border-radius: 8px;
+                    border: 1px solid $PrimaryColor;
+                    background-color: transparent;
+                    color: $PrimaryColor;
+                    font-size: 10px;
+  
+                    option {
+                      border-radius: 8px;
+                      border: 1px solid $PrimaryColor;
+                      color: $PrimaryColor
+                    }
+                  }
+                }
+              }
+            }
+          }
+  
+          .tab-content {
+            .tab-pane{
+              .row {
+                .col-md-4{
+                  padding: .8rem 0;
+                  .card {
+                    border-width: 0;
+                    border-radius: 18px;
+                    overflow: hidden;
+                    position: relative;
+                    cursor: grab;
+  
+                    &:active,
+                    &:target {
+                      cursor: grabbing;
+                    }
+  
+                    badge {
+                      position: absolute;
+                      top: 1rem;
+                      left: 1rem;
+                      font-size: 14px;
+                      line-height: 28px;
+                      font-weight: 500;
+                      color: $PrimaryColor;
+                      background-color: $WhiteColor;
+                      border-radius: 5px;
+                      padding: .2rem 1rem;
+                    }
+  
+                    .card-body {
+                      background-color: $WhiteColor;
+                      border-radius: 18px;
+                      margin-top: -3rem;
+  
+                      h4 {
+                        font-size: 22px;
+                        line-height: 44px;
+                        font-weight: 700;
+                        color: $PrimaryColor;
+                        text-align: center;
+                      }
+  
+                      price {
+                        font-size: 22px;
+                        font-weight: 400;
+                        line-height: 44px;
+                        color: $SecondaryColor;
+                        text-align: center;
+                        width: 100%;
+                        display: inline-block;
+                      }
+  
+                      .d-flex {
+                        margin-top: 1rem;
+  
+                        .FNV-Btn {
+                          width: 100%;
+  
+                          &:first-child {
+                            margin-right: 5px;
+                          }
+  
+                          &:nth-child(2) {
+                            margin-left: 5px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
               }
             }
           }

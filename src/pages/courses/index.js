@@ -8,6 +8,7 @@ import Pagination from '@mui/material/Pagination'
 import Select from '@mui/material/Select'
 import MenuItem from '@mui/material/MenuItem'
 import InputLabel from '@mui/material/InputLabel'
+import Input from '@mui/material/Input'
 import FormControl from '@mui/material/FormControl'
 import { Grid, Box } from '@mui/material'
 import Button from '@mui/material/Button'
@@ -65,135 +66,205 @@ const Index = () => {
   }
 
   return (
-    <div className='courses' style={{ marginTop: '50px', marginBottom: '50px' }}>
+    <div className='FNV-Courses'>
       <Helmet>
         <title>Fanavaran Courses</title>
       </Helmet>
-      <section className='courses-FNV-Header'>
-        <div className='container d-flex align-items-center h-100'>
+      {/* Header */}
+      <section className='FNV-Header'>
+        <div className='container'>
           <div className='row'>
-            <div className='col-12 page-header'>
+            <div className='col-12 col-sm-6 col-md-6'>
               <h1>Fanavaran Courses</h1>
-              <h2>Find an Authorized Training Partner Course</h2>
+
+              <div className='FNV-HSearch input-group mb-3'>
+                <Input type='text' placeholder='Search for the desired word...' className='form-control FNV-HSearchInput'
+                  aria-describedby='button-addon1' fullWidth autoFocus />
+                <button className='FNV-Btn BtnMedium PrimaryColor' type='button' id='button-addon1'>
+                  <svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' fill='none'
+                    stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'
+                    className='feather feather-search'>
+                    <circle cx='11' cy='11' r='8'></circle>
+                    <line x1='21' y1='21' x2='16.65' y2='16.65'></line>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className='FNV-Course-List'>
+      {/* Course Categories Section */}
+      <section className='FNV-CourseList'>
         <div className='container'>
-          <div className='row'>
-            <div className='col-md-4 d-sm-none d-md-block'>
-              <Grid mb={5} mt={5} container className='match-height'>
-                <h3>Filter by category:</h3>
-                <FormControl fullWidth>
-                  {Array.isArray(category) &&
-                    category.map(category => (
-                      <FormControlLabel
-                        key={category.id}
-                        control={
-                          <Checkbox
-                            color='primary'
-                            checked={selectedCategories.includes(category.title)}
-                            onChange={handleCategoryChange}
-                            value={category.title}
-                          />
-                        }
-                        label={category.title}
-                      />
-                    ))}
-                </FormControl>
-              </Grid>
-              {/* <h3>Filter by Instructor:</h3>
-              <Grid mb={5} mt={5} container className='match-height'>
-                <FormControl fullWidth>
-                  <InputLabel>Teacher</InputLabel>
-                  <Select fullWidth multiple value={selectedTeachers} onChange={handleTeacherChange}>
-                    {Array.isArray(teacher) &&
-                      teacher.map(teacher => (
-                        <MenuItem key={teacher.id} value={teacher.firstName + ' ' + teacher.lastName}>
-                          {teacher.firstName + ' ' + teacher.lastName}
-                        </MenuItem>
-                      ))}
-                  </Select>
-                </FormControl>
-              </Grid> */}
-              <Grid mt={5} container className='match-height'>
-                <Button onClick={handleClearFilters} variant='contained' color='secondary'>
-                  Clear filters
-                </Button>
-              </Grid>
+          <div className="row justify-content-center">
+
+            {/* Navbar Filters */}
+            <div className='col-md-9'>
+              <ul class="nav justify-content-between nav-pills mb-3 p-0" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="All-Courses-tab" data-bs-toggle="pill" data-bs-target="#All-Courses"
+                    type="button" role="tab" aria-controls="All-Courses" aria-selected="true">All Courses</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="Engineering-tab" data-bs-toggle="pill" data-bs-target="#Engineering"
+                    type="button" role="tab" aria-controls="Engineering" aria-selected="false">Engineering</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="Project-Management-tab" data-bs-toggle="pill"
+                    data-bs-target="#Project-Management" type="button" role="tab" aria-controls="Project-Management"
+                    aria-selected="false">Project Management</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="Architect-tab" data-bs-toggle="pill" data-bs-target="#Architect"
+                    type="button" role="tab" aria-controls="Architect" aria-selected="false">Architect</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="Technician-tab" data-bs-toggle="pill" data-bs-target="#Technician"
+                    type="button" role="tab" aria-controls="Technician" aria-selected="false">Technician</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="Job-Seeker-tab" data-bs-toggle="pill" data-bs-target="#Job-Seeker"
+                    type="button" role="tab" aria-controls="Job-Seeker" aria-selected="false">Job Seeker</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="Self-Employee-tab" data-bs-toggle="pill" data-bs-target="#Self-Employee"
+                    type="button" role="tab" aria-controls="Self-Employee" aria-selected="false">Self Employee</button>
+                </li>
+              </ul>
             </div>
 
-            <div className='col-sm-12 col-md-8'>
-              {Array.isArray(course) ? (
-                (() => {
-                  const filteredCourses = course
-                    .filter(
-                      c =>
-                        selectedCategories.length === 0 ||
-                        c.categories.some(cat => selectedCategories.includes(cat.title))
-                    )
-                    .filter(
-                      c =>
-                        selectedTeachers.length === 0 ||
-                        c.teachers.some(teacher =>
-                          selectedTeachers.includes(teacher.firstName + ' ' + teacher.lastName)
+            {/* Filters */}
+            <div className="col-md-9">
+              <div className='row'>
+                {/* Type */}
+                <div className='col-4 col-md-4'>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Course Type</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+
+                {/* Start Date */}
+                <div className='col-4 col-md-4'>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Course Start Date</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+
+                {/* Sort */}
+                <div className='col-4 col-md-4'>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Display Sort</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            {/* Tab Content */}
+            <div class="tab-content" id="pills-tabContent">
+              {/* All Courses */}
+              <div class="tab-pane fade show active" id="All-Courses" role="tabpanel" aria-labelledby="All-Courses-tab" tabindex="0">
+
+                <div className='row'>
+                  {Array.isArray(course) ? (
+                    (() => {
+                      const filteredCourses = course
+                        .filter(
+                          c =>
+                            selectedCategories.length === 0 ||
+                            c.categories.some(cat => selectedCategories.includes(cat.title))
                         )
-                    )
-                    .slice((page - 1) * 5, page * 5)
+                        .filter(
+                          c =>
+                            selectedTeachers.length === 0 ||
+                            c.teachers.some(teacher =>
+                              selectedTeachers.includes(teacher.firstName + ' ' + teacher.lastName)
+                            )
+                        )
+                        .slice((page - 1) * 5, page * 5)
 
-                  return filteredCourses.length ? (
-                    filteredCourses.map(course =>
-                      course.cycles?.length ? (
-                        <Link href={`/courses/${course.slug}`} key={course.id} passHref>
-                          <div className='FNV-Course-Card'>
-                            <div className='row'>
-                              <div className='col-12 col-md-4'>
-                                <img src={course.image} className='img-fluid' alt={course.title} />
-                              </div>
-                              <div className='col-12 col-md-8'>
-                                <h3>{course.title}</h3>
-                                <div class='col-12 d-flex justify-content-between'>
-                                  <h4>
-                                    <i data-feather='clock'></i>Duration: {course?.cycles[0].duration}
-                                  </h4>
-                                  <h4>
-                                    {' '}
-                                    <i data-feather='play'></i>Start from: {course?.cycles[0].startDate}
-                                  </h4>
-                                  <h4>
-                                    <i data-feather='calendar'></i>On: {course?.cycles[0].days}
-                                  </h4>
+                      return filteredCourses.length ? (
+                        filteredCourses.map(course =>
+                          course.cycles?.length ? (
+                            <Link className='col-md-4' href={`/courses/${course.slug}`} key={course.id} passHref>
+                              <div className='card'>
+                                <badge>درحال برگزاری</badge>
+                                <img src={course.image} className='card-img-top' alt={course.title} />
+                                <div className='card-body'>
+                                  <h4 className='card-title'>{course.title}</h4>
+                                  <price>$680.00</price>
+
+                                  <div className='d-flex justify-content-between'>
+                                    <Link href={`/courses/${course.slug}`} className='FNV-Btn BtnOutline PrimaryColor BtnLarge'>
+                                      See Details
+                                    </Link>
+                                    <Link href='#' className='FNV-Btn SecondaryColor BtnLarge'>
+                                      Add to Cart
+                                    </Link>
+                                  </div>
                                 </div>
-                                <div
-                                  className='non-clickable-content'
-                                  dangerouslySetInnerHTML={{ __html: truncateContent(course.abstract, 100) }}
-                                />
                               </div>
-                            </div>
-                          </div>
-                        </Link>
-                      ) : null
-                    )
+                            </Link>
+                          ) : null
+                        )
+                      ) : (
+                        <Grid p={5} mt={5} mb={5} container justifyContent='center'>
+                          <h3>No courses found matching the selected filters.</h3>{' '}
+                        </Grid>
+                      )
+                    })()
                   ) : (
-                    <Grid p={5} mt={5} mb={5} container justifyContent='center'>
-                      <h3>No courses found matching the selected filters.</h3>{' '}
-                    </Grid>
-                  )
-                })()
-              ) : (
-                <h3>Loading...</h3>
-              )}
+                    <h3>Loading...</h3>
+                  )}
 
-              <Grid container justifyContent='center'>
-                <Pagination
-                  count={Math.ceil(courseData?.data?.data?.length / 5)}
-                  page={page}
-                  onChange={handleChangePage}
-                  color='primary'
-                />
-              </Grid>
+                  <Grid container justifyContent='center' marginTop={'3rem'}>
+                    <Pagination count={Math.ceil(courseData?.data?.data?.length / 5)} page={page}
+                      onChange={handleChangePage} color='primary' />
+                  </Grid>
+                </div>
+
+              </div>
+
+              {/* Engineering */}
+              <div class="tab-pane fade" id="Engineering" role="tabpanel" aria-labelledby="Engineering-tab" tabindex="0">
+                Engineering
+              </div>
+
+              {/* Project Management */}
+              <div class="tab-pane fade" id="Project-Management" role="tabpanel" aria-labelledby="Project-Management-tab"
+                tabindex="0">
+                Project Management
+              </div>
+
+              {/* Architect */}
+              <div class="tab-pane fade" id="Architect" role="tabpanel" aria-labelledby="Architect-tab" tabindex="0">
+                Architect
+              </div>
+
+              {/* Technician */}
+              <div class="tab-pane fade" id="Technician" role="tabpanel" aria-labelledby="Technician-tab" tabindex="0">
+                Technician
+              </div>
+
+              {/* Job Seeker */}
+              <div class="tab-pane fade" id="Job-Seeker" role="tabpanel" aria-labelledby="Job-Seeker-tab" tabindex="0">
+                Job Seeker
+              </div>
+
+              {/* Self Employee */}
+              <div class="tab-pane fade" id="Self-Employee" role="tabpanel" aria-labelledby="Self-Employee-tab"
+                tabindex="0">
+                Self Employee
+              </div>
             </div>
           </div>
         </div>
