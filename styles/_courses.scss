@@ -1,6 +1,8 @@
 @import './variables';
 
 .FNV-Courses {
+  background-color: $WhiteColor;
+
   .FNV-Header {
     background-image: radial-gradient(circle, rgba(255, 119, 44, 0.4) 0%, rgba(255, 119, 44, 0.9) 100%), url("/img/Course_Featured.png");
     background-repeat: no-repeat;
@@ -128,6 +130,7 @@
               .col-md-4{
                 padding: .8rem;
                 .card {
+                  box-shadow: 0px 5px 20px $ShadowPrimary;
                   border-width: 0;
                   border-radius: 18px;
                   overflow: hidden;
@@ -273,7 +276,7 @@
   
     .FNV-CourseList {
       padding: 1rem;
-  
+
       .container {
         .row {
   
