@@ -1,0 +1,131 @@
+@import './variables';
+.FNV-Btn {
+  padding: 5px 15px;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  display: inline-block;
+  text-align: center;
+  border-width: 0;
+  border-radius: 10px;
+  transition: .3s all ease-in-out;
+
+  &.BtnOutline {
+    background-color: transparent;
+    border-radius: 10px;
+
+    &.PrimaryColor {
+      border: 1px solid $PrimaryColor;
+      color: $PrimaryColor;
+
+      &:hover{
+        color: $WhiteColor;
+      }
+    }
+
+    &.SecondaryColor {
+      border: 1px solid $SecondaryColor;
+      color: $WhiteColor;
+
+      &:hover{
+        color: $WhiteColor;
+      }
+    }
+
+    &:hover{
+      background-color: $PrimaryColor;
+    }
+  }
+
+  &.BtnPrimary {
+    background-color: $PrimaryColor;
+    border: 1px solid $PrimaryColor;
+    color: $WhiteColor;
+    border-radius: 0.25rem;
+    border-radius: 10px;
+
+    &:hover{
+      background-color: $WhiteColor;
+      border: 1px solid $PrimaryColor;
+      color: $PrimaryColor;
+    }
+  }
+
+  &.PrimaryColor {
+    color: $PrimaryColor;
+  }
+
+  &.SecondaryColor{
+    background-color: $SecondaryColor;
+    border: 1px solid $SecondaryColor;
+    color: $WhiteColor;
+
+    &:hover{
+      background-color: $WhiteColor;
+      border: 1px solid $SecondaryColor;
+      color: $SecondaryColor;
+    }
+  }
+
+  &.LightColor{
+    background-color: $LightColor;
+    border-color: $LightColor;
+    color: $PrimaryColor;
+  }
+
+  &.BtnMedium {
+    font-size: 16px;
+    padding: 8px 18px;
+  }
+
+  &.BtnLarge {
+    font-size: 20px;
+    padding: 15px 20px;
+  }
+}
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .FNV-Btn {
+    padding: 3px 10px;
+    font-weight: 400;
+    display: inline-block;
+    text-align: center;
+    border-width: 0;
+
+    &.BtnOutline {
+      background-color: transparent;
+      border-radius: 10px;
+
+      &.PrimaryColor {
+        border: 2px solid $PrimaryColor;
+        color: $PrimaryColor;
+      }
+    }
+
+    &.BtnPrimary {
+      background-color: $PrimaryColor;
+      color: $WhiteColor;
+      border-radius: 10px;
+    }
+
+    &.PrimaryColor {
+      color: $PrimaryColor;
+    }
+
+    &.BtnSmall {
+      font-size: 12px;
+      padding: 3px 9px;
+    }
+
+    &.BtnMedium {
+      font-size: 14px;
+      padding: 5px 10px;
+    }
+
+    &.BtnLarge {
+      font-size: 18px;
+      padding: 7px 14px;
+    }
+  }
+}

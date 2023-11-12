@@ -1,0 +1,82 @@
+@import './variables';
+.FNV-Youtube {
+  background-color: black;
+
+  .container-fluid {
+    .row {
+      .col-md-3 {
+        padding: 0;
+
+        a {
+          background-color: #00000080;
+          height: 300px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 0.3s all ease-in-out;
+
+          svg {
+            padding: 20px;
+            background-color: #00000090;
+            color: $WhiteColor;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            transition: 0.3s all ease-in-out;
+          }
+
+          &:hover {
+            background-color: #00000050;
+
+            svg {
+              width: 80px;
+              height: 80px;
+            }
+          }
+        }
+      }
+
+      .col-md-3:first-child {
+        background-image: url('/img/webinar1.jpg');
+        background-size: cover;
+      }
+
+      .col-md-3:nth-child(2) {
+        background-image: url('/img/webinar2.jpg');
+        background-size: cover;
+      }
+
+      .col-md-3:nth-child(3) {
+        background-image: url('/img/webinar3.jpg');
+        background-size: cover;
+      }
+
+      .col-md-3:nth-child(4) {
+        background-image: url('/img/webinar1.jpg');
+        background-size: cover;
+      }
+
+      .col-md-3:nth-child(5) {
+        background-image: url('/img/webinar2.jpg');
+        background-size: cover;
+      }
+
+      .col-md-3:nth-child(6) {
+        background-image: url('/img/webinar3.jpg');
+        background-size: cover;
+      }
+
+      .col-md-3:nth-child(7) {
+        background-image: url('/img/webinar1.jpg');
+        background-size: cover;
+      }
+
+      .col-md-3:nth-child(8) {
+        a {
+          color: $WhiteColor;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,236 @@
+.FNV-NewCourses {
+    background-color: $FiveColor;
+    padding: 5rem 0 0;
+    overflow: hidden;
+
+    h3 {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        color: $PrimaryColor;
+        margin-bottom: 5rem;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 40%;
+            height: 2px;
+            background: $SecondaryColor;
+            left: -1rem;
+            top: 50%;
+            position: absolute;
+        }
+
+
+        &::after {
+            content: "";
+            display: block;
+            width: 40%;
+            height: 2px;
+            background: $SecondaryColor;
+            right: -1rem;
+            top: 50%;
+            position: absolute;
+        }
+    }
+
+    .container {
+        .row {
+            .col-12 {
+                .swiper {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            padding: 0 0 7rem;
+
+                            .card {
+                                border-width: 0;
+                                border-radius: 18px;
+                                overflow: hidden;
+                                position: relative;
+                                cursor: grab;
+
+                                &:active,
+                                &:target {
+                                    cursor: grabbing;
+                                }
+
+                                badge {
+                                    position: absolute;
+                                    top: 1rem;
+                                    left: 1rem;
+                                    font-size: 14px;
+                                    line-height: 28px;
+                                    font-weight: 500;
+                                    color: $PrimaryColor;
+                                    background-color: $WhiteColor;
+                                    border-radius: 5px;
+                                    padding: .2rem 1rem;
+                                }
+
+                                .card-body {
+                                    background-color: $WhiteColor;
+                                    border-radius: 18px;
+                                    margin-top: -3rem;
+
+                                    h4 {
+                                        font-size: 22px;
+                                        line-height: 44px;
+                                        font-weight: 700;
+                                        color: $PrimaryColor;
+                                        text-align: center;
+                                    }
+
+                                    price {
+                                        font-size: 22px;
+                                        font-weight: 400;
+                                        line-height: 44px;
+                                        color: $SecondaryColor;
+                                        text-align: center;
+                                        width: 100%;
+                                        display: inline-block;
+                                    }
+
+                                    .d-flex {
+                                        margin-top: 1rem;
+
+                                        .FNV-Btn {
+                                            width: 100%;
+
+                                            &:first-child {
+                                                margin-right: 5px;
+                                            }
+
+                                            &:nth-child(2) {
+                                                margin-left: 5px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .swiper-pagination {
+                    top: unset;
+                    bottom: 3rem;
+                }
+            }
+        }
+    }
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+    .FNV-NewCourses {
+        background-color: $FiveColor;
+        padding: 2rem .5rem .5rem;
+        overflow: hidden;
+
+        h3 {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            position: relative;
+            color: $PrimaryColor;
+            margin-bottom: 1rem;
+
+            &::before {
+                display: none;
+            }
+
+
+            &::after {
+                display: none;
+            }
+        }
+
+        .container {
+            .row {
+                .col-12 {
+                    .swiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                padding: 0 0 7rem;
+
+                                .card {
+                                    border-width: 0;
+                                    border-radius: 18px;
+                                    overflow: hidden;
+                                    position: relative;
+                                    cursor: grab;
+
+                                    &:active,
+                                    &:target {
+                                        cursor: grabbing;
+                                    }
+
+                                    badge {
+                                        position: absolute;
+                                        top: 1rem;
+                                        left: 1rem;
+                                        font-size: 14px;
+                                        line-height: 28px;
+                                        font-weight: 500;
+                                        color: $PrimaryColor;
+                                        background-color: $WhiteColor;
+                                        border-radius: 5px;
+                                        padding: .2rem 1rem;
+                                    }
+
+                                    .card-body {
+                                        background-color: $WhiteColor;
+                                        border-radius: 18px;
+                                        margin-top: -3rem;
+
+                                        h4 {
+                                            font-size: 22px;
+                                            line-height: 44px;
+                                            font-weight: 700;
+                                            color: $PrimaryColor;
+                                            text-align: center;
+                                        }
+
+                                        price {
+                                            font-size: 22px;
+                                            font-weight: 400;
+                                            line-height: 44px;
+                                            color: $SecondaryColor;
+                                            text-align: center;
+                                            width: 100%;
+                                            display: inline-block;
+                                        }
+
+                                        .d-flex {
+                                            margin-top: 1rem;
+
+                                            .FNV-Btn {
+                                                width: 100%;
+
+                                                &:first-child {
+                                                    margin-right: 5px;
+                                                }
+
+                                                &:nth-child(2) {
+                                                    margin-left: 5px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .swiper-pagination {
+                        top: unset;
+                        bottom: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}

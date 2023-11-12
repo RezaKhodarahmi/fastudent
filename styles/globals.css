@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'YekanBakh';
+  font-style: normal;
+  font-weight: 400;
+  src: local('YekanBakh'), 
+    url('fonts/YekanBakh/YekanBakh-Regular.woff') format('woff'),
+    url('fonts/YekanBakh/YekanBakh-Regular.ttf') format('truetype'), 
+    url('fonts/YekanBakh/YekanBakh-Regular.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'YekanBakh';
+  font-style: normal;
+  font-weight: bold;
+  src: local('YekanBakh'), 
+    url('fonts/YekanBakh/YekanBakh-Bold.woff') format('woff'),
+    url('fonts/YekanBakh/YekanBakh-Bold.ttf') format('truetype'), 
+    url('fonts/YekanBakh/YekanBakh-Bold.eot') format('embedded-opentype');
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+#__next {
+  height: 100%;
+}
+
+code {
+  font-family: 'Helvetica Neue', YekanBakh;
+  padding: 0.1rem 0.4rem;
+  font-size: 90%;
+  color: #d400ff;
+  border-radius: 0.1335rem;
+}
+
+code:not([class*='language-']):before,
+code:not([class*='language-']):after {
+  content: '`';
+}
+
+code[class*='language-'] {
+  padding: 0;
+}
+
+.PhoneInputInput {
+  border: none;
+  padding: 15.5px 5px;
+  outline: none;
+  font-size: 12px
+}
