@@ -1868,6 +1868,9 @@ body.FNV-Courses .FNV-Courses .FNV-Header .container .row .col-12 .FNV-HSearch b
 body.FNV-Courses .FNV-Courses .FNV-CourseList {
   padding: 5rem 0;
 }
+body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .col-md-9 {
+  padding: 0;
+}
 body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .col-md-9:first-child .nav {
   margin-bottom: 2rem;
 }
@@ -1899,6 +1902,64 @@ body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .col-md-9:nth-chil
   border: 1px solid #003BBF;
   color: #003BBF;
 }
+body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 {
+  padding: 0.8rem;
+}
+body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card {
+  border-width: 0;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  cursor: grab;
+}
+body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card:active, body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card:target {
+  cursor: grabbing;
+}
+body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #003BBF;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 0.2rem 1rem;
+}
+body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card .card-body {
+  background-color: #ffffff;
+  border-radius: 18px;
+  margin-top: -3rem;
+}
+body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card .card-body h4 {
+  font-size: 22px;
+  line-height: 44px;
+  font-weight: 700;
+  color: #003BBF;
+  text-align: center;
+}
+body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card .card-body price {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 44px;
+  color: #FF772C;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card .card-body .d-flex {
+  margin-top: 1rem;
+}
+body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card .card-body .d-flex .FNV-Btn {
+  width: 100%;
+}
+body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card .card-body .d-flex .FNV-Btn:first-child {
+  margin-right: 5px;
+}
+body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card .card-body .d-flex .FNV-Btn:nth-child(2) {
+  margin-left: 5px;
+}
 @media only screen and (max-width: 768px) {
   body.FNV-Courses .FNV-Courses .FNV-Header {
     background-image: radial-gradient(circle, rgba(255, 119, 44, 0.4) 0%, rgba(255, 119, 44, 0.9) 100%), url("/img/Course_Featured.png");
@@ -1924,10 +1985,11 @@ body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .col-md-9:nth-chil
     border-radius: 15px;
     overflow: hidden;
     padding: 0.8rem;
+    border: 1px solid #ffffff;
   }
   body.FNV-Courses .FNV-Courses .FNV-Header .container .row .col-12 .FNV-HSearch .FNV-HSearchInput {
     background-color: transparent !important;
-    border-width: 0px;
+    border-width: 0;
     box-shadow: unset;
     border-radius: 15px;
     color: #003BBF;
@@ -1950,6 +2012,108 @@ body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .col-md-9:nth-chil
     width: 30px;
     height: 30px;
     color: #ffffff;
+  }
+  body.FNV-Courses .FNV-Courses .FNV-CourseList {
+    padding: 1rem;
+  }
+  body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .col-md-9 {
+    padding: 1rem;
+  }
+  body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .col-md-9:first-child {
+    padding: 0;
+  }
+  body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .col-md-9:first-child .nav {
+    margin-bottom: 1rem;
+  }
+  body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .col-md-9:first-child .nav .nav-item {
+    margin: 0.2rem;
+  }
+  body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .col-md-9:first-child .nav .nav-item .nav-link {
+    background-color: #CCD8F2;
+    color: #003BBF;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 400;
+  }
+  body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .col-md-9:first-child .nav .nav-item .nav-link.active {
+    background-color: #003BBF !important;
+    color: #ffffff;
+  }
+  body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .col-md-9:nth-child(2) {
+    margin-bottom: 1rem;
+  }
+  body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .col-md-9:nth-child(2) .row .col-md-4 {
+    padding: 0;
+  }
+  body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .col-md-9:nth-child(2) .row .col-md-4 select {
+    border-radius: 8px;
+    border: 1px solid #003BBF;
+    background-color: transparent;
+    color: #003BBF;
+    font-size: 10px;
+  }
+  body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .col-md-9:nth-child(2) .row .col-md-4 select option {
+    border-radius: 8px;
+    border: 1px solid #003BBF;
+    color: #003BBF;
+  }
+  body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 {
+    padding: 0.8rem 0;
+  }
+  body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card {
+    border-width: 0;
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+    cursor: grab;
+  }
+  body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card:active, body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card:target {
+    cursor: grabbing;
+  }
+  body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #003BBF;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 0.2rem 1rem;
+  }
+  body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card .card-body {
+    background-color: #ffffff;
+    border-radius: 18px;
+    margin-top: -3rem;
+  }
+  body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card .card-body h4 {
+    font-size: 22px;
+    line-height: 44px;
+    font-weight: 700;
+    color: #003BBF;
+    text-align: center;
+  }
+  body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card .card-body price {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 44px;
+    color: #FF772C;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+  }
+  body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card .card-body .d-flex {
+    margin-top: 1rem;
+  }
+  body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card .card-body .d-flex .FNV-Btn {
+    width: 100%;
+  }
+  body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card .card-body .d-flex .FNV-Btn:first-child {
+    margin-right: 5px;
+  }
+  body.FNV-Courses .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card .card-body .d-flex .FNV-Btn:nth-child(2) {
+    margin-left: 5px;
   }
 }
 body.FNV-SingleCourse .FNV-SingleCourse .FNV-Header {
