@@ -133,7 +133,7 @@ const App = props => {
   const authGuard = false
   const guestGuard = Component.guestGuard ?? false
   const aclAbilities = Component.acl ?? defaultACLObj
-  console.log(process.env.API_BASE_URL)
+
   return (
     <Provider store={store}>
       <SessionProvider session={session}>
