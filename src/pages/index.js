@@ -461,7 +461,7 @@ const Home = () => {
               {/* Courses Desktop */}
               <Swiper
                 slidesPerView={1}
-                spaceBetween={10}
+                spaceBetween={20}
                 centeredSlides={true}
                 loop={true}
                 autoplay={{
@@ -1216,24 +1216,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      <div className='FNV-FixedSocial'>
-        <a href='https://www.instagram.com/fanavaran_ca/' className='FNV-Instagram'>
-          <i data-feather='instagram'></i>
-        </a>
-        <a href='https://www.facebook.com/fanavaran.ca' className='FNV-Facebook'>
-          <i data-feather='facebook'></i>
-        </a>
-        <a href='https://www.linkedin.com/company/fanavaran-ca/' className='FNV-Linkedin'>
-          <i data-feather='linkedin'></i>
-        </a>
-        <a href='https://www.youtube.com/channel/UCKbfvGZBXPn2Y3LGb9YDiIA' className='FNV-Youtube'>
-          <i data-feather='youtube'></i>
-        </a>
-        <a href='https://fanavaran.ca/telegram-groups/' className='FNV-Telegram'>
-          <i data-feather='send'></i>
-        </a>
-      </div>
     </>
   )
 }

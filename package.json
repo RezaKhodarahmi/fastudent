@@ -39,7 +39,7 @@
     "@stripe/stripe-js": "^1.54.1",
     "apexcharts": "^3.42.0",
     "apexcharts-clevision": "3.28.5",
-    "axios": "1.2.2",
+    "axios": "^1.6.1",
     "axios-mock-adapter": "1.21.2",
     "babel-eslint": "10.1.0",
     "bootstrap": "^5.3.0",
