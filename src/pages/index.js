@@ -1,72 +1,33 @@
 // ** React Imports
-import { useEffect } from 'react'
-
-// ** Next Import
-import { useRouter } from 'next/router'
+import React, { useEffect } from 'react'
 
 // ** Hook Imports
-import { useAuth } from 'src/hooks/useAuth'
 import Link from 'next/link'
-import { appConfig } from 'src/configs/appConfig'
-import Input from '@mui/material/Input'
 
-// Import Swiper React components
+// ** Import Translation
+import { useTranslation } from 'react-i18next'
+
+// ** Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-// Import Swiper styles
+// ** Import Search Section
+import SearchBox from 'src/views/searchBar.js'
+
+// ** Import Swiper styles
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 
-// import required modules
+// ** Import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 
-/**
- *  Set Home URL based on User Roles
- */
 const Home = () => {
+  //Hooks
+  const { t } = useTranslation()
+
   return (
     <>
-      {/* Header */}
-      <section className='FNV-Header'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-12 FNV-HCard'>
-              <h2>
-                You will succeed again <mark>in Canada</mark> with FANAVARAN!
-              </h2>
-
-              <div className='FNV-HSearch input-group mb-3'>
-                <Input
-                  type='text'
-                  placeholder='Search for the desired word...'
-                  className='form-control FNV-HSearchInput'
-                  aria-describedby='button-addon1'
-                  fullWidth
-                  autoFocus
-                />
-                <button className='FNV-Btn BtnMedium PrimaryColor' type='button' id='button-addon1'>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='22'
-                    height='22'
-                    viewBox='0 0 24 24'
-                    fill='none'
-                    stroke='currentColor'
-                    stroke-width='2'
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
-                    className='feather feather-search'
-                  >
-                    <circle cx='11' cy='11' r='8'></circle>
-                    <line x1='21' y1='21' x2='16.65' y2='16.65'></line>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <SearchBox title={t('fanavaran-motto')} />
 
       {/* Categories */}
       <section className='FNV-Top_Categories'>
@@ -80,8 +41,7 @@ const Home = () => {
                     fill='#FF772C'
                   />
                 </svg>
-
-                <h3>Engineering</h3>
+                <h3>{t('engineering')}</h3>
               </Link>
             </div>
             <div className='col-6 col-sm-12 col-md-2 d-flex justify-content-center align-items-center'>
@@ -101,7 +61,7 @@ const Home = () => {
                   />
                 </svg>
 
-                <h3>Project Management</h3>
+                <h3>{t('project-management')}</h3>
               </Link>
             </div>
             <div className='col-6 col-sm-12 col-md-2 d-flex justify-content-center align-items-center'>
@@ -117,7 +77,7 @@ const Home = () => {
                   />
                 </svg>
 
-                <h3>Architect</h3>
+                <h3>{t('architect')}</h3>
               </Link>
             </div>
             <div className='col-6 col-sm-12 col-md-2 d-flex justify-content-center align-items-center'>
@@ -129,7 +89,7 @@ const Home = () => {
                   />
                 </svg>
 
-                <h3>Technician</h3>
+                <h3>{t('technician')}</h3>
               </Link>
             </div>
             <div className='col-6 col-sm-12 col-md-2 d-flex justify-content-center align-items-center'>
@@ -141,7 +101,7 @@ const Home = () => {
                   />
                 </svg>
 
-                <h3>Job Seeker</h3>
+                <h3>{t('job-seeker')}</h3>
               </Link>
             </div>
             <div className='col-6 col-sm-12 col-md-2 d-flex justify-content-center align-items-center'>
@@ -165,7 +125,7 @@ const Home = () => {
                   />
                 </svg>
 
-                <h3>Self Employed</h3>
+                <h3>{t('self-employed')}</h3>
               </Link>
             </div>
           </div>

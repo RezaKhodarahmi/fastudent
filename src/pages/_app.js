@@ -116,6 +116,11 @@ const App = props => {
   }, [])
 
   useEffect(() => {
+    const lng = localStorage.getItem('i18nextLng')
+    document.documentElement.dir = lng === 'fa' ? 'rtl' : 'ltr'
+  }, [])
+
+  useEffect(() => {
     import('bootstrap/dist/js/bootstrap.bundle')
   }, [])
   const { Component, emotionCache = clientSideEmotionCache, session, ...pageProps } = props

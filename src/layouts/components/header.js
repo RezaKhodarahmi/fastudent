@@ -14,29 +14,47 @@ import Input from '@mui/material/Input'
 import { appConfig } from 'src/configs/appConfig'
 import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
+import SidebarSection from 'src/layouts/components/SideBar'
 
 const Header = props => {
-  // Hooks
-  const { logout } = useAuth()
+  // State
   const [courses, setCourses] = useState([])
   const [open, setOpen] = React.useState(false)
   const [userName, setUserName] = React.useState('')
   const [userImage, setUserImage] = React.useState('')
   const [searchInput, setSearchInput] = useState('')
+  const [selectedIndex, setSelectedIndex] = useState(null)
+
+  // Hooks
   const user = typeof window !== 'undefined' ? window.localStorage.getItem('userData') : null
   const handleOpen = () => setOpen(true)
   const handleClose = () => setOpen(false)
   const dispatch = useDispatch()
+  const { logout } = useAuth()
+  const { t } = useTranslation()
   const cartItems = useSelector(state => state.cart.items)
   const searchData = useSelector(state => state.search)
-  const [selectedIndex, setSelectedIndex] = useState(null)
-  const { t } = useTranslation()
+
+  const { i18n } = useTranslation()
+
+  const changeLanguage = lng => {
+    i18n.changeLanguage(lng)
+    window.localStorage.setItem('i18nextLng', lng)
+    if (lng === 'fa') {
+      document.body.dir = 'rtl'
+      window.localStorage.setItem('direction', 'rtl')
+    } else {
+      document.body.dir = 'ltr'
+      window.localStorage.setItem('direction', 'ltr')
+    }
+  }
 
   useEffect(() => {
     dispatch(fetchCourseSearchData())
     setUserName(JSON.parse(window.localStorage.getItem('userName' || '')))
     setUserImage(window.localStorage.getItem('userImage' || ''))
   }, [dispatch])
+
   useEffect(() => {
     const handleKeyDown = e => {
       if (e.key === 'ArrowDown') {
@@ -68,7 +86,7 @@ const Header = props => {
 
   useEffect(() => {
     feather.replace()
-  }, [courses]);
+  }, [courses])
 
   const searchCourses = query => {
     if (query) {
@@ -139,7 +157,7 @@ const Header = props => {
                   data-bs-toggle='dropdown'
                   aria-expanded='false'
                 >
-                  Language
+                  {t('language')}
                 </button>
                 <ul className='dropdown-menu'>
                   <li>
@@ -196,26 +214,6 @@ const Header = props => {
                       <i data-feather='award'></i> {t('certificate')}
                     </Link>
                   </li>
-                  {/* <li>
-                    <a className='dropdown-item' href='/membership'>
-                      <i data-feather='users'></i> Membership
-                    </a>
-                  </li> */}
-                  {/* <li>
-                    <a className='dropdown-item' href='#'>
-                      <i data-feather='calendar'></i> Events
-                    </a>
-                  </li>
-                  <li>
-                    <a className='dropdown-item' href='#'>
-                      <i data-feather='layout'></i> Subscriptions
-                    </a>
-                  </li>
-                  <li>
-                    <a className='dropdown-item' href='#'>
-                      <i data-feather='compass'></i> Career Navigator
-                    </a>
-                  </li> */}
                   <li>
                     <Link className='dropdown-item' href='/app/pages/account-settings/security/'>
                       <i data-feather='lock'></i> Security
@@ -238,40 +236,6 @@ const Header = props => {
                   <Link className='nav-link' href='/courses' aria-expanded='false'>
                     Courses
                   </Link>
-                  {/* <ul className='dropdown-menu'>
-                    <div className='container-fluid'>
-                      <div className='row'>
-                        <div className='col-md-3'>
-                          <li>
-                            <a className='dropdown-item' href='#'>
-                              Action
-                            </a>
-                          </li>
-                        </div>
-                        <div className='col-md-3'>
-                          <li>
-                            <a className='dropdown-item' href='#'>
-                              Something else here
-                            </a>
-                          </li>
-                        </div>
-                        <div className='col-md-3'>
-                          <li>
-                            <a className='dropdown-item' href='#'>
-                              Something else here
-                            </a>
-                          </li>
-                        </div>
-                        <div className='col-md-3'>
-                          <li>
-                            <a className='dropdown-item' href='#'>
-                              Something else here
-                            </a>
-                          </li>
-                        </div>
-                      </div>
-                    </div>
-                  </ul> */}
                 </li>
 
                 <li className='nav-item dropdown FNV-MegaMenu'>
@@ -315,89 +279,15 @@ const Header = props => {
                 </li>
 
                 <li className='nav-item dropdown FNV-MegaMenu'>
-                  <Link
-                    className='nav-link'
-                    href='/membership/checkout'
-
-                    // data-bs-toggle='dropdown'
-                    // aria-expanded='false'
-                  >
+                  <Link className='nav-link' href='/membership/checkout'>
                     Membership
                   </Link>
-                  {/* <ul className='dropdown-menu'>
-                    <div className='container-fluid'>
-                      <div className='row'>
-                        <div className='col-md-3'>
-                          <li>
-                            <a className='dropdown-item' href='#'>
-                              Action
-                            </a>
-                          </li>
-                        </div>
-                        <div className='col-md-3'>
-                          <li>
-                            <a className='dropdown-item' href='#'>
-                              Something else here
-                            </a>
-                          </li>
-                        </div>
-                        <div className='col-md-3'>
-                          <li>
-                            <a className='dropdown-item' href='#'>
-                              Something else here
-                            </a>
-                          </li>
-                        </div>
-                        <div className='col-md-3'>
-                          <li>
-                            <a className='dropdown-item' href='#'>
-                              Something else here
-                            </a>
-                          </li>
-                        </div>
-                      </div>
-                    </div>
-                  </ul> */}
                 </li>
 
                 <li className='nav-item dropdown FNV-MegaMenu'>
                   <a className='nav-link' href='/blog' aria-expanded='false'>
                     Blog
                   </a>
-                  {/* <ul className='dropdown-menu'>
-                    <div className='container-fluid'>
-                      <div className='row'>
-                        <div className='col-md-3'>
-                          <li>
-                            <a className='dropdown-item' href='#'>
-                              Action
-                            </a>
-                          </li>
-                        </div>
-                        <div className='col-md-3'>
-                          <li>
-                            <a className='dropdown-item' href='#'>
-                              Something else here
-                            </a>
-                          </li>
-                        </div>
-                        <div className='col-md-3'>
-                          <li>
-                            <a className='dropdown-item' href='#'>
-                              Something else here
-                            </a>
-                          </li>
-                        </div>
-                        <div className='col-md-3'>
-                          <li>
-                            <a className='dropdown-item' href='#'>
-                              Something else here
-                            </a>
-                          </li>
-                        </div>
-                      </div>
-                    </div>
-                  </ul> */}
                 </li>
 
                 <li className='nav-item dropdown FNV-MegaMenu'>
@@ -901,40 +791,6 @@ const Header = props => {
                   <Link className='nav-link' href='/blog' aria-expanded='false'>
                     Blog
                   </Link>
-                  {/* <ul className='dropdown-menu'>
-                    <div className='container-fluid'>
-                      <div className='row'>
-                        <div className='col-md-3'>
-                          <li>
-                            <a className='dropdown-item' href='#'>
-                              Action
-                            </a>
-                          </li>
-                        </div>
-                        <div className='col-md-3'>
-                          <li>
-                            <a className='dropdown-item' href='#'>
-                              Something else here
-                            </a>
-                          </li>
-                        </div>
-                        <div className='col-md-3'>
-                          <li>
-                            <a className='dropdown-item' href='#'>
-                              Something else here
-                            </a>
-                          </li>
-                        </div>
-                        <div className='col-md-3'>
-                          <li>
-                            <a className='dropdown-item' href='#'>
-                              Something else here
-                            </a>
-                          </li>
-                        </div>
-                      </div>
-                    </div>
-                  </ul> */}
                 </li>
 
                 <li className='nav-item dropdown FNV-MegaMenu'>
@@ -1077,36 +933,7 @@ const Header = props => {
           </Link>
           <button type='button' className='btn-close' data-bs-dismiss='offcanvas' aria-label='Close'></button>
         </div>
-        <div className='offcanvas-body'>
-          <h5>Fanavaran Sections</h5>
-
-          <ul className='list-group list-group-flush'>
-            <li className='list-group-item'>
-              <Link href='/engineering'>Engineering</Link>
-            </li>
-            <li className='list-group-item'>
-              <Link href='/project-management'>Project Management</Link>
-            </li>
-            <li className='list-group-item'>
-              <Link href='/architecture'>Architect</Link>
-            </li>
-            <li className='list-group-item'>
-              <Link href='/technician'>Technician</Link>
-            </li>
-            <li className='list-group-item'>
-              <Link href='/Job-Seeking'>Job Seeker</Link>
-            </li>
-            <li className='list-group-item'>
-              <Link href='/technical-self-employment'>Technical self employee</Link>
-            </li>
-            <li className='list-group-item'>
-              <Link href='#'>Plumbing</Link>
-            </li>
-            <li className='list-group-item'>
-              <Link href='#'>Electrician</Link>
-            </li>
-          </ul>
-        </div>
+        <SidebarSection />
       </div>
       <div
         className='offcanvas offcanvas-start'
@@ -1120,36 +947,7 @@ const Header = props => {
           </Link>
           <button type='button' className='btn-close' data-bs-dismiss='offcanvas' aria-label='Close'></button>
         </div>
-        <div className='offcanvas-body'>
-          <h5>Fanavaran Sections</h5>
-
-          <ul className='list-group list-group-flush'>
-            <li className='list-group-item'>
-              <Link href='/engineering'>Engineering</Link>
-            </li>
-            <li className='list-group-item'>
-              <Link href='/project-management'>Project Management</Link>
-            </li>
-            <li className='list-group-item'>
-              <Link href='/architecture'>Architect</Link>
-            </li>
-            <li className='list-group-item'>
-              <Link href='/technician'>Technician</Link>
-            </li>
-            <li className='list-group-item'>
-              <Link href='/Job-Seeking'>Job Seeker</Link>
-            </li>
-            <li className='list-group-item'>
-              <Link href='/technical-self-employment'>Technical self employee</Link>
-            </li>
-            <li className='list-group-item'>
-              <Link href='#'>Plumbing</Link>
-            </li>
-            <li className='list-group-item'>
-              <Link href='#'>Electrician</Link>
-            </li>
-          </ul>
-        </div>
+        <SidebarSection />
       </div>
     </>
   )

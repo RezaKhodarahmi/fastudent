@@ -35,7 +35,19 @@
             color: $SecondaryColor;
           }
         }
+        h1 {
+          margin-bottom: 2rem;
+          font-size: 35px;
+          font-weight: 800;
+          color: $WhiteColor;
+          text-align: center;
+          text-transform: uppercase;
 
+          mark {
+            background-color: transparent;
+            color: $SecondaryColor;
+          }
+        }
         .FNV-HSearch {
           background-color: rgba(255, 255, 255, 0.6);
           width: 600px;

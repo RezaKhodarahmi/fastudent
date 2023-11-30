@@ -37,7 +37,7 @@ const themeConfig = {
   toastPosition: 'top-center' /* top-left | top-center | top-right | bottom-left | bottom-center | bottom-right */,
   recaptchaKey: '6LdOdHgdAAAAAGWsjsBrXmsXtpTviMp6sgVlB1ty',
   stripePublicKey:
-    'pk_test_51LbfVhFf0hE9RkFdyI7iiw92bWz9Br9uKq2b0PZtF9vPp7M4rIc99ueqsIFaqze24yooMSFQ7WYvmObPsZBEtxXX00G5NRovjZ'
+    'pk_test_51LbfVhFf0hE9RkFdJo0ZpUrHX2DF5GWrXHi1sDNsZDnRAQHxpAyPTYS5IF96aJl5Nvk4VZavpg1o0ng1zYNWtqlJ00uQfScwJ2'
 }
 
 export default themeConfig

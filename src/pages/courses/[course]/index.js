@@ -16,7 +16,7 @@ const Course = () => {
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(true)
   const [courseId, setCourseId] = useState(null)
-  const [selectedCycle, setSelectedCycle] = useState('0') // Add state for the selected cycle
+  const [selectedCycle, setSelectedCycle] = useState(null) // Add state for the selected cycle
   const [inCart, setInCart] = useState(false)
   const [inEnrolled, setIsEnrolled] = useState(false)
   const [remindedDays, setRemindedDays] = useState('0')
@@ -52,18 +52,22 @@ const Course = () => {
 
   useEffect(() => {
     if (courseData?.data) {
-      console.log(courseData?.data)
       setData(courseData?.data?.data)
       setCourseId(courseData?.data?.data?.id)
       setIsEnrolled(courseData?.data?.enrolled)
       setRemindedDays(courseData?.data?.remainingDays)
-      setSelectedCycle(courseData?.data?.data?.cycles ? courseData?.data?.data?.cycles[0]?.id : null)
+      setSelectedCycle(
+        courseData?.data?.data?.cycles
+          ? courseData?.data?.data?.cycles[parseInt(courseData?.data?.data?.cycles.length) - 1]?.id
+          : null
+      )
       const cycles = courseData?.data?.data?.cycles?.id
 
       // Check if the course is in the cart
       const cartItems = JSON.parse(localStorage.getItem('cartItems')) || []
 
       const existInCart = cartItems.includes(cycles)
+      setLoading(false)
 
       if (existInCart) {
         setInCart(true)
@@ -74,6 +78,9 @@ const Course = () => {
     }
   }, [courseData, setData, setCourseId, setIsEnrolled, setRemindedDays, setSelectedCycle, setInCart])
 
+  useEffect(() => {
+    console.log(selectedCycle)
+  }, [selectedCycle])
   const addToCart = id => {
     const cartItems = JSON.parse(localStorage.getItem('cartItems')) || []
     const existInCart = cartItems.includes(id)
@@ -434,7 +441,7 @@ const Course = () => {
                         <h4>Select a Cycle</h4>
                         {data?.cycles && (
                           <select value={selectedCycle} onChange={handleCycleChange} className='form-select mt-3'>
-                            {data?.cycles.map(cycle => (
+                            {[...data.cycles].reverse().map(cycle => (
                               <option key={cycle.id} value={cycle.id}>
                                 {cycle.name}
                               </option>

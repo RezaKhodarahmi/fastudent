@@ -1,14 +1,13 @@
 import i18n from 'i18next'
 import Backend from 'i18next-http-backend'
-import { initReactI18next } from 'react-i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
+import { initReactI18next } from 'react-i18next'
 
 i18n
   .use(Backend)
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    lng: 'en', // default language
     fallbackLng: 'en', // use English if the translation isn't available
     whitelist: ['en', 'fa'], // only load these languages
     backend: {
@@ -22,6 +21,10 @@ i18n
     interpolation: {
       escapeValue: false,
       formatSeparator: ','
+    },
+    detection: {
+      order: ['localStorage', 'navigator'], // use localStorage first, then browser language
+      caches: ['localStorage'] // cache the language in localStorage
     }
   })
 

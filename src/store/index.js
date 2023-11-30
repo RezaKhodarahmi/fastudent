@@ -12,6 +12,7 @@ import coupon from 'src/store/apps/coupon'
 import tests from 'src/store/apps/tests'
 import referral from 'src/store/apps/referral'
 import cart from 'src/store/apps/cart'
+import category from 'src/store/apps/category'
 
 export const store = configureStore({
   reducer: {
@@ -19,6 +20,7 @@ export const store = configureStore({
     tests,
     profile,
     course,
+    category,
     search,
     coupon,
     referral,
