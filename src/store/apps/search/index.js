@@ -30,27 +30,6 @@ const searchSlice = createSlice({
 
 export const { getDataStart, getDataSuccess, getDataFailure } = searchSlice.actions
 
-export const fetchCourseSearchData = () => async dispatch => {
-  dispatch(getDataStart())
-  try {
-    const token = window.localStorage.getItem('accessToken')
-
-    const response = await axios.get(`${BASE_URL}/student/courses/all`, {
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${token}`
-      },
-      withCredentials: true
-    })
-
-    dispatch(getDataSuccess(response.data))
-  } catch (error) {
-    toast.error('Error! message:' + error.message)
-
-    dispatch(getDataFailure(error.message))
-  }
-}
-
 export const fetchSearchedCourse = searchTerm => async dispatch => {
   dispatch(getDataStart())
   try {

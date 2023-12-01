@@ -11,6 +11,7 @@ import SingleCourse from 'src/views/courses/singleCourse'
 const SearchPage = () => {
   // State
   const [courses, setCourses] = useState([])
+  const [loading, setLoading] = useState(true)
 
   // Hooks
   const router = useRouter()
@@ -28,6 +29,8 @@ const SearchPage = () => {
 
   useEffect(() => {
     setCourses(searchResults?.data?.data || [])
+    console.log(searchResults?.data?.data)
+    setLoading(false)
   }, [searchResults])
 
   const addToCart = id => {
@@ -56,28 +59,33 @@ const SearchPage = () => {
         <section className='FNV-CourseList'>
           <div className='container'>
             <div className='row justify-content-center'>
-              <div class='tab-content' id='pills-tabContent'>
-                <div
-                  class='tab-pane fade show active'
-                  id='All-Courses'
-                  role='tabpanel'
-                  aria-labelledby='All-Courses-tab'
-                  tabindex='0'
-                >
-                  <div className='row'>
-                    {courses.length ? (
-                      courses?.map(course => <SingleCourse key={course.id} course={course} addToCart={addToCart} />)
-                    ) : (
-                      <div className='no-results'>
-                        <h2>Sorry, we can't find any results for your search</h2>
-                        <button onClick={() => router.push('/')} className='return-home-btn'>
-                          Return Home
-                        </button>
-                      </div>
-                    )}
+              <h1 className='m-3'>{t('fanavaran-search-result')}</h1>
+              {!loading ? (
+                <div class='tab-content' id='pills-tabContent'>
+                  <div
+                    class='tab-pane fade show active'
+                    id='All-Courses'
+                    role='tabpanel'
+                    aria-labelledby='All-Courses-tab'
+                    tabindex='0'
+                  >
+                    <div className='row'>
+                      {courses?.length ? (
+                        courses?.map(course => <SingleCourse key={course.id} course={course} addToCart={addToCart} />)
+                      ) : (
+                        <div className='no-results'>
+                          <h2>Sorry, we can't find any results for your search</h2>
+                          <button onClick={() => router.push('/')} className='return-home-btn'>
+                            Return Home
+                          </button>
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </div>
-              </div>
+              ) : (
+                <h3>Loading...</h3>
+              )}
             </div>
           </div>
         </section>

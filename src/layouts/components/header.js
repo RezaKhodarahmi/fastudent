@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 import Link from 'next/link'
 import Logo from 'src/views/logo.js'
 import feather from 'feather-icons'
@@ -6,13 +6,12 @@ import { useAuth } from 'src/hooks/useAuth'
 import { useDispatch, useSelector } from 'react-redux'
 import { setCartItems } from 'src/store/apps/cart'
 import Box from '@mui/material/Box'
-import { fetchCourseSearchData } from 'src/store/apps/search'
+import { fetchSearchedCourse } from 'src/store/apps/search'
 import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
 import Modal from '@mui/material/Modal'
 import Input from '@mui/material/Input'
 import { appConfig } from 'src/configs/appConfig'
-import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
 import SidebarSection from 'src/layouts/components/SideBar'
 
@@ -50,7 +49,6 @@ const Header = props => {
   }
 
   useEffect(() => {
-    dispatch(fetchCourseSearchData())
     setUserName(JSON.parse(window.localStorage.getItem('userName' || '')))
     setUserImage(window.localStorage.getItem('userImage' || ''))
   }, [dispatch])
@@ -79,28 +77,48 @@ const Header = props => {
     }
   }, [courses, selectedIndex])
 
-  const handleSearchInputChange = e => {
-    setSearchInput(e.target.value)
-    searchCourses(e.target.value)
+  // Debounce function
+  const debounce = (func, delay) => {
+    let timerId
+    return (...args) => {
+      clearTimeout(timerId)
+      timerId = setTimeout(() => func.apply(this, args), delay)
+    }
   }
+  // Debounced search function
+  const debouncedSearch = useCallback(
+    debounce(inputValue => {
+      if (inputValue.length >= 3) {
+        dispatch(fetchSearchedCourse(inputValue))
+      }
+    }, 600),
+    []
+  )
+  const handleSearchInputChange = e => {
+    const inputValue = e.target.value
+    setSearchInput(inputValue)
+    debouncedSearch(inputValue)
+  }
+
+  useEffect(() => {
+    const inputValue = searchInput
+    setSearchInput(inputValue)
+  }, [searchInput])
 
   useEffect(() => {
     feather.replace()
   }, [courses])
 
-  const searchCourses = query => {
-    if (query) {
-      const filteredCourses = searchData?.data?.data.filter(course =>
-        course.title.toLowerCase().includes(query.toLowerCase())
-      )
-      setCourses(filteredCourses)
+  useEffect(() => {
+    if (searchData?.data?.data) {
+      setCourses(searchData?.data?.data)
     } else {
       setCourses([])
     }
 
     setSelectedIndex(null)
     feather.replace()
-  }
+  }, [searchData, searchInput])
 
   useEffect(() => {
     const localCartItems = typeof window !== 'undefined' ? JSON.parse(window.localStorage.getItem('cartItems')) : []
@@ -119,6 +137,10 @@ const Header = props => {
   const handleLogout = () => {
     logout()
   }
+
+  useEffect(() => {
+    console.log(searchData)
+  }, [searchData])
 
   return (
     <>
@@ -893,7 +915,12 @@ const Header = props => {
                     <circle cx='11' cy='11' r='8'></circle>
                     <line x1='21' y1='21' x2='16.65' y2='16.65'></line>
                   </svg>
-                  <Link style={{ marginLeft: '10px' }} href={`${appConfig.appUrl}/courses/${course.slug}`} passHref>
+                  <Link
+                    onClick={handleClose}
+                    style={{ marginLeft: '10px' }}
+                    href={`${appConfig.appUrl}/courses/${course.slug}`}
+                    passHref
+                  >
                     {course.title}
                   </Link>
                 </ListItem>
@@ -902,17 +929,17 @@ const Header = props => {
               <>
                 <h5>Popular Search Terms</h5>
                 <ListItem>
-                  <Link style={{ marginLeft: '10px' }} href='#'>
+                  <Link onClick={handleClose} style={{ marginLeft: '10px' }} href='#'>
                     PMP Fundamentals
                   </Link>
                 </ListItem>
                 <ListItem>
-                  <Link style={{ marginLeft: '10px' }} href='#'>
+                  <Link onClick={handleClose} style={{ marginLeft: '10px' }} href='#'>
                     NPEE Exam Prep
                   </Link>
                 </ListItem>
                 <ListItem>
-                  <Link style={{ marginLeft: '10px' }} href='#'>
+                  <Link onClick={handleClose} style={{ marginLeft: '10px' }} href='#'>
                     Electrician 309A
                   </Link>
                 </ListItem>
