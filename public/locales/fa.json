@@ -9,10 +9,12 @@
   "technician":"تکنسین",
   "job-seeker":"جوینده شغل",
   "self-employed": "خود اشتغالی",
-  "search-placeholder":"جستجو در دوره ها...",
+  "search-placeholder":"جستجو در دوره ها و دسته بندی ها...",
   "language":"زبان سایت",
   "add-to-cart":"افزودن به سبد خرید",
-  "see-details":"مشاهده جزئیات"
+  "see-details":"مشاهده جزئیات",
+  "all-courses":"همه دوره ها",
+  "empty-search-input":"برای جستجو ابتدا نام یک دوره و یا دسته بندی را وارد کنید."
 
 
 }

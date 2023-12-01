@@ -9,9 +9,11 @@
   "technician":"Technician",
   "job-seeker":"Job Seeker",
   "self-employed": "Self Employed",
-  "search-placeholder":"Searching for the desired course...",
+  "search-placeholder":"Searching for the desired course or category...",
   "language":"Language",
   "add-to-cart":"Add to Cart",
-  "see-details":"See Details"
+  "see-details":"See Details",
+  "all-courses":"All courses",
+  "empty-search-input":"To search, first enter the name of a course or category"
 
 }
