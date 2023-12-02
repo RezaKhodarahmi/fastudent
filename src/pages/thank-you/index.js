@@ -4,12 +4,17 @@ import { useDispatch } from 'react-redux'
 import { paymentResult } from 'src/store/apps/stripe'
 import Link from 'next/link'
 import { Helmet } from 'react-helmet'
+import { useTranslation } from 'react-i18next'
 
 const Index = () => {
+  // State
+  const [paymentIntent, setPaymentIntent] = useState(null)
+
+  // Hooks
   const dispatch = useDispatch()
   const router = useRouter()
+  const { t } = useTranslation()
 
-  const [paymentIntent, setPaymentIntent] = useState(null)
   useEffect(() => {
     const { payment_intent } = router.query
     if (payment_intent) {

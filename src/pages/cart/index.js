@@ -12,6 +12,7 @@ import { verifyReferralCode } from 'src/store/apps/referral'
 import { setCartItems } from 'src/store/apps/cart'
 import BASE_URL from 'src/api/BASE_URL'
 import toast from 'react-hot-toast'
+import { useRouter } from 'next/router'
 
 // recreating the `Stripe` object on every render.
 const stripePromise = loadStripe(themeConfig.stripePublicKey)
@@ -37,12 +38,14 @@ const Index = () => {
   const [checkout, setCheckout] = useState(false)
   const [referralUser, setReferralUser] = useState({})
   const [isVIP, setIsVIP] = useState(false)
+  const [localCartItem, setLocalCartItem] = useState([])
 
   //Hooks
   const courses = useSelector(state => state.course)
   const appliedCoupon = useSelector(state => state.coupon)
   const referralDiscount = useSelector(state => state.referral)
   const user = useSelector(state => state.user)
+  const router = useRouter()
 
   //Get the cart item's from the API
   useEffect(() => {
@@ -78,9 +81,11 @@ const Index = () => {
 
     return true
   }
+
   useEffect(() => {
     const localCartItems = typeof window !== 'undefined' ? JSON.parse(window.localStorage.getItem('cartItems')) : []
     dispatch(setCartItems(localCartItems || []))
+    setLocalCartItem(localCartItems)
 
     //Store cart items in localStorage
     const handleStorage = () => {
@@ -602,9 +607,17 @@ const Index = () => {
                       <CheckoutForm items={cartCourses} user={email} coupon={coupon} fullName={fullName} />
                     </Elements>
                   ) : (
-                    <button onClick={handelInitiatePayment} className='FNV-Btn BtnPrimary BtnMedium'>
-                      Checkout
-                    </button>
+                    <>
+                      {localCartItem?.length >= 1 ? (
+                        <button onClick={handelInitiatePayment} className='FNV-Btn BtnPrimary BtnMedium'>
+                          Checkout
+                        </button>
+                      ) : (
+                        <button onClick={e => router.push('/courses')} className='FNV-Btn BtnPrimary BtnMedium'>
+                          Select a course
+                        </button>
+                      )}
+                    </>
                   )
                 ) : (
                   <Link href='/login/?returnUrl=cart' className='FNV-Btn BtnPrimary BtnMedium'>
@@ -632,20 +645,6 @@ const Index = () => {
             <img src='/img/MainLogo.png' className='img-fluid' />
           </a>
           <button type='button' className='btn-close' data-bs-dismiss='offcanvas' aria-label='Close'></button>
-        </div>
-        <div className='offcanvas-body'>
-          <h5>Fanavaran Sections</h5>
-
-          <ul className='list-group list-group-flush'>
-            <li className='list-group-item'>Engineering</li>
-            <li className='list-group-item'>Project Management</li>
-            <li className='list-group-item'>Architect</li>
-            <li className='list-group-item'>Technician</li>
-            <li className='list-group-item'>Job Seeker</li>
-            <li className='list-group-item'>Freelancer</li>
-            <li className='list-group-item'>Plumbing</li>
-            <li className='list-group-item'>Electrician</li>
-          </ul>
         </div>
       </div>
     </div>
