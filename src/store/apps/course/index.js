@@ -88,7 +88,7 @@ export const getEnrolledCourse = params => async dispatch => {
   }
 }
 
-export const getCartItems = cartItems => async dispatch => {
+export const getCartItems = (cartItems, email, newVIP) => async dispatch => {
   dispatch(getDataStart())
   try {
     const token = window.localStorage.getItem('accessToken')
@@ -96,7 +96,9 @@ export const getCartItems = cartItems => async dispatch => {
     const response = await axios.post(
       `${BASE_URL}/student/courses/cart-item`,
       {
-        items: cartItems
+        items: cartItems,
+        email: email,
+        newVIP: newVIP
       },
       {
         headers: {

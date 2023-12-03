@@ -39,6 +39,7 @@ const Index = () => {
   const [referralUser, setReferralUser] = useState({})
   const [isVIP, setIsVIP] = useState(false)
   const [localCartItem, setLocalCartItem] = useState([])
+  const [newVIP, setNewVip] = useState(true)
 
   //Hooks
   const courses = useSelector(state => state.course)
@@ -51,11 +52,11 @@ const Index = () => {
   useEffect(() => {
     const cartItems = window.localStorage.getItem('cartItems')
     if (cartItems != 'null' && cartItems?.length > 0) {
-      dispatch(getCartItems(cartItems))
+      dispatch(getCartItems(cartItems, email, newVIP))
     }
     setEmail(JSON.parse(localStorage.getItem('userData')) || null)
     setFullName(JSON.parse(localStorage.getItem('userName')) || null)
-  }, [])
+  }, [email, newVIP])
 
   //give the user info
   useEffect(() => {
@@ -63,6 +64,10 @@ const Index = () => {
       dispatch(fetchVipData())
     }
   }, [email])
+
+  useEffect(() => {
+    setNewVip(localStorage.getItem('newVIP') || true)
+  }, [cartCourses])
 
   //Check if coupon is applied
   function areCouponApplied(obj1, obj2) {
@@ -267,44 +272,49 @@ const Index = () => {
     }
   }
 
-  const handelRemoveItem = id => {
+  const handelRemoveItem = item => {
     if (cartCourses.length) {
       const confirmation = window.confirm('Are you sure you want to delete this item from the cart?')
       if (confirmation) {
-        // Filter the cartCourses array based on the id
-        const newItems = cartCourses.filter(item => item.course.id !== id)
+        const newItems = cartCourses.filter(course => course.id !== item.id)
+        const updatedCartItems = newItems.map(course => course.id)
+        localStorage.setItem('cartItems', JSON.stringify(updatedCartItems))
+        setCartCourses(newItems) // Update cartCourses with the filtered array
 
-        // Update the local storage with the updated cart items
-        const updatedCartItems = newItems.map(item => ({
-          id: item.course.id
-        }))
-
-        if (updatedCartItems.length) {
-          localStorage.setItem('cartItems', JSON.stringify(updatedCartItems))
-        } else {
-          localStorage.setItem('cartItems', null)
+        // If VIP course is removed, switch pricing to regular and set isVIP to false
+        if (item.id === 150000) {
+          setIsVIP(false)
+          localStorage.setItem('newVIP', false)
         }
-
-        // Update the state with the new items
-        setCartCourses(newItems)
-        setCoupon(null)
-        setCouponDiscountAmount(null)
-        setCouponDiscount(null)
-        setUsedCoupon(cartCoupon)
-        setCheckout(false)
-        setCartSubTotal(0)
-        setCartTotal(0)
-
-        const prices = newItems.map(item => item?.regularPrice || 0)
-        const sumOfCoursePrice = prices.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
-
-        setCartTotal(sumOfCoursePrice)
-        setCartSubTotal(sumOfCoursePrice)
       }
     } else {
       window.alert('Cart is Empty')
     }
   }
+
+  useEffect(() => {
+    // Recalculate total prices whenever cartCourses changes
+    const isVipMembershipInCart = cartCourses.some(course => course.id === 150000)
+    const prices = cartCourses.map(course => {
+      // If the user is a VIP OR the VIP membership is in the cart, use VIP prices
+      if (user?.data?.isVipValid || isVipMembershipInCart) {
+        return course.vipPrice || 0
+      } else {
+        return course.regularPrice || 0
+      }
+    })
+
+    const newSubTotal = prices.reduce((acc, price) => acc + price, 0)
+    setCartSubTotal(newSubTotal)
+
+    const totalDiscount = calculateTotalCouponDiscount()
+    setCartTotal(newSubTotal - totalDiscount)
+
+    // If VIP membership is no longer in the cart, switch pricing back to regular
+    if (!isVipMembershipInCart) {
+      setIsVIP(false)
+    }
+  }, [cartCourses, user?.data?.isVipValid])
 
   // Function to calculate the total coupon discount
   const calculateTotalCouponDiscount = () => {
@@ -345,23 +355,29 @@ const Index = () => {
   useEffect(() => {
     if (courses?.data?.data) {
       setCartCourses(courses?.data?.data)
-      var prices = 0
-      if (user?.data?.isVipValid) {
-        setIsVIP(true)
-        prices = Array.isArray(courses?.data?.data)
-          ? courses.data.data.map(item => item?.vipPrice || item?.vipPrice == 0)
-          : 0
-      } else {
-        prices = Array.isArray(courses?.data?.data)
-          ? courses.data.data.map(item => item?.regularPrice || item?.regularPrice == 0)
-          : 0
-      }
 
-      const sumOfCoursePrice = Array.isArray(prices)
-        ? prices.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
-        : 0
+      // Check if VIP membership is in the cart
+      const isVipMembershipInCart = courses?.data?.data.some(
+        course => course?.course?.id === 150000 // Replace with the actual title or ID of VIP membership
+      )
+
+      const prices = courses.data.data.map(item => {
+        // If the user is a VIP OR the VIP membership is in the cart, use VIP prices
+        if (user?.data?.isVipValid || isVipMembershipInCart) {
+          return item?.vipPrice || 0
+        } else {
+          return item?.regularPrice || 0
+        }
+      })
+
+      const sumOfCoursePrice = prices.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
       setCartTotal(sumOfCoursePrice)
       setCartSubTotal(sumOfCoursePrice)
+
+      // If VIP membership is added to the cart, switch to VIP pricing
+      if (isVipMembershipInCart) {
+        setIsVIP(true)
+      }
     }
   }, [courses, setCartCourses, setCartTotal, user])
 
@@ -374,11 +390,11 @@ const Index = () => {
     }
   }
 
-  const handelRemoveVip = code => {
-    const oldUsedCoupon = [...usedCoupon]
-    const newCoupon = oldUsedCoupon.filter(coupon => coupon.code != code)
-    setUsedCoupon(newCoupon)
-  }
+  // const handelRemoveVip = code => {
+  //   const oldUsedCoupon = [...usedCoupon]
+  //   const newCoupon = oldUsedCoupon.filter(coupon => coupon.code != code)
+  //   setUsedCoupon(newCoupon)
+  // }
   useEffect(() => {
     if (cartCourses.length) {
       setLoading(true)
@@ -465,9 +481,8 @@ const Index = () => {
                 <div className='FNV-Cart-Content'>
                   <div className='FNV-Cart-Content-Header'>
                     <div className='row'>
-                      <div className='col-4'>Item</div>
-                      <div className='col-2'>Regular Price</div>
-                      <div className='col-2'>Members Price</div>
+                      <div className='col-4'>Item's</div>
+                      <div className='col-4'></div>
                       <div className='col-2'>Total</div>
                       <div className='col-2'></div>
                     </div>
@@ -487,24 +502,19 @@ const Index = () => {
                                 </div>
                               </div>
                             </div>
-                            <div className='col-2'>
-                              <div className='FNV-Cart-Price'>
-                                <span>${course?.regularPrice || 0}</span>
+                            <div className='col-4'>
+                              <div className='FNV-Cart-Details'>
+                                <span> {isVIP && 'Regular price: $' + course?.regularPrice}</span>
+                                <p>
+                                  {isVIP &&
+                                    course.id != 150000 &&
+                                    `Member Price: $${course?.vipPrice.toFixed(2)} Save $${(
+                                      course?.regularPrice - course?.vipPrice
+                                    ).toFixed(2)} By being a FANAVARAN member`}
+                                </p>
                               </div>
                             </div>
-                            <div className='col-2'>
-                              <div className='FNV-Cart-Price'>
-                                {isVIP ? (
-                                  <span>${course?.vipPrice || 0}</span>
-                                ) : (
-                                  <>
-                                    <span style={{ textDecoration: 'line-through', fontWeight: '900' }}>
-                                      ${course?.vipPrice || 0}
-                                    </span>
-                                  </>
-                                )}
-                              </div>
-                            </div>
+
                             <div className='col-2'>
                               <div className='FNV-Cart-Total'>
                                 {isVIP ? (
@@ -517,7 +527,7 @@ const Index = () => {
                             <div className='col-2'>
                               <div className='FNV-Cart-Total'>
                                 <span
-                                  onClick={e => handelRemoveItem(course.course?.id)}
+                                  onClick={e => handelRemoveItem(course)}
                                   style={{ color: 'red', fontWeight: 'bold', cursor: 'pointer' }}
                                 >
                                   X
