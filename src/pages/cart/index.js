@@ -280,7 +280,6 @@ const Index = () => {
         const updatedCartItems = newItems.map(course => course.id)
         localStorage.setItem('cartItems', JSON.stringify(updatedCartItems))
         setCartCourses(newItems) // Update cartCourses with the filtered array
-
         // If VIP course is removed, switch pricing to regular and set isVIP to false
         if (item.id === 150000) {
           setIsVIP(false)
@@ -357,11 +356,10 @@ const Index = () => {
       setCartCourses(courses?.data?.data)
 
       // Check if VIP membership is in the cart
-      const isVipMembershipInCart = courses?.data?.data.some(
-        course => course?.course?.id === 150000 // Replace with the actual title or ID of VIP membership
-      )
+      const isVipMembershipInCart =
+        Array.isArray(courses?.data?.data) && courses.data.data.some(course => course?.course?.id === 150000)
 
-      const prices = courses.data.data.map(item => {
+      const prices = courses?.data?.data?.map(item => {
         // If the user is a VIP OR the VIP membership is in the cart, use VIP prices
         if (user?.data?.isVipValid || isVipMembershipInCart) {
           return item?.vipPrice || 0
@@ -390,11 +388,6 @@ const Index = () => {
     }
   }
 
-  // const handelRemoveVip = code => {
-  //   const oldUsedCoupon = [...usedCoupon]
-  //   const newCoupon = oldUsedCoupon.filter(coupon => coupon.code != code)
-  //   setUsedCoupon(newCoupon)
-  // }
   useEffect(() => {
     if (cartCourses.length) {
       setLoading(true)

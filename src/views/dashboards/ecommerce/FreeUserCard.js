@@ -33,7 +33,7 @@ const FreeUserCard = props => {
           <Grid item xs={12} md={12}>
             <Box sx={{ mb: 4 }}>
               <Typography sx={{ mb: 1.5, fontWeight: 500 }}>Your Current Plan is Free</Typography>
-              {/* <Typography sx={{ color: 'text.secondary' }}>Upgrade to Premium Membership</Typography> */}
+              <Typography sx={{ color: 'text.secondary' }}>Upgrade to Premium Membership</Typography>
             </Box>
             <div>
               <Box sx={{ mb: 1.5, display: 'flex', alignItems: 'center' }}>

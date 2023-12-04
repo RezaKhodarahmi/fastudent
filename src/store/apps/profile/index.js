@@ -45,7 +45,7 @@ export const getProfileInfo = () => async dispatch => {
       },
       withCredentials: true
     })
-
+    console.log('user info' + response.data)
     dispatch(getDataSuccess(response.data))
   } catch (error) {
     dispatch(getDataFailure(error.message))
