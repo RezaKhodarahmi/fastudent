@@ -120,22 +120,6 @@ const Header = props => {
     feather.replace()
   }, [searchData, searchInput])
 
-  const storeClickedCourse = course => {
-    let searchHistory = JSON.parse(localStorage.getItem('searchHistory') || '[]')
-
-    // Check if the course already exists in history
-    if (!searchHistory.some(historyItem => historyItem.slug === course.slug)) {
-      searchHistory.push(course)
-
-      // Keep only the last 5 courses
-      if (searchHistory.length > 5) {
-        searchHistory = searchHistory.slice(-5) // stores last 5 courses
-      }
-
-      localStorage.setItem('searchHistory', JSON.stringify(searchHistory))
-    }
-  }
-
   useEffect(() => {
     const localCartItems = typeof window !== 'undefined' ? JSON.parse(window.localStorage.getItem('cartItems')) : []
     dispatch(setCartItems(localCartItems || []))
@@ -154,9 +138,9 @@ const Header = props => {
     logout()
   }
 
-  const getPopularSearchTerms = () => {
-    return JSON.parse(localStorage.getItem('searchHistory') || '[]')
-  }
+  useEffect(() => {
+    console.log(searchData)
+  }, [searchData])
 
   return (
     <>
@@ -932,10 +916,7 @@ const Header = props => {
                     <line x1='21' y1='21' x2='16.65' y2='16.65'></line>
                   </svg>
                   <Link
-                    onClick={() => {
-                      handleClose()
-                      storeClickedCourse({ title: course.title, slug: course.slug })
-                    }}
+                    onClick={handleClose}
                     style={{ marginLeft: '10px' }}
                     href={`${appConfig.appUrl}/courses/${course.slug}`}
                     passHref
@@ -945,18 +926,25 @@ const Header = props => {
                 </ListItem>
               ))
             ) : (
-              <h5>{searchInput.length ? 'No result' : null} </h5>
-            )}
-            <>
-              <h5>Popular Search Terms</h5>
-              {JSON.parse(localStorage.getItem('searchHistory') || '[]').map((course, index) => (
-                <ListItem key={index}>
-                  <Link onClick={handleClose} href={`${appConfig.appUrl}/courses/${course.slug}`}>
-                    {course.title}
+              <>
+                <h5>Popular Search Terms</h5>
+                <ListItem>
+                  <Link onClick={handleClose} style={{ marginLeft: '10px' }} href='#'>
+                    PMP Fundamentals
                   </Link>
                 </ListItem>
-              ))}
-            </>
+                <ListItem>
+                  <Link onClick={handleClose} style={{ marginLeft: '10px' }} href='#'>
+                    NPEE Exam Prep
+                  </Link>
+                </ListItem>
+                <ListItem>
+                  <Link onClick={handleClose} style={{ marginLeft: '10px' }} href='#'>
+                    Electrician 309A
+                  </Link>
+                </ListItem>
+              </>
+            )}
           </List>
         </Box>
       </Modal>

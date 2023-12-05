@@ -104,8 +104,7 @@ const Index = () => {
                 selectedCategories={selectedCategories}
                 handleCategoryChange={handleCategoryChange}
               />
-              <div className='col-md-9'></div>
-              {/* <CourseFilters /> */}
+              <CourseFilters />
               <div class='tab-content' id='pills-tabContent'>
                 <div
                   class='tab-pane fade show active'
@@ -133,15 +132,13 @@ const Index = () => {
                           .slice((page - 1) * 5, page * 5)
 
                         return filteredCourses.length ? (
-                          filteredCourses
-                            .filter(item => item.id != 150000)
-                            .map(course =>
-                              course.cycles?.length ? (
-                                <>
-                                  <SingleCourse key={course.id} course={course} addToCart={addToCart} />
-                                </>
-                              ) : null
-                            )
+                          filteredCourses.map(course =>
+                            course.cycles?.length ? (
+                              <>
+                                <SingleCourse key={course.id} course={course} addToCart={addToCart} />
+                              </>
+                            ) : null
+                          )
                         ) : (
                           <Grid p={5} mt={5} mb={5} container justifyContent='center'>
                             <h3>No courses found matching the selected filters.</h3>

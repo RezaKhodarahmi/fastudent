@@ -36,11 +36,12 @@ const AnalyticsDashboard = () => {
   }, [dispatch])
 
   useEffect(() => {
-    if (profileDetails?.data.user) {
+    if (profileDetails?.data) {
       setUser(profileDetails?.data?.user)
       setSubscription(profileDetails?.data?.subscription)
       setCourses(profileDetails?.data?.courses)
       setIsUserVIP(profileDetails?.data?.isVipValid)
+      console.log(profileDetails)
     }
   }, [profileDetails])
 
@@ -49,15 +50,18 @@ const AnalyticsDashboard = () => {
       <KeenSliderWrapper>
         <Grid container spacing={6}>
           {/* VIP User Card */}
-          {!isUserVIP ? (
-            <Grid item xs={12} md={6}>
-              <FreeUserCard user={user} />
-            </Grid>
-          ) : (
+          {!isUserVIP ? null : (
             <Grid item xs={12} md={6}>
               <VIPUserCard user={user} subscription={subscription} />
             </Grid>
           )}
+          {/* Free User Card */}
+          {isUserVIP ? null : (
+            <Grid item xs={12} md={6}>
+              <FreeUserCard user={user} />
+            </Grid>
+          )}
+          {/* Wallet */}
 
           <Grid item xs={12} md={6}>
             <CardMembership user={user} />

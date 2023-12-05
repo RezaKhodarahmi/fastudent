@@ -62,7 +62,7 @@ const FreeUserCard = props => {
         ) : (
           <>
             <Typography variant='h6' sx={{ mb: 5, fontWeight: 500 }}>
-              Welcome {user?.firstName}! 🎉t
+              Welcome {user?.firstName}! 🎉
             </Typography>
             <Grid container spacing={5}>
               <Grid item xs={12} md={12}>
