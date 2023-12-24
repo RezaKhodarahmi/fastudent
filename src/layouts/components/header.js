@@ -37,15 +37,17 @@ const Header = props => {
   const { i18n } = useTranslation()
 
   const changeLanguage = lng => {
-    i18n.changeLanguage(lng)
-    window.localStorage.setItem('i18nextLng', lng)
-    if (lng === 'fa') {
-      document.body.dir = 'rtl'
-      window.localStorage.setItem('direction', 'rtl')
-    } else {
-      document.body.dir = 'ltr'
-      window.localStorage.setItem('direction', 'ltr')
-    }
+    // i18n.changeLanguage(lng)
+    // window.localStorage.setItem('i18nextLng', lng)
+    // if (lng === 'fa') {
+    //   document.body.dir = 'rtl'
+    //   window.localStorage.setItem('direction', 'rtl')
+    // } else {
+    //   document.body.dir = 'ltr'
+    //   window.localStorage.setItem('direction', 'ltr')
+    // }
+
+    console.log('changed')
   }
 
   useEffect(() => {
@@ -80,11 +82,13 @@ const Header = props => {
   // Debounce function
   const debounce = (func, delay) => {
     let timerId
+
     return (...args) => {
       clearTimeout(timerId)
       timerId = setTimeout(() => func.apply(this, args), delay)
     }
   }
+
   // Debounced search function
   const debouncedSearch = useCallback(
     debounce(inputValue => {
@@ -94,6 +98,7 @@ const Header = props => {
     }, 600),
     []
   )
+
   const handleSearchInputChange = e => {
     const inputValue = e.target.value
     setSearchInput(inputValue)
@@ -120,6 +125,22 @@ const Header = props => {
     feather.replace()
   }, [searchData, searchInput])
 
+  const storeClickedCourse = course => {
+    let searchHistory = JSON.parse(localStorage.getItem('searchHistory') || '[]')
+
+    // Check if the course already exists in history
+    if (!searchHistory.some(historyItem => historyItem.slug === course.slug)) {
+      searchHistory.push(course)
+
+      // Keep only the last 5 courses
+      if (searchHistory.length > 5) {
+        searchHistory = searchHistory.slice(-5) // stores last 5 courses
+      }
+
+      localStorage.setItem('searchHistory', JSON.stringify(searchHistory))
+    }
+  }
+
   useEffect(() => {
     const localCartItems = typeof window !== 'undefined' ? JSON.parse(window.localStorage.getItem('cartItems')) : []
     dispatch(setCartItems(localCartItems || []))
@@ -138,9 +159,9 @@ const Header = props => {
     logout()
   }
 
-  useEffect(() => {
-    console.log(searchData)
-  }, [searchData])
+  const getPopularSearchTerms = () => {
+    return JSON.parse(localStorage.getItem('searchHistory') || '[]')
+  }
 
   return (
     <>
@@ -916,7 +937,10 @@ const Header = props => {
                     <line x1='21' y1='21' x2='16.65' y2='16.65'></line>
                   </svg>
                   <Link
-                    onClick={handleClose}
+                    onClick={() => {
+                      handleClose()
+                      storeClickedCourse({ title: course.title, slug: course.slug })
+                    }}
                     style={{ marginLeft: '10px' }}
                     href={`${appConfig.appUrl}/courses/${course.slug}`}
                     passHref
@@ -926,25 +950,18 @@ const Header = props => {
                 </ListItem>
               ))
             ) : (
-              <>
-                <h5>Popular Search Terms</h5>
-                <ListItem>
-                  <Link onClick={handleClose} style={{ marginLeft: '10px' }} href='#'>
-                    PMP Fundamentals
-                  </Link>
-                </ListItem>
-                <ListItem>
-                  <Link onClick={handleClose} style={{ marginLeft: '10px' }} href='#'>
-                    NPEE Exam Prep
-                  </Link>
-                </ListItem>
-                <ListItem>
-                  <Link onClick={handleClose} style={{ marginLeft: '10px' }} href='#'>
-                    Electrician 309A
-                  </Link>
-                </ListItem>
-              </>
+              <h5>{searchInput.length ? 'No result' : null} </h5>
             )}
+            <>
+              <h5>Popular Search Terms</h5>
+              {JSON.parse(localStorage.getItem('searchHistory') || '[]').map((course, index) => (
+                <ListItem key={index}>
+                  <Link onClick={handleClose} href={`${appConfig.appUrl}/courses/${course.slug}`}>
+                    {course.title}
+                  </Link>
+                </ListItem>
+              ))}
+            </>
           </List>
         </Box>
       </Modal>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const YoutubeSection = () => {
@@ -20,13 +21,13 @@ const YoutubeSection = () => {
             It is enough to visit the YouTube channel of the technicians.
           </p>
 
-          <a
+          <Link
             href='https://www.youtube.com/channel/UCKbfvGZBXPn2Y3LGb9YDiIA'
             target='_blank'
             className='FNV-Btn BtnOutline BtnLarge'
           >
             FANAVARAN Youtube Channel
-          </a>
+          </Link>
         </div>
       </section>
     </>

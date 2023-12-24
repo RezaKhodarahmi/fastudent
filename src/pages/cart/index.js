@@ -277,10 +277,9 @@ const Index = () => {
       const confirmation = window.confirm('Are you sure you want to delete this item from the cart?')
       if (confirmation) {
         const newItems = cartCourses.filter(course => course.id !== item.id)
-        const updatedCartItems = newItems.map(course => course.id)
+        const updatedCartItems = newItems?.map(course => course.id)
         localStorage.setItem('cartItems', JSON.stringify(updatedCartItems))
         setCartCourses(newItems) // Update cartCourses with the filtered array
-
         // If VIP course is removed, switch pricing to regular and set isVIP to false
         if (item.id === 150000) {
           setIsVIP(false)
@@ -295,7 +294,8 @@ const Index = () => {
   useEffect(() => {
     // Recalculate total prices whenever cartCourses changes
     const isVipMembershipInCart = cartCourses.some(course => course.id === 150000)
-    const prices = cartCourses.map(course => {
+
+    const prices = cartCourses?.map(course => {
       // If the user is a VIP OR the VIP membership is in the cart, use VIP prices
       if (user?.data?.isVipValid || isVipMembershipInCart) {
         return course.vipPrice || 0
@@ -353,15 +353,14 @@ const Index = () => {
   }, [cartSubTotal, usedCoupon])
 
   useEffect(() => {
-    if (courses?.data?.data) {
+    if (courses?.data?.data && courses?.data?.data?.length) {
       setCartCourses(courses?.data?.data)
 
       // Check if VIP membership is in the cart
-      const isVipMembershipInCart = courses?.data?.data.some(
-        course => course?.course?.id === 150000 // Replace with the actual title or ID of VIP membership
-      )
+      const isVipMembershipInCart =
+        Array.isArray(courses?.data?.data) && courses.data.data.some(course => course?.course?.id === 150000)
 
-      const prices = courses.data.data.map(item => {
+      const prices = courses?.data?.data?.map(item => {
         // If the user is a VIP OR the VIP membership is in the cart, use VIP prices
         if (user?.data?.isVipValid || isVipMembershipInCart) {
           return item?.vipPrice || 0
@@ -390,11 +389,6 @@ const Index = () => {
     }
   }
 
-  // const handelRemoveVip = code => {
-  //   const oldUsedCoupon = [...usedCoupon]
-  //   const newCoupon = oldUsedCoupon.filter(coupon => coupon.code != code)
-  //   setUsedCoupon(newCoupon)
-  // }
   useEffect(() => {
     if (cartCourses.length) {
       setLoading(true)
@@ -591,7 +585,7 @@ const Index = () => {
                   Tax: <span>$0</span>
                 </h5>
                 {usedCoupon
-                  ? usedCoupon.map((coupon, index) =>
+                  ? usedCoupon?.map((coupon, index) =>
                       coupon.code ? (
                         <h6 key={index} className='d-flex justify-content-between'>
                           Coupon:{coupon.code}

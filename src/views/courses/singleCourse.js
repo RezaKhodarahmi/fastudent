@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next'
 
 const SingleCourse = ({ course, addToCart }) => {
   const { t } = useTranslation()
+
   return (
     <>
       <Link className='col-md-4' href={`/courses/${course.slug}`} key={course.id} passHref>

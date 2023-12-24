@@ -78,9 +78,6 @@ const Course = () => {
     }
   }, [courseData, setData, setCourseId, setIsEnrolled, setRemindedDays, setSelectedCycle, setInCart])
 
-  useEffect(() => {
-    console.log(selectedCycle)
-  }, [selectedCycle])
   const addToCart = id => {
     const cartItems = JSON.parse(localStorage.getItem('cartItems')) || []
     const existInCart = cartItems.includes(id)

@@ -8,22 +8,22 @@ const navigation = () => {
     {
       title: 'Courses',
       icon: 'tabler:file-text',
-      path: '/app/apps/course/list'
+      path: '/app/dashboards/courses'
     },
     {
       title: 'Certificates',
       icon: 'tabler:id',
-      path: '/app/apps/certificates/list'
+      path: '/app/dashboards/certificates'
     },
     {
       title: 'Quizzes',
       icon: 'tabler:checkbox',
-      path: '/app/apps/quizzes/list'
+      path: '/app/dashboards/quizzes'
     },
     {
       title: 'Orders',
       icon: 'tabler:file-dollar',
-      path: '/app/apps/invoice/list'
+      path: '/app/dashboards/orders'
     },
     {
       icon: 'tabler:settings',

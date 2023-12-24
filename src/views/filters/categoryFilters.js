@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next'
 
 const CategoryFilters = ({ categories, selectedCategories, handleClearFilters, handleCategoryChange }) => {
   const { t } = useTranslation()
+
   return (
     <>
       {/* Navbar Filters */}
