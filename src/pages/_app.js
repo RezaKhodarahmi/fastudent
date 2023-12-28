@@ -81,6 +81,11 @@ import '../../styles/_youtube.scss'
 import '../../styles/_content.scss'
 import 'bootstrap/dist/css/bootstrap.css'
 
+// ** Import Swiper styles
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
+
 const clientSideEmotionCache = createEmotionCache()
 
 // ** Pace Loader

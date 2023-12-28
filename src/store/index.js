@@ -13,6 +13,8 @@ import tests from 'src/store/apps/tests'
 import referral from 'src/store/apps/referral'
 import cart from 'src/store/apps/cart'
 import category from 'src/store/apps/category'
+import blog from 'src/store/apps/blog'
+import blogCategory from 'src/store/apps/blog-category'
 
 export const store = configureStore({
   reducer: {
@@ -26,6 +28,8 @@ export const store = configureStore({
     referral,
     stripe,
     partially,
+    blog,
+    blogCategory,
     cart
   },
   middleware: getDefaultMiddleware =>

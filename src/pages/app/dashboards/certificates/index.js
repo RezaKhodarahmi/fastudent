@@ -11,8 +11,7 @@ import {
   TableRow,
   Paper,
   Button,
-  Box,
-  CircularProgress
+  Box
 } from '@mui/material'
 import { jsPDF } from 'jspdf'
 

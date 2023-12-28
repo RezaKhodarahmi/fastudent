@@ -4,25 +4,23 @@ import CoursePagination from '@mui/material/Pagination'
 import { Grid } from '@mui/material'
 import { useRouter } from 'next/router'
 import feather from 'feather-icons'
-import { fetchCourseData } from 'src/store/apps/course'
-import { fetchCategoryData } from 'src/store/apps/category'
+import { fetchBlogData } from 'src/store/apps/blog'
+import { fetchBlogCategoryData } from 'src/store/apps/blog-category'
 import { useSelector, useDispatch } from 'react-redux'
-import SearchBox from 'src/views/searchBar.js'
 import YoutubeSection from 'src/views/youtubeSection'
 import SingleCourse from 'src/views/courses/singleCourse'
 import CategoryFilter from 'src/views/filters/categoryFilters'
+import CourseFilters from 'src/views/filters/courseFilters'
 
-// ** Hook Imports
-import Link from 'next/link'
-
-// ** Import blog section
-import SingleDeskBlog from 'src/views/blog/singleDeskPost'
-import SingleMobileBlog from 'src/views/blog/singleMobileBlog'
-
-// ** Import Translation
+// Import Translation
 import { useTranslation } from 'react-i18next'
 
-const Index = () => {
+// Import Swiper styles
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
+
+const BlogPage = () => {
   const [selectedCategories, setSelectedCategories] = useState([])
   const [selectedTeachers, setSelectedTeachers] = useState([])
   const [page, setPage] = useState(1)
@@ -65,22 +63,6 @@ const Index = () => {
     setPage(value)
   }
 
-  const addToCart = id => {
-    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || []
-    const existInCart = cartItems.includes(id)
-    router.push('/cart')
-
-    if (existInCart) {
-      window.alert('Item is already in cart!')
-      router.push('/cart')
-    } else {
-      cartItems.push(id)
-    }
-
-    const updatedCartItems = [...cartItems]
-    localStorage.setItem('cartItems', JSON.stringify(updatedCartItems))
-  }
-
   const handleClearFilters = () => {
     setSelectedCategories([])
     setSelectedTeachers([])
@@ -90,10 +72,18 @@ const Index = () => {
     <>
       <div className='FNV-Courses'>
         <Helmet>
-          <title>{t('fanavaran-courses')}</title>
+          <title>{t('fanavaran-blogs-page')}</title>
         </Helmet>
 
-        <SearchBox title={t('fanavaran-courses')} />
+        <section className='FNV-Header'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-12 FNV-HCard'>
+                <h1>{t('fanavaran-blogs-page')}</h1>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <section className='FNV-CourseList'>
           <div className='container'>
@@ -112,7 +102,7 @@ const Index = () => {
                   id='All-Courses'
                   role='tabpanel'
                   aria-labelledby='All-Courses-tab'
-                  tabindex='0'
+                  tabBlogPage='0'
                 >
                   <div className='row'>
                     {Array.isArray(course) ? (
@@ -137,14 +127,12 @@ const Index = () => {
                             .filter(item => item.id != 150000)
                             .map(course =>
                               course.cycles?.length ? (
-                                <>
-                                  <SingleCourse key={course.id} course={course} addToCart={addToCart} />
-                                </>
+                                <>{/* <SingleCourse key={course.id} course={course} addToCart={addToCart} /> */}</>
                               ) : null
                             )
                         ) : (
                           <Grid p={5} mt={5} mb={5} container justifyContent='center'>
-                            <h3>No courses found matching the selected filters.</h3>
+                            <h3>No Post found matching the selected filters.</h3>
                           </Grid>
                         )
                       })()
@@ -168,29 +156,9 @@ const Index = () => {
         </section>
       </div>
       <YoutubeSection />
-      {/* Blog */}
-      <section className='FNV-BlogTestiomonial'>
-        <h3>{t('latest-blogs')}</h3>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-12'>
-              {/* Blogs Desktop */}
-              <SingleDeskBlog />
-              {/* Blogs Mobile */}
-              <SingleMobileBlog />
-            </div>
-          </div>
-
-          <div className='row justify-content-center'>
-            <Link href='#' className='FNV-Btn BtnOutline PrimaryColor BtnLarge FNV-SeeMore'>
-              See All Blogs
-            </Link>
-          </div>
-        </div>
-      </section>
     </>
   )
 }
-Index.guestGuard = true
+BlogPage.guestGuard = true
 
-export default Index
+export default BlogPage

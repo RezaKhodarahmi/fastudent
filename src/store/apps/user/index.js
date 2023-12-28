@@ -38,7 +38,7 @@ export const fetchUserData = () => async dispatch => {
 
     const email = user.substring(1, user.length - 1)
 
-    const response = await axios.get(`${BASE_URL}/student/${email}`, {
+    const response = await axios.get(`${BASE_URL}/student/user/${email}`, {
       headers: {
         'Content-Type': 'application/json',
         Authorization: `Bearer ${token}`
@@ -72,7 +72,7 @@ export const newUser = params => async dispatch => {
     dispatch(getDataSuccess(response.data))
   } catch (error) {
     dispatch(getDataFailure(error.message))
-    toast.error('Error! msessage:' + error?.response?.data?.message || 'Server Error!')
+    toast.error('Error! message:' + error?.response?.data?.message || 'Server Error!')
   }
 }
 
@@ -157,7 +157,7 @@ export const deleteUser = id => async dispatch => {
     toast.success('Successfully deleted!')
     dispatch(getDataSuccess(response.data))
   } catch (error) {
-    toast.error('Error! msessage:' + error?.response?.data?.message || 'Server Error!')
+    toast.error('Error! message:' + error?.response?.data?.message || 'Server Error!')
     dispatch(getDataFailure(error.message))
   }
 }
@@ -171,7 +171,7 @@ export const fetchVipData = () => async dispatch => {
 
     const email = user.substring(1, user.length - 1)
 
-    const response = await axios.get(`${BASE_URL}/student/vip/${email}`, {
+    const response = await axios.get(`${BASE_URL}/student/user/vip/${email}`, {
       headers: {
         'Content-Type': 'application/json',
         Authorization: `Bearer ${token}`
