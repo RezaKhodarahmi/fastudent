@@ -314,6 +314,11 @@ const Index = () => {
     if (!isVipMembershipInCart) {
       setIsVIP(false)
     }
+
+    if (user?.data?.isVipValid) {
+      console.log(user?.data?.isVipValid)
+      setIsVIP(true)
+    }
   }, [cartCourses, user?.data?.isVipValid])
 
   // Function to calculate the total coupon discount
