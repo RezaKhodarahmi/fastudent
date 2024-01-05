@@ -145,7 +145,7 @@ const App = props => {
 
   return (
     <Provider store={store}>
-      <SessionProvider session={session}>
+      <SessionProvider session={session} basePath='http://localhost:3200/api/auth'>
         {/* <GoogleReCaptchaProvider reCaptchaKey='6LdOdHgdAAAAAGWsjsBrXmsXtpTviMp6sgVlB1ty'> */}
         <CacheProvider value={emotionCache}>
           <Head>

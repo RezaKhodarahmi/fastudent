@@ -64,7 +64,7 @@
     "jspdf": "^2.5.1",
     "keen-slider": "6.8.5",
     "next": "^13.4.12",
-    "next-auth": "^4.23.2",
+    "next-auth": "^4.24.5",
     "node-sass": "^9.0.0",
     "nprogress": "0.2.0",
     "payment": "2.4.6",

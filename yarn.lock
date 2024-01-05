@@ -3397,10 +3397,10 @@
   "resolved" "https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz"
   "version" "2.0.0"
 
-"jose@^4.11.4", "jose@^4.15.1":
-  "integrity" "sha512-IY73F228OXRl9ar3jJagh7Vnuhj/GzBunPiZP13K0lOl7Am9SoWW3kEzq3MCllJMTtZqHTiDXQvoRd4U95aU6A=="
-  "resolved" "https://registry.npmjs.org/jose/-/jose-4.15.2.tgz"
-  "version" "4.15.2"
+"jose@^4.11.4", "jose@^4.15.4":
+  "integrity" "sha512-W+oqK4H+r5sITxfxpSU+MMdr/YSWGvgZMQDIsNoBDGGy4i7GBPTtvFKibQzW06n3U3TqHjhvBJsirShsEJ6eeQ=="
+  "resolved" "https://registry.npmjs.org/jose/-/jose-4.15.4.tgz"
+  "version" "4.15.4"
 
 "jquery@^3.7.0":
   "integrity" "sha512-umpJ0/k8X0MvD1ds0P9SfowREz2LenHsQaxSohMZ5OMNEU2r0tf8pdeEFTHMFxWVxKNyU9rTtK3CWzUCTKJUeQ=="
@@ -3915,10 +3915,10 @@
   "resolved" "https://registry.npmjs.org/negotiator/-/negotiator-0.6.3.tgz"
   "version" "0.6.3"
 
-"next-auth@^4.23.2":
-  "integrity" "sha512-VRmInu0r/yZNFQheDFeOKtiugu3bt90Po3owAQDnFQ3YLQFmUKgFjcE2+3L0ny5jsJpBXaKbm7j7W2QTc6Ye2A=="
-  "resolved" "https://registry.npmjs.org/next-auth/-/next-auth-4.23.2.tgz"
-  "version" "4.23.2"
+"next-auth@^4.24.5":
+  "integrity" "sha512-3RafV3XbfIKk6rF6GlLE4/KxjTcuMCifqrmD+98ejFq73SRoj2rmzoca8u764977lH/Q7jo6Xu6yM+Re1Mz/Og=="
+  "resolved" "https://registry.npmjs.org/next-auth/-/next-auth-4.24.5.tgz"
+  "version" "4.24.5"
   dependencies:
     "@babel/runtime" "^7.20.13"
     "@panva/hkdf" "^1.0.2"
@@ -4174,11 +4174,11 @@
     "is-wsl" "^2.2.0"
 
 "openid-client@^5.4.0":
-  "integrity" "sha512-uFTkN/iqgKvSnmpVAS/T6SNThukRMBcmymTQ71Ngus1F60tdtKVap7zCrleocY+fogPtpmoxi5Q1YdrgYuTlkA=="
-  "resolved" "https://registry.npmjs.org/openid-client/-/openid-client-5.6.0.tgz"
-  "version" "5.6.0"
+  "integrity" "sha512-TIVimoK/fAvpiISLcoGZyNJx2TOfd5AE6TXn58FFj6Y8qbU/jqky54Aws7sYKuCph1bLPWSRUa1r/Rd6K21bhg=="
+  "resolved" "https://registry.npmjs.org/openid-client/-/openid-client-5.6.2.tgz"
+  "version" "5.6.2"
   dependencies:
-    "jose" "^4.15.1"
+    "jose" "^4.15.4"
     "lru-cache" "^6.0.0"
     "object-hash" "^2.2.0"
     "oidc-token-hash" "^5.0.3"
