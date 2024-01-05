@@ -4,7 +4,7 @@ import { useState, Fragment } from 'react'
 // ** Next Import
 import Link from 'next/link'
 import Grid from '@mui/material/Grid'
-import Logo from 'src/views/logo.js'
+import Logo from 'src/views/logoMain.js'
 
 // ** MUI Components
 import Button from '@mui/material/Button'
