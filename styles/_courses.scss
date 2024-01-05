@@ -12,12 +12,14 @@
     height: unset;
 
     .container {
+      padding: 0;
+      
       .row {
         justify-content: center;
 
-        .col-12 {
+        .col-md-5 {
           h1 {
-            font-size: 48px;
+            font-size: 40px;
             font-weight: bold;
             color: $WhiteColor;
             text-align: center;
@@ -79,45 +81,46 @@
         // Nav Pills
         .col-md-9 {
           padding: 0;
-          &:first-child {
-            .nav {
-              margin-bottom: 2rem;
+          .PopularCategories{
+            margin-bottom: 2rem;
 
-              .nav-item {
-                margin: 0 7px;
+            .nav-item {
+              margin: 0 7px;
 
-                .nav-link {
-                  background-color: $SecondPrimaryColor;
-                  color: $PrimaryColor;
-                  border-radius: 12px;
-                  font-size: 14px;
-                  font-weight: 400;
+              .nav-link {
+                background-color: $SecondPrimaryColor;
+                color: $PrimaryColor;
+                border-radius: 12px;
+                font-size: 14px;
+                font-weight: 400;
 
-                  &.active {
-                    background-color: $PrimaryColor !important;
-                    color: $WhiteColor;
-                  }
+                &.active {
+                  background-color: $PrimaryColor !important;
+                  color: $WhiteColor;
                 }
               }
             }
           }
 
-          &:nth-child(2) {
-            margin: 1rem 0 4rem;
+          .DropdownFilters{
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
 
-            .row {
-              .col-md-4 {
-                select {
-                  border-radius: 8px;
-                  border: 1px solid $PrimaryColor;
-                  background-color: transparent;
+            .nav-item {
+              width: 32%;
+
+              div{
+                border: 2px solid $PrimaryColor;
+                border-radius: 10px;
+
+                div{
+                  border-width: 0;
                   color: $PrimaryColor;
-
-                  option {
-                    border-radius: 8px;
-                    border: 1px solid $PrimaryColor;
-                    color: $PrimaryColor
-                  }
+                  font-weight: 600;
+                  font-size: 14px;
+                  padding: .5rem;
                 }
               }
             }
@@ -204,24 +207,38 @@
   }
 }
 
+.MuiList-root{
+  border: 1px solid $PrimaryColor;
+  border-radius: 10px;
+
+  option{
+    padding: .5rem;
+    margin-bottom: 0;
+  }
+}
+
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
   .FNV-Courses {
+    background-color: $WhiteColor;
+  
     .FNV-Header {
       background-image: radial-gradient(circle, rgba(255, 119, 44, 0.4) 0%, rgba(255, 119, 44, 0.9) 100%), url("/img/Course_Featured.png");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
-      padding: 2rem 0;
+      padding: 2rem 1rem;
       height: unset;
   
       .container {
+        padding: 0;
+        
         .row {
           justify-content: center;
   
-          .col-12 {
+          .col-md-5 {
             h1 {
-              font-size: 28px;
+              font-size: 30px;
               font-weight: bold;
               color: $WhiteColor;
               text-align: center;
@@ -233,7 +250,7 @@
               width: 100%;
               border-radius: 15px;
               overflow: hidden;
-              padding: .8rem;
+              padding: .2rem;
               border: 1px solid $WhiteColor;
   
               .FNV-HSearchInput {
@@ -253,6 +270,7 @@
                 &::placeholder,
                 &:-ms-input-placeholder {
                   color: $PrimaryColor !important;
+                  font-size: 12px;
                 }
               }
   
@@ -260,11 +278,11 @@
                 background-color: $PrimaryColor;
                 color: $WhiteColor;
                 border-radius: 15px 15px 15px 15px !important;
-                width: 75px;
+                width: 50px;
   
                 svg {
-                  width: 30px;
-                  height: 30px;
+                  width: 20px;
+                  height: 20px;
                   color: $WhiteColor
                 }
               }
@@ -276,56 +294,65 @@
   
     .FNV-CourseList {
       padding: 1rem;
-
+  
       .container {
         .row {
-  
           // Nav Pills
           .col-md-9 {
-            padding: 1rem;
+            padding: 0;
+            .PopularCategories{
+              margin-bottom: 2rem;
+              display: flex;
+              flex-direction: row;
+  
+              .nav-item {
+                margin: .2rem;
+                width: 31%;
+  
+                .nav-link {
+                  background-color: $SecondPrimaryColor;
+                  color: $PrimaryColor;
+                  border-radius: 12px;
+                  font-size: 10px;
+                  font-weight: 400;
+                  width: 100%;
+                  padding: .5rem .1rem;
+  
+                  &.active {
+                    background-color: $PrimaryColor !important;
+                    color: $WhiteColor;
+                  } 
+                }
 
-            &:first-child {
-              padding: 0;
-              .nav {
-                margin-bottom: 1rem;
-  
-                .nav-item {
-                  margin: .2rem;
-  
-                  .nav-link {
-                    background-color: $SecondPrimaryColor;
-                    color: $PrimaryColor;
-                    border-radius: 12px;
-                    font-size: 10px;
-                    font-weight: 400;
-  
-                    &.active {
-                      background-color: $PrimaryColor !important;
-                      color: $WhiteColor;
-                    }
+                &:last-child{
+                  width: 100%;
+
+                  .nav-link{
+                    width: 100%;
                   }
                 }
               }
             }
   
-            &:nth-child(2) {
-              margin-bottom: 1rem;
-              .row {
-                .col-md-4 {
-                  padding: 0;
-
-                  select {
-                    border-radius: 8px;
-                    border: 1px solid $PrimaryColor;
-                    background-color: transparent;
-                    color: $PrimaryColor;
-                    font-size: 10px;
+            .DropdownFilters{
+              margin-bottom: 2rem;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
   
-                    option {
-                      border-radius: 8px;
-                      border: 1px solid $PrimaryColor;
-                      color: $PrimaryColor
-                    }
+              .nav-item {
+                width: 31%;
+  
+                div{
+                  border: 2px solid $PrimaryColor;
+                  border-radius: 10px;
+  
+                  div{
+                    border-width: 0;
+                    color: $PrimaryColor;
+                    font-weight: 600;
+                    font-size: 14px;
+                    padding: .5rem;
                   }
                 }
               }
@@ -336,8 +363,9 @@
             .tab-pane{
               .row {
                 .col-md-4{
-                  padding: .8rem 0;
+                  padding: .8rem;
                   .card {
+                    box-shadow: 0px 5px 20px $ShadowPrimary;
                     border-width: 0;
                     border-radius: 18px;
                     overflow: hidden;
@@ -408,6 +436,16 @@
           }
         }
       }
+    }
+  }
+  
+  .MuiList-root{
+    border: 1px solid $PrimaryColor;
+    border-radius: 10px;
+  
+    option{
+      padding: .5rem;
+      margin-bottom: 0;
     }
   }
 }
