@@ -104,7 +104,7 @@ const Index = () => {
                 selectedCategories={selectedCategories}
                 handleCategoryChange={handleCategoryChange}
               />
-              <div className='col-md-9'></div>
+
               {/* <CourseFilters /> */}
               <div class='tab-content' id='pills-tabContent'>
                 <div
@@ -170,7 +170,7 @@ const Index = () => {
       <YoutubeSection />
       {/* Blog */}
       <section className='FNV-BlogTestiomonial'>
-        <h3>{t('latest-blogs')}</h3>
+        <h3>{t('Blogs')}</h3>
         <div className='container'>
           <div className='row'>
             <div className='col-12'>

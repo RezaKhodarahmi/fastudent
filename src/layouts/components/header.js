@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useCallback } from 'react'
 import Link from 'next/link'
-import Logo from 'src/views/logo.js'
+import Logo from 'src/views/logoMain.js'
 import feather from 'feather-icons'
 import { useAuth } from 'src/hooks/useAuth'
 import { useDispatch, useSelector } from 'react-redux'

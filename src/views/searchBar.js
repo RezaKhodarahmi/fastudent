@@ -30,7 +30,7 @@ const SearchSection = props => {
       <section className='FNV-Header'>
         <div className='container'>
           <div className='row'>
-            <div className='col-12 FNV-HCard'>
+            <div className='col-12 col-md-5 FNV-HCard'>
               <h1>{props.title}</h1>
               <form onSubmit={handleSearchSubmit} className='FNV-HSearch input-group mb-3'>
                 <Input

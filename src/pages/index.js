@@ -123,7 +123,7 @@ const Home = () => {
 
       {/* Blog */}
       <section className='FNV-BlogTestiomonial'>
-        <h3>{t('latest-blogs')}</h3>
+        <h3>{t('Blogs')}</h3>
         <div className='container'>
           <div className='row'>
             <div className='col-12'>
