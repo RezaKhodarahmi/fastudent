@@ -38,7 +38,7 @@ const Footer = props => {
               <div class="row">
                   <div class="col-12 col-md-6">
                       <h3>Fanavaran Newsletter</h3>
-                      <p>To know about the latest courses, webinars ..., become a member of the Fanavaran newsletter.</p>
+                      <p>Become a member of the Fanavaran newsletter.</p>
                   </div>
                   <div class="col-12 col-md-6">
                       <div class='FNV-Newsletter input-group mb-3'>
