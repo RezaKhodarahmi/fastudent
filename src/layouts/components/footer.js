@@ -58,7 +58,7 @@ const Footer = props => {
         <div className='container'>
           <div className='row'>
             {/* First Section */}
-            <div className='col-12 col-sm-4 col-md-4 pe-5'>
+            <div className='col-12 col-sm-4 col-md-4'>
               <Logo />
 
               <div class="d-flex gap-2">
@@ -127,7 +127,7 @@ const Footer = props => {
             </div>
 
             {/* Second Section */}
-            <div className='col-6 col-sm-4 col-md'>
+            <div className='col-4 col-sm-4 col-md'>
               <h4>Quick Access</h4>
               <ul className='list-group'>
                 <li className='list-group-item'>
@@ -161,7 +161,7 @@ const Footer = props => {
             </div>
 
             {/* Third Section */}
-            <div className='col-6 col-sm-4 col-md'>
+            <div className='col-4 col-sm-4 col-md'>
               <h4>Courses Category</h4>
               <ul className='list-group'>
                 <li className='list-group-item'>
@@ -192,7 +192,7 @@ const Footer = props => {
             </div>
 
             {/* Fourth Section */}
-            <div className='col-12 col-sm-4 col-md'>
+            <div className='col-4 col-sm-4 col-md'>
               <h4>Guide</h4>
               <ul className='list-group list-group-flush'>
                 <li className='list-group-item'>

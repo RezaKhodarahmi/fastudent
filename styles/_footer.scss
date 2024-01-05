@@ -43,17 +43,16 @@ newsletter{
               color: $PrimaryColor;
               font-size: 16px;
               font-weight: 400;
-              
-  
-              &::after,
-              &::before {
-                display: none;
-              }
   
               &::placeholder,
               &:-ms-input-placeholder {
                 color: $PrimaryColor !important;
               }
+            }
+
+            &::after,
+            &::before {
+              display: none;
             }
           }
 
@@ -84,7 +83,7 @@ footer {
     padding: 0;
     .row {
       .col-md-4 {
-        padding: 0 1rem;
+        padding: 0 5rem 0 1rem;
 
         svg{
           width: 80%;
@@ -305,23 +304,121 @@ footer {
 
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
+  newsletter{
+    background-color: $PrimaryColor;
+    border-top: 0px solid $PrimaryColor;
+    padding: 1rem 1rem;
+    display: block;
+    border-bottom: 2px solid $WhiteColor;
+  
+    .container{
+      .row{
+        .col-md-6{
+          padding: 0;
+  
+            h3{
+              font-size: 24px;
+              font-weight: bold;
+              color: $WhiteColor;
+              text-align: center;
+            }
+    
+            p{
+              color: $WhiteColor;
+              font-size: 12px;
+              font-weight: 400;
+              text-align: center;
+            }
+  
+          .FNV-Newsletter {
+            background-color: rgba(255, 255, 255, 0.6);
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            padding: .8rem;
+            border: 1px solid $WhiteColor;
+  
+            div{
+              width: 85%;
+  
+              .FNV-NewsletterInput {
+                background-color: transparent !important;
+                border-width: 0;
+                box-shadow: unset;
+                border-radius: 15px;
+                color: $PrimaryColor;
+                font-size: 16px;
+                font-weight: 400;
+                border-width: 0;
+                box-shadow: unset;
+                
+    
+                &::placeholder,
+                &:-ms-input-placeholder {
+                  color: $PrimaryColor !important;
+                }
+              }
+
+              &::after,
+              &::before {
+                display: none!important;
+              }
+            }
+  
+            button {
+              background-color: $PrimaryColor;
+              color: $WhiteColor;
+              border-radius: 15px 15px 15px 15px !important;
+              width: 15%;
+  
+              svg {
+                width: 30px;
+                height: 30px;
+                color: $WhiteColor
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   footer {
     background-color: $PrimaryColor;
     border-top: 0px solid $PrimaryColor;
-    padding: 2rem;
+    padding: 1rem;
   
     .container {
+      padding: 0;
       .row {
-        .col-md-3 {
-          padding: 1rem 0rem;
+        .col-md-4 {
+          padding: 1rem;
+  
+          svg{
+            width: 100%;
+            margin-bottom: 2rem;
+          }
           
-          img{
-            filter: brightness(100);
+          .d-flex{
+            justify-content: space-between;
+            
+            a{
+              font-size: 14px;
+              font-weight: 400;
+              border: 1px solid $WhiteColor;
+              border-radius: 8px;
+              color: $WhiteColor;
+              width: 100%;
+              text-align: center;
+              padding: .2rem 1rem;
+              direction: ltr;
+            }
           }
           
           h4 {
-            font-size: 18px;
+            font-size: 16px;
             color: $WhiteColor;
+            font-weight: bold;
           }
           
           .list-group{
@@ -331,7 +428,7 @@ footer {
             .list-group-item{
               background-color: transparent;
               border-width: 0;
-              padding: .5rem 0 0;
+              padding: 0rem 0 0;
   
               a{
                 color: $GrayTwoColor;
@@ -341,6 +438,73 @@ footer {
                 svg{
                   width: 16px;
                   height: 16px;
+                  margin-left: .5rem;
+                }
+  
+                &:hover{
+                  color: $WhiteColor;
+                }
+              }
+            }
+          }
+  
+          // Social
+          .FNV-Social {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            color: $WhiteColor;
+            overflow: hidden;
+            z-index: 11;
+            margin-top: 2rem;
+  
+            a {
+              color: $WhiteColor;
+              border-radius: 5px;
+  
+              svg {
+                width: 20;
+                height: 20;
+              }
+            }
+          }
+  
+          p{
+            font-size: 18px;
+            font-weight: 200;
+            color: $WhiteColor;
+            text-align: justify;
+          }
+        }
+  
+        .col-md {
+          padding: 0 1rem;
+          
+          h4 {
+            font-size: 10px;
+            color: $WhiteColor;
+            font-weight: bold;
+          }
+          
+          .list-group{
+            background-color: transparent;
+            padding: 0;
+            margin-bottom: 1rem;
+  
+            .list-group-item{
+              background-color: transparent;
+              border-width: 0;
+              padding: .5rem 0 0;
+  
+              a{
+                color: $GrayTwoColor;
+                font-size: 10px;
+                transition: .3s all ease-in-out;
+  
+                svg{
+                  width: 14px;
+                  height: 14px;
                   margin-right: .5rem;
                 }
   
@@ -366,8 +530,8 @@ footer {
               border-radius: 5px;
   
               &.FNV-Instagram {
-                width: 36px;
-                height: 36px;
+                width: 50px;
+                height: 50px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -376,8 +540,8 @@ footer {
               }
   
               &.FNV-Youtube {
-                width: 36px;
-                height: 36px;
+                width: 50px;
+                height: 50px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -385,8 +549,8 @@ footer {
               }
   
               &.FNV-Linkedin {
-                width: 36px;
-                height: 36px;
+                width: 50px;
+                height: 50px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -394,8 +558,8 @@ footer {
               }
   
               &.FNV-Facebook {
-                width: 36px;
-                height: 36px;
+                width: 50px;
+                height: 50px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -403,8 +567,8 @@ footer {
               }
   
               &.FNV-Telegram {
-                width: 36px;
-                height: 36px;
+                width: 50px;
+                height: 50px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -412,34 +576,37 @@ footer {
               }
   
               svg {
-                width: 16px;
-                height: 16px;
+                width: 18px;
+                height: 18px;
               }
             }
           }
   
           &:first-child{
-            padding: 1rem 0rem;
+            padding-right: 1rem;
+            padding-left: 0;
           }
   
           &:last-child{
-            padding: 1rem 0rem;
+            padding-left: 1rem;
+            padding-right: 0;
           }
         }
       }
+    }
+  }
   
-      &.FNV-Copyright{
-        margin-top: 2rem;
-        padding: 0;
-        
-        .row{
-          .col-12{
-            text-align: center;
-
-            small{
-              color: $GrayTwoColor;
-            }
-          }
+  .FNV-Copyright{
+    background-color: $SecondaryColor;
+    padding: 2rem;
+    
+    .row{
+      .col-12{
+        text-align: center;
+        small{
+          font-size: 12px;
+          color: $GrayTwoColor;
+          font-weight: 600;
         }
       }
     }
