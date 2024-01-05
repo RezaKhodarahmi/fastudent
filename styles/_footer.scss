@@ -43,7 +43,7 @@ newsletter{
               color: $PrimaryColor;
               font-size: 16px;
               font-weight: 400;
-              width: 15%;
+              
   
               &::after,
               &::before {
@@ -61,7 +61,7 @@ newsletter{
             background-color: $PrimaryColor;
             color: $WhiteColor;
             border-radius: 15px 15px 15px 15px !important;
-            width: 75px;
+            width: 15%;
 
             svg {
               width: 30px;

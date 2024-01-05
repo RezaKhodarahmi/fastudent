@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import Input from '@mui/material/Input'
 import feather from 'feather-icons'
-import Logo from 'src/views/logo.js'
+import Logo from 'src/views/logoWhite.js'
 
 // ** Hook Imports
 import Link from 'next/link'
@@ -44,7 +44,7 @@ const Footer = props => {
                       <div class='FNV-Newsletter input-group mb-3'>
                           <Input type='text' placeholder='Enter your email address' class='form-control FNV-NewsletterInput' aria-describedby='button-addon1' fullWidth />
                           <button class='FNV-Btn BtnMedium PrimaryColor' type='button' id='button-addon1'>
-                              <i data-feather='corner-up-left'></i>
+                              <i data-feather='corner-up-right'></i>
                           </button>
                       </div>
                   </div>

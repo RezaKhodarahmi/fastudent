@@ -2984,7 +2984,6 @@ body newsletter .container .row .col-md-6 .FNV-Newsletter div .FNV-NewsletterInp
   color: #003BBF;
   font-size: 16px;
   font-weight: 400;
-  width: 15%;
 }
 body newsletter .container .row .col-md-6 .FNV-Newsletter div .FNV-NewsletterInput::after, body newsletter .container .row .col-md-6 .FNV-Newsletter div .FNV-NewsletterInput::before {
   display: none;
@@ -2996,7 +2995,7 @@ body newsletter .container .row .col-md-6 .FNV-Newsletter button {
   background-color: #003BBF;
   color: #ffffff;
   border-radius: 15px 15px 15px 15px !important;
-  width: 75px;
+  width: 15%;
 }
 body newsletter .container .row .col-md-6 .FNV-Newsletter button svg {
   width: 30px;
