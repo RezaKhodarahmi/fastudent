@@ -1,5 +1,80 @@
 @import './variables';
 
+newsletter{
+  background-color: $PrimaryColor;
+  border-top: 0px solid $PrimaryColor;
+  padding: 4rem 2rem;
+  display: block;
+  border-bottom: 2px solid $WhiteColor;
+
+  .container{
+    .row{
+      .col-md-6{
+        padding: 0;
+
+          h3{
+            font-size: 24px;
+            font-weight: bold;
+            color: $WhiteColor;
+          }
+  
+          p{
+            color: $WhiteColor;
+            font-size: 12px;
+            font-weight: 400;
+          }
+
+        .FNV-Newsletter {
+          background-color: rgba(255, 255, 255, 0.6);
+          width: 100%;
+          border-radius: 15px;
+          overflow: hidden;
+          padding: .8rem;
+          border: 1px solid $WhiteColor;
+
+          div{
+            width: 85%;
+
+            .FNV-NewsletterInput {
+              background-color: transparent !important;
+              border-width: 0;
+              box-shadow: unset;
+              border-radius: 15px;
+              color: $PrimaryColor;
+              font-size: 16px;
+              font-weight: 400;
+              width: 15%;
+  
+              &::after,
+              &::before {
+                display: none;
+              }
+  
+              &::placeholder,
+              &:-ms-input-placeholder {
+                color: $PrimaryColor !important;
+              }
+            }
+          }
+
+          button {
+            background-color: $PrimaryColor;
+            color: $WhiteColor;
+            border-radius: 15px 15px 15px 15px !important;
+            width: 75px;
+
+            svg {
+              width: 30px;
+              height: 30px;
+              color: $WhiteColor
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 footer {
   background-color: $PrimaryColor;
   border-top: 0px solid $PrimaryColor;

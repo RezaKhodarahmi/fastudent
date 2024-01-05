@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import Input from '@mui/material/Input'
 import feather from 'feather-icons'
 import Logo from 'src/views/logo.js'
 
@@ -31,6 +32,27 @@ const Footer = props => {
         </Link>
       </div>
 
+      {/* NewsLetter */}
+      <newsletter>
+          <div class="container">
+              <div class="row">
+                  <div class="col-12 col-md-6">
+                      <h3>Fanavaran Newsletter</h3>
+                      <p>To know about the latest courses, webinars ..., become a member of the Fanavaran newsletter.</p>
+                  </div>
+                  <div class="col-12 col-md-6">
+                      <div class='FNV-Newsletter input-group mb-3'>
+                          <Input type='text' placeholder='Enter your email address' class='form-control FNV-NewsletterInput' aria-describedby='button-addon1' fullWidth />
+                          <button class='FNV-Btn BtnMedium PrimaryColor' type='button' id='button-addon1'>
+                              <i data-feather='corner-up-left'></i>
+                          </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </newsletter>
+
+      {/* Footer content */}
       <footer>
         {/* Footer Content */}
         <div className='container'>
