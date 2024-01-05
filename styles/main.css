@@ -3007,39 +3007,112 @@ body footer {
   border-top: 0px solid #003BBF;
   padding: 4rem 2rem;
 }
-body footer .container .row .col-md-3 {
+body footer .container {
+  padding: 0;
+}
+body footer .container .row .col-md-4 {
   padding: 0 1rem;
 }
-body footer .container .row .col-md-3 img {
-  filter: brightness(100);
+body footer .container .row .col-md-4 svg {
+  width: 80%;
+  margin-bottom: 2rem;
 }
-body footer .container .row .col-md-3 h4 {
-  font-size: 18px;
+body footer .container .row .col-md-4 .d-flex {
+  justify-content: space-between;
+}
+body footer .container .row .col-md-4 .d-flex a {
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
   color: #ffffff;
+  width: 100%;
+  text-align: center;
+  padding: 0.2rem 1rem;
+  direction: ltr;
 }
-body footer .container .row .col-md-3 .list-group {
+body footer .container .row .col-md-4 h4 {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+}
+body footer .container .row .col-md-4 .list-group {
   background-color: transparent;
   padding: 0;
 }
-body footer .container .row .col-md-3 .list-group .list-group-item {
+body footer .container .row .col-md-4 .list-group .list-group-item {
   background-color: transparent;
   border-width: 0;
-  padding: 0.5rem 0 0;
+  padding: 0rem 0 0;
 }
-body footer .container .row .col-md-3 .list-group .list-group-item a {
+body footer .container .row .col-md-4 .list-group .list-group-item a {
   color: #d9d9d9;
   font-size: 14px;
   transition: 0.3s all ease-in-out;
 }
-body footer .container .row .col-md-3 .list-group .list-group-item a svg {
+body footer .container .row .col-md-4 .list-group .list-group-item a svg {
+  width: 16px;
+  height: 16px;
+  margin-left: 0.5rem;
+}
+body footer .container .row .col-md-4 .list-group .list-group-item a:hover {
+  color: #ffffff;
+}
+body footer .container .row .col-md-4 .FNV-Social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  overflow: hidden;
+  z-index: 11;
+  margin-top: 2rem;
+}
+body footer .container .row .col-md-4 .FNV-Social a {
+  color: #ffffff;
+  border-radius: 5px;
+}
+body footer .container .row .col-md-4 .FNV-Social a svg {
+  width: 20;
+  height: 20;
+}
+body footer .container .row .col-md-4 p {
+  font-size: 18px;
+  font-weight: 200;
+  color: #ffffff;
+  text-align: justify;
+}
+body footer .container .row .col-md {
+  padding: 0 1rem;
+}
+body footer .container .row .col-md h4 {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+}
+body footer .container .row .col-md .list-group {
+  background-color: transparent;
+  padding: 0;
+}
+body footer .container .row .col-md .list-group .list-group-item {
+  background-color: transparent;
+  border-width: 0;
+  padding: 0.5rem 0 0;
+}
+body footer .container .row .col-md .list-group .list-group-item a {
+  color: #d9d9d9;
+  font-size: 14px;
+  transition: 0.3s all ease-in-out;
+}
+body footer .container .row .col-md .list-group .list-group-item a svg {
   width: 16px;
   height: 16px;
   margin-right: 0.5rem;
 }
-body footer .container .row .col-md-3 .list-group .list-group-item a:hover {
+body footer .container .row .col-md .list-group .list-group-item a:hover {
   color: #ffffff;
 }
-body footer .container .row .col-md-3 .FNV-Social {
+body footer .container .row .col-md .FNV-Social {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -3048,11 +3121,11 @@ body footer .container .row .col-md-3 .FNV-Social {
   overflow: hidden;
   z-index: 11;
 }
-body footer .container .row .col-md-3 .FNV-Social a {
+body footer .container .row .col-md .FNV-Social a {
   color: #ffffff;
   border-radius: 5px;
 }
-body footer .container .row .col-md-3 .FNV-Social a.FNV-Instagram {
+body footer .container .row .col-md .FNV-Social a.FNV-Instagram {
   width: 50px;
   height: 50px;
   display: flex;
@@ -3061,7 +3134,7 @@ body footer .container .row .col-md-3 .FNV-Social a.FNV-Instagram {
   background: #d6249f;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
 }
-body footer .container .row .col-md-3 .FNV-Social a.FNV-Youtube {
+body footer .container .row .col-md .FNV-Social a.FNV-Youtube {
   width: 50px;
   height: 50px;
   display: flex;
@@ -3069,7 +3142,7 @@ body footer .container .row .col-md-3 .FNV-Social a.FNV-Youtube {
   align-items: center;
   background: #c4302b;
 }
-body footer .container .row .col-md-3 .FNV-Social a.FNV-Linkedin {
+body footer .container .row .col-md .FNV-Social a.FNV-Linkedin {
   width: 50px;
   height: 50px;
   display: flex;
@@ -3077,7 +3150,7 @@ body footer .container .row .col-md-3 .FNV-Social a.FNV-Linkedin {
   align-items: center;
   background: #0072b1;
 }
-body footer .container .row .col-md-3 .FNV-Social a.FNV-Facebook {
+body footer .container .row .col-md .FNV-Social a.FNV-Facebook {
   width: 50px;
   height: 50px;
   display: flex;
@@ -3085,7 +3158,7 @@ body footer .container .row .col-md-3 .FNV-Social a.FNV-Facebook {
   align-items: center;
   background: #3b5998;
 }
-body footer .container .row .col-md-3 .FNV-Social a.FNV-Telegram {
+body footer .container .row .col-md .FNV-Social a.FNV-Telegram {
   width: 50px;
   height: 50px;
   display: flex;
@@ -3093,24 +3166,29 @@ body footer .container .row .col-md-3 .FNV-Social a.FNV-Telegram {
   align-items: center;
   background: #0088cc;
 }
-body footer .container .row .col-md-3 .FNV-Social a svg {
+body footer .container .row .col-md .FNV-Social a svg {
   width: 18px;
   height: 18px;
 }
-body footer .container .row .col-md-3:first-child {
+body footer .container .row .col-md:first-child {
   padding-right: 1rem;
   padding-left: 0;
 }
-body footer .container .row .col-md-3:last-child {
+body footer .container .row .col-md:last-child {
   padding-left: 1rem;
   padding-right: 0;
 }
-body footer .container.FNV-Copyright {
-  margin-top: 2rem;
-  padding: 0;
+body .FNV-Copyright {
+  background-color: #FF772C;
+  padding: 2rem;
 }
-body footer .container.FNV-Copyright .row .col-12 small {
+body .FNV-Copyright .row .col-12 {
+  text-align: center;
+}
+body .FNV-Copyright .row .col-12 small {
+  font-size: 14px;
   color: #d9d9d9;
+  font-weight: 400;
 }
 @media only screen and (max-width: 768px) {
   body footer {

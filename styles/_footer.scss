@@ -81,16 +81,102 @@ footer {
   padding: 4rem 2rem;
 
   .container {
+    padding: 0;
     .row {
-      .col-md-3 {
+      .col-md-4 {
         padding: 0 1rem;
-        img{
-          filter: brightness(100);
+
+        svg{
+          width: 80%;
+          margin-bottom: 2rem;
         }
+        
+        .d-flex{
+          justify-content: space-between;
+          
+          a{
+            font-size: 14px;
+            font-weight: 400;
+            border: 1px solid $WhiteColor;
+            border-radius: 8px;
+            color: $WhiteColor;
+            width: 100%;
+            text-align: center;
+            padding: .2rem 1rem;
+            direction: ltr;
+          }
+        }
+        
+        h4 {
+          font-size: 16px;
+          color: $WhiteColor;
+          font-weight: bold;
+        }
+        
+        .list-group{
+          background-color: transparent;
+          padding: 0;
+
+          .list-group-item{
+            background-color: transparent;
+            border-width: 0;
+            padding: 0rem 0 0;
+
+            a{
+              color: $GrayTwoColor;
+              font-size: 14px;
+              transition: .3s all ease-in-out;
+
+              svg{
+                width: 16px;
+                height: 16px;
+                margin-left: .5rem;
+              }
+
+              &:hover{
+                color: $WhiteColor;
+              }
+            }
+          }
+        }
+
+        // Social
+        .FNV-Social {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          color: $WhiteColor;
+          overflow: hidden;
+          z-index: 11;
+          margin-top: 2rem;
+
+          a {
+            color: $WhiteColor;
+            border-radius: 5px;
+
+            svg {
+              width: 20;
+              height: 20;
+            }
+          }
+        }
+
+        p{
+          font-size: 18px;
+          font-weight: 200;
+          color: $WhiteColor;
+          text-align: justify;
+        }
+      }
+
+      .col-md {
+        padding: 0 1rem;
         
         h4 {
           font-size: 18px;
           color: $WhiteColor;
+          font-weight: bold;
         }
         
         .list-group{
@@ -198,17 +284,20 @@ footer {
         }
       }
     }
+  }
+}
 
-    &.FNV-Copyright{
-      margin-top: 2rem;
-      padding: 0;
-      
-      .row{
-        .col-12{
-          small{
-            color: $GrayTwoColor;
-          }
-        }
+.FNV-Copyright{
+  background-color: $SecondaryColor;
+  padding: 2rem;
+  
+  .row{
+    .col-12{
+      text-align: center;
+      small{
+        font-size: 14px;
+        color: $GrayTwoColor;
+        font-weight: 400;
       }
     }
   }
