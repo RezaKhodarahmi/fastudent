@@ -9,8 +9,8 @@ export const initialState = {
   error: null
 }
 
-const blogSlice = createSlice({
-  name: 'blog',
+const webinarSlice = createSlice({
+  name: 'webinar',
   initialState,
   reducers: {
     getDataStart(state) {
@@ -28,14 +28,14 @@ const blogSlice = createSlice({
   }
 })
 
-export const { getDataStart, getDataSuccess, getDataFailure } = blogSlice.actions
+export const { getDataStart, getDataSuccess, getDataFailure } = webinarSlice.actions
 
-export const fetchBlogData = () => async dispatch => {
+export const fetchWebinarData = () => async dispatch => {
   dispatch(getDataStart())
   try {
     const token = window.localStorage.getItem('accessToken')
 
-    const response = await axios.get(`${BASE_URL}/student/blog`, {
+    const response = await axios.get(`${BASE_URL}/student/webinars`, {
       headers: {
         'Content-Type': 'application/json',
         Authorization: `Bearer ${token}`
@@ -50,13 +50,13 @@ export const fetchBlogData = () => async dispatch => {
   }
 }
 
-export const getBlogWithSlug = slug => async dispatch => {
+export const getWebinarWithSlug = data => async dispatch => {
   dispatch(getDataStart())
-  console.log(slug)
+
   try {
     const token = window.localStorage.getItem('accessToken')
 
-    const response = await axios.get(`${BASE_URL}/student/blog/${slug}`, {
+    const response = await axios.post(`${BASE_URL}/student/webinars/single`, data, {
       headers: {
         'Content-Type': 'application/json',
         Authorization: `Bearer ${token}`
@@ -70,4 +70,23 @@ export const getBlogWithSlug = slug => async dispatch => {
   }
 }
 
-export default blogSlice.reducer
+export const enrollUser = data => async dispatch => {
+  dispatch(getDataStart())
+
+  try {
+    const token = window.localStorage.getItem('accessToken')
+
+    const response = await axios.post(`${BASE_URL}/student/webinars/enroll`, data, {
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`
+      },
+      withCredentials: true
+    })
+
+    dispatch(getDataSuccess(response.data))
+  } catch (error) {
+    dispatch(getDataFailure(error.message))
+  }
+}
+export default webinarSlice.reducer

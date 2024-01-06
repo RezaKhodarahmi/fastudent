@@ -88,7 +88,7 @@ const Index = () => {
 
   return (
     <>
-      <div className='FNV-Courses'>
+      <div className='FNV-Courses-page FNV-Courses'>
         <Helmet>
           <title>{t('fanavaran-courses')}</title>
         </Helmet>

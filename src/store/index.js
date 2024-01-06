@@ -14,6 +14,7 @@ import referral from 'src/store/apps/referral'
 import cart from 'src/store/apps/cart'
 import category from 'src/store/apps/category'
 import blog from 'src/store/apps/blog'
+import webinar from 'src/store/apps/webinar'
 import blogCategory from 'src/store/apps/blog-category'
 
 export const store = configureStore({
@@ -29,6 +30,7 @@ export const store = configureStore({
     stripe,
     partially,
     blog,
+    webinar,
     blogCategory,
     cart
   },

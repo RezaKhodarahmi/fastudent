@@ -193,7 +193,7 @@ const Header = props => {
             </button>
 
             <div className='navbar-collapse justify-content-end' id=''>
-              <div className='FNV-User dropdown'>
+              {/* <div className='FNV-User dropdown'>
                 <button
                   className='FNV-Btn dropdown-toggle'
                   type='button'
@@ -214,7 +214,7 @@ const Header = props => {
                     </Link>
                   </li>
                 </ul>
-              </div>
+              </div> */}
               <Link href='/cart' className='FNV-Btn SecondaryColor'>
                 <i data-feather='shopping-cart'></i>
                 <span className='position-absolute top-10 start-70 translate-middle badge rounded-pill bg-danger'>
@@ -223,13 +223,13 @@ const Header = props => {
                 </span>
               </Link>
 
-              <Link href='#' className='FNV-Btn PrimaryColor position-relative'>
+              {/* <Link href='#' className='FNV-Btn PrimaryColor position-relative'>
                 <i data-feather='bell'></i>
                 <span className='position-absolute top-10 start-70 translate-middle badge rounded-pill bg-danger'>
                   9+
                   <span className='visually-hidden'>{t('unreadMessages')}</span>
                 </span>
-              </Link>
+              </Link> */}
 
               <div className='FNV-User dropdown'>
                 <button

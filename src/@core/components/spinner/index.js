@@ -42,13 +42,9 @@ const FallbackSpinner = ({ sx }) => {
         ...sx
       }}
     >
-      <LoginMainLogo
-        width={100}
-        alt='login-illustration'
-        src={`/images/${imageSource}-${theme.palette.mode}.png`}
-      />
+      <LoginMainLogo width={100} alt='login-illustration' src={`/images/${imageSource}-${theme.palette.mode}.png`} />
 
-      <CircularProgress color="warning" disableShrink sx={{ mt: 6 }} />
+      <CircularProgress color='warning' disableShrink sx={{ mt: 6 }} />
     </Box>
   )
 }

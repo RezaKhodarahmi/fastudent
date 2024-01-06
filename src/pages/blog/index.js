@@ -1,16 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet'
-import CoursePagination from '@mui/material/Pagination'
+import PostsPagination from '@mui/material/Pagination'
 import { Grid } from '@mui/material'
 import { useRouter } from 'next/router'
 import feather from 'feather-icons'
 import { fetchBlogData } from 'src/store/apps/blog'
-import { fetchBlogCategoryData } from 'src/store/apps/blog-category'
 import { useSelector, useDispatch } from 'react-redux'
 import YoutubeSection from 'src/views/youtubeSection'
-import SingleCourse from 'src/views/courses/singleCourse'
-import CategoryFilter from 'src/views/filters/categoryFilters'
-import CourseFilters from 'src/views/filters/courseFilters'
+import SinglePost from 'src/views/blog/singleBlog'
 
 // Import Translation
 import { useTranslation } from 'react-i18next'
@@ -21,51 +18,29 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 
 const BlogPage = () => {
-  const [selectedCategories, setSelectedCategories] = useState([])
-  const [selectedTeachers, setSelectedTeachers] = useState([])
   const [page, setPage] = useState(1)
-  const [categories, setCategories] = useState([])
-  const [course, setCourse] = useState([])
+  const [posts, setPosts] = useState([])
 
   //Hooks
   const router = useRouter()
   const dispatch = useDispatch()
-  const courseData = useSelector(state => state.course)
-  const categoryData = useSelector(state => state.category)
+  const blogData = useSelector(state => state.blog)
+
   const { t } = useTranslation()
 
   useEffect(() => {
-    dispatch(fetchCategoryData())
-    dispatch(fetchCourseData())
+    dispatch(fetchBlogData())
   }, [])
 
   useEffect(() => {
-    if (categoryData?.data) {
-      setCategories(categoryData?.data?.data)
-    }
-  }, [categoryData])
-
-  const handleCategoryChange = id => {
-    setSelectedCategories(
-      course.includes(id)
-        ? course.filter(catId => catId != id) // toggle category
-        : [...course, id] // add new category
-    )
-  }
-  useEffect(() => {
     feather.replace()
-    if (courseData?.data) {
-      setCourse(courseData?.data?.data)
+    if (blogData?.data) {
+      setPosts(blogData?.data?.data)
     }
-  }, [courseData])
+  }, [blogData])
 
   const handleChangePage = (event, value) => {
     setPage(value)
-  }
-
-  const handleClearFilters = () => {
-    setSelectedCategories([])
-    setSelectedTeachers([])
   }
 
   return (
@@ -88,12 +63,6 @@ const BlogPage = () => {
         <section className='FNV-CourseList'>
           <div className='container'>
             <div className='row justify-content-center'>
-              <CategoryFilter
-                categories={categories}
-                handleClearFilters={handleClearFilters}
-                selectedCategories={selectedCategories}
-                handleCategoryChange={handleCategoryChange}
-              />
               <div className='col-md-9'></div>
               {/* <CourseFilters /> */}
               <div class='tab-content' id='pills-tabContent'>
@@ -105,31 +74,16 @@ const BlogPage = () => {
                   tabBlogPage='0'
                 >
                   <div className='row'>
-                    {Array.isArray(course) ? (
+                    {Array.isArray(posts) ? (
                       (() => {
-                        const filteredCourses = course
-                          .filter(
-                            c =>
-                              selectedCategories.length === 0 ||
-                              c.categories.some(cat => selectedCategories.includes(cat.id))
-                          )
-                          .filter(
-                            c =>
-                              selectedTeachers.length === 0 ||
-                              c.teachers.some(teacher =>
-                                selectedTeachers.includes(teacher.firstName + ' ' + teacher.lastName)
-                              )
-                          )
-                          .slice((page - 1) * 5, page * 5)
+                        const filteredPosts = posts.slice((page - 1) * 5, page * 5)
 
-                        return filteredCourses.length ? (
-                          filteredCourses
-                            .filter(item => item.id != 150000)
-                            .map(course =>
-                              course.cycles?.length ? (
-                                <>{/* <SingleCourse key={course.id} course={course} addToCart={addToCart} /> */}</>
-                              ) : null
-                            )
+                        return filteredPosts.length ? (
+                          filteredPosts.map(post => (
+                            <>
+                              <SinglePost post={post} />
+                            </>
+                          ))
                         ) : (
                           <Grid p={5} mt={5} mb={5} container justifyContent='center'>
                             <h3>No Post found matching the selected filters.</h3>
@@ -141,8 +95,8 @@ const BlogPage = () => {
                     )}
 
                     <Grid container justifyContent='center' marginTop={'3rem'}>
-                      <CoursePagination
-                        count={Math.ceil(courseData?.data?.data?.length / 5)}
+                      <PostsPagination
+                        count={Math.ceil(blogData?.data?.data?.length / 5)}
                         page={page}
                         onChange={handleChangePage}
                         color='primary'
