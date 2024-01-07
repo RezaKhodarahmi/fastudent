@@ -4,7 +4,8 @@
   background-color: $WhiteColor;
 
   .FNV-Header {
-    background-image: radial-gradient(circle, rgba(255, 119, 44, 0.4) 0%, rgba(255, 119, 44, 0.9) 100%), url("/img/Course_Featured.png");
+    background-image: radial-gradient(circle, rgba(255, 119, 44, 0.4) 0%, rgba(255, 119, 44, 0.9) 100%),
+      url('/img/Course_Featured.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -12,12 +13,14 @@
     height: unset;
 
     .container {
+      padding: 0;
+
       .row {
         justify-content: center;
 
-        .col-12 {
+        .col-md-5 {
           h1 {
-            font-size: 48px;
+            font-size: 40px;
             font-weight: bold;
             color: $WhiteColor;
             text-align: center;
@@ -29,7 +32,7 @@
             width: 100%;
             border-radius: 15px;
             overflow: hidden;
-            padding: .8rem;
+            padding: 0.8rem;
             border: 1px solid $WhiteColor;
 
             .FNV-HSearchInput {
@@ -61,7 +64,7 @@
               svg {
                 width: 30px;
                 height: 30px;
-                color: $WhiteColor
+                color: $WhiteColor;
               }
             }
           }
@@ -75,49 +78,49 @@
 
     .container {
       .row {
-
         // Nav Pills
         .col-md-9 {
           padding: 0;
-          &:first-child {
-            .nav {
-              margin-bottom: 2rem;
+          .PopularCategories {
+            margin-bottom: 2rem;
 
-              .nav-item {
-                margin: 0 7px;
+            .nav-item {
+              margin: 0 7px;
 
-                .nav-link {
-                  background-color: $SecondPrimaryColor;
-                  color: $PrimaryColor;
-                  border-radius: 12px;
-                  font-size: 14px;
-                  font-weight: 400;
+              .nav-link {
+                background-color: $SecondPrimaryColor;
+                color: $PrimaryColor;
+                border-radius: 12px;
+                font-size: 14px;
+                font-weight: 400;
 
-                  &.active {
-                    background-color: $PrimaryColor !important;
-                    color: $WhiteColor;
-                  }
+                &.active {
+                  background-color: $PrimaryColor !important;
+                  color: $WhiteColor;
                 }
               }
             }
           }
 
-          &:nth-child(2) {
-            margin: 1rem 0 4rem;
+          .DropdownFilters {
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
 
-            .row {
-              .col-md-4 {
-                select {
-                  border-radius: 8px;
-                  border: 1px solid $PrimaryColor;
-                  background-color: transparent;
+            .nav-item {
+              width: 32%;
+
+              div {
+                border: 2px solid $PrimaryColor;
+                border-radius: 10px;
+
+                div {
+                  border-width: 0;
                   color: $PrimaryColor;
-
-                  option {
-                    border-radius: 8px;
-                    border: 1px solid $PrimaryColor;
-                    color: $PrimaryColor
-                  }
+                  font-weight: 600;
+                  font-size: 14px;
+                  padding: 0.5rem;
                 }
               }
             }
@@ -125,10 +128,10 @@
         }
 
         .tab-content {
-          .tab-pane{
+          .tab-pane {
             .row {
-              .col-md-4{
-                padding: .8rem;
+              .col-md-4 {
+                padding: 0.8rem;
                 .card {
                   box-shadow: 0px 5px 20px $ShadowPrimary;
                   border-width: 0;
@@ -152,7 +155,7 @@
                     color: $PrimaryColor;
                     background-color: $WhiteColor;
                     border-radius: 5px;
-                    padding: .2rem 1rem;
+                    padding: 0.2rem 1rem;
                   }
 
                   .card-body {
@@ -204,38 +207,53 @@
   }
 }
 
+.FNV-Courses-page .MuiList-root {
+  border: 1px solid $PrimaryColor;
+  border-radius: 10px;
+
+  option {
+    padding: 0.5rem;
+    margin-bottom: 0;
+  }
+}
+
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
   .FNV-Courses {
+    background-color: $WhiteColor;
+
     .FNV-Header {
-      background-image: radial-gradient(circle, rgba(255, 119, 44, 0.4) 0%, rgba(255, 119, 44, 0.9) 100%), url("/img/Course_Featured.png");
+      background-image: radial-gradient(circle, rgba(255, 119, 44, 0.4) 0%, rgba(255, 119, 44, 0.9) 100%),
+        url('/img/Course_Featured.png');
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
-      padding: 2rem 0;
+      padding: 2rem 1rem;
       height: unset;
-  
+
       .container {
+        padding: 0;
+
         .row {
           justify-content: center;
-  
-          .col-12 {
+
+          .col-md-5 {
             h1 {
-              font-size: 28px;
+              font-size: 30px;
               font-weight: bold;
               color: $WhiteColor;
               text-align: center;
               margin-bottom: 2rem;
             }
-  
+
             .FNV-HSearch {
               background-color: rgba(255, 255, 255, 0.6);
               width: 100%;
               border-radius: 15px;
               overflow: hidden;
-              padding: .8rem;
+              padding: 0.2rem;
               border: 1px solid $WhiteColor;
-  
+
               .FNV-HSearchInput {
                 background-color: transparent !important;
                 border-width: 0;
@@ -244,28 +262,29 @@
                 color: $PrimaryColor;
                 font-size: 16px;
                 font-weight: 400;
-  
+
                 &::after,
                 &::before {
                   display: none;
                 }
-  
+
                 &::placeholder,
                 &:-ms-input-placeholder {
                   color: $PrimaryColor !important;
+                  font-size: 12px;
                 }
               }
-  
+
               button {
                 background-color: $PrimaryColor;
                 color: $WhiteColor;
                 border-radius: 15px 15px 15px 15px !important;
-                width: 75px;
-  
+                width: 50px;
+
                 svg {
-                  width: 30px;
-                  height: 30px;
-                  color: $WhiteColor
+                  width: 20px;
+                  height: 20px;
+                  color: $WhiteColor;
                 }
               }
             }
@@ -273,82 +292,92 @@
         }
       }
     }
-  
+
     .FNV-CourseList {
       padding: 1rem;
 
       .container {
         .row {
-  
           // Nav Pills
           .col-md-9 {
-            padding: 1rem;
+            padding: 0;
+            .PopularCategories {
+              margin-bottom: 2rem;
+              display: flex;
+              flex-direction: row;
 
-            &:first-child {
-              padding: 0;
-              .nav {
-                margin-bottom: 1rem;
-  
-                .nav-item {
-                  margin: .2rem;
-  
+              .nav-item {
+                margin: 0.2rem;
+                width: 31%;
+
+                .nav-link {
+                  background-color: $SecondPrimaryColor;
+                  color: $PrimaryColor;
+                  border-radius: 12px;
+                  font-size: 10px;
+                  font-weight: 400;
+                  width: 100%;
+                  padding: 0.5rem 0.1rem;
+
+                  &.active {
+                    background-color: $PrimaryColor !important;
+                    color: $WhiteColor;
+                  }
+                }
+
+                &:last-child {
+                  width: 100%;
+
                   .nav-link {
-                    background-color: $SecondPrimaryColor;
-                    color: $PrimaryColor;
-                    border-radius: 12px;
-                    font-size: 10px;
-                    font-weight: 400;
-  
-                    &.active {
-                      background-color: $PrimaryColor !important;
-                      color: $WhiteColor;
-                    }
+                    width: 100%;
                   }
                 }
               }
             }
-  
-            &:nth-child(2) {
-              margin-bottom: 1rem;
-              .row {
-                .col-md-4 {
-                  padding: 0;
 
-                  select {
-                    border-radius: 8px;
-                    border: 1px solid $PrimaryColor;
-                    background-color: transparent;
+            .DropdownFilters {
+              margin-bottom: 2rem;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+
+              .nav-item {
+                width: 31%;
+
+                div {
+                  border: 2px solid $PrimaryColor;
+                  border-radius: 10px;
+
+                  div {
+                    border-width: 0;
                     color: $PrimaryColor;
-                    font-size: 10px;
-  
-                    option {
-                      border-radius: 8px;
-                      border: 1px solid $PrimaryColor;
-                      color: $PrimaryColor
-                    }
+                    font-weight: 600;
+                    font-size: 14px;
+                    padding: 0.5rem;
                   }
                 }
               }
             }
           }
-  
+
           .tab-content {
-            .tab-pane{
+            .tab-pane {
               .row {
-                .col-md-4{
-                  padding: .8rem 0;
+                .col-md-4 {
+                  padding: 0.8rem;
                   .card {
+                    box-shadow: 0px 5px 20px $ShadowPrimary;
                     border-width: 0;
                     border-radius: 18px;
                     overflow: hidden;
                     position: relative;
                     cursor: grab;
-  
+
                     &:active,
                     &:target {
                       cursor: grabbing;
                     }
-  
+
                     badge {
                       position: absolute;
                       top: 1rem;
@@ -359,14 +388,14 @@
                       color: $PrimaryColor;
                       background-color: $WhiteColor;
                       border-radius: 5px;
-                      padding: .2rem 1rem;
+                      padding: 0.2rem 1rem;
                     }
-  
+
                     .card-body {
                       background-color: $WhiteColor;
                       border-radius: 18px;
                       margin-top: -3rem;
-  
+
                       h4 {
                         font-size: 22px;
                         line-height: 44px;
@@ -374,7 +403,7 @@
                         color: $PrimaryColor;
                         text-align: center;
                       }
-  
+
                       price {
                         font-size: 22px;
                         font-weight: 400;
@@ -384,17 +413,17 @@
                         width: 100%;
                         display: inline-block;
                       }
-  
+
                       .d-flex {
                         margin-top: 1rem;
-  
+
                         .FNV-Btn {
                           width: 100%;
-  
+
                           &:first-child {
                             margin-right: 5px;
                           }
-  
+
                           &:nth-child(2) {
                             margin-left: 5px;
                           }
@@ -408,6 +437,16 @@
           }
         }
       }
+    }
+  }
+
+  .MuiList-root {
+    border: 1px solid $PrimaryColor;
+    border-radius: 10px;
+
+    option {
+      padding: 0.5rem;
+      margin-bottom: 0;
     }
   }
 }

@@ -1,7 +1,7 @@
 // ** Next Import
 import Link from 'next/link'
 import * as yup from 'yup'
-import Logo from 'src/views/logo.js'
+import Logo from 'src/views/logoMain.js'
 
 // ** MUI Components
 import Button from '@mui/material/Button'

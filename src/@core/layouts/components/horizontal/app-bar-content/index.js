@@ -34,7 +34,6 @@ const LoginMainLogo = styled('img')(({ theme }) => ({
 }))
 
 const AppBarContent = props => {
-
   // ** Props
   const { appBarContent: userAppBarContent, appBarBranding: userAppBarBranding } = props
 
@@ -54,10 +53,10 @@ const AppBarContent = props => {
       ) : (
         <LinkStyled href='/'>
           <LoginMainLogo
-              width={250}
-              alt='login-illustration'
-              src={`/images/${imageSource}-${theme.palette.mode}.png`}
-            />
+            width={250}
+            alt='login-illustration'
+            src={`/images/${imageSource}-${theme.palette.mode}.png`}
+          />
         </LinkStyled>
       )}
       {userAppBarContent ? userAppBarContent(props) : null}

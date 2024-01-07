@@ -1,4 +1,5 @@
 import React from 'react'
+import Select from '@mui/material/Select'
 
 // Import Translation
 import { useTranslation } from 'react-i18next'
@@ -10,7 +11,7 @@ const CategoryFilters = ({ categories, selectedCategories, handleClearFilters, h
     <>
       {/* Navbar Filters */}
       <div className='col-md-9'>
-        <ul class='nav justify-content-between nav-pills mb-3 p-0' id='pills-tab' role='tablist'>
+        <ul class='nav justify-content-between nav-pills mb-3 p-0 PopularCategories' id='pills-tab' role='tablist'>
           <li class='nav-item' role='presentation'>
             <button
               onClick={() => handleClearFilters()}

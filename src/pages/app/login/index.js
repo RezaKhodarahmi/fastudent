@@ -5,7 +5,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 
 // ** MUI Components
-import Alert from '@mui/material/Alert'
+import Logo from 'src/views/logoMain.js'
 import Button from '@mui/material/Button'
 import Divider from '@mui/material/Divider'
 import Checkbox from '@mui/material/Checkbox'
