@@ -45,16 +45,17 @@ const BlogPage = () => {
 
   return (
     <>
-      <div className='FNV-Courses'>
+      <div className='FNV-Blog'>
         <Helmet>
-          <title>{t('fanavaran-blogs-page')}</title>
+          <title>{t('Fanavaran Blogs Archhive')}</title>
         </Helmet>
 
         <section className='FNV-Header'>
           <div className='container'>
             <div className='row'>
               <div className='col-12 FNV-HCard'>
-                <h1>{t('fanavaran-blogs-page')}</h1>
+                <h5 class="text-white my-2">{t('Read with us')}</h5>
+                <h1>{t('Fanavaran Blog Archive')}</h1>
               </div>
             </div>
           </div>
