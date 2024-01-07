@@ -182,7 +182,7 @@ const AuthProvider = ({ children }) => {
     axios
       .post(authConfig.registerPersonalInfo, params)
       .then(res => {
-        setResponse(res.data.user)
+        setResponse(res.data?.data)
       })
       .catch(err => {
         setResponse(null)

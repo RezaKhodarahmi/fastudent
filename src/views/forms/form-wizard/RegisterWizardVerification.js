@@ -99,6 +99,7 @@ const StepperLinearWithValidationVerification = props => {
   const [activeStep, setActiveStep] = useState(1)
   const [registerStep, setRegisterStep] = useState(null)
   const [user, setUser] = useState(null)
+  const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
   const [formData, setFormData] = useState([])
   const [isSubmite, setIsSubmite] = useState(false)
@@ -112,6 +113,7 @@ const StepperLinearWithValidationVerification = props => {
   useEffect(() => {
     if (token) {
       auth.verification({ token })
+      setLoading(true)
     }
   }, [token])
 
@@ -119,14 +121,16 @@ const StepperLinearWithValidationVerification = props => {
   useEffect(() => {
     if (auth.response) {
       setUser(auth.response)
-      console.log(auth.response.registerStep)
       setRegisterStep(auth.response.registerStep)
+      console.log('The first one' + auth.response.registerStep)
+
       if (parseInt(auth.response.registerStep) !== 1) {
         setActiveStep(auth.response.registerStep - 1)
       }
     } else {
       setError('Server error. Please contact website support!')
     }
+    setLoading(false)
   }, [auth.response])
 
   //Send form to databace
@@ -168,6 +172,7 @@ const StepperLinearWithValidationVerification = props => {
   })
 
   const onSubmit = e => {
+    console.log('The Last one' + registerStep)
     setFormData({ registerStep, email: user.email, token, ...e })
     setActiveStep(activeStep + 1)
     setIsSubmite(true)
@@ -475,6 +480,7 @@ const StepperLinearWithValidationVerification = props => {
       return getStepContent(activeStep)
     }
   }
+  if (loading) return <p>Loading</p>
 
   return (
     <Card>
