@@ -1,0 +1,36 @@
+@import './variables';
+
+.FNV-Blog {
+  background-color: $WhiteColor;
+
+  .FNV-Header {
+    background-image: unset;
+    background-color: $SecondaryColor;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 5rem 0;
+    height: unset;
+
+    .container {
+      padding: 0;
+
+      .row {
+        justify-content: center;
+
+        .FNV-HCard{
+            h1{
+                text-transform: capitalize;
+                font-weight: 500;
+                margin-bottom: 0;
+            }
+
+            h5{
+              font-weight: 300;
+              margin-bottom: 0;
+            }
+        }
+      }
+    }
+  }
+}

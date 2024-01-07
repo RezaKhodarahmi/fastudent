@@ -53,10 +53,14 @@ body {
   // Events
   @import './youtube';
 
-  &.FNV-Courses {
-    // All Courses Page
-    @import './courses';
-  }
+  // All Courses Page
+  @import './courses';
+
+  // All Courses Page
+  @import './Webinars';
+
+  // All Courses Page
+  @import './Blogs';
 
   &.FNV-SingleCourse {
     // All Courses Page

@@ -8,6 +8,9 @@ import { useSelector, useDispatch } from 'react-redux'
 import YoutubeSection from 'src/views/youtubeSection'
 import SingleWebinar from 'src/views/webinar/singleWebinar'
 
+// ** Import Webinars section
+import WebinarsSection from 'src/views/swiper/webinarList'
+
 // Import Translation
 import { useTranslation } from 'react-i18next'
 
@@ -43,17 +46,27 @@ const WebinarPage = () => {
 
   return (
     <>
-      <div className='FNV-Courses'>
+      <div className='FNV-Webinars'>
         <Helmet>
-          <title>{t('fanavaran-webinar-page')}</title>
+          <title>{t('Fanavaran Webinars')}</title>
         </Helmet>
 
         <section className='FNV-Header'>
           <div className='container'>
             <div className='row'>
               <div className='col-12 FNV-HCard'>
-                <h1>{t('fanavaran-webinar-page')}</h1>
+                <h1>{t('Fanavaran Webinars')}</h1>
               </div>
+            </div>
+          </div>
+        </section>
+
+    <WebinarsSection/>
+        <section className='FNV-WebinarList'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-12 col-md-4'>a</div>
+              <div className='col-12 col-md-8'>b</div>
             </div>
           </div>
         </section>
