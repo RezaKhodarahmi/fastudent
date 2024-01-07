@@ -248,20 +248,16 @@ const Header = props => {
                     </Link>
                   </li>
                   <li>
-                    <Link className='dropdown-item' href='/app/pages/account-settings/account/'>
+                    <Link className='dropdown-item' href='app/pages/account-settings/account/'>
                       <i data-feather='user'></i> Profile
                     </Link>
                   </li>
                   <li>
-                    <Link className='dropdown-item' href='/app/apps/certificates/list/'>
+                    <Link className='dropdown-item' href='/app/dashboards/certificates/'>
                       <i data-feather='award'></i> {t('certificate')}
                     </Link>
                   </li>
-                  <li>
-                    <Link className='dropdown-item' href='/app/pages/account-settings/security/'>
-                      <i data-feather='lock'></i> Security
-                    </Link>
-                  </li>
+
                   <li>
                     <Link href='#' className='dropdown-item' style={{ cursor: 'pointer' }} onClick={handleLogout}>
                       <i data-feather='log-out'></i> Logout

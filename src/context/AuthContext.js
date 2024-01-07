@@ -150,8 +150,8 @@ const AuthProvider = ({ children }) => {
         setResponse(res)
       })
       .catch(err => {
-        setError(err.response.data.message)
-        toast.error(err.response.data.message)
+        setError(err.response.data.message || 'Error!')
+        toast.error(err.response.data.message || 'Error!')
 
         setResponse(null)
       })
