@@ -204,12 +204,12 @@ const Header = props => {
                 </button>
                 <ul className='dropdown-menu'>
                   <li>
-                    <Link href='#' className='dropdown-item' onClick={() => changeLanguage('en')}>
+                    <Link href="/" className='dropdown-item' onClick={() => changeLanguage('en')}>
                       English
                     </Link>
                   </li>
                   <li>
-                    <Link href='#' className='dropdown-item' onClick={() => changeLanguage('fa')}>
+                    <Link href="/" className='dropdown-item' onClick={() => changeLanguage('fa')}>
                       فارسی
                     </Link>
                   </li>
@@ -223,7 +223,7 @@ const Header = props => {
                 </span>
               </Link>
 
-              {/* <Link href='#' className='FNV-Btn PrimaryColor position-relative'>
+              {/* <Link href="/" className='FNV-Btn PrimaryColor position-relative'>
                 <i data-feather='bell'></i>
                 <span className='position-absolute top-10 start-70 translate-middle badge rounded-pill bg-danger'>
                   9+
@@ -259,7 +259,7 @@ const Header = props => {
                   </li>
 
                   <li>
-                    <Link href='#' className='dropdown-item' style={{ cursor: 'pointer' }} onClick={handleLogout}>
+                    <Link href='/' className='dropdown-item' style={{ cursor: 'pointer' }} onClick={handleLogout}>
                       <i data-feather='log-out'></i> Logout
                     </Link>
                   </li>
@@ -278,38 +278,38 @@ const Header = props => {
                 </li>
 
                 <li className='nav-item dropdown FNV-MegaMenu'>
-                  <a className='nav-link' href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
+                  <Link className='nav-link' href='/' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
                     Certification
-                  </a>
+                  </Link>
                   <ul className='dropdown-menu'>
                     <div className='container-fluid'>
                       <div className='row'>
                         <div className='col-md-3'>
                           <li>
-                            <a className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Action
-                            </a>
+                            </Link>
                           </li>
                         </div>
                         <div className='col-md-3'>
                           <li>
-                            <a className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Something else here
-                            </a>
+                            </Link>
                           </li>
                         </div>
                         <div className='col-md-3'>
                           <li>
-                            <a className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Something else here
-                            </a>
+                            </Link>
                           </li>
                         </div>
                         <div className='col-md-3'>
                           <li>
-                            <a className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Something else here
-                            </a>
+                            </Link>
                           </li>
                         </div>
                       </div>
@@ -324,44 +324,44 @@ const Header = props => {
                 </li>
 
                 <li className='nav-item dropdown FNV-MegaMenu'>
-                  <a className='nav-link' href='/blog' aria-expanded='false'>
+                  <Link className='nav-link' href='/blog' aria-expanded='false'>
                     Blog
-                  </a>
+                  </Link>
                 </li>
 
                 <li className='nav-item dropdown FNV-MegaMenu'>
-                  <a className='nav-link' href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
+                  <Link className='nav-link' href='/' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
                     Business Solutions
-                  </a>
+                  </Link>
                   <ul className='dropdown-menu'>
                     <div className='container-fluid'>
                       <div className='row'>
                         <div className='col-md-3'>
                           <li>
-                            <a className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Action
-                            </a>
+                            </Link>
                           </li>
                         </div>
                         <div className='col-md-3'>
                           <li>
-                            <a className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Something else here
-                            </a>
+                            </Link>
                           </li>
                         </div>
                         <div className='col-md-3'>
                           <li>
-                            <a className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Something else here
-                            </a>
+                            </Link>
                           </li>
                         </div>
                         <div className='col-md-3'>
                           <li>
-                            <a className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Something else here
-                            </a>
+                            </Link>
                           </li>
                         </div>
                       </div>
@@ -373,7 +373,7 @@ const Header = props => {
               <div className='d-flex' role='search'>
                 <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
                   <li className='nav-item FNV-MegaMenu-Search'>
-                    <Link href='#' className='nav-link' role='button' aria-expanded='false' onClick={handleOpen}>
+                    <Link href='/' className='nav-link' role='button' aria-expanded='false' onClick={handleOpen}>
                       <i data-feather='search'></i>
                     </Link>
                   </li>
@@ -422,7 +422,7 @@ const Header = props => {
                 <i data-feather='shopping-cart'></i>
               </Link>
 
-              <Link href='#' className='FNV-Btn LightColor BtnMedium'>
+              <Link href='/' className='FNV-Btn LightColor BtnMedium'>
                 نسخه فارسی
               </Link>
             </div>
@@ -438,36 +438,36 @@ const Header = props => {
                   </Link>
                   <ul className='dropdown-menu'>
                     <div className='container-fluid'>
-                      <a>
+                      <Link href='/'>
                         Explore Courses<span>See the latest that FANAVARAN has to offer</span>
-                      </a>
+                      </Link>
                       <div className='row'>
                         <div className='col'>
                           <span>
                             <i data-feather='package'></i> Project Management
                           </span>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Course Name
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Course Name
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Course Name
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Course Name
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Course Name
                             </Link>
                           </li>
@@ -477,27 +477,27 @@ const Header = props => {
                             <i data-feather='package'></i> Engineering
                           </span>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Course Name
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Course Name
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Course Name
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Course Name
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Course Name
                             </Link>
                           </li>
@@ -507,27 +507,27 @@ const Header = props => {
                             <i data-feather='package'></i> Energy Advisory
                           </span>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Course Name
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Course Name
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Course Name
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Course Name
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Course Name
                             </Link>
                           </li>
@@ -537,27 +537,27 @@ const Header = props => {
                             <i data-feather='package'></i> Plumbing
                           </span>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Course Name
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Course Name
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Course Name
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Course Name
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Course Name
                             </Link>
                           </li>
@@ -567,27 +567,27 @@ const Header = props => {
                             <i data-feather='package'></i> Electrician
                           </span>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Course Name
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Course Name
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Course Name
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Course Name
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Course Name
                             </Link>
                           </li>
@@ -598,41 +598,41 @@ const Header = props => {
                 </li>
                 {/* Certification */}
                 <li className='nav-item dropdown FNV-MegaMenu'>
-                  <Link className='nav-link' href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
+                  <Link className='nav-link' href='/' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
                     Certification
                   </Link>
                   <ul className='dropdown-menu'>
                     <div className='container-fluid'>
-                      <a>
+                      <Link href='/'>
                         Certification<span>Get recognition for your skills and experience</span>
-                      </a>
+                      </Link>
                       <div className='row'>
                         <div className='col-md-3'>
                           <span>
                             <i data-feather='award'></i> Certification Overview
                           </span>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Compare Certification
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Certification FAQs
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Certification Registry
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Report PDUs
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Maintain Your Certification
                             </Link>
                           </li>
@@ -642,27 +642,27 @@ const Header = props => {
                             <i data-feather='award'></i> PMP Certification
                           </span>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Project Management Professional
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Item 2
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Item 3
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Item 4
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Item 5
                             </Link>
                           </li>
@@ -672,27 +672,27 @@ const Header = props => {
                             <i data-feather='award'></i> P.Eng Certification
                           </span>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Item 1
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Item 2
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Item 3
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Item 4
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Item 5
                             </Link>
                           </li>
@@ -702,27 +702,27 @@ const Header = props => {
                             <i data-feather='award'></i> TEC Certification
                           </span>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Item 1
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Item 2
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Item 3
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Item 4
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Item 5
                             </Link>
                           </li>
@@ -743,9 +743,9 @@ const Header = props => {
                   </Link>
                   <ul className='dropdown-menu pe-0 pb-0 w-50'>
                     <div className='container-fluid pe-0 pb-0'>
-                      <a>
+                      <Link href='/'>
                         Membership<span>Become a part of the FANAVARAN family</span>
-                      </a>
+                      </Link>
                       <div className='row'>
                         <div className='col-md-6 pb-4'>
                           <div className='row'>
@@ -759,22 +759,22 @@ const Header = props => {
                                 </Link>
                               </li>
                               <li>
-                                <Link className='dropdown-item' href='#'>
+                                <Link className='dropdown-item' href='/'>
                                   Student Membership
                                 </Link>
                               </li>
                               <li>
-                                <Link className='dropdown-item' href='#'>
+                                <Link className='dropdown-item' href='/'>
                                   Local Chapters
                                 </Link>
                               </li>
                               <li>
-                                <Link className='dropdown-item' href='#'>
+                                <Link className='dropdown-item' href='/'>
                                   Membership FAQs
                                 </Link>
                               </li>
                               <li>
-                                <Link className='dropdown-item' href='#'>
+                                <Link className='dropdown-item' href='/'>
                                   Business Reading Center
                                 </Link>
                               </li>
@@ -784,27 +784,27 @@ const Header = props => {
                                 <i data-feather='users'></i> Community
                               </span>
                               <li>
-                                <Link className='dropdown-item' href='#'>
+                                <Link className='dropdown-item' href='/'>
                                   Global Community
                                 </Link>
                               </li>
                               <li>
-                                <Link className='dropdown-item' href='#'>
+                                <Link className='dropdown-item' href='/'>
                                   Volunteering
                                 </Link>
                               </li>
                               <li>
-                                <Link className='dropdown-item' href='#'>
+                                <Link className='dropdown-item' href='/'>
                                   Career Central
                                 </Link>
                               </li>
                               <li>
-                                <Link className='dropdown-item' href='#'>
+                                <Link className='dropdown-item' href='/'>
                                   Item 4
                                 </Link>
                               </li>
                               <li>
-                                <Link className='dropdown-item' href='#'>
+                                <Link className='dropdown-item' href='/'>
                                   Item 5
                                 </Link>
                               </li>
@@ -833,7 +833,7 @@ const Header = props => {
                 </li>
 
                 <li className='nav-item dropdown FNV-MegaMenu'>
-                  <Link className='nav-link' href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
+                  <Link className='nav-link' href='/' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
                     Business Solutions
                   </Link>
                   <ul className='dropdown-menu w-50'>
@@ -841,28 +841,28 @@ const Header = props => {
                       <div className='row'>
                         <div className='col-md-3'>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Action
                             </Link>
                           </li>
                         </div>
                         <div className='col-md-3'>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Something else here
                             </Link>
                           </li>
                         </div>
                         <div className='col-md-3'>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Something else here
                             </Link>
                           </li>
                         </div>
                         <div className='col-md-3'>
                           <li>
-                            <Link className='dropdown-item' href='#'>
+                            <Link className='dropdown-item' href='/'>
                               Something else here
                             </Link>
                           </li>
@@ -876,7 +876,7 @@ const Header = props => {
               <div className='d-flex' role='search'>
                 <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
                   <li className='nav-item FNV-MegaMenu-Search'>
-                    <Link href='#' className='nav-link' role='button' aria-expanded='false' onClick={handleOpen}>
+                    <Link href='/' className='nav-link' role='button' aria-expanded='false' onClick={handleOpen}>
                       <i data-feather='search'></i>
                     </Link>
                   </li>
@@ -939,7 +939,6 @@ const Header = props => {
                     }}
                     style={{ marginLeft: '10px' }}
                     href={`${appConfig.appUrl}/courses/${course.slug}`}
-                    passHref
                   >
                     {course.title}
                   </Link>
@@ -968,7 +967,7 @@ const Header = props => {
         aria-labelledby='offcanvasExampleLabel'
       >
         <div className='offcanvas-header'>
-          <Link className='navbar-brand' href='#'>
+          <Link className='navbar-brand' href='/'>
             <img src='/img/MainLogo.png' className='img-fluid' />
           </Link>
           <button type='button' className='btn-close' data-bs-dismiss='offcanvas' aria-label='Close'></button>
@@ -982,7 +981,7 @@ const Header = props => {
         aria-labelledby='offcanvasExampleLabel'
       >
         <div className='offcanvas-header'>
-          <Link className='navbar-brand' href='#' passHref>
+          <Link className='navbar-brand' href='/'>
             <img src='/img/MainLogo.png' className='img-fluid' />
           </Link>
           <button type='button' className='btn-close' data-bs-dismiss='offcanvas' aria-label='Close'></button>

@@ -10,7 +10,7 @@ import { Autoplay, Pagination } from 'swiper/modules'
 // ** Import translation
 import { useTranslation } from 'react-i18next'
 
-const CourseMobileSingle = ({ courses }) => {
+const CourseMobileSingle = ({ courses, addToCart }) => {
   const { t } = useTranslation()
 
   // Ensure courses is always treated as an array

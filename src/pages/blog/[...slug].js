@@ -46,5 +46,6 @@ const SinglePost = () => {
     </>
   )
 }
+SinglePost.guestGuard = true
 
 export default SinglePost

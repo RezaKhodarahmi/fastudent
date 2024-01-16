@@ -33,6 +33,7 @@ import WebinarsSection from 'src/views/swiper/webinarDeskSingle'
 
 // ** Categories Section
 import CategoriesSection from 'src/views/categoriesSection'
+
 const Home = () => {
   const [courses, setCourses] = useState([])
 
@@ -82,9 +83,9 @@ const Home = () => {
           <div className='row'>
             <div className='col-12'>
               {/* Courses Desktop */}
-              <CourseDeskSingle courses={courses} />
+              <CourseDeskSingle courses={courses} addToCart={addToCart} />
               {/* Courses Mobile */}
-              <CourseMobileSingle courses={courses} />
+              <CourseMobileSingle courses={courses} addToCart={addToCart} />
             </div>
           </div>
         </div>
@@ -183,7 +184,7 @@ const Home = () => {
                       </p>
                       <div className='d-flex flex-row w-100'>
                         <div className='col-3'>
-                          <img src='img/user.png' />
+                          <img src='' />
                         </div>
                         <div className='col-9'>
                           <span className='FNV-PersonName'>Name</span>
@@ -203,7 +204,7 @@ const Home = () => {
                       </p>
                       <div className='d-flex flex-row w-100'>
                         <div className='col-3'>
-                          <img src='img/user.png' />
+                          <img src='' />
                         </div>
                         <div className='col-9'>
                           <span className='FNV-PersonName'>Name</span>
@@ -223,7 +224,7 @@ const Home = () => {
                       </p>
                       <div className='d-flex flex-row w-100'>
                         <div className='col-3'>
-                          <img src='img/user.png' />
+                          <img src='' />
                         </div>
                         <div className='col-9'>
                           <span className='FNV-PersonName'>Name</span>
@@ -243,7 +244,7 @@ const Home = () => {
                       </p>
                       <div className='d-flex flex-row w-100'>
                         <div className='col-3'>
-                          <img src='img/user.png' />
+                          <img src='' />
                         </div>
                         <div className='col-9'>
                           <span className='FNV-PersonName'>Name</span>
@@ -293,7 +294,7 @@ const Home = () => {
                       </p>
                       <div className='d-flex flex-row w-100'>
                         <div className='col-3'>
-                          <img src='img/user.png' />
+                          <img src='' />
                         </div>
                         <div className='col-9'>
                           <span className='FNV-PersonName'>Name</span>
@@ -313,7 +314,7 @@ const Home = () => {
                       </p>
                       <div className='d-flex flex-row w-100'>
                         <div className='col-3'>
-                          <img src='img/user.png' />
+                          <img src='' />
                         </div>
                         <div className='col-9'>
                           <span className='FNV-PersonName'>Name</span>
@@ -333,7 +334,7 @@ const Home = () => {
                       </p>
                       <div className='d-flex flex-row w-100'>
                         <div className='col-3'>
-                          <img src='img/user.png' />
+                          <img src='' />
                         </div>
                         <div className='col-9'>
                           <span className='FNV-PersonName'>Name</span>
@@ -353,7 +354,7 @@ const Home = () => {
                       </p>
                       <div className='d-flex flex-row w-100'>
                         <div className='col-3'>
-                          <img src='img/user.png' />
+                          <img src='' />
                         </div>
                         <div className='col-9'>
                           <span className='FNV-PersonName'>Name</span>

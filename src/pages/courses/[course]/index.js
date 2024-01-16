@@ -4,13 +4,14 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { setCartItems } from 'src/store/apps/cart'
 import { getCourseWithSlug, getEnrolledCourse } from 'src/store/apps/course'
-import axios from 'axios'
-import BASE_URL from 'src/api/BASE_URL'
+import { postNewComment } from 'src/store/apps/comment'
 import feather from 'feather-icons'
 import LinearProgress from '@mui/material/LinearProgress'
 import Typography from '@mui/material/Typography'
 import { appConfig } from 'src/configs/appConfig'
 import ReactPlayer from 'react-player'
+import { Button, TextareaAutosize, List, ListItem, ListItemText, Divider, Box } from '@mui/material'
+import { useAuth } from 'src/hooks/useAuth'
 
 const Course = () => {
   const [data, setData] = useState(null)
@@ -19,14 +20,22 @@ const Course = () => {
   const [selectedCycle, setSelectedCycle] = useState(null) // Add state for the selected cycle
   const [inCart, setInCart] = useState(false)
   const [inEnrolled, setIsEnrolled] = useState(false)
+  const [commentSubmit, setCommentSubmit] = useState(false)
   const [remindedDays, setRemindedDays] = useState('0')
+  const [user, setUser] = useState(null)
+  const [newComment, setNewComment] = useState(null)
   const dispatch = useDispatch()
   const router = useRouter()
   const courseData = useSelector(state => state.course)
   const userEmail = localStorage.getItem('userData') || null
   const token = localStorage.getItem('accessToken') || null
   const { course } = router.query
+  const auth = useAuth()
 
+  useEffect(() => {
+    setLoading(true)
+    setUser(auth.user)
+  }, [auth])
   useEffect(() => {
     if (userEmail != null && token != null) {
       dispatch(getEnrolledCourse({ course: course, user: userEmail }))
@@ -34,6 +43,15 @@ const Course = () => {
       dispatch(getCourseWithSlug(course))
     }
   }, [dispatch, userEmail, token, course])
+
+  useEffect(() => {
+    if (commentSubmit && newComment) {
+      dispatch(postNewComment({ content: newComment, email: JSON.parse(userEmail), courseId: courseId }))
+
+      // console.log(newComment, JSON.parse(userEmail), courseId)
+      setCommentSubmit(false)
+    }
+  }, [commentSubmit, newComment])
 
   useEffect(() => {
     const localCartItems = typeof window !== 'undefined' ? JSON.parse(window.localStorage.getItem('cartItems')) : []
@@ -52,6 +70,7 @@ const Course = () => {
 
   useEffect(() => {
     if (courseData?.data) {
+      console.log(courseData?.data)
       setData(courseData?.data?.data)
       setCourseId(courseData?.data?.data?.id)
       setIsEnrolled(courseData?.data?.enrolled)
@@ -99,6 +118,16 @@ const Course = () => {
   }
 
   if (loading) return <h2>Loading...</h2>
+
+  const handleCommentSubmit = () => {
+    if (newComment) {
+      setCommentSubmit(true)
+
+      // setLoading(true)
+    } else {
+      window.alert('The comment field is empty!')
+    }
+  }
 
   return (
     <div>
@@ -500,6 +529,59 @@ const Course = () => {
           </section>
         </div>
       ) : null}
+      <Box className='container' sx={{ maxWidth: 600, mx: 'auto', my: 4 }}>
+        {user ? (
+          <Box sx={{ display: 'flex', flexDirection: 'column', mb: 2 }}>
+            <TextareaAutosize
+              minRows={3}
+              style={{ marginBottom: '1rem', padding: '12px' }}
+              value={newComment}
+              onChange={e => setNewComment(e.target.value)}
+              placeholder='Write a comment...'
+            />
+            <Button variant='contained' onClick={handleCommentSubmit} style={{ backgroundColor: '#003BBF' }}>
+              Post
+            </Button>
+          </Box>
+        ) : (
+          <Button
+            variant='outlined'
+            style={{ backgroundColor: '#003BBF', color: '#fff' }}
+            onClick={() => {
+              router.push(`/login/?returnUrl=/courses/${data?.slug}`)
+            }}
+          >
+            Login to Post a Comment
+          </Button>
+        )}
+        <div style={{ paddingTop: '15px' }}>
+          <List component='nav' aria-label='comments'>
+            {data?.comments?.map(comment => (
+              <React.Fragment key={comment.id}>
+                <div>
+                  <b>{comment.user.firstName + ' ' + comment.user.lastName}</b>
+                </div>
+                <ListItem alignItems='flex-start'>
+                  <ListItemText primary={comment.content} />
+                </ListItem>
+                {comment.replies && comment.replies.length > 0 && (
+                  <>
+                    <p>Answer:</p>
+                    <List component='div' disablePadding>
+                      {comment.replies.map(reply => (
+                        <ListItem key={reply.id} sx={{ pl: 4, px: 10 }}>
+                          <ListItemText primary={reply.content} />
+                        </ListItem>
+                      ))}
+                    </List>
+                  </>
+                )}
+                <Divider variant='inset' component='li' />
+              </React.Fragment>
+            ))}
+          </List>
+        </div>
+      </Box>
     </div>
   )
 }

@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next'
 
 const CategoriesSection = () => {
   const { t } = useTranslation()
+
   return (
     <>
       <section className='FNV-Top_Categories'>

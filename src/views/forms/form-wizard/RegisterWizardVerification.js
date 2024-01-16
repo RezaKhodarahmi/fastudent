@@ -133,7 +133,7 @@ const StepperLinearWithValidationVerification = props => {
     setLoading(false)
   }, [auth.response])
 
-  //Send form to databace
+  //Send form to database
   useEffect(() => {
     if (formData && isSubmite) {
       auth.registerPersonalInfo(formData)

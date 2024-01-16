@@ -89,4 +89,5 @@ export const enrollUser = data => async dispatch => {
     dispatch(getDataFailure(error.message))
   }
 }
+
 export default webinarSlice.reducer
