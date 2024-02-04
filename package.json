@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "cross-env TZ=America/Toronto next dev",
-    "build": "cross-env TZ=America/Toronto next build && next export",
+    "build": "cross-env TZ=America/Toronto next build ",
     "start": "cross-env TZ=America/Toronto next start ",
     "export": "cross-env TZ=America/Toronto next export",
     "lint": "eslint --fix \"src/**/*.{js,jsx}\"",

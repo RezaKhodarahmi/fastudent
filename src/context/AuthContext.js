@@ -192,7 +192,6 @@ const AuthProvider = ({ children }) => {
   }
 
   const handleRequestForgetpassword = (params, errorCallback, successCallback) => {
-    console.log(params)
     axios
       .post(authConfig.requestfogetpasswordEndpoint, params)
       .then(res => {
