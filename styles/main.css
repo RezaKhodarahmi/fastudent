@@ -48,6 +48,7 @@ body {
   /* For mobile phones: */
   /* For mobile phones: */
   /* For mobile phones: */
+  /* For mobile phones: */
 }
 body * {
   transition: 0.3s all ease-in-out;
@@ -1825,6 +1826,291 @@ body .FNV-Youtube .container-fluid .row .col-md-3:nth-child(7) {
 body .FNV-Youtube .container-fluid .row .col-md-3:nth-child(8) a {
   color: #ffffff;
   text-transform: uppercase;
+}
+body .FNV-About-Header {
+  background-image: linear-gradient(89.85deg, rgba(26, 48, 211, 0.8) 0.12%, rgba(26, 48, 211, 0.2) 50%, rgba(26, 48, 211, 0.8) 99.87%), url("/img/FNV-About-Header.jpg");
+  background-size: cover;
+  background-position: top center;
+  height: 370px;
+  padding: 10px;
+}
+body .FNV-About-Header .container {
+  width: 100%;
+  height: 100%;
+}
+body .FNV-About-Header .container .row {
+  width: 100%;
+  height: 100%;
+}
+body .FNV-About-Header .container .row .FNV-HCard {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .FNV-About-Header .container .row .FNV-HCard h2 {
+  margin-bottom: 2rem;
+  font-size: 35px;
+  font-weight: 800;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+body .FNV-About-Header .container .row .FNV-HCard h2 mark {
+  background-color: transparent;
+  color: #FF772C;
+}
+body .FNV-About-Header .container .row .FNV-HCard h1 {
+  margin-bottom: 2rem;
+  font-size: 35px;
+  font-weight: 800;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+body .FNV-About-Header .container .row .FNV-HCard h1 mark {
+  background-color: transparent;
+  color: #FF772C;
+}
+body .FNV-About-Header .container .row .FNV-HCard .FNV-HSearch {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 600px;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 0.8rem;
+  border: 1px solid #ffffff;
+}
+body .FNV-About-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput {
+  background-color: transparent !important;
+  border-width: 0;
+  box-shadow: unset;
+  border-radius: 15px;
+  color: #003BBF;
+  font-size: 16px;
+  font-weight: 400;
+}
+body .FNV-About-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput::after, body .FNV-About-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput::before {
+  display: none;
+}
+body .FNV-About-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput::placeholder, body .FNV-About-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput:-ms-input-placeholder {
+  color: #003BBF !important;
+}
+body .FNV-About-Header .container .row .FNV-HCard .FNV-HSearch button {
+  background-color: #003BBF;
+  color: #ffffff;
+  border-radius: 15px 15px 15px 15px !important;
+  width: 75px;
+}
+body .FNV-About-Header .container .row .FNV-HCard .FNV-HSearch button svg {
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+}
+body .FNV-About-Header .container .row .FNV-HCard p {
+  margin-bottom: 2rem;
+}
+body .FNV-About-Content {
+  padding: 5rem 0;
+  overflow: hidden;
+}
+body .FNV-About-Content.FNV-BG-Highlight {
+  background-color: #CCD8F2;
+}
+body .FNV-About-Content h3 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  color: #003BBF;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+}
+body .FNV-About-Content h3::before {
+  content: "";
+  display: block;
+  width: 35%;
+  height: 2px;
+  background: #FF772C;
+  left: -1rem;
+  top: 50%;
+  position: absolute;
+}
+body .FNV-About-Content h3::after {
+  content: "";
+  display: block;
+  width: 35%;
+  height: 2px;
+  background: #FF772C;
+  right: -1rem;
+  top: 50%;
+  position: absolute;
+}
+body .FNV-About-Content .container .row h2 {
+  font-size: 24px;
+  color: #003BBF;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+body .FNV-About-Content .container .row .col-12 {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+body .FNV-About-Content .container .row .col-12 p {
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #000000;
+}
+body .FNV-About-Content .container .row .col-12 img {
+  background-color: #ffffff;
+  border-radius: 16px;
+  display: block;
+  height: 350px;
+  width: 100%;
+  border-width: 0;
+}
+body .FNV-About-Team {
+  padding: 5rem 0;
+  overflow: hidden;
+}
+body .FNV-About-Team.FNV-BG-Highlight {
+  background-color: #CCD8F2;
+}
+body .FNV-About-Team h3 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  color: #003BBF;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+}
+body .FNV-About-Team h3::before {
+  content: "";
+  display: block;
+  width: 35%;
+  height: 2px;
+  background: #FF772C;
+  left: -1rem;
+  top: 50%;
+  position: absolute;
+}
+body .FNV-About-Team h3::after {
+  content: "";
+  display: block;
+  width: 35%;
+  height: 2px;
+  background: #FF772C;
+  right: -1rem;
+  top: 50%;
+  position: absolute;
+}
+body .FNV-About-Team .container .row h2 {
+  font-size: 24px;
+  color: #003BBF;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+body .FNV-About-Team .container .row .col-12 {
+  margin-bottom: 2rem;
+}
+body .FNV-About-Team .container .row .col-12 .col-4 img {
+  background-color: #d9d9d9;
+  border-radius: 28px;
+  display: block;
+  height: 160px;
+  width: 100%;
+  border-width: 0;
+}
+body .FNV-About-Team .container .row .col-12 .col-8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .FNV-About-Team .container .row .col-12 .col-8 h4 {
+  color: #003BBF;
+  font-weight: 900;
+  font-size: 22px;
+}
+@media only screen and (max-width: 768px) {
+  body .FNV-About-Header {
+    background-image: linear-gradient(89.85deg, rgba(26, 48, 211, 0.8) 0.12%, rgba(26, 48, 211, 0.2) 50%, rgba(26, 48, 211, 0.8) 99.87%), url("/img/FNV-About-Header.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 350px;
+    padding: 0.5rem;
+  }
+  body .FNV-About-Header .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  body .FNV-About-Header .container .row {
+    width: 100%;
+    height: 100%;
+  }
+  body .FNV-About-Header .container .row .FNV-HCard {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  body .FNV-About-Header .container .row .FNV-HCard h2 {
+    margin-bottom: 2rem;
+    font-size: 28px;
+    font-weight: 800;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  body .FNV-About-Header .container .row .FNV-HCard h2 mark {
+    background-color: transparent;
+    color: #FF772C;
+  }
+  body .FNV-About-Header .container .row .FNV-HCard .FNV-HSearch {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 0.8rem;
+  }
+  body .FNV-About-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput {
+    background-color: transparent !important;
+    border-width: 0;
+    box-shadow: unset;
+    border-radius: 15px;
+    color: #003BBF;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  body .FNV-About-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput::after, body .FNV-About-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput::before {
+    display: none;
+  }
+  body .FNV-About-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput::placeholder, body .FNV-About-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput:-ms-input-placeholder {
+    color: #003BBF !important;
+  }
+  body .FNV-About-Header .container .row .FNV-HCard .FNV-HSearch button {
+    background-color: #003BBF;
+    color: #ffffff;
+    border-radius: 15px 15px 15px 15px !important;
+    width: 75px;
+  }
+  body .FNV-About-Header .container .row .FNV-HCard .FNV-HSearch button svg {
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
+  }
+  body .FNV-About-Header .container .row .FNV-HCard p {
+    margin-bottom: 2rem;
+  }
 }
 body .FNV-Courses {
   background-color: #ffffff;

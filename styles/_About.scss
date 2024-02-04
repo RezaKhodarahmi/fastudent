@@ -1,0 +1,349 @@
+@import './variables';
+
+.FNV-About-Header {
+  background-image: linear-gradient(89.85deg, rgba(26, 48, 211, 0.8) 0.12%, rgba(26, 48, 211, 0.2) 50%, rgba(26, 48, 211, 0.8) 99.87%), url('/img/FNV-About-Header.jpg');
+  background-size: cover;
+  background-position: top center;
+  height: 370px;
+  padding: 10px;
+
+  .container {
+    width: 100%;
+    height: 100%;
+
+    .row {
+      width: 100%;
+      height: 100%;
+
+      .FNV-HCard {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h2 {
+          margin-bottom: 2rem;
+          font-size: 35px;
+          font-weight: 800;
+          color: $WhiteColor;
+          text-align: center;
+          text-transform: uppercase;
+
+          mark {
+            background-color: transparent;
+            color: $SecondaryColor;
+          }
+        }
+        h1 {
+          margin-bottom: 2rem;
+          font-size: 35px;
+          font-weight: 800;
+          color: $WhiteColor;
+          text-align: center;
+          text-transform: uppercase;
+
+          mark {
+            background-color: transparent;
+            color: $SecondaryColor;
+          }
+        }
+        .FNV-HSearch {
+          background-color: rgba(255, 255, 255, 0.6);
+          width: 600px;
+          border-radius: 15px;
+          overflow: hidden;
+          padding: .8rem;
+          border: 1px solid $WhiteColor;
+
+          .FNV-HSearchInput {
+            background-color: transparent !important;
+            border-width: 0;
+            box-shadow: unset;
+            border-radius: 15px;
+            color: $PrimaryColor;
+            font-size: 16px;
+            font-weight: 400;
+
+            &::after,
+            &::before {
+              display: none;
+            }
+
+            &::placeholder,
+            &:-ms-input-placeholder {
+              color: $PrimaryColor !important;
+            }
+          }
+
+          button {
+            background-color: $PrimaryColor;
+            color: $WhiteColor;
+            border-radius: 15px 15px 15px 15px !important;
+            width: 75px;
+
+            svg {
+              width: 30px;
+              height: 30px;
+              color: $WhiteColor
+            }
+          }
+        }
+
+        p {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}
+
+.FNV-About-Content{
+    padding: 5rem 0;
+    overflow: hidden;
+
+    &.FNV-BG-Highlight{
+        background-color: $SecondPrimaryColor;
+    }
+
+    h3 {
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        color: $PrimaryColor;
+        margin-bottom: 5rem;
+        text-transform: uppercase;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 35%;
+            height: 2px;
+            background: $SecondaryColor;
+            left: -1rem;
+            top: 50%;
+            position: absolute;
+        }
+
+
+        &::after {
+            content: "";
+            display: block;
+            width: 35%;
+            height: 2px;
+            background: $SecondaryColor;
+            right: -1rem;
+            top: 50%;
+            position: absolute;
+        }
+    }
+
+    .container{
+        .row{
+            h2{
+                font-size: 24px;
+                color: $PrimaryColor;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            .col-12{
+                display: flex;
+                align-items: start;
+                justify-content: center;
+                flex-direction: column;
+            
+                p{
+                    text-align: justify;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    color: $BlackColor;
+                }
+            
+                img{
+                    background-color: $WhiteColor;
+                    border-radius: 16px;
+                    display: block;
+                    height: 350px;
+                    width: 100%;
+                    border-width: 0;
+                }
+            }
+        }
+    }
+}
+
+.FNV-About-Team{
+    padding: 5rem 0;
+    overflow: hidden;
+
+    &.FNV-BG-Highlight{
+        background-color: $SecondPrimaryColor;
+    }
+
+    h3 {
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        color: $PrimaryColor;
+        margin-bottom: 5rem;
+        text-transform: uppercase;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 35%;
+            height: 2px;
+            background: $SecondaryColor;
+            left: -1rem;
+            top: 50%;
+            position: absolute;
+        }
+
+
+        &::after {
+            content: "";
+            display: block;
+            width: 35%;
+            height: 2px;
+            background: $SecondaryColor;
+            right: -1rem;
+            top: 50%;
+            position: absolute;
+        }
+    }
+
+    .container{
+        .row{
+            h2{
+                font-size: 24px;
+                color: $PrimaryColor;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            .col-12{
+                margin-bottom: 2rem;
+                          
+                .col-4{
+                    img{
+                        background-color: $GrayTwoColor;
+                        border-radius: 28px;
+                        display: block;
+                        height: 160px;
+                        width: 100%;
+                        border-width: 0;
+                    }
+                }
+
+                .col-8{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    h4{
+                        color: $PrimaryColor;
+                        font-weight: 900;
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+  .FNV-About-Header {
+    background-image: linear-gradient(89.85deg, rgba(26, 48, 211, 0.8) 0.12%, rgba(26, 48, 211, 0.2) 50%, rgba(26, 48, 211, 0.8) 99.87%), url('/img/FNV-About-Header.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 350px;
+    padding: .5rem;
+
+    .container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+
+      .row {
+        width: 100%;
+        height: 100%;
+
+        .FNV-HCard {
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+          h2 {
+            margin-bottom: 2rem;
+            font-size: 28px;
+            font-weight: 800;
+            color: $WhiteColor;
+            text-align: center;
+            text-transform: uppercase;
+
+            mark {
+              background-color: transparent;
+              color: $SecondaryColor;
+            }
+          }
+
+          .FNV-HSearch {
+            background-color: rgba(255, 255, 255, 0.6);
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            padding: .8rem;
+
+            .FNV-HSearchInput {
+              background-color: transparent !important;
+              border-width: 0;
+              box-shadow: unset;
+              border-radius: 15px;
+              color: $PrimaryColor;
+              font-size: 16px;
+              font-weight: 400;
+
+              &::after,
+              &::before {
+                display: none;
+              }
+
+              &::placeholder,
+              &:-ms-input-placeholder {
+                color: $PrimaryColor !important;
+              }
+            }
+
+            button {
+              background-color: $PrimaryColor;
+              color: $WhiteColor;
+              border-radius: 15px 15px 15px 15px !important;
+              width: 75px;
+
+              svg {
+                width: 30px;
+                height: 30px;
+                color: $WhiteColor
+              }
+            }
+          }
+
+          p {
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
