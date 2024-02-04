@@ -141,6 +141,7 @@ const Index = () => {
     </> 
   )
 }
+Index.guestGuard = true
 
 Index.guestGuard = true
 export default Index
