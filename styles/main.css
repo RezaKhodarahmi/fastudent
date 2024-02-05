@@ -2815,7 +2815,7 @@ body.FNV-SingleCourse .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Short
 body.FNV-SingleCourse .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Shorts .row .col-md-4 .FNV-Cat-Shorts-Icon h3 strong,
 body.FNV-SingleCourse .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Shorts .row .col-md-4 .FNV-Cat-Shorts-Icon h3 a {
   color: #003BBF;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 body.FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 {
   margin-top: 1rem;
