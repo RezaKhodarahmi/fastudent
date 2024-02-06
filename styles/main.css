@@ -2483,6 +2483,76 @@ body .FNV-Webinars .FNV-Header .container .row .FNV-HCard h1 {
   text-transform: capitalize;
   margin-bottom: 0;
 }
+body .FNV-SinglePage .container .row {
+  margin-top: 2rem;
+}
+body .FNV-SinglePage .container .row.FNV-Header {
+  height: 350px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .FNV-SinglePage .container .row.FNV-Header h1 {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 40px;
+  text-align: center;
+}
+body .FNV-SinglePage .container .row h2 {
+  font-size: 32px;
+}
+body .FNV-SinglePage .container .row h3 {
+  font-size: 25px;
+  font-weight: 600;
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+  color: #000000;
+}
+body .FNV-SinglePage .container .row h3::before {
+  content: " ";
+  width: 20px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #FF772C;
+}
+body .FNV-SinglePage .container .row .col-12 {
+  display: block;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1411764706);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+body .FNV-SinglePage .container .row .col-12 h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+body .FNV-SinglePage .container .row .col-12 h5 {
+  font-size: 18px;
+}
+body .FNV-SinglePage .container .row .col-12 p {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+}
+body .FNV-SinglePage .container .row .col-12 iframe {
+  width: 100%;
+  height: 700px;
+  border-radius: 15px;
+}
+body .FNV-SinglePage .container .row .col-12.col-md-3 {
+  background-color: transparent;
+  box-shadow: unset;
+}
+body .FNV-SinglePage .container .row .col-12.col-md-3 iframe {
+  height: 500px;
+}
 body .FNV-Single-Post .container .row .col-12 {
   padding: 0;
 }
@@ -2507,8 +2577,9 @@ body .FNV-Single-Post .container .row .col-12.FNV-FeatureImage .FNV-Meta {
   top: 0;
   left: 0;
   display: flex;
-  justify-content: flex-start;
-  align-items: end;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: start;
   padding: 1rem;
   background: rgb(165, 41, 148);
   background: linear-gradient(170deg, rgba(165, 41, 148, 0) 0%, rgb(0, 59, 191) 100%);
@@ -2519,7 +2590,26 @@ body .FNV-Single-Post .container .row .col-12.FNV-FeatureImage .FNV-Meta h1 {
   font-weight: 900;
   color: #ffffff;
   text-align: right;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+body .FNV-Single-Post .container .row .col-12.FNV-FeatureImage .FNV-Meta .FNV-Author {
+  display: flex;
+  align-items: center;
+}
+body .FNV-Single-Post .container .row .col-12.FNV-FeatureImage .FNV-Meta .FNV-Author .FNV-Author-Image {
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 15px;
+}
+body .FNV-Single-Post .container .row .col-12.FNV-FeatureImage .FNV-Meta .FNV-Author .FNV-Author-Image svg {
+  stroke: #FF772C;
+  width: 30px;
+  height: 30px;
+}
+body .FNV-Single-Post .container .row .col-12.FNV-FeatureImage .FNV-Meta .FNV-Author .FNV-Author-Name {
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+  color: #ffffff;
 }
 body .FNV-Single-Post .container .row .col-12.FNV-Content {
   padding: 4rem 0;

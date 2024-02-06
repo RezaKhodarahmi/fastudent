@@ -2,19 +2,13 @@ import React from 'react'
 
 const Index = () => {
   return (
-    <div className='FNV-Cart'>
-      <section className='FNV-Header'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-12'>
-              <h2>Engineering in Canada</h2>
-            </div>
-          </div>
-        </div>
-      </section>
-
+    <>
       <section className='FNV-SinglePage'>
         <div className='container'>
+          <div className='row FNV-Header'>
+            <h1>Engineering in Canada</h1>
+          </div>
+
           <div className='row'>
             <div className='col-12'>
               <p>
@@ -60,29 +54,9 @@ const Index = () => {
 
           <div className='row'>
             <h3>Before you start</h3>
-            <div className='col-12 col-md-4'>
-              <iframe
-                src='https://www.youtube.com/embed/W2rouB4h1cQ'
-                title='YouTube video player'
-                frameborder='0'
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                allowfullscreen
-              ></iframe>
-            </div>
-
-            <div className='col-12 col-md-4'>
+            <div className='col-12'>
               <iframe
                 src='https://www.youtube.com/embed/BVqmL9g3_eA'
-                title='YouTube video player'
-                frameborder='0'
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                allowfullscreen
-              ></iframe>
-            </div>
-
-            <div className='col-12 col-md-4'>
-              <iframe
-                src='https://www.youtube.com/embed/kQ4cAAbGidc'
                 title='YouTube video player'
                 frameborder='0'
                 allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
@@ -94,7 +68,7 @@ const Index = () => {
           <div id='P1' className='row'>
             <h3>Who can get a P.Eng designation?</h3>
 
-            <div className='col-12 col-md-8'>
+            <div className='col-12'>
               <p>
                 Individuals who have graduated from one of the various engineering disciplines and aspire to work as
                 consultants, quality control engineers, or in computing departments are required to obtain membership in
@@ -114,22 +88,12 @@ const Index = () => {
                 </mark>
               </p>
             </div>
-
-            <div className='col-12 col-md-4'>
-              <iframe
-                src='https://www.youtube.com/embed/dpqgmiNwvRs'
-                title='YouTube video player'
-                frameborder='0'
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                allowfullscreen
-              ></iframe>
-            </div>
           </div>
 
           <div id='P2' className='row'>
-            <div className='col-12 col-md-9'>
-              <h3>Advantages of P.Eng Designation</h3>
+            <h3>Advantages of P.Eng Designation</h3>
 
+            <div className='col-12'>
               <h4>The Influence and Authority of P.Eng</h4>
               <p>
                 Membership in the Canadian Engineering Department elevates the authority and influence of engineers
@@ -168,29 +132,49 @@ const Index = () => {
                 for career advancement and promotion.
               </p>
             </div>
+          </div>
+
+          <div id='P2' className='row'>
+            <h3>Students in this Course</h3>
+
+            <div className='col-12 col-md-3 ps-0'>
+              <iframe
+                src='https://www.youtube.com/embed/BVqmL9g3_eA'
+                title='YouTube video player'
+                frameborder='0'
+                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+                allowfullscreen
+              ></iframe>
+            </div>
 
             <div className='col-12 col-md-3'>
-              <div className='FNV-SimilarCourse'>
-                <div className='FNV-Card'>
-                  <div className='FNV-Card-Header'>
-                    <img src='/img/nppe.webp' className='img-fluid' />
-                  </div>
+              <iframe
+                src='https://www.youtube.com/embed/BVqmL9g3_eA'
+                title='YouTube video player'
+                frameborder='0'
+                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+                allowfullscreen
+              ></iframe>
+            </div>
 
-                  <div className='FNV-Card-Body'>
-                    <h4>Course Name</h4>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                      ut laoreet dolore magna aliquam erat volutpat.
-                    </p>
-                  </div>
+            <div className='col-12 col-md-3'>
+              <iframe
+                  src='https://www.youtube.com/embed/BVqmL9g3_eA'
+                  title='YouTube video player'
+                  frameborder='0'
+                  allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+                  allowfullscreen
+                ></iframe>
+            </div>
 
-                  <div className='FNV-Card-Price'>
-                    <a href='#' className='FNV-Btn BtnPrimary BtnLarge'>
-                      Register Now
-                    </a>
-                  </div>
-                </div>
-              </div>
+            <div className='col-12 col-md-3 pe-0'>
+              <iframe
+                src='https://www.youtube.com/embed/BVqmL9g3_eA'
+                title='YouTube video player'
+                frameborder='0'
+                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
 
@@ -1155,7 +1139,7 @@ const Index = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
