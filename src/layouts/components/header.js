@@ -373,7 +373,7 @@ const Header = props => {
               <div className='d-flex' role='search'>
                 <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
                   <li className='nav-item FNV-MegaMenu-Search'>
-                    <Link href='/' className='nav-link' role='button' aria-expanded='false' onClick={handleOpen}>
+                    <Link href='#' className='nav-link' role='button' aria-expanded='false' onClick={handleOpen}>
                       <i data-feather='search'></i>
                     </Link>
                   </li>
@@ -876,7 +876,7 @@ const Header = props => {
               <div className='d-flex' role='search'>
                 <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
                   <li className='nav-item FNV-MegaMenu-Search'>
-                    <Link href='/' className='nav-link' role='button' aria-expanded='false' onClick={handleOpen}>
+                    <Link href='#' className='nav-link' role='button' aria-expanded='false' onClick={handleOpen}>
                       <i data-feather='search'></i>
                     </Link>
                   </li>
