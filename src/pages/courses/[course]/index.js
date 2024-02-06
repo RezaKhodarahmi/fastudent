@@ -141,12 +141,20 @@ const Course = () => {
                 <div className='FNV-Category'>
                   {/* Category Icon */}
                   <div className='FNV-Category-Icon'>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-category-2" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                      <path d="M14 4h6v6h-6z" />
-                      <path d="M4 14h6v6h-6z" />
-                      <path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                      <path d="M7 7m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      class='icon icon-tabler icon-tabler-category-2'
+                      viewBox='0 0 24 24'
+                      stroke-width='1.5'
+                      fill='none'
+                      stroke-linecap='round'
+                      stroke-linejoin='round'
+                    >
+                      <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+                      <path d='M14 4h6v6h-6z' />
+                      <path d='M4 14h6v6h-6z' />
+                      <path d='M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0' />
+                      <path d='M7 7m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0' />
                     </svg>
                   </div>
                   {/* Category Title */}
@@ -170,11 +178,22 @@ const Course = () => {
                     {/* Duration */}
                     <div className='col-12 col-md-4'>
                       <div className='FNV-Cat-Shorts-Icon'>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hourglass-high" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                          <path d="M6.5 7h11" />
-                          <path d="M6 20v-2a6 6 0 1 1 12 0v2a1 1 0 0 1 -1 1h-10a1 1 0 0 1 -1 -1z" />
-                          <path d="M6 4v2a6 6 0 1 0 12 0v-2a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1z" />
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          class='icon icon-tabler icon-tabler-hourglass-high'
+                          width='44'
+                          height='44'
+                          viewBox='0 0 24 24'
+                          stroke-width='1.5'
+                          stroke='#2c3e50'
+                          fill='none'
+                          stroke-linecap='round'
+                          stroke-linejoin='round'
+                        >
+                          <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+                          <path d='M6.5 7h11' />
+                          <path d='M6 20v-2a6 6 0 1 1 12 0v2a1 1 0 0 1 -1 1h-10a1 1 0 0 1 -1 -1z' />
+                          <path d='M6 4v2a6 6 0 1 0 12 0v-2a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1z' />
                         </svg>
 
                         <h3>
@@ -191,9 +210,17 @@ const Course = () => {
                     {/* Start Date */}
                     <div className='col-12 col-md-4'>
                       <div className='FNV-Cat-Shorts-Icon'>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-play" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                          <path d="M7 4v16l13 -8z" />
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          class='icon icon-tabler icon-tabler-player-play'
+                          viewBox='0 0 24 24'
+                          stroke-width='1.5'
+                          fill='none'
+                          stroke-linecap='round'
+                          stroke-linejoin='round'
+                        >
+                          <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+                          <path d='M7 4v16l13 -8z' />
                         </svg>
                         <h3>
                           Start Date:{' '}
@@ -209,15 +236,23 @@ const Course = () => {
                     {/* Days */}
                     <div className='col-12 col-md-4'>
                       <div className='FNV-Cat-Shorts-Icon'>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-week" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                          <path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" />
-                          <path d="M16 3v4" />
-                          <path d="M8 3v4" />
-                          <path d="M4 11h16" />
-                          <path d="M8 14v4" />
-                          <path d="M12 14v4" />
-                          <path d="M16 14v4" />
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          class='icon icon-tabler icon-tabler-calendar-week'
+                          viewBox='0 0 24 24'
+                          stroke-width='1.5'
+                          fill='none'
+                          stroke-linecap='round'
+                          stroke-linejoin='round'
+                        >
+                          <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+                          <path d='M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z' />
+                          <path d='M16 3v4' />
+                          <path d='M8 3v4' />
+                          <path d='M4 11h16' />
+                          <path d='M8 14v4' />
+                          <path d='M12 14v4' />
+                          <path d='M16 14v4' />
                         </svg>
                         <h3>
                           Days:{' '}
@@ -233,12 +268,23 @@ const Course = () => {
                     {/* Time */}
                     <div className='col-12 col-md-4'>
                       <div className='FNV-Cat-Shorts-Icon'>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-alarm-average" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                          <path d="M5 13a7 7 0 1 0 14 0a7 7 0 0 0 -14 0" />
-                          <path d="M7 4l-2.75 2" />
-                          <path d="M17 4l2.75 2" />
-                          <path d="M8 13h1l2 3l2 -6l2 3h1" />
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          class='icon icon-tabler icon-tabler-alarm-average'
+                          width='44'
+                          height='44'
+                          viewBox='0 0 24 24'
+                          stroke-width='1.5'
+                          stroke='#2c3e50'
+                          fill='none'
+                          stroke-linecap='round'
+                          stroke-linejoin='round'
+                        >
+                          <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+                          <path d='M5 13a7 7 0 1 0 14 0a7 7 0 0 0 -14 0' />
+                          <path d='M7 4l-2.75 2' />
+                          <path d='M17 4l2.75 2' />
+                          <path d='M8 13h1l2 3l2 -6l2 3h1' />
                         </svg>
                         <h3>
                           Time:{' '}
@@ -254,19 +300,27 @@ const Course = () => {
                     {/* Teacher */}
                     <div className='col-12 col-md-4'>
                       <div className='FNV-Cat-Shorts-Icon'>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-school" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                          <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" />
-                          <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" />
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          class='icon icon-tabler icon-tabler-school'
+                          width='44'
+                          height='44'
+                          viewBox='0 0 24 24'
+                          stroke-width='1.5'
+                          stroke='#2c3e50'
+                          fill='none'
+                          stroke-linecap='round'
+                          stroke-linejoin='round'
+                        >
+                          <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+                          <path d='M22 9l-10 -4l-10 4l10 4l10 -4v6' />
+                          <path d='M6 10.6v5.4a6 3 0 0 0 12 0v-5.4' />
                         </svg>
                         <h3>
                           Teacher:{' '}
                           <strong>
                             {data?.teachers ? (
-                              <Link
-                                href={`${appConfig.appUrl}/teachers/${data?.teachers[0]?.id}`}
-                                passHref
-                              >
+                              <Link href={`${appConfig.appUrl}/teachers/${data?.teachers[0]?.id}`} passHref>
                                 {data?.teachers[0]?.firstName + ' ' + data?.teachers[0]?.lastName}
                               </Link>
                             ) : (
@@ -280,13 +334,24 @@ const Course = () => {
                     {/* Cycle */}
                     <div className='col-12 col-md-4'>
                       <div className='FNV-Cat-Shorts-Icon'>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-progress" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                          <path d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969" />
-                          <path d="M14 3.223a9.003 9.003 0 0 1 0 17.554" />
-                          <path d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592" />
-                          <path d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305" />
-                          <path d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356" />
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          class='icon icon-tabler icon-tabler-progress'
+                          width='44'
+                          height='44'
+                          viewBox='0 0 24 24'
+                          stroke-width='1.5'
+                          stroke='#2c3e50'
+                          fill='none'
+                          stroke-linecap='round'
+                          stroke-linejoin='round'
+                        >
+                          <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+                          <path d='M10 20.777a8.942 8.942 0 0 1 -2.48 -.969' />
+                          <path d='M14 3.223a9.003 9.003 0 0 1 0 17.554' />
+                          <path d='M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592' />
+                          <path d='M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305' />
+                          <path d='M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356' />
                         </svg>
                         <h3>
                           Cycle:{' '}
@@ -336,10 +401,18 @@ const Course = () => {
                     <div className='row'>
                       <div className='col-md-2'>
                         <div className='FNV-Instructor-Image'>
-                          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-school" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" />
-                            <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" />
+                          <svg
+                            xmlns='http://www.w3.org/2000/svg'
+                            class='icon icon-tabler icon-tabler-school'
+                            viewBox='0 0 24 24'
+                            stroke-width='1.5'
+                            fill='none'
+                            stroke-linecap='round'
+                            stroke-linejoin='round'
+                          >
+                            <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+                            <path d='M22 9l-10 -4l-10 4l10 4l10 -4v6' />
+                            <path d='M6 10.6v5.4a6 3 0 0 0 12 0v-5.4' />
                           </svg>
                         </div>
                       </div>
@@ -347,17 +420,17 @@ const Course = () => {
                         <small>Instructor:</small>
                         <h4>
                           {data?.teachers ? (
-                            <Link
-                              href={`${appConfig.appUrl}/teachers/${data?.teachers[0]?.id}`}
-                              passHref
-                            >
+                            <Link href={`${appConfig.appUrl}/teachers/${data?.teachers[0]?.id}`} passHref>
                               {data?.teachers[0]?.firstName + ' ' + data?.teachers[0]?.lastName}
                             </Link>
                           ) : (
                             'Fanavaran'
                           )}
                         </h4>
-                        <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <p>
+                          is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                          industry's standard dummy text ever since the 1500s,
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -548,9 +621,7 @@ const Course = () => {
                             </button>
                           </h2>
                           <div id='QuestionOne' className='accordion-collapse collapse'>
-                            <div className='accordion-body FNV-Locked'>
-                              Answer: 
-                            </div>
+                            <div className='accordion-body FNV-Locked'>Answer:</div>
                           </div>
                         </div>
                         {/* Item */}
@@ -568,9 +639,7 @@ const Course = () => {
                             </button>
                           </h2>
                           <div id='QuestionTwo' className='accordion-collapse collapse'>
-                            <div className='accordion-body FNV-Locked'>
-                              Answer: 
-                            </div>
+                            <div className='accordion-body FNV-Locked'>Answer:</div>
                           </div>
                         </div>
                         {/* Item */}
@@ -588,9 +657,7 @@ const Course = () => {
                             </button>
                           </h2>
                           <div id='QuestionThree' className='accordion-collapse collapse'>
-                            <div className='accordion-body FNV-Locked'>
-                              Answer: 
-                            </div>
+                            <div className='accordion-body FNV-Locked'>Answer:</div>
                           </div>
                         </div>
                       </div>
@@ -643,14 +710,22 @@ const Course = () => {
                             onClick={e => addToCart(selectedCycle)}
                             className='FNV-Btn BtnPrimary BtnLarge w-100'
                           >
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                              <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                              <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                              <path d="M17 17h-11v-14h-2" />
-                              <path d="M6 5l14 1l-1 7h-13" />
-                            </svg> 
-                            
+                            <svg
+                              xmlns='http://www.w3.org/2000/svg'
+                              class='icon icon-tabler icon-tabler-shopping-cart'
+                              viewBox='0 0 24 24'
+                              stroke-width='1.5'
+                              fill='none'
+                              stroke-linecap='round'
+                              stroke-linejoin='round'
+                            >
+                              <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+                              <path d='M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0' />
+                              <path d='M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0' />
+                              <path d='M17 17h-11v-14h-2' />
+                              <path d='M6 5l14 1l-1 7h-13' />
+                            </svg>
+
                             <span>Enroll Now</span>
                           </a>
                         )}
@@ -664,14 +739,22 @@ const Course = () => {
                     <div className='row'>
                       {/* SVG */}
                       <div className='col-md-2'>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-certificate" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                          <path d="M15 15m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                          <path d="M13 17.5v4.5l2 -1.5l2 1.5v-4.5" />
-                          <path d="M10 19h-5a2 2 0 0 1 -2 -2v-10c0 -1.1 .9 -2 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -1 1.73" />
-                          <path d="M6 9l12 0" />
-                          <path d="M6 12l3 0" />
-                          <path d="M6 15l2 0" />
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          class='icon icon-tabler icon-tabler-certificate'
+                          viewBox='0 0 24 24'
+                          stroke-width='1.5'
+                          fill='none'
+                          stroke-linecap='round'
+                          stroke-linejoin='round'
+                        >
+                          <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+                          <path d='M15 15m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0' />
+                          <path d='M13 17.5v4.5l2 -1.5l2 1.5v-4.5' />
+                          <path d='M10 19h-5a2 2 0 0 1 -2 -2v-10c0 -1.1 .9 -2 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -1 1.73' />
+                          <path d='M6 9l12 0' />
+                          <path d='M6 12l3 0' />
+                          <path d='M6 15l2 0' />
                         </svg>
                       </div>
                       {/* Title */}
@@ -685,13 +768,21 @@ const Course = () => {
                     <div className='row'>
                       {/* SVG */}
                       <div className='col-md-2'>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-timeline" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                          <path d="M4 16l6 -7l5 5l5 -6" />
-                          <path d="M15 14m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-                          <path d="M10 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-                          <path d="M4 16m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-                          <path d="M20 8m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          class='icon icon-tabler icon-tabler-timeline'
+                          viewBox='0 0 24 24'
+                          stroke-width='1.5'
+                          fill='none'
+                          stroke-linecap='round'
+                          stroke-linejoin='round'
+                        >
+                          <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+                          <path d='M4 16l6 -7l5 5l5 -6' />
+                          <path d='M15 14m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0' />
+                          <path d='M10 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0' />
+                          <path d='M4 16m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0' />
+                          <path d='M20 8m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0' />
                         </svg>
                       </div>
                       {/* Title */}
@@ -705,11 +796,19 @@ const Course = () => {
                     <div className='row FNV-Price'>
                       {/* SVG */}
                       <div className='col-md-2'>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-currency-dollar" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M16.7 8a3 3 0 0 0 -2.7 -2h-4a3 3 0 0 0 0 6h4a3 3 0 0 1 0 6h-4a3 3 0 0 1 -2.7 -2" />
-                        <path d="M12 3v3m0 12v3" />
-                      </svg>
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          class='icon icon-tabler icon-tabler-currency-dollar'
+                          viewBox='0 0 24 24'
+                          stroke-width='1.5'
+                          fill='none'
+                          stroke-linecap='round'
+                          stroke-linejoin='round'
+                        >
+                          <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+                          <path d='M16.7 8a3 3 0 0 0 -2.7 -2h-4a3 3 0 0 0 0 6h4a3 3 0 0 1 0 6h-4a3 3 0 0 1 -2.7 -2' />
+                          <path d='M12 3v3m0 12v3' />
+                        </svg>
                       </div>
                       {/* Title */}
                       <div className='col-md-10'>
@@ -729,15 +828,23 @@ const Course = () => {
                     <div className='row FNV-VIP'>
                       {/* SVG */}
                       <div className='col-md-2'>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-crown" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                          <path d="M12 6l4 6l5 -4l-2 10h-14l-2 -10l5 4z" />
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          class='icon icon-tabler icon-tabler-crown'
+                          viewBox='0 0 24 24'
+                          stroke-width='1.5'
+                          fill='none'
+                          stroke-linecap='round'
+                          stroke-linejoin='round'
+                        >
+                          <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+                          <path d='M12 6l4 6l5 -4l-2 10h-14l-2 -10l5 4z' />
                         </svg>
                       </div>
                       {/* Title */}
                       <div className='col-md-10'>
                         <h5>
-                          Membership Price:{' '} 
+                          Membership Price:{' '}
                           <price>
                             $
                             {data?.cycles
@@ -754,7 +861,6 @@ const Course = () => {
             </div>
           </div>
         </section>
-        
       ) : null}
       <Box className='container' sx={{ maxWidth: 600, mx: 'auto', my: 4 }}>
         {user ? (
@@ -778,13 +884,23 @@ const Course = () => {
               router.push(`/login/?returnUrl=/courses/${data?.slug}`)
             }}
           >
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-login" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-              <path d="M15 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
-              <path d="M21 12h-13l3 -3" />
-              <path d="M11 15l-3 -3" />
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              class='icon icon-tabler icon-tabler-login'
+              width='44'
+              height='44'
+              viewBox='0 0 24 24'
+              stroke-width='1.5'
+              stroke='#2c3e50'
+              fill='none'
+              stroke-linecap='round'
+              stroke-linejoin='round'
+            >
+              <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+              <path d='M15 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2' />
+              <path d='M21 12h-13l3 -3' />
+              <path d='M11 15l-3 -3' />
             </svg>
-
             Login to Post a Comment
           </Button>
         )}
@@ -793,7 +909,7 @@ const Course = () => {
             {data?.comments?.map(comment => (
               <React.Fragment key={comment.id}>
                 <div>
-                  <b>{comment.user.firstName + ' ' + comment.user.lastName}</b>
+                  <b>{comment?.user?.firstName + ' ' + comment?.user?.lastName}</b>
                 </div>
                 <ListItem alignItems='flex-start'>
                   <ListItemText primary={comment.content} />
@@ -819,18 +935,18 @@ const Course = () => {
 
       {/* Related Courses */}
       <section className='FNV-Course-Related'>
-          <h3>Related Courses</h3>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-12'>
-                {/* Blogs Desktop */}
-                {/* <SingleDeskBlog /> */}
-                {/* Blogs Mobile */}
-                {/* <SingleMobileBlog /> */}
-              </div>
+        <h3>Related Courses</h3>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-12'>
+              {/* Blogs Desktop */}
+              {/* <SingleDeskBlog /> */}
+              {/* Blogs Mobile */}
+              {/* <SingleMobileBlog /> */}
             </div>
           </div>
-        </section>
+        </div>
+      </section>
     </div>
   )
 }
