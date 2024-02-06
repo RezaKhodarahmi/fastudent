@@ -24,8 +24,9 @@
                         top: 0;
                         left: 0;
                         display: flex;
-                        justify-content: flex-start;
-                        align-items: end;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        align-items: start;
                         padding: 1rem;
                         background: rgb(165,41,148);
                         background: -moz-linear-gradient(170deg, rgba(165,41,148,0) 0%, rgba(0,59,191,1) 100%);
@@ -38,7 +39,30 @@
                             font-weight: 900;
                             color: $WhiteColor;
                             text-align: right;
-                            margin-bottom: 2rem;
+                            margin-bottom: 1rem;
+                        }
+
+                        .FNV-Author{
+                            display: flex;
+                            align-items: center;
+
+                            .FNV-Author-Image{
+                                background-color: $WhiteColor;
+                                padding: .5rem;
+                                border-radius: 15px;
+
+                                svg{
+                                    stroke: $SecondaryColor;
+                                    width: 30px;
+                                    height: 30px;
+                                }
+                            }
+
+                            .FNV-Author-Name{
+                                margin-left: .5rem;
+                                margin-right: 1rem;
+                                color: $WhiteColor;
+                            }
                         }
                     }
                 }
