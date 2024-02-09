@@ -76,6 +76,7 @@ const Home = () => {
 
       {/* Categories */}
       <CategoriesSection />
+      
       {/* New Courses */}
       <section className='FNV-NewCourses'>
         <h3>New Courses</h3>

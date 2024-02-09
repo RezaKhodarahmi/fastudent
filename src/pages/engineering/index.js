@@ -1,6 +1,56 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+
+// ** Import Translation
+import { useTranslation } from 'react-i18next'
+
+// ** Import course section
+import CourseDeskSingle from 'src/views/swiper/courseDeskSingle'
+import CourseMobileSingle from 'src/views/swiper/courseMobileSingle'
+
+// ** Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react'
+
+import { fetchCourseData } from 'src/store/apps/course'
+import { useRouter } from 'next/router'
+import { useDispatch, useSelector } from 'react-redux'
 
 const Index = () => {
+
+  const [courses, setCourses] = useState([])
+
+  //Hooks
+  const router = useRouter()
+  const { t } = useTranslation()
+  const dispatch = useDispatch()
+
+  const courseData = useSelector(state => state.course)
+
+  useEffect(() => {
+    dispatch(fetchCourseData())
+  }, [])
+
+  useEffect(() => {
+    if (courseData?.data) {
+      setCourses(courseData?.data?.data)
+    }
+  }, [courseData])
+
+  const addToCart = id => {
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || []
+    const existInCart = cartItems.includes(id)
+    router.push('/cart')
+
+    if (existInCart) {
+      window.alert('Item is already in cart!')
+      router.push('/cart')
+    } else {
+      cartItems.push(id)
+    }
+
+    const updatedCartItems = [...cartItems]
+    localStorage.setItem('cartItems', JSON.stringify(updatedCartItems))
+  }
+
   return (
     <>
       <section className='FNV-SinglePage'>
@@ -343,10 +393,21 @@ const Index = () => {
             </div>
           </div>
 
+          <div className="row">
+              <div className='col-12'>
+                <iframe
+                  src='https://www.youtube.com/embed/3tyedNWUwZs'
+                  title='YouTube video player'
+                  frameborder='0'
+                  allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+                  allowfullscreen
+                ></iframe>
+              </div>
+          </div>
+
           <div id='P4' className='row'>
             <h3>P.Eng Requirements</h3>
-
-            <div className='col-12 col-md-8'>
+            <div className='col-12'>
               <ol>
                 <li>
                   <strong>Possessing an Engineering Education</strong>
@@ -442,18 +503,6 @@ const Index = () => {
                 bodies to drive project advancement, are identified as integral components of this requirement.
               </p>
             </div>
-
-            <div className='col-12 col-md-4'>
-              <div className='sticky-top'>
-                <iframe
-                  src='https://www.youtube.com/embed/3tyedNWUwZs'
-                  title='YouTube video player'
-                  frameborder='0'
-                  allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
           </div>
 
           <div id='P5' className='row'>
@@ -500,65 +549,10 @@ const Index = () => {
           <div className='row FNV-Related-Course'>
             <h3>Related Engineering Courses</h3>
 
-            <div className='col-12 col-md-4'>
-              <div className='FNV-Card'>
-                <div className='FNV-Card-Header'>
-                  <img src='/img/nppe.webp' className='img-fluid' />
-                </div>
-                <div className='FNV-Card-Body'>
-                  <h4>Course Name</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                    laoreet dolore magna aliquam erat volutpat.
-                  </p>
-                </div>
-                <div className='FNV-Card-Price'>
-                  <a href='#' className='FNV-Btn BtnPrimary BtnLarge'>
-                    Register Now
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className='col-12 col-md-4'>
-              <div className='FNV-Card'>
-                <div className='FNV-Card-Header'>
-                  <img src='/img/nppe.webp' className='img-fluid' />
-                </div>
-                <div className='FNV-Card-Body'>
-                  <h4>Course Name</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                    laoreet dolore magna aliquam erat volutpat.
-                  </p>
-                </div>
-                <div className='FNV-Card-Price'>
-                  <a href='#' className='FNV-Btn BtnPrimary BtnLarge'>
-                    Register Now
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className='col-12 col-md-4'>
-              <div className='FNV-Card'>
-                <div className='FNV-Card-Header'>
-                  <img src='/img/nppe.webp' className='img-fluid' />
-                </div>
-                <div className='FNV-Card-Body'>
-                  <h4>Course Name</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                    laoreet dolore magna aliquam erat volutpat.
-                  </p>
-                </div>
-                <div className='FNV-Card-Price'>
-                  <a href='#' className='FNV-Btn BtnPrimary BtnLarge'>
-                    Register Now
-                  </a>
-                </div>
-              </div>
-            </div>
+            {/* Courses Desktop */}
+            <CourseDeskSingle courses={courses} addToCart={addToCart} />
+            {/* Courses Mobile */}
+            <CourseMobileSingle courses={courses} addToCart={addToCart} />
           </div>
 
           <div id='P6' className='row'>
@@ -600,510 +594,509 @@ const Index = () => {
 
           <div id='FAQ' className='row'>
             <h3>Frequently Asked Questions</h3>
-            <div className='col-12'>
-              <div className='accordion' id='FAQEngineering'>
-                <div className='accordion-item'>
-                  <h2 className='accordion-header'>
-                    <button
-                      className='accordion-button'
-                      type='button'
-                      data-bs-toggle='collapse'
-                      data-bs-target='#Question1'
-                      aria-expanded='true'
-                      aria-controls='Question1'
-                    >
-                      Is it mandatory to obtain WES (World Education Services) approval in all provinces of Canada?
-                    </button>
-                  </h2>
-                  <div id='Question1' className='accordion-collapse collapse show' data-bs-parent='#FAQEngineering'>
-                    <div className='accordion-body'>
-                      <p>
-                        No, WES (World Education Services) confirmation is only required in certain provinces of Canada,
-                        such as Saskatchewan. It's important to note that WES does not forward your original documents
-                        to any other organization; they only provide confirmation of document authenticity.
-                      </p>
-                      <p>
-                        For instance, if you have already submitted a transcript version to WES, it will remain with the
-                        organization. However, for other situations, you may need to prepare a new version of the
-                        document.
-                      </p>
-                    </div>
+
+            <div className='accordion p-0' id='FAQEngineering'>
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question1'
+                    aria-expanded='true'
+                    aria-controls='Question1'
+                  >
+                    Is it mandatory to obtain WES (World Education Services) approval in all provinces of Canada?
+                  </button>
+                </h2>
+                <div id='Question1' className='accordion-collapse collapse show' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      No, WES (World Education Services) confirmation is only required in certain provinces of Canada,
+                      such as Saskatchewan. It's important to note that WES does not forward your original documents
+                      to any other organization; they only provide confirmation of document authenticity.
+                    </p>
+                    <p>
+                      For instance, if you have already submitted a transcript version to WES, it will remain with the
+                      organization. However, for other situations, you may need to prepare a new version of the
+                      document.
+                    </p>
                   </div>
                 </div>
+              </div>
 
-                <div className='accordion-item'>
-                  <h2 className='accordion-header'>
-                    <button
-                      className='accordion-button collapsed'
-                      type='button'
-                      data-bs-toggle='collapse'
-                      data-bs-target='#Question2'
-                      aria-expanded='false'
-                      aria-controls='Question2'
-                    >
-                      Can one apply for a P.Eng license in a province other than their current province of residence?
-                    </button>
-                  </h2>
-                  <div id='Question2' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                    <div className='accordion-body'>Yes.</div>
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question2'
+                    aria-expanded='false'
+                    aria-controls='Question2'
+                  >
+                    Can one apply for a P.Eng license in a province other than their current province of residence?
+                  </button>
+                </h2>
+                <div id='Question2' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>Yes.</div>
+                </div>
+              </div>
+
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question3'
+                    aria-expanded='false'
+                    aria-controls='Question3'
+                  >
+                    If we hold a P.Eng license in one province, are we eligible to apply for P.Eng licensure in
+                    another province?
+                  </button>
+                </h2>
+                <div id='Question3' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      It is possible to apply for P.Eng licensure in another province by fulfilling the requirement of
+                      paying the annual membership fees for both provinces.
+                    </p>
                   </div>
                 </div>
+              </div>
 
-                <div className='accordion-item'>
-                  <h2 className='accordion-header'>
-                    <button
-                      className='accordion-button collapsed'
-                      type='button'
-                      data-bs-toggle='collapse'
-                      data-bs-target='#Question3'
-                      aria-expanded='false'
-                      aria-controls='Question3'
-                    >
-                      If we hold a P.Eng license in one province, are we eligible to apply for P.Eng licensure in
-                      another province?
-                    </button>
-                  </h2>
-                  <div id='Question3' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                    <div className='accordion-body'>
-                      <p>
-                        It is possible to apply for P.Eng licensure in another province by fulfilling the requirement of
-                        paying the annual membership fees for both provinces.
-                      </p>
-                    </div>
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question4'
+                    aria-expanded='false'
+                    aria-controls='Question4'
+                  >
+                    Is it required to submit the Experience Record during the initial stage?
+                  </button>
+                </h2>
+                <div id='Question4' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      No, it is not obligatory. However, it is advisable to prepare and submit the Experience Record
+                      after sending the initial set of documents. It is important to note that this document can be
+                      modified if necessary, even after it has been submitted.
+                    </p>
                   </div>
                 </div>
+              </div>
 
-                <div className='accordion-item'>
-                  <h2 className='accordion-header'>
-                    <button
-                      className='accordion-button collapsed'
-                      type='button'
-                      data-bs-toggle='collapse'
-                      data-bs-target='#Question4'
-                      aria-expanded='false'
-                      aria-controls='Question4'
-                    >
-                      Is it required to submit the Experience Record during the initial stage?
-                    </button>
-                  </h2>
-                  <div id='Question4' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                    <div className='accordion-body'>
-                      <p>
-                        No, it is not obligatory. However, it is advisable to prepare and submit the Experience Record
-                        after sending the initial set of documents. It is important to note that this document can be
-                        modified if necessary, even after it has been submitted.
-                      </p>
-                    </div>
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question5'
+                    aria-expanded='false'
+                    aria-controls='Question5'
+                  >
+                    Is it required to submit the Experience Record during the initial stage?
+                  </button>
+                </h2>
+                <div id='Question5' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      No, it is not a compulsory requirement. However, it is recommended to prepare and submit the
+                      Experience Record after sending the initial set of documents. It is important to note that this
+                      document can be revised or updated if necessary, even after it has been submitted.
+                    </p>
                   </div>
                 </div>
+              </div>
 
-                <div className='accordion-item'>
-                  <h2 className='accordion-header'>
-                    <button
-                      className='accordion-button collapsed'
-                      type='button'
-                      data-bs-toggle='collapse'
-                      data-bs-target='#Question5'
-                      aria-expanded='false'
-                      aria-controls='Question5'
-                    >
-                      Is it required to submit the Experience Record during the initial stage?
-                    </button>
-                  </h2>
-                  <div id='Question5' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                    <div className='accordion-body'>
-                      <p>
-                        No, it is not a compulsory requirement. However, it is recommended to prepare and submit the
-                        Experience Record after sending the initial set of documents. It is important to note that this
-                        document can be revised or updated if necessary, even after it has been submitted.
-                      </p>
-                    </div>
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question6'
+                    aria-expanded='false'
+                    aria-controls='Question6'
+                  >
+                    Is it mandatory to include general courses in the course description?
+                  </button>
+                </h2>
+                <div id='Question6' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>No.</p>
                   </div>
                 </div>
+              </div>
 
-                <div className='accordion-item'>
-                  <h2 className='accordion-header'>
-                    <button
-                      className='accordion-button collapsed'
-                      type='button'
-                      data-bs-toggle='collapse'
-                      data-bs-target='#Question6'
-                      aria-expanded='false'
-                      aria-controls='Question6'
-                    >
-                      Is it mandatory to include general courses in the course description?
-                    </button>
-                  </h2>
-                  <div id='Question6' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                    <div className='accordion-body'>
-                      <p>No.</p>
-                    </div>
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question7'
+                    aria-expanded='false'
+                    aria-controls='Question7'
+                  >
+                    Is it required to have expert certificates, transcripts, and course descriptions stamped by a
+                    P.Eng?
+                  </button>
+                </h2>
+                <div id='Question7' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      No, it is not necessary. Simply including the desired statement along with your name, P.Eng
+                      license number, and signature is sufficient.
+                    </p>
                   </div>
                 </div>
+              </div>
 
-                <div className='accordion-item'>
-                  <h2 className='accordion-header'>
-                    <button
-                      className='accordion-button collapsed'
-                      type='button'
-                      data-bs-toggle='collapse'
-                      data-bs-target='#Question7'
-                      aria-expanded='false'
-                      aria-controls='Question7'
-                    >
-                      Is it required to have expert certificates, transcripts, and course descriptions stamped by a
-                      P.Eng?
-                    </button>
-                  </h2>
-                  <div id='Question7' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                    <div className='accordion-body'>
-                      <p>
-                        No, it is not necessary. Simply including the desired statement along with your name, P.Eng
-                        license number, and signature is sufficient.
-                      </p>
-                    </div>
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question8'
+                    aria-expanded='false'
+                    aria-controls='Question8'
+                  >
+                    Is it necessary to have the diploma and transcripts translated by a translation agency in Canada?
+                  </button>
+                </h2>
+                <div id='Question8' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      No, it is not mandatory. Translations from translation agencies of other countries are also
+                      accepted.
+                    </p>
                   </div>
                 </div>
+              </div>
 
-                <div className='accordion-item'>
-                  <h2 className='accordion-header'>
-                    <button
-                      className='accordion-button collapsed'
-                      type='button'
-                      data-bs-toggle='collapse'
-                      data-bs-target='#Question8'
-                      aria-expanded='false'
-                      aria-controls='Question8'
-                    >
-                      Is it necessary to have the diploma and transcripts translated by a translation agency in Canada?
-                    </button>
-                  </h2>
-                  <div id='Question8' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                    <div className='accordion-body'>
-                      <p>
-                        No, it is not mandatory. Translations from translation agencies of other countries are also
-                        accepted.
-                      </p>
-                    </div>
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question9'
+                    aria-expanded='false'
+                    aria-controls='Question9'
+                  >
+                    Is it possible to apply for EIT prior to applying for a P.Eng?
+                  </button>
+                </h2>
+                <div id='Question9' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>Yes.</p>
                   </div>
                 </div>
+              </div>
 
-                <div className='accordion-item'>
-                  <h2 className='accordion-header'>
-                    <button
-                      className='accordion-button collapsed'
-                      type='button'
-                      data-bs-toggle='collapse'
-                      data-bs-target='#Question9'
-                      aria-expanded='false'
-                      aria-controls='Question9'
-                    >
-                      Is it possible to apply for EIT prior to applying for a P.Eng?
-                    </button>
-                  </h2>
-                  <div id='Question9' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                    <div className='accordion-body'>
-                      <p>Yes.</p>
-                    </div>
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question10'
+                    aria-expanded='false'
+                    aria-controls='Question10'
+                  >
+                    Does obtaining a master's degree in Canada count as Canadian work experience?
+                  </button>
+                </h2>
+                <div id='Question10' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      Yes, the MASc degree is recognized as one year of Canadian work experience. However, the M.Eng
+                      degree is not regarded as Canadian work experience.
+                    </p>
                   </div>
                 </div>
+              </div>
 
-                <div className='accordion-item'>
-                  <h2 className='accordion-header'>
-                    <button
-                      className='accordion-button collapsed'
-                      type='button'
-                      data-bs-toggle='collapse'
-                      data-bs-target='#Question10'
-                      aria-expanded='false'
-                      aria-controls='Question10'
-                    >
-                      Does obtaining a master's degree in Canada count as Canadian work experience?
-                    </button>
-                  </h2>
-                  <div id='Question10' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                    <div className='accordion-body'>
-                      <p>
-                        Yes, the MASc degree is recognized as one year of Canadian work experience. However, the M.Eng
-                        degree is not regarded as Canadian work experience.
-                      </p>
-                    </div>
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question11'
+                    aria-expanded='false'
+                    aria-controls='Question11'
+                  >
+                    Does work experience prior to graduation count as acceptable experience that can be submitted for
+                    P.Eng?
+                  </button>
+                </h2>
+                <div id='Question11' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>No.</p>
                   </div>
                 </div>
+              </div>
 
-                <div className='accordion-item'>
-                  <h2 className='accordion-header'>
-                    <button
-                      className='accordion-button collapsed'
-                      type='button'
-                      data-bs-toggle='collapse'
-                      data-bs-target='#Question11'
-                      aria-expanded='false'
-                      aria-controls='Question11'
-                    >
-                      Does work experience prior to graduation count as acceptable experience that can be submitted for
-                      P.Eng?
-                    </button>
-                  </h2>
-                  <div id='Question11' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                    <div className='accordion-body'>
-                      <p>No.</p>
-                    </div>
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question12'
+                    aria-expanded='false'
+                    aria-controls='Question12'
+                  >
+                    Is engineering work experience in Iran considered acceptable for submission to P.Eng?
+                  </button>
+                </h2>
+                <div id='Question12' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      Yes, engineering work experience in Iran is accepted. If you have a minimum of 5 years of work
+                      experience in Iran, 3 out of the 4 required years of work experience for P.Eng can be covered.
+                      Additionally, you must have at least one year of Canadian work experience under the supervision
+                      of a licensed engineer. It should be noted that work experience outside of Canada is acceptable
+                      as long as it meets Canadian standards.
+                    </p>
                   </div>
                 </div>
+              </div>
 
-                <div className='accordion-item'>
-                  <h2 className='accordion-header'>
-                    <button
-                      className='accordion-button collapsed'
-                      type='button'
-                      data-bs-toggle='collapse'
-                      data-bs-target='#Question12'
-                      aria-expanded='false'
-                      aria-controls='Question12'
-                    >
-                      Is engineering work experience in Iran considered acceptable for submission to P.Eng?
-                    </button>
-                  </h2>
-                  <div id='Question12' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                    <div className='accordion-body'>
-                      <p>
-                        Yes, engineering work experience in Iran is accepted. If you have a minimum of 5 years of work
-                        experience in Iran, 3 out of the 4 required years of work experience for P.Eng can be covered.
-                        Additionally, you must have at least one year of Canadian work experience under the supervision
-                        of a licensed engineer. It should be noted that work experience outside of Canada is acceptable
-                        as long as it meets Canadian standards.
-                      </p>
-                    </div>
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question13'
+                    aria-expanded='false'
+                    aria-controls='Question13'
+                  >
+                    In addition to the bachelor's degree and transcript, which must be from Iran and signed by a P.Eng
+                    individual, is it permissible to upload the Canadian master's degree ourselves, or does it need to
+                    be sent directly by the university?
+                  </button>
+                </h2>
+                <div id='Question13' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>Yes it is.</p>
                   </div>
                 </div>
+              </div>
 
-                <div className='accordion-item'>
-                  <h2 className='accordion-header'>
-                    <button
-                      className='accordion-button collapsed'
-                      type='button'
-                      data-bs-toggle='collapse'
-                      data-bs-target='#Question13'
-                      aria-expanded='false'
-                      aria-controls='Question13'
-                    >
-                      In addition to the bachelor's degree and transcript, which must be from Iran and signed by a P.Eng
-                      individual, is it permissible to upload the Canadian master's degree ourselves, or does it need to
-                      be sent directly by the university?
-                    </button>
-                  </h2>
-                  <div id='Question13' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                    <div className='accordion-body'>
-                      <p>Yes it is.</p>
-                    </div>
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question14'
+                    aria-expanded='false'
+                    aria-controls='Question14'
+                  >
+                    Do the grading scales used by the Iranian Engineering System Organization, such as grades 3, 2,
+                    and 1, have relevance in the process of obtaining a P.Eng?
+                  </button>
+                </h2>
+                <div id='Question14' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>No, they do not.</p>
                   </div>
                 </div>
+              </div>
 
-                <div className='accordion-item'>
-                  <h2 className='accordion-header'>
-                    <button
-                      className='accordion-button collapsed'
-                      type='button'
-                      data-bs-toggle='collapse'
-                      data-bs-target='#Question14'
-                      aria-expanded='false'
-                      aria-controls='Question14'
-                    >
-                      Do the grading scales used by the Iranian Engineering System Organization, such as grades 3, 2,
-                      and 1, have relevance in the process of obtaining a P.Eng?
-                    </button>
-                  </h2>
-                  <div id='Question14' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                    <div className='accordion-body'>
-                      <p>No, they do not.</p>
-                    </div>
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question15'
+                    aria-expanded='false'
+                    aria-controls='Question15'
+                  >
+                    Does holding a P.Eng provide advantages for teaching positions in Canadian universities?
+                  </button>
+                </h2>
+                <div id='Question15' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      Possessing this certification is a requirement for teaching engineering courses that involve
+                      design at Canadian universities.
+                    </p>
                   </div>
                 </div>
+              </div>
 
-                <div className='accordion-item'>
-                  <h2 className='accordion-header'>
-                    <button
-                      className='accordion-button collapsed'
-                      type='button'
-                      data-bs-toggle='collapse'
-                      data-bs-target='#Question15'
-                      aria-expanded='false'
-                      aria-controls='Question15'
-                    >
-                      Does holding a P.Eng provide advantages for teaching positions in Canadian universities?
-                    </button>
-                  </h2>
-                  <div id='Question15' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                    <div className='accordion-body'>
-                      <p>
-                        Possessing this certification is a requirement for teaching engineering courses that involve
-                        design at Canadian universities.
-                      </p>
-                    </div>
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question16'
+                    aria-expanded='false'
+                    aria-controls='Question16'
+                  >
+                    What is the recommended approach for drafting an Experience Record?
+                  </button>
+                </h2>
+                <div id='Question16' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      When writing an ER as an engineer, it is important to begin by clearly outlining the problem and
+                      demonstrating how your engineering expertise was applied to solve it. It is essential to provide
+                      a clear description of the outcomes of your work. Additionally, it is advisable to follow the
+                      guidelines provided, which include five key sections for the report. It is worth noting that
+                      engineering encompasses more than just design, and experiences related to project implementation
+                      can also be documented in the ER.
+                    </p>
                   </div>
                 </div>
+              </div>
 
-                <div className='accordion-item'>
-                  <h2 className='accordion-header'>
-                    <button
-                      className='accordion-button collapsed'
-                      type='button'
-                      data-bs-toggle='collapse'
-                      data-bs-target='#Question16'
-                      aria-expanded='false'
-                      aria-controls='Question16'
-                    >
-                      What is the recommended approach for drafting an Experience Record?
-                    </button>
-                  </h2>
-                  <div id='Question16' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                    <div className='accordion-body'>
-                      <p>
-                        When writing an ER as an engineer, it is important to begin by clearly outlining the problem and
-                        demonstrating how your engineering expertise was applied to solve it. It is essential to provide
-                        a clear description of the outcomes of your work. Additionally, it is advisable to follow the
-                        guidelines provided, which include five key sections for the report. It is worth noting that
-                        engineering encompasses more than just design, and experiences related to project implementation
-                        can also be documented in the ER.
-                      </p>
-                    </div>
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question17'
+                    aria-expanded='false'
+                    aria-controls='Question17'
+                  >
+                    Is it necessary to select the EIT option when completing the Application Form?
+                  </button>
+                </h2>
+                <div id='Question17' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      If you possess a minimum of 5 years of engineering work experience in Iran, this requirement
+                      will be deemed equivalent to 3 years of work experience. Moreover, if you also have at least one
+                      year of Canadian work experience, you are eligible to directly apply for P.Eng without selecting
+                      the EIT option. However, if you do not meet these criteria, you will initially become an EIT
+                      before progressing to the P.Eng designation, in which case you should select the EIT option on
+                      the form.
+                    </p>
                   </div>
                 </div>
+              </div>
 
-                <div className='accordion-item'>
-                  <h2 className='accordion-header'>
-                    <button
-                      className='accordion-button collapsed'
-                      type='button'
-                      data-bs-toggle='collapse'
-                      data-bs-target='#Question17'
-                      aria-expanded='false'
-                      aria-controls='Question17'
-                    >
-                      Is it necessary to select the EIT option when completing the Application Form?
-                    </button>
-                  </h2>
-                  <div id='Question17' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                    <div className='accordion-body'>
-                      <p>
-                        If you possess a minimum of 5 years of engineering work experience in Iran, this requirement
-                        will be deemed equivalent to 3 years of work experience. Moreover, if you also have at least one
-                        year of Canadian work experience, you are eligible to directly apply for P.Eng without selecting
-                        the EIT option. However, if you do not meet these criteria, you will initially become an EIT
-                        before progressing to the P.Eng designation, in which case you should select the EIT option on
-                        the form.
-                      </p>
-                    </div>
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question18'
+                    aria-expanded='false'
+                    aria-controls='Question18'
+                  >
+                    Is it necessary to include details about working with engineering software in the Experience
+                    Record?
+                  </button>
+                </h2>
+                <div id='Question18' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      The matter of software usage is quite intricate. While utilizing engineering software can
+                      simplify tasks, it's important to note that you remain accountable for validating the results.
+                      Therefore, if you have utilized software in your work, it is crucial to explain how you ensured
+                      the accuracy of the outcomes obtained through the software.
+                    </p>
                   </div>
                 </div>
+              </div>
 
-                <div className='accordion-item'>
-                  <h2 className='accordion-header'>
-                    <button
-                      className='accordion-button collapsed'
-                      type='button'
-                      data-bs-toggle='collapse'
-                      data-bs-target='#Question18'
-                      aria-expanded='false'
-                      aria-controls='Question18'
-                    >
-                      Is it necessary to include details about working with engineering software in the Experience
-                      Record?
-                    </button>
-                  </h2>
-                  <div id='Question18' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                    <div className='accordion-body'>
-                      <p>
-                        The matter of software usage is quite intricate. While utilizing engineering software can
-                        simplify tasks, it's important to note that you remain accountable for validating the results.
-                        Therefore, if you have utilized software in your work, it is crucial to explain how you ensured
-                        the accuracy of the outcomes obtained through the software.
-                      </p>
-                    </div>
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question19'
+                    aria-expanded='false'
+                    aria-controls='Question19'
+                  >
+                    Which documents are required to be submitted when completing the Application Form?
+                  </button>
+                </h2>
+                <div id='Question19' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>The required documents at this stage are as follows:</p>
+                    <ul>
+                      <li>Completed P.Eng. Application Form (the form can be found at the end of this post)</li>
+                      <li>Proof of Age and Identity</li>
+                      <li>Academic credentials for the master's degree</li>
+                      <li>Translation of academic credentials</li>
+                      <li>Master's degree and transcripts</li>
+                      <li>Transcript</li>
+                      <li>Course List and Description</li>
+                      <li>Resume</li>
+                      <li>Current Employment details</li>
+                      <li>Course grading system (Grading Rubric / Grading System)</li>
+                    </ul>
                   </div>
                 </div>
+              </div>
 
-                <div className='accordion-item'>
-                  <h2 className='accordion-header'>
-                    <button
-                      className='accordion-button collapsed'
-                      type='button'
-                      data-bs-toggle='collapse'
-                      data-bs-target='#Question19'
-                      aria-expanded='false'
-                      aria-controls='Question19'
-                    >
-                      Which documents are required to be submitted when completing the Application Form?
-                    </button>
-                  </h2>
-                  <div id='Question19' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                    <div className='accordion-body'>
-                      <p>The required documents at this stage are as follows:</p>
-                      <ul>
-                        <li>Completed P.Eng. Application Form (the form can be found at the end of this post)</li>
-                        <li>Proof of Age and Identity</li>
-                        <li>Academic credentials for the master's degree</li>
-                        <li>Translation of academic credentials</li>
-                        <li>Master's degree and transcripts</li>
-                        <li>Transcript</li>
-                        <li>Course List and Description</li>
-                        <li>Resume</li>
-                        <li>Current Employment details</li>
-                        <li>Course grading system (Grading Rubric / Grading System)</li>
-                      </ul>
-                    </div>
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question20'
+                    aria-expanded='false'
+                    aria-controls='Question20'
+                  >
+                    Does completing a PhD program under the guidance of a PEng professor count as one year of Canadian
+                    work experience?
+                  </button>
+                </h2>
+                <div id='Question20' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      If your research is purely academic in nature and lacks industry relevance, it will not be
+                      considered acceptable. However, if you can establish a connection to the industry through your
+                      doctoral studies or develop practical applications through laboratory work, it can be considered
+                      as eligible experience.
+                    </p>
                   </div>
                 </div>
+              </div>
 
-                <div className='accordion-item'>
-                  <h2 className='accordion-header'>
-                    <button
-                      className='accordion-button collapsed'
-                      type='button'
-                      data-bs-toggle='collapse'
-                      data-bs-target='#Question20'
-                      aria-expanded='false'
-                      aria-controls='Question20'
-                    >
-                      Does completing a PhD program under the guidance of a PEng professor count as one year of Canadian
-                      work experience?
-                    </button>
-                  </h2>
-                  <div id='Question20' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                    <div className='accordion-body'>
-                      <p>
-                        If your research is purely academic in nature and lacks industry relevance, it will not be
-                        considered acceptable. However, if you can establish a connection to the industry through your
-                        doctoral studies or develop practical applications through laboratory work, it can be considered
-                        as eligible experience.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className='accordion-item'>
-                  <h2 className='accordion-header'>
-                    <button
-                      className='accordion-button collapsed'
-                      type='button'
-                      data-bs-toggle='collapse'
-                      data-bs-target='#Question21'
-                      aria-expanded='false'
-                      aria-controls='Question21'
-                    >
-                      Is there a discount for new cameras?
-                    </button>
-                  </h2>
-                  <div id='Question21' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                    <div className='accordion-body'>
-                      <p>
-                        Yes, if you apply within 6 months after the first entry to Canada and become a PR at the time of
-                        entry, the discount will be included, and in this case, you must pay the Application Fee first,
-                        and after receiving the P.Eng license, the amount Paid will be returned to you and the first
-                        year of membership is free. This discount is not considered for those who have a Study Permit.
-                      </p>
-                    </div>
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question21'
+                    aria-expanded='false'
+                    aria-controls='Question21'
+                  >
+                    Is there a discount for new cameras?
+                  </button>
+                </h2>
+                <div id='Question21' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      Yes, if you apply within 6 months after the first entry to Canada and become a PR at the time of
+                      entry, the discount will be included, and in this case, you must pay the Application Fee first,
+                      and after receiving the P.Eng license, the amount Paid will be returned to you and the first
+                      year of membership is free. This discount is not considered for those who have a Study Permit.
+                    </p>
                   </div>
                 </div>
               </div>

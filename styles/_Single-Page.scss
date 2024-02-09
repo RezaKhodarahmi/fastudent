@@ -81,6 +81,35 @@
                     }
                 }
             }
+
+            .accordion{
+                border-radius: 15px;
+
+                .accordion-item{
+                    margin-bottom: 1rem;
+                    border-radius: 15px;
+                    border-width: 0;
+                    box-shadow: 0px 0px 10px #00000017;
+
+                    .accordion-header{
+                        .accordion-button{
+                            box-shadow: unset;
+                            background-color: transparent;
+                            font-size: 18px;
+                            line-height: 36px;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .accordion-collapse{
+                        .accordion-body{
+                            font-size: 16px;
+                            line-height: 32px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
         }
     }
 }
