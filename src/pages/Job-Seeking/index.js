@@ -1,20 +1,62 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import Link from 'next/link'
+
+// ** Import Translation
+import { useTranslation } from 'react-i18next'
+
+// ** Import course section
+import CourseDeskSingle from 'src/views/swiper/courseDeskSingle'
+import CourseMobileSingle from 'src/views/swiper/courseMobileSingle'
+
+// ** Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react'
+
+import { fetchCourseData } from 'src/store/apps/course'
+import { useRouter } from 'next/router'
+import { useDispatch, useSelector } from 'react-redux'
 
 const Index = () => {
-  return (
-    <div className='FNV-Cart'>
-      <section className='FNV-Header'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-12'>
-              <h2>Job Seeking in Canada</h2>
-            </div>
-          </div>
-        </div>
-      </section>
+  const [courses, setCourses] = useState([])
 
-      <section className='FNV-SinglePage'>
+  //Hooks
+  const router = useRouter()
+  const { t } = useTranslation()
+  const dispatch = useDispatch()
+
+  const courseData = useSelector(state => state.course)
+
+  useEffect(() => {
+  dispatch(fetchCourseData())
+  }, [])
+
+  useEffect(() => {
+  if (courseData?.data) {
+  setCourses(courseData?.data?.data)
+  }
+  }, [courseData])
+
+  const addToCart = id => {
+  const cartItems = JSON.parse(localStorage.getItem('cartItems')) || []
+  const existInCart = cartItems.includes(id)
+  router.push('/cart')
+
+  if (existInCart) {
+  window.alert('Item is already in cart!')
+  router.push('/cart')
+  } else {
+  cartItems.push(id)
+  }
+
+  const updatedCartItems = [...cartItems]
+  localStorage.setItem('cartItems', JSON.stringify(updatedCartItems))
+  }
+  return (
+    <section className='FNV-SinglePage'>
         <div className='container'>
+          <div className='row FNV-Header'>
+            <h1>Job Seeking in Canada</h1>
+          </div>
+
           <div className='row'>
             <div className='col-12'>
               <p>
@@ -69,29 +111,9 @@ const Index = () => {
 
           <div className='row'>
             <h3>Before you start</h3>
-            <div className='col-12 col-md-4'>
+            <div className='col-12'>
               <iframe
                 src='https://www.youtube.com/embed/W2rouB4h1cQ'
-                title='YouTube video player'
-                frameborder='0'
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                allowfullscreen
-              ></iframe>
-            </div>
-
-            <div className='col-12 col-md-4'>
-              <iframe
-                src='https://www.youtube.com/embed/BVqmL9g3_eA'
-                title='YouTube video player'
-                frameborder='0'
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                allowfullscreen
-              ></iframe>
-            </div>
-
-            <div className='col-12 col-md-4'>
-              <iframe
-                src='https://www.youtube.com/embed/kQ4cAAbGidc'
                 title='YouTube video player'
                 frameborder='0'
                 allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
@@ -103,7 +125,7 @@ const Index = () => {
           <div id='P1' className='row'>
             <h3>Job Seeking in Canada</h3>
 
-            <div className='col-12 col-md-8'>
+            <div className='col-12'>
               <p>
                 Undoubtedly, upon arrival in Canada, the primary concern for every immigrant is to secure employment. To
                 address the challenge of finding a job in Canada, it is essential to acquire a comprehensive
@@ -112,22 +134,12 @@ const Index = () => {
                 process to assist you.
               </p>
             </div>
-
-            <div className='col-12 col-md-4'>
-              <iframe
-                src='https://www.youtube.com/embed/dpqgmiNwvRs'
-                title='YouTube video player'
-                frameborder='0'
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                allowfullscreen
-              ></iframe>
-            </div>
           </div>
 
           <div id='P2' className='row'>
-            <div className='col-12 col-md-9'>
-              <h3>4 Key Factors To Find The Ideal Job In Canada</h3>
+            <h3>4 Key Factors To Find The Ideal Job In Canada</h3>
 
+            <div className='col-12'>
               <p>
                 <strong>Proficiency in the English language</strong>
               </p>
@@ -164,28 +176,6 @@ const Index = () => {
                 sessions are available as recorded videos on Fanavaran's YouTube channel. By watching these videos, you
                 can obtain precise answers to your inquiries regarding finding employment in Canada.
               </p>
-            </div>
-
-            <div className='col-12 col-md-3'>
-              <div className='FNV-SimilarCourse'>
-                <div className='FNV-Card'>
-                  <div className='FNV-Card-Header'>
-                    <img src='/img/nppe.webp' className='img-fluid' />
-                  </div>
-                  <div className='FNV-Card-Body'>
-                    <h4>Course Name</h4>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                      ut laoreet dolore magna aliquam erat volutpat.
-                    </p>
-                  </div>
-                  <div className='FNV-Card-Price'>
-                    <a href='#' className='FNV-Btn BtnPrimary BtnLarge'>
-                      Register Now
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
 
@@ -363,67 +353,12 @@ const Index = () => {
           </div>
 
           <div className='row FNV-Related-Course'>
-            <h3>Related Engineering Courses</h3>
+            <h3>Related Job Seeker Courses</h3>
 
-            <div className='col-12 col-md-4'>
-              <div className='FNV-Card'>
-                <div className='FNV-Card-Header'>
-                  <img src='/img/nppe.webp' className='img-fluid' />
-                </div>
-                <div className='FNV-Card-Body'>
-                  <h4>Course Name</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                    laoreet dolore magna aliquam erat volutpat.
-                  </p>
-                </div>
-                <div className='FNV-Card-Price'>
-                  <a href='#' className='FNV-Btn BtnPrimary BtnLarge'>
-                    Register Now
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className='col-12 col-md-4'>
-              <div className='FNV-Card'>
-                <div className='FNV-Card-Header'>
-                  <img src='/img/nppe.webp' className='img-fluid' />
-                </div>
-                <div className='FNV-Card-Body'>
-                  <h4>Course Name</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                    laoreet dolore magna aliquam erat volutpat.
-                  </p>
-                </div>
-                <div className='FNV-Card-Price'>
-                  <a href='#' className='FNV-Btn BtnPrimary BtnLarge'>
-                    Register Now
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className='col-12 col-md-4'>
-              <div className='FNV-Card'>
-                <div className='FNV-Card-Header'>
-                  <img src='/img/nppe.webp' className='img-fluid' />
-                </div>
-                <div className='FNV-Card-Body'>
-                  <h4>Course Name</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                    laoreet dolore magna aliquam erat volutpat.
-                  </p>
-                </div>
-                <div className='FNV-Card-Price'>
-                  <a href='#' className='FNV-Btn BtnPrimary BtnLarge'>
-                    Register Now
-                  </a>
-                </div>
-              </div>
-            </div>
+            {/* Courses Desktop */}
+            <CourseDeskSingle courses={courses} addToCart={addToCart} />
+            {/* Courses Mobile */}
+            <CourseMobileSingle courses={courses} addToCart={addToCart} />
           </div>
 
           <div id='P6' className='row'>
@@ -579,130 +514,100 @@ const Index = () => {
 
           <div id='FAQ' className='row'>
             <h3>Frequently Asked Questions</h3>
-            <div className='col-12'>
-              <div className='accordion' id='FAQEngineering'>
-                <div className='accordion-item'>
-                  <h2 className='accordion-header'>
-                    <button
-                      className='accordion-button'
-                      type='button'
-                      data-bs-toggle='collapse'
-                      data-bs-target='#Question1'
-                      aria-expanded='true'
-                      aria-controls='Question1'
-                    >
-                      When a company requests a resume and cover letter, is it considered unprofessional to include an
-                      additional file showcasing projects? What is the impact, positive or negative, of including such a
-                      file?
-                    </button>
-                  </h2>
-                  <div id='Question1' className='accordion-collapse collapse show' data-bs-parent='#FAQEngineering'>
-                    <div className='accordion-body'>
-                      <p>
-                        If the company does not explicitly ask for supporting documents, it is advisable not to send
-                        them. While some individuals may choose to include additional files, it is crucial that these
-                        documents are entirely relevant to the application.
-                      </p>
-                    </div>
+
+            <div className='accordion p-0' id='FAQEngineering'>
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question1'
+                    aria-expanded='true'
+                    aria-controls='Question1'
+                  >
+                    When a company requests a resume and cover letter, is it considered unprofessional to include an
+                    additional file showcasing projects? What is the impact, positive or negative, of including such a
+                    file?
+                  </button>
+                </h2>
+                <div id='Question1' className='accordion-collapse collapse show' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      If the company does not explicitly ask for supporting documents, it is advisable not to send
+                      them. While some individuals may choose to include additional files, it is crucial that these
+                      documents are entirely relevant to the application.
+                    </p>
                   </div>
                 </div>
+              </div>
 
-                <div className='accordion-item'>
-                  <h2 className='accordion-header'>
-                    <button
-                      className='accordion-button collapsed'
-                      type='button'
-                      data-bs-toggle='collapse'
-                      data-bs-target='#Question2'
-                      aria-expanded='false'
-                      aria-controls='Question2'
-                    >
-                      In the upcoming semester, I will be pursuing a Master's degree in Project Management with a
-                      specialization in Business Analysis. I'm curious to know if obtaining a PMP certification is
-                      necessary for job opportunities, or if having a Master's degree alone is sufficient.
-                    </button>
-                  </h2>
-                  <div id='Question2' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                    <div className='accordion-body'>
-                      <p>
-                        In terms of securing a job, licenses, such as the P.Eng certification, are the primary
-                        requirements. No other certificate alone serves as a satisfactory condition. Regarding your
-                        inquiry, having a PMP certification is considered a necessary condition, and in some cases, it
-                        may be an optional requirement for project-related positions. However, it is important to note
-                        that possessing a PMP certification alone is not sufficient for securing a job.
-                      </p>
-                    </div>
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question2'
+                    aria-expanded='false'
+                    aria-controls='Question2'
+                  >
+                    In the upcoming semester, I will be pursuing a Master's degree in Project Management with a
+                    specialization in Business Analysis. I'm curious to know if obtaining a PMP certification is
+                    necessary for job opportunities, or if having a Master's degree alone is sufficient.
+                  </button>
+                </h2>
+                <div id='Question2' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      In terms of securing a job, licenses, such as the P.Eng certification, are the primary
+                      requirements. No other certificate alone serves as a satisfactory condition. Regarding your
+                      inquiry, having a PMP certification is considered a necessary condition, and in some cases, it
+                      may be an optional requirement for project-related positions. However, it is important to note
+                      that possessing a PMP certification alone is not sufficient for securing a job.
+                    </p>
                   </div>
                 </div>
+              </div>
 
-                <div className='accordion-item'>
-                  <h2 className='accordion-header'>
-                    <button
-                      className='accordion-button collapsed'
-                      type='button'
-                      data-bs-toggle='collapse'
-                      data-bs-target='#Question3'
-                      aria-expanded='false'
-                      aria-controls='Question3'
-                    >
-                      Do grade point averages (GPAs) impact acceptance into a program or the job application process?
-                      Additionally, given the current challenges in obtaining an original Master's degree, would it be
-                      possible to apply for a job requiring a Master's degree and explain the circumstances to the
-                      employer?
-                    </button>
-                  </h2>
-                  <div id='Question3' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                    <div className='accordion-body'>
-                      <p>
-                        For many employers, the importance of GPA in both Bachelor's and Master's degrees is relatively
-                        low, and they do not consider academic documents as strict prerequisites. They often do not
-                        differentiate between universities, whether it's Payam Noor or the University of Tehran. What
-                        truly matters to them is the practical experience and the work you can showcase, which can
-                        demonstrate your ability to successfully complete courses and exams.
-                      </p>
-                      <p>
-                        In terms of job applications, it may be possible to apply for a position that requires a
-                        Master's degree even if you don't possess the original degree. However, it is crucial to
-                        communicate the circumstances clearly to the employer and explain your qualifications and
-                        relevant experience.
-                      </p>
-                    </div>
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question3'
+                    aria-expanded='false'
+                    aria-controls='Question3'
+                  >
+                    Do grade point averages (GPAs) impact acceptance into a program or the job application process?
+                    Additionally, given the current challenges in obtaining an original Master's degree, would it be
+                    possible to apply for a job requiring a Master's degree and explain the circumstances to the
+                    employer?
+                  </button>
+                </h2>
+                <div id='Question3' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      For many employers, the importance of GPA in both Bachelor's and Master's degrees is relatively
+                      low, and they do not consider academic documents as strict prerequisites. They often do not
+                      differentiate between universities, whether it's Payam Noor or the University of Tehran. What
+                      truly matters to them is the practical experience and the work you can showcase, which can
+                      demonstrate your ability to successfully complete courses and exams.
+                    </p>
+                    <p>
+                      In terms of job applications, it may be possible to apply for a position that requires a
+                      Master's degree even if you don't possess the original degree. However, it is crucial to
+                      communicate the circumstances clearly to the employer and explain your qualifications and
+                      relevant experience.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-      <div
-        className='offcanvas offcanvas-start'
-        tabIndex='-1'
-        id='offcanvasExample'
-        aria-labelledby='offcanvasExampleLabel'
-      >
-        <div className='offcanvas-header'>
-          <a className='navbar-brand' href='#'>
-            <img src='/img/MainLogo.png' className='img-fluid' />
-          </a>
-          <button type='button' className='btn-close' data-bs-dismiss='offcanvas' aria-label='Close'></button>
-        </div>
-        <div className='offcanvas-body'>
-          <h5>Fanavaran Sections</h5>
-
-          <ul className='list-group list-group-flush'>
-            <li className='list-group-item'>Engineering</li>
-            <li className='list-group-item'>Project Management</li>
-            <li className='list-group-item'>Architect</li>
-            <li className='list-group-item'>Technician</li>
-            <li className='list-group-item'>Job Seeker</li>
-            <li className='list-group-item'>Freelancer</li>
-            <li className='list-group-item'>Plumbing</li>
-            <li className='list-group-item'>Electrician</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    </section>
   )
 }
 Index.guestGuard = true

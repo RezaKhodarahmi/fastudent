@@ -384,7 +384,7 @@ const Index = () => {
         </div>
 
         <div className='row FNV-Related-Course'>
-          <h3>Related Project Management Courses</h3>
+          <h3>Related Architecture Courses</h3>
 
           {/* Courses Desktop */}
           <CourseDeskSingle courses={courses} addToCart={addToCart} />
@@ -562,7 +562,7 @@ const Index = () => {
         <div id='FAQ' className='row'>
           <h3>Frequently Asked Questions</h3>
 
-          <div className='accordion' id='FAQEngineering'>
+          <div className='accordion p-0' id='FAQEngineering'>
             <div className='accordion-item'>
               <h2 className='accordion-header'>
                 <button
