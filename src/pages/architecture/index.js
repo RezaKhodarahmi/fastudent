@@ -1,6 +1,55 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import Link from 'next/link'
+
+// ** Import Translation
+import { useTranslation } from 'react-i18next'
+
+// ** Import course section
+import CourseDeskSingle from 'src/views/swiper/courseDeskSingle'
+import CourseMobileSingle from 'src/views/swiper/courseMobileSingle'
+
+// ** Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react'
+
+import { fetchCourseData } from 'src/store/apps/course'
+import { useRouter } from 'next/router'
+import { useDispatch, useSelector } from 'react-redux'
 
 const Index = () => {
+  const [courses, setCourses] = useState([])
+
+  //Hooks
+  const router = useRouter()
+  const { t } = useTranslation()
+  const dispatch = useDispatch()
+
+  const courseData = useSelector(state => state.course)
+
+  useEffect(() => {
+  dispatch(fetchCourseData())
+  }, [])
+
+  useEffect(() => {
+  if (courseData?.data) {
+  setCourses(courseData?.data?.data)
+  }
+  }, [courseData])
+
+  const addToCart = id => {
+  const cartItems = JSON.parse(localStorage.getItem('cartItems')) || []
+  const existInCart = cartItems.includes(id)
+  router.push('/cart')
+
+  if (existInCart) {
+  window.alert('Item is already in cart!')
+  router.push('/cart')
+  } else {
+  cartItems.push(id)
+  }
+
+  const updatedCartItems = [...cartItems]
+  localStorage.setItem('cartItems', JSON.stringify(updatedCartItems))
+  }
   return (
     <section className='FNV-SinglePage'>
       <div className='container'>
@@ -337,65 +386,10 @@ const Index = () => {
         <div className='row FNV-Related-Course'>
           <h3>Related Project Management Courses</h3>
 
-          <div className='col-12 col-md-4'>
-            <div className='FNV-Card'>
-              <div className='FNV-Card-Header'>
-                <img src='/img/nppe.webp' className='img-fluid' />
-              </div>
-              <div className='FNV-Card-Body'>
-                <h4>Course Name</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                  laoreet dolore magna aliquam erat volutpat.
-                </p>
-              </div>
-              <div className='FNV-Card-Price'>
-                <a href='#' className='FNV-Btn BtnPrimary BtnLarge'>
-                  Register Now
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className='col-12 col-md-4'>
-            <div className='FNV-Card'>
-              <div className='FNV-Card-Header'>
-                <img src='/img/nppe.webp' className='img-fluid' />
-              </div>
-              <div className='FNV-Card-Body'>
-                <h4>Course Name</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                  laoreet dolore magna aliquam erat volutpat.
-                </p>
-              </div>
-              <div className='FNV-Card-Price'>
-                <a href='#' className='FNV-Btn BtnPrimary BtnLarge'>
-                  Register Now
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className='col-12 col-md-4'>
-            <div className='FNV-Card'>
-              <div className='FNV-Card-Header'>
-                <img src='/img/nppe.webp' className='img-fluid' />
-              </div>
-              <div className='FNV-Card-Body'>
-                <h4>Course Name</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                  laoreet dolore magna aliquam erat volutpat.
-                </p>
-              </div>
-              <div className='FNV-Card-Price'>
-                <a href='#' className='FNV-Btn BtnPrimary BtnLarge'>
-                  Register Now
-                </a>
-              </div>
-            </div>
-          </div>
+          {/* Courses Desktop */}
+          <CourseDeskSingle courses={courses} addToCart={addToCart} />
+          {/* Courses Mobile */}
+          <CourseMobileSingle courses={courses} addToCart={addToCart} />
         </div>
 
         <div id='P7' className='row'>
