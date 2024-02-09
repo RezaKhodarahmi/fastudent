@@ -2112,6 +2112,44 @@ body .FNV-About-Team .container .row .col-12 .col-8 h4 {
     margin-bottom: 2rem;
   }
 }
+body .FNV-ContactUs {
+  background-color: #F0F3FB;
+}
+body .FNV-ContactUs .container {
+  padding: 5rem 0;
+}
+body .FNV-ContactUs .container .row h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+body .FNV-ContactUs .container .row .col-md-6:not(:last-child) {
+  padding-right: 2rem;
+}
+body .FNV-ContactUs .container .row .col-md-6.col-12 {
+  padding-right: 0.8rem;
+}
+body .FNV-ContactUs .container .row .col-md-6 p {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 32px;
+}
+body .FNV-ContactUs .container .row .col-md-6 input, body .FNV-ContactUs .container .row .col-md-6 textarea {
+  background-color: #E5EAFB;
+  border-width: 0;
+  line-height: 32px;
+  color: #000000;
+}
+body .FNV-ContactUs .container .row .col-md-6 input::-moz-placeholder, body .FNV-ContactUs .container .row .col-md-6 textarea::-moz-placeholder {
+  color: #ABBDFC;
+}
+body .FNV-ContactUs .container .row .col-md-6 input::placeholder, body .FNV-ContactUs .container .row .col-md-6 textarea::placeholder {
+  color: #ABBDFC;
+}
+body .FNV-ContactUs iframe {
+  width: 100%;
+  height: 400px;
+}
 body .FNV-Courses {
   background-color: #ffffff;
 }
