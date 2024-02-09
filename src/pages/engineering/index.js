@@ -1104,34 +1104,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      <div
-        className='offcanvas offcanvas-start'
-        tabIndex='-1'
-        id='offcanvasExample'
-        aria-labelledby='offcanvasExampleLabel'
-      >
-        <div className='offcanvas-header'>
-          <a className='navbar-brand' href='#'>
-            <img src='/img/MainLogo.png' className='img-fluid' />
-          </a>
-          <button type='button' className='btn-close' data-bs-dismiss='offcanvas' aria-label='Close'></button>
-        </div>
-        <div className='offcanvas-body'>
-          <h5>Fanavaran Sections</h5>
-
-          <ul className='list-group list-group-flush'>
-            <li className='list-group-item'>Engineering</li>
-            <li className='list-group-item'>Project Management</li>
-            <li className='list-group-item'>Architect</li>
-            <li className='list-group-item'>Technician</li>
-            <li className='list-group-item'>Job Seeker</li>
-            <li className='list-group-item'>Freelancer</li>
-            <li className='list-group-item'>Plumbing</li>
-            <li className='list-group-item'>Electrician</li>
-          </ul>
-        </div>
-      </div>
     </>
   )
 }
