@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 
 import SimpleDateFormatter from 'src/utils/simple-date-readble'
+
 // ** Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination, Navigation } from 'swiper/modules'
@@ -40,6 +41,7 @@ const WebinarDeskSingle = ({ webinars }) => {
         return 'Not Active'
     }
   }
+
   const handelType = webinar => {
     console.log(webinar)
     switch (webinar.type) {
@@ -53,6 +55,7 @@ const WebinarDeskSingle = ({ webinars }) => {
         return 'Free'
     }
   }
+
   const truncateText = (html, maxLength) => {
     // Remove HTML tags
     const div = document.createElement('div')

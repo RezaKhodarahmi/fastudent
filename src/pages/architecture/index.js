@@ -26,30 +26,31 @@ const Index = () => {
   const courseData = useSelector(state => state.course)
 
   useEffect(() => {
-  dispatch(fetchCourseData())
+    dispatch(fetchCourseData())
   }, [])
 
   useEffect(() => {
-  if (courseData?.data) {
-  setCourses(courseData?.data?.data)
-  }
+    if (courseData?.data) {
+      setCourses(courseData?.data?.data)
+    }
   }, [courseData])
 
   const addToCart = id => {
-  const cartItems = JSON.parse(localStorage.getItem('cartItems')) || []
-  const existInCart = cartItems.includes(id)
-  router.push('/cart')
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || []
+    const existInCart = cartItems.includes(id)
+    router.push('/cart')
 
-  if (existInCart) {
-  window.alert('Item is already in cart!')
-  router.push('/cart')
-  } else {
-  cartItems.push(id)
+    if (existInCart) {
+      window.alert('Item is already in cart!')
+      router.push('/cart')
+    } else {
+      cartItems.push(id)
+    }
+
+    const updatedCartItems = [...cartItems]
+    localStorage.setItem('cartItems', JSON.stringify(updatedCartItems))
   }
 
-  const updatedCartItems = [...cartItems]
-  localStorage.setItem('cartItems', JSON.stringify(updatedCartItems))
-  }
   return (
     <section className='FNV-SinglePage'>
       <div className='container'>
@@ -64,8 +65,8 @@ const Index = () => {
               anyone. This regulation is similar to that of the engineering field in Canada. Architects are highly
               skilled professionals who must obtain a license from the architectural association of one or more
               provinces in order to engage in architectural activities. In Canada, architecture encompasses the
-              creation, design, and implementation of plans for constructing or renovating commercial, residential,
-              and institutional buildings.
+              creation, design, and implementation of plans for constructing or renovating commercial, residential, and
+              institutional buildings.
             </p>
             <p>Table of contents:</p>
             <ol>
@@ -137,9 +138,9 @@ const Index = () => {
             <p>
               In Canada, there are several essential steps that individuals must fulfill in order to be officially
               recognized as architects and obtain a professional work permit. While possessing an educational
-              qualification is of great significance, Canada distinguishes itself as a country that does not solely
-              rely on a degree in architecture or engineering as a sufficient qualification for working in these
-              fields. Generally, those aspiring to work in this profession should:
+              qualification is of great significance, Canada distinguishes itself as a country that does not solely rely
+              on a degree in architecture or engineering as a sufficient qualification for working in these fields.
+              Generally, those aspiring to work in this profession should:
             </p>
             <ul>
               <li>Have a background in architecture studies.</li>
@@ -147,9 +148,9 @@ const Index = () => {
               <li>Successfully pass the Examination for Architects in Canada (ExAC).</li>
             </ul>
             <p>
-              It is worth noting that the process of completing these steps may vary across provinces. For more
-              detailed information regarding the specific requirements and procedures for each province, please
-              consult the official website of the respective Provincial Architects Association.
+              It is worth noting that the process of completing these steps may vary across provinces. For more detailed
+              information regarding the specific requirements and procedures for each province, please consult the
+              official website of the respective Provincial Architects Association.
             </p>
             <p>Ontario</p>
             <p>Alberta</p>
@@ -174,13 +175,13 @@ const Index = () => {
           <div className='col-12'>
             <ul>
               <li>
-                Engage in consultations with clients to determine the nature, style, and purpose of building
-                renovations in Canada.
+                Engage in consultations with clients to determine the nature, style, and purpose of building renovations
+                in Canada.
               </li>
               <li>
-                Conceptualize and design buildings, providing comprehensive building plans that include design
-                details, building materials, costs, and construction plans, all in accordance with Canadian
-                architectural standards.
+                Conceptualize and design buildings, providing comprehensive building plans that include design details,
+                building materials, costs, and construction plans, all in accordance with Canadian architectural
+                standards.
               </li>
               <li>Prepare designs and models for their clients.</li>
               <li>
@@ -192,8 +193,8 @@ const Index = () => {
                 construction contracts.
               </li>
               <li>
-                Monitor activities on construction sites to ensure compliance with the overall plan is an important
-                duty of architects.
+                Monitor activities on construction sites to ensure compliance with the overall plan is an important duty
+                of architects.
               </li>
               <li>Carry out feasibility studies and conduct financial analyses of construction projects.</li>
             </ul>
@@ -210,9 +211,9 @@ const Index = () => {
           <div className='col-12'>
             <p>
               The Canadian Provincial Associations of Architects have established multiple examinations for architect
-              admission, which are designed to assess the qualifications of candidates. The latest examination is
-              known as EXAC (Examination for Architects in Canada). EXAC is divided into four sections and encompasses
-              various subject areas outlined in the Architectural Internship Program.
+              admission, which are designed to assess the qualifications of candidates. The latest examination is known
+              as EXAC (Examination for Architects in Canada). EXAC is divided into four sections and encompasses various
+              subject areas outlined in the Architectural Internship Program.
             </p>
             <ul>
               <li>Fore planning</li>
@@ -238,12 +239,12 @@ const Index = () => {
             </ul>
             <p>
               The primary reference for successfully completing the EXAC exam and practicing architecture in Canada is
-              the National Building Code. This valuable resource provides applicants with a comprehensive
-              understanding of the precise regulations and standards governing construction in the country. The
-              National Building Code consists of 11 general sections, with particular emphasis placed on two crucial
-              parts: Part 3, which addresses fire and safety principles, and Part 9, which pertains to residential
-              buildings in Canada. Familiarizing oneself with these sections is essential for candidates aiming to
-              pass the EXAC exam and effectively engage in architectural practice within the country.
+              the National Building Code. This valuable resource provides applicants with a comprehensive understanding
+              of the precise regulations and standards governing construction in the country. The National Building Code
+              consists of 11 general sections, with particular emphasis placed on two crucial parts: Part 3, which
+              addresses fire and safety principles, and Part 9, which pertains to residential buildings in Canada.
+              Familiarizing oneself with these sections is essential for candidates aiming to pass the EXAC exam and
+              effectively engage in architectural practice within the country.
             </p>
           </div>
         </div>
@@ -257,27 +258,27 @@ const Index = () => {
             </p>
             <p>
               In accordance with Canadian laws and policies, only individuals holding an architectural degree from
-              Canada are entitled to use the professional designation of "Architect." This certification signifies
-              that the person possesses all the necessary qualifications to engage in various domains of architecture
-              within Canada. Consequently, individuals are prohibited from practicing architecture unless they are
-              members of a provincial architecture association.
+              Canada are entitled to use the professional designation of "Architect." This certification signifies that
+              the person possesses all the necessary qualifications to engage in various domains of architecture within
+              Canada. Consequently, individuals are prohibited from practicing architecture unless they are members of a
+              provincial architecture association.
             </p>
             <p>
               <strong>Enhancing business reputation</strong>
             </p>
             <p>
               Membership in provincial architecture associations is regarded as a prestigious occupation, allowing
-              individuals to append the title of "Architect" to their name. This designation serves as a guarantee for
-              a promising career trajectory.
+              individuals to append the title of "Architect" to their name. This designation serves as a guarantee for a
+              promising career trajectory.
             </p>
             <p>
               <strong>Job security and diverse opportunities</strong>
             </p>
             <p>
               During downsizing, organizations tend to retain individuals who possess an architectural license from a
-              provincial architecture association. Moreover, those who aspire to establish their own architectural
-              firm and capitalize on the opportunities available in Canada can greatly benefit from holding such a
-              license, as it opens doors to a wider range of prospects compared to a conventional enterprise.
+              provincial architecture association. Moreover, those who aspire to establish their own architectural firm
+              and capitalize on the opportunities available in Canada can greatly benefit from holding such a license,
+              as it opens doors to a wider range of prospects compared to a conventional enterprise.
             </p>
             <p>
               <strong>Increased salary prospects</strong>
@@ -291,10 +292,10 @@ const Index = () => {
               <strong>Right to vote in provincial associations</strong>
             </p>
             <p>
-              Following licensure, architects gain the privilege to vote at their association's annual general
-              meeting. They also have the opportunity to participate in elections and contribute to the council's
-              decision-making process. Provincially licensed architects can further volunteer for various committees
-              and groups, playing a vital role in educating future architects.
+              Following licensure, architects gain the privilege to vote at their association's annual general meeting.
+              They also have the opportunity to participate in elections and contribute to the council's decision-making
+              process. Provincially licensed architects can further volunteer for various committees and groups, playing
+              a vital role in educating future architects.
             </p>
           </div>
         </div>
@@ -304,16 +305,16 @@ const Index = () => {
 
           <div className='col-12'>
             <p>
-              The Ontario Association of Architects (OAA) is an independent entity committed to advancing the
-              knowledge, skills, and competencies of its members, all while ensuring the public's best interests. This
-              association holds the responsibility of certifying qualifications and providing official recognition for
-              practicing architects within the province of Ontario.
+              The Ontario Association of Architects (OAA) is an independent entity committed to advancing the knowledge,
+              skills, and competencies of its members, all while ensuring the public's best interests. This association
+              holds the responsibility of certifying qualifications and providing official recognition for practicing
+              architects within the province of Ontario.
             </p>
             <p>
               Individuals who have completed their education in the field of architecture in Canada and aspire to work
               as architects in Ontario must obtain membership in this organization. It is important to note that for
-              individuals seeking employment in other provinces, they must consult the relevant organization specific
-              to their desired province.
+              individuals seeking employment in other provinces, they must consult the relevant organization specific to
+              their desired province.
             </p>
             <p>Through a meticulous procedure, the OAA meticulously verifies the eligibility of its members:</p>
             <ul>
@@ -328,24 +329,23 @@ const Index = () => {
               fulfills the experience criteria outlined in the regulations for obtaining an OAA license.
             </p>
             <p>
-              In accordance with the Architects Act, the Architectural Association of Ontario is dedicated to
-              upholding the professional standards of individuals who have successfully fulfilled all necessary
-              requirements prior to obtaining their license. The OAA is obligated to consistently apply and update
-              these requirements as mandated by section 31 of the Regulations, ensuring compliance with legal
-              obligations.
+              In accordance with the Architects Act, the Architectural Association of Ontario is dedicated to upholding
+              the professional standards of individuals who have successfully fulfilled all necessary requirements prior
+              to obtaining their license. The OAA is obligated to consistently apply and update these requirements as
+              mandated by section 31 of the Regulations, ensuring compliance with legal obligations.
             </p>
             <p>
               Licensed members of the Architectural Association of Ontario are required to utilize the official
-              professional seal provided by the organization, adhering to the regulations outlined in section 27 of
-              the Architects Act. The stamp and signature of an OAA member on a document signify that the document was
+              professional seal provided by the organization, adhering to the regulations outlined in section 27 of the
+              Architects Act. The stamp and signature of an OAA member on a document signify that the document was
               meticulously prepared under the personal supervision and direction of one or more OAA members. Obtaining
               this seal, which validates architectural activities in Canada, necessitates successful completion of the
               EXAC exam.
             </p>
             <p>
-              The presence of the OAA seal below a document serves as the sole confirmation that all legal
-              requirements have been met. Such a document can be employed for the purposes of planning, designing, and
-              making alterations to buildings, ensuring adherence to regulatory standards.
+              The presence of the OAA seal below a document serves as the sole confirmation that all legal requirements
+              have been met. Such a document can be employed for the purposes of planning, designing, and making
+              alterations to buildings, ensuring adherence to regulatory standards.
             </p>
           </div>
         </div>
@@ -399,22 +399,20 @@ const Index = () => {
             <p>To qualify as a trainee architect, an applicant must meet the following requirements:</p>
             <ul>
               <li>Hold a professional degree in architecture or have successfully completed the RAIC curriculum.</li>
-              <li>
-                Possess a scientific certificate issued by the Canadian Architectural Certification Board (CACB).
-              </li>
+              <li>Possess a scientific certificate issued by the Canadian Architectural Certification Board (CACB).</li>
               <li>Demonstrate a professional demeanor and character.</li>
               <li>Submit a completed application form.</li>
               <li>Fulfill the necessary fee payment.</li>
             </ul>
             <p>
               Aspiring apprentice architects can register and document their work experience using the Canadian
-              Experience Record Book (CERB) online tool. Supervising architects and mentors can utilize this resource
-              to review and digitally verify the activities of their trainees.
+              Experience Record Book (CERB) online tool. Supervising architects and mentors can utilize this resource to
+              review and digitally verify the activities of their trainees.
             </p>
             <p>
               The architectural internship holds a significant position within the Ontario Association of Architects
-              (OAA). This designation indicates active participation in the Internship in Architecture Program (IAP)
-              and reflects one's commitment to becoming a licensed professional architect in Canada.
+              (OAA). This designation indicates active participation in the Internship in Architecture Program (IAP) and
+              reflects one's commitment to becoming a licensed professional architect in Canada.
             </p>
           </div>
         </div>
@@ -426,11 +424,11 @@ const Index = () => {
               Prior to enrolling in the Internship in Architecture Program (IAP) to pursue a career in architecture in
               Canada, it is essential to hold a professional degree in architecture. Irrespective of the educational
               institution where the architecture degree was obtained, it must be officially recognized by the Canadian
-              Architectural Certification Board (CACB). In Canada, the CACB assumes the responsibility of assessing
-              the qualifications of all architecture graduates, serving as the authoritative body for verifying
-              architecture degrees within the country. It is mandatory to consult the CACB to confirm the validity of
-              an architecture degree in Canada. Obtaining academic certification from the CACB is a prerequisite for
-              eligibility to apply for the IAP.
+              Architectural Certification Board (CACB). In Canada, the CACB assumes the responsibility of assessing the
+              qualifications of all architecture graduates, serving as the authoritative body for verifying architecture
+              degrees within the country. It is mandatory to consult the CACB to confirm the validity of an architecture
+              degree in Canada. Obtaining academic certification from the CACB is a prerequisite for eligibility to
+              apply for the IAP.
             </p>
           </div>
         </div>
@@ -439,15 +437,15 @@ const Index = () => {
           <h3>Broadly Experienced Foreign Architect (BEFA)</h3>
           <div className='col-12'>
             <p>
-              The Broadly Experienced Foreign Architect (BEFA) program offers an alternative pathway for
-              internationally licensed architects to qualify for licensure with the Ontario Association of Architects
-              (OAA). This program assesses the experience of foreign architects against Canadian qualification
-              standards. Eligible applicants can seek BEFA certification by undergoing an online demonstration of
-              eligibility and participating in an interview with an evaluation panel consisting of Canadian
-              architects. Successful candidates are granted the BEFA certificate, which attests to their adherence to
-              Canadian standards and their competence to practice architecture professionally. Holding a BEFA
-              certificate allows individuals to apply for OAA membership. Applicants with BEFA certification must
-              satisfy the following requirements to be eligible for OAA membership:
+              The Broadly Experienced Foreign Architect (BEFA) program offers an alternative pathway for internationally
+              licensed architects to qualify for licensure with the Ontario Association of Architects (OAA). This
+              program assesses the experience of foreign architects against Canadian qualification standards. Eligible
+              applicants can seek BEFA certification by undergoing an online demonstration of eligibility and
+              participating in an interview with an evaluation panel consisting of Canadian architects. Successful
+              candidates are granted the BEFA certificate, which attests to their adherence to Canadian standards and
+              their competence to practice architecture professionally. Holding a BEFA certificate allows individuals to
+              apply for OAA membership. Applicants with BEFA certification must satisfy the following requirements to be
+              eligible for OAA membership:
             </p>
             <ul>
               <li>Demonstrate good character.</li>
@@ -529,8 +527,8 @@ const Index = () => {
             <p>
               After successfully completing the previous steps, applicants are awarded the BEFA certificate, which
               signifies their compliance with Canadian standards and their competence to practice architecture
-              professionally. This certification can then be presented to the Ontario Association of Architects (OAA)
-              to obtain official certification and commence architectural practice in Canada.
+              professionally. This certification can then be presented to the Ontario Association of Architects (OAA) to
+              obtain official certification and commence architectural practice in Canada.
             </p>
           </div>
         </div>
@@ -573,8 +571,8 @@ const Index = () => {
                   aria-expanded='true'
                   aria-controls='Question1'
                 >
-                  Which universities in Montreal and Quebec provide architecture programs and what are the
-                  prevailing educational approaches?
+                  Which universities in Montreal and Quebec provide architecture programs and what are the prevailing
+                  educational approaches?
                 </button>
               </h2>
               <div id='Question1' className='accordion-collapse collapse show' data-bs-parent='#FAQEngineering'>
@@ -582,9 +580,8 @@ const Index = () => {
                   <p>
                     In Montreal, the Université de Montréal offers architecture programs in French, covering various
                     specializations. McGill University, on the other hand, offers a two-year Master of Architecture
-                    program taught in English. Proficiency in the English language is required to enroll in this
-                    course, but students have the opportunity to submit their className projects and theses in
-                    French.
+                    program taught in English. Proficiency in the English language is required to enroll in this course,
+                    but students have the opportunity to submit their className projects and theses in French.
                   </p>
                 </div>
               </div>
@@ -600,9 +597,8 @@ const Index = () => {
                   aria-expanded='false'
                   aria-controls='Question2'
                 >
-                  Which is more beneficial: emphasizing visualization software or acquiring proficiency in 3D MAX
-                  for robust modeling? In Canada, what software do university professors and companies typically
-                  favor?
+                  Which is more beneficial: emphasizing visualization software or acquiring proficiency in 3D MAX for
+                  robust modeling? In Canada, what software do university professors and companies typically favor?
                 </button>
               </h2>
               <div id='Question2' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
@@ -610,8 +606,8 @@ const Index = () => {
                   <p>
                     View and TradeMax are commonly utilized software tools by professionals, including university
                     professors and commercial entities. For efficient modeling, Sketchup is widely preferred by
-                    individuals and organizations. In general, possessing proficiency in multiple software
-                    applications can be regarded as a significant advantage for individuals.
+                    individuals and organizations. In general, possessing proficiency in multiple software applications
+                    can be regarded as a significant advantage for individuals.
                   </p>
                 </div>
               </div>
@@ -633,8 +629,8 @@ const Index = () => {
               <div id='Question3' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
                 <div className='accordion-body'>
                   <p>
-                    For specific information about the course dates, please visit the individual course pages or
-                    reach out to the website's support team.
+                    For specific information about the course dates, please visit the individual course pages or reach
+                    out to the website's support team.
                   </p>
                 </div>
               </div>
@@ -680,8 +676,8 @@ const Index = () => {
               <div id='Question5' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
                 <div className='accordion-body'>
                   <p>
-                    For details on the process of obtaining an architectural license in Canada and to learn about
-                    who can become an architect, please refer to the architecture page on the Fanavaran website.
+                    For details on the process of obtaining an architectural license in Canada and to learn about who
+                    can become an architect, please refer to the architecture page on the Fanavaran website.
                   </p>
                 </div>
               </div>
@@ -725,10 +721,9 @@ const Index = () => {
               <div id='Question7' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
                 <div className='accordion-body'>
                   <p>
-                    In general, while these courses, such as building code and Revit, are necessary for securing a
-                    job, they alone are not enough. It is important to complement them with networking efforts. It
-                    is worth noting that the title of architect is exclusively reserved for individuals who hold a
-                    valid license.
+                    In general, while these courses, such as building code and Revit, are necessary for securing a job,
+                    they alone are not enough. It is important to complement them with networking efforts. It is worth
+                    noting that the title of architect is exclusively reserved for individuals who hold a valid license.
                   </p>
                 </div>
               </div>
@@ -751,9 +746,8 @@ const Index = () => {
                 <div className='accordion-body'>
                   <ol>
                     <li>
-                      It is advisable to focus on mastering the correct application of the National Building Code
-                      (NBC) and, if applicable to your location in Ontario, the Ontario Building Code (OBC) Part 3
-                      and Part 9.
+                      It is advisable to focus on mastering the correct application of the National Building Code (NBC)
+                      and, if applicable to your location in Ontario, the Ontario Building Code (OBC) Part 3 and Part 9.
                     </li>
                     <li>
                       Concurrently, pursuing licensure through the Ontario Association of Architects (OAA) can
@@ -764,10 +758,9 @@ const Index = () => {
                       Number (BCIN) certification.
                     </li>
                     <li>
-                      Additionally, acquiring knowledge in Project Management Professional (PMP) principles can
-                      greatly enhance your career prospects. In Canada, architects often take on project management
-                      roles, and possessing PMP expertise is highly valued by employers and adds a strong highlight
-                      to your resume.
+                      Additionally, acquiring knowledge in Project Management Professional (PMP) principles can greatly
+                      enhance your career prospects. In Canada, architects often take on project management roles, and
+                      possessing PMP expertise is highly valued by employers and adds a strong highlight to your resume.
                     </li>
                   </ol>
                 </div>
@@ -784,17 +777,17 @@ const Index = () => {
                   aria-expanded='false'
                   aria-controls='Question9'
                 >
-                  If I obtain a master's degree from a university that is not accredited by the Canadian
-                  Architectural Certification Board (CACB), what is the procedure for obtaining CACB approval after
-                  completing my master's degree?
+                  If I obtain a master's degree from a university that is not accredited by the Canadian Architectural
+                  Certification Board (CACB), what is the procedure for obtaining CACB approval after completing my
+                  master's degree?
                 </button>
               </h2>
               <div id='Question9' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
                 <div className='accordion-body'>
                   <p>
-                    To pursue CACB approval after obtaining a master's degree from a non-accredited university, you
-                    will need to complete an accreditation application. The process is similar to that of foreign
-                    architects seeking accreditation.
+                    To pursue CACB approval after obtaining a master's degree from a non-accredited university, you will
+                    need to complete an accreditation application. The process is similar to that of foreign architects
+                    seeking accreditation.
                   </p>
                 </div>
               </div>
@@ -819,8 +812,8 @@ const Index = () => {
                   <p>
                     To prepare for the OBC exam, it is important to study Part 3 and Part 9 of the Building Code.
                     Initially, you will need to take the legal exam and register your BCIN score. Following that,
-                    depending on the specific exam you are taking, you will need to familiarize yourself with
-                    different sections of the first and second volumes of the code.
+                    depending on the specific exam you are taking, you will need to familiarize yourself with different
+                    sections of the first and second volumes of the code.
                   </p>
                 </div>
               </div>
@@ -842,8 +835,7 @@ const Index = () => {
               <div id='Question11' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
                 <div className='accordion-body'>
                   <p>
-                    Please refer to the following link for information regarding degree/diploma accreditation by
-                    CACB:{' '}
+                    Please refer to the following link for information regarding degree/diploma accreditation by CACB:{' '}
                     <a href='https://cacb.ca/non-accredited-professional-degree/'>
                       Degree/Diploma not accredited by CACB.
                     </a>
@@ -862,8 +854,8 @@ const Index = () => {
                   aria-expanded='false'
                   aria-controls='Question12'
                 >
-                  In relation to the Building Code of Canada, is it feasible to study and train in our spare time
-                  before immigrating, considering its significance in securing employment?
+                  In relation to the Building Code of Canada, is it feasible to study and train in our spare time before
+                  immigrating, considering its significance in securing employment?
                 </button>
               </h2>
               <div id='Question12' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
