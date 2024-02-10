@@ -373,9 +373,20 @@ const Header = props => {
               <div className='d-flex' role='search'>
                 <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
                   <li className='nav-item FNV-MegaMenu-Search'>
-                    <Link href='#' className='nav-link' role='button' aria-expanded='false' onClick={handleOpen}>
+                    <button
+                      className='nav-link'
+                      onClick={handleOpen}
+                      style={{
+                        background: 'none',
+                        border: 'none',
+                        padding: 0,
+                        color: 'blue',
+                        textDecoration: 'underline',
+                        cursor: 'pointer'
+                      }}
+                    >
                       <i data-feather='search'></i>
-                    </Link>
+                    </button>
                   </li>
                 </ul>
               </div>
@@ -876,9 +887,20 @@ const Header = props => {
               <div className='d-flex' role='search'>
                 <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
                   <li className='nav-item FNV-MegaMenu-Search'>
-                    <Link href='#' className='nav-link' role='button' aria-expanded='false' onClick={handleOpen}>
+                    <button
+                      className='nav-link'
+                      onClick={handleOpen}
+                      style={{
+                        background: 'none',
+                        border: 'none',
+                        padding: 0,
+                        color: 'blue',
+                        textDecoration: 'underline',
+                        cursor: 'pointer'
+                      }}
+                    >
                       <i data-feather='search'></i>
-                    </Link>
+                    </button>
                   </li>
                 </ul>
               </div>

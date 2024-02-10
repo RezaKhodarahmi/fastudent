@@ -34,6 +34,7 @@ const WebinarPage = () => {
   }, [])
 
   useEffect(() => {
+    console.log(webinarData)
     feather.replace()
     if (webinarData?.data) {
       setwebinars(webinarData?.data?.data)
@@ -61,7 +62,7 @@ const WebinarPage = () => {
           </div>
         </section>
 
-    <WebinarsSection/>
+        {Array.isArray(webinars) && <WebinarsSection webinars={webinars} />}
         <section className='FNV-WebinarList'>
           <div className='container'>
             <div className='row'>

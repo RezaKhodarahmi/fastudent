@@ -41,6 +41,7 @@ const SingleWebinar = () => {
   }, [webinarData])
 
   const handleEnroll = () => {
+    console.log({ id: webinar.id, email: JSON.parse(userLoggedIn) })
     dispatch(enrollUser({ id: webinar.id, email: JSON.parse(userLoggedIn) }))
   }
 
@@ -119,5 +120,6 @@ const SingleWebinar = () => {
     </div>
   )
 }
+SingleWebinar.guestGuard = true
 
 export default SingleWebinar

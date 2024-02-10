@@ -34,6 +34,10 @@ const Course = () => {
 
   useEffect(() => {
     setLoading(true)
+  }, [])
+
+  useEffect(() => {
+    setLoading(true)
     setUser(auth.user)
   }, [auth])
   useEffect(() => {
@@ -69,8 +73,10 @@ const Course = () => {
   }, [courseId, inCart, data])
 
   useEffect(() => {
+    if (courseData.error) {
+      router.replace('/404')
+    }
     if (courseData?.data) {
-      console.log(courseData?.data)
       setData(courseData?.data?.data)
       setCourseId(courseData?.data?.data?.id)
       setIsEnrolled(courseData?.data?.enrolled)
@@ -86,14 +92,11 @@ const Course = () => {
       const cartItems = JSON.parse(localStorage.getItem('cartItems')) || []
 
       const existInCart = cartItems.includes(cycles)
-      setLoading(false)
 
       if (existInCart) {
         setInCart(true)
       }
       setLoading(false)
-    } else {
-      router.replace('/404')
     }
   }, [courseData, setData, setCourseId, setIsEnrolled, setRemindedDays, setSelectedCycle, setInCart])
 
@@ -122,8 +125,6 @@ const Course = () => {
   const handleCommentSubmit = () => {
     if (newComment) {
       setCommentSubmit(true)
-
-      // setLoading(true)
     } else {
       window.alert('The comment field is empty!')
     }
@@ -131,7 +132,7 @@ const Course = () => {
 
   return (
     <div>
-      {data ? (
+      {!loading && data ? (
         <section className='FNV-SingleCourse'>
           <div className='container'>
             <div className='row FNV-Header'>
@@ -938,12 +939,7 @@ const Course = () => {
         <h3>Related Courses</h3>
         <div className='container'>
           <div className='row'>
-            <div className='col-12'>
-              {/* Blogs Desktop */}
-              {/* <SingleDeskBlog /> */}
-              {/* Blogs Mobile */}
-              {/* <SingleMobileBlog /> */}
-            </div>
+            <div className='col-12'></div>
           </div>
         </div>
       </section>
