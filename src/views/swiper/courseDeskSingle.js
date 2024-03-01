@@ -53,7 +53,7 @@ const CourseDeskSingle = ({ courses, addToCart }) => {
           .map(course => (
             <SwiperSlide key={course.id}>
               <div className='card'>
-                <img src={course?.image} className='card-img-top' alt='...' />
+                <img src={course?.image} className='card-img-top' alt={course.title} />
                 <div className='card-body'>
                   <h4 className='card-title'>{course.title}</h4>
                   <price>${course?.cycles?.[parseInt(course?.cycles?.length ?? 0) - 1]?.regularPrice ?? 'N/A'}</price>

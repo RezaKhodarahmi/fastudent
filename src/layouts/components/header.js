@@ -37,15 +37,15 @@ const Header = props => {
   const { i18n } = useTranslation()
 
   const changeLanguage = lng => {
-    // i18n.changeLanguage(lng)
-    // window.localStorage.setItem('i18nextLng', lng)
-    // if (lng === 'fa') {
-    //   document.body.dir = 'rtl'
-    //   window.localStorage.setItem('direction', 'rtl')
-    // } else {
-    //   document.body.dir = 'ltr'
-    //   window.localStorage.setItem('direction', 'ltr')
-    // }
+    i18n.changeLanguage(lng)
+    window.localStorage.setItem('i18nextLng', lng)
+    if (lng === 'fa') {
+      document.body.dir = 'rtl'
+      window.localStorage.setItem('direction', 'rtl')
+    } else {
+      document.body.dir = 'ltr'
+      window.localStorage.setItem('direction', 'ltr')
+    }
 
     console.log('changed')
   }
@@ -193,7 +193,7 @@ const Header = props => {
             </button>
 
             <div className='navbar-collapse justify-content-end' id=''>
-              {/* <div className='FNV-User dropdown'>
+              <div className='FNV-User dropdown'>
                 <button
                   className='FNV-Btn dropdown-toggle'
                   type='button'
@@ -214,7 +214,7 @@ const Header = props => {
                     </Link>
                   </li>
                 </ul>
-              </div> */}
+              </div>
               <Link href='/cart' className='FNV-Btn SecondaryColor'>
                 <i data-feather='shopping-cart'></i>
                 <span className='position-absolute top-10 start-70 translate-middle badge rounded-pill bg-danger'>
