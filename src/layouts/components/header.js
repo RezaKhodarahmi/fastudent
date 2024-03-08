@@ -431,11 +431,11 @@ const Header = props => {
 
             <div className='navbar-collapse FNV_QuickAccess justify-content-end'>
               <Link href='/login' className='FNV-Btn BtnMedium PrimaryColor'>
-                Log In
+                {t('menu-login')}
               </Link>
 
               <Link href='/register' className='FNV-Btn SecondaryColor BtnMedium'>
-                Register
+                {t('menu-register')}
               </Link>
 
               <Link href='/cart' className='FNV-Btn LightColor BtnMedium'>
@@ -443,7 +443,7 @@ const Header = props => {
               </Link>
 
               <Link href='/' className='FNV-Btn LightColor BtnMedium' onClick={e => changeLanguage()}>
-                {t('زبان فارسی')}
+                {t('menu-language')}
               </Link>
             </div>
           </div>
@@ -454,7 +454,7 @@ const Header = props => {
                 {/* Courses */}
                 <li className='nav-item dropdown FNV-MegaMenu'>
                   <Link className='nav-link' href='/courses' aria-expanded='false'>
-                    Explore Courses
+                    {t('menu-courses')}
                   </Link>
                   <ul className='dropdown-menu'>
                     <div className='container-fluid'>
@@ -619,7 +619,7 @@ const Header = props => {
                 {/* Certification */}
                 <li className='nav-item dropdown FNV-MegaMenu'>
                   <Link className='nav-link' href='/' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
-                    Certification
+                    {t('menu-certificate')}
                   </Link>
                   <ul className='dropdown-menu'>
                     <div className='container-fluid'>
@@ -759,7 +759,7 @@ const Header = props => {
                     data-bs-toggle='dropdown'
                     aria-expanded='false'
                   >
-                    Membership
+                    {t('menu-membership')}
                   </Link>
                   <ul className='dropdown-menu pe-0 pb-0 w-50'>
                     <div className='container-fluid pe-0 pb-0'>
@@ -848,13 +848,13 @@ const Header = props => {
 
                 <li className='nav-item dropdown FNV-MegaMenu'>
                   <Link className='nav-link' href='/blog' aria-expanded='false'>
-                    Blog
+                    {t('menu-blogs')}
                   </Link>
                 </li>
 
                 <li className='nav-item dropdown FNV-MegaMenu'>
                   <Link className='nav-link' href='/' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
-                    Business Solutions
+                    {t('menu-business')}
                   </Link>
                   <ul className='dropdown-menu w-50'>
                     <div className='container-fluid'>

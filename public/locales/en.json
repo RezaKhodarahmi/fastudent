@@ -15,7 +15,19 @@
   "see-details":"See Details",
   "all-courses":"All courses",
   "empty-search-input":"To search, first enter the name of a course or category",
-  "fanavaran-search-result":"Search result"
+  "fanavaran-search-result":"Search result",
 
+  "menu-language": "فارسی",
+  "menu-login": "Login",
+  "menu-register": "Register",
+  "menu-courses": "Explore Courses",
+  "menu-certificate": "Certificates",
+  "menu-membership": "VIP Membership",
+  "menu-blogs": "Blogs",
+  "menu-business": "Business Solutions",
+
+  "category-section-one": "How do we help you at FANAVARAN?",
+  "category-section-two": "If you have recently migrated, we are here for you.",
+  "category-section-three": "Quickly and easily become a special at Fanavaran!"
 
 }

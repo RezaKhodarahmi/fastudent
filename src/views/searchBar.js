@@ -26,7 +26,7 @@ const SearchSection = props => {
   }
 
   return (
-    <div>
+    <div className='FNV-Home'>
       <section className='FNV-Header'>
         <div className='container'>
           <div className='row'>

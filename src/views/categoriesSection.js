@@ -115,7 +115,7 @@ const CategoriesSection = () => {
         <div className='container'>
           <div className='row'>
             <div className='col-12 col-md-4'>
-              <h3>How do we help you at FANAVARAN?</h3>
+              <h3>{t('category-section-one')}</h3>
 
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -129,7 +129,7 @@ const CategoriesSection = () => {
             </div>
 
             <div className='col-12 col-md-4'>
-              <h3>If you have recently migrated, we are here for you.</h3>
+              <h3>{t('category-section-two')}</h3>
 
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -143,7 +143,7 @@ const CategoriesSection = () => {
             </div>
 
             <div className='col-12 col-md-4'>
-              <h3>Quickly and easily become a special at Fanavaran!</h3>
+              <h3>{t('category-section-three')}</h3>
 
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et

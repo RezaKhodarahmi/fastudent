@@ -52,7 +52,7 @@
   margin: 0;
 }
 .FNV_BG_Telegram a {
-  color: #ffffff;
+  color: #ffffff !important;
   font-size: 28px;
   text-align: center;
   font-weight: 700;
@@ -78,6 +78,7 @@ body {
 }
 
 a {
+  color: #FF772C;
   text-decoration: none !important;
 }
 
@@ -420,29 +421,29 @@ nav.FNV-MegaMenu {
     justify-content: space-between !important;
   }
 }
-.FNV-Header {
+.FNV-Home .FNV-Header {
   background-image: linear-gradient(89.85deg, rgba(26, 48, 211, 0.8) 0.12%, rgba(26, 48, 211, 0.2) 50%, rgba(26, 48, 211, 0.8) 99.87%), url("/img/Header-bg.jpg");
   background-size: cover;
   background-position: center center;
   height: 550px;
   padding: 10px;
 }
-.FNV-Header .container {
+.FNV-Home .FNV-Header .container {
   width: 100%;
   height: 100%;
 }
-.FNV-Header .container .row {
+.FNV-Home .FNV-Header .container .row {
   width: 100%;
   height: 100%;
 }
-.FNV-Header .container .row .FNV-HCard {
+.FNV-Home .FNV-Header .container .row .FNV-HCard {
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.FNV-Header .container .row .FNV-HCard h2 {
+.FNV-Home .FNV-Header .container .row .FNV-HCard h2 {
   margin-bottom: 2rem;
   font-size: 35px;
   font-weight: 800;
@@ -450,11 +451,11 @@ nav.FNV-MegaMenu {
   text-align: center;
   text-transform: uppercase;
 }
-.FNV-Header .container .row .FNV-HCard h2 mark {
+.FNV-Home .FNV-Header .container .row .FNV-HCard h2 mark {
   background-color: transparent;
   color: #FF772C;
 }
-.FNV-Header .container .row .FNV-HCard h1 {
+.FNV-Home .FNV-Header .container .row .FNV-HCard h1 {
   margin-bottom: 2rem;
   font-size: 35px;
   font-weight: 800;
@@ -462,11 +463,11 @@ nav.FNV-MegaMenu {
   text-align: center;
   text-transform: uppercase;
 }
-.FNV-Header .container .row .FNV-HCard h1 mark {
+.FNV-Home .FNV-Header .container .row .FNV-HCard h1 mark {
   background-color: transparent;
   color: #FF772C;
 }
-.FNV-Header .container .row .FNV-HCard .FNV-HSearch {
+.FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch {
   background-color: rgba(255, 255, 255, 0.6);
   width: 600px;
   border-radius: 15px;
@@ -474,7 +475,7 @@ nav.FNV-MegaMenu {
   padding: 0.8rem;
   border: 1px solid #ffffff;
 }
-.FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput {
+.FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput {
   background-color: transparent !important;
   border-width: 0;
   box-shadow: unset;
@@ -483,24 +484,24 @@ nav.FNV-MegaMenu {
   font-size: 16px;
   font-weight: 400;
 }
-.FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput::after, .FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput::before {
+.FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput::after, .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput::before {
   display: none;
 }
-.FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput::placeholder, .FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput:-ms-input-placeholder {
+.FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput::placeholder, .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput:-ms-input-placeholder {
   color: #003BBF !important;
 }
-.FNV-Header .container .row .FNV-HCard .FNV-HSearch button {
+.FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch button {
   background-color: #003BBF;
   color: #ffffff;
   border-radius: 15px 15px 15px 15px !important;
   width: 75px;
 }
-.FNV-Header .container .row .FNV-HCard .FNV-HSearch button svg {
+.FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch button svg {
   width: 30px;
   height: 30px;
   color: #ffffff;
 }
-.FNV-Header .container .row .FNV-HCard p {
+.FNV-Home .FNV-Header .container .row .FNV-HCard p {
   margin-bottom: 2rem;
 }
 
@@ -645,6 +646,7 @@ nav.FNV-MegaMenu {
   line-height: 46px;
   color: #003BBF;
   font-weight: 500;
+  min-height: 95px;
 }
 .FNV-Top_Categories .container:nth-child(2) .row .col-12 p {
   font-size: 16px;
@@ -2767,6 +2769,10 @@ html[dir=rtl] .FNV-SinglePage .container .row .accordion .accordion-item .accord
   font-size: 18px;
   line-height: 36px;
   font-weight: 600;
+}
+html[dir=rtl] .FNV-SinglePage .container .row .accordion .accordion-item .accordion-header .accordion-button::after {
+  margin-right: auto;
+  margin-left: unset;
 }
 html[dir=rtl] .FNV-SinglePage .container .row .accordion .accordion-item .accordion-collapse .accordion-body {
   font-size: 16px;

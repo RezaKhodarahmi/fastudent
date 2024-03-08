@@ -15,7 +15,18 @@
   "see-details":"مشاهده جزئیات",
   "all-courses":"همه دوره ها",
   "empty-search-input":"برای جستجو ابتدا نام یک دوره و یا دسته بندی را وارد کنید.",
-  "fanavaran-search-result":"نتایج جستجو..."
+  "fanavaran-search-result":"نتایج جستجو...",
 
+  "menu-language": "English",
+  "menu-login": "ورود",
+  "menu-register": "عضویت",
+  "menu-courses": "دوره‌های فناوران",
+  "menu-certificate": "گواهینامه فناوران",
+  "menu-membership": "ممبرشیپ فناوران",
+  "menu-blogs": "اخبار فناوران",
+  "menu-business": "راه‌حل های کسب و کار",
 
+  "category-section-one": "چطور در فناوران به شما کمک میکنیم؟",
+  "category-section-two": "اگر عضو فناوران هستید، ما برای شما اینجا هستیم",
+  "category-section-three": "به راحتی به عضو ویژه فناوران شوید"
 }
