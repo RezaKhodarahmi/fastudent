@@ -279,7 +279,7 @@ const Header = props => {
 
           <div className='container-fluid'>
             <div className='collapse navbar-collapse' id='FNV-Toggle'>
-              <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
+              <ul className='navbar-nav mb-2 mb-lg-0'>
                 <li className='nav-item dropdown FNV-MegaMenu'>
                   <Link className='nav-link' href='/courses' aria-expanded='false'>
                     Courses
@@ -450,7 +450,7 @@ const Header = props => {
 
           <div className='container-fluid'>
             <div className='collapse navbar-collapse' id='FNV-Toggle'>
-              <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
+              <ul className='navbar-nav mb-2 mb-lg-0 w-100 p-0'>
                 {/* Courses */}
                 <li className='nav-item dropdown FNV-MegaMenu'>
                   <Link className='nav-link' href='/courses' aria-expanded='false'>
