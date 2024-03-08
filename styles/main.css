@@ -1,39 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @font-face {
-  font-family: "YekanBakh";
+  font-family: "Ravi";
   font-style: normal;
   font-weight: 300;
-  src: local("YekanBakh"), url("fonts/YekanBakh/YekanBakh-Light.woff") format("woff"), url("fonts/YekanBakh/YekanBakh-Light.ttf") format("truetype"), url("fonts/YekanBakh/YekanBakh-Light.eot") format("embedded-opentype");
+  src: local("Ravi"), url("fonts/Ravi/RaviFaNum-Light.woff") format("woff"), url("fonts/Ravi/RaviFaNum-Light.ttf") format("truetype"), url("fonts/Ravi/RaviFaNum-Light.eot") format("embedded-opentype");
 }
 @font-face {
-  font-family: "YekanBakh";
+  font-family: "Ravi";
   font-style: normal;
   font-weight: 400;
-  src: local("YekanBakh"), url("fonts/YekanBakh/YekanBakh-Regular.woff") format("woff"), url("fonts/YekanBakh/YekanBakh-Regular.ttf") format("truetype"), url("fonts/YekanBakh/YekanBakh-Regular.eot") format("embedded-opentype");
+  src: local("Ravi"), url("fonts/Ravi/RaviFaNum-Regular.woff") format("woff"), url("fonts/Ravi/RaviFaNum-Regular.ttf") format("truetype"), url("fonts/Ravi/RaviFaNum-Regular.eot") format("embedded-opentype");
 }
 @font-face {
-  font-family: "YekanBakh";
+  font-family: "Ravi";
   font-style: normal;
   font-weight: 500;
-  src: local("YekanBakh"), url("fonts/YekanBakh/YekanBakh-Medium.woff") format("woff"), url("fonts/YekanBakh/YekanBakh-Medium.ttf") format("truetype"), url("fonts/YekanBakh/YekanBakh-Medium.eot") format("embedded-opentype");
+  src: local("Ravi"), url("fonts/Ravi/RaviFaNum-Medium.woff") format("woff"), url("fonts/Ravi/RaviFaNum-Medium.ttf") format("truetype"), url("fonts/Ravi/RaviFaNum-Medium.eot") format("embedded-opentype");
 }
 @font-face {
-  font-family: "YekanBakh";
+  font-family: "Ravi";
   font-style: normal;
   font-weight: 600;
-  src: local("YekanBakh"), url("fonts/YekanBakh/YekanBakh-Bold.woff") format("woff"), url("fonts/YekanBakh/YekanBakh-Bold.ttf") format("truetype"), url("fonts/YekanBakh/YekanBakh-Bold.eot") format("embedded-opentype");
+  src: local("Ravi"), url("fonts/Ravi/RaviFaNum-SemiBold.woff") format("woff"), url("fonts/Ravi/RaviFaNum-SemiBold.ttf") format("truetype"), url("fonts/Ravi/RaviFaNum-SemiBold.eot") format("embedded-opentype");
 }
 @font-face {
-  font-family: "YekanBakh";
+  font-family: "Ravi";
   font-style: normal;
   font-weight: 700;
-  src: local("YekanBakh"), url("fonts/YekanBakh/YekanBakh-Heavy.woff") format("woff"), url("fonts/YekanBakh/YekanBakh-Heavy.ttf") format("truetype"), url("fonts/YekanBakh/YekanBakh-Heavy.eot") format("embedded-opentype");
+  src: local("Ravi"), url("fonts/Ravi/RaviFaNum-Bold.woff") format("woff"), url("fonts/Ravi/RaviFaNum-Bold.ttf") format("truetype"), url("fonts/Ravi/RaviFaNum-Bold.eot") format("embedded-opentype");
 }
 @font-face {
-  font-family: "YekanBakh";
+  font-family: "Ravi";
   font-style: normal;
   font-weight: 800;
-  src: local("YekanBakh"), url("fonts/YekanBakh/YekanBakh-Fat.woff") format("woff"), url("fonts/YekanBakh/YekanBakh-Fat.ttf") format("truetype"), url("fonts/YekanBakh/YekanBakh-Fat.eot") format("embedded-opentype");
+  src: local("Ravi"), url("fonts/Ravi/RaviFaNum-Black.woff") format("woff"), url("fonts/Ravi/RaviFaNum-Black.ttf") format("truetype"), url("fonts/Ravi/RaviFaNum-Black.eot") format("embedded-opentype");
+}
+@font-face {
+  font-family: "Ravi";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Ravi"), url("fonts/Ravi/RaviFaNum-ExtraBlack.woff") format("woff"), url("fonts/Ravi/RaviFaNum-ExtraBlack.ttf") format("truetype"), url("fonts/Ravi/RaviFaNum-ExtraBlack.eot") format("embedded-opentype");
 }
 body {
   font-family: "Poppins", YekanBakh;

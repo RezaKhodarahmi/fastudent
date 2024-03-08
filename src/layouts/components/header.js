@@ -36,7 +36,15 @@ const Header = props => {
 
   const { i18n } = useTranslation()
 
-  const changeLanguage = lng => {
+  const changeLanguage = () => {
+    let prevLng = window.localStorage.getItem('i18nextLng')
+    let lng = ''
+    if (prevLng == 'fa') {
+      lng = 'en'
+    } else {
+      lng = 'fa'
+    }
+
     i18n.changeLanguage(lng)
     window.localStorage.setItem('i18nextLng', lng)
     if (lng === 'fa') {
@@ -47,7 +55,8 @@ const Header = props => {
       window.localStorage.setItem('direction', 'ltr')
     }
 
-    console.log('changed')
+    // Refresh the page at the end
+    window.location.reload()
   }
 
   useEffect(() => {
@@ -204,12 +213,12 @@ const Header = props => {
                 </button>
                 <ul className='dropdown-menu'>
                   <li>
-                    <Link href="/" className='dropdown-item' onClick={() => changeLanguage('en')}>
+                    <Link href='/' className='dropdown-item' onClick={() => changeLanguage()}>
                       English
                     </Link>
                   </li>
                   <li>
-                    <Link href="/" className='dropdown-item' onClick={() => changeLanguage('fa')}>
+                    <Link href='/' className='dropdown-item' onClick={() => changeLanguage()}>
                       فارسی
                     </Link>
                   </li>
@@ -433,8 +442,8 @@ const Header = props => {
                 <i data-feather='shopping-cart'></i>
               </Link>
 
-              <Link href='/' className='FNV-Btn LightColor BtnMedium'>
-                نسخه فارسی
+              <Link href='/' className='FNV-Btn LightColor BtnMedium' onClick={e => changeLanguage()}>
+                {t('زبان فارسی')}
               </Link>
             </div>
           </div>

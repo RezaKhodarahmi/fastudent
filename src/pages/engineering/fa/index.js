@@ -27,8 +27,8 @@ const Index = () => {
   // Check website lang
   useEffect(() => {
     const lng = window.localStorage.getItem('i18nextLng')
-    if (lng == 'fa') {
-      router.push('/engineering/fa')
+    if (lng == 'en') {
+      router.push('/engineering')
     }
   }, [])
 
@@ -63,7 +63,7 @@ const Index = () => {
       <section className='FNV-SinglePage'>
         <div className='container'>
           <div className='row FNV-Header'>
-            <h1>Engineering in Canada</h1>
+            <h1>مهندسی در کانادا</h1>
           </div>
 
           <div className='row'>
