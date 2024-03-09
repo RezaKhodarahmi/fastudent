@@ -79,7 +79,7 @@ const Home = () => {
       
       {/* New Courses */}
       <section className='FNV-NewCourses'>
-        <h3>New Courses</h3>
+        <h3>{t('courses-section-title')}</h3>
         <div className='container'>
           <div className='row'>
             <div className='col-12'>
@@ -124,8 +124,8 @@ const Home = () => {
       </section>
 
       {/* Blog */}
-      <section className='FNV-BlogTestiomonial'>
-        <h3>{t('Blogs')}</h3>
+      <section className='FNV-Blog'>
+        <h3>{t('blogs-section-title')}</h3>
         <div className='container'>
           <div className='row'>
             <div className='col-12'>
@@ -138,13 +138,17 @@ const Home = () => {
 
           <div className='row justify-content-center'>
             <Link href='#' className='FNV-Btn BtnOutline PrimaryColor BtnLarge FNV-SeeMore'>
-              See All Blogs
+              {t('blogs-section-button')}
             </Link>
           </div>
         </div>
+      </section>
 
-        <h3>Testimonials</h3>
-        <div className='container FNV-Testimonials'>
+      {/* Blog */}
+      <section className='FNV-Testimonial'>
+        <h3>{t('testimonials-section-title')}</h3>
+
+        <div className='container'>
           <div className='row'>
             <div className='col-12'>
               {/* Testimonial Desktop */}
@@ -180,16 +184,19 @@ const Home = () => {
                   <div className='card'>
                     <div className='card-body'>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
+                        {t('testimonials-section-comment-one-caption')}
                       </p>
                       <div className='d-flex flex-row w-100'>
                         <div className='col-3'>
-                          <img src='' />
+                          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-school" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" />
+                            <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" />
+                          </svg>
                         </div>
                         <div className='col-9'>
-                          <span className='FNV-PersonName'>Name</span>
-                          <span className='FNV-CourseName'>Course Name</span>
+                          <span className='FNV-PersonName'>{t('testimonials-section-comment-one-name')}</span>
+                          <span className='FNV-CourseName'>{t('testimonials-section-comment-one-coursename')}</span>
                         </div>
                       </div>
                     </div>
@@ -200,16 +207,19 @@ const Home = () => {
                   <div className='card'>
                     <div className='card-body'>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
+                        {t('testimonials-section-comment-two-caption')}
                       </p>
                       <div className='d-flex flex-row w-100'>
                         <div className='col-3'>
-                          <img src='' />
+                          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-school" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" />
+                            <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" />
+                          </svg>
                         </div>
                         <div className='col-9'>
-                          <span className='FNV-PersonName'>Name</span>
-                          <span className='FNV-CourseName'>Course Name</span>
+                          <span className='FNV-PersonName'>{t('testimonials-section-comment-two-name')}</span>
+                          <span className='FNV-CourseName'>{t('testimonials-section-comment-two-coursename')}</span>
                         </div>
                       </div>
                     </div>
@@ -220,36 +230,19 @@ const Home = () => {
                   <div className='card'>
                     <div className='card-body'>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
+                        {t('testimonials-section-comment-three-caption')}
                       </p>
                       <div className='d-flex flex-row w-100'>
                         <div className='col-3'>
-                          <img src='' />
+                          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-school" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" />
+                            <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" />
+                          </svg>
                         </div>
                         <div className='col-9'>
-                          <span className='FNV-PersonName'>Name</span>
-                          <span className='FNV-CourseName'>Course Name</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                {/* Slider */}
-                <SwiperSlide>
-                  <div className='card'>
-                    <div className='card-body'>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
-                      </p>
-                      <div className='d-flex flex-row w-100'>
-                        <div className='col-3'>
-                          <img src='' />
-                        </div>
-                        <div className='col-9'>
-                          <span className='FNV-PersonName'>Name</span>
-                          <span className='FNV-CourseName'>Course Name</span>
+                          <span className='FNV-PersonName'>{t('testimonials-section-comment-three-name')}</span>
+                          <span className='FNV-CourseName'>{t('testimonials-section-comment-three-coursename')}</span>
                         </div>
                       </div>
                     </div>
@@ -290,16 +283,15 @@ const Home = () => {
                   <div className='card'>
                     <div className='card-body'>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
+                        {t('testimonials-section-comment-one-caption')}
                       </p>
                       <div className='d-flex flex-row w-100'>
                         <div className='col-3'>
                           <img src='' />
                         </div>
                         <div className='col-9'>
-                          <span className='FNV-PersonName'>Name</span>
-                          <span className='FNV-CourseName'>Course Name</span>
+                          <span className='FNV-PersonName'>{t('testimonials-section-comment-one-name')}</span>
+                          <span className='FNV-CourseName'>{t('testimonials-section-comment-one-coursename')}</span>
                         </div>
                       </div>
                     </div>
@@ -310,16 +302,15 @@ const Home = () => {
                   <div className='card'>
                     <div className='card-body'>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
+                        {t('testimonials-section-comment-two-caption')}
                       </p>
                       <div className='d-flex flex-row w-100'>
                         <div className='col-3'>
                           <img src='' />
                         </div>
                         <div className='col-9'>
-                          <span className='FNV-PersonName'>Name</span>
-                          <span className='FNV-CourseName'>Course Name</span>
+                          <span className='FNV-PersonName'>{t('testimonials-section-comment-two-name')}</span>
+                          <span className='FNV-CourseName'>{t('testimonials-section-comment-two-coursename')}</span>
                         </div>
                       </div>
                     </div>
@@ -330,36 +321,15 @@ const Home = () => {
                   <div className='card'>
                     <div className='card-body'>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
+                        {t('testimonials-section-comment-three-caption')}
                       </p>
                       <div className='d-flex flex-row w-100'>
                         <div className='col-3'>
                           <img src='' />
                         </div>
                         <div className='col-9'>
-                          <span className='FNV-PersonName'>Name</span>
-                          <span className='FNV-CourseName'>Course Name</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                {/* Slider */}
-                <SwiperSlide>
-                  <div className='card'>
-                    <div className='card-body'>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
-                      </p>
-                      <div className='d-flex flex-row w-100'>
-                        <div className='col-3'>
-                          <img src='' />
-                        </div>
-                        <div className='col-9'>
-                          <span className='FNV-PersonName'>Name</span>
-                          <span className='FNV-CourseName'>Course Name</span>
+                          <span className='FNV-PersonName'>{t('testimonials-section-comment-three-name')}</span>
+                          <span className='FNV-CourseName'>{t('testimonials-section-comment-three-coursename')}</span>
                         </div>
                       </div>
                     </div>

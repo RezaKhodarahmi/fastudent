@@ -39,7 +39,13 @@ a{
 @import './NewCoursesHome';
 
 // New Webinars
-@import './NewWebinarsHome';
+html[dir="ltr"]{
+  @import './NewWebinarsHome';
+}
+
+html[dir="rtl"]{
+  @import './NewWebinarsHome-RTL';
+}
 
 // Youtube CTA
 @import './YoutubeCTA';
@@ -103,5 +109,11 @@ html[dir="rtl"]{
 // Social Media Fixed
 @import './social';
 
-// Footer
-@import './footer';
+// Footers
+html[dir="ltr"]{
+  @import './footer';
+}
+
+html[dir="rtl"]{
+  @import './footer-RTL';
+}

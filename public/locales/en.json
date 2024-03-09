@@ -34,6 +34,37 @@
   "category-section-two-button": "I Am Newbie",
   "category-section-three": "Quickly and easily become a special at Fanavaran!",
   "category-section-three-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  "category-section-three-button": "FANAVARAN VIP Membership"
+  "category-section-three-button": "FANAVARAN VIP Membership",
+
+  "courses-section-title": "New Courses",
+  "webinars-section-title": "New Wbinars",
+  "blogs-section-title": "Blogs",
+  "blogs-section-button": "See All Blogs",
+  "testimonials-section-title": "Testimonials",
+
+  "testimonials-section-comment-one-title": "",
+  "testimonials-section-comment-one-caption": "",
+  "testimonials-section-comment-one-name": "",
+  "testimonials-section-comment-one-coursename": "",
+
+  "testimonials-section-comment-two-title": "",
+  "testimonials-section-comment-two-caption": "",
+  "testimonials-section-comment-two-name": "",
+  "testimonials-section-comment-two-coursename": "",
+
+  "testimonials-section-comment-three-title": "",
+  "testimonials-section-comment-three-caption": "",
+  "testimonials-section-comment-three-name": "",
+  "testimonials-section-comment-three-coursename": "",
+
+  "testimonials-section-comment-four-title": "",
+  "testimonials-section-comment-four-caption": "",
+  "testimonials-section-comment-four-name": "",
+  "testimonials-section-comment-four-coursename": "",
+
+  "newsletter-section-title": "Fanavaran Newsletter",
+  "newsletter-section-caption": "Become a member of the Fanavaran newsletter.",
+  "newsletter-section-input": "Please enter your email address",
+  "newsletter-section-button": "corner-up-right"
 
 }

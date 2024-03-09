@@ -34,5 +34,32 @@
   "category-section-two-button": "تازه واردم",
   "category-section-three": "به راحتی به عضو ویژه فناوران شوید",
   "category-section-three-description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است. لورم ایپسوم متن ساختگی با تولید سادگی",
-  "category-section-three-button": "عضویت ویژه فناوران"
+  "category-section-three-button": "عضویت ویژه فناوران",
+
+  "courses-section-title": "دوره‌های جدید",
+  "webinars-section-title": "وبینارهای فناوران",
+  "blogs-section-title": "خبرهای فناوران",
+  "blogs-section-button": "نمایش همه خبرها",
+  "testimonials-section-title": "نظرات کاربران",
+  
+  "testimonials-section-comment-one-caption": "در خصوص دوره Foundation واقعا از نحوه تدریس جناب استاد آریانفر تشکر میکنم واقعا مطالب عنوان شده در کلاس و slide ها آموزنده بودند و همیتطور با توجه به امکان دسترسی به فایل ضبط شده کلاس امکان مرور چند باره مطالب باعث افزایش یادگیری می باشد. با امید پیشرفت بیشتر برای شما و آروزی موفقیت در آموزش کسانیکه مهاجرت می کنند و نیاز به یک کار مناسب دارند.",
+  "testimonials-section-comment-one-name": "حسین بزرگی",
+  "testimonials-section-comment-one-coursename": "Energy Advisory",
+
+  "testimonials-section-comment-two-caption": "در دوره انرژی ادوایزری در کلاس های مجموعه فناوران شرکت کردم و توانستم آزمون اول را با موفقیت پشت سر بگذارم .درحال حاضر درحال آمادگی برای آزمون دوم هستم .ضمن تشکر از زحمات بی دریغ آقای مهندس آریانفر برای دوره بسیار مفیدی که برگزار کردند و همچنین تیم حرفه ای فناوران که این امکان را برای بنده و سایر علاقه مندان فراهم نمودند خواستم از این فرصت استفاده کنم و شرکت در این دوره را به تمام دوستانی که علاقه مند به حوزه انرژی هستند و قصد دارند در این فیلد مشغول به کار شوند پیشنهاد کنم . با آرزوی موفقیت برای شما دوستان",
+  "testimonials-section-comment-two-name": "شیما احمدی",
+  "testimonials-section-comment-two-coursename": "Energy Advisory",
+
+  "testimonials-section-comment-three-caption": "حدودا ۷ ماه هست که به کانادا اومدم. بعد از حدود ۱۰ سال سابقه کار در زمینه معماری، در دو ماه اول حضورم در کشور جدید کاملا گیج بودم و تصمیم داشتم برم سراغ کار جنرال و یا درس بخونم برای ایجاد نتورک. به لطف یکی از دوستانم با مجموعه فناوران آشنا شدم و بعد از دیدن چندین ویدئو در کانال یوتیوب فناوران، در دوره رزومه نویسی شرکت کردم. در اونجا به لطف مهندس امانی علاوه بر آشنایی با شیوه رزومه نویسی حرفه ای و موثر، اهمیت نظم و دیسیپلین و نکات بسیار مهمی رو در مورد نحوه انتخاب ادامه مسیر برای موفق شدن در کانادا و ساخت نتورک حرفه ای یاد گرفتم.",
+  "testimonials-section-comment-three-name": "سعید مویدی",
+  "testimonials-section-comment-three-coursename": "Resume & Networking",
+
+  "testimonials-section-comment-four-caption": "",
+  "testimonials-section-comment-four-name": "",
+  "testimonials-section-comment-four-coursename": "",
+
+  "newsletter-section-title": "خبرنامه فناوران",
+  "newsletter-section-caption": "عضو خبرنامه فناوران شوید.",
+  "newsletter-section-input": "ایمیل خود را وارد کنید",
+  "newsletter-section-button": "corner-up-left"
 }

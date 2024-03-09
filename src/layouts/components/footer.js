@@ -3,10 +3,17 @@ import Input from '@mui/material/Input'
 import feather from 'feather-icons'
 import Logo from 'src/views/logoWhite.js'
 
+// ** Import Translation
+import { useTranslation } from 'react-i18next'
+
 // ** Hook Imports
 import Link from 'next/link'
 
 const Footer = props => {
+
+  //Hooks
+  const { t } = useTranslation()
+
   useEffect(() => {
     feather.replace()
   })
@@ -37,14 +44,14 @@ const Footer = props => {
           <div class="container">
               <div class="row">
                   <div class="col-12 col-md-6">
-                      <h3>Fanavaran Newsletter</h3>
-                      <p>Become a member of the Fanavaran newsletter.</p>
+                      <h3>{t('newsletter-section-title')}</h3>
+                      <p>{t('newsletter-section-caption')}</p>
                   </div>
                   <div class="col-12 col-md-6">
                       <div class='FNV-Newsletter input-group mb-3'>
-                          <Input type='text' placeholder='Enter your email address' class='form-control FNV-NewsletterInput' aria-describedby='button-addon1' fullWidth />
+                          <Input type='text' placeholder={t('newsletter-section-input')} class='form-control FNV-NewsletterInput' aria-describedby='button-addon1' fullWidth />
                           <button class='FNV-Btn BtnMedium PrimaryColor' type='button' id='button-addon1'>
-                              <i data-feather='corner-up-right'></i>
+                              <i data-feather={t('newsletter-section-button')}></i>
                           </button>
                       </div>
                   </div>
