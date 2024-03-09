@@ -1673,8 +1673,7 @@ html[dir=rtl] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   background: rgb(0, 59, 191);
   background: linear-gradient(180deg, rgba(0, 59, 191, 0.1993172269) 0%, rgb(255, 255, 255) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003bbf",endColorstr="#ffffff",GradientType=1);
-  margin-top: -12rem;
-  padding-top: 20rem;
+  padding-top: 5rem;
   padding-bottom: 5rem;
   z-index: 1;
   overflow: hidden;
