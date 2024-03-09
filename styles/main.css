@@ -1240,7 +1240,7 @@ html[dir=rtl] .FNV-NewWebinars h3::after {
   position: absolute;
 }
 html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper {
-  padding: 0px 2rem 5rem 0rem;
+  padding: 0px 2rem 5rem 2rem;
 }
 html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper {
   padding: 1rem;

@@ -65,6 +65,36 @@
   "newsletter-section-title": "Fanavaran Newsletter",
   "newsletter-section-caption": "Become a member of the Fanavaran newsletter.",
   "newsletter-section-input": "Please enter your email address",
-  "newsletter-section-button": "corner-up-right"
+  "newsletter-section-button": "corner-up-right",
 
+  "footer-one": "Quick Access",
+  "footer-one-about": "About Fanavaran",
+  "footer-one-contact": "Contact Fanavaran",
+  "footer-one-profile": "Profile Account",
+  "footer-one-blog": "Blog",
+  "footer-one-training": "Training Calendar",
+  "footer-one-instructors": "Fanavaran Instructors",
+  "footer-one-webinars": "Fanavaran Webinars",
+  "footer-one-newcomers": "Newcomers",
+  "footer-one-brochure": "Fanavaran Brochure",
+
+  "footer-two": "Courses Category",
+  "footer-two-engineering": "Courses Category",
+  "footer-two-project": "Courses Category",
+  "footer-two-architect": "Courses Category",
+  "footer-two-technician": "Courses Category",
+  "footer-two-job": "Courses Category",
+  "footer-two-technical": "Courses Category",
+  "footer-two-plumbing": "Courses Category",
+  "footer-two-electrician": "Courses Category",
+
+  "footer-three": "Guide",
+  "footer-three-registration": "Registration",
+  "footer-three-watching": "Watching Recorded Courses",
+  "footer-three-mock": "Mock Exam Tutorials",
+  "footer-three-certificate": "Fanavaran Certificate",
+  "footer-three-privacy": "Privacy Policy",
+  "footer-three-faq": "Frequently Asked Questions",
+
+  "footer-copyright": "Copyright © 2015-2023 Fanavaran. All rights reserved."
 }

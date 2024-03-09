@@ -61,5 +61,36 @@
   "newsletter-section-title": "خبرنامه فناوران",
   "newsletter-section-caption": "عضو خبرنامه فناوران شوید.",
   "newsletter-section-input": "ایمیل خود را وارد کنید",
-  "newsletter-section-button": "corner-up-left"
+  "newsletter-section-button": "corner-up-left",
+
+  "footer-one": "دسترسی سریع",
+  "footer-one-about": "درباره فناوران",
+  "footer-one-contact": "ارتباط با فناوران",
+  "footer-one-profile": "حساب کاربری",
+  "footer-one-blog": "اخبار",
+  "footer-one-training": "تقویم آموزشی",
+  "footer-one-instructors": "مدرسان فناوران",
+  "footer-one-webinars": "وبینارهای فناوران",
+  "footer-one-newcomers": "تازه‌واردان به کانادا",
+  "footer-one-brochure": "بروشور فناوران",
+
+  "footer-two": "دسته بندی دوره‌ها",
+  "footer-two-engineering": "مهندسی",
+  "footer-two-project": "مدیریت پروژه",
+  "footer-two-architect": "معماری",
+  "footer-two-technician": "تکنسین",
+  "footer-two-job": "جوینده شغل",
+  "footer-two-technical": "خود اشتغال فنی",
+  "footer-two-plumbing": "لوله کشی",
+  "footer-two-electrician": "برقکار",
+
+  "footer-three": "راهنما",
+  "footer-three-registration": "فرایند ثبت‌ نام",
+  "footer-three-watching": "تماشای دوره‌های ضبط شده",
+  "footer-three-mock": "تست دوره‌ها",
+  "footer-three-certificate": "دریافت گواهینامه",
+  "footer-three-privacy": "قوانین و مقررات",
+  "footer-three-faq": "سوالات متداول",
+
+  "footer-copyright": "© تمامی حقوق این وبسایت متعلق به مجتمع فنی مهندسی فناوران می باشد."
 }

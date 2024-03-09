@@ -69,8 +69,8 @@ const Footer = props => {
               <Logo />
 
               <div class="d-flex gap-2">
-                    <a href="#">info@tadrisan.com</a>
-                    <a href="#">021 1234 5678</a>
+                    <a href="mailto:info@fanavaran.ca">info@fanavaran.ca</a>
+                    <a href="#">+1 (905) 505-2323</a>
                 </div>
 
                 <div class='FNV-Social'>
@@ -135,90 +135,90 @@ const Footer = props => {
 
             {/* Second Section */}
             <div className='col-4 col-sm-4 col-md'>
-              <h4>Quick Access</h4>
+              <h4>{t('footer-one')}</h4>
               <ul className='list-group'>
                 <li className='list-group-item'>
-                  <Link href='#'>About Fanavaran</Link>
+                  <Link href='#'>{t('footer-one-about')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='#'>Contact Fanavaran</Link>
+                  <Link href='#'>{t('footer-one-contact')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='#'>Profile Account</Link>
+                  <Link href='#'>{t('footer-one-profile')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='#'>Blog</Link>
+                  <Link href='#'>{t('footer-one-blog')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='#'>Training Calendar</Link>
+                  <Link href='#'>{t('footer-one-training')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='#'>Fanavaran Instructors</Link>
+                  <Link href='#'>{t('footer-one-instructors')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='#'>Fanavaran Webinars</Link>
+                  <Link href='#'>{t('footer-one-webinars')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='#'>Newcomers</Link>
+                  <Link href='#'>{t('footer-one-newcomers')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='#'>Fanavaran Brochure</Link>
+                  <Link href='#'>{t('footer-one-brochure')}</Link>
                 </li>
               </ul>
             </div>
 
             {/* Third Section */}
             <div className='col-4 col-sm-4 col-md'>
-              <h4>Courses Category</h4>
+              <h4>{t('footer-two')}</h4>
               <ul className='list-group'>
                 <li className='list-group-item'>
-                  <Link href='/engineering/'>Engineering</Link>
+                  <Link href='/engineering/'>{t('footer-two-engineering')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='/project-management/'>Project Management</Link>
+                  <Link href='/project-management/'>{t('footer-two-project')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='/architecture/'>Architect</Link>
+                  <Link href='/architecture/'>{t('footer-two-architect')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='/technician/'>Technician</Link>
+                  <Link href='/technician/'>{t('footer-two-technician')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='/Job-Seeking/'>Job Seeker</Link>
+                  <Link href='/Job-Seeking/'>{t('footer-two-job')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='/technical-self-employment/'>Technical Self Employee</Link>
+                  <Link href='/technical-self-employment/'>{t('footer-two-technical')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='/plumbing/'>Plumbing</Link>
+                  <Link href='/plumbing/'>{t('footer-two-plumbing')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='/electrician/'>Electrician</Link>
+                  <Link href='/electrician/'>{t('footer-two-electrician')}</Link>
                 </li>
               </ul>
             </div>
 
             {/* Fourth Section */}
             <div className='col-4 col-sm-4 col-md'>
-              <h4>Guide</h4>
+              <h4>{t('footer-three')}</h4>
               <ul className='list-group list-group-flush'>
                 <li className='list-group-item'>
-                  <Link href='#'>Registration</Link>
+                  <Link href='#'>{t('footer-three-registration')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='#'>Watching Recorded Courses</Link>
+                  <Link href='#'>{t('footer-three-watching')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='#'>Mock Exam Tutorials</Link>
+                  <Link href='#'>{t('footer-three-mock')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='#'>Fanavaran Certificate</Link>
+                  <Link href='#'>{t('footer-three-certificate')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='#'>Privacy Policy</Link>
+                  <Link href='#'>{t('footer-three-privacy')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='#'>Frequently Asked Questions</Link>
+                  <Link href='#'>{t('footer-three-faq')}</Link>
                 </li>
               </ul>
             </div>
@@ -232,7 +232,7 @@ const Footer = props => {
         <div className='container'>
           <div className='row'>
             <div className='col-12'>
-              <small>Copyright © 2015-2023 Fanavaran. All rights reserved.</small>
+              <small>{t('footer-copyright')}</small>
             </div>
           </div>
         </div>
