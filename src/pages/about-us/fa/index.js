@@ -14,8 +14,8 @@ const Index = () => {
   // Check website lang
   useEffect(() => {
     const lng = window.localStorage.getItem('i18nextLng')
-    if (lng == 'fa') {
-      router.push('/about-us/fa')
+    if (lng == 'en') {
+      router.push('/about-us')
     }
   }, [])
 
@@ -23,7 +23,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>{t('About Fanavaran')}</title>
+        <title>{t('درباره فناوران')}</title>
       </Helmet>
 
       {/* Header */}
