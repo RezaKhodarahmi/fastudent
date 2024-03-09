@@ -28,7 +28,7 @@ const Index = props => {
   // Check website lang
   useEffect(() => {
     const lng = window.localStorage.getItem('i18nextLng')
-    if (lng == 'fa') {
+    if (lng == 'en') {
       router.push('/project-management/')
     }
   }, [])
@@ -58,80 +58,21 @@ const Index = props => {
       <section className='FNV-SinglePage'>
         <div className='container'>
           <div className='row FNV-Header'>
-            <h1>رضا منیجمنت</h1>
+            <h1>مدیریت پروژه</h1>
           </div>
 
           <div className='row'>
             <div className='col-12'>
+              <h2>گواهینامه مدیریت حرفه ای پروژه (PMP) </h2>
               <p>
-                The Project Management Professional (PMP) certification is regarded as one of the finest and most
-                esteemed credentials granted by the Project Management Institute (PMI). This certification serves as a
-                testament to an individual's extensive leadership expertise and comprehensive understanding of project
-                management. Attaining this certification opens up doors to advanced management opportunities across
-                various industries, enabling organizations to identify individuals capable of working intelligently and
-                achieving exceptional performance.
+                گواهینامه مدیریت حرفه ای پروژه (PMP) یکی از بهترین و معتبرترین لایسنس‌هایی است که از سوی موسسه Project Management Institute PMI صادر می‌شود. این لایسنس اثبات می‌کند که فرد تجربه کامل رهبری و دانش کافی برای مدیریت پروژه‌ها را دارد. همچنین این لایسنس به مشاغل حوزه مدیریت در صنایع مختلف قدرت می‌دهد.
               </p>
-              <p>Table of contents:</p>
-              <ol>
-                <li>
-                  <a href='#P1'>Project Management Professional (PMP) Certificate</a>
-                </li>
-                <li>
-                  <a href='#P2'>Characteristics of A Project Manager</a>
-                </li>
-                <li>
-                  <a href='#P3'>Project Management in Canada</a>
-                </li>
-                <li>
-                  <a href='#P4'>Traditional Predictive Or Waterfall Project Methodologies</a>
-                </li>
-                <li>
-                  <a href='#P5'>Agile Project Methodologies</a>
-                </li>
-                <li>
-                  <a href='#P6'>Top Project Management Certificates in Canada</a>
-                </li>
-                <li>
-                  <a href='#P7'>Who Is Eligible To Apply For PMP?</a>
-                </li>
-                <li>
-                  <a href='#P8'>Perks of Obtaining PMP</a>
-                </li>
-                <li>
-                  <a href='#P9'>Taking The PMP Exam</a>
-                </li>
-                <li>
-                  <a href='#P10'>What Is a PMP Fundamental Course?</a>
-                </li>
-                <li>
-                  <a href='#P11'>
-                    A Comparison Of The Tuition Fees For Pmp Courses Offered By The Institute Of Technology And The Pmi
-                    Center
-                  </a>
-                </li>
-                <li>
-                  <a href='#FAQ'>FAQs</a>
-                </li>
-              </ol>
-              <p>
-                The Canadian industry is experiencing rapid development overall, with numerous small and large companies
-                operating in diverse sectors. To achieve their objectives, advance their goals, and enhance their
-                services, these companies require competent project managers who can effectively execute their
-                strategies.
-              </p>
-
-              <p>
-                The formation of this organization aims to safeguard the interests and welfare of the public in
-                engineering-related affairs. Individuals who have obtained their engineering degrees are eligible to
-                become members of this organization and assume accountability for engineering projects. In essence, only
-                those who hold membership in Canadian engineering organizations and have been granted the P.Eng
-                designation possess the authority to endorse, sign, and authorize engineering drawings.
-              </p>
+              <p>مطابق با تعریف، مدیریت پروژه فرآیند رهبری یک تیم برای دستیابی به تمام اهداف پروژه در چارچوب محدودیت های داده شده است.</p>
             </div>
           </div>
 
           <div className='row'>
-            <h3>Before you start</h3>
+            <h3>قبل از اینکه شروع کنید</h3>
             <div className='col-12'>
               <iframe
                 style={{ height: '700px' }}
@@ -145,54 +86,29 @@ const Index = props => {
           </div>
 
           <div id='P1' className='row'>
-            <h3>Project Management Professional (PMP) Certificate</h3>
+            <h3>سرتیفیکیت مدیریت حرفه ای پروژه (PMP)</h3>
 
             <div className='col-12'>
               <p>
-                The Project Management Professional (PMP) certification stands out as the most renowned and highly
-                regarded among all project management certifications in Canada. Possessing this certification assures
-                employers that a proficient project manager, well-versed in project management documentation and
-                principles of project control, will be added to their team.
+                در بین همه سرتیفیکیت‌های مدیریت پروژه، گواهینامه مدیریت حرفه ای پروژه (PMP) معروفترین و شناخته‌شده‌ترین گواهینامه در کانادا است. دارندگان این سرتیفیکیت به کارفرما این نوید را می‌دهند که یک مدیر پروژه حرفه‌ای و آشنا به داکیومنت‌های مدیریت پروژه و اصول کنترل پروژه به تیم می‌پیوندد.
+
+                <ul>
+                  <li>افراد: توسعه و بهبود مهارت‌های نرم مورد نیاز برای رهبری موثر تیم دخیل در پروژه.</li>
+                  <li>فرآیندها: تقویت اجزای سازنده فنی مدیریت پروژه.</li>
+                  <li>محیط کسب‌وکار: ارتباط و تطبیق استراتژی‌ها و سیاست‌های سازمانی با پروژه.</li>
+                </ul>
               </p>
-              <ul>
-                <li>
-                  People: Develop and improve the soft skills needed to effectively lead the team involved in the
-                  project.
-                </li>
-                <li>Processes: strengthening the technical components of project management.</li>
-                <li>
-                  Business environment: communication and adaptation of organizational strategies and policies with the
-                  project.
-                </li>
-              </ul>
-              <p>PMBOK Perspective on Project Management</p>
-              <p>
-                Project management is the skillful art of transforming ideas into tangible realities. When an
-                organization approves an idea based on economic justification or a solid business case, a budget is
-                allocated, and the organization becomes committed to bringing that idea to fruition.
-              </p>
-              <p>
-                Typically, the responsibility for the organization's budget falls upon an individual known as the
-                Project Sponsor. During the project initiation phase, the Project Sponsor assesses the potential project
-                management candidates and ultimately selects a qualified individual to serve as the Project Manager.
-                Preference is often given to those who hold a Project Management Professional (PMP) certification.
-              </p>
-              <p>
-                Through a formal agreement called the Project Charter, both the Project Manager and the organization
-                make a mutual commitment to achieving the project's goals. Within the bounds of their authority, the
-                Project Manager harnesses the organization's resources to ensure the project's success.
-              </p>
-              <p>
-                According to the definition provided by the Project Management Institute (PMI), a project manager
-                possesses comprehensive expertise and a deep understanding of the project, encompassing technical,
-                leadership, and business knowledge. Such proficiency enables the project manager to navigate the
-                project's complexities effectively.
-              </p>
+
+              <h4>مدیریت پروژه از نگاه PMBOK</h4>
+              <p>مدیریت پروژه هنر خلق واقعیت از ایده‌هاست. در حقیقت هرگاه ایده‌ای از نظر توجیه اقتصادی یا Business Case  سبک سنگین شد و مورد تایید سازمان قرار گرفت، برای آن بودجه‌ای در نظر می گیرند  و سازمان خود را متعهد به تحقق آن ایده می‌کند.</p>
+              <p>بودجه سازمان معمولا در دست شخصی با سمت شغلی Project Sponsor قرار می‌گیرد. همچنین Project Sponsor، فرد با صلاحیتی را به عنوان Project Manager یا مدیر پروه انتخاب می‌کند. قاعدتا افرادی که دارای گواهینامه مدیریت حرفه ای پروژه (PMP) هستند در اولویت قرار خواهند گرفت.</p>
+              <p>مدیر پروژه در تعریف PMI کسی است که هم از نظر تکنیکی، هم از نظر رهبری و هم از نظر دانش تجاری نسبت به پروژه اشراف کامل دارد و کاملا از آن آگاه است.</p>
+              <p>Project Manager  یا شخص تعیین شده طی قراردادی به نام Project Charter خود و سازمان را متعهد می‌کند تا پروژه را در جهت اهداف خود پیش ببرد. همچنین در چهارچوب قدرتی که دارد، قادر خواهد بود تا منابع یا  Resourceهای سازمان را در راستای موفقیت پروژه بکار بگیرد.</p>
             </div>
           </div>
 
           <div id='P2' className='row'>
-            <h3>Characteristics of A Project Manager</h3>
+            <h3>درآمد مدیر پروژه سرتیفای شده و حوزه فعالیت</h3>
 
             <div className='col-12'>
               <p>
@@ -209,41 +125,11 @@ const Index = props => {
           </div>
 
           <div className='row'>
-            <h3>Students in this Course</h3>
+            <h3>دانش آموزان این دوره</h3>
 
-            <div className='col-12 col-md-3 ps-0'>
+            <div className='col-12 col-md-12 ps-0'>
               <iframe
-                src='https://www.youtube.com/embed/BVqmL9g3_eA'
-                title='YouTube video player'
-                frameborder='0'
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                allowfullscreen
-              ></iframe>
-            </div>
-
-            <div className='col-12 col-md-3'>
-              <iframe
-                src='https://www.youtube.com/embed/BVqmL9g3_eA'
-                title='YouTube video player'
-                frameborder='0'
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                allowfullscreen
-              ></iframe>
-            </div>
-
-            <div className='col-12 col-md-3'>
-              <iframe
-                src='https://www.youtube.com/embed/BVqmL9g3_eA'
-                title='YouTube video player'
-                frameborder='0'
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                allowfullscreen
-              ></iframe>
-            </div>
-
-            <div className='col-12 col-md-3 pe-0'>
-              <iframe
-                src='https://www.youtube.com/embed/BVqmL9g3_eA'
+                src='https://www.youtube.com/embed/_kOTkSRzevo'
                 title='YouTube video player'
                 frameborder='0'
                 allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
