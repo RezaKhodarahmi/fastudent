@@ -28,8 +28,8 @@ const Index = () => {
   // Check website lang
   useEffect(() => {
     const lng = window.localStorage.getItem('i18nextLng')
-    if (lng == 'fa') {
-      router.push('/Job-Seeking/fa')
+    if (lng == 'en') {
+      router.push('/Job-Seeking')
     }
   }, [])
 
@@ -63,7 +63,7 @@ const Index = () => {
     <section className='FNV-SinglePage'>
       <div className='container'>
         <div className='row FNV-Header'>
-          <h1>Job Seeking in Canada</h1>
+          <h1>جوینده شغل در کانادا</h1>
         </div>
 
         <div className='row'>

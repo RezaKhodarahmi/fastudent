@@ -28,8 +28,8 @@ const Index = () => {
   // Check website lang
   useEffect(() => {
     const lng = window.localStorage.getItem('i18nextLng')
-    if (lng == 'fa') {
-      router.push('/technical-self-employment/fa')
+    if (lng == 'en') {
+      router.push('/technical-self-employment')
     }
   }, [])
 
@@ -57,7 +57,7 @@ const Index = () => {
     <section className='FNV-SinglePage'>
       <div className='container'>
         <div className='row FNV-Header'>
-          <h1>Technichal Self Employment</h1>
+          <h1>خود اشتغال فنی</h1>
         </div>
 
         <div className='row'>
