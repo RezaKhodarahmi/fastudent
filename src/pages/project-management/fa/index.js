@@ -29,7 +29,7 @@ const Index = props => {
   useEffect(() => {
     const lng = window.localStorage.getItem('i18nextLng')
     if (lng == 'fa') {
-      router.push('/project-management/fa')
+      router.push('/project-management/')
     }
   }, [])
 
@@ -58,7 +58,7 @@ const Index = props => {
       <section className='FNV-SinglePage'>
         <div className='container'>
           <div className='row FNV-Header'>
-            <h1>Project Management</h1>
+            <h1>رضا منیجمنت</h1>
           </div>
 
           <div className='row'>
