@@ -27,7 +27,13 @@
   "menu-business": "Business Solutions",
 
   "category-section-one": "How do we help you at FANAVARAN?",
+  "category-section-one-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "category-section-one-button": "About Fanavaran",
   "category-section-two": "If you have recently migrated, we are here for you.",
-  "category-section-three": "Quickly and easily become a special at Fanavaran!"
+  "category-section-two-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "category-section-two-button": "I Am Newbie",
+  "category-section-three": "Quickly and easily become a special at Fanavaran!",
+  "category-section-three-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "category-section-three-button": "FANAVARAN VIP Membership"
 
 }

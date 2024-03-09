@@ -118,13 +118,11 @@ const CategoriesSection = () => {
               <h3>{t('category-section-one')}</h3>
 
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.
+                {t('category-section-one-description')}
               </p>
 
               <Link href='#' className='FNV-Btn BtnOutline PrimaryColor BtnMedium'>
-                About FANAVARAN
+                {t('category-section-one-button')}
               </Link>
             </div>
 
@@ -132,13 +130,11 @@ const CategoriesSection = () => {
               <h3>{t('category-section-two')}</h3>
 
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.
+                {t('category-section-two-description')}
               </p>
 
               <Link href='#' className='FNV-Btn BtnOutline PrimaryColor BtnMedium'>
-                I Am Newbie
+                {t('category-section-two-button')}
               </Link>
             </div>
 
@@ -146,13 +142,11 @@ const CategoriesSection = () => {
               <h3>{t('category-section-three')}</h3>
 
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.
+                {t('category-section-three-description')}
               </p>
 
               <Link href='/membership/checkout/' className='FNV-Btn BtnOutline PrimaryColor BtnMedium'>
-                FANAVARAN VIP Membership
+                {t('category-section-three-button')}
               </Link>
             </div>
           </div>
