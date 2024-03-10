@@ -63,64 +63,57 @@ const Index = () => {
     <section className='FNV-SinglePage'>
       <div className='container'>
         <div className='row FNV-Header'>
-          <h1>معماری</h1>
+          <h1>معماری در کانادا ؛ چه کسی می‌تواند Architect باشد  </h1>
         </div>
 
         <div className='row'>
           <div className='col-12'>
             <p>
-              Architecture is a regulated profession in Canada, and the title of Architect cannot be used by just
-              anyone. This regulation is similar to that of the engineering field in Canada. Architects are highly
-              skilled professionals who must obtain a license from the architectural association of one or more
-              provinces in order to engage in architectural activities. In Canada, architecture encompasses the
-              creation, design, and implementation of plans for constructing or renovating commercial, residential, and
-              institutional buildings.
+              معماری در کانادا جزو مشاغل نظام‌مند یا رگولیتد است و هر کسی نمی‌تواند از عنوان Architect کنار اسم خود استفاده کند. این قانون همانند عنوان مهندسی در کانادا است. معماران، متخصصان حرفه‌ای هستند که از انجمن معماری یک یا چند استان مجوز مورد نیاز برای انجام فعالیت‌های معماری را اخذ کرده‌اند. معماری در کانادا شامل نقشه‌کشی، طراحی و توسعه طرح‌های ساختمانی یا نوسازی ساختمان‌های تجاری، مسکونی و سازمانی است.
             </p>
-            <p>Table of contents:</p>
+            <p>
+              فهرست مطالب:</p>
             <ol>
               <li>
-                <a href='#P1'>Career Prospects And Status Of Architecture In Canada</a>
+                <a href='#P1'>چشم انداز و وضعیت شغلی معماری در کانادا</a>
               </li>
               <li>
-                <a href='#P2'>Job Description of Architects In Canada</a>
+                <a href='#P2'>وظایف شغلی معماران در کانادا</a>
               </li>
               <li>
-                <a href='#P3'>Examination For Architects In Canada (Exac)</a>
+                <a href='#P3'>آزمون ویژه معماران در کانادا Examination for Architects in Canada (EXAC)</a>
               </li>
               <li>
-                <a href='#P4'>What Are The Benefits Of An Architecture Designation In Canada?</a>
+                <a href='#P4'>مزایای مدرک معماری در کانادا چیست؟</a>
               </li>
               <li>
-                <a href='#P5'>Architecture In The Province Of Ontario; Where Is The Oaa Organization?</a>
+                <a href='#P5'>معماری در استان انتاریو؛ سازمان OAA کجاست؟</a>
               </li>
               <li>
                 <a href='#P6'>
-                  How To Get An Oaa Architecture Degree For People Who Have Studied Or Worked Outside Of Canada
+                  نحوه دریافت مدرک معماری OAA برای افرادی که خارج از کانادا تحصیل یا کار کرده اند
                 </a>
               </li>
               <li>
-                <a href='#P7'>Internship In Architecture Program (Iap)</a>
+                <a href='#P7'>برنامه کارآموزی در معماری Internship in Architecture Program (IAP)</a>
               </li>
               <li>
-                <a href='#P8'>Approval Of Architecture Degree In Canada</a>
+                <a href='#P8'>تایید مدرک معماری در کانادا</a>
               </li>
               <li>
-                <a href='#P9'>Steps To BEFA</a>
+                <a href='#P9'>مراحل دریافت BEFA</a>
               </li>
               <li>
-                <a href='#FAQ'>FAQs</a>
+                <a href='#FAQ'>سوالات متداول</a>
               </li>
             </ol>
             <p>
-              In Canada, architects have a wide range of employment opportunities available to them, including
-              architectural firms, private companies, and public sectors. Additionally, architects have the option to
-              work as self-employed professionals.
+              برای یک معمار در این کشور، شرکت‌های معماری، شرکت‌های خصوصی و بخش‌های دولتی فرصت‌های شغلی بسیاری ارائه می‌کنند و معامران می‌توانند به صورت خود اشتغالی نیز فعالیت داشته باشند.
+
             </p>
             <p>
-              As registered members of Canadian architectural societies, architects are obligated to adhere to the
-              Architects Act and provincial regulations, while also upholding their association's code of ethics. Once
-              licensed, it is imperative for architects to actively maintain their membership within their respective
-              province.
+              معماران به عنوان اعضای انجمن‌های معماری کانادا موظفند تا به صورت کامل قانون معماران و آیین نامه‌های استانی را رعایت کنند و انتظار می‌رود که منشور اخلاقی انجمن خود را نیز دنبال کنند. پس از دریافت مجوز، همه معماران باید تلاش کنند تا عضویت خود را در استان مربوطه حفظ کنند.
+
             </p>
           </div>
         </div>
@@ -130,7 +123,7 @@ const Index = () => {
           <div className='col-12'>
             <iframe
               style={{ height: '700px' }}
-              src='https://www.youtube.com/embed/0Qy2IcqiC4I'
+              src='https://www.youtube.com/embed/wNse1OrGuds'
               title='YouTube video player'
               frameborder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
@@ -140,105 +133,123 @@ const Index = () => {
         </div>
 
         <div id='P1' className='row'>
-          <h3>Career Prospects And Status Of Architecture In Canada</h3>
+          <h3>چشم انداز و وضعیت شغلی معماری در کانادا </h3>
 
           <div className='col-12'>
             <p>
-              In Canada, there are several essential steps that individuals must fulfill in order to be officially
-              recognized as architects and obtain a professional work permit. While possessing an educational
-              qualification is of great significance, Canada distinguishes itself as a country that does not solely rely
-              on a degree in architecture or engineering as a sufficient qualification for working in these fields.
-              Generally, those aspiring to work in this profession should:
+              به طور کلی برای آنکه شخصی به عنوان یک معمار در کانادا شناخته شود و اجازه کار حرفه‌ای داشته باشد باید چندین مرحله را طی کند. اگرچه مدرک تحصیلی از اهمیت بالایی برخوردار است، اما کانادا جزو کشورهایی است که صرفا فارغ‌التحصیلی در رشته‌های معماری یا مهندسی را به عنوان قدم کافی برای فعالیت در این رشته‌ها به شمار نمی‌آورد. به طور کلی، کسانی که میخواهند در این حرفه‌ فعالیت کنند باید:
             </p>
             <ul>
-              <li>Have a background in architecture studies.</li>
-              <li>Acquire substantial work experience.</li>
-              <li>Successfully pass the Examination for Architects in Canada (ExAC).</li>
+              <li>در رشته معماری تحصیل کرده باشند </li>
+              <li>سابقه کاری کافی داشته باشند     </li>
+              <li>آزمون Examination for Architects in Canada (ExAC) را بگذراند .</li>
             </ul>
             <p>
-              It is worth noting that the process of completing these steps may vary across provinces. For more detailed
-              information regarding the specific requirements and procedures for each province, please consult the
-              official website of the respective Provincial Architects Association.
+              نحوه گذراندن این مراحل برای هر استان می‌تواند متفاوت باشد. شما می‌توانید برای اطلاع دقیق‌تر از عملکرد هر استان به سایت رسمی انجمن معماران استانی که در زیر آمده است مراجعه کنید.
             </p>
-            <p>Ontario</p>
-            <p>Alberta</p>
-            <p>British Columbia</p>
-            <p>Nova Scotia</p>
-            <p>Saskatchewan</p>
-            <p>New Brunswick</p>
-            <p>Prince Edward Island</p>
-            <p>Manitoba</p>
-            <p>Newfoundland and Labrador</p>
-            <p>Quebec</p>
+
+            <ul>
+              <li>آنتاریو</li>
+              <li>آلبرتا</li>
+              <li>بریتیش کلمبیا</li>
+              <li>نواسکوشا</li>
+              <li>ساسکچوان</li>
+              <li>نیو برازنویک</li>
+              <li>جزیره پرنس ادوارد</li>
+              <li>مانیتوبا</li>
+              <li>نیوفاندلند و لابرادور</li>
+              <li>کبک</li>
+            </ul>
+
+
             <p>
-              Fanavaran has not offered any services pertaining to the province of Quebec and does not possess any
-              information regarding this particular province.
+              مجموعه فناوران هیچگونه  خدماتی مربوط به استان کبک ارائه نکرده و هیچگونه اطلاعاتی درباره این استان ندارد.
             </p>
           </div>
         </div>
 
         <div id='P2' className='row'>
-          <h3>Job Description of Architects In Canada</h3>
+          <h3>وظایف شغلی معماران در کانادا</h3>
 
           <div className='col-12'>
             <ul>
               <li>
-                Engage in consultations with clients to determine the nature, style, and purpose of building renovations
-                in Canada.
+                معماران برای شناسایی نوعیت، سبک و هدف بازسازی یک ساختمان در کانادا باید با کارفرما مشورت کنند.
+
               </li>
               <li>
-                Conceptualize and design buildings, providing comprehensive building plans that include design details,
-                building materials, costs, and construction plans, all in accordance with Canadian architectural
-                standards.
+                مفهوم‌سازی و طراحی ساختمان‌ها و ارائه طرح ساختمانی با جزئیات کامل طراحی، مصالح ساختمانی، هزینه‌ها و برنامه‌های ساخت‌وساز با رعایت استانداردهای معماری در کانادا
+
               </li>
-              <li>Prepare designs and models for their clients.</li>
-              <li>
-                Prepare or supervise the preparation of plans, specifications, and other construction documents that
-                will be used by contractors and technicians.
+              <li>آماده‌سازی طرح‌ها و مدل‌ها برای مشتریان
               </li>
               <li>
-                Prepare&nbsp; tender documents, participate in pre-contract negotiations, and oversee the awarding of
-                construction contracts.
+                تهیه یا نظارت بر آماده‌سازی نقشه‌ها، ویژگی‌ها و دیگر اسناد ساختمانی برای استفاده پیمانکاران و تکنسین‌ها
+
               </li>
               <li>
-                Monitor activities on construction sites to ensure compliance with the overall plan is an important duty
-                of architects.
+                تهیه اسناد مناقصه، شرکت در مذاکرات پیش از عقد قرارداد و اعطای قراردادهای ساخت‌وساز
+
               </li>
-              <li>Carry out feasibility studies and conduct financial analyses of construction projects.</li>
+              <li>
+                نظارت بر فعالیت‌ها در سایت‌های ساخت‌وساز برای اطمینان از مطابقت با طرح کلی
+
+              </li>
+              <li>
+                انجام مطالعات امکان‌سنجی و تحلیل‌های مالی پروژه‌های ساختمانی
+              </li>
+
+              <li>معماران ممکن است در نوع خاصی از ساخت و ساز مانند مسکونی، تجاری، صنعتی یا سازمانی تخصص داشته باشند
+              </li>
+
+
             </ul>
-            <p>
-              Architects have the option to specialize in specific types of construction, such as residential,
-              commercial, industrial, or institutional projects.
-            </p>
+          </div>
+        </div>
+
+
+        <div className='row'>
+          <h3>قبل از این که شروع کنید</h3>
+
+          <div className='col-12'>
+            <iframe
+              style={{ height: '700px' }}
+              src='https://www.youtube.com/embed/WIkZZs4kZuk'
+              title='YouTube video player'
+              frameborder='0'
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
 
         <div id='P3' className='row'>
-          <h3>Examination for Architects in Canada (EXAC)</h3>
+          <h3>آزمون ویژه معماران در کانادا Examination for Architects in Canada (EXAC)</h3>
 
           <div className='col-12'>
             <p>
-              The Canadian Provincial Associations of Architects have established multiple examinations for architect
-              admission, which are designed to assess the qualifications of candidates. The latest examination is known
-              as EXAC (Examination for Architects in Canada). EXAC is divided into four sections and encompasses various
-              subject areas outlined in the Architectural Internship Program.
+              انجمن‌های معماران استانی کانادا، آزمون‌های مختلفی را برای پذیرش معماران تعیین کرده‌اند. این آزمون‌ها برای تعیین صلاحیت داوطلبان گرفته می‌شوند. جدیدترین آزمون، آزمون (EXAC) نام دارد.
             </p>
+
+            <p>EXAC از چهار بخش تشکیل شده و حوزه های موضوعی زیر را که در برنامه کارآموزی در معماری آمده است پوشش می‌دهد:
+            </p>
+
             <ul>
-              <li>Fore planning</li>
-              <li>Site and environment analysis</li>
-              <li>Cost management</li>
-              <li>Coordination of engineering systems</li>
-              <li>Designing maps</li>
-              <li>Development of plans</li>
-              <li>Project finalization</li>
-              <li>The nobility of the rules</li>
-              <li>Tenders and negotiations for contracts</li>
-              <li>construction phase (office)</li>
-              <li>construction phase (site)</li>
-              <li>Project Management</li>
-              <li>Law studies</li>
+              <li>برنامه‌ریزی</li>
+              <li>آنالیز سایت و محیط              </li>
+              <li>مدیریت هزینه‌ها              </li>
+              <li>هماهنگی سیستم‌های مهندسی              </li>
+              <li>طراحی نقشه‌ها              </li>
+              <li>توسعه طرح‌ها              </li>
+              <li>نهایی‌سازی پروژه              </li>
+              <li>اشراف بر قوانین              </li>
+              <li>مناقصات و مذاکرات برای قراردادها              </li>
+              <li>فاز ساخت‌وساز (دفتر کار)              </li>
+              <li>فاز ساخت‌وساز (سایت)              </li>
+              <li>مدیریت پروژه              </li>
+              <li>مطالعات قوانین              </li>
             </ul>
-            <p>EXAC exam sources are:</p>
+            <h4>منابع اصلی برای آزمون EXAC:            </h4>
             <ul>
               <li>Internship in Architecture (IAP)</li>
               <li>Canadian Handbook of Practice for Architecture (CHOP)</li>
@@ -246,153 +257,93 @@ const Index = () => {
               <li>National Building Code 2005 edition</li>
             </ul>
             <p>
-              The primary reference for successfully completing the EXAC exam and practicing architecture in Canada is
-              the National Building Code. This valuable resource provides applicants with a comprehensive understanding
-              of the precise regulations and standards governing construction in the country. The National Building Code
-              consists of 11 general sections, with particular emphasis placed on two crucial parts: Part 3, which
-              addresses fire and safety principles, and Part 9, which pertains to residential buildings in Canada.
-              Familiarizing oneself with these sections is essential for candidates aiming to pass the EXAC exam and
-              effectively engage in architectural practice within the country.
+              منبع اصلی برای گذراندن آزمون EXAC و انجام فعالیت حرفه‌ای برای معماری در کانادا، در واقع National Building Code است. در این قسمت متقاضیان با قوانین ریز و درشت تعریف شده کانادا برای ساخت‌وساز و همچنین استانداردهای مورد نیز آشنا می‌شوند. NBC دارای 11 بخش کلی است که مهم‌ترین آن‌ها National Building Code Part3 مربوط به اصول ایمنی و حریق و National Building Code Part9 درباره ساختمان‌های مسکونی در کانادا است.
             </p>
           </div>
         </div>
 
         <div id='P4' className='row'>
-          <h3>What Are The Benefits Of An Architecture Designation In Canada?</h3>
+          <h3>مزایای مدرک معماری در کانادا چیست؟ </h3>
 
           <div className='col-12'>
-            <p>
-              <strong>Working as an architect</strong>
-            </p>
-            <p>
-              In accordance with Canadian laws and policies, only individuals holding an architectural degree from
-              Canada are entitled to use the professional designation of "Architect." This certification signifies that
-              the person possesses all the necessary qualifications to engage in various domains of architecture within
-              Canada. Consequently, individuals are prohibited from practicing architecture unless they are members of a
-              provincial architecture association.
-            </p>
-            <p>
-              <strong>Enhancing business reputation</strong>
-            </p>
-            <p>
-              Membership in provincial architecture associations is regarded as a prestigious occupation, allowing
-              individuals to append the title of "Architect" to their name. This designation serves as a guarantee for a
-              promising career trajectory.
-            </p>
-            <p>
-              <strong>Job security and diverse opportunities</strong>
-            </p>
-            <p>
-              During downsizing, organizations tend to retain individuals who possess an architectural license from a
-              provincial architecture association. Moreover, those who aspire to establish their own architectural firm
-              and capitalize on the opportunities available in Canada can greatly benefit from holding such a license,
-              as it opens doors to a wider range of prospects compared to a conventional enterprise.
-            </p>
-            <p>
-              <strong>Increased salary prospects</strong>
-            </p>
-            <p>
-              The remuneration for officially licensed architects significantly surpasses that of unlicensed
-              counterparts. Furthermore, those with an official license from their provincial association enjoy better
-              prospects for career growth and advancement in their professional journey.
-            </p>
-            <p>
-              <strong>Right to vote in provincial associations</strong>
-            </p>
-            <p>
-              Following licensure, architects gain the privilege to vote at their association's annual general meeting.
-              They also have the opportunity to participate in elections and contribute to the council's decision-making
-              process. Provincially licensed architects can further volunteer for various committees and groups, playing
-              a vital role in educating future architects.
-            </p>
+            <ul>
+              <li>
+                <strong>فعالیت به عنوان معمار  </strong>
+                <p>
+                  بر اساس قوانین و سیاست‌های کانادا، تنها کسانی می‌توانند از عنوان حرفه‌ای «معمار» استفاده کنند که مدرک معماری در کانادا را داشته باشند. این مدرک ثابت می‌کند که فرد تمامی شرایط لازم برای فعالیت حرفه‌ای در طیف‌های مختلف معماری در کانادا را دارد. این یعنی که افراد بدون داشتن عضویت در یکی از انجمن‌های معماری استانی، به هیچ وجه اجازه فعالیت‌های معماری را ندارند.
+                </p>
+              </li>
+              <li>
+                <strong>پرستیژ کاری </strong>
+                <p>
+                  عضویت در انجمن‌های معماری استانی به عنوان یک پرستیژ کاری بالا برای افراد تلقی می‌شود و عنوان Architect در انتهای اسم آن‌ها درج می‌شود. این عنوان، آینده شغلی فرد را تضمین کند.
+                </p>
+              </li>
+              <li>
+                <strong>امنیت شغلی و تنوع کاری</strong>
+                <p>
+                اگر مجموعه‌ای در حال تعدیل نیرو باشد، به احتمال زیاد افرادی را نگاه می‌دارد که دارای مجوز معماری از انجمن معماری استان باشند. همچنین اگر فرد بخواهد شرکت شخصی خود را راه‌اندازی کند و از فرصت‌های معماری در کانادا و داشتن یک شرکت در حال رشد استفاده کند، قطعا داشتن چنین مجوزی می‌تواند فرصت‌های بیشتری را نسبت به یک شرکت معمولی پیش روی او قرار دهد.
+                </p>
+              </li>
+              <li>
+                <strong>حقوق بالاتر </strong>
+                <p>
+                  داشتن حق رای در انجمن‌های استانی
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
 
         <div id='P5' className='row'>
-          <h3>Architecture In The Province Of Ontario; What Is The OAA Organization?</h3>
+          <h3>معماری در استان انتاریو؛ سازمان OAA کجاست؟ </h3>
 
           <div className='col-12'>
             <p>
-              The Ontario Association of Architects (OAA) is an independent entity committed to advancing the knowledge,
-              skills, and competencies of its members, all while ensuring the public's best interests. This association
-              holds the responsibility of certifying qualifications and providing official recognition for practicing
-              architects within the province of Ontario.
+              Ontario Association of Architects یا OAA یک سازمان خودمختار است که به افزایش دانش، مهارت و توانایی‌های اعضای خود و در عین حال خدمت به منافع عمومی اختصاص داده شده است. این سازمان همچنین مسئول تایید صلاحیت و ارائه گواهی رسمی برای تایید فعالیت معماران در استان انتاریو است.
+
             </p>
             <p>
-              Individuals who have completed their education in the field of architecture in Canada and aspire to work
-              as architects in Ontario must obtain membership in this organization. It is important to note that for
-              individuals seeking employment in other provinces, they must consult the relevant organization specific to
-              their desired province.
+              افرادی که فارغ التحصیل یکی از رشته‌های معماری در کانادا باشند و بخواهند به عنوان معمار در استان انتاریو فعالیت کنند نیاز به عضویت در این سازمان خواهند داشت. لازم به ذکر است که برای فعالیت در سایر استان‌ها، متقاضیان باید به سازمان مربوطه در استان مورد نظر مراجعه کنند.
+
             </p>
-            <p>Through a meticulous procedure, the OAA meticulously verifies the eligibility of its members:</p>
+            <p>OAA صلاحیت اعضای خود را از طریق یک فرآیند دقیق تایید می‌کند:
+            </p>
             <ul>
-              <li>Meeting educational requirements</li>
-              <li>Completing a professional internship</li>
-              <li>Passing extensive exams</li>
-              <li>Completion of the OAA admission course</li>
-              <li>Having a professional personality</li>
+              <li>برآوردن نیازهای آموزشی
+              </li>
+              <li>گذراندن دوره کارآموزی حرفه‌ای
+              </li>
+              <li>گذراندن امتحانات گسترده
+              </li>
+              <li>تکمیل دوره پذیرش OAA
+              </li>
+              <li>Hداشتن شخصیت حرفه‌ای
+              </li>
             </ul>
             <p>
-              Once a referral is made, the Experience Requirements Committee (ERC) assesses whether the applicant
-              fulfills the experience criteria outlined in the regulations for obtaining an OAA license.
-            </p>
-            <p>
-              In accordance with the Architects Act, the Architectural Association of Ontario is dedicated to upholding
-              the professional standards of individuals who have successfully fulfilled all necessary requirements prior
-              to obtaining their license. The OAA is obligated to consistently apply and update these requirements as
-              mandated by section 31 of the Regulations, ensuring compliance with legal obligations.
-            </p>
-            <p>
-              Licensed members of the Architectural Association of Ontario are required to utilize the official
-              professional seal provided by the organization, adhering to the regulations outlined in section 27 of the
-              Architects Act. The stamp and signature of an OAA member on a document signify that the document was
-              meticulously prepared under the personal supervision and direction of one or more OAA members. Obtaining
-              this seal, which validates architectural activities in Canada, necessitates successful completion of the
-              EXAC exam.
-            </p>
-            <p>
-              The presence of the OAA seal below a document serves as the sole confirmation that all legal requirements
-              have been met. Such a document can be employed for the purposes of planning, designing, and making
-              alterations to buildings, ensuring adherence to regulatory standards.
-            </p>
-          </div>
-        </div>
+              پس از ارجاع، کمیته الزامات تجربه (ERC) تعیین می‌کند که آیا متقاضی می‌تواند شرایط تجربی مقرر شده در قوانین را داشته باشد تا بتواند برای صدور مجوز OAA برای او اقدام کند.
 
-        <div id='P6' className='row'>
-          <h3>How To Get An Oaa Architecture Degree For People Who Have Studied Or Worked Outside Of Canada</h3>
 
-          <div className='col-12'>
-            <p>
-              Internationally Trained Professionals (ITP) refer to professionals who have acquired their educational
-              qualifications or work experience outside of Canada, the United States, New Zealand, Australia, and
-              Mexico.
             </p>
             <p>
-              For individuals belonging to this category, there are two distinct pathways available to pursue a career
-              as an architect in Canada:
+              مطابق قانون معماران، سازمان معماری انتاریو متعهد است تا افرادی را در این حرفه نگاه دارد که پیش از دریافت مجوز، تمام الزامات مورد نیاز را برآورده کرده‌اند. OAA باید به طور مداوم الزامات را مطابق با بخش 31 مقررات به منظور انجام تعهدات قانونی خود اعمال و به‌روزرسانی کند.
+
             </p>
-            <ol>
-              <li>Internship in Architecture Program (IAP)</li>
-              <li>Broadly Experienced Foreign Architect (BEFA)</li>
-            </ol>
             <p>
-              In general, individuals falling into either of the aforementioned groups and seeking to obtain their
-              architectural certification in Canada must successfully complete three main steps:
+              اعضای دارای مجوز از سازمان معماری انتاریو باید از مهر حرفه‌ای صادر شده توسط این سازمان مطابق با قوانین حاکم بر استفاده از آن‌ها در مقررات 27 تحت قانون معماران استفاده کنند. مهر و امضای اعضا بر روی یک سند نشان می دهد که آن سند به طور کامل تحت نظارت و هدایت شخصی یک عضو یا اعضا OAA تهیه شده است. برای داشتن این مهر جهت تایید فعالیت‌های معماری در کانادا عبور از آزمون EXAC الزامی است.
+
             </p>
-            <ol>
-              <li>Engage in studies within the field of architecture</li>
-              <li>Accumulate sufficient work experience</li>
-              <li>Pass the Examination for Architects in Canada (ExAC)</li>
-            </ol>
             <p>
-              Both the IAP and BEFA groups follow their respective processes and pathways to provide educational
-              qualifications and work records, enabling them to practice architecture in Canada.
+              مهر اعضای OAA زیر یک سند تنها تاییدیه‌ای است که الزامات قانونی در آن برآورده شده است. از این سند می‌توان جهت برنامه‌ریزی و طراحی برای ساخت و ساز و همچنین ایجاد تغییرات در ساختمان‌ها استفاده کرد.
+
+
             </p>
           </div>
         </div>
 
         <div className='row FNV-Related-Course'>
-          <h3>Related Architecture Courses</h3>
+          <h3>دوره‌های مرتبط</h3>
 
           {/* Courses Desktop */}
           <CourseDeskSingle courses={courses} addToCart={addToCart} />
@@ -400,173 +351,8 @@ const Index = () => {
           <CourseMobileSingle courses={courses} addToCart={addToCart} />
         </div>
 
-        <div id='P7' className='row'>
-          <h3>Internship in Architecture Program (IAP)</h3>
-
-          <div className='col-12'>
-            <p>To qualify as a trainee architect, an applicant must meet the following requirements:</p>
-            <ul>
-              <li>Hold a professional degree in architecture or have successfully completed the RAIC curriculum.</li>
-              <li>Possess a scientific certificate issued by the Canadian Architectural Certification Board (CACB).</li>
-              <li>Demonstrate a professional demeanor and character.</li>
-              <li>Submit a completed application form.</li>
-              <li>Fulfill the necessary fee payment.</li>
-            </ul>
-            <p>
-              Aspiring apprentice architects can register and document their work experience using the Canadian
-              Experience Record Book (CERB) online tool. Supervising architects and mentors can utilize this resource to
-              review and digitally verify the activities of their trainees.
-            </p>
-            <p>
-              The architectural internship holds a significant position within the Ontario Association of Architects
-              (OAA). This designation indicates active participation in the Internship in Architecture Program (IAP) and
-              reflects one's commitment to becoming a licensed professional architect in Canada.
-            </p>
-          </div>
-        </div>
-
-        <div id='P8' className='row'>
-          <h3>Approval of Architecture Degree in Canada</h3>
-          <div className='col-12'>
-            <p>
-              Prior to enrolling in the Internship in Architecture Program (IAP) to pursue a career in architecture in
-              Canada, it is essential to hold a professional degree in architecture. Irrespective of the educational
-              institution where the architecture degree was obtained, it must be officially recognized by the Canadian
-              Architectural Certification Board (CACB). In Canada, the CACB assumes the responsibility of assessing the
-              qualifications of all architecture graduates, serving as the authoritative body for verifying architecture
-              degrees within the country. It is mandatory to consult the CACB to confirm the validity of an architecture
-              degree in Canada. Obtaining academic certification from the CACB is a prerequisite for eligibility to
-              apply for the IAP.
-            </p>
-          </div>
-        </div>
-
-        <div id='P9' className='row'>
-          <h3>Broadly Experienced Foreign Architect (BEFA)</h3>
-          <div className='col-12'>
-            <p>
-              The Broadly Experienced Foreign Architect (BEFA) program offers an alternative pathway for internationally
-              licensed architects to qualify for licensure with the Ontario Association of Architects (OAA). This
-              program assesses the experience of foreign architects against Canadian qualification standards. Eligible
-              applicants can seek BEFA certification by undergoing an online demonstration of eligibility and
-              participating in an interview with an evaluation panel consisting of Canadian architects. Successful
-              candidates are granted the BEFA certificate, which attests to their adherence to Canadian standards and
-              their competence to practice architecture professionally. Holding a BEFA certificate allows individuals to
-              apply for OAA membership. Applicants with BEFA certification must satisfy the following requirements to be
-              eligible for OAA membership:
-            </p>
-            <ul>
-              <li>Demonstrate good character.</li>
-              <li>Be at least 18 years of age.</li>
-              <li>
-                Possess Canadian citizenship or permanent residency, or be a member of one of the architectural
-                organizations recognized by the council.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div id='P10' className='row'>
-          <h3>Steps to Acquiring BEFA</h3>
-          <div className='col-12'>
-            <p>
-              <strong>There are four steps to get a BEFA certificate to practice architecture in Canada:</strong>
-            </p>
-            <ul>
-              <li>Verification of Competency</li>
-              <li>Proof of abilities and competence (sending documents and resume)</li>
-              <li>interview</li>
-              <li>Get a certificate</li>
-            </ul>
-            <p>
-              <strong>Step 2: Proof of Competence</strong>
-            </p>
-            <p>
-              Proof of competence is probably the hardest step when it comes to BEFA. The candidate must follow the
-              steps below for this matter.
-            </p>
-            <p>
-              During this stage, applicants must demonstrate their proficiency in twelve categories that encompass the
-              responsibilities of an architect in a project. It is crucial to provide specific and well-documented
-              examples to support their qualifications in each category.
-            </p>
-            <ul>
-              <li>Planning: Understanding and articulating client requirements for a specific project.</li>
-              <li>
-                Site and Environment Analysis: Considering land planning, urban design, and environmental factors.
-              </li>
-              <li>Drawing and Mapping: Developing conceptual solutions aligned with the approved plan and budget.</li>
-              <li>
-                Engineering Designs: Coordinating and selecting building systems, including structural, mechanical,
-                electrical, and civil engineering.
-              </li>
-              <li>Construction Cost Analysis: Estimating and evaluating potential construction costs.</li>
-              <li>
-                Knowledge of Laws: Familiarity with building construction regulations and their impact on design and
-                construction.
-              </li>
-              <li>Plan Development: Expanding the approved schematic design to specify greater detail.</li>
-              <li>
-                Construction Documents: Describing materials, hardware, and equipment as depicted in the drawings.
-              </li>
-              <li>
-                Tendering and Contract Negotiations: Managing bidding procedures, evaluating bids, and negotiating
-                contracts.
-              </li>
-              <li>
-                Construction Phase: Overseeing tasks such as processing payment requests, reviewing drawings, and
-                managing change orders.
-              </li>
-              <li>
-                Project Management: Creating and maintaining systems for the efficient delivery of architectural
-                projects.
-              </li>
-              <li>
-                Professional Behavior and Performance: Upholding obligations that prioritize the public interest and
-                adhere to ethical standards.
-              </li>
-            </ul>
-            <p>
-              <strong>Step 3: Interview</strong>
-            </p>
-            <p>
-              <strong>Step 4: Obtaining the BEFA Certificate</strong>
-            </p>
-            <p>
-              After successfully completing the previous steps, applicants are awarded the BEFA certificate, which
-              signifies their compliance with Canadian standards and their competence to practice architecture
-              professionally. This certification can then be presented to the Ontario Association of Architects (OAA) to
-              obtain official certification and commence architectural practice in Canada.
-            </p>
-          </div>
-        </div>
-
-        <div className='row'>
-          <div className='col-12 col-md-6'>
-            <iframe
-              style={{ height: '350px' }}
-              src='https://www.youtube.com/embed/CdndSIFbqHE'
-              title='YouTube video player'
-              frameborder='0'
-              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-              allowfullscreen
-            ></iframe>
-          </div>
-
-          <div className='col-12 col-md-6'>
-            <iframe
-              style={{ height: '350px' }}
-              src='https://www.youtube.com/embed/OzWltvbcozQ'
-              title='YouTube video player'
-              frameborder='0'
-              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-
         <div id='FAQ' className='row'>
-          <h3>Frequently Asked Questions</h3>
+          <h3>سوالات متداول </h3>
 
           <div className='accordion p-0' id='FAQEngineering'>
             <div className='accordion-item'>
@@ -579,17 +365,14 @@ const Index = () => {
                   aria-expanded='true'
                   aria-controls='Question1'
                 >
-                  Which universities in Montreal and Quebec provide architecture programs and what are the prevailing
-                  educational approaches?
+                  نرم افزار رویت و اتوکد را چطوری در کانادا می توانیم داخل لب تاب نصب کنیم؟
                 </button>
               </h2>
               <div id='Question1' className='accordion-collapse collapse show' data-bs-parent='#FAQEngineering'>
                 <div className='accordion-body'>
                   <p>
-                    In Montreal, the Université de Montréal offers architecture programs in French, covering various
-                    specializations. McGill University, on the other hand, offers a two-year Master of Architecture
-                    program taught in English. Proficiency in the English language is required to enroll in this course,
-                    but students have the opportunity to submit their className projects and theses in French.
+                    برای این کار دو راه وجود دارد. شما میتوانید هر یک از این نرم افزارها را بخرید یا به صورت کرک شده دانلود کنید. اگر بخواهید این محصولات را خریداری کنیدمیتوانید پرداخت را در Auotdesk.com انجام دهید و لینک دانلود را دریافت کنید. اما اگر میخواهید از نرم افزارها به صورت کرک شده (یا نسخه قفل شکسته) استفاده کنید، به دلیل مقایرت با قوانین کپی رایت، ما راه حلی برای ارایه نداریم.
+
                   </p>
                 </div>
               </div>
@@ -605,17 +388,14 @@ const Index = () => {
                   aria-expanded='false'
                   aria-controls='Question2'
                 >
-                  Which is more beneficial: emphasizing visualization software or acquiring proficiency in 3D MAX for
-                  robust modeling? In Canada, what software do university professors and companies typically favor?
+                  کدام دانشگاه های مونتریال و کبک ارایه دهنده رشته معماری هستند و چه گرایش هایی را آموزش میدهند؟
                 </button>
               </h2>
               <div id='Question2' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
                 <div className='accordion-body'>
                   <p>
-                    View and TradeMax are commonly utilized software tools by professionals, including university
-                    professors and commercial entities. For efficient modeling, Sketchup is widely preferred by
-                    individuals and organizations. In general, possessing proficiency in multiple software applications
-                    can be regarded as a significant advantage for individuals.
+                    در مونترال دانشگاه Universite De Montreal رشته معماری را به زبان فرانسه و در گرایش های متعددی ارائه میدهد. دانشگاه McGill University تنها یک دوره ی دو ساله ی مستر معماری دارد که از آن جایی که کلاس ها به زبان انگلیسی برگزار میشوند برای شرکت در این دوره داشتن مدرک زبان انگلیسی الزامی است اما دانشجویان میتوانند پروژه های کلاسی و پایان نامه های خود را به زیان فرانسه ارائه دهند.
+
                   </p>
                 </div>
               </div>
@@ -631,14 +411,13 @@ const Index = () => {
                   aria-expanded='false'
                   aria-controls='Question3'
                 >
-                  When does the new course for beginners in the new software begin?
+                  آیا بهتر است روی نرم افزار رویت متمرکز باشیم یا برای مدلسازی قوی تریدی مکس
                 </button>
               </h2>
               <div id='Question3' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
                 <div className='accordion-body'>
                   <p>
-                    For specific information about the course dates, please visit the individual course pages or reach
-                    out to the website's support team.
+                    رویت و تریدی مکس هر دو از نرم افزارهایی هستند که اکثر حرفه ای ها از جمله اساتید دانشگاهی و شرکت های تجاری از آن ها استفاده میکنند. برای مدلسازی سریع نیز اکثر افراد و شرکت ها از اسکچاپ (Sketchup) استفاده میکنند. در کل تسلط بر تعداد بیشتری از نرم افزارها میتواند برای فرد مزیت مهمی محسوب شود.
                   </p>
                 </div>
               </div>
@@ -654,15 +433,14 @@ const Index = () => {
                   aria-expanded='false'
                   aria-controls='Question4'
                 >
-                  Is having a French language degree an advantage for universities in Montreal and Quebec, or is an
-                  English language degree still necessary?
+                  نرم افزار رویت از چه تاریخی شروع میشود؟
                 </button>
               </h2>
               <div id='Question4' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
                 <div className='accordion-body'>
                   <p>
-                    Proficiency in French is indeed considered an advantage as it enhances the prospects of securing
-                    employment in the field of architecture in Montreal.
+                    برای اطلاع دقیق از تاریخ برگزاری دوره ها، لطفا به صفحه هر دوره مراجع کنید یا با پشتیبانی سایت در ارتباط باشید.
+
                   </p>
                 </div>
               </div>
@@ -678,228 +456,14 @@ const Index = () => {
                   aria-expanded='false'
                   aria-controls='Question5'
                 >
-                  Where can I find information about the process of obtaining an architectural license?
+                  آیا داشتن مدرک زبان فرانسه بعنوان امتیاز مثبت برای دانشگاه های مونتریال و کبک محسوب میشود یا همچنان مدرک زبان انگلیسی مورد نیاز است؟
                 </button>
               </h2>
               <div id='Question5' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
                 <div className='accordion-body'>
                   <p>
-                    For details on the process of obtaining an architectural license in Canada and to learn about who
-                    can become an architect, please refer to the architecture page on the Fanavaran website.
-                  </p>
-                </div>
-              </div>
-            </div>
+                    تسلط به زبان فرانسه امتیاز مثبت محسوب میشود زیرا احتمال پیدا کردن کار در زمینه ی معماری در مونترال را افزایش میدهد.
 
-            <div className='accordion-item'>
-              <h2 className='accordion-header'>
-                <button
-                  className='accordion-button collapsed'
-                  type='button'
-                  data-bs-toggle='collapse'
-                  data-bs-target='#Question6'
-                  aria-expanded='false'
-                  aria-controls='Question6'
-                >
-                  Is it a requirement to complete the NBC Part 3 course in order to pass the BCIN Preparation Exam
-                  course? I have already completed NBC Part 9.
-                </button>
-              </h2>
-              <div id='Question6' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                <div className='accordion-body'>
-                  <p>Yes, it is necessary to pass both courses.</p>
-                </div>
-              </div>
-            </div>
-
-            <div className='accordion-item'>
-              <h2 className='accordion-header'>
-                <button
-                  className='accordion-button collapsed'
-                  type='button'
-                  data-bs-toggle='collapse'
-                  data-bs-target='#Question7'
-                  aria-expanded='false'
-                  aria-controls='Question7'
-                >
-                  If our goal is not to obtain an architectural license, would passing the building code courses be
-                  sufficient?
-                </button>
-              </h2>
-              <div id='Question7' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                <div className='accordion-body'>
-                  <p>
-                    In general, while these courses, such as building code and Revit, are necessary for securing a job,
-                    they alone are not enough. It is important to complement them with networking efforts. It is worth
-                    noting that the title of architect is exclusively reserved for individuals who hold a valid license.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className='accordion-item'>
-              <h2 className='accordion-header'>
-                <button
-                  className='accordion-button collapsed'
-                  type='button'
-                  data-bs-toggle='collapse'
-                  data-bs-target='#Question8'
-                  aria-expanded='false'
-                  aria-controls='Question8'
-                >
-                  What courses do you recommend for aspiring architects to enhance their employability in the field?
-                </button>
-              </h2>
-              <div id='Question8' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                <div className='accordion-body'>
-                  <ol>
-                    <li>
-                      It is advisable to focus on mastering the correct application of the National Building Code (NBC)
-                      and, if applicable to your location in Ontario, the Ontario Building Code (OBC) Part 3 and Part 9.
-                    </li>
-                    <li>
-                      Concurrently, pursuing licensure through the Ontario Association of Architects (OAA) can
-                      significantly boost your professional credentials.
-                    </li>
-                    <li>
-                      If you intend to work on smaller projects, consider obtaining the Building Code Identification
-                      Number (BCIN) certification.
-                    </li>
-                    <li>
-                      Additionally, acquiring knowledge in Project Management Professional (PMP) principles can greatly
-                      enhance your career prospects. In Canada, architects often take on project management roles, and
-                      possessing PMP expertise is highly valued by employers and adds a strong highlight to your resume.
-                    </li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-
-            <div className='accordion-item'>
-              <h2 className='accordion-header'>
-                <button
-                  className='accordion-button collapsed'
-                  type='button'
-                  data-bs-toggle='collapse'
-                  data-bs-target='#Question9'
-                  aria-expanded='false'
-                  aria-controls='Question9'
-                >
-                  If I obtain a master's degree from a university that is not accredited by the Canadian Architectural
-                  Certification Board (CACB), what is the procedure for obtaining CACB approval after completing my
-                  master's degree?
-                </button>
-              </h2>
-              <div id='Question9' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                <div className='accordion-body'>
-                  <p>
-                    To pursue CACB approval after obtaining a master's degree from a non-accredited university, you will
-                    need to complete an accreditation application. The process is similar to that of foreign architects
-                    seeking accreditation.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className='accordion-item'>
-              <h2 className='accordion-header'>
-                <button
-                  className='accordion-button collapsed'
-                  type='button'
-                  data-bs-toggle='collapse'
-                  data-bs-target='#Question10'
-                  aria-expanded='false'
-                  aria-controls='Question10'
-                >
-                  For individuals interested in taking the OBC exam, which chapters of the Building Code should they
-                  focus on?
-                </button>
-              </h2>
-              <div id='Question10' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                <div className='accordion-body'>
-                  <p>
-                    To prepare for the OBC exam, it is important to study Part 3 and Part 9 of the Building Code.
-                    Initially, you will need to take the legal exam and register your BCIN score. Following that,
-                    depending on the specific exam you are taking, you will need to familiarize yourself with different
-                    sections of the first and second volumes of the code.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className='accordion-item'>
-              <h2 className='accordion-header'>
-                <button
-                  className='accordion-button collapsed'
-                  type='button'
-                  data-bs-toggle='collapse'
-                  data-bs-target='#Question11'
-                  aria-expanded='false'
-                  aria-controls='Question11'
-                >
-                  Which documents translated from Iran are required for obtaining a license?
-                </button>
-              </h2>
-              <div id='Question11' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                <div className='accordion-body'>
-                  <p>
-                    Please refer to the following link for information regarding degree/diploma accreditation by CACB:{' '}
-                    <a href='https://cacb.ca/non-accredited-professional-degree/'>
-                      Degree/Diploma not accredited by CACB.
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className='accordion-item'>
-              <h2 className='accordion-header'>
-                <button
-                  className='accordion-button collapsed'
-                  type='button'
-                  data-bs-toggle='collapse'
-                  data-bs-target='#Question12'
-                  aria-expanded='false'
-                  aria-controls='Question12'
-                >
-                  In relation to the Building Code of Canada, is it feasible to study and train in our spare time before
-                  immigrating, considering its significance in securing employment?
-                </button>
-              </h2>
-              <div id='Question12' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                <div className='accordion-body'>
-                  <ol>
-                    <li>
-                      Architectural mentoring sessions in Canada: These sessions take place every two weeks on
-                      Wednesdays and are also conducted as workshops.
-                    </li>
-                    <li>
-                      CV writing and job search: Several workshops have been conducted, and weekly meetings are held
-                      every Wednesday to assist with CV writing and job search.
-                    </li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-
-            <div className='accordion-item'>
-              <h2 className='accordion-header'>
-                <button
-                  className='accordion-button collapsed'
-                  type='button'
-                  data-bs-toggle='collapse'
-                  data-bs-target='#Question13'
-                  aria-expanded='false'
-                  aria-controls='Question13'
-                >
-                  Does Fanavaran carry out the LEED exam?
-                </button>
-              </h2>
-              <div id='Question13' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                <div className='accordion-body'>
-                  <p>
-                    No, the LEED exam is administered by the company that holds the American concession at specific
-                    centers, and it is not within the scope of work for Fanavaran.
                   </p>
                 </div>
               </div>

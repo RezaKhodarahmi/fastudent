@@ -258,7 +258,7 @@ const Index = () => {
             <div className='col-12 col-md-4 p-0'>
               <div className='row p-0'>
                 <div className='col-5'>
-                  <img src='' className='img-fluid' />
+                  <img src='img/team/maryam_rajabi.jpg' className='img-fluid' />
                 </div>
                 <div className='col-7'>
                   <h4>Maryam Rajabi</h4>

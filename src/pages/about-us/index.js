@@ -180,10 +180,10 @@ const Index = () => {
             <div className='col-12 col-md-4 p-0'>
               <div className='row p-0'>
                 <div className='col-5'>
-                  <img src='img/team/parham_fazlali.jpg' className='img-fluid' />
+                  <img src='img/team/maryam_rajabi.jpg' className='img-fluid' />
                 </div>
                 <div className='col-7'>
-                  <h4>Parham FazlAli</h4>
+                  <h4>Maryam Rajabi</h4>
                   <span>Graphic Designer</span>
                 </div>
               </div>
@@ -219,10 +219,10 @@ const Index = () => {
             <div className='col-12 col-md-4 p-0'>
               <div className='row p-0'>
                 <div className='col-5'>
-                  <img src='img/team/nima_farhadi.jpg' className='img-fluid' />
+                  <img src='img/team/parham_fazlali.jpg' className='img-fluid' />
                 </div>
                 <div className='col-7'>
-                  <h4>Nima Farhadi</h4>
+                  <h4>Parham FazlAli</h4>
                   <span>Graphic Designer</span>
                 </div>
               </div>
@@ -232,7 +232,7 @@ const Index = () => {
             <div className='col-12 col-md-4 p-0'>
               <div className='row p-0'>
                 <div className='col-5'>
-                  <img src='' className='img-fluid' />
+                  <img src='img/team/hesam_bagheri.jpg' className='img-fluid' />
                 </div>
                 <div className='col-7'>
                   <h4>Hesam Bagheri</h4>
@@ -258,10 +258,10 @@ const Index = () => {
             <div className='col-12 col-md-4 p-0'>
               <div className='row p-0'>
                 <div className='col-5'>
-                  <img src='' className='img-fluid' />
+                  <img src='img/team/nima_farhadi.jpg' className='img-fluid' />
                 </div>
                 <div className='col-7'>
-                  <h4>Maryam Rajabi</h4>
+                  <h4>Nima Farhadi</h4>
                   <span>Graphic Designer</span>
                 </div>
               </div>
