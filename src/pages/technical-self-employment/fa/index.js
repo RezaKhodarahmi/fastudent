@@ -63,44 +63,20 @@ const Index = () => {
         <div className='row'>
           <div className='col-12'>
             <p>
-              Canada is a nation known for its numerous infrastructure facilities, but it faces the challenge of a
-              limited workforce in the field of technical engineering. Consequently, self-employment and technical
-              self-employment opportunities are prevalent in Canada, encompassing a wide range of professions.
+            در بعد فنی مهندسی، کانادا کشوری با امکانات زیرساختی فراوان و نیروی کار محدود است. به همین جهت مشاغلی که به عنوان Self employed یا خود اشتغالی فنی در کانادا تعریف می‌شوند دایره گسترده‌ای دارند.
+
             </p>
             <p>
-              The concept of self-employment can be defined as follows: "An individual who establishes a business
-              utilizing their skills and expertise to produce and sell goods or services is considered self-employed.
-              This type of self-employment often involves engaging in contractual agreements with various companies."
+            در تعریف خود اشتغالی می‌توان چنین گفت: «هرکسی که بنا بر مهارت‌ها و توانمندی‌های خود، کسب‌وکاری ایجاد می‌کند و به تولید و فروش کالا یا خدمات خود می‌پردازد، یک فرد خود اشتغال است. این خود اشتغالی می‌تواند در قالب قراردادهایی با شرکت‌های مختلف هم باشد.»
             </p>
-            <p>Table of contents:</p>
-            <ol>
-              <li>
-                <a href='#P1'>Features of Technical Self-employment in Canada</a>
-              </li>
-              <li>
-                <a href='#P2'>Personal Qualities Of A Self-Employed Individual</a>
-              </li>
-              <li>
-                <a href='#P3'>Advantages of self-employment in Canada</a>
-              </li>
-              <li>
-                <a href='#P4'>Drawbacks of self-employment in Canada</a>
-              </li>
-              <li>
-                <a href='#P5'>Distinctive Characteristics Of A Self-Employed Individual</a>
-              </li>
-              <li>
-                <a href='#FAQ'>FAQs</a>
-              </li>
-            </ol>
           </div>
         </div>
 
         <div className='row'>
-          <h3>Before you start</h3>
+          <h3>قبل از اینکه شروع کنید</h3>
           <div className='col-12'>
             <iframe
-              src='https://www.youtube.com/embed/W2rouB4h1cQ'
+              src='https://www.youtube.com/embed/ribjOcXBZW4'
               title='YouTube video player'
               frameborder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
@@ -110,142 +86,113 @@ const Index = () => {
         </div>
 
         <div id='P1' className='row'>
-          <h3>Features of Technical Self-employment in Canada</h3>
+          <h3>ویژگی‌های خود اشتغالی فنی در کانادا</h3>
 
           <div className='col-12'>
             <p>
-              Key features of technical self-employment in Canada should be taken into consideration by individuals
-              seeking such opportunities. These characteristics include:
+            کسانی که برای خود اشتغالی فنی در کانادا اقدام می‌کنند، باید با ویژگی‌های زیر آشنا شوند:
             </p>
-            <ul>
-              <li>Ability to work for multiple companies concurrently.</li>
-              <li>Personal responsibility for provincial and national taxes and deficits.</li>
-              <li>Utilization of personal facilities and tools for work purposes.</li>
+            <ol>
+              <li>می‌توانند همزمان برای چندین شرکت کار کنند</li>
+              <li>این افراد شخصا مسئول تکس‌ها و کسری‌های استانی و کشوری هستند</li>
+              <li>از امکانات و وسایل خود برای کار استفاده می‌کنند</li>
               <li>
-                Typically, there is no formal inspection or supervision in accordance with organizational regulations.
+              معمولا تحت قوانین سازمانی، بازرسی و نظارت در کار نمی‌شوند
               </li>
-            </ul>
+            </ol>
           </div>
         </div>
 
         <div id='P2' className='row'>
-          <h3>Personal Qualities Of A Self-Employed Individual</h3>
+          <h3>مشخصات فردی یک Self employed</h3>
 
           <div className='col-12'>
             <ol>
               <li>
-                Willingness to take risks: Self-employment involves inherent risk-taking, as income is variable and
-                influenced by external and environmental factors.
+              از مشخصات بارز خوداشتغالی، ریسک‌پذیری است، چرا که درآمد فرد شاغل ثابت نیست و به شرایط متعدد محیطی و بیرونی بستگی دارد.
               </li>
               <li>
-                Leadership and self-starting abilities: A self-employed person must possess leadership qualities and be
-                proactive in organizing daily work priorities, sustaining motivation independently.
+              یک فرد خود اشتغال باید رهبر و خودکار باشد که هر روز بتواند الویت‌های کاری خود را مرتب کند و به صورت خود انگیزشی به ادامه کار بپردازد.
               </li>
               <li>
-                Business acumen: It is essential to have a comprehensive understanding of the industry, as well as the
-                prevailing business and environmental conditions and trends at the national and provincial level. This
-                includes the ability to effectively market and generate business opportunities.
+              او باید شناخت خوبی از بیزینس کار داشته باشد و شرایط محیطی و روندهای کشوری و استانی را در جهت کاری که می‌خواهد انجام دهد. این یعنی که فرد باید توانایی بازاریابی و ایجاد بیزینس در شغل خود را داشته باشد.
               </li>
               <li>
-                Entrepreneurial mindset: Besides their specialized work, a self-employed individual must continuously
-                seek out new opportunities, attract fresh clients, and secure new contracts, demonstrating a proactive
-                approach to business growth.
+              این شخص علاوه بر انجام کار تخصصی خود باید به عنوان رهبر بیزینس مدام در صدد ایجاد موقعیت‌های جدید، پیدا کردن کلاینت‌های جدید و بستن قراردادهای جدید باشد.
               </li>
               <li>
-                Technical expertise: Strong technical knowledge in one's field is crucial for successful technical
-                self-employment in Canada.
+              دانش تکنیکال خوب راجع به کار نیز دیگر مشخصه فردی است که برای خود اشتغالی فنی در کانادا باید به آن توجه داشته باشید.
               </li>
             </ol>
           </div>
         </div>
 
         <div id='P3' className='row'>
-          <h3>Advantages Of Self-Employment In Canada</h3>
+          <h3>مزایای خود اشتغالی در کانادا</h3>
 
           <div className='col-12'>
             <p>
-              Technical self-employment in Canada offers numerous advantages to individuals, which, of course, need to
-              be weighed against the associated risks. These benefits include:
+            خوداشتغالی فنی در کانادا مزایای بسیاری برای فرد به همراه دارد که البته در کنار ریسک‌های این کار قرار می‌گیرد:
             </p>
-            <ul>
-              <li>Flexibility in scheduling and working hours, allowing for greater control over one's calendar.</li>
+            <ol>
+              <li> تقویم و ساعت کاری منعطف </li>
               <li>
-                The ability to implement changes at any level within the business, providing autonomy and the
-                opportunity to shape the direction of one's work.
+              توانایی ایجاد تغییر در هر سطح در بیزینس
               </li>
               <li>
-                The potential for significantly higher income levels compared to traditional employment arrangements.
+              رسیدن به سطح درآمدی بسیار بالاتر در مقایسه با کار کارمندی
               </li>
-            </ul>
+            </ol>
           </div>
         </div>
 
         <div id='P4' className='row'>
-          <h3>Drawbacks Of Self-Employment In Canada</h3>
+          <h3>مضرات خود اشتغالی در کانادا</h3>
 
           <div className='col-12'>
-            <p>
-              There are certain disadvantages associated with self-employment in Canada that should be considered. These
-              include:
-            </p>
             <ul>
               <li>
-                Risk of business failure: Self-employed individuals face the inherent risk of business instability and
-                potential failure.
+              ریسک شکست خوردن بیزینس
               </li>
               <li>
-                Multifaceted responsibilities: Self-employment requires simultaneous efforts in both technical and
-                business aspects, necessitating proficiency in various areas.
+              تلاش در چند جبهه (هم قسمت فنی و هم قسمت بیزینس)
               </li>
               <li>
-                Financial considerations: Self-employed individuals bear the primary and ancillary costs of running a
-                business, including ongoing investments in areas such as advertising, recruitment, and other
-                organizational matters.
-              </li>
-              <li>
-                Dominance of small-scale enterprises: Self-employed businesses in Canada are predominantly characterized
-                as small workshops, with a significant presence in the service sector.
+              هزینه‌های اصلی و جانبی بیزینس و لزوم سرمایه‌گذاری دائمی روی مسائلی همچون تبلیغات، استخدام و دیگر مسائل سازمانی
               </li>
             </ul>
             <p>
-              This form of employment is commonly referred to as "freelance employment." The term originates from the
-              fact that self-employed individuals are independent of employer control and possess freedom of action in
-              their work.
+            کسب‌وکارهای خوداشتغالی عمدتا در زمره‌ی کارگاه‌های کوچک قرار می‌گیرند و بیشتر این کسب و کارها در بخش خدمات هستند.
             </p>
+            <p>همچنین از این نوع اشتغال به «اشتغال در مشاغل آزاد» نیز نام برده می‌شود. دلیل این نامگذاری می‌تواند آن باشد که فرد Self-employed از سیطره‌ استخدام کارفرما رها بوده و از آزادی عمل برخوردار است.</p>
           </div>
         </div>
 
         <div id='P5' className='row'>
-          <h3>Distinctive Characteristics Of A Self-Employed Individual</h3>
+          <h3>مشخصه‌های تخصصی یک فرد خود اشتغال</h3>
 
           <div className='col-12'>
             <p>
-              Typically, self-employed individuals in technical fields possess one or more specialized licenses,
-              although it is important to note that not all disciplines in Canada require specific licenses. The primary
-              areas of self-employment in Canada encompass:
+            معمولا کسانی که به صورت Self employed در رده‌های فنی فعالیت می‌کنند دارای یک یا چند لایسنس تخصصی هستند. البته بسیاری از رشته‌ها در کانادا لایسنس مخصوص به خود را ندارند. عمده‌ترین زمینه‌های فعالیتی به صورت خود اشتغالی در کانادا عبارتند از:
             </p>
-            <ul>
+            <ol>
               <li>
-                Educational services: This includes private mathematics tutoring, which does not necessitate a license.
-              </li>
-              <li>Healthcare: For instance, providing botox injections requires a valid license.</li>
-              <li>Consulting: Individuals with a P.Eng degree can work as Consulting Engineers.</li>
-              <li>Technical professions: Energy inspectors, for instance, require an Energy advisory license.</li>
+              خدمات آموزشی: مثل تدریس خصوصی ریاضیات (بدون نیاز به لایسنس)</li>
+              <li>بهداشتی درمانی: مثلا تزریق بوتاکس (نیاز به لایسنس دارد) </li>
+              <li>مشاوره‌ای: مهندس مشاور (با داشتن مدرک P.Eng)</li>
+              <li>فنی حرفه ای: مثل بازرس انرژی ( با داشتن لایسنس Energy advisory)</li>
               <li>
-                Agricultural sector: Small-scale production units involving crops, horticulture, livestock, and aquatic
-                products.
+              در بخش کشاورزی: واحدهای کوچک تولید محصولات زراعی، باغی، دامی و آبزیان
               </li>
-            </ul>
+            </ol>
             <p>
-              Government supervision is prevalent for most self-employed businesses, primarily through the issuance of
-              various licenses. The "business license" is the most common type, with its specific requirements typically
-              handled through trade unions.
+            نظارت دولت بر اکثر کسب‌وکارهای خوداشتغالی از طریق صدور مجوزهای مختلف صورت می‌گیرد. معمول‌ترین این مجوزها «پروانه کسب» است که دریافت آن شرایط خاص خود را دارد و عمدتا از طریق اتحادیه‌های اصناف صورت می‌پذیرد.
             </p>
           </div>
         </div>
 
         <div className='row FNV-Related-Course'>
-          <h3>Related Technical Self-Employment Courses</h3>
+          <h3>دوره‌های مرتبط</h3>
 
           {/* Courses Desktop */}
           <CourseDeskSingle courses={courses} addToCart={addToCart} />
@@ -253,29 +200,8 @@ const Index = () => {
           <CourseMobileSingle courses={courses} addToCart={addToCart} />
         </div>
 
-        <div id='P6' className='row'>
-          <h3>Registering A Business And Pursuing Self-Employment In Canada</h3>
-
-          <div className='col-12'>
-            <p>
-              As a self-employed business owner in Canada, it is essential to comply with the legal requirements and
-              register your business appropriately. This typically involves registering the company with the relevant
-              authorities, establishing it as a recognized legal entity, registering with tax authorities, and obtaining
-              the necessary permits and licenses. Beyond meeting legal obligations, registering a self-employed business
-              offers numerous advantages.
-            </p>
-            <p>
-              Embarking on technical self-employment and starting a business in Canada is an exhilarating yet
-              challenging endeavor, reliant on your skills, abilities, innovation, and diligent work ethic. To further
-              support your self-employment goals, you can leverage special resources and assistance available from banks
-              and other government institutions. Ultimately, the growth and dynamism of the Canadian economy rely on the
-              entrepreneurial spirit and employment opportunities created by individuals pursuing self-employment.
-            </p>
-          </div>
-        </div>
-
         <div id='FAQ' className='row'>
-          <h3>Frequently Asked Questions</h3>
+          <h3>سوالات متداول</h3>
 
           <div className='accordion p-0' id='FAQEngineering'>
             <div className='accordion-item'>
@@ -288,16 +214,13 @@ const Index = () => {
                   aria-expanded='true'
                   aria-controls='Question1'
                 >
-                  What kind of work permit or visa do I need for self-employment or working as a freelancer?
+                برای خود اشتغالی یا کار به عنوان فریلنسر به چه نوع مجوز یا ویزا کار نیاز دارم؟
                 </button>
               </h2>
               <div id='Question1' className='accordion-collapse collapse show' data-bs-parent='#FAQEngineering'>
                 <div className='accordion-body'>
                   <p>
-                    To engage in self-employment or work as a freelancer in Canada, it is crucial to understand the
-                    suitable work permit or visa required. If your intention is to work as a freelancer for multiple
-                    Canadian companies, obtaining an Open Work Permit is necessary. Conversely, Closed Work Permits
-                    restrict you to working exclusively for a specific employer.
+                  اگر می خواهید در بیش از یک شرکت کانادایی به عنوان فریلنسر کار کنید، به یک مجوز کار آزاد یا Open Work Permit نیاز دارید. مجوزهای کار معمولی یا Closed Work Permits فقط به شما امکان می دهد برای یک کارفرمای خاص کار کنید.
                   </p>
                 </div>
               </div>
@@ -313,16 +236,13 @@ const Index = () => {
                   aria-expanded='false'
                   aria-controls='Question2'
                 >
-                  Can individuals on a study visa engage in self-employment?
+                آیا میتوان با ویزای تحصیلی به خوداشتغالی پرداخت؟
                 </button>
               </h2>
               <div id='Question2' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
                 <div className='accordion-body'>
                   <p>
-                    Typically, individuals holding study visas are permitted to work for limited durations, both on and
-                    off campus. Therefore, freelancing can be a viable option for them, as long as they adhere to the
-                    regulations outlined by the Immigration Department and other relevant organizations, ensuring
-                    compliance with the stipulated guidelines.
+                  به طور کلی دارندگان ویزا تحصیلی ممکن است بتوانند در داخل و خارج از دانشگاه برای زمان‌های محدودی کار کنند، بنابراین فریلنسینگ میتواند یک انتخاب خوب برای آنها باشد به شرطی که قوانین اداره مهاجرت و سازمان‌های مربوط به انجام آن کار زیر پا گذاشته نشوند.
                   </p>
                 </div>
               </div>
@@ -338,19 +258,15 @@ const Index = () => {
                   aria-expanded='false'
                   aria-controls='Question3'
                 >
-                  Are freelancing opportunities available in all fields and industries?
+               آیا می توانم در هر زمینه و برای هر صنعتی به صورت آزاد کار کنم؟
+
                 </button>
               </h2>
               <div id='Question3' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
                 <div className='accordion-body'>
                   <p>
                     <p>
-                      No, certain occupations in Canada are subject to regulation by specific organizations, requiring
-                      individuals to obtain the appropriate licenses or designations to practice them. It is important
-                      to note that different provinces or regions have distinct laws and regulatory bodies governing
-                      these occupations. If your desired profession falls within these regulated categories, it is
-                      crucial to contact the relevant institutions before commencing your activities to undergo the
-                      necessary evaluation and licensing procedures.
+                    خیر. برخی از مشاغل در کانادا تحت نظارت سازمان‌های خاصی هستند، به این معنی که شما باید مجوز فعالیت یا دزیگنیشن‌های (designation) خاصی برای انجام آنها دریافت کنید. استان ها/منطقه های مختلف قوانین و نهادهای نظارتی متفاوتی دارند. اگر شغل شما مورد نظر شما از این دسته از مشاغل باشد، لازم است قبل از شروع فعالیت خود با نهادهای مربوطه تماس بگیرید تا مراحل ارزیابی و صدور مجوز را طی کنید.
                     </p>
                   </p>
                 </div>
@@ -367,15 +283,14 @@ const Index = () => {
                   aria-expanded='false'
                   aria-controls='Question4'
                 >
-                  Is it necessary to inform Canadian organizations or authorities about self-employment?
+               آیا برای خوداشتغالی باید به سازمان‌ها یا مراجع کانادایی اطلاع دهم؟
                 </button>
               </h2>
               <div id='Question4' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
                 <div className='accordion-body'>
                   <p>
                     <p>
-                      If you conduct your self-employment solely using your own name and without utilizing any other
-                      brand name, there is no requirement to register your activity with the government.
+                    اگر فعالیت خود را منحصراً تحت نام خود و بدون نام تجاری دیگری انجام می دهید، نیازی به ثبت فعالیت خود در دولت ندارید.
                     </p>
                   </p>
                 </div>
@@ -392,63 +307,14 @@ const Index = () => {
                   aria-expanded='false'
                   aria-controls='Question5'
                 >
-                  Are taxes applicable to self-employment activities?
+              آیا فعالیت‌های خوداشتغالی شامل مالیات میشوند؟
                 </button>
               </h2>
               <div id='Question5' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
                 <div className='accordion-body'>
                   <p>
-                    Certainly. Any form of income-generating activities, whether conducted within or outside of Canada,
-                    is subject to taxation.
-                  </p>
-                </div>
-              </div>
-            </div>
+                  بله. تمام فعالیت‌هایی که منجر به کسب درآمد در داخل یا خارج از کانادا باشند شامل مالیات میشوند.
 
-            <div className='accordion-item'>
-              <h2 className='accordion-header'>
-                <button
-                  className='accordion-button collapsed'
-                  type='button'
-                  data-bs-toggle='collapse'
-                  data-bs-target='#Question6'
-                  aria-expanded='false'
-                  aria-controls='Question6'
-                >
-                  What is the maximum tax-exempt income in Canada?
-                </button>
-              </h2>
-              <div id='Question6' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                <div className='accordion-body'>
-                  <p>
-                    In Canada, individuals, whether employed or self-employed, can enjoy tax exemption on income up to
-                    $13,808.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className='accordion-item'>
-              <h2 className='accordion-header'>
-                <button
-                  className='accordion-button collapsed'
-                  type='button'
-                  data-bs-toggle='collapse'
-                  data-bs-target='#Question7'
-                  aria-expanded='false'
-                  aria-controls='Question7'
-                >
-                  What are the eligibility requirements for immigrating to Canada as a self-employed person?
-                </button>
-              </h2>
-              <div id='Question7' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                <div className='accordion-body'>
-                  <p>
-                    In order to qualify for immigration as a self-employed person in Canada, you are required to possess
-                    a minimum of two years of relevant experience and provide evidence of your intention to work as a
-                    self-employed individual within the country. Additionally, you must obtain a minimum score of 35
-                    points in the applicable assessment system, which demonstrates your ability to contribute to
-                    Canada's economic growth.
                   </p>
                 </div>
               </div>
