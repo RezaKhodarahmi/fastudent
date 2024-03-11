@@ -23,6 +23,7 @@ import FormHelperText from '@mui/material/FormHelperText'
 import InputAdornment from '@mui/material/InputAdornment'
 import MuiFormControlLabel from '@mui/material/FormControlLabel'
 import RegisterWizard from 'src/views/forms/form-wizard/RegisterWizard'
+import { appConfig } from 'src/configs/appConfig'
 
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
@@ -40,7 +41,6 @@ import { useAuth } from 'src/hooks/useAuth'
 import { useSettings } from 'src/@core/hooks/useSettings'
 
 // ** Demo Imports
-
 const defaultValues = {
   email: '',
   username: '',
@@ -98,7 +98,9 @@ const Register = () => {
   const theme = useTheme()
   const { register } = useAuth()
   const { settings } = useSettings()
-  const hidden = useMediaQuery(theme.breakpoints.down('md'))
+
+  // const hidden = useMediaQuery(theme.breakpoints.down('md'))
+  const hidden = false
 
   // ** Vars
   const { skin } = settings
@@ -156,13 +158,13 @@ const Register = () => {
           }}
         >
           <Box sx={{ width: '70%' }}>
-            <Logo />
+            <img src={appConfig.appUrl + '/img/logo.png'} alt='logo' width='200' height='50' />
 
             <Box sx={{ my: 6 }}>
               <Typography sx={{ mb: 1.5, fontWeight: 500, fontSize: '1.625rem', lineHeight: 1.385 }}>
                 Sign Up For The Fanavaran
               </Typography>
-              <Typography sx={{ color: 'text.secondary' }}>some text here</Typography>
+              <Typography sx={{ color: 'text.secondary' }}>Join Our Community</Typography>
             </Box>
 
             <RegisterWizard />

@@ -3,6 +3,7 @@ import { useState } from 'react'
 
 // ** Next Imports
 import Link from 'next/link'
+import { appConfig } from 'src/configs/appConfig'
 
 // ** MUI Components
 import Alert from '@mui/material/Alert'
@@ -152,11 +153,7 @@ const LoginPage = () => {
           }}
         >
           <Box sx={{ width: '100%', maxWidth: 400 }}>
-            <LoginMainLogo
-              width={250}
-              alt='login-illustration'
-              src={`/images/${imageSource}-${theme.palette.mode}.png`}
-            />
+            <img src={appConfig.appUrl + '/img/logo.png'} alt='logo' width='200' height='50' />
 
             <Box sx={{ my: 6 }}>
               <Typography sx={{ mb: 1.5, fontWeight: 500, fontSize: '1.625rem', lineHeight: 1.385 }}>

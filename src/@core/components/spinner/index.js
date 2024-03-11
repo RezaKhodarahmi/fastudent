@@ -3,6 +3,7 @@ import { useTheme } from '@mui/material/styles'
 import Box from '@mui/material/Box'
 import { styled } from '@mui/material/styles'
 import CircularProgress from '@mui/material/CircularProgress'
+import { appConfig } from 'src/configs/appConfig'
 
 // ** Hooks
 import { useSettings } from 'src/@core/hooks/useSettings'
@@ -42,7 +43,8 @@ const FallbackSpinner = ({ sx }) => {
         ...sx
       }}
     >
-      <LoginMainLogo width={100} alt='login-illustration' src={`/images/${imageSource}-${theme.palette.mode}.png`} />
+                 <img src={appConfig.appUrl + '/img/logo.png'} alt='logo' width='200' height='50' />
+
 
       <CircularProgress color='warning' disableShrink sx={{ mt: 6 }} />
     </Box>

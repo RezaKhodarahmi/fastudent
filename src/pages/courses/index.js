@@ -182,8 +182,8 @@ const Index = () => {
           </div>
 
           <div className='row justify-content-center'>
-            <Link href='#' className='FNV-Btn BtnOutline PrimaryColor BtnLarge FNV-SeeMore'>
-              See All Blogs
+            <Link href='/blog' className='FNV-Btn BtnOutline PrimaryColor BtnLarge FNV-SeeMore'>
+              {t('see-all-posts')}
             </Link>
           </div>
         </div>

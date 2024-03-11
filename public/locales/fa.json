@@ -13,6 +13,7 @@
   "language":"زبان سایت",
   "add-to-cart":"افزودن به سبد خرید",
   "see-details":"مشاهده جزئیات",
+  "read-more":"خواندن بیشتر",
   "all-courses":"همه دوره ها",
   "empty-search-input":"برای جستجو ابتدا نام یک دوره و یا دسته بندی را وارد کنید.",
   "fanavaran-search-result":"نتایج جستجو...",
@@ -55,7 +56,7 @@
   "blogs-section-title": "خبرهای فناوران",
   "blogs-section-button": "نمایش همه خبرها",
   "testimonials-section-title": "نظرات کاربران",
-  
+
   "testimonials-section-comment-one-caption": "در خصوص دوره Foundation واقعا از نحوه تدریس جناب استاد آریانفر تشکر میکنم واقعا مطالب عنوان شده در کلاس و slide ها آموزنده بودند و همیتطور با توجه به امکان دسترسی به فایل ضبط شده کلاس امکان مرور چند باره مطالب باعث افزایش یادگیری می باشد. با امید پیشرفت بیشتر برای شما و آروزی موفقیت در آموزش کسانیکه مهاجرت می کنند و نیاز به یک کار مناسب دارند.",
   "testimonials-section-comment-one-name": "حسین بزرگی",
   "testimonials-section-comment-one-coursename": "Energy Advisory",
@@ -106,5 +107,18 @@
   "footer-three-privacy": "قوانین و مقررات",
   "footer-three-faq": "سوالات متداول",
 
-  "footer-copyright": "© تمامی حقوق این وبسایت متعلق به مجتمع فنی مهندسی فناوران می باشد."
+  "footer-copyright": "© تمامی حقوق این وبسایت متعلق به مجتمع فنی مهندسی فناوران می باشد.",
+  "fanavaran-youtube-channel":"کانال یوتیوب فناوران",
+  "just-visit-our-channel": "کافی است به کانال یوتیوب مراجعه کنید.",
+  "collected-about-courses":"ما اطلاعات مفیدی در مورد دوره ها، دزیگنیشن ها و لایسنس های کانادایی جمع آوری کرده ایم.",
+  "we-provide-useful-content":"فناوران جهت کمک به جامعه ایرانی کانادا اطلاعات مفیدی را جمع آوری کرده است.",
+"continue-reading":"مطالب بیشتر",
+"contact-us":"تماس با ما",
+"about-us":"درباره ما",
+"courses":"دوره ها",
+"webinars":"وبینار ها",
+"membership":"عضویت ویژه",
+"blog":"وبلاگ",
+"see-all-posts":"مشاهده تمام پست ها"
+
 }

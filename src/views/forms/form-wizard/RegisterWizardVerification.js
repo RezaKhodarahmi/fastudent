@@ -122,7 +122,6 @@ const StepperLinearWithValidationVerification = props => {
     if (auth.response) {
       setUser(auth.response)
       setRegisterStep(auth.response.registerStep)
-      console.log('The first one' + auth.response.registerStep)
 
       if (parseInt(auth.response.registerStep) !== 1) {
         setActiveStep(auth.response.registerStep - 1)
@@ -172,7 +171,6 @@ const StepperLinearWithValidationVerification = props => {
   })
 
   const onSubmit = e => {
-    console.log('The Last one' + registerStep)
     setFormData({ registerStep, email: user.email, token, ...e })
     setActiveStep(activeStep + 1)
     setIsSubmite(true)

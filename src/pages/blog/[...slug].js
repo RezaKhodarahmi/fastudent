@@ -9,7 +9,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getBlogWithSlug } from 'src/store/apps/blog'
 import styles from './SinglePost.module.css' // Import your CSS module here
 
-
 // ** Import Translation
 import { useTranslation } from 'react-i18next'
 
@@ -59,7 +58,7 @@ const SinglePost = () => {
       </Head>
 
       <section className='FNV-Single-Post'>
-        <div className="container">
+        <div className='container'>
           <div className='row'>
             <div className='col-12 FNV-FeatureImage'>
               <img src={post.image} alt={post.title} />
@@ -72,45 +71,75 @@ const SinglePost = () => {
                 <span className='FNV-Author'>
                   {/* Logo or Image */}
                   <div className='FNV-Author-Image'>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-pentagon" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                      <path d="M13.163 2.168l8.021 5.828c.694 .504 .984 1.397 .719 2.212l-3.064 9.43a1.978 1.978 0 0 1 -1.881 1.367h-9.916a1.978 1.978 0 0 1 -1.881 -1.367l-3.064 -9.43a1.978 1.978 0 0 1 .719 -2.212l8.021 -5.828a1.978 1.978 0 0 1 2.326 0z" />
-                      <path d="M12 13a3 3 0 1 0 0 -6a3 3 0 0 0 0 6z" />
-                      <path d="M6 20.703v-.703a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v.707" />
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      class='icon icon-tabler icon-tabler-user-pentagon'
+                      viewBox='0 0 24 24'
+                      stroke-width='1.5'
+                      fill='none'
+                      stroke-linecap='round'
+                      stroke-linejoin='round'
+                    >
+                      <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+                      <path d='M13.163 2.168l8.021 5.828c.694 .504 .984 1.397 .719 2.212l-3.064 9.43a1.978 1.978 0 0 1 -1.881 1.367h-9.916a1.978 1.978 0 0 1 -1.881 -1.367l-3.064 -9.43a1.978 1.978 0 0 1 .719 -2.212l8.021 -5.828a1.978 1.978 0 0 1 2.326 0z' />
+                      <path d='M12 13a3 3 0 1 0 0 -6a3 3 0 0 0 0 6z' />
+                      <path d='M6 20.703v-.703a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v.707' />
                     </svg>
                   </div>
                   {/* Name */}
                   <div className='FNV-Author-Name'>
-                    <span>Author: <strong>Author Name</strong></span>
+                    <span>
+                      Author: <strong>Author Name</strong>
+                    </span>
                   </div>
 
                   {/* Logo or Image */}
                   <div className='FNV-Author-Image'>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                      <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-                      <path d="M18 18m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
-                      <path d="M15 3v4" />
-                      <path d="M7 3v4" />
-                      <path d="M3 11h16" />
-                      <path d="M18 16.496v1.504l1 1" />
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      class='icon icon-tabler icon-tabler-calendar-time'
+                      viewBox='0 0 24 24'
+                      stroke-width='1.5'
+                      fill='none'
+                      stroke-linecap='round'
+                      stroke-linejoin='round'
+                    >
+                      <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+                      <path d='M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4' />
+                      <path d='M18 18m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0' />
+                      <path d='M15 3v4' />
+                      <path d='M7 3v4' />
+                      <path d='M3 11h16' />
+                      <path d='M18 16.496v1.504l1 1' />
                     </svg>
                   </div>
                   {/* Name */}
                   <div className='FNV-Author-Name'>
-                    <span>Date: <strong>Post Publishing Date</strong></span>
+                    <span>
+                      Date: <strong>Post Publishing Date</strong>
+                    </span>
                   </div>
 
                   {/* Logo or Image */}
                   <div className='FNV-Author-Image'>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-circle-2" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                      <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      class='icon icon-tabler icon-tabler-message-circle-2'
+                      viewBox='0 0 24 24'
+                      stroke-width='1.5'
+                      fill='none'
+                      stroke-linecap='round'
+                      stroke-linejoin='round'
+                    >
+                      <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+                      <path d='M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1' />
                     </svg>
                   </div>
                   {/* Name */}
                   <div className='FNV-Author-Name'>
-                    <span>Comments: <strong>Count of Comments</strong></span>
+                    <span>
+                      Comments: <strong>Count of Comments</strong>
+                    </span>
                   </div>
                 </span>
               </div>
@@ -125,14 +154,14 @@ const SinglePost = () => {
 
       {/* Blog */}
       <section className='FNV-Blog-Related'>
-        <h3>{t('Continue Reading')}</h3>
+        <h3>{t('continue-reading')}</h3>
         <div className='container'>
           <div className='row'>
             <div className='col-12'>
               {/* Blogs Desktop */}
-              {/* <SingleDeskBlog /> */}
+              <SingleDeskBlog />
               {/* Blogs Mobile */}
-              {/* <SingleMobileBlog /> */}
+              <SingleMobileBlog />
             </div>
           </div>
         </div>

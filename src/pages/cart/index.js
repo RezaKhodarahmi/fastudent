@@ -192,7 +192,6 @@ const Index = () => {
           })
             .then(res => res.json())
             .then(data => {
-              console.log(data)
 
               const { clientSecret } = data // Make sure to retrieve the correct clientSecret from the response
               setClientSecret(clientSecret)

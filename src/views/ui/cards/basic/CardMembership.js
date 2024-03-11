@@ -30,7 +30,6 @@ const CardMembership = props => {
   //set state when props is change
   useEffect(() => {
     if (props.user) {
-      console.log(props.user)
       setCredit(props.user?.credit)
       setReferralCode(props.user?.referralCode)
     }

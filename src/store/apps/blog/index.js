@@ -52,7 +52,6 @@ export const fetchBlogData = () => async dispatch => {
 
 export const getBlogWithSlug = slug => async dispatch => {
   dispatch(getDataStart())
-  console.log(slug)
   try {
     const token = window.localStorage.getItem('accessToken')
 

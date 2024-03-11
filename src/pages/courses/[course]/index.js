@@ -52,7 +52,6 @@ const Course = () => {
     if (commentSubmit && newComment) {
       dispatch(postNewComment({ content: newComment, email: JSON.parse(userEmail), courseId: courseId }))
 
-      // console.log(newComment, JSON.parse(userEmail), courseId)
       setCommentSubmit(false)
     }
   }, [commentSubmit, newComment])

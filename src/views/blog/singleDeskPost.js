@@ -50,25 +50,26 @@ const SingleDeskPost = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className='d-none d-sm-none d-md-block'
       >
-        {posts?.map(post => (
-          <SwiperSlide key={post.id}>
-            <div className='card'>
-              <img src={post.image} className='card-img-top' alt='...' />
-              <div className='card-body'>
-                <h4 className='card-title'>{post.title}</h4>
+        {Array.isArray(posts) &&
+          posts?.map(post => (
+            <SwiperSlide key={post.id}>
+              <div className='card'>
+                <img src={post.image} className='card-img-top' alt='...' />
+                <div className='card-body'>
+                  <h4 className='card-title'>{post.title}</h4>
 
-                <span>
-                  {/* SVG and DateFormat component here */}
-                  <DateFormat date={post.createdAt} />
-                </span>
+                  <span>
+                    {/* SVG and DateFormat component here */}
+                    <DateFormat date={post.createdAt} />
+                  </span>
 
-                <Link href={`/blog/${post.slug}`} className='FNV-Btn BtnPrimary BtnLarge'>
-                  Read More
-                </Link>
+                  <Link href={`/blog/${post.slug}`} className='FNV-Btn BtnPrimary BtnLarge'>
+                    Read More
+                  </Link>
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
+            </SwiperSlide>
+          ))}
       </Swiper>
     </>
   )

@@ -1,5 +1,5 @@
 {
-  "certificate": "certificate",
+  "certificate": "Certificate",
   "Engineer":"Engineer",
   "fanavaran-courses":"Fanavaran Courses",
   "fanavaran-motto":"Become Successful Again!",
@@ -12,6 +12,7 @@
   "search-placeholder":"Searching for the desired course or category...",
   "language":"Language",
   "add-to-cart":"Add to Cart",
+  "read-more":"Read more",
   "see-details":"See Details",
   "all-courses":"All courses",
   "empty-search-input":"To search, first enter the name of a course or category",
@@ -51,25 +52,28 @@
   "category-section-three-button": "FANAVARAN VIP Membership",
 
   "courses-section-title": "New Courses",
-  "webinars-section-title": "New Wbinars",
+  "webinars-section-title": "New webinars",
   "blogs-section-title": "Blogs",
   "blogs-section-button": "See All Blogs",
   "testimonials-section-title": "Testimonials",
 
+
+  "testimonials-section-comment-one-caption": "در خصوص دوره Foundation واقعا از نحوه تدریس جناب استاد آریانفر تشکر میکنم واقعا مطالب عنوان شده در کلاس و slide ها آموزنده بودند و همیتطور با توجه به امکان دسترسی به فایل ضبط شده کلاس امکان مرور چند باره مطالب باعث افزایش یادگیری می باشد. با امید پیشرفت بیشتر برای شما و آروزی موفقیت در آموزش کسانیکه مهاجرت می کنند و نیاز به یک کار مناسب دارند.",
+  "testimonials-section-comment-one-name": "حسین بزرگی",
+  "testimonials-section-comment-one-coursename": "Energy Advisory",
+
+  "testimonials-section-comment-two-caption": "در دوره انرژی ادوایزری در کلاس های مجموعه فناوران شرکت کردم و توانستم آزمون اول را با موفقیت پشت سر بگذارم .درحال حاضر درحال آمادگی برای آزمون دوم هستم .ضمن تشکر از زحمات بی دریغ آقای مهندس آریانفر برای دوره بسیار مفیدی که برگزار کردند و همچنین تیم حرفه ای فناوران که این امکان را برای بنده و سایر علاقه مندان فراهم نمودند خواستم از این فرصت استفاده کنم و شرکت در این دوره را به تمام دوستانی که علاقه مند به حوزه انرژی هستند و قصد دارند در این فیلد مشغول به کار شوند پیشنهاد کنم . با آرزوی موفقیت برای شما دوستان",
+  "testimonials-section-comment-two-name": "شیما احمدی",
+  "testimonials-section-comment-two-coursename": "Energy Advisory",
+
+  "testimonials-section-comment-three-caption": "حدودا ۷ ماه هست که به کانادا اومدم. بعد از حدود ۱۰ سال سابقه کار در زمینه معماری، در دو ماه اول حضورم در کشور جدید کاملا گیج بودم و تصمیم داشتم برم سراغ کار جنرال و یا درس بخونم برای ایجاد نتورک. به لطف یکی از دوستانم با مجموعه فناوران آشنا شدم و بعد از دیدن چندین ویدئو در کانال یوتیوب فناوران، در دوره رزومه نویسی شرکت کردم. در اونجا به لطف مهندس امانی علاوه بر آشنایی با شیوه رزومه نویسی حرفه ای و موثر، اهمیت نظم و دیسیپلین و نکات بسیار مهمی رو در مورد نحوه انتخاب ادامه مسیر برای موفق شدن در کانادا و ساخت نتورک حرفه ای یاد گرفتم.",
+  "testimonials-section-comment-three-name": "سعید مویدی",
+  "testimonials-section-comment-three-coursename": "Resume & Networking",
   "testimonials-section-comment-one-title": "",
-  "testimonials-section-comment-one-caption": "",
-  "testimonials-section-comment-one-name": "",
-  "testimonials-section-comment-one-coursename": "",
 
   "testimonials-section-comment-two-title": "",
-  "testimonials-section-comment-two-caption": "",
-  "testimonials-section-comment-two-name": "",
-  "testimonials-section-comment-two-coursename": "",
 
   "testimonials-section-comment-three-title": "",
-  "testimonials-section-comment-three-caption": "",
-  "testimonials-section-comment-three-name": "",
-  "testimonials-section-comment-three-coursename": "",
 
   "testimonials-section-comment-four-title": "",
   "testimonials-section-comment-four-caption": "",
@@ -110,5 +114,17 @@
   "footer-three-privacy": "Privacy Policy",
   "footer-three-faq": "Frequently Asked Questions",
 
-  "footer-copyright": "Copyright © 2015-2023 Fanavaran. All rights reserved."
+  "footer-copyright": "Copyright © 2015-2023 Fanavaran. All rights reserved.",
+  "fanavaran-youtube-channel":"FANAVARAN Youtube Channel",
+  "just-visit-our-channel": "It is enough to visit the YouTube channel of the technicians.",
+  "collected-about-courses":"We have collected about Canadian courses, designations, and certificates.",
+  "we-provide-useful-content":"We at Fanavaran provide useful and diverse content for your further information",
+"continue-reading":"Continue Reading",
+"contact-us":"Contact us",
+"about-us":"About us",
+"courses":"Courses",
+"webinars":"Webinars",
+"membership":"VIP Membership",
+"blog":"Blog",
+"see-all-posts":"See all posts"
 }

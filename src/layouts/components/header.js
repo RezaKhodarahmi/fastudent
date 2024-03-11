@@ -282,11 +282,11 @@ const Header = props => {
               <ul className='navbar-nav mb-2 mb-lg-0'>
                 <li className='nav-item dropdown FNV-MegaMenu'>
                   <Link className='nav-link' href='/courses' aria-expanded='false'>
-                    Courses
+                    {t('courses')}
                   </Link>
                 </li>
 
-                <li className='nav-item dropdown FNV-MegaMenu'>
+                {/* <li className='nav-item dropdown FNV-MegaMenu'>
                   <Link className='nav-link' href='/' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
                     Certification
                   </Link>
@@ -324,21 +324,35 @@ const Header = props => {
                       </div>
                     </div>
                   </ul>
-                </li>
+                </li> */}
 
                 <li className='nav-item dropdown FNV-MegaMenu'>
                   <Link className='nav-link' href='/membership/checkout'>
-                    Membership
+                    {t('membership')}
                   </Link>
                 </li>
 
                 <li className='nav-item dropdown FNV-MegaMenu'>
                   <Link className='nav-link' href='/blog' aria-expanded='false'>
-                    Blog
+                    {t('blog')}
                   </Link>
                 </li>
-
                 <li className='nav-item dropdown FNV-MegaMenu'>
+                  <Link className='nav-link' href='/webinars' aria-expanded='false'>
+                    {t('webinars')}
+                  </Link>
+                </li>
+                <li className='nav-item dropdown FNV-MegaMenu'>
+                  <Link className='nav-link' href='/contact-us' aria-expanded='false'>
+                    {t('contact-us')}
+                  </Link>
+                </li>
+                <li className='nav-item dropdown FNV-MegaMenu'>
+                  <Link className='nav-link' href='/about-us' aria-expanded='false'>
+                    {t('about-us')}
+                  </Link>
+                </li>
+                {/* <li className='nav-item dropdown FNV-MegaMenu'>
                   <Link className='nav-link' href='/' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
                     Business Solutions
                   </Link>
@@ -376,7 +390,7 @@ const Header = props => {
                       </div>
                     </div>
                   </ul>
-                </li>
+                </li> */}
               </ul>
 
               <div className='d-flex' role='search'>
@@ -456,11 +470,9 @@ const Header = props => {
                   <Link className='nav-link' href='/courses' aria-expanded='false'>
                     {t('menu-courses')}
                   </Link>
-                  <ul className='dropdown-menu'>
+                  {/* <ul className='dropdown-menu'>
                     <div className='container-fluid'>
-                      <Link href='/'>
-                        Explore Courses<span>See the latest that FANAVARAN has to offer</span>
-                      </Link>
+                      <Link href='/courses'>{t('courses')}</Link>
                       <div className='row'>
                         <div className='col'>
                           <span>
@@ -614,10 +626,10 @@ const Header = props => {
                         </div>
                       </div>
                     </div>
-                  </ul>
+                  </ul> */}
                 </li>
                 {/* Certification */}
-                <li className='nav-item dropdown FNV-MegaMenu'>
+                {/* <li className='nav-item dropdown FNV-MegaMenu'>
                   <Link className='nav-link' href='/' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
                     {t('menu-certificate')}
                   </Link>
@@ -750,7 +762,7 @@ const Header = props => {
                       </div>
                     </div>
                   </ul>
-                </li>
+                </li> */}
                 {/* Membership */}
                 <li className='nav-item dropdown FNV-MegaMenu'>
                   <Link
@@ -761,89 +773,6 @@ const Header = props => {
                   >
                     {t('menu-membership')}
                   </Link>
-                  <ul className='dropdown-menu pe-0 pb-0 w-50'>
-                    <div className='container-fluid pe-0 pb-0'>
-                      <Link href='/'>
-                        Membership<span>Become a part of the FANAVARAN family</span>
-                      </Link>
-                      <div className='row'>
-                        <div className='col-md-6 pb-4'>
-                          <div className='row'>
-                            <div className='col-6'>
-                              <span>
-                                <i data-feather='users'></i> Membership Overview
-                              </span>
-                              <li>
-                                <Link className='dropdown-item' href='/membership/checkout'>
-                                  Become a Member
-                                </Link>
-                              </li>
-                              <li>
-                                <Link className='dropdown-item' href='/'>
-                                  Student Membership
-                                </Link>
-                              </li>
-                              <li>
-                                <Link className='dropdown-item' href='/'>
-                                  Local Chapters
-                                </Link>
-                              </li>
-                              <li>
-                                <Link className='dropdown-item' href='/'>
-                                  Membership FAQs
-                                </Link>
-                              </li>
-                              <li>
-                                <Link className='dropdown-item' href='/'>
-                                  Business Reading Center
-                                </Link>
-                              </li>
-                            </div>
-                            <div className='col-6'>
-                              <span>
-                                <i data-feather='users'></i> Community
-                              </span>
-                              <li>
-                                <Link className='dropdown-item' href='/'>
-                                  Global Community
-                                </Link>
-                              </li>
-                              <li>
-                                <Link className='dropdown-item' href='/'>
-                                  Volunteering
-                                </Link>
-                              </li>
-                              <li>
-                                <Link className='dropdown-item' href='/'>
-                                  Career Central
-                                </Link>
-                              </li>
-                              <li>
-                                <Link className='dropdown-item' href='/'>
-                                  Item 4
-                                </Link>
-                              </li>
-                              <li>
-                                <Link className='dropdown-item' href='/'>
-                                  Item 5
-                                </Link>
-                              </li>
-                            </div>
-                          </div>
-                        </div>
-                        <div className='col-md-6'>
-                          <div className='row FNV-QuickAction'>
-                            <div className='col-12'>
-                              <Link className='dropdown-item' href='/membership/checkout'>
-                                <i data-feather='user'></i>
-                                <span>Become a Member</span>
-                              </Link>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </ul>
                 </li>
 
                 <li className='nav-item dropdown FNV-MegaMenu'>
@@ -851,8 +780,23 @@ const Header = props => {
                     {t('menu-blogs')}
                   </Link>
                 </li>
+                <li className='nav-item dropdown FNV-MegaMenu'>
+                  <Link className='nav-link' href='/webinars' aria-expanded='false'>
+                    {t('webinars')}
+                  </Link>
+                </li>
 
                 <li className='nav-item dropdown FNV-MegaMenu'>
+                  <Link className='nav-link' href='/contact-us' aria-expanded='false'>
+                    {t('contact-us')}
+                  </Link>
+                </li>
+                <li className='nav-item dropdown FNV-MegaMenu'>
+                  <Link className='nav-link' href='/about-us' aria-expanded='false'>
+                    {t('about-us')}
+                  </Link>
+                </li>
+                {/* <li className='nav-item dropdown FNV-MegaMenu'>
                   <Link className='nav-link' href='/' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
                     {t('menu-business')}
                   </Link>
@@ -890,7 +834,7 @@ const Header = props => {
                       </div>
                     </div>
                   </ul>
-                </li>
+                </li> */}
               </ul>
 
               <div className='d-flex' role='search'>

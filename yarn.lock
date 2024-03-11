@@ -3188,9 +3188,9 @@
   "version" "2.0.3"
 
 "ip@^2.0.0":
-  "integrity" "sha512-WKa+XuLG1A1R0UWhl2+1XQSi+fZWMsYKffMZTTYsiZaUD8k2yDAj5atimTUD2TZkyCkNEeYE5NhFZmupOGtjYQ=="
-  "resolved" "https://registry.npmjs.org/ip/-/ip-2.0.0.tgz"
-  "version" "2.0.0"
+  "integrity" "sha512-lJUL9imLTNi1ZfXT+DU6rBBdbiKGBuay9B6xGSPVjUeQwaH1RIGqef8RZkUtHioLmSNpPR5M4HVKJGm1j8FWVQ=="
+  "resolved" "https://registry.npmjs.org/ip/-/ip-2.0.1.tgz"
+  "version" "2.0.1"
 
 "is-array-buffer@^3.0.2", "is-array-buffer@^3.0.4":
   "integrity" "sha512-wcjaerHw0ydZwfhiKbXJWLDY8A7yV7KhjQOpb83hGgGfId/aQa4TOvwyzn2PuswW2gPCYEL/nEAiSVpdOj1lXw=="
@@ -3424,9 +3424,9 @@
     "set-function-name" "^2.0.1"
 
 "jose@^4.11.4", "jose@^4.15.4":
-  "integrity" "sha512-W+oqK4H+r5sITxfxpSU+MMdr/YSWGvgZMQDIsNoBDGGy4i7GBPTtvFKibQzW06n3U3TqHjhvBJsirShsEJ6eeQ=="
-  "resolved" "https://registry.npmjs.org/jose/-/jose-4.15.4.tgz"
-  "version" "4.15.4"
+  "integrity" "sha512-jc7BFxgKPKi94uOvEmzlSWFFe2+vASyXaKUpdQKatWAESU2MWjDfFf0fdfc83CDKcA5QecabZeNLyfhe3yKNkg=="
+  "resolved" "https://registry.npmjs.org/jose/-/jose-4.15.5.tgz"
+  "version" "4.15.5"
 
 "jquery@^3.7.0":
   "integrity" "sha512-m4avr8yL8kmFN8psrbFFFmB/If14iN5o9nw/NgnnM+kybDJpRsAynV2BsfpTYrTRysYUdADVD7CkUUizgkpLfg=="

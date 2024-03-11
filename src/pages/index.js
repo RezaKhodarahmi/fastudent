@@ -119,11 +119,11 @@ const Home = () => {
           </svg>
 
           <p>
-            We at Fanavaran provide useful and diverse content for your further information
+            {t('we-provide-useful-content')}
             <br />
-            We have collected about Canadian courses, designations and certificates.
+            {t('collected-about-courses')}
             <br />
-            It is enough to visit the YouTube channel of the technicians.
+            {t('just-visit-our-channel')}
           </p>
 
           <Link
@@ -131,7 +131,7 @@ const Home = () => {
             target='_blank'
             className='FNV-Btn BtnOutline BtnLarge'
           >
-            FANAVARAN Youtube Channel
+            {t('fanavaran-youtube-channel')}
           </Link>
         </div>
       </section>
@@ -150,7 +150,7 @@ const Home = () => {
           </div>
 
           <div className='row justify-content-center'>
-            <Link href='#' className='FNV-Btn BtnOutline PrimaryColor BtnLarge FNV-SeeMore'>
+            <Link href='/blog' className='FNV-Btn BtnOutline PrimaryColor BtnLarge FNV-SeeMore'>
               {t('blogs-section-button')}
             </Link>
           </div>

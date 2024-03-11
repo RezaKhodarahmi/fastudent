@@ -93,7 +93,6 @@ const Index = () => {
 
   useEffect(() => {
     if (profileDetails?.data?.transactions) {
-      console.log(profileDetails)
       setOrders(profileDetails.data.transactions)
       setUser(profileDetails.data.user)
       setLoading(false)

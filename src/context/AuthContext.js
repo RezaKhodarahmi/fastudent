@@ -177,9 +177,8 @@ const AuthProvider = ({ children }) => {
       })
   }
 
-  // Store user meta after successfull verification
+  // Store user meta after successful verification
   const handleRegisterInfo = params => {
-    console.log(params)
     setResponse(null)
     axios
       .post(authConfig.registerPersonalInfo, params)
@@ -221,7 +220,6 @@ const AuthProvider = ({ children }) => {
   }
 
   const handleResetpassword = (params, errorCallback, successCallback) => {
-    console.log(params)
     axios
       .post(authConfig.resetpasswordEndpoint, params)
       .then(res => {
