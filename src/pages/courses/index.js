@@ -55,9 +55,10 @@ const Index = () => {
     )
   }
   useEffect(() => {
-    if (typeof feather !== 'undefined' && feather !== null) {
-      feather.replace();
-    }
+    // if (typeof feather !== 'undefined' && feather !== null) {
+    //   feather.replace();
+    // }
+
     if (courseData?.data) {
       setCourse(courseData?.data?.data)
     }

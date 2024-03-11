@@ -66,9 +66,10 @@ const Course = () => {
     }
 
     window.addEventListener('storage', handleStorage)
-    if (typeof feather !== 'undefined' && feather !== null) {
-      feather.replace();
-    }
+
+    // if (typeof feather !== 'undefined' && feather !== null) {
+    //   feather.replace();
+    // }
 
     return () => window.removeEventListener('storage', handleStorage)
   }, [courseId, inCart, data])

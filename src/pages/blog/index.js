@@ -33,9 +33,10 @@ const BlogPage = () => {
   }, [])
 
   useEffect(() => {
-    if (typeof feather !== 'undefined' && feather !== null) {
-      feather.replace();
-    }
+    // if (typeof feather !== 'undefined' && feather !== null) {
+    //   feather.replace();
+    // }
+
     if (blogData?.data) {
       setPosts(blogData?.data?.data)
     }
@@ -56,7 +57,7 @@ const BlogPage = () => {
           <div className='container'>
             <div className='row'>
               <div className='col-12 FNV-HCard'>
-                <h5 class="text-white my-2">{t('Read with us')}</h5>
+                <h5 class='text-white my-2'>{t('Read with us')}</h5>
                 <h1>{t('Fanavaran Blog Archive')}</h1>
               </div>
             </div>
