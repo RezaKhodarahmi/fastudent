@@ -15,8 +15,10 @@ const Footer = props => {
   const { t } = useTranslation()
 
   useEffect(() => {
-    feather.replace()
-  })
+    if (typeof feather !== 'undefined' && feather !== null) {
+      feather.replace();
+    }
+  },[])
 
   return (
     <>
@@ -130,7 +132,7 @@ const Footer = props => {
                     </a>
                 </div>
 
-                <p>14 Leswyn Rd, North York, ON M6A 1K2</p> 
+                <p>14 Leswyn Rd, North York, ON M6A 1K2</p>
             </div>
 
             {/* Second Section */}

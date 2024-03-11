@@ -33,7 +33,9 @@ const BlogPage = () => {
   }, [])
 
   useEffect(() => {
-    feather.replace()
+    if (typeof feather !== 'undefined' && feather !== null) {
+      feather.replace();
+    }
     if (blogData?.data) {
       setPosts(blogData?.data?.data)
     }

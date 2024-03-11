@@ -10,8 +10,8 @@ const app = next({ dev })
 const handle = app.getRequestHandler()
 
 const httpsOptions = {
-  key: readFileSync('/etc/ssl/certs/fanavaran.crt'),
-  cert: readFileSync('/etc/ssl/private/fanavaran.key')
+  key: readFileSync('/etc/ssl/private/fanavaran.key'),
+  cert: readFileSync('/etc/ssl/certs/fanavaran.crt')
 }
 
 app.prepare().then(() => {

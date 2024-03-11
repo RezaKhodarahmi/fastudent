@@ -55,7 +55,9 @@ const Home = () => {
   }, [])
 
   useEffect(() => {
-    feather.replace()
+    if (typeof feather !== 'undefined' && feather !== null) {
+      feather.replace();
+    }
     if (webinarData?.data) {
       setWebinars(webinarData?.data?.data)
     }

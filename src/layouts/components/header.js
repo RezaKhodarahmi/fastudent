@@ -120,7 +120,9 @@ const Header = props => {
   }, [searchInput])
 
   useEffect(() => {
-    feather.replace()
+    if (typeof feather !== 'undefined' && feather !== null) {
+      feather.replace()
+    }
   }, [courses])
 
   useEffect(() => {
@@ -131,7 +133,9 @@ const Header = props => {
     }
 
     setSelectedIndex(null)
-    feather.replace()
+    if (typeof feather !== 'undefined' && feather !== null) {
+      feather.replace();
+    }
   }, [searchData, searchInput])
 
   const storeClickedCourse = course => {
