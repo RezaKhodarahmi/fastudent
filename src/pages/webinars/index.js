@@ -21,7 +21,7 @@ import 'swiper/css/navigation'
 
 const WebinarPage = () => {
   const [page, setPage] = useState(1)
-  const [webinars, setwebinars] = useState([])
+  const [webinars, setWebinars] = useState([])
 
   //Hooks
   const dispatch = useDispatch()
@@ -34,10 +34,9 @@ const WebinarPage = () => {
   }, [])
 
   useEffect(() => {
-    console.log(webinarData)
     feather.replace()
     if (webinarData?.data) {
-      setwebinars(webinarData?.data?.data)
+      setWebinars(webinarData?.data?.data)
     }
   }, [webinarData])
 
@@ -63,14 +62,13 @@ const WebinarPage = () => {
         </section>
 
         {Array.isArray(webinars) && <WebinarsSection webinars={webinars} />}
-        <section className='FNV-WebinarList'>
+        {/* <section className='FNV-WebinarList'>
           <div className='container'>
             <div className='row'>
-              <div className='col-12 col-md-4'>a</div>
-              <div className='col-12 col-md-8'>b</div>
+
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className='FNV-CourseList'>
           <div className='container'>

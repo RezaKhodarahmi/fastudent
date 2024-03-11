@@ -43,7 +43,6 @@ const WebinarDeskSingle = ({ webinars }) => {
   }
 
   const handelType = webinar => {
-    console.log(webinar)
     switch (webinar.type) {
       case 1:
         return '$' + webinar.regularPrice + ' ' + 'CAD'
@@ -86,7 +85,7 @@ const WebinarDeskSingle = ({ webinars }) => {
                         <Link href={`/webinars/${webinar.slug}`} className='FNV-Btn BtnOutline PrimaryColor w-100'>
                           See Details
                         </Link>
-                        <Link href='#' className='FNV-Btn SecondaryColor w-100'>
+                        <Link href={`/webinars/${webinar.slug}`} className='FNV-Btn SecondaryColor w-100'>
                           Enroll Now
                         </Link>
                       </div>

@@ -29,7 +29,7 @@ const CategoryFilters = ({ categories, selectedCategories, handleClearFilters, h
           </li>
           {categories &&
             categories?.map(item => (
-              <li key={item.id} class='nav-item' role='presentation'>
+              <li key={item.id} class='nav-item mb-2' role='presentation'>
                 <button
                   onClick={() => handleCategoryChange(item.id)}
                   className={`nav-link ${item.id == selectedCategories.id ? '' : null}`}
