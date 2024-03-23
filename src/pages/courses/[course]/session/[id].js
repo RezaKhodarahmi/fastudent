@@ -48,6 +48,7 @@ const VideoPage = () => {
 
 useEffect(() => {
   if (courseData?.data?.data?.videos) {
+    setVideos(courseData?.data?.data?.videos)
     const videoArray = courseData.data.data.videos;
     const currentVideo = videoArray.find(video => video.id.toString() === id.toString());
     if (currentVideo) {
@@ -75,7 +76,7 @@ useEffect(() => {
             <>
               {/* Video Player */}
               <Box sx={{ my: 3 }}>
-               
+
  <iframe src={currentVideoURL} width="100%" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
               </Box>
 

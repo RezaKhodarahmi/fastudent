@@ -15,6 +15,7 @@ import cart from 'src/store/apps/cart'
 import category from 'src/store/apps/category'
 import blog from 'src/store/apps/blog'
 import webinar from 'src/store/apps/webinar'
+import appointment from 'src/store/apps/appointment'
 import blogCategory from 'src/store/apps/blog-category'
 
 export const store = configureStore({
@@ -32,7 +33,8 @@ export const store = configureStore({
     blog,
     webinar,
     blogCategory,
-    cart
+    cart,
+    appointment
   },
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({
