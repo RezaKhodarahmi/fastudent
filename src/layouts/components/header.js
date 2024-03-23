@@ -119,11 +119,15 @@ const Header = props => {
     setSearchInput(inputValue)
   }, [searchInput])
 
-  // useEffect(() => {
-  //   if (typeof feather !== 'undefined' && feather !== null) {
-  //     feather.replace()
-  //   }
-  // }, [courses])
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (typeof feather !== 'undefined' && feather !== null) {
+        feather.replace()
+      }
+    }, 4000) // 10 seconds delay
+
+    return () => clearTimeout(timer) // Clear timeout on cleanup
+  }, [courses]) // Dependency array
 
   useEffect(() => {
     if (searchData?.data?.data) {
@@ -133,9 +137,8 @@ const Header = props => {
     }
 
     setSelectedIndex(null)
-    // if (typeof feather !== 'undefined' && feather !== null) {
-    //   feather.replace();
-    // }
+
+    // feather.replace()
   }, [searchData, searchInput])
 
   const storeClickedCourse = course => {
@@ -769,13 +772,8 @@ const Header = props => {
                 </li> */}
                 {/* Membership */}
                 <li className='nav-item dropdown FNV-MegaMenu'>
-                  <Link
-                    className='nav-link'
-                    href='/membership/checkout'
-                    data-bs-toggle='dropdown'
-                    aria-expanded='false'
-                  >
-                    {t('menu-membership')}
+                  <Link className='nav-link' href='/membership/checkout'>
+                    {t('membership')}
                   </Link>
                 </li>
 
@@ -976,3 +974,4 @@ export async function getStaticProps() {
 }
 
 export default Header
+

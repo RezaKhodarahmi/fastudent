@@ -46,14 +46,24 @@ const VideoPage = () => {
     }
   }, [id, course, userData])
 
-  useEffect(() => {
-    if (courseData?.data?.data?.videos) {
-      setVideos(courseData?.data?.data?.videos)
-      setCurrentVideoURL(courseData?.data?.data?.videos[id - 1]?.url)
-      setLoading(false)
-      setEnrolled(courseData?.data?.enrolled)
+useEffect(() => {
+  if (courseData?.data?.data?.videos) {
+    const videoArray = courseData.data.data.videos;
+    const currentVideo = videoArray.find(video => video.id.toString() === id.toString());
+    if (currentVideo) {
+      let videoUrl = currentVideo.url;
+
+      // Check if the URL is in a shareable format and convert it to an embeddable format
+      if (videoUrl.includes("vimeo.com") && !videoUrl.includes("player.vimeo.com")) {
+        const videoId = videoUrl.split('/').pop().split('?')[0]; // Extracts the video ID
+        videoUrl = `https://player.vimeo.com/video/${videoId}`; // Constructs the embeddable URL
+      }
+      setCurrentVideoURL(videoUrl); // Set the corrected URL
     }
-  }, [courseData])
+    setLoading(false);
+    setEnrolled(courseData?.data?.enrolled);
+  }
+}, [courseData, id]);
 
   return (
     <Container>
@@ -65,14 +75,15 @@ const VideoPage = () => {
             <>
               {/* Video Player */}
               <Box sx={{ my: 3 }}>
-                <ReactPlayer url={currentVideoURL} controls width='100%' height='600px' />
+               
+ <iframe src={currentVideoURL} width="100%" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
               </Box>
 
               {/* Next Courses List */}
               <Paper elevation={3}>
                 <Box p={3}>
                   <Typography variant='h5' gutterBottom>
-                    <ListIcon size={24} strokeWidth={1.5} style={{ verticalAlign: 'middle' }} /> Next Courses
+                    <ListIcon size={24} strokeWidth={1.5} style={{ verticalAlign: 'middle' }} />Courses
                   </Typography>
                   <Divider />
                   <List>

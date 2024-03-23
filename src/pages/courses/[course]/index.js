@@ -75,9 +75,9 @@ const Course = () => {
   }, [courseId, inCart, data])
 
   useEffect(() => {
-    if (courseData.error) {
-      router.replace('/404')
-    }
+   // if (courseData.error) {
+   //   router.replace('/404')
+   // }
     if (courseData?.data) {
       setData(courseData?.data?.data)
       setCourseId(courseData?.data?.data?.id)
@@ -442,10 +442,11 @@ const Course = () => {
                   <div className='FNV-Course-Card'>
                     {/* Head */}
                     <div className='FNV-Course-Card-Head'>
-                      <h4>Description</h4>
+                      <h4>Files and Materials</h4>
                     </div>
                     {/* Body */}
-                    {data?.abstract ? (
+                   
+                    {inEnrolled && data?.abstract ? (
                       <div className='FNV-Course-Card-Body'>
                         <div className='non-clickable-content' dangerouslySetInnerHTML={{ __html: data?.abstract }} />
                       </div>
@@ -909,7 +910,7 @@ const Course = () => {
         )}
         <div style={{ paddingTop: '15px' }}>
           <List component='nav' aria-label='comments'>
-            {data?.comments?.map(comment => (
+           {data?.comments?.map(comment => (
               <React.Fragment key={comment.id}>
                 <div>
                   <b>{comment?.user?.firstName + ' ' + comment?.user?.lastName}</b>
@@ -921,9 +922,9 @@ const Course = () => {
                   <>
                     <p>Answer:</p>
                     <List component='div' disablePadding>
-                      {comment.replies.map(reply => (
+                     {comment.replies.map(reply => (
                         <ListItem key={reply.id} sx={{ pl: 4, px: 10 }}>
-                          <ListItemText primary={reply.content} />
+                         <ListItemText primary={reply.content} />
                         </ListItem>
                       ))}
                     </List>
@@ -934,7 +935,7 @@ const Course = () => {
             ))}
           </List>
         </div>
-      </Box>
+     </Box>
 
       {/* Related Courses */}
       <section className='FNV-Course-Related'>

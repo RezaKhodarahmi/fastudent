@@ -33,6 +33,7 @@ const Test = () => {
   const [currentPage, setCurrentPage] = useState(1)
   const [userAnswers, setUserAnswers] = useState({})
   const [correctAnswers, setCorrectAnswers] = useState(0)
+
   useEffect(() => {
     dispatch(fetchTestData(quizze))
   }, [quizze])
@@ -69,6 +70,7 @@ const Test = () => {
     let correctCount = 0
     Object.values(userAnswers).forEach(answerArray => {
       if (answerArray[1] === 1) {
+
         // Assuming 1 is for correct and 0 is for incorrect
         correctCount++
       }
@@ -216,7 +218,6 @@ const Test = () => {
                               control={
                                 <Radio
                                   color='primary'
-                                  onChange={() => handleRadioChange(question.id, answer.id)}
                                   checked={userAnswers[question.id] && userAnswers[question.id].answerId === answer.id}
                                 />
                               }
