@@ -7,73 +7,113 @@
 body {
   font-family: 'Poppins', YekanBakh;
   font-weight: 400;
+}
 
-  // General
-  @import './general';
+a{
+  color: $SecondaryColor;
+  text-decoration: none!important;
+}
 
-  // Buttons
-  @import './button';
+// General
+@import './general';
 
-  // Badge
-  @import './badge';
+// Buttons
+@import './button';
 
-  // Alert
-  @import './alert';
+// Badge
+@import './badge';
 
-  // Navbar
-  @import './navbar';
+// Alert
+@import './alert';
 
-  // Header
-  @import './header';
+// Navbar
+@import './navbar';
 
-  // Top Categories
-  @import './homeCategory';
+// Header
+@import './header';
 
-  // New Courses
-  @import './NewCoursesHome';
+// Top Categories
+@import './homeCategory';
 
-  // New Webinars
+// New Courses
+@import './NewCoursesHome';
+
+// New Webinars
+html[dir="ltr"]{
   @import './NewWebinarsHome';
+}
 
-  // Youtube CTA
-  @import './YoutubeCTA';
+html[dir="rtl"]{
+  @import './NewWebinarsHome-RTL';
+}
 
-  // Youtube CTA
-  @import './LatestBlog';
+// Youtube CTA
+@import './YoutubeCTA';
 
-  // Membership
-  @import './membership';
+// Youtube CTA
+@import './LatestBlog';
 
-  // Certifications
-  @import './certification';
+// Membership
+@import './membership';
 
-  // Events
-  @import './events';
+// Certifications
+@import './certification';
 
-  // Events
-  @import './youtube';
+// Events
+@import './events';
 
-  &.FNV-Courses {
-    // All Courses Page
-    @import './courses';
-  }
+// Events
+@import './youtube';
 
-  &.FNV-SingleCourse {
-    // All Courses Page
-    @import './single-course';
-  }
+// About Us Page
+@import './About';
 
-  &.FNV-Cart {
-    // Cart
-    @import './cart';
-  }
+// Contact Us Page
+@import './Contact';
 
-  // OffCanvas
-  @import './offcanvas';
+// All Courses Page
+@import './courses';
 
-  // Social Media Fixed
-  @import './social';
+// All Courses Page
+@import './Webinars';
 
-  // Footer
+
+// Pages Single
+html[dir="ltr"]{
+  @import './Single-Page';
+}
+
+html[dir="rtl"]{
+  @import './Single-Page-RTL';
+}
+
+// Blogs Single
+@import './Blogs-Single';
+
+// All Blogs Page
+@import './Blogs';
+
+.FNV-SingleCourse {
+  // All Courses Page
+  @import './single-course';
+}
+
+.FNV-Cart {
+  // Cart
+  @import './cart';
+}
+
+// OffCanvas
+@import './offcanvas';
+
+// Social Media Fixed
+@import './social';
+
+// Footers
+html[dir="ltr"]{
   @import './footer';
+}
+
+html[dir="rtl"]{
+  @import './footer-RTL';
 }

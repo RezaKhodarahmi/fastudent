@@ -22,11 +22,7 @@ const navigation = () => {
               icon: 'tabler:id',
               path: '/app/dashboards/certificates'
             },
-            {
-              title: 'Quizzes',
-              icon: 'tabler:checkbox',
-              path: '/app/dashboards/quizzes'
-            },
+
             {
               title: 'Orders',
               icon: 'tabler:file-dollar',

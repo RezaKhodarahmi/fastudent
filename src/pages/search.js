@@ -29,7 +29,6 @@ const SearchPage = () => {
 
   useEffect(() => {
     setCourses(searchResults?.data?.data || [])
-    console.log(searchResults?.data?.data)
     setLoading(false)
   }, [searchResults])
 

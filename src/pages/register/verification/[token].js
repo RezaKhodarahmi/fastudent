@@ -1,37 +1,22 @@
 // ** React Imports
-import { useState, Fragment } from 'react'
+import { useState } from 'react'
 import { useRouter } from 'next/router'
 
 // ** Next Import
-import Link from 'next/link'
-import Grid from '@mui/material/Grid'
 import Logo from 'src/views/logoMain.js'
 
 // ** MUI Components
-import Button from '@mui/material/Button'
-import Divider from '@mui/material/Divider'
-import Checkbox from '@mui/material/Checkbox'
-import TextField from '@mui/material/TextField'
 import Typography from '@mui/material/Typography'
-import InputLabel from '@mui/material/InputLabel'
-import IconButton from '@mui/material/IconButton'
 import Box from '@mui/material/Box'
-import FormControl from '@mui/material/FormControl'
 import useMediaQuery from '@mui/material/useMediaQuery'
-import OutlinedInput from '@mui/material/OutlinedInput'
-import { styled, useTheme } from '@mui/material/styles'
-import FormHelperText from '@mui/material/FormHelperText'
-import InputAdornment from '@mui/material/InputAdornment'
-import MuiFormControlLabel from '@mui/material/FormControlLabel'
-import RegisterWizardVerification from 'src/views/forms/form-wizard/RegisterWizardVerification'
+import { useTheme } from '@mui/material/styles'
 
-// ** Icon Imports
-import Icon from 'src/@core/components/icon'
+import RegisterWizardVerification from 'src/views/forms/form-wizard/RegisterWizardVerification'
 
 // ** Third Party Imports
 import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
-import { useForm, Controller } from 'react-hook-form'
+import { useForm } from 'react-hook-form'
 
 // ** Layout Import
 import BlankLayout from 'src/@core/layouts/BlankLayout'
@@ -41,7 +26,6 @@ import { useAuth } from 'src/hooks/useAuth'
 import { useSettings } from 'src/@core/hooks/useSettings'
 
 // ** Demo Imports
-import FooterIllustrationsV2 from 'src/views/pages/auth/FooterIllustrationsV2'
 
 const defaultValues = {
   email: '',
@@ -49,48 +33,6 @@ const defaultValues = {
   password: '',
   terms: false
 }
-
-// ** Styled Components
-const RegisterIllustration = styled('img')(({ theme }) => ({
-  zIndex: 2,
-  maxHeight: 600,
-  marginTop: theme.spacing(12),
-  marginBottom: theme.spacing(12),
-  [theme.breakpoints.down(1540)]: {
-    maxHeight: 550
-  },
-  [theme.breakpoints.down('lg')]: {
-    maxHeight: 500
-  }
-}))
-
-const RightWrapper = styled(Box)(({ theme }) => ({
-  width: '100%',
-  [theme.breakpoints.up('md')]: {
-    maxWidth: 450
-  },
-  [theme.breakpoints.up('lg')]: {
-    maxWidth: 600
-  },
-  [theme.breakpoints.up('xl')]: {
-    maxWidth: 750
-  }
-}))
-
-const LinkStyled = styled(Link)(({ theme }) => ({
-  fontSize: '0.875rem',
-  textDecoration: 'none',
-  color: theme.palette.primary.main
-}))
-
-const FormControlLabel = styled(MuiFormControlLabel)(({ theme }) => ({
-  marginTop: theme.spacing(1.5),
-  marginBottom: theme.spacing(1.75),
-  '& .MuiFormControlLabel-label': {
-    fontSize: '0.875rem',
-    color: theme.palette.text.secondary
-  }
-}))
 
 const TokenVerification = () => {
   const router = useRouter()
@@ -116,9 +58,7 @@ const TokenVerification = () => {
   })
 
   const {
-    control,
     setError,
-    handleSubmit,
     formState: { errors }
   } = useForm({
     defaultValues,
@@ -143,7 +83,6 @@ const TokenVerification = () => {
       }
     })
   }
-  const imageSource = skin === 'bordered' ? 'auth-v2-register-illustration-bordered' : 'auth-v2-register-illustration'
 
   return (
     <Box className='content-right' sx={{ backgroundColor: 'background.paper' }}>

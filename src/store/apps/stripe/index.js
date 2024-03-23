@@ -47,7 +47,6 @@ export const paymentResult = paymentIntentId => async dispatch => {
     toast.success('Payment was successfully')
     dispatch(transactionSuccess(response.data))
   } catch (error) {
-    console.log(error.response?.data?.message)
     dispatch(transactionError(error.message))
 
     toast.error('Error! message:' + error.response?.data?.message)

@@ -31,14 +31,14 @@ const themeOptions = settings => {
           userFontFamily ||
           [
             'Public Sans',
-            'YekanBakh',
+            'Ravi',
             '-apple-system',
             'BlinkMacSystemFont',
             '"Segoe UI"',
             'Roboto',
             '"Helvetica Neue"',
             'Arial',
-            'YekanBakh',
+            'Ravi',
             '"Apple Color Emoji"',
             '"Segoe UI Emoji"',
             '"Segoe UI Symbol"'

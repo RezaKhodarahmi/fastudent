@@ -93,7 +93,6 @@ const Index = () => {
 
   useEffect(() => {
     if (profileDetails?.data?.transactions) {
-      console.log(profileDetails)
       setOrders(profileDetails.data.transactions)
       setUser(profileDetails.data.user)
       setLoading(false)
@@ -111,20 +110,25 @@ const Index = () => {
 
   const downloadPDF = async () => {
     const input = document.getElementById('modal-content')
+
     const canvas = await html2canvas(input, {
-      scale: 2 // Increase the scale for better quality
+      scale: 2
     })
+
     const imgData = canvas.toDataURL('image/png')
+
     const pdf = new jsPDF({
       orientation: 'portrait',
       unit: 'px',
       format: 'a4'
     })
+
     const pdfWidth = pdf.internal.pageSize.getWidth()
     const pdfHeight = pdf.internal.pageSize.getHeight()
     pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight)
     pdf.save('invoice.pdf')
   }
+
   if (loading) {
     return (
       <Box display='flex' justifyContent='center'>
@@ -136,11 +140,13 @@ const Index = () => {
   const getStatusStyle = status => ({
     color: status === 'succeeded' ? 'green' : 'red'
   })
+
   // Updated calculateSubtotal to use regularPrice from cycles
   const calculateSubtotal = items => {
     return items
       .reduce((acc, item) => {
         const price = item.cycles.length > 0 ? item.cycles[0].regularPrice : 0
+
         return acc + parseFloat(price)
       }, 0)
       .toFixed(2)

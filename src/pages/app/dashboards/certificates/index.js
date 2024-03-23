@@ -105,6 +105,7 @@ const Index = () => {
           console.error('Failed to load image:', certificate.certificateUrl)
           setLoading(false)
         }
+
         // image.crossOrigin = 'anonymous'
         image.src = certificate.certificateUrl
       }
@@ -121,7 +122,9 @@ const Index = () => {
   const handleDownload = () => {
     if (canvasRef.current) {
       const canvas = canvasRef.current
+
       const imgData = canvas.toDataURL('image/png')
+
       const pdf = new jsPDF({
         orientation: 'landscape',
         unit: 'px',

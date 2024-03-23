@@ -11,10 +11,14 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 import { useTranslation } from 'react-i18next'
 
 const WebinarDeskSingle = () => {
+
+  //Hooks
+  const { t } = useTranslation()
+
   return (
     <>
       <section className='FNV-NewWebinars'>
-        <h3>New Webinars</h3>
+        <h3>{t('webinars-section-title')}</h3>
         <div className='container'>
           <div className='row'>
             <div className='col-12 col-md-7'>

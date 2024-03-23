@@ -55,7 +55,10 @@ const Index = () => {
     )
   }
   useEffect(() => {
-    feather.replace()
+    // if (typeof feather !== 'undefined' && feather !== null) {
+    //   feather.replace();
+    // }
+
     if (courseData?.data) {
       setCourse(courseData?.data?.data)
     }
@@ -88,7 +91,7 @@ const Index = () => {
 
   return (
     <>
-      <div className='FNV-Courses'>
+      <div className='FNV-Courses-page FNV-Courses'>
         <Helmet>
           <title>{t('fanavaran-courses')}</title>
         </Helmet>
@@ -182,8 +185,8 @@ const Index = () => {
           </div>
 
           <div className='row justify-content-center'>
-            <Link href='#' className='FNV-Btn BtnOutline PrimaryColor BtnLarge FNV-SeeMore'>
-              See All Blogs
+            <Link href='/blog' className='FNV-Btn BtnOutline PrimaryColor BtnLarge FNV-SeeMore'>
+              {t('see-all-posts')}
             </Link>
           </div>
         </div>

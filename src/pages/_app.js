@@ -5,7 +5,6 @@ import Head from 'next/head'
 import { Router } from 'next/router'
 import { useRouter } from 'next/router'
 import MainLayout from 'src/layouts/MainLayout'
-import { SessionProvider } from 'next-auth/react'
 
 // ** Store Imports
 import { store } from 'src/store'
@@ -145,44 +144,42 @@ const App = props => {
 
   return (
     <Provider store={store}>
-      <SessionProvider session={session}>
-        {/* <GoogleReCaptchaProvider reCaptchaKey='6LdOdHgdAAAAAGWsjsBrXmsXtpTviMp6sgVlB1ty'> */}
-        <CacheProvider value={emotionCache}>
-          <Head>
-            <title>{`${themeConfig.templateName} - Institute of Technology and Engineering`}</title>
-            <meta
-              name='description'
-              content={`${themeConfig.templateName} – Our main goal at Fanavaran Technical and Engineering Institute is to provide quality education for Iranian immigrants in Canada to advance their careers and obtain the required licenses.`}
-            />
-            <meta name='keywords' content='Fanavaran, Engineering, Mechanical, Plumbing, Electrician, Architectural' />
-            <meta name='viewport' content='initial-scale=1, width=device-width' />
-          </Head>
-          <AuthProvider>
-            <SettingsProvider {...(setConfig ? { pageSettings: setConfig() } : {})}>
-              <SettingsConsumer>
-                {({ settings }) => {
-                  return (
-                    <ThemeComponent settings={settings}>
-                      <WindowWrapper>
-                        <Guard guestGuard={guestGuard}>
-                          <AclGuard aclAbilities={aclAbilities} guestGuard={guestGuard}>
-                            {getLayout(<Component {...pageProps} />)}
-                          </AclGuard>
-                        </Guard>
-                      </WindowWrapper>
-                      <ReactHotToast>
-                        <Toaster position={settings.toastPosition} toastOptions={{ className: 'react-hot-toast' }} />
-                      </ReactHotToast>
-                    </ThemeComponent>
-                  )
-                }}
-              </SettingsConsumer>
-            </SettingsProvider>
-          </AuthProvider>
-        </CacheProvider>
+      {/* <GoogleReCaptchaProvider reCaptchaKey='6LdOdHgdAAAAAGWsjsBrXmsXtpTviMp6sgVlB1ty'> */}
+      <CacheProvider value={emotionCache}>
+        <Head>
+          <title>{`${themeConfig.templateName} - Institute of Technology and Engineering`}</title>
+          <meta
+            name='description'
+            content={`${themeConfig.templateName} – Our main goal at Fanavaran Technical and Engineering Institute is to provide quality education for Iranian immigrants in Canada to advance their careers and obtain the required licenses.`}
+          />
+          <meta name='keywords' content='Fanavaran, Engineering, Mechanical, Plumbing, Electrician, Architectural' />
+          <meta name='viewport' content='initial-scale=1, width=device-width' />
+        </Head>
+        <AuthProvider>
+          <SettingsProvider {...(setConfig ? { pageSettings: setConfig() } : {})}>
+            <SettingsConsumer>
+              {({ settings }) => {
+                return (
+                  <ThemeComponent settings={settings}>
+                    <WindowWrapper>
+                      <Guard guestGuard={guestGuard}>
+                        <AclGuard aclAbilities={aclAbilities} guestGuard={guestGuard}>
+                          {getLayout(<Component {...pageProps} />)}
+                        </AclGuard>
+                      </Guard>
+                    </WindowWrapper>
+                    <ReactHotToast>
+                      <Toaster position={settings.toastPosition} toastOptions={{ className: 'react-hot-toast' }} />
+                    </ReactHotToast>
+                  </ThemeComponent>
+                )
+              }}
+            </SettingsConsumer>
+          </SettingsProvider>
+        </AuthProvider>
+      </CacheProvider>
 
-        {/* </GoogleReCaptchaProvider> */}
-      </SessionProvider>
+      {/* </GoogleReCaptchaProvider> */}
     </Provider>
   )
 }

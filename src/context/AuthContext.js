@@ -108,35 +108,37 @@ const AuthProvider = ({ children }) => {
       })
   }
 
-  const handleLogout = () => {
-    const storedToken = localStorage.getItem(authConfig.onTokenExpiration)
-    setLoading(true)
-    axios
-      .delete(authConfig.meEndpoint, {
-        data: {
-          refreshToken: storedToken
-        }
+  const handleLogout = async () => {
+    try {
+      setLoading(true)
+      const storedToken = localStorage.getItem(authConfig.onTokenExpiration)
+      if (!storedToken) throw new Error('No token found')
+
+      await axios.delete(authConfig.meEndpoint, {
+        data: { refreshToken: storedToken }
       })
-      .then(async response => {
-        setLoading(false)
-        setUser(null)
-        localStorage.removeItem('userData')
-        localStorage.removeItem('refreshToken')
-        localStorage.removeItem('accessToken')
-        Cookies.remove(authConfig.storageTokenKeyName)
-        Cookies.remove('userData')
+
+      // Perform necessary logout operations
+
+      // Clear local storage and state
+      localStorage.removeItem('userData')
+      localStorage.removeItem('refreshToken')
+      localStorage.removeItem('accessToken')
+      localStorage.removeItem('userImage')
+      Cookies.remove(authConfig.storageTokenKeyName)
+      Cookies.remove('userData')
+
+      setUser(null)
+      setLoading(false)
+
+      // Redirect after state updates
+      setTimeout(() => {
         router.replace('/login')
-        localStorage.removeItem('userImage')
-      })
-      .catch(err => {
-        console.log(err)
-        localStorage.removeItem('userData')
-        localStorage.removeItem('refreshToken')
-        localStorage.removeItem('accessToken')
-        setUser(null)
-        setLoading(false)
-        router.replace('/login')
-      })
+      }, 0)
+    } catch (err) {
+      console.error(err)
+      setLoading(false)
+    }
   }
 
   const handleRegister = params => {
@@ -150,8 +152,8 @@ const AuthProvider = ({ children }) => {
         setResponse(res)
       })
       .catch(err => {
-        setError(err.response.data.message)
-        toast.error(err.response.data.message)
+        setError(err.response.data.message || 'Error!')
+        toast.error(err.response.data.message || 'Error!')
 
         setResponse(null)
       })
@@ -175,14 +177,13 @@ const AuthProvider = ({ children }) => {
       })
   }
 
-  // Store user meta after successfull verification
+  // Store user meta after successful verification
   const handleRegisterInfo = params => {
-    console.log(params)
     setResponse(null)
     axios
       .post(authConfig.registerPersonalInfo, params)
       .then(res => {
-        setResponse(res.data.user)
+        setResponse(res.data?.data)
       })
       .catch(err => {
         setResponse(null)
@@ -190,7 +191,6 @@ const AuthProvider = ({ children }) => {
   }
 
   const handleRequestForgetpassword = (params, errorCallback, successCallback) => {
-    console.log(params)
     axios
       .post(authConfig.requestfogetpasswordEndpoint, params)
       .then(res => {
@@ -220,7 +220,6 @@ const AuthProvider = ({ children }) => {
   }
 
   const handleResetpassword = (params, errorCallback, successCallback) => {
-    console.log(params)
     axios
       .post(authConfig.resetpasswordEndpoint, params)
       .then(res => {

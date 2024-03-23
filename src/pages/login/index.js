@@ -3,6 +3,7 @@ import { useState } from 'react'
 
 // ** Next Imports
 import Link from 'next/link'
+import { appConfig } from 'src/configs/appConfig'
 
 // ** MUI Components
 import Alert from '@mui/material/Alert'
@@ -152,11 +153,7 @@ const LoginPage = () => {
           }}
         >
           <Box sx={{ width: '100%', maxWidth: 400 }}>
-            <LoginMainLogo
-              width={250}
-              alt='login-illustration'
-              src={`/images/${imageSource}-${theme.palette.mode}.png`}
-            />
+            <img src={appConfig.appUrl + '/img/logo.png'} alt='logo' width='200' height='50' />
 
             <Box sx={{ my: 6 }}>
               <Typography sx={{ mb: 1.5, fontWeight: 500, fontSize: '1.625rem', lineHeight: 1.385 }}>
@@ -246,7 +243,6 @@ const LoginPage = () => {
               <Button fullWidth size='large' type='submit' variant='contained' sx={{ mb: 4 }}>
                 Login
               </Button>
-              <button type='button'>Log In</button>
 
               <Box sx={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
                 <Typography sx={{ color: 'text.secondary', mr: 2 }}>New on our platform?</Typography>

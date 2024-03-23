@@ -62,12 +62,12 @@ const FreeUserCard = props => {
         ) : (
           <>
             <Typography variant='h6' sx={{ mb: 5, fontWeight: 500 }}>
-              Welcome {user?.firstName}! 🎉t
+              Welcome {user?.firstName}! 🎉
             </Typography>
             <Grid container spacing={5}>
               <Grid item xs={12} md={12}>
                 <Box sx={{ mb: 4 }}>
-                  <Typography sx={{ mb: 1.5, fontWeight: 500 }}>Your Current Plan is Premium</Typography>
+                  <Typography sx={{ mb: 1.5, fontWeight: 500 }}>Your Current Plan is VIP</Typography>
                   <Typography sx={{ color: 'text.secondary' }}>Explore Amazing Features</Typography>
                 </Box>
               </Grid>

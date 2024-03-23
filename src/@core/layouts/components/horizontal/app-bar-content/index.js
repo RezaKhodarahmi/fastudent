@@ -1,5 +1,6 @@
 // ** Next Import
 import Link from 'next/link'
+import { appConfig } from 'src/configs/appConfig'
 
 // ** MUI Imports
 import Box from '@mui/material/Box'
@@ -34,7 +35,6 @@ const LoginMainLogo = styled('img')(({ theme }) => ({
 }))
 
 const AppBarContent = props => {
-
   // ** Props
   const { appBarContent: userAppBarContent, appBarBranding: userAppBarBranding } = props
 
@@ -53,11 +53,8 @@ const AppBarContent = props => {
         userAppBarBranding(props)
       ) : (
         <LinkStyled href='/'>
-          <LoginMainLogo
-              width={250}
-              alt='login-illustration'
-              src={`/images/${imageSource}-${theme.palette.mode}.png`}
-            />
+                     <img src={appConfig.appUrl + '/img/logo.png'} alt='logo' width='200' height='50' />
+
         </LinkStyled>
       )}
       {userAppBarContent ? userAppBarContent(props) : null}

@@ -5,6 +5,8 @@ import { useState, Fragment } from 'react'
 import Link from 'next/link'
 import Grid from '@mui/material/Grid'
 import Logo from 'src/views/logoMain.js'
+import Image from 'next/image'
+import { appConfig } from 'src/configs/appConfig'
 
 // ** MUI Components
 import Button from '@mui/material/Button'
@@ -40,8 +42,6 @@ import { useAuth } from 'src/hooks/useAuth'
 import { useSettings } from 'src/@core/hooks/useSettings'
 
 // ** Demo Imports
-import FooterIllustrationsV2 from 'src/views/pages/auth/FooterIllustrationsV2'
-
 const defaultValues = {
   email: '',
   username: '',
@@ -99,7 +99,7 @@ const Register = () => {
   const theme = useTheme()
   const { register } = useAuth()
   const { settings } = useSettings()
-  const hidden = useMediaQuery(theme.breakpoints.down('md'))
+  const hidden = false
 
   // ** Vars
   const { skin } = settings
@@ -157,7 +157,7 @@ const Register = () => {
           }}
         >
           <Box sx={{ width: '70%' }}>
-            <Logo />
+            <img src={appConfig.appUrl + '/img/logo.png'} alt='logo' width='200' height='50' />
 
             <Box sx={{ my: 6 }}>
               <Typography sx={{ mb: 1.5, fontWeight: 500, fontSize: '1.625rem', lineHeight: 1.385 }}>
