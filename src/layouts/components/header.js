@@ -359,6 +359,11 @@ const Header = props => {
                     {t('about-us')}
                   </Link>
                 </li>
+                <li className='nav-item dropdown FNV-MegaMenu'>
+                  <Link className='nav-link' href='/services/educational-and-career-counseling' aria-expanded='false'>
+                    {t('appointment')}
+                  </Link>
+                </li>
                 {/* <li className='nav-item dropdown FNV-MegaMenu'>
                   <Link className='nav-link' href='/' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
                     Business Solutions
@@ -798,6 +803,11 @@ const Header = props => {
                     {t('about-us')}
                   </Link>
                 </li>
+                <li className='nav-item dropdown FNV-MegaMenu'>
+                  <Link className='nav-link' href='/services/educational-and-career-counseling' aria-expanded='false'>
+                    {t('appointment')}
+                  </Link>
+                </li>
                 {/* <li className='nav-item dropdown FNV-MegaMenu'>
                   <Link className='nav-link' href='/' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
                     {t('menu-business')}
@@ -974,4 +984,3 @@ export async function getStaticProps() {
 }
 
 export default Header
-
