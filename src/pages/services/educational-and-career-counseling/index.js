@@ -36,6 +36,7 @@ const AppointmentBooking = () => {
   const [availableTimes, setAvailableTimes] = useState([])
   const [buttonDisable, setButtonDisable] = useState(true)
   const [isLoading, setIsLoading] = useState(false)
+
   const [questions, setQuestions] = useState([
     { question: `${t('resume-book-question-one')}`, answer: null },
     {
@@ -44,6 +45,7 @@ const AppointmentBooking = () => {
     },
     { question: `${t('resume-book-question-three')}`, answer: null }
   ])
+
   const [selectedTime, setSelectedTime] = useState(null)
   const [expanded, setExpanded] = useState(false)
   const userLoggedIn = localStorage.getItem('userData') // Example check for user login
@@ -66,14 +68,12 @@ const AppointmentBooking = () => {
     // Check if the day is Tuesday (2), Wednesday (3), or Friday (5)
     const isAllowedDay = day === 2 || day === 3 || day === 5
 
-    // Return false if the date should be enabled (is in range and is an allowed day)
     // Otherwise, return true to disable the date
     return !(isInRange && isAllowedDay)
   }
 
   // Check if all questions are answered with 'yes' to enable the button
   useEffect(() => {
-    console.log(questions)
     const allAnsweredYes = questions.every(question => question.answer === 'yes')
     if (!allAnsweredYes) {
       setButtonDisable(!allAnsweredYes)
@@ -97,7 +97,7 @@ const AppointmentBooking = () => {
     if (appointmentData?.data) {
       setIsLoading(false)
       if (appointmentData?.data?.error === false) {
-        setButtonDisable(false)
+        setButtonDisable(true)
       }
     }
   }, [appointmentData])

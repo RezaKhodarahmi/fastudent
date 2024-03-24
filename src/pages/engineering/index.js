@@ -373,7 +373,7 @@ const Index = () => {
                   <a href='https://www.apegs.ca/'>Saskatchewan</a>
                 </li>
                 <li>
-                  <a href='http://www.enggeomb.ca/'>Manitoba</a>
+                  <a href='https://www.enggeomb.ca/'>Manitoba</a>
                 </li>
                 <li>
                   <a href='https://engineersnovascotia.ca/'>Nova Scotia</a>

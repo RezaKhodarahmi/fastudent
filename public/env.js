@@ -1,6 +1,6 @@
 window.env = {
   ALLUSERSPROFILE: 'C:\\ProgramData',
-  API_BASE_URL: 'http://',
+  API_BASE_URL: 'https://',
   APPDATA: 'C:\\Users\\Dell\\AppData\\Roaming',
   ChocolateyInstall: 'C:\\ProgramData\\chocolatey',
   ChocolateyLastPathUpdate: '133015467290059325',
