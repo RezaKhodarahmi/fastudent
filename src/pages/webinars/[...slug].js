@@ -23,12 +23,10 @@ const SingleWebinar = () => {
     if (slug) {
       dispatch(getWebinarWithSlug({ slug: slug, email: userLoggedIn ? JSON.parse(userLoggedIn) : null }))
       setLoading(true)
-
     }
   }, [slug, userLoggedIn])
 
   useEffect(() => {
-
     setLoading(false)
     if (webinarData?.data?.data) {
       setWebinar(webinarData.data.data[0])
@@ -51,7 +49,7 @@ const SingleWebinar = () => {
   }
 
   const redirectToLogin = () => {
-    router.push(`/login?returnUrl=webinars/${webinar.slug}`)
+    router.push('/login?returnUrl=/services/educational-and-career-counseling')
   }
 
   if (loading) {
@@ -189,4 +187,3 @@ const SingleWebinar = () => {
 SingleWebinar.guestGuard = true
 
 export default SingleWebinar
-

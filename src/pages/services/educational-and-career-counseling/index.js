@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { LocalizationProvider, DatePicker } from '@mui/x-date-pickers'
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns'
 import { CircularProgress } from '@mui/material'
+import { useRouter } from 'next/router'
+import { useTranslation } from 'react-i18next'
+
 import {
   Box,
   Button,
@@ -23,14 +26,66 @@ import { createNewFreeAppointment } from 'src/store/apps/appointment'
 import { useDispatch, useSelector } from 'react-redux'
 
 const AppointmentBooking = () => {
-  const [selectedDate, setSelectedDate] = useState(new Date())
+  const { t } = useTranslation()
+  const dispatch = useDispatch()
+  const appointmentData = useSelector(state => state.appointment)
+  const router = useRouter()
+  const dir = window.localStorage.getItem('direction' || 'ltr')
+
+  const [selectedDate, setSelectedDate] = useState(null)
   const [availableTimes, setAvailableTimes] = useState([])
-  const [buttonDisable, setButtonDisable] = useState(false)
+  const [buttonDisable, setButtonDisable] = useState(true)
   const [isLoading, setIsLoading] = useState(false)
+  const [questions, setQuestions] = useState([
+    { question: `${t('resume-book-question-one')}`, answer: null },
+    {
+      question: `${t('resume-book-question-two')}`,
+      answer: null
+    },
+    { question: `${t('resume-book-question-three')}`, answer: null }
+  ])
+  const [selectedTime, setSelectedTime] = useState(null)
+  const [expanded, setExpanded] = useState(false)
+  const userLoggedIn = localStorage.getItem('userData') // Example check for user login
+
+  // Function to handle question answer updates
+  const handleQuestionAnswer = (index, answer) => {
+    const newQuestions = [...questions]
+    newQuestions[index].answer = answer
+    setQuestions(newQuestions)
+  }
+
+  const isDateAllowed = date => {
+    const startAllowedDate = new Date('2024-03-25')
+    const endAllowedDate = new Date('2024-04-08')
+    const day = date.getDay()
+
+    // Check if the date is between the allowed range
+    const isInRange = date >= startAllowedDate && date <= endAllowedDate
+
+    // Check if the day is Tuesday (2), Wednesday (3), or Friday (5)
+    const isAllowedDay = day === 2 || day === 3 || day === 5
+
+    // Return false if the date should be enabled (is in range and is an allowed day)
+    // Otherwise, return true to disable the date
+    return !(isInRange && isAllowedDay)
+  }
+
+  // Check if all questions are answered with 'yes' to enable the button
+  useEffect(() => {
+    console.log(questions)
+    const allAnsweredYes = questions.every(question => question.answer === 'yes')
+    if (!allAnsweredYes) {
+      setButtonDisable(!allAnsweredYes)
+    }
+    if (allAnsweredYes && selectedDate && selectedTime) {
+      setButtonDisable(!allAnsweredYes)
+    }
+  }, [questions, selectedDate, selectedTime])
 
   const fetchAvailableTimes = async selectedDate => {
     try {
-      const response = await fetch(`http://localhost:3200/api/v1/student/counseling/times/${selectedDate}`)
+      const response = await fetch(`https://fanavaran.ca:3200/api/v1/student/counseling/times/${selectedDate}`)
       const times = await response.json()
       setAvailableTimes(times)
     } catch (error) {
@@ -38,12 +93,12 @@ const AppointmentBooking = () => {
     }
   }
 
-  const dispatch = useDispatch()
-  const appointmentData = useSelector(state => state.appointment)
-
   useEffect(() => {
-    if (appointmentData?.data?.error === false) {
-      setButtonDisable(true)
+    if (appointmentData?.data) {
+      setIsLoading(false)
+      if (appointmentData?.data?.error === false) {
+        setButtonDisable(false)
+      }
     }
   }, [appointmentData])
 
@@ -54,18 +109,20 @@ const AppointmentBooking = () => {
       fetchAvailableTimes(formattedDate)
     }
   }, [selectedDate])
-  const [selectedTime, setSelectedTime] = useState(new Date())
-  const [expanded, setExpanded] = useState(false)
-  const userLoggedIn = localStorage.getItem('userData') // Example check for user login
 
   const handleBookAppointment = () => {
+    console.log(selectedDate, selectedTime)
     if (!userLoggedIn) {
-      console.log('Redirect to login')
-    } else {
+    } else if ((selectedDate, selectedTime)) {
       setIsLoading(true)
-      console.log('Booking appointment for:', selectedDate, selectedTime)
       dispatch(createNewFreeAppointment({ email: userLoggedIn, date: selectedDate, time: selectedTime }))
+    } else {
+      window.alert(`${t('please-select-a-date-and-time')}`)
     }
+  }
+
+  const handelLogin = () => {
+    router.push('/login?returnUrl=/services/educational-and-career-counseling')
   }
 
   const handleExpandClick = () => {
@@ -75,10 +132,14 @@ const AppointmentBooking = () => {
   return (
     <Container maxWidth='sm' sx={{ mt: 5 }}>
       <Typography variant='h4' sx={{ mb: 4, textAlign: 'center' }}>
-        Book Your Appointment
+        {t('consultation-resume-writing')}
       </Typography>
       {/* Consultant Info Card */}
-      <Card raised sx={{ mb: 4, mt: 5, borderRadius: '16px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)' }}>
+      <Card
+        style={{ direction: 'ltr' }}
+        raised
+        sx={{ mb: 4, mt: 5, borderRadius: '16px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)' }}
+      >
         <CardMedia
           component='img'
           height='140'
@@ -107,26 +168,54 @@ const AppointmentBooking = () => {
             </Typography>
           </Collapse>
           <Box textAlign='center' mt={2}>
-            <Button onClick={handleExpandClick}>{expanded ? 'Show Less' : 'Show More'}</Button>
+            <Button onClick={handleExpandClick}>{expanded ? `${t('show-less')}` : `${t('show-more')}`}</Button>
           </Box>
         </CardContent>
       </Card>
       {/* Appointment Booking Card */}
+
       <Card>
         <CardContent>
           <LocalizationProvider dateAdapter={AdapterDateFns}>
-            <Grid container spacing={3}>
+            {/* Questions Section */}
+            <Grid container style={{ direction: `${dir}` }} spacing={3}>
+              {questions.map((item, index) => (
+                <Grid key={index} style={{ padding: '3px' }} item xs={12}>
+                  <Box my={2}>
+                    <Typography variant='subtitle1'>{item.question}</Typography>
+                    <Button
+                      variant={item.answer === 'yes' ? 'contained' : 'outlined'}
+                      color='success'
+                      onClick={() => handleQuestionAnswer(index, 'yes')}
+                      sx={{ mr: 1 }}
+                    >
+                      {t('yes')}
+                    </Button>
+                    <Button
+                      variant={item.answer === 'no' ? 'contained' : 'outlined'}
+                      color='error'
+                      onClick={() => handleQuestionAnswer(index, 'no')}
+                    >
+                      {t('no')}
+                    </Button>
+                  </Box>
+                </Grid>
+              ))}
+            </Grid>
+            <Grid container style={{ marginTop: '10px' }} spacing={3}>
+              <Typography variant='subtitle1'>{t('all-show-in-bc-time')}</Typography>
               <Grid item xs={12}>
                 <DatePicker
-                  label='Choose a Date'
+                  label={t('select-date')}
                   value={selectedDate}
                   onChange={setSelectedDate}
+                  shouldDisableDate={isDateAllowed} // Use the function here
                   renderInput={params => <TextField {...params} fullWidth />}
                 />
               </Grid>
               <Grid item xs={12}>
                 <FormControl fullWidth>
-                  <InputLabel id='time-select-label'>Select Time</InputLabel>
+                  <InputLabel id='time-select-label'>{t('select-time')}</InputLabel>
                   <Select
                     labelId='time-select-label'
                     id='time-select'
@@ -155,12 +244,11 @@ const AppointmentBooking = () => {
               color='primary'
               size='large'
             >
-              Submit Appointment
-              {isLoading ? <CircularProgress size={24} /> : 'Submit Appointment'}
+              {isLoading ? <CircularProgress style={{ color: '#fff' }} size={24} /> : `${t('submit-appointment')}`}
             </Button>
           ) : (
-            <Button variant='contained' color='secondary' size='large'>
-              Log In to Book
+            <Button variant='contained' color='secondary' onClick={handelLogin} size='large'>
+              {t('log-in-to-book')}
             </Button>
           )}
         </CardActions>

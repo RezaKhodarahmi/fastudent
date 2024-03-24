@@ -126,5 +126,19 @@
 "webinars":"Webinars",
 "membership":"VIP Membership",
 "blog":"Blog",
-"see-all-posts":"See all posts"
+"see-all-posts":"See all posts",
+"consultation-resume-writing":"Reservation of consultation time for resume writing course",
+"show-less":"Show less",
+"show-more":"Show more",
+"yes":"Yes",
+"no":"No",
+"select-time":"Select time",
+"select-date":"Select date",
+"submit-appointment":"Submit Appointment",
+"log-in-to-book":"Log in to book",
+"resume-book-question-one":"Have you prepared your resume according to the video?",
+"resume-book-question-two":"Have you attended all resume writing classes or watched the recorded video of the class?",
+"resume-book-question-three":"Have you seen the job search videos on Fanavaran's YouTube channel?",
+"please-select-a-date-and-time":"Please select a date and time!",
+"all-show-in-bc-time":"All times are shown in Vancouver time."
 }
