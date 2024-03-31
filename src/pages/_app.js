@@ -5,6 +5,7 @@ import Head from 'next/head'
 import { Router } from 'next/router'
 import { useRouter } from 'next/router'
 import MainLayout from 'src/layouts/MainLayout'
+import nextI18NextConfig from 'src/configs/i18n'
 
 // ** Store Imports
 import { store } from 'src/store'
@@ -59,7 +60,7 @@ import 'react-perfect-scrollbar/dist/css/styles.css'
 import 'src/iconify-bundle/icons-bundle-react'
 
 // ** Global css styles
-
+import './global.css'
 import '../../styles/globals.css'
 import '../../styles/main.css'
 import '../../styles/main.scss'
@@ -113,19 +114,21 @@ const Guard = ({ children, authGuard, guestGuard }) => {
 // ** Configure JSS & ClassName
 const App = props => {
   const [redirectUri, setRedirectUri] = useState('')
-
+  const [loading, setLoading] = useState(true)
   useEffect(() => {
     setRedirectUri(window.location.origin)
   }, [])
 
   useEffect(() => {
-    const lng = localStorage.getItem('i18nextLng')
+    const lng = localStorage.getItem('i18nextLng' || 'en')
     document.documentElement.dir = lng === 'fa' ? 'rtl' : 'ltr'
+    setLoading(false)
   }, [])
 
   useEffect(() => {
     import('bootstrap/dist/js/bootstrap.bundle')
   }, [])
+
   const { Component, emotionCache = clientSideEmotionCache, session, ...pageProps } = props
 
   // Variables
@@ -142,12 +145,18 @@ const App = props => {
   const guestGuard = Component.guestGuard ?? false
   const aclAbilities = Component.acl ?? defaultACLObj
 
+  if (loading) return <Spinner />
+
   return (
     <Provider store={store}>
       {/* <GoogleReCaptchaProvider reCaptchaKey='6LdOdHgdAAAAAGWsjsBrXmsXtpTviMp6sgVlB1ty'> */}
       <CacheProvider value={emotionCache}>
         <Head>
           <title>{`${themeConfig.templateName} - Institute of Technology and Engineering`}</title>
+          <link rel='manifest' href='/manifest.json' crossorigin='use-credentials' />
+          <meta http-equiv='Cache-Control' content='no-cache, no-store, must-revalidate' />
+          <meta http-equiv='Pragma' content='no-cache' />
+          <meta http-equiv='Expires' content='0' />
           <meta
             name='description'
             content={`${themeConfig.templateName} – Our main goal at Fanavaran Technical and Engineering Institute is to provide quality education for Iranian immigrants in Canada to advance their careers and obtain the required licenses.`}

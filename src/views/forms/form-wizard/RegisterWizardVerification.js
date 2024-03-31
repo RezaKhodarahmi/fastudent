@@ -446,7 +446,7 @@ const StepperLinearWithValidationVerification = props => {
               </Grid>
               <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'space-between' }}>
                 <Button size='large' variant='outlined' color='secondary'>
-                  <Link href='/assets/Contract.pdf' download=''>
+                  <Link href='/assets/terms-and-conditions.pdf' download=''>
                     DOWNLOAD Terms and Conditions
                   </Link>
                 </Button>

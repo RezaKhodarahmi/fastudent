@@ -13,7 +13,8 @@ import {
   Checkbox,
   Select,
   MenuItem,
-  Grid
+  Grid,
+  Box
 } from '@mui/material'
 import { Clock, List, BarChart, BarChart2, CheckCircle } from 'feather-icons-react'
 
@@ -22,10 +23,8 @@ const Test = () => {
   const dispatch = useDispatch()
   const testData = useSelector(state => state.tests)
   const { quizze } = router.query
-
   const [timer, setTimer] = useState(null)
   const [initialTimer, setInitialTimer] = useState(null)
-
   const [started, setStarted] = useState(false)
   const [finished, setFinished] = useState(false)
   const [showAnswerForQuestion, setShowAnswerForQuestion] = useState({})
@@ -42,21 +41,20 @@ const Test = () => {
     setStarted(true)
     const testDuration = parseInt(testData?.data?.data?.testTime) * 60 // Convert minutes to seconds
     setTimer(testDuration)
-    setInitialTimer(testDuration) // Store the initial timer value
+    setInitialTimer(testDuration)
   }
 
-  const handleCheckboxChange = (questionId, answerId, isChecked, isCorrect) => {
+  const handleCheckboxChange = (questionId, answerId, isChecked) => {
     setUserAnswers(prevAnswers => {
-      const previousAnswersForQuestion = prevAnswers[questionId] || []
+      const answersForQuestion = prevAnswers[questionId] || []
       if (isChecked) {
-        return {
-          ...prevAnswers,
-          [questionId]: [...previousAnswersForQuestion, answerId, isCorrect]
-        }
+        // Add the answer if checked
+        return { ...prevAnswers, [questionId]: [...answersForQuestion, answerId] }
       } else {
+        // Remove the answer if unchecked
         return {
           ...prevAnswers,
-          [questionId]: previousAnswersForQuestion.filter(id => id !== answerId)
+          [questionId]: answersForQuestion.filter(id => id !== answerId)
         }
       }
     })
@@ -66,17 +64,27 @@ const Test = () => {
     setFinished(true)
     clearInterval(timer)
 
-    // Calculate results
     let correctCount = 0
-    Object.values(userAnswers).forEach(answerArray => {
-      if (answerArray[1] === 1) {
 
-        // Assuming 1 is for correct and 0 is for incorrect
-        correctCount++
-      }
+    // Iterate through each question ID and selected answer IDs
+    Object.entries(userAnswers).forEach(([questionId, answerIds]) => {
+      // Find the corresponding question from the test data
+      const question = testData.data.data.questions.find(q => q.id === parseInt(questionId))
+
+      // Extract IDs of correct answers for this question
+      const correctAnswerIds = question.answers.filter(a => a.isCorrect)?.map(a => a.id)
+
+      // Determine if selected answers match the correct answers exactly
+      const isCorrect =
+        answerIds.every(id => correctAnswerIds.includes(id)) && answerIds.length === correctAnswerIds.length
+
+      // Increment correct answer count if match is found
+      if (isCorrect) correctCount++
     })
 
+    // Update the state with the total number of correct answers
     setCorrectAnswers(correctCount)
+    setUserAnswers({})
   }
 
   const retakeTest = () => {
@@ -175,7 +183,7 @@ const Test = () => {
               ) : null}
               {started &&
                 !finished &&
-                paginatedQuestions.map((question, qIndex) => (
+                paginatedQuestions?.map((question, qIndex) => (
                   <Paper
                     elevation={3}
                     style={{ padding: '30px', marginBottom: '30px', borderRadius: '15px' }}
@@ -184,18 +192,27 @@ const Test = () => {
                     <Typography variant='h6' style={{ marginBottom: '20px' }}>
                       {qIndex + 1}. {question.questionText}
                     </Typography>
+                    {question.image && (
+                      <Box mb={2}>
+                        <img
+                          src={question.image}
+                          alt='Question image'
+                          style={{ maxWidth: '100%', borderRadius: '10px' }}
+                        />
+                      </Box>
+                    )}
                     <FormControl component='fieldset'>
-                      {question.questionType === '0' ? (
+                      {question.questionType ? (
                         <div>
-                          {question.answers.map((answer, aIndex) => (
-                            <FormControl fullWidth key={aIndex}>
+                          {question.answers?.map((answer, aIndex) => (
+                            <FormControl fullWidth key={`${question.id}-${answer.id}`}>
+                              {' '}
+                              {/* Updated key */}
                               <FormControlLabel
                                 control={
                                   <Checkbox
                                     color='primary'
-                                    onChange={e =>
-                                      handleCheckboxChange(question.id, answer.id, e.target.checked, answer.isCorrect)
-                                    }
+                                    onChange={e => handleCheckboxChange(question.id, answer.id, e.target.checked)}
                                     checked={userAnswers[question.id] && userAnswers[question.id].includes(answer.id)}
                                   />
                                 }
@@ -211,7 +228,7 @@ const Test = () => {
                         </div>
                       ) : (
                         <RadioGroup name={`question-${question.id}`}>
-                          {question.answers.map((answer, aIndex) => (
+                          {question.answers?.map((answer, aIndex) => (
                             <FormControlLabel
                               key={aIndex}
                               value={answer.id.toString()}
@@ -244,7 +261,7 @@ const Test = () => {
                 <>
                   <div style={{ marginTop: '20px', marginBottom: '20px' }}>
                     {testData?.data?.data?.questions &&
-                      [...Array(Math.ceil(testData.data.data.questions.length / testsPerPage))].map((_, index) => (
+                      [...Array(Math.ceil(testData.data.data.questions.length / testsPerPage))]?.map((_, index) => (
                         <Button
                           key={index}
                           variant='outlined'
@@ -285,6 +302,10 @@ const Test = () => {
                   </Typography>
                   <table className='table table-striped'>
                     <tbody className='text-center'>
+                      <tr>
+                        <td>Grade Percentage</td>
+                        <td>{((correctAnswers / totalQuestions) * 100).toFixed(2)}%</td>
+                      </tr>
                       <tr>
                         <td>
                           <Clock /> Spent Time

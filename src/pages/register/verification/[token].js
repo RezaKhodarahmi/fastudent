@@ -45,7 +45,7 @@ const TokenVerification = () => {
   const theme = useTheme()
   const { register } = useAuth()
   const { settings } = useSettings()
-  const hidden = useMediaQuery(theme.breakpoints.down('md'))
+  const hidden = false
 
   // ** Vars
   const { skin } = settings

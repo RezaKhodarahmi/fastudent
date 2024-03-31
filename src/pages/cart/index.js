@@ -40,6 +40,7 @@ const Index = () => {
   const [isVIP, setIsVIP] = useState(false)
   const [localCartItem, setLocalCartItem] = useState([])
   const [newVIP, setNewVip] = useState(true)
+  const [oldVIP, setOldVIP] = useState(false)
 
   //Hooks
   const courses = useSelector(state => state.course)
@@ -188,11 +189,18 @@ const Index = () => {
               'Content-Type': 'application/json',
               Authorization: `Bearer ${token}`
             },
-            body: JSON.stringify({ items: cartCourses, email: email, coupon: usedCoupon, referralUser: referralUser })
+            body: JSON.stringify({
+              items: cartCourses,
+              email: email,
+              coupon: usedCoupon,
+              referralUser: referralUser,
+              cartTotal: cartTotal,
+              isVIP: isVIP,
+              oldVIP: oldVIP
+            })
           })
             .then(res => res.json())
             .then(data => {
-
               const { clientSecret } = data // Make sure to retrieve the correct clientSecret from the response
               setClientSecret(clientSecret)
             })
@@ -354,6 +362,7 @@ const Index = () => {
   useEffect(() => {
     if (courses?.data?.data && courses?.data?.data?.length) {
       setCartCourses(courses?.data?.data)
+      setOldVIP(user?.data?.isVipValid)
 
       // Check if VIP membership is in the cart
       const isVipMembershipInCart =
@@ -612,9 +621,12 @@ const Index = () => {
                   ) : (
                     <>
                       {localCartItem?.length >= 1 ? (
-                        <button onClick={handelInitiatePayment} className='FNV-Btn BtnPrimary BtnMedium'>
-                          Checkout
-                        </button>
+                        <>
+                          {' '}
+                          <button onClick={handelInitiatePayment} className='FNV-Btn BtnPrimary BtnMedium'>
+                            Checkout
+                          </button>
+                        </>
                       ) : (
                         <button onClick={e => router.push('/courses')} className='FNV-Btn BtnPrimary BtnMedium'>
                           Select a course

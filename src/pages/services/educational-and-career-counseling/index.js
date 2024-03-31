@@ -38,12 +38,12 @@ const AppointmentBooking = () => {
   const [isLoading, setIsLoading] = useState(false)
 
   const [questions, setQuestions] = useState([
-    { question: `${t('resume-book-question-one')}`, answer: null },
+    { question: 'resume-book-question-one', answer: null },
     {
-      question: `${t('resume-book-question-two')}`,
+      question: 'resume-book-question-two',
       answer: null
     },
-    { question: `${t('resume-book-question-three')}`, answer: null }
+    { question: 'resume-book-question-three', answer: null }
   ])
 
   const [selectedTime, setSelectedTime] = useState(null)
@@ -182,7 +182,7 @@ const AppointmentBooking = () => {
               {questions.map((item, index) => (
                 <Grid key={index} style={{ padding: '3px' }} item xs={12}>
                   <Box my={2}>
-                    <Typography variant='subtitle1'>{item.question}</Typography>
+                    <Typography variant='subtitle1'>{t(item.question)}</Typography>
                     <Button
                       variant={item.answer === 'yes' ? 'contained' : 'outlined'}
                       color='success'

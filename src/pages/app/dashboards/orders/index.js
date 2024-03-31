@@ -152,6 +152,26 @@ const Index = () => {
       .toFixed(2)
   }
 
+  const calculateDiscount = (courses, amount) => {
+    const itemPrice = courses
+      .reduce((acc, item) => {
+        const price = item.cycles.length > 0 ? item.cycles[0].regularPrice : 0
+
+        return acc + parseFloat(price)
+      }, 0)
+      .toFixed(2)
+
+    if (itemPrice === amount) {
+      return 0
+    } else if (itemPrice > amount) {
+      const discount = itemPrice - amount
+
+      return discount
+    } else {
+      return 0
+    }
+  }
+
   // Updated renderLineItems to display regularPrice from cycles
   const renderLineItems = items => {
     return items.map((item, index) => (
@@ -257,9 +277,19 @@ const Index = () => {
                   <Typography>${calculateSubtotal(selectedOrder.courses)}</Typography>
                   {/* No Sales Tax */}
                   <Typography variant='subtitle1' gutterBottom>
+                    <strong>TAX</strong>
+                  </Typography>
+                  <Typography>$0</Typography>
+                  {/* Cart Discount */}
+                  <Typography variant='subtitle1' gutterBottom>
+                    <strong>Discount</strong>
+                  </Typography>
+                  <Typography>${calculateDiscount(selectedOrder.courses, selectedOrder.Amount)}</Typography>
+                  {/* Cart Total */}
+                  <Typography variant='subtitle1' gutterBottom>
                     <strong>TOTAL</strong>
                   </Typography>
-                  <Typography>${calculateSubtotal(selectedOrder.courses)}</Typography>
+                  <Typography>${selectedOrder.Amount}</Typography>
                 </div>
               </TwoColumnLayout>
             </Section>
