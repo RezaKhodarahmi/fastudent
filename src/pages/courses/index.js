@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet'
 import CoursePagination from '@mui/material/Pagination'
 import { Grid } from '@mui/material'
 import { useRouter } from 'next/router'
-import feather from 'feather-icons'
 import { fetchCourseData } from 'src/store/apps/course'
 import { fetchCategoryData } from 'src/store/apps/category'
 import { useSelector, useDispatch } from 'react-redux'
@@ -55,10 +54,6 @@ const Index = () => {
     )
   }
   useEffect(() => {
-    // if (typeof feather !== 'undefined' && feather !== null) {
-    //   feather.replace();
-    // }
-
     if (courseData?.data) {
       setCourse(courseData?.data?.data)
     }

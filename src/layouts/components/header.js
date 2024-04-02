@@ -49,9 +49,11 @@ const Header = props => {
     window.localStorage.setItem('i18nextLng', lng)
     if (lng === 'fa') {
       document.body.dir = 'rtl'
+      document.body.lang = 'fa'
       window.localStorage.setItem('direction', 'rtl')
     } else {
       document.body.dir = 'ltr'
+      document.body.lang = 'en'
       window.localStorage.setItem('direction', 'ltr')
     }
 
