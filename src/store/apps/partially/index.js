@@ -36,7 +36,7 @@ export const initiatePayment = params => async dispatch => {
   try {
     const token = window.localStorage.getItem('accessToken')
 
-    const response = await axios.post(`${BASE_URL}/student/transaction/partially`, params, {
+    const response = await axios.post(`${BASE_URL}/student/transaction/partially/intent`, params, {
       headers: {
         'Content-Type': 'application/json',
         Authorization: `Bearer ${token}`

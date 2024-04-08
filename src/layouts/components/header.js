@@ -36,29 +36,30 @@ const Header = props => {
 
   const { i18n } = useTranslation()
 
+  useEffect(() => {
+    const currentLang = localStorage.getItem('i18nextLng') || 'en'
+    document.body.dir = currentLang === 'fa' ? 'rtl' : 'ltr'
+    document.body.lang = currentLang
+  }, [])
+
   const changeLanguage = () => {
     let prevLng = window.localStorage.getItem('i18nextLng')
-    let lng = ''
-    if (prevLng == 'fa') {
-      lng = 'en'
-    } else {
-      lng = 'fa'
-    }
+    let lng = prevLng === 'fa' ? 'en' : 'fa'
 
     i18n.changeLanguage(lng)
     window.localStorage.setItem('i18nextLng', lng)
-    if (lng === 'fa') {
-      document.body.dir = 'rtl'
-      document.body.lang = 'fa'
-      window.localStorage.setItem('direction', 'rtl')
-    } else {
-      document.body.dir = 'ltr'
-      document.body.lang = 'en'
-      window.localStorage.setItem('direction', 'ltr')
-    }
 
-    // Refresh the page at the end
-    window.location.reload()
+    const direction = lng === 'fa' ? 'rtl' : 'ltr'
+
+    document.body.dir = direction
+    document.body.lang = lng
+    window.localStorage.setItem('direction', direction)
+
+    const html = document.documentElement
+    html.setAttribute('dir', direction)
+    html.setAttribute('lang', lng)
+
+
   }
 
   useEffect(() => {

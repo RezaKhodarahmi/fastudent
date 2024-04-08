@@ -9,6 +9,7 @@ import { fetchVipData } from 'src/store/apps/user'
 import themeConfig from 'src/configs/themeConfig'
 import { verifyCouponCode } from 'src/store/apps/coupon'
 import { verifyReferralCode } from 'src/store/apps/referral'
+import { initiatePayment } from 'src/store/apps/partially'
 import { setCartItems } from 'src/store/apps/cart'
 import BASE_URL from 'src/api/BASE_URL'
 import toast from 'react-hot-toast'
@@ -27,6 +28,7 @@ const Index = () => {
   const [cartTotal, setCartTotal] = useState(0)
   const [cartSubTotal, setCartSubTotal] = useState(0)
   const [clientSecret, setClientSecret] = useState(null)
+  const [redirectURL, setRedirectURL] = useState(null)
   const [email, setEmail] = useState(null)
   const [fullName, setFullName] = useState(null)
   const [coupon, setCoupon] = useState(null)
@@ -41,6 +43,8 @@ const Index = () => {
   const [localCartItem, setLocalCartItem] = useState([])
   const [newVIP, setNewVip] = useState(true)
   const [oldVIP, setOldVIP] = useState(false)
+  const [partially, setPartially] = useState(true)
+  const [stripePay, setStripePay] = useState(true)
 
   //Hooks
   const courses = useSelector(state => state.course)
@@ -178,6 +182,7 @@ const Index = () => {
 
   //Initiate The payment
   const handelInitiatePayment = () => {
+    setPartially(false)
     if (cartTotal > 0) {
       if (clientSecret === null) {
         if (cartCourses.length && email) {
@@ -214,6 +219,46 @@ const Index = () => {
     }
   }
 
+  const handelInitiatePartiallyPayment = () => {
+    setStripePay(false)
+    if (cartTotal > 0) {
+      if (clientSecret === null) {
+        if (cartCourses.length && email) {
+          const token = window.localStorage.getItem('accessToken')
+
+          fetch(`${BASE_URL}/student/transaction/partially/intent`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              Authorization: `Bearer ${token}`
+            },
+            body: JSON.stringify({
+              items: cartCourses,
+              email: email,
+              coupon: usedCoupon,
+              referralUser: referralUser,
+              cartTotal: cartTotal,
+              isVIP: isVIP,
+              oldVIP: oldVIP
+            })
+          })
+            .then(res => res.json())
+            .then(data => {
+              console.log(data)
+              const { redirectURL } = data // Make sure to retrieve the correct clientSecret from the response
+              setRedirectURL(redirectURL)
+              router.push(redirectURL)
+            })
+          setCheckout(true)
+        } else {
+          window.alert('Cart is Empty!')
+        }
+      }
+    } else {
+      window.alert('error ')
+    }
+  }
+
   //Payment config(stripe)
   const appearance = {
     theme: 'flat'
@@ -235,6 +280,10 @@ const Index = () => {
   }, [])
 
   const applyCouponHandler = e => {
+    if (!email) {
+      window.alert('You must be logged in to use the discount code!')
+    }
+
     if (!coupon) {
       window.alert('Please insert a valid coupon!')
     } else {
@@ -248,6 +297,10 @@ const Index = () => {
   }
 
   const applyReferralHandler = e => {
+    if (!email) {
+      window.alert('You must be logged in to use the discount code!')
+    }
+
     if (!referral) {
       window.alert('Please insert a valid Code!')
     } else {
@@ -612,9 +665,15 @@ const Index = () => {
                 <h5 className='d-flex justify-content-between FNV-Total'>
                   Total: <span>${cartTotal || 0}</span>
                 </h5>
-
+                {email
+                  ? partially && (
+                      <button onClick={handelInitiatePartiallyPayment} className='FNV-Btn BtnPrimary BtnMedium'>
+                        Pay Partially
+                      </button>
+                    )
+                  : null}
                 {email ? (
-                  checkout && clientSecret ? (
+                  checkout && stripePay && clientSecret ? (
                     <Elements options={options} stripe={stripePromise}>
                       <CheckoutForm items={cartCourses} user={email} coupon={coupon} fullName={fullName} />
                     </Elements>
@@ -624,7 +683,7 @@ const Index = () => {
                         <>
                           {' '}
                           <button onClick={handelInitiatePayment} className='FNV-Btn BtnPrimary BtnMedium'>
-                            Checkout
+                            Full payment
                           </button>
                         </>
                       ) : (
