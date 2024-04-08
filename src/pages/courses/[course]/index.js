@@ -405,7 +405,7 @@ const Course = () => {
                   {/* Instructor */}
                   <div className='FNV-Course-Card FNV-Instructor'>
                     <div className='row'>
-                      <div className='col-md-2'>
+                      <div className='col-4 col-md-2'>
                         <div className='FNV-Instructor-Image'>
                           <svg
                             xmlns='http://www.w3.org/2000/svg'
@@ -422,7 +422,7 @@ const Course = () => {
                           </svg>
                         </div>
                       </div>
-                      <div className='col-md-8'>
+                      <div className='col-8 col-md-8'>
                         <small>{t('single-course-teacher')}:</small>
                         <h4>
                           {data?.teachers ? (
@@ -754,7 +754,7 @@ const Course = () => {
                     {/* Features */}
                     <div className='row'>
                       {/* SVG */}
-                      <div className='col-md-2'>
+                      <div className='col-3 col-md-2'>
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
                           class='icon icon-tabler icon-tabler-certificate'
@@ -774,7 +774,7 @@ const Course = () => {
                         </svg>
                       </div>
                       {/* Title */}
-                      <div className='col-md-10'>
+                      <div className='col-9 col-md-10'>
                         <h5>{t('single-course-diploma')}</h5>
                         <p>{t('single-course-diploma-desc')}</p>
                       </div>
@@ -783,7 +783,7 @@ const Course = () => {
                     {/* Features */}
                     <div className='row'>
                       {/* SVG */}
-                      <div className='col-md-2'>
+                      <div className='col-3 col-md-2'>
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
                           class='icon icon-tabler icon-tabler-timeline'
@@ -802,7 +802,7 @@ const Course = () => {
                         </svg>
                       </div>
                       {/* Title */}
-                      <div className='col-md-10'>
+                      <div className='col-9 col-md-10'>
                         <h5>{t('single-course-months')}</h5>
                         <p>{t('single-course-months-desc')}</p>
                       </div>
@@ -811,7 +811,7 @@ const Course = () => {
                     {/* Price */}
                     <div className='row FNV-Price'>
                       {/* SVG */}
-                      <div className='col-md-2'>
+                      <div className='col-3 col-md-2'>
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
                           class='icon icon-tabler icon-tabler-currency-dollar'
@@ -827,7 +827,7 @@ const Course = () => {
                         </svg>
                       </div>
                       {/* Title */}
-                      <div className='col-md-10'>
+                      <div className='col-9 col-md-10'>
                         <h5>
                           {t('single-course-regular-price')}:{' '}
                           <price>
@@ -843,7 +843,7 @@ const Course = () => {
                     {/* VIP Membership */}
                     <div className='row FNV-VIP'>
                       {/* SVG */}
-                      <div className='col-md-2'>
+                      <div className='col-3 col-md-2'>
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
                           class='icon icon-tabler icon-tabler-crown'
@@ -858,7 +858,7 @@ const Course = () => {
                         </svg>
                       </div>
                       {/* Title */}
-                      <div className='col-md-10'>
+                      <div className='col-9 col-md-10'>
                         <h5>
                           {t('single-course-vip-price')}:{' '}
                           <price>

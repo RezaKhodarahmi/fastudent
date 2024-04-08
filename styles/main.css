@@ -4313,35 +4313,607 @@ html[dir=rtl] .FNV-SinglePage .container .row .accordion .accordion-item .accord
   }
 }
 @media (max-width: 575.98px) {
-  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Video {
+  .FNV-SingleCourse body[dir=rtl] .FNV-SingleCourse {
+    padding: 1rem;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-SingleCourse .container .row.FNV-Header {
+    background: rgb(0, 59, 191);
+    background: linear-gradient(170deg, rgb(255, 119, 44) 0%, rgb(0, 59, 191) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a52994",endColorstr="#003bbf",GradientType=1);
+    border-radius: 15px;
+    overflow: hidden;
+    height: auto;
+    padding: 2rem;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-SingleCourse .container .row .col-md-8 {
+    padding: 0;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-SingleCourse .container .row .col-md-8 .FNV-Category {
+    display: flex;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-SingleCourse .container .row .col-md-8 .FNV-Category .FNV-Category-Icon {
+    padding: 0.5rem;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-left: 0.5rem;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-SingleCourse .container .row .col-md-8 .FNV-Category .FNV-Category-Icon svg {
+    width: 20px;
+    height: 20px;
+    stroke: #FF772C;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-SingleCourse .container .row .col-md-8 .FNV-Category .FNV-Cat-Heading {
+    display: flex;
+    align-items: center;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-SingleCourse .container .row .col-md-8 .FNV-Category .FNV-Cat-Heading span, .FNV-SingleCourse body[dir=rtl] .FNV-SingleCourse .container .row .col-md-8 .FNV-Category .FNV-Cat-Heading h2 {
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-SingleCourse .container .row .col-md-8 .FNV-Category .FNV-Cat-Heading a {
+    transition: 0.3s all ease-in-out;
+    color: #FF772C;
+    margin: 0 0.5rem;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-SingleCourse .container .row .col-md-8 .FNV-Category .FNV-Cat-Heading a:hover {
+    color: #000000;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-SingleCourse .container .row .col-md-8 h1 {
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Shorts {
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+    border-top: #999999 1px solid;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Shorts .row .col-md,
+  .FNV-SingleCourse body[dir=rtl] .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Shorts .row .col-md-4 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Shorts .row .col-md .FNV-Cat-Shorts-Icon,
+  .FNV-SingleCourse body[dir=rtl] .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Shorts .row .col-md-4 .FNV-Cat-Shorts-Icon {
+    padding: 0.5rem;
+    background-color: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    width: 100%;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Shorts .row .col-md .FNV-Cat-Shorts-Icon svg,
+  .FNV-SingleCourse body[dir=rtl] .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Shorts .row .col-md-4 .FNV-Cat-Shorts-Icon svg {
+    width: 20px;
+    height: 30px;
+    margin-left: 0.5rem;
+    stroke: #FF772C;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Shorts .row .col-md .FNV-Cat-Shorts-Icon h3,
+  .FNV-SingleCourse body[dir=rtl] .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Shorts .row .col-md-4 .FNV-Cat-Shorts-Icon h3 {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 32px;
+    margin-bottom: 0;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Shorts .row .col-md .FNV-Cat-Shorts-Icon h3 strong, .FNV-SingleCourse body[dir=rtl] .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Shorts .row .col-md .FNV-Cat-Shorts-Icon h3 a,
+  .FNV-SingleCourse body[dir=rtl] .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Shorts .row .col-md-4 .FNV-Cat-Shorts-Icon h3 strong,
+  .FNV-SingleCourse body[dir=rtl] .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Shorts .row .col-md-4 .FNV-Cat-Shorts-Icon h3 a {
+    color: #003BBF;
+    text-transform: capitalize;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row {
+    flex-wrap: wrap-reverse;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 {
     margin-top: 1rem;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Video {
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    border-width: 0;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1411764706);
-    margin-bottom: 0rem;
+    height: 225px !important;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card {
+    display: block;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1411764706);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card h2 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card iframe {
+    width: 100%;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card.FNV-Instructor {
+    background-color: #003BBF;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card.FNV-Instructor .row .col-md-2 .FNV-Instructor-Image {
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 2rem;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card.FNV-Instructor .row .col-md-2 .FNV-Instructor-Image svg {
+    stroke: #FF772C;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card.FNV-Instructor .row .col-md-8 {
+    margin-top: 0;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card.FNV-Instructor .row .col-md-8 small {
+    color: #F0F3FB;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card.FNV-Instructor .row .col-md-8 h4, .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card.FNV-Instructor .row .col-md-8 a {
+    font-weight: 800;
+    color: #ffffff;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card.FNV-Instructor .row .col-md-8 p {
+    color: #d9d9d9;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Head h4 {
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Head h4::before {
+    content: " ";
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #FF772C;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Head p,
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Head ul {
+    color: #7d7e7f;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body h5 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body .accordion .accordion-item {
+    border-width: 0;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body .accordion .accordion-item:hover {
+    background-color: #f8f9fa;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body .accordion .accordion-item button {
+    border-radius: 0px;
+    border-top: 1px solid #e9ecef;
+    background-color: unset;
+    position: relative;
+    padding: 1rem 0.5rem;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body .accordion .accordion-item button::after {
+    margin-right: auto;
+    margin-left: unset;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body .accordion .accordion-item button:focus {
+    box-shadow: unset;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body .accordion .accordion-item button svg {
+    color: #d9d9d9;
+    margin-left: 1rem;
+    margin-right: 0rem;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body .accordion .accordion-item button .badge {
+    margin-right: 1rem;
+    border-radius: 2px;
+    color: #ffffff;
+    font-weight: 400;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body .accordion .accordion-item button .badge.text-bg-info {
+    color: #ffffff !important;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body .accordion .accordion-item button .badge.text-bg-practice {
+    background-color: #FF772C;
+    color: #ffffff !important;
+    position: absolute;
+    left: 4rem;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body .accordion .accordion-item button .badge.text-bg-practice svg {
+    color: #ffffff;
+    margin-left: 0rem;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body .accordion .accordion-item button .badge.text-bg-quiz {
+    background-color: #bd83ef;
+    color: #ffffff !important;
+    position: absolute;
+    left: 4rem;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body .accordion .accordion-item button .badge.text-bg-quiz svg {
+    color: #ffffff;
+    margin-left: 0rem;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body .accordion .accordion-item button .badge.text-bg-primary {
+    color: #ffffff !important;
+    border-radius: 40px;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body .accordion .accordion-item button .badge.text-bg-primary svg {
+    width: 16px;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body .accordion .accordion-item button .badge.FNV-Badge-Preview {
+    left: 4rem;
+    right: unset;
+    position: absolute;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body .accordion .accordion-item button .badge.FNV-Badge-Preview svg {
+    color: #ffffff;
+    margin-right: 0rem;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body .accordion .accordion-item button .badge.FNV-Badge-Private {
+    background-color: transparent !important;
+    left: 0px;
+    margin: 0;
+    right: unset;
+    position: absolute;
+    color: #7d7e7f !important;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body .accordion .accordion-item button .badge.FNV-Badge-Private svg {
+    color: #7d7e7f;
+    margin-left: 0rem;
+    margin-right: 0;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body .accordion .accordion-body.FNV-Locked {
+    color: #7d7e7f;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 {
+    padding: 0;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card {
+    display: block;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1411764706);
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    border-radius: 15px;
+    /* Safari */
+    position: sticky;
+    top: 1rem;
+    text-align: center;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card img {
+    margin-bottom: 1rem;
+    display: block;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 200px;
+    border-radius: 15px;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: fff;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .FNV-Btn {
+    font-weight: 600;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    transition: all 0.1s ease-in-out;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .FNV-Btn svg {
+    width: 25px;
+    height: 25px;
+    stroke: #ffffff;
+    margin-left: auto;
+    margin-right: unset;
+    transition: all 0.1s ease-in-out;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .FNV-Btn span {
+    margin-left: auto;
+    margin-right: unset;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .FNV-Btn:hover {
+    border: 1px solid #FF772C;
+    color: #FF772C;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .FNV-Btn:hover svg {
+    stroke: #FF772C;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .form-select {
+    border: 1px solid #003BBF;
+    font-size: 16px;
+    color: #000000;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card h4 {
+    font-size: 16px;
+    line-height: 34px;
+    font-weight: 400;
+    margin: 0 auto;
+    background-color: #003BBF;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    padding: 0.1rem 0.5rem;
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row {
+    margin-top: 1rem;
+    background-color: #f5f5f5;
+    display: inline-flex;
+    width: 100%;
+    border-radius: 15px;
+    text-align: left;
+    padding: 0.5rem 0;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row.FNV-Price {
+    background-color: #f7f7f7;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row.FNV-Price .col-md-2 svg {
+    stroke: #003BBF;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row.FNV-Price .col-md-10 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row.FNV-Price .col-md-10 h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 800;
+    color: #000000;
+    background-color: transparent;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row.FNV-Price .col-md-10 h5 price {
+    color: #003BBF;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row.FNV-VIP {
+    margin-top: 0.1rem;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    background-color: #FF772C;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row.FNV-VIP .col-md-2 svg {
+    stroke: #ffffff;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row.FNV-VIP .col-md-10 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row.FNV-VIP .col-md-10 h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 800;
+    color: #ffffff;
+    background-color: transparent;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row.FNV-VIP .col-md-10 h5 price {
+    color: #ffffff;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row.FNV-VIP .col-md-10 p {
+    color: #ffffff;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row .col-md-2 svg {
+    stroke: #FF772C;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row .col-md-10 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row .col-md-10 h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #003BBF;
+    background-color: transparent;
+    text-align: right;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row .col-md-10 p {
+    font-size: 13px;
+    margin-bottom: 0;
+    text-align: right;
+    color: #003BBF;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card p {
+    margin-bottom: 1rem;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card h5 {
+    margin-bottom: 1rem;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card h5:last-child {
+    margin-bottom: 0;
+  }
+  .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card h5 price {
+    color: #FF772C;
+  }
+  .FNV-SingleCourse body[dir=ltr] .FNV-SingleCourse {
+    padding: 1rem 0;
+  }
+  .FNV-SingleCourse body[dir=ltr] .FNV-SingleCourse .container .row.FNV-Header {
+    background: rgb(0, 59, 191);
+    background: linear-gradient(170deg, rgb(255, 119, 44) 0%, rgb(0, 59, 191) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a52994",endColorstr="#003bbf",GradientType=1);
+    border-radius: 15px;
+    overflow: hidden;
+    height: auto;
+    padding: 3rem 2rem;
+  }
+  .FNV-SingleCourse body[dir=ltr] .FNV-SingleCourse .container .row .col-md-8 {
+    padding: 0;
+  }
+  .FNV-SingleCourse body[dir=ltr] .FNV-SingleCourse .container .row .col-md-8 .FNV-Category {
+    display: flex;
+  }
+  .FNV-SingleCourse body[dir=ltr] .FNV-SingleCourse .container .row .col-md-8 .FNV-Category .FNV-Category-Icon {
+    padding: 0.5rem;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-right: 0.5rem;
+  }
+  .FNV-SingleCourse body[dir=ltr] .FNV-SingleCourse .container .row .col-md-8 .FNV-Category .FNV-Category-Icon svg {
+    width: 20px;
+    height: 20px;
+    stroke: #FF772C;
+  }
+  .FNV-SingleCourse body[dir=ltr] .FNV-SingleCourse .container .row .col-md-8 .FNV-Category .FNV-Cat-Heading {
+    display: flex;
+    align-items: center;
+  }
+  .FNV-SingleCourse body[dir=ltr] .FNV-SingleCourse .container .row .col-md-8 .FNV-Category .FNV-Cat-Heading span, .FNV-SingleCourse body[dir=ltr] .FNV-SingleCourse .container .row .col-md-8 .FNV-Category .FNV-Cat-Heading h2 {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 0;
+  }
+  .FNV-SingleCourse body[dir=ltr] .FNV-SingleCourse .container .row .col-md-8 .FNV-Category .FNV-Cat-Heading a {
+    transition: 0.3s all ease-in-out;
+    color: #FF772C;
+    margin: 0 0.5rem;
+  }
+  .FNV-SingleCourse body[dir=ltr] .FNV-SingleCourse .container .row .col-md-8 .FNV-Category .FNV-Cat-Heading a:hover {
+    color: #000000;
+  }
+  .FNV-SingleCourse body[dir=ltr] .FNV-SingleCourse .container .row .col-md-8 h1 {
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  .FNV-SingleCourse body[dir=ltr] .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Shorts {
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+    border-top: #999999 1px solid;
+  }
+  .FNV-SingleCourse body[dir=ltr] .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Shorts .row .col-md,
+  .FNV-SingleCourse body[dir=ltr] .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Shorts .row .col-md-4 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .FNV-SingleCourse body[dir=ltr] .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Shorts .row .col-md .FNV-Cat-Shorts-Icon,
+  .FNV-SingleCourse body[dir=ltr] .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Shorts .row .col-md-4 .FNV-Cat-Shorts-Icon {
+    padding: 0.5rem;
+    background-color: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    width: 100%;
+  }
+  .FNV-SingleCourse body[dir=ltr] .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Shorts .row .col-md .FNV-Cat-Shorts-Icon svg,
+  .FNV-SingleCourse body[dir=ltr] .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Shorts .row .col-md-4 .FNV-Cat-Shorts-Icon svg {
+    width: 20px;
+    height: 30px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    stroke: #FF772C;
+  }
+  .FNV-SingleCourse body[dir=ltr] .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Shorts .row .col-md .FNV-Cat-Shorts-Icon h3,
+  .FNV-SingleCourse body[dir=ltr] .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Shorts .row .col-md-4 .FNV-Cat-Shorts-Icon h3 {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 32px;
+    margin-bottom: 0;
+  }
+  .FNV-SingleCourse body[dir=ltr] .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Shorts .row .col-md .FNV-Cat-Shorts-Icon h3 strong, .FNV-SingleCourse body[dir=ltr] .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Shorts .row .col-md .FNV-Cat-Shorts-Icon h3 a,
+  .FNV-SingleCourse body[dir=ltr] .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Shorts .row .col-md-4 .FNV-Cat-Shorts-Icon h3 strong,
+  .FNV-SingleCourse body[dir=ltr] .FNV-SingleCourse .container .row .col-md-8 .FNV-Cat-Shorts .row .col-md-4 .FNV-Cat-Shorts-Icon h3 a {
+    color: #003BBF;
+    text-transform: capitalize;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 {
+    margin-top: 1rem;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Video {
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    border-width: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1411764706);
+    height: 500px !important;
   }
   .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card {
     display: block;
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: #ffffff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1411764706);
     padding: 1.5rem;
     margin-bottom: 1rem;
     overflow: hidden;
   }
-  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Content h3 {
-    font-size: 18px;
-    font-weight: 500;
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card iframe {
+    width: 100%;
   }
-  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Content h4 {
-    font-size: 16px;
-    font-weight: 500;
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card.FNV-Instructor {
+    background-color: #003BBF;
   }
-  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Content p,
-  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Content ul {
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card.FNV-Instructor .row .col-md-2 .FNV-Instructor-Image {
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 2rem;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card.FNV-Instructor .row .col-md-2 .FNV-Instructor-Image svg {
+    stroke: #FF772C;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card.FNV-Instructor .row .col-md-8 {
+    margin-top: 0;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card.FNV-Instructor .row .col-md-8 small {
+    color: #999999;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card.FNV-Instructor .row .col-md-8 h4, .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card.FNV-Instructor .row .col-md-8 a {
+    font-weight: 800;
+    color: #ffffff;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card.FNV-Instructor .row .col-md-8 p {
+    color: #d9d9d9;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Head h4 {
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Head h4::before {
+    content: " ";
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #FF772C;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Head p,
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Head ul {
     color: #7d7e7f;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 25px;
     margin-bottom: 2rem;
     text-align: justify;
@@ -4361,21 +4933,16 @@ html[dir=rtl] .FNV-SinglePage .container .row .accordion .accordion-item .accord
     border-top: 1px solid #e9ecef;
     background-color: unset;
     position: relative;
-    padding: 10px 0;
-    font-size: 12px;
   }
   .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body .accordion .accordion-item button:focus {
     box-shadow: unset;
-  }
-  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body .accordion .accordion-item button::after {
-    display: none !important;
   }
   .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body .accordion .accordion-item button svg {
     color: #d9d9d9;
     margin-right: 1rem;
   }
   .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body .accordion .accordion-item button .badge {
-    margin-left: 0.2rem;
+    margin-left: 1rem;
     border-radius: 2px;
     color: #ffffff;
     font-weight: 400;
@@ -4407,7 +4974,7 @@ html[dir=rtl] .FNV-SinglePage .container .row .accordion .accordion-item .accord
     width: 16px;
   }
   .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body .accordion .accordion-item button .badge.FNV-Badge-Preview {
-    right: 0rem;
+    right: 4rem;
     position: absolute;
   }
   .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body .accordion .accordion-item button .badge.FNV-Badge-Preview svg {
@@ -4416,7 +4983,7 @@ html[dir=rtl] .FNV-SinglePage .container .row .accordion .accordion-item .accord
   }
   .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body .accordion .accordion-item button .badge.FNV-Badge-Private {
     background-color: transparent !important;
-    right: 0rem;
+    right: 4rem;
     position: absolute;
     color: #7d7e7f !important;
   }
@@ -4424,42 +4991,162 @@ html[dir=rtl] .FNV-SinglePage .container .row .accordion .accordion-item .accord
     color: #7d7e7f;
     margin-right: 0rem;
   }
-  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body .accordion .accordion-body {
-    padding: 10px 5px;
-  }
   .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-8 .FNV-Course-Card .FNV-Course-Card-Body .accordion .accordion-body.FNV-Locked {
     color: #7d7e7f;
-    font-size: 12px;
   }
   .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card {
     display: block;
     background-color: #ffffff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1411764706);
     padding: 2rem;
-    margin-top: 0rem;
+    margin-top: -13rem;
     margin-bottom: 1rem;
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: 15px;
     /* Safari */
     position: sticky;
     top: 1rem;
+    text-align: center;
   }
   .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card img {
     margin-bottom: 1rem;
+    display: block;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 200px;
+    border-radius: 15px;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: fff;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
   }
   .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .FNV-Btn {
     font-weight: 600;
     margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    transition: all 0.1s ease-in-out;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .FNV-Btn svg {
+    width: 25px;
+    height: 25px;
+    stroke: #ffffff;
+    margin-right: auto;
+    transition: all 0.1s ease-in-out;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .FNV-Btn span {
+    margin-right: auto;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .FNV-Btn:hover {
+    border: 1px solid #FF772C;
+    color: #FF772C;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .FNV-Btn:hover svg {
+    stroke: #FF772C;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .form-select {
+    border: 1px solid #003BBF;
+    font-size: 16px;
+    color: #000000;
   }
   .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card h4 {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 34px;
-    margin-top: 0.5rem;
     font-weight: 400;
-    margin-bottom: 0;
+    margin: 0 auto;
+    background-color: #003BBF;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    padding: 0.1rem 0.5rem;
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
   }
-  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card h4:last-child {
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row {
     margin-top: 1rem;
+    background-color: #f5f5f5;
+    display: inline-flex;
+    width: 100%;
+    border-radius: 15px;
+    text-align: left;
+    padding: 0.5rem 0;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row.FNV-Price {
+    background-color: #f7f7f7;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row.FNV-Price .col-md-2 svg {
+    stroke: #003BBF;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row.FNV-Price .col-md-10 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row.FNV-Price .col-md-10 h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 800;
+    color: #000000;
+    background-color: transparent;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row.FNV-Price .col-md-10 h5 price {
+    color: #003BBF;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row.FNV-VIP {
+    margin-top: 0.1rem;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    background-color: #FF772C;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row.FNV-VIP .col-md-2 svg {
+    stroke: #ffffff;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row.FNV-VIP .col-md-10 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row.FNV-VIP .col-md-10 h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    font-weight: 800;
+    color: #ffffff;
+    background-color: transparent;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row.FNV-VIP .col-md-10 h5 price {
+    color: #ffffff;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row.FNV-VIP .col-md-10 p {
+    color: #ffffff;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row .col-md-2 svg {
+    stroke: #FF772C;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row .col-md-10 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row .col-md-10 h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #003BBF;
+    background-color: transparent;
+  }
+  .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row .col-md-10 p {
+    font-size: 13px;
+    margin-bottom: 0;
+    color: #003BBF;
   }
   .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card p {
     margin-bottom: 1rem;
@@ -4474,6 +5161,98 @@ html[dir=rtl] .FNV-SinglePage .container .row .accordion .accordion-item .accord
   }
   .FNV-SingleCourse .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card h5 price {
     color: #FF772C;
+  }
+  .FNV-SingleCourse .FNV-Course-Related {
+    background: rgb(0, 59, 191);
+    background: linear-gradient(180deg, rgba(0, 59, 191, 0.1993172269) 0%, rgb(255, 255, 255) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003bbf",endColorstr="#ffffff",GradientType=1);
+    padding: 5rem 0;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .FNV-SingleCourse .FNV-Course-Related h3 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    color: #003BBF;
+    margin-bottom: 5rem;
+  }
+  .FNV-SingleCourse .FNV-Course-Related h3::before {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 2px;
+    background: #FF772C;
+    left: -1rem;
+    top: 50%;
+    position: absolute;
+  }
+  .FNV-SingleCourse .FNV-Course-Related h3::after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 2px;
+    background: #FF772C;
+    right: -1rem;
+    top: 50%;
+    position: absolute;
+  }
+  .FNV-SingleCourse .FNV-Course-Related .container .row .col-12 .swiper .swiper-wrapper .swiper-slide {
+    padding: 0 0 10rem;
+  }
+  .FNV-SingleCourse .FNV-Course-Related .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card {
+    border-width: 0;
+    border-radius: 18px;
+    overflow: visible;
+    cursor: grab;
+  }
+  .FNV-SingleCourse .FNV-Course-Related .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card:active, .FNV-SingleCourse .FNV-Course-Related .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card:target {
+    cursor: grabbing;
+  }
+  .FNV-SingleCourse .FNV-Course-Related .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body {
+    background-color: #ffffff;
+    border-radius: 18px;
+    margin-top: -3rem;
+    height: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+  }
+  .FNV-SingleCourse .FNV-Course-Related .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body h4 {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #003BBF;
+    text-align: left;
+  }
+  .FNV-SingleCourse .FNV-Course-Related .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body span {
+    font-size: 14px;
+    line-height: 1px;
+    font-weight: 400;
+    color: #003BBF;
+    margin-bottom: 5rem;
+  }
+  .FNV-SingleCourse .FNV-Course-Related .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body span svg {
+    width: 16px;
+    height: 16px;
+  }
+  .FNV-SingleCourse .FNV-Course-Related .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card .card-body .FNV-Btn {
+    position: absolute;
+    bottom: -1.5rem;
+    z-index: 15;
+    align-self: center;
+  }
+  .FNV-SingleCourse .FNV-Course-Related .container .row .col-12 .swiper-pagination {
+    top: unset;
+    bottom: 3rem;
+  }
+  .FNV-SingleCourse .FNV-Course-Related .FNV-SeeMore {
+    margin-bottom: 5rem;
+    padding: 1rem 3rem;
+    width: auto;
   }
 }
 
