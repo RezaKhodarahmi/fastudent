@@ -51,6 +51,17 @@
   "category-section-three-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   "category-section-three-button": "FANAVARAN VIP Membership",
 
+  "single-course-category": "Category",
+  "single-course-duration": "Duration",
+  "single-course-start-date": "Start Date",
+  "single-course-days": "Days",
+  "single-course-time": "Time",
+  "single-course-teacher": "Teacher",
+  "single-course-cycle": "Cycle",
+  "single-course-introduction": "Introduction",
+  "single-course-materials": "Files and Materials",
+  "single-course-videos": "Educational Content",
+
   "courses-section-title": "New Courses",
   "webinars-section-title": "New webinars",
   "blogs-section-title": "Blogs",
@@ -119,6 +130,7 @@
   "just-visit-our-channel": "It is enough to visit the YouTube channel of the technicians.",
   "collected-about-courses":"We have collected about Canadian courses, designations, and certificates.",
   "we-provide-useful-content":"We at Fanavaran provide useful and diverse content for your further information",
+  
 "continue-reading":"Continue Reading",
 "contact-us":"Contact us",
 "about-us":"About us",

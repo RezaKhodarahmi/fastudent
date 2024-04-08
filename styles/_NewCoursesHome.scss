@@ -1,6 +1,6 @@
 .FNV-NewCourses {
     background-color: $FiveColor;
-    padding: 5rem 0 0;
+    padding: 5rem 0 5rem 0rem;
     overflow: hidden;
 
     h3 {
@@ -42,7 +42,7 @@
                 .swiper {
                     .swiper-wrapper {
                         .swiper-slide {
-                            padding: 0 0 7rem;
+                            padding: 0 0;
 
                             .card {
                                 border-width: 0;
@@ -50,6 +50,11 @@
                                 overflow: hidden;
                                 position: relative;
                                 cursor: grab;
+
+                                img{
+                                    height: 250px;
+                                    object-fit: cover;
+                                }
 
                                 &:active,
                                 &:target {
@@ -75,16 +80,17 @@
                                     margin-top: -3rem;
 
                                     h4 {
-                                        font-size: 22px;
-                                        line-height: 44px;
+                                        font-size: 16px;
+                                        line-height: 20px;
                                         font-weight: 700;
                                         color: $PrimaryColor;
                                         text-align: center;
+                                        min-height: 50px;
                                     }
 
                                     price {
-                                        font-size: 22px;
-                                        font-weight: 400;
+                                        font-size: 30px;
+                                        font-weight: 900;
                                         line-height: 44px;
                                         color: $SecondaryColor;
                                         text-align: center;
@@ -94,9 +100,12 @@
 
                                     .d-flex {
                                         margin-top: 1rem;
+                                        gap: 10px;
 
                                         .FNV-Btn {
                                             width: 100%;
+                                            font-size: 15px;
+                                            font-weight: 800;
 
                                             &:first-child {
                                                 margin-right: 5px;
@@ -154,7 +163,7 @@
                     .swiper {
                         .swiper-wrapper {
                             .swiper-slide {
-                                padding: 0 0 7rem;
+                                padding: 0 0;
 
                                 .card {
                                     border-width: 0;

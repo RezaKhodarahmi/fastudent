@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+
+// ** Import Translation
+import { useTranslation } from 'react-i18next'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { setCartItems } from 'src/store/apps/cart'
@@ -31,6 +34,8 @@ const Course = () => {
   const token = localStorage.getItem('accessToken') || null
   const { course } = router.query
   const auth = useAuth()
+
+  const { t } = useTranslation()
 
   useEffect(() => {
     setLoading(true)
@@ -162,7 +167,7 @@ const Course = () => {
                   </div>
                   {/* Category Title */}
                   <div className='FNV-Cat-Heading'>
-                    <span>Category: </span>
+                    <span>{t('single-course-category')}:</span>
                     {data?.categories
                       ? data?.categories?.map((category, index, array) => (
                           <h2 key={category.id}>
@@ -200,11 +205,11 @@ const Course = () => {
                         </svg>
 
                         <h3>
-                          Duration:{' '}
+                          {t('single-course-duration')}:{' '}
                           <strong>
                             {data?.cycles
                               ? data?.cycles?.map(cycle => (cycle.id == selectedCycle ? cycle.duration : null))
-                              : '0 Hour'}
+                              : '0 ساعت'}
                           </strong>
                         </h3>
                       </div>
@@ -226,7 +231,7 @@ const Course = () => {
                           <path d='M7 4v16l13 -8z' />
                         </svg>
                         <h3>
-                          Start Date:{' '}
+                          {t('single-course-start-date')}:{' '}
                           <strong>
                             {data?.cycles
                               ? data?.cycles?.map(cycle => (cycle.id == selectedCycle ? cycle.startDate : null))
@@ -258,7 +263,7 @@ const Course = () => {
                           <path d='M16 14v4' />
                         </svg>
                         <h3>
-                          Days:{' '}
+                          {t('single-course-days')}:{' '}
                           <strong>
                             {data?.cycles
                               ? data?.cycles.map(cycle => (cycle.id == selectedCycle ? cycle.days : null))
@@ -290,7 +295,7 @@ const Course = () => {
                           <path d='M8 13h1l2 3l2 -6l2 3h1' />
                         </svg>
                         <h3>
-                          Time:{' '}
+                          {t('single-course-time')}:{' '}
                           <strong>
                             {data?.cycles
                               ? data?.cycles?.map(cycle => (cycle.id == selectedCycle ? cycle.time : null))
@@ -320,7 +325,7 @@ const Course = () => {
                           <path d='M6 10.6v5.4a6 3 0 0 0 12 0v-5.4' />
                         </svg>
                         <h3>
-                          Teacher:{' '}
+                          {t('single-course-teacher')}:{' '}
                           <strong>
                             {data?.teachers ? (
                               <Link href={`${appConfig.appUrl}/teachers/${data?.teachers[0]?.id}`} passHref>
@@ -357,7 +362,7 @@ const Course = () => {
                           <path d='M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356' />
                         </svg>
                         <h3>
-                          Cycle:{' '}
+                          {t('single-course-cycle')}:{' '}
                           <strong>
                             {data?.cycles
                               ? data?.cycles?.map(cycle => (cycle.id == selectedCycle ? cycle.name : null))
@@ -382,8 +387,6 @@ const Course = () => {
                       className='FNV-Course-Video w-100'
                       url={data?.introURL}
                       controls={true}
-                      width='100%'
-                      height='400px'
                     />
                   ) : null}
 
@@ -391,7 +394,7 @@ const Course = () => {
                   <div className='FNV-Course-Card'>
                     {/* Head */}
                     <div className='FNV-Course-Card-Head'>
-                      <h4>Introduction</h4>
+                      <h4>{t('single-course-introduction')}</h4>
                     </div>
                     {/* Body */}
                     <div className='FNV-Course-Card-Body'>
@@ -420,7 +423,7 @@ const Course = () => {
                         </div>
                       </div>
                       <div className='col-md-8'>
-                        <small>Instructor:</small>
+                        <small>{t('single-course-teacher')}:</small>
                         <h4>
                           {data?.teachers ? (
                             <Link href={`${appConfig.appUrl}/teachers/${data?.teachers[0]?.id}`} passHref>
@@ -442,7 +445,7 @@ const Course = () => {
                   <div className='FNV-Course-Card'>
                     {/* Head */}
                     <div className='FNV-Course-Card-Head'>
-                      <h4>Files and Materials</h4>
+                      <h4>{t('single-course-materials')}</h4>
                     </div>
                     {/* Body */}
                    
@@ -457,7 +460,7 @@ const Course = () => {
                   <div className='FNV-Course-Card'>
                     {/* Head */}
                     <div className='FNV-Course-Card-Head'>
-                      <h4>Curriculum</h4>
+                      <h4>{t('single-course-videos')}</h4>
                     </div>
                     {/* Body */}
                     <div className='FNV-Course-Card-Body'>

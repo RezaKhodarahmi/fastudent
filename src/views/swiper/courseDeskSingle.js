@@ -24,28 +24,14 @@ const CourseDeskSingle = ({ courses, addToCart }) => {
         centeredSlides={false}
         loop={true}
         autoplay={{
-          delay: 2500,
+          delay: 5000,
           disableOnInteraction: false
         }}
         pagination={{
-          clickable: true
+          clickable: false
         }}
         navigation={false}
-        breakpoints={{
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 20
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 40
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 50
-          }
-        }}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay, Navigation]}
         className='FNV-NewCoursesSwiper d-none d-sm-none d-md-block'
       >
         {validCourses
