@@ -369,12 +369,14 @@ body[dir='rtl']{
                 width: 25px;
                 height: 25px;
                 stroke: $WhiteColor;
-                margin-right: auto;
+                margin-left: auto;
+                margin-right: unset;
                 transition: all .1s ease-in-out;
               }
   
               span{
-                margin-right: auto;
+                margin-left: auto;
+                margin-right: unset;
               }
   
               &:hover{
@@ -435,7 +437,7 @@ body[dir='rtl']{
                   h5{
                     margin: 0;
                     padding: 0;
-                    font-size: 20px;
+                    font-size: 18px;
                     font-weight: 800;
                     color: $BlackColor;
                     background-color: transparent;
@@ -467,7 +469,7 @@ body[dir='rtl']{
                   h5{
                     margin: 0;
                     padding: 0;
-                    font-size: 22px;
+                    font-size: 20px;
                     font-weight: 800;
                     color: $WhiteColor;
                     background-color: transparent;
@@ -501,11 +503,13 @@ body[dir='rtl']{
                   font-weight: 600;
                   color: $PrimaryColor;
                   background-color: transparent;
+                  text-align: right;
                 }
   
                 p{
                   font-size: 13px;
                   margin-bottom: 0;
+                  text-align: right;
                   color: $PrimaryColor;
                 }
               }

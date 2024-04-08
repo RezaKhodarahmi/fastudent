@@ -3670,11 +3670,13 @@ html[dir=rtl] .FNV-SinglePage .container .row .accordion .accordion-item .accord
   width: 25px;
   height: 25px;
   stroke: #ffffff;
-  margin-right: auto;
+  margin-left: auto;
+  margin-right: unset;
   transition: all 0.1s ease-in-out;
 }
 .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .FNV-Btn span {
-  margin-right: auto;
+  margin-left: auto;
+  margin-right: unset;
 }
 .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .FNV-Btn:hover {
   border: 1px solid #FF772C;
@@ -3726,7 +3728,7 @@ html[dir=rtl] .FNV-SinglePage .container .row .accordion .accordion-item .accord
 .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row.FNV-Price .col-md-10 h5 {
   margin: 0;
   padding: 0;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 800;
   color: #000000;
   background-color: transparent;
@@ -3751,7 +3753,7 @@ html[dir=rtl] .FNV-SinglePage .container .row .accordion .accordion-item .accord
 .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row.FNV-VIP .col-md-10 h5 {
   margin: 0;
   padding: 0;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 800;
   color: #ffffff;
   background-color: transparent;
@@ -3777,10 +3779,12 @@ html[dir=rtl] .FNV-SinglePage .container .row .accordion .accordion-item .accord
   font-weight: 600;
   color: #003BBF;
   background-color: transparent;
+  text-align: right;
 }
 .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card .row .col-md-10 p {
   font-size: 13px;
   margin-bottom: 0;
+  text-align: right;
   color: #003BBF;
 }
 .FNV-SingleCourse body[dir=rtl] .FNV-Course-Detail .container .row .col-md-4 .FNV-Course-Card p {
