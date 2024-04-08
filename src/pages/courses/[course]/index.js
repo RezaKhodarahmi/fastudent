@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+
+// ** Import Translation
+import { useTranslation } from 'react-i18next'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { setCartItems } from 'src/store/apps/cart'
@@ -31,6 +34,8 @@ const Course = () => {
   const token = localStorage.getItem('accessToken') || null
   const { course } = router.query
   const auth = useAuth()
+
+  const { t } = useTranslation()
 
   useEffect(() => {
     setLoading(true)
@@ -162,7 +167,7 @@ const Course = () => {
                   </div>
                   {/* Category Title */}
                   <div className='FNV-Cat-Heading'>
-                    <span>Category: </span>
+                    <span>{t('single-course-category')}:</span>
                     {data?.categories
                       ? data?.categories?.map((category, index, array) => (
                           <h2 key={category.id}>
@@ -200,11 +205,11 @@ const Course = () => {
                         </svg>
 
                         <h3>
-                          Duration:{' '}
+                          {t('single-course-duration')}:{' '}
                           <strong>
                             {data?.cycles
                               ? data?.cycles?.map(cycle => (cycle.id == selectedCycle ? cycle.duration : null))
-                              : '0 Hour'}
+                              : '0 ساعت'}
                           </strong>
                         </h3>
                       </div>
@@ -226,7 +231,7 @@ const Course = () => {
                           <path d='M7 4v16l13 -8z' />
                         </svg>
                         <h3>
-                          Start Date:{' '}
+                          {t('single-course-start-date')}:{' '}
                           <strong>
                             {data?.cycles
                               ? data?.cycles?.map(cycle => (cycle.id == selectedCycle ? cycle.startDate : null))
@@ -258,7 +263,7 @@ const Course = () => {
                           <path d='M16 14v4' />
                         </svg>
                         <h3>
-                          Days:{' '}
+                          {t('single-course-days')}:{' '}
                           <strong>
                             {data?.cycles
                               ? data?.cycles.map(cycle => (cycle.id == selectedCycle ? cycle.days : null))
@@ -290,7 +295,7 @@ const Course = () => {
                           <path d='M8 13h1l2 3l2 -6l2 3h1' />
                         </svg>
                         <h3>
-                          Time:{' '}
+                          {t('single-course-time')}:{' '}
                           <strong>
                             {data?.cycles
                               ? data?.cycles?.map(cycle => (cycle.id == selectedCycle ? cycle.time : null))
@@ -320,7 +325,7 @@ const Course = () => {
                           <path d='M6 10.6v5.4a6 3 0 0 0 12 0v-5.4' />
                         </svg>
                         <h3>
-                          Teacher:{' '}
+                          {t('single-course-teacher')}:{' '}
                           <strong>
                             {data?.teachers ? (
                               <Link href={`${appConfig.appUrl}/teachers/${data?.teachers[0]?.id}`} passHref>
@@ -357,7 +362,7 @@ const Course = () => {
                           <path d='M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356' />
                         </svg>
                         <h3>
-                          Cycle:{' '}
+                          {t('single-course-cycle')}:{' '}
                           <strong>
                             {data?.cycles
                               ? data?.cycles?.map(cycle => (cycle.id == selectedCycle ? cycle.name : null))
@@ -382,8 +387,6 @@ const Course = () => {
                       className='FNV-Course-Video w-100'
                       url={data?.introURL}
                       controls={true}
-                      width='100%'
-                      height='400px'
                     />
                   ) : null}
 
@@ -391,7 +394,7 @@ const Course = () => {
                   <div className='FNV-Course-Card'>
                     {/* Head */}
                     <div className='FNV-Course-Card-Head'>
-                      <h4>Introduction</h4>
+                      <h4>{t('single-course-introduction')}</h4>
                     </div>
                     {/* Body */}
                     <div className='FNV-Course-Card-Body'>
@@ -402,7 +405,7 @@ const Course = () => {
                   {/* Instructor */}
                   <div className='FNV-Course-Card FNV-Instructor'>
                     <div className='row'>
-                      <div className='col-md-2'>
+                      <div className='col-4 col-md-2'>
                         <div className='FNV-Instructor-Image'>
                           <svg
                             xmlns='http://www.w3.org/2000/svg'
@@ -419,8 +422,8 @@ const Course = () => {
                           </svg>
                         </div>
                       </div>
-                      <div className='col-md-8'>
-                        <small>Instructor:</small>
+                      <div className='col-8 col-md-8'>
+                        <small>{t('single-course-teacher')}:</small>
                         <h4>
                           {data?.teachers ? (
                             <Link href={`${appConfig.appUrl}/teachers/${data?.teachers[0]?.id}`} passHref>
@@ -442,7 +445,7 @@ const Course = () => {
                   <div className='FNV-Course-Card'>
                     {/* Head */}
                     <div className='FNV-Course-Card-Head'>
-                      <h4>Files and Materials</h4>
+                      <h4>{t('single-course-materials')}</h4>
                     </div>
                     {/* Body */}
                    
@@ -457,7 +460,7 @@ const Course = () => {
                   <div className='FNV-Course-Card'>
                     {/* Head */}
                     <div className='FNV-Course-Card-Head'>
-                      <h4>Curriculum</h4>
+                      <h4>{t('single-course-videos')}</h4>
                     </div>
                     {/* Body */}
                     <div className='FNV-Course-Card-Body'>
@@ -473,15 +476,15 @@ const Course = () => {
                               aria-controls='panelsStayOpen-collapseTwo'
                             >
                               <i data-feather='file-text'></i> 1.1 Course Documents{' '}
-                              <span className='badge text-bg-practice'>Practice</span>
+                              <span className='badge text-bg-practice'>{t('single-course-practise')}</span>
                               <span className='badge text-bg-primary FNV-Badge-Private'>
-                                <i data-feather='lock'></i> Private
+                                <i data-feather='lock'></i> {t('single-course-locked')}
                               </span>
                             </button>
                           </h2>
                           <div id='panelsStayOpen-collapseTwo' className='accordion-collapse collapse'>
                             <div className='accordion-body FNV-Locked'>
-                              This lesson is private, for full access to all lessons you need to buy this course.
+                              {t('single-course-quiz-comment')}
                             </div>
                           </div>
                         </div>
@@ -498,14 +501,20 @@ const Course = () => {
                                     aria-controls={`panelsStayOpen-collapseTest${test.id}`}
                                   >
                                     <i data-feather='check-square'></i> {test.title}
-                                    <span className='badge text-bg-quiz'>Quiz</span>
+                                    <span className='badge text-bg-quiz'>{t('single-course-quiz')}</span>
                                     {inEnrolled ? (
                                       <span className='badge text-bg-primary FNV-Badge-Private'>
-                                        <i data-feather='unlock'></i>You have access
+                                        <i data-feather='unlock'></i>{t('single-course-unlocked')}
                                       </span>
                                     ) : (
                                       <span className='badge text-bg-primary FNV-Badge-Private'>
-                                        <i data-feather='lock'></i> {test.needEnroll ? 'Private' : 'Public'}
+                                        <i data-feather='lock'></i> 
+                                        
+                                        {test.needEnroll ? 
+                                          t('single-course-locked') // Display this if test.needEnroll is true
+                                          : 
+                                          t('single-course-unlocked') // Display this if test.needEnroll is false
+                                        }
                                       </span>
                                     )}
                                   </button>
@@ -516,10 +525,10 @@ const Course = () => {
                                 >
                                   <div className='accordion-body FNV-Locked'>
                                     <ul>
-                                      <li>Quiz Name: {test.title}</li>
-                                      <li>Quiz Time: {test.testTime} Min</li>
+                                      <li>{t('single-course-quiz-name')}: {test.title}</li>
+                                      <li>{t('single-course-quiz-time')}: {test.testTime} {t('single-course-quiz-min')}</li>
                                       <li>
-                                        Agenda:{' '}
+                                        {t('single-course-quiz-agenda')}:{' '}
                                         <div
                                           className='non-clickable-content'
                                           dangerouslySetInnerHTML={{ __html: test.agenda }}
@@ -531,12 +540,11 @@ const Course = () => {
                                           href={`${data?.slug}/${test.slug}/`}
                                           passHref
                                         >
-                                          Start
+                                          {t('single-course-quiz-start')}
                                         </Link>
                                       ) : (
                                         <Typography className='start-test-button'>
-                                          This lesson is private, for full access to all lessons you need to buy this
-                                          course or login to your account.
+                                          {t('single-course-quiz-comment')}
                                         </Typography>
                                       )}
                                     </ul>
@@ -558,14 +566,19 @@ const Course = () => {
                                     aria-controls={`panelsStayOpen-collapseVideo${video.id}`}
                                   >
                                     <i data-feather='play'></i> {video.title}
-                                    <span className='badge text-bg-quiz'>Video</span>
+                                    <span className='badge text-bg-quiz'>{t('single-course-video-title')}</span>
                                     {inEnrolled ? (
                                       <span className='badge text-bg-primary FNV-Badge-Private'>
-                                        <i data-feather='unlock'></i>You have access
+                                        <i data-feather='unlock'></i> {t('single-course-unlocked')}
                                       </span>
                                     ) : (
                                       <span className='badge text-bg-primary FNV-Badge-Private'>
-                                        <i data-feather='lock'></i> {video.needEnroll ? 'Private' : 'Public'}
+                                        <i data-feather='lock'></i>
+                                        {video.needEnroll ? 
+                                          t('single-course-locked') // Display this if test.needEnroll is true
+                                          : 
+                                          t('single-course-unlocked') // Display this if test.needEnroll is false
+                                        }
                                       </span>
                                     )}
                                   </button>
@@ -576,19 +589,18 @@ const Course = () => {
                                 >
                                   <div className='accordion-body FNV-Locked'>
                                     <ul>
-                                      <li>Video title: {video.title}</li>
-                                      <li>Video Time: {video.time} Min</li>
+                                      <li>{t('single-course-video-title')}: {video.title}</li>
+                                      <li>{t('single-course-video-time')}: {video.time} {t('single-course-quiz-min')}</li>
                                       {inEnrolled ? (
                                         <Link
                                           className='FNV-Btn BtnPrimary BtnSmall mt-2'
                                           href={`${data?.slug}/session/${video?.id}`}
                                         >
-                                          Start watching
+                                          {t('single-course-video-start')}
                                         </Link>
                                       ) : (
                                         <Typography className='start-test-button'>
-                                          This lesson is private, for full access to all lessons you need to buy this
-                                          course or login to your account.
+                                          {t('single-course-quiz-comment')}
                                         </Typography>
                                       )}
                                     </ul>
@@ -605,7 +617,7 @@ const Course = () => {
                   <div className='FNV-Course-Card'>
                     {/* Head */}
                     <div className='FNV-Course-Card-Head'>
-                      <h4>Frequently Asked Questions</h4>
+                      <h4>{t('single-course-faq')}</h4>
                     </div>
                     {/* Body */}
                     <div className='FNV-Course-Card-Body'>
@@ -621,11 +633,11 @@ const Course = () => {
                               aria-expanded='false'
                               aria-controls='QuestionOne'
                             >
-                              1. Question One{' '}
+                              1. {t('single-course-faq-question')} {' '}
                             </button>
                           </h2>
                           <div id='QuestionOne' className='accordion-collapse collapse'>
-                            <div className='accordion-body FNV-Locked'>Answer:</div>
+                            <div className='accordion-body FNV-Locked'>{t('single-course-faq-answer')}:</div>
                           </div>
                         </div>
                         {/* Item */}
@@ -639,11 +651,11 @@ const Course = () => {
                               aria-expanded='false'
                               aria-controls='QuestionTwo'
                             >
-                              2. Question One{' '}
+                              2. {t('single-course-faq-question')}{' '}
                             </button>
                           </h2>
                           <div id='QuestionTwo' className='accordion-collapse collapse'>
-                            <div className='accordion-body FNV-Locked'>Answer:</div>
+                            <div className='accordion-body FNV-Locked'>{t('single-course-faq-answer')}:</div>
                           </div>
                         </div>
                         {/* Item */}
@@ -657,11 +669,11 @@ const Course = () => {
                               aria-expanded='false'
                               aria-controls='QuestionThree'
                             >
-                              3. Question One{' '}
+                              3. {t('single-course-faq-question')}{' '}
                             </button>
                           </h2>
                           <div id='QuestionThree' className='accordion-collapse collapse'>
-                            <div className='accordion-body FNV-Locked'>Answer:</div>
+                            <div className='accordion-body FNV-Locked'>{t('single-course-faq-answer')}:</div>
                           </div>
                         </div>
                       </div>
@@ -690,7 +702,7 @@ const Course = () => {
                     ) : (
                       <>
                         {' '}
-                        <h4>Select a Cycle</h4>
+                        <h4>{t('single-course-scycle')}</h4>
                         {data?.cycles && (
                           <select value={selectedCycle} onChange={handleCycleChange} className='form-select'>
                             {[...data.cycles].reverse().map(cycle => (
@@ -706,7 +718,7 @@ const Course = () => {
                             onClick={e => router.replace('/cart')}
                             className='FNV-Btn btn btn-success BtnMedium w-100'
                           >
-                            <i data-feather='shopping-cart'></i> Go to cart
+                            <i data-feather='shopping-cart'></i> {t('single-course-gotocart')}
                           </a>
                         ) : (
                           <a
@@ -730,11 +742,11 @@ const Course = () => {
                               <path d='M6 5l14 1l-1 7h-13' />
                             </svg>
 
-                            <span>Enroll Now</span>
+                            <span>{t('single-course-enroll')}</span>
                           </a>
                         )}
                         <a href='#' className='FNV-Btn BtnOutline PrimaryColor w-100'>
-                          Request Demo Session
+                          {t('single-course-demo')}
                         </a>
                       </>
                     )}
@@ -742,7 +754,7 @@ const Course = () => {
                     {/* Features */}
                     <div className='row'>
                       {/* SVG */}
-                      <div className='col-md-2'>
+                      <div className='col-3 col-md-2'>
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
                           class='icon icon-tabler icon-tabler-certificate'
@@ -762,16 +774,16 @@ const Course = () => {
                         </svg>
                       </div>
                       {/* Title */}
-                      <div className='col-md-10'>
-                        <h5>Accredited Diploma</h5>
-                        <p>Offered by the Fanavaran University</p>
+                      <div className='col-9 col-md-10'>
+                        <h5>{t('single-course-diploma')}</h5>
+                        <p>{t('single-course-diploma-desc')}</p>
                       </div>
                     </div>
 
                     {/* Features */}
                     <div className='row'>
                       {/* SVG */}
-                      <div className='col-md-2'>
+                      <div className='col-3 col-md-2'>
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
                           class='icon icon-tabler icon-tabler-timeline'
@@ -790,16 +802,16 @@ const Course = () => {
                         </svg>
                       </div>
                       {/* Title */}
-                      <div className='col-md-10'>
-                        <h5>24-36 Months</h5>
-                        <p>72 credit hours of graduate coursework</p>
+                      <div className='col-9 col-md-10'>
+                        <h5>{t('single-course-months')}</h5>
+                        <p>{t('single-course-months-desc')}</p>
                       </div>
                     </div>
 
                     {/* Price */}
                     <div className='row FNV-Price'>
                       {/* SVG */}
-                      <div className='col-md-2'>
+                      <div className='col-3 col-md-2'>
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
                           class='icon icon-tabler icon-tabler-currency-dollar'
@@ -815,9 +827,9 @@ const Course = () => {
                         </svg>
                       </div>
                       {/* Title */}
-                      <div className='col-md-10'>
+                      <div className='col-9 col-md-10'>
                         <h5>
-                          Regular Price:{' '}
+                          {t('single-course-regular-price')}:{' '}
                           <price>
                             $
                             {data?.cycles
@@ -831,7 +843,7 @@ const Course = () => {
                     {/* VIP Membership */}
                     <div className='row FNV-VIP'>
                       {/* SVG */}
-                      <div className='col-md-2'>
+                      <div className='col-3 col-md-2'>
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
                           class='icon icon-tabler icon-tabler-crown'
@@ -846,9 +858,9 @@ const Course = () => {
                         </svg>
                       </div>
                       {/* Title */}
-                      <div className='col-md-10'>
+                      <div className='col-9 col-md-10'>
                         <h5>
-                          Membership Price:{' '}
+                          {t('single-course-vip-price')}:{' '}
                           <price>
                             $
                             {data?.cycles
@@ -856,7 +868,7 @@ const Course = () => {
                               : '0'}
                           </price>
                         </h5>
-                        <p>Join for extra perks!</p>
+                        <p>{t('single-course-vip-price-desc')}</p>
                       </div>
                     </div>
                   </div>
