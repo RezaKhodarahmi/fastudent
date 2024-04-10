@@ -33,7 +33,6 @@ const Header = props => {
   const { t } = useTranslation()
   const cartItems = useSelector(state => state.cart.items)
   const searchData = useSelector(state => state.search)
-
   const { i18n } = useTranslation()
 
   useEffect(() => {
@@ -58,8 +57,6 @@ const Header = props => {
     const html = document.documentElement
     html.setAttribute('dir', direction)
     html.setAttribute('lang', lng)
-
-
   }
 
   useEffect(() => {
@@ -363,9 +360,29 @@ const Header = props => {
                   </Link>
                 </li>
                 <li className='nav-item dropdown FNV-MegaMenu'>
-                  <Link className='nav-link' href='/services/educational-and-career-counseling' aria-expanded='false'>
+                  <Link className='nav-link' href='/' aria-expanded='false'>
                     {t('appointment')}
                   </Link>
+                  <ul className='dropdown-menu'>
+                    <div className='container-fluid'>
+                      <div className='row'>
+                        <div className='col-md-3'>
+                          <li>
+                            <Link className='dropdown-item' href='/services/consultant'>
+                              مشاوره کاری-تحصیلی
+                            </Link>
+                          </li>
+                        </div>
+                        <div className='col-md-3'>
+                          <li>
+                            <Link className='dropdown-item' href='/services/counseling-working-experience'>
+                              نوشتن تجربیات مهندسی - تکنسین
+                            </Link>
+                          </li>
+                        </div>
+                      </div>
+                    </div>
+                  </ul>
                 </li>
                 {/* <li className='nav-item dropdown FNV-MegaMenu'>
                   <Link className='nav-link' href='/' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
