@@ -24,6 +24,11 @@ module.exports = {
         source: '/membership-account/membership-levels', // Use relative URL path for source
         destination: '/membership/checkout', // Use relative URL path for destination
         permanent: true // Indicates a permanent redirect (HTTP 301)
+      },
+      {
+        source: '/courses/bcin-house-1', // Use relative URL path for source
+        destination: '/courses/bcin-house', // Use relative URL path for destination
+        permanent: true // Indicates a permanent redirect (HTTP 301)
       }
     ]
   },

@@ -198,21 +198,15 @@ const AppointmentBooking = () => {
         </CardContent>
         <CardActions sx={{ justifyContent: 'center', pb: 2 }}>
           {userLoggedIn ? (
-            VIP ? (
-              <Button
-                variant='contained'
-                onClick={handleBookAppointment}
-                disabled={buttonDisable}
-                color='primary'
-                size='large'
-              >
-                {isLoading ? <CircularProgress style={{ color: '#fff' }} size={24} /> : `${t('submit-appointment')}`}
-              </Button>
-            ) : (
-              <Button variant='contained' color='secondary' onClick={handelByVIP} size='large'>
-                By VIP membership
-              </Button>
-            )
+            <Button
+              variant='contained'
+              onClick={handleBookAppointment}
+              disabled={buttonDisable}
+              color='primary'
+              size='large'
+            >
+              {isLoading ? <CircularProgress style={{ color: '#fff' }} size={24} /> : `${t('submit-appointment')}`}
+            </Button>
           ) : (
             <Button variant='contained' color='secondary' onClick={handelLogin} size='large'>
               {t('log-in-to-book')}

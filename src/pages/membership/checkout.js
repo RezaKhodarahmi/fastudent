@@ -65,13 +65,13 @@ const StripeCheckoutButton = () => {
       <section className='FNV-Membership-Page'>
         <div className='container'>
           <div className='row'>
-            <div class="col-12 col-md-6">
+            <div class='col-12 col-md-6'>
               <div className='card'>
                 <div className='card-body'>
                   <h2 className='card-title'>Want to take your career to the next level? Join the club.</h2>
                   <p className='card-text'>Enjoy exclusive benefits with our VIP membership.</p>
                   <p className='card-text mt-3'>
-                    <price>Price: $30 CAD/year(50% Nowruz discount)</price>
+                    <price>Price: $60 CAD/year</price>
                   </p>
                   {email ? (
                     <button
@@ -103,7 +103,10 @@ const StripeCheckoutButton = () => {
 
         <div className='container'>
           <div className='row'>
-            <h3>Become part of a global community dedicated to the advancement of the project management profession and making ideas into reality.</h3>
+            <h3>
+              Become part of a global community dedicated to the advancement of the project management profession and
+              making ideas into reality.
+            </h3>
 
             <div className='col-12 col-sm-6 col-md-3'>Almost 2k</div>
             <div className='col-12 col-sm-6 col-md-3'>+150</div>

@@ -18,6 +18,16 @@ import {
 } from '@mui/material'
 import { Clock, List, BarChart, BarChart2, CheckCircle } from 'feather-icons-react'
 
+const correctAnswerStyle = {
+  color: 'green',
+  fontWeight: 'bold'
+}
+
+const incorrectAnswerStyle = {
+  color: 'red',
+  textDecoration: 'line-through'
+}
+
 const Test = () => {
   const router = useRouter()
   const dispatch = useDispatch()
@@ -32,6 +42,7 @@ const Test = () => {
   const [currentPage, setCurrentPage] = useState(1)
   const [userAnswers, setUserAnswers] = useState({})
   const [correctAnswers, setCorrectAnswers] = useState(0)
+  const [testReview, setTestReview] = useState(null)
 
   useEffect(() => {
     dispatch(fetchTestData(quizze))
@@ -65,25 +76,33 @@ const Test = () => {
     clearInterval(timer)
 
     let correctCount = 0
+    let totalQuestions = 0
 
-    // Iterate through each question ID and selected answer IDs
-    Object.entries(userAnswers).forEach(([questionId, answerIds]) => {
-      // Find the corresponding question from the test data
-      const question = testData.data.data.questions.find(q => q.id === parseInt(questionId))
+    const reviewData = testData.data.data.questions.map(question => {
+      const userAnswerIds = userAnswers[question.id] || []
+      const correctAnswerIds = question.answers.filter(a => a.isCorrect).map(a => a.id)
 
-      // Extract IDs of correct answers for this question
-      const correctAnswerIds = question.answers.filter(a => a.isCorrect)?.map(a => a.id)
-
-      // Determine if selected answers match the correct answers exactly
       const isCorrect =
-        answerIds.every(id => correctAnswerIds.includes(id)) && answerIds.length === correctAnswerIds.length
+        userAnswerIds.every(id => correctAnswerIds.includes(id)) && userAnswerIds.length === correctAnswerIds.length
 
-      // Increment correct answer count if match is found
       if (isCorrect) correctCount++
+      totalQuestions++
+
+      return {
+        ...question,
+        userAnswerIds,
+        correctAnswerIds,
+        isCorrect
+      }
     })
 
-    // Update the state with the total number of correct answers
+    // Calculate percentage
+    const percentage = (correctCount / totalQuestions) * 100
+
+    // Update state with test review data and result metrics
+    setTestReview(reviewData)
     setCorrectAnswers(correctCount)
+
     setUserAnswers({})
   }
 
@@ -303,7 +322,9 @@ const Test = () => {
                   <table className='table table-striped'>
                     <tbody className='text-center'>
                       <tr>
-                        <td>Grade Percentage</td>
+                        <td>
+                          <CheckCircle /> Grade Percentage
+                        </td>
                         <td>{((correctAnswers / totalQuestions) * 100).toFixed(2)}%</td>
                       </tr>
                       <tr>
@@ -353,6 +374,93 @@ const Test = () => {
                   <Button variant='contained' color='primary' onClick={retakeTest} style={{ marginTop: '20px' }}>
                     Retake Test
                   </Button>
+                </Paper>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+      {finished && (
+        <section className='FNV-Quiz-Review py-5'>
+          <div className='container'>
+            <div className='row justify-content-center'>
+              <div className='col-12 col-md-8'>
+                <Paper elevation={3} style={{ padding: '20px', marginBottom: '20px' }}>
+                  <Typography variant='h5' style={{ marginBottom: '20px' }}>
+                    Test Review
+                  </Typography>
+                  {testReview && (
+                    <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
+                      <div style={{ marginRight: '20px', display: 'flex', alignItems: 'center' }}>
+                        <div
+                          style={{
+                            width: '12px',
+                            height: '12px',
+                            borderRadius: '50%',
+                            backgroundColor: 'blue',
+                            marginRight: '5px'
+                          }}
+                        ></div>
+                        <Typography variant='body2'>Not Answered</Typography>
+                      </div>
+                      <div style={{ marginRight: '20px', display: 'flex', alignItems: 'center' }}>
+                        <div
+                          style={{
+                            width: '12px',
+                            height: '12px',
+                            borderRadius: '50%',
+                            backgroundColor: 'green',
+                            marginRight: '5px'
+                          }}
+                        ></div>
+                        <Typography variant='body2'>Correct</Typography>
+                      </div>
+                      <div style={{ display: 'flex', alignItems: 'center' }}>
+                        <div
+                          style={{
+                            width: '12px',
+                            height: '12px',
+                            borderRadius: '50%',
+                            backgroundColor: 'red',
+                            marginRight: '5px'
+                          }}
+                        ></div>
+                        <Typography variant='body2'>Wrong</Typography>
+                      </div>
+                    </div>
+                  )}
+                  {testReview?.map((question, index) => (
+                    <div key={index} style={{ marginBottom: '20px' }}>
+                      <Typography variant='h6'>{question.questionText}</Typography>
+                      {question.answers.map(answer => (
+                        <Typography
+                          key={answer.id}
+                          style={{
+                            marginLeft: '20px',
+                            ...(question.correctAnswerIds.includes(answer.id) ? correctAnswerStyle : {}),
+                            ...(question.userAnswerIds.includes(answer.id) &&
+                            !question.correctAnswerIds.includes(answer.id)
+                              ? incorrectAnswerStyle
+                              : question.userAnswerIds.length === 0 // Check if question was not answered
+                              ? { color: 'blue' } // Set style for not answered questions
+                              : {})
+                          }}
+                        >
+                          {answer.answerText}
+                          {question.correctAnswerIds.includes(answer.id) ? ' (Correct Answer)' : ''}
+                        </Typography>
+                      ))}
+                      <Typography
+                        style={{
+                          marginLeft: '20px',
+                          color: question.isCorrect ? 'green' : 'red',
+                          display: question.userAnswerIds.length === 0 ? 'none' : 'block' // Hide the "Your answer was..." text for not answered questions
+                        }}
+                      >
+                        Your answer was {question.isCorrect ? 'correct' : 'incorrect'}.
+                      </Typography>
+                    </div>
+                  ))}
                 </Paper>
               </div>
             </div>

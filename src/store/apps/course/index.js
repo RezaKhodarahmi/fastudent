@@ -65,7 +65,7 @@ export const getCourseWithSlug = slug => async dispatch => {
 
     dispatch(getDataSuccess(response.data))
   } catch (error) {
-    dispatch(getDataFailure(error.message))
+    dispatch(getDataFailure(error?.response || 'Error!'))
   }
 }
 
@@ -84,7 +84,7 @@ export const getEnrolledCourse = params => async dispatch => {
 
     dispatch(getDataSuccess(response.data))
   } catch (error) {
-    dispatch(getDataFailure(error.message))
+    dispatch(getDataFailure(error?.response || 'Error!'))
   }
 }
 
