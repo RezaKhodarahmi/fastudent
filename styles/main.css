@@ -2660,6 +2660,11 @@ html[dir=rtl] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   position: relative;
   cursor: grab;
 }
+.FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card img {
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card:active, .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card:target {
   cursor: grabbing;
 }
@@ -2681,11 +2686,12 @@ html[dir=rtl] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   margin-top: -3rem;
 }
 .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card .card-body h4 {
-  font-size: 22px;
-  line-height: 44px;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 700;
   color: #003BBF;
   text-align: center;
+  min-height: 50px;
 }
 .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card .card-body price {
   font-size: 22px;
@@ -2698,9 +2704,12 @@ html[dir=rtl] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
 }
 .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card .card-body .d-flex {
   margin-top: 1rem;
+  gap: 10px;
 }
 .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card .card-body .d-flex .FNV-Btn {
   width: 100%;
+  font-size: 15px;
+  font-weight: 800;
 }
 .FNV-Courses .FNV-CourseList .container .row .tab-content .tab-pane .row .col-md-4 .card .card-body .d-flex .FNV-Btn:first-child {
   margin-right: 5px;

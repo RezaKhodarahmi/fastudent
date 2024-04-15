@@ -140,6 +140,11 @@
                   position: relative;
                   cursor: grab;
 
+                  img{
+                    height: 250px;
+                    object-fit: cover;
+                  }
+
                   &:active,
                   &:target {
                     cursor: grabbing;
@@ -164,11 +169,12 @@
                     margin-top: -3rem;
 
                     h4 {
-                      font-size: 22px;
-                      line-height: 44px;
+                      font-size: 16px;
+                      line-height: 20px;
                       font-weight: 700;
                       color: $PrimaryColor;
                       text-align: center;
+                      min-height: 50px;
                     }
 
                     price {
@@ -183,9 +189,12 @@
 
                     .d-flex {
                       margin-top: 1rem;
+                      gap: 10px;
 
                       .FNV-Btn {
                         width: 100%;
+                        font-size: 15px;
+                        font-weight: 800;
 
                         &:first-child {
                           margin-right: 5px;
