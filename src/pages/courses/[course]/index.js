@@ -16,6 +16,9 @@ import ReactPlayer from 'react-player'
 import { Button, TextareaAutosize, List, ListItem, ListItemText, Divider, Box } from '@mui/material'
 import { useAuth } from 'src/hooks/useAuth'
 
+// ** Spinner Import
+import Spinner from 'src/@core/components/spinner'
+
 const Course = () => {
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(true)
@@ -72,17 +75,13 @@ const Course = () => {
 
     window.addEventListener('storage', handleStorage)
 
-    // if (typeof feather !== 'undefined' && feather !== null) {
-    //   feather.replace();
-    // }
-
     return () => window.removeEventListener('storage', handleStorage)
   }, [courseId, inCart, data])
 
   useEffect(() => {
-   // if (courseData.error) {
-   //   router.replace('/404')
-   // }
+    if (courseData?.error?.status === 404) {
+      router.push('/404')
+    }
     if (courseData?.data) {
       setData(courseData?.data?.data)
       setCourseId(courseData?.data?.data?.id)
@@ -127,8 +126,6 @@ const Course = () => {
     setSelectedCycle(e.target.value)
   }
 
-  if (loading) return <h2>Loading...</h2>
-
   const handleCommentSubmit = () => {
     if (newComment) {
       setCommentSubmit(true)
@@ -136,6 +133,8 @@ const Course = () => {
       window.alert('The comment field is empty!')
     }
   }
+
+  if (loading) return <Spinner />
 
   return (
     <div>
@@ -383,11 +382,7 @@ const Course = () => {
                 <div className='col-sm-12 col-md-8'>
                   {/* Course Video */}
                   {data?.introURL ? (
-                    <ReactPlayer
-                      className='FNV-Course-Video w-100'
-                      url={data?.introURL}
-                      controls={true}
-                    />
+                    <ReactPlayer className='FNV-Course-Video w-100' url={data?.introURL} controls={true} />
                   ) : null}
 
                   {/* Short Description */}
@@ -448,7 +443,7 @@ const Course = () => {
                       <h4>{t('single-course-materials')}</h4>
                     </div>
                     {/* Body */}
-                   
+
                     {inEnrolled && data?.abstract ? (
                       <div className='FNV-Course-Card-Body'>
                         <div className='non-clickable-content' dangerouslySetInnerHTML={{ __html: data?.abstract }} />
@@ -465,7 +460,7 @@ const Course = () => {
                     {/* Body */}
                     <div className='FNV-Course-Card-Body'>
                       <div className='accordion' id='accordionPanelsStayOpenExample'>
-                        <div className='accordion-item'>
+                        {/* <div className='accordion-item'>
                           <h2 className='accordion-header'>
                             <button
                               className='accordion-button collapsed'
@@ -487,7 +482,8 @@ const Course = () => {
                               {t('single-course-quiz-comment')}
                             </div>
                           </div>
-                        </div>
+                        </div> */}
+                        <h4>{t('single-course-mock-exams')}</h4>
                         {data?.tests
                           ? data?.tests.map(test => (
                               <div key={test.id} className='accordion-item'>
@@ -504,16 +500,17 @@ const Course = () => {
                                     <span className='badge text-bg-quiz'>{t('single-course-quiz')}</span>
                                     {inEnrolled ? (
                                       <span className='badge text-bg-primary FNV-Badge-Private'>
-                                        <i data-feather='unlock'></i>{t('single-course-unlocked')}
+                                        <i data-feather='unlock'></i>
+                                        {t('single-course-unlocked')}
                                       </span>
                                     ) : (
                                       <span className='badge text-bg-primary FNV-Badge-Private'>
-                                        <i data-feather='lock'></i> 
-                                        
-                                        {test.needEnroll ? 
-                                          t('single-course-locked') // Display this if test.needEnroll is true
-                                          : 
-                                          t('single-course-unlocked') // Display this if test.needEnroll is false
+                                        <i data-feather='lock'></i>
+
+                                        {
+                                          test.needEnroll
+                                            ? t('single-course-locked') // Display this if test.needEnroll is true
+                                            : t('single-course-unlocked') // Display this if test.needEnroll is false
                                         }
                                       </span>
                                     )}
@@ -525,8 +522,12 @@ const Course = () => {
                                 >
                                   <div className='accordion-body FNV-Locked'>
                                     <ul>
-                                      <li>{t('single-course-quiz-name')}: {test.title}</li>
-                                      <li>{t('single-course-quiz-time')}: {test.testTime} {t('single-course-quiz-min')}</li>
+                                      <li>
+                                        {t('single-course-quiz-name')}: {test.title}
+                                      </li>
+                                      <li>
+                                        {t('single-course-quiz-time')}: {test.testTime} {t('single-course-quiz-min')}
+                                      </li>
                                       <li>
                                         {t('single-course-quiz-agenda')}:{' '}
                                         <div
@@ -553,6 +554,7 @@ const Course = () => {
                               </div>
                             ))
                           : null}
+                        <h4>{t('single-course-videos-title')}</h4>
                         {data?.videos
                           ? data?.videos.map(video => (
                               <div key={video.id} className='accordion-item'>
@@ -574,10 +576,10 @@ const Course = () => {
                                     ) : (
                                       <span className='badge text-bg-primary FNV-Badge-Private'>
                                         <i data-feather='lock'></i>
-                                        {video.needEnroll ? 
-                                          t('single-course-locked') // Display this if test.needEnroll is true
-                                          : 
-                                          t('single-course-unlocked') // Display this if test.needEnroll is false
+                                        {
+                                          video.needEnroll
+                                            ? t('single-course-locked') // Display this if test.needEnroll is true
+                                            : t('single-course-unlocked') // Display this if test.needEnroll is false
                                         }
                                       </span>
                                     )}
@@ -589,8 +591,12 @@ const Course = () => {
                                 >
                                   <div className='accordion-body FNV-Locked'>
                                     <ul>
-                                      <li>{t('single-course-video-title')}: {video.title}</li>
-                                      <li>{t('single-course-video-time')}: {video.time} {t('single-course-quiz-min')}</li>
+                                      <li>
+                                        {t('single-course-video-title')}: {video.title}
+                                      </li>
+                                      <li>
+                                        {t('single-course-video-time')}: {video.time} {t('single-course-quiz-min')}
+                                      </li>
                                       {inEnrolled ? (
                                         <Link
                                           className='FNV-Btn BtnPrimary BtnSmall mt-2'
@@ -633,7 +639,7 @@ const Course = () => {
                               aria-expanded='false'
                               aria-controls='QuestionOne'
                             >
-                              1. {t('single-course-faq-question')} {' '}
+                              1. {t('single-course-faq-question')}{' '}
                             </button>
                           </h2>
                           <div id='QuestionOne' className='accordion-collapse collapse'>
@@ -878,86 +884,90 @@ const Course = () => {
           </div>
         </section>
       ) : null}
-      <Box className='container' sx={{ maxWidth: 600, mx: 'auto', my: 4 }}>
-        {user ? (
-          <Box sx={{ display: 'flex', flexDirection: 'column', mb: 2 }}>
-            <TextareaAutosize
-              minRows={3}
-              style={{ marginBottom: '1rem', padding: '12px' }}
-              value={newComment}
-              onChange={e => setNewComment(e.target.value)}
-              placeholder='Write a comment...'
-            />
-            <Button variant='contained' onClick={handleCommentSubmit} style={{ backgroundColor: '#003BBF' }}>
-              Post
-            </Button>
+      {!loading && (
+        <>
+          <Box className='container' sx={{ maxWidth: 600, mx: 'auto', my: 4 }}>
+            {user ? (
+              <Box sx={{ display: 'flex', flexDirection: 'column', mb: 2 }}>
+                <TextareaAutosize
+                  minRows={3}
+                  style={{ marginBottom: '1rem', padding: '12px' }}
+                  value={newComment}
+                  onChange={e => setNewComment(e.target.value)}
+                  placeholder='Write a comment...'
+                />
+                <Button variant='contained' onClick={handleCommentSubmit} style={{ backgroundColor: '#003BBF' }}>
+                  Post
+                </Button>
+              </Box>
+            ) : (
+              <Button
+                variant='outlined'
+                style={{ backgroundColor: '#003BBF', color: '#fff' }}
+                onClick={() => {
+                  router.push(`/login/?returnUrl=/courses/${data?.slug}`)
+                }}
+              >
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  class='icon icon-tabler icon-tabler-login'
+                  width='44'
+                  height='44'
+                  viewBox='0 0 24 24'
+                  stroke-width='1.5'
+                  stroke='#2c3e50'
+                  fill='none'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                >
+                  <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+                  <path d='M15 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2' />
+                  <path d='M21 12h-13l3 -3' />
+                  <path d='M11 15l-3 -3' />
+                </svg>
+                Login to Post a Comment
+              </Button>
+            )}
+            <div style={{ paddingTop: '15px' }}>
+              <List component='nav' aria-label='comments'>
+                {data?.comments?.map(comment => (
+                  <React.Fragment key={comment.id}>
+                    <div>
+                      <b>{comment?.user?.firstName + ' ' + comment?.user?.lastName}</b>
+                    </div>
+                    <ListItem alignItems='flex-start'>
+                      <ListItemText primary={comment.content} />
+                    </ListItem>
+                    {comment.replies && comment.replies.length > 0 && (
+                      <>
+                        <p>Answer:</p>
+                        <List component='div' disablePadding>
+                          {comment.replies.map(reply => (
+                            <ListItem key={reply.id} sx={{ pl: 4, px: 10 }}>
+                              <ListItemText primary={reply.content} />
+                            </ListItem>
+                          ))}
+                        </List>
+                      </>
+                    )}
+                    <Divider variant='inset' component='li' />
+                  </React.Fragment>
+                ))}
+              </List>
+            </div>
           </Box>
-        ) : (
-          <Button
-            variant='outlined'
-            style={{ backgroundColor: '#003BBF', color: '#fff' }}
-            onClick={() => {
-              router.push(`/login/?returnUrl=/courses/${data?.slug}`)
-            }}
-          >
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              class='icon icon-tabler icon-tabler-login'
-              width='44'
-              height='44'
-              viewBox='0 0 24 24'
-              stroke-width='1.5'
-              stroke='#2c3e50'
-              fill='none'
-              stroke-linecap='round'
-              stroke-linejoin='round'
-            >
-              <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-              <path d='M15 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2' />
-              <path d='M21 12h-13l3 -3' />
-              <path d='M11 15l-3 -3' />
-            </svg>
-            Login to Post a Comment
-          </Button>
-        )}
-        <div style={{ paddingTop: '15px' }}>
-          <List component='nav' aria-label='comments'>
-           {data?.comments?.map(comment => (
-              <React.Fragment key={comment.id}>
-                <div>
-                  <b>{comment?.user?.firstName + ' ' + comment?.user?.lastName}</b>
-                </div>
-                <ListItem alignItems='flex-start'>
-                  <ListItemText primary={comment.content} />
-                </ListItem>
-                {comment.replies && comment.replies.length > 0 && (
-                  <>
-                    <p>Answer:</p>
-                    <List component='div' disablePadding>
-                     {comment.replies.map(reply => (
-                        <ListItem key={reply.id} sx={{ pl: 4, px: 10 }}>
-                         <ListItemText primary={reply.content} />
-                        </ListItem>
-                      ))}
-                    </List>
-                  </>
-                )}
-                <Divider variant='inset' component='li' />
-              </React.Fragment>
-            ))}
-          </List>
-        </div>
-     </Box>
 
-      {/* Related Courses */}
-      <section className='FNV-Course-Related'>
-        <h3>Related Courses</h3>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-12'></div>
-          </div>
-        </div>
-      </section>
+          {/* Related Courses */}
+          {/* <section className='FNV-Course-Related'>
+            <h3>Related Courses</h3>
+            <div className='container'>
+              <div className='row'>
+                <div className='col-12'></div>
+              </div>
+            </div>
+          </section> */}
+        </>
+      )}
     </div>
   )
 }

@@ -4,7 +4,7 @@ import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns'
 import { CircularProgress } from '@mui/material'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'react-i18next'
-import BASE_URL from 'src/api/BASE_URL'
+import Link from 'next/link'
 
 import {
   Box,
@@ -23,44 +23,32 @@ import {
   FormControl,
   InputLabel
 } from '@mui/material'
-import { createNewFreeAppointment } from 'src/store/apps/appointment'
+import { createNewAppointment } from 'src/store/apps/appointment'
+import { getProfileInfo } from 'src/store/apps/profile'
+import BASE_URL from 'src/api/BASE_URL'
+
 import { useDispatch, useSelector } from 'react-redux'
 
 const AppointmentBooking = () => {
   const { t } = useTranslation()
   const dispatch = useDispatch()
   const appointmentData = useSelector(state => state.appointment)
+  const userProfile = useSelector(state => state.profile)
   const router = useRouter()
   const dir = window.localStorage.getItem('direction' || 'ltr')
 
   const [selectedDate, setSelectedDate] = useState(null)
   const [availableTimes, setAvailableTimes] = useState([])
-  const [buttonDisable, setButtonDisable] = useState(true)
+  const [buttonDisable, setButtonDisable] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
-
-  const [questions, setQuestions] = useState([
-    { question: 'resume-book-question-one', answer: null },
-    {
-      question: 'resume-book-question-two',
-      answer: null
-    },
-    { question: 'resume-book-question-three', answer: null }
-  ])
-
+  const [VIP, setVIP] = useState(false)
   const [selectedTime, setSelectedTime] = useState(null)
   const [expanded, setExpanded] = useState(false)
   const userLoggedIn = localStorage.getItem('userData') // Example check for user login
 
-  // Function to handle question answer updates
-  const handleQuestionAnswer = (index, answer) => {
-    const newQuestions = [...questions]
-    newQuestions[index].answer = answer
-    setQuestions(newQuestions)
-  }
-
   const isDateAllowed = date => {
     const startAllowedDate = new Date()
-    const endAllowedDate = new Date('2024-04-08')
+    const endAllowedDate = new Date('2024-12-08')
     const day = date.getDay()
 
     // Check if the date is between the allowed range
@@ -73,26 +61,25 @@ const AppointmentBooking = () => {
     return !(isInRange && isAllowedDay)
   }
 
-  // Check if all questions are answered with 'yes' to enable the button
-  useEffect(() => {
-    const allAnsweredYes = questions.every(question => question.answer === 'yes')
-    if (!allAnsweredYes) {
-      setButtonDisable(!allAnsweredYes)
-    }
-    if (allAnsweredYes && selectedDate && selectedTime) {
-      setButtonDisable(!allAnsweredYes)
-    }
-  }, [questions, selectedDate, selectedTime])
-
   const fetchAvailableTimes = async selectedDate => {
     try {
-      const response = await fetch(`${BASE_URL}/student/counseling/times/${selectedDate}`)
+      const response = await fetch(`${BASE_URL}/student/counseling/vip/times/${selectedDate}`)
       const times = await response.json()
       setAvailableTimes(times)
     } catch (error) {
       console.error('Error fetching available times:', error)
     }
   }
+
+  useEffect(() => {
+    dispatch(getProfileInfo())
+  }, [userLoggedIn])
+
+  useEffect(() => {
+    if (userProfile?.data) {
+      setVIP(userProfile?.data.isVipValid)
+    }
+  }, [userProfile])
 
   useEffect(() => {
     if (appointmentData?.data) {
@@ -112,11 +99,11 @@ const AppointmentBooking = () => {
   }, [selectedDate])
 
   const handleBookAppointment = () => {
-    console.log(selectedDate, selectedTime)
     if (!userLoggedIn) {
     } else if ((selectedDate, selectedTime)) {
       setIsLoading(true)
-      dispatch(createNewFreeAppointment({ email: userLoggedIn, date: selectedDate, time: selectedTime }))
+      dispatch(createNewAppointment({ email: userLoggedIn, date: selectedDate, time: selectedTime }))
+      setButtonDisable(true)
     } else {
       window.alert(`${t('please-select-a-date-and-time')}`)
     }
@@ -126,6 +113,10 @@ const AppointmentBooking = () => {
     router.push('/login?returnUrl=/services/educational-and-career-counseling')
   }
 
+  const handelByVIP = () => {
+    router.push('/membership/checkout')
+  }
+
   const handleExpandClick = () => {
     setExpanded(!expanded)
   }
@@ -133,7 +124,7 @@ const AppointmentBooking = () => {
   return (
     <Container maxWidth='sm' sx={{ mt: 5 }}>
       <Typography variant='h4' sx={{ mb: 4, textAlign: 'center' }}>
-        {t('consultation-resume-writing')}
+        رزرو وقت مشاوره کاری و تحصیلی(ویژه اعضای VIP)
       </Typography>
       {/* Consultant Info Card */}
       <Card
@@ -178,31 +169,6 @@ const AppointmentBooking = () => {
       <Card>
         <CardContent>
           <LocalizationProvider dateAdapter={AdapterDateFns}>
-            {/* Questions Section */}
-            <Grid container style={{ direction: `${dir}` }} spacing={3}>
-              {questions.map((item, index) => (
-                <Grid key={index} style={{ padding: '3px' }} item xs={12}>
-                  <Box my={2}>
-                    <Typography variant='subtitle1'>{t(item.question)}</Typography>
-                    <Button
-                      variant={item.answer === 'yes' ? 'contained' : 'outlined'}
-                      color='success'
-                      onClick={() => handleQuestionAnswer(index, 'yes')}
-                      sx={{ mr: 1 }}
-                    >
-                      {t('yes')}
-                    </Button>
-                    <Button
-                      variant={item.answer === 'no' ? 'contained' : 'outlined'}
-                      color='error'
-                      onClick={() => handleQuestionAnswer(index, 'no')}
-                    >
-                      {t('no')}
-                    </Button>
-                  </Box>
-                </Grid>
-              ))}
-            </Grid>
             <Grid container style={{ marginTop: '10px' }} spacing={3}>
               <Typography variant='subtitle1'>{t('all-show-in-bc-time')}</Typography>
               <Grid item xs={12}>
@@ -238,15 +204,21 @@ const AppointmentBooking = () => {
         </CardContent>
         <CardActions sx={{ justifyContent: 'center', pb: 2 }}>
           {userLoggedIn ? (
-            <Button
-              variant='contained'
-              onClick={handleBookAppointment}
-              disabled={buttonDisable}
-              color='primary'
-              size='large'
-            >
-              {isLoading ? <CircularProgress style={{ color: '#fff' }} size={24} /> : `${t('submit-appointment')}`}
-            </Button>
+            VIP ? (
+              <Button
+                variant='contained'
+                onClick={handleBookAppointment}
+                disabled={buttonDisable}
+                color='primary'
+                size='large'
+              >
+                {isLoading ? <CircularProgress style={{ color: '#fff' }} size={24} /> : `${t('submit-appointment')}`}
+              </Button>
+            ) : (
+              <Button variant='contained' color='secondary' onClick={handelByVIP} size='large'>
+                By VIP membership
+              </Button>
+            )
           ) : (
             <Button variant='contained' color='secondary' onClick={handelLogin} size='large'>
               {t('log-in-to-book')}

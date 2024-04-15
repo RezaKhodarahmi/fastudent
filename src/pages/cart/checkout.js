@@ -99,7 +99,6 @@ export default function CheckoutForm(props) {
           <AddressElement
             options={{
               mode: 'billing',
-              allowedCountries: ['CA'],
               defaultValues: { name: fullName }
             }}
           />

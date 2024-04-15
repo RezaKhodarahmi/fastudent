@@ -66,7 +66,7 @@ export const getWebinarWithSlug = data => async dispatch => {
 
     dispatch(getDataSuccess(response.data))
   } catch (error) {
-    dispatch(getDataFailure(error.message))
+    dispatch(getDataFailure(error.response))
   }
 }
 

@@ -42,11 +42,52 @@ export const createNewFreeAppointment = data => async dispatch => {
       },
       withCredentials: true
     })
+
+    toast.success(response.data.message)
+    dispatch(getDataSuccess(response.data))
+  } catch (error) {
+    toast.error(error?.response?.data?.message || 'Server Error!')
+    dispatch(getDataFailure(error.message))
+  }
+}
+
+export const createNewAppointment = data => async dispatch => {
+  dispatch(getDataStart())
+  try {
+    const token = window.localStorage.getItem('accessToken')
+
+    const response = await axios.post(`${BASE_URL}/student/counseling/vip/create`, data, {
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`
+      },
+      withCredentials: true
+    })
+
+    toast.success(response.data.message)
+    dispatch(getDataSuccess(response.data))
+  } catch (error) {
+    toast.error(error?.response?.data?.message || 'Server Error!')
+    dispatch(getDataFailure(error.message))
+  }
+}
+
+export const createEXAppointment = data => async dispatch => {
+  dispatch(getDataStart())
+  try {
+    const token = window.localStorage.getItem('accessToken')
+
+    const response = await axios.post(`${BASE_URL}/student/counseling/ex/new/create`, data, {
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`
+      },
+      withCredentials: true
+    })
     toast.success(response.data.message)
     dispatch(getDataSuccess(response.data))
   } catch (error) {
     toast.error(error.response.data.message || 'Server Error!')
-    console.log(error)
     dispatch(getDataFailure(error.message))
   }
 }
