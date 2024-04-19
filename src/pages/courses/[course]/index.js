@@ -8,7 +8,6 @@ import { useRouter } from 'next/router'
 import { setCartItems } from 'src/store/apps/cart'
 import { getCourseWithSlug, getEnrolledCourse } from 'src/store/apps/course'
 import { postNewComment } from 'src/store/apps/comment'
-import feather from 'feather-icons'
 import LinearProgress from '@mui/material/LinearProgress'
 import Typography from '@mui/material/Typography'
 import { appConfig } from 'src/configs/appConfig'
@@ -26,6 +25,9 @@ const Course = () => {
   const [selectedCycle, setSelectedCycle] = useState(null) // Add state for the selected cycle
   const [inCart, setInCart] = useState(false)
   const [inEnrolled, setIsEnrolled] = useState(false)
+  const [cycleId, setCycleId] = useState(null)
+  const [filteredVideos, setFilteredVideos] = useState([])
+  const [filteredTests, setFilteredTests] = useState([])
   const [commentSubmit, setCommentSubmit] = useState(false)
   const [remindedDays, setRemindedDays] = useState('0')
   const [user, setUser] = useState(null)
@@ -79,13 +81,14 @@ const Course = () => {
   }, [courseId, inCart, data])
 
   useEffect(() => {
-    if (courseData?.error?.status === 404) {
-      router.push('/404')
-    }
+    // if (courseData?.error?.status === 404) {
+    //   router.push('/404')
+    // }
     if (courseData?.data) {
       setData(courseData?.data?.data)
       setCourseId(courseData?.data?.data?.id)
       setIsEnrolled(courseData?.data?.enrolled)
+      setCycleId(courseData?.data?.cycleId)
       setRemindedDays(courseData?.data?.remainingDays)
       setSelectedCycle(
         courseData?.data?.data?.cycles
@@ -133,6 +136,14 @@ const Course = () => {
       window.alert('The comment field is empty!')
     }
   }
+
+  useEffect(() => {
+    // Filtered tests and videos based on cycleId
+    const filteredTests = data?.tests.filter(test => test.cycleId === cycleId)
+    const filteredVideos = data?.videos.filter(video => parseInt(video.cycleId) === cycleId)
+    setFilteredVideos(filteredVideos)
+    setFilteredTests(filteredTests)
+  }, [cycleId, data])
 
   if (loading) return <Spinner />
 
@@ -484,8 +495,8 @@ const Course = () => {
                           </div>
                         </div> */}
                         <h4>{t('single-course-mock-exams')}</h4>
-                        {data?.tests
-                          ? data?.tests.map(test => (
+                        {filteredTests
+                          ? filteredTests.map(test => (
                               <div key={test.id} className='accordion-item'>
                                 <h2 className='accordion-header'>
                                   <button
@@ -555,8 +566,8 @@ const Course = () => {
                             ))
                           : null}
                         <h4>{t('single-course-videos-title')}</h4>
-                        {data?.videos
-                          ? data?.videos.map(video => (
+                        {filteredVideos
+                          ? filteredVideos.map(video => (
                               <div key={video.id} className='accordion-item'>
                                 <h2 className='accordion-header'>
                                   <button

@@ -98,7 +98,7 @@ const Home = () => {
         <h3>{t('courses-section-title')}</h3>
         <div className='container'>
           <div className='row'>
-            <div className='col-12'>
+            <div className='col-12' dir='ltr'>
               {/* Courses Desktop */}
               <CourseDeskSingle courses={courses} addToCart={addToCart} />
               {/* Courses Mobile */}
@@ -109,7 +109,7 @@ const Home = () => {
       </section>
 
       {/* New Webinars */}
-      {Array.isArray(webinars) && <WebinarsSection webinars={webinars} />}
+      {Array.isArray(webinars) && <WebinarsSection dir='ltr' webinars={webinars} />}
 
       {/* Youtube CTA */}
       <section className='FNV-YoutubeCTA'>
@@ -144,7 +144,7 @@ const Home = () => {
         <h3>{t('blogs-section-title')}</h3>
         <div className='container'>
           <div className='row'>
-            <div className='col-12'>
+            <div className='col-12' dir='ltr'>
               {/* Blogs Desktop */}
               <SingleDeskBlog />
               {/* Blogs Mobile */}

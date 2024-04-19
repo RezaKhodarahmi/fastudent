@@ -244,7 +244,6 @@ const Index = () => {
           })
             .then(res => res.json())
             .then(data => {
-              console.log(data)
               const { redirectURL } = data // Make sure to retrieve the correct clientSecret from the response
               setRedirectURL(redirectURL)
               router.push(redirectURL)
