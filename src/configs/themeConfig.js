@@ -41,7 +41,7 @@ const themeConfig = {
     'pk_live_51HHFtaG5TuvsK0tsNRhJ7PHgkSK8BblevRKxH1fxgQfdg09Nh1VP86VJx39ZG4wf1YZVNoaicuBD9TbzqSMvpEsN00us1rpu0r' //main
 
   // stripePublicKey:
-  // 'pk_test_51LbfVhFf0hE9RkFddCyxmVwdwjjHwrcsZafpF0NS06bhN2qMu9PGt7t5wlJDRsoGc9iQfYzebHLVtAUr6nOX4UfR00YAaWsB5d' //test
+  //   'pk_test_51LbfVhFf0hE9RkFddCyxmVwdwjjHwrcsZafpF0NS06bhN2qMu9PGt7t5wlJDRsoGc9iQfYzebHLVtAUr6nOX4UfR00YAaWsB5d' //test
 }
 
 export default themeConfig

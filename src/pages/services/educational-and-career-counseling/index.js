@@ -112,7 +112,6 @@ const AppointmentBooking = () => {
   }, [selectedDate])
 
   const handleBookAppointment = () => {
-    console.log(selectedDate, selectedTime)
     if (!userLoggedIn) {
     } else if ((selectedDate, selectedTime)) {
       setIsLoading(true)

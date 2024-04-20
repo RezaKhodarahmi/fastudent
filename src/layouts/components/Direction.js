@@ -10,7 +10,7 @@ import stylisRTLPlugin from 'stylis-plugin-rtl'
 
 const styleCache = () =>
   createCache({
-    key: 'rtl',
+    key: 'ltr',
     prepend: true,
     stylisPlugins: [stylisRTLPlugin]
   })
