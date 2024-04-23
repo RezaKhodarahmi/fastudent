@@ -240,78 +240,102 @@ badge.SecondaryColor {
   color: #d9d9d9;
 }
 
-nav .container-fluid {
+body[dir=rtl] nav .container-fluid {
   padding: 0 1rem;
 }
-nav .container-fluid:first-child {
+body[dir=rtl] nav .container-fluid:first-child {
   background-color: #ffffff;
   padding: 0.75rem 1rem;
 }
-nav .container-fluid:first-child .OffCanvasMenu {
+body[dir=rtl] nav .container-fluid:first-child .OffCanvasMenu {
   padding-right: 0.75rem;
   padding-left: 0.5rem;
 }
-nav .container-fluid:first-child .OffCanvasMenu svg {
+body[dir=rtl] nav .container-fluid:first-child .OffCanvasMenu svg {
   color: #003BBF;
 }
-nav .container-fluid:first-child .OffCanvasMenu2 {
+body[dir=rtl] nav .container-fluid:first-child .OffCanvasMenu2 {
   margin-right: 1rem;
   color: #003BBF;
 }
-nav .container-fluid:first-child .navbar-brand {
+body[dir=rtl] nav .container-fluid:first-child .navbar-brand {
   width: 200px;
   padding-left: 0.5rem;
   border-left: 1px solid #d9d9d9;
 }
-nav .container-fluid:first-child .FNV-User .FNV-Btn {
+body[dir=rtl] nav .container-fluid:first-child .FNV-User .FNV-Btn {
   background-color: unset;
 }
-nav .container-fluid:first-child .FNV-User .FNV-Btn img {
+body[dir=rtl] nav .container-fluid:first-child .FNV-User .FNV-Btn img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
-nav .container-fluid:first-child .FNV-User .dropdown-menu li {
+body[dir=rtl] nav .container-fluid:first-child .FNV-User .dropdown-menu li {
   padding-bottom: 0.3rem;
 }
-nav .container-fluid:first-child .FNV-User .dropdown-menu li a svg {
+body[dir=rtl] nav .container-fluid:first-child .FNV-User .dropdown-menu li a svg {
   color: #003BBF;
   width: 20px;
   height: 20px;
   margin-right: 0.5rem;
 }
-nav .container-fluid:nth-child(2) {
+body[dir=rtl] nav .container-fluid:nth-child(2) {
   background-color: #f5f5f5;
   border-bottom: 5px solid #003BBF;
   border-top: 1px solid #d9d9d9;
 }
-nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item .nav-link {
+body[dir=rtl] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item.FNV-Appointment {
+  background-color: #003BBF;
+}
+body[dir=rtl] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item.FNV-Appointment a {
+  color: #ffffff;
+}
+body[dir=rtl] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item .dropdown-menu.show {
+  right: 0;
+  left: unset;
+  padding: 0;
+}
+body[dir=rtl] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item .dropdown-menu.show li {
+  text-align: start;
+}
+body[dir=rtl] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item .dropdown-menu.show li a {
+  color: #212121;
+}
+body[dir=rtl] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item .dropdown-menu.show li:hover {
+  background-color: #003BBF !important;
+}
+body[dir=rtl] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item .dropdown-menu.show li:hover a {
+  background-color: unset;
+  color: #ffffff;
+}
+body[dir=rtl] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item .nav-link {
   font-size: 16px;
   font-weight: 600;
 }
-nav .container-fluid .FNV_QuickAccess a {
+body[dir=rtl] nav .container-fluid .FNV_QuickAccess a {
   margin-left: 0.5rem;
   font-size: 14px;
   line-height: 22px;
 }
-nav .container-fluid .FNV_QuickAccess a svg {
+body[dir=rtl] nav .container-fluid .FNV_QuickAccess a svg {
   width: 20px;
   height: 20px;
 }
-nav .container-fluid .navbar-nav .nav-item .nav-link {
+body[dir=rtl] nav .container-fluid .navbar-nav .nav-item .nav-link {
   font-size: 16px;
   font-weight: 400;
   line-height: 40px;
   padding: 0.5rem 1rem;
 }
-nav .container-fluid .navbar-nav .nav-item:hover .nav-link {
+body[dir=rtl] nav .container-fluid .navbar-nav .nav-item:hover .nav-link {
   background-color: #003BBF;
   color: #ffffff;
 }
-nav .container-fluid .FNV-MegaMenu {
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu {
   position: static;
 }
-nav .container-fluid .FNV-MegaMenu:hover .dropdown-menu {
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu:hover .dropdown-menu {
   display: block;
   margin-top: 0px;
   width: 80%;
@@ -324,12 +348,12 @@ nav .container-fluid .FNV-MegaMenu:hover .dropdown-menu {
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1411764706);
   overflow: hidden;
 }
-nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid a {
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid a {
   font-size: 24px;
   color: #003BBF;
   font-weight: 600;
 }
-nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid a span {
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid a span {
   border-left: 1px solid #ababab;
   padding-left: 1rem;
   margin-left: 1rem;
@@ -337,16 +361,16 @@ nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid a span {
   color: #575757;
   font-weight: 400;
 }
-nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row {
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row {
   padding-top: 1rem;
 }
-nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row, nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row, nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row {
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row {
   padding: 0;
 }
-nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction, nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction, nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction {
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction {
   height: 100%;
 }
-nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a, nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a, nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a {
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -354,19 +378,19 @@ nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-
   align-items: center;
   background-color: #F0F3FB;
 }
-nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a svg, nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a svg, nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a svg {
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a svg, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a svg, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a svg {
   width: 50px;
   height: 50px;
   color: #FF772C;
 }
-nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a span, nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a span, nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a span {
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a span, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a span, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a span {
   font-size: 18px;
   border-width: 0;
   margin: 0;
   padding: 0;
   color: #003BBF;
 }
-nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 span, nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 span, nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col span {
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 span, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 span, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col span {
   font-size: 16px;
   line-height: 32px;
   font-weight: 700;
@@ -374,32 +398,195 @@ nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-
   margin-bottom: 0.8rem;
   display: block;
 }
-nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 span svg, nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 span svg, nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col span svg {
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 span svg, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 span svg, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col span svg {
   color: #FF772C;
   width: 12px;
   height: 12px;
 }
-nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li a, nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li a, nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li a {
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li a, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li a, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li a {
   font-size: 14px;
   font-weight: 300;
   color: #575757;
   transition: 0.1s all ease-in-out;
 }
-nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li a:hover, nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li a:hover, nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li a:hover {
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li a:hover, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li a:hover, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li a:hover {
   color: #FF772C;
   border-radius: 5px;
 }
-nav .container-fluid .FNV-MegaMenu-Search {
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu-Search {
   position: static;
 }
-nav .container-fluid .FNV-MegaMenu-Search:hover .dropdown-menu {
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu-Search:hover .dropdown-menu {
   display: block;
   margin-top: 0px;
   width: 800px;
   border-width: 0;
   right: 0;
 }
-nav.FNV-MegaMenu {
+body[dir=rtl] nav.FNV-MegaMenu {
+  background-color: #F0F3FB;
+}
+
+body[dir=ltr] nav .container-fluid {
+  padding: 0 1rem;
+}
+body[dir=ltr] nav .container-fluid:first-child {
+  background-color: #ffffff;
+  padding: 0.75rem 1rem;
+}
+body[dir=ltr] nav .container-fluid:first-child .OffCanvasMenu {
+  padding-right: 0.75rem;
+  padding-left: 0.5rem;
+}
+body[dir=ltr] nav .container-fluid:first-child .OffCanvasMenu svg {
+  color: #003BBF;
+}
+body[dir=ltr] nav .container-fluid:first-child .OffCanvasMenu2 {
+  margin-right: 1rem;
+  color: #003BBF;
+}
+body[dir=ltr] nav .container-fluid:first-child .navbar-brand {
+  width: 200px;
+  padding-left: 0.5rem;
+  border-left: 1px solid #d9d9d9;
+}
+body[dir=ltr] nav .container-fluid:first-child .FNV-User .FNV-Btn {
+  background-color: unset;
+}
+body[dir=ltr] nav .container-fluid:first-child .FNV-User .FNV-Btn img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+body[dir=ltr] nav .container-fluid:first-child .FNV-User .dropdown-menu li {
+  padding-bottom: 0.3rem;
+}
+body[dir=ltr] nav .container-fluid:first-child .FNV-User .dropdown-menu li a svg {
+  color: #003BBF;
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+body[dir=ltr] nav .container-fluid:nth-child(2) {
+  background-color: #f5f5f5;
+  border-bottom: 5px solid #003BBF;
+  border-top: 1px solid #d9d9d9;
+}
+body[dir=ltr] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 600;
+}
+body[dir=ltr] nav .container-fluid .FNV_QuickAccess a {
+  margin-left: 0.5rem;
+  font-size: 14px;
+  line-height: 22px;
+}
+body[dir=ltr] nav .container-fluid .FNV_QuickAccess a svg {
+  width: 20px;
+  height: 20px;
+}
+body[dir=ltr] nav .container-fluid .navbar-nav .nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  padding: 0.5rem 1rem;
+}
+body[dir=ltr] nav .container-fluid .navbar-nav .nav-item:hover .nav-link {
+  background-color: #003BBF;
+  color: #ffffff;
+}
+body[dir=ltr] nav .container-fluid .FNV-MegaMenu {
+  position: static;
+}
+body[dir=ltr] nav .container-fluid .FNV-MegaMenu:hover .dropdown-menu {
+  display: block;
+  margin-top: 0px;
+  width: 80%;
+  padding: 1.5rem;
+  border-width: 0;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1411764706);
+  overflow: hidden;
+}
+body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid a {
+  font-size: 24px;
+  color: #003BBF;
+  font-weight: 600;
+}
+body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid a span {
+  border-left: 1px solid #ababab;
+  padding-left: 1rem;
+  margin-left: 1rem;
+  font-size: 14px;
+  color: #575757;
+  font-weight: 400;
+}
+body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row {
+  padding-top: 1rem;
+}
+body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row {
+  padding: 0;
+}
+body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction {
+  height: 100%;
+}
+body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #F0F3FB;
+}
+body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a svg, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a svg, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a svg {
+  width: 50px;
+  height: 50px;
+  color: #FF772C;
+}
+body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a span, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a span, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a span {
+  font-size: 18px;
+  border-width: 0;
+  margin: 0;
+  padding: 0;
+  color: #003BBF;
+}
+body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 span, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 span, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col span {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #212121;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 span svg, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 span svg, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col span svg {
+  color: #FF772C;
+  width: 12px;
+  height: 12px;
+}
+body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li a, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li a, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li a {
+  font-size: 14px;
+  font-weight: 300;
+  color: #575757;
+  transition: 0.1s all ease-in-out;
+}
+body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li a:hover, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li a:hover, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li a:hover {
+  color: #FF772C;
+  border-radius: 5px;
+}
+body[dir=ltr] nav .container-fluid .FNV-MegaMenu-Search {
+  position: static;
+}
+body[dir=ltr] nav .container-fluid .FNV-MegaMenu-Search:hover .dropdown-menu {
+  display: block;
+  margin-top: 0px;
+  width: 800px;
+  border-width: 0;
+  right: 0;
+}
+body[dir=ltr] nav.FNV-MegaMenu {
   background-color: #F0F3FB;
 }
 
