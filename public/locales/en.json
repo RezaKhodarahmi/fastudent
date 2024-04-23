@@ -47,6 +47,13 @@
   "menu-membership": "VIP Membership",
   "menu-blogs": "Blogs",
   "menu-business": "Business Solutions",
+  "menu-appointment1": "Work-study counseling",
+  "menu-appointment2": "Writing engineering-technician experiences",
+
+  "menu-user-dashboard": "Dashboard",
+  "menu-user-profile": "Profile",
+  "menu-user-certificate": "Certificate",
+  "menu-user-logout": "Logout",
 
   "category-section-one": "How Does Fanavaran Help You?",
   "category-section-one-description": "At Fanavaran, we aim to smooth the path to ideal job positions for Persian-speaking immigrants by offering high-quality and affordable technical and engineering training. Additionally, the courses we provide will also facilitate your career development. Whether you're seeking a new job or looking to improve and better your career path, our courses are designed to assist you.",

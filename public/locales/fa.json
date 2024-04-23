@@ -40,6 +40,13 @@
   "menu-membership": "ممبرشیپ فناوران",
   "menu-blogs": "وبلاگ فناوران",
   "menu-business": "راه‌حل های کسب و کار",
+  "menu-appointment1": "مشاوره کاری-تحصیلی",
+  "menu-appointment2": "نوشتن تجربیات مهندسی-تکنسین",
+
+  "menu-user-dashboard": "داشبورد",
+  "menu-user-profile": "حساب کاربری",
+  "menu-user-certificate": "گواهینامه",
+  "menu-user-logout": "خروج",
 
   "webinar-home-status-active": "درحال ثبت‌نام",
   "webinar-home-status-recorded": "ضبط شده",
@@ -102,8 +109,8 @@
   "blogs-section-title": "وبلاگ فناوران",
   "blogs-section-readmore": "ادامه مطلب",
   "blogs-section-button": "نمایش همه مقالات",
-  "testimonials-section-title": "نظرات کاربران",
 
+  "testimonials-section-title": "نظرات کاربران",
   "testimonials-section-comment-one-caption": "در خصوص دوره Foundation واقعا از نحوه تدریس جناب استاد آریانفر تشکر میکنم واقعا مطالب عنوان شده در کلاس و slide ها آموزنده بودند و همیتطور با توجه به امکان دسترسی به فایل ضبط شده کلاس امکان مرور چند باره مطالب باعث افزایش یادگیری می باشد. با امید پیشرفت بیشتر برای شما و آروزی موفقیت در آموزش کسانیکه مهاجرت می کنند و نیاز به یک کار مناسب دارند.",
   "testimonials-section-comment-one-name": "حسین بزرگی",
   "testimonials-section-comment-one-coursename": "Energy Advisory",

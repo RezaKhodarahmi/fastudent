@@ -209,28 +209,9 @@ const Header = props => {
             </button>
 
             <div className='navbar-collapse justify-content-end' id=''>
-              <div className='FNV-User dropdown'>
-                <button
-                  className='FNV-Btn dropdown-toggle'
-                  type='button'
-                  data-bs-toggle='dropdown'
-                  aria-expanded='false'
-                >
-                  {t('language')}
-                </button>
-                <ul className='dropdown-menu'>
-                  <li>
-                    <Link href='#' className='dropdown-item' onClick={() => changeLanguage()}>
-                      English
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href='#' className='dropdown-item' onClick={() => changeLanguage()}>
-                      فارسی
-                    </Link>
-                  </li>
-                </ul>
-              </div>
+              <Link href='/' className='FNV-Btn LightColor BtnMedium mx-2' onClick={e => changeLanguage()}>
+                {t('menu-language')}
+              </Link>
               <Link href='/cart' className='FNV-Btn SecondaryColor'>
                 <i data-feather='shopping-cart'></i>
                 <span className='position-absolute top-10 start-70 translate-middle badge rounded-pill bg-danger'>
@@ -254,29 +235,41 @@ const Header = props => {
                   data-bs-toggle='dropdown'
                   aria-expanded='false'
                 >
-                  {userImage != null && userImage != '' ? <img src={userImage} className='img-fluid' /> : null}
+                  {/* User Avatar */}
+                  {userImage === null || userImage === '' || userImage === 'null' ? (
+                    <div className='FNV-UserAvatar'>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                      </svg>
+                    </div>
+                  ) : (
+                    <img src={userImage} className='img-fluid' />
+                  )}
+                   {/* Username */}
                   {userName}
                 </button>
                 <ul className='dropdown-menu'>
                   <li>
                     <Link href='/app/dashboards/main/' className='dropdown-item'>
-                      <i data-feather='pie-chart'></i> Dashboard
+                      <i data-feather='pie-chart'></i> {t('menu-user-dashboard')}
                     </Link>
                   </li>
                   <li>
                     <Link className='dropdown-item' href='app/pages/account-settings/account/'>
-                      <i data-feather='user'></i> Profile
+                      <i data-feather='user'></i> {t('menu-user-profile')}
                     </Link>
                   </li>
                   <li>
                     <Link className='dropdown-item' href='/app/dashboards/certificates/'>
-                      <i data-feather='award'></i> {t('certificate')}
+                      <i data-feather='award'></i> {t('menu-user-certificate')}
                     </Link>
                   </li>
 
                   <li>
                     <Link href='/' className='dropdown-item' style={{ cursor: 'pointer' }} onClick={handleLogout}>
-                      <i data-feather='log-out'></i> Logout
+                      <i data-feather='log-out'></i> {t('menu-user-logout')}
                     </Link>
                   </li>
                 </ul>
@@ -359,29 +352,21 @@ const Header = props => {
                     {t('about-us')}
                   </Link>
                 </li>
-                <li className='nav-item dropdown FNV-MegaMenu'>
-                  <Link className='nav-link' href='/' aria-expanded='false'>
+                <li class="nav-item dropdown FNV-Appointment">
+                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     {t('appointment')}
-                  </Link>
-                  <ul className='dropdown-menu'>
-                    <div className='container-fluid'>
-                      <div className='row'>
-                        <div className='col-md-3'>
-                          <li>
-                            <Link className='dropdown-item' href='/services/consultant'>
-                              مشاوره کاری-تحصیلی
-                            </Link>
-                          </li>
-                        </div>
-                        <div className='col-md-3'>
-                          <li>
-                            <Link className='dropdown-item' href='/services/counseling-working-experience'>
-                              نوشتن تجربیات مهندسی - تکنسین
-                            </Link>
-                          </li>
-                        </div>
-                      </div>
-                    </div>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <Link className='dropdown-item' href='/services/consultant'>
+                        {t('menu-appointment1')}
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className='dropdown-item' href='/services/counseling-working-experience'>
+                        {t('menu-appointment2')}
+                      </Link>
+                    </li>
                   </ul>
                 </li>
                 {/* <li className='nav-item dropdown FNV-MegaMenu'>
@@ -476,20 +461,20 @@ const Header = props => {
             </button>
 
             <div className='navbar-collapse FNV_QuickAccess justify-content-end'>
-              <Link href='/login' className='FNV-Btn BtnMedium PrimaryColor'>
-                {t('menu-login')}
-              </Link>
-
-              <Link href='/register' className='FNV-Btn SecondaryColor BtnMedium'>
-                {t('menu-register')}
+              <Link href='/' className='FNV-Btn LightColor BtnMedium mx-2' onClick={e => changeLanguage()}>
+                {t('menu-language')}
               </Link>
 
               <Link href='/cart' className='FNV-Btn LightColor BtnMedium'>
                 <i data-feather='shopping-cart'></i>
               </Link>
 
-              <Link href='/' className='FNV-Btn LightColor BtnMedium' onClick={e => changeLanguage()}>
-                {t('menu-language')}
+              <Link href='/login' className='FNV-Btn BtnMedium PrimaryColor'>
+                {t('menu-login')}
+              </Link>
+
+              <Link href='/register' className='FNV-Btn SecondaryColor BtnMedium'>
+                {t('menu-register')}
               </Link>
             </div>
           </div>
@@ -828,14 +813,14 @@ const Header = props => {
                     {t('appointment')}
                   </a>
                   <ul class="dropdown-menu">
-                    <li>
+                  <li>
                       <Link className='dropdown-item' href='/services/consultant'>
-                        مشاوره کاری-تحصیلی
+                        {t('menu-appointment1')}
                       </Link>
                     </li>
                     <li>
                       <Link className='dropdown-item' href='/services/counseling-working-experience'>
-                        نوشتن تجربیات مهندسی - تکنسین
+                        {t('menu-appointment2')}
                       </Link>
                     </li>
                   </ul>
