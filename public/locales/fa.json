@@ -41,6 +41,13 @@
   "menu-blogs": "وبلاگ فناوران",
   "menu-business": "راه‌حل های کسب و کار",
 
+  "webinar-home-status-active": "درحال ثبت‌نام",
+  "webinar-home-status-recorded": "ضبط شده",
+  "webinar-home-status-postponed": "به تعویق افتاده",
+  "webinar-home-status-not-active": "غیرفعال",
+  "webinar-home-detail": "مشاهده بیشتر",
+  "webinar-home-enroll": "ثبت‌نام کنید",
+
   "category-section-one": "فناوران چگونه به شما کمک می‌کند؟",
   "category-section-one-description": "ما در فناوران، با ارائه‌ آموزش‌های باکیفیت و مقرون‌به‌صرفه در حوزه فنی و مهندسی به مهاجران فارسی‌زبان، قصد داریم تا مسیر رسیدن به موقعیت‌های شغلی ایده‌آل را هموار کنیم. همچنین، دوره‌های آموزشی ارائه‌شده توسعه‌ شغلی را نیز برایتان به همراه خواهد داشت. به عبارتی چه به دنبال شغلی جدید باشید، چه بخواهید مسیر شغلی خود را بهبود بخشیده و شرایط را بهتر کنید، دوره‌های ما می‌توانند شما را یاری کنند. ",
   "category-section-one-button": "درباره فناوران",
@@ -93,6 +100,7 @@
   "courses-section-title": "لیست دوره‌های جدید فناوران",
   "webinars-section-title": "وبینارهای فناوران",
   "blogs-section-title": "وبلاگ فناوران",
+  "blogs-section-readmore": "ادامه مطلب",
   "blogs-section-button": "نمایش همه مقالات",
   "testimonials-section-title": "نظرات کاربران",
 

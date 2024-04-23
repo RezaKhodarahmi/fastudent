@@ -7,6 +7,9 @@ import Link from 'next/link'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 
+// ** Import translation
+import { useTranslation } from 'react-i18next'
+
 // ** Format ISO date
 import DateFormat from 'src/utils/isoDateToReadble'
 
@@ -19,6 +22,7 @@ const SingleDeskPost = () => {
 
   // Hooks
   const dispatch = useDispatch()
+  const { t } = useTranslation()
 
   const blogData = useSelector(state => state.blog)
 
@@ -64,7 +68,7 @@ const SingleDeskPost = () => {
                   </span>
 
                   <Link href={`/blog/${post.slug}`} className='FNV-Btn BtnPrimary BtnLarge'>
-                    Read More
+                    {t('blogs-section-readmore')}
                   </Link>
                 </div>
               </div>

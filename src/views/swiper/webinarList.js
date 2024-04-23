@@ -17,6 +17,9 @@ const WebinarDeskSingle = ({ webinars }) => {
   const [webinarList, setWebinarList] = useState([])
   const [displayCount, setDisplayCount] = useState(4)
 
+  //Hooks
+  const { t } = useTranslation()
+
   useEffect(() => {
     setWebinarList(webinars)
   }, [webinars])
@@ -29,16 +32,16 @@ const WebinarDeskSingle = ({ webinars }) => {
   const handelStatus = webinar => {
     switch (webinar.status) {
       case 1:
-        return 'Active'
+        return t('webinar-home-status-active');
         break
       case '2':
-        return 'Recorded'
+        return t('webinar-home-status-recorded');
         break
-      case '3':
-        return 'Postponed'
+      case '3': 
+        return t('webinar-home-status-postponed');
         break
       default:
-        return 'Not Active'
+        return t('webinar-home-status-not-active');
     }
   }
 
@@ -83,10 +86,10 @@ const WebinarDeskSingle = ({ webinars }) => {
                       </div>
                       <div className='col-5'>
                         <Link href={`/webinars/${webinar.slug}`} className='FNV-Btn BtnOutline PrimaryColor w-100'>
-                          See Details
+                          {t('webinar-home-detail')}
                         </Link>
                         <Link href={`/webinars/${webinar.slug}`} className='FNV-Btn SecondaryColor w-100'>
-                          Enroll Now
+                          {t('webinar-home-enroll')}
                         </Link>
                       </div>
                     </div>
@@ -131,7 +134,7 @@ const WebinarDeskSingle = ({ webinars }) => {
                             <badge className='SecondaryColor'>{handelStatus(webinar)}</badge>
                             <h4>{webinar.title}</h4>
 
-                            <div className='non-clickable-content'>{truncateText(webinar?.description, 200)}</div>
+                            <small class="d-block">{truncateText(webinar?.description, 150)}</small>
                             <span>
                               <svg
                                 width='11'
@@ -170,10 +173,10 @@ const WebinarDeskSingle = ({ webinars }) => {
                                 href={`/webinars/${webinar.slug}`}
                                 className='FNV-Btn BtnOutline PrimaryColor w-100'
                               >
-                                See Details
+                                {t('webinar-home-detail')}
                               </Link>
                               <Link href='#' className='FNV-Btn SecondaryColor w-100'>
-                                Enroll Now
+                                {t('webinar-home-enroll')}
                               </Link>
                             </div>
                           </div>

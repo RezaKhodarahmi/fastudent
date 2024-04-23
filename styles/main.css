@@ -939,15 +939,12 @@ nav.FNV-MegaMenu {
     bottom: 3rem;
   }
 }
-html[dir=ltr] {
-  /* For mobile phones: */
-}
-html[dir=ltr] .FNV-NewWebinars {
+body[dir=rtl] .FNV-NewWebinars {
   background-color: #ffffff;
   padding: 5rem 0 3rem;
   overflow: hidden;
 }
-html[dir=ltr] .FNV-NewWebinars h3 {
+body[dir=rtl] .FNV-NewWebinars h3 {
   font-size: 36px;
   font-weight: bold;
   text-align: center;
@@ -956,7 +953,7 @@ html[dir=ltr] .FNV-NewWebinars h3 {
   color: #003BBF;
   margin-bottom: 5rem;
 }
-html[dir=ltr] .FNV-NewWebinars h3::before {
+body[dir=rtl] .FNV-NewWebinars h3::before {
   content: "";
   display: block;
   width: 40%;
@@ -966,7 +963,7 @@ html[dir=ltr] .FNV-NewWebinars h3::before {
   top: 50%;
   position: absolute;
 }
-html[dir=ltr] .FNV-NewWebinars h3::after {
+body[dir=rtl] .FNV-NewWebinars h3::after {
   content: "";
   display: block;
   width: 40%;
@@ -976,39 +973,39 @@ html[dir=ltr] .FNV-NewWebinars h3::after {
   top: 50%;
   position: absolute;
 }
-html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper {
-  padding: 0px 2rem 5rem 0rem;
+body[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper {
+  padding: 0px 0rem 5rem 2rem;
 }
-html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper {
+body[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper {
   padding: 1rem;
 }
-html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide {
+body[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide {
   box-shadow: 0px 0px 20px rgba(0, 59, 191, 0.1);
   border-radius: 10px;
   overflow: hidden;
 }
-html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex {
+body[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex {
   border-width: 0;
   border-radius: 18px;
   cursor: grab;
 }
-html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex:active, html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex:target {
+body[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex:active, body[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex:target {
   cursor: grabbing;
 }
-html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 {
+body[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 {
   padding: 1rem;
 }
-html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 badge:first-child {
+body[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 badge:first-child {
   margin-left: 0;
 }
-html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 h4 {
+body[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 h4 {
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
   color: #003BBF;
   margin: 1rem 0;
 }
-html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 p {
+body[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 p {
   font-weight: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -1016,76 +1013,219 @@ html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper
   padding-bottom: 1rem;
   border-bottom: 1px solid #FF772C;
 }
-html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 span {
+body[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 span {
   display: inline-block;
   font-size: 12px;
   color: #003BBF;
   line-height: 20px;
   font-weight: 400;
 }
-html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 span svg {
+body[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 span svg {
+  color: #FF772C;
+  width: 12px;
+  height: 12px;
+  margin-left: 0.5rem;
+}
+body[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 .d-flex {
+  margin-top: 1rem;
+  gap: 10px;
+}
+body[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 .d-flex .FNV-Btn:first-child {
+  margin-right: 5px;
+}
+body[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 .d-flex .FNV-Btn:nth-child(2) {
+  margin-left: 5px;
+}
+body[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-7 {
+  display: flex;
+  padding-left: 2rem;
+  padding-right: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+body[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-7 img {
+  border-radius: 10px;
+  width: 88%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper-pagination {
+  top: unset;
+  bottom: 3rem;
+}
+body[dir=rtl] .FNV-NewWebinars .container .row .col-md-5 {
+  padding: 1rem 0;
+}
+body[dir=rtl] .FNV-NewWebinars .container .row .col-md-5 .col-12 {
+  box-shadow: 0px 0px 20px rgba(0, 59, 191, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+body[dir=rtl] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-7 {
+  padding: 0rem;
+}
+body[dir=rtl] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-7 h4 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #003BBF;
+  margin: 0.5rem 0;
+}
+body[dir=rtl] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 {
+  padding: 0rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+
+body[dir=ltr] .FNV-NewWebinars {
+  background-color: #ffffff;
+  padding: 5rem 0 3rem;
+  overflow: hidden;
+}
+body[dir=ltr] .FNV-NewWebinars h3 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  color: #003BBF;
+  margin-bottom: 5rem;
+}
+body[dir=ltr] .FNV-NewWebinars h3::before {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 2px;
+  background: #FF772C;
+  left: -1rem;
+  top: 50%;
+  position: absolute;
+}
+body[dir=ltr] .FNV-NewWebinars h3::after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 2px;
+  background: #FF772C;
+  right: -1rem;
+  top: 50%;
+  position: absolute;
+}
+body[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper {
+  padding: 0px 2rem 5rem 0rem;
+}
+body[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper {
+  padding: 1rem;
+}
+body[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide {
+  box-shadow: 0px 0px 20px rgba(0, 59, 191, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+body[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex {
+  border-width: 0;
+  border-radius: 18px;
+  cursor: grab;
+}
+body[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex:active, body[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex:target {
+  cursor: grabbing;
+}
+body[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 {
+  padding: 1rem;
+}
+body[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 badge:first-child {
+  margin-left: 0;
+}
+body[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 h4 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #003BBF;
+  margin: 1rem 0;
+}
+body[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 p {
+  font-weight: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #003BBF;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #FF772C;
+}
+body[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 span {
+  display: inline-block;
+  font-size: 12px;
+  color: #003BBF;
+  line-height: 20px;
+  font-weight: 400;
+}
+body[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 span svg {
   color: #FF772C;
   width: 12px;
   height: 12px;
   margin-right: 0.5rem;
 }
-html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 .d-flex {
+body[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 .d-flex {
   margin-top: 1rem;
+  gap: 10px;
 }
-html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 .d-flex .FNV-Btn:first-child {
+body[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 .d-flex .FNV-Btn:first-child {
   margin-right: 5px;
 }
-html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 .d-flex .FNV-Btn:nth-child(2) {
+body[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 .d-flex .FNV-Btn:nth-child(2) {
   margin-left: 5px;
 }
-html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-7 {
+body[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-7 {
   display: flex;
   padding-right: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-7 img {
+body[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-7 img {
   border-radius: 10px;
   width: 88%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper-pagination {
+body[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper-pagination {
   top: unset;
   bottom: 3rem;
 }
-html[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 {
+body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 {
   padding: 1rem 0;
 }
-html[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 {
+body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 {
   box-shadow: 0px 0px 20px rgba(0, 59, 191, 0.1);
   border-radius: 10px;
   padding: 1rem;
   margin-bottom: 1rem;
 }
-html[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-7 {
+body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-7 {
   padding: 0rem;
 }
-html[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-7 h4 {
+body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-7 h4 {
   font-size: 16px;
   font-weight: bold;
   line-height: 24px;
   color: #003BBF;
   margin: 0.5rem 0;
 }
-html[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 {
+body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 {
   padding: 0rem;
   display: flex;
   flex-flow: column;
   justify-content: space-around;
 }
+
+/* For mobile phones: */
 @media only screen and (max-width: 768px) {
-  html[dir=ltr] .FNV-NewWebinars {
+  .FNV-NewWebinars {
     background-color: #ffffff;
     padding: 2rem 0.5rem 0.5rem;
     overflow: hidden;
   }
-  html[dir=ltr] .FNV-NewWebinars h3 {
+  .FNV-NewWebinars h3 {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
@@ -1094,396 +1234,122 @@ html[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     color: #003BBF;
     margin-bottom: 1rem;
   }
-  html[dir=ltr] .FNV-NewWebinars h3::before {
+  .FNV-NewWebinars h3::before {
     display: none;
   }
-  html[dir=ltr] .FNV-NewWebinars h3::after {
+  .FNV-NewWebinars h3::after {
     display: none;
   }
-  html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 {
+  .FNV-NewWebinars .container .row .col-md-7 {
     padding: 0rem;
   }
-  html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper {
+  .FNV-NewWebinars .container .row .col-md-7 .swiper {
     padding: 0rem;
   }
-  html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper {
+  .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper {
     padding: 1rem;
   }
-  html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide {
+  .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide {
     box-shadow: 0px 0px 20px rgba(0, 59, 191, 0.1);
     border-radius: 10px;
     overflow: hidden;
     width: 100%;
   }
-  html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex {
+  .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex {
     border-width: 0;
     border-radius: 18px;
     cursor: grab;
   }
-  html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex:active, html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex:target {
+  .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex:active, .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex:target {
     cursor: grabbing;
   }
-  html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 {
+  .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 {
     padding: 1rem;
   }
-  html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 badge {
+  .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 badge {
     font-size: 12px;
   }
-  html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 badge:first-child {
+  .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 badge:first-child {
     margin-left: 0;
   }
-  html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 h4 {
+  .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 h4 {
     font-size: 14px;
     font-weight: bold;
     line-height: 30px;
     color: #003BBF;
     margin: 1rem 0;
   }
-  html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 p {
+  .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 p {
     font-weight: 12px;
     font-weight: 400;
     line-height: 20px;
     color: #003BBF;
     border-bottom: 1px solid #FF772C;
   }
-  html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 span {
+  .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 span {
     display: inline-block;
     font-size: 12px;
     color: #003BBF;
     line-height: 20px;
     font-weight: 400;
   }
-  html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 span svg {
+  .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 span svg {
     color: #FF772C;
     width: 12px;
     height: 12px;
     margin-right: 0.5rem;
   }
-  html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 .d-flex {
+  .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 .d-flex {
     margin-top: 1rem;
   }
-  html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 .d-flex .FNV-Btn:first-child {
+  .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 .d-flex .FNV-Btn:first-child {
     margin-right: 5px;
   }
-  html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 .d-flex .FNV-Btn:nth-child(2) {
+  .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 .d-flex .FNV-Btn:nth-child(2) {
     margin-left: 5px;
   }
-  html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-7 {
+  .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-7 {
     display: flex;
     padding-right: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
-  html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-7 img {
+  .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-7 img {
     border-radius: 10px;
     width: 88%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  html[dir=ltr] .FNV-NewWebinars .container .row .col-md-7 .swiper-pagination {
+  .FNV-NewWebinars .container .row .col-md-7 .swiper-pagination {
     top: unset;
     bottom: 3rem;
   }
-  html[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 {
+  .FNV-NewWebinars .container .row .col-md-5 {
     padding: 1rem;
   }
-  html[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 {
+  .FNV-NewWebinars .container .row .col-md-5 .col-12 {
     box-shadow: 0px 0px 20px rgba(0, 59, 191, 0.1);
     border-radius: 10px;
     padding: 1rem;
     margin-bottom: 1rem;
   }
-  html[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-7 {
+  .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-7 {
     padding: 0rem;
   }
-  html[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-7 h4 {
+  .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-7 h4 {
     font-size: 14px;
     font-weight: bold;
     line-height: 24px;
     color: #003BBF;
     margin: 0.5rem 0;
   }
-  html[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 {
+  .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 {
     padding: 0rem;
     display: flex;
     flex-flow: column;
     justify-content: space-around;
   }
 }
-
-html[dir=rtl] {
-  /* For mobile phones: */
-}
-html[dir=rtl] .FNV-NewWebinars {
-  background-color: #ffffff;
-  padding: 5rem 0 3rem;
-  overflow: hidden;
-}
-html[dir=rtl] .FNV-NewWebinars h3 {
-  font-size: 36px;
-  font-weight: bold;
-  text-align: center;
-  width: 100%;
-  position: relative;
-  color: #003BBF;
-  margin-bottom: 5rem;
-}
-html[dir=rtl] .FNV-NewWebinars h3::before {
-  content: "";
-  display: block;
-  width: 40%;
-  height: 2px;
-  background: #FF772C;
-  left: -1rem;
-  top: 50%;
-  position: absolute;
-}
-html[dir=rtl] .FNV-NewWebinars h3::after {
-  content: "";
-  display: block;
-  width: 40%;
-  height: 2px;
-  background: #FF772C;
-  right: -1rem;
-  top: 50%;
-  position: absolute;
-}
-html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper {
-  padding: 0px 0rem 5rem 2rem;
-}
-html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper {
-  padding: 1rem;
-}
-html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide {
-  box-shadow: 0px 0px 20px rgba(0, 59, 191, 0.1);
-  border-radius: 10px;
-  overflow: hidden;
-}
-html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex {
-  border-width: 0;
-  border-radius: 18px;
-  cursor: grab;
-}
-html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex:active, html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex:target {
-  cursor: grabbing;
-}
-html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 {
-  padding: 1rem;
-}
-html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 badge:first-child {
-  margin-left: 0;
-}
-html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 h4 {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 30px;
-  color: #003BBF;
-  margin: 1rem 0;
-}
-html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 p {
-  font-weight: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #003BBF;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #FF772C;
-}
-html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 span {
-  display: inline-block;
-  font-size: 12px;
-  color: #003BBF;
-  line-height: 20px;
-  font-weight: 400;
-}
-html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 span svg {
-  color: #FF772C;
-  width: 12px;
-  height: 12px;
-  margin-right: 0.5rem;
-}
-html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 .d-flex {
-  margin-top: 1rem;
-}
-html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 .d-flex .FNV-Btn:first-child {
-  margin-right: 5px;
-}
-html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 .d-flex .FNV-Btn:nth-child(2) {
-  margin-left: 5px;
-}
-html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-7 {
-  display: flex;
-  padding-left: 2rem;
-  padding-right: unset;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-7 img {
-  border-radius: 10px;
-  width: 88%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper-pagination {
-  top: unset;
-  bottom: 3rem;
-}
-html[dir=rtl] .FNV-NewWebinars .container .row .col-md-5 {
-  padding: 1rem 0;
-}
-html[dir=rtl] .FNV-NewWebinars .container .row .col-md-5 .col-12 {
-  box-shadow: 0px 0px 20px rgba(0, 59, 191, 0.1);
-  border-radius: 10px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-html[dir=rtl] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-7 {
-  padding: 0rem;
-}
-html[dir=rtl] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-7 h4 {
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 24px;
-  color: #003BBF;
-  margin: 0.5rem 0;
-}
-html[dir=rtl] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 {
-  padding: 0rem;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-around;
-}
-@media only screen and (max-width: 768px) {
-  html[dir=rtl] .FNV-NewWebinars {
-    background-color: #ffffff;
-    padding: 2rem 0.5rem 0.5rem;
-    overflow: hidden;
-  }
-  html[dir=rtl] .FNV-NewWebinars h3 {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-    position: relative;
-    color: #003BBF;
-    margin-bottom: 1rem;
-  }
-  html[dir=rtl] .FNV-NewWebinars h3::before {
-    display: none;
-  }
-  html[dir=rtl] .FNV-NewWebinars h3::after {
-    display: none;
-  }
-  html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 {
-    padding: 0rem;
-  }
-  html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper {
-    padding: 0rem;
-  }
-  html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper {
-    padding: 1rem;
-  }
-  html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide {
-    box-shadow: 0px 0px 20px rgba(0, 59, 191, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    width: 100%;
-  }
-  html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex {
-    border-width: 0;
-    border-radius: 18px;
-    cursor: grab;
-  }
-  html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex:active, html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex:target {
-    cursor: grabbing;
-  }
-  html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 {
-    padding: 1rem;
-  }
-  html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 badge {
-    font-size: 12px;
-  }
-  html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 badge:first-child {
-    margin-left: 0;
-  }
-  html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 h4 {
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 30px;
-    color: #003BBF;
-    margin: 1rem 0;
-  }
-  html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 p {
-    font-weight: 12px;
-    font-weight: 400;
-    line-height: 20px;
-    color: #003BBF;
-    border-bottom: 1px solid #FF772C;
-  }
-  html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 span {
-    display: inline-block;
-    font-size: 12px;
-    color: #003BBF;
-    line-height: 20px;
-    font-weight: 400;
-  }
-  html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 span svg {
-    color: #FF772C;
-    width: 12px;
-    height: 12px;
-    margin-right: 0.5rem;
-  }
-  html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 .d-flex {
-    margin-top: 1rem;
-  }
-  html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 .d-flex .FNV-Btn:first-child {
-    margin-right: 5px;
-  }
-  html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 .d-flex .FNV-Btn:nth-child(2) {
-    margin-left: 5px;
-  }
-  html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-7 {
-    display: flex;
-    padding-right: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-  html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-7 img {
-    border-radius: 10px;
-    width: 88%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  html[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper-pagination {
-    top: unset;
-    bottom: 3rem;
-  }
-  html[dir=rtl] .FNV-NewWebinars .container .row .col-md-5 {
-    padding: 1rem;
-  }
-  html[dir=rtl] .FNV-NewWebinars .container .row .col-md-5 .col-12 {
-    box-shadow: 0px 0px 20px rgba(0, 59, 191, 0.1);
-    border-radius: 10px;
-    padding: 1rem;
-    margin-bottom: 1rem;
-  }
-  html[dir=rtl] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-7 {
-    padding: 0rem;
-  }
-  html[dir=rtl] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-7 h4 {
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 24px;
-    color: #003BBF;
-    margin: 0.5rem 0;
-  }
-  html[dir=rtl] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 {
-    padding: 0rem;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
-  }
-}
-
 .FNV-YoutubeCTA {
   background-color: #ffffff;
   padding: 4rem 0 0;

@@ -39,13 +39,7 @@ a{
 @import './NewCoursesHome';
 
 // New Webinars
-html[dir="ltr"]{
-  @import './NewWebinarsHome';
-}
-
-html[dir="rtl"]{
-  @import './NewWebinarsHome-RTL';
-}
+@import './NewWebinarsHome';
 
 // Youtube CTA
 @import './YoutubeCTA';
