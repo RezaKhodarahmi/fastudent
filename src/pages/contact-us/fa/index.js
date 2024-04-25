@@ -1,32 +1,52 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { Helmet } from 'react-helmet'
+import { useRouter } from 'next/router'
+
+// ** Import Translation
+import { useTranslation } from 'react-i18next'
 
 const Index = () => {
+  //Hooks
+  const router = useRouter()
+  const { t } = useTranslation()
+
+  // Check website lang
+  useEffect(() => {
+    const lng = window.localStorage.getItem('i18nextLng')
+    if (lng == 'en') {
+      router.push('/contact-us')
+    }
+  }, [])
+    
   return (
     <>
       <section className='FNV-ContactUs'>
         <div className='container'>
           <div className='row'>
-            <h1>Contact with Fanavaran</h1>
+            <h1 className='mb-5'>{t('contact-fanavaran-1')}</h1>
             <div className='col-12 col-md-6'>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>{t('contact-fanavaran-2')}</p>
+              <p>{t('contact-fanavaran-3')}</p>
+              <p>{t('contact-fanavaran-4')}</p>
+              <p>{t('contact-fanavaran-5')}</p>
             </div>
-            <div className='col-12 col-md-6'>
+            <div className='col-12 col-md-6 p-5'>
               <form>
                 <div className='row'>
                   <div className='col-12 col-md-6 mb-3'>
-                    <input type='text' className='form-control' placeholder='Full Name' />
+                    <input type='text' className='form-control' placeholder={t('contact-fanavaran-fullname')} />
                   </div>
 
                   <div className='col-12 col-md-6 mb-3'>
-                    <input type='email' className='form-control' placeholder='Email' />
+                    <input type='email' className='form-control' placeholder={t('contact-fanavaran-email')} />
                   </div>
 
                   <div className='col-12 mb-3'>
-                    <textarea className='form-control' rows={4} placeholder='Type your message' ></textarea>
+                    <textarea className='form-control' rows={4} placeholder={t('contact-fanavaran-message')} ></textarea>
                   </div>
 
                   <div className='col-12 mb-3'>
-                    <button type='submit' className='FNV-Btn SecondaryColor BtnLarge w-100'>Send</button>
+                    <button type='submit' className='FNV-Btn SecondaryColor BtnLarge w-100'>{t('contact-fanavaran-submit')}</button>
                   </div>
                 </div>
               </form>
