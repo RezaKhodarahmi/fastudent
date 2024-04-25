@@ -15,7 +15,7 @@
         &::before {
             content: "";
             display: block;
-            width: 40%;
+            width: 35%;
             height: 2px;
             background: $SecondaryColor;
             left: -1rem;
@@ -27,7 +27,7 @@
         &::after {
             content: "";
             display: block;
-            width: 40%;
+            width: 35%;
             height: 2px;
             background: $SecondaryColor;
             right: -1rem;

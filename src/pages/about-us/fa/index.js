@@ -42,15 +42,8 @@ const Index = () => {
         <div className='container'>
           <div className='row'>
             <div className='col-12 p-0'>
-              <p>
-                {t('about-fanavaran-1')}
-              </p>
-              <p>
-                {t('about-fanavaran-2')}
-              </p>
-              <p>
-                {t('about-fanavaran-3')}
-              </p>
+              <h2>{t('about-fanavaran-1')}</h2>
+              <p>{t('about-fanavaran-2')}</p>
             </div>
           </div>
         </div>
@@ -60,9 +53,9 @@ const Index = () => {
       <section className='FNV-About-Content FNV-BG-Highlight'>
         <div className='container'>
           <div className='row'>
-            <h2 className='text-center'>
-              {t('about-fanavaran-4')}
-            </h2>
+            <h3 className='text-center'>
+              {t('about-fanavaran-3')}
+            </h3>
             <div className='col-12 col-md-6 p-2'>
               <iframe width="100%" height="350" src="https://www.youtube.com/embed/5OMF56GHPKI?si=23Fyp2b7tAvkgr7S" className='rounded' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>

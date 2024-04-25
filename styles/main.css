@@ -1053,7 +1053,7 @@ body[dir=ltr] nav.FNV-MegaMenu {
 .FNV-NewCourses h3::before {
   content: "";
   display: block;
-  width: 40%;
+  width: 35%;
   height: 2px;
   background: #FF772C;
   left: -1rem;
@@ -1063,7 +1063,7 @@ body[dir=ltr] nav.FNV-MegaMenu {
 .FNV-NewCourses h3::after {
   content: "";
   display: block;
-  width: 40%;
+  width: 35%;
   height: 2px;
   background: #FF772C;
   right: -1rem;
@@ -2475,7 +2475,7 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
 .FNV-About-Content h3::before {
   content: "";
   display: block;
-  width: 35%;
+  width: 30%;
   height: 2px;
   background: #FF772C;
   left: -1rem;
@@ -2485,7 +2485,7 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
 .FNV-About-Content h3::after {
   content: "";
   display: block;
-  width: 35%;
+  width: 30%;
   height: 2px;
   background: #FF772C;
   right: -1rem;
