@@ -14,6 +14,7 @@ import Input from '@mui/material/Input'
 import { appConfig } from 'src/configs/appConfig'
 import { useTranslation } from 'react-i18next'
 import SidebarSection from 'src/layouts/components/SideBar'
+import { Button } from '@mui/material'
 
 const Header = props => {
   // State
@@ -104,7 +105,7 @@ const Header = props => {
       if (inputValue.length >= 3) {
         dispatch(fetchSearchedCourse(inputValue))
       }
-    }, 600),
+    }, 200),
     []
   )
 
@@ -209,9 +210,9 @@ const Header = props => {
             </button>
 
             <div className='navbar-collapse justify-content-end' id=''>
-              <Link href='/' className='FNV-Btn LightColor BtnMedium mx-2' onClick={e => changeLanguage()}>
+              <Button href='#' className='FNV-Btn LightColor BtnMedium mx-2' onClick={e => changeLanguage()}>
                 {t('menu-language')}
-              </Link>
+              </Button>
               <Link href='/cart' className='FNV-Btn SecondaryColor'>
                 <i data-feather='shopping-cart'></i>
                 <span className='position-absolute top-10 start-70 translate-middle badge rounded-pill bg-danger'>
@@ -238,16 +239,24 @@ const Header = props => {
                   {/* User Avatar */}
                   {userImage === null || userImage === '' || userImage === 'null' ? (
                     <div className='FNV-UserAvatar'>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
-                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                      <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        class='icon icon-tabler icon-tabler-user'
+                        viewBox='0 0 24 24'
+                        stroke-width='1.5'
+                        fill='none'
+                        stroke-linecap='round'
+                        stroke-linejoin='round'
+                      >
+                        <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+                        <path d='M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0' />
+                        <path d='M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2' />
                       </svg>
                     </div>
                   ) : (
                     <img src={userImage} className='img-fluid' />
                   )}
-                   {/* Username */}
+                  {/* Username */}
                   {userName}
                 </button>
                 <ul className='dropdown-menu'>
@@ -352,11 +361,11 @@ const Header = props => {
                     {t('about-us')}
                   </Link>
                 </li>
-                <li class="nav-item dropdown FNV-Appointment">
-                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <li class='nav-item dropdown FNV-Appointment'>
+                  <a class='nav-link' href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
                     {t('appointment')}
                   </a>
-                  <ul class="dropdown-menu">
+                  <ul class='dropdown-menu'>
                     <li>
                       <Link className='dropdown-item' href='/services/consultant'>
                         {t('menu-appointment1')}
@@ -461,9 +470,9 @@ const Header = props => {
             </button>
 
             <div className='navbar-collapse FNV_QuickAccess justify-content-end'>
-              <Link href='/' className='FNV-Btn LightColor BtnMedium mx-2' onClick={e => changeLanguage()}>
+              <Button className='FNV-Btn LightColor BtnMedium mx-2' onClick={e => changeLanguage()}>
                 {t('menu-language')}
-              </Link>
+              </Button>
 
               <Link href='/cart' className='FNV-Btn LightColor BtnMedium'>
                 <i data-feather='shopping-cart'></i>
@@ -808,12 +817,12 @@ const Header = props => {
                     {t('about-us')}
                   </Link>
                 </li>
-                <li class="nav-item dropdown FNV-Appointment">
-                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <li class='nav-item dropdown FNV-Appointment'>
+                  <a class='nav-link' href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
                     {t('appointment')}
                   </a>
-                  <ul class="dropdown-menu">
-                  <li>
+                  <ul class='dropdown-menu'>
+                    <li>
                       <Link className='dropdown-item' href='/services/consultant'>
                         {t('menu-appointment1')}
                       </Link>

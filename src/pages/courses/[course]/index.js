@@ -45,6 +45,7 @@ const Course = () => {
   const token = localStorage.getItem('accessToken') || null
   const { course } = router.query
   const auth = useAuth()
+
   const {
     register,
     handleSubmit,
@@ -143,6 +144,7 @@ const Course = () => {
     // Ensure CAPTCHA is validated
     if (!data.recaptcha) {
       alert('Please verify you are not a robot!')
+
       return
     }
 
