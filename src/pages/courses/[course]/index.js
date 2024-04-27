@@ -7,13 +7,16 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { setCartItems } from 'src/store/apps/cart'
 import { getCourseWithSlug, getEnrolledCourse } from 'src/store/apps/course'
+import { submitDemoRequest } from 'src/store/apps/demo-request'
 import { postNewComment } from 'src/store/apps/comment'
 import LinearProgress from '@mui/material/LinearProgress'
 import Typography from '@mui/material/Typography'
 import { appConfig } from 'src/configs/appConfig'
 import ReactPlayer from 'react-player'
-import { Button, TextareaAutosize, List, ListItem, ListItemText, Divider, Box } from '@mui/material'
+import { Button, TextareaAutosize, List, ListItem, ListItemText, Divider, Box, Modal, TextField } from '@mui/material'
 import { useAuth } from 'src/hooks/useAuth'
+import ReCAPTCHA from 'react-google-recaptcha'
+import { useForm } from 'react-hook-form'
 
 // ** Spinner Import
 import Spinner from 'src/@core/components/spinner'
@@ -32,24 +35,51 @@ const Course = () => {
   const [remindedDays, setRemindedDays] = useState('0')
   const [user, setUser] = useState(null)
   const [newComment, setNewComment] = useState(null)
+  const [succeededMessage, setSucceededMessage] = useState(null)
+  const [open, setOpen] = useState(false)
   const dispatch = useDispatch()
   const router = useRouter()
   const courseData = useSelector(state => state.course)
+  const reqCourseDemo = useSelector(state => state.reqCourseDemo)
   const userEmail = localStorage.getItem('userData') || null
   const token = localStorage.getItem('accessToken') || null
   const { course } = router.query
   const auth = useAuth()
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    setValue
+  } = useForm()
 
   const { t } = useTranslation()
+  const recaptchaRef = React.createRef()
 
   useEffect(() => {
     setLoading(true)
   }, [])
 
   useEffect(() => {
+    if (reqCourseDemo?.data.message) {
+      setSucceededMessage(reqCourseDemo?.data?.message)
+    }
+  }, [reqCourseDemo])
+
+  useEffect(() => {
     setLoading(true)
     setUser(auth.user)
   }, [auth])
+
+  const handleOpen = () => setOpen(true)
+  const handleClose = () => setOpen(false)
+
+  const onReCAPTCHAChange = captchaCode => {
+    // If the CAPTCHA code is verified, set the form value
+    if (captchaCode) {
+      setValue('recaptcha', captchaCode)
+    }
+  }
+
   useEffect(() => {
     if (userEmail != null && token != null) {
       dispatch(getEnrolledCourse({ course: course, user: userEmail }))
@@ -109,6 +139,18 @@ const Course = () => {
     }
   }, [courseData, setData, setCourseId, setIsEnrolled, setRemindedDays, setSelectedCycle, setInCart])
 
+  const onSubmit = data => {
+    // Ensure CAPTCHA is validated
+    if (!data.recaptcha) {
+      alert('Please verify you are not a robot!')
+      return
+    }
+
+    const cycle = selectedCycle ? selectedCycle : cycleId
+    dispatch(submitDemoRequest({ data, courseId, cycle }))
+    handleClose() // Close modal after form submission
+  }
+
   const addToCart = id => {
     const cartItems = JSON.parse(localStorage.getItem('cartItems')) || []
     const existInCart = cartItems.includes(id)
@@ -139,8 +181,8 @@ const Course = () => {
 
   useEffect(() => {
     // Filtered tests and videos based on cycleId
-    const filteredTests = data?.tests.filter(test => test.cycleId === cycleId)
-    const filteredVideos = data?.videos.filter(video => parseInt(video.cycleId) === cycleId)
+    const filteredTests = data?.tests?.filter(test => test.cycleId === cycleId)
+    const filteredVideos = data?.videos?.filter(video => parseInt(video.cycleId) === cycleId)
     setFilteredVideos(filteredVideos)
     setFilteredTests(filteredTests)
   }, [cycleId, data])
@@ -762,9 +804,23 @@ const Course = () => {
                             <span>{t('single-course-enroll')}</span>
                           </a>
                         )}
-                        <a href='#' className='FNV-Btn BtnOutline PrimaryColor w-100'>
-                          {t('single-course-demo')}
-                        </a>
+                        {succeededMessage ? (
+                          <p
+                            style={{
+                              marginTop: '5px',
+                              color: '#fff',
+                              backgroundColor: 'green',
+                              padding: '5px',
+                              borderRadius: '10px'
+                            }}
+                          >
+                            {succeededMessage}
+                          </p>
+                        ) : (
+                          <Button className='FNV-Btn BtnOutline PrimaryColor w-100' onClick={handleOpen}>
+                            {t('single-course-demo')}
+                          </Button>
+                        )}
                       </>
                     )}
 
@@ -979,6 +1035,76 @@ const Course = () => {
           </section> */}
         </>
       )}
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby='simple-modal-title'
+        aria-describedby='simple-modal-description'
+      >
+        <Box
+          component='form'
+          onSubmit={handleSubmit(onSubmit)}
+          noValidate
+          sx={{
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            width: 400,
+            bgcolor: 'background.paper',
+            border: '2px solid #000',
+            boxShadow: 24,
+            p: 4
+          }}
+        >
+          <TextField
+            margin='normal'
+            required
+            fullWidth
+            id='name'
+            label='Your Name'
+            name='name'
+            autoComplete='name'
+            autoFocus
+            {...register('name', { required: true })}
+          />
+
+          {errors.name && <span>This field is required</span>}
+          <TextField
+            margin='normal'
+            required
+            fullWidth
+            id='email'
+            label='Email Address'
+            name='email'
+            autoComplete='email'
+            {...register('email', { required: true })}
+          />
+          {errors.email && <span>This field is required</span>}
+
+          <TextField
+            margin='normal'
+            required
+            fullWidth
+            id='phone'
+            label='Phone'
+            name='phone'
+            autoComplete='phone'
+            {...register('phone', { required: true })}
+          />
+          {errors.phone && <span>This field is required</span>}
+
+          <ReCAPTCHA
+            ref={recaptchaRef}
+            sitekey='6LeP1jojAAAAAJMGRkY1WeJuBybdzqeRwZNErOrc'
+            onChange={onReCAPTCHAChange}
+          />
+
+          <Button type='submit' fullWidth variant='contained' sx={{ mt: 3, mb: 2 }}>
+            Send Request
+          </Button>
+        </Box>
+      </Modal>
     </div>
   )
 }
