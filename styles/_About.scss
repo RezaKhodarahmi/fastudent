@@ -119,7 +119,7 @@
         &::before {
             content: "";
             display: block;
-            width: 35%;
+            width: 30%;
             height: 2px;
             background: $SecondaryColor;
             left: -1rem;
@@ -131,7 +131,7 @@
         &::after {
             content: "";
             display: block;
-            width: 35%;
+            width: 30%;
             height: 2px;
             background: $SecondaryColor;
             right: -1rem;
