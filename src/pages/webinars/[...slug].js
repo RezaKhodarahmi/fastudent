@@ -122,7 +122,7 @@ const SingleWebinar = () => {
                         dangerouslySetInnerHTML={generateIconHTML('calendar')}
                       />
                       <Typography variant='body1' gutterBottom sx={{ color: '#003BBF' }}>
-                        {new Date(webinar.date).toLocaleDateString()}
+                        {webinar.date}
                       </Typography>
                     </Box>
                   </Grid>

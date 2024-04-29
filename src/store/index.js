@@ -17,6 +17,7 @@ import blog from 'src/store/apps/blog'
 import webinar from 'src/store/apps/webinar'
 import appointment from 'src/store/apps/appointment'
 import blogCategory from 'src/store/apps/blog-category'
+import reqCourseDemo from 'src/store/apps/demo-request'
 
 export const store = configureStore({
   reducer: {
@@ -34,7 +35,8 @@ export const store = configureStore({
     webinar,
     blogCategory,
     cart,
-    appointment
+    appointment,
+    reqCourseDemo
   },
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({
