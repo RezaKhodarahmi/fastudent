@@ -326,7 +326,9 @@ body[dir=rtl] nav .container-fluid:nth-child(2) .collapse .navbar-nav {
   padding-right: 0;
 }
 body[dir=rtl] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item.FNV-Appointment {
-  background-color: #003BBF;
+  background: linear-gradient(-45deg, #003BBF, #FF772C, #003BBF);
+  background-size: 400% 400%;
+  animation: gradient 3s ease-in-out infinite;
 }
 body[dir=rtl] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item.FNV-Appointment a {
   color: #ffffff;
