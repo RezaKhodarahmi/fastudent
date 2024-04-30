@@ -84,9 +84,35 @@ const ListCourses = props => {
             <ListItemSecondaryAction>
               <Link href={`${appConfig.appUrl}/courses/${course?.slug}`} passHref variant='contained' size='small'>
                 <Button variant='contained' size='small'>
-                  View Course
+                  View Courses
                 </Button>
               </Link>
+              {course.cycles[0]?.zoomLink && (
+                <Link
+                  href={course?.cycles[0]?.zoomLink || '#'}
+                  passHref
+                  variant='contained'
+                  style={{ margin: '0 5px' }}
+                  size='small'
+                >
+                  <Button variant='contained' size='small'>
+                    Join the class
+                  </Button>
+                </Link>
+              )}
+              {course?.cycles[0]?.groupLink && (
+                <Link
+                  href={course?.cycles[0]?.groupLink || '#'}
+                  passHref
+                  variant='contained'
+                  style={{ margin: '0 5px' }}
+                  size='small'
+                >
+                  <Button variant='contained' size='small'>
+                    Telegram Group
+                  </Button>
+                </Link>
+              )}
             </ListItemSecondaryAction>
           </ListItem>
         ))}
