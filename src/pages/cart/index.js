@@ -45,6 +45,7 @@ const Index = () => {
   const [oldVIP, setOldVIP] = useState(false)
   const [partially, setPartially] = useState(true)
   const [stripePay, setStripePay] = useState(true)
+  const [isRenew, setIsRenew] = useState(false)
 
   //Hooks
   const courses = useSelector(state => state.course)
@@ -73,6 +74,10 @@ const Index = () => {
   useEffect(() => {
     setNewVip(localStorage.getItem('newVIP') || true)
   }, [cartCourses])
+
+  useEffect(() => {
+    console.log(courses)
+  }, [courses])
 
   //Check if coupon is applied
   function areCouponApplied(obj1, obj2) {
@@ -414,16 +419,28 @@ const Index = () => {
   useEffect(() => {
     if (courses?.data?.data && courses?.data?.data?.length) {
       setCartCourses(courses?.data?.data)
-      setOldVIP(user?.data?.isVipValid)
+      setIsRenew(courses?.data?.isRenew)
+
+      if (!courses?.data?.isRenew) {
+        setOldVIP(user?.data?.isVipValid)
+      }
 
       // Check if VIP membership is in the cart
+    }
+  }, [courses])
+
+  useEffect(() => {
+    if (cartCourses) {
       const isVipMembershipInCart =
         Array.isArray(courses?.data?.data) && courses.data.data.some(course => course?.course?.id === 150000)
 
-      const prices = courses?.data?.data?.map(item => {
-        // If the user is a VIP OR the VIP membership is in the cart, use VIP prices
-        if (user?.data?.isVipValid || isVipMembershipInCart) {
-          return item?.vipPrice || 0
+      const prices = cartCourses?.map(item => {
+        if (!isRenew) {
+          if (user?.data?.isVipValid || isVipMembershipInCart) {
+            return item?.vipPrice || 0
+          } else {
+            return item?.regularPrice || 0
+          }
         } else {
           return item?.regularPrice || 0
         }
@@ -438,7 +455,7 @@ const Index = () => {
         setIsVIP(true)
       }
     }
-  }, [courses, setCartCourses, setCartTotal, user])
+  }, [cartCourses, setCartCourses, setCartTotal, user])
 
   const handelRemoveCoupon = code => {
     const oldUsedCoupon = [...usedCoupon]

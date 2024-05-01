@@ -41,7 +41,7 @@
   "contact-fanavaran-email": "ایمیل",
   "contact-fanavaran-message": "متن پیغام",
   "contact-fanavaran-submit": "ارسال",
-  
+
   "menu-language": "English",
   "menu-login": "ورود",
   "menu-register": "عضویت",
@@ -104,6 +104,7 @@
   "single-course-scycle": "انتخاب دوره درسی",
   "single-course-gotocart": "برو به سبد خرید",
   "single-course-enroll": "ثبت‌نام کنید!",
+  "single-course-renew": "تمدید دوره",
   "single-course-demo": "درخواست جلسه دمو",
   "single-course-diploma": "دریافت گواهی معتبر",
   "single-course-diploma-desc": "ارائه شده توسط موسسه فناوران",

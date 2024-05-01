@@ -35,7 +35,7 @@ const Footer = props => {
         <Link href='https://www.youtube.com/channel/UCKbfvGZBXPn2Y3LGb9YDiIA' className='FNV-Youtube'>
           <i data-feather='youtube'></i>
         </Link>
-        <Link href='https://fanavaran.ca/telegram-groups/' className='FNV-Telegram'>
+        <Link href='https://t.me/fanavaran_ca' className='FNV-Telegram'>
           <i data-feather='send'></i>
         </Link>
       </div>
@@ -92,7 +92,7 @@ const Footer = props => {
                 </a>
 
                 {/* Telegram */}
-                <a href='https://fanavaran.ca/telegram-groups/'>
+                <a href='https://t.me/fanavaran_ca'>
                   <svg width='30' height='30' viewBox='0 0 21 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
                     <path
                       d='M0.360588 8.52285L5.06459 10.2785L6.88533 16.134C7.00183 16.509 7.46042 16.6477 7.76481 16.3988L10.3869 14.2612C10.6618 14.0373 11.0532 14.0261 11.3405 14.2346L16.0698 17.6682C16.3954 17.9049 16.8567 17.7264 16.9384 17.333L20.4029 0.668212C20.492 0.23841 20.0697 -0.120144 19.6604 0.0381394L0.355076 7.48557C-0.121341 7.66931 -0.117189 8.34381 0.360588 8.52285ZM6.5919 9.34394L15.7853 3.68173C15.9505 3.58026 16.1205 3.80367 15.9786 3.93528L8.39141 10.988C8.12472 11.2362 7.95269 11.5684 7.90397 11.929L7.64552 13.8443C7.61129 14.1001 7.25205 14.1255 7.18149 13.878L6.18748 10.3853C6.07364 9.98694 6.23954 9.56143 6.5919 9.34394Z'

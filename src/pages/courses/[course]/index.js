@@ -169,6 +169,22 @@ const Course = () => {
     setInCart(true)
   }
 
+  const reNewCourse = id => {
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || []
+    const existInCart = cartItems.includes(id)
+
+    if (existInCart) {
+      window.alert('Item is already in cart!')
+      setInCart(true)
+    } else {
+      cartItems.push(id)
+    }
+
+    const updatedCartItems = [...cartItems]
+    localStorage.setItem('cartItems', JSON.stringify(updatedCartItems))
+    setInCart(true)
+  }
+
   const handleCycleChange = e => {
     setSelectedCycle(e.target.value)
   }
@@ -755,10 +771,59 @@ const Course = () => {
                           variant='determinate'
                           sx={{ my: 1.5, height: 10 }}
                         />
-                        <Typography sx={{ color: 'text.secondary' }}>
-                          <i data-feather='alert-triangle'></i>
-                          {remindedDays} days remaining until your course access expired!
-                        </Typography>
+                        {parseInt(remindedDays) <= 235 ? (
+                          <Typography
+                            sx={{
+                              color: '#fff',
+                              backgroundColor: 'red',
+                              borderRadius: '10px',
+                              padding: '5px',
+                              fontWeight: 'bold'
+                            }}
+                          >
+                            <i data-feather='alert-triangle'></i>
+                            {remindedDays} days remaining until your course access expired! renew the course with %75
+                            discount!
+                          </Typography>
+                        ) : (
+                          <Typography sx={{ color: 'text.secondary' }}>
+                            <i data-feather='alert-triangle'></i>
+                            {remindedDays} days remaining until your course access expired!
+                          </Typography>
+                        )}
+                        {inCart ? (
+                          <a
+                            style={{ cursor: 'pointer' }}
+                            onClick={e => router.replace('/cart')}
+                            className='FNV-Btn btn btn-success BtnMedium w-100'
+                          >
+                            <i data-feather='shopping-cart'></i> {t('single-course-gotocart')}
+                          </a>
+                        ) : (
+                          <a
+                            style={{ cursor: 'pointer' }}
+                            onClick={e => reNewCourse(selectedCycle)}
+                            className='FNV-Btn BtnPrimary BtnLarge w-100'
+                          >
+                            <svg
+                              xmlns='http://www.w3.org/2000/svg'
+                              class='icon icon-tabler icon-tabler-shopping-cart'
+                              viewBox='0 0 24 24'
+                              stroke-width='1.5'
+                              fill='none'
+                              stroke-linecap='round'
+                              stroke-linejoin='round'
+                            >
+                              <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+                              <path d='M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0' />
+                              <path d='M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0' />
+                              <path d='M17 17h-11v-14h-2' />
+                              <path d='M6 5l14 1l-1 7h-13' />
+                            </svg>
+
+                            <span>{t('single-course-renew')} With %75 Discount!</span>
+                          </a>
+                        )}
                       </>
                     ) : (
                       <>
