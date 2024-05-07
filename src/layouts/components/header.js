@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react'
 import Link from 'next/link'
 import Logo from 'src/views/logoMain.js'
+import TopBanner from 'src/views/topBanner.js'
 import feather from 'feather-icons'
 import { useAuth } from 'src/hooks/useAuth'
 import { useDispatch, useSelector } from 'react-redux'
@@ -182,8 +183,12 @@ const Header = props => {
 
   return (
     <>
+      <TopBanner />
+
       {user ? (
         <nav className='navbar navbar-expand-lg bg-body-tertiary d-flex flex-column pb-0 pt-0'>
+          <img src={appConfig.appUrl + '/images/top_banner.png'} className='img-fluid' />
+
           <div className='container-fluid'>
             <Link
               className='OffCanvasMenu'
