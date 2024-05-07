@@ -187,8 +187,6 @@ const Header = props => {
 
       {user ? (
         <nav className='navbar navbar-expand-lg bg-body-tertiary d-flex flex-column pb-0 pt-0'>
-          <img src={appConfig.appUrl + '/images/top_banner.png'} className='img-fluid' />
-
           <div className='container-fluid'>
             <Link
               className='OffCanvasMenu'
