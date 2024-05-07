@@ -145,7 +145,7 @@ const Footer = props => {
                 </a>
               </div>
 
-              <p>14 Leswyn Rd, North York, ON M6A 1K2</p>
+              <p>Unit 4 , 839 W 1st St, North Vancouver, BC V7P 1A4</p>
             </div>
 
             {/* Second Section */}
@@ -153,16 +153,16 @@ const Footer = props => {
               <h4>{t('footer-one')}</h4>
               <ul className='list-group'>
                 <li className='list-group-item'>
-                  <Link href='#'>{t('footer-one-about')}</Link>
+                  <Link href='/about-us'>{t('footer-one-about')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='#'>{t('footer-one-contact')}</Link>
+                  <Link href='/contact-us/'>{t('footer-one-contact')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='#'>{t('footer-one-profile')}</Link>
+                  <Link href='/app/dashboards/main'>{t('footer-one-profile')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='#'>{t('footer-one-blog')}</Link>
+                  <Link href='/blog'>{t('footer-one-blog')}</Link>
                 </li>
                 <li className='list-group-item'>
                   <Link href='#'>{t('footer-one-training')}</Link>
@@ -171,7 +171,7 @@ const Footer = props => {
                   <Link href='#'>{t('footer-one-instructors')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='#'>{t('footer-one-webinars')}</Link>
+                  <Link href='/webinars'>{t('footer-one-webinars')}</Link>
                 </li>
                 <li className='list-group-item'>
                   <Link href='#'>{t('footer-one-newcomers')}</Link>
