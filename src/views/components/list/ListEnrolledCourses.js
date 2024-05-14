@@ -87,7 +87,7 @@ const ListCourses = props => {
                   View Courses
                 </Button>
               </Link>
-              {course.cycles[0]?.zoomLink && (
+              {course?.cycles[0]?.zoomLink && (
                 <Link
                   href={course?.cycles[0]?.zoomLink || '#'}
                   passHref
