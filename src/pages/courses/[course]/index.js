@@ -37,6 +37,7 @@ const Course = () => {
   const [newComment, setNewComment] = useState(null)
   const [succeededMessage, setSucceededMessage] = useState(null)
   const [open, setOpen] = useState(false)
+
   const dispatch = useDispatch()
   const router = useRouter()
   const courseData = useSelector(state => state.course)
@@ -66,10 +67,12 @@ const Course = () => {
     }
   }, [reqCourseDemo])
 
+
   useEffect(() => {
     setLoading(true)
     setUser(auth.user)
   }, [auth])
+
 
   const handleOpen = () => setOpen(true)
   const handleClose = () => setOpen(false)
@@ -89,10 +92,10 @@ const Course = () => {
     }
   }, [dispatch, userEmail, token, course])
 
+
   useEffect(() => {
     if (commentSubmit && newComment) {
       dispatch(postNewComment({ content: newComment, email: JSON.parse(userEmail), courseId: courseId }))
-
       setCommentSubmit(false)
     }
   }, [commentSubmit, newComment])
@@ -140,6 +143,7 @@ const Course = () => {
     }
   }, [courseData, setData, setCourseId, setIsEnrolled, setRemindedDays, setSelectedCycle, setInCart])
 
+
   const onSubmit = data => {
     // Ensure CAPTCHA is validated
     if (!data.recaptcha) {
@@ -170,6 +174,7 @@ const Course = () => {
   }
 
   const reNewCourse = id => {
+
     const cartItems = JSON.parse(localStorage.getItem('cartItems')) || []
     const existInCart = cartItems.includes(id)
 
@@ -830,7 +835,6 @@ const Course = () => {
                       </>
                     ) : (
                       <>
-                        {' '}
                         <h4>{t('single-course-scycle')}</h4>
                         {data?.cycles && (
                           <select value={selectedCycle} onChange={handleCycleChange} className='form-select'>
@@ -893,7 +897,6 @@ const Course = () => {
                         )}
                       </>
                     )}
-
                     {/* Features */}
                     <div className='row'>
                       {/* SVG */}
