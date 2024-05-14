@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchTestData } from 'src/store/apps/tests'
 import { useRouter } from 'next/router'
+import axios from 'axios'
 import {
   Button,
   Paper,
@@ -16,7 +17,8 @@ import {
   Grid,
   Box
 } from '@mui/material'
-import { Clock, List, BarChart, BarChart2, CheckCircle } from 'feather-icons-react'
+import { Clock, List, BarChart, BarChart2, CheckCircle, Repeat } from 'feather-icons-react'
+import BASE_URL from 'src/api/BASE_URL'
 
 const correctAnswerStyle = {
   color: 'green',
@@ -43,9 +45,12 @@ const Test = () => {
   const [userAnswers, setUserAnswers] = useState({})
   const [correctAnswers, setCorrectAnswers] = useState(0)
   const [testReview, setTestReview] = useState(null)
+  const [allowRetake, setAllowRetake] = useState(0)
 
   useEffect(() => {
-    dispatch(fetchTestData(quizze))
+    if (quizze) {
+      dispatch(fetchTestData(quizze))
+    }
   }, [quizze])
 
   const startTest = () => {
@@ -112,7 +117,25 @@ const Test = () => {
     setUserAnswers({})
     setCorrectAnswers(0)
     setShowAnswerForQuestion({})
+    if (testData?.data?.data?.id) {
+      const user = localStorage.getItem('userData')
+      const url = `${BASE_URL}/student/test/result/user/${JSON.parse(user)}/${testData?.data?.data?.id}`
+
+      axios
+        .get(url)
+        .then(response => {
+          setAllowRetake(response?.data?.allowedRetake || 0)
+          console.log(response?.data?.allowedRetake)
+        })
+        .catch(error => {
+          console.error('Error sending data:', error)
+        })
+    }
   }
+
+  useEffect(() => {
+    console.log(testData)
+  }, [testData])
 
   const totalQuestions = testData?.data?.data?.questions?.length || 0
   const wrongAnswers = correctAnswers - totalQuestions
@@ -144,6 +167,49 @@ const Test = () => {
     currentPage * testsPerPage
   )
 
+  useEffect(() => {
+    const url = `${BASE_URL}/student/test/result/save`
+    const user = localStorage.getItem('userData')
+    if (finished) {
+      const postData = {
+        Percentage: ((correctAnswers / totalQuestions) * 100).toFixed(2),
+        time: Math.floor(spentTime / 60) + ':' + (spentTime % 60),
+        total: totalQuestions,
+        correct: correctAnswers,
+        wrong: totalQuestions - correctAnswers,
+        point: ((correctAnswers * 10) / totalQuestions) * 10,
+        test: testData?.data?.data?.id,
+        user: JSON.parse(user)
+      }
+
+      axios
+        .post(url, postData)
+        .then(response => {
+          console.log('Data successfully sent:', response.data)
+        })
+        .catch(error => {
+          console.error('Error sending data:', error)
+        })
+    }
+  }, [finished, correctAnswers, totalQuestions, spentTime])
+
+  useEffect(() => {
+    if (testData?.data?.data?.id) {
+      const user = localStorage.getItem('userData')
+      const url = `${BASE_URL}/student/test/result/user/${JSON.parse(user)}/${testData?.data?.data?.id}`
+
+      axios
+        .get(url)
+        .then(response => {
+          setAllowRetake(response?.data?.allowedRetake || 0)
+          console.log(response?.data?.allowedRetake)
+        })
+        .catch(error => {
+          console.error('Error sending data:', error)
+        })
+    }
+  }, [testData])
+
   return (
     <div className='FNV-Cart'>
       <section
@@ -167,72 +233,103 @@ const Test = () => {
       <section className='FNV-Quize-Detail py-5'>
         <div className='container'>
           <div className='row justify-content-center'>
-            <div className='col-12 col-md-10 text-center'>
-              {!started ? (
-                <Paper elevation={3} style={{ padding: '20px', marginBottom: '20px' }}>
-                  <Typography variant='h5' style={{ marginBottom: '20px' }}>
-                    Test Information
-                  </Typography>
-                  <table className='table table-striped'>
-                    <tbody className='text-center'>
-                      <tr>
-                        <td>
-                          <Clock /> Test Duration
-                        </td>
-                        <td>{testData?.data?.data?.testTime || '0'} minutes</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <List /> Number of Questions
-                        </td>
-                        <td>{testData?.data?.data?.questions?.length || '0'}</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <CheckCircle /> Passing Grade
-                        </td>
-                        <td>70%</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <Button variant='contained' color='primary' onClick={startTest} style={{ marginTop: '20px' }}>
-                    Start Test
-                  </Button>
-                </Paper>
-              ) : null}
-              {started &&
-                !finished &&
-                paginatedQuestions?.map((question, qIndex) => (
-                  <Paper
-                    elevation={3}
-                    style={{ padding: '30px', marginBottom: '30px', borderRadius: '15px' }}
-                    key={qIndex}
-                  >
-                    <Typography variant='h6' style={{ marginBottom: '20px' }}>
-                      {qIndex + 1}. {question.questionText}
+            {allowRetake > 0 ? (
+              <div className='col-12 col-md-10 text-center'>
+                {!started ? (
+                  <Paper elevation={3} style={{ padding: '20px', marginBottom: '20px' }}>
+                    <Typography variant='h5' style={{ marginBottom: '20px' }}>
+                      Test Information
                     </Typography>
-                    {question.image && (
-                      <Box mb={2}>
-                        <img
-                          src={question.image}
-                          alt='Question image'
-                          style={{ maxWidth: '100%', borderRadius: '10px' }}
-                        />
-                      </Box>
-                    )}
-                    <FormControl component='fieldset'>
-                      {question.questionType ? (
-                        <div>
-                          {question.answers?.map((answer, aIndex) => (
-                            <FormControl fullWidth key={`${question.id}-${answer.id}`}>
-                              {' '}
-                              {/* Updated key */}
+                    <table className='table table-striped'>
+                      <tbody className='text-center'>
+                        <tr>
+                          <td>
+                            <Clock /> Test Duration
+                          </td>
+                          <td>{testData?.data?.data?.testTime || '0'} minutes</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <List /> Number of Questions
+                          </td>
+                          <td>{testData?.data?.data?.questions?.length || '0'}</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <CheckCircle /> Passing Grade
+                          </td>
+                          <td>70%</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <Repeat /> Allowed Retake
+                          </td>
+                          <td>{allowRetake}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Button variant='contained' color='primary' onClick={startTest} style={{ marginTop: '20px' }}>
+                      Start Test
+                    </Button>
+                  </Paper>
+                ) : null}
+                {started &&
+                  !finished &&
+                  paginatedQuestions?.map((question, qIndex) => (
+                    <Paper
+                      elevation={3}
+                      style={{ padding: '30px', marginBottom: '30px', borderRadius: '15px' }}
+                      key={qIndex}
+                    >
+                      <Typography variant='h6' style={{ marginBottom: '20px' }}>
+                        {qIndex + 1}. {question.questionText}
+                      </Typography>
+                      {question.image && (
+                        <Box mb={2}>
+                          <img
+                            src={question.image}
+                            alt='Question image'
+                            style={{ maxWidth: '100%', borderRadius: '10px' }}
+                          />
+                        </Box>
+                      )}
+                      <FormControl component='fieldset'>
+                        {question.questionType ? (
+                          <div>
+                            {question.answers?.map((answer, aIndex) => (
+                              <FormControl fullWidth key={`${question.id}-${answer.id}`}>
+                                {' '}
+                                {/* Updated key */}
+                                <FormControlLabel
+                                  control={
+                                    <Checkbox
+                                      color='primary'
+                                      onChange={e => handleCheckboxChange(question.id, answer.id, e.target.checked)}
+                                      checked={userAnswers[question.id] && userAnswers[question.id].includes(answer.id)}
+                                    />
+                                  }
+                                  label={answer.answerText}
+                                  style={
+                                    showAnswerForQuestion[question.id] && answer.isCorrect
+                                      ? { backgroundColor: '#c8e6c9', borderRadius: '5px', marginBottom: '10px' }
+                                      : { marginBottom: '10px' }
+                                  }
+                                />
+                              </FormControl>
+                            ))}
+                          </div>
+                        ) : (
+                          <RadioGroup name={`question-${question.id}`}>
+                            {question.answers?.map((answer, aIndex) => (
                               <FormControlLabel
+                                key={aIndex}
+                                value={answer.id.toString()}
                                 control={
-                                  <Checkbox
+                                  <Radio
                                     color='primary'
-                                    onChange={e => handleCheckboxChange(question.id, answer.id, e.target.checked)}
-                                    checked={userAnswers[question.id] && userAnswers[question.id].includes(answer.id)}
+                                    checked={
+                                      userAnswers[question.id] && userAnswers[question.id].answerId === answer.id
+                                    }
                                   />
                                 }
                                 label={answer.answerText}
@@ -242,70 +339,54 @@ const Test = () => {
                                     : { marginBottom: '10px' }
                                 }
                               />
-                            </FormControl>
-                          ))}
+                            ))}
+                          </RadioGroup>
+                        )}
+                      </FormControl>
+
+                      {testData?.data?.data?.showAnswer == 1 && (
+                        <div style={{ marginTop: '20px' }}>
+                          <Button variant='outlined' color='primary' onClick={() => handleShowAnswer(question.id)}>
+                            Show Answer
+                          </Button>
                         </div>
-                      ) : (
-                        <RadioGroup name={`question-${question.id}`}>
-                          {question.answers?.map((answer, aIndex) => (
-                            <FormControlLabel
-                              key={aIndex}
-                              value={answer.id.toString()}
-                              control={
-                                <Radio
-                                  color='primary'
-                                  checked={userAnswers[question.id] && userAnswers[question.id].answerId === answer.id}
-                                />
-                              }
-                              label={answer.answerText}
-                              style={
-                                showAnswerForQuestion[question.id] && answer.isCorrect
-                                  ? { backgroundColor: '#c8e6c9', borderRadius: '5px', marginBottom: '10px' }
-                                  : { marginBottom: '10px' }
-                              }
-                            />
-                          ))}
-                        </RadioGroup>
                       )}
-                    </FormControl>
-                    <div style={{ marginTop: '20px' }}>
-                      <Button variant='outlined' color='primary' onClick={() => handleShowAnswer(question.id)}>
-                        Show Answer
-                      </Button>
+                    </Paper>
+                  ))}
+
+                {started && !finished && (
+                  <>
+                    <div style={{ marginTop: '20px', marginBottom: '20px' }}>
+                      {testData?.data?.data?.questions &&
+                        [...Array(Math.ceil(testData.data.data.questions.length / testsPerPage))]?.map((_, index) => (
+                          <Button
+                            key={index}
+                            variant='outlined'
+                            style={{ margin: '0 5px' }}
+                            onClick={() => setCurrentPage(index + 1)}
+                          >
+                            {index + 1}
+                          </Button>
+                        ))}
                     </div>
-                  </Paper>
-                ))}
+                  </>
+                )}
 
-              {started && !finished && (
-                <>
-                  <div style={{ marginTop: '20px', marginBottom: '20px' }}>
-                    {testData?.data?.data?.questions &&
-                      [...Array(Math.ceil(testData.data.data.questions.length / testsPerPage))]?.map((_, index) => (
-                        <Button
-                          key={index}
-                          variant='outlined'
-                          style={{ margin: '0 5px' }}
-                          onClick={() => setCurrentPage(index + 1)}
-                        >
-                          {index + 1}
-                        </Button>
-                      ))}
-                  </div>
-                </>
-              )}
-
-              {started && !finished && (
-                <Button
-                  variant='contained'
-                  color='primary'
-                  size='large'
-                  onClick={finishTest}
-                  style={{ marginTop: '30px' }}
-                >
-                  Finish Test
-                </Button>
-              )}
-            </div>
+                {started && !finished && (
+                  <Button
+                    variant='contained'
+                    color='primary'
+                    size='large'
+                    onClick={finishTest}
+                    style={{ marginTop: '30px' }}
+                  >
+                    Finish Test
+                  </Button>
+                )}
+              </div>
+            ) : (
+              <div className='col-12 col-md-10 text-center'>The number allowed to take the test has ended</div>
+            )}
           </div>
         </div>
       </section>
@@ -380,7 +461,7 @@ const Test = () => {
           </div>
         </section>
       )}
-      {finished && (
+      {finished && testData?.data?.data?.showReviews && (
         <section className='FNV-Quiz-Review py-5'>
           <div className='container'>
             <div className='row justify-content-center'>
