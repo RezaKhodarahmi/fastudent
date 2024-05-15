@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { format, parseISO, isWithinInterval, intervalToDuration } from 'date-fns'
 
 // ** Import Translation
 import { useTranslation } from 'react-i18next'
@@ -37,6 +38,7 @@ const Course = () => {
   const [newComment, setNewComment] = useState(null)
   const [succeededMessage, setSucceededMessage] = useState(null)
   const [open, setOpen] = useState(false)
+  const [countdown, setCountdown] = useState('')
 
   const dispatch = useDispatch()
   const router = useRouter()
@@ -67,12 +69,10 @@ const Course = () => {
     }
   }, [reqCourseDemo])
 
-
   useEffect(() => {
     setLoading(true)
     setUser(auth.user)
   }, [auth])
-
 
   const handleOpen = () => setOpen(true)
   const handleClose = () => setOpen(false)
@@ -91,7 +91,6 @@ const Course = () => {
       dispatch(getCourseWithSlug(course))
     }
   }, [dispatch, userEmail, token, course])
-
 
   useEffect(() => {
     if (commentSubmit && newComment) {
@@ -143,7 +142,6 @@ const Course = () => {
     }
   }, [courseData, setData, setCourseId, setIsEnrolled, setRemindedDays, setSelectedCycle, setInCart])
 
-
   const onSubmit = data => {
     // Ensure CAPTCHA is validated
     if (!data.recaptcha) {
@@ -174,7 +172,6 @@ const Course = () => {
   }
 
   const reNewCourse = id => {
-
     const cartItems = JSON.parse(localStorage.getItem('cartItems')) || []
     const existInCart = cartItems.includes(id)
 
@@ -209,6 +206,45 @@ const Course = () => {
     setFilteredVideos(filteredVideos)
     setFilteredTests(filteredTests)
   }, [cycleId, data])
+
+  // Determines if the current date is within the discount period
+  const isDiscountActive = cycle => {
+    const today = new Date()
+    if (!cycle.discountDate || !cycle.discountDateEnd) {
+      return false // Return false or handle as you see fit
+    }
+
+    try {
+      const discountStart = parseISO(cycle.discountDate)
+      const discountEnd = parseISO(cycle.discountDateEnd)
+
+      return isWithinInterval(today, { start: discountStart, end: discountEnd })
+    } catch (error) {
+      return false // Return false or handle error as needed
+    }
+  }
+
+  const updateCountdown = cycle => {
+    const now = new Date()
+    const discountEnd = parseISO(cycle.discountDateEnd)
+    if (now <= discountEnd) {
+      const duration = intervalToDuration({ start: now, end: discountEnd })
+      const formatted = `${duration.days} days, ${duration.hours} hours, ${duration.minutes} minutes, ${duration.seconds} seconds`
+      setCountdown(formatted)
+    } else {
+      setCountdown('Discount period has ended.')
+    }
+  }
+
+  useEffect(() => {
+    const cycle = data?.cycles?.find(c => c.id === selectedCycle)
+
+    if (cycle && isDiscountActive(cycle)) {
+      const timer = setInterval(() => updateCountdown(cycle), 1000)
+
+      return () => clearInterval(timer)
+    }
+  }, [selectedCycle, data])
 
   if (loading) return <Spinner />
 
@@ -977,9 +1013,40 @@ const Course = () => {
                         <h5>
                           {t('single-course-regular-price')}:{' '}
                           <price>
-                            $
                             {data?.cycles
-                              ? data?.cycles?.map(cycle => (cycle.id == selectedCycle ? cycle.regularPrice : null))
+                              ? data?.cycles?.map(cycle =>
+                                  cycle.id == selectedCycle ? (
+                                    <>
+                                      {' '}
+                                      <span
+                                        style={{
+                                          textDecoration: isDiscountActive(cycle) ? 'line-through' : 'none',
+                                          color: isDiscountActive(cycle) ? 'red' : 'none'
+                                        }}
+                                      >
+                                        ${cycle.regularPrice}
+                                      </span>
+                                      {isDiscountActive(cycle) && <span> - ${cycle.discountPrice}</span>}
+                                      {isDiscountActive(cycle) && (
+                                        <>
+                                          {' '}
+                                          <br />
+                                          <div
+                                            style={{
+                                              color: '#fff',
+                                              backgroundColor: 'green',
+                                              padding: '5px',
+                                              borderRadius: '5px',
+                                              fontSize: '17px'
+                                            }}
+                                          >
+                                            Time Remaining: {countdown}
+                                          </div>
+                                        </>
+                                      )}
+                                    </>
+                                  ) : null
+                                )
                               : '0'}
                           </price>
                         </h5>
@@ -1008,9 +1075,23 @@ const Course = () => {
                         <h5>
                           {t('single-course-vip-price')}:{' '}
                           <price>
-                            $
                             {data?.cycles
-                              ? data?.cycles.map(cycle => (cycle.id == selectedCycle ? cycle.vipPrice : null))
+                              ? data?.cycles?.map(cycle =>
+                                  cycle.id == selectedCycle ? (
+                                    <>
+                                      {' '}
+                                      <span
+                                        style={{
+                                          textDecoration: isDiscountActive(cycle) ? 'line-through' : 'none',
+                                          color: isDiscountActive(cycle) ? '#000' : 'none'
+                                        }}
+                                      >
+                                        ${cycle.vipPrice}
+                                      </span>
+                                      {isDiscountActive(cycle) && <span> - ${cycle.discountVipPrice}</span>}
+                                    </>
+                                  ) : null
+                                )
                               : '0'}
                           </price>
                         </h5>
