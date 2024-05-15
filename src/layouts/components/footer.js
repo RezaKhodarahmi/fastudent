@@ -67,7 +67,7 @@ const Footer = props => {
       </newsletter>
 
       {/* Footer content */}
-      <footer>
+      <footer className='FNV-Footer'>
         {/* Footer Content */}
         <div className='container'>
           <div className='row'>
