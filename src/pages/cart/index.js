@@ -75,9 +75,17 @@ const Index = () => {
     setNewVip(localStorage.getItem('newVIP') || true)
   }, [cartCourses])
 
-  useEffect(() => {
-    console.log(courses)
-  }, [courses])
+  const isDiscountActive = cycle => {
+    const now = new Date()
+    const discountStart = new Date(cycle.discountDate)
+    const discountEnd = new Date(cycle.discountDateEnd)
+
+    return now >= discountStart && now <= discountEnd
+  }
+
+  const getDiscountedPrice = cycle => {
+    return isDiscountActive(cycle) ? cycle.discountPrice : cycle.regularPrice
+  }
 
   //Check if coupon is applied
   function areCouponApplied(obj1, obj2) {
@@ -187,6 +195,7 @@ const Index = () => {
 
   //Initiate The payment
   const handelInitiatePayment = () => {
+
     setPartially(false)
     if (cartTotal > 0) {
       if (clientSecret === null) {
@@ -336,7 +345,7 @@ const Index = () => {
     }
   }
 
-  const handelRemoveItem = item => {
+  const handleRemoveItem = item => {
     if (cartCourses.length) {
       const confirmation = window.confirm('Are you sure you want to delete this item from the cart?')
       if (confirmation) {
@@ -359,33 +368,40 @@ const Index = () => {
     // Recalculate total prices whenever cartCourses changes
     const isVipMembershipInCart = cartCourses.some(course => course.id === 150000)
 
-    const prices = cartCourses?.map(course => {
-      // If the user is a VIP OR the VIP membership is in the cart, use VIP prices
-      if (user?.data?.isVipValid || isVipMembershipInCart) {
-        return course.vipPrice || 0
+    const prices = cartCourses.map(course => {
+      // Determine the correct price based on discount eligibility and VIP status
+      let finalPrice
+      if (isDiscountActive(course)) {
+        finalPrice =
+          user?.data?.isVipValid || isVipMembershipInCart
+            ? course.discountVipPrice || course.discountPrice
+            : course.discountPrice
       } else {
-        return course.regularPrice || 0
+        finalPrice =
+          user?.data?.isVipValid || isVipMembershipInCart ? course.vipPrice || course.regularPrice : course.regularPrice
       }
+
+      return finalPrice
     })
 
     const newSubTotal = prices.reduce((acc, price) => acc + price, 0)
     setCartSubTotal(newSubTotal)
 
-    const totalDiscount = calculateTotalCouponDiscount()
+    const totalDiscount = calculateTotalCouponDiscount() // This function needs to calculate the discount based on the subtotal
     setCartTotal(newSubTotal - totalDiscount)
 
     // If VIP membership is no longer in the cart, switch pricing back to regular
     if (!isVipMembershipInCart) {
       setIsVIP(false)
     }
-  }, [cartCourses, user?.data?.isVipValid])
+  }, [cartCourses, user?.data?.isVipValid, usedCoupon]) // Include `usedCoupon` if coupons affect pricing
 
   // Function to calculate the total coupon discount
   const calculateTotalCouponDiscount = () => {
     let totalDiscount = 0
 
     if (cartCourses.length > 0) {
-      usedCoupon?.forEach(coupon => {
+      usedCoupon.forEach(coupon => {
         if (coupon.discount) {
           if (coupon.discount.includes('%')) {
             const percentage = parseFloat(coupon.discount.replace('%', ''))
@@ -400,6 +416,22 @@ const Index = () => {
 
     return totalDiscount
   }
+
+  useEffect(() => {
+    if (cartCourses.length) {
+      const newSubTotal = cartCourses.reduce((acc, cycle) => {
+        const price = getDiscountedPrice(cycle)
+
+        return acc + price
+      }, 0)
+
+      setCartSubTotal(newSubTotal)
+
+      // Recalculate discount based on the updated subtotal
+      const totalDiscount = calculateTotalCouponDiscount()
+      setCartTotal(newSubTotal - totalDiscount)
+    }
+  }, [cartCourses, usedCoupon]) // Include usedCoupon to recalculate when coupons change
 
   // Update the useEffect hook for applying coupon discount on cart total
   useEffect(() => {
@@ -424,10 +456,8 @@ const Index = () => {
       if (!courses?.data?.isRenew) {
         setOldVIP(user?.data?.isVipValid)
       }
-
-      // Check if VIP membership is in the cart
     }
-  }, [courses])
+  }, [courses, user])
 
   useEffect(() => {
     if (cartCourses) {
@@ -465,6 +495,39 @@ const Index = () => {
       setUsedCoupon(newCoupon)
     }
   }
+
+  useEffect(() => {
+    // Recalculate total prices whenever cartCourses changes
+    const isVipMembershipInCart = cartCourses.some(course => course.id === 150000)
+
+    const prices = cartCourses.map(course => {
+      // Determine the correct price based on discount eligibility and VIP status
+      let finalPrice
+      if (isDiscountActive(course)) {
+        finalPrice =
+          user?.data?.isVipValid || isVipMembershipInCart
+            ? course.discountVipPrice || course.discountPrice
+            : course.discountPrice
+      } else {
+        finalPrice =
+          user?.data?.isVipValid || isVipMembershipInCart ? course.vipPrice || course.regularPrice : course.regularPrice
+      }
+
+      return finalPrice
+    })
+
+    const newSubTotal = prices.reduce((acc, price) => acc + price, 0)
+
+    setCartSubTotal(newSubTotal)
+
+    const totalDiscount = calculateTotalCouponDiscount() // This function needs to calculate the discount based on the subtotalt
+    setCartTotal(newSubTotal - totalDiscount)
+
+    // If VIP membership is no longer in the cart, switch pricing back to regular
+    if (!isVipMembershipInCart) {
+      setIsVIP(false)
+    }
+  }, [cartCourses, user?.data?.isVipValid, usedCoupon]) // Include `usedCoupon` if coupons affect pricing
 
   useEffect(() => {
     if (cartCourses.length) {
@@ -560,54 +623,42 @@ const Index = () => {
                   </div>
 
                   <div className='FNV-Cart-Content-Body'>
-                    {cartCourses.length > 0
-                      ? cartCourses?.map(course => (
-                          <div key={course?.course?.id} className='row p-3'>
+                    {cartCourses.map(cycle => (
+                      <div key={cycle.id} className='row p-3'>
+                        <div className='col-4'>
+                          <div className='row'>
                             <div className='col-4'>
-                              <div className='row'>
-                                <div className='col-4'>
-                                  <img width={100} src={course?.course?.image} className='img-fluid' />
-                                </div>
-                                <div className='col-8'>
-                                  <h4>{course.course?.title}</h4>
-                                </div>
-                              </div>
+                              <img width={100} src={cycle?.course?.image} className='img-fluid' />
                             </div>
-                            <div className='col-4'>
-                              <div className='FNV-Cart-Details'>
-                                <span> {isVIP && 'Regular price: $' + course?.regularPrice}</span>
-                                <p>
-                                  {isVIP &&
-                                    course.id != 150000 &&
-                                    `Member Price: $${course?.vipPrice.toFixed(2)} Save $${(
-                                      course?.regularPrice - course?.vipPrice
-                                    ).toFixed(2)} By being a FANAVARAN member`}
-                                </p>
-                              </div>
-                            </div>
-
-                            <div className='col-2'>
-                              <div className='FNV-Cart-Total'>
-                                {isVIP ? (
-                                  <span>${course?.vipPrice || 0}</span>
-                                ) : (
-                                  <span>${course?.regularPrice || 0}</span>
-                                )}
-                              </div>
-                            </div>
-                            <div className='col-2'>
-                              <div className='FNV-Cart-Total'>
-                                <span
-                                  onClick={e => handelRemoveItem(course)}
-                                  style={{ color: 'red', fontWeight: 'bold', cursor: 'pointer' }}
-                                >
-                                  X
-                                </span>
-                              </div>
+                            <div className='col-8'>
+                              <h4>{cycle.name}</h4>
                             </div>
                           </div>
-                        ))
-                      : 'Cart is empty'}
+                        </div>
+                        <div className='col-4'>
+                          <div className='FNV-Cart-Details'>
+                            <span> {isVIP && 'Regular price: $' + cycle.regularPrice}</span>
+                            <p>
+                              {isVIP &&
+                                cycle.id != 150000 &&
+                                `Member Price: $${getDiscountedPrice(cycle)} Save $${(
+                                  cycle.regularPrice - getDiscountedPrice(cycle)
+                                ).toFixed(2)} By being a FANAVARAN member`}
+                            </p>
+                          </div>
+                        </div>
+                        <div className='col-2'>
+                          <div className='FNV-Cart-Total'>
+                            <span>${getDiscountedPrice(cycle)}</span>
+                          </div>
+                        </div>
+                        <div className='col-2'>
+                          <button onClick={() => handleRemoveItem(cycle)} className='btn btn-danger'>
+                            Remove
+                          </button>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
