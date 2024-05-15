@@ -473,7 +473,7 @@ const Header = props => {
             </button>
 
             <div className='navbar-collapse FNV_QuickAccess justify-content-end'>
-              <Button className='FNV-Btn LightColor BtnMedium mx-2' onClick={e => changeLanguage()}>
+              <Button className='FNV-Btn LightColor mx-2' onClick={e => changeLanguage()}>
                 {t('menu-language')}
               </Button>
 
@@ -485,7 +485,7 @@ const Header = props => {
                 {t('menu-login')}
               </Link>
 
-              <Link href='/register' className='FNV-Btn SecondaryColor BtnMedium'>
+              <Link href='/register' className='FNV-Btn BtnMedium SecondaryColor'>
                 {t('menu-register')}
               </Link>
             </div>

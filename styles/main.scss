@@ -104,10 +104,4 @@ html[dir="rtl"]{
 @import './social';
 
 // Footers
-html[dir="ltr"]{
-  @import './footer';
-}
-
-html[dir="rtl"]{
-  @import './footer-RTL';
-}
+@import './footer';
