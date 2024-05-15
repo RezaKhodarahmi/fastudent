@@ -260,7 +260,7 @@ const Header = props => {
                     <img src={userImage} className='img-fluid' />
                   )}
                   {/* Username */}
-                  {userName}
+                  <span>{userName}</span>
                 </button>
                 <ul className='dropdown-menu'>
                   <li>
