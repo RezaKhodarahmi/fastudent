@@ -1251,6 +1251,11 @@ body[dir=ltr] nav.FNV-MegaMenu {
 
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
+  .FNV-TopBanner {
+    height: 28px !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .FNV-Home .FNV-Header {
     background-image: linear-gradient(89.85deg, rgba(26, 48, 211, 0.8) 0.12%, rgba(26, 48, 211, 0.2) 50%, rgba(26, 48, 211, 0.8) 99.87%), url("/img/Header-bg.jpg");
     background-size: cover;
