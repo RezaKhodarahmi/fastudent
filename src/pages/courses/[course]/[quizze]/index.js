@@ -119,7 +119,7 @@ const Test = () => {
     setShowAnswerForQuestion({})
     if (testData?.data?.data?.id) {
       const user = localStorage.getItem('userData')
-      const url = `${BASE_URL}/student/test/result/user/${JSON.parse(user)}/${testData?.data?.data?.id}`
+      const url = `${BASE_URL}/test/result/user/${JSON.parse(user)}/${testData?.data?.data?.id}`
 
       axios
         .get(url)
@@ -168,7 +168,7 @@ const Test = () => {
   )
 
   useEffect(() => {
-    const url = `${BASE_URL}/student/test/result/save`
+    const url = `${BASE_URL}/test/result/save`
     const user = localStorage.getItem('userData')
     if (finished) {
       const postData = {
@@ -196,7 +196,7 @@ const Test = () => {
   useEffect(() => {
     if (testData?.data?.data?.id) {
       const user = localStorage.getItem('userData')
-      const url = `${BASE_URL}/student/test/result/user/${JSON.parse(user)}/${testData?.data?.data?.id}`
+      const url = `${BASE_URL}/test/result/user/${JSON.parse(user)}/${testData?.data?.data?.id}`
 
       axios
         .get(url)

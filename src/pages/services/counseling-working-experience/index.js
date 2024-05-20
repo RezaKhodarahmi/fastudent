@@ -164,7 +164,7 @@ const AppointmentBooking = () => {
         <CardContent>
           <LocalizationProvider dateAdapter={AdapterDateFns}>
             <Grid container style={{ marginTop: '10px' }} spacing={3}>
-              <Typography variant='subtitle1'>{t('all-show-in-bc-time')}</Typography>
+              <Typography variant='subtitle1'>{t('all-show-in-toronto-time')}</Typography>
               <Grid item xs={12}>
                 <DatePicker
                   label={t('select-date')}
