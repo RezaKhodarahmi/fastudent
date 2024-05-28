@@ -359,164 +359,364 @@ body[dir='ltr']{
 
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
-    .FNV-NewWebinars {
-        background-color: $WhiteColor;
-        padding: 2rem .5rem .5rem;
-        overflow: hidden;
-
-        h3 {
-            font-size: 30px;
-            font-weight: bold;
-            text-align: center;
-            width: 100%;
-            position: relative;
-            color: $PrimaryColor;
-            margin-bottom: 1rem;
-
-            &::before {
-                display: none;
+    body[dir='rtl']{
+        .FNV-NewWebinars {
+            background-color: $WhiteColor;
+            padding: 1rem;
+            overflow: hidden;
+        
+            h3 {
+                font-size: 36px;
+                font-weight: bold;
+                text-align: center;
+                width: 100%;
+                position: relative;
+                color: $PrimaryColor;
+                margin-bottom: 5rem;
+        
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 40%;
+                    height: 2px;
+                    background: $SecondaryColor;
+                    left: -1rem;
+                    top: 50%;
+                    position: absolute;
+                }
+        
+        
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 40%;
+                    height: 2px;
+                    background: $SecondaryColor;
+                    right: -1rem;
+                    top: 50%;
+                    position: absolute;
+                }
             }
+        
+            .container {
+                .row {
+                    .col-md-7 {
+                        padding: 0;
+                        .swiper {
+                            padding: 0rem;
+        
+                            .swiper-wrapper {
+                                padding: 0rem;
 
-
-            &::after {
-                display: none;
-            }
-        }
-    
-        .container {
-            .row {
-                .col-md-7 {
-                    padding: 0rem;
-                    .swiper {
-                        padding: 0rem;
-                        .swiper-wrapper {
-                            padding: 1rem;
-                            
-                            .swiper-slide {
-                                box-shadow: 0px 0px 20px $ShadowFour;
-                                border-radius: 10px;
-                                overflow: hidden;
-                                width: 100%;
-    
-                                .d-flex {
-                                    border-width: 0;
-                                    border-radius: 18px;
-                                    cursor: grab;
-    
-                                    &:active,
-                                    &:target {
-                                        cursor: grabbing;
-                                    }
-    
-                                    .col-md-5{
-                                        padding: 1rem;
-    
-                                        badge{
-                                            font-size: 12px;
-                                            &:first-child{
-                                                margin-left: 0;
-                                            }
+                                .swiper-slide {
+                                    box-shadow: 0px 0px 20px $ShadowFour;
+                                    border-radius: 10px;
+                                    overflow: hidden;
+        
+                                    .d-flex {
+                                        border-width: 0;
+                                        border-radius: 18px;
+                                        cursor: grab;
+        
+                                        &:active,
+                                        &:target {
+                                            cursor: grabbing;
                                         }
-    
-                                        h4{
-                                            font-size: 14px;
-                                            font-weight: bold;
-                                            line-height: 30px;
-                                            color: $PrimaryColor;
-                                            margin: 1rem 0;
-                                        }
-    
-                                        p{
-                                            font-weight: 12px;
-                                            font-weight: 400;
-                                            line-height: 20px;
-                                            color: $PrimaryColor;
-                                            border-bottom: 1px solid $SecondaryColor;
-                                        }
-    
-                                        span{
-                                            display: inline-block;
-                                            font-size: 12px;
-                                            color: $PrimaryColor;
-                                            line-height: 20px;
-                                            font-weight: 400;
-    
-                                            svg{
-                                                color: $SecondaryColor;
-                                                width: 12px;
-                                                height: 12px;
-                                                margin-right: .5rem;
-                                            }
-                                        }
-    
-                                        .d-flex{
-                                            margin-top: 1rem;
-    
-                                            .FNV-Btn{
+        
+                                        .col-md-5{
+                                            padding: 1rem;
+        
+                                            badge{
                                                 &:first-child{
-                                                    margin-right: 5px;
+                                                    margin-left: 0;
                                                 }
-    
-                                                &:nth-child(2){
-                                                    margin-left: 5px;
+                                            }
+        
+                                            h4{
+                                                font-size: 10px;
+                                                font-weight: bold;
+                                                line-height: 20px;
+                                                color: $PrimaryColor;
+                                                margin: 1rem 0;
+                                                width: 90%;
+                                            }
+        
+                                            p{
+                                                font-weight: 14px;
+                                                font-weight: 400;
+                                                line-height: 20px;
+                                                color: $PrimaryColor;
+                                                padding-bottom: 1rem;
+                                                border-bottom: 1px solid $SecondaryColor;
+                                            }
+        
+                                            span{
+                                                display: inline-block;
+                                                font-size: 10px;
+                                                color: $PrimaryColor;
+                                                line-height: 20px;
+                                                font-weight: 400;
+        
+                                                svg{
+                                                    color: $SecondaryColor;
+                                                    width: 12px;
+                                                    height: 12px;
+                                                    margin-right: .5rem;
+                                                }
+                                            }
+        
+                                            .d-flex{
+                                                margin-top: 1rem;
+                                                width: 90%;
+        
+                                                .FNV-Btn{
+                                                    font-size: 12px;
+
+                                                    &:first-child{
+                                                        margin-right: 5px;
+                                                    }
+        
+                                                    &:nth-child(2){
+                                                        margin-left: 5px;
+                                                    }
                                                 }
                                             }
                                         }
-                                    }
-    
-                                    .col-md-7{
-                                        display: flex;
-                                        padding-right: 2rem;
-                                        padding-top: 1rem;
-                                        padding-bottom: 1rem;
-    
-                                        img{
-                                            border-radius: 10px;
-                                            width: 88%;
-                                            object-fit: cover;
+        
+                                        .col-md-7{
+                                            display: flex;
+                                            padding-left: 2rem;
+                                            padding-right: 0;
+                                            padding-top: 1rem;
+                                            padding-bottom: 1rem;
+        
+                                            img{
+                                                border-radius: 10px;
+                                                width: 88%;
+                                                object-fit: cover;
+                                            }
                                         }
+        
                                     }
-    
                                 }
                             }
                         }
+        
+                        .swiper-pagination {
+                            top: unset;
+                            bottom: 3rem;
+                        }
                     }
-    
-                    .swiper-pagination {
-                        top: unset;
-                        bottom: 3rem;
+        
+                    .col-md-5{
+                        padding: 1rem 0;
+                        .col-12{
+                            box-shadow: 0px 0px 20px $ShadowFour;
+                            border-radius: 10px;
+                            padding: 1rem;
+                            margin-bottom: 1rem;
+        
+                            .d-flex{
+                                .col-7{
+                                    padding: 0rem;
+        
+                                    h4{
+                                        font-size: 10px;
+                                        font-weight: bold;
+                                        line-height: 20px;
+                                        color: $PrimaryColor;
+                                        margin: .5rem 0;
+                                    }
+                                }
+        
+                                .col-5{
+                                    padding: 0rem;
+                                    display: flex;
+                                    flex-flow: column;
+                                    justify-content: space-around;
+                                }
+                            }
+        
+                        }
                     }
                 }
+            }
+        }
+    }
     
-                .col-md-5{
-                    padding: 1rem;
-                    .col-12{
-                        box-shadow: 0px 0px 20px $ShadowFour;
-                        border-radius: 10px;
-                        padding: 1rem;
-                        margin-bottom: 1rem;
-    
-                        .d-flex{
-                            .col-7{
-                                padding: 0rem;
-    
-                                h4{
-                                    font-size: 14px;
-                                    font-weight: bold;
-                                    line-height: 24px;
-                                    color: $PrimaryColor;
-                                    margin: .5rem 0;
+    body[dir='ltr']{
+        .FNV-NewWebinars {
+            background-color: $WhiteColor;
+            padding: 5rem 0 3rem;
+            overflow: hidden;
+        
+            h3 {
+                font-size: 36px;
+                font-weight: bold;
+                text-align: center;
+                width: 100%;
+                position: relative;
+                color: $PrimaryColor;
+                margin-bottom: 5rem;
+        
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 40%;
+                    height: 2px;
+                    background: $SecondaryColor;
+                    left: -1rem;
+                    top: 50%;
+                    position: absolute;
+                }
+        
+        
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 40%;
+                    height: 2px;
+                    background: $SecondaryColor;
+                    right: -1rem;
+                    top: 50%;
+                    position: absolute;
+                }
+            }
+        
+            .container {
+                .row {
+                    .col-md-7 {
+                        .swiper {
+                            padding: 0px 2rem 5rem 0rem;
+        
+                            .swiper-wrapper {
+                                padding: 1rem;
+                                .swiper-slide {
+                                    box-shadow: 0px 0px 20px $ShadowFour;
+                                    border-radius: 10px;
+                                    overflow: hidden;
+        
+                                    .d-flex {
+                                        border-width: 0;
+                                        border-radius: 18px;
+                                        cursor: grab;
+        
+                                        &:active,
+                                        &:target {
+                                            cursor: grabbing;
+                                        }
+        
+                                        .col-md-5{
+                                            padding: 1rem;
+        
+                                            badge{
+                                                &:first-child{
+                                                    margin-left: 0;
+                                                }
+                                            }
+        
+                                            h4{
+                                                font-size: 18px;
+                                                font-weight: bold;
+                                                line-height: 30px;
+                                                color: $PrimaryColor;
+                                                margin: 1rem 0;
+                                            }
+        
+                                            p{
+                                                font-weight: 14px;
+                                                font-weight: 400;
+                                                line-height: 20px;
+                                                color: $PrimaryColor;
+                                                padding-bottom: 1rem;
+                                                border-bottom: 1px solid $SecondaryColor;
+                                            }
+        
+                                            span{
+                                                display: inline-block;
+                                                font-size: 12px;
+                                                color: $PrimaryColor;
+                                                line-height: 20px;
+                                                font-weight: 400;
+        
+                                                svg{
+                                                    color: $SecondaryColor;
+                                                    width: 12px;
+                                                    height: 12px;
+                                                    margin-right: .5rem;
+                                                }
+                                            }
+        
+                                            .d-flex{
+                                                margin-top: 1rem;
+                                                gap: 10px;
+        
+                                                .FNV-Btn{
+                                                    &:first-child{
+                                                        margin-right: 5px;
+                                                    }
+        
+                                                    &:nth-child(2){
+                                                        margin-left: 5px;
+                                                    }
+                                                }
+                                            }
+                                        }
+        
+                                        .col-md-7{
+                                            display: flex;
+                                            padding-right: 2rem;
+                                            padding-top: 1rem;
+                                            padding-bottom: 1rem;
+        
+                                            img{
+                                                border-radius: 10px;
+                                                width: 88%;
+                                                object-fit: cover;
+                                            }
+                                        }
+        
+                                    }
                                 }
                             }
-    
-                            .col-5{
-                                padding: 0rem;
-                                display: flex;
-                                flex-flow: column;
-                                justify-content: space-around;
-                            }
                         }
-    
+        
+                        .swiper-pagination {
+                            top: unset;
+                            bottom: 3rem;
+                        }
+                    }
+        
+                    .col-md-5{
+                        padding: 1rem 0;
+                        .col-12{
+                            box-shadow: 0px 0px 20px $ShadowFour;
+                            border-radius: 10px;
+                            padding: 1rem;
+                            margin-bottom: 1rem;
+        
+                            .d-flex{
+                                .col-7{
+                                    padding: 0rem;
+        
+                                    h4{
+                                        font-size: 16px;
+                                        font-weight: bold;
+                                        line-height: 24px;
+                                        color: $PrimaryColor;
+                                        margin: .5rem 0;
+                                    }
+                                }
+        
+                                .col-5{
+                                    padding: 0rem;
+                                    display: flex;
+                                    flex-flow: column;
+                                    justify-content: space-around;
+                                }
+                            }
+        
+                        }
                     }
                 }
             }

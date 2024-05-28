@@ -109,7 +109,7 @@ const WebinarDeskSingle = ({ webinars }) => {
               {/* Webinars Desktop */}
               <Swiper
                 slidesPerView={1}
-                spaceBetween={20}
+                spaceBetween={10}
                 centeredSlides={true}
                 loop={true}
                 autoplay={{
@@ -117,9 +117,8 @@ const WebinarDeskSingle = ({ webinars }) => {
                   disableOnInteraction: false
                 }}
                 navigation={false}
-                modules={[Autoplay, Pagination, Navigation]}
+                modules={[Autoplay]}
                 className='FNV-NewCoursesSwiper'
-                dir='ltr'
               >
                 {Array.isArray(webinarList) &&
                   webinarList.map(webinar => (

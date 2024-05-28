@@ -41,7 +41,7 @@ const SingleDeskPost = () => {
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
-        centeredSlides={false}
+        centeredSlides={true}
         loop={true}
         autoplay={{
           delay: 2500,
