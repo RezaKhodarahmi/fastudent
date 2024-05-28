@@ -382,19 +382,19 @@ newsletter{
     }
   }
 
-  footer {
+  .FNV-Footer {
     background-color: $PrimaryColor;
-    border-top: 0px solid $PrimaryColor;
-    padding: 1rem;
+    padding: 4rem 2rem;
   
     .container {
       padding: 0;
       .row {
         .col-md-4 {
-          padding: 1rem;
+          padding: 0rem;
+          text-align: center;
   
           svg{
-            width: 100%;
+            width: 80%;
             margin-bottom: 2rem;
           }
           
@@ -478,23 +478,22 @@ newsletter{
         }
   
         .col-md {
-          padding: 0 1rem;
+          padding: 0rem;
           
           h4 {
             font-size: 10px;
             color: $WhiteColor;
-            font-weight: bold;
+            font-weight: 400;
           }
           
           .list-group{
             background-color: transparent;
             padding: 0;
-            margin-bottom: 1rem;
   
             .list-group-item{
               background-color: transparent;
               border-width: 0;
-              padding: .5rem 0 0;
+              padding: 0rem 0 0;
   
               a{
                 color: $GrayTwoColor;
@@ -502,8 +501,8 @@ newsletter{
                 transition: .3s all ease-in-out;
   
                 svg{
-                  width: 14px;
-                  height: 14px;
+                  width: 16px;
+                  height: 16px;
                   margin-right: .5rem;
                 }
   
@@ -582,12 +581,12 @@ newsletter{
           }
   
           &:first-child{
-            padding-right: 1rem;
+            padding-right: 0rem;
             padding-left: 0;
           }
   
           &:last-child{
-            padding-left: 1rem;
+            padding-left: 0rem;
             padding-right: 0;
           }
         }

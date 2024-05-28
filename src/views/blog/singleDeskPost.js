@@ -47,9 +47,6 @@ const SingleDeskPost = () => {
           delay: 2500,
           disableOnInteraction: false
         }}
-        pagination={{
-          clickable: false
-        }}
         navigation={false}
         modules={[Autoplay, Pagination, Navigation]}
         className='d-none d-sm-none d-md-block'

@@ -160,7 +160,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Blog */}
+      {/* Testimonials */}
       <section className='FNV-Testimonial'>
         <h3>{t('testimonials-section-title')}</h3>
 
