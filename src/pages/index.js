@@ -109,7 +109,7 @@ const Home = () => {
       </section>
 
       {/* New Webinars */}
-      {Array.isArray(webinars) && <WebinarsSection dir='ltr' webinars={webinars} />}
+      {Array.isArray(webinars) && <WebinarsSection webinars={webinars} />}
 
       {/* Youtube CTA */}
       <section className='FNV-YoutubeCTA'>
@@ -140,11 +140,11 @@ const Home = () => {
       </section>
 
       {/* Blog */}
-      <section className='FNV-Blog'>
+      <section className='FNV-Blog' >
         <h3>{t('blogs-section-title')}</h3>
         <div className='container'>
           <div className='row'>
-            <div className='col-12' dir='ltr'>
+            <div className='col-12'>
               {/* Blogs Desktop */}
               <SingleDeskBlog />
               {/* Blogs Mobile */}
@@ -178,20 +178,6 @@ const Home = () => {
                   disableOnInteraction: false
                 }}
                 navigation={false}
-                breakpoints={{
-                  640: {
-                    slidesPerView: 1,
-                    spaceBetween: 20
-                  },
-                  768: {
-                    slidesPerView: 2,
-                    spaceBetween: 40
-                  },
-                  1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 50
-                  }
-                }}
                 modules={[Autoplay]}
                 className='FNV-NewCoursesSwiper d-none d-sm-none d-md-block'
               >

@@ -27,29 +27,13 @@ const CourseMobileSingle = ({ courses, addToCart }) => {
           delay: 2500,
           disableOnInteraction: false
         }}
-        pagination={{
-          clickable: true
-        }}
         navigation={false}
-        breakpoints={{
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 20
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 40
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 50
-          }
-        }}
         modules={[Autoplay, Pagination]}
         className='FNV-NewCoursesSwiper d-block d-sm-block d-md-none'
       >
         {validCourses
           .filter(item => item.id !== 150000)
+          .slice(0, 8)  // Limit to 2 items
           .map(course => (
             <SwiperSlide key={course.id}>
               <div className='card'>

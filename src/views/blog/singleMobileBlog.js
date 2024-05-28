@@ -1,22 +1,40 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 // ** Hook Imports
 import Link from 'next/link'
 
 // ** Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay, Pagination } from 'swiper/modules'
+import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 
-const SingleMobileBlog = ({ blogPosts }) => {
-  // Use state to manage blog posts if they are fetched asynchronously
-  const [posts, setPosts] = useState(blogPosts || [])
+// ** Import translation
+import { useTranslation } from 'react-i18next'
 
-  // If blogPosts prop changes, update the posts state
+// ** Format ISO date
+import DateFormat from 'src/utils/isoDateToReadble'
+
+import { fetchBlogData } from 'src/store/apps/blog'
+import { useDispatch, useSelector } from 'react-redux'
+
+const SingleDeskPost = () => {
+  // state
+  const [posts, setPosts] = useState([])
+
+  // Hooks
+  const dispatch = useDispatch()
+  const { t } = useTranslation()
+
+  const blogData = useSelector(state => state.blog)
+
   useEffect(() => {
-    if (blogPosts) {
-      setPosts(blogPosts)
+    dispatch(fetchBlogData())
+  }, [dispatch])
+
+  useEffect(() => {
+    if (blogData?.data) {
+      setPosts(blogData?.data?.data)
     }
-  }, [blogPosts])
+  }, [blogData])
 
   return (
     <>
@@ -29,25 +47,25 @@ const SingleMobileBlog = ({ blogPosts }) => {
           delay: 2500,
           disableOnInteraction: false
         }}
-        pagination={{
-          clickable: true
-        }}
         navigation={false}
         modules={[Autoplay, Pagination]}
-        className='d-block d-sm-block d-md-none'
+        className='d-block d-sm-none d-md-none'
       >
         {Array.isArray(posts) &&
           posts?.map(post => (
             <SwiperSlide key={post.id}>
               <div className='card'>
-                <img src={post.image} className='card-img-top' alt={post.title} />
+                <img src={post.image} className='card-img-top' alt='...' />
                 <div className='card-body'>
                   <h4 className='card-title'>{post.title}</h4>
-                  {/* Example date and SVG icon */}
-                  <span>Date of Publish</span>
+
+                  <span>
+                    {/* SVG and DateFormat component here */}
+                    <DateFormat date={post.createdAt} />
+                  </span>
 
                   <Link href={`/blog/${post.slug}`} className='FNV-Btn BtnPrimary BtnLarge'>
-                    Read More
+                    {t('blogs-section-readmore')}
                   </Link>
                 </div>
               </div>
@@ -58,4 +76,4 @@ const SingleMobileBlog = ({ blogPosts }) => {
   )
 }
 
-export default SingleMobileBlog
+export default SingleDeskPost

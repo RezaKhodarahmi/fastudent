@@ -48,7 +48,7 @@ const SingleDeskPost = () => {
           disableOnInteraction: false
         }}
         navigation={false}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay, Pagination]}
         className='d-none d-sm-none d-md-block'
       >
         {Array.isArray(posts) &&

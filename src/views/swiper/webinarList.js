@@ -70,7 +70,7 @@ const WebinarDeskSingle = ({ webinars }) => {
 
   return (
     <>
-      <section className='FNV-NewWebinars'>
+      <section className='FNV-NewWebinars' dir='ltr'>
         <div className='container'>
           <div className='row'>
             <div className='col-12 col-md-5'>
@@ -79,7 +79,7 @@ const WebinarDeskSingle = ({ webinars }) => {
                 webinarList.slice(0, displayCount).map((webinar, index) => (
                   <div key={index} className='col-12'>
                     <div className='d-flex'>
-                      <div className='col-7'>
+                      <div className='col-7' dir='ltr'>
                         <span className='PrimaryColor'>{handelType(webinar)}</span> {/* Changed badge to span */}
                         <span className='SecondaryColor'>{handelStatus(webinar)}</span> {/* Changed badge to span */}
                         <h4>{webinar.title}</h4>
@@ -116,12 +116,10 @@ const WebinarDeskSingle = ({ webinars }) => {
                   delay: 3000,
                   disableOnInteraction: false
                 }}
-                pagination={{
-                  clickable: true
-                }}
                 navigation={false}
                 modules={[Autoplay, Pagination, Navigation]}
                 className='FNV-NewCoursesSwiper'
+                dir='ltr'
               >
                 {Array.isArray(webinarList) &&
                   webinarList.map(webinar => (
