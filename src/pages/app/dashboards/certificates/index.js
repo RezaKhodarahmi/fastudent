@@ -67,11 +67,16 @@ const Index = () => {
           courseName: course.title,
           userName: profileDetails.data.user.firstName,
           lastName: profileDetails.data.user.lastName,
-          userID: profileDetails.data.user.id + formatDate(course.createdAt)
+          userID: profileDetails.data.user.id + formatDate(course.createdAt),
+          cycle: course.cycles[0]?.name
         }))
       setCertificates(courseCertificates)
     }
   }, [profileDetails])
+
+  const capitalizeFirstLetter = string => {
+    return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase()
+  }
 
   const handleOpen = certificate => {
     setSelectedCertificate(certificate)
@@ -89,9 +94,15 @@ const Index = () => {
           ctx.drawImage(image, 0, 0)
 
           // Set font size and color for the user's name
-          ctx.font = '60px Arial'
+          ctx.font = '45px Arial'
           ctx.fillStyle = 'black'
-          ctx.fillText(`${certificate.userName} ${certificate.lastName}`, 770, 430)
+          ctx.fillText(`${certificate.userName} ${certificate.lastName}`, 820, 430)
+
+          // Set font weight, size, and color for the cycle name, and capitalize the first letter
+          // ctx.font = '600 30px Arial' // Font weight 900, size 30px, Arial font
+          // ctx.fillStyle = '#003bbf'
+          // const cycleText = capitalizeFirstLetter(certificate.cycle)
+          // ctx.fillText(cycleText, 990, 680)
 
           // Change font size and color for the userID
           ctx.font = '30px Arial' // Smaller font size for userID
@@ -102,7 +113,6 @@ const Index = () => {
         }
 
         image.onerror = () => {
-          console.error('Failed to load image:', certificate.certificateUrl)
           setLoading(false)
         }
 
@@ -165,6 +175,7 @@ const Index = () => {
       </TableContainer>
 
       <Modal
+        style={{ direction: 'ltr' }}
         open={open}
         onClose={handleClose}
         aria-labelledby='modal-modal-title'
