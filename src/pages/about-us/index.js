@@ -94,8 +94,9 @@ const Index = () => {
               <div className='row ps-0 p-4'>
                 <div className='col-12 text-center'>
                   <img src='img/team/mo_amani.jpg' className='img-fluid w-75 rounded mb-4' />
-                  <h4 className='mt-4'>Mo Amani</h4>
-                  <span>CEO</span>
+                  <h4 className='mt-4 mb-0'>Mo Amani</h4>
+                  <small className='h6 text-muted'>(P.Eng., PMP, PMI-RMP)</small>
+                  <p className='mt-1'>CEO</p>
                 </div>
               </div>
             </div>
@@ -106,7 +107,8 @@ const Index = () => {
                 <div className='col-12 text-center'>
                   <img src='img/team/babak_babaee.png' className='img-fluid w-75 rounded mb-4' />
                   <h4 className='mt-4'>Babak Babaee</h4>
-                  <span>COO</span>
+                  <small className='h6 text-muted'>(P.Eng, MASc, MBA)</small>
+                  <p className='mt-1'>COO</p>
                 </div>
               </div>
             </div>
@@ -119,7 +121,8 @@ const Index = () => {
                 </div>
                 <div className='col-7'>
                   <h4>Payam Mahjoub</h4>
-                  <span>CTO</span>
+                  <small className='h6 text-muted'>MSc in AI</small>
+                  <p>CTO</p>
                 </div>
               </div>
             </div>
@@ -141,11 +144,11 @@ const Index = () => {
             <div className='col-12 col-md-4 p-0'>
               <div className='row p-0'>
                 <div className='col-5'>
-                  <img src='img/team/aadel_soltani.jpg' className='img-fluid' />
+                  <img src='img/team/parham_fazlali.jpg' className='img-fluid' />
                 </div>
                 <div className='col-7'>
-                  <h4>Aadel Soltani</h4>
-                  <span>Creative Director</span>
+                  <h4>Parham FazlAli</h4>
+                  <span>Graphic Designer</span>
                 </div>
               </div>
             </div>
@@ -219,10 +222,10 @@ const Index = () => {
             <div className='col-12 col-md-4 p-0'>
               <div className='row p-0'>
                 <div className='col-5'>
-                  <img src='img/team/parham_fazlali.jpg' className='img-fluid' />
+                  <img src='img/team/nima_farhadi.jpg' className='img-fluid' />
                 </div>
                 <div className='col-7'>
-                  <h4>Parham FazlAli</h4>
+                  <h4>Nima Farhadi</h4>
                   <span>Graphic Designer</span>
                 </div>
               </div>
@@ -250,19 +253,6 @@ const Index = () => {
                 <div className='col-7'>
                   <h4>Roya Karami</h4>
                   <span>Sales Manager</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Item */}
-            <div className='col-12 col-md-4 p-0'>
-              <div className='row p-0'>
-                <div className='col-5'>
-                  <img src='img/team/nima_farhadi.jpg' className='img-fluid' />
-                </div>
-                <div className='col-7'>
-                  <h4>Nima Farhadi</h4>
-                  <span>Graphic Designer</span>
                 </div>
               </div>
             </div>

@@ -140,11 +140,11 @@ const Index = () => {
             <div className='col-12 col-md-4 p-0'>
               <div className='row p-0'>
                 <div className='col-5'>
-                  <img src={appConfig.appUrl + '/img/team/aadel_soltani.jpg'} className='img-fluid' />
+                  <img src={appConfig.appUrl + '/img/team/parham_fazlali.jpg'} className='img-fluid' />
                 </div>
                 <div className='col-7'>
-                  <h4>Aadel Soltani</h4>
-                  <span>Creative Director</span>
+                  <h4>Parham FazlAli</h4>
+                  <span>Graphic Designer</span>
                 </div>
               </div>
             </div>
@@ -179,10 +179,10 @@ const Index = () => {
             <div className='col-12 col-md-4 p-0'>
               <div className='row p-0'>
                 <div className='col-5'>
-                  <img src={appConfig.appUrl + '/img/team/parham_fazlali.jpg'} className='img-fluid' />
+                  <img src={appConfig.appUrl + '/img/team/maryam_rajabi.jpg'} className='img-fluid' />
                 </div>
                 <div className='col-7'>
-                  <h4>Parham FazlAli</h4>
+                  <h4>Maryam Rajabi</h4>
                   <span>Graphic Designer</span>
                 </div>
               </div>
@@ -249,19 +249,6 @@ const Index = () => {
                 <div className='col-7'>
                   <h4>Roya Karami</h4>
                   <span>Sales Manager</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Item */}
-            <div className='col-12 col-md-4 p-0'>
-              <div className='row p-0'>
-                <div className='col-5'>
-                  <img src={appConfig.appUrl + '/img/team/maryam_rajabi.jpg'} className='img-fluid' />
-                </div>
-                <div className='col-7'>
-                  <h4>Maryam Rajabi</h4>
-                  <span>Graphic Designer</span>
                 </div>
               </div>
             </div>
