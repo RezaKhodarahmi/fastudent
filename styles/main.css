@@ -94,6 +94,26 @@ a {
   text-decoration: none;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #003BBF;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FF772C;
+}
+
 .FNV-Btn {
   padding: 5px 15px;
   font-size: 14px;
