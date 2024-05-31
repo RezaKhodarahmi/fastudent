@@ -71,7 +71,7 @@ const WebinarDeskSingle = ({ webinars }) => {
   return (
     <>
       <section className='FNV-NewWebinars' dir='ltr'>
-        <h3>{t('courses-section-title')}</h3>
+        <h3>{t('webinars-section-title')}</h3>
         <div className='container'>
           <div className='row'>
             <div className='col-12 col-md-5'>
