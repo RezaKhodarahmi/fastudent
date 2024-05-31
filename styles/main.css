@@ -1315,6 +1315,38 @@ body[dir=ltr] nav.FNV-MegaMenu {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .FNV-TopBar {
+    background-color: #223885;
+    padding: 0.5rem 1rem;
+    direction: ltr;
+  }
+  .FNV-TopBar .container-fluid .row .col-6 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem 0;
+  }
+  .FNV-TopBar .container-fluid .row .col-6 a {
+    color: #ffffff;
+    margin-right: unset;
+    position: relative;
+    font-size: 16px;
+  }
+  .FNV-TopBar .container-fluid .row .col-6 a svg {
+    color: #ffffff;
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+  }
+  .FNV-TopBar .container-fluid .row .col-6 a:first-child {
+    display: none;
+  }
+  .FNV-TopBar .container-fluid .row .col-6:nth-child(2) {
+    justify-content: end;
+  }
+  .FNV-TopBar .container-fluid .row .col-6:nth-child(2) a {
+    margin-left: unset;
+    margin-right: unset;
+  }
   .FNV-Home .FNV-Header {
     background-image: linear-gradient(89.85deg, rgba(26, 48, 211, 0.8) 0.12%, rgba(26, 48, 211, 0.2) 50%, rgba(26, 48, 211, 0.8) 99.87%), url("/img/Header-bg.jpg");
     background-size: cover;
