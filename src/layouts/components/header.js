@@ -301,46 +301,6 @@ const Header = props => {
                   </Link>
                 </li>
 
-                {/* <li className='nav-item dropdown FNV-MegaMenu'>
-                  <Link className='nav-link' href='/' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
-                    Certification
-                  </Link>
-                  <ul className='dropdown-menu'>
-                    <div className='container-fluid'>
-                      <div className='row'>
-                        <div className='col-md-3'>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Action
-                            </Link>
-                          </li>
-                        </div>
-                        <div className='col-md-3'>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Something else here
-                            </Link>
-                          </li>
-                        </div>
-                        <div className='col-md-3'>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Something else here
-                            </Link>
-                          </li>
-                        </div>
-                        <div className='col-md-3'>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Something else here
-                            </Link>
-                          </li>
-                        </div>
-                      </div>
-                    </div>
-                  </ul>
-                </li> */}
-
                 <li className='nav-item dropdown FNV-MegaMenu'>
                   <Link className='nav-link' href='/membership/checkout'>
                     {t('membership')}
