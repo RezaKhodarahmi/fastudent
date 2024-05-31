@@ -11,8 +11,7 @@ import nextI18NextConfig from 'src/configs/i18n'
 import { store } from 'src/store'
 import { Provider } from 'react-redux'
 
-import ReactGA from 'react-ga4';
-ReactGA.initialize('G-HVW076GTCV');
+import ReactGA from 'react-ga4'
 
 // ** Loader Import
 import NProgress from 'nprogress'
@@ -90,6 +89,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 
 const clientSideEmotionCache = createEmotionCache()
+ReactGA.initialize('G-HVW076GTCV')
 
 // ** Pace Loader
 if (themeConfig.routingLoader) {
