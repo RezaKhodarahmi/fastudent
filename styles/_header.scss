@@ -1,5 +1,52 @@
 @import './variables';
 
+.FNV-TopBar{
+  background-color: #223885;
+  padding: 1rem 2rem;
+  direction: ltr;
+
+  .container-fluid{
+    .row{
+      .col-6{
+        display: flex;
+        padding: 0;
+
+        a{
+          color: $WhiteColor;
+          margin-right: 4rem;
+          position: relative;
+
+          svg{
+            color: $WhiteColor;
+            width: 20px;
+            height: 20px;
+            margin-right: .5rem;
+          }
+
+          &:first-child::after{
+            content: '';
+            position: absolute;
+            right: -2rem;
+            top: 0;
+            width: 1px;
+            height: 25px;
+            background-color: $WhiteColor;
+          }
+        }
+
+        &:nth-child(2){
+          justify-content: end;
+
+          a{
+            margin-left: 4rem;
+            margin-right: unset;
+          }
+        }
+      }
+    }
+  }
+}
+
 .FNV-Home{
   .FNV-Header {
     background-image: linear-gradient(89.85deg, rgba(26, 48, 211, 0.8) 0.12%, rgba(26, 48, 211, 0.2) 50%, rgba(26, 48, 211, 0.8) 99.87%), url('/img/Header-bg.jpg');

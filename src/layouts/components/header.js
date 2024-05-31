@@ -2,6 +2,7 @@ import React, { useEffect, useState, useCallback } from 'react'
 import Link from 'next/link'
 import Logo from 'src/views/logoMain.js'
 import TopBanner from 'src/views/topBanner.js'
+import TopBar from 'src/views/topBar.js'
 import feather from 'feather-icons'
 import { useAuth } from 'src/hooks/useAuth'
 import { useDispatch, useSelector } from 'react-redux'
@@ -184,6 +185,8 @@ const Header = props => {
   return (
     <>
       <TopBanner />
+
+      <TopBar />
 
       {user ? (
         <nav className='navbar navbar-expand-lg bg-body-tertiary d-flex flex-column pb-0 pt-0'>
