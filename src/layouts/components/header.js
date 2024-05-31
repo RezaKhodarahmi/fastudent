@@ -200,7 +200,7 @@ const Header = props => {
             >
               <i data-feather='grid'></i>
             </Link>
-            <Link className='navbar-brand' href={appConfig.appUrl}>
+            <Link className='navbar-brand' href="/">
               <Logo />
             </Link>
             <button
@@ -420,7 +420,7 @@ const Header = props => {
             >
               <i data-feather='grid'></i>
             </Link>
-            <Link className='navbar-brand' href={appConfig.appUrl}>
+            <Link className='navbar-brand' href="/">
               <Logo />
             </Link>
             <button

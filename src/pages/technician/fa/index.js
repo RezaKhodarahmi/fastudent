@@ -93,6 +93,9 @@ const Index = () => {
                 <Link href='#P6'>دوره کارآموزی تکنسین‌های فنی در کانادا</Link>
               </li>
               <li>
+                <Link href='#P7'>نقشه راه برای تکنسین‌ها</Link>
+              </li>
+              <li>
                 <Link href='#FAQ'>سوالات متداول</Link>
               </li>
             </ol>
