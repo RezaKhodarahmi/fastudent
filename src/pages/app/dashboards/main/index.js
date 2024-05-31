@@ -45,7 +45,7 @@ const AnalyticsDashboard = () => {
   }, [profileDetails])
 
   return (
-    <ApexChartWrapper>
+    <ApexChartWrapper dir='ltr'>
       <KeenSliderWrapper>
         <Grid container spacing={6}>
           {/* VIP User Card */}

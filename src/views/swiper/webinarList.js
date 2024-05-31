@@ -37,7 +37,7 @@ const WebinarDeskSingle = ({ webinars }) => {
       case '2':
         return t('webinar-home-status-recorded');
         break
-      case '3': 
+      case '3':
         return t('webinar-home-status-postponed');
         break
       default:

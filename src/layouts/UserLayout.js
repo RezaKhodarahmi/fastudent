@@ -40,6 +40,7 @@ const UserLayout = ({ children, contentHeightFixed }) => {
 
   return (
     <Layout
+     
       hidden={hidden}
       settings={settings}
       saveSettings={saveSettings}

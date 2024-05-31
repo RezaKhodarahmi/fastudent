@@ -15,7 +15,15 @@ const SingleCourse = ({ course, addToCart }) => {
           <img src={course.image} className='card-img-top' alt={course.title} />
           <div className='card-body'>
             <h4 className='card-title'>{course.title}</h4>
-            <price>{course.cycles[parseInt(course.cycles?.length) - 1]?.regularPrice}</price>
+            <price>${course.cycles[parseInt(course.cycles?.length) - 1]?.regularPrice}</price>
+            <span style={{ fontSize: '16px', color: '#003bbf', textAlign: 'center', display: 'block' }}>
+              {t('the-last-cycle') + ' '}
+              {course.cycles[parseInt(course.cycles?.length) - 1].startDate}
+            </span>
+            <span style={{ fontSize: '16px', color: '#003bbf', textAlign: 'center', display: 'block' }}>
+              {t('the-course-category') + ' '}
+              {course.categories.map(item => item.title).join(', ')}
+            </span>
             <div className='d-flex justify-content-between'>
               <Link href={`/courses/${course.slug}`} className='FNV-Btn BtnOutline PrimaryColor BtnLarge'>
                 {t('see-details')}

@@ -122,6 +122,7 @@ const App = props => {
                             {getLayout(<Component {...pageProps} />)}
                           </AclGuard>
                         </Guard>
+                       
                       </WindowWrapper>
                       <ReactHotToast>
                         <Toaster position={settings.toastPosition} toastOptions={{ className: 'react-hot-toast' }} />

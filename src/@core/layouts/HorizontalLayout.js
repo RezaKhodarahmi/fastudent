@@ -84,7 +84,7 @@ const HorizontalLayout = props => {
   delete userAppBarProps.sx
 
   return (
-    <HorizontalLayoutWrapper className='layout-wrapper'>
+    <HorizontalLayoutWrapper dir='ltr' className='layout-wrapper '>
       <MainContentWrapper className='layout-content-wrapper' sx={{ ...(contentHeightFixed && { maxHeight: '100vh' }) }}>
         {/* Navbar (or AppBar) and Navigation Menu Wrapper */}
         <AppBar

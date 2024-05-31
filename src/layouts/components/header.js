@@ -186,7 +186,7 @@ const Header = props => {
       <TopBanner />
 
       {user ? (
-        <nav className='navbar navbar-expand-lg bg-body-tertiary d-flex flex-column pb-0 pt-0'>
+        <nav  className='navbar navbar-expand-lg bg-body-tertiary d-flex flex-column pb-0 pt-0'>
           <div className='container-fluid'>
             <Link
               className='OffCanvasMenu'

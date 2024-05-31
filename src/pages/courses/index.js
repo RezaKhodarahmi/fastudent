@@ -10,6 +10,7 @@ import SearchBox from 'src/views/searchBar.js'
 import YoutubeSection from 'src/views/youtubeSection'
 import SingleCourse from 'src/views/courses/singleCourse'
 import CategoryFilter from 'src/views/filters/categoryFilters'
+import LinearProgress from '@mui/material/LinearProgress'
 
 // ** Hook Imports
 import Link from 'next/link'
@@ -128,7 +129,7 @@ const Index = () => {
                                 selectedTeachers.includes(teacher.firstName + ' ' + teacher.lastName)
                               )
                           )
-                          .slice((page - 1) * 5, page * 5)
+                          .slice((page - 1) * 5, page * 15)
 
                         return filteredCourses.length ? (
                           filteredCourses
@@ -147,11 +148,12 @@ const Index = () => {
                         )
                       })()
                     ) : (
-                      <h3>Loading...</h3>
+                      <LinearProgress />
                     )}
 
                     <Grid container justifyContent='center' marginTop={'3rem'}>
                       <CoursePagination
+                        style={{ direction: 'ltr' }}
                         count={Math.ceil(courseData?.data?.data?.length / 5)}
                         page={page}
                         onChange={handleChangePage}
