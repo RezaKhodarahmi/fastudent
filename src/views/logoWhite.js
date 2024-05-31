@@ -2,7 +2,7 @@ import React from 'react'
 
 const Logo = () => {
 return (
-<svg viewBox="0 0 765 193" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg className='FNV-Logo' viewBox="0 0 765 193" fill="none" xmlns="http://www.w3.org/2000/svg">
   <g clip-path="url(#clip0_459_343)">
     <path d="M44.21 37.79L157.89 0V46.72L44.21 84.52V37.79Z" fill="#FF772C" />
     <path d="M18.4399 93.49L106.86 74.97V121.69L18.4399 140.21V93.49Z" fill="white" />

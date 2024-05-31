@@ -84,7 +84,7 @@ newsletter{
       .col-md-4 {
         padding: 0 0rem 0 1rem;
 
-        svg{
+        svg.FNV-Logo{
           width: 80%;
           margin-bottom: 2rem;
         }
@@ -147,7 +147,7 @@ newsletter{
           color: $WhiteColor;
           overflow: hidden;
           z-index: 11;
-          margin-top: 2rem;
+          margin: 1rem 0;
 
           a {
             color: $WhiteColor;
@@ -161,10 +161,38 @@ newsletter{
         }
 
         p{
-          font-size: 18px;
+          font-size: 16px;
           font-weight: 200;
           color: $WhiteColor;
           text-align: justify;
+
+          &.FNV-Address{
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-between;
+            width: 100%;
+            direction: ltr;
+
+            span{
+              font-size: 14px;
+              svg{
+                width: 15px;
+                margin: 0 .5rem 0 0;
+                padding: 0;
+              }
+            }
+
+            a{
+              font-size: 14px;
+              color: $WhiteColor;
+            }
+
+            a{
+              display: block;
+            }
+          }
         }
       }
 
@@ -287,7 +315,8 @@ newsletter{
 
 .FNV-Copyright{
   background-color: $SecondaryColor;
-  padding: 2rem;
+  padding: 1rem;
+  direction: ltr;
   
   .row{
     .col-12{
@@ -295,7 +324,7 @@ newsletter{
       small{
         font-size: 14px;
         color: $GrayTwoColor;
-        font-weight: 400;
+        font-weight: 600;
       }
     }
   }
@@ -393,7 +422,7 @@ newsletter{
           padding: 0rem;
           text-align: center;
   
-          svg{
+          svg.FNV-Logo{
             width: 80%;
             margin-bottom: 2rem;
           }
@@ -456,7 +485,8 @@ newsletter{
             color: $WhiteColor;
             overflow: hidden;
             z-index: 11;
-            margin-top: 2rem;
+            margin: 1rem 0;
+            padding: 0;
   
             a {
               color: $WhiteColor;
@@ -596,13 +626,14 @@ newsletter{
   
   .FNV-Copyright{
     background-color: $SecondaryColor;
-    padding: 2rem;
+    padding: 1rem;
+    direction: ltr;
     
     .row{
       .col-12{
         text-align: center;
         small{
-          font-size: 12px;
+          font-size: 14px;
           color: $GrayTwoColor;
           font-weight: 600;
         }
