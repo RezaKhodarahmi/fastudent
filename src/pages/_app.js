@@ -11,6 +11,9 @@ import nextI18NextConfig from 'src/configs/i18n'
 import { store } from 'src/store'
 import { Provider } from 'react-redux'
 
+import ReactGA from 'react-ga4';
+ReactGA.initialize('G-HVW076GTCV');
+
 // ** Loader Import
 import NProgress from 'nprogress'
 

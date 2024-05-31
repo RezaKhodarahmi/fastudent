@@ -4786,6 +4786,16 @@
   "integrity" "sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ=="
   "resolved" "https://registry.npmjs.org/react-fast-compare/-/react-fast-compare-3.2.2.tgz"
   "version" "3.2.2"
+
+"react-ga4@^2.1.0":
+  "integrity" "sha512-ZKS7PGNFqqMd3PJ6+C2Jtz/o1iU9ggiy8Y8nUeksgVuvNISbmrQtJiZNvC/TjDsqD0QlU5Wkgs7i+w9+OjHhhQ=="
+  "resolved" "https://registry.npmjs.org/react-ga4/-/react-ga4-2.1.0.tgz"
+  "version" "2.1.0"
+
+"react-google-recaptcha-v3@^1.10.1":
+  "integrity" "sha512-K3AYzSE0SasTn+XvV2tq+6YaxM+zQypk9rbCgG4OVUt7Rh4ze9basIKefoBz9sC0CNslJj9N1uwTTgRMJQbQJQ=="
+  "resolved" "https://registry.npmjs.org/react-google-recaptcha-v3/-/react-google-recaptcha-v3-1.10.1.tgz"
+  "version" "1.10.1"
   dependencies:
     "hoist-non-react-statics" "^3.3.2"
 

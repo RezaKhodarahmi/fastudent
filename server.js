@@ -5,12 +5,9 @@ const { parse } = require('url')
 const { readFileSync } = require('fs')
 const next = require('next')
 
-import ReactGA from 'react-ga4';
-ReactGA.initialize('G-HVW076GTCV');
-
 useEffect(() => {
-  ReactGA.send({ hitType: "pageview", page: window.location.pathname });
-}, []);
+  ReactGA.send({ hitType: 'pageview', page: window.location.pathname })
+}, [])
 
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
