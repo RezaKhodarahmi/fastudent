@@ -73,13 +73,7 @@ a{
 
 
 // Pages Single
-html[dir="ltr"]{
-  @import './Single-Page';
-}
-
-html[dir="rtl"]{
-  @import './Single-Page-RTL';
-}
+@import './Single-Page';
 
 // Blogs Single
 @import './Blogs-Single';

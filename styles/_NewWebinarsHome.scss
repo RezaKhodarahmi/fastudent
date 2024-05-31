@@ -41,7 +41,7 @@ body[dir='rtl']{
             .row {
                 .col-md-7 {
                     .swiper {
-                        padding: 0px 0rem 5rem 2rem;
+                        padding: 0px 0rem 2rem 0rem;
     
                         .swiper-wrapper {
                             padding: 1rem;
@@ -97,7 +97,7 @@ body[dir='rtl']{
                                                 color: $SecondaryColor;
                                                 width: 12px;
                                                 height: 12px;
-                                                margin-left: .5rem;
+                                                margin-right: .5rem;
                                             }
                                         }
     
@@ -119,8 +119,8 @@ body[dir='rtl']{
     
                                     .col-md-7{
                                         display: flex;
-                                        padding-left: 2rem;
-                                        padding-right: 0;
+                                        padding-right: 2rem;
+                                        padding-left: 0;
                                         padding-top: 1rem;
                                         padding-bottom: 1rem;
     

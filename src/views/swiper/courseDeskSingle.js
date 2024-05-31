@@ -36,6 +36,7 @@ const CourseDeskSingle = ({ courses, addToCart }) => {
       >
         {validCourses
           .filter(item => item.id !== 150000)
+          .slice(0, 8)
           .map(course => (
             <SwiperSlide key={course.id}>
               <div className='card'>

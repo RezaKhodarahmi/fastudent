@@ -94,6 +94,26 @@ a {
   text-decoration: none;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #003BBF;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FF772C;
+}
+
 .FNV-Btn {
   padding: 5px 15px;
   font-size: 14px;
@@ -1187,6 +1207,43 @@ body[dir=ltr] nav.FNV-MegaMenu {
     background-color: #F0F3FB;
   }
 }
+.FNV-TopBar {
+  background-color: #223885;
+  padding: 1rem 2rem;
+  direction: ltr;
+}
+.FNV-TopBar .container-fluid .row .col-6 {
+  display: flex;
+  padding: 0;
+}
+.FNV-TopBar .container-fluid .row .col-6 a {
+  color: #ffffff;
+  margin-right: 4rem;
+  position: relative;
+}
+.FNV-TopBar .container-fluid .row .col-6 a svg {
+  color: #ffffff;
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+.FNV-TopBar .container-fluid .row .col-6 a:first-child::after {
+  content: "";
+  position: absolute;
+  right: -2rem;
+  top: 0;
+  width: 1px;
+  height: 25px;
+  background-color: #ffffff;
+}
+.FNV-TopBar .container-fluid .row .col-6:nth-child(2) {
+  justify-content: end;
+}
+.FNV-TopBar .container-fluid .row .col-6:nth-child(2) a {
+  margin-left: 4rem;
+  margin-right: unset;
+}
+
 .FNV-Home .FNV-Header {
   background-image: linear-gradient(89.85deg, rgba(26, 48, 211, 0.8) 0.12%, rgba(26, 48, 211, 0.2) 50%, rgba(26, 48, 211, 0.8) 99.87%), url("/img/Header-bg.jpg");
   background-size: cover;
@@ -1277,6 +1334,38 @@ body[dir=ltr] nav.FNV-MegaMenu {
     height: 28px !important;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .FNV-TopBar {
+    background-color: #223885;
+    padding: 0.5rem 1rem;
+    direction: ltr;
+  }
+  .FNV-TopBar .container-fluid .row .col-6 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem 0;
+  }
+  .FNV-TopBar .container-fluid .row .col-6 a {
+    color: #ffffff;
+    margin-right: unset;
+    position: relative;
+    font-size: 16px;
+  }
+  .FNV-TopBar .container-fluid .row .col-6 a svg {
+    color: #ffffff;
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+  }
+  .FNV-TopBar .container-fluid .row .col-6 a:first-child {
+    display: none;
+  }
+  .FNV-TopBar .container-fluid .row .col-6:nth-child(2) {
+    justify-content: end;
+  }
+  .FNV-TopBar .container-fluid .row .col-6:nth-child(2) a {
+    margin-left: unset;
+    margin-right: unset;
   }
   .FNV-Home .FNV-Header {
     background-image: linear-gradient(89.85deg, rgba(26, 48, 211, 0.8) 0.12%, rgba(26, 48, 211, 0.2) 50%, rgba(26, 48, 211, 0.8) 99.87%), url("/img/Header-bg.jpg");
@@ -1876,7 +1965,7 @@ body[dir=rtl] .FNV-NewWebinars h3::after {
   position: absolute;
 }
 body[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper {
-  padding: 0px 0rem 5rem 2rem;
+  padding: 0px 0rem 2rem 0rem;
 }
 body[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper {
   padding: 1rem;
@@ -1926,7 +2015,7 @@ body[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper
   color: #FF772C;
   width: 12px;
   height: 12px;
-  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 body[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 .d-flex {
   margin-top: 1rem;
@@ -1940,8 +2029,8 @@ body[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper
 }
 body[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-7 {
   display: flex;
-  padding-left: 2rem;
-  padding-right: 0;
+  padding-right: 2rem;
+  padding-left: 0;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -4111,118 +4200,26 @@ body[dir=rtl] .FNV-Blog .FNV-SeeMore {
   margin-bottom: 0;
 }
 
-html[dir=ltr] .FNV-SinglePage .container .row {
-  margin-top: 2rem;
+body[dir=rtl] .FNV-SinglePage .container .row {
+  padding-top: 2rem;
 }
-html[dir=ltr] .FNV-SinglePage .container .row.FNV-Header {
+body[dir=rtl] .FNV-SinglePage .container .row.FNV-Header {
   height: 350px;
   border-radius: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-html[dir=ltr] .FNV-SinglePage .container .row.FNV-Header h1 {
+body[dir=rtl] .FNV-SinglePage .container .row.FNV-Header h1 {
   color: #ffffff;
   font-weight: 800;
   font-size: 40px;
   text-align: center;
 }
-html[dir=ltr] .FNV-SinglePage .container .row h2 {
+body[dir=rtl] .FNV-SinglePage .container .row h2 {
   font-size: 32px;
 }
-html[dir=ltr] .FNV-SinglePage .container .row h3 {
-  font-size: 25px;
-  font-weight: 600;
-  position: relative;
-  padding-left: 2rem;
-  margin-bottom: 2rem;
-  color: #000000;
-}
-html[dir=ltr] .FNV-SinglePage .container .row h3::before {
-  content: " ";
-  width: 20px;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: #FF772C;
-}
-html[dir=ltr] .FNV-SinglePage .container .row .col-12 {
-  display: block;
-  border-radius: 15px;
-  background-color: #ffffff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1411764706);
-  padding: 1rem;
-  margin-bottom: 1rem;
-  overflow: hidden;
-}
-html[dir=ltr] .FNV-SinglePage .container .row .col-12 h4 {
-  font-size: 20px;
-  font-weight: 700;
-  color: #000000;
-}
-html[dir=ltr] .FNV-SinglePage .container .row .col-12 h5 {
-  font-size: 18px;
-}
-html[dir=ltr] .FNV-SinglePage .container .row .col-12 p {
-  font-size: 16px;
-  line-height: 30px;
-  color: #000000;
-}
-html[dir=ltr] .FNV-SinglePage .container .row .col-12 iframe {
-  width: 100%;
-  height: 700px;
-  border-radius: 15px;
-}
-html[dir=ltr] .FNV-SinglePage .container .row .col-12.col-md-3 {
-  background-color: transparent;
-  box-shadow: unset;
-}
-html[dir=ltr] .FNV-SinglePage .container .row .col-12.col-md-3 iframe {
-  height: 500px;
-}
-html[dir=ltr] .FNV-SinglePage .container .row .accordion {
-  border-radius: 15px;
-}
-html[dir=ltr] .FNV-SinglePage .container .row .accordion .accordion-item {
-  margin-bottom: 1rem;
-  border-radius: 15px;
-  border-width: 0;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.0901960784);
-}
-html[dir=ltr] .FNV-SinglePage .container .row .accordion .accordion-item .accordion-header .accordion-button {
-  box-shadow: unset;
-  background-color: transparent;
-  font-size: 18px;
-  line-height: 36px;
-  font-weight: 600;
-}
-html[dir=ltr] .FNV-SinglePage .container .row .accordion .accordion-item .accordion-collapse .accordion-body {
-  font-size: 16px;
-  line-height: 32px;
-  font-weight: 500;
-}
-
-html[dir=rtl] .FNV-SinglePage .container .row {
-  margin-top: 2rem;
-}
-html[dir=rtl] .FNV-SinglePage .container .row.FNV-Header {
-  height: 350px;
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-html[dir=rtl] .FNV-SinglePage .container .row.FNV-Header h1 {
-  color: #ffffff;
-  font-weight: 800;
-  font-size: 40px;
-  text-align: center;
-}
-html[dir=rtl] .FNV-SinglePage .container .row h2 {
-  font-size: 32px;
-}
-html[dir=rtl] .FNV-SinglePage .container .row h3 {
+body[dir=rtl] .FNV-SinglePage .container .row h3 {
   font-size: 25px;
   font-weight: 600;
   position: relative;
@@ -4230,7 +4227,7 @@ html[dir=rtl] .FNV-SinglePage .container .row h3 {
   margin-bottom: 2rem;
   color: #000000;
 }
-html[dir=rtl] .FNV-SinglePage .container .row h3::before {
+body[dir=rtl] .FNV-SinglePage .container .row h3::before {
   content: " ";
   width: 20px;
   height: 100%;
@@ -4239,7 +4236,7 @@ html[dir=rtl] .FNV-SinglePage .container .row h3::before {
   top: 0;
   background-color: #FF772C;
 }
-html[dir=rtl] .FNV-SinglePage .container .row .col-12 {
+body[dir=rtl] .FNV-SinglePage .container .row .col-12 {
   display: block;
   border-radius: 15px;
   background-color: #ffffff;
@@ -4248,52 +4245,144 @@ html[dir=rtl] .FNV-SinglePage .container .row .col-12 {
   margin-bottom: 1rem;
   overflow: hidden;
 }
-html[dir=rtl] .FNV-SinglePage .container .row .col-12 h4 {
+body[dir=rtl] .FNV-SinglePage .container .row .col-12 h4 {
   font-size: 20px;
   font-weight: 700;
   color: #000000;
 }
-html[dir=rtl] .FNV-SinglePage .container .row .col-12 h5 {
+body[dir=rtl] .FNV-SinglePage .container .row .col-12 h5 {
   font-size: 18px;
 }
-html[dir=rtl] .FNV-SinglePage .container .row .col-12 p {
+body[dir=rtl] .FNV-SinglePage .container .row .col-12 p {
   font-size: 16px;
   line-height: 30px;
   color: #000000;
 }
-html[dir=rtl] .FNV-SinglePage .container .row .col-12 iframe {
+body[dir=rtl] .FNV-SinglePage .container .row .col-12 iframe {
   width: 100%;
   height: 700px;
   border-radius: 15px;
 }
-html[dir=rtl] .FNV-SinglePage .container .row .col-12.col-md-3 {
+body[dir=rtl] .FNV-SinglePage .container .row .col-12.col-md-3 {
   background-color: transparent;
   box-shadow: unset;
 }
-html[dir=rtl] .FNV-SinglePage .container .row .col-12.col-md-3 iframe {
+body[dir=rtl] .FNV-SinglePage .container .row .col-12.col-md-3 iframe {
   height: 500px;
 }
-html[dir=rtl] .FNV-SinglePage .container .row .accordion {
+body[dir=rtl] .FNV-SinglePage .container .row .accordion {
   border-radius: 15px;
 }
-html[dir=rtl] .FNV-SinglePage .container .row .accordion .accordion-item {
+body[dir=rtl] .FNV-SinglePage .container .row .accordion .accordion-item {
   margin-bottom: 1rem;
   border-radius: 15px;
   border-width: 0;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.0901960784);
 }
-html[dir=rtl] .FNV-SinglePage .container .row .accordion .accordion-item .accordion-header .accordion-button {
+body[dir=rtl] .FNV-SinglePage .container .row .accordion .accordion-item .accordion-header .accordion-button {
   box-shadow: unset;
   background-color: transparent;
   font-size: 18px;
   line-height: 36px;
   font-weight: 600;
 }
-html[dir=rtl] .FNV-SinglePage .container .row .accordion .accordion-item .accordion-header .accordion-button::after {
-  margin-right: auto;
+body[dir=rtl] .FNV-SinglePage .container .row .accordion .accordion-item .accordion-header .accordion-button::after {
   margin-left: unset;
+  margin-right: auto;
 }
-html[dir=rtl] .FNV-SinglePage .container .row .accordion .accordion-item .accordion-collapse .accordion-body {
+body[dir=rtl] .FNV-SinglePage .container .row .accordion .accordion-item .accordion-collapse .accordion-body {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+body[dir=ltr] .FNV-SinglePage .container .row {
+  margin-top: 2rem;
+}
+body[dir=ltr] .FNV-SinglePage .container .row.FNV-Header {
+  height: 350px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body[dir=ltr] .FNV-SinglePage .container .row.FNV-Header h1 {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 40px;
+  text-align: center;
+}
+body[dir=ltr] .FNV-SinglePage .container .row h2 {
+  font-size: 32px;
+}
+body[dir=ltr] .FNV-SinglePage .container .row h3 {
+  font-size: 25px;
+  font-weight: 600;
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+  color: #000000;
+}
+body[dir=ltr] .FNV-SinglePage .container .row h3::before {
+  content: " ";
+  width: 20px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #FF772C;
+}
+body[dir=ltr] .FNV-SinglePage .container .row .col-12 {
+  display: block;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1411764706);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+body[dir=ltr] .FNV-SinglePage .container .row .col-12 h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+body[dir=ltr] .FNV-SinglePage .container .row .col-12 h5 {
+  font-size: 18px;
+}
+body[dir=ltr] .FNV-SinglePage .container .row .col-12 p {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+}
+body[dir=ltr] .FNV-SinglePage .container .row .col-12 iframe {
+  width: 100%;
+  height: 700px;
+  border-radius: 15px;
+}
+body[dir=ltr] .FNV-SinglePage .container .row .col-12.col-md-3 {
+  background-color: transparent;
+  box-shadow: unset;
+}
+body[dir=ltr] .FNV-SinglePage .container .row .col-12.col-md-3 iframe {
+  height: 500px;
+}
+body[dir=ltr] .FNV-SinglePage .container .row .accordion {
+  border-radius: 15px;
+}
+body[dir=ltr] .FNV-SinglePage .container .row .accordion .accordion-item {
+  margin-bottom: 1rem;
+  border-radius: 15px;
+  border-width: 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.0901960784);
+}
+body[dir=ltr] .FNV-SinglePage .container .row .accordion .accordion-item .accordion-header .accordion-button {
+  box-shadow: unset;
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 600;
+}
+body[dir=ltr] .FNV-SinglePage .container .row .accordion .accordion-item .accordion-collapse .accordion-body {
   font-size: 16px;
   line-height: 32px;
   font-weight: 500;
@@ -6950,9 +7039,9 @@ newsletter .container .row .col-md-6 .FNV-Newsletter button svg {
   padding: 0;
 }
 .FNV-Footer .container .row .col-md-4 {
-  padding: 0 5rem 0 1rem;
+  padding: 0 0rem 0 1rem;
 }
-.FNV-Footer .container .row .col-md-4 svg {
+.FNV-Footer .container .row .col-md-4 svg.FNV-Logo {
   width: 80%;
   margin-bottom: 2rem;
 }
@@ -7005,7 +7094,7 @@ newsletter .container .row .col-md-6 .FNV-Newsletter button svg {
   color: #ffffff;
   overflow: hidden;
   z-index: 11;
-  margin-top: 2rem;
+  margin: 1rem 0;
 }
 .FNV-Footer .container .row .col-md-4 .FNV-Social a {
   color: #ffffff;
@@ -7016,10 +7105,34 @@ newsletter .container .row .col-md-6 .FNV-Newsletter button svg {
   height: 20;
 }
 .FNV-Footer .container .row .col-md-4 p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 200;
   color: #ffffff;
   text-align: justify;
+}
+.FNV-Footer .container .row .col-md-4 p.FNV-Address {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+  direction: ltr;
+}
+.FNV-Footer .container .row .col-md-4 p.FNV-Address span {
+  font-size: 14px;
+}
+.FNV-Footer .container .row .col-md-4 p.FNV-Address span svg {
+  width: 15px;
+  margin: 0 0.5rem 0 0;
+  padding: 0;
+}
+.FNV-Footer .container .row .col-md-4 p.FNV-Address a {
+  font-size: 14px;
+  color: #ffffff;
+}
+.FNV-Footer .container .row .col-md-4 p.FNV-Address a {
+  display: block;
 }
 .FNV-Footer .container .row .col-md {
   padding: 0 1rem;
@@ -7120,7 +7233,8 @@ newsletter .container .row .col-md-6 .FNV-Newsletter button svg {
 
 .FNV-Copyright {
   background-color: #FF772C;
-  padding: 2rem;
+  padding: 1rem;
+  direction: ltr;
 }
 .FNV-Copyright .row .col-12 {
   text-align: center;
@@ -7128,7 +7242,7 @@ newsletter .container .row .col-md-6 .FNV-Newsletter button svg {
 .FNV-Copyright .row .col-12 small {
   font-size: 14px;
   color: #d9d9d9;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 /* For mobile phones: */
@@ -7205,7 +7319,7 @@ newsletter .container .row .col-md-6 .FNV-Newsletter button svg {
     padding: 0rem;
     text-align: center;
   }
-  .FNV-Footer .container .row .col-md-4 svg {
+  .FNV-Footer .container .row .col-md-4 svg.FNV-Logo {
     width: 80%;
     margin-bottom: 2rem;
   }
@@ -7258,7 +7372,8 @@ newsletter .container .row .col-md-6 .FNV-Newsletter button svg {
     color: #ffffff;
     overflow: hidden;
     z-index: 11;
-    margin-top: 2rem;
+    margin: 1rem 0;
+    padding: 0;
   }
   .FNV-Footer .container .row .col-md-4 .FNV-Social a {
     color: #ffffff;
@@ -7372,13 +7487,14 @@ newsletter .container .row .col-md-6 .FNV-Newsletter button svg {
   }
   .FNV-Copyright {
     background-color: #FF772C;
-    padding: 2rem;
+    padding: 1rem;
+    direction: ltr;
   }
   .FNV-Copyright .row .col-12 {
     text-align: center;
   }
   .FNV-Copyright .row .col-12 small {
-    font-size: 12px;
+    font-size: 14px;
     color: #d9d9d9;
     font-weight: 600;
   }

@@ -2,6 +2,7 @@ import React, { useEffect, useState, useCallback } from 'react'
 import Link from 'next/link'
 import Logo from 'src/views/logoMain.js'
 import TopBanner from 'src/views/topBanner.js'
+import TopBar from 'src/views/topBar.js'
 import feather from 'feather-icons'
 import { useAuth } from 'src/hooks/useAuth'
 import { useDispatch, useSelector } from 'react-redux'
@@ -185,6 +186,8 @@ const Header = props => {
     <>
       <TopBanner />
 
+      <TopBar />
+
       {user ? (
         <nav  className='navbar navbar-expand-lg bg-body-tertiary d-flex flex-column pb-0 pt-0'>
           <div className='container-fluid'>
@@ -197,7 +200,7 @@ const Header = props => {
             >
               <i data-feather='grid'></i>
             </Link>
-            <Link className='navbar-brand' href={appConfig.appUrl}>
+            <Link className='navbar-brand' href="/">
               <Logo />
             </Link>
             <button
@@ -297,46 +300,6 @@ const Header = props => {
                     {t('courses')}
                   </Link>
                 </li>
-
-                {/* <li className='nav-item dropdown FNV-MegaMenu'>
-                  <Link className='nav-link' href='/' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
-                    Certification
-                  </Link>
-                  <ul className='dropdown-menu'>
-                    <div className='container-fluid'>
-                      <div className='row'>
-                        <div className='col-md-3'>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Action
-                            </Link>
-                          </li>
-                        </div>
-                        <div className='col-md-3'>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Something else here
-                            </Link>
-                          </li>
-                        </div>
-                        <div className='col-md-3'>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Something else here
-                            </Link>
-                          </li>
-                        </div>
-                        <div className='col-md-3'>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Something else here
-                            </Link>
-                          </li>
-                        </div>
-                      </div>
-                    </div>
-                  </ul>
-                </li> */}
 
                 <li className='nav-item dropdown FNV-MegaMenu'>
                   <Link className='nav-link' href='/membership/checkout'>
@@ -457,7 +420,7 @@ const Header = props => {
             >
               <i data-feather='grid'></i>
             </Link>
-            <Link className='navbar-brand' href={appConfig.appUrl}>
+            <Link className='navbar-brand' href="/">
               <Logo />
             </Link>
             <button

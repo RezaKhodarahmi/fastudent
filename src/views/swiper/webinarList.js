@@ -71,12 +71,15 @@ const WebinarDeskSingle = ({ webinars }) => {
   return (
     <>
       <section className='FNV-NewWebinars' dir='ltr'>
+        <h3>{t('webinars-section-title')}</h3>
         <div className='container'>
           <div className='row'>
             <div className='col-12 col-md-5'>
               {/* Rest */}
               {Array.isArray(webinarList) &&
-                webinarList.slice(0, displayCount).map((webinar, index) => (
+                webinarList
+                .slice(0, 3)
+                .map((webinar, index) => (
                   <div key={index} className='col-12'>
                     <div className='d-flex'>
                       <div className='col-7' dir='ltr'>
@@ -94,7 +97,8 @@ const WebinarDeskSingle = ({ webinars }) => {
                       </div>
                     </div>
                   </div>
-                ))}
+                ))
+              }
 
               {displayCount < webinarList.length && (
                 <div className='col-12 text-center'>
@@ -116,12 +120,13 @@ const WebinarDeskSingle = ({ webinars }) => {
                   delay: 3000,
                   disableOnInteraction: false
                 }}
-                navigation={false}
                 modules={[Autoplay]}
                 className='FNV-NewCoursesSwiper'
               >
                 {Array.isArray(webinarList) &&
-                  webinarList.map(webinar => (
+                  webinarList
+                  .slice(0, 4)
+                  .map(webinar => (
                     <>
                       {' '}
                       <SwiperSlide>
