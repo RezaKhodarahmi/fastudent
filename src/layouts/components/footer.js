@@ -181,6 +181,9 @@ const Footer = props => {
               <h4>{t('footer-one')}</h4>
               <ul className='list-group'>
                 <li className='list-group-item'>
+                  <Link href='/blog'>{t('footer-one-blog')}</Link>
+                </li>
+                <li className='list-group-item'>
                   <Link href='/about-us'>{t('footer-one-about')}</Link>
                 </li>
                 <li className='list-group-item'>
@@ -188,9 +191,6 @@ const Footer = props => {
                 </li>
                 <li className='list-group-item'>
                   <Link href='/app/dashboards/main'>{t('footer-one-profile')}</Link>
-                </li>
-                <li className='list-group-item'>
-                  <Link href='/blog'>{t('footer-one-blog')}</Link>
                 </li>
                 <li className='list-group-item'>
                   <Link href='#'>{t('footer-one-training')}</Link>
