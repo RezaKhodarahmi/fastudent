@@ -136,7 +136,7 @@ const Index = () => {
                 <div className='col-7'>
                   <h4>Mona Dejban</h4>
                   <small className='h6 text-muted'></small>
-                  <span>Marketing Manager</span>
+                  <p>Marketing Manager</p>
                 </div>
               </div>
             </div>
@@ -150,7 +150,7 @@ const Index = () => {
                 <div className='col-7'>
                   <h4>Parham FazlAli</h4>
                   <small className='h6 text-muted'></small>
-                  <span>Graphic Designer</span>
+                  <p>Graphic Designer</p>
                 </div>
               </div>
             </div>
@@ -164,7 +164,7 @@ const Index = () => {
                 <div className='col-7'>
                   <h4>Morteza Khodarahmi</h4>
                   <small className='h6 text-muted'>BSc in Software Engineering</small>
-                  <span>Senior Developer</span>
+                  <p>Senior Developer</p>
                 </div>
               </div>
             </div>
@@ -178,7 +178,7 @@ const Index = () => {
                 <div className='col-7'>
                   <h4>Arezou Khanzadeh</h4>
                   <small className='h6 text-muted'>MSc in Interior Design</small>
-                  <span>HR / SEO</span>
+                  <p>HR / SEO</p>
                 </div>
               </div>
             </div>
@@ -192,7 +192,7 @@ const Index = () => {
                 <div className='col-7'>
                   <h4>Maryam Rajabi</h4>
                   <small className='h6 text-muted'></small>
-                  <span>Graphic Designer</span>
+                  <p>Graphic Designer</p>
                 </div>
               </div>
             </div>
@@ -206,7 +206,7 @@ const Index = () => {
                 <div className='col-7'>
                   <h4>Sajad Fatehi</h4>
                   <small className='h6 text-muted'>BSc in Software Engineering</small>
-                  <span>Admin / YouTube Manager</span>
+                  <p>Admin / YouTube Manager</p>
                 </div>
               </div>
             </div>
@@ -220,7 +220,7 @@ const Index = () => {
                 <div className='col-7'>
                   <h4>Khaled Hamidi</h4>
                   <small className='h6 text-muted'></small>
-                  <span>Content Specialist</span>
+                  <p>Content Specialist</p>
                 </div>
               </div>
             </div>
@@ -234,7 +234,7 @@ const Index = () => {
                 <div className='col-7'>
                   <h4>Nima Farhadi</h4>
                   <small className='h6 text-muted'></small>
-                  <span>Graphic Designer</span>
+                  <p>Graphic Designer</p>
                 </div>
               </div>
             </div>
@@ -247,8 +247,8 @@ const Index = () => {
                 </div>
                 <div className='col-7'>
                   <h4>Hesam Bagheri</h4>
-                  <small className='h6 text-muted'></small>
-                  <span>Content</span>
+                  <small className='h6 text-muted'>BSc in Law</small>
+                  <p>Content</p>
                 </div>
               </div>
             </div>
@@ -262,7 +262,7 @@ const Index = () => {
                 <div className='col-7'>
                   <h4>Roya Karami</h4>
                   <small className='h6 text-muted'>MSc in Industrial Engineering</small>
-                  <span>Sales Manager</span>
+                  <p>Sales Manager</p>
                 </div>
               </div>
             </div>
