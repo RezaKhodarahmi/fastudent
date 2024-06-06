@@ -14,6 +14,10 @@ import { setCartItems } from 'src/store/apps/cart'
 import BASE_URL from 'src/api/BASE_URL'
 import toast from 'react-hot-toast'
 import { useRouter } from 'next/router'
+import { Checkbox, FormControlLabel, Button, Typography, Box } from '@mui/material'
+
+// ** Import Translation
+import { useTranslation } from 'react-i18next'
 
 // recreating the `Stripe` object on every render.
 const stripePromise = loadStripe(themeConfig.stripePublicKey)
@@ -21,6 +25,8 @@ const stripePromise = loadStripe(themeConfig.stripePublicKey)
 const Index = () => {
   //initial state
   const cartCoupon = [{ code: null, discount: null }]
+
+  const { t } = useTranslation()
 
   //Set states
   const dispatch = useDispatch()
@@ -46,6 +52,22 @@ const Index = () => {
   const [partially, setPartially] = useState(true)
   const [stripePay, setStripePay] = useState(true)
   const [isRenew, setIsRenew] = useState(false)
+
+  const [checkboxes, setCheckboxes] = useState({
+    checkbox1: false,
+    checkbox2: false,
+    checkbox3: false,
+    checkbox4: false
+  })
+
+  const handleChangeCheckBox = event => {
+    setCheckboxes({
+      ...checkboxes,
+      [event.target.name]: event.target.checked
+    })
+  }
+
+  const allChecked = Object.values(checkboxes).every(Boolean)
 
   //Hooks
   const courses = useSelector(state => state.course)
@@ -294,11 +316,13 @@ const Index = () => {
   const applyCouponHandler = e => {
     if (!email) {
       window.alert('You must be logged in to use the discount code!')
+
       return
     }
 
     if (!coupon) {
       window.alert('Please insert a valid coupon!')
+
       return
     }
 
@@ -306,7 +330,7 @@ const Index = () => {
       setLoading(true)
       const uppercaseCoupon = coupon.toUpperCase()
 
-      dispatch(verifyCouponCode({ coupon: uppercaseCoupon, user: email, cycles: cartCourses, referred: referralUser }))
+      dispatch(verifyCouponCode({ coupon: coupon, user: email, cycles: cartCourses, referred: referralUser }))
     } else {
       window.alert('Cart is empty!')
     }
@@ -735,9 +759,43 @@ const Index = () => {
                 <h5 className='d-flex justify-content-between FNV-Total'>
                   Total: <span>${cartTotal || 0}</span>
                 </h5>
+                <Box sx={{ maxWidth: 600, margin: '0 auto', padding: 2, backgroundColor: '#f5f5f5', borderRadius: 2 }}>
+                  <Typography variant='h6' gutterBottom>
+                    {t('agree-following-terms')}
+                  </Typography>
+                  <FormControlLabel
+                    control={
+                      <Checkbox name='checkbox1' checked={checkboxes.checkbox1} onChange={handleChangeCheckBox} />
+                    }
+                    label={t('agree-terms-first')}
+                  />
+                  <FormControlLabel
+                    control={
+                      <Checkbox name='checkbox2' checked={checkboxes.checkbox2} onChange={handleChangeCheckBox} />
+                    }
+                    label={t('agree-terms-second')}
+                  />
+                  <FormControlLabel
+                    control={
+                      <Checkbox name='checkbox3' checked={checkboxes.checkbox3} onChange={handleChangeCheckBox} />
+                    }
+                    label={t('agree-terms-third')}
+                  />
+                  <FormControlLabel
+                    control={
+                      <Checkbox name='checkbox4' checked={checkboxes.checkbox4} onChange={handleChangeCheckBox} />
+                    }
+                    label={t('agree-terms-fourth')}
+                  />
+                </Box>
+
                 {email
                   ? partially && (
-                      <button onClick={handelInitiatePartiallyPayment} className='FNV-Btn BtnPrimary BtnMedium'>
+                      <button
+                        disabled={!allChecked}
+                        onClick={handelInitiatePartiallyPayment}
+                        className='FNV-Btn BtnPrimary BtnMedium'
+                      >
                         Pay Partially
                       </button>
                     )
@@ -745,14 +803,24 @@ const Index = () => {
                 {email ? (
                   checkout && stripePay && clientSecret ? (
                     <Elements options={options} stripe={stripePromise}>
-                      <CheckoutForm items={cartCourses} user={email} coupon={coupon} fullName={fullName} />
+                      <CheckoutForm
+                        allChecked={allChecked}
+                        items={cartCourses}
+                        user={email}
+                        coupon={coupon}
+                        fullName={fullName}
+                      />
                     </Elements>
                   ) : (
                     <>
                       {localCartItem?.length >= 1 ? (
                         <>
                           {' '}
-                          <button onClick={handelInitiatePayment} className='FNV-Btn BtnPrimary BtnMedium'>
+                          <button
+                            disabled={!allChecked}
+                            onClick={handelInitiatePayment}
+                            className='FNV-Btn BtnPrimary BtnMedium'
+                          >
                             Full payment
                           </button>
                         </>

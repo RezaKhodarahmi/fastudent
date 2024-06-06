@@ -32,6 +32,20 @@ module.exports = {
       }
     ]
   },
+  async headers() {
+    return [
+      {
+        source: '/_next/static/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable'
+          }
+        ]
+      }
+    ]
+  },
+
   // If you have webpack configuration, it goes outside the redirects function
   webpack: (config, { isServer }) => {
     // Example webpack configuration

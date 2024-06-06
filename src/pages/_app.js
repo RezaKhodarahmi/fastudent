@@ -11,8 +11,6 @@ import nextI18NextConfig from 'src/configs/i18n'
 import { store } from 'src/store'
 import { Provider } from 'react-redux'
 
-import ReactGA from 'react-ga4'
-
 // ** Loader Import
 import NProgress from 'nprogress'
 
@@ -24,12 +22,9 @@ import 'src/configs/i18n'
 import { defaultACLObj } from 'src/configs/acl'
 import themeConfig from 'src/configs/themeConfig'
 
-// ** Fake-DB Import
-
 // ** Third Party Import
 import { Toaster } from 'react-hot-toast'
 
-// import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3'
 // ** Component Imports
 import UserLayout from 'src/layouts/UserLayout'
 import AclGuard from 'src/@core/components/auth/AclGuard'
@@ -89,7 +84,6 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 
 const clientSideEmotionCache = createEmotionCache()
-ReactGA.initialize('G-HVW076GTCV')
 
 // ** Pace Loader
 if (themeConfig.routingLoader) {
@@ -152,20 +146,78 @@ const App = props => {
 
   return (
     <Provider store={store}>
-      {/* <GoogleReCaptchaProvider reCaptchaKey='6LdOdHgdAAAAAGWsjsBrXmsXtpTviMp6sgVlB1ty'> */}
       <CacheProvider value={emotionCache}>
         <Head>
-          <title>{`${themeConfig.templateName} - Institute of Technology and Engineering`}</title>
-          <link rel='manifest' href='/manifest.json' crossorigin='use-credentials' />
-          <meta http-equiv='Cache-Control' content='no-cache, no-store, must-revalidate' />
-          <meta http-equiv='Pragma' content='no-cache' />
-          <meta http-equiv='Expires' content='0' />
+          <title>
+            {pageProps.post
+              ? pageProps.post.metaTitle
+              : `${themeConfig.templateName} - Institute of Technology and Engineering`}
+          </title>
           <meta
             name='description'
-            content={`${themeConfig.templateName} – Our main goal at Fanavaran Technical and Engineering Institute is to provide quality education for Iranian immigrants in Canada to advance their careers and obtain the required licenses.`}
+            content={
+              pageProps.post
+                ? pageProps.post.metaDescription
+                : `${themeConfig.templateName} – Our main goal at Fanavaran Technical and Engineering Institute is to provide quality education for Iranian immigrants in Canada to advance their careers and obtain the required licenses.`
+            }
           />
-          <meta name='keywords' content='Fanavaran, Engineering, Mechanical, Plumbing, Electrician, Architectural' />
-          <meta name='viewport' content='initial-scale=1, width=device-width' />
+          <meta
+            name='keywords'
+            content={
+              pageProps.post
+                ? pageProps.post.keywords
+                : 'Fanavaran, Engineering, Mechanical, Plumbing, Electrician, Architectural'
+            }
+          />
+          <meta
+            property='og:title'
+            content={
+              pageProps.post
+                ? pageProps.post.metaTitle
+                : `${themeConfig.templateName} - Institute of Technology and Engineering`
+            }
+          />
+          <meta
+            property='og:description'
+            content={
+              pageProps.post
+                ? pageProps.post.metaDescription
+                : `${themeConfig.templateName} – Our main goal at Fanavaran Technical and Engineering Institute is to provide quality education for Iranian immigrants in Canada to advance their careers and obtain the required licenses.`
+            }
+          />
+          <meta property='og:image' content={pageProps.post ? pageProps.post.image : '/default-image.jpg'} />
+          <meta
+            property='og:url'
+            content={pageProps.post ? `https://fanavaran.ca/blog/${pageProps.post.slug}` : 'https://fanavaran.ca'}
+          />
+          <meta property='og:type' content='article' />
+          <meta name='twitter:card' content='summary_large_image' />
+          <meta
+            name='twitter:title'
+            content={
+              pageProps.post
+                ? pageProps.post.metaTitle
+                : `${themeConfig.templateName} - Institute of Technology and Engineering`
+            }
+          />
+          <meta
+            name='twitter:description'
+            content={
+              pageProps.post
+                ? pageProps.post.metaDescription
+                : `${themeConfig.templateName} – Our main goal at Fanavaran Technical and Engineering Institute is to provide quality education for Iranian immigrants in Canada to advance their careers and obtain the required licenses.`
+            }
+          />
+          <meta name='twitter:image' content={pageProps.post ? pageProps.post.image : '/default-image.jpg'} />
+          <meta property='og:site_name' content='Fanavaran' />
+          <meta
+            property='og:image:alt'
+            content={
+              pageProps.post
+                ? pageProps.post.metaTitle
+                : `${themeConfig.templateName} - Institute of Technology and Engineering`
+            }
+          />
         </Head>
         <AuthProvider>
           <SettingsProvider {...(setConfig ? { pageSettings: setConfig() } : {})}>
@@ -190,8 +242,6 @@ const App = props => {
           </SettingsProvider>
         </AuthProvider>
       </CacheProvider>
-
-      {/* </GoogleReCaptchaProvider> */}
     </Provider>
   )
 }

@@ -507,7 +507,7 @@ const Course = () => {
                         <h4>{t('single-course-introduction')}</h4>
                       </div>
                       {/* Body */}
-                      <div className='FNV-Course-Card-Body'>
+                      <div className='FNV-Course-Card-Body' style={{direction:"rtl"}}>
                         <div
                           className='non-clickable-content'
                           dangerouslySetInnerHTML={{ __html: data?.description }}
