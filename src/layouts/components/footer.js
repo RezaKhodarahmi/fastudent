@@ -157,11 +157,11 @@ const Footer = props => {
 
               <p className='FNV-Address'>
                 <span>
-                  <i data-feather="map-pin"></i> Vancouver:
+                  <i data-feather="map-pin"></i> British Columbia:
                 </span>
 
                 <Link href="https://maps.app.goo.gl/ea37TSxFnQh95GLZ6" target='_blank'>
-                  UNIT 4 , 839 W 1st St, North Vancouver, BC V7P 1A4
+                  Unit 4 - 839 W 1st St, North Vancouver, BC V7P 1A4
                 </Link>
               </p>
 
@@ -171,7 +171,7 @@ const Footer = props => {
                 </span>
 
                 <Link href="https://maps.app.goo.gl/noHtxRDKu23mmQFx5" target='_blank'>
-                  UNIT #3 - 33 GLEN CAMERON ROAD, Markham, Ontario L3T1N9
+                  Unit 3 - 33 Glen Cameron Road, Markham, ON L3T 1N9
                 </Link>
               </p>
             </div>
@@ -181,6 +181,9 @@ const Footer = props => {
               <h4>{t('footer-one')}</h4>
               <ul className='list-group'>
                 <li className='list-group-item'>
+                  <Link href='/blog'>{t('footer-one-blog')}</Link>
+                </li>
+                <li className='list-group-item'>
                   <Link href='/about-us'>{t('footer-one-about')}</Link>
                 </li>
                 <li className='list-group-item'>
@@ -188,9 +191,6 @@ const Footer = props => {
                 </li>
                 <li className='list-group-item'>
                   <Link href='/app/dashboards/main'>{t('footer-one-profile')}</Link>
-                </li>
-                <li className='list-group-item'>
-                  <Link href='/blog'>{t('footer-one-blog')}</Link>
                 </li>
                 <li className='list-group-item'>
                   <Link href='#'>{t('footer-one-training')}</Link>
