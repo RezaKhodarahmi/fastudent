@@ -231,10 +231,11 @@ const Index = () => {
             <div className='col-12 col-md-4 p-0'>
               <div className='row p-0'>
                 <div className='col-5'>
-                  <img src='' className='img-fluid' />
+                  <img src='img/team/hesam_bagheri.jpg' className='img-fluid' />
                 </div>
                 <div className='col-7'>
                   <h4>Hesam Bagheri</h4>
+                  <small className='h6 text-muted'></small>
                   <span>Content</span>
                 </div>
               </div>
@@ -249,6 +250,62 @@ const Index = () => {
                 <div className='col-7'>
                   <h4>Roya Karami</h4>
                   <span>Sales Manager</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Item */}
+            <div className='col-12 col-md-4 p-0'>
+              <div className='row p-0'>
+                <div className='col-5'>
+                  <img src='img/team/bahareh_hashemi.jpg' className='img-fluid' />
+                </div>
+                <div className='col-7'>
+                  <h4>Bahareh Hashemi</h4>
+                  <small className='h6 text-muted'>BSc in Multimedia</small>
+                  <span>Video Editor</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Item */}
+            <div className='col-12 col-md-4 p-0'>
+              <div className='row p-0'>
+                <div className='col-5'>
+                  <img src='img/team/elnaz_yousefi.jpg' className='img-fluid' />
+                </div>
+                <div className='col-7'>
+                  <h4>Elnaz Yousefi</h4>
+                  <small className='h6 text-muted'>MSc, M.Eng, PMP</small>
+                  <span>Project Coordinator</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Item */}
+            <div className='col-12 col-md-4 p-0'>
+              <div className='row p-0'>
+                <div className='col-5'>
+                  <img src='img/team/kiarash_kiarasi.jpg' className='img-fluid' />
+                </div>
+                <div className='col-7'>
+                  <h4>Kiarash Kiarasi</h4>
+                  <small className='h6 text-muted'>BSc, PMP</small>
+                  <span>Project Coordinator</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Item */}
+            <div className='col-12 col-md-4 p-0'>
+              <div className='row p-0'>
+                <div className='col-5'>
+                  <img src='img/team/roya_karami.jpg' className='img-fluid' />
+                </div>
+                <div className='col-7'>
+                  <h4>Hanieh Bababdi</h4>
+                  <small className='h6 text-muted'>BSc in Video Editing</small>
+                  <span>Video Editor</span>
                 </div>
               </div>
             </div>
