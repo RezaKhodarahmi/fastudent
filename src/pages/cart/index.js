@@ -195,7 +195,6 @@ const Index = () => {
 
   //Initiate The payment
   const handelInitiatePayment = () => {
-
     setPartially(false)
     if (cartTotal > 0) {
       if (clientSecret === null) {
@@ -295,17 +294,21 @@ const Index = () => {
   const applyCouponHandler = e => {
     if (!email) {
       window.alert('You must be logged in to use the discount code!')
+      return
     }
 
     if (!coupon) {
       window.alert('Please insert a valid coupon!')
+      return
+    }
+
+    if (cartCourses.length) {
+      setLoading(true)
+      const uppercaseCoupon = coupon.toUpperCase()
+
+      dispatch(verifyCouponCode({ coupon: uppercaseCoupon, user: email, cycles: cartCourses, referred: referralUser }))
     } else {
-      if (cartCourses.length) {
-        setLoading(true)
-        dispatch(verifyCouponCode({ coupon: coupon, user: email, cycles: cartCourses, referred: referralUser }))
-      } else {
-        window.alert('Cart is empty!')
-      }
+      window.alert('Cart is empty!')
     }
   }
 
