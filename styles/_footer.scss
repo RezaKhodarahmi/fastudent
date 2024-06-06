@@ -1,330 +1,664 @@
 @import './variables';
 
-newsletter{
-  background-color: $PrimaryColor;
-  border-top: 0px solid $PrimaryColor;
-  padding: 4rem 2rem;
-  display: block;
-  border-bottom: 2px solid $WhiteColor;
-
-  .container{
-    .row{
-      .col-md-6{
-        padding: 0;
-
-          h3{
-            font-size: 24px;
-            font-weight: bold;
+body[dir='rtl'] {
+  newsletter{
+    background-color: $PrimaryColor;
+    border-top: 0px solid $PrimaryColor;
+    padding: 4rem 2rem;
+    display: block;
+    border-bottom: 2px solid $WhiteColor;
+  
+    .container{
+      .row{
+        .col-md-6{
+          padding: 0;
+  
+            h3{
+              font-size: 24px;
+              font-weight: bold;
+              color: $WhiteColor;
+            }
+    
+            p{
+              color: $WhiteColor;
+              font-size: 12px;
+              font-weight: 400;
+            }
+  
+          .FNV-Newsletter {
+            background-color: rgba(255, 255, 255, 0.6);
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            padding: .8rem;
+            border: 1px solid $WhiteColor;
+  
+            div{
+              width: 85%;
+  
+              .FNV-NewsletterInput {
+                background-color: transparent !important;
+                border-width: 0;
+                box-shadow: unset;
+                border-radius: 15px;
+                color: $PrimaryColor;
+                font-size: 16px;
+                font-weight: 400;
+    
+                &::placeholder,
+                &:-ms-input-placeholder {
+                  color: $PrimaryColor !important;
+                }
+              }
+  
+              &::after,
+              &::before {
+                display: none;
+              }
+            }
+  
+            button {
+              background-color: $PrimaryColor;
+              color: $WhiteColor;
+              border-radius: 15px 15px 15px 15px !important;
+              width: 15%;
+  
+              svg {
+                width: 30px;
+                height: 30px;
+                color: $WhiteColor
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .FNV-Footer {
+    background-color: $PrimaryColor;
+    padding: 4rem 2rem;
+  
+    .container {
+      padding: 0;
+      .row {
+        .col-md-4 {
+          padding: 0 0rem 0 4rem;
+  
+          svg.FNV-Logo{
+            width: 80%;
+            margin-bottom: 2rem;
+          }
+          
+          .d-flex{
+            justify-content: space-between;
+            
+            a{
+              font-size: 14px;
+              font-weight: 400;
+              border: 1px solid $WhiteColor;
+              border-radius: 8px;
+              color: $WhiteColor;
+              width: 100%;
+              text-align: center;
+              padding: .2rem 1rem;
+              direction: ltr;
+            }
+          }
+          
+          h4 {
+            font-size: 16px;
             color: $WhiteColor;
+            font-weight: bold;
+          }
+          
+          .list-group{
+            background-color: transparent;
+            padding: 0;
+  
+            .list-group-item{
+              background-color: transparent;
+              border-width: 0;
+              padding: 0rem 0 0;
+  
+              a{
+                color: $GrayTwoColor;
+                font-size: 14px;
+                transition: .3s all ease-in-out;
+  
+                svg{
+                  width: 16px;
+                  height: 16px;
+                  margin-left: .5rem;
+                }
+  
+                &:hover{
+                  color: $WhiteColor;
+                }
+              }
+            }
+          }
+  
+          // Social
+          .FNV-Social {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            color: $WhiteColor;
+            overflow: hidden;
+            z-index: 11;
+            margin: 1rem 0;
+  
+            a {
+              color: $WhiteColor;
+              border-radius: 5px;
+  
+              svg {
+                width: 20;
+                height: 20;
+              }
+            }
           }
   
           p{
+            font-size: 16px;
+            font-weight: 200;
             color: $WhiteColor;
-            font-size: 12px;
-            font-weight: 400;
-          }
-
-        .FNV-Newsletter {
-          background-color: rgba(255, 255, 255, 0.6);
-          width: 100%;
-          border-radius: 15px;
-          overflow: hidden;
-          padding: .8rem;
-          border: 1px solid $WhiteColor;
-
-          div{
-            width: 85%;
-
-            .FNV-NewsletterInput {
-              background-color: transparent !important;
-              border-width: 0;
-              box-shadow: unset;
-              border-radius: 15px;
-              color: $PrimaryColor;
-              font-size: 16px;
-              font-weight: 400;
+            text-align: justify;
   
-              &::placeholder,
-              &:-ms-input-placeholder {
-                color: $PrimaryColor !important;
+            &.FNV-Address{
+              text-align: left;
+              display: flex;
+              flex-direction: column;
+              align-items: start;
+              justify-content: space-between;
+              width: 100%;
+              direction: ltr;
+  
+              span{
+                font-size: 14px;
+                svg{
+                  width: 15px;
+                  margin: 0 .5rem 0 0;
+                  padding: 0;
+                }
+              }
+  
+              a{
+                font-size: 14px;
+                color: $WhiteColor;
+              }
+  
+              a{
+                display: block;
               }
             }
-
-            &::after,
-            &::before {
-              display: none;
-            }
           }
-
-          button {
-            background-color: $PrimaryColor;
+        }
+  
+        .col-md {
+          padding: 0 1rem;
+          
+          h4 {
+            font-size: 18px;
             color: $WhiteColor;
-            border-radius: 15px 15px 15px 15px !important;
-            width: 15%;
-
-            svg {
-              width: 30px;
-              height: 30px;
-              color: $WhiteColor
+            font-weight: bold;
+          }
+          
+          .list-group{
+            background-color: transparent;
+            padding: 0;
+  
+            .list-group-item{
+              background-color: transparent;
+              border-width: 0;
+              padding: .5rem 0 0;
+  
+              a{
+                color: $GrayTwoColor;
+                font-size: 14px;
+                transition: .3s all ease-in-out;
+  
+                svg{
+                  width: 16px;
+                  height: 16px;
+                  margin-right: .5rem;
+                }
+  
+                &:hover{
+                  color: $WhiteColor;
+                }
+              }
             }
           }
+  
+          // Social
+          .FNV-Social {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            color: $WhiteColor;
+            overflow: hidden;
+            z-index: 11;
+  
+            a {
+              color: $WhiteColor;
+              border-radius: 5px;
+  
+              &.FNV-Instagram {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #d6249f;
+                background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+              }
+  
+              &.FNV-Youtube {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #c4302b;
+              }
+  
+              &.FNV-Linkedin {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #0072b1;
+              }
+  
+              &.FNV-Facebook {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #3b5998;
+              }
+  
+              &.FNV-Telegram {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #0088cc;
+              }
+  
+              svg {
+                width: 18px;
+                height: 18px;
+              }
+            }
+          }
+  
+          &:first-child{
+            padding-right: 1rem;
+            padding-left: 0;
+          }
+  
+          &:last-child{
+            padding-left: 1rem;
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+  
+  .FNV-Copyright{
+    background-color: $SecondaryColor;
+    padding: 1rem;
+    direction: ltr;
+    
+    .row{
+      .col-12{
+        text-align: center;
+        small{
+          font-size: 14px;
+          color: $GrayTwoColor;
+          font-weight: 600;
         }
       }
     }
   }
 }
 
-.FNV-Footer {
-  background-color: $PrimaryColor;
-  padding: 4rem 2rem;
-
-  .container {
-    padding: 0;
-    .row {
-      .col-md-4 {
-        padding: 0 0rem 0 1rem;
-
-        svg.FNV-Logo{
-          width: 80%;
-          margin-bottom: 2rem;
-        }
-        
-        .d-flex{
-          justify-content: space-between;
-          
-          a{
-            font-size: 14px;
-            font-weight: 400;
-            border: 1px solid $WhiteColor;
-            border-radius: 8px;
-            color: $WhiteColor;
-            width: 100%;
-            text-align: center;
-            padding: .2rem 1rem;
-            direction: ltr;
-          }
-        }
-        
-        h4 {
-          font-size: 16px;
-          color: $WhiteColor;
-          font-weight: bold;
-        }
-        
-        .list-group{
-          background-color: transparent;
+body[dir='ltr'] {
+  newsletter{
+    background-color: $PrimaryColor;
+    border-top: 0px solid $PrimaryColor;
+    padding: 4rem 2rem;
+    display: block;
+    border-bottom: 2px solid $WhiteColor;
+  
+    .container{
+      .row{
+        .col-md-6{
           padding: 0;
-
-          .list-group-item{
-            background-color: transparent;
-            border-width: 0;
-            padding: 0rem 0 0;
-
-            a{
-              color: $GrayTwoColor;
-              font-size: 14px;
-              transition: .3s all ease-in-out;
-
-              svg{
-                width: 16px;
-                height: 16px;
-                margin-left: .5rem;
-              }
-
-              &:hover{
-                color: $WhiteColor;
-              }
-            }
-          }
-        }
-
-        // Social
-        .FNV-Social {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-          color: $WhiteColor;
-          overflow: hidden;
-          z-index: 11;
-          margin: 1rem 0;
-
-          a {
-            color: $WhiteColor;
-            border-radius: 5px;
-
-            svg {
-              width: 20;
-              height: 20;
-            }
-          }
-        }
-
-        p{
-          font-size: 16px;
-          font-weight: 200;
-          color: $WhiteColor;
-          text-align: justify;
-
-          &.FNV-Address{
-            text-align: left;
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            justify-content: space-between;
-            width: 100%;
-            direction: ltr;
-
-            span{
-              font-size: 14px;
-              svg{
-                width: 15px;
-                margin: 0 .5rem 0 0;
-                padding: 0;
-              }
-            }
-
-            a{
-              font-size: 14px;
+  
+            h3{
+              font-size: 24px;
+              font-weight: bold;
               color: $WhiteColor;
             }
-
-            a{
-              display: block;
+    
+            p{
+              color: $WhiteColor;
+              font-size: 12px;
+              font-weight: 400;
             }
-          }
-        }
-      }
-
-      .col-md {
-        padding: 0 1rem;
-        
-        h4 {
-          font-size: 18px;
-          color: $WhiteColor;
-          font-weight: bold;
-        }
-        
-        .list-group{
-          background-color: transparent;
-          padding: 0;
-
-          .list-group-item{
-            background-color: transparent;
-            border-width: 0;
-            padding: .5rem 0 0;
-
-            a{
-              color: $GrayTwoColor;
-              font-size: 14px;
-              transition: .3s all ease-in-out;
-
-              svg{
-                width: 16px;
-                height: 16px;
-                margin-right: .5rem;
+  
+          .FNV-Newsletter {
+            background-color: rgba(255, 255, 255, 0.6);
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            padding: .8rem;
+            border: 1px solid $WhiteColor;
+  
+            div{
+              width: 85%;
+  
+              .FNV-NewsletterInput {
+                background-color: transparent !important;
+                border-width: 0;
+                box-shadow: unset;
+                border-radius: 15px;
+                color: $PrimaryColor;
+                font-size: 16px;
+                font-weight: 400;
+    
+                &::placeholder,
+                &:-ms-input-placeholder {
+                  color: $PrimaryColor !important;
+                }
               }
-
-              &:hover{
-                color: $WhiteColor;
+  
+              &::after,
+              &::before {
+                display: none;
               }
             }
-          }
-        }
-
-        // Social
-        .FNV-Social {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-          color: $WhiteColor;
-          overflow: hidden;
-          z-index: 11;
-
-          a {
-            color: $WhiteColor;
-            border-radius: 5px;
-
-            &.FNV-Instagram {
-              width: 50px;
-              height: 50px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              background: #d6249f;
-              background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-            }
-
-            &.FNV-Youtube {
-              width: 50px;
-              height: 50px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              background: #c4302b;
-            }
-
-            &.FNV-Linkedin {
-              width: 50px;
-              height: 50px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              background: #0072b1;
-            }
-
-            &.FNV-Facebook {
-              width: 50px;
-              height: 50px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              background: #3b5998;
-            }
-
-            &.FNV-Telegram {
-              width: 50px;
-              height: 50px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              background: #0088cc;
-            }
-
-            svg {
-              width: 18px;
-              height: 18px;
+  
+            button {
+              background-color: $PrimaryColor;
+              color: $WhiteColor;
+              border-radius: 15px 15px 15px 15px !important;
+              width: 15%;
+  
+              svg {
+                width: 30px;
+                height: 30px;
+                color: $WhiteColor
+              }
             }
           }
-        }
-
-        &:first-child{
-          padding-right: 1rem;
-          padding-left: 0;
-        }
-
-        &:last-child{
-          padding-left: 1rem;
-          padding-right: 0;
         }
       }
     }
   }
-}
-
-.FNV-Copyright{
-  background-color: $SecondaryColor;
-  padding: 1rem;
-  direction: ltr;
   
-  .row{
-    .col-12{
-      text-align: center;
-      small{
-        font-size: 14px;
-        color: $GrayTwoColor;
-        font-weight: 600;
+  .FNV-Footer {
+    background-color: $PrimaryColor;
+    padding: 4rem 2rem;
+  
+    .container {
+      padding: 0;
+      .row {
+        .col-md-4 {
+          padding: 0 4rem 0 0rem;
+  
+          svg.FNV-Logo{
+            width: 80%;
+            margin-bottom: 2rem;
+          }
+          
+          .d-flex{
+            justify-content: space-between;
+            
+            a{
+              font-size: 14px;
+              font-weight: 400;
+              border: 1px solid $WhiteColor;
+              border-radius: 8px;
+              color: $WhiteColor;
+              width: 100%;
+              text-align: center;
+              padding: .2rem 1rem;
+              direction: ltr;
+            }
+          }
+          
+          h4 {
+            font-size: 16px;
+            color: $WhiteColor;
+            font-weight: bold;
+          }
+          
+          .list-group{
+            background-color: transparent;
+            padding: 0;
+  
+            .list-group-item{
+              background-color: transparent;
+              border-width: 0;
+              padding: 0rem 0 0;
+  
+              a{
+                color: $GrayTwoColor;
+                font-size: 14px;
+                transition: .3s all ease-in-out;
+  
+                svg{
+                  width: 16px;
+                  height: 16px;
+                  margin-left: .5rem;
+                }
+  
+                &:hover{
+                  color: $WhiteColor;
+                }
+              }
+            }
+          }
+  
+          // Social
+          .FNV-Social {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            color: $WhiteColor;
+            overflow: hidden;
+            z-index: 11;
+            margin: 1rem 0;
+  
+            a {
+              color: $WhiteColor;
+              border-radius: 5px;
+  
+              svg {
+                width: 20;
+                height: 20;
+              }
+            }
+          }
+  
+          p{
+            font-size: 16px;
+            font-weight: 200;
+            color: $WhiteColor;
+            text-align: justify;
+  
+            &.FNV-Address{
+              text-align: left;
+              display: flex;
+              flex-direction: column;
+              align-items: start;
+              justify-content: space-between;
+              width: 100%;
+              direction: ltr;
+  
+              span{
+                font-size: 14px;
+                svg{
+                  width: 15px;
+                  margin: 0 .5rem 0 0;
+                  padding: 0;
+                }
+              }
+  
+              a{
+                font-size: 14px;
+                color: $WhiteColor;
+              }
+  
+              a{
+                display: block;
+              }
+            }
+          }
+        }
+  
+        .col-md {
+          padding: 0 1rem;
+          
+          h4 {
+            font-size: 18px;
+            color: $WhiteColor;
+            font-weight: bold;
+          }
+          
+          .list-group{
+            background-color: transparent;
+            padding: 0;
+  
+            .list-group-item{
+              background-color: transparent;
+              border-width: 0;
+              padding: .5rem 0 0;
+  
+              a{
+                color: $GrayTwoColor;
+                font-size: 14px;
+                transition: .3s all ease-in-out;
+  
+                svg{
+                  width: 16px;
+                  height: 16px;
+                  margin-right: .5rem;
+                }
+  
+                &:hover{
+                  color: $WhiteColor;
+                }
+              }
+            }
+          }
+  
+          // Social
+          .FNV-Social {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            color: $WhiteColor;
+            overflow: hidden;
+            z-index: 11;
+  
+            a {
+              color: $WhiteColor;
+              border-radius: 5px;
+  
+              &.FNV-Instagram {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #d6249f;
+                background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+              }
+  
+              &.FNV-Youtube {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #c4302b;
+              }
+  
+              &.FNV-Linkedin {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #0072b1;
+              }
+  
+              &.FNV-Facebook {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #3b5998;
+              }
+  
+              &.FNV-Telegram {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #0088cc;
+              }
+  
+              svg {
+                width: 18px;
+                height: 18px;
+              }
+            }
+          }
+  
+          &:first-child{
+            padding-right: 1rem;
+            padding-left: 0;
+          }
+  
+          &:last-child{
+            padding-left: 1rem;
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+  
+  .FNV-Copyright{
+    background-color: $SecondaryColor;
+    padding: 1rem;
+    direction: ltr;
+    
+    .row{
+      .col-12{
+        text-align: center;
+        small{
+          font-size: 14px;
+          color: $GrayTwoColor;
+          font-weight: 600;
+        }
       }
     }
   }
