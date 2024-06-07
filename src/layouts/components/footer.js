@@ -171,7 +171,7 @@ const Footer = props => {
                 </span>
 
                 <Link href="https://maps.app.goo.gl/noHtxRDKu23mmQFx5" target='_blank'>
-                  Unit 3 - 33 Glen Cameron Road, Markham, ON L3T 1N9
+                  Unit 3 - 33 Glen Cameron Road, Thornhill, ON L3T 1N9
                 </Link>
               </p>
             </div>
