@@ -124,7 +124,7 @@
   "the-course-category":"Category:",
   "the-last-cycle":"Start date:",
   "courses-section-title": "New Courses",
-  "webinars-section-title": "New webinars",
+  "webinars-section-title": "New Webinars",
   "blogs-section-title": "Blogs",
   "blogs-section-readmore": "Read More",
   "blogs-section-button": "See All Blogs",
@@ -185,6 +185,7 @@
   "footer-three-mock": "Mock Exam Tutorials",
   "footer-three-certificate": "Fanavaran Certificate",
   "footer-three-privacy": "Privacy Policy",
+  "footer-three-refund-privacy": "Refund Policy",
   "footer-three-faq": "Frequently Asked Questions",
 
   "footer-copyright": "Copyright © 2015-2023 Fanavaran. All rights reserved.",
