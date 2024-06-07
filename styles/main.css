@@ -4417,7 +4417,7 @@ body[dir=ltr] .FNV-SinglePage .container .row .accordion .accordion-item .accord
 }
 .FNV-Single-Post .container .row .col-12.FNV-FeatureImage img {
   width: 100%;
-  height: 350px;
+  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center center;
@@ -4473,6 +4473,10 @@ body[dir=ltr] .FNV-SinglePage .container .row .accordion .accordion-item .accord
   font-weight: 400;
   color: #000000;
 }
+.FNV-Single-Post .container .row .col-12.FNV-Content img {
+  max-width: 100%;
+  border-radius: 10px;
+}
 
 .FNV-Blog-Related {
   background: rgb(0, 59, 191);
@@ -4512,7 +4516,7 @@ body[dir=ltr] .FNV-SinglePage .container .row .accordion .accordion-item .accord
   position: absolute;
 }
 .FNV-Blog-Related .container .row .col-12 .swiper .swiper-wrapper .swiper-slide {
-  padding: 0 0 10rem;
+  padding: 0 0 2rem;
 }
 .FNV-Blog-Related .container .row .col-12 .swiper .swiper-wrapper .swiper-slide .card {
   border-width: 0;
@@ -4641,10 +4645,10 @@ body[dir=ltr] .FNV-SinglePage .container .row .accordion .accordion-item .accord
   width: auto;
 }
 
-.FNV-BlogPage {
+body[dir=ltr] .FNV-BlogPage {
   background-color: linear-gradient(180deg, rgba(0, 59, 191, 0.1993172269) 0%, rgb(255, 255, 255) 100%);
 }
-.FNV-BlogPage .FNV-Header {
+body[dir=ltr] .FNV-BlogPage .FNV-Header {
   background-image: unset;
   background-color: #FF772C;
   background-repeat: no-repeat;
@@ -4654,46 +4658,46 @@ body[dir=ltr] .FNV-SinglePage .container .row .accordion .accordion-item .accord
   margin-bottom: 2rem;
   height: unset;
 }
-.FNV-BlogPage .FNV-Header .container {
+body[dir=ltr] .FNV-BlogPage .FNV-Header .container {
   padding: 0;
 }
-.FNV-BlogPage .FNV-Header .container .row {
+body[dir=ltr] .FNV-BlogPage .FNV-Header .container .row {
   justify-content: center;
 }
-.FNV-BlogPage .FNV-Header .container .row .FNV-HCard {
+body[dir=ltr] .FNV-BlogPage .FNV-Header .container .row .FNV-HCard {
   text-align: center;
 }
-.FNV-BlogPage .FNV-Header .container .row .FNV-HCard h1 {
+body[dir=ltr] .FNV-BlogPage .FNV-Header .container .row .FNV-HCard h1 {
   text-transform: capitalize;
   font-weight: 800;
   font-size: 36px;
   margin-bottom: 0;
   color: #ffffff;
 }
-.FNV-BlogPage .FNV-Header .container .row .FNV-HCard h5 {
+body[dir=ltr] .FNV-BlogPage .FNV-Header .container .row .FNV-HCard h5 {
   font-weight: 200;
   margin-bottom: 0;
   font-size: 24px;
 }
-.FNV-BlogPage .FNV-BlogList {
+body[dir=ltr] .FNV-BlogPage .FNV-BlogList {
   padding: 2rem 0 5rem;
 }
-.FNV-BlogPage .FNV-BlogList .container .row .col-md-4 {
+body[dir=ltr] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 {
   margin-bottom: 5rem;
 }
-.FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card {
+body[dir=ltr] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card {
   border-width: 0;
   border-radius: 18px;
   overflow: visible;
 }
-.FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card img {
+body[dir=ltr] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card img {
   width: 100%;
   height: 260px;
   background: linear-gradient(90deg, #ffffff 50%, rgba(131, 131, 131, 0.11) 80%, #ffffff 100%);
   background-size: 200% 100%;
   animation: loadingAnimation 2s infinite linear;
 }
-.FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-body {
+body[dir=ltr] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-body {
   background-color: #ffffff;
   border-radius: 18px;
   margin-top: -3rem;
@@ -4703,7 +4707,7 @@ body[dir=ltr] .FNV-SinglePage .container .row .accordion .accordion-item .accord
   align-items: start;
   flex-direction: column;
 }
-.FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-body h4 {
+body[dir=ltr] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-body h4 {
   font-size: 16px;
   line-height: 32px;
   min-height: 70px;
@@ -4711,18 +4715,106 @@ body[dir=ltr] .FNV-SinglePage .container .row .accordion .accordion-item .accord
   color: #003BBF;
   text-align: left;
 }
-.FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-body span {
+body[dir=ltr] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-body span {
   font-size: 14px;
   line-height: 1px;
   font-weight: 400;
   color: #003BBF;
   margin-bottom: 5rem;
 }
-.FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-body span svg {
+body[dir=ltr] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-body span svg {
   width: 16px;
   height: 16px;
 }
-.FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-body .FNV-Btn {
+body[dir=ltr] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-body .FNV-Btn {
+  position: absolute;
+  bottom: -1.5rem;
+  z-index: 15;
+  align-self: center;
+}
+
+body[dir=rtl] .FNV-BlogPage {
+  background-color: linear-gradient(180deg, rgba(0, 59, 191, 0.1993172269) 0%, rgb(255, 255, 255) 100%);
+}
+body[dir=rtl] .FNV-BlogPage .FNV-Header {
+  background-image: unset;
+  background-color: #FF772C;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 5rem;
+  margin-bottom: 2rem;
+  height: unset;
+}
+body[dir=rtl] .FNV-BlogPage .FNV-Header .container {
+  padding: 0;
+}
+body[dir=rtl] .FNV-BlogPage .FNV-Header .container .row {
+  justify-content: center;
+}
+body[dir=rtl] .FNV-BlogPage .FNV-Header .container .row .FNV-HCard {
+  text-align: center;
+}
+body[dir=rtl] .FNV-BlogPage .FNV-Header .container .row .FNV-HCard h1 {
+  text-transform: capitalize;
+  font-weight: 800;
+  font-size: 36px;
+  margin-bottom: 0;
+  color: #ffffff;
+}
+body[dir=rtl] .FNV-BlogPage .FNV-Header .container .row .FNV-HCard h5 {
+  font-weight: 200;
+  margin-bottom: 0;
+  font-size: 24px;
+}
+body[dir=rtl] .FNV-BlogPage .FNV-BlogList {
+  padding: 2rem 0 5rem;
+}
+body[dir=rtl] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 {
+  margin-bottom: 5rem;
+}
+body[dir=rtl] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card {
+  border-width: 0;
+  border-radius: 18px;
+  overflow: visible;
+}
+body[dir=rtl] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card img {
+  width: 100%;
+  height: 260px;
+  background: linear-gradient(90deg, #ffffff 50%, rgba(131, 131, 131, 0.11) 80%, #ffffff 100%);
+  background-size: 200% 100%;
+  animation: loadingAnimation 2s infinite linear;
+}
+body[dir=rtl] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-body {
+  background-color: #ffffff;
+  border-radius: 18px;
+  margin-top: -3rem;
+  height: 150px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+body[dir=rtl] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-body h4 {
+  font-size: 16px;
+  line-height: 32px;
+  min-height: 70px;
+  font-weight: 700;
+  color: #003BBF;
+  text-align: right;
+}
+body[dir=rtl] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-body span {
+  font-size: 14px;
+  line-height: 1px;
+  font-weight: 400;
+  color: #003BBF;
+  margin-bottom: 5rem;
+}
+body[dir=rtl] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-body span svg {
+  width: 16px;
+  height: 16px;
+}
+body[dir=rtl] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-body .FNV-Btn {
   position: absolute;
   bottom: -1.5rem;
   z-index: 15;

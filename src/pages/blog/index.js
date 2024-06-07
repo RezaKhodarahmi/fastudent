@@ -57,8 +57,8 @@ const BlogPage = () => {
           <div className='container'>
             <div className='row'>
               <div className='col-12 FNV-HCard'>
-                <h5 class='text-white my-2'>{t('Read with us')}</h5>
-                <h1>{t('Fanavaran Blog Archive')}</h1>
+                <h5 class='text-white my-2'>{t('blog-read-with-us')}</h5>
+                <h1>{t('blog-archive')}</h1>
               </div>
             </div>
           </div>
@@ -93,6 +93,7 @@ const BlogPage = () => {
                   page={page}
                   onChange={handleChangePage}
                   color='primary'
+                  dir='ltr'
                 />
               </Grid>
             </div>
