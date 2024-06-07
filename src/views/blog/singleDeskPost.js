@@ -61,7 +61,7 @@ const SingleDeskPost = () => {
 
                   <span>
                     {/* SVG and DateFormat component here */}
-                    <DateFormat date={post.createdAt} />
+                    <i data-feather="calendar"></i> <DateFormat date={post.createdAt} />
                   </span>
 
                   <Link href={`/blog/${post.slug}`} className='FNV-Btn BtnPrimary BtnLarge'>

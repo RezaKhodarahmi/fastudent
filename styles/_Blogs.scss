@@ -1,7 +1,7 @@
 @import './variables';
 
-.FNV-Blog {
-  background-color: $WhiteColor;
+.FNV-BlogPage {
+  background-color: linear-gradient(180deg, rgba(0, 59, 191, 0.1993172269) 0%, rgb(255, 255, 255) 100%);
 
   .FNV-Header {
     background-image: unset;
@@ -9,7 +9,8 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    padding: 5rem 0;
+    padding: 5rem;
+    margin-bottom: 2rem;
     height: unset;
 
     .container {
@@ -18,19 +19,97 @@
       .row {
         justify-content: center;
 
-        .FNV-HCard{
-            h1{
-                text-transform: capitalize;
-                font-weight: 500;
-                margin-bottom: 0;
-            }
+        .FNV-HCard {
+          text-align: center;
 
-            h5{
-              font-weight: 300;
-              margin-bottom: 0;
-            }
+          h1 {
+            text-transform: capitalize;
+            font-weight: 800;
+            font-size: 36px;
+            margin-bottom: 0;
+            color: $WhiteColor;
+          }
+
+          h5 {
+            font-weight: 200;
+            margin-bottom: 0;
+            font-size: 24px;
+          }
         }
       }
     }
+  }
+
+  .FNV-BlogList {
+    padding: 2rem 0 5rem;
+    .container {
+      .row {
+        .col-md-4 {
+          margin-bottom: 5rem;
+          .card {
+            border-width: 0;
+            border-radius: 18px;
+            overflow: visible;
+
+            img{
+              width: 100%;
+              height: 260px;
+              background: linear-gradient(90deg, #ffffff 50%, rgb(131 131 131 / 11%) 80%, #ffffff 100%);
+              background-size: 200% 100%;
+              animation: loadingAnimation 2s infinite linear;
+            }
+
+            .card-body {
+              background-color: $WhiteColor;
+              border-radius: 18px;
+              margin-top: -3rem;
+              height: 150px;
+              display: flex;
+              justify-content: start;
+              align-items: start;
+              flex-direction: column;
+
+              h4 {
+                font-size: 16px;
+                line-height: 32px;
+                min-height: 70px;
+                font-weight: 700;
+                color: $PrimaryColor;
+                text-align: left;
+              }
+
+              span {
+                font-size: 14px;
+                line-height: 1px;
+                font-weight: 400;
+                color: $PrimaryColor;
+                margin-bottom: 5rem;
+
+                svg {
+                  width: 16px;
+                  height: 16px;
+                }
+              }
+
+              .FNV-Btn {
+                position: absolute;
+                bottom: -1.5rem;
+                z-index: 15;
+                align-self: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes loadingAnimation {
+  0% {
+      background-position: 0% 0;
+  }
+  100% {
+      background-position: 200% 0;
   }
 }
