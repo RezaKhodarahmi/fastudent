@@ -221,7 +221,7 @@ const Footer = props => {
                   <Link href='/project-management/'>{t('footer-two-project')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='/architecture/'>{t('footer-two-architect')}</Link>
+                  <Link href='/architect/'>{t('footer-two-architect')}</Link>
                 </li>
                 <li className='list-group-item'>
                   <Link href='/technician/'>{t('footer-two-technician')}</Link>

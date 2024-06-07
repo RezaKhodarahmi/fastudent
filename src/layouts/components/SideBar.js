@@ -15,7 +15,7 @@ const SideBar = () => {
             <Link href='/project-management'>Project Management</Link>
           </li>
           <li className='list-group-item'>
-            <Link href='/architecture'>Architect</Link>
+            <Link href='/architect'>Architect</Link>
           </li>
           <li className='list-group-item'>
             <Link href='/technician'>Technician</Link>
