@@ -399,7 +399,9 @@ body[dir='ltr']{
             .nav-item{
 
               &.FNV-Appointment{
-                background-color: $PrimaryColor;
+                background: linear-gradient(-45deg, #003BBF, #FF772C, #003BBF);
+                background-size: 400% 400%;
+                animation: gradient 3s ease-in-out infinite;
 
                 a{
                   color: $WhiteColor;

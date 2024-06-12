@@ -94,7 +94,8 @@ const Index = () => {
                 <div className='col-12 text-center'>
                   <img src={appConfig.appUrl + '/img/team/mo_amani.jpg'} className='img-fluid w-75 rounded mb-4' />
                   <h4 className='mt-4'>Mo Amani</h4>
-                  <span>CEO</span>
+                  <small className='h6 text-muted'>(P.Eng., PMP, PMI-RMP)</small>
+                  <p className='mt-1'>CEO</p>
                 </div>
               </div>
             </div>
@@ -104,8 +105,8 @@ const Index = () => {
               <div className='row ps-0 p-4'>
                 <div className='col-12 text-center'>
                   <img src={appConfig.appUrl + '/img/team/babak_babaee.png'} className='img-fluid w-75 rounded mb-4' />
-                  <h4 className='mt-4'>Babak Babaee</h4>
-                  <span>COO</span>
+                  <small className='h6 text-muted'>(P.Eng, MASc, MBA)</small>
+                  <p className='mt-1'>COO</p>
                 </div>
               </div>
             </div>
@@ -118,7 +119,8 @@ const Index = () => {
                 </div>
                 <div className='col-7'>
                   <h4>Payam Mahjoub</h4>
-                  <span>CTO</span>
+                  <small className='h6 text-muted'>MSc in AI</small>
+                  <p>CTO</p>
                 </div>
               </div>
             </div>
@@ -131,7 +133,8 @@ const Index = () => {
                 </div>
                 <div className='col-7'>
                   <h4>Mona Dejban</h4>
-                  <span>Marketing Manager</span>
+                  <small className='h6 text-muted'></small>
+                  <p>Marketing Manager</p>
                 </div>
               </div>
             </div>
@@ -144,7 +147,8 @@ const Index = () => {
                 </div>
                 <div className='col-7'>
                   <h4>Parham FazlAli</h4>
-                  <span>Graphic Designer</span>
+                  <small className='h6 text-muted'></small>
+                  <p>Graphic Designer</p>
                 </div>
               </div>
             </div>
@@ -157,7 +161,8 @@ const Index = () => {
                 </div>
                 <div className='col-7'>
                   <h4>Morteza Khodarahmi</h4>
-                  <span>Senior Developer</span>
+                  <small className='h6 text-muted'>BSc in Software Engineering</small>
+                  <p>Senior Developer</p>
                 </div>
               </div>
             </div>
@@ -169,8 +174,8 @@ const Index = () => {
                   <img src={appConfig.appUrl + '/img/team/arezou_khanzadeh.jpg'} className='img-fluid' />
                 </div>
                 <div className='col-7'>
-                  <h4>Arezou Khanzadeh</h4>
-                  <span>HR / SEO</span>
+                  <small className='h6 text-muted'>MSc in Interior Design</small>
+                  <p>HR / SEO</p>
                 </div>
               </div>
             </div>
@@ -182,8 +187,8 @@ const Index = () => {
                   <img src={appConfig.appUrl + '/img/team/maryam_rajabi.jpg'} className='img-fluid' />
                 </div>
                 <div className='col-7'>
-                  <h4>Maryam Rajabi</h4>
-                  <span>Graphic Designer</span>
+                  <small className='h6 text-muted'></small>
+                  <p>Graphic Designer</p>
                 </div>
               </div>
             </div>
@@ -196,7 +201,8 @@ const Index = () => {
                 </div>
                 <div className='col-7'>
                   <h4>Sajad Fatehi</h4>
-                  <span>Admin / YouTube Manager</span>
+                  <small className='h6 text-muted'>BSc in Software Engineering</small>
+                  <p>Admin / YouTube Manager</p>
                 </div>
               </div>
             </div>
@@ -209,7 +215,8 @@ const Index = () => {
                 </div>
                 <div className='col-7'>
                   <h4>Khaled Hamidi</h4>
-                  <span>Content Specialist</span>
+                  <small className='h6 text-muted'></small>
+                  <p>Content Specialist</p>
                 </div>
               </div>
             </div>
@@ -222,7 +229,8 @@ const Index = () => {
                 </div>
                 <div className='col-7'>
                   <h4>Nima Farhadi</h4>
-                  <span>Graphic Designer</span>
+                  <small className='h6 text-muted'></small>
+                  <p>Graphic Designer</p>
                 </div>
               </div>
             </div>
@@ -231,11 +239,13 @@ const Index = () => {
             <div className='col-12 col-md-4 p-0'>
               <div className='row p-0'>
                 <div className='col-5'>
-                  <img src='' className='img-fluid' />
+                  <img src={appConfig.appUrl + '/img/team/hesam_bagheri.jpg'} className='img-fluid' />
                 </div>
                 <div className='col-7'>
                   <h4>Hesam Bagheri</h4>
-                  <span>Content</span>
+                  <small className='h6 text-muted'></small>
+                  <small className='h6 text-muted'>BSc in Law</small>
+                  <p>Content</p>
                 </div>
               </div>
             </div>
@@ -248,7 +258,64 @@ const Index = () => {
                 </div>
                 <div className='col-7'>
                   <h4>Roya Karami</h4>
-                  <span>Sales Manager</span>
+                  <small className='h6 text-muted'>MSc in Industrial Engineering</small>
+                  <p>Sales Manager</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Item */}
+            <div className='col-12 col-md-4 p-0'>
+              <div className='row p-0'>
+                <div className='col-5'>
+                  <img src={appConfig.appUrl + '/img/team/bahareh_hashemi.jpg'} className='img-fluid' />
+                </div>
+                <div className='col-7'>
+                  <h4>Bahareh Hashemi</h4>
+                  <small className='h6 text-muted'>BSc in Multimedia</small>
+                  <span>Video Editor</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Item */}
+            <div className='col-12 col-md-4 p-0'>
+              <div className='row p-0'>
+                <div className='col-5'>
+                  <img src={appConfig.appUrl + '/img/team/elnaz_yousefi.jpg'} className='img-fluid' />
+                </div>
+                <div className='col-7'>
+                  <h4>Elnaz Yousefi</h4>
+                  <small className='h6 text-muted'>MSc, M.Eng, PMP</small>
+                  <span>Project Coordinator</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Item */}
+            <div className='col-12 col-md-4 p-0'>
+              <div className='row p-0'>
+                <div className='col-5'>
+                  <img src={appConfig.appUrl + '/img/team/kiarash_kiarasi.jpg'} className='img-fluid' />
+                </div>
+                <div className='col-7'>
+                  <h4>Kiarash Kiarasi</h4>
+                  <small className='h6 text-muted'>BSc, PMP</small>
+                  <span>Project Coordinator</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Item */}
+            <div className='col-12 col-md-4 p-0'>
+              <div className='row p-0'>
+                <div className='col-5'>
+                  <img src={appConfig.appUrl + '/img/team/hanieh_babadi.jpg'} className='img-fluid' />
+                </div>
+                <div className='col-7'>
+                  <h4>Hanieh Bababdi</h4>
+                  <small className='h6 text-muted'>BSc in Video Editing</small>
+                  <span>Video Editor</span>
                 </div>
               </div>
             </div>

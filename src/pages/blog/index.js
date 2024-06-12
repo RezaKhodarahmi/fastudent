@@ -48,7 +48,7 @@ const BlogPage = () => {
 
   return (
     <>
-      <div className='FNV-Blog'>
+      <div className='FNV-BlogPage'>
         <Helmet>
           <title>{t('Fanavaran Blogs Archhive')}</title>
         </Helmet>
@@ -57,63 +57,49 @@ const BlogPage = () => {
           <div className='container'>
             <div className='row'>
               <div className='col-12 FNV-HCard'>
-                <h5 class='text-white my-2'>{t('Read with us')}</h5>
-                <h1>{t('Fanavaran Blog Archive')}</h1>
+                <h5 class='text-white my-2'>{t('blog-read-with-us')}</h5>
+                <h1>{t('blog-archive')}</h1>
               </div>
             </div>
           </div>
         </section>
 
-        <section className='FNV-CourseList'>
+        <section className='FNV-BlogList'>
           <div className='container'>
-            <div className='row justify-content-center'>
-              <div className='col-md-9'></div>
-              {/* <CourseFilters /> */}
-              <div class='tab-content' id='pills-tabContent'>
-                <div
-                  class='tab-pane fade show active'
-                  id='All-Courses'
-                  role='tabpanel'
-                  aria-labelledby='All-Courses-tab'
-                  tabBlogPage='0'
-                >
-                  <div className='row'>
-                    {Array.isArray(posts) ? (
-                      (() => {
-                        const filteredPosts = posts.slice((page - 1) * 5, page * 5)
+            <div className='row'>
+              {Array.isArray(posts) ? (
+                (() => {
+                  const filteredPosts = posts.slice((page - 1) * 12, page * 12)
 
-                        return filteredPosts.length ? (
-                          filteredPosts.map(post => (
-                            <>
-                              <SinglePost post={post} />
-                            </>
-                          ))
-                        ) : (
-                          <Grid p={5} mt={5} mb={5} container justifyContent='center'>
-                            <h3>No Post found matching the selected filters.</h3>
-                          </Grid>
-                        )
-                      })()
-                    ) : (
-                      <h3>Loading...</h3>
-                    )}
-
-                    <Grid container justifyContent='center' marginTop={'3rem'}>
-                      <PostsPagination
-                        count={Math.ceil(blogData?.data?.data?.length / 5)}
-                        page={page}
-                        onChange={handleChangePage}
-                        color='primary'
-                      />
+                  return filteredPosts.length ? (
+                    filteredPosts.map(post => (
+                      <>
+                        <SinglePost post={post} />
+                      </>
+                    ))
+                  ) : (
+                    <Grid p={5} mt={5} mb={5} container justifyContent='center'>
+                      <h3>No Post found matching the selected filters.</h3>
                     </Grid>
-                  </div>
-                </div>
-              </div>
+                  )
+                })()
+              ) : (
+                <h3>Loading...</h3>
+              )}
+
+              <Grid container justifyContent='center' marginTop={'3rem'}>
+                <PostsPagination
+                  count={Math.ceil(blogData?.data?.data?.length / 5)}
+                  page={page}
+                  onChange={handleChangePage}
+                  color='primary'
+                  dir='ltr'
+                />
+              </Grid>
             </div>
           </div>
         </section>
       </div>
-      <YoutubeSection />
     </>
   )
 }

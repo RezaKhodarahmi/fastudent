@@ -171,7 +171,7 @@ const Footer = props => {
                 </span>
 
                 <Link href="https://maps.app.goo.gl/noHtxRDKu23mmQFx5" target='_blank'>
-                  Unit 3 - 33 Glen Cameron Road, Markham, ON L3T 1N9
+                  Unit 3 - 33 Glen Cameron Road, Thornhill, ON L3T 1N9
                 </Link>
               </p>
             </div>
@@ -221,7 +221,7 @@ const Footer = props => {
                   <Link href='/project-management/'>{t('footer-two-project')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='/architecture/'>{t('footer-two-architect')}</Link>
+                  <Link href='/architect/'>{t('footer-two-architect')}</Link>
                 </li>
                 <li className='list-group-item'>
                   <Link href='/technician/'>{t('footer-two-technician')}</Link>
@@ -246,22 +246,25 @@ const Footer = props => {
               <h4>{t('footer-three')}</h4>
               <ul className='list-group list-group-flush'>
                 <li className='list-group-item'>
-                  <Link href='#'>{t('footer-three-registration')}</Link>
+                  <Link href='how-to-register'>{t('footer-three-registration')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='#'>{t('footer-three-watching')}</Link>
+                  <Link href='view-recorded-courses'>{t('footer-three-watching')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='#'>{t('footer-three-mock')}</Link>
+                  <Link href='mock-exam-tutorials'>{t('footer-three-mock')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='#'>{t('footer-three-certificate')}</Link>
+                  <Link href='fanavaran-certificate'>{t('footer-three-certificate')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='#'>{t('footer-three-privacy')}</Link>
+                  <Link href='privacy-policy'>{t('footer-three-privacy')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='#'>{t('footer-three-faq')}</Link>
+                  <Link href='refund-policy'>{t('footer-three-refund-privacy')}</Link>
+                </li>
+                <li className='list-group-item'>
+                  <Link href='faq'>{t('footer-three-faq')}</Link>
                 </li>
               </ul>
             </div>

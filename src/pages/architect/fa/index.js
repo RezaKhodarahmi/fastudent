@@ -29,7 +29,7 @@ const Index = () => {
   useEffect(() => {
     const lng = window.localStorage.getItem('i18nextLng')
     if (lng == 'en') {
-      router.push('/architecture')
+      router.push('/architect')
     }
   }, [])
 
