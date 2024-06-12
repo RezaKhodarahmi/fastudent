@@ -6,7 +6,7 @@ import { useRouter } from 'next/router'
 import { useTranslation } from 'react-i18next'
 
 function Index() {
-//Hooks
+  //Hooks
   const router = useRouter()
   const { t } = useTranslation()
 
@@ -18,10 +18,9 @@ function Index() {
     }
   }, [])
 
-  return (
-    <div>index</div>
-  )
+  return <div>index</div>
 }
 
 Index.guestGuard = true
+
 export default Index
