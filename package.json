@@ -40,6 +40,7 @@
     "@reduxjs/toolkit": "1.9.1",
     "@stripe/react-stripe-js": "^2.1.1",
     "@stripe/stripe-js": "^1.54.1",
+    "@zoomus/websdk": "^2.18.3",
     "apexcharts": "^3.42.0",
     "apexcharts-clevision": "3.28.5",
     "axios": "^1.7.2",

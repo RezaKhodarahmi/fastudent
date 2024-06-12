@@ -218,6 +218,15 @@ const App = props => {
                 : `${themeConfig.templateName} - Institute of Technology and Engineering`
             }
           />
+           <script async src="https://www.googletagmanager.com/gtag/js?id=GT-KT42WV2"></script>
+          <script>
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'GT-KT42WV2');
+            `}
+          </script>
         </Head>
         <AuthProvider>
           <SettingsProvider {...(setConfig ? { pageSettings: setConfig() } : {})}>

@@ -883,13 +883,17 @@ const Course = () => {
                           <h4>{t('single-course-scycle')}</h4>
                           {data?.cycles && (
                             <select value={selectedCycle} onChange={handleCycleChange} className='form-select'>
-                              {[...data.cycles].reverse().map(cycle => (
-                                <option key={cycle.id} value={cycle.id}>
-                                  {cycle.name}
-                                </option>
-                              ))}
+                              {[...data.cycles]
+                                .reverse()
+                                .filter(cycle => cycle.status == 1)
+                                .map(cycle => (
+                                  <option key={cycle.id} value={cycle.id}>
+                                    {cycle.name}
+                                  </option>
+                                ))}
                             </select>
                           )}
+
                           {inCart ? (
                             <a
                               style={{ cursor: 'pointer' }}
