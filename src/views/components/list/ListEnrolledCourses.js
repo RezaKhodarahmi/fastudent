@@ -82,11 +82,13 @@ const ListCourses = props => {
               </Box>
             </div>
             <ListItemSecondaryAction>
-              <Link href={`${appConfig.appUrl}/courses/${course?.slug}`} passHref variant='contained' size='small'>
+              <Link href={`${appConfig.appUrl}/courses/${course?.slug}`} passHref>
                 <Button variant='contained' size='small'>
+                  <Icon icon='tabler:school' style={{ margin: '0 10px ' }}/>
                   View Courses
                 </Button>
               </Link>
+              
               {course?.cycles[0]?.zoomLink && (
                 <Link
                   href={course?.cycles[0]?.zoomLink || '#'}
@@ -95,7 +97,8 @@ const ListCourses = props => {
                   style={{ margin: '0 5px' }}
                   size='small'
                 >
-                  <Button variant='contained' size='small'>
+                  <Button variant='contained' size='small' color='success'>
+                    <Icon icon='tabler:certificate' style={{ margin: '0 10px ' }}/>
                     Join the class
                   </Button>
                 </Link>
@@ -105,10 +108,11 @@ const ListCourses = props => {
                   href={course?.cycles[0]?.groupLink || '#'}
                   passHref
                   variant='contained'
-                  style={{ margin: '0 5px' }}
+                  style={{ margin: '0 0px ' }}
                   size='small'
                 >
-                  <Button variant='contained' size='small'>
+                  <Button variant='contained' size='small' color='info'>
+                    <Icon icon='tabler:brand-telegram' style={{ margin: '0 10px ' }}/>
                     Telegram Group
                   </Button>
                 </Link>
