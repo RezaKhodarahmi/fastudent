@@ -105,6 +105,7 @@ const Index = () => {
               <div className='row ps-0 p-4'>
                 <div className='col-12 text-center'>
                   <img src={appConfig.appUrl + '/img/team/babak_babaee.png'} className='img-fluid w-75 rounded mb-4' />
+                  <h4 className='mt-4'>Babak Babaee</h4>
                   <small className='h6 text-muted'>(P.Eng, MASc, MBA)</small>
                   <p className='mt-1'>COO</p>
                 </div>
@@ -174,6 +175,7 @@ const Index = () => {
                   <img src={appConfig.appUrl + '/img/team/arezou_khanzadeh.jpg'} className='img-fluid' />
                 </div>
                 <div className='col-7'>
+                  <h4>Arezou Khanzadeh</h4>
                   <small className='h6 text-muted'>MSc in Interior Design</small>
                   <p>HR / SEO</p>
                 </div>
@@ -187,7 +189,8 @@ const Index = () => {
                   <img src={appConfig.appUrl + '/img/team/maryam_rajabi.jpg'} className='img-fluid' />
                 </div>
                 <div className='col-7'>
-                  <small className='h6 text-muted'></small>
+                  <h4>Maryam Rajabi</h4>
+                  <small className='h6 text-muted'>BSc in Graphic</small>
                   <p>Graphic Designer</p>
                 </div>
               </div>

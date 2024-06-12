@@ -191,7 +191,7 @@ const Index = () => {
                 </div>
                 <div className='col-7'>
                   <h4>Maryam Rajabi</h4>
-                  <small className='h6 text-muted'></small>
+                  <small className='h6 text-muted'>BSc in Graphic</small>
                   <p>Graphic Designer</p>
                 </div>
               </div>
