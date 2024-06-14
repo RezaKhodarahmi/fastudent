@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import feather from 'feather-icons'
 
 // ** Import Translation
 import { useTranslation } from 'react-i18next'
@@ -48,6 +49,18 @@ const Index = () => {
     const existInCart = cartItems.includes(id)
     router.push('/cart')
 
+    // Feathericon
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        if (typeof feather !== 'undefined' && feather !== null) {
+          feather.replace();
+        }
+      }, 1000); // 1 second delay
+
+      // Cleanup the timeout on component unmount
+      return () => clearTimeout(timer);
+    }, []); // Empty dependency array ensures this runs only once
+
     if (existInCart) {
       window.alert('Item is already in cart!')
       router.push('/cart')
@@ -56,43 +69,55 @@ const Index = () => {
     }
 
     const updatedCartItems = [...cartItems]
-    localStorage.setItem('cartItems', JSON.stringify(updatedCartItems))
+    ocalStorage.setItem('cartItems', JSON.stringify(updatedCartItems))
   }
 
   return (
     <>
       <section className='FNV-SinglePage'>
+        <div className='FNV-BG'>
+          <img src='/img/landings/engineering-bg.jpg' className='img-fluid' />
+        </div>
+
         <div className='container'>
           <div className='row FNV-Header'>
-            <h1>مهندسی در کانادا</h1>
-          </div>
+            <div className='col-12'>
+              <h1>فعالیت مهندسی در کانادا</h1>
+            </div>
 
+            <div className='col-12 col-md-6'>
+              <span>پیش از هر اقدامی، این ویدئو را ببینید</span>
+              <iframe src="https://www.youtube.com/embed/6OdumXuaE50?si=2g6M4dsBeCvTCzKq" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div className='col-12 col-md-6'>
+              <p>
+                مهندسی در کانادا جزوه‌ای نظام‌مند است. کسی که می‌خواد در این حوزه فعالیت داشته باشد باید لایسنس مهندس
+                حرفه‌ای یا به اختصار .P.Eng را دریافت کند. فعالیت مهندسی در کانادا شامل سه بخش اصلی آنالیز، طراحی و محاسبات
+                است. هر عملی که در این سه بخش قرار نمی‌گیرد، از دسته فعالیت‌های مهندسی نیست.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='FNV-SinglePage FNV-ContentList'>
+        <div className='container'>
           <div className='row'>
             <div className='col-12'>
-              <p>
-                مهندسی در کانادا جزو مشاغل نظام‌مند (Regulated) است و برای فعالیت حرفه‌ای در این حوزه، متقاضی باید
-                لایسنس مهندس حرفه‌ای (Professional engineer یا به اختصار .P.Eng) را دریافت کند.
-              </p>
-              <p>
-                «فعالیت مهندسی در کانادا» شامل آنالیز، طراحی و محاسبات است. هر عملی که در این سه حوزه قرار نداشته باشد،
-                جزو فعالیت مهندسی پذیرفته نمی‌شود.
-              </p>
               <p>فهرست مطالب:</p>
               <ol>
                 <li>
-                  <a href='#P1'>افرادی که می‌توانند برای مهندسی در کانادا .P.Eng شوند</a>
+                  <a href='#P1'>چگونه می‌توان لایسنس مهندسی حرفه‌ای کانادا یا .P.Eng دریافت کرد؟</a>
                 </li>
                 <li>
-                  <a href='#P2'>مزایای دریافت لایسنس .P.Eng</a>
+                  <a href='#P2'>گام‌های دریافت لایسنس مهندسی حرفه‌ای کانادا یا .P.Eng چیست؟</a>
                 </li>
                 <li>
-                  <a href='#P3'>چگونه می‌توانیم در سازمان ادارات مهندسی کانادا ثبت نام کنیم؟</a>
-                </li>
-                <li>
-                  <a href='#P4'>شرایط لازم برای گرفتن P.Eng </a>
-                </li>
-                <li>
-                  <a href='#P5'>آزمون NPPE چیست؟</a>
+                  <a href='#P3'>چگونه می‌توانیم در سازمان اداری کانادا ثبت‌نام کنیم؟</a>
                 </li>
                 <li>
                   <a href='#FAQ'>سوالات متداول</a>
@@ -100,401 +125,177 @@ const Index = () => {
               </ol>
             </div>
           </div>
+        </div>
+      </section>
 
+      <section className='FNV-SinglePage FNV-GrayBG' id='P1'>
+        <div className='container'>
           <div className='row'>
-            <h3>قبل از اینکه شروع کنید</h3>
-            <div className='col-12'>
-              <iframe
-                src='https://www.youtube.com/embed/6OdumXuaE50?si=zdJ9yaeeUc3M2d5l'
-                title='YouTube video player'
-                frameborder='0'
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                allowfullscreen
-              ></iframe>
-            </div>
-          </div>
-
-          <div id='P1' className='row'>
-            <h3>چه افرادی می‌توانند لایسنس مهندسی در کانادا (P.Eng) را دریافت کنند؟</h3>
+            <h3> چگونه می‌توان لایسنس مهندسی حرفه‌ای کانادا یا .P.Eng دریافت کرد؟</h3>
 
             <div className='col-12'>
-              <p>برای داشتن صلاحیت دریافت لایسنس مهندسی در کانادا، فعالیت‌های شما باید شامل موارد زیر باشد:</p>
+              <p>فعالیت&zwnj;های شما برای دریافت لایسنس مهندسی در کانادا، در سه دسته&zwnj; اصلی زیر قرار می&zwnj;گیرد:</p>
               <ul>
                 <li>آنالیز</li>
-                <li>طراحی (Design)</li>
-                <li>محاسبات (Calculation)</li>
+                <li>طراحی</li>
+                <li>محاسبات</li>
               </ul>
-              <p>
-                اگر فعالیت‌هایی که انجام داده‌اید در این سه شاخه قرار ندارند، شما امکان دریافت لایسنس مهندسی را ندارید و
-                تجربیات کاری شما مورد تایید ادارات مهندسی کانادا قرار نمی‌گیرد. برای مثال، موارد زیر را می‌توان به عنوان
-                کیس‌هایی نام برد که نمی‌توانند لایسنس مهندسی دریافت کنند:
-              </p>
-
+              <p>آنچه که اهمیت دارد این است که، باید فعالیت&zwnj;های شما در این سه بخش اصلی قرار گیرد. برای مثال، موارد زیر
+                در
+                دسته فعالیت&zwnj;های مورد تایید لایسنس مهندسی در کانادا نیستند:</p>
               <ul>
-                <li>Supervisory, Managerial and business roles</li>
-                <li>Routine Maintenance roles</li>
-                <li>Testing roles</li>
-                <li>Construction or Assembly of work</li>
-              </ul>
-              <p>
-                در نظر داشته باشید، اگر کارهای کارگاهی انجام داده‌اید، سرپرست کارگاه بوده‌اید، مدیریت پروژه انجام
-                داده‌اید و به صورت کلی، فعالیت شما شامل «آنالیز، دیزاین و محاسبات» نبوده، توصیه می‌شود که نسبت به دریافت
-                سرتیفیکیت PMP اقدام کنید. برای آشنایی بیشتر، از{' '}
-                <Link href='/project-management/fa'>صفحه مدیریت پروژه</Link> در کانادا بازدید کنید.
-              </p>
-            </div>
-          </div>
-
-          <div className='row FNV_BG_Telegram'>
-            <a href='https://t.me/+D54o2CCh5Bo4NGI0' target='_blank' rel='noreferrer'>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                class='icon icon-tabler icon-tabler-brand-telegram'
-                viewBox='0 0 24 24'
-                stroke-width='1.5'
-                fill='none'
-                stroke-linecap='round'
-                stroke-linejoin='round'
-              >
-                <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-                <path d='M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4' />
-              </svg>
-              عضویت در گروه تلگرامی مهندسی
-            </a>
-          </div>
-
-          <div id='P2' className='row'>
-            <h3>گام‌های رسیدن به لایسنس مهندسی در کانادا (P.Eng)</h3>
-
-            <div className='col-12'>
-              <p>
-                به صورت کلی، ‌استان‌های کانادا قوانین و مقررات خاص خود را برای ارائه لایسنس مهندسی (P.Eng) دارند، اما
-                تقریبا روند کار در اکثر استان‌ها مشابه است. پیشنهاد می‌شود که در اولین گام، تمامی ویدیوهای مربوط به
-                مهندسی در کانادا را در کانال یوتیوب فناوران مشاهده کنید و خود را به صورت کامل با قوانین استانی خود آشنا
-                کنید. می‌توان مراحل را به صورت زیر خلاصه کرد:
-              </p>
-              <ol>
-                <li>ثبت نام در سازمان مربوطه در استان محل سکونت و پر کردن فرم‌های مورد نیاز</li>
-                <ul>
-                  <li>
-                    در ابتدا، توصیه می‌شود که قوانین و مقررات و پیش‌نیازهای هر استان را مطالعه کنید و بفهمید که آیا واجد
-                    شرایط دریافت لایسنس هستید یا خیر. سایت‌های ادارات مهندسی در استان‌های مختلف:
-                  </li>
-                  <ul>
-                    <li>
-                      <a href='https://www.egbc.ca/' target='_blank' rel='noreferrer'>
-                        Engineers and Geoscientists British Columbia (EGBC) &ndash; British Columbia
-                      </a>
-                    </li>
-                    <li>
-                      <a href='https://www.apega.ca/' target='_blank' rel='noreferrer'>
-                        Association of Professional Engineers and Geoscientists of Alberta (APEGA) &ndash; Alberta
-                      </a>
-                    </li>
-                    <li>
-                      <a href='https://www.apegs.ca/' target='_blank' rel='noreferrer'>
-                        Association of Professional Engineers and Geoscientists of Saskatchewan (APEGS) &ndash;
-                        Saskatchewan
-                      </a>
-                    </li>
-                    <li>
-                      <a href='https://www.engm.ca/' target='_blank' rel='noreferrer'>
-                        Association of Professional Engineers and Geoscientists of Manitoba (APEGM) &ndash; Manitoba
-                      </a>
-                    </li>
-                    <li>
-                      <a href='https://www.peo.on.ca/' target='_blank' rel='noreferrer'>
-                        Professional Engineers Ontario (PEO) &ndash; Ontario
-                      </a>
-                    </li>
-                    <li>
-                      <a href='https://www.oiq.qc.ca/' target='_blank' rel='noreferrer'>
-                        Ordre des ing&eacute;nieurs du Qu&eacute;bec (OIQ) &ndash; Quebec
-                      </a>
-                    </li>
-                    <li>
-                      <a href='https://www.apegnb.com/' target='_blank' rel='noreferrer'>
-                        Professional Engineers and Geoscientists of New Brunswick (PEGNB) &ndash; New Brunswick
-                      </a>
-                    </li>
-                    <li>
-                      <a href='https://www.pegnl.ca/' target='_blank' rel='noreferrer'>
-                        Association of Professional Engineers and Geoscientists of Newfoundland and Labrador (PEGNL)
-                        &ndash; Newfoundland and Labrador
-                      </a>
-                    </li>
-                    <li>
-                      <a href='https://engineerspei.com/' target='_blank' rel='noreferrer'>
-                        Association of Professional Engineers of Prince Edward Island (Engineers PEI) &ndash; Prince
-                        Edward Island
-                      </a>
-                    </li>
-                    <li>
-                      <a href='https://engineersnovascotia.ca/' target='_blank' rel='noreferrer'>
-                        Engineers Nova Scotia (Engineers NS) &ndash; Nova Scotia
-                      </a>
-                    </li>
-                    <il>
-                      <a href='https://www.apegy.ca/' target='_blank' rel='noreferrer'>
-                        Association of Professional Engineers and Geoscientists of Yukon (APEGY) &ndash; Yukon
-                      </a>
-                    </il>
-                    <li>
-                      <a href='https://www.napeg.nt.ca/' target='_blank' rel='noreferrer'>
-                        Northwest Territories and Nunavut Association of Professional Engineers and Geoscientists
-                        (NAPEG) &ndash; Northwest Territories and Nunavut
-                      </a>
-                    </li>
-                  </ul>
-                </ul>
-                <li>
-                  تکمیل پیش‌نیازهای مهندسی هر استان:
-                  <p>
-                    پیش‌نیازهای مهندسی در استان‌های مختلف ممکن است متفاوت باشند. می‌توان پیش‌نیازهای مهندسی را به شکل
-                    زیر خلاصه کرد (توصیه می‌شود که حتما سایت سازمان مهندسی استان خود را برای این مورد به دقت بررسی
-                    کنید):
-                  </p>
-                  <ul>
-                    <li>
-                      پیش‌نیاز آکادمیک:
-                      <p>
-                        مدرک لیسانس (4 ساله) در یکی از رشته‌های مهندسی؛ مدارک بالاتر از لیسانس در صورتی قابل ارائه هستند
-                        که هم راستا با لیسانس باشند. برای ارسال مدارک تحصیلی خود به سازمان‌های مهندسی،‌دو راهکار وجود
-                        دارد:
-                      </p>
-                      <ul>
-                        <li>
-                          مدارک ترجمه شده باید از دانشگاه شما به صورت مهر و موم شده (Sealed) مستقیم به اداره مهندسی
-                          استان فرستاده شود.
-                        </li>
-                        <li>
-                          گر مدارک تحصیلی خود را به صورت ترجمه شده دارید، این مدارک باید به تایید یک مهندس دارای لایسنس
-                          P.Eng برسد و سپس به اداره مهندسی استانتان فرستاده شود. فناوران برای اعضای VIP مجموعه، تایید
-                          مدارک تحصیلی را به صورت رایگان انجام می‌دهد. در صورت نیاز به تایید، مطابق با این الگو مدارک
-                          خود را به همراه رسید{' '}
-                          <a href='/membership/checkout/fa'>
-                            <strong>عضویت VIP</strong>
-                          </a>{' '}
-                          برای ما ارسال کنید.
-                        </li>
-                        <li>برای ارائه مدارک تحصیلی، باید شرح دروس (Course Description) خود را نیز ارائه کنید.</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ol>
-            </div>
-          </div>
-
-          <div id='P3' className='row'>
-            <h3>دانش‌آموزان این دوره</h3>
-
-            <div className='col-12 col-md-3 ps-0'>
-              <iframe
-                src='https://www.youtube.com/embed/BVqmL9g3_eA'
-                title='YouTube video player'
-                frameborder='0'
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                allowfullscreen
-              ></iframe>
-            </div>
-
-            <div className='col-12 col-md-3'>
-              <iframe
-                src='https://www.youtube.com/embed/BVqmL9g3_eA'
-                title='YouTube video player'
-                frameborder='0'
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                allowfullscreen
-              ></iframe>
-            </div>
-
-            <div className='col-12 col-md-3'>
-              <iframe
-                src='https://www.youtube.com/embed/BVqmL9g3_eA'
-                title='YouTube video player'
-                frameborder='0'
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                allowfullscreen
-              ></iframe>
-            </div>
-
-            <div className='col-12 col-md-3 pe-0'>
-              <iframe
-                src='https://www.youtube.com/embed/BVqmL9g3_eA'
-                title='YouTube video player'
-                frameborder='0'
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                allowfullscreen
-              ></iframe>
-            </div>
-          </div>
-
-          <div id='P4' className='row'>
-            <h3>چگونگی ثبت نام در سازمان ادارات مهندسی کانادا</h3>
-
-            <div className='col-12'>
-              <ul>
-                <li>
-                  توصیه فناوران به همه داوطلبان .P.Eng این است که در مرحله اول به طور مفصل درباره مهندسی در کانادا
-                  اطلاعات کسب کنند.
-                </li>
-                <li>
-                  پر کردن فرم‌های اپلیکیشن اداره مهندسی استان محل سکونت
-                  <p>تمام فرمها آپدیت شده در هر استان قرار داده شده است.</p>
-                  <ul>
-                    <li>
-                      <a href='https://www.peo.on.ca/'>مهندسی در استان آنتاریو</a>
-                    </li>
-                    <li>
-                      <a href='https://engineersnovascotia.ca/'>مهندسی در استان نواسکوشیا</a>
-                    </li>
-                    <li>
-                      <a href='https://www.apega.ca/'>مهندسی در استان آلبرتا</a>
-                    </li>
-                    <li>
-                      <a href='https://www.egbc.ca/'>مهندسی در استان بریتیش کلمبیا</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  ارسال مدارک تحصیلی, برای این کار دو راه وجود دارد:
-                  <ol>
-                    <li>
-                      مدارک ترجمه شده باید از دانشگاه شما به صورت مهر و موم شده (Sealed) مستقیم به اداره مهندسی استان
-                      فرستاده شود.
-                    </li>
-                    <li>
-                      اگر مدارک تحصیلی خود را به صورت ترجمه شده دارید این مدارک باید به تایید یک مهندس .P.Eng برسد و سپس
-                      به اداره مهندسی استانتان فرستاده شود.
-                      <ul>
-                        <li>
-                          اگر برای تایید مدارک ترجمه شده خود برای کانادا مهندس دارای P.Eng نمی‌شناسید، فناوران می‌تواند
-                          این سرویس را به شما ارائه دهد. لطفا حتما statement های مورد نظر خود را هم به زبان فارسی و هم
-                          انگلیسی به مدارک خود اضافه (مانند زیر) و برای ما به آدرس info@fanavaran.ca بفرستید . این خدمات
-                          فقط برای اعضای فناوران در دردسترس میباشد. (برای عضویت در فناوران کلیک کنید)
-                          <p className='text-start text-justify my-2'>
-                            Please note that PEO only accepts translations done by a certified translator of ATIO or by
-                            a Canadian P.Eng. fluent in both languages. The P.Eng. must state that they are fluent in
-                            both languages and that this is an accurate translation, provide their membership number and
-                            sign and date each page. We will require your transcript in the original language. We need
-                            your bachelor’s and master’s transcript of marks in the original language, not the degree
-                            certificates. Also, the P.Eng. only certified your bachelor’s degree certificate. You need
-                            the master’s degree translated as well.And we will need your resume in a PDF document
-                          </p>
-                        </li>
-                        <li>
-                          اگر میخواهید مدارک مهندسی شما توسط فناوران مورد تایید قرار بگیرد لطفا طبق این الگو اقدام
-                          بفرمایید.
-                        </li>
-                        <li>
-                          ممکن است برخی افراد پیش از مرحله دریافت گواهی EIT ملزم به گذراندن دوره‌های تکنیکال باشند، این
-                          دوره‌ها در کانادا به زبان انگلیسی برگزار می‌شوند و ممکن است افراد نتوانند در آزمون‌های نهایی
-                          به موفقیت دست پیدا کنند. فناوران با استفاده از اساتید مجرب و دانشگاهی، این دوره‌های تکنیکال را
-                          به صورت خصوصی و نیمه خصوصی برای شما برگزار خواهد کرد.(برای ثبت نام کلیک کنید)
-                        </li>
-                      </ul>
-                      <li>
-                        توجه داشته باشید که باید شرح دروس خود را نیز ارائه کنید و در صورت نیاز جدول Grading Rubric را
-                        جهت تطبیق نمرات داشته باشید.
-                        <p>چند نمونه دیسکریپشن رشته های مهندسی مختلف</p>
-                        <ul>
-                          <li>
-                            <a href='https://fanavaran.ca/wp-content/uploads/2022/05/Civil-Engineering.pdf'>
-                              Civil Engineer
-                            </a>
-                          </li>
-                          <li>
-                            <a href='https://fanavaran.ca/wp-content/uploads/2022/05/Electrical-Engineering.pdf'>
-                              Electrical Engineering
-                            </a>
-                          </li>
-                          <li>
-                            <a href='https://fanavaran.ca/wp-content/uploads/2022/05/Mechanical-eng-University-of-Tehran.pdf'>
-                              Mechanical Eng - 1
-                            </a>
-                          </li>
-                          <li>
-                            <a href='https://fanavaran.ca/wp-content/uploads/2022/09/course.doc'>Mechanical Eng - 2</a>
-                          </li>
-                          <li>
-                            <a href='https://fanavaran.ca/wp-content/uploads/2022/05/Civil-and-Environmental-Engineering-Babol.pdf'>
-                              Civil and Environmental Engineering
-                            </a>
-                          </li>
-                          <li>
-                            <a href='https://fanavaran.ca/wp-content/uploads/2022/09/PEO-FAQ-for-Experience-Documentation.pdf'>
-                              Irrigation Engineering
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        ممکن است نیاز به جدول Grading Rubric نیز داشته باشید که از طریق این لینک می‌توانید دریافت کنید.
-                        <ul>
-                          <li>
-                            <b>EIT و آزمون‌های تکنیکال:</b> در بعضی از استان‌های کانادا که نیاز به سابقه کار کانادایی
-                            وجود دارد، متقاضیان می‌توانند نسبت به دریافت دزیگنیشن EIT اقدام کنند. پس از ثبت اپلیکیشن، به
-                            صورت عمومی متقاضیان ممکن است ملزم به گذراندن 4 کورس تکنیکال شوند. با نگارش صحیح تجربیات
-                            کاری، به احتمال زیاد آزمون‌های تکنیکال را waive می‌کنید. توجه داشته باشید، در صورتی که
-                            لیسانس مهندسی شما با سوابق کاری همراستا نباشد، به احتمال زیاد بیشتر از 18 آزمون تکنیکال به
-                            شما داده می‌شود.
-                          </li>
-                          <li>
-                            <b>نگارش تجربیات کاری (سوابق مهندسی):</b> نگارش سوابق مهندسی مطابق با استانداردهای
-                            سازمان‌های مهندسی و استفاده از ترمینولوژی‌های دقیق و رفرال‌های معتبر اهمیت زیادی در پرونده
-                            شما دارد. سوابق کاری شما باید مطابق با تعریف «مهندسی در کانادا» باشد و از نظر فاکتورهای
-                            مختلف معقول و قابل‌پذیرش باشد. برای اطلاع از نحوه نگارش سوابق کاری، توصیه می‌کنیم ورکشاپ
-                            تخصصی نگارش تجربیات مهندسی را مشاهده کنید.
-                          </li>
-                        </ul>
-                      </li>
-                    </li>
-                  </ol>
-                </li>
+                <li>نقش&zwnj;های نظارتی، مدیریتی و تجاری</li>
+                <li>نقش&zwnj;های تعمیر&zwnj;ونگهداری روتین</li>
+                <li>تست نقش&zwnj;ها</li>
+                <li>ساخت&zwnj;وساز یا مونتاژکار</li>
               </ul>
             </div>
           </div>
 
+          <a href='/project-management' className='row FNV-CTA'>
+            <div className='col-8'>
+              <h4>در نظر داشته باشید، اگر کار کارگاهی انجام می‌دهید و سرپرست کارگاه‌ هستید، فعالیت شما در دسته امور مربوط به
+                مدیریت پروژه قرار می‌گیرد. برای دریافت اطلاعات بیشتر به صفحه مدیریت پروژه در کانادا مراجعه کنید.</h4>
+            </div>
+            <div className='col-4'>
+              <img src='/img/landings/project-manager.png' className='img-fluid' />
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section className='FNV-SinglePage FNV-WhiteBG' id='P2'>
+        <div className='container'>
           <div className='row'>
+            <h3>گام‌های دریافت لایسنس مهندسی حرفه‌ای کانادا یا .P.Eng چیست؟</h3>
+
             <div className='col-12'>
-              <iframe
-                src='https://www.youtube.com/embed/l6oN39V43Ng?si=XVzu839CBRXnpavk'
-                title='YouTube video player'
-                frameborder='0'
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                allowfullscreen
-              ></iframe>
+              <p>به صورت کلی، استان&zwnj;های کانادا قوانین و مقررات خاص خود را برای ارائه لایسنس مهندسی (P.Eng) دارند، هرچند
+                که می&zwnj;توان گفت تا حدودی روند کار در اکثر استان&zwnj;ها مشابه است.</p>
+              <p>مراحل دریافت لایسنس مهندسی حرفه&zwnj;ای کانادا به شرح زیر است:</p>
+              <ul>
+                <li>اولین گام: ثبت&zwnj;نام در سازمان&zwnj;های استان محل سکونت و تکمیل فرم&zwnj;های مورد نیاز</li>
+              </ul>
+              <p>ابتدا، قوانین و مقررات مربوط به هر استان را کامل مطالعه کنید تا از شرایط اصلی آن آگاه شوید. برای دریافت
+                اطلاعات مورد نظر به سایت&zwnj;های زیر مراجعه کنید:</p>
+              <ul>
+                <li>مهندسان و دانشمندان زمین&zwnj;شناسی بریتیش&zwnj;کلمبیا (EGBC) - بریتیش&zwnj;کلمبیا</li>
+                <li>انجمن مهندسین و زمین&zwnj;شناسان حرفه&zwnj;ای آلبرتا (APEGA) - آلبرتا</li>
+                <li>انجمن مهندسین و زمین&zwnj;شناسان حرفه&zwnj;ای ساسکاچوان (APEGS) - ساسکاچوان</li>
+                <li>انجمن مهندسین و زمین&zwnj;شناسان حرفه&zwnj;ای منیتوبا (APEGM) - مانیتوبا</li>
+                <li>مهندسین حرفه&zwnj;ای انتاریو (PEO) - انتاریو</li>
+                <li>Ordre des ing&eacute;nieurs du Qu&eacute;bec (OIQ) &ndash; کبک</li>
+                <li>مهندسان و زمین&zwnj;شناسان حرفه&zwnj;ای نیوبرانزویک (PEGNB) - نیوبرانزویک</li>
+                <li>انجمن مهندسین و زمین&zwnj;شناسان حرفه&zwnj;ای نیوفاندلند و لابرادور (PEGNL) - نیوفاندلند و لابرادور</li>
+                <li>انجمن مهندسین حرفه&zwnj;ای جزیره پرنس&zwnj;ادوارد (مهندسین PEI) - جزیره پرنس&zwnj;ادوارد</li>
+                <li>مهندسین نوا اسکوشیا (Engineers NS) &ndash; نوا اسکوشیا</li>
+                <li>انجمن مهندسین و زمین&zwnj;شناسان حرفه&zwnj;ای یوکان (APEGY) - یوکان</li>
+                <li>سرزمین&zwnj;های شمال غربی و انجمن مهندسین و زمین&zwnj;شناسان حرفه&zwnj;ای نوناووت (NAPEG) -
+                  سرزمین&zwnj;های شمال غربی و نوناووت</li>
+                <li>دومین گام: تکمیل پیش&zwnj;نیازهای مهندسی هر استان</li>
+              </ul>
+              <p>توصیه ما این است که ابتدا سایت سازمان مهندسی استان خود را در این مورد بررسی کنید. اما به طور کلی،
+                پیش&zwnj;نیاز آکادمیک در تمامی استان&zwnj;ها مشترک است و شرایط آن به شرح زیر است:</p>
+              <ul>
+                <li>پیش&zwnj;نیاز آکادمیک</li>
+              </ul>
+              <p>مدرک لیسانس (4 ساله) در یکی از رشته&zwnj;های مهندسی</p>
+              <p>نکته: مدارک بالاتر از لیسانس در صورتی قابل ارائه است که هم&zwnj;راستا با لیسانس باشد. به عنوان مثال اگر
+                لیسانس مهندسی برق ارائه می&zwnj;دهید، ارشد شما هم مهندسی برق باشد.</p>
+              <ul>
+                <li>روش ارسال مدارک تحصیلی به سازمان&zwnj;های مهندسی</li>
+              </ul>
+              <p>برای ارسال مدارک تحصیلی خود به سازمان&zwnj;های مهندسی، دو راهکار وجود دارد:</p>
+              <ul>
+                <li>مدارک ترجمه&zwnj;شده باید از دانشگاه شما به صورت مهروموم&zwnj; شده (Sealed) مستقیم به اداره مهندسی استان
+                  فرستاده شود.</li>
+                <li>مدارک تحصیلی ترجمه&zwnj;شده&zwnj; شما باید به تایید یک مهندس دارای لایسنس P.Eng برسد و سپس به اداره
+                  مهندسی استان فرستاده شود. فناوران برای اعضای VIP مجموعه، تاییدیه مدرک تحصیلی را به صورت رایگان انجام
+                  می&zwnj;دهد. در صورت نیاز به تایید، مدارک خود را برای ما ارسال کنید.</li>
+              </ul>
+              <p>نکته: برای ارائه مدارک تحصیلی، باید شرح دروس (شرح درس) خود را نیز ارائه دهید.</p>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div id='FAQ' className='row'>
+      <a href='https://t.me/+D54o2CCh5Bo4NGI0' target='_blank' className='FNV-TelegramBG'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-md-8'>
+              <h4>به گروه تلگرامی مهندسی در کانادا بپیوندید</h4>
+            </div>
+            <div className='col-md-4'>
+              <i data-feather='send'></i>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <section className='FNV-SinglePage FNV-GrayBG' id='P3'>
+        <div className='container'>
+          <div className='row'>
+            <h3>چگونه می‌توانیم در سازمان اداری کانادا ثبت‌نام کنیم؟</h3>
+
+            <div className='col-12'>
+              <p>همواره توصیه فناوران به داوطلبان .P.Eng این بوده است که، ابتدا اطلاعات کامل را راجع به مهندسی حرفه&zwnj;ای در کانادا و شرایط هر استان کسب کرده و سپس به فکر اقدام برای آن باشند. به طور کلی مراحل ثبت&zwnj;نام در سازمان&zwnj; اداری کانادا به شرح زیر است:</p>
+              <ul>
+                <li>قدم اول: پر کردن فرم&zwnj;های اپلیکیشن اداره مهندسی استان محل سکونت</li>
+              </ul>
+              <p>برای مشاهده&zwnj; فرم&zwnj;های هر استان به لینک&zwnj;های زیر مراجعه کنید:</p>
+              <ul>
+                <li>مهندسی در استان انتاریو</li>
+                <li>مهندسی در استان نواسکوشیا</li>
+                <li>مهندسی در استان آلبرتا</li>
+                <li>مهندسی در استان بریتیش&zwnj;کلمبیا</li>
+                <li>قدم دوم: ارسال مدارک تحصیلی</li>
+              </ul>
+              <p>برای ارسال مدارک دو راه کلی وجود دارد:</p>
+              <ul>
+                <li>مدارک ترجمه&zwnj;شده باید از دانشگاه شما به صورت مهر و موم شده (Sealed) مستقیم به اداره مهندسی استان فرستاده شود.</li>
+                <li>مدارک ترجمه&zwnj;شده&zwnj; شما باید به تایید یک مهندس با لایسنس مهندسی حرفه&zwnj;ای در کانادا برسد.</li>
+              </ul>
+              <p>از جمله خدمات فناوران می&zwnj;توان به این مورد اشاره کرد که، اگر برای کانادا، مهندس دارای P.Eng نمی&zwnj;شناسید، می&zwnj;تواند این سرویس را به شما ارائه دهد. حتما بیانیه&zwnj;های مورد نظر خود را هم به زبان فارسی و هم انگلیسی به مدارک خود اضافه کرده و برای ما به آدرس info@fanavaran.ca ارسال کنید. این خدمات فقط برای اعضای فناوران دردسترس است. (برای عضویت در فناوران کلیک کنید)</p>
+              <ul>
+                <li>نکته: توجه داشته باشید که PEO تنها ترجمه&zwnj;هایی را می&zwnj;پذیرد که توسط یک مترجم معتبر ATIO یا یک P.Eng کانادایی انجام شود. مترجم باید به هر دو زبان مسلط باشد، فقط در این صورت است که دقت ترجمه مورد تایید قرار می&zwnj;&zwnj;گیرد. مترجم موظف است که شماره عضویت خود را ارائه کرده و هر صفحه را امضا و تاریخ را زیر آن درج کند. برای تایید مدارک باید رونوشت زبان اصلی و ریزنمرات لیسانس و ارشد را برای فناوران ارسال کنید. سعی کنید مدارک لیسانس و ارشد و همچنین رزومه&zwnj; خود را در یک فایل PDF برای ما ارسال کنید.</li>
+                <li>EIT و آزمون&zwnj;های تکنیکال</li>
+              </ul>
+              <p>در حالی که استان&zwnj;های کانادا به افراد کانادایی برای موقعیت&zwnj;های شغلی خود نیازمند هستند، افراد می&zwnj;توانند نسبت به دریافت دزیگنیشن EIT اقدام کنند. برای دریافت این لایسنس، در برخی موارد افراد پس از ثبت اپلیکیشن نیازمند گذراندن 4 کورس تکنیکال هستند. البته در صورت نگارش تجربیات کاری مرتبط ممکن است بتوانید دوره&zwnj;های تکنیکال را پشت سر بگذارید. این موضوع را به یاد داشته باشید که اگر تجربه&zwnj;های کاری شما در راستای رشته&zwnj; تحصیلی شما نباشد، 18 کورس تکنیکال به عنوان پیش&zwnj;نیاز به شما تعلق می&zwnj;گیرد.</p>
+              <p>برای نگارش تجربیات کاری توجه داشته باشید که سوابق مهندسی مطابق با استانداردهای سازمان&zwnj;های مهندسی و استفاده از ترمینولوژی&zwnj;های دقیق و رفرال&zwnj;های مهم در پرونده شما است. سوابق کاری شما باید مطابق با تعریف &laquo;مهندسی در کانادا&raquo; باشد و از نظر فاکتورهای مختلف، معقول و قابل&zwnj;پذیرش باشد. برای اطلاع از نحوه نگارش سوابق کاری، توصیه می&zwnj;کنیم ورکشاپ تخصصی نگارش تجربیات مهندسی را مشاهده کنید.</p>
+              <p>اگر به گذراندن دوره&zwnj;های تکنیکال نیازمند بودید بدانید که فناوران همراه شماست و با استفاده از اساتید مجرب و دانشگاهی، این دوره&zwnj;های تکنیکال را به صورت اختصاصی و نیمه&zwnj;خصوصی برای شما برگزار خواهد کرد. (برای ثبت&zwnj;نام کلیک کنید)</p>
+              <p>توجه داشته باشید که باید شرح دروس خود را ارائه دهید و در صورت نیاز، جدول درجه&zwnj;بندی روبیک را جهت تطبیق نمرات داشته باشید.</p>
+              <p>چند نمونه دیسکریپشن رشته&zwnj;های مهندسی مختلف:</p>
+              <ul>
+                <li>مهندس عمران</li>
+                <li>مهندسی برق</li>
+                <li>مهندسی مکانیک - 1</li>
+                <li>مهندسی مکانیک - 2</li>
+                <li>مهندسی عمران و محیط&zwnj;زیست</li>
+                <li>مهندسی آبیاری</li>
+              </ul>
+              <p>به این نکته دقت کنید که ممکن است به جدول Grading Rubric نیز نیاز باشد که از طریق این لینک می&zwnj;توانید دریافت کنید.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='FNV-SinglePage' id='FAQ'>
+        <div className='container'>
+          <div className='row'>
             <h3>سوالات متداول</h3>
 
             <div className='accordion p-0' id='FAQEngineering'>
               <div className='accordion-item'>
                 <h2 className='accordion-header'>
-                  <button
-                    className='accordion-button'
-                    type='button'
-                    data-bs-toggle='collapse'
-                    data-bs-target='#Question1'
-                    aria-expanded='true'
-                    aria-controls='Question1'
-                  >
-                    1. آيا تاييد سازمان WES (World Education Services) براي تمام استانهاي كانادا لازم است؟
+                  <button className='accordion-button' type='button' data-bs-toggle='collapse' data-bs-target='#Question1'
+                    aria-expanded='true' aria-controls='Question1'>
+                    آیا تایید سازمان WES (World Education Services) برای تمام استان‌های كانادا لازم است؟
                   </button>
                 </h2>
                 <div id='Question1' className='accordion-collapse collapse show' data-bs-parent='#FAQEngineering'>
                   <div className='accordion-body'>
                     <p>
-                      پاسخ: خير، فقط در بعضي از استانهاي كانادا داشتن تاييديه از سازمان WES الزامي است (استانهاي
-                      ساسكاچوان، ….) و اين سازمان مدارک اصلی شما را به هیچ ارگانی ارسال نمي كند و فقط تاییدیه مدارك را
-                      ارسال مي نمايد.
-                    </p>
-                    <p>
-                      مثلاً نسخه ریزنمراتی که قبلا ارسال نموده ايد در سازمان WES باقي مي ماند و برای موارد ديگر بايستي
-                      نسخه جدیدی تهيه نماييد.
+                      پاسخ: خير، فقط در برخي از استان‌های كانادا تاييديه از سازمان WES الزامی است.
                     </p>
                   </div>
                 </div>
@@ -502,15 +303,9 @@ const Index = () => {
 
               <div className='accordion-item'>
                 <h2 className='accordion-header'>
-                  <button
-                    className='accordion-button collapsed'
-                    type='button'
-                    data-bs-toggle='collapse'
-                    data-bs-target='#Question2'
-                    aria-expanded='false'
-                    aria-controls='Question2'
-                  >
-                    2. آيا مي توان براي استاني غير از استان محل سكونت فعلي براي .P.Eng اقدام نمود؟
+                  <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse'
+                    data-bs-target='#Question2' aria-expanded='false' aria-controls='Question2'>
+                    آیا می‌توان برای استانی غیر از استان محل سكونت فعال برای .P.Eng اقدام کرد؟
                   </button>
                 </h2>
                 <div id='Question2' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
@@ -520,42 +315,15 @@ const Index = () => {
 
               <div className='accordion-item'>
                 <h2 className='accordion-header'>
-                  <button
-                    className='accordion-button collapsed'
-                    type='button'
-                    data-bs-toggle='collapse'
-                    data-bs-target='#Question3'
-                    aria-expanded='false'
-                    aria-controls='Question3'
-                  >
-                    3. اگر لايسنس .P.Eng را در استان داشته باشيم ميتوانيم براي Peng شدن در استان ديگري اقدام نماييم؟
+                  <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse'
+                    data-bs-target='#Question3' aria-expanded='false' aria-controls='Question3'>
+                    اگر لايسنس .P.Eng را در یک استان داشته باشيم، آیا می‌توانیم مجددا برای یک استان دیگر اقدام کنیم؟
                   </button>
                 </h2>
                 <div id='Question3' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
                   <div className='accordion-body'>
-                    <p>پاسخ: بله، در صورتيكه هزينه عضويت سالانه هر دو استان را پرداخت نماييد امكان پذير است.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className='accordion-item'>
-                <h2 className='accordion-header'>
-                  <button
-                    className='accordion-button collapsed'
-                    type='button'
-                    data-bs-toggle='collapse'
-                    data-bs-target='#Question4'
-                    aria-expanded='false'
-                    aria-controls='Question4'
-                  >
-                    4. آيا بايستي Experience Record را در مرحله اول ارسال نمود؟
-                  </button>
-                </h2>
-                <div id='Question4' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
-                  <div className='accordion-body'>
                     <p>
-                      پاسخ: خير، الزامي نيست. اما بهتر است بعد از ارسال سري اول مدارك، Experience Record را تهيه و ارسال
-                      نماييد. لازم بذكر است، اين مدرك پس از ارسال در صورت نياز قابل تغيير مي باشد.
+                      پاسخ: بله، در صورتي‌كه هزينه عضويت سالانه هر دو استان را پرداخت کرده باشید.
                     </p>
                   </div>
                 </div>
@@ -563,15 +331,25 @@ const Index = () => {
 
               <div className='accordion-item'>
                 <h2 className='accordion-header'>
-                  <button
-                    className='accordion-button collapsed'
-                    type='button'
-                    data-bs-toggle='collapse'
-                    data-bs-target='#Question5'
-                    aria-expanded='false'
-                    aria-controls='Question5'
-                  >
-                    5. آيا لازم است كه دروس عمومي را در شرح دروس ارائه نماييم؟
+                  <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse'
+                    data-bs-target='#Question4' aria-expanded='false' aria-controls='Question4'>
+                    آیا باید سابقه تجربه را در مرحله اول ارسال کرد؟
+                  </button>
+                </h2>
+                <div id='Question4' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      پاسخ: خیر، الزامی نیست. اما بهتر است بعد از ارسال سري اول مدارك، Experience Record را تهيه و ارسال نماييد. لازم بذكر است، اين مدرك پس از ارسال در صورت نياز قابل تغيير است.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse'
+                    data-bs-target='#Question5' aria-expanded='false' aria-controls='Question5'>
+                    آیا لازم است که دروس عمومی را در شرح دروس ارائه کنیم؟
                   </button>
                 </h2>
                 <div id='Question5' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
