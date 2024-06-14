@@ -4675,7 +4675,7 @@ body[dir=ltr] .FNV-SinglePage .container .row .accordion .accordion-item .accord
   body[dir=rtl] .FNV-SinglePage .container .row .col-12 {
     display: block;
     border-radius: 15px;
-    padding: 0 2rem;
+    padding: 2rem;
     margin-bottom: 1rem;
     overflow: hidden;
   }
@@ -4685,7 +4685,7 @@ body[dir=ltr] .FNV-SinglePage .container .row .accordion .accordion-item .accord
     color: #000000;
   }
   body[dir=rtl] .FNV-SinglePage .container .row .col-12 h5 {
-    font-size: 18px;
+    font-size: 16px;
   }
   body[dir=rtl] .FNV-SinglePage .container .row .col-12 p {
     font-size: 14px;
