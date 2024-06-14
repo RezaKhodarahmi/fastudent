@@ -4298,19 +4298,19 @@ body[dir=rtl] .FNV-SinglePage .container .row.FNV-CTA {
   background-color: rgba(51, 48, 60, 0.8705882353);
   border-radius: 50px;
 }
-body[dir=rtl] .FNV-SinglePage .container .row.FNV-CTA .col-8 {
+body[dir=rtl] .FNV-SinglePage .container .row.FNV-CTA .col-md-8 {
   padding-right: 4rem;
 }
-body[dir=rtl] .FNV-SinglePage .container .row.FNV-CTA .col-8 h4 {
+body[dir=rtl] .FNV-SinglePage .container .row.FNV-CTA .col-md-8 h4 {
   color: #ffffff;
   margin-top: 1rem;
   margin-bottom: 0;
   line-height: 36px;
 }
-body[dir=rtl] .FNV-SinglePage .container .row.FNV-CTA .col-4 {
+body[dir=rtl] .FNV-SinglePage .container .row.FNV-CTA .col-md-4 {
   text-align: center;
 }
-body[dir=rtl] .FNV-SinglePage .container .row.FNV-CTA .col-4 img {
+body[dir=rtl] .FNV-SinglePage .container .row.FNV-CTA .col-md-4 img {
   margin-top: -10rem;
   width: 200px;
 }
@@ -4559,6 +4559,7 @@ body[dir=ltr] .FNV-SinglePage .container .row .accordion .accordion-item .accord
   /* For mobile phones: */
   body[dir=rtl] .FNV-SinglePage {
     position: relative;
+    overflow: hidden;
   }
   body[dir=rtl] .FNV-SinglePage .FNV-BG {
     position: absolute;
@@ -4578,7 +4579,7 @@ body[dir=ltr] .FNV-SinglePage .container .row .accordion .accordion-item .accord
   body[dir=rtl] .FNV-SinglePage .container {
     position: relative;
     z-index: 2;
-    padding: 1rem;
+    padding: 0;
   }
   body[dir=rtl] .FNV-SinglePage .container .row {
     padding-top: 2rem;
@@ -4588,11 +4589,11 @@ body[dir=ltr] .FNV-SinglePage .container .row .accordion .accordion-item .accord
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.17);
-    box-shadow: 0 0 50px rgba(145, 145, 145, 0.1019607843);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    padding: 2rem 1rem;
+    background: #ffffff;
+    box-shadow: 0 0 0px rgba(145, 145, 145, 0.1019607843);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    padding: 2rem;
   }
   body[dir=rtl] .FNV-SinglePage .container .row.FNV-Header .col-12 {
     background-color: transparent;
@@ -4600,12 +4601,12 @@ body[dir=ltr] .FNV-SinglePage .container .row .accordion .accordion-item .accord
     padding: 0;
   }
   body[dir=rtl] .FNV-SinglePage .container .row.FNV-Header .col-12 h1 {
-    color: #ffffff;
+    color: #000000;
     font-weight: 800;
-    font-size: 28px;
+    font-size: 26px;
     text-align: center;
-    margin-bottom: 2rem;
-    text-shadow: 0 0 5px #000000;
+    margin-bottom: 0rem;
+    text-shadow: unset;
   }
   body[dir=rtl] .FNV-SinglePage .container .row.FNV-Header .col-md-6 {
     margin-bottom: 0;
@@ -4614,7 +4615,7 @@ body[dir=ltr] .FNV-SinglePage .container .row .accordion .accordion-item .accord
     width: 100%;
     padding: 1rem;
     display: block;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
     text-align: center;
     background-color: #ffffff;
@@ -4626,22 +4627,40 @@ body[dir=ltr] .FNV-SinglePage .container .row .accordion .accordion-item .accord
     height: 200px;
   }
   body[dir=rtl] .FNV-SinglePage .container .row.FNV-Header .col-md-6 p {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
-    color: #ffffff;
+    color: #000000;
     padding-right: 0rem;
     text-align: justify;
-    text-shadow: 0 0 5px #000000;
+    text-shadow: unset;
+  }
+  body[dir=rtl] .FNV-SinglePage .container .row.FNV-CTA {
+    background-color: rgba(51, 48, 60, 0.8705882353);
+    border-radius: 50px;
+    padding: 2rem;
+  }
+  body[dir=rtl] .FNV-SinglePage .container .row.FNV-CTA .col-md-8 {
+    padding: 0rem;
+  }
+  body[dir=rtl] .FNV-SinglePage .container .row.FNV-CTA .col-md-8 h4 {
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 36px;
+    color: #ffffff;
+  }
+  body[dir=rtl] .FNV-SinglePage .container .row.FNV-CTA .col-6 {
+    display: none;
   }
   body[dir=rtl] .FNV-SinglePage .container .row h2 {
     font-size: 32px;
   }
   body[dir=rtl] .FNV-SinglePage .container .row h3 {
-    font-size: 25px;
+    font-size: 16px;
+    line-height: 32px;
     font-weight: 600;
     position: relative;
     padding-right: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     color: #000000;
   }
   body[dir=rtl] .FNV-SinglePage .container .row h3::before {
@@ -4656,9 +4675,7 @@ body[dir=ltr] .FNV-SinglePage .container .row .accordion .accordion-item .accord
   body[dir=rtl] .FNV-SinglePage .container .row .col-12 {
     display: block;
     border-radius: 15px;
-    background-color: #ffffff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1411764706);
-    padding: 1rem;
+    padding: 0 2rem;
     margin-bottom: 1rem;
     overflow: hidden;
   }
@@ -4671,9 +4688,17 @@ body[dir=ltr] .FNV-SinglePage .container .row .accordion .accordion-item .accord
     font-size: 18px;
   }
   body[dir=rtl] .FNV-SinglePage .container .row .col-12 p {
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
     color: #000000;
+  }
+  body[dir=rtl] .FNV-SinglePage .container .row .col-12 ul {
+    padding-right: 2rem;
+    font-size: 14px;
+  }
+  body[dir=rtl] .FNV-SinglePage .container .row .col-12 ul li {
+    margin-bottom: 0.1rem;
   }
   body[dir=rtl] .FNV-SinglePage .container .row .col-12 iframe {
     width: 100%;
@@ -4689,6 +4714,7 @@ body[dir=ltr] .FNV-SinglePage .container .row .accordion .accordion-item .accord
   }
   body[dir=rtl] .FNV-SinglePage .container .row .accordion {
     border-radius: 15px;
+    padding: 2rem !important;
   }
   body[dir=rtl] .FNV-SinglePage .container .row .accordion .accordion-item {
     margin-bottom: 1rem;
@@ -4699,18 +4725,87 @@ body[dir=ltr] .FNV-SinglePage .container .row .accordion .accordion-item .accord
   body[dir=rtl] .FNV-SinglePage .container .row .accordion .accordion-item .accordion-header .accordion-button {
     box-shadow: unset;
     background-color: transparent;
-    font-size: 18px;
-    line-height: 36px;
+    font-size: 12px;
+    line-height: 24px;
     font-weight: 600;
+    text-align: right;
+    padding: 0.5rem;
   }
   body[dir=rtl] .FNV-SinglePage .container .row .accordion .accordion-item .accordion-header .accordion-button::after {
     margin-left: unset;
     margin-right: auto;
   }
   body[dir=rtl] .FNV-SinglePage .container .row .accordion .accordion-item .accordion-collapse .accordion-body {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 32px;
     font-weight: 500;
+    padding: 0.5rem;
+  }
+  body[dir=rtl] .FNV-SinglePage .container .row .accordion .accordion-item .accordion-collapse .accordion-body p {
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-SinglePage.FNV-ContentList {
+    background-color: #223885 !important;
+    margin-top: 0rem;
+    padding: 1rem;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+  body[dir=rtl] .FNV-SinglePage.FNV-ContentList .container {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-SinglePage.FNV-ContentList .container .row .col-12 {
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-SinglePage.FNV-ContentList .container .row .col-12 p {
+    font-size: 20px;
+    font-weight: 800;
+    color: #ffffff;
+  }
+  body[dir=rtl] .FNV-SinglePage.FNV-ContentList .container .row .col-12 ol li {
+    color: #ffffff;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] .FNV-SinglePage.FNV-ContentList .container .row .col-12 ol li a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  body[dir=rtl] .FNV-SinglePage.FNV-GrayBG {
+    background-color: #F8F7FA;
+    z-index: 2;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+  body[dir=rtl] .FNV-SinglePage.FNV-WhiteBG {
+    background-color: #ffffff;
+    padding-top: 4rem;
+    margin-top: -5rem;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+  body[dir=rtl] .FNV-TelegramBG {
+    display: block;
+    margin-top: -4rem;
+    padding: 6rem 0 2rem;
+    background-color: #0088cc;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+  body[dir=rtl] .FNV-TelegramBG .container .row .col-md-8 h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  body[dir=rtl] .FNV-TelegramBG .container .row .col-md-4 {
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-TelegramBG .container .row .col-md-4 svg {
+    width: 20px;
+    height: 20px;
+    color: #ffffff;
+    stroke: #ffffff;
   }
 }
 .FNV-Single-Post .container .row .col-12 {

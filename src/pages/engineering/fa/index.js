@@ -153,11 +153,11 @@ const Index = () => {
           </div>
 
           <a href='/project-management' className='row FNV-CTA'>
-            <div className='col-8'>
+            <div className='col-12 col-md-8'>
               <h4>در نظر داشته باشید، اگر کار کارگاهی انجام می‌دهید و سرپرست کارگاه‌ هستید، فعالیت شما در دسته امور مربوط به
                 مدیریت پروژه قرار می‌گیرد. برای دریافت اطلاعات بیشتر به صفحه مدیریت پروژه در کانادا مراجعه کنید.</h4>
             </div>
-            <div className='col-4'>
+            <div className='col-6 col-md-4'>
               <img src='/img/landings/project-manager.png' className='img-fluid' />
             </div>
           </a>
@@ -222,10 +222,10 @@ const Index = () => {
       <a href='https://t.me/+D54o2CCh5Bo4NGI0' target='_blank' className='FNV-TelegramBG'>
         <div className='container'>
           <div className='row'>
-            <div className='col-md-8'>
+            <div className='col-10 col-md-8'>
               <h4>به گروه تلگرامی مهندسی در کانادا بپیوندید</h4>
             </div>
-            <div className='col-md-4'>
+            <div className='col-2 col-md-4'>
               <i data-feather='send'></i>
             </div>
           </div>
