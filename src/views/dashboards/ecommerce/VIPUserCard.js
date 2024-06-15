@@ -102,7 +102,7 @@ const FreeUserCard = props => {
 
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
             <CustomAvatar skin='light' variant='rounded' sx={{ mr: 3, width: 55, height: 55 }}>
-              <Icon icon='tabler:hand-rock' />
+              <Icon icon='tabler:crown' />
             </CustomAvatar>
             <Box
                 sx={{

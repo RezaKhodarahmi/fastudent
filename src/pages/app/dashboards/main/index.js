@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 
 // ** MUI Imports
 import Grid from '@mui/material/Grid'
+import Typography from '@mui/material/Typography'
+import Divider from '@mui/material/Divider'
 
 // ** Demo Components Imports
 import CardUser from 'src/views/ui/cards/basic/CardUser'
@@ -65,9 +67,13 @@ const AnalyticsDashboard = () => {
 
           {/* Popular Courses */}
           <Grid item xs={12} sm={6} md={12}>
-            <CardSnippet title='Enrolled Courses' code={{ tsx: null, jsx: null }}>
+            <Grid title='Enrolled Courses' code={{ tsx: null, jsx: null }}>
+              <Typography component='span' variant='h4' sx={{ my: 1, fontWeight: 500, marginBottom: '20px' }}>
+                Enrolled Courses
+              </Typography>
+              <Divider sx={{ my: '20px !important' }} />
               <ListEnrolledCourses courses={courses} />
-            </CardSnippet>
+            </Grid>
           </Grid>
         </Grid>
       </KeenSliderWrapper>
