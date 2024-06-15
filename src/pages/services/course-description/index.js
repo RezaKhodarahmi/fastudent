@@ -15,6 +15,10 @@ import {
   InputLabel,
   FormHelperText
 } from '@mui/material'
+
+// ** MUI Imports
+import Grid from '@mui/material/Grid'
+
 import { styled } from '@mui/system'
 import BASE_URL from 'src/api/BASE_URL'
 
@@ -143,98 +147,108 @@ const UploadForm = () => {
   }
 
   return (
-    <Box style={{ direction: 'rtl' }} sx={{ maxWidth: 500, mx: 'auto', mt: 5 }}>
-      <Typography variant='h6' component='div' gutterBottom>
-        فرم درخواست کورس دیسکریپشن
-      </Typography>
-      <form onSubmit={handleSubmit(onSubmit)} noValidate>
-        <Controller
-          name='fullName'
-          control={control}
-          rules={{ required: 'نام و نام خانوادگی الزامی میباشد.' }}
-          render={({ field }) => (
-            <TextField
-              {...field}
-              label='Full Name'
-              variant='outlined'
-              fullWidth
-              margin='normal'
-              error={Boolean(errors.fullName)}
-              helperText={errors.fullName?.message}
-            />
-          )}
-        />
-        <FormControl fullWidth margin='normal' error={Boolean(errors.types)}>
-          <InputLabel id='type-label'>کورس دیسکریپشن کدام یک از مقاطع زیر مورد نیاز است؟</InputLabel>
-          <Controller
-            name='types'
-            control={control}
-            rules={{ required: 'برای ادامه حداقل یک مقطع را انتخاب کنید' }}
-            render={({ field }) => (
-              <Select {...field} labelId='type-label' label='Type' multiple>
-                <MenuItem value={1}>کاردانی</MenuItem>
-                <MenuItem value={2}>کارشناسی ناپیوسته</MenuItem>
-                <MenuItem value={3}>کارشناسی پیوسته</MenuItem>
-                <MenuItem value={4}>کارشناسی ارشد</MenuItem>
-                <MenuItem value={5}>دکتری</MenuItem>
-              </Select>
-            )}
-          />
-          <FormHelperText>{errors.types?.message}</FormHelperText>
-        </FormControl>
+    <>
+      <div className='container-fluid'>
+        <div className='row'>
+          <div className='col-4'></div>
+          <div className='col-8'>
+            <Box style={{ direction: 'rtl' }} sx={{ mx: 'auto', mt: 5 }}>
+              <Typography variant='h1' component='div' gutterBottom>
+                فرم درخواست کورس دیسکریپشن
+              </Typography>
 
-        {selectedTypes.map(type => (
-          <Controller
-            key={fileFields[type]}
-            name={fileFields[type]}
-            control={control}
-            render={({ field }) => (
-              <>
-                <Box display='flex' alignItems='center' mb={2}>
-                  <FileInput
-                    id={fileFields[type]}
-                    readOnly={true}
-                    type='file'
-                    onChange={e => {
-                      const file = e.target.files[0] ? { file: e.target.files[0], fieldName: fileFields[type] } : null
-                      setValue(fileFields[type], file)
-                    }}
-                  />
-                  <label htmlFor={fileFields[type]}>
-                    <Button
-                      variant='contained'
-                      component='span'
-                      sx={{ mr: 2, backgroundColor: watch(fileFields[type]) ? 'green' : undefined }}
-                    >
-                      {fileLabels[fileFields[type]]}
-                    </Button>
-                  </label>
-                  {watch(fileFields[type]) && watch(fileFields[type]).file && (
-                    <Typography variant='body2'>{watch(fileFields[type]).file.name}</Typography>
+              <form onSubmit={handleSubmit(onSubmit)} noValidate>
+                <Controller
+                  name='fullName'
+                  control={control}
+                  rules={{ required: 'نام و نام خانوادگی الزامی میباشد.' }}
+                  render={({ field }) => (
+                    <TextField
+                      {...field}
+                      label='Full Name'
+                      variant='outlined'
+                      fullWidth
+                      margin='normal'
+                      error={Boolean(errors.fullName)}
+                      helperText={errors.fullName?.message}
+                    />
                   )}
-                </Box>
-              </>
-            )}
-          />
-        ))}
+                />
+                <FormControl fullWidth margin='normal' error={Boolean(errors.types)}>
+                  <InputLabel id='type-label'>کورس دیسکریپشن کدام یک از مقاطع زیر مورد نیاز است؟</InputLabel>
+                  <Controller
+                    name='types'
+                    control={control}
+                    rules={{ required: 'برای ادامه حداقل یک مقطع را انتخاب کنید' }}
+                    render={({ field }) => (
+                      <Select {...field} labelId='type-label' label='Type' multiple>
+                        <MenuItem value={1}>کاردانی</MenuItem>
+                        <MenuItem value={2}>کارشناسی ناپیوسته</MenuItem>
+                        <MenuItem value={3}>کارشناسی پیوسته</MenuItem>
+                        <MenuItem value={4}>کارشناسی ارشد</MenuItem>
+                        <MenuItem value={5}>دکتری</MenuItem>
+                      </Select>
+                    )}
+                  />
+                  <FormHelperText>{errors.types?.message}</FormHelperText>
+                </FormControl>
 
-        {errors.files && (
-          <Typography color='error' variant='body2'>
-            {errors.files.message}
-          </Typography>
-        )}
-        <Typography variant='h6'>Total Price: ${totalPrice}</Typography>
-        {user ? (
-          <Button type='submit' variant='contained' color='primary' fullWidth>
-            Submit
-          </Button>
-        ) : (
-          <Button type='button' onClick={handleLogin} variant='contained' color='primary' fullWidth>
-            Login to submit
-          </Button>
-        )}
-      </form>
-    </Box>
+                {selectedTypes.map(type => (
+                  <Controller
+                    key={fileFields[type]}
+                    name={fileFields[type]}
+                    control={control}
+                    render={({ field }) => (
+                      <>
+                        <Box display='flex' alignItems='center' mb={2}>
+                          <FileInput
+                            id={fileFields[type]}
+                            readOnly={true}
+                            type='file'
+                            onChange={e => {
+                              const file = e.target.files[0] ? { file: e.target.files[0], fieldName: fileFields[type] } : null
+                              setValue(fileFields[type], file)
+                            }}
+                          />
+                          <label htmlFor={fileFields[type]}>
+                            <Button
+                              variant='contained'
+                              component='span'
+                              sx={{ mr: 2, backgroundColor: watch(fileFields[type]) ? 'green' : undefined }}
+                            >
+                              {fileLabels[fileFields[type]]}
+                            </Button>
+                          </label>
+                          {watch(fileFields[type]) && watch(fileFields[type]).file && (
+                            <Typography variant='body2'>{watch(fileFields[type]).file.name}</Typography>
+                          )}
+                        </Box>
+                      </>
+                    )}
+                  />
+                ))}
+
+                {errors.files && (
+                  <Typography color='error' variant='body2'>
+                    {errors.files.message}
+                  </Typography>
+                )}
+                <Typography variant='h6'>Total Price: ${totalPrice}</Typography>
+                {user ? (
+                  <Button type='submit' variant='contained' color='primary' fullWidth>
+                    Submit
+                  </Button>
+                ) : (
+                  <Button type='button' onClick={handleLogin} variant='contained' color='primary' fullWidth>
+                    Login to submit
+                  </Button>
+                )}
+              </form>
+            </Box>
+          </div>
+        </div>
+      </div>
+    </>
   )
 }
 
