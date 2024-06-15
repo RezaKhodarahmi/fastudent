@@ -1,185 +1,61 @@
 @import './variables';
-.FNV-Cart .FNV-Header {
-  background-image: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url('/img/Course_Featured.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  padding: 5rem 0;
-  height: unset;
 
-  .container {
-    .row {
-      .col-12 {
-        h2 {
-          color: $WhiteColor;
-          text-align: center;
-          font-size: 35px;
-          line-height: 36px;
-        }
-
-        .FNV-Cat-Shorts {
-          margin-top: 0.5rem;
-          .row {
-            .col-md,
-            .col-md-6 {
-              display: flex;
-              align-items: center;
-
-              svg {
-                color: $SecondaryColor;
-                margin-right: 0.5rem;
-              }
-
-              h3 {
-                font-size: 14px;
-                line-height: 28px;
-                margin-bottom: 0;
-                color: $GrayTwoColor;
-
-                strong {
-                  color: $WhiteColor;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
 #Field-shippingAsBillingCheckbox {
   display: none !important;
 }
+
 .FNV-Cart-Detail {
   margin-top: 1rem;
   .container {
     .row {
-      .col-md-8 {
-        .FNV-Coupon {
-          display: block;
-          border-radius: 5px;
-          background-color: $WhiteColor;
-          box-shadow: 0 0 20px $ShadowPrimary;
-          padding: 0rem;
-          overflow: hidden;
-          margin-bottom: 2rem;
+      &.FNV-ReferalCode{
+        padding: 2rem;
+        border-radius: 20px;
+        background-color: #003cbf10;
 
-          h3 {
+        .col-md-6{
+          h2{
             font-size: 25px;
-            margin-bottom: 1rem;
-            text-align: center;
+            font-weight: 600;
+            color: $PrimaryColor;
           }
-        }
 
-        .FNV-Cart-Header {
-          margin-bottom: 1rem;
+          strong{
+            color: $SecondaryColor;
 
-          .col-12 {
-            padding: 0;
-
-            .FNV-Btn {
-              color: $GrayThreeColor;
-            }
-          }
-        }
-
-        .FNV-Cart {
-          display: block;
-          border-radius: 5px;
-          background-color: $WhiteColor;
-          box-shadow: 0 0 20px $ShadowPrimary;
-          padding: 1rem;
-          margin-bottom: 1rem;
-          overflow: hidden;
-
-          .FNV-Cart-Content {
-            h3 {
-              font-size: 22px;
-              font-weight: 500;
-            }
-
-            h4 {
-              font-size: 20px;
-              font-weight: 500;
-            }
-
-            p,
-            ul {
-              color: $GrayFiveColor;
-              font-weight: 400;
-              font-size: 15px;
-              line-height: 25px;
-              margin-bottom: 2rem;
-              text-align: justify;
+            svg{
+              color: $PrimaryColor;
             }
           }
 
-          .FNV-Cart-Content-Header {
-            padding: 1rem 0;
-            border-bottom: 1px solid $GrayOneColor;
+          .row{
+            height: 100%;
 
-            .row {
-              .col-2 {
-                text-align: center;
-              }
-            }
-          }
+            .col-md-6{
+              padding: 0;
 
-          .FNV-Cart-Content-Body {
-            padding: 0.1rem 0;
+              input{
+                width: 100%;
+                height: 100%;
 
-            .row {
-              border-bottom: 1px solid $GrayOneColor;
-              padding-bottom: 0.1rem;
+                &.FNV-Text{
+                  border-top-right-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  border-top-left-radius: 0;
+                  border-bottom-left-radius: 0;
+                  color: $PrimaryColor;
+                  font-weight: 600;
+                  font-size: 20px;
+                  text-transform: uppercase;
 
-              .col-6 {
-                .row {
-                  border-width: 0;
-                  .col-4 {
-                    img {
-                      border-radius: 5px;
-                    }
-                  }
-
-                  .col-8 {
-                    display: flex;
-                    align-items: flex-start;
-                    justify-content: center;
-                    flex-direction: column;
-
-                    h4 {
-                      font-size: 16px;
-                    }
-
-                    p {
-                      margin-bottom: 0;
-                    }
+                  &:focus{
+                    box-shadow: unset;
                   }
                 }
-              }
 
-              .col-2 {
-                text-align: center;
-
-                .FNV-Cart-Price {
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  height: 100%;
-                }
-
-                .FNV-Cart-Quantity {
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  height: 100%;
-                }
-
-                .FNV-Cart-Total {
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  height: 100%;
+                &.FNV-Btn{
+                  font-size: 20px;
+                  font-weight: 600;
                 }
               }
             }
@@ -187,60 +63,206 @@
         }
       }
 
-      .col-md-4 {
-        .FNV-Cart-Direct {
-          display: block;
-          background-color: $WhiteColor;
-          box-shadow: 0 0 20px $ShadowPrimary;
-          padding: 2rem;
-          margin-bottom: 0rem;
-          overflow: hidden;
-          border-radius: 5px;
-          position: -webkit-sticky; /* Safari */
-          position: sticky;
-          top: 1rem;
-
-          .FNV-Btn {
-            font-weight: 400;
-            margin-top: 1rem;
+      &.FNV-Heading{
+        .col-md-2{
+          h2{
+            font-size: 25px;
+            font-weight: 600;
+            color: $PrimaryColor;
+            padding: 2.5rem 0;
           }
-
-          a.d-block {
-            color: $GrayThreeColor;
-          }
-
-          h4 {
-            font-size: 20px;
-            line-height: 34px;
-            margin-top: 0.5rem;
-            font-weight: 400;
-            margin-bottom: 0;
-
-            &:last-child {
-              margin-top: 1rem;
+        }
+  
+        .col-md-10{
+          padding: 0;
+  
+          .row{
+            margin: 1.5rem 0 0;
+            padding: 1rem;
+            border-radius: 20px;
+            background-color: #003cbf10;
+  
+            .col-md-8, .col-md-4{
+              span{
+                font-size: 20px;
+                font-weight: 600;
+                color: $PrimaryColor;
+              }
             }
           }
+        }
+      }
 
-          p {
-            margin-bottom: 1rem;
-            font-size: 14px;
-            font-weight: 300;
+      &.FNV-CartItems{
+        overflow: hidden;
+        margin-bottom: 1rem;
+        border-radius: 20px;
+        background-color: $WhiteColor;
+        box-shadow: 0 0 20px #00000010;
+
+        .col-md-2{
+          padding: 0;
+          img{
+            border-radius: 20px;
+          }
+        }
+  
+        .col-md-10{
+          padding: 0;
+  
+          .row{
+            margin: 0;
+            padding: 1rem;
+            border-radius: 20px;
+            height: 100%;
+            align-items: center;
+  
+            .col-md-8{
+              display: flex;
+              align-items: start;
+              justify-content: center;
+              flex-direction: column;
+
+              .row{
+                padding: 0;
+                width: 100%;
+                gap: 10px;
+                flex-direction: row;
+
+                p{
+                  font-size: 22px;
+                  font-weight: 600;
+                  color: $PrimaryColor;
+                  width: 100%;
+                }
+
+                a{
+                  width: 30%;
+                  font-size: 14px;
+                  font-weight: 600;
+                }
+              }
+            }
+
+            .col-md-4{
+              span{
+                font-size: 30px;
+                font-weight: 600;
+                color: $PrimaryColor;
+              }
+
+              p{
+                font-size: 30px;
+                font-weight: 600;
+                color: $SecondaryColor;
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+
+      &.FNV-Coupon{
+        padding: 2rem 0;
+        border-top: 4px solid #003cbf30;
+        margin-bottom: 1rem;
+
+        .col-md-4{
+          display: flex;
+          align-items: center;
+        }
+
+        .col-md-8{
+          .row{
+            .col-md-6{
+              span{
+                display: block;
+                font-size: 25px;
+                padding: .5rem 0;
+                font-weight: 600;
+                color: $PrimaryColor;
+              }
+
+              .row{
+                height: 100%;
+    
+                .col-md-6{
+                  padding: 0;
+    
+                  input{
+                    width: 100%;
+                    height: 100%;
+    
+                    &.FNV-Text{
+                      border-top-right-radius: 15px;
+                      border-bottom-right-radius: 15px;
+                      border-top-left-radius: 0;
+                      border-bottom-left-radius: 0;
+                      color: $PrimaryColor;
+                      font-weight: 600;
+                      font-size: 20px;
+                      text-transform: uppercase;
+    
+                      &:focus{
+                        box-shadow: unset;
+                      }
+                    }
+    
+                    &.FNV-Btn{
+                      font-size: 20px;
+                      font-weight: 600;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &.FNV-Total{
+        padding: 1rem 0;
+        border-top: 4px solid #003cbf30;
+        margin-bottom: 1rem;
+
+        .col-md-8{
+          .row{
+            .col-md-6{
+              border-bottom: 2px solid #003cbf30;
+
+              p{
+                display: block;
+                font-size: 22px;
+                padding: .5rem 0;
+                font-weight: 600;
+                color: $PrimaryColor;
+              }
+
+              span{
+                display: block;
+                font-size: 22px;
+                font-weight: 800;
+                padding: .5rem 0;
+                text-align: center;
+                color: $PrimaryColor;
+              }
+            }
+          }
+        }
+      }
+
+      &.FNV-Terms{
+        .col-md-12{
+          h6{
+            font-size: 25px;
+            font-weight: 600;
+            color: $PrimaryColor;
           }
 
-          h5 {
-            margin-bottom: 1rem;
-
-            &.FNV-Total {
-              border-top: 1px solid $GrayFourColor;
-              padding-top: 0.5rem;
-            }
-
-            &:last-child {
-              margin-bottom: 0;
-            }
-
-            price {
-              color: $SecondaryColor;
+          label{
+            span{
+              font-size: 16px;
+              font-weight: 600;
             }
           }
         }
@@ -251,211 +273,280 @@
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 575.98px) {
-  .FNV-Course-Detail {
+  .FNV-Cart-Detail {
+    padding: 1rem;
+
     .container {
       .row {
-        .col-md-8 {
-          .FNV-Course-Video {
-            margin-top: 1rem;
-            border-top-right-radius: 10px;
-            border-top-left-radius: 10px;
-            box-shadow: 0 0 20px $ShadowPrimary;
-            margin-bottom: 0rem;
-          }
-
-          .FNV-Course-Card {
-            display: block;
-            border-radius: 5px;
-            background-color: $WhiteColor;
-            box-shadow: 0 0 20px $ShadowPrimary;
-            padding: 1.5rem;
-            margin-bottom: 1rem;
-            overflow: hidden;
-
-            .FNV-Course-Card-Content {
-              h3 {
-                font-size: 18px;
-                font-weight: 500;
-              }
-
-              h4 {
-                font-size: 16px;
-                font-weight: 500;
-              }
-
-              p,
-              ul {
-                color: $GrayFiveColor;
-                font-weight: 400;
-                font-size: 13px;
-                line-height: 25px;
-                margin-bottom: 2rem;
-                text-align: justify;
+        &.FNV-ReferalCode{
+          padding: 2rem;
+          border-radius: 20px;
+          background-color: #003cbf10;
+  
+          .col-md-6{
+            h2{
+              font-size: 20px;
+              font-weight: 600;
+              text-align: center;
+              color: $PrimaryColor;
+            }
+  
+            strong{
+              font-size: 12px;
+              color: $SecondaryColor;
+  
+              svg{
+                color: $PrimaryColor;
               }
             }
-
-            .FNV-Course-Card-Body {
-              h5 {
-                font-size: 18px;
-                font-weight: 400;
-              }
-
-              .accordion {
-                .accordion-item {
-                  border-width: 0;
-
-                  &:hover {
-                    background-color: $HoverOne;
-                  }
-
-                  button {
-                    border-radius: 0px;
-                    border-top: 1px solid #e9ecef;
-                    background-color: unset;
-                    position: relative;
-                    padding: 10px 0;
-                    font-size: 12px;
-
-                    &:focus {
+  
+            .row{
+              height: 100%;
+  
+              .col-md-6{
+                padding: 0;
+  
+                input{
+                  width: 100%;
+                  height: 100%;
+  
+                  &.FNV-Text{
+                    border-top-right-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                    color: $PrimaryColor;
+                    font-weight: 600;
+                    font-size: 20px;
+                    text-transform: uppercase;
+  
+                    &:focus{
                       box-shadow: unset;
                     }
-
-                    &::after {
-                      display: none !important;
-                    }
-
-                    svg {
-                      color: $GrayTwoColor;
-                      margin-right: 1rem;
-                    }
-
-                    .badge {
-                      margin-left: 0.2rem;
-                      border-radius: 2px;
-                      color: $WhiteColor;
-                      font-weight: 400;
-
-                      &.text-bg-info {
-                        color: $WhiteColor !important;
-                      }
-
-                      &.text-bg-practice {
-                        background-color: $SecondaryColor;
-                        color: $WhiteColor !important;
-
-                        svg {
-                          color: $WhiteColor;
-                          margin-right: 0rem;
-                        }
-                      }
-
-                      &.text-bg-quiz {
-                        background-color: $BgQuiz;
-                        color: $WhiteColor !important;
-
-                        svg {
-                          color: $WhiteColor;
-                          margin-right: 0rem;
-                        }
-                      }
-
-                      &.text-bg-primary {
-                        color: $WhiteColor !important;
-                        border-radius: 40px;
-
-                        svg {
-                          width: 16px;
-                        }
-                      }
-
-                      &.FNV-Badge-Preview {
-                        right: 0rem;
-                        position: absolute;
-
-                        svg {
-                          color: $WhiteColor;
-                          margin-right: 0rem;
-                        }
-                      }
-
-                      &.FNV-Badge-Private {
-                        background-color: transparent !important;
-                        right: 0rem;
-                        position: absolute;
-                        color: $GrayFiveColor !important;
-
-                        svg {
-                          color: $GrayFiveColor;
-                          margin-right: 0rem;
-                        }
-                      }
-                    }
                   }
-                }
-
-                .accordion-body {
-                  padding: 10px 5px;
-                  &.FNV-Locked {
-                    color: $GrayFiveColor;
-                    font-size: 12px;
+  
+                  &.FNV-Btn{
+                    font-size: 20px;
+                    font-weight: 600;
                   }
                 }
               }
             }
           }
         }
-
-        .col-md-4 {
-          .FNV-Course-Card {
-            display: block;
-            background-color: $WhiteColor;
-            box-shadow: 0 0 20px $ShadowPrimary;
-            padding: 2rem;
-            margin-top: 0rem;
-            margin-bottom: 1rem;
-            overflow: hidden;
-            border-radius: 5px;
-            position: -webkit-sticky; /* Safari */
-            position: sticky;
-            top: 1rem;
-
-            img {
-              margin-bottom: 1rem;
-            }
-
-            .FNV-Btn {
+  
+        &.FNV-Heading{
+          .col-md-2{
+            h2{
+              font-size: 10px;
               font-weight: 600;
-              margin-top: 1rem;
+              color: $PrimaryColor;
+              padding: 2.5rem 0;
             }
-
-            h4 {
-              font-size: 20px;
-              line-height: 34px;
-              margin-top: 0.5rem;
-              font-weight: 400;
-              margin-bottom: 0;
-
-              &:last-child {
-                margin-top: 1rem;
+          }
+    
+          .col-md-10{
+            padding: 0;
+    
+            .row{
+              margin: 1.5rem 0 0;
+              padding: 1rem;
+              border-radius: 20px;
+              background-color: #003cbf10;
+    
+              .col-md-8, .col-md-4{
+                span{
+                  font-size: 10px;
+                  font-weight: 600;
+                  color: $PrimaryColor;
+                }
               }
             }
-
-            p {
-              margin-bottom: 1rem;
+          }
+        }
+  
+        &.FNV-CartItems{
+          overflow: hidden;
+          margin-bottom: 1rem;
+          border-radius: 20px;
+          background-color: $WhiteColor;
+          box-shadow: 0 0 20px #00000010;
+  
+          .col-md-2{
+            padding: 0;
+            img{
+              border-radius: 20px;
+            }
+          }
+    
+          .col-md-10{
+            padding: 0;
+    
+            .row{
+              margin: 0;
+              padding: 1rem;
+              border-radius: 20px;
+              width: 100%;
+              height: 100%;
+              align-items: center;
+    
+              .col-md-8{
+                display: flex;
+                align-items: start;
+                justify-content: center;
+                flex-direction: column;
+  
+                .row{
+                  padding: 0;
+                  width: 100%;
+                  gap: 10px;
+                  flex-direction: column;
+  
+                  p{
+                    font-size: 10px;
+                    font-weight: 600;
+                    color: $PrimaryColor;
+                    width: 100%;
+                  }
+  
+                  a{
+                    width: 100%;
+                    font-size: 8px;
+                    font-weight: 600;
+                  }
+                }
+              }
+  
+              .col-md-4{
+                span{
+                  font-size: 10px;
+                  font-weight: 600;
+                  color: $PrimaryColor;
+                }
+  
+                p{
+                  font-size: 10px;
+                  font-weight: 600;
+                  color: $SecondaryColor;
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+        }
+  
+        &.FNV-Coupon{
+          padding: 1rem 0;
+          border-top: 4px solid #003cbf30;
+          margin-bottom: 1rem;
+  
+          .col-md-4{
+            display: none;
+            align-items: center;
+          }
+  
+          .col-md-8{
+            .row{
+              .col-md-6{
+                span{
+                  display: block;
+                  font-size: 20px;
+                  text-align: center;
+                  padding: .5rem 0;
+                  font-weight: 600;
+                  color: $PrimaryColor;
+                }
+  
+                .row{
+                  height: 100%;
+      
+                  .col-md-6{
+                    padding: 0;
+      
+                    input{
+                      width: 100%;
+                      height: 100%;
+      
+                      &.FNV-Text{
+                        border-top-right-radius: 15px;
+                        border-bottom-right-radius: 15px;
+                        border-top-left-radius: 0;
+                        border-bottom-left-radius: 0;
+                        color: $PrimaryColor;
+                        font-weight: 600;
+                        font-size: 20px;
+                        text-transform: uppercase;
+      
+                        &:focus{
+                          box-shadow: unset;
+                        }
+                      }
+      
+                      &.FNV-Btn{
+                        font-size: 20px;
+                        font-weight: 600;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+  
+        &.FNV-Total{
+          padding: 1rem 0;
+          border-top: 4px solid #003cbf30;
+          margin-bottom: 1rem;
+  
+          .col-md-8{
+            .row{
+              .col-md-6{
+                border-bottom: 2px solid #003cbf30;
+  
+                p{
+                  display: block;
+                  font-size: 18px;
+                  padding: .5rem 0;
+                  font-weight: 600;
+                  color: $PrimaryColor;
+                }
+  
+                span{
+                  display: block;
+                  font-size: 18px;
+                  font-weight: 800;
+                  padding: .5rem 0;
+                  text-align: center;
+                  color: $PrimaryColor;
+                }
+              }
+            }
+          }
+        }
+  
+        &.FNV-Terms{
+          .col-md-12{
+            h6{
               font-size: 14px;
-              font-weight: 300;
+              font-weight: 600;
+              color: $PrimaryColor;
+            }
+  
+            label{
+              margin: .5rem 0;
+              padding: 0;
+
+              span{
+                font-size: 12px;
+                font-weight: 600;
+                text-align: justify;
+              }
             }
 
-            h5 {
-              margin-bottom: 1rem;
-
-              &:last-child {
-                margin-bottom: 0;
-              }
-
-              price {
-                color: $SecondaryColor;
-              }
+            .col-md-12{
+              display: flex;
+              flex-direction: column;
             }
           }
         }

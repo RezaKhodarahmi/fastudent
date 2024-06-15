@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from 'react'
+
+// Stripe
 import { Elements } from '@stripe/react-stripe-js'
 import { loadStripe } from '@stripe/stripe-js'
+
+// Checkout Form
 import CheckoutForm from './checkout'
+
+// Components
 import Link from 'next/link'
 import { useDispatch, useSelector } from 'react-redux'
 import { getCartItems } from 'src/store/apps/course'
@@ -565,182 +571,145 @@ const Index = () => {
 
   return (
     <div className='FNV-Cart'>
-      <section className='FNV-Header'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-12'>
-              <h2>Cart ( {cartCourses?.length || 0} Items )</h2>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className='FNV-Cart-Detail'>
         <div className='container'>
-          <div className='row'>
-            <div className='col-sm-12 col-md-8'>
-              <div className='FNV-Coupon'>
-                <div className='accordion' id='CouponCodeSection'>
-                  <div className='accordion-item'>
-                    <h2 className='accordion-header'>
-                      <button
-                        className='accordion-button'
-                        type='button'
-                        data-bs-toggle='collapse'
-                        data-bs-target='#CouponForm'
-                        aria-controls='CouponForm'
-                      >
-                        Do you have coupon code ?
-                      </button>
-                    </h2>
-                    <div
-                      id='CouponForm'
-                      className='accordion-collapse collapse show'
-                      data-bs-parent='#CouponCodeSection'
-                    >
-                      <div className='accordion-body'>
-                        <div className='row'>
-                          <div className='col-7 col-md-6'>
-                            <input type='text' onChange={e => setCoupon(e.target.value)} className='form-control' />
-                          </div>
+          <div className='row FNV-ReferalCode'>
+            <div className='col-md-6'>
+              <h2>کد معرف دارید؟ اینجا وارد کنید</h2>
+              <strong data-bs-toggle="tooltip" title="Tooltip text here"><i data-feather='alert-circle'></i> کد معرف چیست؟ و نحوه کسب درآمد در فناوران</strong>
+            </div>
 
-                          <div className='col-5 col-md-6'>
-                            <input
-                              type='button'
-                              onClick={applyCouponHandler}
-                              className='FNV-Btn BtnPrimary BtnMedium'
-                              value='Apply Coupon'
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+            <div className='col-md-6'>
+              <div className='row'>
+                <div className='col-7 col-md-6'>
+                  <input type='text' onChange={e => setCoupon(e.target.value)} className='form-control FNV-Text' />
+                </div>
+
+                <div className='col-5 col-md-6'>
+                  <input
+                    type='button'
+                    onClick={applyCouponHandler}
+                    className='FNV-Btn BtnPrimary BtnMedium'
+                    value='اعمال کد'
+                  />
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div className='FNV-Cart-Header container-fluid'>
+          <div className='row FNV-Heading'>
+            <div className='col-3 col-md-2'>
+              <h2>سبد خرید شما</h2>
+            </div>
+            <div className='col-9 col-md-10'>
+              <div className='row'>
+                <div className='col-7 col-md-8'>
+                  <span>عنوان</span>
+                </div>
+                <div className='col-5 col-md-4'>
+                  <span>قیمت (دلار کانادا)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {cartCourses.map(cycle => (
+            <div key={cycle.id} className='row FNV-CartItems'>
+              <div className='col-3 col-md-2'>
+                <img src={cycle?.course?.image} className='img-fluid' />
+              </div>
+
+              <div className='col-9 col-md-10'>
                 <div className='row'>
-                  <div className='col-12 col-md-6'>
-                    <h3>
-                      <i data-feather='shopping-bag'></i> My Cart
-                    </h3>
-                  </div>
-
-                  <div className='col-12 col-md-6 d-flex justify-content-end'>
-                    <a href='#' className='FNV-Btn'>
-                      <i data-feather='heart'></i> Move All to WishList
-                    </a>
-                    <button type='button' onClick={handelClearCart} className='FNV-Btn'>
-                      <i data-feather='trash'></i> Remove All
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <div className='FNV-Cart'>
-                <div className='FNV-Cart-Content'>
-                  <div className='FNV-Cart-Content-Header'>
+                  <div className='col-10 col-md-8'>
                     <div className='row'>
-                      <div className='col-4'>Item's</div>
-                      <div className='col-4'></div>
-                      <div className='col-2'>Total</div>
-                      <div className='col-2'></div>
+                      <p>{cycle.name}</p>
+                    </div>
+
+                    <div className='row'>
+                      <Link href='#' className='FNV-Btn BtnOutline PrimaryColor BtnMedium'>مشاهده جزییات دوره</Link>
+                      <Link href='#' onClick={() => handleRemoveItem(cycle)} className='FNV-Btn BtnOutline SecondaryColor BtnMedium'>حذف از سبد خرید</Link>
                     </div>
                   </div>
+                  <div className='col-2 col-md-4'>
+                    <span>C${getDiscountedPrice(cycle)}</span>
+                    <p>
+                      {isVIP &&
+                        cycle.id != 150000 &&
+                        `Member Price: $${getDiscountedPrice(cycle)} Save $${(
+                          cycle.regularPrice - getDiscountedPrice(cycle)
+                        ).toFixed(2)} By being a FANAVARAN member`}
+                    </p>
+                  </div>
+                </div>
 
-                  <div className='FNV-Cart-Content-Body'>
-                    {cartCourses.map(cycle => (
-                      <div key={cycle.id} className='row p-3'>
-                        <div className='col-4'>
-                          <div className='row'>
-                            <div className='col-4'>
-                              <img width={100} src={cycle?.course?.image} className='img-fluid' />
-                            </div>
-                            <div className='col-8'>
-                              <h4>{cycle.name}</h4>
-                            </div>
-                          </div>
-                        </div>
-                        <div className='col-4'>
-                          <div className='FNV-Cart-Details'>
-                            <span> {isVIP && 'Regular price: $' + cycle.regularPrice}</span>
-                            <p>
-                              {isVIP &&
-                                cycle.id != 150000 &&
-                                `Member Price: $${getDiscountedPrice(cycle)} Save $${(
-                                  cycle.regularPrice - getDiscountedPrice(cycle)
-                                ).toFixed(2)} By being a FANAVARAN member`}
-                            </p>
-                          </div>
-                        </div>
-                        <div className='col-2'>
-                          <div className='FNV-Cart-Total'>
-                            <span>${getDiscountedPrice(cycle)}</span>
-                          </div>
-                        </div>
-                        <div className='col-2'>
-                          <button onClick={() => handleRemoveItem(cycle)} className='btn btn-danger'>
-                            Remove
-                          </button>
-                        </div>
-                      </div>
-                    ))}
+              </div>
+            </div>
+          ))}
+
+          <div className='row FNV-Coupon'>
+            <div className='col-md-4'>
+              <button type='button' onClick={handelClearCart} className='FNV-Btn BtnOutline SecondaryColor BtnMedium'>
+                <i data-feather='trash'></i> پاک کردن سبد خرید
+              </button>
+            </div>
+            <div className='col-md-8'>
+              <div className='row'>
+                <div className='col-md-6'>
+                  <span>کد تحفیف دارید؟ اینجا وارد کنید</span>
+                </div>
+                <div className='col-md-6'>
+                  <div className='row'>
+                    <div className='col-7 col-md-6'>
+                      <input type='text' onChange={e => setCoupon(e.target.value)} className='form-control FNV-Text' />
+                    </div>
+
+                    <div className='col-5 col-md-6'>
+                      <input
+                        type='button'
+                        onClick={applyCouponHandler}
+                        className='FNV-Btn BtnPrimary BtnMedium'
+                        value='اعمال کد'
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div className='col-md-4 d-sm-none d-md-block'>
-              <div className='FNV-Coupon'>
-                <div className='accordion' id='ReferrCodeSection'>
-                  <div className='accordion-item'>
-                    <h2 className='accordion-header'>
-                      <button
-                        className='accordion-button'
-                        type='button'
-                        data-bs-toggle='collapse'
-                        data-bs-target='#RefferForm'
-                        aria-controls='ReferralForm'
-                      >
-                        Do you have Referral code ?
-                      </button>
-                    </h2>
-                    <div
-                      id='RefferForm'
-                      className='accordion-collapse collapse show'
-                      data-bs-parent='#ReferrCodeSection'
-                    >
-                      <div className='accordion-body'>
-                        <div className='row'>
-                          <div className='col-7 col-md-6'>
-                            <input type='text' onChange={e => setReferral(e.target.value)} className='form-control' />
-                          </div>
-
-                          <div className='col-5 col-md-6'>
-                            <input
-                              type='button'
-                              onClick={applyReferralHandler}
-                              className='FNV-Btn BtnPrimary BtnMedium'
-                              value='Apply Code'
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+          <div className='row FNV-Total'>
+            <div className='col-4 col-md-4'></div>
+            <div className='col-12 col-md-8'>
+              {/* Subtotal */}
+              <div className='row'>
+                <div className='col-6 col-md-6'>
+                  <p>مجموع</p>
+                </div>
+                <div className='col-6 col-md-6'>
+                  <p className='text-center'>
+                    C${cartSubTotal || 0}
+                  </p>
                 </div>
               </div>
-              <div className='FNV-Cart-Direct'>
-                <h5 className='d-flex justify-content-between'>
-                  Subtotal: <span>${cartSubTotal || 0}</span>
-                </h5>
-
-                <h5 className='d-flex justify-content-between'>
-                  Tax: <span>$0</span>
-                </h5>
-                {usedCoupon
-                  ? usedCoupon?.map((coupon, index) =>
+              {/* Tax */}
+              <div className='row'>
+                <div className='col-6 col-md-6'>
+                  <p>مالیات</p>
+                </div>
+                <div className='col-6 col-md-6'>
+                  <p className='text-center'>
+                    C$0
+                  </p>
+                </div>
+              </div>
+              <div className='row'>
+                <div className='col-6 col-md-6'>
+                  <p>مبلغ قابل پرداخت:</p>
+                </div>
+                <div className='col-6 col-md-6'>
+                  {usedCoupon
+                    ? usedCoupon?.map((coupon, index) =>
                       coupon.code ? (
                         <h6 key={index} className='d-flex justify-content-between'>
                           Coupon:{coupon.code}
@@ -754,51 +723,60 @@ const Index = () => {
                         </h6>
                       ) : null
                     )
-                  : null}
+                    : null
+                  }
 
-                <h5 className='d-flex justify-content-between FNV-Total'>
-                  Total: <span>${cartTotal || 0}</span>
-                </h5>
-                <Box sx={{ maxWidth: 600, margin: '0 auto', padding: 2, backgroundColor: '#f5f5f5', borderRadius: 2 }}>
-                  <Typography variant='h6' gutterBottom>
-                    {t('agree-following-terms')}
-                  </Typography>
-                  <FormControlLabel
-                    control={
-                      <Checkbox name='checkbox1' checked={checkboxes.checkbox1} onChange={handleChangeCheckBox} />
-                    }
-                    label={t('agree-terms-first')}
-                  />
-                  <FormControlLabel
-                    control={
-                      <Checkbox name='checkbox2' checked={checkboxes.checkbox2} onChange={handleChangeCheckBox} />
-                    }
-                    label={t('agree-terms-second')}
-                  />
-                  <FormControlLabel
-                    control={
-                      <Checkbox name='checkbox3' checked={checkboxes.checkbox3} onChange={handleChangeCheckBox} />
-                    }
-                    label={t('agree-terms-third')}
-                  />
-                  <FormControlLabel
-                    control={
-                      <Checkbox name='checkbox4' checked={checkboxes.checkbox4} onChange={handleChangeCheckBox} />
-                    }
-                    label={t('agree-terms-fourth')}
-                  />
-                </Box>
+                  <span>
+                    C${cartTotal || 0}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div className='row FNV-Terms'>
+            <div className='col-md-12'>
+              <Box sx={{ marginBottom: '2rem', padding: 2, backgroundColor: '#f5f5f5', borderRadius: 2 }}>
+                <Typography variant='h6' gutterBottom>
+                  {t('agree-following-terms')}
+                </Typography>
+                <FormControlLabel
+                  control={
+                    <Checkbox name='checkbox1' checked={checkboxes.checkbox1} onChange={handleChangeCheckBox} />
+                  }
+                  label={t('agree-terms-first')}
+                />
+                <FormControlLabel
+                  control={
+                    <Checkbox name='checkbox2' checked={checkboxes.checkbox2} onChange={handleChangeCheckBox} />
+                  }
+                  label={t('agree-terms-second')}
+                />
+                <FormControlLabel
+                  control={
+                    <Checkbox name='checkbox3' checked={checkboxes.checkbox3} onChange={handleChangeCheckBox} />
+                  }
+                  label={t('agree-terms-third')}
+                />
+                <FormControlLabel
+                  control={
+                    <Checkbox name='checkbox4' checked={checkboxes.checkbox4} onChange={handleChangeCheckBox} />
+                  }
+                  label={t('agree-terms-fourth')}
+                />
+              </Box>
+
+              <div className='col-md-12 d-flex justify-content-end gap-2'>
                 {email
                   ? partially && (
-                      <button
-                        disabled={!allChecked}
-                        onClick={handelInitiatePartiallyPayment}
-                        className='FNV-Btn BtnPrimary BtnMedium'
-                      >
-                        Pay Partially
-                      </button>
-                    )
+                    <button
+                      disabled={!allChecked}
+                      onClick={handelInitiatePartiallyPayment}
+                      className='FNV-Btn BtnOutline SecondaryColor BtnLarge'
+                    >
+                      پرداخت وجه بصورت اقساط
+                    </button>
+                  )
                   : null}
                 {email ? (
                   checkout && stripePay && clientSecret ? (
@@ -819,9 +797,9 @@ const Index = () => {
                           <button
                             disabled={!allChecked}
                             onClick={handelInitiatePayment}
-                            className='FNV-Btn BtnPrimary BtnMedium'
+                            className='FNV-Btn SecondaryColor BtnLarge'
                           >
-                            Full payment
+                            پرداخت وجه بصورت کامل
                           </button>
                         </>
                       ) : (
@@ -836,11 +814,11 @@ const Index = () => {
                     Login
                   </Link>
                 )}
-
-                <Link href='/courses' className='d-block text-center mt-2'>
-                  Apply for other courses
-                </Link>
               </div>
+
+              <Link href='/courses' className='d-block text-center mt-2'>
+                Apply for other courses
+              </Link>
             </div>
           </div>
         </div>

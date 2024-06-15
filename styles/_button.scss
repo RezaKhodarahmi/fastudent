@@ -24,10 +24,13 @@
     }
 
     &.SecondaryColor {
+      background-color: transparent;
       border: 1px solid $SecondaryColor;
-      color: $WhiteColor;
+      color: $SecondaryColor;
 
       &:hover{
+        background-color: $SecondaryColor;
+        border: 1px solid $SecondaryColor;
         color: $WhiteColor;
       }
     }
