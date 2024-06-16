@@ -148,16 +148,22 @@ const UploadForm = () => {
 
   return (
     <>
-      <div className='container-fluid'>
-        <div className='row'>
-          <div className='col-4'></div>
-          <div className='col-8'>
-            <Box style={{ direction: 'rtl' }} sx={{ mx: 'auto', mt: 5 }}>
-              <Typography variant='h1' component='div' gutterBottom>
-                فرم درخواست کورس دیسکریپشن
-              </Typography>
+      <section className='FNV-CourseDescription'>
+        <div className='FNV-Heading'>
+          <h1>
+            فرم درخواست کورس دیسکریپشن
+          </h1>
+        </div>
 
-              <form onSubmit={handleSubmit(onSubmit)} noValidate>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-12 col-md-6'>
+              <p>
+              کورس دیسکریپشن یا سیلابس دروس گذرانده شده یکی از مدارک مورد نیاز جهت عضویت در سازمان یا انجمن مهندسی در استان های مختلف کانادا و یا دریافت لایسنس P.Eng و CACB در کانادا و یا لایسنس های معماری و عمران در امریکا (NAAB) می باشد. آماده سازی این فایل را با بهترین کیفیت به ما بسپارید. ما این مدرک را طبق ریزنمرات فارسی و انگلیسی شما و دقیقا طبق سرفصل های وزارت علوم و تحقیقات ایران به زبان انگلیسی آماده خواهیم کرد و در فرمت های Word و Pdf در اختیار شما قرار خواهیم داد.
+              </p>
+            </div>
+            <div className='col-12 col-md-6'>
+              <form onSubmit={handleSubmit(onSubmit)} noValidate style={{ direction: 'rtl' }}>
                 <Controller
                   name='fullName'
                   control={control}
@@ -165,7 +171,7 @@ const UploadForm = () => {
                   render={({ field }) => (
                     <TextField
                       {...field}
-                      label='Full Name'
+                      label='نام و نام خانوادگی'
                       variant='outlined'
                       fullWidth
                       margin='normal'
@@ -174,6 +180,7 @@ const UploadForm = () => {
                     />
                   )}
                 />
+
                 <FormControl fullWidth margin='normal' error={Boolean(errors.types)}>
                   <InputLabel id='type-label'>کورس دیسکریپشن کدام یک از مقاطع زیر مورد نیاز است؟</InputLabel>
                   <Controller
@@ -244,10 +251,10 @@ const UploadForm = () => {
                   </Button>
                 )}
               </form>
-            </Box>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   )
 }

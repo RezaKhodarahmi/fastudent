@@ -4,7 +4,7 @@ body[dir='rtl'] {
   newsletter{
     background-color: $PrimaryColor;
     border-top: 0px solid $PrimaryColor;
-    padding: 4rem 2rem;
+    padding: 2rem;
     display: block;
     border-bottom: 2px solid $WhiteColor;
   
@@ -12,6 +12,9 @@ body[dir='rtl'] {
       .row{
         .col-md-6{
           padding: 0;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
   
             h3{
               font-size: 24px;
@@ -23,6 +26,7 @@ body[dir='rtl'] {
               color: $WhiteColor;
               font-size: 12px;
               font-weight: 400;
+              margin-bottom: 0;
             }
   
           .FNV-Newsletter {
@@ -336,7 +340,7 @@ body[dir='ltr'] {
   newsletter{
     background-color: $PrimaryColor;
     border-top: 0px solid $PrimaryColor;
-    padding: 4rem 2rem;
+    padding: 2rem;
     display: block;
     border-bottom: 2px solid $WhiteColor;
   
@@ -344,6 +348,9 @@ body[dir='ltr'] {
       .row{
         .col-md-6{
           padding: 0;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
   
             h3{
               font-size: 24px;
@@ -355,6 +362,7 @@ body[dir='ltr'] {
               color: $WhiteColor;
               font-size: 12px;
               font-weight: 400;
+              margin-bottom: 0;
             }
   
           .FNV-Newsletter {

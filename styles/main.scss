@@ -86,10 +86,11 @@ a{
   @import './single-course';
 }
 
-.FNV-Cart {
-  // Cart
-  @import './cart';
-}
+// Cart
+@import './cart';
+
+// OffCanvas
+@import './Course-Description';
 
 // OffCanvas
 @import './offcanvas';
