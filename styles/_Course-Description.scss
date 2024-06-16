@@ -54,3 +54,64 @@
         }
     }
 }
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+    .FNV-CourseDescription{
+        padding: 0 1rem 1rem;
+        .FNV-Heading{
+            padding: 1rem;
+            display: block;
+            background-color: $PrimaryColor;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+    
+            h1{
+                font-size: 18px;
+                font-weight: 600;
+                text-align: center;
+                color: $WhiteColor;
+            }
+        }
+    
+        .container{
+            padding: 1rem 0;
+            .row{
+                .col-md-6{
+                    display: flex;
+                    align-items: center;
+    
+                    p{
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 28px;
+                        text-align: justify;
+                        padding-left: 0rem;
+                    }
+    
+                    form{
+                        width: 100%;
+    
+                        label{
+                            width: 100%;
+                            text-align: right;
+    
+                            &:focus{
+                                transform-origin: top right;
+                            }
+                        }
+    
+                        legend{
+                            width: 100%;
+                        }
+    
+                        svg{
+                            left: 7px;
+                            right: unset;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
