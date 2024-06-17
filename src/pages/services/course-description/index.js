@@ -16,9 +16,6 @@ import {
   FormHelperText
 } from '@mui/material'
 
-// ** MUI Imports
-import Grid from '@mui/material/Grid'
-
 import { styled } from '@mui/system'
 import BASE_URL from 'src/api/BASE_URL'
 
@@ -65,6 +62,7 @@ const UploadForm = () => {
         price += 40
       }
     })
+
     return price
   }
 
@@ -79,6 +77,7 @@ const UploadForm = () => {
 
     if (files.length === 0) {
       setError('files', { type: 'manual', message: 'برای ادامه یک فایل را آپلود کنید.' })
+
       return
     } else {
       clearErrors('files')
@@ -86,6 +85,7 @@ const UploadForm = () => {
 
     if (data.types.length === 0) {
       setError('types', { type: 'manual', message: 'برای ادامه حداقل یک مقطع را انتخاب کنید' })
+
       return
     }
 
@@ -121,6 +121,7 @@ const UploadForm = () => {
   }
 
   const selectedTypes = watch('types', [])
+  
   const fileFields = {
     1: 'kardani_file',
     2: 'karshenasiNP_file',
@@ -130,11 +131,11 @@ const UploadForm = () => {
   }
 
   const fileLabels = {
-    kardani_file: 'Upload Kardani File',
-    karshenasiNP_file: 'Upload Karshenasi N.P. File',
-    karshenasiP_file: 'Upload Karshenasi P. File',
-    karshenasiA_file: 'Upload Karshenasi A. File',
-    master_file: 'Upload Master File'
+    kardani_file: 'ریز نمرات فارسی و انگلیسی کاردانی',
+    karshenasiNP_file: 'ریز نمرات فارسی و انگلیسی کارشناسی ناپیوسته',
+    karshenasiP_file: 'ریز نمرات فارسی و انگلیسی کارشناسی پیوسته',
+    karshenasiA_file: 'ریز نمرات فارسی و انگلیسی کارشناسی ارشد',
+    master_file: 'ریز نمرات فارسی و انگلیسی دکتری'
   }
 
   useEffect(() => {
@@ -150,16 +151,18 @@ const UploadForm = () => {
     <>
       <section className='FNV-CourseDescription'>
         <div className='FNV-Heading'>
-          <h1>
-            فرم درخواست کورس دیسکریپشن
-          </h1>
+          <h1>فرم درخواست کورس دیسکریپشن</h1>
         </div>
 
-        <div className='container'>
+        <div style={{ direction: 'rtl' }} className='container'>
           <div className='row'>
             <div className='col-12 col-md-6'>
               <p>
-              کورس دیسکریپشن یا سیلابس دروس گذرانده شده یکی از مدارک مورد نیاز جهت عضویت در سازمان یا انجمن مهندسی در استان های مختلف کانادا و یا دریافت لایسنس P.Eng و CACB در کانادا و یا لایسنس های معماری و عمران در امریکا (NAAB) می باشد. آماده سازی این فایل را با بهترین کیفیت به ما بسپارید. ما این مدرک را طبق ریزنمرات فارسی و انگلیسی شما و دقیقا طبق سرفصل های وزارت علوم و تحقیقات ایران به زبان انگلیسی آماده خواهیم کرد و در فرمت های Word و Pdf در اختیار شما قرار خواهیم داد.
+                کورس دیسکریپشن یا سیلابس دروس گذرانده شده یکی از مدارک مورد نیاز جهت عضویت در سازمان یا انجمن مهندسی در
+                استان های مختلف کانادا و یا دریافت لایسنس P.Eng و CACB در کانادا و یا لایسنس های معماری و عمران در
+                امریکا (NAAB) می باشد. آماده سازی این فایل را با بهترین کیفیت به ما بسپارید. ما این مدرک را طبق ریزنمرات
+                فارسی و انگلیسی شما و دقیقا طبق سرفصل های وزارت علوم و تحقیقات ایران به زبان انگلیسی آماده خواهیم کرد و
+                در فرمت های Word و Pdf در اختیار شما قرار خواهیم داد.
               </p>
             </div>
             <div className='col-12 col-md-6'>
@@ -213,7 +216,9 @@ const UploadForm = () => {
                             readOnly={true}
                             type='file'
                             onChange={e => {
-                              const file = e.target.files[0] ? { file: e.target.files[0], fieldName: fileFields[type] } : null
+                              const file = e.target.files[0]
+                                ? { file: e.target.files[0], fieldName: fileFields[type] }
+                                : null
                               setValue(fileFields[type], file)
                             }}
                           />
@@ -243,11 +248,11 @@ const UploadForm = () => {
                 <Typography variant='h6'>Total Price: ${totalPrice}</Typography>
                 {user ? (
                   <Button type='submit' variant='contained' color='primary' fullWidth>
-                    Submit
+                    ارسال
                   </Button>
                 ) : (
                   <Button type='button' onClick={handleLogin} variant='contained' color='primary' fullWidth>
-                    Login to submit
+                    برای ثبت درخواست وارد شوید.
                   </Button>
                 )}
               </form>
