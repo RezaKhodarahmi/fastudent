@@ -703,29 +703,39 @@ const Index = () => {
                   </p>
                 </div>
               </div>
+
+              {usedCoupon
+                ? usedCoupon?.map((coupon, index) =>
+                  coupon.code ? (
+                    <div key={index} className='row'>
+                      <div className='col-6 col-md-6'>
+                        <p>کد تحفیف</p>
+                      </div>
+                      <div className='col-6 col-md-6 text-center'>
+                        <p className='pb-0'>
+                          {coupon.code}
+                          <small
+                            onClick={e => handelRemoveCoupon(coupon.code)}
+                            style={{ cursor: 'pointer' }}
+                            className='FNV-Remove'
+                          >
+                            حذف
+                          </small>
+                        </p>
+                        <p>{coupon.discount}</p>
+                      </div>
+                    </div>
+                  ) : null
+                )
+                : null
+              }
+
+              {/* Total */}
               <div className='row'>
                 <div className='col-6 col-md-6'>
                   <p>مبلغ قابل پرداخت:</p>
                 </div>
                 <div className='col-6 col-md-6'>
-                  {usedCoupon
-                    ? usedCoupon?.map((coupon, index) =>
-                      coupon.code ? (
-                        <h6 key={index} className='d-flex justify-content-between'>
-                          Coupon:{coupon.code}
-                          <span>{coupon.discount}</span>
-                          <span
-                            onClick={e => handelRemoveCoupon(coupon.code)}
-                            style={{ color: 'red', cursor: 'pointer' }}
-                          >
-                            Remove
-                          </span>
-                        </h6>
-                      ) : null
-                    )
-                    : null
-                  }
-
                   <span>
                     C${cartTotal || 0}
                   </span>

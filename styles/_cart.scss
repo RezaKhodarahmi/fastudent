@@ -233,9 +233,17 @@
               p{
                 display: block;
                 font-size: 22px;
+                margin-bottom: 0px;
                 padding: .5rem 0;
                 font-weight: 600;
                 color: $PrimaryColor;
+
+                small{
+                  color: red;
+                  font-size: 14px;
+                  margin: 0 1rem ;
+                  font-weight: 400;
+                }
               }
 
               span{
@@ -375,6 +383,8 @@
           .col-md-2{
             padding: 0;
             img{
+              height: 100%;
+              object-fit: cover;
               border-radius: 20px;
             }
           }

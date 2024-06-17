@@ -7116,39 +7116,40 @@ body[dir=rtl] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-
   }
 }
 
-.FNV-Cart #Field-shippingAsBillingCheckbox {
+#Field-shippingAsBillingCheckbox {
   display: none !important;
 }
-.FNV-Cart .FNV-Cart-Detail {
+
+.FNV-Cart-Detail {
   margin-top: 1rem;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-ReferalCode {
+.FNV-Cart-Detail .container .row.FNV-ReferalCode {
   padding: 2rem;
   border-radius: 20px;
   background-color: rgba(0, 60, 191, 0.062745098);
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 h2 {
+.FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 h2 {
   font-size: 25px;
   font-weight: 600;
   color: #223885;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong {
+.FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong {
   color: #FF772C;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong svg {
+.FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong svg {
   color: #223885;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row {
+.FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row {
   height: 100%;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 {
+.FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 {
   padding: 0;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input {
+.FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input {
   width: 100%;
   height: 100%;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text {
+.FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border-top-left-radius: 0;
@@ -7158,117 +7159,117 @@ body[dir=rtl] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-
   font-size: 20px;
   text-transform: uppercase;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+.FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text:focus {
   box-shadow: unset;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Btn {
+.FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Btn {
   font-size: 20px;
   font-weight: 600;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 h2 {
+.FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 h2 {
   font-size: 25px;
   font-weight: 600;
   color: #223885;
   padding: 2.5rem 0;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 {
+.FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 {
   padding: 0;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row {
+.FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row {
   margin: 1.5rem 0 0;
   padding: 1rem;
   border-radius: 20px;
   background-color: rgba(0, 60, 191, 0.062745098);
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-8 span, .FNV-Cart .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-4 span {
+.FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-8 span, .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-4 span {
   font-size: 20px;
   font-weight: 600;
   color: #223885;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-CartItems {
+.FNV-Cart-Detail .container .row.FNV-CartItems {
   overflow: hidden;
   margin-bottom: 1rem;
   border-radius: 20px;
   background-color: #ffffff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.062745098);
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 {
+.FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 {
   padding: 0;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 img {
+.FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 img {
   border-radius: 20px;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 {
+.FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 {
   padding: 0;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row {
+.FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row {
   margin: 0;
   padding: 1rem;
   border-radius: 20px;
   height: 100%;
   align-items: center;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 {
+.FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 {
   display: flex;
   align-items: start;
   justify-content: center;
   flex-direction: column;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row {
+.FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row {
   padding: 0;
   width: 100%;
   gap: 10px;
   flex-direction: row;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row p {
+.FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row p {
   font-size: 22px;
   font-weight: 600;
   color: #223885;
   width: 100%;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row a {
+.FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row a {
   width: 30%;
   font-size: 14px;
   font-weight: 600;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 span {
+.FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 span {
   font-size: 30px;
   font-weight: 600;
   color: #223885;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 p {
+.FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 p {
   font-size: 30px;
   font-weight: 600;
   color: #FF772C;
   margin-bottom: 0;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-Coupon {
+.FNV-Cart-Detail .container .row.FNV-Coupon {
   padding: 2rem 0;
   border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
   margin-bottom: 1rem;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-4 {
+.FNV-Cart-Detail .container .row.FNV-Coupon .col-md-4 {
   display: flex;
   align-items: center;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 span {
+.FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 span {
   display: block;
   font-size: 25px;
   padding: 0.5rem 0;
   font-weight: 600;
   color: #223885;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row {
+.FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row {
   height: 100%;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 {
+.FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 {
   padding: 0;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input {
+.FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input {
   width: 100%;
   height: 100%;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text {
+.FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border-top-left-radius: 0;
@@ -7278,29 +7279,36 @@ body[dir=rtl] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-
   font-size: 20px;
   text-transform: uppercase;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+.FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text:focus {
   box-shadow: unset;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Btn {
+.FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Btn {
   font-size: 20px;
   font-weight: 600;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-Total {
+.FNV-Cart-Detail .container .row.FNV-Total {
   padding: 1rem 0;
   border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
   margin-bottom: 1rem;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 {
+.FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 {
   border-bottom: 2px solid rgba(0, 60, 191, 0.1882352941);
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p {
+.FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p {
   display: block;
   font-size: 22px;
+  margin-bottom: 0px;
   padding: 0.5rem 0;
   font-weight: 600;
   color: #223885;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 span {
+.FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p small {
+  color: red;
+  font-size: 14px;
+  margin: 0 1rem;
+  font-weight: 400;
+}
+.FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 span {
   display: block;
   font-size: 22px;
   font-weight: 800;
@@ -7308,48 +7316,49 @@ body[dir=rtl] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-
   text-align: center;
   color: #223885;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 h6 {
+.FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 h6 {
   font-size: 25px;
   font-weight: 600;
   color: #223885;
 }
-.FNV-Cart .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label span {
+.FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label span {
   font-size: 16px;
   font-weight: 600;
 }
+
 @media (max-width: 575.98px) {
-  .FNV-Cart .FNV-Cart-Detail {
+  .FNV-Cart-Detail {
     padding: 1rem;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-ReferalCode {
+  .FNV-Cart-Detail .container .row.FNV-ReferalCode {
     padding: 2rem;
     border-radius: 20px;
     background-color: rgba(0, 60, 191, 0.062745098);
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 h2 {
+  .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 h2 {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
     color: #223885;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong {
+  .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong {
     font-size: 12px;
     color: #FF772C;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong svg {
+  .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong svg {
     color: #223885;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row {
+  .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row {
     height: 100%;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 {
+  .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 {
     padding: 0;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input {
+  .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input {
     width: 100%;
     height: 100%;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text {
+  .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border-top-left-radius: 0;
@@ -7359,50 +7368,53 @@ body[dir=rtl] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-
     font-size: 20px;
     text-transform: uppercase;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+  .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text:focus {
     box-shadow: unset;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Btn {
+  .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Btn {
     font-size: 20px;
     font-weight: 600;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 h2 {
+  .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 h2 {
     font-size: 10px;
     font-weight: 600;
     color: #223885;
     padding: 2.5rem 0;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 {
+  .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 {
     padding: 0;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row {
+  .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row {
     margin: 1.5rem 0 0;
     padding: 1rem;
     border-radius: 20px;
     background-color: rgba(0, 60, 191, 0.062745098);
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-8 span, .FNV-Cart .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-4 span {
+  .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-8 span, .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-4 span {
     font-size: 10px;
     font-weight: 600;
     color: #223885;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-CartItems {
+  .FNV-Cart-Detail .container .row.FNV-CartItems {
     overflow: hidden;
     margin-bottom: 1rem;
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.062745098);
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 {
+  .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 {
     padding: 0;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 img {
+  .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 20px;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 {
+  .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 {
     padding: 0;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row {
+  .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row {
     margin: 0;
     padding: 1rem;
     border-radius: 20px;
@@ -7410,50 +7422,50 @@ body[dir=rtl] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-
     height: 100%;
     align-items: center;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 {
+  .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 {
     display: flex;
     align-items: start;
     justify-content: center;
     flex-direction: column;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row {
+  .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row {
     padding: 0;
     width: 100%;
     gap: 10px;
     flex-direction: column;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row p {
+  .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row p {
     font-size: 10px;
     font-weight: 600;
     color: #223885;
     width: 100%;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row a {
+  .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row a {
     width: 100%;
     font-size: 8px;
     font-weight: 600;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 span {
+  .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 span {
     font-size: 10px;
     font-weight: 600;
     color: #223885;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 p {
+  .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 p {
     font-size: 10px;
     font-weight: 600;
     color: #FF772C;
     margin-bottom: 0;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-Coupon {
+  .FNV-Cart-Detail .container .row.FNV-Coupon {
     padding: 1rem 0;
     border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
     margin-bottom: 1rem;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-4 {
+  .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-4 {
     display: none;
     align-items: center;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 span {
+  .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 span {
     display: block;
     font-size: 20px;
     text-align: center;
@@ -7461,17 +7473,17 @@ body[dir=rtl] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-
     font-weight: 600;
     color: #223885;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row {
+  .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row {
     height: 100%;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 {
+  .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 {
     padding: 0;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input {
+  .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input {
     width: 100%;
     height: 100%;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text {
+  .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border-top-left-radius: 0;
@@ -7481,29 +7493,29 @@ body[dir=rtl] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-
     font-size: 20px;
     text-transform: uppercase;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+  .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text:focus {
     box-shadow: unset;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Btn {
+  .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Btn {
     font-size: 20px;
     font-weight: 600;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-Total {
+  .FNV-Cart-Detail .container .row.FNV-Total {
     padding: 1rem 0;
     border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
     margin-bottom: 1rem;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 {
+  .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 {
     border-bottom: 2px solid rgba(0, 60, 191, 0.1882352941);
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p {
+  .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p {
     display: block;
     font-size: 18px;
     padding: 0.5rem 0;
     font-weight: 600;
     color: #223885;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 span {
+  .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 span {
     display: block;
     font-size: 18px;
     font-weight: 800;
@@ -7511,26 +7523,120 @@ body[dir=rtl] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-
     text-align: center;
     color: #223885;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 h6 {
+  .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 h6 {
     font-size: 14px;
     font-weight: 600;
     color: #223885;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label {
+  .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label {
     margin: 0.5rem 0;
     padding: 0;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label span {
+  .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label span {
     font-size: 12px;
     font-weight: 600;
     text-align: justify;
   }
-  .FNV-Cart .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .col-md-12 {
+  .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .col-md-12 {
     display: flex;
     flex-direction: column;
   }
 }
+.FNV-CourseDescription .FNV-Heading {
+  padding: 4rem;
+  display: block;
+  background-color: #223885;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.FNV-CourseDescription .FNV-Heading h1 {
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+}
+.FNV-CourseDescription .container {
+  padding: 5rem 0;
+}
+.FNV-CourseDescription .container .row .col-md-6 {
+  display: flex;
+  align-items: center;
+}
+.FNV-CourseDescription .container .row .col-md-6 p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 40px;
+  text-align: justify;
+  padding-left: 2rem;
+}
+.FNV-CourseDescription .container .row .col-md-6 form {
+  width: 100%;
+}
+.FNV-CourseDescription .container .row .col-md-6 form label {
+  width: 100%;
+  text-align: right;
+}
+.FNV-CourseDescription .container .row .col-md-6 form label:focus {
+  transform-origin: top right;
+}
+.FNV-CourseDescription .container .row .col-md-6 form legend {
+  width: 100%;
+}
+.FNV-CourseDescription .container .row .col-md-6 form svg {
+  left: 7px;
+  right: unset;
+}
 
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+  .FNV-CourseDescription {
+    padding: 0 1rem 1rem;
+  }
+  .FNV-CourseDescription .FNV-Heading {
+    padding: 1rem;
+    display: block;
+    background-color: #223885;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+  .FNV-CourseDescription .FNV-Heading h1 {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+  }
+  .FNV-CourseDescription .container {
+    padding: 1rem 0;
+  }
+  .FNV-CourseDescription .container .row .col-md-6 {
+    display: flex;
+    align-items: center;
+  }
+  .FNV-CourseDescription .container .row .col-md-6 p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: justify;
+    padding-left: 0rem;
+  }
+  .FNV-CourseDescription .container .row .col-md-6 form {
+    width: 100%;
+  }
+  .FNV-CourseDescription .container .row .col-md-6 form label {
+    width: 100%;
+    text-align: right;
+  }
+  .FNV-CourseDescription .container .row .col-md-6 form label:focus {
+    transform-origin: top right;
+  }
+  .FNV-CourseDescription .container .row .col-md-6 form legend {
+    width: 100%;
+  }
+  .FNV-CourseDescription .container .row .col-md-6 form svg {
+    left: 7px;
+    right: unset;
+  }
+}
 .offcanvas .offcanvas-header .navbar-brand {
   width: 200px;
 }
@@ -7618,12 +7724,15 @@ body[dir=rtl] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-
 body[dir=rtl] newsletter {
   background-color: #223885;
   border-top: 0px solid #223885;
-  padding: 4rem 2rem;
+  padding: 2rem;
   display: block;
   border-bottom: 2px solid #ffffff;
 }
 body[dir=rtl] newsletter .container .row .col-md-6 {
   padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 body[dir=rtl] newsletter .container .row .col-md-6 h3 {
   font-size: 24px;
@@ -7634,6 +7743,7 @@ body[dir=rtl] newsletter .container .row .col-md-6 p {
   color: #ffffff;
   font-size: 12px;
   font-weight: 400;
+  margin-bottom: 0;
 }
 body[dir=rtl] newsletter .container .row .col-md-6 .FNV-Newsletter {
   background-color: rgba(255, 255, 255, 0.6);
@@ -7888,12 +7998,15 @@ body[dir=rtl] .FNV-Copyright .row .col-12 small {
 body[dir=ltr] newsletter {
   background-color: #223885;
   border-top: 0px solid #223885;
-  padding: 4rem 2rem;
+  padding: 2rem;
   display: block;
   border-bottom: 2px solid #ffffff;
 }
 body[dir=ltr] newsletter .container .row .col-md-6 {
   padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 body[dir=ltr] newsletter .container .row .col-md-6 h3 {
   font-size: 24px;
@@ -7904,6 +8017,7 @@ body[dir=ltr] newsletter .container .row .col-md-6 p {
   color: #ffffff;
   font-size: 12px;
   font-weight: 400;
+  margin-bottom: 0;
 }
 body[dir=ltr] newsletter .container .row .col-md-6 .FNV-Newsletter {
   background-color: rgba(255, 255, 255, 0.6);
