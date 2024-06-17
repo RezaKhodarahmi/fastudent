@@ -575,8 +575,8 @@ const Index = () => {
         <div className='container'>
           <div className='row FNV-ReferalCode'>
             <div className='col-md-6'>
-              <h2>کد معرف دارید؟ اینجا وارد کنید</h2>
-              <strong data-bs-toggle="tooltip" title="Tooltip text here"><i data-feather='alert-circle'></i> کد معرف چیست؟ و نحوه کسب درآمد در فناوران</strong>
+              <h2>{t('cart-referal-title')}</h2>
+              <strong data-bs-toggle="tooltip" title="Tooltip text here"><i data-feather='alert-circle'></i> {t('cart-referal-desc')}</strong>
             </div>
 
             <div className='col-md-6'>
@@ -590,7 +590,7 @@ const Index = () => {
                     type='button'
                     onClick={applyReferralHandler}
                     className='FNV-Btn BtnPrimary BtnMedium'
-                    value='اعمال کد'
+                    value={t('cart-referal-button')}
                   />
                 </div>
               </div>
@@ -599,15 +599,15 @@ const Index = () => {
 
           <div className='row FNV-Heading'>
             <div className='col-3 col-md-2'>
-              <h2>سبد خرید شما</h2>
+              <h2>{t('cart-head-title')}</h2>
             </div>
             <div className='col-9 col-md-10'>
               <div className='row'>
                 <div className='col-7 col-md-8'>
-                  <span>عنوان</span>
+                  <span>{t('cart-head-product-title')}</span>
                 </div>
                 <div className='col-5 col-md-4'>
-                  <span>قیمت (دلار کانادا)</span>
+                  <span>{t('cart-head-product-price')}</span>
                 </div>
               </div>
             </div>
@@ -627,8 +627,8 @@ const Index = () => {
                     </div>
 
                     <div className='row'>
-                      <Link href='#' className='FNV-Btn BtnOutline PrimaryColor BtnMedium'>مشاهده جزییات دوره</Link>
-                      <Link href='#' onClick={() => handleRemoveItem(cycle)} className='FNV-Btn BtnOutline SecondaryColor BtnMedium'>حذف از سبد خرید</Link>
+                      <Link href='#' className='FNV-Btn BtnOutline PrimaryColor BtnMedium'>{t('cart-head-product-details')}</Link>
+                      <Link href='#' onClick={() => handleRemoveItem(cycle)} className='FNV-Btn BtnOutline SecondaryColor BtnMedium'>{t('cart-head-product-remove')}</Link>
                     </div>
                   </div>
                   <div className='col-2 col-md-4'>
@@ -650,13 +650,13 @@ const Index = () => {
           <div className='row FNV-Coupon'>
             <div className='col-md-4'>
               <button type='button' onClick={handelClearCart} className='FNV-Btn BtnOutline SecondaryColor BtnMedium'>
-                <i data-feather='trash'></i> پاک کردن سبد خرید
+                <i data-feather='trash'></i> {t('cart-head-cart-clear')}
               </button>
             </div>
             <div className='col-md-8'>
               <div className='row'>
                 <div className='col-md-6'>
-                  <span>کد تحفیف دارید؟ اینجا وارد کنید</span>
+                  <span>{t('cart-head-coupon-head')}</span>
                 </div>
                 <div className='col-md-6'>
                   <div className='row'>
@@ -669,7 +669,7 @@ const Index = () => {
                         type='button'
                         onClick={applyCouponHandler}
                         className='FNV-Btn BtnPrimary BtnMedium'
-                        value='اعمال کد'
+                        value={t('cart-head-coupon-button')}
                       />
                     </div>
                   </div>
@@ -684,7 +684,7 @@ const Index = () => {
               {/* Subtotal */}
               <div className='row'>
                 <div className='col-6 col-md-6'>
-                  <p>مجموع</p>
+                  <p>{t('cart-subtotal-text')}</p>
                 </div>
                 <div className='col-6 col-md-6'>
                   <p className='text-center'>
@@ -695,7 +695,7 @@ const Index = () => {
               {/* Tax */}
               <div className='row'>
                 <div className='col-6 col-md-6'>
-                  <p>مالیات</p>
+                  <p>{t('cart-tax-text')}</p>
                 </div>
                 <div className='col-6 col-md-6'>
                   <p className='text-center'>
@@ -709,7 +709,7 @@ const Index = () => {
                   coupon.code ? (
                     <div key={index} className='row'>
                       <div className='col-6 col-md-6'>
-                        <p>کد تحفیف</p>
+                        <p>{t('cart-coupon-text')}</p>
                       </div>
                       <div className='col-6 col-md-6 text-center'>
                         <p className='pb-0'>
@@ -719,7 +719,7 @@ const Index = () => {
                             style={{ cursor: 'pointer' }}
                             className='FNV-Remove'
                           >
-                            حذف
+                            {t('cart-coupon-remove')}
                           </small>
                         </p>
                         <p>{coupon.discount}</p>
@@ -733,7 +733,7 @@ const Index = () => {
               {/* Total */}
               <div className='row'>
                 <div className='col-6 col-md-6'>
-                  <p>مبلغ قابل پرداخت:</p>
+                  <p>{t('cart-total-text')}</p>
                 </div>
                 <div className='col-6 col-md-6'>
                   <span>
@@ -784,7 +784,7 @@ const Index = () => {
                       onClick={handelInitiatePartiallyPayment}
                       className='FNV-Btn BtnOutline SecondaryColor BtnLarge'
                     >
-                      پرداخت وجه بصورت اقساط
+                      {t('cart-partial-button')}
                     </button>
                   )
                   : null}
@@ -809,7 +809,7 @@ const Index = () => {
                             onClick={handelInitiatePayment}
                             className='FNV-Btn SecondaryColor BtnLarge'
                           >
-                            پرداخت وجه بصورت کامل
+                            {t('cart-full-payment-button')}
                           </button>
                         </>
                       ) : (
