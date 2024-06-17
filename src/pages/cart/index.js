@@ -588,7 +588,7 @@ const Index = () => {
                 <div className='col-5 col-md-6'>
                   <input
                     type='button'
-                    onClick={applyCouponHandler}
+                    onClick={applyReferralHandler}
                     className='FNV-Btn BtnPrimary BtnMedium'
                     value='اعمال کد'
                   />
