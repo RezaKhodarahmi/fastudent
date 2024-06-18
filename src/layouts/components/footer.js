@@ -246,25 +246,25 @@ const Footer = props => {
               <h4>{t('footer-three')}</h4>
               <ul className='list-group list-group-flush'>
                 <li className='list-group-item'>
-                  <Link href='how-to-register'>{t('footer-three-registration')}</Link>
+                  <Link href='/how-to-register'>{t('footer-three-registration')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='view-recorded-courses'>{t('footer-three-watching')}</Link>
+                  <Link href='/view-recorded-courses'>{t('footer-three-watching')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='mock-exam-tutorials'>{t('footer-three-mock')}</Link>
+                  <Link href='/mock-exam-tutorials'>{t('footer-three-mock')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='fanavaran-certificate'>{t('footer-three-certificate')}</Link>
+                  <Link href='/fanavaran-certificate'>{t('footer-three-certificate')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='privacy-policy'>{t('footer-three-privacy')}</Link>
+                  <Link href='/privacy-policy'>{t('footer-three-privacy')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='refund-policy'>{t('footer-three-refund-privacy')}</Link>
+                  <Link href='/refund-policy'>{t('footer-three-refund-privacy')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='faq'>{t('footer-three-faq')}</Link>
+                  <Link href='/faq'>{t('footer-three-faq')}</Link>
                 </li>
               </ul>
             </div>
