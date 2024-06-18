@@ -115,16 +115,16 @@ const Index = () => {
               <p>فهرست مطالب:</p>
               <ol>
                 <li>
-                  <a href='#P1'>چگونه می‌توان لایسنس مهندسی حرفه‌ای کانادا یا .P.Eng دریافت کرد؟</a>
+                  <Link href='#P1'>چگونه می‌توان لایسنس مهندسی حرفه‌ای کانادا یا .P.Eng دریافت کرد؟</Link>
                 </li>
                 <li>
-                  <a href='#P2'>گام‌های دریافت لایسنس مهندسی حرفه‌ای کانادا یا .P.Eng چیست؟</a>
+                  <Link href='#P2'>گام‌های دریافت لایسنس مهندسی حرفه‌ای کانادا یا .P.Eng چیست؟</Link>
                 </li>
                 <li>
-                  <a href='#P3'>چگونه می‌توانیم در سازمان اداری کانادا ثبت‌نام کنیم؟</a>
+                  <Link href='#P3'>چگونه می‌توانیم در سازمان اداری کانادا ثبت‌نام کنیم؟</Link>
                 </li>
                 <li>
-                  <a href='#FAQ'>سوالات متداول</a>
+                  <Link href='#FAQ'>سوالات متداول</Link>
                 </li>
               </ol>
             </div>
@@ -160,7 +160,7 @@ const Index = () => {
           </div>
 
           <Link href='/project-management'>
-            <a className='row FNV-CTA'>
+            <div className='row FNV-CTA'>
               <div className='col-12 col-md-8'>
                 <h4>
                   در نظر داشته باشید، اگر کار کارگاهی انجام می‌دهید و سرپرست کارگاه‌ هستید، فعالیت شما در دسته امور
@@ -171,7 +171,7 @@ const Index = () => {
               <div className='col-6 col-md-4'>
                 <img src='/img/landings/project-manager.png' className='img-fluid' alt='Project Manager' />
               </div>
-            </a>
+            </div>
           </Link>
         </div>
       </section>
@@ -247,7 +247,7 @@ const Index = () => {
         </div>
       </section>
 
-      <a href='https://t.me/+D54o2CCh5Bo4NGI0' target='_blank' rel='noreferrer' className='FNV-TelegramBG'>
+      <Link href='https://t.me/+D54o2CCh5Bo4NGI0' target='_blank' rel='noreferrer' className='FNV-TelegramBG'>
         <div className='container'>
           <div className='row'>
             <div className='col-10 col-md-8'>
@@ -258,7 +258,7 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </a>
+      </Link>
 
       <section className='FNV-SinglePage FNV-GrayBG' id='P3'>
         <div className='container'>

@@ -81,22 +81,22 @@ const Index = () => {
               <p>Table of contents:</p>
               <ol>
                 <li>
-                  <a href='#P1'>Who can get a P.Eng designation?</a>
+                  <Link href='#P1'>Who can get a P.Eng designation?</Link>
                 </li>
                 <li>
-                  <a href='#P2'>Advantages of P.Eng designation</a>
+                  <Link href='#P2'>Advantages of P.Eng designation</Link>
                 </li>
                 <li>
-                  <a href='#P3'>Registering in Canadian engineering organizations</a>
+                  <Link href='#P3'>Registering in Canadian engineering organizations</Link>
                 </li>
                 <li>
-                  <a href='#P4'>P.Eng Requirements</a>
+                  <Link href='#P4'>P.Eng Requirements</Link>
                 </li>
                 <li>
-                  <a href='#P5'>What is the NPPE Exam?</a>
+                  <Link href='#P5'>What is the NPPE Exam?</Link>
                 </li>
                 <li>
-                  <a href='#FAQ'>FAQs</a>
+                  <Link href='#FAQ'>FAQs</Link>
                 </li>
               </ol>
               <p>
@@ -252,16 +252,16 @@ const Index = () => {
               </p>
               <ol>
                 <li>
-                  <a href='https://www.peo.on.ca/'>Engineering in Ontario</a>
+                  <Link href='https://www.peo.on.ca/'>Engineering in Ontario</Link>
                 </li>
                 <li>
-                  <a href='https://engineersnovascotia.ca/'>Engineering in Nova Scotia</a>
+                  <Link href='https://engineersnovascotia.ca/'>Engineering in Nova Scotia</Link>
                 </li>
                 <li>
-                  <a href='https://www.apega.ca/'>Engineering in Alberta&nbsp;</a>
+                  <Link href='https://www.apega.ca/'>Engineering in Alberta&nbsp;</Link>
                 </li>
                 <li>
-                  <a href='https://www.egbc.ca/'>Engineering British Columbia&nbsp;</a>
+                  <Link href='https://www.egbc.ca/'>Engineering British Columbia&nbsp;</Link>
                 </li>
               </ol>
               <p>There are two methods for submitting academic documents:</p>
@@ -276,7 +276,7 @@ const Index = () => {
                   Fanavaran can provide this service. Make sure to include your desired statements in both Persian and
                   English on your documents (as indicated below) and send them to info@fanavaran.ca. Please note that
                   this service is exclusively available to members of Fanavaran. (Click{' '}
-                  <a href='https://fanavaran.ca/membership-account/membership-levels/'>here </a>to become a member of
+                  <Link href='https://fanavaran.ca/membership-account/membership-levels/'>here </Link>to become a member of
                   Fanavaran)
                 </li>
               </ol>
@@ -295,9 +295,9 @@ const Index = () => {
               <ul>
                 <li>
                   If you wish to have your engineering documents reviewed and approved by technicians, kindly adhere to{' '}
-                  <a href='https://fanavaran.ca/wp-content/uploads/2022/07/2746566a-c838-4feb-8204-a0bf3ab04f66.pdf'>
+                  <Link href='https://fanavaran.ca/wp-content/uploads/2022/07/2746566a-c838-4feb-8204-a0bf3ab04f66.pdf'>
                     this{' '}
-                  </a>
+                  </Link>
                   template.
                 </li>
               </ul>
@@ -306,9 +306,9 @@ const Index = () => {
                   In certain cases, individuals may be required to undertake technical courses prior to attaining EIT
                   certification. These courses are conducted in English within Canada, and some individuals may
                   encounter challenges in successfully completing the final exams. Fanavaran offers private and
-                  semi-private <a href='https://fanavaran.ca/p-eng-courses/'>technical courses</a> led by experienced
+                  semi-private <Link href='https://fanavaran.ca/p-eng-courses/'>technical courses</Link> led by experienced
                   and academic professors to assist you in overcoming these hurdles. You can register for these courses
-                  by clicking <a href='https://fanavaran.ca/p-eng-courses/'>here</a>.
+                  by clicking <Link href='https://fanavaran.ca/p-eng-courses/'>here</Link>.
                 </li>
               </ul>
               <p>
@@ -318,35 +318,35 @@ const Index = () => {
               <p>Here are some examples:</p>
               <ul>
                 <li>
-                  <a href='https://fanavaran.ca/wp-content/uploads/2022/05/Civil-Engineering.pdf'>Civil Engineer</a>
+                  <Link href='https://fanavaran.ca/wp-content/uploads/2022/05/Civil-Engineering.pdf'>Civil Engineer</Link>
                 </li>
                 <li>
-                  <a href='https://fanavaran.ca/wp-content/uploads/2022/05/Electrical-Engineering.pdf'>
+                  <Link href='https://fanavaran.ca/wp-content/uploads/2022/05/Electrical-Engineering.pdf'>
                     Electrical Engineering
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='https://fanavaran.ca/wp-content/uploads/2022/05/Mechanical-eng-University-of-Tehran.pdf'>
+                  <Link href='https://fanavaran.ca/wp-content/uploads/2022/05/Mechanical-eng-University-of-Tehran.pdf'>
                     Mechanical eng (01)
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='https://fanavaran.ca/wp-content/uploads/2022/09/course.doc'>Mechanical eng (02)</a>
+                  <Link href='https://fanavaran.ca/wp-content/uploads/2022/09/course.doc'>Mechanical eng (02)</Link>
                 </li>
                 <li>
-                  <a href='https://fanavaran.ca/wp-content/uploads/2022/05/Civil-and-Environmental-Engineering-Babol.pdf'>
+                  <Link href='https://fanavaran.ca/wp-content/uploads/2022/05/Civil-and-Environmental-Engineering-Babol.pdf'>
                     Civil and Environmental Engineering
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='https://fanavaran.ca/wp-content/uploads/2022/09/PEO-FAQ-for-Experience-Documentation.pdf'>
+                  <Link href='https://fanavaran.ca/wp-content/uploads/2022/09/PEO-FAQ-for-Experience-Documentation.pdf'>
                     Irrigation Engineering
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <p>
                 Create your updated resume in PDF format by utilizing the engineering resume template provided for{' '}
-                <a href='https://fanavaran.ca/wp-content/uploads/2022/08/Resume-temp.docx'>download</a>. If you have
+                <Link href='https://fanavaran.ca/wp-content/uploads/2022/08/Resume-temp.docx'>download</Link>. If you have
                 inquiries or uncertainties regarding resume writing, we highly recommend enrolling in our resume writing
                 and job seeking course. It is worth noting that this course is offered free of charge to all VIP members
                 of the Fanavaran.
@@ -361,40 +361,40 @@ const Index = () => {
               <p>Here is a list of Provincial Engineering Organizations along with their websites:</p>
               <ul>
                 <li>
-                  <a href='https://www.apega.ca/'>Alberta&nbsp;</a>
+                  <Link href='https://www.apega.ca/'>Alberta&nbsp;</Link>
                 </li>
                 <li>
-                  <a href='https://www.peo.on.ca/'>Ontario</a>
+                  <Link href='https://www.peo.on.ca/'>Ontario</Link>
                 </li>
                 <li>
-                  <a href='https://www.egbc.ca/'>British Columbia</a>
+                  <Link href='https://www.egbc.ca/'>British Columbia</Link>
                 </li>
                 <li>
-                  <a href='https://www.apegs.ca/'>Saskatchewan</a>
+                  <Link href='https://www.apegs.ca/'>Saskatchewan</Link>
                 </li>
                 <li>
-                  <a href='https://www.enggeomb.ca/'>Manitoba</a>
+                  <Link href='https://www.enggeomb.ca/'>Manitoba</Link>
                 </li>
                 <li>
-                  <a href='https://engineersnovascotia.ca/'>Nova Scotia</a>
+                  <Link href='https://engineersnovascotia.ca/'>Nova Scotia</Link>
                 </li>
                 <li>
-                  <a href='http://www.pegnl.ca/'>Newfoundland and Labrador</a>
+                  <Link href='http://www.pegnl.ca/'>Newfoundland and Labrador</Link>
                 </li>
                 <li>
-                  <a href='https://www.napeg.nt.ca/'>Northwest Territories and Nunavut</a>
+                  <Link href='https://www.napeg.nt.ca/'>Northwest Territories and Nunavut</Link>
                 </li>
                 <li>
-                  <a href='https://www.apey.yk.ca/'>Yukon&nbsp;</a>
+                  <Link href='https://www.apey.yk.ca/'>Yukon&nbsp;</Link>
                 </li>
                 <li>
-                  <a href='http://www.engineerspei.com/'>Prince Edward Island</a>
+                  <Link href='http://www.engineerspei.com/'>Prince Edward Island</Link>
                 </li>
                 <li>
-                  <a href='https://www.apegnb.com/'>New Brunswick</a>
+                  <Link href='https://www.apegnb.com/'>New Brunswick</Link>
                 </li>
                 <li>
-                  <a href='http://oiq.qc.ca/'>Quebec</a>
+                  <Link href='http://oiq.qc.ca/'>Quebec</Link>
                 </li>
               </ul>
             </div>
