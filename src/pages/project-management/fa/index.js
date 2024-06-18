@@ -498,7 +498,7 @@ const Index = props => {
         </div>
       </section>
 
-      <section className='FNV-SinglePage' id='FAQ'>
+      <section className='FNV-SinglePage d-none' id='FAQ'>
         <div className='container'>
           <div className='row'>
             <h3>سوالات متداول</h3>
