@@ -313,7 +313,7 @@ const Index = () => {
             <div className='col-12 col-md-4 p-0'>
               <div className='row p-0'>
                 <div className='col-5'>
-                  <img src='img/team/roya_karami.jpg' className='img-fluid' />
+                  <img src='img/team/hanieh_babadi.jpg' className='img-fluid' />
                 </div>
                 <div className='col-7'>
                   <h4>Hanieh Bababdi</h4>
