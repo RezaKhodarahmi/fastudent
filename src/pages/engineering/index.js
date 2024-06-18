@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Link from 'next/link'
 
 // ** Import Translation
 import { useTranslation } from 'react-i18next'
@@ -276,8 +277,8 @@ const Index = () => {
                   Fanavaran can provide this service. Make sure to include your desired statements in both Persian and
                   English on your documents (as indicated below) and send them to info@fanavaran.ca. Please note that
                   this service is exclusively available to members of Fanavaran. (Click{' '}
-                  <Link href='https://fanavaran.ca/membership-account/membership-levels/'>here </Link>to become a member of
-                  Fanavaran)
+                  <Link href='https://fanavaran.ca/membership-account/membership-levels/'>here </Link>to become a member
+                  of Fanavaran)
                 </li>
               </ol>
               <p>
@@ -306,9 +307,9 @@ const Index = () => {
                   In certain cases, individuals may be required to undertake technical courses prior to attaining EIT
                   certification. These courses are conducted in English within Canada, and some individuals may
                   encounter challenges in successfully completing the final exams. Fanavaran offers private and
-                  semi-private <Link href='https://fanavaran.ca/p-eng-courses/'>technical courses</Link> led by experienced
-                  and academic professors to assist you in overcoming these hurdles. You can register for these courses
-                  by clicking <Link href='https://fanavaran.ca/p-eng-courses/'>here</Link>.
+                  semi-private <Link href='https://fanavaran.ca/p-eng-courses/'>technical courses</Link> led by
+                  experienced and academic professors to assist you in overcoming these hurdles. You can register for
+                  these courses by clicking <Link href='https://fanavaran.ca/p-eng-courses/'>here</Link>.
                 </li>
               </ul>
               <p>
@@ -318,7 +319,9 @@ const Index = () => {
               <p>Here are some examples:</p>
               <ul>
                 <li>
-                  <Link href='https://fanavaran.ca/wp-content/uploads/2022/05/Civil-Engineering.pdf'>Civil Engineer</Link>
+                  <Link href='https://fanavaran.ca/wp-content/uploads/2022/05/Civil-Engineering.pdf'>
+                    Civil Engineer
+                  </Link>
                 </li>
                 <li>
                   <Link href='https://fanavaran.ca/wp-content/uploads/2022/05/Electrical-Engineering.pdf'>
@@ -346,10 +349,10 @@ const Index = () => {
               </ul>
               <p>
                 Create your updated resume in PDF format by utilizing the engineering resume template provided for{' '}
-                <Link href='https://fanavaran.ca/wp-content/uploads/2022/08/Resume-temp.docx'>download</Link>. If you have
-                inquiries or uncertainties regarding resume writing, we highly recommend enrolling in our resume writing
-                and job seeking course. It is worth noting that this course is offered free of charge to all VIP members
-                of the Fanavaran.
+                <Link href='https://fanavaran.ca/wp-content/uploads/2022/08/Resume-temp.docx'>download</Link>. If you
+                have inquiries or uncertainties regarding resume writing, we highly recommend enrolling in our resume
+                writing and job seeking course. It is worth noting that this course is offered free of charge to all VIP
+                members of the Fanavaran.
               </p>
               <p>
                 Compiling a work experience report (although not mandatory, it is advisable for volunteers to include
