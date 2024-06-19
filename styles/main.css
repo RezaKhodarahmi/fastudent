@@ -146,6 +146,16 @@ a {
   border: 1px solid #FF772C;
   color: #ffffff;
 }
+.FNV-Btn.BtnOutline.WhiteColor {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+.FNV-Btn.BtnOutline.WhiteColor:hover {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  color: #FF772C;
+}
 .FNV-Btn.BtnOutline:hover {
   background-color: #223885;
 }
@@ -3305,83 +3315,134 @@ body[dir=rtl] .FNV-Blog .FNV-SeeMore {
   }
 }
 .FNV-Membership .FNV-Header {
-  background-image: unset;
-  padding: 3rem 0;
-  height: unset;
-}
-.FNV-Membership .FNV-Header .container .row .col-12 h1 {
-  color: #212121;
-  text-align: left;
-  font-size: 35px;
-  line-height: 36px;
-}
-.FNV-Membership .FNV-Header .container .row .col-12 .FNV-Cat-Shorts {
-  margin-top: 0.5rem;
-}
-.FNV-Membership .FNV-Header .container .row .col-12 .FNV-Cat-Shorts .row .col-md,
-.FNV-Membership .FNV-Header .container .row .col-12 .FNV-Cat-Shorts .row .col-md-6 {
   display: flex;
+  height: 500px;
+  padding: 3rem 0;
   align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/img/vip-bg.jpg");
 }
-.FNV-Membership .FNV-Header .container .row .col-12 .FNV-Cat-Shorts .row .col-md svg,
-.FNV-Membership .FNV-Header .container .row .col-12 .FNV-Cat-Shorts .row .col-md-6 svg {
-  color: #FF772C;
-  margin-right: 0.5rem;
+.FNV-Membership .FNV-Header .container .row .col-md-6 h1 {
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 600;
+  color: #ffffff;
 }
-.FNV-Membership .FNV-Header .container .row .col-12 .FNV-Cat-Shorts .row .col-md h3,
-.FNV-Membership .FNV-Header .container .row .col-12 .FNV-Cat-Shorts .row .col-md-6 h3 {
-  font-size: 14px;
-  line-height: 28px;
-  margin-bottom: 0;
-  color: #d9d9d9;
-}
-.FNV-Membership .FNV-Header .container .row .col-12 .FNV-Cat-Shorts .row .col-md h3 strong,
-.FNV-Membership .FNV-Header .container .row .col-12 .FNV-Cat-Shorts .row .col-md-6 h3 strong {
+.FNV-Membership .FNV-Header .container .row .col-md-6 p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 36px;
   color: #ffffff;
 }
 
-.FNV-Membership-Page .container {
-  background-image: url("/img/membership.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
+.FNV-Membership-Page {
+  background-image: url("/img/fanavaran-pattern.png");
   background-size: cover;
-  padding: 4rem;
 }
-.FNV-Membership-Page .container .row {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 100%;
+.FNV-Membership-Page .container {
+  background-size: cover;
+  padding: 5rem;
 }
-.FNV-Membership-Page .container .row .col-12 .card {
-  padding: 2rem;
-  border-radius: 0;
-  border-width: 0;
-  background-color: rgba(0, 60, 191, 0.7254901961);
-  transition: 0.3s all ease-in-out;
-}
-.FNV-Membership-Page .container .row .col-12 .card:hover {
-  background-color: rgba(0, 60, 191, 0.8431372549);
-}
-.FNV-Membership-Page .container .row .col-12 .card .card-body h2 {
-  font-size: 28px;
-  color: #ffffff;
-}
-.FNV-Membership-Page .container .row .col-12 .card .card-body p {
-  color: #ffffff;
-}
-.FNV-Membership-Page .container .row .col-12 .card .card-body p price {
-  font-size: 22px;
-}
-.FNV-Membership-Page .container .row .col-12 .card .card-body .BtnPrimary {
-  font-weight: 700;
-  font-size: 18px;
-  color: #223885;
-  background-color: #ede8f4;
-}
-.FNV-Membership-Page .container .row h3 {
+.FNV-Membership-Page .container h2 {
+  font-size: 28;
+  font-weight: 900;
   text-align: center;
-  color: #212121;
+  margin-bottom: 8rem;
+  color: #223885;
+}
+.FNV-Membership-Page .container .row .col-6 .card {
+  display: flex;
+  padding: 2rem 2rem 1rem;
+  border-width: 0;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  transition: 0.3s all ease-in-out;
+  box-shadow: 0 0 20px rgba(255, 118, 44, 0.1882352941);
+}
+.FNV-Membership-Page .container .row .col-6 .card img {
+  width: 95px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-top: -5rem;
+}
+.FNV-Membership-Page .container .row .col-6 .card .card-body h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #223885;
+}
+.FNV-Membership-Page .container .row .col-12 h2 {
+  font-size: 28px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #223885;
+}
+.FNV-Membership-Page .container .row .col-12 p {
+  margin: 5rem 0;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: #223885;
+}
+.FNV-Membership-Page .container .row .col-md-4 .card {
+  height: 100%;
+  border-width: 0;
+  padding: 4rem 1rem;
+  border-radius: 20px;
+}
+.FNV-Membership-Page .container .row .col-md-4 .card.FNV-Free {
+  background: rgba(133, 93, 34, 0.1490196078);
+  box-shadow: 0 0 50px rgba(145, 145, 145, 0.1019607843);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.FNV-Membership-Page .container .row .col-md-4 .card.FNV-Free h4 {
+  color: #223885;
+}
+.FNV-Membership-Page .container .row .col-md-4 .card.FNV-Gold {
+  background: rgba(34, 56, 133, 0.1490196078);
+  box-shadow: 0 0 50px rgba(145, 145, 145, 0.1019607843);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.FNV-Membership-Page .container .row .col-md-4 .card.FNV-Gold h4 {
+  color: #223885;
+}
+.FNV-Membership-Page .container .row .col-md-4 .card.FNV-Platinium {
+  background: rgba(89, 34, 133, 0.1490196078);
+  box-shadow: 0 0 50px rgba(145, 145, 145, 0.1019607843);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.FNV-Membership-Page .container .row .col-md-4 .card.FNV-Platinium h4 {
+  color: #223885;
+}
+.FNV-Membership-Page .container .row .col-md-4 .card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.FNV-Membership-Page .container .row .col-md-4 .card h4 {
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.FNV-Membership-Page .container .row .col-md-4 .card ul {
+  height: 590px;
+}
+.FNV-Membership-Page .container .row .col-md-4 .card ul li {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.FNV-Membership-Page .container .row .col-md-4 .card .FNV-Btn {
+  margin-top: 2rem;
 }
 .FNV-Membership-Page .container:not(:first-child) {
   background-image: unset;
@@ -3396,88 +3457,137 @@ body[dir=rtl] .FNV-Blog .FNV-SeeMore {
 
 @media (max-width: 575.98px) {
   .FNV-Membership .FNV-Header {
-    background-image: unset;
-    padding: 3rem 0;
-    height: unset;
-  }
-  .FNV-Membership .FNV-Header .container .row .col-12 h1 {
-    color: #212121;
-    text-align: center;
-    font-size: 25px;
-    line-height: 36px;
-  }
-  .FNV-Membership .FNV-Header .container .row .col-12 .FNV-Cat-Shorts {
-    margin-top: 0.5rem;
-  }
-  .FNV-Membership .FNV-Header .container .row .col-12 .FNV-Cat-Shorts .row .col-md,
-  .FNV-Membership .FNV-Header .container .row .col-12 .FNV-Cat-Shorts .row .col-md-6 {
     display: flex;
+    height: 500px;
+    padding: 3rem 0;
     align-items: center;
+    background-size: cover;
+    background-position: left center;
+    background-image: url("/img/vip-bg.jpg");
   }
-  .FNV-Membership .FNV-Header .container .row .col-12 .FNV-Cat-Shorts .row .col-md svg,
-  .FNV-Membership .FNV-Header .container .row .col-12 .FNV-Cat-Shorts .row .col-md-6 svg {
-    color: #FF772C;
-    margin-right: 0.5rem;
-  }
-  .FNV-Membership .FNV-Header .container .row .col-12 .FNV-Cat-Shorts .row .col-md h3,
-  .FNV-Membership .FNV-Header .container .row .col-12 .FNV-Cat-Shorts .row .col-md-6 h3 {
-    font-size: 14px;
-    line-height: 28px;
-    margin-bottom: 0;
-    color: #d9d9d9;
-  }
-  .FNV-Membership .FNV-Header .container .row .col-12 .FNV-Cat-Shorts .row .col-md h3 strong,
-  .FNV-Membership .FNV-Header .container .row .col-12 .FNV-Cat-Shorts .row .col-md-6 h3 strong {
+  .FNV-Membership .FNV-Header .container .row .col-md-6 h1 {
+    font-size: 25px;
+    line-height: 60px;
+    font-weight: 600;
     color: #ffffff;
   }
+  .FNV-Membership .FNV-Header .container .row .col-md-6 p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #ffffff;
+  }
+  .FNV-Membership-Page {
+    background-image: url("/img/fanavaran-pattern.png");
+    background-size: cover;
+  }
   .FNV-Membership-Page .container {
-    background-image: url("/img/membership.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
     background-size: cover;
     padding: 1rem;
   }
-  .FNV-Membership-Page .container .row {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
-  }
-  .FNV-Membership-Page .container .row .col-12 .card {
-    padding: 2rem;
-    border-radius: 0;
-    border-width: 0;
-    background-color: rgba(0, 60, 191, 0.7254901961);
-    transition: 0.3s all ease-in-out;
-  }
-  .FNV-Membership-Page .container .row .col-12 .card:hover {
-    background-color: rgba(0, 60, 191, 0.8431372549);
-  }
-  .FNV-Membership-Page .container .row .col-12 .card .card-body {
-    text-align: center;
-  }
-  .FNV-Membership-Page .container .row .col-12 .card .card-body h2 {
-    font-size: 18px;
-    color: #ffffff;
-    text-align: center;
-  }
-  .FNV-Membership-Page .container .row .col-12 .card .card-body p {
-    color: #ffffff;
-    text-align: center;
-  }
-  .FNV-Membership-Page .container .row .col-12 .card .card-body p price {
+  .FNV-Membership-Page .container h2 {
     font-size: 22px;
-  }
-  .FNV-Membership-Page .container .row .col-12 .card .card-body .BtnPrimary {
-    font-weight: 700;
-    font-size: 18px;
-    color: #223885;
-    background-color: #ede8f4;
-  }
-  .FNV-Membership-Page .container .row h3 {
-    font-size: 16px;
+    font-weight: 900;
     text-align: center;
-    color: #212121;
+    margin-bottom: 2rem;
+    color: #223885;
+  }
+  .FNV-Membership-Page .container .row .col-6 .card {
+    display: flex;
+    padding: 1rem;
+    border-width: 0;
+    border-radius: 20px;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    transition: 0.3s all ease-in-out;
+    box-shadow: 0 0 20px rgba(255, 118, 44, 0.1882352941);
+  }
+  .FNV-Membership-Page .container .row .col-6 .card img {
+    width: 95px;
+    height: 100px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-top: -2rem;
+  }
+  .FNV-Membership-Page .container .row .col-6 .card .card-body h3 {
+    font-size: 12px;
+    font-weight: 500;
+    color: #223885;
+  }
+  .FNV-Membership-Page .container .row .col-12 h2 {
+    font-size: 28px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #223885;
+  }
+  .FNV-Membership-Page .container .row .col-12 p {
+    margin: 5rem 0;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: #223885;
+  }
+  .FNV-Membership-Page .container .row .col-md-4 {
+    margin-bottom: 1rem;
+  }
+  .FNV-Membership-Page .container .row .col-md-4 .card {
+    height: 100%;
+    border-width: 0;
+    padding: 1rem;
+    border-radius: 20px;
+  }
+  .FNV-Membership-Page .container .row .col-md-4 .card.FNV-Free {
+    background: rgba(133, 93, 34, 0.1490196078);
+    box-shadow: 0 0 50px rgba(145, 145, 145, 0.1019607843);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+  .FNV-Membership-Page .container .row .col-md-4 .card.FNV-Free h4 {
+    color: #223885;
+  }
+  .FNV-Membership-Page .container .row .col-md-4 .card.FNV-Gold {
+    background: rgba(34, 56, 133, 0.1490196078);
+    box-shadow: 0 0 50px rgba(145, 145, 145, 0.1019607843);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+  .FNV-Membership-Page .container .row .col-md-4 .card.FNV-Gold h4 {
+    color: #223885;
+  }
+  .FNV-Membership-Page .container .row .col-md-4 .card.FNV-Platinium {
+    background: rgba(89, 34, 133, 0.1490196078);
+    box-shadow: 0 0 50px rgba(145, 145, 145, 0.1019607843);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+  .FNV-Membership-Page .container .row .col-md-4 .card.FNV-Platinium h4 {
+    color: #223885;
+  }
+  .FNV-Membership-Page .container .row .col-md-4 .card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  .FNV-Membership-Page .container .row .col-md-4 .card h4 {
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .FNV-Membership-Page .container .row .col-md-4 .card ul {
+    height: auto;
+  }
+  .FNV-Membership-Page .container .row .col-md-4 .card ul li {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .FNV-Membership-Page .container .row .col-md-4 .card .FNV-Btn {
+    margin-top: 2rem;
   }
   .FNV-Membership-Page .container:not(:first-child) {
     background-image: unset;
