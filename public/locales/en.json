@@ -59,7 +59,14 @@
   "menu-register": "Register",
   "menu-courses": "Explore Courses",
   "menu-certificate": "Certificates",
+
   "menu-membership": "VIP Membership",
+  "menu-membership-slogan": "Become a part of the FANAVARAN family",
+  "menu-membership-overview": "Membership Overview",
+  "menu-membership-details": "Membership Details",
+  "menu-membership-faq": "Membership FAQs",
+  "menu-membership-button": "Become a Member",
+
   "menu-blogs": "Blogs",
   "menu-business": "Business Solutions",
   "menu-appointment1": "Work-study counseling",

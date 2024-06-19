@@ -176,11 +176,16 @@ body[dir='rtl']{
   
       .FNV-MegaMenu {
         position: static;
+
+        &.FNV-VIPMemberShip{
+          .dropdown-menu{
+            width: 550px;
+          }
+        }
   
         &:hover .dropdown-menu {
           display: block;
           margin-top: 0px;
-          width: 80%;
           padding: 1.5rem;
           border-width: 0;
           border-top-right-radius: 0px;
@@ -193,18 +198,25 @@ body[dir='rtl']{
   
         .dropdown-menu{
           .container-fluid{
+            padding-left: 0px;
+            padding-bottom: 0px;
+
             a{
+              display: block;
               font-size: 24px;
-              color: $PrimaryColor;
               font-weight: 600;
+              text-align: right;
+              color: $PrimaryColor;
   
               span{
-                border-left: 1px solid #ababab;
-                padding-left: 1rem;
-                margin-left: 1rem;
                 font-size: 14px;
-                color: $GrayThreeColor;
                 font-weight: 400;
+                border-left: 0px;
+                text-align: right;
+                margin-right: 1rem;
+                padding-right: 1rem;
+                color: $GrayThreeColor;
+                border-right: 1px solid #ababab;
               }
             }
   
@@ -233,10 +245,11 @@ body[dir='rtl']{
                         }
   
                         span{
-                          font-size: 18px;
-                          border-width: 0;
                           margin: 0;
                           padding: 0;
+                          border-width: 0;
+                          font-size: 18px;
+                          text-align: right;
                           color: $PrimaryColor;
                         }
                       }
@@ -245,17 +258,19 @@ body[dir='rtl']{
                 }
                 
                 span{
+                  display: block;
                   font-size: 16px;
-                  line-height: 32px;
                   font-weight: 700;
+                  text-align: right;
+                  line-height: 32px;
                   color: $FourthColor;
                   margin-bottom: .8rem;
-                  display: block;
   
                   svg{
-                    color: $SecondaryColor;
                     width: 12px;
                     height: 12px;
+                    margin-left: .5rem;
+                    color: $SecondaryColor;
                   }
                 }
                 
@@ -473,10 +488,15 @@ body[dir='ltr']{
       .FNV-MegaMenu {
         position: static;
   
+        &.FNV-VIPMemberShip{
+          .dropdown-menu{
+            width: 600px;
+          }
+        }
+  
         &:hover .dropdown-menu {
           display: block;
           margin-top: 0px;
-          width: 80%;
           padding: 1.5rem;
           border-width: 0;
           border-top-right-radius: 0px;
@@ -489,6 +509,9 @@ body[dir='ltr']{
   
         .dropdown-menu{
           .container-fluid{
+            padding-right: 0px;
+            padding-bottom: 0px;
+
             a{
               font-size: 24px;
               color: $PrimaryColor;
@@ -549,9 +572,10 @@ body[dir='ltr']{
                   display: block;
   
                   svg{
-                    color: $SecondaryColor;
                     width: 12px;
                     height: 12px;
+                    margin-right: .5rem;
+                    color: $SecondaryColor;
                   }
                 }
                 

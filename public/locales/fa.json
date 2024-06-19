@@ -52,7 +52,14 @@
   "menu-register": "عضویت",
   "menu-courses": "دوره‌های فناوران",
   "menu-certificate": "گواهینامه فناوران",
+
   "menu-membership": "ممبرشیپ فناوران",
+  "menu-membership-slogan": "عضوی از خانواده فناوران شوید",
+  "menu-membership-overview": "ممبرشیپ فناوران",
+  "menu-membership-details": "درباره عضویت ویژه",
+  "menu-membership-faq": "سوالات متداول",
+  "menu-membership-button": "عضو شوید",
+
   "menu-blogs": "وبلاگ فناوران",
   "menu-business": "راه‌حل های کسب و کار",
   "menu-appointment1": "مشاوره کاری-تحصیلی",
