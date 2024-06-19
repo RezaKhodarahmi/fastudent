@@ -197,6 +197,11 @@ a {
   font-size: 20px;
   padding: 15px 20px;
 }
+.FNV-Btn.BtnXLarge {
+  font-size: 25px;
+  margin-bottom: 4rem;
+  padding: 1.5rem 5rem;
+}
 
 @media (max-width: 575.98px) {
   .FNV-Btn {
