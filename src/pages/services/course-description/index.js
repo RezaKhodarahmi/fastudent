@@ -38,7 +38,7 @@ const UploadForm = () => {
     clearErrors,
     formState: { errors }
   } = useForm({
-    defaultValues: {
+    defaultValues: { 
       fullName: '',
       types: [],
       kardani_file: null,
