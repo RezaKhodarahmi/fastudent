@@ -398,13 +398,13 @@ body[dir=rtl] nav .container-fluid .navbar-nav .nav-item:hover .nav-link {
   color: #ffffff;
 }
 body[dir=rtl] nav .container-fluid .FNV-MegaMenu {
-  position: static;
+  position: relative;
 }
 body[dir=rtl] nav .container-fluid .FNV-MegaMenu.FNV-VIPMemberShip .dropdown-menu {
   width: 600px;
 }
-body[dir=rtl] nav .container-fluid .FNV-MegaMenu:hover .dropdown-menu {
-  display: block;
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu {
+  display: none;
   margin-top: 0px;
   padding: 1.5rem;
   border-width: 0;
@@ -413,6 +413,13 @@ body[dir=rtl] nav .container-fluid .FNV-MegaMenu:hover .dropdown-menu {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1411764706);
+  overflow: hidden;
+}
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu:hover .dropdown-menu {
+  display: block;
+  margin-top: 0px;
+  padding: 1.5rem;
+  border-width: 0;
   overflow: hidden;
 }
 body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid {

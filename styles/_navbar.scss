@@ -175,16 +175,16 @@ body[dir='rtl']{
       }
   
       .FNV-MegaMenu {
-        position: static;
+        position: relative;
 
         &.FNV-VIPMemberShip{
           .dropdown-menu{
             width: 600px;
           }
         }
-  
-        &:hover .dropdown-menu {
-          display: block;
+
+        .dropdown-menu {
+          display: none;
           margin-top: 0px;
           padding: 1.5rem;
           border-width: 0;
@@ -193,6 +193,14 @@ body[dir='rtl']{
           border-bottom-left-radius: 20px;
           border-bottom-right-radius: 20px;
           box-shadow: 0px 20px 20px $ShadowPrimary;
+          overflow: hidden;
+        }
+  
+        &:hover .dropdown-menu {
+          display: block;
+          margin-top: 0px;
+          padding: 1.5rem;
+          border-width: 0;
           overflow: hidden;
         }
   
