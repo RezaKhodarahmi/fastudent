@@ -301,10 +301,96 @@ const Header = props => {
                   </Link>
                 </li>
 
-                <li className='nav-item dropdown FNV-MegaMenu'>
-                  <Link className='nav-link' href='/membership/checkout'>
+                {/* Membership */}
+                <li className='nav-item dropdown FNV-MegaMenu FNV-VIPMemberShip'>
+                  <Link
+                    className='nav-link'
+                    href='javascript:void(0);'
+                    data-bs-toggle='dropdown'
+                    aria-expanded='false'
+                  >
                     {t('membership')}
                   </Link>
+                  <ul className='dropdown-menu p-0'>
+                    <div className='container-fluid'>
+                      <a>
+                        {t('membership')} <span>{t('menu-membership-slogan')}</span>
+                      </a>
+                      <div className='row'>
+                        <div className='col-md-6 pb-4'>
+                          <span>
+                            <i data-feather='users'></i> {t('menu-membership-overview')}
+                          </span>
+                          <li>
+                            <Link className='dropdown-item' href='/membership/checkout'>
+                              {t('menu-membership-button')}
+                            </Link>
+                          </li>
+                          <li>
+                            <Link className='dropdown-item' href='#'>
+                              {t('menu-membership-details')}
+                            </Link>
+                          </li>
+                          <li>
+                            <Link className='dropdown-item' href='#'>
+                              {t('menu-membership-faq')}
+                            </Link>
+                          </li>
+                        </div>
+                        <div className='col-md-6'>
+                          <div className='row FNV-QuickAction'>
+                            <div className='col-12'>
+                              <Link className='dropdown-item' href='/membership/checkout'>
+                                <i data-feather='user'></i>
+                                <span>{t('menu-membership-button')}</span>
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+
+                {/* Services */}
+                <li className='nav-item dropdown FNV-MegaMenu FNV-VIPMemberShip'>
+                  <Link
+                    className='nav-link'
+                    href='javascript:void(0);'
+                    data-bs-toggle='dropdown'
+                    aria-expanded='false'
+                  >
+                    {t('menu-services')}
+                  </Link>
+                  <ul className='dropdown-menu p-0'>
+                    <div className='container-fluid'>
+                      <a>
+                        {t('menu-services')} <span>{t('menu-services-slogan')}</span>
+                      </a>
+                      <div className='row'>
+                        <div className='col-md-6 pb-4'>
+                          <span>
+                            <i data-feather='list'></i> {t('menu-services')}
+                          </span>
+                          <li>
+                            <Link className='dropdown-item' href='/services/educational-and-career-counseling'>
+                              {t('menu-services-1')}
+                            </Link>
+                          </li>
+                          <li>
+                            <Link className='dropdown-item' href='/services/counseling-working-experience'>
+                              {t('menu-services-2')}
+                            </Link>
+                          </li>
+                          <li>
+                            <Link className='dropdown-item' href='/services/course-description'>
+                              {t('menu-services-3')}
+                            </Link>
+                          </li>
+                        </div>
+                      </div>
+                    </div>
+                  </ul>
                 </li>
 
                 <li className='nav-item dropdown FNV-MegaMenu'>
@@ -755,6 +841,7 @@ const Header = props => {
                     </div>
                   </ul>
                 </li> */}
+
                 {/* Membership */}
                 <li className='nav-item dropdown FNV-MegaMenu FNV-VIPMemberShip'>
                   <Link
