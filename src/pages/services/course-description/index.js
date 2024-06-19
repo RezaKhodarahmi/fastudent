@@ -121,7 +121,7 @@ const UploadForm = () => {
   }
 
   const selectedTypes = watch('types', [])
-  
+
   const fileFields = {
     1: 'kardani_file',
     2: 'karshenasiNP_file',
@@ -131,11 +131,11 @@ const UploadForm = () => {
   }
 
   const fileLabels = {
-    kardani_file: 'ریز نمرات فارسی و انگلیسی کاردانی',
-    karshenasiNP_file: 'ریز نمرات فارسی و انگلیسی کارشناسی ناپیوسته',
-    karshenasiP_file: 'ریز نمرات فارسی و انگلیسی کارشناسی پیوسته',
-    karshenasiA_file: 'ریز نمرات فارسی و انگلیسی کارشناسی ارشد',
-    master_file: 'ریز نمرات فارسی و انگلیسی دکتری'
+    kardani_file: 'آپلود ریز نمرات فارسی و انگلیسی کاردانی',
+    karshenasiNP_file: 'آپلود ریز نمرات فارسی و انگلیسی کارشناسی ناپیوسته',
+    karshenasiP_file: 'آپلود ریز نمرات فارسی و انگلیسی کارشناسی پیوسته',
+    karshenasiA_file: 'آپلود ریز نمرات فارسی و انگلیسی کارشناسی ارشد',
+    master_file: 'آپلود ریز نمرات فارسی و انگلیسی دکتری'
   }
 
   useEffect(() => {
@@ -170,7 +170,13 @@ const UploadForm = () => {
                 <Controller
                   name='fullName'
                   control={control}
-                  rules={{ required: 'نام و نام خانوادگی الزامی میباشد.' }}
+                  rules={{
+                    required: 'نام و نام خانوادگی الزامی میباشد.',
+                    pattern: {
+                      value: /^[a-zA-Z\s]+$/,
+                      message: 'نام و نام خانوادگی باید فقط شامل حروف انگلیسی باشد.'
+                    }
+                  }}
                   render={({ field }) => (
                     <TextField
                       {...field}
@@ -245,7 +251,7 @@ const UploadForm = () => {
                     {errors.files.message}
                   </Typography>
                 )}
-                <Typography variant='h6'>Total Price: ${totalPrice}</Typography>
+                <Typography variant='h6'>مبلغ کل: {totalPrice}$</Typography>
                 {user ? (
                   <Button type='submit' variant='contained' color='primary' fullWidth>
                     ارسال
