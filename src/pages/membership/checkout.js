@@ -53,7 +53,7 @@ const StripeCheckoutButton = () => {
   }
 
   return (
-    <div className='FNV-Membership'>
+    <div className='FNV-Membership' style={{ direction: 'rtl' }}>
       <section className='FNV-Header'>
         <div className='container'>
           <div className='row'>
@@ -69,7 +69,7 @@ const StripeCheckoutButton = () => {
         </div>
       </section>
 
-      <section className='FNV-Membership-Page'>
+      <section className='FNV-Membership-Page' style={{ direction: 'rtl' }}>
         <div className='container'>
           <h2>مزایای خرید عضویت VIP فناوران</h2>
 
