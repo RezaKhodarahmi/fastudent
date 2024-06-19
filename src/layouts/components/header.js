@@ -806,6 +806,47 @@ const Header = props => {
                   </ul>
                 </li>
 
+                {/* Services */}
+                <li className='nav-item dropdown FNV-MegaMenu FNV-VIPMemberShip'>
+                  <Link
+                    className='nav-link'
+                    href='#'
+                    data-bs-toggle='dropdown'
+                    aria-expanded='false'
+                  >
+                    {t('menu-services')}
+                  </Link>
+                  <ul className='dropdown-menu p-0'>
+                    <div className='container-fluid'>
+                      <a>
+                        {t('menu-services')} <span>{t('menu-services-slogan')}</span>
+                      </a>
+                      <div className='row'>
+                        <div className='col-md-6 pb-4'>
+                          <span>
+                            <i data-feather='list'></i> {t('menu-services')}
+                          </span>
+                          <li>
+                            <Link className='dropdown-item' href='/services/educational-and-career-counseling'>
+                              {t('menu-services-1')}
+                            </Link>
+                          </li>
+                          <li>
+                            <Link className='dropdown-item' href='/services/counseling-working-experience'>
+                              {t('menu-services-2')}
+                            </Link>
+                          </li>
+                          <li>
+                            <Link className='dropdown-item' href='/services/course-description'>
+                              {t('menu-services-3')}
+                            </Link>
+                          </li>
+                        </div>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+
                 <li className='nav-item dropdown FNV-MegaMenu'>
                   <Link className='nav-link' href='/blog' aria-expanded='false'>
                     {t('menu-blogs')}
