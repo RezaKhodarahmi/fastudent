@@ -582,7 +582,7 @@ body[dir='ltr']{
                 li{
                   a{
                     font-size: 14px;
-                    font-weight: 300;
+                    font-weight: 500;
                     color: $GrayThreeColor;
                     transition: .1s all ease-in-out;
   
@@ -752,6 +752,7 @@ body[dir='ltr']{
                   right: 0;
                   left: unset;
                   padding: 0;
+                  width: 100%;
   
                   li{
                     text-align: start;
@@ -817,6 +818,21 @@ body[dir='ltr']{
     
         .FNV-MegaMenu {
           position: static;
+
+          &.FNV-VIPMemberShip{
+            .container-fluid{
+              padding: 0;
+              .row{
+                .col-md-6{
+                  padding: 0;
+
+                  &:first-child{
+                    padding-right: 2rem;
+                  }
+                }
+              }
+            }
+          }
     
           &:hover .dropdown-menu {
             display: block;
@@ -838,6 +854,7 @@ body[dir='ltr']{
                 font-size: 24px;
                 color: $PrimaryColor;
                 font-weight: 600;
+                display: none;
     
                 span{
                   border-left: 1px solid #ababab;
@@ -846,6 +863,7 @@ body[dir='ltr']{
                   font-size: 14px;
                   color: $GrayThreeColor;
                   font-weight: 400;
+                  display: none;
                 }
               }
     
@@ -902,6 +920,7 @@ body[dir='ltr']{
                   
                   li{
                     a{
+                      display: block;
                       font-size: 14px;
                       font-weight: 300;
                       color: $GrayThreeColor;
@@ -1070,6 +1089,7 @@ body[dir='ltr']{
                 }
   
                 .dropdown-menu.show{
+                  width: 100%;
                   right: unset;
                   left: 0;
                   padding: 0;
@@ -1137,6 +1157,21 @@ body[dir='ltr']{
     
         .FNV-MegaMenu {
           position: static;
+
+          &.FNV-VIPMemberShip{
+            .container-fluid{
+              padding: 0;
+              .row{
+                .col-md-6{
+                  padding: 0;
+
+                  &:first-child{
+                    padding-left: 2rem;
+                  }
+                }
+              }
+            }
+          }
     
           &:hover .dropdown-menu {
             display: block;
@@ -1158,6 +1193,7 @@ body[dir='ltr']{
                 font-size: 24px;
                 color: $PrimaryColor;
                 font-weight: 600;
+                display: none;
     
                 span{
                   border-left: 1px solid #ababab;
@@ -1222,6 +1258,7 @@ body[dir='ltr']{
                   
                   li{
                     a{
+                      display: block;
                       font-size: 14px;
                       font-weight: 300;
                       color: $GrayThreeColor;
