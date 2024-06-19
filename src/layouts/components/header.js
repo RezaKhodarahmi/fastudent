@@ -759,7 +759,7 @@ const Header = props => {
                 <li className='nav-item dropdown FNV-MegaMenu FNV-VIPMemberShip'>
                   <Link
                     className='nav-link'
-                    href='/membership/checkout'
+                    href='javascript:void(0);'
                     data-bs-toggle='dropdown'
                     aria-expanded='false'
                   >
@@ -810,7 +810,7 @@ const Header = props => {
                 <li className='nav-item dropdown FNV-MegaMenu FNV-VIPMemberShip'>
                   <Link
                     className='nav-link'
-                    href='#'
+                    href='javascript:void(0);'
                     data-bs-toggle='dropdown'
                     aria-expanded='false'
                   >
@@ -847,27 +847,35 @@ const Header = props => {
                   </ul>
                 </li>
 
+                {/* Blog */}
                 <li className='nav-item dropdown FNV-MegaMenu'>
                   <Link className='nav-link' href='/blog' aria-expanded='false'>
                     {t('menu-blogs')}
                   </Link>
                 </li>
+
+                {/* Webinars */}
                 <li className='nav-item dropdown FNV-MegaMenu'>
                   <Link className='nav-link' href='/webinars' aria-expanded='false'>
                     {t('webinars')}
                   </Link>
                 </li>
 
+                {/* Contact Us */}
                 <li className='nav-item dropdown FNV-MegaMenu'>
                   <Link className='nav-link' href='/contact-us' aria-expanded='false'>
                     {t('contact-us')}
                   </Link>
                 </li>
+
+                {/* About Us */}
                 <li className='nav-item dropdown FNV-MegaMenu'>
                   <Link className='nav-link' href='/about-us' aria-expanded='false'>
                     {t('about-us')}
                   </Link>
                 </li>
+
+                {/* Appointment */}
                 <li class='nav-item dropdown FNV-Appointment'>
                   <a class='nav-link' href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
                     {t('appointment')}
