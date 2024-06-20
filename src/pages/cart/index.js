@@ -782,7 +782,7 @@ const Index = () => {
                     <button
                       disabled={!allChecked}
                       onClick={handelInitiatePartiallyPayment}
-                      className='FNV-Btn BtnOutline SecondaryColor BtnLarge'
+                      className='FNV-Btn BtnOutline SecondaryColor BtnXLarge'
                     >
                       {t('cart-partial-button')}
                     </button>
@@ -807,7 +807,7 @@ const Index = () => {
                           <button
                             disabled={!allChecked}
                             onClick={handelInitiatePayment}
-                            className='FNV-Btn SecondaryColor BtnLarge'
+                            className='FNV-Btn SecondaryColor BtnXLarge'
                           >
                             {t('cart-full-payment-button')}
                           </button>

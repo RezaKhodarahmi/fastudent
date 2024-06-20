@@ -35,6 +35,18 @@
       }
     }
 
+    &.WhiteColor {
+      background-color: transparent;
+      border: 1px solid $WhiteColor;
+      color: $WhiteColor;
+
+      &:hover{
+        background-color: $WhiteColor;
+        border: 1px solid $WhiteColor;
+        color: $SecondaryColor;
+      }
+    }
+
     &:hover{
       background-color: $PrimaryColor;
     }
@@ -84,6 +96,12 @@
   &.BtnLarge {
     font-size: 20px;
     padding: 15px 20px;
+  }
+
+  &.BtnXLarge {
+    font-size: 25px;
+    margin-bottom: 4rem;
+    padding: 1.5rem 5rem;
   }
 }
 

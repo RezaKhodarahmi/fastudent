@@ -1,44 +1,29 @@
 @import './variables';
+
 .FNV-Membership .FNV-Header {
-  background-image: unset;
+  display: flex;
+  height: 500px;
   padding: 3rem 0;
-  height: unset;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-image: url('/img/vip-bg.jpg');
 
   .container {
     .row {
-      .col-12 {
+      .col-md-6 {
         h1 {
-          color: $FourthColor;
-          text-align: left;
-          font-size: 35px;
-          line-height: 36px;
+          font-size: 40px;
+          line-height: 60px;
+          font-weight: 600;
+          color: $WhiteColor;
         }
 
-        .FNV-Cat-Shorts {
-          margin-top: 0.5rem;
-          .row {
-            .col-md,
-            .col-md-6 {
-              display: flex;
-              align-items: center;
-
-              svg {
-                color: $SecondaryColor;
-                margin-right: 0.5rem;
-              }
-
-              h3 {
-                font-size: 14px;
-                line-height: 28px;
-                margin-bottom: 0;
-                color: $GrayTwoColor;
-
-                strong {
-                  color: $WhiteColor;
-                }
-              }
-            }
-          }
+        p{
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 36px;
+          color: $WhiteColor;
         }
       }
     }
@@ -46,58 +31,137 @@
 }
 
 .FNV-Membership-Page{
+  background-image: url('/img/fanavaran-pattern.png');
+  background-size: cover;
+
   .container{
-    background-image: url('/img/membership.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
     background-size: cover;
-    padding: 4rem;
+    padding: 5rem;
+
+    h2{
+      font-size: 28;
+      font-weight: 900;
+      text-align: center;
+      margin-bottom: 8rem;
+      color: $PrimaryColor;
+    }
 
     .row{
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      height: 100%;
-
-      .col-12{
+      .col-6{
         .card{
-          padding: 2rem;
-          border-radius: 0;
+          display: flex;
+          padding: 2rem 2rem 1rem;
           border-width: 0;
-          background-color: $ShadowSecondary;
+          border-radius: 20px;
+          align-items: center;
+          justify-content: center;
+          background-color: $WhiteColor;
           transition: .3s all ease-in-out;
+          box-shadow: 0 0 20px #ff762c30;
 
-          &:hover{
-            background-color: $ShadowThird;
+          img{
+            width: 95px;
+            height: 100px;
+            object-fit: contain;
+            margin-top: -5rem;
           }
 
           .card-body{
-            h2{
-              font-size: 28px;
-              color: $WhiteColor;
-            }
-
-            p{
-              color: $WhiteColor;
-
-              price{
-                font-size: 22px;
-              }
-            }
-
-            .BtnPrimary{
-              font-weight: 700;
-              font-size: 18px;
+            h3{
+              font-size: 16px;
+              font-weight: 500;
               color: $PrimaryColor;
-              background-color: #ede8f4;
             }
           }
         }
       }
 
-      h3{
-        text-align: center;
-        color: $FourthColor;
+      .col-12{
+        h2{
+          font-size: 28px;
+          font-weight: 900;
+          text-align: center;
+          margin-bottom: 4rem;
+          color: $PrimaryColor;
+        }
+
+        p{
+          margin: 5rem 0;
+          font-size: 18px;
+          font-weight: 500;
+          text-align: center;
+          color: $PrimaryColor;
+        }
+      }
+      
+      .col-md-4{
+        .card{
+          height: 100%;
+          border-width: 0;
+          padding: 4rem 1rem;
+          border-radius: 20px;
+
+          &.FNV-Free{
+            background: #855d2226;
+            box-shadow: 0 0 50px rgba(145, 145, 145, 0.1019607843);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+
+            h4{
+              color: $PrimaryColor;
+            }
+          }
+
+          &.FNV-Gold{
+            background: #22388526;
+            box-shadow: 0 0 50px rgba(145, 145, 145, 0.1019607843);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+
+            h4{
+              color: $PrimaryColor;
+            }
+          }
+
+          &.FNV-Platinium{
+            background: #59228526;
+            box-shadow: 0 0 50px rgba(145, 145, 145, 0.1019607843);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+
+            h4{
+              color: $PrimaryColor;
+            }
+          }
+
+          h3{
+            font-size: 24px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: .5rem;
+          }
+
+          h4{
+            font-size: 30px;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 4rem;
+          }
+
+          ul{
+            height: 590px;
+
+            li{
+              font-size: 12px;
+              font-weight: 600;
+              margin-bottom: 1rem;
+            }
+          }
+
+          .FNV-Btn{
+            margin-top: 2rem;
+          }
+        }
       }
     }
 
@@ -117,45 +181,29 @@
 
 @media (max-width: 575.98px) {
   .FNV-Membership .FNV-Header {
-    background-image: unset;
+    display: flex;
+    height: 500px;
     padding: 3rem 0;
-    height: unset;
+    align-items: center;
+    background-size: cover;
+    background-position: left center;
+    background-image: url('/img/vip-bg.jpg');
   
     .container {
       .row {
-        .col-12 {
+        .col-md-6 {
           h1 {
-            color: $FourthColor;
-            text-align: center;
             font-size: 25px;
-            line-height: 36px;
+            line-height: 60px;
+            font-weight: 600;
+            color: $WhiteColor;
           }
   
-          .FNV-Cat-Shorts {
-            margin-top: 0.5rem;
-            .row {
-              .col-md,
-              .col-md-6 {
-                display: flex;
-                align-items: center;
-  
-                svg {
-                  color: $SecondaryColor;
-                  margin-right: 0.5rem;
-                }
-  
-                h3 {
-                  font-size: 14px;
-                  line-height: 28px;
-                  margin-bottom: 0;
-                  color: $GrayTwoColor;
-  
-                  strong {
-                    color: $WhiteColor;
-                  }
-                }
-              }
-            }
+          p{
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 36px;
+            color: $WhiteColor;
           }
         }
       }
@@ -163,63 +211,140 @@
   }
   
   .FNV-Membership-Page{
+    background-image: url('/img/fanavaran-pattern.png');
+    background-size: cover;
+  
     .container{
-      background-image: url('/img/membership.jpg');
-      background-repeat: no-repeat;
-      background-position: center center;
       background-size: cover;
       padding: 1rem;
   
+      h2{
+        font-size: 22px;
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: 2rem;
+        color: $PrimaryColor;
+      }
+  
       .row{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        height: 100%;
-  
-        .col-12{
+        .col-6{
           .card{
-            padding: 2rem;
-            border-radius: 0;
+            display: flex;
+            padding: 1rem;
             border-width: 0;
-            background-color: $ShadowSecondary;
+            border-radius: 20px;
+            margin-top: 2rem;
+            align-items: center;
+            justify-content: center;
+            background-color: $WhiteColor;
             transition: .3s all ease-in-out;
+            box-shadow: 0 0 20px #ff762c30;
   
-            &:hover{
-              background-color: $ShadowThird;
+            img{
+              width: 95px;
+              height: 100px;
+              object-fit: contain;
+              margin-top: -2rem;
             }
   
             .card-body{
-              text-align: center;
-
-              h2{
-                font-size: 18px;
-                color: $WhiteColor;
-                text-align: center;
-              }
-  
-              p{
-                color: $WhiteColor;
-                text-align: center;
-  
-                price{
-                  font-size: 22px;
-                }
-              }
-  
-              .BtnPrimary{
-                font-weight: 700;
-                font-size: 18px;
+              h3{
+                font-size: 12px;
+                font-weight: 500;
                 color: $PrimaryColor;
-                background-color: #ede8f4;
               }
             }
           }
         }
   
-        h3{
-          font-size: 16px;
-          text-align: center;
-          color: $FourthColor;
+        .col-12{
+          h2{
+            font-size: 28px;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: $PrimaryColor;
+          }
+  
+          p{
+            margin: 5rem 0;
+            font-size: 18px;
+            font-weight: 500;
+            text-align: center;
+            color: $PrimaryColor;
+          }
+        }
+        
+        .col-md-4{
+          margin-bottom: 1rem;
+          
+          .card{
+            height: 100%;
+            border-width: 0;
+            padding: 1rem; 
+            border-radius: 20px;
+  
+            &.FNV-Free{
+              background: #855d2226;
+              box-shadow: 0 0 50px rgba(145, 145, 145, 0.1019607843);
+              backdrop-filter: blur(5px);
+              -webkit-backdrop-filter: blur(5px);
+  
+              h4{
+                color: $PrimaryColor;
+              }
+            }
+  
+            &.FNV-Gold{
+              background: #22388526;
+              box-shadow: 0 0 50px rgba(145, 145, 145, 0.1019607843);
+              backdrop-filter: blur(5px);
+              -webkit-backdrop-filter: blur(5px);
+  
+              h4{
+                color: $PrimaryColor;
+              }
+            }
+  
+            &.FNV-Platinium{
+              background: #59228526;
+              box-shadow: 0 0 50px rgba(145, 145, 145, 0.1019607843);
+              backdrop-filter: blur(5px);
+              -webkit-backdrop-filter: blur(5px);
+  
+              h4{
+                color: $PrimaryColor;
+              }
+            }
+  
+            h3{
+              font-size: 24px;
+              font-weight: 700;
+              text-align: center;
+              margin-bottom: .5rem;
+            }
+  
+            h4{
+              font-size: 30px;
+              font-weight: 900;
+              text-align: center;
+              margin-bottom: 4rem;
+            }
+  
+            ul{
+              height: auto;
+  
+              li{
+                font-size: 12px;
+                font-weight: 600;
+                margin-bottom: 1rem;
+              }
+            }
+  
+            .FNV-Btn{
+              margin-top: 2rem;
+            }
+          }
         }
       }
   
@@ -235,5 +360,5 @@
         }
       }
     }
-  }  
+  }
 }
