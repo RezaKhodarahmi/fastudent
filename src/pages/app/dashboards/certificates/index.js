@@ -99,10 +99,10 @@ const Index = () => {
           ctx.fillText(`${certificate.userName} ${certificate.lastName}`, 820, 430)
 
           // Set font weight, size, and color for the cycle name, and capitalize the first letter
-          // ctx.font = '600 30px Arial' // Font weight 900, size 30px, Arial font
-          // ctx.fillStyle = '#003bbf'
-          // const cycleText = capitalizeFirstLetter(certificate.cycle)
-          // ctx.fillText(cycleText, 990, 680)
+          ctx.font = '600 25px Arial' // Font weight 900, size 30px, Arial font
+          ctx.fillStyle = '#003bbf'
+          const cycleText = capitalizeFirstLetter(certificate.cycle)
+          ctx.fillText(cycleText, 990, 770)
 
           // Change font size and color for the userID
           ctx.font = '30px Arial' // Smaller font size for userID
