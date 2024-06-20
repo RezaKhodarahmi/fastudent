@@ -189,7 +189,7 @@ const Header = props => {
       <TopBar />
 
       {user ? (
-        <nav  className='navbar navbar-expand-lg bg-body-tertiary d-flex flex-column pb-0 pt-0'>
+        <nav className='navbar navbar-expand-lg bg-body-tertiary d-flex flex-column pb-0 pt-0'>
           <div className='container-fluid'>
             <Link
               className='OffCanvasMenu'
@@ -200,7 +200,7 @@ const Header = props => {
             >
               <i data-feather='grid'></i>
             </Link>
-            <Link className='navbar-brand' href="/">
+            <Link className='navbar-brand' href='/'>
               <Logo />
             </Link>
             <button
@@ -506,7 +506,7 @@ const Header = props => {
             >
               <i data-feather='grid'></i>
             </Link>
-            <Link className='navbar-brand' href="/">
+            <Link className='navbar-brand' href='/'>
               <Logo />
             </Link>
             <button
@@ -844,12 +844,7 @@ const Header = props => {
 
                 {/* Membership */}
                 <li className='nav-item dropdown FNV-MegaMenu FNV-VIPMemberShip'>
-                  <Link
-                    className='nav-link'
-                    href='javascript:void(0);'
-                    data-bs-toggle='dropdown'
-                    aria-expanded='false'
-                  >
+                  <Link className='nav-link' href='javascript:void(0);' data-bs-toggle='dropdown' aria-expanded='false'>
                     {t('membership')}
                   </Link>
                   <ul className='dropdown-menu p-0'>
@@ -895,12 +890,7 @@ const Header = props => {
 
                 {/* Services */}
                 <li className='nav-item dropdown FNV-MegaMenu FNV-VIPMemberShip'>
-                  <Link
-                    className='nav-link'
-                    href='javascript:void(0);'
-                    data-bs-toggle='dropdown'
-                    aria-expanded='false'
-                  >
+                  <Link className='nav-link' href='javascript:void(0);' data-bs-toggle='dropdown' aria-expanded='false'>
                     {t('menu-services')}
                   </Link>
                   <ul className='dropdown-menu p-0'>

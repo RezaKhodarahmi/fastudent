@@ -4,13 +4,12 @@ import themeConfig from 'src/configs/themeConfig'
 import Link from 'next/link'
 import BASE_URL from 'src/api/BASE_URL'
 
-import { appConfig } from 'src/configs/appConfig'
+import { Button } from '@mui/material'
 
 const stripePromise = loadStripe(themeConfig.stripePublicKey)
 
 const StripeCheckoutButton = () => {
   //set state
-
   const [email, setEmail] = useState(null)
   const [isLoading, setIsLoading] = useState(false)
 
@@ -20,14 +19,14 @@ const StripeCheckoutButton = () => {
     setEmail(email)
   }, [])
 
-  const buyMembership = async () => {
+  const buyMembership = async plan => {
     setIsLoading(true)
 
     try {
       const token = window.localStorage.getItem('accessToken')
 
       // Fetch the session ID from your backend
-      const response = await fetch(`${BASE_URL}/student/membership/buy/${email}`, {
+      const response = await fetch(`${BASE_URL}/student/membership/buy/${email}/${plan}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -45,11 +44,8 @@ const StripeCheckoutButton = () => {
       })
 
       if (error) {
-        console.error(error)
       }
-    } catch (err) {
-      console.error(err)
-    }
+    } catch (err) {}
   }
 
   return (
@@ -59,11 +55,16 @@ const StripeCheckoutButton = () => {
           <div className='row'>
             <div className='col-md-6 d-none d-md-block'></div>
             <div className='col-12 col-md-6'>
-              <h1>با عضویت ویژه فناوران <br /> سریع‌تر به اهداف خود برسید.</h1>
+              <h1>
+                با عضویت ویژه فناوران <br /> سریع‌تر به اهداف خود برسید.
+              </h1>
               <p>
-              پکیج‌های ویژه فناوران با هدف آماده‌سازی شما عزیزان جهت دریافت سرتیفیکیت و پیدا کردن هر چه سریع‌تر شغل مورد نظر شما در کانادا، ایجاد شده‌اند.
+                پکیج‌های ویژه فناوران با هدف آماده‌سازی شما عزیزان جهت دریافت سرتیفیکیت و پیدا کردن هر چه سریع‌تر شغل
+                مورد نظر شما در کانادا، ایجاد شده‌اند.
               </p>
-              <Link href="3" className="FNV-Btn BtnOutline WhiteColor BtnLarge">خرید عضویت VIP فناوران</Link>
+              <Link href='3' className='FNV-Btn BtnOutline WhiteColor BtnLarge'>
+                خرید عضویت VIP فناوران
+              </Link>
             </div>
           </div>
         </div>
@@ -88,7 +89,7 @@ const StripeCheckoutButton = () => {
                 <img src={'/img/membership/monitor.png'} className='img-fluid w-75 rounded mb-4' />
 
                 <div className='card-body'>
-                  <h3>تخفیف همیشگی دوره ها</h3>
+                  <h3>استفاده از دوره های رایگان</h3>
                 </div>
               </div>
             </div>
@@ -97,7 +98,7 @@ const StripeCheckoutButton = () => {
                 <img src={'/img/membership/file.png'} className='img-fluid w-75 rounded mb-4' />
 
                 <div className='card-body'>
-                  <h3>تخفیف همیشگی دوره ها</h3>
+                  <h3>دسترسی به مدارک و فرم ها</h3>
                 </div>
               </div>
             </div>
@@ -106,19 +107,21 @@ const StripeCheckoutButton = () => {
                 <img src={'/img/membership/resume.png'} className='img-fluid w-75 rounded mb-4' />
 
                 <div className='card-body'>
-                  <h3>تخفیف همیشگی دوره ها</h3>
+                  <h3>مشاوره رزومه و کاریابی</h3>
                 </div>
               </div>
             </div>
 
             <div class='col-12'>
               <p>
-              با عضویت ویژه فناوران می‌توانید از تخفیف‌های ويژه برای تمام دوره‌ها، مشاوره تحصیلی رایگان، شرکت در کلاس رزومه‌نویسی و کاریابی فناوران به صورت کاملا رایگان، مهر و امضای تمامی مدارک مهندسی جهت ارائه به سازمان مهندسی و پنل منتورهای فناوران به صورت هفتگی بهره‌مند شوید.
+                با عضویت ویژه فناوران می‌توانید از تخفیف‌های ويژه برای تمام دوره‌ها، مشاوره تحصیلی رایگان، شرکت در کلاس
+                رزومه‌نویسی و کاریابی فناوران به صورت کاملا رایگان، مهر و امضای تمامی مدارک مهندسی جهت ارائه به سازمان
+                مهندسی و پنل منتورهای فناوران به صورت هفتگی بهره‌مند شوید.
               </p>
             </div>
           </div>
 
-          <div className='row'> 
+          <div className='row'>
             <div className='col-12'>
               <h2>پلن های عضویت فناوران</h2>
             </div>
@@ -137,9 +140,9 @@ const StripeCheckoutButton = () => {
                   <li>پرداخت اقساط ۳ ماهه</li>
                 </ul>
 
-                <Link className='FNV-Btn BtnOutline PrimaryColor BtnLarge' href='/register'>
-                  ثبت‌نام
-                </Link>
+                <Button disabled={email} className='FNV-Btn BtnOutline PrimaryColor BtnLarge'>
+                  {email ? 'شما‌عضوهستید' : <Link href='/register'>ثبت‌نام</Link>}
+                </Button>
               </div>
             </div>
 
@@ -162,25 +165,27 @@ const StripeCheckoutButton = () => {
                 </ul>
 
                 {email ? (
-                  <button
+                  <Button
                     disabled={isLoading}
-                    id='submit'
-                    onClick={buyMembership}
+                    onClick={e => buyMembership('vip')}
                     className='FNV-Btn BtnOutline PrimaryColor BtnLarge'
                   >
-                    <span id='button-text'>
+                    <span>
                       {isLoading ? (
                         <div class='spinner-border' role='status'>
                           <span class='visually-hidden'>Loading...</span>
                         </div>
                       ) : (
-                        'Pay now'
+                        'پرداخت کنید'
                       )}
                     </span>
-                  </button>
+                  </Button>
                 ) : (
-                  <Link className='FNV-Btn BtnOutline PrimaryColor BtnLarge' href='/login/?returnUrl=membership/checkout'>
-                    ثبت‌نام
+                  <Link
+                    href={'/login?returnUrl=/membership/checkout'}
+                    className='FNV-Btn BtnOutline PrimaryColor BtnLarge'
+                  >
+                    ابتدا وارد شوید
                   </Link>
                 )}
               </div>
@@ -208,9 +213,28 @@ const StripeCheckoutButton = () => {
                   <li>دریافت مشاوره با مدرس پیش از خرید دوره جهت پرسش و پاسخ اولیه</li>
                 </ul>
 
-                <Link className='FNV-Btn BtnOutline PrimaryColor BtnLarge' href='/login/?returnUrl=membership/checkout'>
-                  ثبت‌نام
-                </Link>
+                {email ? (
+                  <Button
+                    disabled={isLoading}
+                    onClick={e => buyMembership('pro')}
+                    className='FNV-Btn BtnOutline PrimaryColor BtnLarge'
+                  >
+                    <span>
+                      {isLoading ? (
+                        <div class='spinner-border' role='status'>
+                          <span class='visually-hidden'>Loading...</span>
+                        </div>
+                      ) : (
+                        'پرداخت کنید'
+                      )}
+                    </span>
+                  </Button>
+                ) : (
+                  <Link
+                    href={'/login?returnUrl=/membership/checkout'}
+                    className='FNV-Btn BtnOutline PrimaryColor BtnLarge'
+                  ></Link>
+                )}
               </div>
             </div>
           </div>
