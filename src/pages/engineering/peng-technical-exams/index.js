@@ -20,7 +20,7 @@ const Index = () => {
 
   return (
     <>
-      <section style={{ direction: 'ltr' }} className='FNV-SinglePage'>
+      <section className='FNV-SinglePage' >
         <div className='FNV-BG'>
           <img src='/img/pattern-bg.jpg' className='img-fluid' alt='Engineering Background' />
         </div>
@@ -56,7 +56,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section style={{ direction: 'ltr' }} className='FNV-SinglePage FNV-GrayBG'>
+      <section className='FNV-SinglePage FNV-GrayBG'>
         <div className='container'>
           <div className='row'>
             <div className='col-12'>
@@ -172,7 +172,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section style={{ direction: 'ltr' }} className='FNV-SinglePage FNV-WhiteBG'>
+      <section className='FNV-SinglePage FNV-WhiteBG'>
         <div className='container'>
           <div className='row'>
             <h3>Mechanical Engineering Technical Exams</h3>
@@ -354,7 +354,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section style={{ direction: 'ltr' }} className='FNV-SinglePage FNV-GrayBG'>
+      <section className='FNV-SinglePage FNV-GrayBG'>
         <div className='container'>
           <div className='row'>
             <h3>Civil Engineering Technical Exams</h3>
@@ -519,7 +519,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section style={{ direction: 'ltr' }} className='FNV-SinglePage FNV-WhiteBG'>
+      <section className='FNV-SinglePage FNV-WhiteBG'>
         <div className='container'>
           <div className='row'>
             <h3>Time Constraints for Participating in PEO Technical Examinations</h3>
@@ -546,7 +546,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section style={{ direction: 'ltr' }} className='FNV-SinglePage FNV-GrayBG'>
+      <section className='FNV-SinglePage FNV-GrayBG'>
         <div className='container'>
           <div className='row'>
             <h3>Timing and Location of PEO Examinations</h3>
