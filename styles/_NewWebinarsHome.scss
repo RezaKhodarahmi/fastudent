@@ -70,11 +70,12 @@ body[dir='rtl']{
                                         }
     
                                         h4{
+                                            margin: 1rem 0;
                                             font-size: 18px;
                                             font-weight: bold;
+                                            text-align: right;
                                             line-height: 30px;
                                             color: $PrimaryColor;
-                                            margin: 1rem 0;
                                         }
     
                                         p{

@@ -167,27 +167,6 @@ const Index = () => {
           </div>
         </section>
       </div>
-      <YoutubeSection />
-      {/* Blog */}
-      <section className='FNV-BlogTestiomonial'>
-        <h3>{t('Blogs')}</h3>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-12'>
-              {/* Blogs Desktop */}
-              <SingleDeskBlog />
-              {/* Blogs Mobile */}
-              <SingleMobileBlog />
-            </div>
-          </div>
-
-          <div className='row justify-content-center'>
-            <Link href='/blog' className='FNV-Btn BtnOutline PrimaryColor BtnLarge FNV-SeeMore'>
-              {t('see-all-posts')}
-            </Link>
-          </div>
-        </div>
-      </section>
     </>
   )
 }

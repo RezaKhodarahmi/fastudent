@@ -2069,11 +2069,12 @@ body[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper
   margin-left: 0;
 }
 body[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 h4 {
+  margin: 1rem 0;
   font-size: 18px;
   font-weight: bold;
+  text-align: right;
   line-height: 30px;
   color: #223885;
-  margin: 1rem 0;
 }
 body[dir=rtl] .FNV-NewWebinars .container .row .col-md-7 .swiper .swiper-wrapper .swiper-slide .d-flex .col-md-5 p {
   font-weight: 14px;
