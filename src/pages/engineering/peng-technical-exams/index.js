@@ -20,10 +20,7 @@ const Index = () => {
 
   return (
     <>
-      <section className='FNV-SinglePage' >
-        <div className='FNV-BG'>
-          <img src='/img/pattern-bg.jpg' className='img-fluid' alt='Engineering Background' />
-        </div>
+      <section className='FNV-SinglePage FNV-SinglePage-Header' >
         <div className='container'>
           <div className='row FNV-Header'>
             <div className='col-12 FNV-Content-White'>
