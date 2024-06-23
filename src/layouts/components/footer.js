@@ -16,13 +16,13 @@ const Footer = props => {
   useEffect(() => {
     const timer = setTimeout(() => {
       if (typeof feather !== 'undefined' && feather !== null) {
-        feather.replace();
+        feather.replace()
       }
-    }, 1000); // 1 second delay
+    }, 1000) // 1 second delay
 
     // Cleanup the timeout on component unmount
-    return () => clearTimeout(timer);
-  }, []); // Empty dependency array ensures this runs only once
+    return () => clearTimeout(timer)
+  }, []) // Empty dependency array ensures this runs only once
 
   return (
     <>
@@ -88,7 +88,21 @@ const Footer = props => {
               <div class='FNV-Social'>
                 {/* Email */}
                 <a href='mailto:info@fanavaran.ca'>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='20'
+                    height='20'
+                    viewBox='0 0 24 24'
+                    fill='none'
+                    stroke='currentColor'
+                    stroke-width='2'
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                    class='feather feather-mail'
+                  >
+                    <path d='M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z'></path>
+                    <polyline points='22,6 12,13 2,6'></polyline>
+                  </svg>
                 </a>
 
                 {/* Facebook */}
@@ -157,20 +171,20 @@ const Footer = props => {
 
               <p className='FNV-Address'>
                 <span>
-                  <i data-feather="map-pin"></i> British Columbia:
+                  <i data-feather='map-pin'></i> British Columbia:
                 </span>
 
-                <Link href="https://maps.app.goo.gl/ea37TSxFnQh95GLZ6" target='_blank'>
+                <Link href='https://maps.app.goo.gl/ea37TSxFnQh95GLZ6' target='_blank'>
                   Unit 4 - 839 W 1st St, North Vancouver, BC V7P 1A4
                 </Link>
               </p>
 
               <p className='FNV-Address'>
                 <span>
-                  <i data-feather="map-pin"></i> Ontario:
+                  <i data-feather='map-pin'></i> Ontario:
                 </span>
 
-                <Link href="https://maps.app.goo.gl/noHtxRDKu23mmQFx5" target='_blank'>
+                <Link href='https://maps.app.goo.gl/noHtxRDKu23mmQFx5' target='_blank'>
                   Unit 3 - 33 Glen Cameron Road, Thornhill, ON L3T 1N9
                 </Link>
               </p>
@@ -215,28 +229,28 @@ const Footer = props => {
               <h4>{t('footer-two')}</h4>
               <ul className='list-group'>
                 <li className='list-group-item'>
-                  <Link href='/engineering/'>{t('footer-two-engineering')}</Link>
+                  <Link href='/courses/category/engineering/'>{t('footer-two-engineering')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='/project-management/'>{t('footer-two-project')}</Link>
+                  <Link href='/courses/category/project-managment/'>{t('footer-two-project')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='/architect/'>{t('footer-two-architect')}</Link>
+                  <Link href='/courses/category/architecture/'>{t('footer-two-architect')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='/technician/'>{t('footer-two-technician')}</Link>
+                  <Link href='/courses/category/technician/'>{t('footer-two-technician')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='/Job-Seeking/'>{t('footer-two-job')}</Link>
+                  <Link href='/courses/category/job-seekers/'>{t('footer-two-job')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='/technical-self-employment/'>{t('footer-two-technical')}</Link>
+                  <Link href='/courses/category/self-employee/'>{t('footer-two-technical')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='/plumbing/'>{t('footer-two-plumbing')}</Link>
+                  <Link href='/courses/category/technician/'>{t('footer-two-plumbing')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='/electrician/'>{t('footer-two-electrician')}</Link>
+                  <Link href='/courses/category/recorded-courses/'>{t('footer-two-recorded')}</Link>
                 </li>
               </ul>
             </div>

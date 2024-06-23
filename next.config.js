@@ -29,6 +29,11 @@ module.exports = {
         source: '/courses/bcin-house-1', // Use relative URL path for source
         destination: '/courses/bcin-house', // Use relative URL path for destination
         permanent: true // Indicates a permanent redirect (HTTP 301)
+      },{
+        source: '/verification-of-educational-qualifications-of-engineering-graduates', // Use relative URL path for source
+        destination: '/signing-documents', // Use relative URL path for destination
+        permanent: true // Indicates a permanent redirect (HTTP 301)
+
       }
     ]
   },

@@ -39,7 +39,7 @@ const Course = () => {
   const [succeededMessage, setSucceededMessage] = useState(null)
   const [open, setOpen] = useState(false)
   const [countdown, setCountdown] = useState('')
-
+  const [direction, setDirection] = useState('rtl')
   const dispatch = useDispatch()
   const router = useRouter()
   const courseData = useSelector(state => state.course)
@@ -58,10 +58,15 @@ const Course = () => {
 
   const { t } = useTranslation()
   const recaptchaRef = React.createRef()
+  const getDirection = localStorage.getItem('direction')
 
   useEffect(() => {
     setLoading(true)
   }, [])
+
+  useEffect(() => {
+    setDirection(getDirection)
+  }, [getDirection])
 
   useEffect(() => {
     if (reqCourseDemo?.data.message) {
@@ -510,7 +515,7 @@ const Course = () => {
                         <h4>{t('single-course-introduction')}</h4>
                       </div>
                       {/* Body */}
-                      <div className='FNV-Course-Card-Body' style={{ direction: 'rtl' }}>
+                      <div className='FNV-Course-Card-Body' style={{ direction: direction }}>
                         <div
                           className='non-clickable-content'
                           dangerouslySetInnerHTML={{ __html: data?.description }}
