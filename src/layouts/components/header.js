@@ -303,12 +303,7 @@ const Header = props => {
 
                 {/* Membership */}
                 <li className='nav-item dropdown FNV-MegaMenu FNV-VIPMemberShip'>
-                  <Link
-                    className='nav-link'
-                    href='javascript:void(0);'
-                    data-bs-toggle='dropdown'
-                    aria-expanded='false'
-                  >
+                  <Link className='nav-link' href='javascript:void(0);' data-bs-toggle='dropdown' aria-expanded='false'>
                     {t('membership')}
                   </Link>
                   <ul className='dropdown-menu p-0'>
@@ -354,12 +349,7 @@ const Header = props => {
 
                 {/* Services */}
                 <li className='nav-item dropdown FNV-MegaMenu FNV-VIPMemberShip'>
-                  <Link
-                    className='nav-link'
-                    href='javascript:void(0);'
-                    data-bs-toggle='dropdown'
-                    aria-expanded='false'
-                  >
+                  <Link className='nav-link' href='javascript:void(0);' data-bs-toggle='dropdown' aria-expanded='false'>
                     {t('menu-services')}
                   </Link>
                   <ul className='dropdown-menu p-0'>
@@ -385,6 +375,9 @@ const Header = props => {
                           <li>
                             <Link className='dropdown-item' href='/services/course-description'>
                               {t('menu-services-3')}
+                            </Link>
+                            <Link className='dropdown-item' href='/services/signing-documents'>
+                              {t('menu-services-4')}
                             </Link>
                           </li>
                         </div>
@@ -916,6 +909,9 @@ const Header = props => {
                           <li>
                             <Link className='dropdown-item' href='/services/course-description'>
                               {t('menu-services-3')}
+                            </Link>
+                            <Link className='dropdown-item' href='/services/signing-documents'>
+                              {t('menu-services-4')}
                             </Link>
                           </li>
                         </div>

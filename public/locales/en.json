@@ -72,6 +72,7 @@
   "menu-services-1": "Counseling Working Experience",
   "menu-services-2": "Educational and Career Counseling",
   "menu-services-3": "Course description application form",
+  "menu-services-4":"Engineering Credentials Verification",
 
   "menu-blogs": "Blogs",
   "menu-business": "Business Solutions",
@@ -213,6 +214,7 @@
   "footer-two-technical": "Technical Self Employment",
   "footer-two-plumbing": "Plumbing",
   "footer-two-electrician": "Electrician",
+  "footer-two-recorded":"Recorded",
 
   "footer-three": "Guide",
   "footer-three-registration": "Registration",

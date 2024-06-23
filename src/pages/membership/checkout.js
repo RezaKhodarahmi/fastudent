@@ -62,7 +62,7 @@ const StripeCheckoutButton = () => {
                 پکیج‌های ویژه فناوران با هدف آماده‌سازی شما عزیزان جهت دریافت سرتیفیکیت و پیدا کردن هر چه سریع‌تر شغل
                 مورد نظر شما در کانادا، ایجاد شده‌اند.
               </p>
-              <Link href='3' className='FNV-Btn BtnOutline WhiteColor BtnLarge'>
+              <Link href='#packages' className='FNV-Btn BtnOutline WhiteColor BtnLarge'>
                 خرید عضویت VIP فناوران
               </Link>
             </div>
@@ -121,7 +121,7 @@ const StripeCheckoutButton = () => {
             </div>
           </div>
 
-          <div className='row'>
+          <div id='packages' className='row'>
             <div className='col-12'>
               <h2>پلن های عضویت فناوران</h2>
             </div>
@@ -233,7 +233,7 @@ const StripeCheckoutButton = () => {
                   <Link
                     href={'/login?returnUrl=/membership/checkout'}
                     className='FNV-Btn BtnOutline PrimaryColor BtnLarge'
-                  ></Link>
+                  >ابتدا وارد شوید</Link>
                 )}
               </div>
             </div>
