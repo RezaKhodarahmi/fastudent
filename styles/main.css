@@ -4404,6 +4404,7 @@ body[dir=rtl] .FNV-SinglePage.FNV-SinglePage-Header {
   background-size: cover;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
+  z-index: 5;
 }
 body[dir=rtl] .FNV-SinglePage .container {
   position: relative;
