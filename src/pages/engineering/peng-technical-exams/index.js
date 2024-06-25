@@ -1,10 +1,26 @@
 import React, { useEffect } from 'react'
 import feather from 'feather-icons'
 
+// ** Import Translation
+import { useTranslation } from 'react-i18next'
+
 import { useRouter } from 'next/router'
+import { useDispatch, useSelector } from 'react-redux'
 import Link from 'next/link'
 
 const Index = () => {
+  //Hooks
+  const router = useRouter()
+  const { t } = useTranslation()
+  const dispatch = useDispatch()
+
+  // Check website lang
+  useEffect(() => {
+    const lng = window.localStorage.getItem('i18nextLng')
+    if (lng === 'fa') {
+      router.push('/engineering/peng-technical-exams/fa')
+    }
+  }, [router])
 
   // Feathericon
   useEffect(() => {
@@ -20,10 +36,7 @@ const Index = () => {
 
   return (
     <>
-      <section className='FNV-SinglePage' >
-        <div className='FNV-BG'>
-          <img src='/img/pattern-bg.jpg' className='img-fluid' alt='Engineering Background' />
-        </div>
+      <section className='FNV-SinglePage FNV-SinglePage-Header' >
         <div className='container'>
           <div className='row FNV-Header'>
             <div className='col-12 FNV-Content-White'>
