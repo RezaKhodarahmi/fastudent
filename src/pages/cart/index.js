@@ -15,12 +15,11 @@ import { fetchVipData } from 'src/store/apps/user'
 import themeConfig from 'src/configs/themeConfig'
 import { verifyCouponCode } from 'src/store/apps/coupon'
 import { verifyReferralCode } from 'src/store/apps/referral'
-import { initiatePayment } from 'src/store/apps/partially'
 import { setCartItems } from 'src/store/apps/cart'
 import BASE_URL from 'src/api/BASE_URL'
 import toast from 'react-hot-toast'
 import { useRouter } from 'next/router'
-import { Checkbox, FormControlLabel, Button, Typography, Box } from '@mui/material'
+import { Checkbox, FormControlLabel, Typography, Box } from '@mui/material'
 
 // ** Import Translation
 import { useTranslation } from 'react-i18next'
@@ -299,6 +298,46 @@ const Index = () => {
     }
   }
 
+  const handleEnrollNow = () => {
+    setStripePay(false)
+    setPartially(false)
+    if (cartTotal === 0) {
+      if (clientSecret === null) {
+        if (cartCourses.length && email) {
+          const token = window.localStorage.getItem('accessToken')
+
+          fetch(`${BASE_URL}/student/transaction/free/intent`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              Authorization: `Bearer ${token}`
+            },
+            body: JSON.stringify({
+              items: cartCourses,
+              email: email,
+              coupon: usedCoupon,
+              referralUser: referralUser,
+              cartTotal: cartTotal,
+              isVIP: isVIP,
+              oldVIP: oldVIP
+            })
+          })
+            .then(res => res.json())
+            .then(data => {
+              const { redirectURL } = data // Make sure to retrieve the correct clientSecret from the response
+              setRedirectURL(redirectURL)
+              router.push(redirectURL)
+            })
+          setCheckout(true)
+        } else {
+          window.alert('Cart is Empty!')
+        }
+      }
+    } else {
+      window.alert('error ')
+    }
+  }
+
   //Payment config(stripe)
   const appearance = {
     theme: 'flat'
@@ -433,22 +472,28 @@ const Index = () => {
   const calculateTotalCouponDiscount = () => {
     let totalDiscount = 0
 
-    if (cartCourses.length > 0) {
-      usedCoupon.forEach(coupon => {
-        if (coupon.discount) {
-          if (coupon.discount.includes('%')) {
-            const percentage = parseFloat(coupon.discount.replace('%', ''))
-            totalDiscount += (cartSubTotal / 100) * percentage
-          } else if (coupon.discount.includes('$')) {
-            const amount = parseFloat(coupon.discount.replace('$', ''))
-            totalDiscount += amount
-          }
+    usedCoupon.forEach(coupon => {
+      if (coupon.discount) {
+        if (coupon.discount.includes('%')) {
+          const percentage = parseFloat(coupon.discount.replace('%', ''))
+          totalDiscount += (cartSubTotal / 100) * percentage
+        } else if (coupon.discount.includes('$')) {
+          const amount = parseFloat(coupon.discount.replace('$', ''))
+          totalDiscount += amount
         }
-      })
-    }
+      }
+    })
 
-    return totalDiscount
+    return Math.min(totalDiscount, cartSubTotal) // Ensure discount does not exceed subtotal
   }
+
+  useEffect(() => {
+    const totalDiscount = calculateTotalCouponDiscount()
+    const finalTotal = cartSubTotal - totalDiscount
+    setCartTotal(Math.max(0, finalTotal)) // Ensure total never goes negative
+
+    // Further logic can be placed here to determine whether to show payment form
+  }, [cartSubTotal, usedCoupon])
 
   useEffect(() => {
     if (cartCourses.length) {
@@ -576,7 +621,9 @@ const Index = () => {
           <div className='row FNV-ReferalCode'>
             <div className='col-md-6'>
               <h2>{t('cart-referal-title')}</h2>
-              <strong data-bs-toggle="tooltip" title="Tooltip text here"><i data-feather='alert-circle'></i> {t('cart-referal-desc')}</strong>
+              <strong data-bs-toggle='tooltip' title='Tooltip text here'>
+                <i data-feather='alert-circle'></i> {t('cart-referal-desc')}
+              </strong>
             </div>
 
             <div className='col-md-6'>
@@ -627,8 +674,16 @@ const Index = () => {
                     </div>
 
                     <div className='row'>
-                      <Link href='#' className='FNV-Btn BtnOutline PrimaryColor BtnMedium'>{t('cart-head-product-details')}</Link>
-                      <Link href='#' onClick={() => handleRemoveItem(cycle)} className='FNV-Btn BtnOutline SecondaryColor BtnMedium'>{t('cart-head-product-remove')}</Link>
+                      <Link href='#' className='FNV-Btn BtnOutline PrimaryColor BtnMedium'>
+                        {t('cart-head-product-details')}
+                      </Link>
+                      <Link
+                        href='#'
+                        onClick={() => handleRemoveItem(cycle)}
+                        className='FNV-Btn BtnOutline SecondaryColor BtnMedium'
+                      >
+                        {t('cart-head-product-remove')}
+                      </Link>
                     </div>
                   </div>
                   <div className='col-2 col-md-4'>
@@ -642,7 +697,6 @@ const Index = () => {
                     </p>
                   </div>
                 </div>
-
               </div>
             </div>
           ))}
@@ -687,9 +741,7 @@ const Index = () => {
                   <p>{t('cart-subtotal-text')}</p>
                 </div>
                 <div className='col-6 col-md-6'>
-                  <p className='text-center'>
-                    C${cartSubTotal || 0}
-                  </p>
+                  <p className='text-center'>C${cartSubTotal || 0}</p>
                 </div>
               </div>
               {/* Tax */}
@@ -698,37 +750,34 @@ const Index = () => {
                   <p>{t('cart-tax-text')}</p>
                 </div>
                 <div className='col-6 col-md-6'>
-                  <p className='text-center'>
-                    C$0
-                  </p>
+                  <p className='text-center'>C$0</p>
                 </div>
               </div>
 
               {usedCoupon
                 ? usedCoupon?.map((coupon, index) =>
-                  coupon.code ? (
-                    <div key={index} className='row'>
-                      <div className='col-6 col-md-6'>
-                        <p>{t('cart-coupon-text')}</p>
+                    coupon.code ? (
+                      <div key={index} className='row'>
+                        <div className='col-6 col-md-6'>
+                          <p>{t('cart-coupon-text')}</p>
+                        </div>
+                        <div className='col-6 col-md-6 text-center'>
+                          <p className='pb-0'>
+                            {coupon.code}
+                            <small
+                              onClick={e => handelRemoveCoupon(coupon.code)}
+                              style={{ cursor: 'pointer' }}
+                              className='FNV-Remove'
+                            >
+                              {t('cart-coupon-remove')}
+                            </small>
+                          </p>
+                          <p>{coupon.discount}</p>
+                        </div>
                       </div>
-                      <div className='col-6 col-md-6 text-center'>
-                        <p className='pb-0'>
-                          {coupon.code}
-                          <small
-                            onClick={e => handelRemoveCoupon(coupon.code)}
-                            style={{ cursor: 'pointer' }}
-                            className='FNV-Remove'
-                          >
-                            {t('cart-coupon-remove')}
-                          </small>
-                        </p>
-                        <p>{coupon.discount}</p>
-                      </div>
-                    </div>
-                  ) : null
-                )
-                : null
-              }
+                    ) : null
+                  )
+                : null}
 
               {/* Total */}
               <div className='row'>
@@ -736,9 +785,7 @@ const Index = () => {
                   <p>{t('cart-total-text')}</p>
                 </div>
                 <div className='col-6 col-md-6'>
-                  <span>
-                    C${cartTotal || 0}
-                  </span>
+                  <span>C${cartTotal || 0}</span>
                 </div>
               </div>
             </div>
@@ -751,73 +798,60 @@ const Index = () => {
                   {t('agree-following-terms')}
                 </Typography>
                 <FormControlLabel
-                  control={
-                    <Checkbox name='checkbox1' checked={checkboxes.checkbox1} onChange={handleChangeCheckBox} />
-                  }
+                  control={<Checkbox name='checkbox1' checked={checkboxes.checkbox1} onChange={handleChangeCheckBox} />}
                   label={t('agree-terms-first')}
                 />
                 <FormControlLabel
-                  control={
-                    <Checkbox name='checkbox2' checked={checkboxes.checkbox2} onChange={handleChangeCheckBox} />
-                  }
+                  control={<Checkbox name='checkbox2' checked={checkboxes.checkbox2} onChange={handleChangeCheckBox} />}
                   label={t('agree-terms-second')}
                 />
                 <FormControlLabel
-                  control={
-                    <Checkbox name='checkbox3' checked={checkboxes.checkbox3} onChange={handleChangeCheckBox} />
-                  }
+                  control={<Checkbox name='checkbox3' checked={checkboxes.checkbox3} onChange={handleChangeCheckBox} />}
                   label={t('agree-terms-third')}
                 />
                 <FormControlLabel
-                  control={
-                    <Checkbox name='checkbox4' checked={checkboxes.checkbox4} onChange={handleChangeCheckBox} />
-                  }
+                  control={<Checkbox name='checkbox4' checked={checkboxes.checkbox4} onChange={handleChangeCheckBox} />}
                   label={t('agree-terms-fourth')}
                 />
               </Box>
 
               <div className='col-md-12 d-flex justify-content-end gap-2'>
-                {email
-                  ? partially && (
-                    <button
-                      disabled={!allChecked}
-                      onClick={handelInitiatePartiallyPayment}
-                      className='FNV-Btn BtnOutline SecondaryColor BtnXLarge'
-                    >
-                      {t('cart-partial-button')}
-                    </button>
-                  )
-                  : null}
                 {email ? (
-                  checkout && stripePay && clientSecret ? (
-                    <Elements options={options} stripe={stripePromise}>
-                      <CheckoutForm
-                        allChecked={allChecked}
-                        items={cartCourses}
-                        user={email}
-                        coupon={coupon}
-                        fullName={fullName}
-                      />
-                    </Elements>
-                  ) : (
+                  cartTotal > 0 ? (
                     <>
-                      {localCartItem?.length >= 1 ? (
-                        <>
-                          {' '}
-                          <button
-                            disabled={!allChecked}
-                            onClick={handelInitiatePayment}
-                            className='FNV-Btn SecondaryColor BtnXLarge'
-                          >
-                            {t('cart-full-payment-button')}
-                          </button>
-                        </>
+                      {partially && (
+                        <button
+                          disabled={!allChecked}
+                          onClick={handelInitiatePartiallyPayment}
+                          className='FNV-Btn BtnOutline SecondaryColor BtnXLarge'
+                        >
+                          {t('cart-partial-button')}
+                        </button>
+                      )}
+                      {checkout && stripePay && clientSecret ? (
+                        <Elements options={options} stripe={stripePromise}>
+                          <CheckoutForm
+                            allChecked={allChecked}
+                            items={cartCourses}
+                            user={email}
+                            coupon={coupon}
+                            fullName={fullName}
+                          />
+                        </Elements>
                       ) : (
-                        <button onClick={e => router.push('/courses')} className='FNV-Btn BtnPrimary BtnMedium'>
-                          Select a course
+                        <button
+                          disabled={!allChecked}
+                          onClick={handelInitiatePayment}
+                          className='FNV-Btn SecondaryColor BtnXLarge'
+                        >
+                          {t('cart-full-payment-button')}
                         </button>
                       )}
                     </>
+                  ) : (
+                    <button onClick={handleEnrollNow} disabled={!allChecked} className='FNV-Btn BtnPrimary BtnXLarge'>
+                      Enroll Now
+                    </button>
                   )
                 ) : (
                   <Link href='/login/?returnUrl=cart' className='FNV-Btn BtnPrimary BtnMedium'>
