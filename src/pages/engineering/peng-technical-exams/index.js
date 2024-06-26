@@ -17,7 +17,7 @@ const Index = () => {
   // Check website lang
   useEffect(() => {
     const lng = window.localStorage.getItem('i18nextLng')
-    if (lng === 'fa') {
+    if (lng == 'fa') {
       router.push('/engineering/peng-technical-exams/fa')
     }
   }, [router])
