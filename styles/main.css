@@ -3440,7 +3440,8 @@ body[dir=rtl] .FNV-Blog .FNV-SeeMore {
   margin-bottom: 4rem;
 }
 .FNV-Membership-Page .container .row .col-md-4 .card ul {
-  height: 590px;
+  height: 400px;
+  padding: 1rem;
 }
 .FNV-Membership-Page .container .row .col-md-4 .card ul li {
   font-size: 12px;
