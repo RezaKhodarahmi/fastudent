@@ -55,11 +55,7 @@ const Index = props => {
 
   return (
     <>
-      <section className='FNV-SinglePage'>
-        <div className='FNV-BG'>
-          <img src='/img/landings/pmp-bg.jpg' className='img-fluid' alt='Project Management Background' />
-        </div>
-
+      <section className='FNV-SinglePage FNV-SinglePage-Header'>
         <div className='container'>
           <div className='row FNV-Header'>
             <div className='col-12'>
