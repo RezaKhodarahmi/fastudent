@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "cross-env TZ=America/Toronto next dev -p 8585",
-    "build": "cross-env TZ=America/Toronto next build ",
+    "build": "cross-env TZ=America/Toronto next build && next-sitemap ",
     "start": "cross-env TZ=America/Toronto next start -p 8585",
     "export": "cross-env TZ=America/Toronto next export",
     "lint": "eslint --fix \"src/**/*.{js,jsx}\"",
@@ -100,6 +100,7 @@
     "recharts": "^2.4.3",
     "resolve-url-loader": "^5.0.0",
     "sass": "^1.77.4",
+    "sitemap": "^8.0.0",
     "stripe": "^12.7.0",
     "style-loader": "^4.0.0",
     "stylis": "4.1.3",

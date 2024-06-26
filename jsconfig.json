@@ -4,5 +4,5 @@
   },
   "include": [
     "src"
-, "server.js"  ]
+, "server.js", "next-sitemap.js"  ]
 }
