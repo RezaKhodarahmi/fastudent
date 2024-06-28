@@ -48,11 +48,44 @@ const Index = () => {
         </div>
       </section>
 
+      <section className='FNV-SinglePage FNV-ContentList'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-12'>
+              <p>فهرست مطالب:</p>
+              <ol>
+                <li>
+                  <Link href='#P1'>Mechanical Engineering</Link>
+                </li>
+                <li>
+                  <Link href='#P2'>Civil Engineering</Link>
+                </li>
+                <li>
+                  <Link href='#P3'>Electrical Engineering</Link>
+                </li>
+                <li>
+                  <Link href='#P4'>CS Group Exams</Link>
+                </li>
+                <li>
+                  <Link href='#P5'>آزمون‌های تکنیکال مهندسی چیست؟</Link>
+                </li>
+                <li>
+                  <Link href='#P6'>محدودیت‌های زمانی برای شرکت در آزمون‌های تکنیکال PEO</Link>
+                </li>
+                <li>
+                  <Link href='#FAQ'>سوالات متداول</Link>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className='FNV-SinglePage FNV-GrayBG'>
         <div className='container pt-0'>
           <div className='row pt-0'>
             <div className='col-12'>
-              <caption>Mechanical Engineering</caption>
+              <caption id='P1'>Mechanical Engineering</caption>
               <table className='table table-striped table-hover'>
                 <tbody>
                   <tr>
@@ -144,7 +177,7 @@ const Index = () => {
               </table>
               <p>&nbsp;</p>
 
-              <caption>Civil Engineering</caption>
+              <caption id='P2'>Civil Engineering</caption>
               <table className='table table-striped table-hover'>
                 <tbody>
                   <tr>
@@ -235,7 +268,7 @@ const Index = () => {
                 </tbody>
               </table>
 
-              <caption>Electrical Engineering</caption>
+              <caption id='P3'>Electrical Engineering</caption>
               <table className='table table-striped table-hover'>
                 <tbody>
                   <tr>
@@ -309,7 +342,7 @@ const Index = () => {
                 </tbody>
               </table>
 
-              <caption>CS Group Exams</caption>
+              <caption id='P4'>CS Group Exams</caption>
               <table className='table table-striped table-hover'>
                 <tbody>
                   <tr>
@@ -416,7 +449,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className='FNV-SinglePage FNV-GreyBG'>
+      <section className='FNV-SinglePage FNV-GreyBG mb-5'>
         <div className='container'>
           <div className='row'>
             <h3>محدودیت&zwnj;های زمانی برای شرکت در آزمون&zwnj;های تکنیکال PEO:</h3>
@@ -427,6 +460,209 @@ const Index = () => {
                 <li>داوطلبان باید در حداقل یک آزمون تکنیکال ظرف دو سال تحصیلی پس از دریافت برنامه امتحانی خود شرکت کنند.</li>
                 <li>پس از شروع برنامه امتحانی، داوطلب باید هر سال تحصیلی در حداقل یک آزمون شرکت کند، در غیر این صورت پرونده او بسته می&zwnj;شود.</li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='FNV-SinglePage FNV-WhiteBG' id='FAQ'>
+        <div className='container'>
+          <div className='row'>
+            <h3>سوالات متداول</h3>
+
+            <div className='accordion p-0' id='FAQEngineering'>
+              {/* Question & Answer */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question1'
+                    aria-expanded='true'
+                    aria-controls='Question1'
+                  >
+                    آیا تطابق نوع رشته با امتحانات تکنیکال انتخابی ما الزامی است؟
+                  </button>
+                </h2>
+                <div id='Question1' className='accordion-collapse collapse show' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>خیر؛ شما می‌توانید امتحان مورد نظر را از رشته دلخواه خود انتخاب کنید. به طور کلی باید دو امتحان از گروه A، یک امتحان از گروه B و یک امتحان از مطالعات تکمیلی گروه CS انتخاب کنید.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question & Answer */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question2'
+                    aria-expanded='false'
+                    aria-controls='Question2'
+                  >
+                    آیا می‌توانم دروسی که بعد از ثبت‌نام انتخاب کرده‌ام را تغییر دهم؟
+                  </button>
+                </h2>
+                <div id='Question2' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>داوطلبان می‌توانند قبل از ثبت‌نام دروس انتخابی خود را تغییر دهند. پس از ثبت‌نام، تغییرات امکان‌پذیر نیست و نوع امتحانات غیرقابل تغییر است.</div>
+                </div>
+              </div>
+
+              {/* Question & Answer */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question3'
+                    aria-expanded='false'
+                    aria-controls='Question3'
+                  >
+                    چگونه برای امتحاناتی که در پرتال موجود نیستند ثبت‌نام کنم؟
+                  </button>
+                </h2>
+                <div id='Question3' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>اگر امتحاناتی که داوطلبان قصد دارند در آن شرکت کنند، در پرتال لیست نشده‌ باشد، می‌توانند به apply@peo.on.ca ایمیل بزنند و این مسئله را اطلاع دهند؛ در این صورت ممکن است امکان ثبت نام در امتحان مورد نظر، طی دوره بعدی امکان پذیر باشد.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question & Answer */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question4'
+                    aria-expanded='false'
+                    aria-controls='Question4'
+                  >
+                    داوطلبان چند بار می‌توانند در یک امتحان تکنیکال مردود شوند؟
+                  </button>
+                </h2>
+                <div id='Question4' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                    داوطلبان می‌توانند بی‌نهایت بار در امتحانات تکنیکال شرکت کنند تا زمانی که تعداد امتحانات تکنیکال لازم برای دریافت لایسنس مورد نظر را به حد نصاب مربوطه برسانند‌‌.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question & Answer */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question5'
+                    aria-expanded='false'
+                    aria-controls='Question5'
+                  >
+                    مرحله بعد از پاس کردن امتحانات تکنیکال چیست؟
+                  </button>
+                </h2>
+                <div id='Question5' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>داوطلبان باید قسمت «Academics» را در پرتال درخواست مجوز، به عنوان "Complete" علامت‌گذاری کنند.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question & Answer */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question6'
+                    aria-expanded='false'
+                    aria-controls='Question6'
+                  >
+                    چگونه از نتایج امتحان مطلع شویم؟
+                  </button>
+                </h2>
+                <div id='Question6' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>ایمیلی دریافت خواهید کرد که نتیجه هر امتحان را نشان می‌دهد.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question & Answer */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question7'
+                    aria-expanded='false'
+                    aria-controls='Question7'
+                  >
+                    چند بار در سال امتحانات برگزار می‌شود؟
+                  </button>
+                </h2>
+                <div id='Question7' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <ul>
+                      <li>امتحانات دو بار در سال برگزار می‌شوند.</li>
+                      <li>ثبت‌نام برای جلسه بهار/تابستان در ژانویه آغاز می‌شود</li>
+                      <li>ثبت‌نام برای جلسه پاییز/زمستان در جولای آغاز می‌شود</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question & Answer */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question8'
+                    aria-expanded='false'
+                    aria-controls='Question8'
+                  >
+                    چگونه باید برای امتحانات تکنیکال آماده شوم؟
+                  </button>
+                </h2>
+                <div id='Question8' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>به منظور آمادگی برای شرکت در آزمون مربوطه می‌توانید در کلاس‌ها و دوره‌های آموزشی شرکت کرده یا کتاب‌های آموزشی مرتبط با نوع رشته و امتحان موردنظر را مطالعه کنید. موسسه فناوران دوره‌های آمادگی ازمون‌های تکنیکال را به صورت دوره‌ای برگزار می‌کند.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question & Answer */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question9'
+                    aria-expanded='false'
+                    aria-controls='Question9'
+                  >
+                    آیا می‌توانم در آزمون تکنیکال خارج از کانادا شرکت کنم؟
+                  </button>
+                </h2>
+                <div id='Question9' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>بله؛ آزمون‌های تکنیکال به صورت آنلاین برگزار می‌شود. ازاین‌رو داوطلبان می‌توانند در صورت دسترسی به اینترنت پرسرعت و یک وبکم، در خارج از کانادا در آزمو‌ن‌های تکنیکال مورد نظر شرکت کنند.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
