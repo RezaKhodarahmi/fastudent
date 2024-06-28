@@ -295,10 +295,111 @@ const Header = props => {
           <div className='container-fluid'>
             <div className='collapse navbar-collapse' id='FNV-Toggle'>
               <ul className='navbar-nav mb-2 mb-lg-0'>
-                <li className='nav-item dropdown FNV-MegaMenu'>
+                {/* Courses */}
+                <li className='nav-item dropdown FNV-MegaMenu FNV-Courses'>
                   <Link className='nav-link' href='/courses' aria-expanded='false'>
-                    {t('courses')}
+                    {t('menu-courses')}
                   </Link>
+                  <ul className='dropdown-menu'>
+                    <div className='container-fluid'>
+                      <a>
+                        {t('courses')} <span>{t('fanavaran-motto')}</span>
+                      </a>
+                      <div className='row'>
+                        {/* Engineering */}
+                        <div className='col'>
+                          <span>
+                            <i data-feather='package'></i> {t('engineering')}
+                          </span>
+                          <li>
+                            <Link className='dropdown-item' href='/engineering/'>
+                              {t('engineering')}
+                            </Link>
+                          </li>
+                          <li>
+                            <Link className='dropdown-item' href='/engineering/basic-level-peng'>
+                              {t('engineering-1')}
+                            </Link>
+                          </li>
+                          <li>
+                            <Link className='dropdown-item' href='/engineering/mechanical-course-peng'>
+                              {t('engineering-2')}
+                            </Link>
+                          </li>
+                          <li>
+                            <Link className='dropdown-item' href='/engineering/electrical-peng'>
+                              {t('engineering-3')}
+                            </Link>
+                          </li>
+                          <li>
+                            <Link className='dropdown-item' href='/engineering/peng-technical-exams'>
+                              {t('engineering-4')}
+                            </Link>
+                          </li>
+                        </div>
+
+                        {/* Project Management */}
+                        <div className='col'>
+                          <span>
+                            <i data-feather='package'></i> {t('project-management')}
+                          </span>
+                          <li>
+                            <Link className='dropdown-item' href='/'>
+                              Course Name
+                            </Link>
+                          </li>
+                        </div>
+
+                        {/* Architect */}
+                        <div className='col'>
+                          <span>
+                            <i data-feather='package'></i> {t('architect')}
+                          </span>
+                          <li>
+                            <Link className='dropdown-item' href='/'>
+                              Course Name
+                            </Link>
+                          </li>
+                        </div>
+
+                        {/* Technician */}
+                        <div className='col'>
+                          <span>
+                            <i data-feather='package'></i> {t('technician')}
+                          </span>
+                          <li>
+                            <Link className='dropdown-item' href='/'>
+                              Course Name
+                            </Link>
+                          </li>
+                        </div>
+
+                        {/* Job Seeker */}
+                        <div className='col'>
+                          <span>
+                            <i data-feather='package'></i> {t('job-seeker')}
+                          </span>
+                          <li>
+                            <Link className='dropdown-item' href='/'>
+                              Course Name
+                            </Link>
+                          </li>
+                        </div>
+
+                        {/* Self Employed */}
+                        <div className='col'>
+                          <span>
+                            <i data-feather='package'></i> {t('self-employed')}
+                          </span>
+                          <li>
+                            <Link className='dropdown-item' href='/'>
+                              Course Name
+                            </Link>
+                          </li>
+                        </div>
+                      </div>
+                    </div>
+                  </ul>
                 </li>
 
                 {/* Membership */}
@@ -514,7 +615,7 @@ const Header = props => {
                   <ul className='dropdown-menu'>
                     <div className='container-fluid'>
                       <a>
-                        {t('courses')} <span>{t('menu-membership-slogan')}</span>
+                        {t('courses')} <span>{t('fanavaran-motto')}</span>
                       </a>
                       <div className='row'>
                         {/* Engineering */}
@@ -523,22 +624,27 @@ const Header = props => {
                             <i data-feather='package'></i> {t('engineering')}
                           </span>
                           <li>
-                            <Link className='dropdown-item' href='/'>
+                            <Link className='dropdown-item' href='/engineering/'>
+                              {t('engineering')}
+                            </Link>
+                          </li>
+                          <li>
+                            <Link className='dropdown-item' href='/engineering/basic-level-peng'>
                               {t('engineering-1')}
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='/'>
+                            <Link className='dropdown-item' href='/engineering/mechanical-course-peng'>
                               {t('engineering-2')}
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='/'>
+                            <Link className='dropdown-item' href='/engineering/electrical-peng'>
                               {t('engineering-3')}
                             </Link>
                           </li>
                           <li>
-                            <Link className='dropdown-item' href='/'>
+                            <Link className='dropdown-item' href='/engineering/peng-technical-exams'>
                               {t('engineering-4')}
                             </Link>
                           </li>
@@ -549,26 +655,6 @@ const Header = props => {
                           <span>
                             <i data-feather='package'></i> {t('project-management')}
                           </span>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Course Name
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Course Name
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Course Name
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Course Name
-                            </Link>
-                          </li>
                           <li>
                             <Link className='dropdown-item' href='/'>
                               Course Name
@@ -586,26 +672,6 @@ const Header = props => {
                               Course Name
                             </Link>
                           </li>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Course Name
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Course Name
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Course Name
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Course Name
-                            </Link>
-                          </li>
                         </div>
 
                         {/* Technician */}
@@ -613,26 +679,6 @@ const Header = props => {
                           <span>
                             <i data-feather='package'></i> {t('technician')}
                           </span>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Course Name
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Course Name
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Course Name
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Course Name
-                            </Link>
-                          </li>
                           <li>
                             <Link className='dropdown-item' href='/'>
                               Course Name
@@ -650,26 +696,6 @@ const Header = props => {
                               Course Name
                             </Link>
                           </li>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Course Name
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Course Name
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Course Name
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Course Name
-                            </Link>
-                          </li>
                         </div>
 
                         {/* Self Employed */}
@@ -677,26 +703,6 @@ const Header = props => {
                           <span>
                             <i data-feather='package'></i> {t('self-employed')}
                           </span>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Course Name
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Course Name
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Course Name
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Course Name
-                            </Link>
-                          </li>
                           <li>
                             <Link className='dropdown-item' href='/'>
                               Course Name
@@ -783,6 +789,8 @@ const Header = props => {
                             <Link className='dropdown-item' href='/services/course-description'>
                               {t('menu-services-3')}
                             </Link>
+                          </li>
+                          <li>
                             <Link className='dropdown-item' href='/services/signing-documents'>
                               {t('menu-services-4')}
                             </Link>
