@@ -661,6 +661,9 @@ body[dir=ltr] nav .container-fluid .navbar-nav .nav-item:hover .nav-link {
 body[dir=ltr] nav .container-fluid .FNV-MegaMenu {
   position: relative;
 }
+body[dir=ltr] nav .container-fluid .FNV-MegaMenu.FNV-Courses .dropdown-menu {
+  width: 1200px;
+}
 body[dir=ltr] nav .container-fluid .FNV-MegaMenu.FNV-VIPMemberShip .dropdown-menu {
   width: 600px;
 }
