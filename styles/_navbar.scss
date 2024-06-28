@@ -177,6 +177,12 @@ body[dir='rtl']{
       .FNV-MegaMenu {
         position: relative;
 
+        &.FNV-Courses{
+          .dropdown-menu{
+            width: 1300px;
+          }
+        }
+
         &.FNV-VIPMemberShip{
           .dropdown-menu{
             width: 600px;
@@ -283,8 +289,10 @@ body[dir='rtl']{
                 }
                 
                 li{
+                  margin-bottom: .5rem;
+                  
                   a{
-                    font-size: 14px;
+                    font-size: 12px;
                     font-weight: 500;
                     color: $GrayThreeColor;
                     transition: .1s all ease-in-out;
@@ -498,7 +506,7 @@ body[dir='ltr']{
 
         &.FNV-Courses{
           .dropdown-menu{
-            width: 1200px;
+            width: 1300px;
           }
         }
   
@@ -840,6 +848,12 @@ body[dir='ltr']{
     
         .FNV-MegaMenu {
           position: static;
+
+          &.FNV-Courses{
+            .dropdown-menu{
+              width: 1200px;
+            }
+          }
 
           &.FNV-VIPMemberShip{
             .container-fluid{

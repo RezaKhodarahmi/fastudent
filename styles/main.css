@@ -415,6 +415,9 @@ body[dir=rtl] nav .container-fluid .navbar-nav .nav-item:hover .nav-link {
 body[dir=rtl] nav .container-fluid .FNV-MegaMenu {
   position: relative;
 }
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu.FNV-Courses .dropdown-menu {
+  width: 1300px;
+}
 body[dir=rtl] nav .container-fluid .FNV-MegaMenu.FNV-VIPMemberShip .dropdown-menu {
   width: 600px;
 }
@@ -503,8 +506,11 @@ body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid
   margin-left: 0.5rem;
   color: #FF772C;
 }
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li {
+  margin-bottom: 0.5rem;
+}
 body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li a, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li a, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li a {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   color: #575757;
   transition: 0.1s all ease-in-out;
@@ -662,7 +668,7 @@ body[dir=ltr] nav .container-fluid .FNV-MegaMenu {
   position: relative;
 }
 body[dir=ltr] nav .container-fluid .FNV-MegaMenu.FNV-Courses .dropdown-menu {
-  width: 1200px;
+  width: 1300px;
 }
 body[dir=ltr] nav .container-fluid .FNV-MegaMenu.FNV-VIPMemberShip .dropdown-menu {
   width: 600px;
@@ -927,6 +933,9 @@ body[dir=ltr] nav.FNV-MegaMenu {
   }
   body[dir=rtl] nav .container-fluid .FNV-MegaMenu {
     position: static;
+  }
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu.FNV-Courses .dropdown-menu {
+    width: 1200px;
   }
   body[dir=rtl] nav .container-fluid .FNV-MegaMenu.FNV-VIPMemberShip .container-fluid {
     padding: 0;
