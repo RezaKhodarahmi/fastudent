@@ -22,7 +22,7 @@ const Index = () => {
         <div className='container'>
           <div className='row FNV-Header'>
             <div className='col-12'>
-              <h1>کارآفرینی</h1>
+              <h1>تازه واردان به کانادا</h1>
             </div>
 
             <div className='col-12 col-md-6'>
