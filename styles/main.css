@@ -4622,6 +4622,7 @@ body[dir=rtl] .FNV-SinglePage .container .row .accordion .accordion-item .accord
   font-size: 18px;
   line-height: 36px;
   font-weight: 600;
+  text-align: right;
 }
 body[dir=rtl] .FNV-SinglePage .container .row .accordion .accordion-item .accordion-header .accordion-button::after {
   margin-left: unset;
