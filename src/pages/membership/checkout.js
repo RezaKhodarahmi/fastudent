@@ -79,7 +79,7 @@ const StripeCheckoutButton = () => {
               <div className='card'>
                 <img src={'/img/membership/percent.png'} className='img-fluid w-75 rounded mb-4' />
 
-                <div className='card-body'>
+                <div className='card-body p-0'>
                   <h3>تخفیف همیشگی دوره ها</h3>
                 </div>
               </div>
@@ -88,7 +88,7 @@ const StripeCheckoutButton = () => {
               <div className='card'>
                 <img src={'/img/membership/monitor.png'} className='img-fluid w-75 rounded mb-4' />
 
-                <div className='card-body'>
+                <div className='card-body p-0'>
                   <h3>استفاده از دوره های رایگان</h3>
                 </div>
               </div>
@@ -97,7 +97,7 @@ const StripeCheckoutButton = () => {
               <div className='card'>
                 <img src={'/img/membership/file.png'} className='img-fluid w-75 rounded mb-4' />
 
-                <div className='card-body'>
+                <div className='card-body p-0'>
                   <h3>دسترسی به مدارک و فرم ها</h3>
                 </div>
               </div>
@@ -106,7 +106,7 @@ const StripeCheckoutButton = () => {
               <div className='card'>
                 <img src={'/img/membership/resume.png'} className='img-fluid w-75 rounded mb-4' />
 
-                <div className='card-body'>
+                <div className='card-body p-0'>
                   <h3>مشاوره رزومه و کاریابی</h3>
                 </div>
               </div>

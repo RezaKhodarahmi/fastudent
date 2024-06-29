@@ -230,7 +230,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className='FNV-SinglePage' id='FAQ'>
+      <section className='FNV-SinglePage mt-0' id='FAQ'>
         <div className='container'>
           <div className='row'>
             <h3>سوالات متداول</h3>
