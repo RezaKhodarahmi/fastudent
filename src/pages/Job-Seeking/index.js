@@ -29,7 +29,7 @@ const Index = () => {
   useEffect(() => {
     const lng = window.localStorage.getItem('i18nextLng')
     if (lng == 'fa') {
-      router.push('/Job-Seeking/fa')
+      router.push('/job-seeking/fa')
     }
   }, [])
 

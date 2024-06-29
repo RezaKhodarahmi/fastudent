@@ -21,7 +21,7 @@ const SideBar = () => {
             <Link href='/technician'>Technician</Link>
           </li>
           <li className='list-group-item'>
-            <Link href='/Job-Seeking'>Job Seeker</Link>
+            <Link href='/job-seeking'>Job Seeker</Link>
           </li>
           <li className='list-group-item'>
             <Link href='/technical-self-employment'>Technical self employee</Link>

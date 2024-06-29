@@ -380,7 +380,7 @@ const Header = props => {
                             <i data-feather='package'></i> {t('job-seeker')}
                           </span>
                           <li>
-                            <Link className='dropdown-item' href='/Job-Seeking'>
+                            <Link className='dropdown-item' href='/job-seeking'>
                               {t('job-seeker')}
                             </Link>
                           </li>
