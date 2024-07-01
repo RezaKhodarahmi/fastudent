@@ -83,8 +83,8 @@ const WebinarDeskSingle = ({ webinars }) => {
                   <div key={index} className='col-12'>
                     <div className='d-flex'>
                       <div className='col-7' dir='ltr'>
-                        <span className='PrimaryColor'>{handelType(webinar)}</span> {/* Changed badge to span */}
-                        <span className='SecondaryColor'>{handelStatus(webinar)}</span> {/* Changed badge to span */}
+                        <badge className='PrimaryColor'>{handelType(webinar)}</badge>
+                        <badge className='SecondaryColor'>{handelStatus(webinar)}</badge> {/* Changed badge to span */}
                         <h4>{webinar.title}</h4>
                       </div>
                       <div className='col-5'>
