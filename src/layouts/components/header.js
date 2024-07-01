@@ -187,34 +187,35 @@ const Header = props => {
       <TopBanner />
 
       <TopBar />
+ 
+      {/* Navbar */}
+      <nav className='navbar navbar-expand-lg bg-body-tertiary d-flex flex-column pb-0 pt-0'>
+        <div className='container-fluid'>
+          <Link
+            className='OffCanvasMenu'
+            data-bs-toggle='offcanvas'
+            href='#offcanvasExample'
+            role='button'
+            aria-controls='offcanvasExample'
+          >
+            <i data-feather='grid'></i>
+          </Link>
+          <Link className='navbar-brand' href='/'>
+            <Logo />
+          </Link>
+          <button
+            className='navbar-toggler'
+            type='button'
+            data-bs-toggle='collapse'
+            data-bs-target='#FNV-Toggle'
+            aria-controls='FNV-Toggle'
+            aria-expanded='false'
+            aria-label='Toggle navigation'
+          >
+            <span className='navbar-toggler-icon'></span>
+          </button>
 
-      {user ? (
-        <nav className='navbar navbar-expand-lg bg-body-tertiary d-flex flex-column pb-0 pt-0'>
-          <div className='container-fluid'>
-            <Link
-              className='OffCanvasMenu'
-              data-bs-toggle='offcanvas'
-              href='#offcanvasExample'
-              role='button'
-              aria-controls='offcanvasExample'
-            >
-              <i data-feather='grid'></i>
-            </Link>
-            <Link className='navbar-brand' href='/'>
-              <Logo />
-            </Link>
-            <button
-              className='navbar-toggler'
-              type='button'
-              data-bs-toggle='collapse'
-              data-bs-target='#FNV-Toggle'
-              aria-controls='FNV-Toggle'
-              aria-expanded='false'
-              aria-label='Toggle navigation'
-            >
-              <span className='navbar-toggler-icon'></span>
-            </button>
-
+          { user ? (
             <div className='navbar-collapse justify-content-end' id=''>
               <Button href='#' className='FNV-Btn LightColor BtnMedium mx-2' onClick={e => changeLanguage()}>
                 {t('menu-language')}
@@ -226,14 +227,6 @@ const Header = props => {
                   <span className='visually-hidden'>Cart Item's</span>
                 </span>
               </Link>
-
-              {/* <Link href="/" className='FNV-Btn PrimaryColor position-relative'>
-                <i data-feather='bell'></i>
-                <span className='position-absolute top-10 start-70 translate-middle badge rounded-pill bg-danger'>
-                  9+
-                  <span className='visually-hidden'>{t('unreadMessages')}</span>
-                </span>
-              </Link> */}
 
               <div className='FNV-User dropdown'>
                 <button
@@ -290,301 +283,7 @@ const Header = props => {
                 </ul>
               </div>
             </div>
-          </div>
-
-          <div className='container-fluid'>
-            <div className='collapse navbar-collapse' id='FNV-Toggle'>
-              <ul className='navbar-nav mb-2 mb-lg-0'>
-                {/* Courses */}
-                <li className='nav-item dropdown FNV-MegaMenu FNV-Courses'>
-                  <Link className='nav-link' href='/courses' aria-expanded='false'>
-                    {t('menu-courses')}
-                  </Link>
-                  <ul className='dropdown-menu'>
-                    <div className='container-fluid'>
-                      <a>
-                        {t('courses')} <span>{t('fanavaran-motto')}</span>
-                      </a>
-                      <div className='row'>
-                        {/* Engineering */}
-                        <div className='col'>
-                          <span>
-                            <i data-feather='package'></i> {t('engineering')}
-                          </span>
-                          <li>
-                            <Link className='dropdown-item' href='/engineering/'>
-                              {t('engineering')}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='/engineering/basic-level-peng'>
-                              {t('engineering-1')}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='/engineering/mechanical-course-peng'>
-                              {t('engineering-2')}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='/engineering/electrical-peng'>
-                              {t('engineering-3')}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='/engineering/peng-technical-exams'>
-                              {t('engineering-4')}
-                            </Link>
-                          </li>
-                        </div>
-
-                        {/* Project Management */}
-                        <div className='col'>
-                          <span>
-                            <i data-feather='package'></i> {t('project-management')}
-                          </span>
-                          <li>
-                            <Link className='dropdown-item' href='/project-management'>
-                              {t('project-management')}
-                            </Link>
-                          </li>
-                        </div>
-
-                        {/* Architect */}
-                        <div className='col'>
-                          <span>
-                            <i data-feather='package'></i> {t('architect')}
-                          </span>
-                          <li>
-                            <Link className='dropdown-item' href='/architect'>
-                              {t('architect')}
-                            </Link>
-                          </li>
-                        </div>
-
-                        {/* Technician */}
-                        <div className='col'>
-                          <span>
-                            <i data-feather='package'></i> {t('technician')}
-                          </span>
-                          <li>
-                            <Link className='dropdown-item' href='/technician'>
-                              {t('technician')}
-                            </Link>
-                          </li>
-                        </div>
-
-                        {/* Job Seeker */}
-                        <div className='col'>
-                          <span>
-                            <i data-feather='package'></i> {t('job-seeker')}
-                          </span>
-                          <li>
-                            <Link className='dropdown-item' href='/job-seeking'>
-                              {t('job-seeker')}
-                            </Link>
-                          </li>
-                        </div>
-
-                        {/* Self Employed */}
-                        <div className='col'>
-                          <span>
-                            <i data-feather='package'></i> {t('self-employed')}
-                          </span>
-                          <li>
-                            <Link className='dropdown-item' href='/technical-self-employment'>
-                              {t('self-employed')}
-                            </Link>
-                          </li>
-                        </div>
-                      </div>
-                    </div>
-                  </ul>
-                </li>
-
-                {/* Membership */}
-                <li className='nav-item dropdown FNV-MegaMenu FNV-VIPMemberShip'>
-                  <Link className='nav-link' href='javascript:void(0);' data-bs-toggle='dropdown' aria-expanded='false'>
-                    {t('membership')}
-                  </Link>
-                  <ul className='dropdown-menu p-0'>
-                    <div className='container-fluid'>
-                      <a>
-                        {t('membership')} <span>{t('menu-membership-slogan')}</span>
-                      </a>
-                      <div className='row'>
-                        <div className='col-md-6 pb-4'>
-                          <span>
-                            <i data-feather='users'></i> {t('menu-membership-overview')}
-                          </span>
-                          <li>
-                            <Link className='dropdown-item' href='/membership/checkout'>
-                              {t('menu-membership-button')}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='#'>
-                              {t('menu-membership-details')}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='#'>
-                              {t('menu-membership-faq')}
-                            </Link>
-                          </li>
-                        </div>
-                        <div className='col-md-6'>
-                          <div className='row FNV-QuickAction'>
-                            <div className='col-12'>
-                              <Link className='dropdown-item' href='/membership/checkout'>
-                                <i data-feather='user'></i>
-                                <span>{t('menu-membership-button')}</span>
-                              </Link>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </ul>
-                </li>
-
-                {/* Services */}
-                <li className='nav-item dropdown FNV-MegaMenu FNV-VIPMemberShip'>
-                  <Link className='nav-link' href='javascript:void(0);' data-bs-toggle='dropdown' aria-expanded='false'>
-                    {t('menu-services')}
-                  </Link>
-                  <ul className='dropdown-menu p-0'>
-                    <div className='container-fluid'>
-                      <a>
-                        {t('menu-services')} <span>{t('menu-services-slogan')}</span>
-                      </a>
-                      <div className='row'>
-                        <div className='col-md-6 pb-4'>
-                          <span>
-                            <i data-feather='list'></i> {t('menu-services')}
-                          </span>
-                          <li>
-                            <Link className='dropdown-item' href='/services/educational-and-career-counseling'>
-                              {t('menu-services-1')}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='/services/counseling-working-experience'>
-                              {t('menu-services-2')}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='/services/course-description'>
-                              {t('menu-services-3')}
-                            </Link>
-                            <Link className='dropdown-item' href='/services/signing-documents'>
-                              {t('menu-services-4')}
-                            </Link>
-                          </li>
-                        </div>
-                      </div>
-                    </div>
-                  </ul>
-                </li>
-
-                {/* Blog */}
-                <li className='nav-item dropdown FNV-MegaMenu'>
-                  <Link className='nav-link' href='/blog' aria-expanded='false'>
-                    {t('blog')}
-                  </Link>
-                </li>
-
-                {/* Webinars */}
-                <li className='nav-item dropdown FNV-MegaMenu'>
-                  <Link className='nav-link' href='/webinars' aria-expanded='false'>
-                    {t('webinars')}
-                  </Link>
-                </li>
-
-                {/* Contact Us */}
-                <li className='nav-item dropdown FNV-MegaMenu'>
-                  <Link className='nav-link' href='/contact-us' aria-expanded='false'>
-                    {t('contact-us')}
-                  </Link>
-                </li>
-
-                {/* About Us */}
-                <li className='nav-item dropdown FNV-MegaMenu'>
-                  <Link className='nav-link' href='/about-us' aria-expanded='false'>
-                    {t('about-us')}
-                  </Link>
-                </li>
-
-                {/* Appointment */}
-                <li class='nav-item dropdown FNV-Appointment'>
-                  <a class='nav-link' href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
-                    {t('appointment')}
-                  </a>
-                  <ul class='dropdown-menu'>
-                    <li>
-                      <Link className='dropdown-item' href='/services/consultant'>
-                        {t('menu-appointment1')}
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className='dropdown-item' href='/services/counseling-working-experience'>
-                        {t('menu-appointment2')}
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-
-              <div className='d-flex' role='search'>
-                <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
-                  <li className='nav-item FNV-MegaMenu-Search'>
-                    <button
-                      className='nav-link'
-                      onClick={handleOpen}
-                      style={{
-                        background: 'none',
-                        border: 'none',
-                        padding: 0,
-                        color: 'blue',
-                        textDecoration: 'underline',
-                        cursor: 'pointer'
-                      }}
-                    >
-                      <i data-feather='search'></i>
-                    </button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </nav>
-      ) : (
-        <nav className='navbar navbar-expand-lg FNV-MegaMenu d-flex flex-column pb-0 pt-0'>
-          <div className='container-fluid'>
-            <Link
-              className='OffCanvasMenu2'
-              data-bs-toggle='offcanvas'
-              href='#offcanvasExample1'
-              role='button'
-              aria-controls='offcanvasExample1'
-            >
-              <i data-feather='grid'></i>
-            </Link>
-            <Link className='navbar-brand' href='/'>
-              <Logo />
-            </Link>
-            <button
-              className='navbar-toggler'
-              type='button'
-              data-bs-toggle='collapse'
-              data-bs-target='#FNV-Toggle'
-              aria-controls='FNV-Toggle'
-              aria-expanded='false'
-              aria-label='Toggle navigation'
-            >
-              <span className='navbar-toggler-icon'></span>
-            </button>
-
+          ) : (
             <div className='navbar-collapse FNV_QuickAccess justify-content-end'>
               <Button className='FNV-Btn LightColor mx-2' onClick={e => changeLanguage()}>
                 {t('menu-language')}
@@ -602,277 +301,277 @@ const Header = props => {
                 {t('menu-register')}
               </Link>
             </div>
-          </div>
+          )}
+        </div>
 
-          <div className='container-fluid'>
-            <div className='collapse navbar-collapse' id='FNV-Toggle'>
-              <ul className='navbar-nav mb-2 mb-lg-0 w-100 p-0'>
-                {/* Courses */}
-                <li className='nav-item dropdown FNV-MegaMenu FNV-Courses'>
-                  <Link className='nav-link' href='/courses' aria-expanded='false'>
-                    {t('menu-courses')}
-                  </Link>
-                  <ul className='dropdown-menu'>
-                    <div className='container-fluid'>
-                      <a>
-                        {t('courses')} <span>{t('fanavaran-motto')}</span>
-                      </a>
-                      <div className='row'>
-                        {/* Engineering */}
-                        <div className='col'>
-                          <span>
-                            <i data-feather='package'></i> {t('engineering')}
-                          </span>
-                          <li>
-                            <Link className='dropdown-item' href='/engineering/'>
-                              {t('engineering')}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='/engineering/basic-level-peng'>
-                              {t('engineering-1')}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='/engineering/mechanical-course-peng'>
-                              {t('engineering-2')}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='/engineering/electrical-peng'>
-                              {t('engineering-3')}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='/engineering/peng-technical-exams'>
-                              {t('engineering-4')}
-                            </Link>
-                          </li>
-                        </div>
+        <div className='container-fluid'>
+          <div className='collapse navbar-collapse' id='FNV-Toggle'>
+            <ul className='navbar-nav mb-2 mb-lg-0'>
+              {/* Courses */}
+              <li className='nav-item dropdown FNV-MegaMenu FNV-Courses'>
+                <Link className='nav-link' href='/courses' aria-expanded='false'>
+                  {t('menu-courses')}
+                </Link>
+                <ul className='dropdown-menu'>
+                  <div className='container-fluid'>
+                    <a>
+                      {t('courses')} <span>{t('fanavaran-motto')}</span>
+                    </a>
+                    <div className='row'>
+                      {/* Engineering */}
+                      <div className='col'>
+                        <span>
+                          <i data-feather='package'></i> {t('engineering')}
+                        </span>
+                        <li>
+                          <Link className='dropdown-item' href='/engineering/'>
+                            {t('engineering')}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/engineering/basic-level-peng'>
+                            {t('engineering-1')}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/engineering/mechanical-course-peng'>
+                            {t('engineering-2')}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/engineering/electrical-peng'>
+                            {t('engineering-3')}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/engineering/peng-technical-exams'>
+                            {t('engineering-4')}
+                          </Link>
+                        </li>
+                      </div>
 
-                        {/* Project Management */}
-                        <div className='col'>
-                          <span>
-                            <i data-feather='package'></i> {t('project-management')}
-                          </span>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Course Name
-                            </Link>
-                          </li>
-                        </div>
+                      {/* Project Management */}
+                      <div className='col'>
+                        <span>
+                          <i data-feather='package'></i> {t('project-management')}
+                        </span>
+                        <li>
+                          <Link className='dropdown-item' href='/project-management'>
+                            {t('project-management')}
+                          </Link>
+                        </li>
+                      </div>
 
-                        {/* Architect */}
-                        <div className='col'>
-                          <span>
-                            <i data-feather='package'></i> {t('architect')}
-                          </span>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Course Name
-                            </Link>
-                          </li>
-                        </div>
+                      {/* Architect */}
+                      <div className='col'>
+                        <span>
+                          <i data-feather='package'></i> {t('architect')}
+                        </span>
+                        <li>
+                          <Link className='dropdown-item' href='/architect'>
+                            {t('architect')}
+                          </Link>
+                        </li>
+                      </div>
 
-                        {/* Technician */}
-                        <div className='col'>
-                          <span>
-                            <i data-feather='package'></i> {t('technician')}
-                          </span>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Course Name
-                            </Link>
-                          </li>
-                        </div>
+                      {/* Technician */}
+                      <div className='col'>
+                        <span>
+                          <i data-feather='package'></i> {t('technician')}
+                        </span>
+                        <li>
+                          <Link className='dropdown-item' href='/technician'>
+                            {t('technician')}
+                          </Link>
+                        </li>
+                      </div>
 
-                        {/* Job Seeker */}
-                        <div className='col'>
-                          <span>
-                            <i data-feather='package'></i> {t('job-seeker')}
-                          </span>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Course Name
-                            </Link>
-                          </li>
-                        </div>
+                      {/* Job Seeker */}
+                      <div className='col'>
+                        <span>
+                          <i data-feather='package'></i> {t('job-seeker')}
+                        </span>
+                        <li>
+                          <Link className='dropdown-item' href='/job-seeking'>
+                            {t('job-seeker')}
+                          </Link>
+                        </li>
+                      </div>
 
-                        {/* Self Employed */}
-                        <div className='col'>
-                          <span>
-                            <i data-feather='package'></i> {t('self-employed')}
-                          </span>
-                          <li>
-                            <Link className='dropdown-item' href='/'>
-                              Course Name
-                            </Link>
-                          </li>
-                        </div>
+                      {/* Self Employed */}
+                      <div className='col'>
+                        <span>
+                          <i data-feather='package'></i> {t('self-employed')}
+                        </span>
+                        <li>
+                          <Link className='dropdown-item' href='/technical-self-employment'>
+                            {t('self-employed')}
+                          </Link>
+                        </li>
                       </div>
                     </div>
-                  </ul>
-                </li>
+                  </div>
+                </ul>
+              </li>
 
-                {/* Membership */}
-                <li className='nav-item dropdown FNV-MegaMenu FNV-VIPMemberShip'>
-                  <Link className='nav-link' href='javascript:void(0);' data-bs-toggle='dropdown' aria-expanded='false'>
-                    {t('membership')}
-                  </Link>
-                  <ul className='dropdown-menu p-0'>
-                    <div className='container-fluid'>
-                      <a>
-                        {t('membership')} <span>{t('menu-membership-slogan')}</span>
-                      </a>
-                      <div className='row'>
-                        <div className='col-md-6 pb-4'>
-                          <span>
-                            <i data-feather='users'></i> {t('menu-membership-overview')}
-                          </span>
-                          <li>
+              {/* Membership */}
+              <li className='nav-item dropdown FNV-MegaMenu FNV-VIPMemberShip'>
+                <Link className='nav-link' href='javascript:void(0);' data-bs-toggle='dropdown' aria-expanded='false'>
+                  {t('membership')}
+                </Link>
+                <ul className='dropdown-menu p-0'>
+                  <div className='container-fluid'>
+                    <a>
+                      {t('membership')} <span>{t('menu-membership-slogan')}</span>
+                    </a>
+                    <div className='row'>
+                      <div className='col-md-6 pb-4'>
+                        <span>
+                          <i data-feather='users'></i> {t('menu-membership-overview')}
+                        </span>
+                        <li>
+                          <Link className='dropdown-item' href='/membership/checkout'>
+                            {t('menu-membership-button')}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='#'>
+                            {t('menu-membership-details')}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='#'>
+                            {t('menu-membership-faq')}
+                          </Link>
+                        </li>
+                      </div>
+                      <div className='col-md-6'>
+                        <div className='row FNV-QuickAction'>
+                          <div className='col-12'>
                             <Link className='dropdown-item' href='/membership/checkout'>
-                              {t('menu-membership-button')}
+                              <i data-feather='user'></i>
+                              <span>{t('menu-membership-button')}</span>
                             </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='#'>
-                              {t('menu-membership-details')}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='#'>
-                              {t('menu-membership-faq')}
-                            </Link>
-                          </li>
-                        </div>
-                        <div className='col-md-6'>
-                          <div className='row FNV-QuickAction'>
-                            <div className='col-12'>
-                              <Link className='dropdown-item' href='/membership/checkout'>
-                                <i data-feather='user'></i>
-                                <span>{t('menu-membership-button')}</span>
-                              </Link>
-                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </ul>
-                </li>
+                  </div>
+                </ul>
+              </li>
 
-                {/* Services */}
-                <li className='nav-item dropdown FNV-MegaMenu FNV-VIPMemberShip'>
-                  <Link className='nav-link' href='javascript:void(0);' data-bs-toggle='dropdown' aria-expanded='false'>
-                    {t('menu-services')}
-                  </Link>
-                  <ul className='dropdown-menu p-0'>
-                    <div className='container-fluid'>
-                      <a>
-                        {t('menu-services')} <span>{t('menu-services-slogan')}</span>
-                      </a>
-                      <div className='row'>
-                        <div className='col-md-6 pb-4'>
-                          <span>
-                            <i data-feather='list'></i> {t('menu-services')}
-                          </span>
-                          <li>
-                            <Link className='dropdown-item' href='/services/educational-and-career-counseling'>
-                              {t('menu-services-1')}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='/services/counseling-working-experience'>
-                              {t('menu-services-2')}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='/services/course-description'>
-                              {t('menu-services-3')}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className='dropdown-item' href='/services/signing-documents'>
-                              {t('menu-services-4')}
-                            </Link>
-                          </li>
-                        </div>
+              {/* Services */}
+              <li className='nav-item dropdown FNV-MegaMenu FNV-VIPMemberShip'>
+                <Link className='nav-link' href='javascript:void(0);' data-bs-toggle='dropdown' aria-expanded='false'>
+                  {t('menu-services')}
+                </Link>
+                <ul className='dropdown-menu p-0'>
+                  <div className='container-fluid'>
+                    <a>
+                      {t('menu-services')} <span>{t('menu-services-slogan')}</span>
+                    </a>
+                    <div className='row'>
+                      <div className='col-md-6 pb-4'>
+                        <span>
+                          <i data-feather='list'></i> {t('menu-services')}
+                        </span>
+                        <li>
+                          <Link className='dropdown-item' href='/services/educational-and-career-counseling'>
+                            {t('menu-services-1')}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/services/counseling-working-experience'>
+                            {t('menu-services-2')}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/services/course-description'>
+                            {t('menu-services-3')}
+                          </Link>
+                          <Link className='dropdown-item' href='/services/signing-documents'>
+                            {t('menu-services-4')}
+                          </Link>
+                        </li>
                       </div>
                     </div>
-                  </ul>
-                </li>
+                  </div>
+                </ul>
+              </li>
 
-                {/* Blog */}
-                <li className='nav-item dropdown FNV-MegaMenu'>
-                  <Link className='nav-link' href='/blog' aria-expanded='false'>
-                    {t('menu-blogs')}
-                  </Link>
-                </li>
+              {/* Blog */}
+              <li className='nav-item dropdown FNV-MegaMenu'>
+                <Link className='nav-link' href='/blog' aria-expanded='false'>
+                  {t('blog')}
+                </Link>
+              </li>
 
-                {/* Webinars */}
-                <li className='nav-item dropdown FNV-MegaMenu'>
-                  <Link className='nav-link' href='/webinars' aria-expanded='false'>
-                    {t('webinars')}
-                  </Link>
-                </li>
+              {/* Webinars */}
+              <li className='nav-item dropdown FNV-MegaMenu'>
+                <Link className='nav-link' href='/webinars' aria-expanded='false'>
+                  {t('webinars')}
+                </Link>
+              </li>
 
-                {/* Contact Us */}
-                <li className='nav-item dropdown FNV-MegaMenu'>
-                  <Link className='nav-link' href='/contact-us' aria-expanded='false'>
-                    {t('contact-us')}
-                  </Link>
-                </li>
+              {/* Contact Us */}
+              <li className='nav-item dropdown FNV-MegaMenu'>
+                <Link className='nav-link' href='/contact-us' aria-expanded='false'>
+                  {t('contact-us')}
+                </Link>
+              </li>
 
-                {/* About Us */}
-                <li className='nav-item dropdown FNV-MegaMenu'>
-                  <Link className='nav-link' href='/about-us' aria-expanded='false'>
-                    {t('about-us')}
-                  </Link>
-                </li>
+              {/* About Us */}
+              <li className='nav-item dropdown FNV-MegaMenu'>
+                <Link className='nav-link' href='/about-us' aria-expanded='false'>
+                  {t('about-us')}
+                </Link>
+              </li>
 
-                {/* Appointment */}
-                <li class='nav-item dropdown FNV-Appointment'>
-                  <a class='nav-link' href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
-                    {t('appointment')}
-                  </a>
-                  <ul class='dropdown-menu'>
-                    <li>
-                      <Link className='dropdown-item' href='/services/consultant'>
-                        {t('menu-appointment1')}
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className='dropdown-item' href='/services/counseling-working-experience'>
-                        {t('menu-appointment2')}
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-
-              <div className='d-flex' role='search'>
-                <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
-                  <li className='nav-item FNV-MegaMenu-Search'>
-                    <button
-                      className='nav-link'
-                      onClick={handleOpen}
-                      style={{
-                        background: 'none',
-                        border: 'none',
-                        padding: 0,
-                        color: 'blue',
-                        textDecoration: 'underline',
-                        cursor: 'pointer'
-                      }}
-                    >
-                      <i data-feather='search'></i>
-                    </button>
+              {/* Appointment */}
+              <li class='nav-item dropdown FNV-Appointment'>
+                <a class='nav-link' href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
+                  {t('appointment')}
+                </a>
+                <ul class='dropdown-menu'>
+                  <li>
+                    <Link className='dropdown-item' href='/services/consultant'>
+                      {t('menu-appointment1')}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className='dropdown-item' href='/services/counseling-working-experience'>
+                      {t('menu-appointment2')}
+                    </Link>
                   </li>
                 </ul>
-              </div>
+              </li>
+            </ul>
+
+            <div className='d-flex' role='search'>
+              <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
+                <li className='nav-item FNV-MegaMenu-Search'>
+                  <button
+                    className='nav-link'
+                    onClick={handleOpen}
+                    style={{
+                      background: 'none',
+                      border: 'none',
+                      padding: 0,
+                      color: 'blue',
+                      textDecoration: 'underline',
+                      cursor: 'pointer'
+                    }}
+                  >
+                    <i data-feather='search'></i>
+                  </button>
+                </li>
+              </ul>
             </div>
           </div>
-        </nav>
-      )}
+        </div>
+      </nav>
+
+      {/* Modal */}
       <Modal
         open={open}
         onClose={handleClose}
@@ -947,6 +646,8 @@ const Header = props => {
           </List>
         </Box>
       </Modal>
+
+      {/* OffCanvas */}
       <div
         className='offcanvas offcanvas-start'
         tabIndex='-1'

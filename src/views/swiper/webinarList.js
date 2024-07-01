@@ -78,7 +78,7 @@ const WebinarDeskSingle = ({ webinars }) => {
               {/* Rest */}
               {Array.isArray(webinarList) &&
                 webinarList
-                .slice(0, 3)
+                .slice(0, 2)
                 .map((webinar, index) => (
                   <div key={index} className='col-12'>
                     <div className='d-flex'>
@@ -99,14 +99,6 @@ const WebinarDeskSingle = ({ webinars }) => {
                   </div>
                 ))
               }
-
-              {displayCount < webinarList.length && (
-                <div className='col-12 text-center'>
-                  <button onClick={showMoreWebinars} className='FNV-Btn PrimaryColor'>
-                    Show More
-                  </button>
-                </div>
-              )}
             </div>
             {/* Featured */}
             <div className='col-12 col-md-7'>
@@ -190,6 +182,16 @@ const WebinarDeskSingle = ({ webinars }) => {
                     </>
                   ))}
               </Swiper>
+            </div>
+
+            <div className='col-12'>
+              {displayCount < webinarList.length && (
+                <div className='col-12 text-center'>
+                  <button onClick={showMoreWebinars} className='FNV-Btn SecondaryColor BtnLarge'>
+                    {t('webinar-more')}
+                  </button>
+                </div>
+              )}
             </div>
           </div>
         </div>
