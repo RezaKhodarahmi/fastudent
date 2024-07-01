@@ -4415,6 +4415,69 @@ body[dir=rtl] .FNV-Blog .FNV-SeeMore {
   margin-bottom: 0;
 }
 
+body[dir=rtl] .FNV-SingleWebinar {
+  background-image: url("/img/webinar-single-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 8rem 0;
+}
+body[dir=rtl] .FNV-SingleWebinar .container {
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+body[dir=rtl] .FNV-SingleWebinar .container .row .col-md-6 img, body[dir=rtl] .FNV-SingleWebinar .container .row .col-md-6 iframe {
+  width: 100%;
+  border-radius: 10px;
+}
+body[dir=rtl] .FNV-SingleWebinar .container .row .col-md-6:nth-child(2) {
+  padding: 1rem;
+}
+body[dir=rtl] .FNV-SingleWebinar .container .row .col-md-6:nth-child(2) badge {
+  margin-top: 1rem;
+  padding: 0.5rem 2rem;
+}
+body[dir=rtl] .FNV-SingleWebinar .container .row .col-md-6:nth-child(2) h1 {
+  direction: rtl;
+  font-size: 20px;
+  margin-top: 1rem;
+  font-weight: 700;
+  line-height: 50px;
+  color: #223885;
+}
+body[dir=rtl] .FNV-SingleWebinar .container .row .col-md-6:nth-child(2) h2 {
+  display: flex;
+  padding: 1rem;
+  border-radius: 10px;
+  flex-direction: column;
+  background-color: #F0F3FB;
+}
+body[dir=rtl] .FNV-SingleWebinar .container .row .col-md-6:nth-child(2) h2 span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #223885;
+}
+body[dir=rtl] .FNV-SingleWebinar .container .row .col-md-6:nth-child(2) h2 span:nth-child(2) {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #000000;
+}
+body[dir=rtl] .FNV-SingleWebinar .container .row .col-md-6:nth-child(2) p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 1rem;
+  color: #223885;
+  text-align: right;
+}
+body[dir=rtl] .FNV-SingleWebinar .container .row .col-md-6:nth-child(2) p svg {
+  margin-left: 0.5rem;
+  color: #FF772C;
+}
+body[dir=rtl] .FNV-SingleWebinar .container .row .col-md-6:nth-child(2) p span {
+  direction: ltr;
+}
+
 body[dir=rtl] .FNV-SinglePage {
   position: relative;
 }

@@ -1,0 +1,78 @@
+body[dir='rtl']{
+    .FNV-SingleWebinar{
+        background-image: url('/img/webinar-single-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding: 8rem 0;
+
+        .container{
+            padding: 1rem;
+            border-radius: 10px;
+            background-color: $WhiteColor;
+
+            .row{
+                .col-md-6{
+                    img, iframe{
+                        width: 100%;
+                        border-radius: 10px;
+                    }
+
+                    &:nth-child(2){
+                        padding: 1rem;
+                        badge{
+                            margin-top: 1rem;
+                            padding: .5rem 2rem;
+                        }
+    
+                        h1{
+                            direction: rtl;
+                            font-size: 20px;
+                            margin-top: 1rem;
+                            font-weight: 700;
+                            line-height: 50px;
+                            color: $PrimaryColor;
+                        }
+
+                        h2{
+                            display: flex;
+                            padding: 1rem;
+                            border-radius: 10px;
+                            flex-direction: column;
+                            background-color: #F0F3FB;
+
+                            span{
+                                font-size: 14px;
+                                font-weight: 400;
+                                color: $PrimaryColor;
+
+                                &:nth-child(2){
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    line-height: 32px;
+                                    color: $BlackColor;
+                                }
+                            }
+                        }
+
+                        p{
+                            font-size: 14px;
+                            font-weight: 400;
+                            margin-top: 1rem;
+                            color: $PrimaryColor;
+                            text-align: right;
+
+                            svg{
+                                margin-left: .5rem;
+                                color: $SecondaryColor;
+                            }
+
+                            span{
+                                direction: ltr;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

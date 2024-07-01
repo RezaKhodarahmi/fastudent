@@ -9,7 +9,20 @@ import feather from 'feather-icons'
 import toast from 'react-hot-toast'
 import Spinner from 'src/@core/components/spinner'
 
+// ** Import translation
+import { useTranslation } from 'react-i18next'
+
 const SingleWebinar = () => {
+
+  const timer = setTimeout(() => {
+    if (typeof feather !== 'undefined' && feather !== null) {
+      feather.replace()
+    }
+  }, 1000) // 1 second delay
+
+  //Hooks
+  const { t } = useTranslation()
+
   const [webinar, setWebinar] = useState(null)
   const [notFoundError, setNotFoundError] = useState(false)
   const [loading, setLoading] = useState(true)
@@ -70,16 +83,41 @@ const SingleWebinar = () => {
     return { __html: feather.icons[iconName].toSvg({ ...attrs, style: `color: #003BBF; ${attrs.style || ''}` }) }
   }
 
-  return (
-    <Container maxWidth='md' sx={{ my: 4 }}>
-      {webinar && (
-        <>
-          <Helmet>
-            <title>{webinar.title}</title>
-          </Helmet>
+  const handelStatus = webinar => {
+    switch (webinar.status) {
+      case 1:
+        return t('webinar-home-status-active');
+        break
+      case '2':
+        return t('webinar-home-status-recorded');
+        break
+      case '3':
+        return t('webinar-home-status-postponed');
+        break
+      default:
+        return t('webinar-home-status-not-active');
+    }
+  }
 
-          <Card raised sx={{ p: 2, borderRadius: '16px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)' }}>
-            <Box sx={{ textAlign: 'center' }}>
+  const handelType = webinar => {
+    switch (webinar.type) {
+      case 1:
+        return '$' + webinar.regularPrice + ' ' + 'CAD'
+        break
+      case 2:
+        return 'Free'
+        break
+      default:
+        return 'Free'
+    }
+  }
+
+  return (
+    <>
+      <section className='FNV-SingleWebinar'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-12 col-md-6'>
               {webinar.video ? (
                 <iframe
                   width='560'
@@ -95,114 +133,68 @@ const SingleWebinar = () => {
                 <img
                   src={webinar.image}
                   alt='Webinar'
-                  style={{ width: '50%', maxHeight: '500px', objectFit: 'cover', margin: 'auto' }}
+                  className='img-fluid'
                 />
               )}
-            </Box>
-            <CardContent sx={{ mt: 2, direction: 'ltr' }}>
-              <Typography dir='rtl' gutterBottom variant='h4' component='div' sx={{ textAlign: 'center' }}>
-                {webinar.title}
-              </Typography>
-              <Box sx={{ backgroundColor: '#003BBF', p: 2, borderRadius: '16px' }}>
-                <Grid container spacing={2} justifyContent='center'>
-                  {/* Date */}
-                  <Grid item xs={12} sm={4}>
-                    <Box
-                      sx={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        backgroundColor: '#FFF',
-                        padding: 2,
-                        borderRadius: '8px'
-                      }}
-                    >
-                      <Box
-                        sx={{ textAlign: 'center', marginRight: 2 }}
-                        dangerouslySetInnerHTML={generateIconHTML('calendar')}
-                      />
-                      <Typography variant='body1' gutterBottom sx={{ color: '#003BBF' }}>
-                        {webinar.date}
-                      </Typography>
-                    </Box>
-                  </Grid>
-                  {/* Time */}
-                  <Grid item xs={12} sm={4}>
-                    <Box
-                      sx={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        backgroundColor: '#FFF',
-                        padding: 2,
-                        borderRadius: '8px'
-                      }}
-                    >
-                      <Box
-                        sx={{ textAlign: 'center', marginRight: 2 }}
-                        dangerouslySetInnerHTML={generateIconHTML('clock')}
-                      />
-                      <Typography variant='body1' gutterBottom sx={{ color: '#003BBF' }}>
-                        {new Date(`2023-01-01T${webinar.time}`).toLocaleTimeString([], {
-                          hour: '2-digit',
-                          minute: '2-digit'
-                        })}
-                      </Typography>
-                    </Box>
-                  </Grid>
-                  {/* Instructor */}
-                  <Grid item xs={12} sm={4}>
-                    <Box
-                      sx={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        backgroundColor: '#FFF',
-                        padding: 2,
-                        borderRadius: '8px'
-                      }}
-                    >
-                      <Box
-                        sx={{ textAlign: 'center', marginRight: 2 }}
-                        dangerouslySetInnerHTML={generateIconHTML('user')}
-                      />
-                      <Typography variant='body1' gutterBottom sx={{ color: '#003BBF' }}>
-                        {webinar.instructor}
-                      </Typography>
-                    </Box>
-                  </Grid>
-                </Grid>
-              </Box>
-              <Typography
-                variant='body1'
+            </div>
+            <div className='col-12 col-md-6'>
+              <badge className='PrimaryColor'>{handelType(webinar)}</badge>
+              <badge className='SecondaryColor'>{handelStatus(webinar)}</badge>
+              <h1>{webinar.title}</h1>
+
+              <h2>
+                <span>{t('single-webinar-instructor')}:</span> 
+                <span>{webinar.instructor}</span>
+              </h2>
+
+              <p>
+                <i data-feather='calendar'></i> 
+
+                {t('single-webinar-startingdate')} : {webinar.date}
+              </p>
+
+              <p>
+                <i data-feather='clock'></i> 
+
+                {t('single-webinar-startingtime')} :
+                <span>
+                  {new Date(`2023-01-01T${webinar.time}`).toLocaleTimeString([], {
+                    hour: '2-digit',
+                    minute: '2-digit'
+                  })}
+                </span>
+              </p>
+
+              {/* <Typography
+                variant='p'
                 gutterBottom
-                sx={{ mt: 2, color: '#000', textAlign: 'center' }}
                 dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(webinar.description) }}
-              />
+              /> */}
+
               {webinar.video ? (
                 <p>The registration deadline for this webinar is over</p>
               ) : (
                 <Box mt={2} display='flex' justifyContent='center'>
                   {enrolled || enrollButtonDisabled ? (
-                    <Button variant='contained' disabled>
-                      Enrolled
+                    <Button className='FNV-Btn SecondaryColor BtnMedium w-100' disabled>
+                      {t('single-webinar-enrolled')}
                     </Button>
                   ) : userLoggedIn ? (
-                    <Button variant='contained' color='primary' onClick={handleEnroll}>
-                      Enroll
+                    <Button className='FNV-Btn SecondaryColor BtnMedium w-100' onClick={handleEnroll}>
+                      {t('single-webinar-enroll')}
                     </Button>
                   ) : (
-                    <Button variant='contained' color='secondary' onClick={redirectToLogin}>
-                      Login to Enroll
+                    <Button className='FNV-Btn SecondaryColor BtnMedium w-100' onClick={redirectToLogin}>
+                      {t('single-webinar-loginenroll')}
                     </Button>
                   )}
                 </Box>
               )}
-            </CardContent>
-          </Card>
-        </>
-      )}
-    </Container>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   )
 }
 

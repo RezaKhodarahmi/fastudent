@@ -194,6 +194,13 @@
   "cart-partial-button": "پرداخت وجه بصورت اقساط",
   "cart-full-payment-button": "پرداخت وجه بصورت کامل",
 
+  "single-webinar-instructor": "سخنران",
+  "single-webinar-startingdate": "تاریخ برگزاری",
+  "single-webinar-startingtime": "ساعت برگزاری",
+  "single-webinar-enrolled": "ثبت‌نام کرده‌اید",
+  "single-webinar-enroll": "ثبت‌نام کنید!",
+  "single-webinar-loginenroll": "برای ثبت‌نام اول وارد شوید",
+
   "footer-one": "دسترسی سریع",
   "footer-one-about": "درباره فناوران",
   "footer-one-contact": "ارتباط با فناوران",

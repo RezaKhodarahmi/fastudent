@@ -202,6 +202,13 @@
   "cart-partial-button": "Pay in Installments",
   "cart-full-payment-button": "Pay in Full",
 
+  "single-webinar-instructor": "Instructor",
+  "single-webinar-startingdate": "Starting Date",
+  "single-webinar-startingtime": "Starting Time",
+  "single-webinar-enrolled": "Enrolled",
+  "single-webinar-enroll": "Enroll Now",
+  "single-webinar-loginenroll": "Login to Enroll",
+
   "footer-one": "Quick Access",
   "footer-one-about": "About Fanavaran",
   "footer-one-contact": "Contact Fanavaran",
