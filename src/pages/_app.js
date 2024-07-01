@@ -6,6 +6,7 @@ import { Router } from 'next/router'
 import { useRouter } from 'next/router'
 import MainLayout from 'src/layouts/MainLayout'
 import nextI18NextConfig from 'src/configs/i18n'
+import Script from 'next/script'
 
 // ** Store Imports
 import { store } from 'src/store'
@@ -248,16 +249,12 @@ const App = props => {
         }(window,document,"yektanet");
       `}
           </script>
-
-          {/* <script type='text/javascript'>
-            {` window.$crisp=[];window.CRISP_WEBSITE_ID="55e17e3f-cbe6-4195-b704-ab9181f96363";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();`}
-          </script> */}
-
-          <script
-            src='https://widgets.leadconnectorhq.com/loader.js'
-            data-resources-url='https://widgets.leadconnectorhq.com/chat-widget/loader.js'
-          ></script>
         </Head>
+        <Script
+          src='https://widgets.leadconnectorhq.com/loader.js'
+          data-resources-url='https://widgets.leadconnectorhq.com/chat-widget/loader.js'
+          async
+        ></Script>
 
         <AuthProvider>
           <SettingsProvider {...(setConfig ? { pageSettings: setConfig() } : {})}>
