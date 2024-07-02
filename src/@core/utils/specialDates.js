@@ -36,6 +36,11 @@ export const specialDates = [
         image: 'https://fanavaran.ca:3200/uploads/courses/c1ea3ab6-5e3b-453d-a3e1-f9c88c783465.jpg',
         text: 'سومین دوره دریافت لایسنس تکنسین تهویه مطبوع (HVAC) در کانادا',
         link: 'https://fanavaran.ca/courses/hvac-313-ad'
+      },
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/c5fc9224-2a7d-49d5-9f6a-dd84897dc227.jpg',
+        text: 'هفتمین دوره آمادگی آزمون Foundation ویژه شرکت در آزمون Energy Advisory (آزمون مرحله اول)',
+        link: 'https://fanavaran.ca/courses/energy-foundation'
       }
     ]
   },
@@ -65,6 +70,16 @@ export const specialDates = [
     ]
   },
   {
+    date: '2024-07-22',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/97beda3e-b663-4dd5-9d83-f8b17d6c2959.jpg',
+        text: 'اولین دوره تست‌زنی تخصصی ویژه دریافت لایسنس Redseal برق - بریتیش کلمبیا',
+        link: 'https://fanavaran.ca/courses/codebook-electrical-exam-prep-test-bc'
+      }
+    ]
+  },
+  {
     date: '2024-07-23',
     events: [
       {
@@ -75,12 +90,42 @@ export const specialDates = [
     ]
   },
   {
+    date: '2024-07-24',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/e78de340-4974-4934-94bc-65ef53f5e668.jpg',
+        text: 'پنجمین دوره آموزشی مبانی و کدهای لوله‌کشی (پلامینگ) در کانادا',
+        link: 'https://fanavaran.ca/courses/plumbing-306a'
+      },
+      {
+        image: 'https://fanavaran.ca:3200/uploads/webinars/4ef76a86-75a3-483c-9c80-0469abb82921.jpg',
+        text: 'آشنایی با آزمونهای تکنیکال اگزم برای اخذ لایسنس PENG در کانادا',
+        link: 'https://fanavaran.ca/webinars/knowing-technical-exams-for-obtaining-a-peng-license'
+      }
+    ]
+  },
+  {
+    date: '2024-07-25',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/8b5015ea-74a6-49e9-b501-d302882f41a9.jpg',
+        text: 'سومین دوره آموزش نرم افزار Microsoft Project',
+        link: 'https://fanavaran.ca/courses/microsoft-project'
+      }
+    ]
+  },
+  {
     date: '2024-07-29',
     events: [
       {
         image: 'https://fanavaran.ca:3200/uploads/courses/9adda504-1b5e-494c-8679-5055a216104f.jpg',
         text: 'پنجمین دوره آمادگی آزمون LEED GA',
         link: 'https://fanavaran.ca/courses/leed-ga-preparation'
+      },
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/121f801f-0e18-4841-b5fa-c0bb86b41b39.jpg',
+        text: 'بیستمین دوره آمادگی آزمون مدیریت پروژه  PMP',
+        link: 'https://fanavaran.ca/courses/pmp-certification-preparation-test'
       }
     ]
   },
