@@ -43,7 +43,7 @@ function Index() {
               const dayName = formatDate(date, 'EEEE'); // Get day name
 
               return (
-                <div key={day} className='col-12 col-md-3'>
+                <div key={day} className='col-4 col-md-3'>
                   <div
                     className={`${isToday ? 'card FNV-CurrentDate' : 'card'} ${isPassed ? 'card FNV-PassedDate' : ''}`}
                     id={`${isToday ? 'FNV-Today' : ''}`}
