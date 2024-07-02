@@ -4478,6 +4478,69 @@ body[dir=rtl] .FNV-SingleWebinar .container .row .col-md-6:nth-child(2) p span {
   direction: ltr;
 }
 
+body[dir=ltr] .FNV-SingleWebinar {
+  background-image: url("/img/webinar-single-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 8rem 0;
+}
+body[dir=ltr] .FNV-SingleWebinar .container {
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+body[dir=ltr] .FNV-SingleWebinar .container .row .col-md-6 img, body[dir=ltr] .FNV-SingleWebinar .container .row .col-md-6 iframe {
+  width: 100%;
+  border-radius: 10px;
+}
+body[dir=ltr] .FNV-SingleWebinar .container .row .col-md-6:nth-child(2) {
+  padding: 1rem;
+}
+body[dir=ltr] .FNV-SingleWebinar .container .row .col-md-6:nth-child(2) badge {
+  margin-top: 1rem;
+  padding: 0.5rem 2rem;
+}
+body[dir=ltr] .FNV-SingleWebinar .container .row .col-md-6:nth-child(2) h1 {
+  direction: ltr;
+  font-size: 20px;
+  margin-top: 1rem;
+  font-weight: 700;
+  line-height: 50px;
+  color: #223885;
+}
+body[dir=ltr] .FNV-SingleWebinar .container .row .col-md-6:nth-child(2) h2 {
+  display: flex;
+  padding: 1rem;
+  border-radius: 10px;
+  flex-direction: column;
+  background-color: #F0F3FB;
+}
+body[dir=ltr] .FNV-SingleWebinar .container .row .col-md-6:nth-child(2) h2 span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #223885;
+}
+body[dir=ltr] .FNV-SingleWebinar .container .row .col-md-6:nth-child(2) h2 span:nth-child(2) {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #000000;
+}
+body[dir=ltr] .FNV-SingleWebinar .container .row .col-md-6:nth-child(2) p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 1rem;
+  color: #223885;
+  text-align: left;
+}
+body[dir=ltr] .FNV-SingleWebinar .container .row .col-md-6:nth-child(2) p svg {
+  margin-right: 0.5rem;
+  color: #FF772C;
+}
+body[dir=ltr] .FNV-SingleWebinar .container .row .col-md-6:nth-child(2) p span {
+  direction: ltr;
+}
+
 body[dir=rtl] .FNV-SinglePage {
   position: relative;
 }
@@ -8582,6 +8645,160 @@ body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label span {
     flex-direction: column;
   }
 }
+.FNV-Calendar {
+  padding: 4rem 0;
+}
+.FNV-Calendar .container .row .col-md-3 {
+  padding: 0.5rem;
+}
+.FNV-Calendar .container .row .col-md-3 .card {
+  height: 255px;
+  padding: 1rem;
+  border-width: 0;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  background-color: #E5EAFB;
+}
+.FNV-Calendar .container .row .col-md-3 .card .card-day {
+  top: 2rem;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+.FNV-Calendar .container .row .col-md-3 .card .card-day span {
+  color: rgba(0, 0, 0, 0.062745098);
+  font-size: 10rem;
+  font-weight: 800;
+}
+.FNV-Calendar .container .row .col-md-3 .card .card-header {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.FNV-Calendar .container .row .col-md-3 .card .card-header h3 {
+  font-size: 16px;
+  font-weight: 800;
+  text-align: center;
+}
+.FNV-Calendar .container .row .col-md-3 .card .card-body {
+  padding: 0;
+}
+.FNV-Calendar .container .row .col-md-3 .card .card-body .card {
+  padding: 0;
+  height: 100%;
+  display: flex;
+  border-radius: 0;
+  flex-direction: row;
+  background-color: unset;
+}
+.FNV-Calendar .container .row .col-md-3 .card .card-body .card .col {
+  position: relative;
+}
+.FNV-Calendar .container .row .col-md-3 .card .card-body .card .col .card-header {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border-width: 0;
+}
+.FNV-Calendar .container .row .col-md-3 .card .card-body .card .col .card-header img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.FNV-Calendar .container .row .col-md-3 .card .card-body .card .col .card-body {
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0.5rem;
+  position: absolute;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgba(0, 60, 191, 0.7254901961);
+}
+.FNV-Calendar .container .row .col-md-3 .card .card-body .card .col .card-body a {
+  width: 100%;
+}
+.FNV-Calendar .container .row .col-md-3 .card .card-body .card .col .card-body a h4 {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #ffffff;
+}
+.FNV-Calendar .container .row .col-md-3 .card .card-body .card .col:hover .card-body {
+  opacity: 1;
+}
+.FNV-Calendar .container .row .col-md-3 .card.FNV-PassedDate {
+  background-color: #d9d9d9;
+}
+.FNV-Calendar .container .row .col-md-3 .card.FNV-CurrentDate {
+  background-color: #FF772C;
+}
+.FNV-Calendar .container .row .col-md-3 .card .row .col-md-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.FNV-Calendar .container .row .col-md-3 .card .row .col-md-2 .FNV-Calendar-Date {
+  display: flex;
+  flex-direction: column;
+}
+.FNV-Calendar .container .row .col-md-3 .card .row .col-md-2 .FNV-Calendar-Date .FNV-Calendar-Date-Month {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+}
+.FNV-Calendar .container .row .col-md-3 .card .row .col-md-2 .FNV-Calendar-Date .FNV-Calendar-Date-Day {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: center;
+}
+.FNV-Calendar .container .row .col-md-3 .card .row .col-md-2 .FNV-Calendar-Date .FNV-Calendar-Date-DayName {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+.FNV-Calendar .container .row .col-md-3 .card .row .col-md-10 {
+  padding: 0 1rem;
+}
+.FNV-Calendar .container .row .col-md-3 .card .row .col-md-10 .row .col-2 {
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  padding: 0;
+}
+.FNV-Calendar .container .row .col-md-3 .card .row .col-md-10 .row .col-2 img {
+  padding: 0;
+}
+.FNV-Calendar .container .row .col-md-3 .card .row .col-md-10 .row .col-2 span {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  position: absolute;
+  color: #ffffff;
+  background-color: rgba(0, 60, 191, 0.7254901961);
+}
+.FNV-Calendar .container .row .col-md-3 .card .row .col-md-10 .row .col-2:hover span {
+  opacity: 1;
+}
+
 .FNV-CourseDescription .FNV-Heading {
   padding: 4rem;
   display: block;
