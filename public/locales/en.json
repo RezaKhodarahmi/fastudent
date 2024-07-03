@@ -4,13 +4,24 @@
   "fanavaran-courses":"Fanavaran Courses",
   "fanavaran-motto":"Become Successful Again!",
 
+  "see-all": "See All",
+
   "engineering":"Engineering",
-  "engineering-1":"Basic Level P.Eng",
-  "engineering-2":"Mechanical Courses",
-  "engineering-3":"Electrical Courses",
-  "engineering-4":"P.Eng Technical Exams",
+  "engineering-1":"P.Eng Package",
+  "engineering-2":"NPPE Exam Prep + Test",
+  "engineering-3":"NPPE Exam Prep (Recorded)",
+  "engineering-4":"CBA Writing (P.Eng License)",
+  "engineering-5":"Profile Creation (P.Eng Application)",
 
   "project-management":"Project Management",
+  "project-management-1":"Project Management Fundamentals",
+  "project-management-2":"Project Management Package I",
+  "project-management-3":"Project Management Fundamentals (Recorded)",
+  "project-management-4":"PMI-RMP Certification Test Preparation (Recorded)",
+  "project-management-5":"Microsoft Project",
+  "project-management-6":"Project Coordinator (CAPM Designation)",
+
+
   "architect":"Architect",
   "accounting":"Accounting",
   "english":"English",
