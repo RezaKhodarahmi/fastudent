@@ -43,14 +43,14 @@ function Index() {
             <div className='col-12'>
               <p>فهرست مطالب:</p>
               <ol>
-                <li><a href="#P1" target="_blank" rel="noopener"><b>تدریس خصوصی زبان انگلیسی در کانادا برای ایرانیان</b></a></li>
-                <li><a href="#P2" target="_blank" rel="noopener"><b>پکیج کلاس زبان انگلیسی خصوصی برای ایرانیان</b></a></li>
-                <li><b><a href="#P3">تدریس خصوصی با معلم نیتیو کانادایی</a></b></li>
-                <li><b> </b><a href="#P4" target="_blank" rel="noopener"><b>هزینه دوره های زبان در کانادا</b></a></li>
-                <li><b><a href="#P5">کالج زبان انگلیسی در کانادا</a></b></li>
-                <li><b><a href="#P6">مقایسه کالج زبان انگلیسی و دوره خصوصی زبان انگلیسی</a></b></li>
-                <li><b><a href="#P7">دوره های رایگان زبان انگلیسی در کانادا برای مهاجران تازه وارد</a></b></li>
-                <li><a href="#P8" target="_blank" rel="noopener"><b>توصیه فناوران به مهاجران تازه‌وارد</b></a></li>
+                <li><Link href="#P1" target="_blank" rel="noopener">تدریس خصوصی زبان انگلیسی در کانادا برای ایرانیان</Link></li>
+                <li><Link href="#P2" target="_blank" rel="noopener">پکیج کلاس زبان انگلیسی خصوصی برای ایرانیان</Link></li>
+                <li><Link href="#P3">تدریس خصوصی با معلم نیتیو کانادایی</Link></li>
+                <li> <Link href="#P4" target="_blank" rel="noopener">هزینه دوره های زبان در کانادا</Link></li>
+                <li><Link href="#P5">کالج زبان انگلیسی در کانادا</Link></li>
+                <li><Link href="#P6">مقایسه کالج زبان انگلیسی و دوره خصوصی زبان انگلیسی</Link></li>
+                <li><Link href="#P7">دوره های رایگان زبان انگلیسی در کانادا برای مهاجران تازه وارد</Link></li>
+                <li><Link href="#P8" target="_blank" rel="noopener">توصیه فناوران به مهاجران تازه‌وارد</Link></li>
               </ol>
             </div>
           </div>
