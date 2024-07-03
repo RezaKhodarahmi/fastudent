@@ -499,6 +499,48 @@ const Header = props => {
                 </ul>
               </li>
 
+              {/* Learning */}
+              <li className='nav-item dropdown FNV-MegaMenu FNV-Learning'>
+                <Link className='nav-link' href='#' aria-expanded='false'>
+                  {t('menu-learning')}
+                </Link>
+                <ul className='dropdown-menu'>
+                  <div className='container-fluid'>
+                    <a>
+                      {t('menu-learning')} <span>{t('fanavaran-motto')}</span>
+                    </a>
+                    <div className='row'>
+                      {/* Engineering */}
+                      <div className='col'>
+                        <span>
+                          <i data-feather='package'></i> {t('engineering')}
+                        </span>
+                        <li>
+                          <Link className='dropdown-item' href='/engineering/electrical-peng/'>
+                            Electrical P.Eng
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/engineering/basic-level-peng/'>
+                            Basic Level P.Eng
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/engineering/peng-technical-exams/'>
+                            P.Eng Technical Exams
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/engineering/mechanical-course-peng/'>
+                            Mechanical Course P.Eng
+                          </Link>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+
               {/* Membership */}
               <li className='nav-item dropdown FNV-MegaMenu FNV-VIPMemberShip'>
                 <Link className='nav-link' href='javascript:void(0);' data-bs-toggle='dropdown' aria-expanded='false'>

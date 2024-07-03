@@ -418,6 +418,9 @@ body[dir=rtl] nav .container-fluid .FNV-MegaMenu {
 body[dir=rtl] nav .container-fluid .FNV-MegaMenu.FNV-Courses .dropdown-menu {
   width: 1800px;
 }
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu.FNV-Learning .dropdown-menu {
+  width: 1400px;
+}
 body[dir=rtl] nav .container-fluid .FNV-MegaMenu.FNV-VIPMemberShip .dropdown-menu {
   width: 600px;
 }
