@@ -1550,13 +1550,13 @@ body[dir=ltr] nav.FNV-MegaMenu {
   top: -5rem;
   z-index: 10;
 }
-.FNV-Top_Categories .container .row .col-md-2 {
+.FNV-Top_Categories .container .row .col-md {
   padding: 0 0.5rem;
 }
-.FNV-Top_Categories .container .row .col-md-2 a {
+.FNV-Top_Categories .container .row .col-md a {
   background-color: #ffffff;
   color: #223885;
-  padding: 3rem 0;
+  padding: 2rem 0;
   display: block;
   flex-direction: column;
   align-items: center;
@@ -1568,25 +1568,25 @@ body[dir=ltr] nav.FNV-MegaMenu {
   box-shadow: 0 0 25px rgba(0, 59, 191, 0.3);
   transition: 0.3s all ease-in-out;
 }
-.FNV-Top_Categories .container .row .col-md-2 a svg {
-  width: 90px;
-  height: 90px;
+.FNV-Top_Categories .container .row .col-md a svg {
+  width: 70px;
+  height: 70px;
   color: #FF772C;
 }
-.FNV-Top_Categories .container .row .col-md-2 a h3 {
+.FNV-Top_Categories .container .row .col-md a h3 {
   font-size: 16px;
   font-weight: 400;
   margin-top: 1rem;
 }
-.FNV-Top_Categories .container .row .col-md-2 a:hover {
+.FNV-Top_Categories .container .row .col-md a:hover {
   background: linear-gradient(-45deg, #223885, #FF772C, #223885, #ffffff);
   background-size: 400% 400%;
   animation: gradient 3s ease-in-out alternate;
 }
-.FNV-Top_Categories .container .row .col-md-2 a:hover h3 {
+.FNV-Top_Categories .container .row .col-md a:hover h3 {
   color: #ffffff;
 }
-.FNV-Top_Categories .container .row .col-md-2 a:hover svg {
+.FNV-Top_Categories .container .row .col-md a:hover svg {
   color: #ffffff;
 }
 .FNV-Top_Categories .container:nth-child(2) {
@@ -1637,11 +1637,11 @@ body[dir=ltr] nav.FNV-MegaMenu {
     top: 0rem;
     z-index: 10;
   }
-  .FNV-Top_Categories .container .row .col-md-2 {
+  .FNV-Top_Categories .container .row .col-md {
     padding: 0.5rem;
     margin-top: 1rem;
   }
-  .FNV-Top_Categories .container .row .col-md-2 a {
+  .FNV-Top_Categories .container .row .col-md a {
     background-color: #ffffff;
     color: #223885;
     padding: 3rem 0;
@@ -1656,25 +1656,25 @@ body[dir=ltr] nav.FNV-MegaMenu {
     box-shadow: 0 0 25px rgba(0, 59, 191, 0.3);
     transition: 0.3s all ease-in-out;
   }
-  .FNV-Top_Categories .container .row .col-md-2 a svg {
+  .FNV-Top_Categories .container .row .col-md a svg {
     width: 50px;
     height: 50px;
     color: #FF772C;
   }
-  .FNV-Top_Categories .container .row .col-md-2 a h3 {
+  .FNV-Top_Categories .container .row .col-md a h3 {
     font-size: 12px;
     font-weight: 400;
     margin-top: 1rem;
   }
-  .FNV-Top_Categories .container .row .col-md-2 a:hover {
+  .FNV-Top_Categories .container .row .col-md a:hover {
     background: linear-gradient(-45deg, #223885, #FF772C, #223885, #ffffff);
     background-size: 400% 400%;
     animation: gradient 3s ease-in-out alternate;
   }
-  .FNV-Top_Categories .container .row .col-md-2 a:hover h3 {
+  .FNV-Top_Categories .container .row .col-md a:hover h3 {
     color: #ffffff;
   }
-  .FNV-Top_Categories .container .row .col-md-2 a:hover svg {
+  .FNV-Top_Categories .container .row .col-md a:hover svg {
     color: #ffffff;
   }
   .FNV-Top_Categories .container:nth-child(2) {
