@@ -213,19 +213,19 @@ function Index() {
             <div className='col-12'>
               <p>هر استان مجوز خاص خود را نیاز دارد. در بخش زیر لینک&zwnj;های دسترسی برای اطلاعات بیشتر برای شما آورده شده است:</p>
               <ul>
-                <li>استان آلبرتا: اخذ مجوز از <a href="https://www.cpaalberta.ca/About-Us/Contact-Us">Chartered Professional Accountants of Alberta</a></li>
-                <li>استان بریتیش کلمبیا: سمت شغلی حسابدار حرفه ای اخذ مجوز از <a href="https://www.bccpa.ca/">Chartered Professional Accountants of British Columbia</a></li>
-                <li>استان بریتیش کلمبیا: سمت شغلی حسابدار اخذ مجوز از <a href="https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/central-government-agencies/office-of-the-comptroller-general">Auditor Certification Board, Government of British Columbia</a></li>
-                <li>استان مانیتوبا: اخذ مجوز از <a href="https://cpamb.ca/">Chartered Professional Accountants Manitoba</a></li>
-                <li>استان نیو برانزویک: اخذ مجوز از <a href="https://www.cpanewbrunswick.ca/">Chartered Professional Accountants New Brunswick</a></li>
-                <li>استان نیوفاندلند و لابرادور: اخذ مجوز از <a href="https://www.cpanl.ca/">Chartered Professional Accountants of Newfoundland and Labrador</a></li>
+                <li>استان آلبرتا: اخذ مجوز از <Link href="https://www.cpaalberta.ca/About-Us/Contact-Us">Chartered Professional Accountants of Alberta</Link></li>
+                <li>استان بریتیش کلمبیا: سمت شغلی حسابدار حرفه ای اخذ مجوز از <Link href="https://www.bccpa.ca/">Chartered Professional Accountants of British Columbia</Link></li>
+                <li>استان بریتیش کلمبیا: سمت شغلی حسابدار اخذ مجوز از <Link href="https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/central-government-agencies/office-of-the-comptroller-general">Auditor Certification Board, Government of British Columbia</Link></li>
+                <li>استان مانیتوبا: اخذ مجوز از <Link href="https://cpamb.ca/">Chartered Professional Accountants Manitoba</Link></li>
+                <li>استان نیو برانزویک: اخذ مجوز از <Link href="https://www.cpanewbrunswick.ca/">Chartered Professional Accountants New Brunswick</Link></li>
+                <li>استان نیوفاندلند و لابرادور: اخذ مجوز از <Link href="https://www.cpanl.ca/">Chartered Professional Accountants of Newfoundland and Labrador</Link></li>
                 <li>استان نوا اسکوشیا: سمت شغلی حسابدار حرفه ای اخذ مجوز از Chartered Professional Accountants of Nova Scotia</li>
-                <li>استان نوا اسکوشیا: سمت شغلی حسابدار اخذ مجوز از <a href="https://www.pabns.com/">Public Accountants Board of the Province of Nova Scotia</a></li>
-                <li>استان انتاریو: سمت شغلی حسابدار حرفه ای اخذ مجوز از <a href="https://www.cpaontario.ca/">Chartered Professional Accountants of Ontario</a></li>
-                <li>استان انتاریو: سمت شغلی حسابدار اخذ مجوز از <a href="https://www.bdo.ca/en-ca/services/assurance-and-accounting/a-a-knowledge-centre/psas/">Public Accountants Council for the Province of Ontario</a></li>
-                <li>جزیره پرنس ادوارد: اخذ مجوز از <a href="https://www.cpapei.ca/">Chartered Professional Accountants of Prince Edward Island</a></li>
-                <li>استان کبک: اخذ مجوز از <a href="https://cpaquebec.ca/en/">Ordre des comptables professionnels agr&eacute;&eacute;s du Qu&eacute;bec</a></li>
-                <li>استان ساسکاچوان: اخذ مجوز از <a href="https://www.cpask.ca/">Institute of Chartered Professional Accountants of Saskatchewan</a></li>
+                <li>استان نوا اسکوشیا: سمت شغلی حسابدار اخذ مجوز از <Link href="https://www.pabns.com/">Public Accountants Board of the Province of Nova Scotia</Link></li>
+                <li>استان انتاریو: سمت شغلی حسابدار حرفه ای اخذ مجوز از <Link href="https://www.cpaontario.ca/">Chartered Professional Accountants of Ontario</Link></li>
+                <li>استان انتاریو: سمت شغلی حسابدار اخذ مجوز از <Link href="https://www.bdo.ca/en-ca/services/assurance-and-accounting/a-a-knowledge-centre/psas/">Public Accountants Council for the Province of Ontario</Link></li>
+                <li>جزیره پرنس ادوارد: اخذ مجوز از <Link href="https://www.cpapei.ca/">Chartered Professional Accountants of Prince Edward Island</Link></li>
+                <li>استان کبک: اخذ مجوز از <Link href="https://cpaquebec.ca/en/">Ordre des comptables professionnels agr&eacute;&eacute;s du Qu&eacute;bec</Link></li>
+                <li>استان ساسکاچوان: اخذ مجوز از <Link href="https://www.cpask.ca/">Institute of Chartered Professional Accountants of Saskatchewan</Link></li>
               </ul>
             </div>
           </div>
