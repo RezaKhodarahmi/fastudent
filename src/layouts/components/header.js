@@ -324,28 +324,33 @@ const Header = props => {
                           <i data-feather='package'></i> {t('engineering')}
                         </span>
                         <li>
-                          <Link className='dropdown-item' href='/engineering/'>
-                            {t('engineering')}
-                          </Link>
-                        </li>
-                        <li>
-                          <Link className='dropdown-item' href='/engineering/basic-level-peng'>
+                          <Link className='dropdown-item' href='/courses/nppe-package'>
                             {t('engineering-1')}
                           </Link>
                         </li>
                         <li>
-                          <Link className='dropdown-item' href='/engineering/mechanical-course-peng'>
+                          <Link className='dropdown-item' href='/courses/nppe-exam-preparation-test'>
                             {t('engineering-2')}
                           </Link>
                         </li>
                         <li>
-                          <Link className='dropdown-item' href='/engineering/electrical-peng'>
+                          <Link className='dropdown-item' href='/courses/nppe-exam-preparation-test-recorded'>
                             {t('engineering-3')}
                           </Link>
                         </li>
                         <li>
-                          <Link className='dropdown-item' href='/engineering/peng-technical-exams'>
+                          <Link className='dropdown-item' href='/courses/cba-writing-practical-workshop'>
                             {t('engineering-4')}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/courses/user-profile-creation-service'>
+                            {t('engineering-5')}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/courses/category/engineering'>
+                            {t('see-all')}
                           </Link>
                         </li>
                       </div>
@@ -356,8 +361,33 @@ const Header = props => {
                           <i data-feather='package'></i> {t('project-management')}
                         </span>
                         <li>
-                          <Link className='dropdown-item' href='/project-management'>
-                            {t('project-management')}
+                          <Link className='dropdown-item' href='/courses/pmp-certification-preparation-test'>
+                            {t('project-management-1')}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/courses/pmp-package'>
+                            {t('project-management-2')}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/courses/pmp-certification-tests-preparation-test-recorded'>
+                            {t('project-management-3')}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/courses/pmi-rmp-certification-test-preparation'>
+                            {t('project-management-4')}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/courses/microsoft-project'>
+                            {t('project-management-5')}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/courses/category/project-managment'>
+                            {t('see-all')}
                           </Link>
                         </li>
                       </div>
@@ -368,8 +398,33 @@ const Header = props => {
                           <i data-feather='package'></i> {t('architect')}
                         </span>
                         <li>
-                          <Link className='dropdown-item' href='/architect'>
-                            {t('architect')}
+                          <Link className='dropdown-item' href='/courses/bcin-house-2'>
+                            BCIN-HOUSE II
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/courses/bcin-house'>
+                            BCIN - OBC HOUSE EXAM PREP
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/courses/general-legal-bcin'>
+                            GENERAL LEGAL BCIN
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/courses/civil-construction-estimator'>
+                            CONSTRUCTION ESTIMATION TRAINING COURSE
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/courses/revit-course'>
+                            REVIT SOFTWARE TRAINING COURSE
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/courses/category/architecture'>
+                            {t('see-all')}
                           </Link>
                         </li>
                       </div>
@@ -380,8 +435,33 @@ const Header = props => {
                           <i data-feather='package'></i> {t('technician')}
                         </span>
                         <li>
-                          <Link className='dropdown-item' href='/technician'>
-                            {t('technician')}
+                          <Link className='dropdown-item' href='/courses/gas-technician-g2-g3'>
+                            GAS TECHNICIAN (G2-G3) EXAM PREP
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/courses/canadian-wood-framing-construction'>
+                            CANADIAN WOOD FRAMING CONSTRUCTION (CWF)
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/courses/electrician-exam-prep-quebec-province'>
+                            QUEBEC ELECTRICIAN EXAM PREP (RECORDED)
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/courses/plumbing-redseal-306a-package'>
+                            PLUMBING REDSEAL PACKAGE
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/courses/electrical-redseal-309a-package'>
+                            ELECTRICAL REDSEAL PACKAGE
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/courses/category/technician'>
+                            {t('see-all')}
                           </Link>
                         </li>
                       </div>
@@ -392,8 +472,8 @@ const Header = props => {
                           <i data-feather='package'></i> {t('job-seeker')}
                         </span>
                         <li>
-                          <Link className='dropdown-item' href='/job-seeking'>
-                            {t('job-seeker')}
+                          <Link className='dropdown-item' href='/courses/category/job-seekers'>
+                            {t('see-all')}
                           </Link>
                         </li>
                       </div>
@@ -404,8 +484,55 @@ const Header = props => {
                           <i data-feather='package'></i> {t('self-employed')}
                         </span>
                         <li>
-                          <Link className='dropdown-item' href='/technical-self-employment'>
-                            {t('self-employed')}
+                          <Link className='dropdown-item' href='/courses/energy-advisory-package'>
+                            ENERGY ADVISORY PACKAGE
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/courses/category/self-employee'>
+                            {t('see-all')}
+                          </Link>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+
+              {/* Learning */}
+              <li className='nav-item dropdown FNV-MegaMenu FNV-Learning'>
+                <Link className='nav-link' href='#' aria-expanded='false'>
+                  {t('menu-learning')}
+                </Link>
+                <ul className='dropdown-menu'>
+                  <div className='container-fluid'>
+                    <a>
+                      {t('menu-learning')} <span>{t('fanavaran-motto')}</span>
+                    </a>
+                    <div className='row'>
+                      {/* Engineering */}
+                      <div className='col'>
+                        <span>
+                          <i data-feather='package'></i> {t('engineering')}
+                        </span>
+                        <li>
+                          <Link className='dropdown-item' href='/engineering/electrical-peng/'>
+                            Electrical P.Eng
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/engineering/basic-level-peng/'>
+                            Basic Level P.Eng
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/engineering/peng-technical-exams/'>
+                            P.Eng Technical Exams
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/engineering/mechanical-course-peng/'>
+                            Mechanical Course P.Eng
                           </Link>
                         </li>
                       </div>

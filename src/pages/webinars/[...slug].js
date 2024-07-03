@@ -114,7 +114,7 @@ const SingleWebinar = () => {
 
   return (
     <>
-      <section className='FNV-SingleWebinar'>
+      <section className='FNV-SingleWebinar' sx={{ direction: "rtl" }}>
         <div className='container'>
           <div className='row'>
             <div className='col-12 col-md-6'>
