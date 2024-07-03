@@ -472,8 +472,8 @@ const Header = props => {
                           <i data-feather='package'></i> {t('job-seeker')}
                         </span>
                         <li>
-                          <Link className='dropdown-item' href='/job-seeking'>
-                            {t('job-seeker')}
+                          <Link className='dropdown-item' href='/courses/category/job-seekers'>
+                            {t('see-all')}
                           </Link>
                         </li>
                       </div>
@@ -484,8 +484,13 @@ const Header = props => {
                           <i data-feather='package'></i> {t('self-employed')}
                         </span>
                         <li>
-                          <Link className='dropdown-item' href='/technical-self-employment'>
-                            {t('self-employed')}
+                          <Link className='dropdown-item' href='/courses/energy-advisory-package'>
+                            ENERGY ADVISORY PACKAGE
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className='dropdown-item' href='/courses/category/self-employee'>
+                            {t('see-all')}
                           </Link>
                         </li>
                       </div>
