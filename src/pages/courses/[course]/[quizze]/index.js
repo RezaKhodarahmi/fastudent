@@ -12,9 +12,6 @@ import {
   FormControlLabel,
   FormControl,
   Checkbox,
-  Select,
-  MenuItem,
-  Grid,
   Box
 } from '@mui/material'
 import { Clock, List, BarChart, BarChart2, CheckCircle, Repeat } from 'feather-icons-react'
@@ -210,6 +207,32 @@ const Test = () => {
     }
   }, [testData])
 
+  const preventCopyStyle = {
+    userSelect: 'none',
+    WebkitUserSelect: 'none',
+    MozUserSelect: 'none',
+    msUserSelect: 'none',
+    position: 'relative'
+  }
+
+  const watermarkStyle = {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    background: 'transparent',
+    pointerEvents: 'none',
+    zIndex: 1,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    fontSize: '3em',
+    color: 'rgba(0, 0, 0, 0.1)',
+    fontWeight: 'bold',
+    transform: 'rotate(-30deg)'
+  }
+
   return (
     <div className='FNV-Cart' style={{ direction: 'ltr' }}>
       <section
@@ -278,10 +301,11 @@ const Test = () => {
                   paginatedQuestions?.map((question, qIndex) => (
                     <Paper
                       elevation={3}
-                      style={{ padding: '30px', marginBottom: '30px', borderRadius: '15px' }}
+                      style={{ padding: '30px', marginBottom: '30px', borderRadius: '15px', position: 'relative' }}
                       key={qIndex}
                     >
-                      <Typography variant='h6' style={{ marginBottom: '20px' }}>
+                      <div style={watermarkStyle}>FANAVARAN.CA</div>
+                      <Typography variant='h6' style={{ marginBottom: '20px', ...preventCopyStyle }}>
                         {qIndex + 1}. {question.questionText}
                       </Typography>
                       {question.image && (
@@ -289,11 +313,11 @@ const Test = () => {
                           <img
                             src={question.image}
                             alt='Question image'
-                            style={{ maxWidth: '100%', borderRadius: '10px' }}
+                            style={{ maxWidth: '100%', borderRadius: '10px', ...preventCopyStyle }}
                           />
                         </Box>
                       )}
-                      <FormControl component='fieldset'>
+                      <FormControl component='fieldset' style={preventCopyStyle}>
                         {question.questionType ? (
                           <div>
                             {question.answers?.map((answer, aIndex) => (
@@ -396,11 +420,12 @@ const Test = () => {
           <div className='container'>
             <div className='row justify-content-center'>
               <div className='col-12 col-md-8'>
-                <Paper elevation={3} style={{ padding: '20px', marginBottom: '20px' }}>
+                <Paper elevation={3} style={{ padding: '20px', marginBottom: '20px', position: 'relative' }}>
+                  <div style={watermarkStyle}>FANAVARAN.CA</div>
                   <Typography variant='h5' style={{ marginBottom: '20px' }}>
                     Test Results
                   </Typography>
-                  <table className='table table-striped'>
+                  <table className='table table-striped' style={preventCopyStyle}>
                     <tbody className='text-center'>
                       <tr>
                         <td>
@@ -466,7 +491,8 @@ const Test = () => {
           <div className='container'>
             <div className='row justify-content-center'>
               <div className='col-12 col-md-8'>
-                <Paper elevation={3} style={{ padding: '20px', marginBottom: '20px' }}>
+                <Paper elevation={3} style={{ padding: '20px', marginBottom: '20px', position: 'relative' }}>
+                  <div style={watermarkStyle}>FANAVARAN.CA</div>
                   <Typography variant='h5' style={{ marginBottom: '20px' }}>
                     Test Review
                   </Typography>
@@ -512,7 +538,9 @@ const Test = () => {
                   )}
                   {testReview?.map((question, index) => (
                     <div key={index} style={{ marginBottom: '20px' }}>
-                      <Typography variant='h6'>{question.questionText}</Typography>
+                      <Typography variant='h6' style={preventCopyStyle}>
+                        {question.questionText}
+                      </Typography>
                       {question.answers.map(answer => (
                         <Typography
                           key={answer.id}
@@ -524,7 +552,8 @@ const Test = () => {
                               ? incorrectAnswerStyle
                               : question.userAnswerIds.length === 0 // Check if question was not answered
                               ? { color: 'blue' } // Set style for not answered questions
-                              : {})
+                              : {}),
+                            ...preventCopyStyle
                           }}
                         >
                           {answer.answerText}
@@ -535,7 +564,8 @@ const Test = () => {
                         style={{
                           marginLeft: '20px',
                           color: question.isCorrect ? 'green' : 'red',
-                          display: question.userAnswerIds.length === 0 ? 'none' : 'block' // Hide the "Your answer was..." text for not answered questions
+                          display: question.userAnswerIds.length === 0 ? 'none' : 'block', // Hide the "Your answer was..." text for not answered questions
+                          ...preventCopyStyle
                         }}
                       >
                         Your answer was {question.isCorrect ? 'correct' : 'incorrect'}.

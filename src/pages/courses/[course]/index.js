@@ -214,7 +214,7 @@ const Course = () => {
       setFilteredTests(filteredTests)
     } else {
       // Filtered tests and videos based on cycleId
-      const filteredTests = data?.tests?.filter(test => test.cycleId == cycleId)
+      const filteredTests = data?.tests || []
       const filteredVideos = data?.videos?.filter(video => parseInt(video.cycleId) == cycleId)
 
       setFilteredVideos(filteredVideos)

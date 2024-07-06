@@ -8,7 +8,7 @@ export default async (req, res) => {
     // Add more URLs here
   ]
 
-  const stream = new SitemapStream({ hostname: 'http://localhost:8585' })
+  const stream = new SitemapStream({ hostname: 'https://fanavaran.ca' })
 
   res.writeHead(200, {
     'Content-Type': 'application/xml'

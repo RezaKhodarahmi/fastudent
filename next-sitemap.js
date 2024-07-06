@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'http://localhost:8585',
+  siteUrl: 'https://fanavaran.ca',
   generateRobotsTxt: true, // Generate robots.txt
   sitemapSize: 5000, // Split sitemap file into chunks
   robotsTxtOptions: {
