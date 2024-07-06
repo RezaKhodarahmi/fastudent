@@ -122,17 +122,12 @@ const Test = () => {
         .get(url)
         .then(response => {
           setAllowRetake(response?.data?.allowedRetake || 0)
-          console.log(response?.data?.allowedRetake)
         })
         .catch(error => {
           console.error('Error sending data:', error)
         })
     }
   }
-
-  useEffect(() => {
-    console.log(testData)
-  }, [testData])
 
   const totalQuestions = testData?.data?.data?.questions?.length || 0
   const wrongAnswers = correctAnswers - totalQuestions
@@ -182,7 +177,6 @@ const Test = () => {
       axios
         .post(url, postData)
         .then(response => {
-          console.log('Data successfully sent:', response.data)
         })
         .catch(error => {
           console.error('Error sending data:', error)
@@ -199,7 +193,6 @@ const Test = () => {
         .get(url)
         .then(response => {
           setAllowRetake(response?.data?.allowedRetake || 0)
-          console.log(response?.data?.allowedRetake)
         })
         .catch(error => {
           console.error('Error sending data:', error)

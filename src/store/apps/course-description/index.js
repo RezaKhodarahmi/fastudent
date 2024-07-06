@@ -32,7 +32,6 @@ export const { getDataStart, getDataSuccess, getDataFailure } = courseDescriptio
 
 export const createNewCourseDescription = (user, data) => async dispatch => {
   dispatch(getDataStart())
-  console.log(user)
   try {
     const token = window.localStorage.getItem('accessToken')
 
