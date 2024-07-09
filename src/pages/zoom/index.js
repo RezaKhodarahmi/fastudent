@@ -15,7 +15,6 @@ const Home = () => {
     const checkAuth = async () => {
       const response = await fetch('http://localhost:3200/api/v1/zoom/check-auth', { credentials: 'include' });
       const data = await response.json();
-      console.log('Check Auth Data:', data);
       setIsAuthenticated(data.isAuthenticated);
     };
 
@@ -30,7 +29,6 @@ const Home = () => {
           { credentials: 'include' }
         );
         const data = await response.json();
-        console.log('Generate Signature Response:', data);
         setSignature(data.signature);
       };
 

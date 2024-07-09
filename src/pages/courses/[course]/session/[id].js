@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import ReactPlayer from 'react-player'
 import {
   Box,
   Typography,
@@ -46,28 +45,33 @@ const VideoPage = () => {
     }
   }, [id, course, userData])
 
-useEffect(() => {
-  if (courseData?.data?.data?.videos) {
-    setVideos(courseData?.data?.data?.videos)
-    const videoArray = courseData.data.data.videos;
-    const currentVideo = videoArray.find(video => video.id.toString() === id.toString());
-    if (currentVideo) {
-      let videoUrl = currentVideo.url;
+  useEffect(() => {
+    if (courseData?.data?.data?.videos) {
+      setVideos(courseData?.data?.data?.videos)
+      const videoArray = courseData.data.data.videos
+      const currentVideo = videoArray.find(video => video.id.toString() === id.toString())
+      if (currentVideo) {
+        let videoUrl = currentVideo.url
 
-      // Check if the URL is in a shareable format and convert it to an embeddable format
-      if (videoUrl.includes("vimeo.com") && !videoUrl.includes("player.vimeo.com")) {
-        const videoId = videoUrl.split('/').pop().split('?')[0]; // Extracts the video ID
-        videoUrl = `https://player.vimeo.com/video/${videoId}`; // Constructs the embeddable URL
+        // Check if the URL is in a shareable format and convert it to an embeddable format
+        if (videoUrl.includes('vimeo.com') && !videoUrl.includes('player.vimeo.com')) {
+          const videoId = videoUrl.split('/').pop().split('?')[0] // Extracts the video ID
+          videoUrl = `https://player.vimeo.com/video/${videoId}` // Constructs the embeddable URL
+        }
+        setCurrentVideoURL(videoUrl) // Set the corrected URL
       }
-      setCurrentVideoURL(videoUrl); // Set the corrected URL
+      setLoading(false)
+      setEnrolled(courseData?.data?.enrolled)
     }
-    setLoading(false);
-    setEnrolled(courseData?.data?.enrolled);
+  }, [courseData, id])
+
+  // Handler to disable right-click
+  const handleContextMenu = e => {
+    e.preventDefault() // Prevent the context menu from appearing
   }
-}, [courseData, id]);
 
   return (
-    <Container>
+    <Container onContextMenu={handleContextMenu}>
       {loading ? (
         <Spinner />
       ) : (
@@ -75,16 +79,44 @@ useEffect(() => {
           {enrolled ? (
             <>
               {/* Video Player */}
-              <Box sx={{ my: 3 }}>
-
- <iframe src={currentVideoURL} width="100%" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+              <Box
+                onContextMenu={handleContextMenu}
+                sx={{ my: 3, position: 'relative', width: '100%', height: '564px' }}
+              >
+                <iframe
+                  src={currentVideoURL}
+                  width='100%'
+                  height='100%'
+                  frameborder='0'
+                  allow='autoplay; fullscreen'
+                  allowfullscreen
+                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 1 }}
+                  onContextMenu={handleContextMenu}
+                ></iframe>
+                <div
+                  style={{
+                    position: 'absolute',
+                    top: '60%',
+                    left: '50%',
+                    transform: 'translate(-50%, -50%)',
+                    fontSize: '2rem',
+                    color: 'rgba(0, 0, 0, 0.2)',
+                    whiteSpace: 'nowrap',
+                    zIndex: 2,
+                    pointerEvents: 'none'
+                  }}
+                  onContextMenu={handleContextMenu}
+                >
+                  {userData && JSON.parse(userData)}
+                </div>
               </Box>
 
               {/* Next Courses List */}
               <Paper elevation={3}>
                 <Box p={3}>
                   <Typography variant='h5' gutterBottom>
-                    <ListIcon size={24} strokeWidth={1.5} style={{ verticalAlign: 'middle' }} />Courses
+                    <ListIcon size={24} strokeWidth={1.5} style={{ verticalAlign: 'middle' }} />
+                    Courses
                   </Typography>
                   <Divider />
                   <List>
@@ -96,6 +128,7 @@ useEffect(() => {
                             backgroundColor: video?.id === parseInt(id) ? '#f5f5f5' : 'transparent', // Highlight if active
                             cursor: 'pointer'
                           }}
+                          onContextMenu={handleContextMenu}
                         >
                           <ListItemAvatar>
                             <Avatar>

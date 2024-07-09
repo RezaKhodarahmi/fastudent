@@ -15,7 +15,6 @@ const ZoomMeeting = ({ meetingNumber, userName, userEmail, passWord, signature, 
         leaveUrl: 'http://localhost:3000',
         isSupportAV: true,
         success: success => {
-          console.log('Zoom Init Success ', success)
           ZoomMtg.join({
             meetingNumber,
             userName,
@@ -24,15 +23,14 @@ const ZoomMeeting = ({ meetingNumber, userName, userEmail, passWord, signature, 
             userEmail,
             passWord,
             success: success => {
-              console.log('Join Meeting Success', success)
             },
             error: error => {
-              console.log('Join Meeting Error', error) // Log detailed error
+              console.log('Join Meeting Error') // Log detailed error
             }
           })
         },
         error: error => {
-          console.log('Zoom Init Error', error) // Log detailed error
+          console.log('Zoom Init Error') // Log detailed error
         }
       })
     }
