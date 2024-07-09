@@ -14,7 +14,7 @@ function Index() {
   useEffect(() => {
     const lng = window.localStorage.getItem('i18nextLng')
     if (lng == 'en') {
-      router.push('/privacy-policy')
+      router.push('/terms_of_service')
     }
   }, [])
 
@@ -22,7 +22,7 @@ function Index() {
     <>
       <div className='container py-5'>
         <div className='row'>
-          <h1>سیاست حفظ حریم خصوصی</h1>
+          <h1>شرایط استفاده</h1>
           <p>
             <strong>تاریخ اجرا: 7 ژوئن 2024</strong>
           </p>

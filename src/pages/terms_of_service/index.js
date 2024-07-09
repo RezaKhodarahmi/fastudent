@@ -14,7 +14,7 @@ function Index() {
   useEffect(() => {
     const lng = window.localStorage.getItem('i18nextLng')
     if (lng == 'fa') {
-      router.push('/privacy-policy/fa')
+      router.push('/terms_of_service/fa')
     }
   }, [])
 
