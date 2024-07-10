@@ -219,7 +219,7 @@ const Index = () => {
                 <div className='col-7'>
                   <h4>Khaled Hamidi</h4>
                   <small className='h6 text-muted'></small>
-                  <p>Content Specialist</p>
+                  <p>Coordinator</p>
                 </div>
               </div>
             </div>
@@ -256,13 +256,12 @@ const Index = () => {
             <div className='col-12 col-md-4 p-0'>
               <div className='row p-0'>
                 <div className='col-5'>
-                  <img src={appConfig.appUrl + '/img/team/hesam_bagheri.jpg'} className='img-fluid' />
+                  <img src={appConfig.appUrl + '/img/team/elnaz_yousefi.jpg'} className='img-fluid' />
                 </div>
                 <div className='col-7'>
-                  <h4>Hesam Bagheri</h4>
-                  <small className='h6 text-muted'></small>
-                  <small className='h6 text-muted'>BSc in Law</small>
-                  <p>Content</p>
+                  <h4>Elnaz Yousefi</h4>
+                  <small className='h6 text-muted'>MSc, M.Eng, PMP</small>
+                  <span>Project Coordinator</span>
                 </div>
               </div>
             </div>
@@ -271,12 +270,13 @@ const Index = () => {
             <div className='col-12 col-md-4 p-0'>
               <div className='row p-0'>
                 <div className='col-5'>
-                  <img src={appConfig.appUrl + '/img/team/elnaz_yousefi.jpg'} className='img-fluid' />
+                  <img src={appConfig.appUrl + '/img/team/hesam_bagheri.jpg'} className='img-fluid' />
                 </div>
                 <div className='col-7'>
-                  <h4>Elnaz Yousefi</h4>
-                  <small className='h6 text-muted'>MSc, M.Eng, PMP</small>
-                  <span>Project Coordinator</span>
+                  <h4>Hesam Bagheri</h4>
+                  <small className='h6 text-muted'></small>
+                  <small className='h6 text-muted'>BSc in Law</small>
+                  <p>Content</p>
                 </div>
               </div>
             </div>
