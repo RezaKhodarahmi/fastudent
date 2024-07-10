@@ -228,15 +228,29 @@ const Index = () => {
             <div className='col-12 col-md-4 p-0'>
               <div className='row p-0'>
                 <div className='col-5'>
-                  <img src={appConfig.appUrl + '/img/team/nima_farhadi.jpg'} className='img-fluid' />
+                  <img src={appConfig.appUrl + '/img/team/bahareh_hashemi.jpg'} className='img-fluid' />
                 </div>
                 <div className='col-7'>
-                  <h4>Nima Farhadi</h4>
-                  <small className='h6 text-muted'></small>
-                  <p>Graphic Designer</p>
+                  <h4>Bahareh Hashemi</h4>
+                  <small className='h6 text-muted'>BSc in Multimedia</small>
+                  <span>Video Editor</span>
                 </div>
               </div>
             </div>
+
+            {/* Item */}
+            <div className='col-12 col-md-4 p-0'>
+              <div className='row p-0'>
+                <div className='col-5'>
+                  <img src={appConfig.appUrl + '/img/team/roya_karami.jpg'} className='img-fluid' />
+                </div>
+                <div className='col-7'>
+                  <h4>Roya Karami</h4>
+                  <small className='h6 text-muted'>MSc in Industrial Engineering</small>
+                  <p>Sales Manager</p>
+                </div>
+              </div>
+            </div> 
 
             {/* Item */}
             <div className='col-12 col-md-4 p-0'>
@@ -257,34 +271,6 @@ const Index = () => {
             <div className='col-12 col-md-4 p-0'>
               <div className='row p-0'>
                 <div className='col-5'>
-                  <img src={appConfig.appUrl + '/img/team/roya_karami.jpg'} className='img-fluid' />
-                </div>
-                <div className='col-7'>
-                  <h4>Roya Karami</h4>
-                  <small className='h6 text-muted'>MSc in Industrial Engineering</small>
-                  <p>Sales Manager</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Item */}
-            <div className='col-12 col-md-4 p-0'>
-              <div className='row p-0'>
-                <div className='col-5'>
-                  <img src={appConfig.appUrl + '/img/team/bahareh_hashemi.jpg'} className='img-fluid' />
-                </div>
-                <div className='col-7'>
-                  <h4>Bahareh Hashemi</h4>
-                  <small className='h6 text-muted'>BSc in Multimedia</small>
-                  <span>Video Editor</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Item */}
-            <div className='col-12 col-md-4 p-0'>
-              <div className='row p-0'>
-                <div className='col-5'>
                   <img src={appConfig.appUrl + '/img/team/elnaz_yousefi.jpg'} className='img-fluid' />
                 </div>
                 <div className='col-7'>
@@ -296,6 +282,9 @@ const Index = () => {
             </div>
 
             {/* Item */}
+            <div className='col-12 col-md-4 p-0'></div>
+
+            {/* Item */}
             <div className='col-12 col-md-4 p-0'>
               <div className='row p-0'>
                 <div className='col-5'>
@@ -305,20 +294,6 @@ const Index = () => {
                   <h4>Kiarash Kiarasi</h4>
                   <small className='h6 text-muted'>BSc, PMP</small>
                   <span>Project Coordinator</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Item */}
-            <div className='col-12 col-md-4 p-0'>
-              <div className='row p-0'>
-                <div className='col-5'>
-                  <img src={appConfig.appUrl + '/img/team/hanieh_babadi.jpg'} className='img-fluid' />
-                </div>
-                <div className='col-7'>
-                  <h4>Hanieh Bababdi</h4>
-                  <small className='h6 text-muted'>BSc in Video Editing</small>
-                  <span>Video Editor</span>
                 </div>
               </div>
             </div>
