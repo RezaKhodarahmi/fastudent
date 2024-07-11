@@ -49,8 +49,6 @@ export const getProfileInfo = () => async dispatch => {
     dispatch(getDataSuccess(response.data))
   } catch (error) {
     dispatch(getDataFailure(error.message))
-
-    toast.error('Error! message:' + error.response.data.message)
   }
 }
 
@@ -71,7 +69,6 @@ export const getCourses = userEmail => async dispatch => {
     dispatch(getDataSuccess(response.data))
   } catch (error) {
     dispatch(getDataFailure(error.message))
-    toast.error('Error! message:' + error.response.data.message)
   }
 }
 
@@ -92,8 +89,6 @@ export const autoRenewal = customerID => async dispatch => {
     dispatch(getDataSuccess(response.data))
   } catch (error) {
     dispatch(getDataFailure(error.message))
-
-    toast.error('Error! message:' + error?.response?.data?.message || 'Error!')
   }
 }
 
