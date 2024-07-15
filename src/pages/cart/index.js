@@ -62,7 +62,9 @@ const Index = () => {
     checkbox1: false,
     checkbox2: false,
     checkbox3: false,
-    checkbox4: false
+    checkbox4: false,
+    checkbox5: false,
+    checkbox6: false
   })
 
   const handleChangeCheckBox = event => {
@@ -812,6 +814,15 @@ const Index = () => {
                 <FormControlLabel
                   control={<Checkbox name='checkbox4' checked={checkboxes.checkbox4} onChange={handleChangeCheckBox} />}
                   label={t('agree-terms-fourth')}
+                />
+                <FormControlLabel
+                  control={<Checkbox name='checkbox5' checked={checkboxes.checkbox5} onChange={handleChangeCheckBox} />}
+                  label={t('agree-terms-fifth')}
+                />
+                <br />
+                <FormControlLabel
+                  control={<Checkbox name='checkbox6' checked={checkboxes.checkbox6} onChange={handleChangeCheckBox} />}
+                  label={t('agree-terms-sixth')}
                 />
               </Box>
 

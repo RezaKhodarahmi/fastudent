@@ -222,34 +222,47 @@ const App = props => {
           <script async src='https://www.googletagmanager.com/gtag/js?id=GT-KT42WV2'></script>
           <script>
             {`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'GT-KT42WV2');
-      `}
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GT-KT42WV2');
+    `}
           </script>
           <script>
             {`
-        !function(t,e,n){
-          t.yektanetAnalyticsObject=n;
-          t[n]=t[n]||function(){
-            t[n].q.push(arguments)
-          };
-          t[n].q=[];
-          var a=new Date,
-          r=a.getFullYear().toString()+"0"+a.getMonth()+"0"+a.getDate()+"0"+a.getHours(),
-          c=e.getElementsByTagName("script")[0],
-          s=e.createElement("script");
-          s.id="ua-script-bIxQN9r7";
-          s.dataset.analyticsobject=n;
-          s.async=1;
-          s.type="text/javascript";
-          s.src="https://cdn.yektanet.com/rg_woebegone/scripts_v3/bIxQN9r7/rg.complete.js?v="+r;
-          c.parentNode.insertBefore(s,c)
-        }(window,document,"yektanet");
-      `}
+      !function(t,e,n){
+        t.yektanetAnalyticsObject=n;
+        t[n]=t[n]||function(){
+          t[n].q.push(arguments)
+        };
+        t[n].q=[];
+        var a=new Date,
+        r=a.getFullYear().toString()+"0"+a.getMonth()+"0"+a.getDate()+"0"+a.getHours(),
+        c=e.getElementsByTagName("script")[0],
+        s=e.createElement("script");
+        s.id="ua-script-bIxQN9r7";
+        s.dataset.analyticsobject=n;
+        s.async=1;
+        s.type="text/javascript";
+        s.src="https://cdn.yektanet.com/rg_woebegone/scripts_v3/bIxQN9r7/rg.complete.js?v="+r;
+        c.parentNode.insertBefore(s,c)
+      }(window,document,"yektanet");
+    `}
+          </script>
+          <script>
+            {`
+      window.$crisp=[];window.CRISP_WEBSITE_ID="55e17e3f-cbe6-4195-b704-ab9181f96363";
+      (function(){
+        d=document;
+        s=d.createElement("script");
+        s.src="https://client.crisp.chat/l.js";
+        s.async=1;
+        d.getElementsByTagName("head")[0].appendChild(s);
+      })();
+    `}
           </script>
         </Head>
+
         <Script
           src='https://widgets.leadconnectorhq.com/loader.js'
           data-resources-url='https://widgets.leadconnectorhq.com/chat-widget/loader.js'
