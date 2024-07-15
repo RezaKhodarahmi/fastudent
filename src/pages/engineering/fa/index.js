@@ -548,7 +548,7 @@ const Index = () => {
             <h3>سوالات متداول</h3>
 
             <div className='accordion p-0' id='FAQEngineering'>
-              {/* Question  */}
+              {/* Question */}
               <div className='accordion-item'>
                 <h2 className='accordion-header'>
                   <button
