@@ -569,6 +569,7 @@ const Index = () => {
                 </div>
               </div>
 
+              {/* Question */}
               <div className='accordion-item'>
                 <h2 className='accordion-header'>
                   <button
