@@ -1,4 +1,6 @@
 {
+  "mega_menu-1-title": "Explore Courses",
+  
   "certificate": "Certificate",
   "Engineer":"Engineer",
   "fanavaran-courses":"Fanavaran Courses",
@@ -76,8 +78,8 @@
   "webinar-home-enroll": "Enroll Now",
 
   "menu-language": "فارسی",
-  "menu-login": "Login",
-  "menu-register": "Register",
+  "menu-login": "Log In",
+  "menu-register": "Create Account",
   "menu-courses": "Explore Courses",
   "menu-learning": "Learning",
   "menu-certificate": "Certificates",

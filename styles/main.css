@@ -73,21 +73,13 @@
 }
 
 body {
-  font-family: "Poppins", YekanBakh;
+  font-family: "Fira Sans", YekanBakh;
   font-weight: 400;
 }
 
 a {
   color: #FF772C;
   text-decoration: none !important;
-}
-
-* {
-  transition: 0.3s all ease-in-out;
-}
-
-body {
-  font-family: "Helvetica Neue", YekanBakh;
 }
 
 a {
@@ -114,6 +106,16 @@ a {
   background: #FF772C;
 }
 
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px !important;
+  }
+}
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1680px !important;
+  }
+}
 .FNV-Btn {
   padding: 5px 15px;
   font-size: 14px;
@@ -298,8 +300,6 @@ body[dir=rtl] nav .container-fluid:first-child .OffCanvasMenu2 {
 }
 body[dir=rtl] nav .container-fluid:first-child .navbar-brand {
   width: 200px;
-  padding-left: 0.5rem;
-  border-left: 1px solid #d9d9d9;
 }
 body[dir=rtl] nav .container-fluid:first-child .FNV-User .FNV-Btn {
   background-color: unset;
@@ -467,13 +467,19 @@ body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid
 body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row {
   padding-top: 1rem;
 }
-body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row {
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row,
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row,
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row {
   padding: 0;
 }
-body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction {
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction,
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction,
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction {
   height: 100%;
 }
-body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a {
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a,
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a,
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -481,12 +487,16 @@ body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid
   align-items: center;
   background-color: #F0F3FB;
 }
-body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a svg, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a svg, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a svg {
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a svg,
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a svg,
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a svg {
   width: 50px;
   height: 50px;
   color: #FF772C;
 }
-body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a span, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a span, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a span {
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a span,
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a span,
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a span {
   margin: 0;
   padding: 0;
   border-width: 0;
@@ -494,7 +504,9 @@ body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid
   text-align: right;
   color: #223885;
 }
-body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 span, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 span, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col span {
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 span,
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 span,
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col span {
   display: block;
   font-size: 16px;
   font-weight: 700;
@@ -503,22 +515,30 @@ body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid
   color: #212121;
   margin-bottom: 0.8rem;
 }
-body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 span svg, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 span svg, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col span svg {
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 span svg,
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 span svg,
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col span svg {
   width: 12px;
   height: 12px;
   margin-left: 0.5rem;
   color: #FF772C;
 }
-body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li {
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li,
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li,
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li {
   margin-bottom: 0.5rem;
 }
-body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li a, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li a, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li a {
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li a,
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li a,
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li a {
   font-size: 12px;
   font-weight: 500;
   color: #575757;
   transition: 0.1s all ease-in-out;
 }
-body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li a:hover, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li a:hover, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li a:hover {
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li a:hover,
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li a:hover,
+body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li a:hover {
   color: #FF772C;
   border-radius: 5px;
 }
@@ -536,251 +556,7 @@ body[dir=rtl] nav.FNV-MegaMenu {
   background-color: #F0F3FB;
 }
 
-body[dir=ltr] nav .container-fluid {
-  padding: 0 1rem;
-}
-body[dir=ltr] nav .container-fluid:first-child {
-  background-color: #ffffff;
-  padding: 0.75rem 1rem;
-}
-body[dir=ltr] nav .container-fluid:first-child .OffCanvasMenu {
-  padding-right: 0.75rem;
-  padding-left: 0.5rem;
-}
-body[dir=ltr] nav .container-fluid:first-child .OffCanvasMenu svg {
-  color: #223885;
-}
-body[dir=ltr] nav .container-fluid:first-child .OffCanvasMenu2 {
-  margin-right: 1rem;
-  color: #223885;
-}
-body[dir=ltr] nav .container-fluid:first-child .navbar-brand {
-  width: 200px;
-  padding-left: 0.5rem;
-  border-left: 1px solid #d9d9d9;
-}
-body[dir=ltr] nav .container-fluid:first-child .FNV-User .FNV-Btn {
-  background-color: unset;
-  display: flex;
-  align-items: center;
-}
-body[dir=ltr] nav .container-fluid:first-child .FNV-User .FNV-Btn .FNV-UserAvatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #223885;
-  border: 2px solid #223885;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  margin: 0 0.5rem;
-}
-body[dir=ltr] nav .container-fluid:first-child .FNV-User .FNV-Btn .FNV-UserAvatar svg {
-  stroke: #ffffff;
-}
-body[dir=ltr] nav .container-fluid:first-child .FNV-User .FNV-Btn img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 2px solid #223885;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin: 0 0.5rem;
-}
-body[dir=ltr] nav .container-fluid:first-child .FNV-User .FNV-Btn::after {
-  margin-left: 0.5rem;
-  margin-right: unset;
-}
-body[dir=ltr] nav .container-fluid:first-child .FNV-User .dropdown-menu {
-  border-width: 0px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1254901961);
-}
-body[dir=ltr] nav .container-fluid:first-child .FNV-User .dropdown-menu li {
-  padding-bottom: 0.3rem;
-  text-align: left;
-}
-body[dir=ltr] nav .container-fluid:first-child .FNV-User .dropdown-menu li a {
-  font-size: 14px;
-}
-body[dir=ltr] nav .container-fluid:first-child .FNV-User .dropdown-menu li a svg {
-  color: #223885;
-  width: 20px;
-  height: 20px;
-  margin-right: 0.5rem;
-}
-body[dir=ltr] nav .container-fluid:nth-child(2) {
-  background-color: #f5f5f5;
-  border-bottom: 5px solid #223885;
-  border-top: 1px solid #d9d9d9;
-}
-body[dir=ltr] nav .container-fluid:nth-child(2) .collapse {
-  display: flex;
-  justify-content: space-between;
-}
-body[dir=ltr] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item.FNV-Appointment {
-  background: linear-gradient(-45deg, #003BBF, #FF772C, #003BBF);
-  background-size: 400% 400%;
-  animation: gradient 3s ease-in-out infinite;
-}
-body[dir=ltr] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item.FNV-Appointment a {
-  color: #ffffff;
-}
-body[dir=ltr] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item .dropdown-menu.show {
-  right: unset;
-  left: 0;
-  padding: 0;
-}
-body[dir=ltr] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item .dropdown-menu.show li {
-  text-align: start;
-}
-body[dir=ltr] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item .dropdown-menu.show li a {
-  color: #212121;
-}
-body[dir=ltr] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item .dropdown-menu.show li:hover {
-  background-color: #223885 !important;
-}
-body[dir=ltr] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item .dropdown-menu.show li:hover a {
-  background-color: unset;
-  color: #ffffff;
-}
-body[dir=ltr] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item .nav-link {
-  font-size: 16px;
-  font-weight: 600;
-}
-body[dir=ltr] nav .container-fluid .FNV_QuickAccess a {
-  margin-left: 0.5rem;
-  font-size: 14px;
-  line-height: 22px;
-}
-body[dir=ltr] nav .container-fluid .FNV_QuickAccess a svg {
-  width: 20px;
-  height: 20px;
-}
-body[dir=ltr] nav .container-fluid .navbar-nav .nav-item .nav-link {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 40px;
-  padding: 0.5rem 1rem;
-}
-body[dir=ltr] nav .container-fluid .navbar-nav .nav-item:hover .nav-link {
-  background-color: #223885;
-  color: #ffffff;
-}
-body[dir=ltr] nav .container-fluid .FNV-MegaMenu {
-  position: relative;
-}
-body[dir=ltr] nav .container-fluid .FNV-MegaMenu.FNV-Courses .dropdown-menu {
-  width: 1300px;
-}
-body[dir=ltr] nav .container-fluid .FNV-MegaMenu.FNV-VIPMemberShip .dropdown-menu {
-  width: 600px;
-}
-body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu {
-  display: none;
-  margin-top: 0px;
-  padding: 1.5rem;
-  border-width: 0;
-  border-top-right-radius: 0px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1411764706);
-  overflow: hidden;
-}
-body[dir=ltr] nav .container-fluid .FNV-MegaMenu:hover .dropdown-menu {
-  display: block;
-  margin-top: 0px;
-  padding: 1.5rem;
-  border-width: 0;
-  overflow: hidden;
-}
-body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid {
-  padding-right: 0px;
-  padding-bottom: 0px;
-}
-body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid a {
-  font-size: 24px;
-  color: #223885;
-  font-weight: 600;
-}
-body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid a span {
-  border-left: 1px solid #ababab;
-  padding-left: 1rem;
-  margin-left: 1rem;
-  font-size: 14px;
-  color: #575757;
-  font-weight: 400;
-}
-body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row {
-  padding-top: 1rem;
-}
-body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row {
-  padding: 0;
-}
-body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction {
-  height: 100%;
-}
-body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #F0F3FB;
-}
-body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a svg, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a svg, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a svg {
-  width: 50px;
-  height: 50px;
-  color: #FF772C;
-}
-body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a span, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a span, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a span {
-  font-size: 18px;
-  border-width: 0;
-  margin: 0;
-  padding: 0;
-  color: #223885;
-}
-body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 span, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 span, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col span {
-  font-size: 16px;
-  line-height: 32px;
-  font-weight: 700;
-  color: #212121;
-  margin-bottom: 0.8rem;
-  display: block;
-}
-body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 span svg, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 span svg, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col span svg {
-  width: 12px;
-  height: 12px;
-  margin-right: 0.5rem;
-  color: #FF772C;
-}
-body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li a, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li a, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li a {
-  font-size: 14px;
-  font-weight: 500;
-  color: #575757;
-  transition: 0.1s all ease-in-out;
-}
-body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li a:hover, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li a:hover, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li a:hover {
-  color: #FF772C;
-  border-radius: 5px;
-}
-body[dir=ltr] nav .container-fluid .FNV-MegaMenu-Search {
-  position: static;
-}
-body[dir=ltr] nav .container-fluid .FNV-MegaMenu-Search:hover .dropdown-menu {
-  display: block;
-  margin-top: 0px;
-  width: 800px;
-  border-width: 0;
-  right: 0;
-}
-body[dir=ltr] nav.FNV-MegaMenu {
-  background-color: #F0F3FB;
-}
-
-/* For mobile phones: */
-@media only screen and (max-width: 768px) {
+@media (min-width: 575.98px) {
   body[dir=rtl] nav .container-fluid {
     padding: 0 1rem;
   }
@@ -980,13 +756,19 @@ body[dir=ltr] nav.FNV-MegaMenu {
   body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row {
     padding-top: 1rem;
   }
-  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row {
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row {
     padding: 0;
   }
-  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction {
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction {
     height: 100%;
   }
-  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a {
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -994,19 +776,25 @@ body[dir=ltr] nav.FNV-MegaMenu {
     align-items: center;
     background-color: #F0F3FB;
   }
-  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a svg, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a svg, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a svg {
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a svg,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a svg,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a svg {
     width: 50px;
     height: 50px;
     color: #FF772C;
   }
-  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a span, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a span, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a span {
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a span,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a span,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a span {
     font-size: 18px;
     border-width: 0;
     margin: 0;
     padding: 0;
     color: #223885;
   }
-  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 span, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 span, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col span {
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 span,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 span,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col span {
     font-size: 16px;
     line-height: 32px;
     font-weight: 700;
@@ -1014,19 +802,25 @@ body[dir=ltr] nav.FNV-MegaMenu {
     margin-bottom: 0.8rem;
     display: block;
   }
-  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 span svg, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 span svg, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col span svg {
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 span svg,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 span svg,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col span svg {
     color: #FF772C;
     width: 12px;
     height: 12px;
   }
-  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li a, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li a, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li a {
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li a,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li a,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li a {
     display: block;
     font-size: 14px;
     font-weight: 300;
     color: #575757;
     transition: 0.1s all ease-in-out;
   }
-  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li a:hover, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li a:hover, body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li a:hover {
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li a:hover,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li a:hover,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li a:hover {
     color: #FF772C;
     border-radius: 5px;
   }
@@ -1237,13 +1031,19 @@ body[dir=ltr] nav.FNV-MegaMenu {
   body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row {
     padding-top: 1rem;
   }
-  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row {
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row {
     padding: 0;
   }
-  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction {
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction {
     height: 100%;
   }
-  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a {
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -1251,19 +1051,25 @@ body[dir=ltr] nav.FNV-MegaMenu {
     align-items: center;
     background-color: #F0F3FB;
   }
-  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a svg, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a svg, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a svg {
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a svg,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a svg,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a svg {
     width: 50px;
     height: 50px;
     color: #FF772C;
   }
-  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a span, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a span, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a span {
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a span,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a span,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a span {
     font-size: 18px;
     border-width: 0;
     margin: 0;
     padding: 0;
     color: #223885;
   }
-  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 span, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 span, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col span {
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 span,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 span,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col span {
     font-size: 16px;
     line-height: 32px;
     font-weight: 700;
@@ -1271,19 +1077,25 @@ body[dir=ltr] nav.FNV-MegaMenu {
     margin-bottom: 0.8rem;
     display: block;
   }
-  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 span svg, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 span svg, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col span svg {
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 span svg,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 span svg,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col span svg {
     color: #FF772C;
     width: 12px;
     height: 12px;
   }
-  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li a, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li a, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li a {
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li a,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li a,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li a {
     display: block;
     font-size: 14px;
     font-weight: 300;
     color: #575757;
     transition: 0.1s all ease-in-out;
   }
-  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li a:hover, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li a:hover, body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li a:hover {
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li a:hover,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li a:hover,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li a:hover {
     color: #FF772C;
     border-radius: 5px;
   }
@@ -1301,129 +1113,1011 @@ body[dir=ltr] nav.FNV-MegaMenu {
     background-color: #F0F3FB;
   }
 }
-.FNV-TopBar {
-  background-color: #223885;
-  padding: 1rem 2rem;
-  direction: ltr;
+@media (min-width: 767.98px) {
+  body[dir=rtl] nav .container-fluid {
+    padding: 0 1rem;
+  }
+  body[dir=rtl] nav .container-fluid:first-child {
+    background-color: #ffffff;
+    padding: 0.75rem 1rem;
+  }
+  body[dir=rtl] nav .container-fluid:first-child .OffCanvasMenu {
+    padding-right: 0.75rem;
+    padding-left: 0.5rem;
+  }
+  body[dir=rtl] nav .container-fluid:first-child .OffCanvasMenu svg {
+    color: #223885;
+  }
+  body[dir=rtl] nav .container-fluid:first-child .OffCanvasMenu2 {
+    margin-right: 1rem;
+    color: #223885;
+  }
+  body[dir=rtl] nav .container-fluid:first-child .navbar-brand {
+    width: 200px;
+    padding-left: 0.5rem;
+    border-left: 1px solid #d9d9d9;
+  }
+  body[dir=rtl] nav .container-fluid:first-child .navbar-collapse {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between !important;
+    margin-top: 1rem;
+  }
+  body[dir=rtl] nav .container-fluid:first-child .navbar-collapse .FNV-User .FNV-Btn {
+    background-color: unset;
+    display: flex;
+    align-items: center;
+  }
+  body[dir=rtl] nav .container-fluid:first-child .navbar-collapse .FNV-User .FNV-Btn .FNV-UserAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #223885;
+    border: 2px solid #223885;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+  }
+  body[dir=rtl] nav .container-fluid:first-child .navbar-collapse .FNV-User .FNV-Btn .FNV-UserAvatar svg {
+    stroke: #ffffff;
+  }
+  body[dir=rtl] nav .container-fluid:first-child .navbar-collapse .FNV-User .FNV-Btn img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #223885;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 0 0.5rem;
+  }
+  body[dir=rtl] nav .container-fluid:first-child .navbar-collapse .FNV-User .FNV-Btn span {
+    display: none;
+  }
+  body[dir=rtl] nav .container-fluid:first-child .navbar-collapse .FNV-User .FNV-Btn::after {
+    margin-right: 0.2rem;
+    margin-left: unset;
+  }
+  body[dir=rtl] nav .container-fluid:first-child .navbar-collapse .FNV-User .dropdown-menu {
+    border-width: 0px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1254901961);
+  }
+  body[dir=rtl] nav .container-fluid:first-child .navbar-collapse .FNV-User .dropdown-menu li {
+    padding-bottom: 0.3rem;
+    text-align: right;
+  }
+  body[dir=rtl] nav .container-fluid:first-child .navbar-collapse .FNV-User .dropdown-menu li a {
+    font-size: 14px;
+  }
+  body[dir=rtl] nav .container-fluid:first-child .navbar-collapse .FNV-User .dropdown-menu li a svg {
+    color: #223885;
+    width: 20px;
+    height: 20px;
+    margin-left: 0.5rem;
+  }
+  body[dir=rtl] nav .container-fluid:nth-child(2) {
+    background-color: #f5f5f5;
+    border-bottom: 5px solid #223885;
+    border-top: 1px solid #d9d9d9;
+  }
+  body[dir=rtl] nav .container-fluid:nth-child(2) .collapse {
+    display: none;
+    justify-content: space-between;
+  }
+  body[dir=rtl] nav .container-fluid:nth-child(2) .collapse.show {
+    display: flex;
+    flex-direction: column;
+  }
+  body[dir=rtl] nav .container-fluid:nth-child(2) .collapse .navbar-nav {
+    padding-right: 0;
+    width: 100%;
+  }
+  body[dir=rtl] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item.FNV-Appointment {
+    background: linear-gradient(-45deg, #003BBF, #FF772C, #003BBF);
+    background-size: 400% 400%;
+    animation: gradient 3s ease-in-out infinite;
+  }
+  body[dir=rtl] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item.FNV-Appointment a {
+    color: #ffffff;
+  }
+  body[dir=rtl] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item .dropdown-menu.show {
+    right: 0;
+    left: unset;
+    padding: 0;
+    width: 100%;
+  }
+  body[dir=rtl] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item .dropdown-menu.show li {
+    text-align: start;
+  }
+  body[dir=rtl] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item .dropdown-menu.show li a {
+    color: #212121;
+  }
+  body[dir=rtl] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item .dropdown-menu.show li:hover {
+    background-color: #223885 !important;
+  }
+  body[dir=rtl] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item .dropdown-menu.show li:hover a {
+    background-color: unset;
+    color: #ffffff;
+  }
+  body[dir=rtl] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  body[dir=rtl] nav .container-fluid:nth-child(2) .collapse .d-flex {
+    display: none !important;
+    width: 100%;
+  }
+  body[dir=rtl] nav .container-fluid .FNV_QuickAccess a {
+    margin-left: 0.5rem;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  body[dir=rtl] nav .container-fluid .FNV_QuickAccess a svg {
+    width: 20px;
+    height: 20px;
+  }
+  body[dir=rtl] nav .container-fluid .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    padding: 0.5rem 1rem;
+  }
+  body[dir=rtl] nav .container-fluid .navbar-nav .nav-item:hover .nav-link {
+    background-color: #223885;
+    color: #ffffff;
+  }
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu {
+    position: static;
+  }
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu.FNV-Courses .dropdown-menu {
+    width: 1200px;
+  }
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu.FNV-VIPMemberShip .container-fluid {
+    padding: 0;
+  }
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu.FNV-VIPMemberShip .container-fluid .row .col-md-6 {
+    padding: 0;
+  }
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu.FNV-VIPMemberShip .container-fluid .row .col-md-6:first-child {
+    padding-right: 2rem;
+  }
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu:hover .dropdown-menu {
+    display: block;
+    margin-top: 0px;
+    width: 80%;
+    padding: 1.5rem;
+    border-width: 0;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1411764706);
+    overflow: hidden;
+  }
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid a {
+    font-size: 24px;
+    color: #223885;
+    font-weight: 600;
+    display: none;
+  }
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid a span {
+    border-left: 1px solid #ababab;
+    padding-left: 1rem;
+    margin-left: 1rem;
+    font-size: 14px;
+    color: #575757;
+    font-weight: 400;
+    display: none;
+  }
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row {
+    padding-top: 1rem;
+  }
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row {
+    padding: 0;
+  }
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction {
+    height: 100%;
+  }
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F0F3FB;
+  }
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a svg,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a svg,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a svg {
+    width: 50px;
+    height: 50px;
+    color: #FF772C;
+  }
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a span,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a span,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a span {
+    font-size: 18px;
+    border-width: 0;
+    margin: 0;
+    padding: 0;
+    color: #223885;
+  }
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 span,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 span,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col span {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #212121;
+    margin-bottom: 0.8rem;
+    display: block;
+  }
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 span svg,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 span svg,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col span svg {
+    color: #FF772C;
+    width: 12px;
+    height: 12px;
+  }
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li a,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li a,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li a {
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    color: #575757;
+    transition: 0.1s all ease-in-out;
+  }
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li a:hover,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li a:hover,
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li a:hover {
+    color: #FF772C;
+    border-radius: 5px;
+  }
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu-Search {
+    position: static;
+  }
+  body[dir=rtl] nav .container-fluid .FNV-MegaMenu-Search:hover .dropdown-menu {
+    display: block;
+    margin-top: 0px;
+    width: 800px;
+    border-width: 0;
+    right: 0;
+  }
+  body[dir=rtl] nav.FNV-MegaMenu {
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] nav .container-fluid {
+    padding: 0 1rem;
+  }
+  body[dir=ltr] nav .container-fluid:first-child {
+    background-color: #ffffff;
+    padding: 0.75rem 1rem;
+  }
+  body[dir=ltr] nav .container-fluid:first-child .OffCanvasMenu {
+    padding-right: 0.75rem;
+    padding-left: 0.5rem;
+  }
+  body[dir=ltr] nav .container-fluid:first-child .OffCanvasMenu svg {
+    color: #223885;
+  }
+  body[dir=ltr] nav .container-fluid:first-child .OffCanvasMenu2 {
+    margin-right: 1rem;
+    color: #223885;
+  }
+  body[dir=ltr] nav .container-fluid:first-child .navbar-brand {
+    width: 200px;
+    padding-left: 0.5rem;
+    border-left: 1px solid #d9d9d9;
+  }
+  body[dir=ltr] nav .container-fluid:first-child .navbar-collapse {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between !important;
+    margin-top: 1rem;
+  }
+  body[dir=ltr] nav .container-fluid:first-child .navbar-collapse .FNV-User .FNV-Btn {
+    background-color: unset;
+    display: flex;
+    align-items: center;
+  }
+  body[dir=ltr] nav .container-fluid:first-child .navbar-collapse .FNV-User .FNV-Btn .FNV-UserAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #223885;
+    border: 2px solid #223885;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+  }
+  body[dir=ltr] nav .container-fluid:first-child .navbar-collapse .FNV-User .FNV-Btn .FNV-UserAvatar svg {
+    stroke: #ffffff;
+  }
+  body[dir=ltr] nav .container-fluid:first-child .navbar-collapse .FNV-User .FNV-Btn img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #223885;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 0 0.5rem;
+  }
+  body[dir=ltr] nav .container-fluid:first-child .navbar-collapse .FNV-User .FNV-Btn span {
+    display: none;
+  }
+  body[dir=ltr] nav .container-fluid:first-child .navbar-collapse .FNV-User .FNV-Btn::after {
+    margin-left: 0.5rem;
+    margin-right: unset;
+  }
+  body[dir=ltr] nav .container-fluid:first-child .navbar-collapse .FNV-User .dropdown-menu {
+    border-width: 0px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1254901961);
+  }
+  body[dir=ltr] nav .container-fluid:first-child .navbar-collapse .FNV-User .dropdown-menu li {
+    padding-bottom: 0.3rem;
+    text-align: left;
+  }
+  body[dir=ltr] nav .container-fluid:first-child .navbar-collapse .FNV-User .dropdown-menu li a {
+    font-size: 14px;
+  }
+  body[dir=ltr] nav .container-fluid:first-child .navbar-collapse .FNV-User .dropdown-menu li a svg {
+    color: #223885;
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+  }
+  body[dir=ltr] nav .container-fluid:first-child .navbar-collapse .d-flex {
+    display: none !important;
+  }
+  body[dir=ltr] nav .container-fluid:nth-child(2) {
+    background-color: #f5f5f5;
+    border-bottom: 5px solid #223885;
+    border-top: 1px solid #d9d9d9;
+  }
+  body[dir=ltr] nav .container-fluid:nth-child(2) .collapse {
+    display: none;
+    justify-content: space-between;
+  }
+  body[dir=ltr] nav .container-fluid:nth-child(2) .collapse.show {
+    display: flex;
+    flex-direction: column;
+  }
+  body[dir=ltr] nav .container-fluid:nth-child(2) .collapse .navbar-nav {
+    width: 100%;
+  }
+  body[dir=ltr] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item.FNV-Appointment {
+    background-color: #223885;
+  }
+  body[dir=ltr] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item.FNV-Appointment a {
+    color: #ffffff;
+  }
+  body[dir=ltr] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item .dropdown-menu.show {
+    width: 100%;
+    right: unset;
+    left: 0;
+    padding: 0;
+  }
+  body[dir=ltr] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item .dropdown-menu.show li {
+    text-align: start;
+  }
+  body[dir=ltr] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item .dropdown-menu.show li a {
+    color: #212121;
+  }
+  body[dir=ltr] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item .dropdown-menu.show li:hover {
+    background-color: #223885 !important;
+  }
+  body[dir=ltr] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item .dropdown-menu.show li:hover a {
+    background-color: unset;
+    color: #ffffff;
+  }
+  body[dir=ltr] nav .container-fluid:nth-child(2) .collapse .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  body[dir=ltr] nav .container-fluid:nth-child(2) .collapse .d-flex {
+    display: none !important;
+  }
+  body[dir=ltr] nav .container-fluid .FNV_QuickAccess a {
+    margin-left: 0.5rem;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  body[dir=ltr] nav .container-fluid .FNV_QuickAccess a svg {
+    width: 20px;
+    height: 20px;
+  }
+  body[dir=ltr] nav .container-fluid .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    padding: 0.5rem 1rem;
+  }
+  body[dir=ltr] nav .container-fluid .navbar-nav .nav-item:hover .nav-link {
+    background-color: #223885;
+    color: #ffffff;
+  }
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu {
+    position: static;
+  }
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu.FNV-VIPMemberShip .container-fluid {
+    padding: 0;
+  }
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu.FNV-VIPMemberShip .container-fluid .row .col-md-6 {
+    padding: 0;
+  }
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu.FNV-VIPMemberShip .container-fluid .row .col-md-6:first-child {
+    padding-left: 2rem;
+  }
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu:hover .dropdown-menu {
+    display: block;
+    margin-top: 0px;
+    width: 80%;
+    padding: 1.5rem;
+    border-width: 0;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1411764706);
+    overflow: hidden;
+  }
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid a {
+    font-size: 24px;
+    color: #223885;
+    font-weight: 600;
+    display: none;
+  }
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid a span {
+    border-left: 1px solid #ababab;
+    padding-left: 1rem;
+    margin-left: 1rem;
+    font-size: 14px;
+    color: #575757;
+    font-weight: 400;
+  }
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row {
+    padding-top: 1rem;
+  }
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row {
+    padding: 0;
+  }
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction {
+    height: 100%;
+  }
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a svg,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a svg,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a svg {
+    width: 50px;
+    height: 50px;
+    color: #FF772C;
+  }
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a span,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a span,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a span {
+    font-size: 18px;
+    border-width: 0;
+    margin: 0;
+    padding: 0;
+    color: #223885;
+  }
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 span,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 span,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col span {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #212121;
+    margin-bottom: 0.8rem;
+    display: block;
+  }
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 span svg,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 span svg,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col span svg {
+    color: #FF772C;
+    width: 12px;
+    height: 12px;
+  }
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li a,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li a,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li a {
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    color: #575757;
+    transition: 0.1s all ease-in-out;
+  }
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li a:hover,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li a:hover,
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li a:hover {
+    color: #FF772C;
+    border-radius: 5px;
+  }
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu-Search {
+    position: static;
+  }
+  body[dir=ltr] nav .container-fluid .FNV-MegaMenu-Search:hover .dropdown-menu {
+    display: block;
+    margin-top: 0px;
+    width: 800px;
+    border-width: 0;
+    right: 0;
+  }
+  body[dir=ltr] nav.FNV-MegaMenu {
+    background-color: #F0F3FB;
+  }
 }
-.FNV-TopBar .container-fluid .row .col-6 {
-  display: flex;
-  padding: 0;
+@media (min-width: 1920px) {
+  body[dir=ltr] nav {
+    background-color: #ffffff;
+  }
+  body[dir=ltr] nav .container {
+    padding: 0rem;
+  }
+  body[dir=ltr] nav .container .navbar-brand {
+    width: 200px;
+  }
+  body[dir=ltr] nav .container .FNV-User .FNV-Btn {
+    background-color: unset;
+    display: flex;
+    align-items: center;
+  }
+  body[dir=ltr] nav .container .FNV-User .FNV-Btn .FNV-UserAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #223885;
+    border: 2px solid #223885;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+  }
+  body[dir=ltr] nav .container .FNV-User .FNV-Btn .FNV-UserAvatar svg {
+    stroke: #ffffff;
+  }
+  body[dir=ltr] nav .container .FNV-User .FNV-Btn img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #223885;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 0 0.5rem;
+  }
+  body[dir=ltr] nav .container .FNV-User .FNV-Btn::after {
+    margin-left: 0.5rem;
+    margin-right: unset;
+  }
+  body[dir=ltr] nav .container .FNV-User .dropdown-menu {
+    border-width: 0px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1254901961);
+  }
+  body[dir=ltr] nav .container .FNV-User .dropdown-menu li {
+    padding-bottom: 0.3rem;
+    text-align: left;
+  }
+  body[dir=ltr] nav .container .FNV-User .dropdown-menu li a {
+    font-size: 14px;
+  }
+  body[dir=ltr] nav .container .FNV-User .dropdown-menu li a svg {
+    color: #223885;
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess {
+    display: flex;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown a {
+    position: relative;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown a svg {
+    width: 24px;
+    height: 24px;
+    stroke-width: 1.5px;
+    stroke: #223885;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown a span svg {
+    top: -0.4rem;
+    left: -0.4rem;
+    width: 8px;
+    height: 8px;
+    fill: #FFA600;
+    stroke: #FFA600;
+    position: absolute;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown a.show svg {
+    stroke: #0074FF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu {
+    top: 200%;
+    left: -150px;
+    width: 360px;
+    padding: 2rem;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-radius: 0px;
+    border-top: 1px solid #223885;
+    box-shadow: 0 10px 16px rgba(7, 16, 46, 0.1882352941);
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #0074FF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a {
+    margin: 0;
+    padding: 1.5rem;
+    color: #223885;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a svg {
+    margin-right: 1rem;
+    fill: #0074FF;
+    stroke: #0074FF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User {
+    display: flex;
+    padding: 1rem;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User .FNV-UserAvatar {
+    width: 30%;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User .FNV-UserAvatar img, body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User .FNV-UserAvatar svg {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span {
+    width: 100%;
+    display: flex;
+    margin-left: 1rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span p {
+    color: #223885;
+    margin-bottom: 0rem;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span {
+    display: flex;
+    margin-left: 0;
+    flex-direction: row;
+    justify-content: start;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span svg {
+    top: unset;
+    left: unset;
+    width: 20px;
+    height: 20px;
+    stroke-width: 0px;
+    position: relative;
+    margin-right: 0.5rem;
+    stroke: #6A7BBA;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span small {
+    font-size: 14px;
+    font-weight: 300;
+    color: #6A7BBA;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu {
+    display: flex;
+    padding: 1rem;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu .FNV-UserIcon {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu .FNV-UserIcon img, body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu .FNV-UserIcon svg {
+    width: 80%;
+    height: 80%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-right: 0;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span {
+    width: 100%;
+    display: flex;
+    margin-left: 1rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span p {
+    color: #223885;
+    margin-bottom: 0rem;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span span {
+    display: flex;
+    margin-left: 0;
+    flex-direction: row;
+    justify-content: start;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span span svg {
+    top: unset;
+    left: unset;
+    width: 20px;
+    height: 20px;
+    stroke-width: 0px;
+    position: relative;
+    margin-right: 0.5rem;
+    stroke: #6A7BBA;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span span small {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6A7BBA;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover {
+    color: #FFFFFF;
+    background-color: #0074FF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover svg {
+    fill: #FFFFFF;
+    stroke: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-User span p {
+    color: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-User span span svg {
+    stroke: #3DF07A;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-User span span small {
+    color: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu .FNV-UserIcon {
+    width: 30%;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu .FNV-UserIcon img, body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu .FNV-UserIcon svg {
+    stroke: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu span p {
+    color: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu span span small {
+    color: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu.show {
+    display: flex;
+    flex-direction: column;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu ul {
+    max-height: 150px;
+    overflow: scroll;
+    padding: 0px;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu ul p {
+    font-size: 14px;
+    color: #0074FF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu ul li {
+    padding: 0;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu ul li a {
+    width: 100%;
+    display: block;
+    padding: 0.5rem;
+    font-size: 12px;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess button {
+    padding: 0;
+    border-width: 0;
+    font-size: 16px;
+    margin-left: 1.5rem;
+    color: #223885;
+    background-color: transparent;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess button svg {
+    width: 26px;
+    height: 26px;
+    stroke: #223885;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess a {
+    color: #223885;
+    position: relative;
+    margin-left: 1.5rem;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess a svg {
+    width: 24px;
+    height: 24px;
+    stroke: #223885;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess a span svg {
+    top: -0.4rem;
+    left: -0.4rem;
+    width: 8px;
+    height: 8px;
+    fill: #FFA600;
+    stroke: #FFA600;
+    position: absolute;
+  }
+  body[dir=ltr] nav .container .navbar-collapse {
+    position: relative;
+    justify-content: center;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav li a {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 2rem 0.5rem;
+    color: #B2B9D4;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav li:hover a {
+    font-weight: 500;
+    color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
+    position: unset;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .d-flex .nav button {
+    width: 300px;
+    padding: 1rem;
+    display: flex;
+    border-radius: 0px;
+    align-items: center;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .d-flex .nav button svg {
+    width: 35px;
+    height: 35px;
+    stroke: #0074FF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .d-flex .nav button span {
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 1rem;
+    color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .d-flex .nav button.active {
+    background-color: #0074FF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .d-flex .nav button.active svg {
+    stroke: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .d-flex .nav button.active span {
+    color: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-VIPMemberShip .dropdown-menu {
+    width: 600px;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu {
+    width: 100%;
+    display: none;
+    margin-top: 0px;
+    padding: 2rem;
+    border-width: 0;
+    overflow: hidden;
+    border-radius: 0px;
+    left: 0;
+    position: absolute;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu h2 {
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+    color: #0074FF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu:hover .dropdown-menu {
+    display: block;
+    margin-top: 0px;
+    border-width: 0;
+    overflow: hidden;
+    border-top: 1px solid #223885;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1411764706);
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid {
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid a {
+    font-size: 24px;
+    color: #223885;
+    font-weight: 600;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid a span {
+    border-left: 1px solid #ababab;
+    padding-left: 1rem;
+    margin-left: 1rem;
+    font-size: 14px;
+    color: #575757;
+    font-weight: 400;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row {
+    padding-top: 1rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row,
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row,
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row {
+    padding: 0;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction,
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction,
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction {
+    height: 100%;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a,
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a,
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a svg,
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a svg,
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a svg {
+    width: 50px;
+    height: 50px;
+    color: #FF772C;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 .row.FNV-QuickAction .col-12 a span,
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 .row.FNV-QuickAction .col-12 a span,
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row .col .row.FNV-QuickAction .col-12 a span {
+    font-size: 18px;
+    border-width: 0;
+    margin: 0;
+    padding: 0;
+    color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 span,
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 span,
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row .col span {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #212121;
+    margin-bottom: 0.8rem;
+    display: block;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 span svg,
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 span svg,
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row .col span svg {
+    width: 12px;
+    height: 12px;
+    margin-right: 0.5rem;
+    color: #FF772C;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li a,
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li a,
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #575757;
+    transition: 0.1s all ease-in-out;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-3 li a:hover,
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row .col-md-6 li a:hover,
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li a:hover {
+    color: #FF772C;
+    border-radius: 5px;
+  }
 }
-.FNV-TopBar .container-fluid .row .col-6 a {
-  color: #ffffff;
-  margin-right: 4rem;
-  position: relative;
-}
-.FNV-TopBar .container-fluid .row .col-6 a svg {
-  color: #ffffff;
-  width: 20px;
-  height: 20px;
-  margin-right: 0.5rem;
-}
-.FNV-TopBar .container-fluid .row .col-6 a:first-child::after {
-  content: "";
-  position: absolute;
-  right: -2rem;
-  top: 0;
-  width: 1px;
-  height: 25px;
-  background-color: #ffffff;
-}
-.FNV-TopBar .container-fluid .row .col-6:nth-child(2) {
-  justify-content: end;
-}
-.FNV-TopBar .container-fluid .row .col-6:nth-child(2) a {
-  margin-left: 4rem;
-  margin-right: unset;
-}
-
-.FNV-Home .FNV-Header {
-  background-image: linear-gradient(89.85deg, rgba(26, 48, 211, 0.8) 0.12%, rgba(26, 48, 211, 0.2) 50%, rgba(26, 48, 211, 0.8) 99.87%), url("/img/Header-bg.jpg");
-  background-size: cover;
-  background-position: center center;
-  height: 550px;
-  padding: 10px;
-}
-.FNV-Home .FNV-Header .container {
-  width: 100%;
-  height: 100%;
-}
-.FNV-Home .FNV-Header .container .row {
-  width: 100%;
-  height: 100%;
-}
-.FNV-Home .FNV-Header .container .row .FNV-HCard {
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.FNV-Home .FNV-Header .container .row .FNV-HCard h2 {
-  margin-bottom: 2rem;
-  font-size: 35px;
-  font-weight: 800;
-  color: #ffffff;
-  text-align: center;
-  text-transform: uppercase;
-}
-.FNV-Home .FNV-Header .container .row .FNV-HCard h2 mark {
-  background-color: transparent;
-  color: #FF772C;
-}
-.FNV-Home .FNV-Header .container .row .FNV-HCard h1 {
-  margin-bottom: 2rem;
-  font-size: 35px;
-  font-weight: 800;
-  color: #ffffff;
-  text-align: center;
-  text-transform: uppercase;
-}
-.FNV-Home .FNV-Header .container .row .FNV-HCard h1 mark {
-  background-color: transparent;
-  color: #FF772C;
-}
-.FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch {
-  background-color: rgba(255, 255, 255, 0.6);
-  width: 600px;
-  border-radius: 15px;
-  overflow: hidden;
-  padding: 0.8rem;
-  border: 1px solid #ffffff;
-}
-.FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput {
-  background-color: transparent !important;
-  border-width: 0;
-  box-shadow: unset;
-  border-radius: 15px;
-  color: #223885;
-  font-size: 16px;
-  font-weight: 400;
-}
-.FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput::after, .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput::before {
-  display: none;
-}
-.FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput::placeholder, .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput:-ms-input-placeholder {
-  color: #223885 !important;
-}
-.FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch button {
-  background-color: #223885;
-  color: #ffffff;
-  border-radius: 15px 15px 15px 15px !important;
-  width: 75px;
-}
-.FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch button svg {
-  width: 30px;
-  height: 30px;
-  color: #ffffff;
-}
-.FNV-Home .FNV-Header .container .row .FNV-HCard p {
-  margin-bottom: 2rem;
-}
-
-/* For mobile phones: */
-@media only screen and (max-width: 768px) {
+@media (min-width: 576px) {
   .FNV-TopBanner {
     height: 28px !important;
     -o-object-fit: cover;
@@ -1506,6 +2200,372 @@ body[dir=ltr] nav.FNV-MegaMenu {
     border-radius: 15px;
     overflow: hidden;
     padding: 0.8rem;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput {
+    background-color: transparent !important;
+    border-width: 0;
+    box-shadow: unset;
+    border-radius: 15px;
+    color: #223885;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput::after, .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput::before {
+    display: none;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput::placeholder, .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput:-ms-input-placeholder {
+    color: #223885 !important;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch button {
+    background-color: #223885;
+    color: #ffffff;
+    border-radius: 15px 15px 15px 15px !important;
+    width: 75px;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch button svg {
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard p {
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .FNV-TopBanner {
+    height: 28px !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .FNV-TopBar {
+    background-color: #223885;
+    padding: 0.5rem 1rem;
+    direction: ltr;
+  }
+  .FNV-TopBar .container-fluid .row .col-6 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem 0;
+  }
+  .FNV-TopBar .container-fluid .row .col-6 a {
+    color: #ffffff;
+    margin-right: unset;
+    position: relative;
+    font-size: 16px;
+  }
+  .FNV-TopBar .container-fluid .row .col-6 a svg {
+    color: #ffffff;
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+  }
+  .FNV-TopBar .container-fluid .row .col-6 a:first-child {
+    display: none;
+  }
+  .FNV-TopBar .container-fluid .row .col-6:nth-child(2) {
+    justify-content: end;
+  }
+  .FNV-TopBar .container-fluid .row .col-6:nth-child(2) a {
+    margin-left: unset;
+    margin-right: unset;
+  }
+  .FNV-Home .FNV-Header {
+    background-image: linear-gradient(89.85deg, rgba(26, 48, 211, 0.8) 0.12%, rgba(26, 48, 211, 0.2) 50%, rgba(26, 48, 211, 0.8) 99.87%), url("/img/Header-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 350px;
+    padding: 0.5rem;
+  }
+  .FNV-Home .FNV-Header .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .FNV-Home .FNV-Header .container .row {
+    width: 100%;
+    height: 100%;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard h1 {
+    font-size: 25px;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard h2 {
+    margin-bottom: 2rem;
+    font-size: 28px;
+    font-weight: 800;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard h2 mark {
+    background-color: transparent;
+    color: #FF772C;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 0.8rem;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput {
+    background-color: transparent !important;
+    border-width: 0;
+    box-shadow: unset;
+    border-radius: 15px;
+    color: #223885;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput::after, .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput::before {
+    display: none;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput::placeholder, .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput:-ms-input-placeholder {
+    color: #223885 !important;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch button {
+    background-color: #223885;
+    color: #ffffff;
+    border-radius: 15px 15px 15px 15px !important;
+    width: 75px;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch button svg {
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard p {
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 1400px) {
+  .FNV-TopBanner {
+    width: 100%;
+    height: 65px !important;
+  }
+  .FNV-TopBar {
+    background-color: #F0F3FB;
+    padding: 1rem 0rem;
+    direction: ltr;
+  }
+  .FNV-TopBar .container .row .col-6 {
+    display: flex;
+    padding: 0;
+  }
+  .FNV-TopBar .container .row .col-6 a {
+    font-size: 14px;
+    position: relative;
+    margin-right: 4rem;
+    color: #6A7BBA;
+  }
+  .FNV-TopBar .container .row .col-6 a svg {
+    color: #6A7BBA;
+    width: 18px;
+    height: 14px;
+    margin-right: 0.5rem;
+  }
+  .FNV-TopBar .container .row .col-6 a:first-child::after {
+    content: "";
+    top: 0;
+    width: 1px;
+    height: 25px;
+    right: -2rem;
+    position: absolute;
+    background-color: #6A7BBA;
+  }
+  .FNV-TopBar .container .row .col-6:nth-child(2) {
+    justify-content: end;
+  }
+  .FNV-TopBar .container .row .col-6:nth-child(2) a {
+    margin-left: 4rem;
+    margin-right: unset;
+  }
+  .FNV-Home .FNV-Header {
+    background-image: linear-gradient(89.85deg, rgba(26, 48, 211, 0.8) 0.12%, rgba(26, 48, 211, 0.2) 50%, rgba(26, 48, 211, 0.8) 99.87%), url("/img/Header-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 550px;
+    padding: 10px;
+  }
+  .FNV-Home .FNV-Header .container {
+    width: 100%;
+    height: 100%;
+  }
+  .FNV-Home .FNV-Header .container .row {
+    width: 100%;
+    height: 100%;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard h2 {
+    margin-bottom: 2rem;
+    font-size: 35px;
+    font-weight: 800;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard h2 mark {
+    background-color: transparent;
+    color: #FF772C;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard h1 {
+    margin-bottom: 2rem;
+    font-size: 35px;
+    font-weight: 800;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard h1 mark {
+    background-color: transparent;
+    color: #FF772C;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 600px;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 0.8rem;
+    border: 1px solid #ffffff;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput {
+    background-color: transparent !important;
+    border-width: 0;
+    box-shadow: unset;
+    border-radius: 15px;
+    color: #223885;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput::after, .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput::before {
+    display: none;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput::placeholder, .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput:-ms-input-placeholder {
+    color: #223885 !important;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch button {
+    background-color: #223885;
+    color: #ffffff;
+    border-radius: 15px 15px 15px 15px !important;
+    width: 75px;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch button svg {
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard p {
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 1920px) {
+  .FNV-TopBanner {
+    width: 100%;
+    height: 65px !important;
+  }
+  .FNV-TopBar {
+    background-color: #F0F3FB;
+    padding: 1rem 0rem;
+    direction: ltr;
+  }
+  .FNV-TopBar .container .row .col-6 {
+    display: flex;
+    padding: 0;
+  }
+  .FNV-TopBar .container .row .col-6 a {
+    font-size: 14px;
+    position: relative;
+    margin-right: 4rem;
+    color: #6A7BBA;
+  }
+  .FNV-TopBar .container .row .col-6 a svg {
+    color: #6A7BBA;
+    width: 18px;
+    height: 14px;
+    margin-right: 0.5rem;
+  }
+  .FNV-TopBar .container .row .col-6 a:first-child::after {
+    content: "";
+    top: 0;
+    width: 1px;
+    height: 25px;
+    right: -2rem;
+    position: absolute;
+    background-color: #6A7BBA;
+  }
+  .FNV-TopBar .container .row .col-6:nth-child(2) {
+    justify-content: end;
+  }
+  .FNV-TopBar .container .row .col-6:nth-child(2) a {
+    margin-left: 4rem;
+    margin-right: unset;
+  }
+  .FNV-Home .FNV-Header {
+    background-image: linear-gradient(89.85deg, rgba(26, 48, 211, 0.8) 0.12%, rgba(26, 48, 211, 0.2) 50%, rgba(26, 48, 211, 0.8) 99.87%), url("/img/Header-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 550px;
+    padding: 10px;
+  }
+  .FNV-Home .FNV-Header .container {
+    width: 100%;
+    height: 100%;
+  }
+  .FNV-Home .FNV-Header .container .row {
+    width: 100%;
+    height: 100%;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard h2 {
+    margin-bottom: 2rem;
+    font-size: 35px;
+    font-weight: 800;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard h2 mark {
+    background-color: transparent;
+    color: #FF772C;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard h1 {
+    margin-bottom: 2rem;
+    font-size: 35px;
+    font-weight: 800;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard h1 mark {
+    background-color: transparent;
+    color: #FF772C;
+  }
+  .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 600px;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 0.8rem;
+    border: 1px solid #ffffff;
   }
   .FNV-Home .FNV-Header .container .row .FNV-HCard .FNV-HSearch .FNV-HSearchInput {
     background-color: transparent !important;

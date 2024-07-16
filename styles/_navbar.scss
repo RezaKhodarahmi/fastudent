@@ -1,41 +1,39 @@
 @import './variables';
 
-body[dir='rtl']{
+body[dir='rtl'] {
   nav {
     .container-fluid {
       padding: 0 1rem;
-  
+
       &:first-child {
         background-color: $WhiteColor;
         padding: 0.75rem 1rem;
-  
+
         .OffCanvasMenu {
           padding-right: 0.75rem;
           padding-left: 0.5rem;
-  
+
           svg {
             color: $PrimaryColor;
           }
         }
-  
-        .OffCanvasMenu2{
+
+        .OffCanvasMenu2 {
           margin-right: 1rem;
           color: $PrimaryColor;
         }
-  
+
         .navbar-brand {
           width: 200px;
-          padding-left: 0.5rem;
-          border-left: 1px solid $GrayTwoColor;
         }
-  
+
         .FNV-User {
           .FNV-Btn {
             background-color: unset;
             display: flex;
             align-items: center;
 
-            .FNV-UserAvatar{
+            .FNV-UserAvatar {
               width: 40px;
               height: 40px;
               border-radius: 50%;
@@ -47,11 +45,11 @@ body[dir='rtl']{
               padding: .5rem;
               margin: 0 .5rem;
 
-              svg{
+              svg {
                 stroke: $WhiteColor;
               }
             }
-  
+
             img {
               width: 40px;
               height: 40px;
@@ -61,19 +59,20 @@ body[dir='rtl']{
               margin: 0 .5rem;
             }
 
-            &::after{
+            &::after {
               margin-right: .5rem;
               margin-left: unset;
             }
           }
-  
+
           .dropdown-menu {
             border-width: 0px;
             box-shadow: 0px 0px 20px #00000020;
-            
+
             li {
               padding-bottom: 0.3rem;
               text-align: right;
+
               a {
                 font-size: 14px;
 
@@ -88,46 +87,46 @@ body[dir='rtl']{
           }
         }
       }
-  
+
       &:nth-child(2) {
         background-color: $GrayOneColor;
         border-bottom: 5px solid $PrimaryColor;
         border-top: 1px solid $GrayTwoColor;
-  
-        .collapse{
+
+        .collapse {
           display: flex;
           justify-content: space-between;
 
-          .navbar-nav{
+          .navbar-nav {
             padding-right: 0;
 
-            .nav-item{
-              &.FNV-Appointment{
+            .nav-item {
+              &.FNV-Appointment {
                 background: linear-gradient(-45deg, #003BBF, #FF772C, #003BBF);
                 background-size: 400% 400%;
                 animation: gradient 3s ease-in-out infinite;
 
-                a{
+                a {
                   color: $WhiteColor;
                 }
               }
 
-              .dropdown-menu.show{
+              .dropdown-menu.show {
                 right: 0;
                 left: unset;
                 padding: 0;
 
-                li{
+                li {
                   text-align: start;
 
-                  a{
+                  a {
                     color: $FourthColor;
                   }
 
-                  &:hover{
-                    background-color: $PrimaryColor!important;
+                  &:hover {
+                    background-color: $PrimaryColor !important;
 
-                    a{
+                    a {
                       background-color: unset;
                       color: $WhiteColor;
                     }
@@ -135,7 +134,7 @@ body[dir='rtl']{
                 }
               }
 
-              .nav-link{
+              .nav-link {
                 font-size: 16px;
                 font-weight: 600;
               }
@@ -143,54 +142,54 @@ body[dir='rtl']{
           }
         }
       }
-  
-      .FNV_QuickAccess{
-        a{
+
+      .FNV_QuickAccess {
+        a {
           margin-left: .5rem;
           font-size: 14px;
           line-height: 22px;
-  
-          svg{
+
+          svg {
             width: 20px;
             height: 20px;
           }
         }
       }
-  
+
       .navbar-nav {
         .nav-item {
-  
+
           .nav-link {
             font-size: 16px;
             font-weight: 400;
             line-height: 40px;
             padding: .5rem 1rem;
           }
-  
+
           &:hover .nav-link {
             background-color: $PrimaryColor;
             color: $WhiteColor;
           }
         }
       }
-  
+
       .FNV-MegaMenu {
         position: relative;
 
-        &.FNV-Courses{
-          .dropdown-menu{
+        &.FNV-Courses {
+          .dropdown-menu {
             width: 1800px;
           }
         }
 
-        &.FNV-Learning{
-          .dropdown-menu{
+        &.FNV-Learning {
+          .dropdown-menu {
             width: 1400px;
           }
         }
 
-        &.FNV-VIPMemberShip{
-          .dropdown-menu{
+        &.FNV-VIPMemberShip {
+          .dropdown-menu {
             width: 600px;
           }
         }
@@ -207,7 +206,7 @@ body[dir='rtl']{
           box-shadow: 0px 20px 20px $ShadowPrimary;
           overflow: hidden;
         }
-  
+
         &:hover .dropdown-menu {
           display: block;
           margin-top: 0px;
@@ -215,20 +214,20 @@ body[dir='rtl']{
           border-width: 0;
           overflow: hidden;
         }
-  
-        .dropdown-menu{
-          .container-fluid{
+
+        .dropdown-menu {
+          .container-fluid {
             padding-left: 0px;
             padding-bottom: 0px;
 
-            a{
+            a {
               display: block;
               font-size: 24px;
               font-weight: 600;
               text-align: right;
               color: $PrimaryColor;
-  
-              span{
+
+              span {
                 font-size: 14px;
                 font-weight: 400;
                 border-left: 0px;
@@ -239,32 +238,35 @@ body[dir='rtl']{
                 border-right: 1px solid #ababab;
               }
             }
-  
-            .row{
+
+            .row {
               padding-top: 1rem;
-              .col-md-3, .col-md-6, .col{
-                .row{
+
+              .col-md-3,
+              .col-md-6,
+              .col {
+                .row {
                   padding: 0;
-  
-                  &.FNV-QuickAction{
+
+                  &.FNV-QuickAction {
                     height: 100%;
-  
-                    .col-12{
-                      a{
+
+                    .col-12 {
+                      a {
                         display: flex;
                         flex-direction: column;
                         height: 100%;
                         justify-content: space-evenly;
                         align-items: center;
                         background-color: $LightColor;
-  
-                        svg{
+
+                        svg {
                           width: 50px;
                           height: 50px;
                           color: $SecondaryColor;
                         }
-  
-                        span{
+
+                        span {
                           margin: 0;
                           padding: 0;
                           border-width: 0;
@@ -276,8 +278,8 @@ body[dir='rtl']{
                     }
                   }
                 }
-                
-                span{
+
+                span {
                   display: block;
                   font-size: 16px;
                   font-weight: 700;
@@ -285,25 +287,25 @@ body[dir='rtl']{
                   line-height: 32px;
                   color: $FourthColor;
                   margin-bottom: .8rem;
-  
-                  svg{
+
+                  svg {
                     width: 12px;
                     height: 12px;
                     margin-left: .5rem;
                     color: $SecondaryColor;
                   }
                 }
-                
-                li{
+
+                li {
                   margin-bottom: .5rem;
-                  
-                  a{
+
+                  a {
                     font-size: 12px;
                     font-weight: 500;
                     color: $GrayThreeColor;
                     transition: .1s all ease-in-out;
-  
-                    &:hover{
+
+                    &:hover {
                       color: $SecondaryColor;
                       border-radius: 5px;
                     }
@@ -314,10 +316,10 @@ body[dir='rtl']{
           }
         }
       }
-  
+
       .FNV-MegaMenu-Search {
         position: static;
-  
+
         &:hover .dropdown-menu {
           display: block;
           margin-top: 0px;
@@ -327,49 +329,1757 @@ body[dir='rtl']{
         }
       }
     }
-  
-    &.FNV-MegaMenu{
+
+    &.FNV-MegaMenu {
       background-color: $LightColor;
     }
   }
 }
 
-body[dir='ltr']{
-  nav {
-    .container-fluid {
-      padding: 0 1rem;
-  
-      &:first-child {
-        background-color: $WhiteColor;
-        padding: 0.75rem 1rem;
-  
-        .OffCanvasMenu {
-          padding-right: 0.75rem;
-          padding-left: 0.5rem;
-  
-          svg {
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (min-width: 575.98px) {
+  body[dir='rtl'] {
+    nav {
+      .container-fluid {
+        padding: 0 1rem;
+
+        &:first-child {
+          background-color: $WhiteColor;
+          padding: 0.75rem 1rem;
+
+          .OffCanvasMenu {
+            padding-right: 0.75rem;
+            padding-left: 0.5rem;
+
+            svg {
+              color: $PrimaryColor;
+            }
+          }
+
+          .OffCanvasMenu2 {
+            margin-right: 1rem;
             color: $PrimaryColor;
           }
+
+          .navbar-brand {
+            width: 200px;
+            padding-left: 0.5rem;
+            border-left: 1px solid $GrayTwoColor;
+          }
+
+          .navbar-collapse {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between !important;
+            margin-top: 1rem;
+
+            .FNV-User {
+              .FNV-Btn {
+                background-color: unset;
+                display: flex;
+                align-items: center;
+
+                .FNV-UserAvatar {
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  background-color: $PrimaryColor;
+                  border: 2px solid $PrimaryColor;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  padding: .5rem;
+                  margin: 0 .5rem;
+
+                  svg {
+                    stroke: $WhiteColor;
+                  }
+                }
+
+                img {
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 50%;
+                  border: 2px solid $PrimaryColor;
+                  object-fit: cover;
+                  margin: 0 .5rem;
+                }
+
+                span {
+                  display: none;
+                }
+
+                &::after {
+                  margin-right: .2rem;
+                  margin-left: unset;
+                }
+              }
+
+              .dropdown-menu {
+                border-width: 0px;
+                box-shadow: 0px 0px 20px #00000020;
+
+                li {
+                  padding-bottom: 0.3rem;
+                  text-align: right;
+
+                  a {
+                    font-size: 14px;
+
+                    svg {
+                      color: $PrimaryColor;
+                      width: 20px;
+                      height: 20px;
+                      margin-left: 0.5rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
-  
-        .OffCanvasMenu2{
-          margin-right: 1rem;
-          color: $PrimaryColor;
+
+        &:nth-child(2) {
+          background-color: $GrayOneColor;
+          border-bottom: 5px solid $PrimaryColor;
+          border-top: 1px solid $GrayTwoColor;
+
+          .collapse {
+            display: none;
+            justify-content: space-between;
+
+            &.show {
+              display: flex;
+              flex-direction: column;
+            }
+
+            .navbar-nav {
+              padding-right: 0;
+              width: 100%;
+
+              .nav-item {
+                &.FNV-Appointment {
+                  background: linear-gradient(-45deg, #003BBF, #FF772C, #003BBF);
+                  background-size: 400% 400%;
+                  animation: gradient 3s ease-in-out infinite;
+
+                  a {
+                    color: $WhiteColor;
+                  }
+                }
+
+                .dropdown-menu.show {
+                  right: 0;
+                  left: unset;
+                  padding: 0;
+                  width: 100%;
+
+                  li {
+                    text-align: start;
+
+                    a {
+                      color: $FourthColor;
+                    }
+
+                    &:hover {
+                      background-color: $PrimaryColor !important;
+
+                      a {
+                        background-color: unset;
+                        color: $WhiteColor;
+                      }
+                    }
+                  }
+                }
+
+                .nav-link {
+                  font-size: 16px;
+                  font-weight: 600;
+                }
+              }
+            }
+
+            .d-flex {
+              display: none !important;
+              width: 100%;
+            }
+          }
         }
-  
+
+        .FNV_QuickAccess {
+          a {
+            margin-left: .5rem;
+            font-size: 14px;
+            line-height: 22px;
+
+            svg {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+
+        .navbar-nav {
+          .nav-item {
+
+            .nav-link {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 40px;
+              padding: .5rem 1rem;
+            }
+
+            &:hover .nav-link {
+              background-color: $PrimaryColor;
+              color: $WhiteColor;
+            }
+          }
+        }
+
+        .FNV-MegaMenu {
+          position: static;
+
+          &.FNV-Courses {
+            .dropdown-menu {
+              width: 1200px;
+            }
+          }
+
+          &.FNV-VIPMemberShip {
+            .container-fluid {
+              padding: 0;
+
+              .row {
+                .col-md-6 {
+                  padding: 0;
+
+                  &:first-child {
+                    padding-right: 2rem;
+                  }
+                }
+              }
+            }
+          }
+
+          &:hover .dropdown-menu {
+            display: block;
+            margin-top: 0px;
+            width: 80%;
+            padding: 1.5rem;
+            border-width: 0;
+            border-top-right-radius: 0px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0px 20px 20px $ShadowPrimary;
+            overflow: hidden;
+          }
+
+          .dropdown-menu {
+            .container-fluid {
+              a {
+                font-size: 24px;
+                color: $PrimaryColor;
+                font-weight: 600;
+                display: none;
+
+                span {
+                  border-left: 1px solid #ababab;
+                  padding-left: 1rem;
+                  margin-left: 1rem;
+                  font-size: 14px;
+                  color: $GrayThreeColor;
+                  font-weight: 400;
+                  display: none;
+                }
+              }
+
+              .row {
+                padding-top: 1rem;
+
+                .col-md-3,
+                .col-md-6,
+                .col {
+                  .row {
+                    padding: 0;
+
+                    &.FNV-QuickAction {
+                      height: 100%;
+
+                      .col-12 {
+                        a {
+                          display: flex;
+                          flex-direction: column;
+                          height: 100%;
+                          justify-content: space-evenly;
+                          align-items: center;
+                          background-color: $LightColor;
+
+                          svg {
+                            width: 50px;
+                            height: 50px;
+                            color: $SecondaryColor;
+                          }
+
+                          span {
+                            font-size: 18px;
+                            border-width: 0;
+                            margin: 0;
+                            padding: 0;
+                            color: $PrimaryColor;
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  span {
+                    font-size: 16px;
+                    line-height: 32px;
+                    font-weight: 700;
+                    color: $FourthColor;
+                    margin-bottom: .8rem;
+                    display: block;
+
+                    svg {
+                      color: $SecondaryColor;
+                      width: 12px;
+                      height: 12px;
+                    }
+                  }
+
+                  li {
+                    a {
+                      display: block;
+                      font-size: 14px;
+                      font-weight: 300;
+                      color: $GrayThreeColor;
+                      transition: .1s all ease-in-out;
+
+                      &:hover {
+                        color: $SecondaryColor;
+                        border-radius: 5px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .FNV-MegaMenu-Search {
+          position: static;
+
+          &:hover .dropdown-menu {
+            display: block;
+            margin-top: 0px;
+            width: 800px;
+            border-width: 0;
+            right: 0;
+          }
+        }
+      }
+
+      &.FNV-MegaMenu {
+        background-color: $LightColor;
+      }
+    }
+  }
+
+  body[dir='ltr'] {
+    nav {
+      .container-fluid {
+        padding: 0 1rem;
+
+        &:first-child {
+          background-color: $WhiteColor;
+          padding: 0.75rem 1rem;
+
+          .OffCanvasMenu {
+            padding-right: 0.75rem;
+            padding-left: 0.5rem;
+
+            svg {
+              color: $PrimaryColor;
+            }
+          }
+
+          .OffCanvasMenu2 {
+            margin-right: 1rem;
+            color: $PrimaryColor;
+          }
+
+          .navbar-brand {
+            width: 200px;
+            padding-left: 0.5rem;
+            border-left: 1px solid $GrayTwoColor;
+          }
+
+          .navbar-collapse {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between !important;
+            margin-top: 1rem;
+
+            .FNV-User {
+              .FNV-Btn {
+                background-color: unset;
+                display: flex;
+                align-items: center;
+
+                .FNV-UserAvatar {
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  background-color: $PrimaryColor;
+                  border: 2px solid $PrimaryColor;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  padding: .5rem;
+                  margin: 0 .5rem;
+
+                  svg {
+                    stroke: $WhiteColor;
+                  }
+                }
+
+                img {
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  border: 2px solid $PrimaryColor;
+                  object-fit: cover;
+                  margin: 0 .5rem;
+                }
+
+                span {
+                  display: none;
+                }
+
+                &::after {
+                  margin-left: .5rem;
+                  margin-right: unset;
+                }
+              }
+
+              .dropdown-menu {
+                border-width: 0px;
+                box-shadow: 0px 0px 20px #00000020;
+
+                li {
+                  padding-bottom: 0.3rem;
+                  text-align: left;
+
+                  a {
+                    font-size: 14px;
+
+                    svg {
+                      color: $PrimaryColor;
+                      width: 20px;
+                      height: 20px;
+                      margin-right: 0.5rem;
+                    }
+                  }
+                }
+              }
+            }
+
+            .d-flex {
+              display: none !important;
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          background-color: $GrayOneColor;
+          border-bottom: 5px solid $PrimaryColor;
+          border-top: 1px solid $GrayTwoColor;
+
+          .collapse {
+            display: none;
+            justify-content: space-between;
+
+            &.show {
+              display: flex;
+              flex-direction: column;
+            }
+
+            .navbar-nav {
+              width: 100%;
+
+              .nav-item {
+
+                &.FNV-Appointment {
+                  background-color: $PrimaryColor;
+
+                  a {
+                    color: $WhiteColor;
+                  }
+                }
+
+                .dropdown-menu.show {
+                  width: 100%;
+                  right: unset;
+                  left: 0;
+                  padding: 0;
+
+                  li {
+                    text-align: start;
+
+                    a {
+                      color: $FourthColor;
+                    }
+
+                    &:hover {
+                      background-color: $PrimaryColor !important;
+
+                      a {
+                        background-color: unset;
+                        color: $WhiteColor;
+                      }
+                    }
+                  }
+                }
+
+                .nav-link {
+                  font-size: 16px;
+                  font-weight: 600;
+                }
+              }
+            }
+
+            .d-flex {
+              display: none !important;
+            }
+          }
+        }
+
+        .FNV_QuickAccess {
+          a {
+            margin-left: .5rem;
+            font-size: 14px;
+            line-height: 22px;
+
+            svg {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+
+        .navbar-nav {
+          .nav-item {
+
+            .nav-link {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 40px;
+              padding: .5rem 1rem;
+            }
+
+            &:hover .nav-link {
+              background-color: $PrimaryColor;
+              color: $WhiteColor;
+            }
+          }
+        }
+
+        .FNV-MegaMenu {
+          position: static;
+
+          &.FNV-VIPMemberShip {
+            .container-fluid {
+              padding: 0;
+
+              .row {
+                .col-md-6 {
+                  padding: 0;
+
+                  &:first-child {
+                    padding-left: 2rem;
+                  }
+                }
+              }
+            }
+          }
+
+          &:hover .dropdown-menu {
+            display: block;
+            margin-top: 0px;
+            width: 80%;
+            padding: 1.5rem;
+            border-width: 0;
+            border-top-right-radius: 0px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0px 20px 20px $ShadowPrimary;
+            overflow: hidden;
+          }
+
+          .dropdown-menu {
+            .container-fluid {
+              a {
+                font-size: 24px;
+                color: $PrimaryColor;
+                font-weight: 600;
+                display: none;
+
+                span {
+                  border-left: 1px solid #ababab;
+                  padding-left: 1rem;
+                  margin-left: 1rem;
+                  font-size: 14px;
+                  color: $GrayThreeColor;
+                  font-weight: 400;
+                }
+              }
+
+              .row {
+                padding-top: 1rem;
+
+                .col-md-3,
+                .col-md-6,
+                .col {
+                  .row {
+                    padding: 0;
+
+                    &.FNV-QuickAction {
+                      height: 100%;
+
+                      .col-12 {
+                        a {
+                          display: flex;
+                          flex-direction: column;
+                          height: 100%;
+                          justify-content: space-evenly;
+                          align-items: center;
+                          background-color: $LightColor;
+
+                          svg {
+                            width: 50px;
+                            height: 50px;
+                            color: $SecondaryColor;
+                          }
+
+                          span {
+                            font-size: 18px;
+                            border-width: 0;
+                            margin: 0;
+                            padding: 0;
+                            color: $PrimaryColor;
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  span {
+                    font-size: 16px;
+                    line-height: 32px;
+                    font-weight: 700;
+                    color: $FourthColor;
+                    margin-bottom: .8rem;
+                    display: block;
+
+                    svg {
+                      color: $SecondaryColor;
+                      width: 12px;
+                      height: 12px;
+                    }
+                  }
+
+                  li {
+                    a {
+                      display: block;
+                      font-size: 14px;
+                      font-weight: 300;
+                      color: $GrayThreeColor;
+                      transition: .1s all ease-in-out;
+
+                      &:hover {
+                        color: $SecondaryColor;
+                        border-radius: 5px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .FNV-MegaMenu-Search {
+          position: static;
+
+          &:hover .dropdown-menu {
+            display: block;
+            margin-top: 0px;
+            width: 800px;
+            border-width: 0;
+            right: 0;
+          }
+        }
+      }
+
+      &.FNV-MegaMenu {
+        background-color: $LightColor;
+      }
+    }
+  }
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (min-width: 767.98px) {
+  body[dir='rtl'] {
+    nav {
+      .container-fluid {
+        padding: 0 1rem;
+
+        &:first-child {
+          background-color: $WhiteColor;
+          padding: 0.75rem 1rem;
+
+          .OffCanvasMenu {
+            padding-right: 0.75rem;
+            padding-left: 0.5rem;
+
+            svg {
+              color: $PrimaryColor;
+            }
+          }
+
+          .OffCanvasMenu2 {
+            margin-right: 1rem;
+            color: $PrimaryColor;
+          }
+
+          .navbar-brand {
+            width: 200px;
+            padding-left: 0.5rem;
+            border-left: 1px solid $GrayTwoColor;
+          }
+
+          .navbar-collapse {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between !important;
+            margin-top: 1rem;
+
+            .FNV-User {
+              .FNV-Btn {
+                background-color: unset;
+                display: flex;
+                align-items: center;
+
+                .FNV-UserAvatar {
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  background-color: $PrimaryColor;
+                  border: 2px solid $PrimaryColor;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  padding: .5rem;
+                  margin: 0 .5rem;
+
+                  svg {
+                    stroke: $WhiteColor;
+                  }
+                }
+
+                img {
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 50%;
+                  border: 2px solid $PrimaryColor;
+                  object-fit: cover;
+                  margin: 0 .5rem;
+                }
+
+                span {
+                  display: none;
+                }
+
+                &::after {
+                  margin-right: .2rem;
+                  margin-left: unset;
+                }
+              }
+
+              .dropdown-menu {
+                border-width: 0px;
+                box-shadow: 0px 0px 20px #00000020;
+
+                li {
+                  padding-bottom: 0.3rem;
+                  text-align: right;
+
+                  a {
+                    font-size: 14px;
+
+                    svg {
+                      color: $PrimaryColor;
+                      width: 20px;
+                      height: 20px;
+                      margin-left: 0.5rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          background-color: $GrayOneColor;
+          border-bottom: 5px solid $PrimaryColor;
+          border-top: 1px solid $GrayTwoColor;
+
+          .collapse {
+            display: none;
+            justify-content: space-between;
+
+            &.show {
+              display: flex;
+              flex-direction: column;
+            }
+
+            .navbar-nav {
+              padding-right: 0;
+              width: 100%;
+
+              .nav-item {
+                &.FNV-Appointment {
+                  background: linear-gradient(-45deg, #003BBF, #FF772C, #003BBF);
+                  background-size: 400% 400%;
+                  animation: gradient 3s ease-in-out infinite;
+
+                  a {
+                    color: $WhiteColor;
+                  }
+                }
+
+                .dropdown-menu.show {
+                  right: 0;
+                  left: unset;
+                  padding: 0;
+                  width: 100%;
+
+                  li {
+                    text-align: start;
+
+                    a {
+                      color: $FourthColor;
+                    }
+
+                    &:hover {
+                      background-color: $PrimaryColor !important;
+
+                      a {
+                        background-color: unset;
+                        color: $WhiteColor;
+                      }
+                    }
+                  }
+                }
+
+                .nav-link {
+                  font-size: 16px;
+                  font-weight: 600;
+                }
+              }
+            }
+
+            .d-flex {
+              display: none !important;
+              width: 100%;
+            }
+          }
+        }
+
+        .FNV_QuickAccess {
+          a {
+            margin-left: .5rem;
+            font-size: 14px;
+            line-height: 22px;
+
+            svg {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+
+        .navbar-nav {
+          .nav-item {
+
+            .nav-link {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 40px;
+              padding: .5rem 1rem;
+            }
+
+            &:hover .nav-link {
+              background-color: $PrimaryColor;
+              color: $WhiteColor;
+            }
+          }
+        }
+
+        .FNV-MegaMenu {
+          position: static;
+
+          &.FNV-Courses {
+            .dropdown-menu {
+              width: 1200px;
+            }
+          }
+
+          &.FNV-VIPMemberShip {
+            .container-fluid {
+              padding: 0;
+
+              .row {
+                .col-md-6 {
+                  padding: 0;
+
+                  &:first-child {
+                    padding-right: 2rem;
+                  }
+                }
+              }
+            }
+          }
+
+          &:hover .dropdown-menu {
+            display: block;
+            margin-top: 0px;
+            width: 80%;
+            padding: 1.5rem;
+            border-width: 0;
+            border-top-right-radius: 0px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0px 20px 20px $ShadowPrimary;
+            overflow: hidden;
+          }
+
+          .dropdown-menu {
+            .container-fluid {
+              a {
+                font-size: 24px;
+                color: $PrimaryColor;
+                font-weight: 600;
+                display: none;
+
+                span {
+                  border-left: 1px solid #ababab;
+                  padding-left: 1rem;
+                  margin-left: 1rem;
+                  font-size: 14px;
+                  color: $GrayThreeColor;
+                  font-weight: 400;
+                  display: none;
+                }
+              }
+
+              .row {
+                padding-top: 1rem;
+
+                .col-md-3,
+                .col-md-6,
+                .col {
+                  .row {
+                    padding: 0;
+
+                    &.FNV-QuickAction {
+                      height: 100%;
+
+                      .col-12 {
+                        a {
+                          display: flex;
+                          flex-direction: column;
+                          height: 100%;
+                          justify-content: space-evenly;
+                          align-items: center;
+                          background-color: $LightColor;
+
+                          svg {
+                            width: 50px;
+                            height: 50px;
+                            color: $SecondaryColor;
+                          }
+
+                          span {
+                            font-size: 18px;
+                            border-width: 0;
+                            margin: 0;
+                            padding: 0;
+                            color: $PrimaryColor;
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  span {
+                    font-size: 16px;
+                    line-height: 32px;
+                    font-weight: 700;
+                    color: $FourthColor;
+                    margin-bottom: .8rem;
+                    display: block;
+
+                    svg {
+                      color: $SecondaryColor;
+                      width: 12px;
+                      height: 12px;
+                    }
+                  }
+
+                  li {
+                    a {
+                      display: block;
+                      font-size: 14px;
+                      font-weight: 300;
+                      color: $GrayThreeColor;
+                      transition: .1s all ease-in-out;
+
+                      &:hover {
+                        color: $SecondaryColor;
+                        border-radius: 5px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .FNV-MegaMenu-Search {
+          position: static;
+
+          &:hover .dropdown-menu {
+            display: block;
+            margin-top: 0px;
+            width: 800px;
+            border-width: 0;
+            right: 0;
+          }
+        }
+      }
+
+      &.FNV-MegaMenu {
+        background-color: $LightColor;
+      }
+    }
+  }
+
+  body[dir='ltr'] {
+    nav {
+      .container-fluid {
+        padding: 0 1rem;
+
+        &:first-child {
+          background-color: $WhiteColor;
+          padding: 0.75rem 1rem;
+
+          .OffCanvasMenu {
+            padding-right: 0.75rem;
+            padding-left: 0.5rem;
+
+            svg {
+              color: $PrimaryColor;
+            }
+          }
+
+          .OffCanvasMenu2 {
+            margin-right: 1rem;
+            color: $PrimaryColor;
+          }
+
+          .navbar-brand {
+            width: 200px;
+            padding-left: 0.5rem;
+            border-left: 1px solid $GrayTwoColor;
+          }
+
+          .navbar-collapse {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between !important;
+            margin-top: 1rem;
+
+            .FNV-User {
+              .FNV-Btn {
+                background-color: unset;
+                display: flex;
+                align-items: center;
+
+                .FNV-UserAvatar {
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  background-color: $PrimaryColor;
+                  border: 2px solid $PrimaryColor;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  padding: .5rem;
+                  margin: 0 .5rem;
+
+                  svg {
+                    stroke: $WhiteColor;
+                  }
+                }
+
+                img {
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  border: 2px solid $PrimaryColor;
+                  object-fit: cover;
+                  margin: 0 .5rem;
+                }
+
+                span {
+                  display: none;
+                }
+
+                &::after {
+                  margin-left: .5rem;
+                  margin-right: unset;
+                }
+              }
+
+              .dropdown-menu {
+                border-width: 0px;
+                box-shadow: 0px 0px 20px #00000020;
+
+                li {
+                  padding-bottom: 0.3rem;
+                  text-align: left;
+
+                  a {
+                    font-size: 14px;
+
+                    svg {
+                      color: $PrimaryColor;
+                      width: 20px;
+                      height: 20px;
+                      margin-right: 0.5rem;
+                    }
+                  }
+                }
+              }
+            }
+
+            .d-flex {
+              display: none !important;
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          background-color: $GrayOneColor;
+          border-bottom: 5px solid $PrimaryColor;
+          border-top: 1px solid $GrayTwoColor;
+
+          .collapse {
+            display: none;
+            justify-content: space-between;
+
+            &.show {
+              display: flex;
+              flex-direction: column;
+            }
+
+            .navbar-nav {
+              width: 100%;
+
+              .nav-item {
+
+                &.FNV-Appointment {
+                  background-color: $PrimaryColor;
+
+                  a {
+                    color: $WhiteColor;
+                  }
+                }
+
+                .dropdown-menu.show {
+                  width: 100%;
+                  right: unset;
+                  left: 0;
+                  padding: 0;
+
+                  li {
+                    text-align: start;
+
+                    a {
+                      color: $FourthColor;
+                    }
+
+                    &:hover {
+                      background-color: $PrimaryColor !important;
+
+                      a {
+                        background-color: unset;
+                        color: $WhiteColor;
+                      }
+                    }
+                  }
+                }
+
+                .nav-link {
+                  font-size: 16px;
+                  font-weight: 600;
+                }
+              }
+            }
+
+            .d-flex {
+              display: none !important;
+            }
+          }
+        }
+
+        .FNV_QuickAccess {
+          a {
+            margin-left: .5rem;
+            font-size: 14px;
+            line-height: 22px;
+
+            svg {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+
+        .navbar-nav {
+          .nav-item {
+
+            .nav-link {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 40px;
+              padding: .5rem 1rem;
+            }
+
+            &:hover .nav-link {
+              background-color: $PrimaryColor;
+              color: $WhiteColor;
+            }
+          }
+        }
+
+        .FNV-MegaMenu {
+          position: static;
+
+          &.FNV-VIPMemberShip {
+            .container-fluid {
+              padding: 0;
+
+              .row {
+                .col-md-6 {
+                  padding: 0;
+
+                  &:first-child {
+                    padding-left: 2rem;
+                  }
+                }
+              }
+            }
+          }
+
+          &:hover .dropdown-menu {
+            display: block;
+            margin-top: 0px;
+            width: 80%;
+            padding: 1.5rem;
+            border-width: 0;
+            border-top-right-radius: 0px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0px 20px 20px $ShadowPrimary;
+            overflow: hidden;
+          }
+
+          .dropdown-menu {
+            .container-fluid {
+              a {
+                font-size: 24px;
+                color: $PrimaryColor;
+                font-weight: 600;
+                display: none;
+
+                span {
+                  border-left: 1px solid #ababab;
+                  padding-left: 1rem;
+                  margin-left: 1rem;
+                  font-size: 14px;
+                  color: $GrayThreeColor;
+                  font-weight: 400;
+                }
+              }
+
+              .row {
+                padding-top: 1rem;
+
+                .col-md-3,
+                .col-md-6,
+                .col {
+                  .row {
+                    padding: 0;
+
+                    &.FNV-QuickAction {
+                      height: 100%;
+
+                      .col-12 {
+                        a {
+                          display: flex;
+                          flex-direction: column;
+                          height: 100%;
+                          justify-content: space-evenly;
+                          align-items: center;
+                          background-color: $LightColor;
+
+                          svg {
+                            width: 50px;
+                            height: 50px;
+                            color: $SecondaryColor;
+                          }
+
+                          span {
+                            font-size: 18px;
+                            border-width: 0;
+                            margin: 0;
+                            padding: 0;
+                            color: $PrimaryColor;
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  span {
+                    font-size: 16px;
+                    line-height: 32px;
+                    font-weight: 700;
+                    color: $FourthColor;
+                    margin-bottom: .8rem;
+                    display: block;
+
+                    svg {
+                      color: $SecondaryColor;
+                      width: 12px;
+                      height: 12px;
+                    }
+                  }
+
+                  li {
+                    a {
+                      display: block;
+                      font-size: 14px;
+                      font-weight: 300;
+                      color: $GrayThreeColor;
+                      transition: .1s all ease-in-out;
+
+                      &:hover {
+                        color: $SecondaryColor;
+                        border-radius: 5px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .FNV-MegaMenu-Search {
+          position: static;
+
+          &:hover .dropdown-menu {
+            display: block;
+            margin-top: 0px;
+            width: 800px;
+            border-width: 0;
+            right: 0;
+          }
+        }
+      }
+
+      &.FNV-MegaMenu {
+        background-color: $LightColor;
+      }
+    }
+  }
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+//@media (min-width: 991.98px) { ... }
+
+// `xl` applies to large devices (desktops, less than 1200px)
+//@media (min-width: 1199.98px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+// @media (min-width: 1400px) {
+//   body[dir='ltr'] {
+//     nav {
+//       background-color: $WhiteColor;
+
+//       .container {
+//         padding: 0;
+
+//         &:first-child {
+//           padding: 0.75rem 0rem;
+
+//           .navbar-brand {
+//             width: 200px;
+//           }
+
+//           .FNV-User {
+//             .FNV-Btn {
+//               background-color: unset;
+//               display: flex;
+//               align-items: center;
+
+//               .FNV-UserAvatar {
+//                 width: 40px;
+//                 height: 40px;
+//                 border-radius: 50%;
+//                 background-color: $PrimaryColor;
+//                 border: 2px solid $PrimaryColor;
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: center;
+//                 padding: .5rem;
+//                 margin: 0 .5rem;
+
+//                 svg {
+//                   stroke: $WhiteColor;
+//                 }
+//               }
+
+//               img {
+//                 width: 40px;
+//                 height: 40px;
+//                 border-radius: 50%;
+//                 border: 2px solid $PrimaryColor;
+//                 object-fit: cover;
+//                 margin: 0 .5rem;
+//               }
+
+//               &::after {
+//                 margin-left: .5rem;
+//                 margin-right: unset;
+//               }
+//             }
+
+//             .dropdown-menu {
+//               border-width: 0px;
+//               box-shadow: 0px 0px 20px #00000020;
+
+//               li {
+//                 padding-bottom: 0.3rem;
+//                 text-align: left;
+
+//                 a {
+//                   font-size: 14px;
+
+//                   svg {
+//                     color: $PrimaryColor;
+//                     width: 20px;
+//                     height: 20px;
+//                     margin-right: 0.5rem;
+//                   }
+//                 }
+//               }
+//             }
+//           }
+//         }
+
+//         &:nth-child(2) {
+//           background-color: $GrayOneColor;
+//           border-bottom: 5px solid $PrimaryColor;
+//           border-top: 1px solid $GrayTwoColor;
+
+//           .collapse {
+//             display: flex;
+//             justify-content: space-between;
+
+//             .navbar-nav {
+//               .nav-item {
+
+//                 &.FNV-Appointment {
+//                   background: linear-gradient(-45deg, #003BBF, #FF772C, #003BBF);
+//                   background-size: 400% 400%;
+//                   animation: gradient 3s ease-in-out infinite;
+
+//                   a {
+//                     color: $WhiteColor;
+//                   }
+//                 }
+
+//                 .dropdown-menu.show {
+//                   right: unset;
+//                   left: 0;
+//                   padding: 0;
+
+//                   li {
+//                     text-align: start;
+
+//                     a {
+//                       color: $FourthColor;
+//                     }
+
+//                     &:hover {
+//                       background-color: $PrimaryColor !important;
+
+//                       a {
+//                         background-color: unset;
+//                         color: $WhiteColor;
+//                       }
+//                     }
+//                   }
+//                 }
+
+//                 .nav-link {
+//                   font-size: 16px;
+//                   font-weight: 600;
+//                 }
+//               }
+//             }
+//           }
+//         }
+
+//         .FNV_QuickAccess {
+//           a {
+//             font-size: 16px;
+//             line-height: 22px;
+//             margin-left: 1.5rem;
+//             color: $PrimaryOne;
+
+//             svg {
+//               width: 24px;
+//               height: 24px;
+//               stroke: $PrimaryOne;
+//             }
+//           }
+
+//           button {
+//             padding: 0;
+//             border-width: 0;
+//             font-size: 16px;
+//             margin-left: 1.5rem;
+//             color: $PrimaryOne;
+//             background-color: transparent;
+
+//             svg {
+//               width: 26px;
+//               height: 26px;
+//               stroke: $PrimaryOne;
+//             }
+//           }
+//         }
+
+//         .navbar-nav {
+//           .nav-item {
+
+//             .nav-link {
+//               font-size: 16px;
+//               font-weight: 400;
+//               line-height: 40px;
+//               padding: .5rem 1rem;
+//             }
+
+//             &:hover .nav-link {
+//               background-color: $PrimaryColor;
+//               color: $WhiteColor;
+//             }
+//           }
+//         }
+
+//         .FNV-MegaMenu {
+//           position: relative;
+
+//           &.FNV-Courses {
+//             .dropdown-menu {
+//               width: 1300px;
+//             }
+//           }
+
+//           &.FNV-VIPMemberShip {
+//             .dropdown-menu {
+//               width: 600px;
+//             }
+//           }
+
+//           .dropdown-menu {
+//             display: none;
+//             margin-top: 0px;
+//             padding: 1.5rem;
+//             border-width: 0;
+//             border-top-right-radius: 0px;
+//             border-top-left-radius: 0px;
+//             border-bottom-left-radius: 20px;
+//             border-bottom-right-radius: 20px;
+//             box-shadow: 0px 20px 20px $ShadowPrimary;
+//             overflow: hidden;
+//           }
+
+//           &:hover .dropdown-menu {
+//             display: block;
+//             margin-top: 0px;
+//             padding: 1.5rem;
+//             border-width: 0;
+//             overflow: hidden;
+//           }
+
+//           .dropdown-menu {
+//             .container-fluid {
+//               padding-right: 0px;
+//               padding-bottom: 0px;
+
+//               a {
+//                 font-size: 24px;
+//                 color: $PrimaryColor;
+//                 font-weight: 600;
+
+//                 span {
+//                   border-left: 1px solid #ababab;
+//                   padding-left: 1rem;
+//                   margin-left: 1rem;
+//                   font-size: 14px;
+//                   color: $GrayThreeColor;
+//                   font-weight: 400;
+//                 }
+//               }
+
+//               .row {
+//                 padding-top: 1rem;
+
+//                 .col-md-3,
+//                 .col-md-6,
+//                 .col {
+//                   .row {
+//                     padding: 0;
+
+//                     &.FNV-QuickAction {
+//                       height: 100%;
+
+//                       .col-12 {
+//                         a {
+//                           display: flex;
+//                           flex-direction: column;
+//                           height: 100%;
+//                           justify-content: space-evenly;
+//                           align-items: center;
+//                           background-color: $LightColor;
+
+//                           svg {
+//                             width: 50px;
+//                             height: 50px;
+//                             color: $SecondaryColor;
+//                           }
+
+//                           span {
+//                             font-size: 18px;
+//                             border-width: 0;
+//                             margin: 0;
+//                             padding: 0;
+//                             color: $PrimaryColor;
+//                           }
+//                         }
+//                       }
+//                     }
+//                   }
+
+//                   span {
+//                     font-size: 16px;
+//                     line-height: 32px;
+//                     font-weight: 700;
+//                     color: $FourthColor;
+//                     margin-bottom: .8rem;
+//                     display: block;
+
+//                     svg {
+//                       width: 12px;
+//                       height: 12px;
+//                       margin-right: .5rem;
+//                       color: $SecondaryColor;
+//                     }
+//                   }
+
+//                   li {
+//                     a {
+//                       font-size: 14px;
+//                       font-weight: 500;
+//                       color: $GrayThreeColor;
+//                       transition: .1s all ease-in-out;
+
+//                       &:hover {
+//                         color: $SecondaryColor;
+//                         border-radius: 5px;
+//                       }
+//                     }
+//                   }
+//                 }
+//               }
+//             }
+//           }
+//         }
+
+//         .FNV-MegaMenu-Search {
+//           position: static;
+
+//           &:hover .dropdown-menu {
+//             display: block;
+//             margin-top: 0px;
+//             width: 800px;
+//             border-width: 0;
+//             right: 0;
+//           }
+//         }
+//       }
+
+//       &.FNV-MegaMenu {
+//         background-color: $LightColor;
+//       }
+//     }
+//   }
+// }
+
+// XXX-Large devices (larger desktops, 1920px and up)
+@media (min-width: 1920px) {
+  body[dir='ltr'] {
+    nav {
+      background-color: $WhiteColor;
+
+      .container {
+        padding: 0rem;
+
         .navbar-brand {
           width: 200px;
-          padding-left: 0.5rem;
-          border-left: 1px solid $GrayTwoColor;
         }
-  
+
         .FNV-User {
           .FNV-Btn {
             background-color: unset;
             display: flex;
             align-items: center;
 
-            .FNV-UserAvatar{
+            .FNV-UserAvatar {
               width: 40px;
               height: 40px;
               border-radius: 50%;
@@ -381,11 +2091,11 @@ body[dir='ltr']{
               padding: .5rem;
               margin: 0 .5rem;
 
-              svg{
+              svg {
                 stroke: $WhiteColor;
               }
             }
-  
+
             img {
               width: 40px;
               height: 40px;
@@ -395,19 +2105,20 @@ body[dir='ltr']{
               margin: 0 .5rem;
             }
 
-            &::after{
+            &::after {
               margin-left: .5rem;
               margin-right: unset;
             }
           }
-  
+
           .dropdown-menu {
             border-width: 0px;
             box-shadow: 0px 0px 20px #00000020;
-            
+
             li {
               padding-bottom: 0.3rem;
               text-align: left;
+
               a {
                 font-size: 14px;
 
@@ -421,918 +2132,492 @@ body[dir='ltr']{
             }
           }
         }
-      }
-  
-      &:nth-child(2) {
-        background-color: $GrayOneColor;
-        border-bottom: 5px solid $PrimaryColor;
-        border-top: 1px solid $GrayTwoColor;
-  
-        .collapse{
+
+        .FNV_QuickAccess {
           display: flex;
-          justify-content: space-between;
 
-          .navbar-nav{
-            .nav-item{
+          .dropdown{
+            a{
+              position: relative;
 
-              &.FNV-Appointment{
-                background: linear-gradient(-45deg, #003BBF, #FF772C, #003BBF);
-                background-size: 400% 400%;
-                animation: gradient 3s ease-in-out infinite;
+              svg{
+                width: 24px;
+                height: 24px;
+                stroke-width: 1.5px;
+                stroke: $PrimaryColor;
+              }
 
-                a{
-                  color: $WhiteColor;
+              span{
+                svg{
+                  top: -.4rem;
+                  left: -.4rem;
+
+                  width: 8px;
+                  height: 8px;
+
+                  fill: $PrimaryTwo;
+                  stroke: $PrimaryTwo;
+                  position: absolute;
                 }
               }
 
-              .dropdown-menu.show{
-                right: unset;
-                left: 0;
-                padding: 0;
+              &.show{
+                svg{
+                  stroke: $PrimaryFour;
+                }
+              }
+            }
 
-                li{
-                  text-align: start;
+            .dropdown-menu{
+              top: 200%;
+              left: -150px;
+              width: 360px;
+              padding: 2rem;
+              border-left: 0;
+              border-right: 0;
+              border-bottom: 0;
+              border-radius: 0px;
+              border-top: 1px solid $PrimaryOne;
+              box-shadow: 0 10px 16px $PrimaryShadow;
 
-                  a{
-                    color: $FourthColor;
-                  }
+              span{
+                font-size: 14px;
+                font-weight: 400;
+                color: $PrimaryTextTwo;
+              }
 
-                  &:hover{
-                    background-color: $PrimaryColor!important;
+              a{
+                margin: 0;
+                padding: 1.5rem;
+                color: $PrimaryOne;
+                
+                svg{
+                  margin-right: 1rem;
+                  fill: $PrimaryFour;
+                  stroke: $PrimaryFour;
+                }
 
-                    a{
-                      background-color: unset;
-                      color: $WhiteColor;
+                &.FNV-User{
+                  display: flex;
+                  padding: 1rem;
+
+                  .FNV-UserAvatar{
+                    width: 30%;
+
+                    img, svg{
+                      width: 100%;
+                      object-fit: contain;
                     }
                   }
+
+                  span{
+                    width: 100%;
+                    display: flex;
+                    margin-left: 1rem;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    p{
+                      color: $PrimaryOne;
+                      margin-bottom: 0rem;
+                    }
+
+                    span{
+                      display: flex;
+                      margin-left: 0;
+                      flex-direction: row;
+                      justify-content: start;
+
+                      svg{
+                        top: unset;
+                        left: unset;
+                        width: 20px;
+                        height: 20px;
+                        stroke-width: 0px;
+                        position: relative;
+                        margin-right: .5rem;
+                        stroke: $PrimaryTextOne;
+                      }
+
+                      small{
+                        font-size: 14px;
+                        font-weight: 300;
+                        color: $PrimaryTextOne;
+                      }
+                    }
+                  }
+                } 
+
+                &.FNV-UserMenu{
+                  display: flex;
+                  padding: 1rem;
+
+                  .FNV-UserIcon{
+                    width: 30%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img, svg{
+                      width: 80%;
+                      height: 80%;
+                      object-fit: contain;
+                      margin-right: 0;
+                    }
+                  }
+
+                  span{
+                    width: 100%;
+                    display: flex;
+                    margin-left: 1rem;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    p{
+                      color: $PrimaryOne;
+                      margin-bottom: 0rem;
+                    }
+
+                    span{
+                      display: flex;
+                      margin-left: 0;
+                      flex-direction: row;
+                      justify-content: start;
+
+                      svg{
+                        top: unset;
+                        left: unset;
+                        width: 20px;
+                        height: 20px;
+                        stroke-width: 0px;
+                        position: relative;
+                        margin-right: .5rem;
+                        stroke: $PrimaryTextOne;
+                      }
+
+                      small{
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: $PrimaryTextOne;
+                      }
+                    }
+                  }
+                } 
+
+                &:hover{
+                  color: $White;
+                  background-color: $PrimaryFour;
+
+                  svg{
+                    fill: $White;
+                    stroke: $White;
+                  }
+
+                  &.FNV-User{  
+                    span{
+                      p{
+                        color: $White;
+                      }
+  
+                      span{
+ 
+                        svg{
+                          stroke: $PrimaryTextThree;
+                        }
+  
+                        small{
+                          color: $White;
+                        }
+                      }
+                    }
+                  }
+
+                  &.FNV-UserMenu{  
+                    .FNV-UserIcon{
+                      width: 30%;
+  
+                      img, svg{
+                        stroke: $White;
+                      }
+                    }
+  
+                    span{
+                      p{
+                        color: $White;
+                      }
+  
+                      span{
+                        small{
+                          color: $White;
+                        }
+                      }
+                    }
+                  } 
                 }
               }
 
-              .nav-link{
-                font-size: 16px;
-                font-weight: 600;
+              &.show{
+                display: flex;
+                flex-direction: column;
               }
-            }
-          }
-        }
-      }
-  
-      .FNV_QuickAccess{
-        a{
-          margin-left: .5rem;
-          font-size: 14px;
-          line-height: 22px;
-  
-          svg{
-            width: 20px;
-            height: 20px;
-          }
-        }
-      }
-  
-      .navbar-nav {
-        .nav-item {
-  
-          .nav-link {
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 40px;
-            padding: .5rem 1rem;
-          }
-  
-          &:hover .nav-link {
-            background-color: $PrimaryColor;
-            color: $WhiteColor;
-          }
-        }
-      }
-  
-      .FNV-MegaMenu {
-        position: relative;
 
-        &.FNV-Courses{
-          .dropdown-menu{
-            width: 1300px;
-          }
-        }
-  
-        &.FNV-VIPMemberShip{
-          .dropdown-menu{
-            width: 600px;
-          }
-        }
-  
-        .dropdown-menu {
-          display: none;
-          margin-top: 0px;
-          padding: 1.5rem;
-          border-width: 0;
-          border-top-right-radius: 0px;
-          border-top-left-radius: 0px;
-          border-bottom-left-radius: 20px;
-          border-bottom-right-radius: 20px;
-          box-shadow: 0px 20px 20px $ShadowPrimary;
-          overflow: hidden;
-        }
-  
-        &:hover .dropdown-menu {
-          display: block;
-          margin-top: 0px;
-          padding: 1.5rem;
-          border-width: 0;
-          overflow: hidden;
-        }
-  
-        .dropdown-menu{
-          .container-fluid{
-            padding-right: 0px;
-            padding-bottom: 0px;
+              ul{
+                max-height: 150px;
+                overflow: scroll;
+                padding: 0px;
 
-            a{
-              font-size: 24px;
-              color: $PrimaryColor;
-              font-weight: 600;
-  
-              span{
-                border-left: 1px solid #ababab;
-                padding-left: 1rem;
-                margin-left: 1rem;
-                font-size: 14px;
-                color: $GrayThreeColor;
-                font-weight: 400;
-              }
-            }
-  
-            .row{
-              padding-top: 1rem;
-              .col-md-3, .col-md-6, .col{
-                .row{
+                p{
+                  font-size: 14px;
+                  color: $PrimaryTextTwo;
+                }
+
+                li{
                   padding: 0;
-  
-                  &.FNV-QuickAction{
-                    height: 100%;
-  
-                    .col-12{
-                      a{
-                        display: flex;
-                        flex-direction: column;
-                        height: 100%;
-                        justify-content: space-evenly;
-                        align-items: center;
-                        background-color: $LightColor;
-  
+
+                  a{
+                    width: 100%;
+                    display: block;
+                    padding: .5rem;
+                    font-size: 12px;
+                  }
+                }
+              }
+            }
+          }
+
+          button {
+            padding: 0;
+            border-width: 0;
+            font-size: 16px;
+            margin-left: 1.5rem;
+            color: $PrimaryOne;
+            background-color: transparent;
+
+            svg {
+              width: 26px;
+              height: 26px;
+              stroke: $PrimaryOne;
+            }
+          }
+
+          a{
+            color: $PrimaryOne;
+            position: relative;
+            margin-left: 1.5rem;
+
+            svg {
+              width: 24px;
+              height: 24px;
+              stroke: $PrimaryOne;
+            }
+
+            span{
+              svg{
+                top: -.4rem;
+                left: -.4rem;
+
+                width: 8px;
+                height: 8px;
+
+                fill: $PrimaryTwo;
+                stroke: $PrimaryTwo;
+                position: absolute;
+              }
+            }
+          }
+        }
+
+        .navbar-collapse{
+          position: relative;
+          justify-content: center;
+          
+          .navbar-nav{
+            li{
+              a{
+                font-size: 16px;
+                font-weight: 400;
+                padding: 2rem .5rem;
+                color: $PrimaryTextFour;
+              }
+
+              &:hover{
+                a{
+                  font-weight: 500;
+                  color: $PrimaryOne;
+                }
+              }
+            }
+
+            .FNV-MegaMenu {
+              position: unset;
+
+              &.FNV-Courses{
+                .d-flex{
+                  .nav{
+                    button{
+                      width: 300px;
+                      padding: 1rem;
+                      display: flex;
+                      border-radius: 0px;
+                      align-items: center;
+
+                      svg{
+                        width: 35px;
+                        height: 35px;
+                        stroke: $PrimaryFour;
+                      }
+
+                      span{
+                        font-size: 18px;
+                        font-weight: 300;
+                        margin-left: 1rem;
+                        color: $PrimaryOne;
+                      }
+
+                      &.active{
+                        background-color: $PrimaryFour;
+
                         svg{
-                          width: 50px;
-                          height: 50px;
-                          color: $SecondaryColor;
+                          stroke: $White;
                         }
   
                         span{
-                          font-size: 18px;
-                          border-width: 0;
-                          margin: 0;
-                          padding: 0;
-                          color: $PrimaryColor;
+                          color: $White;
                         }
                       }
                     }
                   }
                 }
-                
-                span{
-                  font-size: 16px;
-                  line-height: 32px;
-                  font-weight: 700;
-                  color: $FourthColor;
-                  margin-bottom: .8rem;
-                  display: block;
-  
-                  svg{
-                    width: 12px;
-                    height: 12px;
-                    margin-right: .5rem;
-                    color: $SecondaryColor;
-                  }
-                }
-                
-                li{
-                  a{
-                    font-size: 14px;
-                    font-weight: 500;
-                    color: $GrayThreeColor;
-                    transition: .1s all ease-in-out;
-  
-                    &:hover{
-                      color: $SecondaryColor;
-                      border-radius: 5px;
-                    }
-                  }
+              }
+    
+              &.FNV-VIPMemberShip {
+                .dropdown-menu {
+                  width: 600px;
                 }
               }
-            }
-          }
-        }
-      }
-  
-      .FNV-MegaMenu-Search {
-        position: static;
-  
-        &:hover .dropdown-menu {
-          display: block;
-          margin-top: 0px;
-          width: 800px;
-          border-width: 0;
-          right: 0;
-        }
-      }
-    }
-  
-    &.FNV-MegaMenu{
-      background-color: $LightColor;
-    }
-  }
-}
-
-/* For mobile phones: */
-@media only screen and (max-width: 768px) {
-  body[dir='rtl']{
-    nav {
-      .container-fluid {
-        padding: 0 1rem;
     
-        &:first-child {
-          background-color: $WhiteColor;
-          padding: 0.75rem 1rem;
-    
-          .OffCanvasMenu {
-            padding-right: 0.75rem;
-            padding-left: 0.5rem;
-    
-            svg {
-              color: $PrimaryColor;
-            }
-          }
-    
-          .OffCanvasMenu2{
-            margin-right: 1rem;
-            color: $PrimaryColor;
-          }
-    
-          .navbar-brand {
-            width: 200px;
-            padding-left: 0.5rem;
-            border-left: 1px solid $GrayTwoColor;
-          }
-    
-          .navbar-collapse{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between !important;
-            margin-top: 1rem;
-
-            .FNV-User {
-              .FNV-Btn {
-                background-color: unset;
-                display: flex;
-                align-items: center;
-    
-                .FNV-UserAvatar{
-                  width: 40px;
-                  height: 40px;
-                  border-radius: 50%;
-                  background-color: $PrimaryColor;
-                  border: 2px solid $PrimaryColor;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  padding: .5rem;
-                  margin: 0 .5rem;
-    
-                  svg{
-                    stroke: $WhiteColor;
-                  }
-                }
-      
-                img {
-                  width: 30px;
-                  height: 30px;
-                  border-radius: 50%;
-                  border: 2px solid $PrimaryColor;
-                  object-fit: cover;
-                  margin: 0 .5rem;
-                }
-
-                span{
-                  display: none;
-                }
-    
-                &::after{
-                  margin-right: .2rem;
-                  margin-left: unset;
-                }
-              }
-      
               .dropdown-menu {
-                border-width: 0px;
-                box-shadow: 0px 0px 20px #00000020;
-                
-                li {
-                  padding-bottom: 0.3rem;
-                  text-align: right;
-                  a {
-                    font-size: 14px;
-    
-                    svg {
-                      color: $PrimaryColor;
-                      width: 20px;
-                      height: 20px;
-                      margin-left: 0.5rem;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-    
-        &:nth-child(2) {
-          background-color: $GrayOneColor;
-          border-bottom: 5px solid $PrimaryColor;
-          border-top: 1px solid $GrayTwoColor;
-    
-          .collapse{
-            display: none;
-            justify-content: space-between;
-  
-            &.show{
-              display: flex;
-              flex-direction: column;
-            }
-
-            .navbar-nav{
-              padding-right: 0;
-              width: 100%;
-  
-              .nav-item{
-                &.FNV-Appointment{
-                  background: linear-gradient(-45deg, #003BBF, #FF772C, #003BBF);
-                  background-size: 400% 400%;
-                  animation: gradient 3s ease-in-out infinite;
-  
-                  a{
-                    color: $WhiteColor;
-                  }
-                }
-  
-                .dropdown-menu.show{
-                  right: 0;
-                  left: unset;
-                  padding: 0;
-                  width: 100%;
-  
-                  li{
-                    text-align: start;
-  
-                    a{
-                      color: $FourthColor;
-                    }
-  
-                    &:hover{
-                      background-color: $PrimaryColor!important;
-  
-                      a{
-                        background-color: unset;
-                        color: $WhiteColor;
-                      }
-                    }
-                  }
-                }
-  
-                .nav-link{
-                  font-size: 16px;
-                  font-weight: 600;
-                }
-              }
-            }
-
-            .d-flex{
-              display: none!important;
-              width: 100%;
-            }
-          }
-        }
-    
-        .FNV_QuickAccess{
-          a{
-            margin-left: .5rem;
-            font-size: 14px;
-            line-height: 22px;
-    
-            svg{
-              width: 20px;
-              height: 20px;
-            }
-          }
-        }
-    
-        .navbar-nav {
-          .nav-item {
-    
-            .nav-link {
-              font-size: 16px;
-              font-weight: 400;
-              line-height: 40px;
-              padding: .5rem 1rem;
-            }
-    
-            &:hover .nav-link {
-              background-color: $PrimaryColor;
-              color: $WhiteColor;
-            }
-          }
-        }
-    
-        .FNV-MegaMenu {
-          position: static;
-
-          &.FNV-Courses{
-            .dropdown-menu{
-              width: 1200px;
-            }
-          }
-
-          &.FNV-VIPMemberShip{
-            .container-fluid{
-              padding: 0;
-              .row{
-                .col-md-6{
-                  padding: 0;
-
-                  &:first-child{
-                    padding-right: 2rem;
-                  }
-                }
-              }
-            }
-          }
-    
-          &:hover .dropdown-menu {
-            display: block;
-            margin-top: 0px;
-            width: 80%;
-            padding: 1.5rem;
-            border-width: 0;
-            border-top-right-radius: 0px;
-            border-top-left-radius: 0px;
-            border-bottom-left-radius: 20px;
-            border-bottom-right-radius: 20px;
-            box-shadow: 0px 20px 20px $ShadowPrimary;
-            overflow: hidden;
-          }
-    
-          .dropdown-menu{
-            .container-fluid{
-              a{
-                font-size: 24px;
-                color: $PrimaryColor;
-                font-weight: 600;
+                width: 100%;
                 display: none;
-    
-                span{
-                  border-left: 1px solid #ababab;
-                  padding-left: 1rem;
-                  margin-left: 1rem;
+                margin-top: 0px;
+                padding: 2rem;
+                border-width: 0;
+                overflow: hidden;
+                border-radius: 0px;
+                left: 0;
+                position: absolute;
+
+                h2{
                   font-size: 14px;
-                  color: $GrayThreeColor;
-                  font-weight: 400;
-                  display: none;
+                  margin-bottom: 1.5rem;
+                  color: $PrimaryTextTwo;
                 }
               }
     
-              .row{
-                padding-top: 1rem;
-                .col-md-3, .col-md-6, .col{
-                  .row{
-                    padding: 0;
-    
-                    &.FNV-QuickAction{
-                      height: 100%;
-    
-                      .col-12{
-                        a{
-                          display: flex;
-                          flex-direction: column;
-                          height: 100%;
-                          justify-content: space-evenly;
-                          align-items: center;
-                          background-color: $LightColor;
-    
-                          svg{
-                            width: 50px;
-                            height: 50px;
-                            color: $SecondaryColor;
-                          }
-    
-                          span{
-                            font-size: 18px;
-                            border-width: 0;
-                            margin: 0;
-                            padding: 0;
-                            color: $PrimaryColor;
-                          }
-                        }
-                      }
-                    }
-                  }
-                  
-                  span{
-                    font-size: 16px;
-                    line-height: 32px;
-                    font-weight: 700;
-                    color: $FourthColor;
-                    margin-bottom: .8rem;
-                    display: block;
-    
-                    svg{
-                      color: $SecondaryColor;
-                      width: 12px;
-                      height: 12px;
-                    }
-                  }
-                  
-                  li{
-                    a{
-                      display: block;
-                      font-size: 14px;
-                      font-weight: 300;
-                      color: $GrayThreeColor;
-                      transition: .1s all ease-in-out;
-    
-                      &:hover{
-                        color: $SecondaryColor;
-                        border-radius: 5px;
-                      }
-                    }
-                  }
-                }
+              &:hover .dropdown-menu {
+                display: block;
+                margin-top: 0px;
+                border-width: 0;
+                overflow: hidden;
+                border-top: 1px solid #223885;
+                box-shadow: 0px 20px 20px $ShadowPrimary;
               }
-            }
-          }
-        }
     
-        .FNV-MegaMenu-Search {
-          position: static;
-    
-          &:hover .dropdown-menu {
-            display: block;
-            margin-top: 0px;
-            width: 800px;
-            border-width: 0;
-            right: 0;
-          }
-        }
-      }
-    
-      &.FNV-MegaMenu{
-        background-color: $LightColor;
-      }
-    }
-  }
-  
-  body[dir='ltr']{
-    nav {
-      .container-fluid {
-        padding: 0 1rem;
-    
-        &:first-child {
-          background-color: $WhiteColor;
-          padding: 0.75rem 1rem;
-    
-          .OffCanvasMenu {
-            padding-right: 0.75rem;
-            padding-left: 0.5rem;
-    
-            svg {
-              color: $PrimaryColor;
-            }
-          }
-    
-          .OffCanvasMenu2{
-            margin-right: 1rem;
-            color: $PrimaryColor;
-          }
-    
-          .navbar-brand {
-            width: 200px;
-            padding-left: 0.5rem;
-            border-left: 1px solid $GrayTwoColor;
-          }
-
-          .navbar-collapse{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between !important;
-            margin-top: 1rem;
-    
-            .FNV-User {
-              .FNV-Btn {
-                background-color: unset;
-                display: flex;
-                align-items: center;
-    
-                .FNV-UserAvatar{
-                  width: 40px;
-                  height: 40px;
-                  border-radius: 50%;
-                  background-color: $PrimaryColor;
-                  border: 2px solid $PrimaryColor;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  padding: .5rem;
-                  margin: 0 .5rem;
-    
-                  svg{
-                    stroke: $WhiteColor;
-                  }
-                }
-      
-                img {
-                  width: 40px;
-                  height: 40px;
-                  border-radius: 50%;
-                  border: 2px solid $PrimaryColor;
-                  object-fit: cover;
-                  margin: 0 .5rem;
-                }
-
-                span{
-                  display: none;
-                }
-    
-                &::after{
-                  margin-left: .5rem;
-                  margin-right: unset;
-                }
-              }
-      
               .dropdown-menu {
-                border-width: 0px;
-                box-shadow: 0px 0px 20px #00000020;
-                
-                li {
-                  padding-bottom: 0.3rem;
-                  text-align: left;
+                .container-fluid {
+                  padding-right: 0px;
+                  padding-bottom: 0px;
+    
                   a {
-                    font-size: 14px;
+                    font-size: 24px;
+                    color: $PrimaryColor;
+                    font-weight: 600;
     
-                    svg {
-                      color: $PrimaryColor;
-                      width: 20px;
-                      height: 20px;
-                      margin-right: 0.5rem;
+                    span {
+                      border-left: 1px solid #ababab;
+                      padding-left: 1rem;
+                      margin-left: 1rem;
+                      font-size: 14px;
+                      color: $GrayThreeColor;
+                      font-weight: 400;
                     }
                   }
-                }
-              }
-            }
-
-            .d-flex{
-              display: none!important;
-            }
-          }
-        }
     
-        &:nth-child(2) {
-          background-color: $GrayOneColor;
-          border-bottom: 5px solid $PrimaryColor;
-          border-top: 1px solid $GrayTwoColor;
+                  .row {
+                    padding-top: 1rem;
     
-          .collapse{
-            display: none;
-            justify-content: space-between;
-  
-            &.show{
-              display: flex;
-              flex-direction: column;
-            }
-  
-            .navbar-nav{
-              width: 100%;
-
-              .nav-item{
-  
-                &.FNV-Appointment{
-                  background-color: $PrimaryColor;
-  
-                  a{
-                    color: $WhiteColor;
-                  }
-                }
-  
-                .dropdown-menu.show{
-                  width: 100%;
-                  right: unset;
-                  left: 0;
-                  padding: 0;
-  
-                  li{
-                    text-align: start;
-  
-                    a{
-                      color: $FourthColor;
-                    }
-  
-                    &:hover{
-                      background-color: $PrimaryColor!important;
-  
-                      a{
-                        background-color: unset;
-                        color: $WhiteColor;
-                      }
-                    }
-                  }
-                }
-  
-                .nav-link{
-                  font-size: 16px;
-                  font-weight: 600;
-                }
-              }
-            }
-
-            .d-flex{
-              display: none!important;
-            }
-          }
-        }
+                    .col-md-3,
+                    .col-md-6,
+                    .col {
+                      .row {
+                        padding: 0;
     
-        .FNV_QuickAccess{
-          a{
-            margin-left: .5rem;
-            font-size: 14px;
-            line-height: 22px;
-    
-            svg{
-              width: 20px;
-              height: 20px;
-            }
-          }
-        }
-    
-        .navbar-nav {
-          .nav-item {
-    
-            .nav-link {
-              font-size: 16px;
-              font-weight: 400;
-              line-height: 40px;
-              padding: .5rem 1rem;
-            }
-    
-            &:hover .nav-link {
-              background-color: $PrimaryColor;
-              color: $WhiteColor;
-            }
-          }
-        }
-    
-        .FNV-MegaMenu {
-          position: static;
-
-          &.FNV-VIPMemberShip{
-            .container-fluid{
-              padding: 0;
-              .row{
-                .col-md-6{
-                  padding: 0;
-
-                  &:first-child{
-                    padding-left: 2rem;
-                  }
-                }
-              }
-            }
-          }
-    
-          &:hover .dropdown-menu {
-            display: block;
-            margin-top: 0px;
-            width: 80%;
-            padding: 1.5rem;
-            border-width: 0;
-            border-top-right-radius: 0px;
-            border-top-left-radius: 0px;
-            border-bottom-left-radius: 20px;
-            border-bottom-right-radius: 20px;
-            box-shadow: 0px 20px 20px $ShadowPrimary;
-            overflow: hidden;
-          }
-    
-          .dropdown-menu{
-            .container-fluid{
-              a{
-                font-size: 24px;
-                color: $PrimaryColor;
-                font-weight: 600;
-                display: none;
-    
-                span{
-                  border-left: 1px solid #ababab;
-                  padding-left: 1rem;
-                  margin-left: 1rem;
-                  font-size: 14px;
-                  color: $GrayThreeColor;
-                  font-weight: 400;
-                }
-              }
-    
-              .row{
-                padding-top: 1rem;
-                .col-md-3, .col-md-6, .col{
-                  .row{
-                    padding: 0;
-    
-                    &.FNV-QuickAction{
-                      height: 100%;
-    
-                      .col-12{
-                        a{
-                          display: flex;
-                          flex-direction: column;
+                        &.FNV-QuickAction {
                           height: 100%;
-                          justify-content: space-evenly;
-                          align-items: center;
-                          background-color: $LightColor;
     
-                          svg{
-                            width: 50px;
-                            height: 50px;
-                            color: $SecondaryColor;
+                          .col-12 {
+                            a {
+                              display: flex;
+                              flex-direction: column;
+                              height: 100%;
+                              justify-content: space-evenly;
+                              align-items: center;
+                              background-color: $LightColor;
+    
+                              svg {
+                                width: 50px;
+                                height: 50px;
+                                color: $SecondaryColor;
+                              }
+    
+                              span {
+                                font-size: 18px;
+                                border-width: 0;
+                                margin: 0;
+                                padding: 0;
+                                color: $PrimaryColor;
+                              }
+                            }
                           }
+                        }
+                      }
     
-                          span{
-                            font-size: 18px;
-                            border-width: 0;
-                            margin: 0;
-                            padding: 0;
-                            color: $PrimaryColor;
+                      span {
+                        font-size: 16px;
+                        line-height: 32px;
+                        font-weight: 700;
+                        color: $FourthColor;
+                        margin-bottom: .8rem;
+                        display: block;
+    
+                        svg {
+                          width: 12px;
+                          height: 12px;
+                          margin-right: .5rem;
+                          color: $SecondaryColor;
+                        }
+                      }
+    
+                      li {
+                        a {
+                          font-size: 14px;
+                          font-weight: 500;
+                          color: $GrayThreeColor;
+                          transition: .1s all ease-in-out;
+    
+                          &:hover {
+                            color: $SecondaryColor;
+                            border-radius: 5px;
                           }
                         }
                       }
                     }
                   }
-                  
-                  span{
-                    font-size: 16px;
-                    line-height: 32px;
-                    font-weight: 700;
-                    color: $FourthColor;
-                    margin-bottom: .8rem;
-                    display: block;
-    
-                    svg{
-                      color: $SecondaryColor;
-                      width: 12px;
-                      height: 12px;
-                    }
-                  }
-                  
-                  li{
-                    a{
-                      display: block;
-                      font-size: 14px;
-                      font-weight: 300;
-                      color: $GrayThreeColor;
-                      transition: .1s all ease-in-out;
-    
-                      &:hover{
-                        color: $SecondaryColor;
-                        border-radius: 5px;
-                      }
-                    }
-                  }
                 }
               }
             }
           }
         }
-    
-        .FNV-MegaMenu-Search {
-          position: static;
-    
-          &:hover .dropdown-menu {
-            display: block;
-            margin-top: 0px;
-            width: 800px;
-            border-width: 0;
-            right: 0;
-          }
-        }
-      }
-    
-      &.FNV-MegaMenu{
-        background-color: $LightColor;
       }
     }
   }

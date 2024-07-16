@@ -1,13 +1,5 @@
 @import './variables';
 
-*{
-  transition: .3s all ease-in-out;
-}
-
-body{
-  font-family: 'Helvetica Neue', YekanBakh;
-}
-
 a {
   text-decoration: none;
 }
@@ -30,4 +22,30 @@ a {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: $SecondaryColor;
+}
+
+// Small devices (landscape phones, 576px and up)
+//@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+//@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+//@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+//@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { 
+  .container{
+    max-width: 1320px!important;
+  }
+}
+
+// XX-Large devices (larger desktops, 1920px and up)
+@media (min-width: 1920px) { 
+  .container{
+    max-width: 1680px!important;
+  }
 }

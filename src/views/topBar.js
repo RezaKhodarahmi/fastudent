@@ -18,7 +18,7 @@ const TopBanner = () => {
   return (
     <>
       <section className='FNV-TopBar'>
-        <div className='container-fluid'>
+        <div className='container'>
           <div className='row'>
 
             <div className='col-6'>

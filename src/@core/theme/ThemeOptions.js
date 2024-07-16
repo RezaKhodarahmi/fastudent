@@ -30,6 +30,7 @@ const themeOptions = settings => {
         fontFamily:
           userFontFamily ||
           [
+            'Fira Sans',
             'Public Sans',
             'Ravi',
             '-apple-system',
