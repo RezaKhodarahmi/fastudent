@@ -35,6 +35,7 @@ const Course = () => {
   const [commentSubmit, setCommentSubmit] = useState(false)
   const [remindedDays, setRemindedDays] = useState('0')
   const [user, setUser] = useState(null)
+  const [faq, setFaqs] = useState([])
   const [newComment, setNewComment] = useState(null)
   const [succeededMessage, setSucceededMessage] = useState(null)
   const [open, setOpen] = useState(false)
@@ -124,6 +125,7 @@ const Course = () => {
     // }
     if (courseData?.data) {
       setData(courseData?.data?.data)
+      setFaqs(courseData?.data?.faq)
       setCourseId(courseData?.data?.data?.id)
       setIsEnrolled(courseData?.data?.enrolled)
       setCycleId(courseData?.data?.cycleId)
@@ -762,59 +764,32 @@ const Course = () => {
                       <div className='FNV-Course-Card-Body'>
                         <div className='accordion' id='faq'>
                           {/* Item */}
-                          <div className='accordion-item'>
-                            <h2 className='accordion-header'>
-                              <button
-                                className='accordion-button collapsed'
-                                type='button'
-                                data-bs-toggle='collapse'
-                                data-bs-target='#QuestionOne'
-                                aria-expanded='false'
-                                aria-controls='QuestionOne'
-                              >
-                                1. {t('single-course-faq-question')}{' '}
-                              </button>
-                            </h2>
-                            <div id='QuestionOne' className='accordion-collapse collapse'>
-                              <div className='accordion-body FNV-Locked'>{t('single-course-faq-answer')}:</div>
-                            </div>
-                          </div>
-                          {/* Item */}
-                          <div className='accordion-item'>
-                            <h2 className='accordion-header'>
-                              <button
-                                className='accordion-button collapsed'
-                                type='button'
-                                data-bs-toggle='collapse'
-                                data-bs-target='#QuestionTwo'
-                                aria-expanded='false'
-                                aria-controls='QuestionTwo'
-                              >
-                                2. {t('single-course-faq-question')}{' '}
-                              </button>
-                            </h2>
-                            <div id='QuestionTwo' className='accordion-collapse collapse'>
-                              <div className='accordion-body FNV-Locked'>{t('single-course-faq-answer')}:</div>
-                            </div>
-                          </div>
-                          {/* Item */}
-                          <div className='accordion-item'>
-                            <h2 className='accordion-header'>
-                              <button
-                                className='accordion-button collapsed'
-                                type='button'
-                                data-bs-toggle='collapse'
-                                data-bs-target='#QuestionThree'
-                                aria-expanded='false'
-                                aria-controls='QuestionThree'
-                              >
-                                3. {t('single-course-faq-question')}{' '}
-                              </button>
-                            </h2>
-                            <div id='QuestionThree' className='accordion-collapse collapse'>
-                              <div className='accordion-body FNV-Locked'>{t('single-course-faq-answer')}:</div>
-                            </div>
-                          </div>
+                          {faq &&
+                            faq.map((item, index) => (
+                              <div key={index} className='accordion-item'>
+                                <h2 className='accordion-header'>
+                                  <button
+                                    className='accordion-button collapsed'
+                                    type='button'
+                                    data-bs-toggle='collapse'
+                                    data-bs-target='#QuestionOne'
+                                    aria-expanded='false'
+                                    aria-controls='QuestionOne'
+                                  >
+                                    {index + 1}. {item.title}{' '}
+                                  </button>
+                                </h2>
+                                <div id='QuestionOne' className='accordion-collapse collapse'>
+                                  <div className='accordion-body FNV-Locked'>
+                                    {t('single-course-faq-answer')}:
+                                    <div
+                                      className='non-clickable-content'
+                                      dangerouslySetInnerHTML={{ __html: item?.description }}
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            ))}
                         </div>
                       </div>
                     </div>
