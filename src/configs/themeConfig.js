@@ -35,7 +35,7 @@ const themeConfig = {
   disableRipple: false /* true | false */,
   disableCustomizer: true /* true | false */,
   toastPosition: 'top-center' /* top-left | top-center | top-right | bottom-left | bottom-center | bottom-right */,
-  recaptchaKey: '6Ld3vRchAAAAANNHnay731SB7BpaV1F1NxXx8WWT',
+  recaptchaKey: '6LcL5cgpAAAAAJi7_h_u9GjV22cY_3MIigYlBzAg',
 
   stripePublicKey:
     'pk_live_51HHFtaG5TuvsK0tsNRhJ7PHgkSK8BblevRKxH1fxgQfdg09Nh1VP86VJx39ZG4wf1YZVNoaicuBD9TbzqSMvpEsN00us1rpu0r' //main

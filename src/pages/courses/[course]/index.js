@@ -459,9 +459,7 @@ const Course = () => {
                             {t('single-course-teacher')}:{' '}
                             <strong>
                               {data?.teachers ? (
-                                <Link href={`${appConfig.appUrl}/teachers/${data?.teachers[0]?.id}`} passHref>
-                                  {data?.teachers[0]?.firstName + ' ' + data?.teachers[0]?.lastName}
-                                </Link>
+                                <span>{data?.teachers[0]?.firstName + ' ' + data?.teachers[0]?.lastName}</span>
                               ) : (
                                 'Fanavaran'
                               )}
@@ -556,17 +554,11 @@ const Course = () => {
                           <small>{t('single-course-teacher')}:</small>
                           <h4>
                             {data?.teachers ? (
-                              <Link href={`${appConfig.appUrl}/teachers/${data?.teachers[0]?.id}`} passHref>
-                                {data?.teachers[0]?.firstName + ' ' + data?.teachers[0]?.lastName}
-                              </Link>
+                              <span>{data?.teachers[0]?.firstName + ' ' + data?.teachers[0]?.lastName}</span>
                             ) : (
                               'Fanavaran'
                             )}
                           </h4>
-                          <p>
-                            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s,
-                          </p>
                         </div>
                       </div>
                     </div>
@@ -755,17 +747,17 @@ const Course = () => {
                     </div>
 
                     {/* FAQ */}
-                    <div className='FNV-Course-Card'>
-                      {/* Head */}
-                      <div className='FNV-Course-Card-Head'>
-                        <h4>{t('single-course-faq')}</h4>
-                      </div>
-                      {/* Body */}
-                      <div className='FNV-Course-Card-Body'>
-                        <div className='accordion' id='faq'>
-                          {/* Item */}
-                          {faq &&
-                            faq.map((item, index) => (
+                    {faq && (
+                      <div className='FNV-Course-Card'>
+                        {/* Head */}
+                        <div className='FNV-Course-Card-Head'>
+                          <h4>{t('single-course-faq')}</h4>
+                        </div>
+                        {/* Body */}
+                        <div className='FNV-Course-Card-Body'>
+                          <div className='accordion' id='faq'>
+                            {/* Item */}
+                            {faq.map((item, index) => (
                               <div key={index} className='accordion-item'>
                                 <h2 className='accordion-header'>
                                   <button
@@ -790,9 +782,10 @@ const Course = () => {
                                 </div>
                               </div>
                             ))}
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    )}
                   </div>
 
                   <div className='col-md-4 d-sm-none d-md-block'>
