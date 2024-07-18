@@ -268,33 +268,72 @@ const Header = props => {
                           <path d="M18.2537 33.9529L6.79431 22.418L2.21407 27.0316L13.6734 38.5665L18.2537 33.9529Z" />
                           <path d="M29.2938 30.2173L31.0138 31.9492" />
                           <path d="M6.22546 26.4561L7.37111 27.6097" />
-                          <path d="M15.6685 11.7312L12.879 8.92235C13.5204 6.82393 13.0207 4.44914 11.3708 2.78783C9.5002 0.904213 6.71664 0.512168 4.45817 1.59667L8.79312 5.96174L5.92752 8.84724L1.59256 4.48218C0.515532 6.75634 0.904873 9.55923 2.7755 11.4428C4.18071 12.8578 6.10056 13.4271 7.92643 13.1672L9.93728 15.1921" stroke="#0074FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M15.6685 11.7312L12.879 8.92235C13.5204 6.82393 13.0207 4.44914 11.3708 2.78783C9.5002 0.904213 6.71664 0.512168 4.45817 1.59667L8.79312 5.96174L5.92752 8.84724L1.59256 4.48218C0.515532 6.75634 0.904873 9.55923 2.7755 11.4428C4.18071 12.8578 6.10056 13.4271 7.92643 13.1672L9.93728 15.1921"/>
                         </svg>
                         <span>{t('technician')}</span>
                       </button>
 
                       {/* Architect */}
-                      <button class="nav-link" id="technician-tab" data-bs-toggle="pill" data-bs-target="#technician" type="button" role="tab" aria-controls="technician" aria-selected="true">
-                        <svg viewBox="0 0 41 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M35.5548 13.9054V10.1404C35.5548 9.01704 34.6425 8.10474 33.5176 8.10474H3.03562C1.9123 8.10474 1 9.01545 1 10.1404V14.6527C1 15.565 1.24116 16.4217 1.66479 17.1595C2.53584 18.6795 4.17322 19.7044 6.05176 19.7044H12.8853" />
-                          <path d="M22.3814 32.3674H4.16078C2.78201 32.3674 1.66663 31.252 1.66663 29.8732V21.9211" />
-                          <path d="M8.83752 6.51823V3.37198C8.83752 2.06461 9.90214 1 11.2095 1H25.343C26.6504 1 27.715 2.06461 27.715 3.37198V6.51823" />
-                          <path d="M19.5349 23.0826H17.0201C16.4902 23.0826 16.0618 22.4289 16.0618 21.6213V17.7896C16.0618 16.9836 16.4918 16.3284 17.0201 16.3284H19.5349C20.0648 16.3284 20.4932 16.9821 20.4932 17.7896V21.6213C20.4932 22.4273 20.0633 23.0826 19.5349 23.0826Z" />
-                          <path d="M31.5662 35.6231C29.2831 34.9076 27.322 33.6161 25.8671 31.8676C24.2979 29.9811 23.4681 27.7408 23.4681 25.3895V18.3941C26.3796 18.1117 29.1704 17.1693 31.5646 15.6572C32.8037 16.441 34.1492 17.0725 35.5819 17.5437C36.9035 17.9768 38.2696 18.2624 39.6611 18.3957V25.3911C39.6611 27.7424 38.8313 29.9827 37.2621 31.8692C35.8072 33.6177 33.8462 34.9091 31.563 35.6247L31.5662 35.6231Z" />
-                          <path d="M27.0283 25.1294C27.0283 25.1294 30.0047 29.1546 30.0047 28.9642C30.0047 28.7738 36.1021 21.9133 36.1021 21.9133" />
+                      <button class="nav-link" id="architect-tab" data-bs-toggle="pill" data-bs-target="#architect" type="button" role="tab" aria-controls="architect" aria-selected="true">
+                        <svg  viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.60306 30.9206C5.28338 30.3765 4.62712 30.1537 4.06922 30.1537C2.374 30.1537 1 31.5277 1 33.2229V12.5099C1 10.8147 2.374 9.44067 4.06922 9.44067C4.62865 9.44067 5.34024 9.57285 5.60306 10.2076V30.9221V30.9206Z"/>
+                          <path d="M13.2755 13.2751H5.60327"/>
+                          <path d="M31.688 13.2751H24.0157"/>
+                          <path d="M36.2906 33.2214C36.2906 34.9167 34.9166 36.2907 33.2214 36.2907H4.06922C2.374 36.2907 1 34.9167 1 33.2214"/>
+                          <path d="M31.688 30.9208C32.0077 30.3768 32.6639 30.1539 33.2218 30.1539C34.917 30.1539 36.291 31.5279 36.291 33.2231V12.5101C36.291 10.8149 34.917 9.44092 33.2218 9.44092C32.6624 9.44092 31.9508 9.57309 31.688 10.2078V30.9224V30.9208Z"/>
+                          <path d="M18.6452 1L17.1113 2.53538V5.60306L18.6452 7.13843L20.179 5.60306V2.53538L18.6452 1Z"/>
+                          <path d="M16.3449 14.042L9.43958 30.9204"/>
+                          <path d="M27.0847 30.9204L20.9478 14.042"/>
+                          <path d="M18.6453 19.4121V26.3175"/>
+                          <path d="M18.6455 14.8092C20.7641 14.8092 22.4816 13.0917 22.4816 10.9731C22.4816 8.85446 20.7641 7.13696 18.6455 7.13696C16.5268 7.13696 14.8093 8.85446 14.8093 10.9731C14.8093 13.0917 16.5268 14.8092 18.6455 14.8092Z"/>
+                          <path d="M26.3182 18.645C24.2818 20.8151 21.8565 22.4812 18.6459 22.4812C15.4353 22.4812 13.01 20.8151 10.9736 18.645"/>
                         </svg>
+
                         <span>{t('architect')}</span>
                       </button>
 
+                      {/* Accounting */}
+                      <button class="nav-link" id="accounting-tab" data-bs-toggle="pill" data-bs-target="#accounting" type="button" role="tab" aria-controls="accounting" aria-selected="true">
+                        <svg viewBox="0 0 31 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.6387 17.6174H5.10525C4.83679 17.6174 4.61926 17.835 4.61926 18.1034C4.61926 18.3718 4.83679 18.5894 5.10525 18.5894H11.6387C11.9072 18.5894 12.1247 18.3718 12.1247 18.1034C12.1247 17.835 11.9072 17.6174 11.6387 17.6174Z" />
+                          <path d="M11.6387 21.856H5.10525C4.83679 21.856 4.61926 22.0735 4.61926 22.3419C4.61926 22.6103 4.83679 22.8279 5.10525 22.8279H11.6387C11.9072 22.8279 12.1247 22.6103 12.1247 22.3419C12.1247 22.0735 11.9072 21.856 11.6387 21.856Z" />
+                          <path d="M11.6387 26.0947H5.10525C4.83679 26.0947 4.61926 26.3123 4.61926 26.5807C4.61926 26.8491 4.83679 27.0667 5.10525 27.0667H11.6387C11.9072 27.0667 12.1247 26.8491 12.1247 26.5807C12.1247 26.3123 11.9072 26.0947 11.6387 26.0947Z" />
+                          <path d="M17.0889 22.7779H18.1203C18.3888 22.7779 18.6063 22.5603 18.6063 22.2919C18.6063 22.0235 18.3888 21.8059 18.1203 21.8059H17.0889C16.8204 21.8059 16.6029 22.0235 16.6029 22.2919C16.6029 22.5603 16.8205 22.7779 17.0889 22.7779Z" />
+                          <path d="M21.2538 21.8059H20.2223C19.9539 21.8059 19.7363 22.0235 19.7363 22.2919C19.7363 22.5603 19.9539 22.7779 20.2223 22.7779H21.2538C21.5222 22.7779 21.7397 22.5603 21.7397 22.2919C21.7397 22.0235 21.5222 21.8059 21.2538 21.8059Z" />
+                          <path d="M24.3871 21.8059H23.3556C23.0872 21.8059 22.8696 22.0235 22.8696 22.2919C22.8696 22.5603 23.0872 22.7779 23.3556 22.7779H24.3871C24.6555 22.7779 24.873 22.5603 24.873 22.2919C24.873 22.0235 24.6555 21.8059 24.3871 21.8059Z" />
+                          <path d="M27.5204 21.8059H26.489C26.2206 21.8059 26.0031 22.0235 26.0031 22.2919C26.0031 22.5603 26.2206 22.7779 26.489 22.7779H27.5204C27.7889 22.7779 28.0064 22.5603 28.0064 22.2919C28.0064 22.0235 27.7888 21.8059 27.5204 21.8059Z" />
+                          <path d="M17.0889 26.305H18.1203C18.3888 26.305 18.6063 26.0874 18.6063 25.819C18.6063 25.5506 18.3888 25.333 18.1203 25.333H17.0889C16.8204 25.333 16.6029 25.5506 16.6029 25.819C16.6029 26.0874 16.8205 26.305 17.0889 26.305Z" />
+                          <path d="M21.2538 25.333H20.2223C19.9539 25.333 19.7363 25.5506 19.7363 25.819C19.7363 26.0874 19.9539 26.305 20.2223 26.305H21.2538C21.5222 26.305 21.7397 26.0874 21.7397 25.819C21.7397 25.5506 21.5222 25.333 21.2538 25.333Z" />
+                          <path d="M24.3871 25.333H23.3556C23.0872 25.333 22.8696 25.5506 22.8696 25.819C22.8696 26.0874 23.0872 26.305 23.3556 26.305H24.3871C24.6555 26.305 24.873 26.0874 24.873 25.819C24.873 25.5506 24.6555 25.333 24.3871 25.333Z" />
+                          <path d="M27.5204 25.333H26.489C26.2206 25.333 26.0031 25.5506 26.0031 25.819C26.0031 26.0874 26.2206 26.305 26.489 26.305H27.5204C27.7889 26.305 28.0064 26.0874 28.0064 25.819C28.0064 25.5506 27.7888 25.333 27.5204 25.333Z" />
+                          <path d="M6.17714 12.7776C5.95268 12.6307 5.65137 12.6937 5.50441 12.9182C5.35745 13.1428 5.42043 13.4441 5.64509 13.591C6.35644 14.0564 6.83672 14.185 7.4742 14.2143V14.8685C7.4742 15.1369 7.69172 15.3544 7.96018 15.3544C8.22864 15.3544 8.44616 15.1369 8.44616 14.8685V14.1779C9.67972 13.9597 10.4 12.9536 10.5579 12.0143C10.7577 10.8261 10.1357 9.79285 8.97336 9.38197C8.78363 9.3149 8.60868 9.25069 8.44616 9.18855V6.47073C8.91912 6.56327 9.20235 6.80541 9.22503 6.82531C9.42234 7.00454 9.72773 6.99132 9.90891 6.79498C10.0909 6.59767 10.0785 6.29021 9.88118 6.10826C9.85007 6.07955 9.31698 5.60011 8.44616 5.48658V4.90127C8.44616 4.63287 8.22864 4.41528 7.96018 4.41528C7.69172 4.41528 7.4742 4.63287 7.4742 4.90127V5.52397C7.37856 5.54348 7.28065 5.56804 7.1806 5.59817C6.4178 5.82794 5.84771 6.48143 5.69271 7.30364C5.55184 8.05128 5.78991 8.77112 6.31419 9.18233C6.60513 9.41048 6.96962 9.61939 7.4742 9.84152V13.2421C7.00163 13.2164 6.69649 13.1174 6.17714 12.7776ZM8.44616 10.2256C8.51232 10.2496 8.57984 10.2738 8.64944 10.2984C9.71043 10.6735 9.64479 11.5832 9.59944 11.8532C9.50762 12.3994 9.1152 12.9814 8.44616 13.1793V10.2256ZM6.91396 8.41745C6.67634 8.23116 6.57442 7.87328 6.6479 7.48359C6.71645 7.11975 6.96605 6.67783 7.46091 6.52873C7.46538 6.52737 7.46973 6.52633 7.4742 6.52503V8.76607C7.24527 8.64807 7.06221 8.53377 6.91396 8.41745Z" fill="#0074FF" stroke="#0074FF" stroke-width="0.5"/>
+                          <path d="M26.457 31.3166C26.1885 31.3166 25.971 31.5341 25.971 31.8025V32.15C25.971 32.7315 25.498 33.2045 24.9165 33.2045H3.02642C2.44493 33.2045 1.97197 32.7315 1.97197 32.15V3.02642C1.97197 2.44499 2.44493 1.97197 3.02642 1.97197H20.0299C20.0813 1.97197 20.1319 1.97696 20.182 1.98428V6.04794C20.182 6.9925 20.9505 7.76094 21.895 7.76094H25.9587C25.966 7.81109 25.971 7.86163 25.971 7.91302V10.233C25.971 10.5014 26.1885 10.719 26.457 10.719C26.7254 10.719 26.943 10.5014 26.943 10.233V7.91302C26.943 7.35751 26.677 6.80621 26.3597 6.4909C26.1603 6.29139 21.4681 1.59873 21.4628 1.59355L21.4517 1.5826C21.4514 1.58221 21.4509 1.58175 21.4504 1.58137L21.4502 1.58111C21.4489 1.57981 21.4476 1.57858 21.4462 1.57722C21.081 1.22044 20.5773 1 20.0299 1H3.02642C1.90905 1 1 1.90905 1 3.02642V32.15C1 33.2674 1.90905 34.1764 3.02642 34.1764H24.9165C26.0339 34.1764 26.9429 33.2674 26.9429 32.15V31.8025C26.943 31.5341 26.7254 31.3166 26.457 31.3166ZM21.154 2.65934C21.516 3.02137 24.7948 6.30001 25.2837 6.78897H21.895C21.4863 6.78897 21.1539 6.45656 21.1539 6.04794V2.65934H21.154Z" />
+                          <path d="M28.8475 12.0271H15.7618C14.8316 12.0271 14.0747 12.7839 14.0747 13.7142V15.3492C14.0747 15.6175 14.2922 15.8351 14.5607 15.8351C14.8291 15.8351 15.0467 15.6175 15.0467 15.3492V13.7142C15.0467 13.3199 15.3675 12.9991 15.7618 12.9991H28.8475C29.2418 12.9991 29.5626 13.3199 29.5626 13.7142V28.3322C29.5626 28.7265 29.2418 29.0473 28.8475 29.0473H15.7618C15.3675 29.0473 15.0467 28.7265 15.0467 28.3322V17.6212C15.0467 17.3528 14.8291 17.1352 14.5607 17.1352C14.2922 17.1352 14.0747 17.3528 14.0747 17.6212V28.3322C14.0747 29.2624 14.8316 30.0193 15.7618 30.0193H28.8475C29.7777 30.0193 30.5346 29.2625 30.5346 28.3322V13.7142C30.5346 12.7839 29.7778 12.0271 28.8475 12.0271Z" />
+                          <path d="M28.0063 15.8597C28.0063 15.3857 27.6207 15 27.1466 15H17.4627C16.9886 15 16.6029 15.3857 16.6029 15.8597V18.3469C16.6029 18.821 16.9886 19.2067 17.4627 19.2067H27.1466C27.6206 19.2067 28.0063 18.821 28.0063 18.3469V15.8597ZM27.0344 18.2347H17.5749V15.972H27.0343V18.2347H27.0344Z" />
+                        </svg>
+                        <span>{t('accounting')}</span>
+                      </button>
+
+                      {/* English */}
+                      <button class="nav-link" id="english-tab" data-bs-toggle="pill" data-bs-target="#english" type="button" role="tab" aria-controls="english" aria-selected="true">
+                        <svg viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M13.3477 18.5938C13.8978 18.5938 14.3438 18.1478 14.3438 17.5977V14.1648L17.0099 18.0255C17.296 18.439 17.7759 18.614 18.2324 18.4714C18.6969 18.3263 18.9971 17.8956 18.9971 17.3739C18.9971 17.3707 18.9971 17.3675 18.997 17.3642L18.9349 10.9474C18.9298 10.4005 18.4848 9.96094 17.9392 9.96094C17.9359 9.96094 17.9326 9.96094 17.9294 9.961C17.3793 9.96632 16.9376 10.4166 16.943 10.9667L16.9768 14.4717L14.1673 10.4034C13.9196 10.0447 13.4675 9.88869 13.0512 10.0184C12.635 10.1482 12.3516 10.5335 12.3516 10.9694V17.5977C12.3516 18.1478 12.7975 18.5938 13.3477 18.5938Z"/>
+                          <path d="M7.23828 18.5938H10.0364C10.5865 18.5938 11.0325 18.1478 11.0325 17.5977C11.0325 17.0475 10.5865 16.6016 10.0364 16.6016H8.23438V15.2734H9.83005C10.3802 15.2734 10.8261 14.8275 10.8261 14.2773C10.8261 13.7272 10.3802 13.2812 9.83005 13.2812H8.23438V11.9531H10.0364C10.5865 11.9531 11.0325 11.5071 11.0325 10.957C11.0325 10.4069 10.5865 9.96094 10.0364 9.96094H7.23828C6.68817 9.96094 6.24219 10.4069 6.24219 10.957V17.5977C6.24219 18.1478 6.68817 18.5938 7.23828 18.5938Z"/>
+                          <path d="M24.4268 18.5938C26.7008 18.5938 28.2891 16.8188 28.2891 14.2773C28.2891 13.7272 27.8431 13.2812 27.293 13.2812H25.3064C24.7563 13.2812 24.3103 13.7272 24.3103 14.2773C24.3103 14.8275 24.7563 15.2734 25.3064 15.2734H26.1541C25.923 16.0125 25.3926 16.6016 24.4268 16.6016C23.1452 16.6016 22.1025 15.5589 22.1025 14.2773C22.1025 12.9958 23.1452 11.9531 24.4268 11.9531C24.8926 11.9531 25.3417 12.0902 25.7256 12.3495C26.1815 12.6576 26.8007 12.5374 27.1086 12.0817C27.4166 11.6258 27.2966 11.0066 26.8408 10.6987C26.1262 10.2161 25.2914 9.96094 24.4268 9.96094C22.0467 9.96094 20.1104 11.8973 20.1104 14.2773C20.1104 16.6574 22.0467 18.5938 24.4268 18.5938Z"/>
+                          <path d="M33.0039 0H0.996094C0.445984 0 0 0.445984 0 0.996094V4.98047C0 5.53058 0.445984 5.97656 0.996094 5.97656H2.05859V23.5742C2.05859 24.1243 2.50458 24.5703 3.05469 24.5703H12.7319L8.738 32.5582C8.49197 33.0502 8.69138 33.6486 9.18345 33.8946C9.67552 34.1406 10.2738 33.9412 10.5199 33.4492L12.303 29.8828H21.697L23.4802 33.4492C23.7262 33.9412 24.3245 34.1406 24.8166 33.8946C25.3086 33.6486 25.5081 33.0503 25.2621 32.5582L21.2681 24.5703H30.9453C31.4954 24.5703 31.9414 24.1243 31.9414 23.5742V5.97656H33.0039C33.554 5.97656 34 5.53058 34 4.98047V0.996094C34 0.445984 33.554 0 33.0039 0ZM20.7009 27.8906H13.2991L14.9593 24.5703H19.0407L20.7009 27.8906ZM29.9492 22.5781H4.05078V5.97656H29.9492V22.5781ZM32.0078 3.98438H1.99219V1.99219H32.0078V3.98438Z"/>
+                        </svg>
+                        <span>{t('english')}</span>
+                      </button>
+
                       {/* Self Employed */}
-                      <button class="nav-link" id="technician-tab" data-bs-toggle="pill" data-bs-target="#technician" type="button" role="tab" aria-controls="technician" aria-selected="true">
-                        <svg viewBox="0 0 41 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M35.5548 13.9054V10.1404C35.5548 9.01704 34.6425 8.10474 33.5176 8.10474H3.03562C1.9123 8.10474 1 9.01545 1 10.1404V14.6527C1 15.565 1.24116 16.4217 1.66479 17.1595C2.53584 18.6795 4.17322 19.7044 6.05176 19.7044H12.8853" />
-                          <path d="M22.3814 32.3674H4.16078C2.78201 32.3674 1.66663 31.252 1.66663 29.8732V21.9211" />
-                          <path d="M8.83752 6.51823V3.37198C8.83752 2.06461 9.90214 1 11.2095 1H25.343C26.6504 1 27.715 2.06461 27.715 3.37198V6.51823" />
-                          <path d="M19.5349 23.0826H17.0201C16.4902 23.0826 16.0618 22.4289 16.0618 21.6213V17.7896C16.0618 16.9836 16.4918 16.3284 17.0201 16.3284H19.5349C20.0648 16.3284 20.4932 16.9821 20.4932 17.7896V21.6213C20.4932 22.4273 20.0633 23.0826 19.5349 23.0826Z" />
-                          <path d="M31.5662 35.6231C29.2831 34.9076 27.322 33.6161 25.8671 31.8676C24.2979 29.9811 23.4681 27.7408 23.4681 25.3895V18.3941C26.3796 18.1117 29.1704 17.1693 31.5646 15.6572C32.8037 16.441 34.1492 17.0725 35.5819 17.5437C36.9035 17.9768 38.2696 18.2624 39.6611 18.3957V25.3911C39.6611 27.7424 38.8313 29.9827 37.2621 31.8692C35.8072 33.6177 33.8462 34.9091 31.563 35.6247L31.5662 35.6231Z" />
-                          <path d="M27.0283 25.1294C27.0283 25.1294 30.0047 29.1546 30.0047 28.9642C30.0047 28.7738 36.1021 21.9133 36.1021 21.9133" />
+                      <button class="nav-link" id="self-tab" data-bs-toggle="pill" data-bs-target="#self" type="button" role="tab" aria-controls="self" aria-selected="true">
+                        <svg viewBox="0 0 34 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M31.9754 20.479V23.0192H28.3506C28.0499 24.4095 27.5074 25.7043 26.7715 26.8643L29.3384 29.461L25.7866 33.0541L23.2197 30.4574C22.073 31.2018 20.7918 31.7507 19.4189 32.0548V35.7217H14.3954V32.0548C13.0211 31.7507 11.7412 31.2018 10.5945 30.4574L8.02765 33.0541L4.47587 29.461L7.04272 26.8643C6.30688 25.7043 5.7643 24.4081 5.46367 23.0192H1.83887V20.479" />
+                          <path d="M10.2095 20.479C10.2095 24.2213 13.2087 27.2539 16.9065 27.2539C20.6043 27.2539 23.6035 24.2198 23.6035 20.479" />
+                          <path d="M32.8129 14.5498V17.9387H16.9065H1V14.5498" />
+                          <path d="M13.5577 10.3151V1H20.2547V10.3151" />
+                          <path d="M10.2096 7.775V2.69312C6.19395 4.95817 3.51257 8.45277 3.51257 13.7026V15.3971" />
+                          <path d="M30.3017 15.3971V13.7026C30.3017 8.42815 27.6776 4.94803 23.6047 2.69312V7.775" />
                         </svg>
 
                         <span>{t('self-employed')}</span>
@@ -314,192 +353,148 @@ const Header = props => {
                         <span>{t('job-seeker')}</span>
                       </button>
                     </div>
+
                     <div class="tab-content" id="v-pills-tabContent">
-                      <div class="tab-pane fade show active" id="engineering" role="tabpanel" aria-labelledby="engineering-tab" tabindex="0">
-                        Engineering
+                      {/* Engineering */}
+                      <div class="tab-pane fade show" id="engineering" role="tabpanel" aria-labelledby="engineering-tab" tabindex="0">
+                        <li>
+                          <Link href='/courses/nppe-package'>
+                            {t('engineering-1')}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href='/courses/nppe-exam-preparation-test'>
+                            {t('engineering-2')}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href='/courses/nppe-exam-preparation-test-recorded'>
+                            {t('engineering-3')}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href='/courses/cba-writing-practical-workshop'>
+                            {t('engineering-4')}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href='/courses/user-profile-creation-service'>
+                            {t('engineering-5')}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href='/courses/category/engineering'>
+                            {t('see-all')}
+                          </Link>
+                        </li>
                       </div>
 
+                      {/* Project Management */}
                       <div class="tab-pane fade show" id="project" role="tabpanel" aria-labelledby="project-tab" tabindex="0">
-                        Project Management
+                        <li>
+                          <Link href='/courses/pmp-certification-preparation-test'>
+                            {t('project-management-1')}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href='/courses/pmp-package'>
+                            {t('project-management-2')}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href='/courses/pmp-certification-tests-preparation-test-recorded'>
+                            {t('project-management-3')}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href='/courses/pmi-rmp-certification-test-preparation'>
+                            {t('project-management-4')}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href='/courses/microsoft-project'>
+                            {t('project-management-5')}
+                          </Link>
+                        </li>
+                      </div>
+                      
+                      {/* Technician */}
+                      <div class="tab-pane fade show" id="technician" role="tabpanel" aria-labelledby="technician-tab" tabindex="0">
+                        <li>
+                          <Link href='/courses/gas-technician-g2-g3'>
+                            GAS TECHNICIAN (G2-G3) EXAM PREP
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href='/courses/canadian-wood-framing-construction'>
+                            CANADIAN WOOD FRAMING CONSTRUCTION (CWF)
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href='/courses/electrician-exam-prep-quebec-province'>
+                            QUEBEC ELECTRICIAN EXAM PREP (RECORDED)
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href='/courses/plumbing-redseal-306a-package'>
+                            PLUMBING REDSEAL PACKAGE
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href='/courses/electrical-redseal-309a-package'>
+                            ELECTRICAL REDSEAL PACKAGE
+                          </Link>
+                        </li>
+                      </div>
+
+                      {/* Architect */}
+                      <div class="tab-pane fade show" id="architect" role="tabpanel" aria-labelledby="architect-tab" tabindex="0">
+                        <li>
+                          <Link href='/courses/bcin-house-2'>
+                            BCIN-HOUSE II
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href='/courses/bcin-house'>
+                            BCIN - OBC HOUSE EXAM PREP
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href='/courses/general-legal-bcin'>
+                            GENERAL LEGAL BCIN
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href='/courses/civil-construction-estimator'>
+                            CONSTRUCTION ESTIMATION TRAINING COURSE
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href='/courses/revit-course'>
+                            REVIT SOFTWARE TRAINING COURSE
+                          </Link>
+                        </li>
+                      </div>
+
+                      {/* Accounting */}
+                      <div class="tab-pane fade show" id="accounting" role="tabpanel" aria-labelledby="accounting-tab" tabindex="0">
+                        Accounting
+                      </div>
+
+                      {/* English */}
+                      <div class="tab-pane fade show" id="english" role="tabpanel" aria-labelledby="english-tab" tabindex="0">
+                        English
+                      </div>
+
+                      {/* Self Employed */}
+                      <div class="tab-pane fade show" id="self" role="tabpanel" aria-labelledby="self-tab" tabindex="0">
+                        <li>
+                          <Link href='/courses/energy-advisory-package'>
+                            ENERGY ADVISORY PACKAGE
+                          </Link>
+                        </li>
                       </div>
                     </div>
-                  </div>
-
-                  {/* Engineering */}
-                  <div className='col'>
-                    <span>
-                      <i data-feather='package'></i> {t('engineering')}
-                    </span>
-                    <li>
-                      <Link className='dropdown-item' href='/courses/nppe-package'>
-                        {t('engineering-1')}
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className='dropdown-item' href='/courses/nppe-exam-preparation-test'>
-                        {t('engineering-2')}
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className='dropdown-item' href='/courses/nppe-exam-preparation-test-recorded'>
-                        {t('engineering-3')}
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className='dropdown-item' href='/courses/cba-writing-practical-workshop'>
-                        {t('engineering-4')}
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className='dropdown-item' href='/courses/user-profile-creation-service'>
-                        {t('engineering-5')}
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className='dropdown-item' href='/courses/category/engineering'>
-                        {t('see-all')}
-                      </Link>
-                    </li>
-                  </div>
-
-                  {/* Project Management */}
-                  <div className='col'>
-                    <span>
-                      <i data-feather='package'></i> {t('project-management')}
-                    </span>
-                    <li>
-                      <Link className='dropdown-item' href='/courses/pmp-certification-preparation-test'>
-                        {t('project-management-1')}
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className='dropdown-item' href='/courses/pmp-package'>
-                        {t('project-management-2')}
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className='dropdown-item' href='/courses/pmp-certification-tests-preparation-test-recorded'>
-                        {t('project-management-3')}
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className='dropdown-item' href='/courses/pmi-rmp-certification-test-preparation'>
-                        {t('project-management-4')}
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className='dropdown-item' href='/courses/microsoft-project'>
-                        {t('project-management-5')}
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className='dropdown-item' href='/courses/category/project-managment'>
-                        {t('see-all')}
-                      </Link>
-                    </li>
-                  </div>
-
-                  {/* Architect */}
-                  <div className='col'>
-                    <span>
-                      <i data-feather='package'></i> {t('architect')}
-                    </span>
-                    <li>
-                      <Link className='dropdown-item' href='/courses/bcin-house-2'>
-                        BCIN-HOUSE II
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className='dropdown-item' href='/courses/bcin-house'>
-                        BCIN - OBC HOUSE EXAM PREP
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className='dropdown-item' href='/courses/general-legal-bcin'>
-                        GENERAL LEGAL BCIN
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className='dropdown-item' href='/courses/civil-construction-estimator'>
-                        CONSTRUCTION ESTIMATION TRAINING COURSE
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className='dropdown-item' href='/courses/revit-course'>
-                        REVIT SOFTWARE TRAINING COURSE
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className='dropdown-item' href='/courses/category/architecture'>
-                        {t('see-all')}
-                      </Link>
-                    </li>
-                  </div>
-
-                  {/* Technician */}
-                  <div className='col'>
-                    <span>
-                      <i data-feather='package'></i> {t('technician')}
-                    </span>
-                    <li>
-                      <Link className='dropdown-item' href='/courses/gas-technician-g2-g3'>
-                        GAS TECHNICIAN (G2-G3) EXAM PREP
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className='dropdown-item' href='/courses/canadian-wood-framing-construction'>
-                        CANADIAN WOOD FRAMING CONSTRUCTION (CWF)
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className='dropdown-item' href='/courses/electrician-exam-prep-quebec-province'>
-                        QUEBEC ELECTRICIAN EXAM PREP (RECORDED)
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className='dropdown-item' href='/courses/plumbing-redseal-306a-package'>
-                        PLUMBING REDSEAL PACKAGE
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className='dropdown-item' href='/courses/electrical-redseal-309a-package'>
-                        ELECTRICAL REDSEAL PACKAGE
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className='dropdown-item' href='/courses/category/technician'>
-                        {t('see-all')}
-                      </Link>
-                    </li>
-                  </div>
-
-                  {/* Job Seeker */}
-                  <div className='col'>
-                    <span>
-                      <i data-feather='package'></i> {t('job-seeker')}
-                    </span>
-                    <li>
-                      <Link className='dropdown-item' href='/courses/category/job-seekers'>
-                        {t('see-all')}
-                      </Link>
-                    </li>
-                  </div>
-
-                  {/* Self Employed */}
-                  <div className='col'>
-                    <span>
-                      <i data-feather='package'></i> {t('self-employed')}
-                    </span>
-                    <li>
-                      <Link className='dropdown-item' href='/courses/energy-advisory-package'>
-                        ENERGY ADVISORY PACKAGE
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className='dropdown-item' href='/courses/category/self-employee'>
-                        {t('see-all')}
-                      </Link>
-                    </li>
                   </div>
                 </ul>
               </li>
