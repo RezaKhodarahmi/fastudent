@@ -491,10 +491,6 @@ const Index = () => {
     }
   }, [cartCourses, user?.data?.isVipValid, usedCoupon, vipPlan]) // Include `usedCoupon` if coupons affect pricing
 
-  useEffect(() => {
-    console.log(vipPlan)
-  }, [vipPlan])
-
   // Function to calculate the total coupon discount
   const calculateTotalCouponDiscount = () => {
     let totalDiscount = 0
@@ -555,7 +551,6 @@ const Index = () => {
 
   useEffect(() => {
     if (courses?.data?.data && courses?.data?.data?.length) {
-      console.log(courses)
       setVipPlan(courses?.data.vipPlan)
       setCartCourses(courses?.data?.data)
       setIsRenew(courses?.data?.isRenew)

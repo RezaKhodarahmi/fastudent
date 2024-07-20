@@ -124,7 +124,6 @@ const Course = () => {
     //   router.push('/404')
     // }
     if (courseData?.data) {
-      console.log(courseData)
       setData(courseData?.data?.data)
       setFaqs(courseData?.data?.faq)
       setCourseId(courseData?.data?.data?.id)
