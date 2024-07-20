@@ -32,16 +32,16 @@ const WebinarDeskSingle = ({ webinars }) => {
   const handelStatus = webinar => {
     switch (webinar.status) {
       case 1:
-        return t('webinar-home-status-active');
+        return t('webinar-home-status-active')
         break
       case '2':
-        return t('webinar-home-status-recorded');
+        return t('webinar-home-status-recorded')
         break
       case '3':
-        return t('webinar-home-status-postponed');
+        return t('webinar-home-status-postponed')
         break
       default:
-        return t('webinar-home-status-not-active');
+        return t('webinar-home-status-not-active')
     }
   }
 
@@ -77,9 +77,7 @@ const WebinarDeskSingle = ({ webinars }) => {
             <div className='col-12 col-md-5'>
               {/* Rest */}
               {Array.isArray(webinarList) &&
-                webinarList
-                .slice(0, 2)
-                .map((webinar, index) => (
+                webinarList.slice(0, 2).map((webinar, index) => (
                   <div key={index} className='col-12'>
                     <div className='d-flex'>
                       <div className='col-7' dir='ltr'>
@@ -97,8 +95,7 @@ const WebinarDeskSingle = ({ webinars }) => {
                       </div>
                     </div>
                   </div>
-                ))
-              }
+                ))}
             </div>
             {/* Featured */}
             <div className='col-12 col-md-7'>
@@ -116,9 +113,7 @@ const WebinarDeskSingle = ({ webinars }) => {
                 className='FNV-NewCoursesSwiper'
               >
                 {Array.isArray(webinarList) &&
-                  webinarList
-                  .slice(0, 4)
-                  .map(webinar => (
+                  webinarList.slice(0, 4).map(webinar => (
                     <>
                       {' '}
                       <SwiperSlide>
@@ -128,7 +123,7 @@ const WebinarDeskSingle = ({ webinars }) => {
                             <badge className='SecondaryColor'>{handelStatus(webinar)}</badge>
                             <h4>{webinar.title}</h4>
 
-                            <small class="d-block">{truncateText(webinar?.description, 150)}</small>
+                            <small class='d-block'>{truncateText(webinar?.description, 150)}</small>
                             <span>
                               <svg
                                 width='11'
@@ -175,7 +170,7 @@ const WebinarDeskSingle = ({ webinars }) => {
                             </div>
                           </div>
                           <div className='col-md-7 d-none d-sm-none d-md-block'>
-                            <img src={webinar.image} className='img-fluid' />
+                            <img src={webinar.image} className='img-fluid' alt='webinar image' />
                           </div>
                         </div>
                       </SwiperSlide>

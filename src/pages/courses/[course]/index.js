@@ -124,6 +124,7 @@ const Course = () => {
     //   router.push('/404')
     // }
     if (courseData?.data) {
+      console.log(courseData)
       setData(courseData?.data?.data)
       setFaqs(courseData?.data?.faq)
       setCourseId(courseData?.data?.data?.id)
@@ -790,7 +791,7 @@ const Course = () => {
 
                   <div className='col-md-4 d-sm-none d-md-block'>
                     <div className='FNV-Course-Card'>
-                      <img src={data?.image} className='img-fluid' />
+                      <img alt="" src={data?.image} className='img-fluid' />
 
                       {inEnrolled ? (
                         <>
@@ -1066,7 +1067,30 @@ const Course = () => {
                         {/* Title */}
                         <div className='col-9 col-md-10'>
                           <h5>
-                            {t('single-course-vip-price')}:{' '}
+                            {t('single-course-vip-price-platinum')}:{' '}
+                            <price>
+                              {data?.cycles
+                                ? data?.cycles?.map(cycle =>
+                                    cycle.id == selectedCycle ? (
+                                      <>
+                                        {' '}
+                                        <span
+                                          style={{
+                                            textDecoration: isDiscountActive(cycle) ? 'line-through' : 'none',
+                                            color: isDiscountActive(cycle) ? '#000' : 'none'
+                                          }}
+                                        >
+                                          ${cycle.vipPLPrice}
+                                        </span>
+                                        {isDiscountActive(cycle) && <span> - ${cycle.discountVipPLPrice}</span>}
+                                      </>
+                                    ) : null
+                                  )
+                                : '0'}
+                            </price>
+                          </h5>
+                          <h5>
+                            {t('single-course-vip-price-gold')}:{' '}
                             <price>
                               {data?.cycles
                                 ? data?.cycles?.map(cycle =>
@@ -1081,7 +1105,7 @@ const Course = () => {
                                         >
                                           ${cycle.vipPrice}
                                         </span>
-                                        {isDiscountActive(cycle) && <span> - ${cycle.discountVipPrice}</span>}
+                                        {isDiscountActive(cycle) && <span> - ${cycle.discountVipPrice} </span>}
                                       </>
                                     ) : null
                                   )

@@ -47,6 +47,7 @@ const Index = () => {
   const [couponDiscountAmount, setCouponDiscountAmount] = useState(0)
   const [couponDiscount, setCouponDiscount] = useState(0)
   const [usedCoupon, setUsedCoupon] = useState(cartCoupon)
+  const [vipPlan, setVipPlan] = useState(0)
   const [loading, setLoading] = useState(false)
   const [checkout, setCheckout] = useState(false)
   const [referralUser, setReferralUser] = useState({})
@@ -113,7 +114,17 @@ const Index = () => {
   }
 
   const getDiscountedPrice = cycle => {
-    return isDiscountActive(cycle) ? cycle.discountPrice : cycle.regularPrice
+    return isDiscountActive(cycle)
+      ? isVIP || oldVIP
+        ? vipPlan == 2
+          ? cycle.discountVipPLPrice
+          : cycle.discountVipPrice
+        : cycle.discountPrice
+      : isVIP || oldVIP
+      ? vipPlan == 2
+        ? cycle.vipPLPrice
+        : cycle.vipPrice
+      : cycle.regularPrice
   }
 
   //Check if coupon is applied
@@ -243,7 +254,8 @@ const Index = () => {
               referralUser: referralUser,
               cartTotal: cartTotal,
               isVIP: isVIP,
-              oldVIP: oldVIP
+              oldVIP: oldVIP,
+              vipPlan: vipPlan
             })
           })
             .then(res => res.json())
@@ -281,7 +293,8 @@ const Index = () => {
               referralUser: referralUser,
               cartTotal: cartTotal,
               isVIP: isVIP,
-              oldVIP: oldVIP
+              oldVIP: oldVIP,
+              vipPlan: vipPlan
             })
           })
             .then(res => res.json())
@@ -321,7 +334,8 @@ const Index = () => {
               referralUser: referralUser,
               cartTotal: cartTotal,
               isVIP: isVIP,
-              oldVIP: oldVIP
+              oldVIP: oldVIP,
+              vipPlan: vipPlan
             })
           })
             .then(res => res.json())
@@ -448,11 +462,17 @@ const Index = () => {
       if (isDiscountActive(course)) {
         finalPrice =
           user?.data?.isVipValid || isVipMembershipInCart
-            ? course.discountVipPrice || course.discountPrice
+            ? vipPlan == 2
+              ? course.discountVipPLPrice
+              : course.discountVipPrice || course.discountPrice
             : course.discountPrice
       } else {
         finalPrice =
-          user?.data?.isVipValid || isVipMembershipInCart ? course.vipPrice || course.regularPrice : course.regularPrice
+          user?.data?.isVipValid || isVipMembershipInCart
+            ? vipPlan == 2
+              ? course.vipPLPrice
+              : course.vipPrice || course.regularPrice
+            : course.regularPrice
       }
 
       return finalPrice
@@ -462,13 +482,18 @@ const Index = () => {
     setCartSubTotal(newSubTotal)
 
     const totalDiscount = calculateTotalCouponDiscount() // This function needs to calculate the discount based on the subtotal
+
     setCartTotal(newSubTotal - totalDiscount)
 
     // If VIP membership is no longer in the cart, switch pricing back to regular
     if (!isVipMembershipInCart) {
       setIsVIP(false)
     }
-  }, [cartCourses, user?.data?.isVipValid, usedCoupon]) // Include `usedCoupon` if coupons affect pricing
+  }, [cartCourses, user?.data?.isVipValid, usedCoupon, vipPlan]) // Include `usedCoupon` if coupons affect pricing
+
+  useEffect(() => {
+    console.log(vipPlan)
+  }, [vipPlan])
 
   // Function to calculate the total coupon discount
   const calculateTotalCouponDiscount = () => {
@@ -530,6 +555,8 @@ const Index = () => {
 
   useEffect(() => {
     if (courses?.data?.data && courses?.data?.data?.length) {
+      console.log(courses)
+      setVipPlan(courses?.data.vipPlan)
       setCartCourses(courses?.data?.data)
       setIsRenew(courses?.data?.isRenew)
 
@@ -586,11 +613,17 @@ const Index = () => {
       if (isDiscountActive(course)) {
         finalPrice =
           user?.data?.isVipValid || isVipMembershipInCart
-            ? course.discountVipPrice || course.discountPrice
+            ? vipPlan == 2
+              ? course.discountVipPLPrice
+              : course.discountVipPrice || course.discountPrice
             : course.discountPrice
       } else {
         finalPrice =
-          user?.data?.isVipValid || isVipMembershipInCart ? course.vipPrice || course.regularPrice : course.regularPrice
+          user?.data?.isVipValid || isVipMembershipInCart
+            ? vipPlan == 2
+              ? course.vipPLPrice
+              : course.vipPrice || course.regularPrice
+            : course.regularPrice
       }
 
       return finalPrice
@@ -616,6 +649,11 @@ const Index = () => {
     }
   }, [])
 
+  const handleInputChange = e => {
+    const capitalizedValue = e.target.value.toUpperCase()
+    setCoupon(capitalizedValue)
+  }
+
   return (
     <div className='FNV-Cart'>
       <section className='FNV-Cart-Detail'>
@@ -631,7 +669,7 @@ const Index = () => {
             <div className='col-md-6'>
               <div className='row'>
                 <div className='col-7 col-md-6'>
-                  <input type='text' onChange={e => setCoupon(e.target.value)} className='form-control FNV-Text' />
+                  <input type='text' onChange={e => setReferral(e.target.value)} className='form-control FNV-Text' />
                 </div>
 
                 <div className='col-5 col-md-6'>
@@ -672,11 +710,14 @@ const Index = () => {
                 <div className='row'>
                   <div className='col-10 col-md-8'>
                     <div className='row'>
-                      <p>{cycle.name}</p>
+                      <p>{cycle?.course?.title || 'Course Name'}</p>
                     </div>
 
                     <div className='row'>
-                      <Link href='#' className='FNV-Btn BtnOutline PrimaryColor BtnMedium'>
+                      <Link
+                        href={`/courses/${cycle?.course?.slug || 'undefined'}`}
+                        className='FNV-Btn BtnOutline PrimaryColor BtnMedium'
+                      >
                         {t('cart-head-product-details')}
                       </Link>
                       <Link
@@ -717,7 +758,7 @@ const Index = () => {
                 <div className='col-md-6'>
                   <div className='row'>
                     <div className='col-7 col-md-6'>
-                      <input type='text' onChange={e => setCoupon(e.target.value)} className='form-control FNV-Text' />
+                      <input type='text' onChange={handleInputChange} className='form-control FNV-Text' />
                     </div>
 
                     <div className='col-5 col-md-6'>
@@ -830,7 +871,7 @@ const Index = () => {
                 {email ? (
                   cartTotal > 0 ? (
                     <>
-                      {partially && (
+                      {partially && cartTotal > 300 && (
                         <button
                           disabled={!allChecked}
                           onClick={handelInitiatePartiallyPayment}
@@ -870,10 +911,6 @@ const Index = () => {
                   </Link>
                 )}
               </div>
-
-              <Link href='/courses' className='d-block text-center mt-2'>
-                Apply for other courses
-              </Link>
             </div>
           </div>
         </div>

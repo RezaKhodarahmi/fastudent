@@ -187,7 +187,7 @@ const Header = props => {
       <TopBanner />
 
       <TopBar />
- 
+
       {/* Navbar */}
       <nav className='navbar navbar-expand-lg bg-body-tertiary d-flex flex-column pb-0 pt-0'>
         <div className='container-fluid'>
@@ -215,7 +215,7 @@ const Header = props => {
             <span className='navbar-toggler-icon'></span>
           </button>
 
-          { user ? (
+          {user ? (
             <div className='navbar-collapse justify-content-end' id=''>
               <Button href='#' className='FNV-Btn LightColor BtnMedium mx-2' onClick={e => changeLanguage()}>
                 {t('menu-language')}
@@ -253,7 +253,7 @@ const Header = props => {
                       </svg>
                     </div>
                   ) : (
-                    <img src={userImage} className='img-fluid' />
+                    <img alt='image' src={userImage} className='img alt="image"-fluid' />
                   )}
                   {/* Username */}
                   <span>{userName}</span>
@@ -371,7 +371,10 @@ const Header = props => {
                           </Link>
                         </li>
                         <li>
-                          <Link className='dropdown-item' href='/courses/pmp-certification-tests-preparation-test-recorded'>
+                          <Link
+                            className='dropdown-item'
+                            href='/courses/pmp-certification-tests-preparation-test-recorded'
+                          >
                             {t('project-management-3')}
                           </Link>
                         </li>
@@ -783,7 +786,7 @@ const Header = props => {
       >
         <div className='offcanvas-header'>
           <Link className='navbar-brand' href='/'>
-            <img src='/img/MainLogo.png' className='img-fluid' />
+            <img alt='image' src='/img alt="image"/MainLogo.png' className='img alt="image"-fluid' />
           </Link>
           <button type='button' className='btn-close' data-bs-dismiss='offcanvas' aria-label='Close'></button>
         </div>
@@ -797,7 +800,7 @@ const Header = props => {
       >
         <div className='offcanvas-header'>
           <Link className='navbar-brand' href='/'>
-            <img src='/img/MainLogo.png' className='img-fluid' />
+            <img alt='image' src='/img alt="image"/MainLogo.png' className='img alt="image"-fluid' />
           </Link>
           <button type='button' className='btn-close' data-bs-dismiss='offcanvas' aria-label='Close'></button>
         </div>

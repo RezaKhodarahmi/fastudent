@@ -300,7 +300,7 @@ const Home = () => {
                       <p>{t('testimonials-section-comment-one-caption')}</p>
                       <div className='d-flex flex-row w-100'>
                         <div className='col-3'>
-                          <img src='' />
+                          <img alt="image" src='' />
                         </div>
                         <div className='col-9'>
                           <span className='FNV-PersonName'>{t('testimonials-section-comment-one-name')}</span>
@@ -317,7 +317,7 @@ const Home = () => {
                       <p>{t('testimonials-section-comment-two-caption')}</p>
                       <div className='d-flex flex-row w-100'>
                         <div className='col-3'>
-                          <img src='' />
+                          <img alt="image" src='' />
                         </div>
                         <div className='col-9'>
                           <span className='FNV-PersonName'>{t('testimonials-section-comment-two-name')}</span>
@@ -334,7 +334,7 @@ const Home = () => {
                       <p>{t('testimonials-section-comment-three-caption')}</p>
                       <div className='d-flex flex-row w-100'>
                         <div className='col-3'>
-                          <img src='' />
+                          <img alt="image" src='' />
                         </div>
                         <div className='col-9'>
                           <span className='FNV-PersonName'>{t('testimonials-section-comment-three-name')}</span>

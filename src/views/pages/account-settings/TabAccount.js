@@ -96,7 +96,7 @@ const TabAccount = () => {
         setAvatarURL(profileDetails?.data?.user?.avatar)
       }
     }
-  }, [profileDetails, dispatch, reset])
+  }, [profileDetails, dispatch, reset, avatarURL])
 
   const onSubmit = data => {
     const formData = new FormData()
