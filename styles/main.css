@@ -1980,13 +1980,26 @@ body[dir=rtl] nav.FNV-MegaMenu {
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row {
     width: 100%;
   }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row.flex-row h2 {
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+    color: #0074FF;
+    width: auto;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row.flex-row h2:first-child {
+    width: 300px;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row.flex-row h2:last-child {
+    padding-left: 2.5rem;
+  }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 {
     display: flex;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .nav {
     width: 300px;
-    height: 300px;
+    height: 350px;
     overflow: scroll;
+    border-right: 1px solid rgba(34, 56, 133, 0.0823529412);
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .nav button {
     width: 300px;
@@ -2015,6 +2028,63 @@ body[dir=rtl] nav.FNV-MegaMenu {
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .nav button.active span {
     color: #FFFFFF;
   }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .tab-content {
+    padding: 0 1.5rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .tab-content .tab-pane li {
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .tab-content .tab-pane li:last-of-type {
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .tab-content .tab-pane li a {
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #6A7BBA;
+    text-transform: capitalize;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .tab-content .tab-pane li a:hover {
+    color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .tab-content .tab-pane span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #0074FF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .tab-content .tab-pane .container {
+    padding: 2rem 0 0;
+    margin-top: 1rem;
+    border-top: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .tab-content .tab-pane .container span {
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .tab-content .tab-pane .container .row .col-7 p {
+    font-size: 12px;
+    font-weight: 300;
+    color: #6A7BBA;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .tab-content .tab-pane .container .row .col-5 {
+    text-align: right;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .tab-content .tab-pane .container .row .col-5 a {
+    padding: 1rem 1.5rem;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: capitalize;
+    border: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .tab-content .tab-pane .container .row .col-5 a:hover {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .tab-content .tab-pane.fade {
     display: none;
   }
@@ -2034,11 +2104,6 @@ body[dir=rtl] nav.FNV-MegaMenu {
     border-radius: 0px;
     left: 0;
     position: absolute;
-  }
-  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu h2 {
-    font-size: 14px;
-    margin-bottom: 1.5rem;
-    color: #0074FF;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu:hover .dropdown-menu {
     display: block;

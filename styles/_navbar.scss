@@ -2458,14 +2458,32 @@ body[dir='rtl'] {
                 .row {
                   width: 100%;
 
+                  &.flex-row{
+                    h2 {
+                      font-size: 14px;
+                      margin-bottom: 1.5rem;
+                      color: $PrimaryTextTwo;
+                      width: auto;
+
+                      &:first-child{
+                        width: 300px;
+                      }
+
+                      &:last-child{
+                        padding-left: 2.5rem;
+                      }
+                    }
+                  }
+
                   .col-md-9 {
                     display: flex;
 
                     .nav {
                       width: 300px;
-                      height: 300px;
+                      height: 350px;
                       overflow: scroll;
-                      
+                      border-right: 1px solid $PrimaryFive;
+
                       button {
                         width: 300px;
                         padding: 1rem;
@@ -2501,7 +2519,76 @@ body[dir='rtl'] {
                     }
 
                     .tab-content{
+                      padding: 0 1.5rem;
                       .tab-pane{
+                        li{
+                          margin-bottom: .5rem;
+
+                          &:last-of-type{
+                            margin-bottom: 2rem;
+                          }
+
+                          a{
+                            padding: 0;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 28px;
+                            color: $PrimaryTextOne;
+                            text-transform: capitalize;
+
+                            &:hover{
+                              color: $PrimaryOne;
+                            }
+                          }
+                        }
+
+                        span{
+                          font-size: 14px;
+                          font-weight: 400;
+                          line-height: 28px;
+                          color: $PrimaryFour;
+                        }
+
+                        .container{
+                          padding: 2rem 0 0;
+                          margin-top: 1rem;
+                          border-top: 1px solid $PrimaryFive;
+
+                          span{
+                            display: block;
+                            font-size: 16px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                            margin-bottom: .5rem;
+                          }
+
+                          .row{
+                            .col-7{
+                              p{
+                                font-size: 12px;
+                                font-weight: 300; 
+                                color: $PrimaryTextOne;
+                              }
+                            }
+
+                            .col-5{
+                              text-align: right;
+
+                              a{
+                                padding: 1rem 1.5rem;
+                                font-size: 14px;
+                                font-weight: 300;
+                                text-transform: capitalize;
+                                border: 1px solid $PrimaryFive;
+
+                                &:hover{
+                                  color: $White;
+                                  background-color: $PrimaryOne;
+                                }
+                              }
+                            }
+                          }
+                        }
                         
                         &.fade{
                           display: none;
@@ -2533,12 +2620,6 @@ body[dir='rtl'] {
                 border-radius: 0px;
                 left: 0;
                 position: absolute;
-
-                h2 {
-                  font-size: 14px;
-                  margin-bottom: 1.5rem;
-                  color: $PrimaryTextTwo;
-                }
               }
 
               &:hover .dropdown-menu {
