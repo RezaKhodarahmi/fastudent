@@ -1788,7 +1788,8 @@ body[dir=rtl] nav.FNV-MegaMenu {
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User .FNV-UserAvatar {
     width: 30%;
   }
-  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User .FNV-UserAvatar img, body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User .FNV-UserAvatar svg {
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User .FNV-UserAvatar img,
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User .FNV-UserAvatar svg {
     width: 100%;
     -o-object-fit: contain;
        object-fit: contain;
@@ -1835,7 +1836,8 @@ body[dir=rtl] nav.FNV-MegaMenu {
     align-items: center;
     justify-content: center;
   }
-  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu .FNV-UserIcon img, body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu .FNV-UserIcon svg {
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu .FNV-UserIcon img,
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu .FNV-UserIcon svg {
     width: 80%;
     height: 80%;
     -o-object-fit: contain;
@@ -1894,7 +1896,8 @@ body[dir=rtl] nav.FNV-MegaMenu {
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu .FNV-UserIcon {
     width: 30%;
   }
-  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu .FNV-UserIcon img, body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu .FNV-UserIcon svg {
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu .FNV-UserIcon img,
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu .FNV-UserIcon svg {
     stroke: #FFFFFF;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu span p {
@@ -1974,32 +1977,49 @@ body[dir=rtl] nav.FNV-MegaMenu {
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
     position: unset;
   }
-  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .d-flex .nav button {
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row {
+    width: 100%;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 {
+    display: flex;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .nav {
+    width: 300px;
+    height: 300px;
+    overflow: scroll;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .nav button {
     width: 300px;
     padding: 1rem;
     display: flex;
     border-radius: 0px;
     align-items: center;
   }
-  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .d-flex .nav button svg {
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .nav button svg {
     width: 35px;
     height: 35px;
     stroke: #0074FF;
   }
-  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .d-flex .nav button span {
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .nav button span {
     font-size: 18px;
     font-weight: 300;
     margin-left: 1rem;
     color: #223885;
   }
-  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .d-flex .nav button.active {
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .nav button.active {
     background-color: #0074FF;
   }
-  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .d-flex .nav button.active svg {
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .nav button.active svg {
     stroke: #FFFFFF;
   }
-  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .d-flex .nav button.active span {
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .nav button.active span {
     color: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .tab-content .tab-pane.fade {
+    display: none;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .tab-content .tab-pane.show {
+    display: block;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-VIPMemberShip .dropdown-menu {
     width: 600px;

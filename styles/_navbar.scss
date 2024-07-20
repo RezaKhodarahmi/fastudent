@@ -2136,19 +2136,19 @@ body[dir='rtl'] {
         .FNV_QuickAccess {
           display: flex;
 
-          .dropdown{
-            a{
+          .dropdown {
+            a {
               position: relative;
 
-              svg{
+              svg {
                 width: 24px;
                 height: 24px;
                 stroke-width: 1.5px;
                 stroke: $PrimaryColor;
               }
 
-              span{
-                svg{
+              span {
+                svg {
                   top: -.4rem;
                   left: -.4rem;
 
@@ -2161,14 +2161,14 @@ body[dir='rtl'] {
                 }
               }
 
-              &.show{
-                svg{
+              &.show {
+                svg {
                   stroke: $PrimaryFour;
                 }
               }
             }
 
-            .dropdown-menu{
+            .dropdown-menu {
               top: 200%;
               left: -150px;
               width: 360px;
@@ -2180,55 +2180,56 @@ body[dir='rtl'] {
               border-top: 1px solid $PrimaryOne;
               box-shadow: 0 10px 16px $PrimaryShadow;
 
-              span{
+              span {
                 font-size: 14px;
                 font-weight: 400;
                 color: $PrimaryTextTwo;
               }
 
-              a{
+              a {
                 margin: 0;
                 padding: 1.5rem;
                 color: $PrimaryOne;
-                
-                svg{
+
+                svg {
                   margin-right: 1rem;
                   fill: $PrimaryFour;
                   stroke: $PrimaryFour;
                 }
 
-                &.FNV-User{
+                &.FNV-User {
                   display: flex;
                   padding: 1rem;
 
-                  .FNV-UserAvatar{
+                  .FNV-UserAvatar {
                     width: 30%;
 
-                    img, svg{
+                    img,
+                    svg {
                       width: 100%;
                       object-fit: contain;
                     }
                   }
 
-                  span{
+                  span {
                     width: 100%;
                     display: flex;
                     margin-left: 1rem;
                     flex-direction: column;
                     justify-content: center;
 
-                    p{
+                    p {
                       color: $PrimaryOne;
                       margin-bottom: 0rem;
                     }
 
-                    span{
+                    span {
                       display: flex;
                       margin-left: 0;
                       flex-direction: row;
                       justify-content: start;
 
-                      svg{
+                      svg {
                         top: unset;
                         left: unset;
                         width: 20px;
@@ -2239,26 +2240,27 @@ body[dir='rtl'] {
                         stroke: $PrimaryTextOne;
                       }
 
-                      small{
+                      small {
                         font-size: 14px;
                         font-weight: 300;
                         color: $PrimaryTextOne;
                       }
                     }
                   }
-                } 
+                }
 
-                &.FNV-UserMenu{
+                &.FNV-UserMenu {
                   display: flex;
                   padding: 1rem;
 
-                  .FNV-UserIcon{
+                  .FNV-UserIcon {
                     width: 30%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
 
-                    img, svg{
+                    img,
+                    svg {
                       width: 80%;
                       height: 80%;
                       object-fit: contain;
@@ -2266,25 +2268,25 @@ body[dir='rtl'] {
                     }
                   }
 
-                  span{
+                  span {
                     width: 100%;
                     display: flex;
                     margin-left: 1rem;
                     flex-direction: column;
                     justify-content: center;
 
-                    p{
+                    p {
                       color: $PrimaryOne;
                       margin-bottom: 0rem;
                     }
 
-                    span{
+                    span {
                       display: flex;
                       margin-left: 0;
                       flex-direction: row;
                       justify-content: start;
 
-                      svg{
+                      svg {
                         top: unset;
                         left: unset;
                         width: 20px;
@@ -2295,86 +2297,87 @@ body[dir='rtl'] {
                         stroke: $PrimaryTextOne;
                       }
 
-                      small{
+                      small {
                         font-size: 12px;
                         font-weight: 400;
                         color: $PrimaryTextOne;
                       }
                     }
                   }
-                } 
+                }
 
-                &:hover{
+                &:hover {
                   color: $White;
                   background-color: $PrimaryFour;
 
-                  svg{
+                  svg {
                     fill: $White;
                     stroke: $White;
                   }
 
-                  &.FNV-User{  
-                    span{
-                      p{
+                  &.FNV-User {
+                    span {
+                      p {
                         color: $White;
                       }
-  
-                      span{
- 
-                        svg{
+
+                      span {
+
+                        svg {
                           stroke: $PrimaryTextThree;
                         }
-  
-                        small{
+
+                        small {
                           color: $White;
                         }
                       }
                     }
                   }
 
-                  &.FNV-UserMenu{  
-                    .FNV-UserIcon{
+                  &.FNV-UserMenu {
+                    .FNV-UserIcon {
                       width: 30%;
-  
-                      img, svg{
+
+                      img,
+                      svg {
                         stroke: $White;
                       }
                     }
-  
-                    span{
-                      p{
+
+                    span {
+                      p {
                         color: $White;
                       }
-  
-                      span{
-                        small{
+
+                      span {
+                        small {
                           color: $White;
                         }
                       }
                     }
-                  } 
+                  }
                 }
               }
 
-              &.show{
+              &.show {
                 display: flex;
                 flex-direction: column;
               }
 
-              ul{
+              ul {
                 max-height: 150px;
                 overflow: scroll;
                 padding: 0px;
 
-                p{
+                p {
                   font-size: 14px;
                   color: $PrimaryTextTwo;
                 }
 
-                li{
+                li {
                   padding: 0;
 
-                  a{
+                  a {
                     width: 100%;
                     display: block;
                     padding: .5rem;
@@ -2400,7 +2403,7 @@ body[dir='rtl'] {
             }
           }
 
-          a{
+          a {
             color: $PrimaryOne;
             position: relative;
             margin-left: 1.5rem;
@@ -2411,8 +2414,8 @@ body[dir='rtl'] {
               stroke: $PrimaryOne;
             }
 
-            span{
-              svg{
+            span {
+              svg {
                 top: -.4rem;
                 left: -.4rem;
 
@@ -2427,21 +2430,21 @@ body[dir='rtl'] {
           }
         }
 
-        .navbar-collapse{
+        .navbar-collapse {
           position: relative;
           justify-content: center;
-          
-          .navbar-nav{
-            li{
-              a{
+
+          .navbar-nav {
+            li {
+              a {
                 font-size: 16px;
                 font-weight: 400;
                 padding: 2rem .5rem;
                 color: $PrimaryTextFour;
               }
 
-              &:hover{
-                a{
+              &:hover {
+                a {
                   font-weight: 500;
                   color: $PrimaryOne;
                 }
@@ -2451,51 +2454,75 @@ body[dir='rtl'] {
             .FNV-MegaMenu {
               position: unset;
 
-              &.FNV-Courses{
-                .d-flex{
-                  .nav{
-                    button{
+              &.FNV-Courses {
+                .row {
+                  width: 100%;
+
+                  .col-md-9 {
+                    display: flex;
+
+                    .nav {
                       width: 300px;
-                      padding: 1rem;
-                      display: flex;
-                      border-radius: 0px;
-                      align-items: center;
+                      height: 300px;
+                      overflow: scroll;
+                      
+                      button {
+                        width: 300px;
+                        padding: 1rem;
+                        display: flex;
+                        border-radius: 0px;
+                        align-items: center;
 
-                      svg{
-                        width: 35px;
-                        height: 35px;
-                        stroke: $PrimaryFour;
-                      }
-
-                      span{
-                        font-size: 18px;
-                        font-weight: 300;
-                        margin-left: 1rem;
-                        color: $PrimaryOne;
-                      }
-
-                      &.active{
-                        background-color: $PrimaryFour;
-
-                        svg{
-                          stroke: $White;
+                        svg {
+                          width: 35px;
+                          height: 35px;
+                          stroke: $PrimaryFour;
                         }
-  
-                        span{
-                          color: $White;
+
+                        span {
+                          font-size: 18px;
+                          font-weight: 300;
+                          margin-left: 1rem;
+                          color: $PrimaryOne;
+                        }
+
+                        &.active {
+                          background-color: $PrimaryFour;
+
+                          svg {
+                            stroke: $White;
+                          }
+
+                          span {
+                            color: $White;
+                          }
                         }
                       }
                     }
+
+                    .tab-content{
+                      .tab-pane{
+                        
+                        &.fade{
+                          display: none;
+                        }
+
+                        &.show{
+                          display: block;
+                        }
+                      }
+                    }
+
                   }
                 }
               }
-    
+
               &.FNV-VIPMemberShip {
                 .dropdown-menu {
                   width: 600px;
                 }
               }
-    
+
               .dropdown-menu {
                 width: 100%;
                 display: none;
@@ -2507,13 +2534,13 @@ body[dir='rtl'] {
                 left: 0;
                 position: absolute;
 
-                h2{
+                h2 {
                   font-size: 14px;
                   margin-bottom: 1.5rem;
                   color: $PrimaryTextTwo;
                 }
               }
-    
+
               &:hover .dropdown-menu {
                 display: block;
                 margin-top: 0px;
@@ -2522,17 +2549,17 @@ body[dir='rtl'] {
                 border-top: 1px solid #223885;
                 box-shadow: 0px 20px 20px $ShadowPrimary;
               }
-    
+
               .dropdown-menu {
                 .container-fluid {
                   padding-right: 0px;
                   padding-bottom: 0px;
-    
+
                   a {
                     font-size: 24px;
                     color: $PrimaryColor;
                     font-weight: 600;
-    
+
                     span {
                       border-left: 1px solid #ababab;
                       padding-left: 1rem;
@@ -2542,19 +2569,19 @@ body[dir='rtl'] {
                       font-weight: 400;
                     }
                   }
-    
+
                   .row {
                     padding-top: 1rem;
-    
+
                     .col-md-3,
                     .col-md-6,
                     .col {
                       .row {
                         padding: 0;
-    
+
                         &.FNV-QuickAction {
                           height: 100%;
-    
+
                           .col-12 {
                             a {
                               display: flex;
@@ -2563,13 +2590,13 @@ body[dir='rtl'] {
                               justify-content: space-evenly;
                               align-items: center;
                               background-color: $LightColor;
-    
+
                               svg {
                                 width: 50px;
                                 height: 50px;
                                 color: $SecondaryColor;
                               }
-    
+
                               span {
                                 font-size: 18px;
                                 border-width: 0;
@@ -2581,7 +2608,7 @@ body[dir='rtl'] {
                           }
                         }
                       }
-    
+
                       span {
                         font-size: 16px;
                         line-height: 32px;
@@ -2589,7 +2616,7 @@ body[dir='rtl'] {
                         color: $FourthColor;
                         margin-bottom: .8rem;
                         display: block;
-    
+
                         svg {
                           width: 12px;
                           height: 12px;
@@ -2597,14 +2624,14 @@ body[dir='rtl'] {
                           color: $SecondaryColor;
                         }
                       }
-    
+
                       li {
                         a {
                           font-size: 14px;
                           font-weight: 500;
                           color: $GrayThreeColor;
                           transition: .1s all ease-in-out;
-    
+
                           &:hover {
                             color: $SecondaryColor;
                             border-radius: 5px;
