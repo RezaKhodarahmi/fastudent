@@ -1,6 +1,7 @@
 @import './variables';
 
 body[dir='ltr'] {
+
   // `sm` applies to x-small devices (portrait phones, less than 576px)
   @media (min-width: 575.98px) {
     nav {
@@ -701,7 +702,7 @@ body[dir='ltr'] {
           width: 100px;
           padding-right: .5rem;
 
-          svg{
+          svg {
             width: 100%;
           }
         }
@@ -1091,18 +1092,18 @@ body[dir='ltr'] {
                 .row {
                   width: 100%;
 
-                  &.flex-row{
+                  &.flex-row {
                     h2 {
                       font-size: 10px;
                       margin-bottom: 1.5rem;
                       color: $PrimaryTextTwo;
                       width: auto;
 
-                      &:first-child{
+                      &:first-child {
                         width: 140px;
                       }
 
-                      &:last-child{
+                      &:last-child {
                         padding-left: 2.5rem;
                       }
                     }
@@ -1152,17 +1153,18 @@ body[dir='ltr'] {
                       }
                     }
 
-                    .tab-content{
+                    .tab-content {
                       padding: 0 1rem;
-                      .tab-pane{
-                        li{
+
+                      .tab-pane {
+                        li {
                           margin-bottom: 0rem;
 
-                          &:last-of-type{
+                          &:last-of-type {
                             margin-bottom: .5rem;
                           }
 
-                          a{
+                          a {
                             padding: 0;
                             font-size: 10px;
                             font-weight: 400;
@@ -1170,25 +1172,25 @@ body[dir='ltr'] {
                             color: $PrimaryTextOne;
                             text-transform: capitalize;
 
-                            &:hover{
+                            &:hover {
                               color: $PrimaryOne;
                             }
                           }
                         }
 
-                        span{
+                        span {
                           font-size: 14px;
                           font-weight: 400;
                           line-height: 28px;
                           color: $PrimaryFour;
                         }
 
-                        .container{
+                        .container {
                           padding: .5rem 0 0;
                           margin-top: .5rem;
                           border-top: 1px solid $PrimaryFive;
 
-                          span{
+                          span {
                             display: block;
                             font-size: 14px;
                             font-weight: 300;
@@ -1196,27 +1198,27 @@ body[dir='ltr'] {
                             margin-bottom: .5rem;
                           }
 
-                          .row{
-                            .col-7{
-                              p{
+                          .row {
+                            .col-7 {
+                              p {
                                 font-size: 5px;
-                                font-weight: 300; 
+                                font-weight: 300;
                                 color: $PrimaryTextOne;
                               }
                             }
 
-                            .col-5{
+                            .col-5 {
                               text-align: right;
                               padding: 0;
 
-                              a{
+                              a {
                                 padding: .5rem;
                                 font-size: 8px;
                                 font-weight: 300;
                                 text-transform: capitalize;
                                 border: 1px solid $PrimaryFive;
 
-                                &:hover{
+                                &:hover {
                                   color: $White;
                                   background-color: $PrimaryOne;
                                 }
@@ -1224,12 +1226,12 @@ body[dir='ltr'] {
                             }
                           }
                         }
-                        
-                        &.fade{
+
+                        &.fade {
                           display: none;
                         }
 
-                        &.show{
+                        &.show {
                           display: block;
                         }
                       }
@@ -1237,14 +1239,14 @@ body[dir='ltr'] {
 
                   }
 
-                  .col-md-3{
+                  .col-md-3 {
                     display: flex;
                     align-items: center;
                     flex-direction: column;
                     justify-content: center;
                     background-color: $PrimaryBackgroundTwo;
 
-                    a{
+                    a {
                       width: 100%;
                       height: 100%;
                       display: flex;
@@ -1252,12 +1254,12 @@ body[dir='ltr'] {
                       flex-direction: column;
                       justify-content: center;
 
-                      svg{
+                      svg {
                         height: 50px;
                         fill: $PrimaryFour;
                       }
 
-                      span{
+                      span {
                         font-size: 8px;
                         margin-top: 1rem;
                         font-weight: 300;
@@ -1266,8 +1268,8 @@ body[dir='ltr'] {
                         background-color: $White;
                       }
 
-                      &:hover{
-                        span{
+                      &:hover {
+                        span {
                           color: $White;
                           background-color: $PrimaryOne;
                         }
@@ -1415,7 +1417,7 @@ body[dir='ltr'] {
           width: 100px;
           padding-right: .5rem;
 
-          svg{
+          svg {
             width: 100%;
           }
         }
@@ -1805,18 +1807,18 @@ body[dir='ltr'] {
                 .row {
                   width: 100%;
 
-                  &.flex-row{
+                  &.flex-row {
                     h2 {
                       font-size: 14px;
                       margin-bottom: 1.5rem;
                       color: $PrimaryTextTwo;
                       width: auto;
 
-                      &:first-child{
+                      &:first-child {
                         width: 300px;
                       }
 
-                      &:last-child{
+                      &:last-child {
                         padding-left: 2.5rem;
                       }
                     }
@@ -1865,17 +1867,18 @@ body[dir='ltr'] {
                       }
                     }
 
-                    .tab-content{
+                    .tab-content {
                       padding: 0 1rem;
-                      .tab-pane{
-                        li{
+
+                      .tab-pane {
+                        li {
                           margin-bottom: .5rem;
 
-                          &:last-of-type{
+                          &:last-of-type {
                             margin-bottom: 1rem;
                           }
 
-                          a{
+                          a {
                             padding: 0;
                             font-size: 12px;
                             font-weight: 400;
@@ -1883,25 +1886,25 @@ body[dir='ltr'] {
                             color: $PrimaryTextOne;
                             text-transform: capitalize;
 
-                            &:hover{
+                            &:hover {
                               color: $PrimaryOne;
                             }
                           }
                         }
 
-                        span{
+                        span {
                           font-size: 14px;
                           font-weight: 400;
                           line-height: 28px;
                           color: $PrimaryFour;
                         }
 
-                        .container{
+                        .container {
                           padding: 1rem 0 0;
                           margin-top: 1rem;
                           border-top: 1px solid $PrimaryFive;
 
-                          span{
+                          span {
                             display: block;
                             font-size: 14px;
                             font-weight: 300;
@@ -1909,27 +1912,27 @@ body[dir='ltr'] {
                             margin-bottom: .5rem;
                           }
 
-                          .row{
-                            .col-7{
-                              p{
+                          .row {
+                            .col-7 {
+                              p {
                                 font-size: 8px;
-                                font-weight: 300; 
+                                font-weight: 300;
                                 color: $PrimaryTextOne;
                               }
                             }
 
-                            .col-5{
+                            .col-5 {
                               text-align: right;
                               padding: 0;
 
-                              a{
+                              a {
                                 padding: .5rem 1rem;
                                 font-size: 12px;
                                 font-weight: 300;
                                 text-transform: capitalize;
                                 border: 1px solid $PrimaryFive;
 
-                                &:hover{
+                                &:hover {
                                   color: $White;
                                   background-color: $PrimaryOne;
                                 }
@@ -1937,12 +1940,12 @@ body[dir='ltr'] {
                             }
                           }
                         }
-                        
-                        &.fade{
+
+                        &.fade {
                           display: none;
                         }
 
-                        &.show{
+                        &.show {
                           display: block;
                         }
                       }
@@ -1950,14 +1953,14 @@ body[dir='ltr'] {
 
                   }
 
-                  .col-md-3{
+                  .col-md-3 {
                     display: flex;
                     align-items: center;
                     flex-direction: column;
                     justify-content: center;
                     background-color: $PrimaryBackgroundTwo;
 
-                    a{
+                    a {
                       width: 100%;
                       height: 100%;
                       display: flex;
@@ -1965,11 +1968,11 @@ body[dir='ltr'] {
                       flex-direction: column;
                       justify-content: center;
 
-                      svg{
+                      svg {
                         fill: $PrimaryFour;
                       }
 
-                      span{
+                      span {
                         font-size: 12px;
                         margin-top: 1rem;
                         font-weight: 300;
@@ -1978,8 +1981,8 @@ body[dir='ltr'] {
                         background-color: $White;
                       }
 
-                      &:hover{
-                        span{
+                      &:hover {
+                        span {
                           color: $White;
                           background-color: $PrimaryOne;
                         }
@@ -2512,18 +2515,18 @@ body[dir='ltr'] {
                 .row {
                   width: 100%;
 
-                  &.flex-row{
+                  &.flex-row {
                     h2 {
                       font-size: 14px;
                       margin-bottom: 1.5rem;
                       color: $PrimaryTextTwo;
                       width: auto;
 
-                      &:first-child{
+                      &:first-child {
                         width: 225px;
                       }
 
-                      &:last-child{
+                      &:last-child {
                         padding-left: 2.5rem;
                       }
                     }
@@ -2540,6 +2543,7 @@ body[dir='ltr'] {
 
                       button {
                         width: 300px;
+                        height: 65px;
                         padding: 1rem;
                         display: flex;
                         border-radius: 0px;
@@ -2572,17 +2576,18 @@ body[dir='ltr'] {
                       }
                     }
 
-                    .tab-content{
+                    .tab-content {
                       padding: 0 1.5rem;
-                      .tab-pane{
-                        li{
+
+                      .tab-pane {
+                        li {
                           margin-bottom: .5rem;
 
-                          &:last-of-type{
+                          &:last-of-type {
                             margin-bottom: 1rem;
                           }
 
-                          a{
+                          a {
                             padding: 0;
                             font-size: 12px;
                             font-weight: 400;
@@ -2590,25 +2595,25 @@ body[dir='ltr'] {
                             color: $PrimaryTextOne;
                             text-transform: capitalize;
 
-                            &:hover{
+                            &:hover {
                               color: $PrimaryOne;
                             }
                           }
                         }
 
-                        span{
+                        span {
                           font-size: 14px;
                           font-weight: 400;
                           line-height: 28px;
                           color: $PrimaryFour;
                         }
 
-                        .container{
+                        .container {
                           padding: 1rem 0 0;
                           margin-top: 1rem;
                           border-top: 1px solid $PrimaryFive;
 
-                          span{
+                          span {
                             display: block;
                             font-size: 14px;
                             font-weight: 300;
@@ -2616,20 +2621,20 @@ body[dir='ltr'] {
                             margin-bottom: .5rem;
                           }
 
-                          .row{
-                            .col-7{
-                              p{
+                          .row {
+                            .col-7 {
+                              p {
                                 font-size: 8px;
-                                font-weight: 300; 
+                                font-weight: 300;
                                 color: $PrimaryTextOne;
                               }
                             }
 
-                            .col-5{
+                            .col-5 {
                               padding: 0;
                               text-align: right;
 
-                              a{
+                              a {
                                 width: 100%;
                                 display: block;
                                 font-size: 12px;
@@ -2638,7 +2643,7 @@ body[dir='ltr'] {
                                 text-transform: capitalize;
                                 border: 1px solid $PrimaryFive;
 
-                                &:hover{
+                                &:hover {
                                   color: $White;
                                   background-color: $PrimaryOne;
                                 }
@@ -2646,12 +2651,12 @@ body[dir='ltr'] {
                             }
                           }
                         }
-                        
-                        &.fade{
+
+                        &.fade {
                           display: none;
                         }
 
-                        &.show{
+                        &.show {
                           display: block;
                         }
                       }
@@ -2659,14 +2664,14 @@ body[dir='ltr'] {
 
                   }
 
-                  .col-md-3{
+                  .col-md-3 {
                     display: flex;
                     align-items: center;
                     flex-direction: column;
                     justify-content: center;
                     background-color: $PrimaryBackgroundTwo;
 
-                    a{
+                    a {
                       width: 100%;
                       height: 100%;
                       display: flex;
@@ -2674,11 +2679,11 @@ body[dir='ltr'] {
                       flex-direction: column;
                       justify-content: center;
 
-                      svg{
+                      svg {
                         fill: $PrimaryFour;
                       }
 
-                      span{
+                      span {
                         font-size: 12px;
                         margin-top: 1rem;
                         font-weight: 300;
@@ -2687,8 +2692,8 @@ body[dir='ltr'] {
                         background-color: $White;
                       }
 
-                      &:hover{
-                        span{
+                      &:hover {
+                        span {
                           color: $White;
                           background-color: $PrimaryOne;
                         }
@@ -3221,18 +3226,18 @@ body[dir='ltr'] {
                 .row {
                   width: 100%;
 
-                  &.flex-row{
+                  &.flex-row {
                     h2 {
                       font-size: 14px;
                       margin-bottom: 1.5rem;
                       color: $PrimaryTextTwo;
                       width: auto;
 
-                      &:first-child{
+                      &:first-child {
                         width: 280px;
                       }
 
-                      &:last-child{
+                      &:last-child {
                         padding-left: 2.5rem;
                       }
                     }
@@ -3252,6 +3257,7 @@ body[dir='ltr'] {
 
                       button {
                         width: 300px;
+                        height: 65px;
                         padding: 1rem;
                         display: flex;
                         border-radius: 0px;
@@ -3284,17 +3290,18 @@ body[dir='ltr'] {
                       }
                     }
 
-                    .tab-content{
+                    .tab-content {
                       padding: 0 1.5rem;
-                      .tab-pane{
-                        li{
+
+                      .tab-pane {
+                        li {
                           margin-bottom: .5rem;
 
-                          &:last-of-type{
+                          &:last-of-type {
                             margin-bottom: 2rem;
                           }
 
-                          a{
+                          a {
                             padding: 0;
                             font-size: 14px;
                             font-weight: 400;
@@ -3303,25 +3310,25 @@ body[dir='ltr'] {
                             color: $PrimaryTextOne;
                             text-transform: capitalize;
 
-                            &:hover{
+                            &:hover {
                               color: $PrimaryOne;
                             }
                           }
                         }
 
-                        span{
+                        span {
                           font-size: 14px;
                           font-weight: 400;
                           line-height: 28px;
                           color: $PrimaryFour;
                         }
 
-                        .container{
+                        .container {
                           padding: 2rem 0 0;
                           margin-top: 1rem;
                           border-top: 1px solid $PrimaryFive;
 
-                          span{
+                          span {
                             display: block;
                             font-size: 16px;
                             font-weight: 300;
@@ -3329,19 +3336,19 @@ body[dir='ltr'] {
                             margin-bottom: .5rem;
                           }
 
-                          .row{
-                            .col-7{
-                              p{
+                          .row {
+                            .col-7 {
+                              p {
                                 font-size: 12px;
-                                font-weight: 300; 
+                                font-weight: 300;
                                 color: $PrimaryTextOne;
                               }
                             }
 
-                            .col-5{
+                            .col-5 {
                               text-align: right;
 
-                              a{
+                              a {
                                 font-size: 14px;
                                 font-weight: 300;
                                 text-align: center;
@@ -3349,7 +3356,7 @@ body[dir='ltr'] {
                                 text-transform: capitalize;
                                 border: 1px solid $PrimaryFive;
 
-                                &:hover{
+                                &:hover {
                                   color: $White;
                                   background-color: $PrimaryOne;
                                 }
@@ -3357,12 +3364,12 @@ body[dir='ltr'] {
                             }
                           }
                         }
-                        
-                        &.fade{
+
+                        &.fade {
                           display: none;
                         }
 
-                        &.show{
+                        &.show {
                           display: block;
                         }
                       }
@@ -3370,14 +3377,14 @@ body[dir='ltr'] {
 
                   }
 
-                  .col-md-3{
+                  .col-md-3 {
                     display: flex;
                     align-items: center;
                     flex-direction: column;
                     justify-content: center;
                     background-color: $PrimaryBackgroundTwo;
 
-                    a{
+                    a {
                       width: 100%;
                       height: 100%;
                       display: flex;
@@ -3385,11 +3392,11 @@ body[dir='ltr'] {
                       flex-direction: column;
                       justify-content: center;
 
-                      svg{
+                      svg {
                         fill: $PrimaryFour;
                       }
 
-                      span{
+                      span {
                         margin-top: 2rem;
                         font-weight: 300;
                         color: $PrimaryOne;
@@ -3397,8 +3404,8 @@ body[dir='ltr'] {
                         background-color: $White;
                       }
 
-                      &:hover{
-                        span{
+                      &:hover {
+                        span {
                           color: $White;
                           background-color: $PrimaryOne;
                         }
