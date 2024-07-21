@@ -1,5 +1,7 @@
 {
   "mega_menu-1-title": "Explore Courses",
+  "mega_menu-2-title": "Learning",
+  "mega_menu-2-desc": "Learn More",
   
   "certificate": "Certificate",
   "Engineer":"Engineer",
@@ -269,7 +271,7 @@
   "about-us":"About us",
   "courses":"Courses",
   "webinars":"Webinars",
-  "membership":"VIP Membership",
+  "membership":"Membership",
   "blog":"Blog",
   "see-all-posts":"See all posts",
   "consultation-resume-writing":"Reservation of consultation time for resume writing course",

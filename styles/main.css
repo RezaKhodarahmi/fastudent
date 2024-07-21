@@ -2036,7 +2036,7 @@ body[dir=rtl] nav.FNV-MegaMenu {
     padding: 0 1rem;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .tab-content .tab-pane li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0rem;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .tab-content .tab-pane li:last-of-type {
     margin-bottom: 0.5rem;
@@ -3596,7 +3596,7 @@ body[dir=rtl] nav.FNV-MegaMenu {
     width: auto;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row.flex-row h2:first-child {
-    width: 300px;
+    width: 290px;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row.flex-row h2:last-child {
     padding-left: 2.5rem;
@@ -3651,6 +3651,7 @@ body[dir=rtl] nav.FNV-MegaMenu {
     font-size: 14px;
     font-weight: 400;
     line-height: 28px;
+    text-align: center;
     color: #6A7BBA;
     text-transform: capitalize;
   }
@@ -3684,9 +3685,10 @@ body[dir=rtl] nav.FNV-MegaMenu {
     text-align: right;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .tab-content .tab-pane .container .row .col-5 a {
-    padding: 1rem 1.5rem;
     font-size: 14px;
     font-weight: 300;
+    text-align: center;
+    padding: 1rem 1.5rem;
     text-transform: capitalize;
     border: 1px solid rgba(34, 56, 133, 0.0823529412);
   }
@@ -3698,6 +3700,123 @@ body[dir=rtl] nav.FNV-MegaMenu {
     display: none;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Courses .row .col-md-9 .tab-content .tab-pane.show {
+    display: block;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Learning .row {
+    width: 100%;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Learning .row.flex-row h2 {
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+    color: #0074FF;
+    width: auto;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Learning .row.flex-row h2:first-child {
+    width: 290px;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Learning .row.flex-row h2:last-child {
+    padding-left: 2.5rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Learning .row .col-md-9 {
+    display: flex;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Learning .row .col-md-9 .nav {
+    width: 300px;
+    height: 350px;
+    overflow: scroll;
+    border-right: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Learning .row .col-md-9 .nav button {
+    width: 300px;
+    height: 65px;
+    padding: 1rem;
+    display: flex;
+    border-radius: 0px;
+    align-items: center;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Learning .row .col-md-9 .nav button svg {
+    width: 35px;
+    height: 35px;
+    stroke: #0074FF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Learning .row .col-md-9 .nav button span {
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 1rem;
+    color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Learning .row .col-md-9 .nav button.active {
+    background-color: #0074FF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Learning .row .col-md-9 .nav button.active svg {
+    stroke: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Learning .row .col-md-9 .nav button.active span {
+    color: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Learning .row .col-md-9 .tab-content {
+    padding: 0 1.5rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Learning .row .col-md-9 .tab-content .tab-pane li {
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Learning .row .col-md-9 .tab-content .tab-pane li:last-of-type {
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Learning .row .col-md-9 .tab-content .tab-pane li a {
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: #6A7BBA;
+    text-transform: capitalize;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Learning .row .col-md-9 .tab-content .tab-pane li a:hover {
+    color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Learning .row .col-md-9 .tab-content .tab-pane span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #0074FF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Learning .row .col-md-9 .tab-content .tab-pane .container {
+    padding: 2rem 0 0;
+    margin-top: 1rem;
+    border-top: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Learning .row .col-md-9 .tab-content .tab-pane .container span {
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Learning .row .col-md-9 .tab-content .tab-pane .container .row .col-7 p {
+    font-size: 12px;
+    font-weight: 300;
+    color: #6A7BBA;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Learning .row .col-md-9 .tab-content .tab-pane .container .row .col-5 {
+    text-align: right;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Learning .row .col-md-9 .tab-content .tab-pane .container .row .col-5 a {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    text-transform: capitalize;
+    border: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Learning .row .col-md-9 .tab-content .tab-pane .container .row .col-5 a:hover {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Learning .row .col-md-9 .tab-content .tab-pane.fade {
+    display: none;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-Learning .row .col-md-9 .tab-content .tab-pane.show {
     display: block;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-VIPMemberShip .dropdown-menu {
