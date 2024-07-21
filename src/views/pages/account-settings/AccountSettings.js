@@ -58,7 +58,7 @@ const AccountSettings = ({ tab }) => {
     if (tab && tab !== activeTab) {
       setActiveTab(tab)
     }
-  }, [tab])
+  }, [tab, activeTab])
 
   const tabContentList = {
     security: <TabSecurity />,

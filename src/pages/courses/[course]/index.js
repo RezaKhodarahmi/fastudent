@@ -35,6 +35,7 @@ const Course = () => {
   const [commentSubmit, setCommentSubmit] = useState(false)
   const [remindedDays, setRemindedDays] = useState('0')
   const [user, setUser] = useState(null)
+  const [faq, setFaqs] = useState([])
   const [newComment, setNewComment] = useState(null)
   const [succeededMessage, setSucceededMessage] = useState(null)
   const [open, setOpen] = useState(false)
@@ -124,6 +125,7 @@ const Course = () => {
     // }
     if (courseData?.data) {
       setData(courseData?.data?.data)
+      setFaqs(courseData?.data?.faq)
       setCourseId(courseData?.data?.data?.id)
       setIsEnrolled(courseData?.data?.enrolled)
       setCycleId(courseData?.data?.cycleId)
@@ -457,9 +459,7 @@ const Course = () => {
                             {t('single-course-teacher')}:{' '}
                             <strong>
                               {data?.teachers ? (
-                                <Link href={`${appConfig.appUrl}/teachers/${data?.teachers[0]?.id}`} passHref>
-                                  {data?.teachers[0]?.firstName + ' ' + data?.teachers[0]?.lastName}
-                                </Link>
+                                <span>{data?.teachers[0]?.firstName + ' ' + data?.teachers[0]?.lastName}</span>
                               ) : (
                                 'Fanavaran'
                               )}
@@ -554,17 +554,11 @@ const Course = () => {
                           <small>{t('single-course-teacher')}:</small>
                           <h4>
                             {data?.teachers ? (
-                              <Link href={`${appConfig.appUrl}/teachers/${data?.teachers[0]?.id}`} passHref>
-                                {data?.teachers[0]?.firstName + ' ' + data?.teachers[0]?.lastName}
-                              </Link>
+                              <span>{data?.teachers[0]?.firstName + ' ' + data?.teachers[0]?.lastName}</span>
                             ) : (
                               'Fanavaran'
                             )}
                           </h4>
-                          <p>
-                            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s,
-                          </p>
                         </div>
                       </div>
                     </div>
@@ -753,76 +747,50 @@ const Course = () => {
                     </div>
 
                     {/* FAQ */}
-                    <div className='FNV-Course-Card'>
-                      {/* Head */}
-                      <div className='FNV-Course-Card-Head'>
-                        <h4>{t('single-course-faq')}</h4>
-                      </div>
-                      {/* Body */}
-                      <div className='FNV-Course-Card-Body'>
-                        <div className='accordion' id='faq'>
-                          {/* Item */}
-                          <div className='accordion-item'>
-                            <h2 className='accordion-header'>
-                              <button
-                                className='accordion-button collapsed'
-                                type='button'
-                                data-bs-toggle='collapse'
-                                data-bs-target='#QuestionOne'
-                                aria-expanded='false'
-                                aria-controls='QuestionOne'
-                              >
-                                1. {t('single-course-faq-question')}{' '}
-                              </button>
-                            </h2>
-                            <div id='QuestionOne' className='accordion-collapse collapse'>
-                              <div className='accordion-body FNV-Locked'>{t('single-course-faq-answer')}:</div>
-                            </div>
-                          </div>
-                          {/* Item */}
-                          <div className='accordion-item'>
-                            <h2 className='accordion-header'>
-                              <button
-                                className='accordion-button collapsed'
-                                type='button'
-                                data-bs-toggle='collapse'
-                                data-bs-target='#QuestionTwo'
-                                aria-expanded='false'
-                                aria-controls='QuestionTwo'
-                              >
-                                2. {t('single-course-faq-question')}{' '}
-                              </button>
-                            </h2>
-                            <div id='QuestionTwo' className='accordion-collapse collapse'>
-                              <div className='accordion-body FNV-Locked'>{t('single-course-faq-answer')}:</div>
-                            </div>
-                          </div>
-                          {/* Item */}
-                          <div className='accordion-item'>
-                            <h2 className='accordion-header'>
-                              <button
-                                className='accordion-button collapsed'
-                                type='button'
-                                data-bs-toggle='collapse'
-                                data-bs-target='#QuestionThree'
-                                aria-expanded='false'
-                                aria-controls='QuestionThree'
-                              >
-                                3. {t('single-course-faq-question')}{' '}
-                              </button>
-                            </h2>
-                            <div id='QuestionThree' className='accordion-collapse collapse'>
-                              <div className='accordion-body FNV-Locked'>{t('single-course-faq-answer')}:</div>
-                            </div>
+                    {faq && (
+                      <div className='FNV-Course-Card'>
+                        {/* Head */}
+                        <div className='FNV-Course-Card-Head'>
+                          <h4>{t('single-course-faq')}</h4>
+                        </div>
+                        {/* Body */}
+                        <div className='FNV-Course-Card-Body'>
+                          <div className='accordion' id='faq'>
+                            {/* Item */}
+                            {faq.map((item, index) => (
+                              <div key={index} className='accordion-item'>
+                                <h2 className='accordion-header'>
+                                  <button
+                                    className='accordion-button collapsed'
+                                    type='button'
+                                    data-bs-toggle='collapse'
+                                    data-bs-target='#QuestionOne'
+                                    aria-expanded='false'
+                                    aria-controls='QuestionOne'
+                                  >
+                                    {index + 1}. {item.title}{' '}
+                                  </button>
+                                </h2>
+                                <div id='QuestionOne' className='accordion-collapse collapse'>
+                                  <div className='accordion-body FNV-Locked'>
+                                    {t('single-course-faq-answer')}:
+                                    <div
+                                      className='non-clickable-content'
+                                      dangerouslySetInnerHTML={{ __html: item?.description }}
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            ))}
                           </div>
                         </div>
                       </div>
-                    </div>
+                    )}
                   </div>
 
                   <div className='col-md-4 d-sm-none d-md-block'>
                     <div className='FNV-Course-Card'>
-                      <img src={data?.image} className='img-fluid' />
+                      <img alt="" src={data?.image} className='img-fluid' />
 
                       {inEnrolled ? (
                         <>
@@ -1098,7 +1066,30 @@ const Course = () => {
                         {/* Title */}
                         <div className='col-9 col-md-10'>
                           <h5>
-                            {t('single-course-vip-price')}:{' '}
+                            {t('single-course-vip-price-platinum')}:{' '}
+                            <price>
+                              {data?.cycles
+                                ? data?.cycles?.map(cycle =>
+                                    cycle.id == selectedCycle ? (
+                                      <>
+                                        {' '}
+                                        <span
+                                          style={{
+                                            textDecoration: isDiscountActive(cycle) ? 'line-through' : 'none',
+                                            color: isDiscountActive(cycle) ? '#000' : 'none'
+                                          }}
+                                        >
+                                          ${cycle.vipPLPrice}
+                                        </span>
+                                        {isDiscountActive(cycle) && <span> - ${cycle.discountVipPLPrice}</span>}
+                                      </>
+                                    ) : null
+                                  )
+                                : '0'}
+                            </price>
+                          </h5>
+                          <h5>
+                            {t('single-course-vip-price-gold')}:{' '}
                             <price>
                               {data?.cycles
                                 ? data?.cycles?.map(cycle =>
@@ -1113,7 +1104,7 @@ const Course = () => {
                                         >
                                           ${cycle.vipPrice}
                                         </span>
-                                        {isDiscountActive(cycle) && <span> - ${cycle.discountVipPrice}</span>}
+                                        {isDiscountActive(cycle) && <span> - ${cycle.discountVipPrice} </span>}
                                       </>
                                     ) : null
                                   )

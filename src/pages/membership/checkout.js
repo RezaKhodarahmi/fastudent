@@ -77,7 +77,11 @@ const StripeCheckoutButton = () => {
           <div className='row'>
             <div className='col-6 col-md-3'>
               <div className='card'>
-                <img src={'/img/membership/percent.png'} className='img-fluid w-75 rounded mb-4' />
+                <img
+                  alt='image'
+                  src={'/img alt="image"/membership/percent.png'}
+                  className='img alt="image"-fluid w-75 rounded mb-4'
+                />
 
                 <div className='card-body p-0'>
                   <h3>تخفیف همیشگی دوره ها</h3>
@@ -86,7 +90,11 @@ const StripeCheckoutButton = () => {
             </div>
             <div className='col-6 col-md-3'>
               <div className='card'>
-                <img src={'/img/membership/monitor.png'} className='img-fluid w-75 rounded mb-4' />
+                <img
+                  alt='image'
+                  src={'/img alt="image"/membership/monitor.png'}
+                  className='img alt="image"-fluid w-75 rounded mb-4'
+                />
 
                 <div className='card-body p-0'>
                   <h3>استفاده از دوره های رایگان</h3>
@@ -95,7 +103,11 @@ const StripeCheckoutButton = () => {
             </div>
             <div className='col-6 col-md-3'>
               <div className='card'>
-                <img src={'/img/membership/file.png'} className='img-fluid w-75 rounded mb-4' />
+                <img
+                  alt='image'
+                  src={'/img alt="image"/membership/file.png'}
+                  className='img alt="image"-fluid w-75 rounded mb-4'
+                />
 
                 <div className='card-body p-0'>
                   <h3>دسترسی به مدارک و فرم ها</h3>
@@ -104,7 +116,11 @@ const StripeCheckoutButton = () => {
             </div>
             <div className='col-6 col-md-3'>
               <div className='card'>
-                <img src={'/img/membership/resume.png'} className='img-fluid w-75 rounded mb-4' />
+                <img
+                  alt='image'
+                  src={'/img alt="image"/membership/resume.png'}
+                  className='img alt="image"-fluid w-75 rounded mb-4'
+                />
 
                 <div className='card-body p-0'>
                   <h3>مشاوره رزومه و کاریابی</h3>
@@ -230,7 +246,9 @@ const StripeCheckoutButton = () => {
                   <Link
                     href={'/login?returnUrl=/membership/checkout'}
                     className='FNV-Btn BtnOutline PrimaryColor BtnLarge'
-                  >ابتدا وارد شوید</Link>
+                  >
+                    ابتدا وارد شوید
+                  </Link>
                 )}
               </div>
             </div>

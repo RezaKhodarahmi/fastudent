@@ -11,7 +11,6 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 import { useTranslation } from 'react-i18next'
 
 const WebinarDeskSingle = () => {
-
   //Hooks
   const { t } = useTranslation()
 
@@ -76,7 +75,7 @@ const WebinarDeskSingle = () => {
                       </div>
                     </div>
                     <div className='col-md-7 d-none d-sm-none d-md-block'>
-                      <img src='img/course1.jpg' className='img-fluid' />
+                      <img src='img/course1.jpg' className='img-fluid' alt='webinar image' />
                     </div>
                   </div>
                 </SwiperSlide>

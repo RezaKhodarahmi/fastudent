@@ -145,7 +145,14 @@ const FreeUserCard = props => {
               item
               sm={5}
               xs={12}
-              sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-end', mt: 5, mb: 5 }}
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-start',
+                justifyContent: 'flex-end',
+                mt: 5,
+                mb: 5
+              }}
             >
               <Box sx={{ mb: 3, rowGap: 1, columnGap: 2.5, display: 'flex', flexWrap: 'wrap', alignItems: 'center' }}>
                 Your Current Plan is <CustomChip rounded size='small' skin='light' color='primary' label='FREE' />
@@ -155,10 +162,10 @@ const FreeUserCard = props => {
           </Grid>
 
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
-          <CustomAvatar skin='light' variant='rounded' sx={{ mr: 3, width: 55, height: 55 }}>
-            <Icon icon='tabler:currency-dollar' />
-          </CustomAvatar>
-          <Box
+            <CustomAvatar skin='light' variant='rounded' sx={{ mr: 3, width: 55, height: 55 }}>
+              <Icon icon='tabler:currency-dollar' />
+            </CustomAvatar>
+            <Box
               sx={{
                 rowGap: 1,
                 columnGap: 4,
@@ -166,22 +173,23 @@ const FreeUserCard = props => {
                 display: 'flex',
                 flexWrap: 'wrap',
                 alignItems: 'center',
-                justifyContent: 'space-between',
+                justifyContent: 'space-between'
               }}
             >
               <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
-                <Typography sx={{ fontWeight: 700, fontSize: 22 }}>$60</Typography>
+                <Typography sx={{ fontWeight: 700, fontSize: 22 }}>$80 </Typography>
                 <Typography variant='body2' sx={{ color: 'text.disabled' }}>
                   Annually <CustomChip rounded size='small' skin='light' color='error' label='Popular' />
                 </Typography>
               </Box>
 
               <Button variant='contained'>
-                <Link href={`${appConfig.appUrl}/membership/checkout`} sx={{ color: '#ffffff' }}>UPGRADE PLAN</Link>
+                <Link href={`${appConfig.appUrl}/membership/checkout`} sx={{ color: '#ffffff' }}>
+                  UPGRADE PLAN
+                </Link>
               </Button>
             </Box>
           </Box>
-
         </CardContent>
       </Card>
     </>
