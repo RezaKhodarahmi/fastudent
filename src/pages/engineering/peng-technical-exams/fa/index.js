@@ -1,5 +1,7 @@
+// React
 import React, { useEffect } from 'react'
 import feather from 'feather-icons'
+import { appConfig } from 'src/configs/appConfig'
 
 // ** Import Translation
 import { useTranslation } from 'react-i18next'
@@ -481,6 +483,8 @@ const Index = () => {
 
       <section className='FNV-SinglePage FNV-WhiteBG' id='P6'>
         <div className='container'>
+          <img src={appConfig.appUrl + '/images/pages/engineering/peng-road-map.jpg'} className='img-fluid' />
+
           <div className='row'>
             <h3>آزمون‌های تکنیکال مهندسی چیست؟</h3>
 
