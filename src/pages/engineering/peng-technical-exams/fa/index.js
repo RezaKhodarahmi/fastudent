@@ -64,13 +64,16 @@ const Index = () => {
                   <Link href='#P3'>Electrical Engineering</Link>
                 </li>
                 <li>
-                  <Link href='#P4'>CS Group Exams</Link>
+                  <Link href='#P4'>Materials Engineering</Link>
                 </li>
                 <li>
-                  <Link href='#P5'>آزمون‌های تکنیکال مهندسی چیست؟</Link>
+                  <Link href='#P5'>CS Group Exams</Link>
                 </li>
                 <li>
-                  <Link href='#P6'>محدودیت‌های زمانی برای شرکت در آزمون‌های تکنیکال PEO</Link>
+                  <Link href='#P6'>آزمون‌های تکنیکال مهندسی چیست؟</Link>
+                </li>
+                <li>
+                  <Link href='#P7'>محدودیت‌های زمانی برای شرکت در آزمون‌های تکنیکال PEO</Link>
                 </li>
                 <li>
                   <Link href='#FAQ'>سوالات متداول</Link>
@@ -113,13 +116,13 @@ const Index = () => {
                       <p>Applied Thermodynamics and Heat Transfer</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>August-19-2024</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>Mondays</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>20:00 EST</p>
                     </td>
                   </tr>
                   <tr>
@@ -130,13 +133,13 @@ const Index = () => {
                       <p>Advanced Fluid Mechanics</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>August-20-2024</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>Tuesdays</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>20:00 EST</p>
                     </td>
                   </tr>
                   <tr>
@@ -147,13 +150,13 @@ const Index = () => {
                       <p>Advanced Strength of Materials</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>August-21-2024</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>Wednesdays</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>20:00 EST</p>
                     </td>
                   </tr>
                   <tr>
@@ -164,18 +167,17 @@ const Index = () => {
                       <p>Engineering Materials</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>August-22-2024</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>Thursdays</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>20:00 EST</p>
                     </td>
                   </tr>
                 </tbody>
               </table>
-              <p>&nbsp;</p>
 
               <caption id='P2'>Civil Engineering</caption>
               <table className='table table-striped table-hover'>
@@ -205,13 +207,13 @@ const Index = () => {
                       <p>Elementary Structural Analysis</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>August-19-2024</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>Mondays</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>20:00 EST</p>
                     </td>
                   </tr>
                   <tr>
@@ -222,13 +224,13 @@ const Index = () => {
                       <p>Hydraulic Engineering</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>August-20-2024</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>Tuesdays</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>20:00 EST</p>
                     </td>
                   </tr>
                   <tr>
@@ -239,13 +241,13 @@ const Index = () => {
                       <p>Transportation Planning and Engineering</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>August-21-2024</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>Wednesdays</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>20:00 EST</p>
                     </td>
                   </tr>
                   <tr>
@@ -256,13 +258,13 @@ const Index = () => {
                       <p>Traffic Engineering</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>August-22-2024</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>Thursdays</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>20:00 EST</p>
                     </td>
                   </tr>
                 </tbody>
@@ -296,13 +298,13 @@ const Index = () => {
                       <p>Circuits</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>August-19-2024</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>Mondays</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>20:00 EST</p>
                     </td>
                   </tr>
                   <tr>
@@ -313,13 +315,13 @@ const Index = () => {
                       <p>Signals and Communications</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>August-20-2024</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>Tuesdays</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>20:00 EST</p>
                     </td>
                   </tr>
                   <tr>
@@ -330,19 +332,93 @@ const Index = () => {
                       <p>Digital Communications Systems</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>August-21-2024</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>Wednesdays</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>20:00 EST</p>
                     </td>
                   </tr>
                 </tbody>
               </table>
 
-              <caption id='P4'>CS Group Exams</caption>
+              <caption id='P4'>Materials Engineering</caption>
+              <table className='table table-striped table-hover'>
+                <tbody>
+                  <tr>
+                    <td>
+                      <p>Group | Code</p>
+                    </td>
+                    <td>
+                      <p>Course</p>
+                    </td>
+                    <td>
+                      <p>Dates</p>
+                    </td>
+                    <td>
+                      <p>Days of the Week</p>
+                    </td>
+                    <td>
+                      <p>Time</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>A | 21‐Mat‐A3</p>
+                    </td>
+                    <td>
+                      <p>Structure and Characterization of Materials</p>
+                    </td>
+                    <td>
+                      <p>August-19-2024</p>
+                    </td>
+                    <td>
+                      <p>Mondays</p>
+                    </td>
+                    <td>
+                      <p>20:00 EST</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>A |21‐Mat‐A4</p>
+                    </td>
+                    <td>
+                      <p>Deformation Behaviour and Properties of Materials</p>
+                    </td>
+                    <td>
+                      <p>August-20-2024</p>
+                    </td>
+                    <td>
+                      <p>Tuesdays</p>
+                    </td>
+                    <td>
+                      <p>20:00 EST</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>B | 21‐Mat‐A5</p>
+                    </td>
+                    <td>
+                      <p>Phase Transformations and Thermal Treatment</p>
+                    </td>
+                    <td>
+                      <p>August-21-2024</p>
+                    </td>
+                    <td>
+                      <p>Wednesdays</p>
+                    </td>
+                    <td>
+                      <p>20:00 EST</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <caption id='P5'>CS Group Exams</caption>
               <table className='table table-striped table-hover'>
                 <tbody>
                   <tr>
@@ -370,13 +446,13 @@ const Index = () => {
                       <p>Engineering Economics</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>August-22-2024</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>Thursdays</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>20:00 EST</p>
                     </td>
                   </tr>
                   <tr>
@@ -387,13 +463,13 @@ const Index = () => {
                       <p>Engineering in Society - Health &amp; Safety</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>August-23-2024</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>Fridays</p>
                     </td>
                     <td>
-                      <p>-</p>
+                      <p>20:00 EST</p>
                     </td>
                   </tr>
                 </tbody>
@@ -403,7 +479,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className='FNV-SinglePage FNV-WhiteBG'>
+      <section className='FNV-SinglePage FNV-WhiteBG' id='P6'>
         <div className='container'>
           <div className='row'>
             <h3>آزمون‌های تکنیکال مهندسی چیست؟</h3>
@@ -426,7 +502,7 @@ const Index = () => {
                 <li>داوطلبانی که CEP به آن&zwnj;ها اختصاص داده شده، ممکن است برای بخشی از آزمون تعیین شده خود معافیت بگیرند، به شرطی که معیارهای عملکرد خوب (Good Performance Criteria) را برآورده کنند.</li>
               </ul>
               <p>داوطلبانی که در دو آزمون مردود شوند، برنامه امتحان Failed-to-Confirm (FTC) به آن&zwnj;ها اختصاص داده خواهد شد. برنامه امتحان FTC نوعی برنامه SEP محسوب می&zwnj;شود؛ بنابراین داوطلبان در صورت عملکرد خوب می&zwnj;توانند از معافیت&zwnj;هایی برخوردار شوند، ولی در صورت عدم موفقیت در دو امتحان، برنامه امتحانی سخت&zwnj;تری در انتظار آن&zwnj;ها خواهد بود.</p>
-              
+
               <h4>Specific Exam Program (SEP)</h4>
               <p>اگر ارزیابی PEO نشان دهد که مدارک علمی فرد متقاضی پایین&zwnj;تر از استاندارد مورد قبول کانادا است، به او یک برنامه امتحان اختصاصی برای رفع نقاط ضعف شناسایی شده داده می&zwnj;شود. برنامه آزمون اختصاصی ممکن است شامل موارد زیر باشد:</p>
               <ul>
@@ -449,11 +525,11 @@ const Index = () => {
         </div>
       </section>
 
-      <section className='FNV-SinglePage FNV-GreyBG mb-5'>
+      <section className='FNV-SinglePage FNV-GreyBG mb-5' id='P7'>
         <div className='container'>
           <div className='row'>
             <h3>محدودیت&zwnj;های زمانی برای شرکت در آزمون&zwnj;های تکنیکال PEO:</h3>
-            
+
             <div className='col-12'>
               <ul>
                 <li>آزمون&zwnj;های تکنیکال PEO سالانه دو بار برگزار می&zwnj;شوند.</li>
@@ -549,7 +625,7 @@ const Index = () => {
                 <div id='Question4' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
                   <div className='accordion-body'>
                     <p>
-                    داوطلبان می‌توانند بی‌نهایت بار در امتحانات تکنیکال شرکت کنند تا زمانی که تعداد امتحانات تکنیکال لازم برای دریافت لایسنس مورد نظر را به حد نصاب مربوطه برسانند‌‌.
+                      داوطلبان می‌توانند بی‌نهایت بار در امتحانات تکنیکال شرکت کنند تا زمانی که تعداد امتحانات تکنیکال لازم برای دریافت لایسنس مورد نظر را به حد نصاب مربوطه برسانند‌‌.
                     </p>
                   </div>
                 </div>
