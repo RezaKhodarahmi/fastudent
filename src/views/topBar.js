@@ -20,8 +20,8 @@ const TopBanner = () => {
       <section className='FNV-TopBar'>
         <div className='container'>
           <div className='row'>
-
-            <div className='col-6'>
+            {/* Info */}
+            <div className='col-4'>
               <Link href='mailto:info@fanavaran.ca'>
                 <i data-feather='mail'></i>
                 info@fanavaran.ca
@@ -33,7 +33,8 @@ const TopBanner = () => {
               </Link>
             </div>
 
-            <div className='col-6'>
+            {/* Support */}
+            <div className='col-4'>
               <Link href='mailto:support@fanavaran.ca'>
                 <i data-feather='mail'></i>
                 support@fanavaran.ca
@@ -42,6 +43,17 @@ const TopBanner = () => {
               <Link href='tel:+16723996600'>
                 <i data-feather='phone'></i>
                 (672) 399-6600
+              </Link>
+            </div>
+
+            {/* Iran Number */}
+            <div className='col-4'>
+              <Link href='tel:00989121433158'>
+                <i data-feather='phone'></i>
+                0912 143 3158
+              </Link>
+              <Link href='tel:00989121433158'>
+                پشتیبانی ایران
               </Link>
             </div>
           </div>

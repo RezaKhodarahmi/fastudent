@@ -216,7 +216,7 @@ const Header = props => {
             <span className='navbar-toggler-icon'></span>
           </button>
 
-          <div className='collapse navbar-collapse'>
+          <div className='collapse navbar-collapse' id='FNV-Toggle'>
             <ul className='navbar-nav mb-2 mb-lg-0'>
               {/* Courses */}
               <li className='nav-item dropdown FNV-MegaMenu FNV-Courses'>
@@ -642,7 +642,7 @@ const Header = props => {
               </li>
 
               {/* Blog */}
-              <li className='nav-item dropdown FNV-MegaMenu'>
+              <li className='nav-item dropdown FNV-MegaMenu d-lg-none d-xl-block'>
                 <Link className='nav-link' href='/blog' aria-expanded='false'>
                   {t('blog')}
                 </Link>
@@ -656,14 +656,14 @@ const Header = props => {
               </li>
 
               {/* Contact Us */}
-              <li className='nav-item dropdown FNV-MegaMenu'>
+              <li className='nav-item dropdown FNV-MegaMenu d-lg-none d-xl-block'>
                 <Link className='nav-link' href='/contact-us' aria-expanded='false'>
                   {t('contact-us')}
                 </Link>
               </li>
 
               {/* About Us */}
-              <li className='nav-item dropdown FNV-MegaMenu'>
+              <li className='nav-item dropdown FNV-MegaMenu d-lg-none d-xl-block'>
                 <Link className='nav-link' href='/about-us' aria-expanded='false'>
                   {t('about-us')}
                 </Link>
