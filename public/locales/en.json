@@ -2,6 +2,16 @@
   "mega_menu-1-title": "Explore Courses",
   "mega_menu-2-title": "Learning",
   "mega_menu-2-desc": "Learn More",
+  "mega_menu-3-title": "Services",
+
+  "mega_menu-3-desc": "What do you need?",
+  "mega_menu-3-cunseling" : "Counseling",
+  "mega_menu-3-course-description" : "Course Description",
+  "mega_menu-3-credentials-verification" : "Credentials Verification",
+  
+  "mega_menu-4-title": "Types of Membership",
+  "mega_menu-4-desc": "Solution for Membership",
+  "mega_menu-4-membership-overview" : "Membership Overview",
   
   "certificate": "Certificate",
   "Engineer":"Engineer",
