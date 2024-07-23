@@ -230,7 +230,7 @@ const Header = props => {
                     <h2>{t('courses')}</h2>
                   </div>
                   <div className='row'>
-                    <div className='col-md-9'>
+                    <div className='col-12 col-md-9'>
                       <div className='nav' id="v-pills-tab" role="tablist" aria-orientation="horizontal">
                         {/* Engineering */}
                         <button className="nav-link active" id="engineering-tab" data-bs-toggle="pill" data-bs-target="#engineering" type="button" role="tab" aria-controls="engineering" aria-selected="true">

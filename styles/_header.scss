@@ -1,5 +1,14 @@
 @import './variables';
 
+.FNV-TopBanner {
+  width: 100%;
+  height: 65px!important;
+}
+
+.FNV-TopBar {
+  display: none;
+}
+
 // `sm` applies to x-small devices (portrait phones, less than 576px)
 @media (min-width: 575.98px) {
   .FNV-TopBanner {
@@ -8,51 +17,7 @@
   }
 
   .FNV-TopBar {
-    background-color: $PrimaryBackgroundTwo;
-    padding: 1rem 0rem;
-    direction: ltr;
-
-    .container {
-      .row {
-        .col-4 {
-          display: flex;
-          padding: 0;
-
-          a {
-            font-size: 14px;
-            position: relative;
-            margin-right: 4rem;
-            color: $PrimaryTextOne;
-
-            svg {
-              color: $PrimaryTextOne;
-              width: 18px;
-              height: 14px;
-              margin-right: .5rem;
-            }
-
-            &:first-child::after {
-              content: '';
-              top: 0;
-              width: 1px;
-              height: 25px;
-              right: -2rem;
-              position: absolute;
-              background-color: $PrimaryTextOne;
-            }
-          }
-
-          &:nth-child(2) {
-            justify-content: end;
-
-            a {
-              margin-left: 4rem;
-              margin-right: unset;
-            }
-          }
-        }
-      }
-    }
+    display: none;
   }
 
   .FNV-Home {
@@ -166,51 +131,7 @@
   }
 
   .FNV-TopBar {
-    background-color: $PrimaryBackgroundTwo;
-    padding: 1rem 0rem;
-    direction: ltr;
-
-    .container {
-      .row {
-        .col-4 {
-          display: flex;
-          padding: 0;
-
-          a {
-            font-size: 14px;
-            position: relative;
-            margin-right: 4rem;
-            color: $PrimaryTextOne;
-
-            svg {
-              color: $PrimaryTextOne;
-              width: 18px;
-              height: 14px;
-              margin-right: .5rem;
-            }
-
-            &:first-child::after {
-              content: '';
-              top: 0;
-              width: 1px;
-              height: 25px;
-              right: -2rem;
-              position: absolute;
-              background-color: $PrimaryTextOne;
-            }
-          }
-
-          &:nth-child(2) {
-            justify-content: end;
-
-            a {
-              margin-left: 4rem;
-              margin-right: unset;
-            }
-          }
-        }
-      }
-    }
+    display: none;
   }
 
   .FNV-Home {
