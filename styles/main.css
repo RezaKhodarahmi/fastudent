@@ -3413,7 +3413,7 @@ badge.SecondaryColor {
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 575px) {
   body[dir=rtl] nav {
     background-color: #ffffff;
   }
@@ -3421,8 +3421,9 @@ badge.SecondaryColor {
     padding: 1rem;
   }
   body[dir=rtl] nav .container .navbar-brand {
+    margin: 0;
     width: 200px;
-    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
   body[dir=rtl] nav .container .navbar-brand svg {
     width: 100%;
@@ -3449,6 +3450,9 @@ badge.SecondaryColor {
     position: relative;
     justify-content: center;
   }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav {
+    padding-right: 0px;
+  }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li a {
     padding: 0.5rem;
     font-size: 15px;
@@ -3466,13 +3470,14 @@ badge.SecondaryColor {
     width: 100%;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row.flex-row h2 {
+    width: auto;
     font-size: 10px;
+    text-align: right;
     margin-bottom: 1.5rem;
     color: #0074FF;
-    width: auto;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row.flex-row h2:first-child {
-    width: 180px;
+    width: 175px;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row.flex-row h2:last-child {
     padding-left: 2.5rem;
@@ -3484,7 +3489,7 @@ badge.SecondaryColor {
     width: 60%;
     height: 180px;
     overflow: scroll;
-    border-right: 1px solid rgba(34, 56, 133, 0.0823529412);
+    border-left: 1px solid rgba(34, 56, 133, 0.0823529412);
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .nav button {
     width: 100%;
@@ -3518,6 +3523,7 @@ badge.SecondaryColor {
     padding: 0 0.5rem;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane li {
+    text-align: right;
     margin-bottom: 0rem;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane li:last-of-type {
@@ -3691,7 +3697,7 @@ badge.SecondaryColor {
     border-radius: 5px;
   }
 }
-@media (min-width: 575.98px) and (max-width: 767.98px) {
+@media (min-width: 575.98px) and (max-width: 767px) {
   body[dir=rtl] nav {
     background-color: #ffffff;
   }
@@ -3699,8 +3705,9 @@ badge.SecondaryColor {
     padding: 1rem;
   }
   body[dir=rtl] nav .container .navbar-brand {
+    margin: 0;
     width: 200px;
-    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
   body[dir=rtl] nav .container .navbar-brand svg {
     width: 100%;
@@ -3727,6 +3734,9 @@ badge.SecondaryColor {
     position: relative;
     justify-content: center;
   }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav {
+    padding-right: 0px;
+  }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li a {
     padding: 0.5rem;
     font-size: 15px;
@@ -3744,13 +3754,14 @@ badge.SecondaryColor {
     width: 100%;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row.flex-row h2 {
+    width: auto;
     font-size: 10px;
+    text-align: right;
     margin-bottom: 1.5rem;
     color: #0074FF;
-    width: auto;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row.flex-row h2:first-child {
-    width: 180px;
+    width: 175px;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row.flex-row h2:last-child {
     padding-left: 2.5rem;
@@ -3762,7 +3773,7 @@ badge.SecondaryColor {
     width: 60%;
     height: 180px;
     overflow: scroll;
-    border-right: 1px solid rgba(34, 56, 133, 0.0823529412);
+    border-left: 1px solid rgba(34, 56, 133, 0.0823529412);
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .nav button {
     width: 100%;
@@ -3796,6 +3807,7 @@ badge.SecondaryColor {
     padding: 0 0.5rem;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane li {
+    text-align: right;
     margin-bottom: 0rem;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane li:last-of-type {
@@ -3977,6 +3989,7 @@ badge.SecondaryColor {
     padding: 1rem 0;
   }
   body[dir=rtl] nav .container .navbar-brand {
+    margin: 0;
     width: 200px;
     padding-left: 0.5rem;
   }
@@ -4005,6 +4018,9 @@ badge.SecondaryColor {
     position: relative;
     justify-content: center;
   }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav {
+    padding-right: 0px;
+  }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li a {
     padding: 0.5rem;
     font-size: 15px;
@@ -4022,13 +4038,14 @@ badge.SecondaryColor {
     width: 100%;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row.flex-row h2 {
+    width: auto;
     font-size: 10px;
+    text-align: right;
     margin-bottom: 1.5rem;
     color: #0074FF;
-    width: auto;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row.flex-row h2:first-child {
-    width: 140px;
+    width: 160px;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row.flex-row h2:last-child {
     padding-left: 2.5rem;
@@ -4040,7 +4057,7 @@ badge.SecondaryColor {
     width: 150px;
     height: 240px;
     overflow: scroll;
-    border-right: 1px solid rgba(34, 56, 133, 0.0823529412);
+    border-left: 1px solid rgba(34, 56, 133, 0.0823529412);
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .nav button {
     height: 50px;
@@ -4058,7 +4075,7 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .nav button span {
     font-size: 10px;
     font-weight: 300;
-    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     color: #223885;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .nav button.active {
@@ -4074,6 +4091,7 @@ badge.SecondaryColor {
     padding: 0 1rem;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane li {
+    text-align: right;
     margin-bottom: 0rem;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane li:last-of-type {
@@ -4105,22 +4123,25 @@ badge.SecondaryColor {
     display: block;
     font-size: 14px;
     font-weight: 300;
+    text-align: right;
     color: #223885;
     margin-bottom: 0.5rem;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-7 p {
     font-size: 5px;
     font-weight: 300;
+    text-align: right;
     color: #6A7BBA;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-5 {
-    text-align: right;
     padding: 0;
+    text-align: right;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-5 a {
     padding: 0.5rem;
     font-size: 8px;
     font-weight: 300;
+    text-align: right;
     text-transform: capitalize;
     border: 1px solid rgba(34, 56, 133, 0.0823529412);
   }

@@ -3924,7 +3924,7 @@ body[dir='ltr'] {
 // Persian
 body[dir='rtl'] {
   // X-Small devices (portrait phones, less than 576px)
-  @media (max-width: 575.98px) {
+  @media (max-width: 575px) {
     nav {
       background-color: $WhiteColor;
   
@@ -3932,8 +3932,9 @@ body[dir='rtl'] {
         padding: 1rem;
   
         .navbar-brand {
+          margin: 0;
           width: 200px;
-          padding-right: .5rem;
+          padding-left: .5rem;
   
           svg {
             width: 100%;
@@ -3968,6 +3969,8 @@ body[dir='rtl'] {
           justify-content: center;
   
           .navbar-nav {
+            padding-right: 0px;
+
             li { 
               a {
                 padding: .5rem;
@@ -3993,13 +3996,14 @@ body[dir='rtl'] {
   
                   &.flex-row {
                     h2 {
+                      width: auto;
                       font-size: 10px;
+                      text-align: right;
                       margin-bottom: 1.5rem;
                       color: $PrimaryTextTwo;
-                      width: auto;
   
                       &:first-child {
-                        width: 180px;
+                        width: 175px;
                       }
   
                       &:last-child {
@@ -4015,7 +4019,7 @@ body[dir='rtl'] {
                       width: 60%;
                       height: 180px;
                       overflow: scroll;
-                      border-right: 1px solid $PrimaryFive;
+                      border-left: 1px solid $PrimaryFive;
   
                       button {
                         width: 100%;
@@ -4057,6 +4061,7 @@ body[dir='rtl'] {
   
                       .tab-pane {
                         li {
+                          text-align: right;
                           margin-bottom: 0rem;
   
                           &:last-of-type {
@@ -4267,7 +4272,7 @@ body[dir='rtl'] {
   }
 
   // `sm` applies to x-small devices (portrait phones, less than 576px)
-  @media (min-width: 575.98px) and (max-width: 767.98px) {
+  @media (min-width: 575.98px) and (max-width: 767px) {
     nav {
       background-color: $WhiteColor;
   
@@ -4275,8 +4280,9 @@ body[dir='rtl'] {
         padding: 1rem;
   
         .navbar-brand {
+          margin: 0;
           width: 200px;
-          padding-right: .5rem;
+          padding-left: .5rem;
   
           svg {
             width: 100%;
@@ -4311,6 +4317,8 @@ body[dir='rtl'] {
           justify-content: center;
   
           .navbar-nav {
+            padding-right: 0px;
+
             li { 
               a {
                 padding: .5rem;
@@ -4336,13 +4344,14 @@ body[dir='rtl'] {
   
                   &.flex-row {
                     h2 {
+                      width: auto;
                       font-size: 10px;
+                      text-align: right;
                       margin-bottom: 1.5rem;
                       color: $PrimaryTextTwo;
-                      width: auto;
   
                       &:first-child {
-                        width: 180px;
+                        width: 175px;
                       }
   
                       &:last-child {
@@ -4358,7 +4367,7 @@ body[dir='rtl'] {
                       width: 60%;
                       height: 180px;
                       overflow: scroll;
-                      border-right: 1px solid $PrimaryFive;
+                      border-left: 1px solid $PrimaryFive;
   
                       button {
                         width: 100%;
@@ -4400,6 +4409,7 @@ body[dir='rtl'] {
   
                       .tab-pane {
                         li {
+                          text-align: right;
                           margin-bottom: 0rem;
   
                           &:last-of-type {
@@ -4618,6 +4628,7 @@ body[dir='rtl'] {
         padding: 1rem 0;
 
         .navbar-brand {
+          margin: 0;
           width: 200px;
           padding-left: .5rem;
 
@@ -4654,6 +4665,8 @@ body[dir='rtl'] {
           justify-content: center;
 
           .navbar-nav {
+            padding-right: 0px;
+
             li {
               a {
                 padding: .5rem;
@@ -4679,13 +4692,14 @@ body[dir='rtl'] {
 
                   &.flex-row {
                     h2 {
+                      width: auto;
                       font-size: 10px;
+                      text-align: right;
                       margin-bottom: 1.5rem;
                       color: $PrimaryTextTwo;
-                      width: auto;
 
                       &:first-child {
-                        width: 140px;
+                        width: 160px;
                       }
 
                       &:last-child {
@@ -4701,7 +4715,7 @@ body[dir='rtl'] {
                       width: 150px;
                       height: 240px;
                       overflow: scroll;
-                      border-right: 1px solid $PrimaryFive;
+                      border-left: 1px solid $PrimaryFive;
 
                       button {
                         height: 50px;
@@ -4720,7 +4734,7 @@ body[dir='rtl'] {
                         span {
                           font-size: 10px;
                           font-weight: 300;
-                          margin-left: .5rem;
+                          margin-right: .5rem;
                           color: $PrimaryOne;
                         }
 
@@ -4743,6 +4757,7 @@ body[dir='rtl'] {
 
                       .tab-pane {
                         li {
+                          text-align: right;
                           margin-bottom: 0rem;
 
                           &:last-of-type {
@@ -4779,6 +4794,7 @@ body[dir='rtl'] {
                             display: block;
                             font-size: 14px;
                             font-weight: 300;
+                            text-align: right;
                             color: $PrimaryOne;
                             margin-bottom: .5rem;
                           }
@@ -4788,18 +4804,20 @@ body[dir='rtl'] {
                               p {
                                 font-size: 5px;
                                 font-weight: 300;
+                                text-align: right;
                                 color: $PrimaryTextOne;
                               }
                             }
 
                             .col-5 {
-                              text-align: right;
                               padding: 0;
+                              text-align: right;
 
                               a {
                                 padding: .5rem;
                                 font-size: 8px;
                                 font-weight: 300;
+                                text-align: right;
                                 text-transform: capitalize;
                                 border: 1px solid $PrimaryFive;
 
