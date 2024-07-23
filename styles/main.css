@@ -1445,7 +1445,7 @@ badge.SecondaryColor {
     font-size: 14px;
     font-weight: 400;
     padding: 2rem 0.5rem;
-    color: #B2B9D4;
+    color: #223885;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li:hover a {
     font-weight: 500;
@@ -2014,7 +2014,7 @@ badge.SecondaryColor {
     font-size: 14px;
     font-weight: 400;
     padding: 2rem 0.5rem;
-    color: #B2B9D4;
+    color: #223885;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li:hover a {
     font-weight: 500;
@@ -2577,7 +2577,7 @@ badge.SecondaryColor {
     font-size: 14px;
     font-weight: 400;
     padding: 2rem 0.5rem;
-    color: #B2B9D4;
+    color: #223885;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li:hover a {
     font-weight: 500;
@@ -3143,7 +3143,7 @@ badge.SecondaryColor {
     font-size: 16px;
     font-weight: 400;
     padding: 2rem 0.5rem;
-    color: #B2B9D4;
+    color: #223885;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li:hover a {
     font-weight: 500;
@@ -3978,7 +3978,7 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .navbar-brand {
     width: 200px;
-    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
   body[dir=rtl] nav .container .navbar-brand svg {
     width: 100%;
@@ -4276,7 +4276,7 @@ badge.SecondaryColor {
     border-radius: 5px;
   }
 }
-@media (min-width: 991.98px) {
+@media (min-width: 992px) {
   body[dir=rtl] nav {
     background-color: #ffffff;
   }
@@ -4285,60 +4285,10 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .navbar-brand {
     width: 100px;
-    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
   body[dir=rtl] nav .container .navbar-brand svg {
     width: 100%;
-  }
-  body[dir=rtl] nav .container .FNV-User .FNV-Btn {
-    background-color: unset;
-    display: flex;
-    align-items: center;
-  }
-  body[dir=rtl] nav .container .FNV-User .FNV-Btn .FNV-UserAvatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #223885;
-    border: 2px solid #223885;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
-    margin: 0 0.5rem;
-  }
-  body[dir=rtl] nav .container .FNV-User .FNV-Btn .FNV-UserAvatar svg {
-    stroke: #ffffff;
-  }
-  body[dir=rtl] nav .container .FNV-User .FNV-Btn img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid #223885;
-    -o-object-fit: cover;
-       object-fit: cover;
-    margin: 0 0.5rem;
-  }
-  body[dir=rtl] nav .container .FNV-User .FNV-Btn::after {
-    margin-left: 0.5rem;
-    margin-right: unset;
-  }
-  body[dir=rtl] nav .container .FNV-User .dropdown-menu {
-    border-width: 0px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1254901961);
-  }
-  body[dir=rtl] nav .container .FNV-User .dropdown-menu li {
-    padding-bottom: 0.3rem;
-    text-align: left;
-  }
-  body[dir=rtl] nav .container .FNV-User .dropdown-menu li a {
-    font-size: 14px;
-  }
-  body[dir=rtl] nav .container .FNV-User .dropdown-menu li a svg {
-    color: #223885;
-    width: 20px;
-    height: 20px;
-    margin-right: 0.5rem;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess {
     display: flex;
@@ -4354,7 +4304,7 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown a span svg {
     top: -0.4rem;
-    left: -0.4rem;
+    right: -0.4rem;
     width: 8px;
     height: 8px;
     fill: #FFA600;
@@ -4366,7 +4316,7 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu {
     top: 200%;
-    left: -150px;
+    right: -150px;
     width: 360px;
     padding: 2rem;
     border-left: 0;
@@ -4379,112 +4329,19 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu span {
     font-size: 14px;
     font-weight: 400;
+    text-align: right;
     color: #0074FF;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a {
     margin: 0;
     padding: 1.5rem;
+    text-align: right;
     color: #223885;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a svg {
-    margin-right: 1rem;
+    margin-left: 1rem;
     fill: #0074FF;
     stroke: #0074FF;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User {
-    display: flex;
-    padding: 1rem;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User .FNV-UserAvatar {
-    width: 30%;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User .FNV-UserAvatar img,
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User .FNV-UserAvatar svg {
-    width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span {
-    width: 100%;
-    display: flex;
-    margin-left: 1rem;
-    flex-direction: column;
-    justify-content: center;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span p {
-    color: #223885;
-    margin-bottom: 0rem;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span {
-    display: flex;
-    margin-left: 0;
-    flex-direction: row;
-    justify-content: start;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span svg {
-    top: unset;
-    left: unset;
-    width: 20px;
-    height: 20px;
-    stroke-width: 0px;
-    position: relative;
-    margin-right: 0.5rem;
-    stroke: #6A7BBA;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span small {
-    font-size: 14px;
-    font-weight: 300;
-    color: #6A7BBA;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu {
-    display: flex;
-    padding: 1rem;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu .FNV-UserIcon {
-    width: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu .FNV-UserIcon img,
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu .FNV-UserIcon svg {
-    width: 80%;
-    height: 80%;
-    -o-object-fit: contain;
-       object-fit: contain;
-    margin-right: 0;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span {
-    width: 100%;
-    display: flex;
-    margin-left: 1rem;
-    flex-direction: column;
-    justify-content: center;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span p {
-    color: #223885;
-    margin-bottom: 0rem;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span span {
-    display: flex;
-    margin-left: 0;
-    flex-direction: row;
-    justify-content: start;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span span svg {
-    top: unset;
-    left: unset;
-    width: 20px;
-    height: 20px;
-    stroke-width: 0px;
-    position: relative;
-    margin-right: 0.5rem;
-    stroke: #6A7BBA;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span span small {
-    font-size: 12px;
-    font-weight: 400;
-    color: #6A7BBA;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover {
     color: #FFFFFF;
@@ -4493,28 +4350,6 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover svg {
     fill: #FFFFFF;
     stroke: #FFFFFF;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-User span p {
-    color: #FFFFFF;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-User span span svg {
-    stroke: #3DF07A;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-User span span small {
-    color: #FFFFFF;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu .FNV-UserIcon {
-    width: 30%;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu .FNV-UserIcon img,
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu .FNV-UserIcon svg {
-    stroke: #FFFFFF;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu span p {
-    color: #FFFFFF;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu span span small {
-    color: #FFFFFF;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu.show {
     display: flex;
@@ -4527,10 +4362,12 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu ul p {
     font-size: 14px;
+    text-align: right;
     color: #0074FF;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu ul li {
     padding: 0;
+    text-align: right;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu ul li a {
     width: 100%;
@@ -4542,7 +4379,7 @@ badge.SecondaryColor {
     padding: 0;
     border-width: 0;
     font-size: 16px;
-    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     color: #223885;
     background-color: transparent;
   }
@@ -4554,7 +4391,7 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .FNV_QuickAccess a {
     color: #223885;
     position: relative;
-    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess a svg {
     width: 16px;
@@ -4563,7 +4400,7 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .FNV_QuickAccess a span svg {
     top: -0.4rem;
-    left: -0.4rem;
+    right: -0.4rem;
     width: 8px;
     height: 8px;
     fill: #FFA600;
@@ -4577,8 +4414,9 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li a {
     font-size: 14px;
     font-weight: 400;
+    text-align: right;
     padding: 2rem 0.5rem;
-    color: #B2B9D4;
+    color: #223885;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li:hover a {
     font-weight: 500;
@@ -4591,13 +4429,14 @@ badge.SecondaryColor {
     width: 100%;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row.flex-row h2 {
+    width: auto;
     font-size: 10px;
+    text-align: right;
     margin-bottom: 1.5rem;
     color: #0074FF;
-    width: auto;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row.flex-row h2:first-child {
-    width: 140px;
+    width: 165px;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row.flex-row h2:last-child {
     padding-left: 2.5rem;
@@ -4609,7 +4448,7 @@ badge.SecondaryColor {
     width: 150px;
     height: 240px;
     overflow: scroll;
-    border-right: 1px solid rgba(34, 56, 133, 0.0823529412);
+    border-left: 1px solid rgba(34, 56, 133, 0.0823529412);
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .nav button {
     height: 50px;
@@ -4627,7 +4466,7 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .nav button span {
     font-size: 10px;
     font-weight: 300;
-    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     color: #223885;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .nav button.active {
@@ -4643,6 +4482,7 @@ badge.SecondaryColor {
     padding: 0 1rem;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane li {
+    text-align: right;
     margin-bottom: 0rem;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane li:last-of-type {
@@ -4674,12 +4514,14 @@ badge.SecondaryColor {
     display: block;
     font-size: 14px;
     font-weight: 300;
+    text-align: right;
     color: #223885;
     margin-bottom: 0.5rem;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-7 p {
     font-size: 5px;
     font-weight: 300;
+    text-align: right;
     color: #6A7BBA;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-5 {
@@ -4690,6 +4532,7 @@ badge.SecondaryColor {
     padding: 0.5rem;
     font-size: 8px;
     font-weight: 300;
+    text-align: right;
     text-transform: capitalize;
     border: 1px solid rgba(34, 56, 133, 0.0823529412);
   }
@@ -4854,15 +4697,15 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .navbar-brand {
     width: 100px;
-    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
   body[dir=rtl] nav .container .navbar-brand svg {
     width: 100%;
   }
   body[dir=rtl] nav .container .FNV-User .FNV-Btn {
-    background-color: unset;
     display: flex;
     align-items: center;
+    background-color: unset;
   }
   body[dir=rtl] nav .container .FNV-User .FNV-Btn .FNV-UserAvatar {
     width: 40px;
@@ -4923,7 +4766,7 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown a span svg {
     top: -0.4rem;
-    left: -0.4rem;
+    right: -0.4rem;
     width: 8px;
     height: 8px;
     fill: #FFA600;
@@ -4935,7 +4778,7 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu {
     top: 200%;
-    left: -150px;
+    right: -150px;
     width: 360px;
     padding: 2rem;
     border-left: 0;
@@ -4948,112 +4791,19 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu span {
     font-size: 14px;
     font-weight: 400;
+    text-align: right;
     color: #0074FF;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a {
     margin: 0;
     padding: 1.5rem;
     color: #223885;
+    text-align: right;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a svg {
-    margin-right: 1rem;
+    margin-left: 1rem;
     fill: #0074FF;
     stroke: #0074FF;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User {
-    display: flex;
-    padding: 1rem;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User .FNV-UserAvatar {
-    width: 30%;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User .FNV-UserAvatar img,
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User .FNV-UserAvatar svg {
-    width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span {
-    width: 100%;
-    display: flex;
-    margin-left: 1rem;
-    flex-direction: column;
-    justify-content: center;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span p {
-    color: #223885;
-    margin-bottom: 0rem;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span {
-    display: flex;
-    margin-left: 0;
-    flex-direction: row;
-    justify-content: start;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span svg {
-    top: unset;
-    left: unset;
-    width: 20px;
-    height: 20px;
-    stroke-width: 0px;
-    position: relative;
-    margin-right: 0.5rem;
-    stroke: #6A7BBA;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span small {
-    font-size: 14px;
-    font-weight: 300;
-    color: #6A7BBA;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu {
-    display: flex;
-    padding: 1rem;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu .FNV-UserIcon {
-    width: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu .FNV-UserIcon img,
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu .FNV-UserIcon svg {
-    width: 80%;
-    height: 80%;
-    -o-object-fit: contain;
-       object-fit: contain;
-    margin-right: 0;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span {
-    width: 100%;
-    display: flex;
-    margin-left: 1rem;
-    flex-direction: column;
-    justify-content: center;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span p {
-    color: #223885;
-    margin-bottom: 0rem;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span span {
-    display: flex;
-    margin-left: 0;
-    flex-direction: row;
-    justify-content: start;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span span svg {
-    top: unset;
-    left: unset;
-    width: 20px;
-    height: 20px;
-    stroke-width: 0px;
-    position: relative;
-    margin-right: 0.5rem;
-    stroke: #6A7BBA;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span span small {
-    font-size: 12px;
-    font-weight: 400;
-    color: #6A7BBA;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover {
     color: #FFFFFF;
@@ -5096,10 +4846,12 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu ul p {
     font-size: 14px;
+    text-align: right;
     color: #0074FF;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu ul li {
     padding: 0;
+    text-align: right;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu ul li a {
     width: 100%;
@@ -5111,7 +4863,7 @@ badge.SecondaryColor {
     padding: 0;
     border-width: 0;
     font-size: 16px;
-    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     color: #223885;
     background-color: transparent;
   }
@@ -5123,7 +4875,7 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .FNV_QuickAccess a {
     color: #223885;
     position: relative;
-    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess a svg {
     width: 16px;
@@ -5143,11 +4895,14 @@ badge.SecondaryColor {
     position: relative;
     justify-content: center;
   }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav li {
+    text-align: right;
+  }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li a {
     font-size: 14px;
     font-weight: 400;
     padding: 2rem 0.5rem;
-    color: #B2B9D4;
+    color: #223885;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li:hover a {
     font-weight: 500;
@@ -5160,16 +4915,17 @@ badge.SecondaryColor {
     width: 100%;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row.flex-row h2 {
+    width: auto;
     font-size: 14px;
+    text-align: right;
     margin-bottom: 1.5rem;
     color: #0074FF;
-    width: auto;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row.flex-row h2:first-child {
-    width: 300px;
+    width: 160px;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row.flex-row h2:last-child {
-    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 {
     display: flex;
@@ -5178,7 +4934,7 @@ badge.SecondaryColor {
     width: 250px;
     height: 250px;
     overflow: scroll;
-    border-right: 1px solid rgba(34, 56, 133, 0.0823529412);
+    border-left: 1px solid rgba(34, 56, 133, 0.0823529412);
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .nav button {
     width: 300px;
@@ -5195,8 +4951,9 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .nav button span {
     font-size: 12px;
     font-weight: 300;
-    margin-left: 0.5rem;
+    text-align: right;
     color: #223885;
+    margin-right: 0.5rem;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .nav button.active {
     background-color: #0074FF;
@@ -5220,6 +4977,7 @@ badge.SecondaryColor {
     padding: 0;
     font-size: 12px;
     font-weight: 400;
+    text-align: right;
     line-height: 24px;
     color: #6A7BBA;
     text-transform: capitalize;
@@ -5242,12 +5000,14 @@ badge.SecondaryColor {
     display: block;
     font-size: 14px;
     font-weight: 300;
+    text-align: right;
     color: #223885;
     margin-bottom: 0.5rem;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-7 p {
     font-size: 8px;
     font-weight: 300;
+    text-align: right;
     color: #6A7BBA;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-5 {
@@ -5300,9 +5060,6 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a:hover span {
     color: #FFFFFF;
     background-color: #223885;
-  }
-  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-VIPMemberShip .dropdown-menu {
-    width: 600px;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu {
     width: 100%;
@@ -5422,56 +5179,6 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .navbar-brand {
     width: 200px;
   }
-  body[dir=rtl] nav .container .FNV-User .FNV-Btn {
-    background-color: unset;
-    display: flex;
-    align-items: center;
-  }
-  body[dir=rtl] nav .container .FNV-User .FNV-Btn .FNV-UserAvatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #223885;
-    border: 2px solid #223885;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
-    margin: 0 0.5rem;
-  }
-  body[dir=rtl] nav .container .FNV-User .FNV-Btn .FNV-UserAvatar svg {
-    stroke: #ffffff;
-  }
-  body[dir=rtl] nav .container .FNV-User .FNV-Btn img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid #223885;
-    -o-object-fit: cover;
-       object-fit: cover;
-    margin: 0 0.5rem;
-  }
-  body[dir=rtl] nav .container .FNV-User .FNV-Btn::after {
-    margin-left: 0.5rem;
-    margin-right: unset;
-  }
-  body[dir=rtl] nav .container .FNV-User .dropdown-menu {
-    border-width: 0px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1254901961);
-  }
-  body[dir=rtl] nav .container .FNV-User .dropdown-menu li {
-    padding-bottom: 0.3rem;
-    text-align: left;
-  }
-  body[dir=rtl] nav .container .FNV-User .dropdown-menu li a {
-    font-size: 14px;
-  }
-  body[dir=rtl] nav .container .FNV-User .dropdown-menu li a svg {
-    color: #223885;
-    width: 20px;
-    height: 20px;
-    margin-right: 0.5rem;
-  }
   body[dir=rtl] nav .container .FNV_QuickAccess {
     display: flex;
   }
@@ -5486,7 +5193,7 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown a span svg {
     top: -0.4rem;
-    left: -0.4rem;
+    right: -0.4rem;
     width: 8px;
     height: 8px;
     fill: #FFA600;
@@ -5498,7 +5205,7 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu {
     top: 200%;
-    left: -150px;
+    right: -150px;
     width: 360px;
     padding: 2rem;
     border-left: 0;
@@ -5511,15 +5218,17 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu span {
     font-size: 14px;
     font-weight: 400;
+    text-align: right;
     color: #0074FF;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a {
     margin: 0;
     padding: 1.5rem;
+    text-align: right;
     color: #223885;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a svg {
-    margin-right: 1rem;
+    margin-left: 1rem;
     fill: #0074FF;
     stroke: #0074FF;
   }
@@ -5539,7 +5248,7 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span {
     width: 100%;
     display: flex;
-    margin-left: 1rem;
+    margin-right: 1rem;
     flex-direction: column;
     justify-content: center;
   }
@@ -5549,7 +5258,7 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span {
     display: flex;
-    margin-left: 0;
+    margin-right: 0;
     flex-direction: row;
     justify-content: start;
   }
@@ -5695,7 +5404,7 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .FNV_QuickAccess a span svg {
     top: -0.4rem;
-    left: -0.4rem;
+    right: -0.4rem;
     width: 8px;
     height: 8px;
     fill: #FFA600;
@@ -5710,7 +5419,7 @@ badge.SecondaryColor {
     font-size: 14px;
     font-weight: 400;
     padding: 2rem 0.5rem;
-    color: #B2B9D4;
+    color: #223885;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li:hover a {
     font-weight: 500;
@@ -5723,16 +5432,17 @@ badge.SecondaryColor {
     width: 100%;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row.flex-row h2 {
+    width: auto;
     font-size: 14px;
+    text-align: right;
     margin-bottom: 1.5rem;
     color: #0074FF;
-    width: auto;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row.flex-row h2:first-child {
-    width: 225px;
+    width: 250px;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row.flex-row h2:last-child {
-    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 {
     display: flex;
@@ -5741,7 +5451,7 @@ badge.SecondaryColor {
     width: 300px;
     height: 265px;
     overflow: scroll;
-    border-right: 1px solid rgba(34, 56, 133, 0.0823529412);
+    border-left: 1px solid rgba(34, 56, 133, 0.0823529412);
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .nav button {
     width: 300px;
@@ -5759,7 +5469,8 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .nav button span {
     font-size: 14px;
     font-weight: 300;
-    margin-left: 1rem;
+    text-align: right;
+    margin-right: 1rem;
     color: #223885;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .nav button.active {
@@ -5775,6 +5486,7 @@ badge.SecondaryColor {
     padding: 0 1.5rem;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane li {
+    text-align: right;
     margin-bottom: 0.5rem;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane li:last-of-type {
@@ -5784,6 +5496,7 @@ badge.SecondaryColor {
     padding: 0;
     font-size: 12px;
     font-weight: 400;
+    text-align: right;
     line-height: 24px;
     color: #6A7BBA;
     text-transform: capitalize;
@@ -5806,16 +5519,18 @@ badge.SecondaryColor {
     display: block;
     font-size: 14px;
     font-weight: 300;
+    text-align: right;
     color: #223885;
     margin-bottom: 0.5rem;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-7 p {
     font-size: 8px;
     font-weight: 300;
+    text-align: right;
     color: #6A7BBA;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-5 {
-    padding: 0;
+    padding: 0px;
     text-align: right;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-5 a {
@@ -5988,56 +5703,6 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .navbar-brand {
     width: 200px;
   }
-  body[dir=rtl] nav .container .FNV-User .FNV-Btn {
-    background-color: unset;
-    display: flex;
-    align-items: center;
-  }
-  body[dir=rtl] nav .container .FNV-User .FNV-Btn .FNV-UserAvatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #223885;
-    border: 2px solid #223885;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
-    margin: 0 0.5rem;
-  }
-  body[dir=rtl] nav .container .FNV-User .FNV-Btn .FNV-UserAvatar svg {
-    stroke: #ffffff;
-  }
-  body[dir=rtl] nav .container .FNV-User .FNV-Btn img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid #223885;
-    -o-object-fit: cover;
-       object-fit: cover;
-    margin: 0 0.5rem;
-  }
-  body[dir=rtl] nav .container .FNV-User .FNV-Btn::after {
-    margin-left: 0.5rem;
-    margin-right: unset;
-  }
-  body[dir=rtl] nav .container .FNV-User .dropdown-menu {
-    border-width: 0px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1254901961);
-  }
-  body[dir=rtl] nav .container .FNV-User .dropdown-menu li {
-    padding-bottom: 0.3rem;
-    text-align: left;
-  }
-  body[dir=rtl] nav .container .FNV-User .dropdown-menu li a {
-    font-size: 14px;
-  }
-  body[dir=rtl] nav .container .FNV-User .dropdown-menu li a svg {
-    color: #223885;
-    width: 20px;
-    height: 20px;
-    margin-right: 0.5rem;
-  }
   body[dir=rtl] nav .container .FNV_QuickAccess {
     display: flex;
   }
@@ -6052,7 +5717,7 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown a span svg {
     top: -0.4rem;
-    left: -0.4rem;
+    right: -0.4rem;
     width: 8px;
     height: 8px;
     fill: #FFA600;
@@ -6064,7 +5729,7 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu {
     top: 200%;
-    left: -150px;
+    right: -150px;
     width: 360px;
     padding: 2rem;
     border-left: 0;
@@ -6077,15 +5742,17 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu span {
     font-size: 14px;
     font-weight: 400;
+    text-align: right;
     color: #0074FF;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a {
     margin: 0;
     padding: 1.5rem;
+    text-align: right;
     color: #223885;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a svg {
-    margin-right: 1rem;
+    margin-left: 1rem;
     fill: #0074FF;
     stroke: #0074FF;
   }
@@ -6105,7 +5772,7 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span {
     width: 100%;
     display: flex;
-    margin-left: 1rem;
+    margin-right: 1rem;
     flex-direction: column;
     justify-content: center;
   }
@@ -6115,18 +5782,18 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span {
     display: flex;
-    margin-left: 0;
+    margin-right: 0;
     flex-direction: row;
     justify-content: start;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span svg {
     top: unset;
-    left: unset;
+    right: unset;
     width: 20px;
     height: 20px;
     stroke-width: 0px;
     position: relative;
-    margin-right: 0.5rem;
+    margin-left: 0.5rem;
     stroke: #6A7BBA;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span small {
@@ -6225,6 +5892,7 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu ul p {
     font-size: 14px;
+    text-align: right;
     color: #0074FF;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu ul li {
@@ -6276,7 +5944,7 @@ badge.SecondaryColor {
     font-size: 16px;
     font-weight: 400;
     padding: 2rem 0.5rem;
-    color: #B2B9D4;
+    color: #223885;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li:hover a {
     font-weight: 500;
@@ -6289,13 +5957,14 @@ badge.SecondaryColor {
     width: 100%;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row.flex-row h2 {
+    width: auto;
     font-size: 14px;
+    text-align: right;
     margin-bottom: 1.5rem;
     color: #0074FF;
-    width: auto;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row.flex-row h2:first-child {
-    width: 280px;
+    width: 315px;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row.flex-row h2:last-child {
     padding-left: 2.5rem;
@@ -6310,7 +5979,7 @@ badge.SecondaryColor {
     overflow: scroll;
     align-items: start;
     flex-direction: row;
-    border-right: 1px solid rgba(34, 56, 133, 0.0823529412);
+    border-left: 1px solid rgba(34, 56, 133, 0.0823529412);
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .nav button {
     width: 300px;
@@ -6328,7 +5997,7 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .nav button span {
     font-size: 18px;
     font-weight: 300;
-    margin-left: 1rem;
+    margin-right: 1rem;
     color: #223885;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .nav button.active {
@@ -6344,6 +6013,7 @@ badge.SecondaryColor {
     padding: 0 1.5rem;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane li {
+    text-align: right;
     margin-bottom: 0.5rem;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane li:last-of-type {
@@ -6376,12 +6046,14 @@ badge.SecondaryColor {
     display: block;
     font-size: 16px;
     font-weight: 300;
+    text-align: right;
     color: #223885;
     margin-bottom: 0.5rem;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-7 p {
     font-size: 12px;
     font-weight: 300;
+    text-align: right;
     color: #6A7BBA;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-5 {
@@ -6445,7 +6117,7 @@ badge.SecondaryColor {
     border-width: 0;
     overflow: hidden;
     border-radius: 0px;
-    left: 0;
+    right: 0;
     position: absolute;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu:hover .dropdown-menu {
