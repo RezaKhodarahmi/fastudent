@@ -1085,13 +1085,6 @@ const Header = props => {
           </div>
         </div>
       </nav>
-
-      {/*  
-      <svg width="1454" height="100" viewBox="0 0 1454 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1453 0.999987L1 99L1 0.999987L1453 0.999987Z" fill="white" stroke="white"/>
-      </svg>
-      */}
-
     </>
   )
 }

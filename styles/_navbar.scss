@@ -1,6 +1,3928 @@
 @import './variables';
 
+// English
 body[dir='ltr'] {
+  // X-Small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) {
+    nav {
+      background-color: $WhiteColor;
+  
+      .container {
+        padding: 1rem;
+  
+        .navbar-brand {
+          width: 200px;
+          padding-right: .5rem;
+  
+          svg {
+            width: 100%;
+          }
+        }
+  
+        .FNV_QuickAccess {
+          display: none;
+        }
+  
+        .navbar-toggler{
+          border-width: 0;
+          border-radius: 0px;
+          background-color: $PrimaryOne;
+  
+          .navbar-toggler-icon{
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+          }
+  
+          &:focus, &:focus-visible, &:hover{
+            box-shadow: unset;
+            background-color: $PrimaryBackgroundTwo;
+  
+            .navbar-toggler-icon{
+              background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23223885' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+            }
+          }
+        }
+  
+        .navbar-collapse {
+          position: relative;
+          justify-content: center;
+  
+          .navbar-nav {
+            li { 
+              a {
+                padding: .5rem;
+                font-size: 15px;
+                font-weight: 400;
+                color: $PrimaryOne;
+              }
+  
+              &:hover {
+                a {
+                  font-weight: 500;
+                  color: $PrimaryOne;
+                }
+              }
+            }
+  
+            .FNV-MegaMenu {
+              position: unset;
+  
+              &.FNV-MainMega {
+                .row {
+                  width: 100%;
+  
+                  &.flex-row {
+                    h2 {
+                      font-size: 10px;
+                      margin-bottom: 1.5rem;
+                      color: $PrimaryTextTwo;
+                      width: auto;
+  
+                      &:first-child {
+                        width: 180px;
+                      }
+  
+                      &:last-child {
+                        padding-left: 2.5rem;
+                      }
+                    }
+                  }
+  
+                  .col-md-9 {
+                    display: flex;
+  
+                    .nav {
+                      width: 60%;
+                      height: 180px;
+                      overflow: scroll;
+                      border-right: 1px solid $PrimaryFive;
+  
+                      button {
+                        width: 100%;
+                        height: 40px;
+                        display: flex;
+                        padding: .2rem .5rem;
+                        border-radius: 0px;
+                        align-items: center;
+  
+                        svg {
+                          width: 0px;
+                          height: 0px;
+                        }
+  
+                        span {
+                          font-size: 10px;
+                          font-weight: 400;
+                          margin-left: 0rem;
+                          color: $PrimaryOne;
+                        }
+  
+                        &.active {
+                          background-color: $PrimaryFour;
+  
+                          svg {
+                            stroke: $White;
+                          }
+  
+                          span {
+                            color: $White;
+                          }
+                        }
+                      }
+                    }
+  
+                    .tab-content {
+                      width: 100%;
+                      padding: 0 .5rem;
+  
+                      .tab-pane {
+                        li {
+                          margin-bottom: 0rem;
+  
+                          &:last-of-type {
+                            margin-bottom: .5rem;
+                          }
+  
+                          a {
+                            padding: 0;
+                            font-size: 10px;
+                            font-weight: 400;
+                            line-height: 20px;
+                            color: $PrimaryTextOne;
+                            text-transform: capitalize;
+  
+                            &:hover {
+                              color: $PrimaryOne;
+                            }
+                          }
+                        }
+  
+                        span {
+                          font-size: 14px;
+                          font-weight: 400;
+                          line-height: 28px;
+                          color: $PrimaryFour;
+                        }
+  
+                        .container {
+                          display: none;
+                        }
+  
+                        &.fade {
+                          display: none;
+                        }
+  
+                        &.show {
+                          display: block;
+                        }
+                      }
+                    }
+  
+                  }
+  
+                  .col-md-3 {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: $PrimaryBackgroundTwo;
+  
+                    a {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      align-items: center;
+                      flex-direction: column;
+                      justify-content: center;
+  
+                      svg {
+                        height: 50px;
+                        fill: $PrimaryFour;
+                      }
+  
+                      span {
+                        font-size: 8px;
+                        margin-top: 1rem;
+                        font-weight: 300;
+                        color: $PrimaryOne;
+                        padding: .5rem;
+                        background-color: $White;
+                      }
+  
+                      &:hover {
+                        span {
+                          color: $White;
+                          background-color: $PrimaryOne;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+  
+              &.FNV-VIPMemberShip {
+                .dropdown-menu {
+                  width: 600px;
+                }
+              }
+  
+              .dropdown-menu {
+                width: 100%;
+                display: none;
+                margin-top: 0px;
+                padding: 1rem;
+                border-width: 0;
+                overflow: hidden;
+                border-radius: 0px;
+                left: 0;
+                position: absolute;
+              }
+  
+              &:hover .dropdown-menu {
+                display: block;
+                margin-top: 0px;
+                border-width: 0;
+                overflow: hidden;
+                border-top: 1px solid #223885;
+                box-shadow: 0px 20px 20px $ShadowPrimary;
+              }
+  
+              .dropdown-menu {
+                .container-fluid {
+                  padding-right: 0px;
+                  padding-bottom: 0px;
+  
+                  a {
+                    font-size: 24px;
+                    color: $PrimaryColor;
+                    font-weight: 600;
+  
+                    span {
+                      border-left: 1px solid #ababab;
+                      padding-left: 1rem;
+                      margin-left: 1rem;
+                      font-size: 14px;
+                      color: $GrayThreeColor;
+                      font-weight: 400;
+                    }
+                  }
+  
+                  .row {
+                    padding-top: 1rem;
+  
+                    .col-md-3,
+                    .col-md-6,
+                    .col {
+                      .row {
+                        padding: 0;
+  
+                        &.FNV-QuickAction {
+                          height: 100%;
+  
+                          .col-12 {
+                            a {
+                              display: flex;
+                              flex-direction: column;
+                              height: 100%;
+                              justify-content: space-evenly;
+                              align-items: center;
+                              background-color: $LightColor;
+  
+                              svg {
+                                width: 50px;
+                                height: 50px;
+                                color: $SecondaryColor;
+                              }
+  
+                              span {
+                                font-size: 18px;
+                                border-width: 0;
+                                margin: 0;
+                                padding: 0;
+                                color: $PrimaryColor;
+                              }
+                            }
+                          }
+                        }
+                      }
+  
+                      span {
+                        font-size: 16px;
+                        line-height: 32px;
+                        font-weight: 700;
+                        color: $FourthColor;
+                        margin-bottom: .8rem;
+                        display: block;
+  
+                        svg {
+                          width: 12px;
+                          height: 12px;
+                          margin-right: .5rem;
+                          color: $SecondaryColor;
+                        }
+                      }
+  
+                      li {
+                        a {
+                          font-size: 14px;
+                          font-weight: 500;
+                          color: $GrayThreeColor;
+                          transition: .1s all ease-in-out;
+  
+                          &:hover {
+                            color: $SecondaryColor;
+                            border-radius: 5px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // `sm` applies to x-small devices (portrait phones, less than 576px)
+  @media (min-width: 575.98px) and (max-width: 767.98px) {
+    nav {
+      background-color: $WhiteColor;
+  
+      .container {
+        padding: 1rem;
+  
+        .navbar-brand {
+          width: 200px;
+          padding-right: .5rem;
+  
+          svg {
+            width: 100%;
+          }
+        }
+  
+        .FNV_QuickAccess {
+          display: none;
+        }
+  
+        .navbar-toggler{
+          border-width: 0;
+          border-radius: 0px;
+          background-color: $PrimaryOne;
+  
+          .navbar-toggler-icon{
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+          }
+  
+          &:focus, &:focus-visible, &:hover{
+            box-shadow: unset;
+            background-color: $PrimaryBackgroundTwo;
+  
+            .navbar-toggler-icon{
+              background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23223885' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+            }
+          }
+        }
+  
+        .navbar-collapse {
+          position: relative;
+          justify-content: center;
+  
+          .navbar-nav {
+            li { 
+              a {
+                padding: .5rem;
+                font-size: 15px;
+                font-weight: 400;
+                color: $PrimaryOne;
+              }
+  
+              &:hover {
+                a {
+                  font-weight: 500;
+                  color: $PrimaryOne;
+                }
+              }
+            }
+  
+            .FNV-MegaMenu {
+              position: unset;
+  
+              &.FNV-MainMega {
+                .row {
+                  width: 100%;
+  
+                  &.flex-row {
+                    h2 {
+                      font-size: 10px;
+                      margin-bottom: 1.5rem;
+                      color: $PrimaryTextTwo;
+                      width: auto;
+  
+                      &:first-child {
+                        width: 180px;
+                      }
+  
+                      &:last-child {
+                        padding-left: 2.5rem;
+                      }
+                    }
+                  }
+  
+                  .col-md-9 {
+                    display: flex;
+  
+                    .nav {
+                      width: 60%;
+                      height: 180px;
+                      overflow: scroll;
+                      border-right: 1px solid $PrimaryFive;
+  
+                      button {
+                        width: 100%;
+                        height: 40px;
+                        display: flex;
+                        padding: .2rem .5rem;
+                        border-radius: 0px;
+                        align-items: center;
+  
+                        svg {
+                          width: 0px;
+                          height: 0px;
+                        }
+  
+                        span {
+                          font-size: 10px;
+                          font-weight: 400;
+                          margin-left: 0rem;
+                          color: $PrimaryOne;
+                        }
+  
+                        &.active {
+                          background-color: $PrimaryFour;
+  
+                          svg {
+                            stroke: $White;
+                          }
+  
+                          span {
+                            color: $White;
+                          }
+                        }
+                      }
+                    }
+  
+                    .tab-content {
+                      width: 100%;
+                      padding: 0 .5rem;
+  
+                      .tab-pane {
+                        li {
+                          margin-bottom: 0rem;
+  
+                          &:last-of-type {
+                            margin-bottom: .5rem;
+                          }
+  
+                          a {
+                            padding: 0;
+                            font-size: 10px;
+                            font-weight: 400;
+                            line-height: 20px;
+                            color: $PrimaryTextOne;
+                            text-transform: capitalize;
+  
+                            &:hover {
+                              color: $PrimaryOne;
+                            }
+                          }
+                        }
+  
+                        span {
+                          font-size: 14px;
+                          font-weight: 400;
+                          line-height: 28px;
+                          color: $PrimaryFour;
+                        }
+  
+                        .container {
+                          display: none;
+                        }
+  
+                        &.fade {
+                          display: none;
+                        }
+  
+                        &.show {
+                          display: block;
+                        }
+                      }
+                    }
+  
+                  }
+  
+                  .col-md-3 {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: $PrimaryBackgroundTwo;
+  
+                    a {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      align-items: center;
+                      flex-direction: column;
+                      justify-content: center;
+  
+                      svg {
+                        height: 50px;
+                        fill: $PrimaryFour;
+                      }
+  
+                      span {
+                        font-size: 8px;
+                        margin-top: 1rem;
+                        font-weight: 300;
+                        color: $PrimaryOne;
+                        padding: .5rem;
+                        background-color: $White;
+                      }
+  
+                      &:hover {
+                        span {
+                          color: $White;
+                          background-color: $PrimaryOne;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+  
+              &.FNV-VIPMemberShip {
+                .dropdown-menu {
+                  width: 600px;
+                }
+              }
+  
+              .dropdown-menu {
+                width: 100%;
+                display: none;
+                margin-top: 0px;
+                padding: 1rem;
+                border-width: 0;
+                overflow: hidden;
+                border-radius: 0px;
+                left: 0;
+                position: absolute;
+              }
+  
+              &:hover .dropdown-menu {
+                display: block;
+                margin-top: 0px;
+                border-width: 0;
+                overflow: hidden;
+                border-top: 1px solid #223885;
+                box-shadow: 0px 20px 20px $ShadowPrimary;
+              }
+  
+              .dropdown-menu {
+                .container-fluid {
+                  padding-right: 0px;
+                  padding-bottom: 0px;
+  
+                  a {
+                    font-size: 24px;
+                    color: $PrimaryColor;
+                    font-weight: 600;
+  
+                    span {
+                      border-left: 1px solid #ababab;
+                      padding-left: 1rem;
+                      margin-left: 1rem;
+                      font-size: 14px;
+                      color: $GrayThreeColor;
+                      font-weight: 400;
+                    }
+                  }
+  
+                  .row {
+                    padding-top: 1rem;
+  
+                    .col-md-3,
+                    .col-md-6,
+                    .col {
+                      .row {
+                        padding: 0;
+  
+                        &.FNV-QuickAction {
+                          height: 100%;
+  
+                          .col-12 {
+                            a {
+                              display: flex;
+                              flex-direction: column;
+                              height: 100%;
+                              justify-content: space-evenly;
+                              align-items: center;
+                              background-color: $LightColor;
+  
+                              svg {
+                                width: 50px;
+                                height: 50px;
+                                color: $SecondaryColor;
+                              }
+  
+                              span {
+                                font-size: 18px;
+                                border-width: 0;
+                                margin: 0;
+                                padding: 0;
+                                color: $PrimaryColor;
+                              }
+                            }
+                          }
+                        }
+                      }
+  
+                      span {
+                        font-size: 16px;
+                        line-height: 32px;
+                        font-weight: 700;
+                        color: $FourthColor;
+                        margin-bottom: .8rem;
+                        display: block;
+  
+                        svg {
+                          width: 12px;
+                          height: 12px;
+                          margin-right: .5rem;
+                          color: $SecondaryColor;
+                        }
+                      }
+  
+                      li {
+                        a {
+                          font-size: 14px;
+                          font-weight: 500;
+                          color: $GrayThreeColor;
+                          transition: .1s all ease-in-out;
+  
+                          &:hover {
+                            color: $SecondaryColor;
+                            border-radius: 5px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // `md` applies to small devices (landscape phones, less than 768px)
+  @media (min-width: 767.98px) and (max-width: 991.98px) {
+    nav {
+      background-color: $WhiteColor;
+
+      .container {
+        padding: 1rem 0;
+
+        .navbar-brand {
+          width: 200px;
+          padding-right: .5rem;
+
+          svg {
+            width: 100%;
+          }
+        }
+
+        .FNV_QuickAccess {
+          display: none;
+        }
+
+        .navbar-toggler{
+          border-width: 0;
+          border-radius: 0px;
+          background-color: $PrimaryOne;
+
+          .navbar-toggler-icon{
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+          }
+
+          &:focus, &:focus-visible, &:hover{
+            box-shadow: unset;
+            background-color: $PrimaryBackgroundTwo;
+
+            .navbar-toggler-icon{
+              background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23223885' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+            }
+          }
+        }
+
+        .navbar-collapse {
+          position: relative;
+          justify-content: center;
+
+          .navbar-nav {
+            li {
+              a {
+                padding: .5rem;
+                font-size: 15px;
+                font-weight: 400;
+                color: $PrimaryOne;
+              }
+
+              &:hover {
+                a {
+                  font-weight: 500;
+                  color: $PrimaryOne;
+                }
+              }
+            }
+
+            .FNV-MegaMenu {
+              position: unset;
+
+              &.FNV-MainMega {
+                .row {
+                  width: 100%;
+
+                  &.flex-row {
+                    h2 {
+                      font-size: 10px;
+                      margin-bottom: 1.5rem;
+                      color: $PrimaryTextTwo;
+                      width: auto;
+
+                      &:first-child {
+                        width: 140px;
+                      }
+
+                      &:last-child {
+                        padding-left: 2.5rem;
+                      }
+                    }
+                  }
+
+                  .col-md-9 {
+                    display: flex;
+
+                    .nav {
+                      width: 150px;
+                      height: 240px;
+                      overflow: scroll;
+                      border-right: 1px solid $PrimaryFive;
+
+                      button {
+                        height: 50px;
+                        width: 300px;
+                        padding: .5rem;
+                        display: flex;
+                        border-radius: 0px;
+                        align-items: center;
+
+                        svg {
+                          width: 14px;
+                          height: 14px;
+                          stroke: $PrimaryFour;
+                        }
+
+                        span {
+                          font-size: 10px;
+                          font-weight: 300;
+                          margin-left: .5rem;
+                          color: $PrimaryOne;
+                        }
+
+                        &.active {
+                          background-color: $PrimaryFour;
+
+                          svg {
+                            stroke: $White;
+                          }
+
+                          span {
+                            color: $White;
+                          }
+                        }
+                      }
+                    }
+
+                    .tab-content {
+                      padding: 0 1rem;
+
+                      .tab-pane {
+                        li {
+                          margin-bottom: 0rem;
+
+                          &:last-of-type {
+                            margin-bottom: .5rem;
+                          }
+
+                          a {
+                            padding: 0;
+                            font-size: 10px;
+                            font-weight: 400;
+                            line-height: 20px;
+                            color: $PrimaryTextOne;
+                            text-transform: capitalize;
+
+                            &:hover {
+                              color: $PrimaryOne;
+                            }
+                          }
+                        }
+
+                        span {
+                          font-size: 14px;
+                          font-weight: 400;
+                          line-height: 28px;
+                          color: $PrimaryFour;
+                        }
+
+                        .container {
+                          padding: .5rem 0 0;
+                          margin-top: .5rem;
+                          border-top: 1px solid $PrimaryFive;
+
+                          span {
+                            display: block;
+                            font-size: 14px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                            margin-bottom: .5rem;
+                          }
+
+                          .row {
+                            .col-7 {
+                              p {
+                                font-size: 5px;
+                                font-weight: 300;
+                                color: $PrimaryTextOne;
+                              }
+                            }
+
+                            .col-5 {
+                              text-align: right;
+                              padding: 0;
+
+                              a {
+                                padding: .5rem;
+                                font-size: 8px;
+                                font-weight: 300;
+                                text-transform: capitalize;
+                                border: 1px solid $PrimaryFive;
+
+                                &:hover {
+                                  color: $White;
+                                  background-color: $PrimaryOne;
+                                }
+                              }
+                            }
+                          }
+                        }
+
+                        &.fade {
+                          display: none;
+                        }
+
+                        &.show {
+                          display: block;
+                        }
+                      }
+                    }
+
+                  }
+
+                  .col-md-3 {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: $PrimaryBackgroundTwo;
+
+                    a {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      align-items: center;
+                      flex-direction: column;
+                      justify-content: center;
+
+                      svg {
+                        height: 50px;
+                        fill: $PrimaryFour;
+                      }
+
+                      span {
+                        font-size: 8px;
+                        margin-top: 1rem;
+                        font-weight: 300;
+                        color: $PrimaryOne;
+                        padding: .5rem;
+                        background-color: $White;
+                      }
+
+                      &:hover {
+                        span {
+                          color: $White;
+                          background-color: $PrimaryOne;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.FNV-VIPMemberShip {
+                .dropdown-menu {
+                  width: 600px;
+                }
+              }
+
+              .dropdown-menu {
+                width: 100%;
+                display: none;
+                margin-top: 0px;
+                padding: 1rem;
+                border-width: 0;
+                overflow: hidden;
+                border-radius: 0px;
+                left: 0;
+                position: absolute;
+              }
+
+              &:hover .dropdown-menu {
+                display: block;
+                margin-top: 0px;
+                border-width: 0;
+                overflow: hidden;
+                border-top: 1px solid #223885;
+                box-shadow: 0px 20px 20px $ShadowPrimary;
+              }
+
+              .dropdown-menu {
+                .container-fluid {
+                  padding-right: 0px;
+                  padding-bottom: 0px;
+
+                  a {
+                    font-size: 24px;
+                    color: $PrimaryColor;
+                    font-weight: 600;
+
+                    span {
+                      border-left: 1px solid #ababab;
+                      padding-left: 1rem;
+                      margin-left: 1rem;
+                      font-size: 14px;
+                      color: $GrayThreeColor;
+                      font-weight: 400;
+                    }
+                  }
+
+                  .row {
+                    padding-top: 1rem;
+
+                    .col-md-3,
+                    .col-md-6,
+                    .col {
+                      .row {
+                        padding: 0;
+
+                        &.FNV-QuickAction {
+                          height: 100%;
+
+                          .col-12 {
+                            a {
+                              display: flex;
+                              flex-direction: column;
+                              height: 100%;
+                              justify-content: space-evenly;
+                              align-items: center;
+                              background-color: $LightColor;
+
+                              svg {
+                                width: 50px;
+                                height: 50px;
+                                color: $SecondaryColor;
+                              }
+
+                              span {
+                                font-size: 18px;
+                                border-width: 0;
+                                margin: 0;
+                                padding: 0;
+                                color: $PrimaryColor;
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                      span {
+                        font-size: 16px;
+                        line-height: 32px;
+                        font-weight: 700;
+                        color: $FourthColor;
+                        margin-bottom: .8rem;
+                        display: block;
+
+                        svg {
+                          width: 12px;
+                          height: 12px;
+                          margin-right: .5rem;
+                          color: $SecondaryColor;
+                        }
+                      }
+
+                      li {
+                        a {
+                          font-size: 14px;
+                          font-weight: 500;
+                          color: $GrayThreeColor;
+                          transition: .1s all ease-in-out;
+
+                          &:hover {
+                            color: $SecondaryColor;
+                            border-radius: 5px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // `lg` applies to medium devices (tablets, less than 992px)
+  @media (min-width: 991.98px) {
+    nav {
+      background-color: $WhiteColor;
+
+      .container {
+        padding: 0rem;
+
+        .navbar-brand {
+          width: 100px;
+          padding-right: .5rem;
+
+          svg {
+            width: 100%;
+          }
+        }
+
+        .FNV-User {
+          .FNV-Btn {
+            background-color: unset;
+            display: flex;
+            align-items: center;
+
+            .FNV-UserAvatar {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background-color: $PrimaryColor;
+              border: 2px solid $PrimaryColor;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: .5rem;
+              margin: 0 .5rem;
+
+              svg {
+                stroke: $WhiteColor;
+              }
+            }
+
+            img {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              border: 2px solid $PrimaryColor;
+              object-fit: cover;
+              margin: 0 .5rem;
+            }
+
+            &::after {
+              margin-left: .5rem;
+              margin-right: unset;
+            }
+          }
+
+          .dropdown-menu {
+            border-width: 0px;
+            box-shadow: 0px 0px 20px #00000020;
+
+            li {
+              padding-bottom: 0.3rem;
+              text-align: left;
+
+              a {
+                font-size: 14px;
+
+                svg {
+                  color: $PrimaryColor;
+                  width: 20px;
+                  height: 20px;
+                  margin-right: 0.5rem;
+                }
+              }
+            }
+          }
+        }
+
+        .FNV_QuickAccess {
+          display: flex;
+
+          .dropdown {
+            a {
+              position: relative;
+
+              svg {
+                width: 16px;
+                height: 16px;
+                stroke-width: 1px;
+                stroke: $PrimaryColor;
+              }
+
+              span {
+                svg {
+                  top: -.4rem;
+                  left: -.4rem;
+
+                  width: 8px;
+                  height: 8px;
+
+                  fill: $PrimaryTwo;
+                  stroke: $PrimaryTwo;
+                  position: absolute;
+                }
+              }
+
+              &.show {
+                svg {
+                  stroke: $PrimaryFour;
+                }
+              }
+            }
+
+            .dropdown-menu {
+              top: 200%;
+              left: -150px;
+              width: 360px;
+              padding: 2rem;
+              border-left: 0;
+              border-right: 0;
+              border-bottom: 0;
+              border-radius: 0px;
+              border-top: 1px solid $PrimaryOne;
+              box-shadow: 0 10px 16px $PrimaryShadow;
+
+              span {
+                font-size: 14px;
+                font-weight: 400;
+                color: $PrimaryTextTwo;
+              }
+
+              a {
+                margin: 0;
+                padding: 1.5rem;
+                color: $PrimaryOne;
+
+                svg {
+                  margin-right: 1rem;
+                  fill: $PrimaryFour;
+                  stroke: $PrimaryFour;
+                }
+
+                &.FNV-User {
+                  display: flex;
+                  padding: 1rem;
+
+                  .FNV-UserAvatar {
+                    width: 30%;
+
+                    img,
+                    svg {
+                      width: 100%;
+                      object-fit: contain;
+                    }
+                  }
+
+                  span {
+                    width: 100%;
+                    display: flex;
+                    margin-left: 1rem;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    p {
+                      color: $PrimaryOne;
+                      margin-bottom: 0rem;
+                    }
+
+                    span {
+                      display: flex;
+                      margin-left: 0;
+                      flex-direction: row;
+                      justify-content: start;
+
+                      svg {
+                        top: unset;
+                        left: unset;
+                        width: 20px;
+                        height: 20px;
+                        stroke-width: 0px;
+                        position: relative;
+                        margin-right: .5rem;
+                        stroke: $PrimaryTextOne;
+                      }
+
+                      small {
+                        font-size: 14px;
+                        font-weight: 300;
+                        color: $PrimaryTextOne;
+                      }
+                    }
+                  }
+                }
+
+                &.FNV-UserMenu {
+                  display: flex;
+                  padding: 1rem;
+
+                  .FNV-UserIcon {
+                    width: 30%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img,
+                    svg {
+                      width: 80%;
+                      height: 80%;
+                      object-fit: contain;
+                      margin-right: 0;
+                    }
+                  }
+
+                  span {
+                    width: 100%;
+                    display: flex;
+                    margin-left: 1rem;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    p {
+                      color: $PrimaryOne;
+                      margin-bottom: 0rem;
+                    }
+
+                    span {
+                      display: flex;
+                      margin-left: 0;
+                      flex-direction: row;
+                      justify-content: start;
+
+                      svg {
+                        top: unset;
+                        left: unset;
+                        width: 20px;
+                        height: 20px;
+                        stroke-width: 0px;
+                        position: relative;
+                        margin-right: .5rem;
+                        stroke: $PrimaryTextOne;
+                      }
+
+                      small {
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: $PrimaryTextOne;
+                      }
+                    }
+                  }
+                }
+
+                &:hover {
+                  color: $White;
+                  background-color: $PrimaryFour;
+
+                  svg {
+                    fill: $White;
+                    stroke: $White;
+                  }
+
+                  &.FNV-User {
+                    span {
+                      p {
+                        color: $White;
+                      }
+
+                      span {
+
+                        svg {
+                          stroke: $PrimaryTextThree;
+                        }
+
+                        small {
+                          color: $White;
+                        }
+                      }
+                    }
+                  }
+
+                  &.FNV-UserMenu {
+                    .FNV-UserIcon {
+                      width: 30%;
+
+                      img,
+                      svg {
+                        stroke: $White;
+                      }
+                    }
+
+                    span {
+                      p {
+                        color: $White;
+                      }
+
+                      span {
+                        small {
+                          color: $White;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.show {
+                display: flex;
+                flex-direction: column;
+              }
+
+              ul {
+                max-height: 150px;
+                overflow: scroll;
+                padding: 0px;
+
+                p {
+                  font-size: 14px;
+                  color: $PrimaryTextTwo;
+                }
+
+                li {
+                  padding: 0;
+
+                  a {
+                    width: 100%;
+                    display: block;
+                    padding: .5rem;
+                    font-size: 12px;
+                  }
+                }
+              }
+            }
+          }
+
+          button {
+            padding: 0;
+            border-width: 0;
+            font-size: 16px;
+            margin-left: 1.5rem;
+            color: $PrimaryOne;
+            background-color: transparent;
+
+            svg {
+              width: 26px;
+              height: 26px;
+              stroke: $PrimaryOne;
+            }
+          }
+
+          a {
+            color: $PrimaryOne;
+            position: relative;
+            margin-left: 1.5rem;
+
+            svg {
+              width: 16px;
+              height: 16px;
+              stroke: $PrimaryOne;
+            }
+
+            span {
+              svg {
+                top: -.4rem;
+                left: -.4rem;
+
+                width: 8px;
+                height: 8px;
+
+                fill: $PrimaryTwo;
+                stroke: $PrimaryTwo;
+                position: absolute;
+              }
+            }
+          }
+        }
+
+        .navbar-collapse {
+          position: relative;
+          justify-content: center;
+
+          .navbar-nav {
+            li {
+              a {
+                font-size: 14px;
+                font-weight: 400;
+                padding: 2rem .5rem;
+                color: $PrimaryTextFour;
+              }
+
+              &:hover {
+                a {
+                  font-weight: 500;
+                  color: $PrimaryOne;
+                }
+              }
+            }
+
+            .FNV-MegaMenu {
+              position: unset;
+
+              &.FNV-MainMega {
+                .row {
+                  width: 100%;
+
+                  &.flex-row {
+                    h2 {
+                      font-size: 10px;
+                      margin-bottom: 1.5rem;
+                      color: $PrimaryTextTwo;
+                      width: auto;
+
+                      &:first-child {
+                        width: 140px;
+                      }
+
+                      &:last-child {
+                        padding-left: 2.5rem;
+                      }
+                    }
+                  }
+
+                  .col-md-9 {
+                    display: flex;
+
+                    .nav {
+                      width: 150px;
+                      height: 240px;
+                      overflow: scroll;
+                      border-right: 1px solid $PrimaryFive;
+
+                      button {
+                        height: 50px;
+                        width: 300px;
+                        padding: .5rem;
+                        display: flex;
+                        border-radius: 0px;
+                        align-items: center;
+
+                        svg {
+                          width: 14px;
+                          height: 14px;
+                          stroke: $PrimaryFour;
+                        }
+
+                        span {
+                          font-size: 10px;
+                          font-weight: 300;
+                          margin-left: .5rem;
+                          color: $PrimaryOne;
+                        }
+
+                        &.active {
+                          background-color: $PrimaryFour;
+
+                          svg {
+                            stroke: $White;
+                          }
+
+                          span {
+                            color: $White;
+                          }
+                        }
+                      }
+                    }
+
+                    .tab-content {
+                      padding: 0 1rem;
+
+                      .tab-pane {
+                        li {
+                          margin-bottom: 0rem;
+
+                          &:last-of-type {
+                            margin-bottom: .5rem;
+                          }
+
+                          a {
+                            padding: 0;
+                            font-size: 10px;
+                            font-weight: 400;
+                            line-height: 20px;
+                            color: $PrimaryTextOne;
+                            text-transform: capitalize;
+
+                            &:hover {
+                              color: $PrimaryOne;
+                            }
+                          }
+                        }
+
+                        span {
+                          font-size: 14px;
+                          font-weight: 400;
+                          line-height: 28px;
+                          color: $PrimaryFour;
+                        }
+
+                        .container {
+                          padding: .5rem 0 0;
+                          margin-top: .5rem;
+                          border-top: 1px solid $PrimaryFive;
+
+                          span {
+                            display: block;
+                            font-size: 14px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                            margin-bottom: .5rem;
+                          }
+
+                          .row {
+                            .col-7 {
+                              p {
+                                font-size: 5px;
+                                font-weight: 300;
+                                color: $PrimaryTextOne;
+                              }
+                            }
+
+                            .col-5 {
+                              text-align: right;
+                              padding: 0;
+
+                              a {
+                                padding: .5rem;
+                                font-size: 8px;
+                                font-weight: 300;
+                                text-transform: capitalize;
+                                border: 1px solid $PrimaryFive;
+
+                                &:hover {
+                                  color: $White;
+                                  background-color: $PrimaryOne;
+                                }
+                              }
+                            }
+                          }
+                        }
+
+                        &.fade {
+                          display: none;
+                        }
+
+                        &.show {
+                          display: block;
+                        }
+                      }
+                    }
+
+                  }
+
+                  .col-md-3 {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: $PrimaryBackgroundTwo;
+
+                    a {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      align-items: center;
+                      flex-direction: column;
+                      justify-content: center;
+
+                      svg {
+                        height: 50px;
+                        fill: $PrimaryFour;
+                      }
+
+                      span {
+                        font-size: 8px;
+                        margin-top: 1rem;
+                        font-weight: 300;
+                        color: $PrimaryOne;
+                        padding: .5rem;
+                        background-color: $White;
+                      }
+
+                      &:hover {
+                        span {
+                          color: $White;
+                          background-color: $PrimaryOne;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.FNV-VIPMemberShip {
+                .dropdown-menu {
+                  width: 600px;
+                }
+              }
+
+              .dropdown-menu {
+                width: 100%;
+                display: none;
+                margin-top: 0px;
+                padding: 1rem;
+                border-width: 0;
+                overflow: hidden;
+                border-radius: 0px;
+                left: 0;
+                position: absolute;
+              }
+
+              &:hover .dropdown-menu {
+                display: block;
+                margin-top: 0px;
+                border-width: 0;
+                overflow: hidden;
+                border-top: 1px solid #223885;
+                box-shadow: 0px 20px 20px $ShadowPrimary;
+              }
+
+              .dropdown-menu {
+                .container-fluid {
+                  padding-right: 0px;
+                  padding-bottom: 0px;
+
+                  a {
+                    font-size: 24px;
+                    color: $PrimaryColor;
+                    font-weight: 600;
+
+                    span {
+                      border-left: 1px solid #ababab;
+                      padding-left: 1rem;
+                      margin-left: 1rem;
+                      font-size: 14px;
+                      color: $GrayThreeColor;
+                      font-weight: 400;
+                    }
+                  }
+
+                  .row {
+                    padding-top: 1rem;
+
+                    .col-md-3,
+                    .col-md-6,
+                    .col {
+                      .row {
+                        padding: 0;
+
+                        &.FNV-QuickAction {
+                          height: 100%;
+
+                          .col-12 {
+                            a {
+                              display: flex;
+                              flex-direction: column;
+                              height: 100%;
+                              justify-content: space-evenly;
+                              align-items: center;
+                              background-color: $LightColor;
+
+                              svg {
+                                width: 50px;
+                                height: 50px;
+                                color: $SecondaryColor;
+                              }
+
+                              span {
+                                font-size: 18px;
+                                border-width: 0;
+                                margin: 0;
+                                padding: 0;
+                                color: $PrimaryColor;
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                      span {
+                        font-size: 16px;
+                        line-height: 32px;
+                        font-weight: 700;
+                        color: $FourthColor;
+                        margin-bottom: .8rem;
+                        display: block;
+
+                        svg {
+                          width: 12px;
+                          height: 12px;
+                          margin-right: .5rem;
+                          color: $SecondaryColor;
+                        }
+                      }
+
+                      li {
+                        a {
+                          font-size: 14px;
+                          font-weight: 500;
+                          color: $GrayThreeColor;
+                          transition: .1s all ease-in-out;
+
+                          &:hover {
+                            color: $SecondaryColor;
+                            border-radius: 5px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // `xl` applies to large devices (desktops, less than 1200px)
+  @media (min-width: 1199.98px) {
+    nav {
+      background-color: $WhiteColor;
+
+      .container {
+        padding: 0rem;
+
+        .navbar-brand {
+          width: 100px;
+          padding-right: .5rem;
+
+          svg {
+            width: 100%;
+          }
+        }
+
+        .FNV-User {
+          .FNV-Btn {
+            background-color: unset;
+            display: flex;
+            align-items: center;
+
+            .FNV-UserAvatar {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background-color: $PrimaryColor;
+              border: 2px solid $PrimaryColor;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: .5rem;
+              margin: 0 .5rem;
+
+              svg {
+                stroke: $WhiteColor;
+              }
+            }
+
+            img {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              border: 2px solid $PrimaryColor;
+              object-fit: cover;
+              margin: 0 .5rem;
+            }
+
+            &::after {
+              margin-left: .5rem;
+              margin-right: unset;
+            }
+          }
+
+          .dropdown-menu {
+            border-width: 0px;
+            box-shadow: 0px 0px 20px #00000020;
+
+            li {
+              padding-bottom: 0.3rem;
+              text-align: left;
+
+              a {
+                font-size: 14px;
+
+                svg {
+                  color: $PrimaryColor;
+                  width: 20px;
+                  height: 20px;
+                  margin-right: 0.5rem;
+                }
+              }
+            }
+          }
+        }
+
+        .FNV_QuickAccess {
+          display: flex;
+
+          .dropdown {
+            a {
+              position: relative;
+
+              svg {
+                width: 16px;
+                height: 16px;
+                stroke-width: 1px;
+                stroke: $PrimaryColor;
+              }
+
+              span {
+                svg {
+                  top: -.4rem;
+                  left: -.4rem;
+
+                  width: 8px;
+                  height: 8px;
+
+                  fill: $PrimaryTwo;
+                  stroke: $PrimaryTwo;
+                  position: absolute;
+                }
+              }
+
+              &.show {
+                svg {
+                  stroke: $PrimaryFour;
+                }
+              }
+            }
+
+            .dropdown-menu {
+              top: 200%;
+              left: -150px;
+              width: 360px;
+              padding: 2rem;
+              border-left: 0;
+              border-right: 0;
+              border-bottom: 0;
+              border-radius: 0px;
+              border-top: 1px solid $PrimaryOne;
+              box-shadow: 0 10px 16px $PrimaryShadow;
+
+              span {
+                font-size: 14px;
+                font-weight: 400;
+                color: $PrimaryTextTwo;
+              }
+
+              a {
+                margin: 0;
+                padding: 1.5rem;
+                color: $PrimaryOne;
+
+                svg {
+                  margin-right: 1rem;
+                  fill: $PrimaryFour;
+                  stroke: $PrimaryFour;
+                }
+
+                &.FNV-User {
+                  display: flex;
+                  padding: 1rem;
+
+                  .FNV-UserAvatar {
+                    width: 30%;
+
+                    img,
+                    svg {
+                      width: 100%;
+                      object-fit: contain;
+                    }
+                  }
+
+                  span {
+                    width: 100%;
+                    display: flex;
+                    margin-left: 1rem;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    p {
+                      color: $PrimaryOne;
+                      margin-bottom: 0rem;
+                    }
+
+                    span {
+                      display: flex;
+                      margin-left: 0;
+                      flex-direction: row;
+                      justify-content: start;
+
+                      svg {
+                        top: unset;
+                        left: unset;
+                        width: 20px;
+                        height: 20px;
+                        stroke-width: 0px;
+                        position: relative;
+                        margin-right: .5rem;
+                        stroke: $PrimaryTextOne;
+                      }
+
+                      small {
+                        font-size: 14px;
+                        font-weight: 300;
+                        color: $PrimaryTextOne;
+                      }
+                    }
+                  }
+                }
+
+                &.FNV-UserMenu {
+                  display: flex;
+                  padding: 1rem;
+
+                  .FNV-UserIcon {
+                    width: 30%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img,
+                    svg {
+                      width: 80%;
+                      height: 80%;
+                      object-fit: contain;
+                      margin-right: 0;
+                    }
+                  }
+
+                  span {
+                    width: 100%;
+                    display: flex;
+                    margin-left: 1rem;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    p {
+                      color: $PrimaryOne;
+                      margin-bottom: 0rem;
+                    }
+
+                    span {
+                      display: flex;
+                      margin-left: 0;
+                      flex-direction: row;
+                      justify-content: start;
+
+                      svg {
+                        top: unset;
+                        left: unset;
+                        width: 20px;
+                        height: 20px;
+                        stroke-width: 0px;
+                        position: relative;
+                        margin-right: .5rem;
+                        stroke: $PrimaryTextOne;
+                      }
+
+                      small {
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: $PrimaryTextOne;
+                      }
+                    }
+                  }
+                }
+
+                &:hover {
+                  color: $White;
+                  background-color: $PrimaryFour;
+
+                  svg {
+                    fill: $White;
+                    stroke: $White;
+                  }
+
+                  &.FNV-User {
+                    span {
+                      p {
+                        color: $White;
+                      }
+
+                      span {
+
+                        svg {
+                          stroke: $PrimaryTextThree;
+                        }
+
+                        small {
+                          color: $White;
+                        }
+                      }
+                    }
+                  }
+
+                  &.FNV-UserMenu {
+                    .FNV-UserIcon {
+                      width: 30%;
+
+                      img,
+                      svg {
+                        stroke: $White;
+                      }
+                    }
+
+                    span {
+                      p {
+                        color: $White;
+                      }
+
+                      span {
+                        small {
+                          color: $White;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.show {
+                display: flex;
+                flex-direction: column;
+              }
+
+              ul {
+                max-height: 150px;
+                overflow: scroll;
+                padding: 0px;
+
+                p {
+                  font-size: 14px;
+                  color: $PrimaryTextTwo;
+                }
+
+                li {
+                  padding: 0;
+
+                  a {
+                    width: 100%;
+                    display: block;
+                    padding: .5rem;
+                    font-size: 12px;
+                  }
+                }
+              }
+            }
+          }
+
+          button {
+            padding: 0;
+            border-width: 0;
+            font-size: 16px;
+            margin-left: 1.5rem;
+            color: $PrimaryOne;
+            background-color: transparent;
+
+            svg {
+              width: 26px;
+              height: 26px;
+              stroke: $PrimaryOne;
+            }
+          }
+
+          a {
+            color: $PrimaryOne;
+            position: relative;
+            margin-left: 1.5rem;
+
+            svg {
+              width: 16px;
+              height: 16px;
+              stroke: $PrimaryOne;
+            }
+
+            span {
+              svg {
+                top: -.4rem;
+                left: -.4rem;
+
+                width: 8px;
+                height: 8px;
+
+                fill: $PrimaryTwo;
+                stroke: $PrimaryTwo;
+                position: absolute;
+              }
+            }
+          }
+        }
+
+        .navbar-collapse {
+          position: relative;
+          justify-content: center;
+
+          .navbar-nav {
+            li {
+              a {
+                font-size: 14px;
+                font-weight: 400;
+                padding: 2rem .5rem;
+                color: $PrimaryTextFour;
+              }
+
+              &:hover {
+                a {
+                  font-weight: 500;
+                  color: $PrimaryOne;
+                }
+              }
+            }
+
+            .FNV-MegaMenu {
+              position: unset;
+
+              &.FNV-MainMega {
+                .row {
+                  width: 100%;
+
+                  &.flex-row {
+                    h2 {
+                      font-size: 14px;
+                      margin-bottom: 1.5rem;
+                      color: $PrimaryTextTwo;
+                      width: auto;
+
+                      &:first-child {
+                        width: 300px;
+                      }
+
+                      &:last-child {
+                        padding-left: 2.5rem;
+                      }
+                    }
+                  }
+
+                  .col-md-9 {
+                    display: flex;
+
+                    .nav {
+                      width: 250px;
+                      height: 250px;
+                      overflow: scroll;
+                      border-right: 1px solid $PrimaryFive;
+
+                      button {
+                        width: 300px;
+                        padding: 1rem;
+                        display: flex;
+                        border-radius: 0px;
+                        align-items: center;
+
+                        svg {
+                          width: 16px;
+                          height: 16px;
+                          stroke: $PrimaryFour;
+                        }
+
+                        span {
+                          font-size: 12px;
+                          font-weight: 300;
+                          margin-left: .5rem;
+                          color: $PrimaryOne;
+                        }
+
+                        &.active {
+                          background-color: $PrimaryFour;
+
+                          svg {
+                            stroke: $White;
+                          }
+
+                          span {
+                            color: $White;
+                          }
+                        }
+                      }
+                    }
+
+                    .tab-content {
+                      padding: 0 1rem;
+
+                      .tab-pane {
+                        li {
+                          margin-bottom: .5rem;
+
+                          &:last-of-type {
+                            margin-bottom: 1rem;
+                          }
+
+                          a {
+                            padding: 0;
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            color: $PrimaryTextOne;
+                            text-transform: capitalize;
+
+                            &:hover {
+                              color: $PrimaryOne;
+                            }
+                          }
+                        }
+
+                        span {
+                          font-size: 14px;
+                          font-weight: 400;
+                          line-height: 28px;
+                          color: $PrimaryFour;
+                        }
+
+                        .container {
+                          padding: 1rem 0 0;
+                          margin-top: 1rem;
+                          border-top: 1px solid $PrimaryFive;
+
+                          span {
+                            display: block;
+                            font-size: 14px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                            margin-bottom: .5rem;
+                          }
+
+                          .row {
+                            .col-7 {
+                              p {
+                                font-size: 8px;
+                                font-weight: 300;
+                                color: $PrimaryTextOne;
+                              }
+                            }
+
+                            .col-5 {
+                              text-align: right;
+                              padding: 0;
+
+                              a {
+                                padding: .5rem 1rem;
+                                font-size: 12px;
+                                font-weight: 300;
+                                text-transform: capitalize;
+                                border: 1px solid $PrimaryFive;
+
+                                &:hover {
+                                  color: $White;
+                                  background-color: $PrimaryOne;
+                                }
+                              }
+                            }
+                          }
+                        }
+
+                        &.fade {
+                          display: none;
+                        }
+
+                        &.show {
+                          display: block;
+                        }
+                      }
+                    }
+
+                  }
+
+                  .col-md-3 {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: $PrimaryBackgroundTwo;
+
+                    a {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      align-items: center;
+                      flex-direction: column;
+                      justify-content: center;
+
+                      svg {
+                        fill: $PrimaryFour;
+                      }
+
+                      span {
+                        font-size: 12px;
+                        margin-top: 1rem;
+                        font-weight: 300;
+                        color: $PrimaryOne;
+                        padding: .5rem;
+                        background-color: $White;
+                      }
+
+                      &:hover {
+                        span {
+                          color: $White;
+                          background-color: $PrimaryOne;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.FNV-VIPMemberShip {
+                .dropdown-menu {
+                  width: 600px;
+                }
+              }
+
+              .dropdown-menu {
+                width: 100%;
+                display: none;
+                margin-top: 0px;
+                padding: 1rem;
+                border-width: 0;
+                overflow: hidden;
+                border-radius: 0px;
+                left: 0;
+                position: absolute;
+              }
+
+              &:hover .dropdown-menu {
+                display: block;
+                margin-top: 0px;
+                border-width: 0;
+                overflow: hidden;
+                border-top: 1px solid #223885;
+                box-shadow: 0px 20px 20px $ShadowPrimary;
+              }
+
+              .dropdown-menu {
+                .container-fluid {
+                  padding-right: 0px;
+                  padding-bottom: 0px;
+
+                  a {
+                    font-size: 24px;
+                    color: $PrimaryColor;
+                    font-weight: 600;
+
+                    span {
+                      border-left: 1px solid #ababab;
+                      padding-left: 1rem;
+                      margin-left: 1rem;
+                      font-size: 14px;
+                      color: $GrayThreeColor;
+                      font-weight: 400;
+                    }
+                  }
+
+                  .row {
+                    padding-top: 1rem;
+
+                    .col-md-3,
+                    .col-md-6,
+                    .col {
+                      .row {
+                        padding: 0;
+
+                        &.FNV-QuickAction {
+                          height: 100%;
+
+                          .col-12 {
+                            a {
+                              display: flex;
+                              flex-direction: column;
+                              height: 100%;
+                              justify-content: space-evenly;
+                              align-items: center;
+                              background-color: $LightColor;
+
+                              svg {
+                                width: 50px;
+                                height: 50px;
+                                color: $SecondaryColor;
+                              }
+
+                              span {
+                                font-size: 18px;
+                                border-width: 0;
+                                margin: 0;
+                                padding: 0;
+                                color: $PrimaryColor;
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                      span {
+                        font-size: 16px;
+                        line-height: 32px;
+                        font-weight: 700;
+                        color: $FourthColor;
+                        margin-bottom: .8rem;
+                        display: block;
+
+                        svg {
+                          width: 12px;
+                          height: 12px;
+                          margin-right: .5rem;
+                          color: $SecondaryColor;
+                        }
+                      }
+
+                      li {
+                        a {
+                          font-size: 14px;
+                          font-weight: 500;
+                          color: $GrayThreeColor;
+                          transition: .1s all ease-in-out;
+
+                          &:hover {
+                            color: $SecondaryColor;
+                            border-radius: 5px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // XX-Large devices (larger desktops, 1400px and up)
+  @media (min-width: 1400px) {
+    nav {
+      background-color: $WhiteColor;
+
+      .container {
+        padding: 0rem;
+
+        .navbar-brand {
+          width: 200px;
+        }
+
+        .FNV-User {
+          .FNV-Btn {
+            background-color: unset;
+            display: flex;
+            align-items: center;
+
+            .FNV-UserAvatar {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background-color: $PrimaryColor;
+              border: 2px solid $PrimaryColor;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: .5rem;
+              margin: 0 .5rem;
+
+              svg {
+                stroke: $WhiteColor;
+              }
+            }
+
+            img {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              border: 2px solid $PrimaryColor;
+              object-fit: cover;
+              margin: 0 .5rem;
+            }
+
+            &::after {
+              margin-left: .5rem;
+              margin-right: unset;
+            }
+          }
+
+          .dropdown-menu {
+            border-width: 0px;
+            box-shadow: 0px 0px 20px #00000020;
+
+            li {
+              padding-bottom: 0.3rem;
+              text-align: left;
+
+              a {
+                font-size: 14px;
+
+                svg {
+                  color: $PrimaryColor;
+                  width: 20px;
+                  height: 20px;
+                  margin-right: 0.5rem;
+                }
+              }
+            }
+          }
+        }
+
+        .FNV_QuickAccess {
+          display: flex;
+
+          .dropdown {
+            a {
+              position: relative;
+
+              svg {
+                width: 24px;
+                height: 24px;
+                stroke-width: 1.5px;
+                stroke: $PrimaryColor;
+              }
+
+              span {
+                svg {
+                  top: -.4rem;
+                  left: -.4rem;
+
+                  width: 8px;
+                  height: 8px;
+
+                  fill: $PrimaryTwo;
+                  stroke: $PrimaryTwo;
+                  position: absolute;
+                }
+              }
+
+              &.show {
+                svg {
+                  stroke: $PrimaryFour;
+                }
+              }
+            }
+
+            .dropdown-menu {
+              top: 200%;
+              left: -150px;
+              width: 360px;
+              padding: 2rem;
+              border-left: 0;
+              border-right: 0;
+              border-bottom: 0;
+              border-radius: 0px;
+              border-top: 1px solid $PrimaryOne;
+              box-shadow: 0 10px 16px $PrimaryShadow;
+
+              span {
+                font-size: 14px;
+                font-weight: 400;
+                color: $PrimaryTextTwo;
+              }
+
+              a {
+                margin: 0;
+                padding: 1.5rem;
+                color: $PrimaryOne;
+
+                svg {
+                  margin-right: 1rem;
+                  fill: $PrimaryFour;
+                  stroke: $PrimaryFour;
+                }
+
+                &.FNV-User {
+                  display: flex;
+                  padding: 1rem;
+
+                  .FNV-UserAvatar {
+                    width: 30%;
+
+                    img,
+                    svg {
+                      width: 100%;
+                      object-fit: contain;
+                    }
+                  }
+
+                  span {
+                    width: 100%;
+                    display: flex;
+                    margin-left: 1rem;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    p {
+                      color: $PrimaryOne;
+                      margin-bottom: 0rem;
+                    }
+
+                    span {
+                      display: flex;
+                      margin-left: 0;
+                      flex-direction: row;
+                      justify-content: start;
+
+                      svg {
+                        top: unset;
+                        left: unset;
+                        width: 20px;
+                        height: 20px;
+                        stroke-width: 0px;
+                        position: relative;
+                        margin-right: .5rem;
+                        stroke: $PrimaryTextOne;
+                      }
+
+                      small {
+                        font-size: 14px;
+                        font-weight: 300;
+                        color: $PrimaryTextOne;
+                      }
+                    }
+                  }
+                }
+
+                &.FNV-UserMenu {
+                  display: flex;
+                  padding: 1rem;
+
+                  .FNV-UserIcon {
+                    width: 30%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img,
+                    svg {
+                      width: 80%;
+                      height: 80%;
+                      object-fit: contain;
+                      margin-right: 0;
+                    }
+                  }
+
+                  span {
+                    width: 100%;
+                    display: flex;
+                    margin-left: 1rem;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    p {
+                      color: $PrimaryOne;
+                      margin-bottom: 0rem;
+                    }
+
+                    span {
+                      display: flex;
+                      margin-left: 0;
+                      flex-direction: row;
+                      justify-content: start;
+
+                      svg {
+                        top: unset;
+                        left: unset;
+                        width: 20px;
+                        height: 20px;
+                        stroke-width: 0px;
+                        position: relative;
+                        margin-right: .5rem;
+                        stroke: $PrimaryTextOne;
+                      }
+
+                      small {
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: $PrimaryTextOne;
+                      }
+                    }
+                  }
+                }
+
+                &:hover {
+                  color: $White;
+                  background-color: $PrimaryFour;
+
+                  svg {
+                    fill: $White;
+                    stroke: $White;
+                  }
+
+                  &.FNV-User {
+                    span {
+                      p {
+                        color: $White;
+                      }
+
+                      span {
+
+                        svg {
+                          stroke: $PrimaryTextThree;
+                        }
+
+                        small {
+                          color: $White;
+                        }
+                      }
+                    }
+                  }
+
+                  &.FNV-UserMenu {
+                    .FNV-UserIcon {
+                      width: 30%;
+
+                      img,
+                      svg {
+                        stroke: $White;
+                      }
+                    }
+
+                    span {
+                      p {
+                        color: $White;
+                      }
+
+                      span {
+                        small {
+                          color: $White;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.show {
+                display: flex;
+                flex-direction: column;
+              }
+
+              ul {
+                max-height: 150px;
+                overflow: scroll;
+                padding: 0px;
+
+                p {
+                  font-size: 14px;
+                  color: $PrimaryTextTwo;
+                }
+
+                li {
+                  padding: 0;
+
+                  a {
+                    width: 100%;
+                    display: block;
+                    padding: .5rem;
+                    font-size: 12px;
+                  }
+                }
+              }
+            }
+          }
+
+          button {
+            padding: 0;
+            border-width: 0;
+            font-size: 16px;
+            margin-left: 1.5rem;
+            color: $PrimaryOne;
+            background-color: transparent;
+
+            svg {
+              width: 26px;
+              height: 26px;
+              stroke: $PrimaryOne;
+            }
+          }
+
+          a {
+            color: $PrimaryOne;
+            position: relative;
+            margin-left: 1.5rem;
+
+            svg {
+              width: 24px;
+              height: 24px;
+              stroke: $PrimaryOne;
+            }
+
+            span {
+              svg {
+                top: -.4rem;
+                left: -.4rem;
+
+                width: 8px;
+                height: 8px;
+
+                fill: $PrimaryTwo;
+                stroke: $PrimaryTwo;
+                position: absolute;
+              }
+            }
+          }
+        }
+
+        .navbar-collapse {
+          position: relative;
+          justify-content: center;
+
+          .navbar-nav {
+            li {
+              a {
+                font-size: 14px;
+                font-weight: 400;
+                padding: 2rem .5rem;
+                color: $PrimaryTextFour;
+              }
+
+              &:hover {
+                a {
+                  font-weight: 500;
+                  color: $PrimaryOne;
+                }
+              }
+            }
+
+            .FNV-MegaMenu {
+              position: unset;
+
+              &.FNV-MainMega {
+                .row {
+                  width: 100%;
+
+                  &.flex-row {
+                    h2 {
+                      font-size: 14px;
+                      margin-bottom: 1.5rem;
+                      color: $PrimaryTextTwo;
+                      width: auto;
+
+                      &:first-child {
+                        width: 225px;
+                      }
+
+                      &:last-child {
+                        padding-left: 2.5rem;
+                      }
+                    }
+                  }
+
+                  .col-md-9 {
+                    display: flex;
+
+                    .nav {
+                      width: 300px;
+                      height: 265px;
+                      overflow: scroll;
+                      border-right: 1px solid $PrimaryFive;
+
+                      button {
+                        width: 300px;
+                        height: 65px;
+                        padding: 1rem;
+                        display: flex;
+                        border-radius: 0px;
+                        align-items: center;
+
+                        svg {
+                          width: 20px;
+                          height: 20px;
+                          stroke: $PrimaryFour;
+                        }
+
+                        span {
+                          font-size: 14px;
+                          font-weight: 300;
+                          margin-left: 1rem;
+                          color: $PrimaryOne;
+                        }
+
+                        &.active {
+                          background-color: $PrimaryFour;
+
+                          svg {
+                            stroke: $White;
+                          }
+
+                          span {
+                            color: $White;
+                          }
+                        }
+                      }
+                    }
+
+                    .tab-content {
+                      padding: 0 1.5rem;
+
+                      .tab-pane {
+                        li {
+                          margin-bottom: .5rem;
+
+                          &:last-of-type {
+                            margin-bottom: 1rem;
+                          }
+
+                          a {
+                            padding: 0;
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            color: $PrimaryTextOne;
+                            text-transform: capitalize;
+
+                            &:hover {
+                              color: $PrimaryOne;
+                            }
+                          }
+                        }
+
+                        span {
+                          font-size: 14px;
+                          font-weight: 400;
+                          line-height: 28px;
+                          color: $PrimaryFour;
+                        }
+
+                        .container {
+                          padding: 1rem 0 0;
+                          margin-top: 1rem;
+                          border-top: 1px solid $PrimaryFive;
+
+                          span {
+                            display: block;
+                            font-size: 14px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                            margin-bottom: .5rem;
+                          }
+
+                          .row {
+                            .col-7 {
+                              p {
+                                font-size: 8px;
+                                font-weight: 300;
+                                color: $PrimaryTextOne;
+                              }
+                            }
+
+                            .col-5 {
+                              padding: 0;
+                              text-align: right;
+
+                              a {
+                                width: 100%;
+                                display: block;
+                                font-size: 12px;
+                                font-weight: 300;
+                                padding: .5rem 1rem;
+                                text-transform: capitalize;
+                                border: 1px solid $PrimaryFive;
+
+                                &:hover {
+                                  color: $White;
+                                  background-color: $PrimaryOne;
+                                }
+                              }
+                            }
+                          }
+                        }
+
+                        &.fade {
+                          display: none;
+                        }
+
+                        &.show {
+                          display: block;
+                        }
+                      }
+                    }
+
+                  }
+
+                  .col-md-3 {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: $PrimaryBackgroundTwo;
+
+                    a {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      align-items: center;
+                      flex-direction: column;
+                      justify-content: center;
+
+                      svg {
+                        fill: $PrimaryFour;
+                      }
+
+                      span {
+                        font-size: 12px;
+                        margin-top: 1rem;
+                        font-weight: 300;
+                        color: $PrimaryOne;
+                        padding: .5rem;
+                        background-color: $White;
+                      }
+
+                      &:hover {
+                        span {
+                          color: $White;
+                          background-color: $PrimaryOne;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.FNV-VIPMemberShip {
+                .dropdown-menu {
+                  width: 600px;
+                }
+              }
+
+              .dropdown-menu {
+                width: 100%;
+                display: none;
+                margin-top: 0px;
+                padding: 2rem;
+                border-width: 0;
+                overflow: hidden;
+                border-radius: 0px;
+                left: 0;
+                position: absolute;
+              }
+
+              &:hover .dropdown-menu {
+                display: block;
+                margin-top: 0px;
+                border-width: 0;
+                overflow: hidden;
+                border-top: 1px solid #223885;
+                box-shadow: 0px 20px 20px $ShadowPrimary;
+              }
+
+              .dropdown-menu {
+                .container-fluid {
+                  padding-right: 0px;
+                  padding-bottom: 0px;
+
+                  a {
+                    font-size: 24px;
+                    color: $PrimaryColor;
+                    font-weight: 600;
+
+                    span {
+                      border-left: 1px solid #ababab;
+                      padding-left: 1rem;
+                      margin-left: 1rem;
+                      font-size: 14px;
+                      color: $GrayThreeColor;
+                      font-weight: 400;
+                    }
+                  }
+
+                  .row {
+                    padding-top: 1rem;
+
+                    .col-md-3,
+                    .col-md-6,
+                    .col {
+                      .row {
+                        padding: 0;
+
+                        &.FNV-QuickAction {
+                          height: 100%;
+
+                          .col-12 {
+                            a {
+                              display: flex;
+                              flex-direction: column;
+                              height: 100%;
+                              justify-content: space-evenly;
+                              align-items: center;
+                              background-color: $LightColor;
+
+                              svg {
+                                width: 50px;
+                                height: 50px;
+                                color: $SecondaryColor;
+                              }
+
+                              span {
+                                font-size: 18px;
+                                border-width: 0;
+                                margin: 0;
+                                padding: 0;
+                                color: $PrimaryColor;
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                      span {
+                        font-size: 16px;
+                        line-height: 32px;
+                        font-weight: 700;
+                        color: $FourthColor;
+                        margin-bottom: .8rem;
+                        display: block;
+
+                        svg {
+                          width: 12px;
+                          height: 12px;
+                          margin-right: .5rem;
+                          color: $SecondaryColor;
+                        }
+                      }
+
+                      li {
+                        a {
+                          font-size: 14px;
+                          font-weight: 500;
+                          color: $GrayThreeColor;
+                          transition: .1s all ease-in-out;
+
+                          &:hover {
+                            color: $SecondaryColor;
+                            border-radius: 5px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // XXX-Large devices (larger desktops, 1920px and up)
+  @media (min-width: 1920px) {
+    nav {
+      background-color: $WhiteColor;
+
+      .container {
+        padding: 0rem;
+
+        .navbar-brand {
+          width: 200px;
+        }
+
+        .FNV-User {
+          .FNV-Btn {
+            background-color: unset;
+            display: flex;
+            align-items: center;
+
+            .FNV-UserAvatar {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background-color: $PrimaryColor;
+              border: 2px solid $PrimaryColor;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: .5rem;
+              margin: 0 .5rem;
+
+              svg {
+                stroke: $WhiteColor;
+              }
+            }
+
+            img {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              border: 2px solid $PrimaryColor;
+              object-fit: cover;
+              margin: 0 .5rem;
+            }
+
+            &::after {
+              margin-left: .5rem;
+              margin-right: unset;
+            }
+          }
+
+          .dropdown-menu {
+            border-width: 0px;
+            box-shadow: 0px 0px 20px #00000020;
+
+            li {
+              padding-bottom: 0.3rem;
+              text-align: left;
+
+              a {
+                font-size: 14px;
+
+                svg {
+                  color: $PrimaryColor;
+                  width: 20px;
+                  height: 20px;
+                  margin-right: 0.5rem;
+                }
+              }
+            }
+          }
+        }
+
+        .FNV_QuickAccess {
+          display: flex;
+
+          .dropdown {
+            a {
+              position: relative;
+
+              svg {
+                width: 24px;
+                height: 24px;
+                stroke-width: 1.5px;
+                stroke: $PrimaryColor;
+              }
+
+              span {
+                svg {
+                  top: -.4rem;
+                  left: -.4rem;
+
+                  width: 8px;
+                  height: 8px;
+
+                  fill: $PrimaryTwo;
+                  stroke: $PrimaryTwo;
+                  position: absolute;
+                }
+              }
+
+              &.show {
+                svg {
+                  stroke: $PrimaryFour;
+                }
+              }
+            }
+
+            .dropdown-menu {
+              top: 200%;
+              left: -150px;
+              width: 360px;
+              padding: 2rem;
+              border-left: 0;
+              border-right: 0;
+              border-bottom: 0;
+              border-radius: 0px;
+              border-top: 1px solid $PrimaryOne;
+              box-shadow: 0 10px 16px $PrimaryShadow;
+
+              span {
+                font-size: 14px;
+                font-weight: 400;
+                color: $PrimaryTextTwo;
+              }
+
+              a {
+                margin: 0;
+                padding: 1.5rem;
+                color: $PrimaryOne;
+
+                svg {
+                  margin-right: 1rem;
+                  fill: $PrimaryFour;
+                  stroke: $PrimaryFour;
+                }
+
+                &.FNV-User {
+                  display: flex;
+                  padding: 1rem;
+
+                  .FNV-UserAvatar {
+                    width: 30%;
+
+                    img,
+                    svg {
+                      width: 100%;
+                      object-fit: contain;
+                    }
+                  }
+
+                  span {
+                    width: 100%;
+                    display: flex;
+                    margin-left: 1rem;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    p {
+                      color: $PrimaryOne;
+                      margin-bottom: 0rem;
+                    }
+
+                    span {
+                      display: flex;
+                      margin-left: 0;
+                      flex-direction: row;
+                      justify-content: start;
+
+                      svg {
+                        top: unset;
+                        left: unset;
+                        width: 20px;
+                        height: 20px;
+                        stroke-width: 0px;
+                        position: relative;
+                        margin-right: .5rem;
+                        stroke: $PrimaryTextOne;
+                      }
+
+                      small {
+                        font-size: 14px;
+                        font-weight: 300;
+                        color: $PrimaryTextOne;
+                      }
+                    }
+                  }
+                }
+
+                &.FNV-UserMenu {
+                  display: flex;
+                  padding: 1rem;
+
+                  .FNV-UserIcon {
+                    width: 30%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img,
+                    svg {
+                      width: 80%;
+                      height: 80%;
+                      object-fit: contain;
+                      margin-right: 0;
+                    }
+                  }
+
+                  span {
+                    width: 100%;
+                    display: flex;
+                    margin-left: 1rem;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    p {
+                      color: $PrimaryOne;
+                      margin-bottom: 0rem;
+                    }
+
+                    span {
+                      display: flex;
+                      margin-left: 0;
+                      flex-direction: row;
+                      justify-content: start;
+
+                      svg {
+                        top: unset;
+                        left: unset;
+                        width: 20px;
+                        height: 20px;
+                        stroke-width: 0px;
+                        position: relative;
+                        margin-right: .5rem;
+                        stroke: $PrimaryTextOne;
+                      }
+
+                      small {
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: $PrimaryTextOne;
+                      }
+                    }
+                  }
+                }
+
+                &:hover {
+                  color: $White;
+                  background-color: $PrimaryFour;
+
+                  svg {
+                    fill: $White;
+                    stroke: $White;
+                  }
+
+                  &.FNV-User {
+                    span {
+                      p {
+                        color: $White;
+                      }
+
+                      span {
+
+                        svg {
+                          stroke: $PrimaryTextThree;
+                        }
+
+                        small {
+                          color: $White;
+                        }
+                      }
+                    }
+                  }
+
+                  &.FNV-UserMenu {
+                    .FNV-UserIcon {
+                      width: 30%;
+
+                      img,
+                      svg {
+                        stroke: $White;
+                      }
+                    }
+
+                    span {
+                      p {
+                        color: $White;
+                      }
+
+                      span {
+                        small {
+                          color: $White;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.show {
+                display: flex;
+                flex-direction: column;
+              }
+
+              ul {
+                max-height: 150px;
+                overflow: scroll;
+                padding: 0px;
+
+                p {
+                  font-size: 14px;
+                  color: $PrimaryTextTwo;
+                }
+
+                li {
+                  padding: 0;
+
+                  a {
+                    width: 100%;
+                    display: block;
+                    padding: .5rem;
+                    font-size: 12px;
+                  }
+                }
+              }
+            }
+          }
+
+          button {
+            padding: 0;
+            border-width: 0;
+            font-size: 16px;
+            margin-left: 1.5rem;
+            color: $PrimaryOne;
+            background-color: transparent;
+
+            svg {
+              width: 26px;
+              height: 26px;
+              stroke: $PrimaryOne;
+            }
+          }
+
+          a {
+            color: $PrimaryOne;
+            position: relative;
+            margin-left: 1.5rem;
+
+            svg {
+              width: 24px;
+              height: 24px;
+              stroke: $PrimaryOne;
+            }
+
+            span {
+              svg {
+                top: -.4rem;
+                left: -.4rem;
+
+                width: 8px;
+                height: 8px;
+
+                fill: $PrimaryTwo;
+                stroke: $PrimaryTwo;
+                position: absolute;
+              }
+            }
+          }
+        }
+
+        .navbar-collapse {
+          position: relative;
+          justify-content: center;
+
+          .navbar-nav {
+            li {
+              a {
+                font-size: 16px;
+                font-weight: 400;
+                padding: 2rem .5rem;
+                color: $PrimaryTextFour;
+              }
+
+              &:hover {
+                a {
+                  font-weight: 500;
+                  color: $PrimaryOne;
+                }
+              }
+            }
+
+            .FNV-MegaMenu {
+              position: unset;
+
+              &.FNV-MainMega {
+                .row {
+                  width: 100%;
+
+                  &.flex-row {
+                    h2 {
+                      font-size: 14px;
+                      margin-bottom: 1.5rem;
+                      color: $PrimaryTextTwo;
+                      width: auto;
+
+                      &:first-child {
+                        width: 280px;
+                      }
+
+                      &:last-child {
+                        padding-left: 2.5rem;
+                      }
+                    }
+                  }
+
+                  .col-md-9 {
+                    display: flex;
+
+                    .nav {
+                      width: 300px;
+                      height: 350px;
+                      display: flex;
+                      overflow: scroll;
+                      align-items: start;
+                      flex-direction: row;
+                      border-right: 1px solid $PrimaryFive;
+
+                      button {
+                        width: 300px;
+                        height: 65px;
+                        padding: 1rem;
+                        display: flex;
+                        border-radius: 0px;
+                        align-items: center;
+
+                        svg {
+                          width: 35px;
+                          height: 35px;
+                          stroke: $PrimaryFour;
+                        }
+
+                        span {
+                          font-size: 18px;
+                          font-weight: 300;
+                          margin-left: 1rem;
+                          color: $PrimaryOne;
+                        }
+
+                        &.active {
+                          background-color: $PrimaryFour;
+
+                          svg {
+                            stroke: $White;
+                          }
+
+                          span {
+                            color: $White;
+                          }
+                        }
+                      }
+                    }
+
+                    .tab-content {
+                      padding: 0 1.5rem;
+
+                      .tab-pane {
+                        li {
+                          margin-bottom: .5rem;
+
+                          &:last-of-type {
+                            margin-bottom: 2rem;
+                          }
+
+                          a {
+                            padding: 0;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 28px;
+                            text-align: center;
+                            color: $PrimaryTextOne;
+                            text-transform: capitalize;
+
+                            &:hover {
+                              color: $PrimaryOne;
+                            }
+                          }
+                        }
+
+                        span {
+                          font-size: 14px;
+                          font-weight: 400;
+                          line-height: 28px;
+                          color: $PrimaryFour;
+                        }
+
+                        .container {
+                          padding: 2rem 0 0;
+                          margin-top: 1rem;
+                          border-top: 1px solid $PrimaryFive;
+
+                          span {
+                            display: block;
+                            font-size: 16px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                            margin-bottom: .5rem;
+                          }
+
+                          .row {
+                            .col-7 {
+                              p {
+                                font-size: 12px;
+                                font-weight: 300;
+                                color: $PrimaryTextOne;
+                              }
+                            }
+
+                            .col-5 {
+                              text-align: right;
+
+                              a {
+                                font-size: 14px;
+                                font-weight: 300;
+                                text-align: center;
+                                padding: 1rem 1.5rem;
+                                text-transform: capitalize;
+                                border: 1px solid $PrimaryFive;
+
+                                &:hover {
+                                  color: $White;
+                                  background-color: $PrimaryOne;
+                                }
+                              }
+                            }
+                          }
+                        }
+
+                        &.fade {
+                          display: none;
+                        }
+
+                        &.show {
+                          display: block;
+                        }
+                      }
+                    }
+
+                  }
+
+                  .col-md-3 {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: $PrimaryBackgroundTwo;
+
+                    a {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      align-items: center;
+                      flex-direction: column;
+                      justify-content: center;
+
+                      svg {
+                        fill: $PrimaryFour;
+                      }
+
+                      span {
+                        margin-top: 2rem;
+                        font-weight: 300;
+                        color: $PrimaryOne;
+                        padding: .5rem 1rem;
+                        background-color: $White;
+                      }
+
+                      &:hover {
+                        span {
+                          color: $White;
+                          background-color: $PrimaryOne;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.FNV-VIPMemberShip {
+                .dropdown-menu {
+                  width: 600px;
+                }
+              }
+
+              .dropdown-menu {
+                width: 100%;
+                display: none;
+                margin-top: 0px;
+                padding: 2rem;
+                border-width: 0;
+                overflow: hidden;
+                border-radius: 0px;
+                left: 0;
+                position: absolute;
+              }
+
+              &:hover .dropdown-menu {
+                display: block;
+                margin-top: 0px;
+                border-width: 0;
+                overflow: hidden;
+                border-top: 1px solid #223885;
+                box-shadow: 0px 20px 20px $ShadowPrimary;
+              }
+
+              .dropdown-menu {
+                .container-fluid {
+                  padding-right: 0px;
+                  padding-bottom: 0px;
+
+                  a {
+                    font-size: 24px;
+                    color: $PrimaryColor;
+                    font-weight: 600;
+
+                    span {
+                      border-left: 1px solid #ababab;
+                      padding-left: 1rem;
+                      margin-left: 1rem;
+                      font-size: 14px;
+                      color: $GrayThreeColor;
+                      font-weight: 400;
+                    }
+                  }
+
+                  .row {
+                    padding-top: 1rem;
+
+                    .col-md-3,
+                    .col-md-6,
+                    .col {
+                      .row {
+                        padding: 0;
+
+                        &.FNV-QuickAction {
+                          height: 100%;
+
+                          .col-12 {
+                            a {
+                              display: flex;
+                              flex-direction: column;
+                              height: 100%;
+                              justify-content: space-evenly;
+                              align-items: center;
+                              background-color: $LightColor;
+
+                              svg {
+                                width: 50px;
+                                height: 50px;
+                                color: $SecondaryColor;
+                              }
+
+                              span {
+                                font-size: 18px;
+                                border-width: 0;
+                                margin: 0;
+                                padding: 0;
+                                color: $PrimaryColor;
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                      span {
+                        font-size: 16px;
+                        line-height: 32px;
+                        font-weight: 700;
+                        color: $FourthColor;
+                        margin-bottom: .8rem;
+                        display: block;
+
+                        svg {
+                          width: 12px;
+                          height: 12px;
+                          margin-right: .5rem;
+                          color: $SecondaryColor;
+                        }
+                      }
+
+                      li {
+                        a {
+                          font-size: 14px;
+                          font-weight: 500;
+                          color: $GrayThreeColor;
+                          transition: .1s all ease-in-out;
+
+                          &:hover {
+                            color: $SecondaryColor;
+                            border-radius: 5px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Persian
+body[dir='rtl'] {
   // X-Small devices (portrait phones, less than 576px)
   @media (max-width: 575.98px) {
     nav {
