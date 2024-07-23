@@ -1,337 +1,336 @@
 @import './variables';
 
 body[dir='ltr'] {
-
-  nav {
-    background-color: $WhiteColor;
-
-    .container {
-      padding: 1rem 0;
-
-      .navbar-brand {
-        width: 200px;
-        padding-right: .5rem;
-
-        svg {
-          width: 100%;
-        }
-      }
-
-      .FNV_QuickAccess {
-        display: none;
-      }
-
-      .navbar-toggler{
-        border-width: 0;
-        border-radius: 0px;
-        background-color: $PrimaryOne;
-
-        .navbar-toggler-icon{
-          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-        }
-
-        &:focus, &:focus-visible, &:hover{
-          box-shadow: unset;
-          background-color: $PrimaryBackgroundTwo;
-
-          .navbar-toggler-icon{
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23223885' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  // X-Small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) {
+    nav {
+      background-color: $WhiteColor;
+  
+      .container {
+        padding: 1rem;
+  
+        .navbar-brand {
+          width: 200px;
+          padding-right: .5rem;
+  
+          svg {
+            width: 100%;
           }
         }
-      }
-
-      .navbar-collapse {
-        position: relative;
-        justify-content: center;
-
-        .navbar-nav {
-          li {
-            &:first-child{
-              margin-top: 1rem;
+  
+        .FNV_QuickAccess {
+          display: none;
+        }
+  
+        .navbar-toggler{
+          border-width: 0;
+          border-radius: 0px;
+          background-color: $PrimaryOne;
+  
+          .navbar-toggler-icon{
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+          }
+  
+          &:focus, &:focus-visible, &:hover{
+            box-shadow: unset;
+            background-color: $PrimaryBackgroundTwo;
+  
+            .navbar-toggler-icon{
+              background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23223885' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
             }
-
-            a {
-              padding: .5rem;
-              font-size: 15px;
-              font-weight: 400;
-              color: $PrimaryOne;
-            }
-
-            &:hover {
+          }
+        }
+  
+        .navbar-collapse {
+          position: relative;
+          justify-content: center;
+  
+          .navbar-nav {
+            li { 
               a {
-                font-weight: 500;
+                padding: .5rem;
+                font-size: 15px;
+                font-weight: 400;
                 color: $PrimaryOne;
               }
-            }
-          }
-
-          .FNV-MegaMenu {
-            position: unset;
-
-            &.FNV-MainMega {
-              .row {
-                width: 100%;
-
-                &.flex-row {
-                  h2 {
-                    font-size: 10px;
-                    margin-bottom: 1.5rem;
-                    color: $PrimaryTextTwo;
-                    width: auto;
-
-                    &:first-child {
-                      width: 180px;
-                    }
-
-                    &:last-child {
-                      padding-left: 2.5rem;
-                    }
-                  }
+  
+              &:hover {
+                a {
+                  font-weight: 500;
+                  color: $PrimaryOne;
                 }
-
-                .col-md-9 {
-                  display: flex;
-
-                  .nav {
-                    width: 60%;
-                    height: 180px;
-                    overflow: scroll;
-                    border-right: 1px solid $PrimaryFive;
-
-                    button {
-                      width: 100%;
-                      height: 40px;
-                      display: flex;
-                      padding: .2rem .5rem;
-                      border-radius: 0px;
-                      align-items: center;
-
-                      svg {
-                        display: none;
+              }
+            }
+  
+            .FNV-MegaMenu {
+              position: unset;
+  
+              &.FNV-MainMega {
+                .row {
+                  width: 100%;
+  
+                  &.flex-row {
+                    h2 {
+                      font-size: 10px;
+                      margin-bottom: 1.5rem;
+                      color: $PrimaryTextTwo;
+                      width: auto;
+  
+                      &:first-child {
+                        width: 180px;
                       }
-
-                      span {
-                        font-size: 10px;
-                        font-weight: 400;
-                        margin-left: 0rem;
-                        color: $PrimaryOne;
-                      }
-
-                      &.active {
-                        background-color: $PrimaryFour;
-
-                        svg {
-                          stroke: $White;
-                        }
-
-                        span {
-                          color: $White;
-                        }
+  
+                      &:last-child {
+                        padding-left: 2.5rem;
                       }
                     }
                   }
-
-                  .tab-content {
-                    width: 100%;
-                    padding: 0 .5rem;
-
-                    .tab-pane {
-                      li {
-                        margin-bottom: 0rem;
-
-                        &:last-of-type {
-                          margin-bottom: .5rem;
+  
+                  .col-md-9 {
+                    display: flex;
+  
+                    .nav {
+                      width: 60%;
+                      height: 180px;
+                      overflow: scroll;
+                      border-right: 1px solid $PrimaryFive;
+  
+                      button {
+                        width: 100%;
+                        height: 40px;
+                        display: flex;
+                        padding: .2rem .5rem;
+                        border-radius: 0px;
+                        align-items: center;
+  
+                        svg {
+                          width: 0px;
+                          height: 0px;
                         }
-
-                        a {
-                          padding: 0;
+  
+                        span {
                           font-size: 10px;
                           font-weight: 400;
-                          line-height: 20px;
-                          color: $PrimaryTextOne;
-                          text-transform: capitalize;
-
-                          &:hover {
-                            color: $PrimaryOne;
+                          margin-left: 0rem;
+                          color: $PrimaryOne;
+                        }
+  
+                        &.active {
+                          background-color: $PrimaryFour;
+  
+                          svg {
+                            stroke: $White;
+                          }
+  
+                          span {
+                            color: $White;
                           }
                         }
                       }
-
-                      span {
-                        font-size: 14px;
-                        font-weight: 400;
-                        line-height: 28px;
-                        color: $PrimaryFour;
-                      }
-
-                      .container {
-                        display: none;
-                      }
-
-                      &.fade {
-                        display: none;
-                      }
-
-                      &.show {
-                        display: block;
+                    }
+  
+                    .tab-content {
+                      width: 100%;
+                      padding: 0 .5rem;
+  
+                      .tab-pane {
+                        li {
+                          margin-bottom: 0rem;
+  
+                          &:last-of-type {
+                            margin-bottom: .5rem;
+                          }
+  
+                          a {
+                            padding: 0;
+                            font-size: 10px;
+                            font-weight: 400;
+                            line-height: 20px;
+                            color: $PrimaryTextOne;
+                            text-transform: capitalize;
+  
+                            &:hover {
+                              color: $PrimaryOne;
+                            }
+                          }
+                        }
+  
+                        span {
+                          font-size: 14px;
+                          font-weight: 400;
+                          line-height: 28px;
+                          color: $PrimaryFour;
+                        }
+  
+                        .container {
+                          display: none;
+                        }
+  
+                        &.fade {
+                          display: none;
+                        }
+  
+                        &.show {
+                          display: block;
+                        }
                       }
                     }
+  
                   }
-
-                }
-
-                .col-md-3 {
-                  display: flex;
-                  align-items: center;
-                  flex-direction: column;
-                  justify-content: center;
-                  background-color: $PrimaryBackgroundTwo;
-
-                  a {
-                    width: 100%;
-                    height: 100%;
+  
+                  .col-md-3 {
                     display: flex;
                     align-items: center;
                     flex-direction: column;
                     justify-content: center;
-
-                    svg {
-                      height: 50px;
-                      fill: $PrimaryFour;
-                    }
-
-                    span {
-                      font-size: 8px;
-                      margin-top: 1rem;
-                      font-weight: 300;
-                      color: $PrimaryOne;
-                      padding: .5rem;
-                      background-color: $White;
-                    }
-
-                    &:hover {
+                    background-color: $PrimaryBackgroundTwo;
+  
+                    a {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      align-items: center;
+                      flex-direction: column;
+                      justify-content: center;
+  
+                      svg {
+                        height: 50px;
+                        fill: $PrimaryFour;
+                      }
+  
                       span {
-                        color: $White;
-                        background-color: $PrimaryOne;
+                        font-size: 8px;
+                        margin-top: 1rem;
+                        font-weight: 300;
+                        color: $PrimaryOne;
+                        padding: .5rem;
+                        background-color: $White;
+                      }
+  
+                      &:hover {
+                        span {
+                          color: $White;
+                          background-color: $PrimaryOne;
+                        }
                       }
                     }
                   }
                 }
               }
-            }
-
-            &.FNV-VIPMemberShip {
-              .dropdown-menu {
-                width: 600px;
-              }
-            }
-
-            .dropdown-menu {
-              width: 100%;
-              display: none;
-              margin-top: 0px;
-              padding: 1rem;
-              border-width: 0;
-              overflow: hidden;
-              border-radius: 0px;
-              left: 0;
-              position: absolute;
-            }
-
-            &:hover .dropdown-menu {
-              display: block;
-              margin-top: 0px;
-              border-width: 0;
-              overflow: hidden;
-              border-top: 1px solid #223885;
-              box-shadow: 0px 20px 20px $ShadowPrimary;
-            }
-
-            .dropdown-menu {
-              .container-fluid {
-                padding-right: 0px;
-                padding-bottom: 0px;
-
-                a {
-                  font-size: 24px;
-                  color: $PrimaryColor;
-                  font-weight: 600;
-
-                  span {
-                    border-left: 1px solid #ababab;
-                    padding-left: 1rem;
-                    margin-left: 1rem;
-                    font-size: 14px;
-                    color: $GrayThreeColor;
-                    font-weight: 400;
-                  }
+  
+              &.FNV-VIPMemberShip {
+                .dropdown-menu {
+                  width: 600px;
                 }
-
-                .row {
-                  padding-top: 1rem;
-
-                  .col-md-3,
-                  .col-md-6,
-                  .col {
-                    .row {
-                      padding: 0;
-
-                      &.FNV-QuickAction {
-                        height: 100%;
-
-                        .col-12 {
-                          a {
-                            display: flex;
-                            flex-direction: column;
-                            height: 100%;
-                            justify-content: space-evenly;
-                            align-items: center;
-                            background-color: $LightColor;
-
-                            svg {
-                              width: 50px;
-                              height: 50px;
-                              color: $SecondaryColor;
-                            }
-
-                            span {
-                              font-size: 18px;
-                              border-width: 0;
-                              margin: 0;
-                              padding: 0;
-                              color: $PrimaryColor;
+              }
+  
+              .dropdown-menu {
+                width: 100%;
+                display: none;
+                margin-top: 0px;
+                padding: 1rem;
+                border-width: 0;
+                overflow: hidden;
+                border-radius: 0px;
+                left: 0;
+                position: absolute;
+              }
+  
+              &:hover .dropdown-menu {
+                display: block;
+                margin-top: 0px;
+                border-width: 0;
+                overflow: hidden;
+                border-top: 1px solid #223885;
+                box-shadow: 0px 20px 20px $ShadowPrimary;
+              }
+  
+              .dropdown-menu {
+                .container-fluid {
+                  padding-right: 0px;
+                  padding-bottom: 0px;
+  
+                  a {
+                    font-size: 24px;
+                    color: $PrimaryColor;
+                    font-weight: 600;
+  
+                    span {
+                      border-left: 1px solid #ababab;
+                      padding-left: 1rem;
+                      margin-left: 1rem;
+                      font-size: 14px;
+                      color: $GrayThreeColor;
+                      font-weight: 400;
+                    }
+                  }
+  
+                  .row {
+                    padding-top: 1rem;
+  
+                    .col-md-3,
+                    .col-md-6,
+                    .col {
+                      .row {
+                        padding: 0;
+  
+                        &.FNV-QuickAction {
+                          height: 100%;
+  
+                          .col-12 {
+                            a {
+                              display: flex;
+                              flex-direction: column;
+                              height: 100%;
+                              justify-content: space-evenly;
+                              align-items: center;
+                              background-color: $LightColor;
+  
+                              svg {
+                                width: 50px;
+                                height: 50px;
+                                color: $SecondaryColor;
+                              }
+  
+                              span {
+                                font-size: 18px;
+                                border-width: 0;
+                                margin: 0;
+                                padding: 0;
+                                color: $PrimaryColor;
+                              }
                             }
                           }
                         }
                       }
-                    }
-
-                    span {
-                      font-size: 16px;
-                      line-height: 32px;
-                      font-weight: 700;
-                      color: $FourthColor;
-                      margin-bottom: .8rem;
-                      display: block;
-
-                      svg {
-                        width: 12px;
-                        height: 12px;
-                        margin-right: .5rem;
-                        color: $SecondaryColor;
-                      }
-                    }
-
-                    li {
-                      a {
-                        font-size: 14px;
-                        font-weight: 500;
-                        color: $GrayThreeColor;
-                        transition: .1s all ease-in-out;
-
-                        &:hover {
+  
+                      span {
+                        font-size: 16px;
+                        line-height: 32px;
+                        font-weight: 700;
+                        color: $FourthColor;
+                        margin-bottom: .8rem;
+                        display: block;
+  
+                        svg {
+                          width: 12px;
+                          height: 12px;
+                          margin-right: .5rem;
                           color: $SecondaryColor;
-                          border-radius: 5px;
+                        }
+                      }
+  
+                      li {
+                        a {
+                          font-size: 14px;
+                          font-weight: 500;
+                          color: $GrayThreeColor;
+                          transition: .1s all ease-in-out;
+  
+                          &:hover {
+                            color: $SecondaryColor;
+                            border-radius: 5px;
+                          }
                         }
                       }
                     }
@@ -346,62 +345,58 @@ body[dir='ltr'] {
   }
 
   // `sm` applies to x-small devices (portrait phones, less than 576px)
-  @media (min-width: 575.98px) {
+  @media (min-width: 575.98px) and (max-width: 767.98px) {
     nav {
       background-color: $WhiteColor;
-
+  
       .container {
-        padding: 1rem 0;
-
+        padding: 1rem;
+  
         .navbar-brand {
           width: 200px;
           padding-right: .5rem;
-
+  
           svg {
             width: 100%;
           }
         }
-
+  
         .FNV_QuickAccess {
           display: none;
         }
-
+  
         .navbar-toggler{
           border-width: 0;
           border-radius: 0px;
           background-color: $PrimaryOne;
-
+  
           .navbar-toggler-icon{
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
           }
-
+  
           &:focus, &:focus-visible, &:hover{
             box-shadow: unset;
             background-color: $PrimaryBackgroundTwo;
-
+  
             .navbar-toggler-icon{
               background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23223885' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
             }
           }
         }
-
+  
         .navbar-collapse {
           position: relative;
           justify-content: center;
-
+  
           .navbar-nav {
-            li {
-              &:first-child{
-                margin-top: 1rem;
-              }
-
+            li { 
               a {
                 padding: .5rem;
                 font-size: 15px;
                 font-weight: 400;
                 color: $PrimaryOne;
               }
-
+  
               &:hover {
                 a {
                   font-weight: 500;
@@ -409,86 +404,86 @@ body[dir='ltr'] {
                 }
               }
             }
-
+  
             .FNV-MegaMenu {
               position: unset;
-
+  
               &.FNV-MainMega {
                 .row {
                   width: 100%;
-
+  
                   &.flex-row {
                     h2 {
                       font-size: 10px;
                       margin-bottom: 1.5rem;
                       color: $PrimaryTextTwo;
                       width: auto;
-
+  
                       &:first-child {
-                        width: 30%;
+                        width: 180px;
                       }
-
+  
                       &:last-child {
                         padding-left: 2.5rem;
                       }
                     }
                   }
-
+  
                   .col-md-9 {
                     display: flex;
-
+  
                     .nav {
-                      width: 150px;
-                      height: 240px;
+                      width: 60%;
+                      height: 180px;
                       overflow: scroll;
                       border-right: 1px solid $PrimaryFive;
-
+  
                       button {
-                        height: 50px;
-                        width: 300px;
-                        padding: .5rem;
+                        width: 100%;
+                        height: 40px;
                         display: flex;
+                        padding: .2rem .5rem;
                         border-radius: 0px;
                         align-items: center;
-
+  
                         svg {
-                          width: 14px;
-                          height: 14px;
-                          stroke: $PrimaryFour;
+                          width: 0px;
+                          height: 0px;
                         }
-
+  
                         span {
                           font-size: 10px;
-                          font-weight: 300;
-                          margin-left: .5rem;
+                          font-weight: 400;
+                          margin-left: 0rem;
                           color: $PrimaryOne;
                         }
-
+  
                         &.active {
                           background-color: $PrimaryFour;
-
+  
                           svg {
                             stroke: $White;
                           }
-
+  
                           span {
                             color: $White;
                           }
                         }
                       }
                     }
-
+  
                     .tab-content {
-                      padding: 0 1rem;
-
+                      width: 100%;
+                      padding: 0 .5rem;
+  
                       .tab-pane {
                         li {
                           margin-bottom: 0rem;
-
+  
                           &:last-of-type {
                             margin-bottom: .5rem;
                           }
-
+  
                           a {
                             padding: 0;
                             font-size: 10px;
@@ -496,81 +491,43 @@ body[dir='ltr'] {
                             line-height: 20px;
                             color: $PrimaryTextOne;
                             text-transform: capitalize;
-
+  
                             &:hover {
                               color: $PrimaryOne;
                             }
                           }
                         }
-
+  
                         span {
                           font-size: 14px;
                           font-weight: 400;
                           line-height: 28px;
                           color: $PrimaryFour;
                         }
-
+  
                         .container {
-                          padding: .5rem 0 0;
-                          margin-top: .5rem;
-                          border-top: 1px solid $PrimaryFive;
-
-                          span {
-                            display: block;
-                            font-size: 14px;
-                            font-weight: 300;
-                            color: $PrimaryOne;
-                            margin-bottom: .5rem;
-                          }
-
-                          .row {
-                            .col-7 {
-                              p {
-                                font-size: 5px;
-                                font-weight: 300;
-                                color: $PrimaryTextOne;
-                              }
-                            }
-
-                            .col-5 {
-                              text-align: right;
-                              padding: 0;
-
-                              a {
-                                padding: .5rem;
-                                font-size: 8px;
-                                font-weight: 300;
-                                text-transform: capitalize;
-                                border: 1px solid $PrimaryFive;
-
-                                &:hover {
-                                  color: $White;
-                                  background-color: $PrimaryOne;
-                                }
-                              }
-                            }
-                          }
+                          display: none;
                         }
-
+  
                         &.fade {
                           display: none;
                         }
-
+  
                         &.show {
                           display: block;
                         }
                       }
                     }
-
+  
                   }
-
+  
                   .col-md-3 {
                     display: flex;
                     align-items: center;
                     flex-direction: column;
                     justify-content: center;
                     background-color: $PrimaryBackgroundTwo;
-
+  
                     a {
                       width: 100%;
                       height: 100%;
@@ -578,12 +535,12 @@ body[dir='ltr'] {
                       align-items: center;
                       flex-direction: column;
                       justify-content: center;
-
+  
                       svg {
                         height: 50px;
                         fill: $PrimaryFour;
                       }
-
+  
                       span {
                         font-size: 8px;
                         margin-top: 1rem;
@@ -592,7 +549,7 @@ body[dir='ltr'] {
                         padding: .5rem;
                         background-color: $White;
                       }
-
+  
                       &:hover {
                         span {
                           color: $White;
@@ -603,13 +560,13 @@ body[dir='ltr'] {
                   }
                 }
               }
-
+  
               &.FNV-VIPMemberShip {
                 .dropdown-menu {
                   width: 600px;
                 }
               }
-
+  
               .dropdown-menu {
                 width: 100%;
                 display: none;
@@ -621,7 +578,7 @@ body[dir='ltr'] {
                 left: 0;
                 position: absolute;
               }
-
+  
               &:hover .dropdown-menu {
                 display: block;
                 margin-top: 0px;
@@ -630,17 +587,17 @@ body[dir='ltr'] {
                 border-top: 1px solid #223885;
                 box-shadow: 0px 20px 20px $ShadowPrimary;
               }
-
+  
               .dropdown-menu {
                 .container-fluid {
                   padding-right: 0px;
                   padding-bottom: 0px;
-
+  
                   a {
                     font-size: 24px;
                     color: $PrimaryColor;
                     font-weight: 600;
-
+  
                     span {
                       border-left: 1px solid #ababab;
                       padding-left: 1rem;
@@ -650,19 +607,19 @@ body[dir='ltr'] {
                       font-weight: 400;
                     }
                   }
-
+  
                   .row {
                     padding-top: 1rem;
-
+  
                     .col-md-3,
                     .col-md-6,
                     .col {
                       .row {
                         padding: 0;
-
+  
                         &.FNV-QuickAction {
                           height: 100%;
-
+  
                           .col-12 {
                             a {
                               display: flex;
@@ -671,13 +628,13 @@ body[dir='ltr'] {
                               justify-content: space-evenly;
                               align-items: center;
                               background-color: $LightColor;
-
+  
                               svg {
                                 width: 50px;
                                 height: 50px;
                                 color: $SecondaryColor;
                               }
-
+  
                               span {
                                 font-size: 18px;
                                 border-width: 0;
@@ -689,7 +646,7 @@ body[dir='ltr'] {
                           }
                         }
                       }
-
+  
                       span {
                         font-size: 16px;
                         line-height: 32px;
@@ -697,7 +654,7 @@ body[dir='ltr'] {
                         color: $FourthColor;
                         margin-bottom: .8rem;
                         display: block;
-
+  
                         svg {
                           width: 12px;
                           height: 12px;
@@ -705,14 +662,14 @@ body[dir='ltr'] {
                           color: $SecondaryColor;
                         }
                       }
-
+  
                       li {
                         a {
                           font-size: 14px;
                           font-weight: 500;
                           color: $GrayThreeColor;
                           transition: .1s all ease-in-out;
-
+  
                           &:hover {
                             color: $SecondaryColor;
                             border-radius: 5px;
@@ -731,7 +688,7 @@ body[dir='ltr'] {
   }
 
   // `md` applies to small devices (landscape phones, less than 768px)
-  @media (min-width: 767.98px) {
+  @media (min-width: 767.98px) and (max-width: 991.98px) {
     nav {
       background-color: $WhiteColor;
 
@@ -776,10 +733,6 @@ body[dir='ltr'] {
 
           .navbar-nav {
             li {
-              &:first-child{
-                margin-top: 1rem;
-              }
-
               a {
                 padding: .5rem;
                 font-size: 15px;
