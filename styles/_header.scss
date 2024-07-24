@@ -1,16 +1,121 @@
 @import './variables';
 
-.FNV-TopBanner {
-  width: 100%;
-  height: 65px!important;
-}
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+  .FNV-TopBanner {
+    width: 100%;
+    height: 65px!important;
+  }
 
-.FNV-TopBar {
-  display: none;
+  .FNV-TopBar {
+    display: none;
+  }
+
+  .FNV-Home {
+    .FNV-Header {
+      background-image: linear-gradient(89.85deg, rgba(26, 48, 211, 0.8) 0.12%, rgba(26, 48, 211, 0.2) 50%, rgba(26, 48, 211, 0.8) 99.87%), url('/img/Header-bg.jpg');
+      background-size: cover;
+      background-position: center center;
+      height: 550px;
+      padding: 10px;
+
+      .container {
+        width: 100%;
+        height: 100%;
+
+        .row {
+          width: 100%;
+          height: 100%;
+
+          .FNV-HCard {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            h2 {
+              margin-bottom: 2rem;
+              font-size: 35px;
+              font-weight: 800;
+              color: $WhiteColor;
+              text-align: center;
+              text-transform: uppercase;
+
+              mark {
+                background-color: transparent;
+                color: $SecondaryColor;
+              }
+            }
+
+            h1 {
+              margin-bottom: 2rem;
+              font-size: 35px;
+              font-weight: 800;
+              color: $WhiteColor;
+              text-align: center;
+              text-transform: uppercase;
+
+              mark {
+                background-color: transparent;
+                color: $SecondaryColor;
+              }
+            }
+
+            .FNV-HSearch {
+              background-color: rgba(255, 255, 255, 0.6);
+              width: 600px;
+              border-radius: 15px;
+              overflow: hidden;
+              padding: .8rem;
+              border: 1px solid $WhiteColor;
+
+              .FNV-HSearchInput {
+                background-color: transparent !important;
+                border-width: 0;
+                box-shadow: unset;
+                border-radius: 15px;
+                color: $PrimaryColor;
+                font-size: 16px;
+                font-weight: 400;
+
+                &::after,
+                &::before {
+                  display: none;
+                }
+
+                &::placeholder,
+                &:-ms-input-placeholder {
+                  color: $PrimaryColor !important;
+                }
+              }
+
+              button {
+                background-color: $PrimaryColor;
+                color: $WhiteColor;
+                border-radius: 15px 15px 15px 15px !important;
+                width: 75px;
+
+                svg {
+                  width: 30px;
+                  height: 30px;
+                  color: $WhiteColor
+                }
+              }
+            }
+
+            p {
+              margin-bottom: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // `sm` applies to x-small devices (portrait phones, less than 576px)
-@media (min-width: 575.98px) {
+@media (min-width: 575.98px) and (max-width: 767px) {
   .FNV-TopBanner {
     width: 100%;
     height: 65px!important;
@@ -124,7 +229,7 @@
 }
 
 // `md` applies to small devices (landscape phones, less than 768px)
-@media (min-width: 767.98px) {
+@media (min-width: 767.98px) and (max-width: 991.98px) {
   .FNV-TopBanner {
     width: 100%;
     height: 65px!important;
@@ -238,7 +343,7 @@
 }
 
 // `lg` applies to medium devices (tablets, less than 992px)
-@media (min-width: 991.98px) {
+@media (min-width: 992px) {
   .FNV-TopBanner {
     width: 100%;
     height: 65px!important;
