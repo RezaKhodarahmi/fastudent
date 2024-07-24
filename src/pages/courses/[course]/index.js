@@ -124,6 +124,7 @@ const Course = () => {
     //   router.push('/404')
     // }
     if (courseData?.data) {
+      console.log(courseData?.data)
       setData(courseData?.data?.data)
       setFaqs(courseData?.data?.faq)
       setCourseId(courseData?.data?.data?.id)
@@ -1268,7 +1269,7 @@ const Course = () => {
 
           <ReCAPTCHA
             ref={recaptchaRef}
-            sitekey='6LeP1jojAAAAAJMGRkY1WeJuBybdzqeRwZNErOrc'
+            sitekey='6Ld3vRchAAAAANNHnay731SB7BpaV1F1NxXx8WWT'
             onChange={onReCAPTCHAChange}
           />
 

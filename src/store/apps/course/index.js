@@ -88,33 +88,6 @@ export const getEnrolledCourse = params => async dispatch => {
   }
 }
 
-export const getCartItems = (cartItems, email, newVIP) => async dispatch => {
-  dispatch(getDataStart())
-  try {
-    const token = window.localStorage.getItem('accessToken')
-
-    const response = await axios.post(
-      `${BASE_URL}/student/courses/cart-item`,
-      {
-        items: cartItems,
-        email: email,
-        newVIP: newVIP
-      },
-      {
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${token}`
-        },
-        withCredentials: true
-      }
-    )
-
-    dispatch(getDataSuccess(response.data))
-  } catch (error) {
-    dispatch(getDataFailure(error.message))
-  }
-}
-
 export const checkEnrollInCourse = params => async dispatch => {
   dispatch(getDataStart())
   try {
