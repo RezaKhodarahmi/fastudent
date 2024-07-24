@@ -10,7 +10,7 @@ import CheckoutForm from './checkout'
 // Components
 import Link from 'next/link'
 import { useDispatch, useSelector } from 'react-redux'
-import { getCartItems } from 'src/store/apps/course'
+import { getCartItems } from 'src/store/apps/cartItem'
 import { fetchVipData } from 'src/store/apps/user'
 import themeConfig from 'src/configs/themeConfig'
 import { verifyCouponCode } from 'src/store/apps/coupon'
@@ -58,27 +58,26 @@ const Index = () => {
   const [partially, setPartially] = useState(true)
   const [stripePay, setStripePay] = useState(true)
   const [isRenew, setIsRenew] = useState(false)
+  const [agreeAlert, setAgreeAlert] = useState(false)
 
-  const [checkboxes, setCheckboxes] = useState({
-    checkbox1: false,
-    checkbox2: false,
-    checkbox3: false,
-    checkbox4: false,
-    checkbox5: false,
-    checkbox6: false
-  })
+  const cartItems = localStorage.getItem('cartItems')
+  const pageDirection = localStorage.getItem('direction')
+
+  useEffect(() => {
+    if (cartItems == null || cartItems.length <= 0) {
+      localStorage.setItem('cartItems', [])
+      setCartCourses([])
+    }
+  }, [cartItems])
+
+  const [termsChecked, setTermsChecked] = useState(false)
 
   const handleChangeCheckBox = event => {
-    setCheckboxes({
-      ...checkboxes,
-      [event.target.name]: event.target.checked
-    })
+    setTermsChecked(event.target.checked)
   }
 
-  const allChecked = Object.values(checkboxes).every(Boolean)
-
   //Hooks
-  const courses = useSelector(state => state.course)
+  const courses = useSelector(state => state.cartItem)
   const appliedCoupon = useSelector(state => state.coupon)
   const referralDiscount = useSelector(state => state.referral)
   const user = useSelector(state => state.user)
@@ -235,122 +234,137 @@ const Index = () => {
 
   //Initiate The payment
   const handelInitiatePayment = () => {
-    setPartially(false)
-    if (cartTotal > 0) {
-      if (clientSecret === null) {
-        if (cartCourses.length && email) {
-          const token = window.localStorage.getItem('accessToken')
-
-          fetch(`${BASE_URL}/student/transaction/create-payment-intent`, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              Authorization: `Bearer ${token}`
-            },
-            body: JSON.stringify({
-              items: cartCourses,
-              email: email,
-              coupon: usedCoupon,
-              referralUser: referralUser,
-              cartTotal: cartTotal,
-              isVIP: isVIP,
-              oldVIP: oldVIP,
-              vipPlan: vipPlan
-            })
-          })
-            .then(res => res.json())
-            .then(data => {
-              const { clientSecret } = data // Make sure to retrieve the correct clientSecret from the response
-              setClientSecret(clientSecret)
-            })
-          setCheckout(true)
-        } else {
-          window.alert('Cart is Empty!')
-        }
-      }
+    if (!termsChecked) {
+      window.alert('Please read and agree to the terms of use!')
+      setAgreeAlert(true)
     } else {
-      window.alert('error ')
+      setPartially(false)
+      if (cartTotal > 0) {
+        if (clientSecret === null) {
+          if (cartCourses.length && email) {
+            const token = window.localStorage.getItem('accessToken')
+
+            fetch(`${BASE_URL}/student/transaction/create-payment-intent`, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                Authorization: `Bearer ${token}`
+              },
+              body: JSON.stringify({
+                items: cartCourses,
+                email: email,
+                coupon: usedCoupon,
+                referralUser: referralUser,
+                cartTotal: cartTotal,
+                isVIP: isVIP,
+                oldVIP: oldVIP,
+                vipPlan: vipPlan
+              })
+            })
+              .then(res => res.json())
+              .then(data => {
+                const { clientSecret } = data // Make sure to retrieve the correct clientSecret from the response
+                setClientSecret(clientSecret)
+              })
+            setCheckout(true)
+          } else {
+            window.alert('Cart is Empty!')
+          }
+        }
+      } else {
+        window.alert('error ')
+      }
     }
   }
 
   const handelInitiatePartiallyPayment = () => {
-    setStripePay(false)
-    if (cartTotal > 0) {
-      if (clientSecret === null) {
-        if (cartCourses.length && email) {
-          const token = window.localStorage.getItem('accessToken')
-
-          fetch(`${BASE_URL}/student/transaction/partially/intent`, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              Authorization: `Bearer ${token}`
-            },
-            body: JSON.stringify({
-              items: cartCourses,
-              email: email,
-              coupon: usedCoupon,
-              referralUser: referralUser,
-              cartTotal: cartTotal,
-              isVIP: isVIP,
-              oldVIP: oldVIP,
-              vipPlan: vipPlan
-            })
-          })
-            .then(res => res.json())
-            .then(data => {
-              const { redirectURL } = data // Make sure to retrieve the correct clientSecret from the response
-              setRedirectURL(redirectURL)
-              router.push(redirectURL)
-            })
-          setCheckout(true)
-        } else {
-          window.alert('Cart is Empty!')
-        }
-      }
+    if (!termsChecked) {
+      window.alert('Please read and agree to the terms of use!')
+      setAgreeAlert(true)
     } else {
-      window.alert('error ')
+      setStripePay(false)
+      if (cartTotal > 0) {
+        if (clientSecret === null) {
+          if (cartCourses.length && email) {
+            const token = window.localStorage.getItem('accessToken')
+
+            fetch(`${BASE_URL}/student/transaction/partially/intent`, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                Authorization: `Bearer ${token}`
+              },
+              body: JSON.stringify({
+                items: cartCourses,
+                email: email,
+                coupon: usedCoupon,
+                referralUser: referralUser,
+                cartTotal: cartTotal,
+                isVIP: isVIP,
+                oldVIP: oldVIP,
+                vipPlan: vipPlan
+              })
+            })
+              .then(res => res.json())
+              .then(data => {
+                const { redirectURL } = data // Make sure to retrieve the correct clientSecret from the response
+                setRedirectURL(redirectURL)
+                router.push(redirectURL)
+              })
+            setCheckout(true)
+          } else {
+            window.alert('Cart is Empty!')
+          }
+        }
+      } else {
+        window.alert('error ')
+      }
     }
   }
 
   const handleEnrollNow = () => {
-    setStripePay(false)
-    setPartially(false)
-    if (cartTotal === 0) {
-      if (clientSecret === null) {
-        if (cartCourses.length && email) {
-          const token = window.localStorage.getItem('accessToken')
-
-          fetch(`${BASE_URL}/student/transaction/free/intent`, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              Authorization: `Bearer ${token}`
-            },
-            body: JSON.stringify({
-              items: cartCourses,
-              email: email,
-              coupon: usedCoupon,
-              referralUser: referralUser,
-              cartTotal: cartTotal,
-              isVIP: isVIP,
-              oldVIP: oldVIP,
-              vipPlan: vipPlan
-            })
-          })
-            .then(res => res.json())
-            .then(data => {
-              const { redirectURL } = data // Make sure to retrieve the correct clientSecret from the response
-              setRedirectURL(redirectURL)
-              router.push(redirectURL)
-            })
-          setCheckout(true)
-        } else {
-          window.alert('Cart is Empty!')
-        }
-      }
+    if (!termsChecked) {
+      window.alert('Please read and agree to the terms of use!')
+      setAgreeAlert(true)
     } else {
-      window.alert('error ')
+      setStripePay(false)
+      setPartially(false)
+      if (cartTotal === 0) {
+        if (clientSecret === null) {
+          if (cartCourses.length && email) {
+            const token = window.localStorage.getItem('accessToken')
+
+            fetch(`${BASE_URL}/student/transaction/free/intent`, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                Authorization: `Bearer ${token}`
+              },
+              body: JSON.stringify({
+                items: cartCourses,
+                email: email,
+                coupon: usedCoupon,
+                referralUser: referralUser,
+                cartTotal: cartTotal,
+                isVIP: isVIP,
+                oldVIP: oldVIP,
+                vipPlan: vipPlan
+              })
+            })
+              .then(res => res.json())
+              .then(data => {
+                const { redirectURL } = data // Make sure to retrieve the correct clientSecret from the response
+                setRedirectURL(redirectURL)
+                router.push(redirectURL)
+              })
+            setCheckout(true)
+          } else {
+            window.alert('Cart is Empty!')
+          }
+        }
+      } else {
+        window.alert('error ')
+      }
     }
   }
 
@@ -695,56 +709,61 @@ const Index = () => {
             </div>
           </div>
 
-          {cartCourses.map(cycle => (
-            <div key={cycle.id} className='row FNV-CartItems'>
-              <div className='col-3 col-md-2'>
-                <img src={cycle?.course?.image} className='img-fluid' />
-              </div>
+          {cartCourses &&
+            cartCourses.length &&
+            cartCourses.map(cycle => (
+              <div key={cycle.id} className='row FNV-CartItems'>
+                <div className='col-3 col-md-2'>
+                  <img src={cycle?.course?.image} className='img-fluid' />
+                </div>
 
-              <div className='col-9 col-md-10'>
-                <div className='row'>
-                  <div className='col-10 col-md-8'>
-                    <div className='row'>
-                      <p>{cycle?.course?.title || 'Course Name'}</p>
-                    </div>
+                <div className='col-9 col-md-10'>
+                  <div className='row'>
+                    <div className='col-10 col-md-8'>
+                      <div className='row'>
+                        <p>{cycle?.course?.title || 'Course Name'}</p>
+                      </div>
 
-                    <div className='row'>
-                      <Link
-                        href={`/courses/${cycle?.course?.slug || 'undefined'}`}
-                        className='FNV-Btn BtnOutline PrimaryColor BtnMedium'
-                      >
-                        {t('cart-head-product-details')}
-                      </Link>
-                      <Link
-                        href='#'
-                        onClick={() => handleRemoveItem(cycle)}
-                        className='FNV-Btn BtnOutline SecondaryColor BtnMedium'
-                      >
-                        {t('cart-head-product-remove')}
-                      </Link>
+                      <div className='row'>
+                        <Link
+                          href={`/courses/${cycle?.course?.slug || 'undefined'}`}
+                          className='FNV-Btn BtnOutline PrimaryColor BtnMedium'
+                        >
+                          {t('cart-head-product-details')}
+                        </Link>
+                        <Link
+                          href='#'
+                          onClick={() => handleRemoveItem(cycle)}
+                          className='FNV-Btn BtnOutline SecondaryColor BtnMedium'
+                        >
+                          {t('cart-head-product-remove')}
+                        </Link>
+                      </div>
                     </div>
-                  </div>
-                  <div className='col-2 col-md-4'>
-                    <span>C${getDiscountedPrice(cycle)}</span>
-                    <p>
-                      {isVIP &&
-                        cycle.id != 150000 &&
-                        `Member Price: $${getDiscountedPrice(cycle)} Save $${(
-                          cycle.regularPrice - getDiscountedPrice(cycle)
-                        ).toFixed(2)} By being a FANAVARAN member`}
-                    </p>
+                    <div className='col-2 col-md-4'>
+                      <span>C${getDiscountedPrice(cycle)}</span>
+                      <p>
+                        {isVIP &&
+                          cycle.id != 150000 &&
+                          `Member Price: $${getDiscountedPrice(cycle)} Save $${(
+                            cycle.regularPrice - getDiscountedPrice(cycle)
+                          ).toFixed(2)} By being a FANAVARAN member`}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
 
           <div className='row FNV-Coupon'>
-            <div className='col-md-4'>
-              <button type='button' onClick={handelClearCart} className='FNV-Btn BtnOutline SecondaryColor BtnMedium'>
-                <i data-feather='trash'></i> {t('cart-head-cart-clear')}
-              </button>
-            </div>
+            {cartCourses.length && (
+              <div className='col-md-4'>
+                <button type='button' onClick={handelClearCart} className='FNV-Btn BtnOutline SecondaryColor BtnMedium'>
+                  <i data-feather='trash'></i> {t('cart-head-cart-clear')}
+                </button>
+              </div>
+            )}
+
             <div className='col-md-8'>
               <div className='row'>
                 <div className='col-md-6'>
@@ -829,36 +848,57 @@ const Index = () => {
             </div>
           </div>
 
-          <div className='row FNV-Terms'>
+          <div
+            className='row FNV-Terms'
+            style={{ direction: pageDirection, textAlign: pageDirection == 'rtl' ? 'right' : 'left' }}
+          >
             <div className='col-md-12'>
               <Box sx={{ marginBottom: '2rem', padding: 2, backgroundColor: '#f5f5f5', borderRadius: 2 }}>
                 <Typography variant='h6' gutterBottom>
                   {t('agree-following-terms')}
                 </Typography>
+
+                <ul
+                  sx={{ listStyleType: 'disc', pl: 2 }}
+                  style={{ direction: pageDirection, textAlign: pageDirection == 'rtl' ? 'right' : 'left' }}
+                >
+                  <li sx={{ display: 'list-item' }}>
+                    <Typography>{t('agree-terms-first')}</Typography>
+                  </li>
+                  <li sx={{ display: 'list-item' }}>
+                    <Typography>{t('agree-terms-second')}</Typography>
+                  </li>
+                  <li sx={{ display: 'list-item' }}>
+                    <Typography>{t('agree-terms-third')}</Typography>
+                  </li>
+                  <li sx={{ display: 'list-item' }}>
+                    <Typography>{t('agree-terms-fourth')}</Typography>
+                  </li>
+                  <li sx={{ display: 'list-item' }}>
+                    <Typography>{t('agree-terms-fifth')}</Typography>
+                  </li>
+                  <li sx={{ display: 'list-item' }}>
+                    <Typography>{t('agree-terms-sixth')}</Typography>
+                  </li>
+                </ul>
+
                 <FormControlLabel
-                  control={<Checkbox name='checkbox1' checked={checkboxes.checkbox1} onChange={handleChangeCheckBox} />}
-                  label={t('agree-terms-first')}
-                />
-                <FormControlLabel
-                  control={<Checkbox name='checkbox2' checked={checkboxes.checkbox2} onChange={handleChangeCheckBox} />}
-                  label={t('agree-terms-second')}
-                />
-                <FormControlLabel
-                  control={<Checkbox name='checkbox3' checked={checkboxes.checkbox3} onChange={handleChangeCheckBox} />}
-                  label={t('agree-terms-third')}
-                />
-                <FormControlLabel
-                  control={<Checkbox name='checkbox4' checked={checkboxes.checkbox4} onChange={handleChangeCheckBox} />}
-                  label={t('agree-terms-fourth')}
-                />
-                <FormControlLabel
-                  control={<Checkbox name='checkbox5' checked={checkboxes.checkbox5} onChange={handleChangeCheckBox} />}
-                  label={t('agree-terms-fifth')}
-                />
-                <br />
-                <FormControlLabel
-                  control={<Checkbox name='checkbox6' checked={checkboxes.checkbox6} onChange={handleChangeCheckBox} />}
-                  label={t('agree-terms-sixth')}
+                  control={
+                    <Checkbox
+                      checked={termsChecked}
+                      onChange={handleChangeCheckBox}
+                      sx={{
+                        transform: 'scale(1.5)',
+                        padding: '5px',
+                        borderRadius: '4px',
+                        backgroundColor: agreeAlert ? 'lightcoral' : 'transparent',
+                        '&.Mui-checked': {
+                          backgroundColor: 'lighgreen'
+                        }
+                      }}
+                    />
+                  }
+                  label={t('agree-terms')}
                 />
               </Box>
 
@@ -868,7 +908,6 @@ const Index = () => {
                     <>
                       {partially && cartTotal > 300 && (
                         <button
-                          disabled={!allChecked}
                           onClick={handelInitiatePartiallyPayment}
                           className='FNV-Btn BtnOutline SecondaryColor BtnXLarge'
                         >
@@ -878,7 +917,7 @@ const Index = () => {
                       {checkout && stripePay && clientSecret ? (
                         <Elements options={options} stripe={stripePromise}>
                           <CheckoutForm
-                            allChecked={allChecked}
+                            termsChecked={true}
                             items={cartCourses}
                             user={email}
                             coupon={coupon}
@@ -886,18 +925,18 @@ const Index = () => {
                           />
                         </Elements>
                       ) : (
-                        <button
-                          disabled={!allChecked}
-                          onClick={handelInitiatePayment}
-                          className='FNV-Btn SecondaryColor BtnXLarge'
-                        >
+                        <button onClick={handelInitiatePayment} className='FNV-Btn SecondaryColor BtnXLarge'>
                           {t('cart-full-payment-button')}
                         </button>
                       )}
                     </>
                   ) : (
-                    <button onClick={handleEnrollNow} disabled={!allChecked} className='FNV-Btn BtnPrimary BtnXLarge'>
-                      Enroll Now
+                    <button
+                      onClick={handleEnrollNow}
+                      disabled={!termsChecked || cartCourses.length >= 0}
+                      className='FNV-Btn BtnPrimary BtnXLarge'
+                    >
+                      {cartCourses.length >= 0 ? 'Cart is empty!' : 'Enroll Now'}
                     </button>
                   )
                 ) : (

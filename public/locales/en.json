@@ -8,11 +8,11 @@
   "mega_menu-3-cunseling" : "Counseling",
   "mega_menu-3-course-description" : "Course Description",
   "mega_menu-3-credentials-verification" : "Credentials Verification",
-  
+
   "mega_menu-4-title": "Types of Membership",
   "mega_menu-4-desc": "Solution for Membership",
   "mega_menu-4-membership-overview" : "Membership Overview",
-  
+
   "certificate": "Certificate",
   "Engineer":"Engineer",
   "fanavaran-courses":"Fanavaran Courses",
@@ -48,6 +48,7 @@
   "read-more":"Read more",
   "see-details":"See Details",
   "all-courses":"All courses",
+  "agree-terms":"I Agree",
   "agree-following-terms":"Please read and agree to the following terms:",
   "agree-terms-first":"1.Your personal information will be used to process your order and support your experience throughout this website.",
   "agree-terms-second":"2.Fanavaran' online classes are held on the ZOOM platform. Joining the class group on Telegram is mandatory.",

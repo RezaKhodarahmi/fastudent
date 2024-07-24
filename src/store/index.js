@@ -12,6 +12,7 @@ import coupon from 'src/store/apps/coupon'
 import tests from 'src/store/apps/tests'
 import referral from 'src/store/apps/referral'
 import cart from 'src/store/apps/cart'
+import cartItem from 'src/store/apps/cartItem'
 import category from 'src/store/apps/category'
 import blog from 'src/store/apps/blog'
 import webinar from 'src/store/apps/webinar'
@@ -35,6 +36,7 @@ export const store = configureStore({
     webinar,
     blogCategory,
     cart,
+    cartItem,
     appointment,
     reqCourseDemo
   },
