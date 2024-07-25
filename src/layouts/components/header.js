@@ -637,12 +637,12 @@ const Header = props => {
                         {/* Counseling */}
                         <div className="tab-pane fade show" id="counseling" role="tabpanel" aria-labelledby="counseling-tab" tabindex="0">
                           <li>
-                            <Link href='/services/educational-and-career-counseling'>
+                            <Link href='/services/counseling-working-experience'>
                               {t('menu-services-1')}
                             </Link>
                           </li>
                           <li>
-                            <Link href='/services/counseling-working-experience'>
+                            <Link href='/services/educational-and-career-counseling'>
                               {t('menu-services-2')}
                             </Link>
                           </li>
