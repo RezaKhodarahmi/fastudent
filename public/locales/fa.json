@@ -1,7 +1,7 @@
 {
   "certificate": "سرتیفیکیت",
   "Engineer":"مهندسی",
-  "fanavaran-courses":"دوره های فناوران",
+  "fanavaran-courses":"دوره ها",
   "fanavaran-motto":"با فناوران دوباره موفق شوید.",
 
   "see-all": "نمایش همه دوره‌ها",
@@ -71,7 +71,7 @@
   "menu-language": "English",
   "menu-login": "ورود",
   "menu-register": "عضویت",
-  "menu-courses": "دوره‌های فناوران",
+  "menu-courses": "دوره‌ها",
   "menu-learning": "آموزش",
   "menu-certificate": "گواهینامه فناوران",
 
@@ -82,7 +82,7 @@
   "menu-membership-faq": "سوالات متداول",
   "menu-membership-button": "عضو شوید",
 
-  "menu-services": "سرویس‌های فناوران",
+  "menu-services": "سرویس‌ها",
   "menu-services-slogan": "سایر خدمات فناوران",
   "menu-services-1": "مشاوره نوشتن تجربیات مهندسی",
   "menu-services-2": "مشاوره کاری و تحصیلی",
@@ -278,6 +278,6 @@
   "please-select-a-date-and-time":"لطفا تاریخ و زمان را انتخاب کنید!",
   "all-show-in-bc-time":"تاریخ و زمان به وقت محلی ونکوور میباشد",
   "all-show-in-toronto-time": "تاریخ و زمان به وقت محلی تورنتو میباشد",
-  "appointment":"وقت مشاوره"
+  "appointment":"مشاوره"
 
 }
