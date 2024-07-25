@@ -1,4 +1,8 @@
 {
+  "mega_menu-sales-title": "Need More Solutions?",
+  "mega_menu-sales-desc": "For need more solutions contact sales",
+  "mega_menu-sales-button": "Talk to Sales",
+
   "mega_menu-1-title": "Explore Courses",
   "mega_menu-2-title": "Learning",
   "mega_menu-2-desc": "Learn More",
@@ -26,6 +30,9 @@
   "engineering-3":"NPPE Exam Prep (Recorded)",
   "engineering-4":"CBA Writing (P.Eng License)",
   "engineering-5":"Profile Creation (P.Eng Application)",
+
+  "learning":"Learning",
+  "learning-1":"P.Eng Technical Exams",
 
   "project-management":"Project Management",
   "project-management-1":"Project Management Fundamentals",

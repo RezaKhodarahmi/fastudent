@@ -1,4 +1,22 @@
 {
+  "mega_menu-sales-title": "راهنمایی نیاز دارید؟",
+  "mega_menu-sales-desc": "برای نیاز به راه‌حل‌های بیشتر با فروش تماس بگیرید",
+  "mega_menu-sales-button": "تماس با فروش",
+
+  "mega_menu-1-title": "دوره‌های فناوران",
+  "mega_menu-2-title": "آموزش",
+  "mega_menu-2-desc": "مشاهده بیشتر",
+  "mega_menu-3-title": "خدمات فناوران",
+
+  "mega_menu-3-desc": "چه چیزی نیاز دارید؟",
+  "mega_menu-3-cunseling" : "مشاوره",
+  "mega_menu-3-course-description" : "کورس دیسکریپشن",
+  "mega_menu-3-credentials-verification" : "تایید مدارک تحصیلی",
+
+  "mega_menu-4-title": "انواع ممبرشیپ",
+  "mega_menu-4-desc": "پیشنهادات ممبرشیپ",
+  "mega_menu-4-membership-overview" : "بررسی ممبرشیپ",
+  
   "certificate": "سرتیفیکیت",
   "Engineer":"مهندسی",
   "fanavaran-courses":"دوره ها",
@@ -12,6 +30,9 @@
   "engineering-3":"NPPE Exam Prep (Recorded)",
   "engineering-4":"CBA Writing (P.Eng License)",
   "engineering-5":"Profile Creation (P.Eng Application)",
+  
+  "learning":"مهندسی",
+  "learning-1":"آزمون‌های تکنیکال مهندسی",
 
   "project-management":"مدیریت پروژه",
   "project-management-1":"Project Management Fundamentals",

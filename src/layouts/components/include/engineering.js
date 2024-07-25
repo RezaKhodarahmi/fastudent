@@ -25,7 +25,7 @@ function Engineering() {
 
   useEffect(() => {
     if (courseData?.data) {
-      const manualSlug = 'Engineering' // manually set slug
+      const manualSlug = 'engineering' // manually set slug
 
       const filteredCourses =
         Array.isArray(courseData?.data?.data) &&

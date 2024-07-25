@@ -372,13 +372,13 @@ const Header = props => {
 
                           {/* Consultant */}
                           <div className="container">
-                            <span>Need More Solutions?</span>
+                            <span>{t('mega_menu-sales-title')}</span>
                             <div className='row'>
                               <div className="col-7">
-                                <p>For teams of +300 with advanced security, control, and support</p>
+                                <p>{t('mega_menu-sales-desc')}</p>
                               </div>
                               <div className="col-5">
-                                <Link href='tel:+16723996600'>Talk to sales</Link>
+                                <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
                               </div>
                             </div>
                           </div>
@@ -390,13 +390,13 @@ const Header = props => {
 
                           {/* Consultant */}
                           <div className="container">
-                            <span>Need More Solutions?</span>
+                            <span>{t('mega_menu-sales-title')}</span>
                             <div className='row'>
                               <div className="col-7">
-                                <p>For teams of +300 with advanced security, control, and support</p>
+                                <p>{t('mega_menu-sales-desc')}</p>
                               </div>
                               <div className="col-5">
-                                <Link href='tel:+16723996600'>Talk to sales</Link>
+                                <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
                               </div>
                             </div>
                           </div>
@@ -408,13 +408,13 @@ const Header = props => {
 
                           {/* Consultant */}
                           <div className="container">
-                            <span>Need More Solutions?</span>
+                            <span>{t('mega_menu-sales-title')}</span>
                             <div className='row'>
                               <div className="col-7">
-                                <p>For teams of +300 with advanced security, control, and support</p>
+                                <p>{t('mega_menu-sales-desc')}</p>
                               </div>
                               <div className="col-5">
-                                <Link href='tel:+16723996600'>Talk to sales</Link>
+                                <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
                               </div>
                             </div>
                           </div>
@@ -426,13 +426,13 @@ const Header = props => {
 
                           {/* Consultant */}
                           <div className="container">
-                            <span>Need More Solutions?</span>
+                            <span>{t('mega_menu-sales-title')}</span>
                             <div className='row'>
                               <div className="col-7">
-                                <p>For teams of +300 with advanced security, control, and support</p>
+                                <p>{t('mega_menu-sales-desc')}</p>
                               </div>
                               <div className="col-5">
-                                <Link href='tel:+16723996600'>Talk to sales</Link>
+                                <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
                               </div>
                             </div>
                           </div>
@@ -444,13 +444,13 @@ const Header = props => {
 
                           {/* Consultant */}
                           <div className="container">
-                            <span>Need More Solutions?</span>
+                            <span>{t('mega_menu-sales-title')}</span>
                             <div className='row'>
                               <div className="col-7">
-                                <p>For teams of +300 with advanced security, control, and support</p>
+                                <p>{t('mega_menu-sales-desc')}</p>
                               </div>
                               <div className="col-5">
-                                <Link href='tel:+16723996600'>Talk to sales</Link>
+                                <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
                               </div>
                             </div>
                           </div>
@@ -462,13 +462,13 @@ const Header = props => {
 
                           {/* Consultant */}
                           <div className="container">
-                            <span>Need More Solutions?</span>
+                            <span>{t('mega_menu-sales-title')}</span>
                             <div className='row'>
                               <div className="col-7">
-                                <p>For teams of +300 with advanced security, control, and support</p>
+                                <p>{t('mega_menu-sales-desc')}</p>
                               </div>
                               <div className="col-5">
-                                <Link href='tel:+16723996600'>Talk to sales</Link>
+                                <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
                               </div>
                             </div>
                           </div>
@@ -480,13 +480,13 @@ const Header = props => {
 
                           {/* Consultant */}
                           <div className="container">
-                            <span>Need More Solutions?</span>
+                            <span>{t('mega_menu-sales-title')}</span>
                             <div className='row'>
                               <div className="col-7">
-                                <p>For teams of +300 with advanced security, control, and support</p>
+                                <p>{t('mega_menu-sales-desc')}</p>
                               </div>
                               <div className="col-5">
-                                <Link href='tel:+16723996600'>Talk to sales</Link>
+                                <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
                               </div>
                             </div>
                           </div>
@@ -498,13 +498,13 @@ const Header = props => {
 
                           {/* Consultant */}
                           <div className="container">
-                            <span>Need More Solutions?</span>
+                            <span>{t('mega_menu-sales-title')}</span>
                             <div className='row'>
                               <div className="col-7">
-                                <p>For teams of +300 with advanced security, control, and support</p>
+                                <p>{t('mega_menu-sales-desc')}</p>
                               </div>
                               <div className="col-5">
-                                <Link href='tel:+16723996600'>Talk to sales</Link>
+                                <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
                               </div>
                             </div>
                           </div>
@@ -548,17 +548,19 @@ const Header = props => {
                       <div className="tab-content" id="v-pills-tabContent">
                         {/* Learning */}
                         <div className="tab-pane fade show" id="eng" role="tabpanel" aria-labelledby="eng-tab" tabindex="0">
-                          <Engineering />
+                          <li>
+                            <Link href="/engineering/peng-technical-exams/">{t('learning-1')}</Link>
+                          </li>
 
                           {/* Consultant */}
                           <div className="container">
-                            <span>Need More Solutions?</span>
+                            <span>{t('mega_menu-sales-title')}</span>
                             <div className='row'>
                               <div className="col-7">
-                                <p>For teams of +300 with advanced security, control, and support</p>
+                                <p>{t('mega_menu-sales-desc')}</p>
                               </div>
                               <div className="col-5">
-                                <Link href='tel:+16723996600'>Talk to sales</Link>
+                                <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
                               </div>
                             </div>
                           </div>
@@ -647,13 +649,13 @@ const Header = props => {
 
                           {/* Consultant */}
                           <div className="container">
-                            <span>Need More Solutions?</span>
+                            <span>{t('mega_menu-sales-title')}</span>
                             <div className='row'>
                               <div className="col-7">
-                                <p>For teams of +300 with advanced security, control, and support</p>
+                                <p>{t('mega_menu-sales-desc')}</p>
                               </div>
                               <div className="col-5">
-                                <Link href='tel:+16723996600'>Talk to sales</Link>
+                                <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
                               </div>
                             </div>
                           </div>
@@ -669,13 +671,13 @@ const Header = props => {
 
                           {/* Consultant */}
                           <div className="container">
-                            <span>Need More Solutions?</span>
+                            <span>{t('mega_menu-sales-title')}</span>
                             <div className='row'>
                               <div className="col-7">
-                                <p>For teams of +300 with advanced security, control, and support</p>
+                                <p>{t('mega_menu-sales-desc')}</p>
                               </div>
                               <div className="col-5">
-                                <Link href='tel:+16723996600'>Talk to sales</Link>
+                                <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
                               </div>
                             </div>
                           </div>
@@ -691,13 +693,13 @@ const Header = props => {
 
                           {/* Credentials Verification */}
                           <div className="container">
-                            <span>Need More Solutions?</span>
+                            <span>{t('mega_menu-sales-title')}</span>
                             <div className='row'>
                               <div className="col-7">
-                                <p>For teams of +300 with advanced security, control, and support</p>
+                                <p>{t('mega_menu-sales-desc')}</p>
                               </div>
                               <div className="col-5">
-                                <Link href='tel:+16723996600'>Talk to sales</Link>
+                                <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
                               </div>
                             </div>
                           </div>
@@ -753,13 +755,13 @@ const Header = props => {
 
                           {/* Consultant */}
                           <div className="container">
-                            <span>Need More Solutions?</span>
+                            <span>{t('mega_menu-sales-title')}</span>
                             <div className='row'>
                               <div className="col-7">
-                                <p>For teams of +300 with advanced security, control, and support</p>
+                                <p>{t('mega_menu-sales-desc')}</p>
                               </div>
                               <div className="col-5">
-                                <Link href='tel:+16723996600'>Talk to sales</Link>
+                                <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
                               </div>
                             </div>
                           </div>
