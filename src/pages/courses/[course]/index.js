@@ -91,10 +91,12 @@ const Course = () => {
   }
 
   useEffect(() => {
-    if (userEmail != null && token != null) {
-      dispatch(getEnrolledCourse({ course: course, user: userEmail }))
-    } else {
-      dispatch(getCourseWithSlug(course))
+    if (course != null) {
+      if (userEmail != null && token != null) {
+        dispatch(getEnrolledCourse({ course: course, user: userEmail }))
+      } else {
+        dispatch(getCourseWithSlug(course))
+      }
     }
   }, [dispatch, userEmail, token, course])
 
@@ -123,8 +125,7 @@ const Course = () => {
     // if (courseData?.error?.status === 404) {
     //   router.push('/404')
     // }
-    if (courseData?.data) {
-      console.log(courseData?.data)
+    if (courseData?.data?.data && courseData?.data?.data?.id) {
       setData(courseData?.data?.data)
       setFaqs(courseData?.data?.faq)
       setCourseId(courseData?.data?.data?.id)
@@ -791,7 +792,7 @@ const Course = () => {
 
                   <div className='col-md-4 d-sm-none d-md-block'>
                     <div className='FNV-Course-Card'>
-                      <img alt="" src={data?.image} className='img-fluid' />
+                      <img alt='' src={data?.image} className='img-fluid' />
 
                       {inEnrolled ? (
                         <>

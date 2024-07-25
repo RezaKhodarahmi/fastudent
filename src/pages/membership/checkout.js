@@ -79,8 +79,8 @@ const StripeCheckoutButton = () => {
               <div className='card'>
                 <img
                   alt='image'
-                  src={'/img alt="image"/membership/percent.png'}
-                  className='img alt="image"-fluid w-75 rounded mb-4'
+                  src={'/img/membership/percent.png'}
+                  className='img-fluid w-75 rounded mb-4'
                 />
 
                 <div className='card-body p-0'>
@@ -92,8 +92,8 @@ const StripeCheckoutButton = () => {
               <div className='card'>
                 <img
                   alt='image'
-                  src={'/img alt="image"/membership/monitor.png'}
-                  className='img alt="image"-fluid w-75 rounded mb-4'
+                  src={'/img/membership/monitor.png'}
+                  className='img-fluid w-75 rounded mb-4'
                 />
 
                 <div className='card-body p-0'>
@@ -105,8 +105,8 @@ const StripeCheckoutButton = () => {
               <div className='card'>
                 <img
                   alt='image'
-                  src={'/img alt="image"/membership/file.png'}
-                  className='img alt="image"-fluid w-75 rounded mb-4'
+                  src={'/img/membership/file.png'}
+                  className='img-fluid w-75 rounded mb-4'
                 />
 
                 <div className='card-body p-0'>
@@ -118,8 +118,8 @@ const StripeCheckoutButton = () => {
               <div className='card'>
                 <img
                   alt='image'
-                  src={'/img alt="image"/membership/resume.png'}
-                  className='img alt="image"-fluid w-75 rounded mb-4'
+                  src={'/img/membership/resume.png'}
+                  className='img-fluid w-75 rounded mb-4'
                 />
 
                 <div className='card-body p-0'>
