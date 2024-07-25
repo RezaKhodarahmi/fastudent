@@ -112,10 +112,10 @@ const Index = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>A | 16-Mec-A1</p>
+                      <p><Link href="/courses/peng-applied-thermodynamics-and-heat-transfer">A | 16-Mec-A1</Link></p>
                     </td>
                     <td>
-                      <p>Applied Thermodynamics and Heat Transfer</p>
+                      <p><Link href="/courses/peng-applied-thermodynamics-and-heat-transfer">Applied Thermodynamics and Heat Transfer</Link></p>
                     </td>
                     <td>
                       <p>August-19-2024</p>
@@ -129,10 +129,10 @@ const Index = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>A | 16-Mec-A6</p>
+                      <p><Link href="/courses/peng-advanced-fluid-mechanics">A | 16-Mec-A6</Link></p>
                     </td>
                     <td>
-                      <p>Advanced Fluid Mechanics</p>
+                      <p><Link href="/courses/peng-advanced-fluid-mechanics">Advanced Fluid Mechanics</Link></p>
                     </td>
                     <td>
                       <p>August-20-2024</p>
@@ -146,10 +146,10 @@ const Index = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>A | 16-Mec-A7</p>
+                      <p><Link href="/courses/peng-advanced-strength-of-materials">A | 16-Mec-A7</Link></p>
                     </td>
                     <td>
-                      <p>Advanced Strength of Materials</p>
+                      <p><Link href="/courses/peng-advanced-strength-of-materials">Advanced Strength of Materials</Link></p>
                     </td>
                     <td>
                       <p>August-21-2024</p>
@@ -163,10 +163,10 @@ const Index = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>B | 16-Mec-B8</p>
+                      <p><Link href="/courses/peng-engineering-materials">B | 16-Mec-B8</Link></p>
                     </td>
                     <td>
-                      <p>Engineering Materials</p>
+                      <p><Link href="/courses/peng-engineering-materials">Engineering Materials</Link></p>
                     </td>
                     <td>
                       <p>August-22-2024</p>
@@ -203,10 +203,10 @@ const Index = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>A | 16-Civ-A1</p>
+                      <p><Link href="/courses/peng-elementary-structural-analysis">A | 16-Civ-A1</Link></p>
                     </td>
                     <td>
-                      <p>Elementary Structural Analysis</p>
+                      <p><Link href="/courses/peng-elementary-structural-analysis">Elementary Structural Analysis</Link></p>
                     </td>
                     <td>
                       <p>August-19-2024</p>
@@ -220,10 +220,10 @@ const Index = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>A | 16-Civ-A5</p>
+                      <p><Link href="/courses/peng-hydraulic-engineering">A | 16-Civ-A5</Link></p>
                     </td>
                     <td>
-                      <p>Hydraulic Engineering</p>
+                      <p><Link href="/courses/peng-hydraulic-engineering">Hydraulic Engineering</Link></p>
                     </td>
                     <td>
                       <p>August-20-2024</p>
@@ -237,10 +237,10 @@ const Index = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>B | 16-Civ-B7</p>
+                      <p><Link href="/courses/peng-transportation-planning-and-engineering">B | 16-Civ-B7</Link></p>
                     </td>
                     <td>
-                      <p>Transportation Planning and Engineering</p>
+                      <p><Link href="/courses/peng-transportation-planning-and-engineering">Transportation Planning and Engineering</Link></p>
                     </td>
                     <td>
                       <p>August-21-2024</p>
@@ -254,10 +254,10 @@ const Index = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>B | 16-Civ-B10</p>
+                      <p><Link href="/courses/peng-traffic-engineering">B | 16-Civ-B10</Link></p>
                     </td>
                     <td>
-                      <p>Traffic Engineering</p>
+                      <p><Link href="/courses/peng-traffic-engineering">Traffic Engineering</Link></p>
                     </td>
                     <td>
                       <p>August-22-2024</p>
@@ -294,10 +294,10 @@ const Index = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>A | 16-Elec-A1</p>
+                      <p><Link href="/courses/peng-circuits">A | 16-Elec-A1</Link></p>
                     </td>
                     <td>
-                      <p>Circuits</p>
+                      <p><Link href="/courses/peng-circuits">Circuits</Link></p>
                     </td>
                     <td>
                       <p>August-19-2024</p>
@@ -311,10 +311,10 @@ const Index = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>A | 16-Elec-A3</p>
+                      <p><Link href="/courses/peng-signals-and-communications">A | 16-Elec-A3</Link></p>
                     </td>
                     <td>
-                      <p>Signals and Communications</p>
+                      <p><Link href="/courses/peng-signals-and-communications">Signals and Communications</Link></p>
                     </td>
                     <td>
                       <p>August-20-2024</p>
@@ -328,10 +328,10 @@ const Index = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>B | 16-Elec-B3</p>
+                      <p><Link href="/courses/peng-digital-communications-systems">B | 16-Elec-B3</Link></p>
                     </td>
                     <td>
-                      <p>Digital Communications Systems</p>
+                      <p><Link href="/courses/peng-digital-communications-systems">Digital Communications Systems</Link></p>
                     </td>
                     <td>
                       <p>August-21-2024</p>
@@ -368,10 +368,10 @@ const Index = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>A | 21‐Mat‐A3</p>
+                      <p><Link href="/courses/peng-structure-and-characterization-of-materials">A | 21‐Mat‐A3</Link></p>
                     </td>
                     <td>
-                      <p>Structure and Characterization of Materials</p>
+                      <p><Link href="/courses/peng-structure-and-characterization-of-materials">Structure and Characterization of Materials</Link></p>
                     </td>
                     <td>
                       <p>August-19-2024</p>
@@ -385,10 +385,10 @@ const Index = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>A |21‐Mat‐A4</p>
+                      <p><Link href="/courses/peng-deformation-behaviour-and-properties-of-materials">A |21‐Mat‐A4</Link></p>
                     </td>
                     <td>
-                      <p>Deformation Behaviour and Properties of Materials</p>
+                      <p><Link href="/courses/peng-deformation-behaviour-and-properties-of-materials">Deformation Behaviour and Properties of Materials</Link></p>
                     </td>
                     <td>
                       <p>August-20-2024</p>
@@ -402,10 +402,10 @@ const Index = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>B | 21‐Mat‐A5</p>
+                      <p><Link href="/courses/peng-phase-transformations-and-thermal-treatment">B | 21‐Mat‐A5</Link></p>
                     </td>
                     <td>
-                      <p>Phase Transformations and Thermal Treatment</p>
+                      <p><Link href="/courses/peng-phase-transformations-and-thermal-treatment">Phase Transformations and Thermal Treatment</Link></p>
                     </td>
                     <td>
                       <p>August-21-2024</p>
@@ -442,10 +442,10 @@ const Index = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>CS | 11-CS-1</p>
+                      <p><Link href="/courses/peng-engineering-economics">CS | 11-CS-1</Link></p>
                     </td>
                     <td>
-                      <p>Engineering Economics</p>
+                      <p><Link href="/courses/peng-engineering-economics">Engineering Economics</Link></p>
                     </td>
                     <td>
                       <p>August-22-2024</p>
@@ -459,10 +459,10 @@ const Index = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>CS | 11-CS-2</p>
+                      <p><Link href="/courses/peng-engineering-in-society-health-safety">CS | 11-CS-2</Link></p>
                     </td>
                     <td>
-                      <p>Engineering in Society - Health &amp; Safety</p>
+                      <p><Link href="/courses/peng-engineering-in-society-health-safety">Engineering in Society - Health &amp; Safety</Link></p>
                     </td>
                     <td>
                       <p>August-23-2024</p>
