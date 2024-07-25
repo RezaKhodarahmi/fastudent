@@ -1,13 +1,7 @@
 import React, { useState, useEffect } from 'react'
-
-// Stripe
 import { Elements } from '@stripe/react-stripe-js'
 import { loadStripe } from '@stripe/stripe-js'
-
-// Checkout Form
 import CheckoutForm from './checkout'
-
-// Components
 import Link from 'next/link'
 import { useDispatch, useSelector } from 'react-redux'
 import { getCartItems } from 'src/store/apps/cartItem'
@@ -20,20 +14,13 @@ import BASE_URL from 'src/api/BASE_URL'
 import toast from 'react-hot-toast'
 import { useRouter } from 'next/router'
 import { Checkbox, FormControlLabel, Typography, Box } from '@mui/material'
-
-// ** Import Translation
 import { useTranslation } from 'react-i18next'
 
-// recreating the `Stripe` object on every render.
 const stripePromise = loadStripe(themeConfig.stripePublicKey)
 
 const Index = () => {
-  //initial state
   const cartCoupon = [{ code: null, discount: null }]
-
   const { t } = useTranslation()
-
-  //Set states
   const dispatch = useDispatch()
   const [cartCourses, setCartCourses] = useState([])
   const [cartTotal, setCartTotal] = useState(0)
@@ -64,47 +51,44 @@ const Index = () => {
   const pageDirection = localStorage.getItem('direction')
 
   useEffect(() => {
-    if (cartItems == null || cartItems.length <= 0) {
-      localStorage.setItem('cartItems', [])
+    if (!cartItems) {
+      localStorage.setItem('cartItems', JSON.stringify([]))
       setCartCourses([])
     }
   }, [cartItems])
 
   const [termsChecked, setTermsChecked] = useState(false)
 
-  const handleChangeCheckBox = event => {
+  const handleChangeCheckBox = (event) => {
     setTermsChecked(event.target.checked)
   }
 
-  //Hooks
-  const courses = useSelector(state => state.cartItem)
-  const appliedCoupon = useSelector(state => state.coupon)
-  const referralDiscount = useSelector(state => state.referral)
-  const user = useSelector(state => state.user)
+  const courses = useSelector((state) => state.cartItem)
+  const appliedCoupon = useSelector((state) => state.coupon)
+  const referralDiscount = useSelector((state) => state.referral)
+  const user = useSelector((state) => state.user)
   const router = useRouter()
 
-  //Get the cart item's from the API
   useEffect(() => {
     const cartItems = window.localStorage.getItem('cartItems')
-    if (cartItems != 'null' && cartItems?.length > 0) {
+    if (cartItems && cartItems.length > 0) {
       dispatch(getCartItems(cartItems, email, newVIP))
     }
     setEmail(JSON.parse(localStorage.getItem('userData')) || null)
     setFullName(JSON.parse(localStorage.getItem('userName')) || null)
-  }, [email, newVIP])
+  }, [email, newVIP, dispatch])
 
-  //give the user info
   useEffect(() => {
     if (email) {
       dispatch(fetchVipData())
     }
-  }, [email])
+  }, [email, dispatch])
 
   useEffect(() => {
     setNewVip(localStorage.getItem('newVIP') || true)
   }, [cartCourses])
 
-  const isDiscountActive = cycle => {
+  const isDiscountActive = (cycle) => {
     const now = new Date()
     const discountStart = new Date(cycle.discountDate)
     const discountEnd = new Date(cycle.discountDateEnd)
@@ -112,21 +96,20 @@ const Index = () => {
     return now >= discountStart && now <= discountEnd
   }
 
-  const getDiscountedPrice = cycle => {
+  const getDiscountedPrice = (cycle) => {
     return isDiscountActive(cycle)
       ? isVIP || oldVIP
-        ? vipPlan == 2
+        ? vipPlan === 2
           ? cycle.discountVipPLPrice
           : cycle.discountVipPrice
         : cycle.discountPrice
       : isVIP || oldVIP
-      ? vipPlan == 2
+      ? vipPlan === 2
         ? cycle.vipPLPrice
         : cycle.vipPrice
       : cycle.regularPrice
   }
 
-  //Check if coupon is applied
   function areCouponApplied(obj1, obj2) {
     const keys1 = Object.keys(obj1)
     const keys2 = Object.keys(obj2)
@@ -149,7 +132,6 @@ const Index = () => {
     dispatch(setCartItems(localCartItems || []))
     setLocalCartItem(localCartItems)
 
-    //Store cart items in localStorage
     const handleStorage = () => {
       const updatedCartItems = typeof window !== 'undefined' ? JSON.parse(window.localStorage.getItem('cartItems')) : []
       dispatch(setCartItems(updatedCartItems || []))
@@ -158,12 +140,13 @@ const Index = () => {
     window.addEventListener('storage', handleStorage)
 
     return () => window.removeEventListener('storage', handleStorage)
-  }, [cartCourses, cartTotal])
+  }, [cartCourses, cartTotal, dispatch])
+
   useEffect(() => {
     if (appliedCoupon?.data?.data && loading && appliedCoupon?.data?.data?.code === coupon) {
-      const checkCoupon = usedCoupon.filter(coupon => coupon.code != 'VIP MEMBER' && coupon.code != null)
-      const individualUsed = usedCoupon.filter(coupon => coupon.individualUseOnly === true)
-      if (appliedCoupon?.data?.data?.individual_use_only == 1 && checkCoupon.length) {
+      const checkCoupon = usedCoupon.filter((coupon) => coupon.code !== 'VIP MEMBER' && coupon.code != null)
+      const individualUsed = usedCoupon.filter((coupon) => coupon.individualUseOnly === true)
+      if (appliedCoupon?.data?.data?.individual_use_only === 1 && checkCoupon.length) {
         window.alert("This coupon can't be used with other coupon")
         setLoading(false)
       } else {
@@ -178,7 +161,7 @@ const Index = () => {
               discount: '$' + (cartSubTotal / 100) * appliedCoupon?.data?.data?.discount_percentage,
               individualUseOnly: appliedCoupon?.data?.data?.individual_use_only
             }
-            const exists = oldCoupons.some(obj => areCouponApplied(obj, newCoupon))
+            const exists = oldCoupons.some((obj) => areCouponApplied(obj, newCoupon))
 
             if (!exists) {
               setCouponDiscount(appliedCoupon?.data?.data?.discount_percentage)
@@ -195,7 +178,7 @@ const Index = () => {
               discount: '$' + appliedCoupon?.data?.data?.discount_amount,
               individualUseOnly: appliedCoupon?.data?.data?.individual_use_only
             }
-            const exists = oldCoupons.some(obj => areCouponApplied(obj, newCoupon))
+            const exists = oldCoupons.some((obj) => areCouponApplied(obj, newCoupon))
             if (!exists) {
               setCouponDiscountAmount(appliedCoupon?.data?.data?.discount_amount)
               oldCoupons.push(newCoupon)
@@ -221,7 +204,7 @@ const Index = () => {
         discount: '$' + '5'
       }
       setReferralUser(referralDiscount?.data?.data)
-      const exists = oldCoupons.some(obj => areCouponApplied(obj, newCoupon))
+      const exists = oldCoupons.some((obj) => areCouponApplied(obj, newCoupon))
       if (!exists) {
         setCouponDiscountAmount('5')
         oldCoupons.push(newCoupon)
@@ -230,9 +213,8 @@ const Index = () => {
         setLoading(false)
       }
     }
-  }, [appliedCoupon, referralDiscount, user])
+  }, [appliedCoupon, referralDiscount, user, loading, coupon, cartSubTotal, usedCoupon])
 
-  //Initiate The payment
   const handelInitiatePayment = () => {
     if (!termsChecked) {
       window.alert('Please read and agree to the terms of use!')
@@ -252,18 +234,18 @@ const Index = () => {
               },
               body: JSON.stringify({
                 items: cartCourses,
-                email: email,
+                email,
                 coupon: usedCoupon,
-                referralUser: referralUser,
-                cartTotal: cartTotal,
-                isVIP: isVIP,
-                oldVIP: oldVIP,
-                vipPlan: vipPlan
+                referralUser,
+                cartTotal,
+                isVIP,
+                oldVIP,
+                vipPlan
               })
             })
-              .then(res => res.json())
-              .then(data => {
-                const { clientSecret } = data // Make sure to retrieve the correct clientSecret from the response
+              .then((res) => res.json())
+              .then((data) => {
+                const { clientSecret } = data
                 setClientSecret(clientSecret)
               })
             setCheckout(true)
@@ -296,18 +278,18 @@ const Index = () => {
               },
               body: JSON.stringify({
                 items: cartCourses,
-                email: email,
+                email,
                 coupon: usedCoupon,
-                referralUser: referralUser,
-                cartTotal: cartTotal,
-                isVIP: isVIP,
-                oldVIP: oldVIP,
-                vipPlan: vipPlan
+                referralUser,
+                cartTotal,
+                isVIP,
+                oldVIP,
+                vipPlan
               })
             })
-              .then(res => res.json())
-              .then(data => {
-                const { redirectURL } = data // Make sure to retrieve the correct clientSecret from the response
+              .then((res) => res.json())
+              .then((data) => {
+                const { redirectURL } = data
                 setRedirectURL(redirectURL)
                 router.push(redirectURL)
               })
@@ -342,18 +324,18 @@ const Index = () => {
               },
               body: JSON.stringify({
                 items: cartCourses,
-                email: email,
+                email,
                 coupon: usedCoupon,
-                referralUser: referralUser,
-                cartTotal: cartTotal,
-                isVIP: isVIP,
-                oldVIP: oldVIP,
-                vipPlan: vipPlan
+                referralUser,
+                cartTotal,
+                isVIP,
+                oldVIP,
+                vipPlan
               })
             })
-              .then(res => res.json())
-              .then(data => {
-                const { redirectURL } = data // Make sure to retrieve the correct clientSecret from the response
+              .then((res) => res.json())
+              .then((data) => {
+                const { redirectURL } = data
                 setRedirectURL(redirectURL)
                 router.push(redirectURL)
               })
@@ -368,19 +350,18 @@ const Index = () => {
     }
   }
 
-  //Payment config(stripe)
   const appearance = {
     theme: 'flat'
   }
 
   const options = {
-    clientSecret, // Pass the clientSecret obtained from the server
+    clientSecret,
     appearance
   }
+
   useEffect(() => {
     const appliedCouponData = JSON.parse(localStorage.getItem('appliedCoupon'))
     if (appliedCouponData) {
-      // Update the coupon states with the data from local storage
       setCoupon(appliedCouponData.coupon)
       setCouponDiscount(appliedCouponData.couponDiscount)
       setCouponDiscountAmount(appliedCouponData.couponDiscountAmount)
@@ -388,7 +369,7 @@ const Index = () => {
     }
   }, [])
 
-  const applyCouponHandler = e => {
+  const applyCouponHandler = (e) => {
     if (!email) {
       window.alert('You must be logged in to use the discount code!')
 
@@ -403,15 +384,13 @@ const Index = () => {
 
     if (cartCourses.length) {
       setLoading(true)
-      const uppercaseCoupon = coupon.toUpperCase()
-
-      dispatch(verifyCouponCode({ coupon: coupon, user: email, cycles: cartCourses, referred: referralUser }))
+      dispatch(verifyCouponCode({ coupon, user: email, cycles: cartCourses, referred: referralUser }))
     } else {
       window.alert('Cart is empty!')
     }
   }
 
-  const applyReferralHandler = e => {
+  const applyReferralHandler = (e) => {
     if (!email) {
       window.alert('You must be logged in to use the discount code!')
     }
@@ -421,14 +400,14 @@ const Index = () => {
     } else {
       if (cartCourses.length) {
         setLoading(true)
-        dispatch(verifyReferralCode({ referral: referral, user: email }))
+        dispatch(verifyReferralCode({ referral, user: email }))
       } else {
         window.alert('Cart is empty!')
       }
     }
   }
 
-  const handelClearCart = e => {
+  const handelClearCart = (e) => {
     if (cartCourses.length) {
       const conformation = window.confirm('Are you sure you want to clear cart?')
       if (conformation) {
@@ -440,22 +419,21 @@ const Index = () => {
         setCheckout(false)
         setCartSubTotal(0)
         setCartTotal(0)
-        localStorage.setItem('cartItems', null)
+        localStorage.setItem('cartItems', JSON.stringify([]))
       }
     } else {
       window.alert('Cart is Empty')
     }
   }
 
-  const handleRemoveItem = item => {
+  const handleRemoveItem = (item) => {
     if (cartCourses.length) {
       const confirmation = window.confirm('Are you sure you want to delete this item from the cart?')
       if (confirmation) {
-        const newItems = cartCourses.filter(course => course.id !== item.id)
-        const updatedCartItems = newItems?.map(course => course.id)
+        const newItems = cartCourses.filter((course) => course.id !== item.id)
+        const updatedCartItems = newItems.map((course) => course.id)
         localStorage.setItem('cartItems', JSON.stringify(updatedCartItems))
-        setCartCourses(newItems) // Update cartCourses with the filtered array
-        // If VIP course is removed, switch pricing to regular and set isVIP to false
+        setCartCourses(newItems)
         if (item.id === 150000) {
           setIsVIP(false)
           localStorage.setItem('newVIP', false)
@@ -467,23 +445,21 @@ const Index = () => {
   }
 
   useEffect(() => {
-    // Recalculate total prices whenever cartCourses changes
-    const isVipMembershipInCart = cartCourses.some(course => course.id === 150000)
+    const isVipMembershipInCart = cartCourses.some((course) => course.id === 150000)
 
-    const prices = cartCourses.map(course => {
-      // Determine the correct price based on discount eligibility and VIP status
+    const prices = cartCourses.map((course) => {
       let finalPrice
       if (isDiscountActive(course)) {
         finalPrice =
           user?.data?.isVipValid || isVipMembershipInCart
-            ? vipPlan == 2
+            ? vipPlan === 2
               ? course.discountVipPLPrice
               : course.discountVipPrice || course.discountPrice
             : course.discountPrice
       } else {
         finalPrice =
           user?.data?.isVipValid || isVipMembershipInCart
-            ? vipPlan == 2
+            ? vipPlan === 2
               ? course.vipPLPrice
               : course.vipPrice || course.regularPrice
             : course.regularPrice
@@ -495,21 +471,19 @@ const Index = () => {
     const newSubTotal = prices.reduce((acc, price) => acc + price, 0)
     setCartSubTotal(newSubTotal)
 
-    const totalDiscount = calculateTotalCouponDiscount() // This function needs to calculate the discount based on the subtotal
+    const totalDiscount = calculateTotalCouponDiscount()
 
     setCartTotal(newSubTotal - totalDiscount)
 
-    // If VIP membership is no longer in the cart, switch pricing back to regular
     if (!isVipMembershipInCart) {
       setIsVIP(false)
     }
-  }, [cartCourses, user?.data?.isVipValid, usedCoupon, vipPlan]) // Include `usedCoupon` if coupons affect pricing
+  }, [cartCourses, user?.data?.isVipValid, usedCoupon, vipPlan])
 
-  // Function to calculate the total coupon discount
   const calculateTotalCouponDiscount = () => {
     let totalDiscount = 0
 
-    usedCoupon.forEach(coupon => {
+    usedCoupon.forEach((coupon) => {
       if (coupon.discount) {
         if (coupon.discount.includes('%')) {
           const percentage = parseFloat(coupon.discount.replace('%', ''))
@@ -521,15 +495,13 @@ const Index = () => {
       }
     })
 
-    return Math.min(totalDiscount, cartSubTotal) // Ensure discount does not exceed subtotal
+    return Math.min(totalDiscount, cartSubTotal)
   }
 
   useEffect(() => {
     const totalDiscount = calculateTotalCouponDiscount()
     const finalTotal = cartSubTotal - totalDiscount
-    setCartTotal(Math.max(0, finalTotal)) // Ensure total never goes negative
-
-    // Further logic can be placed here to determine whether to show payment form
+    setCartTotal(Math.max(0, finalTotal))
   }, [cartSubTotal, usedCoupon])
 
   useEffect(() => {
@@ -542,18 +514,15 @@ const Index = () => {
 
       setCartSubTotal(newSubTotal)
 
-      // Recalculate discount based on the updated subtotal
       const totalDiscount = calculateTotalCouponDiscount()
       setCartTotal(newSubTotal - totalDiscount)
     }
-  }, [cartCourses, usedCoupon]) // Include usedCoupon to recalculate when coupons change
+  }, [cartCourses, usedCoupon])
 
-  // Update the useEffect hook for applying coupon discount on cart total
   useEffect(() => {
     const totalCouponDiscount = calculateTotalCouponDiscount()
     setCartTotal(cartSubTotal - totalCouponDiscount)
 
-    // Save the applied coupon data to local storage
     const appliedCouponData = {
       coupon,
       couponDiscount,
@@ -578,9 +547,9 @@ const Index = () => {
   useEffect(() => {
     if (cartCourses) {
       const isVipMembershipInCart =
-        Array.isArray(courses?.data?.data) && courses.data.data.some(course => course?.course?.id === 150000)
+        Array.isArray(courses?.data?.data) && courses.data.data.some((course) => course?.course?.id === 150000)
 
-      const prices = cartCourses?.map(item => {
+      const prices = cartCourses?.map((item) => {
         if (!isRenew) {
           if (user?.data?.isVipValid || isVipMembershipInCart) {
             return item?.vipPrice || 0
@@ -596,40 +565,37 @@ const Index = () => {
       setCartTotal(sumOfCoursePrice)
       setCartSubTotal(sumOfCoursePrice)
 
-      // If VIP membership is added to the cart, switch to VIP pricing
       if (isVipMembershipInCart) {
         setIsVIP(true)
       }
     }
-  }, [cartCourses, setCartCourses, setCartTotal, user])
+  }, [cartCourses, setCartCourses, setCartTotal, user, isRenew, courses?.data?.data])
 
-  const handelRemoveCoupon = code => {
+  const handelRemoveCoupon = (code) => {
     const oldUsedCoupon = [...usedCoupon]
     const confirmation = window.confirm('Are you sure you want to delete this coupon ?')
     if (confirmation) {
-      const newCoupon = oldUsedCoupon.filter(coupon => coupon.code != code)
+      const newCoupon = oldUsedCoupon.filter((coupon) => coupon.code !== code)
       setUsedCoupon(newCoupon)
     }
   }
 
   useEffect(() => {
-    // Recalculate total prices whenever cartCourses changes
-    const isVipMembershipInCart = cartCourses.some(course => course.id === 150000)
+    const isVipMembershipInCart = cartCourses.some((course) => course.id === 150000)
 
-    const prices = cartCourses.map(course => {
-      // Determine the correct price based on discount eligibility and VIP status
+    const prices = cartCourses.map((course) => {
       let finalPrice
       if (isDiscountActive(course)) {
         finalPrice =
           user?.data?.isVipValid || isVipMembershipInCart
-            ? vipPlan == 2
+            ? vipPlan === 2
               ? course.discountVipPLPrice
               : course.discountVipPrice || course.discountPrice
             : course.discountPrice
       } else {
         finalPrice =
           user?.data?.isVipValid || isVipMembershipInCart
-            ? vipPlan == 2
+            ? vipPlan === 2
               ? course.vipPLPrice
               : course.vipPrice || course.regularPrice
             : course.regularPrice
@@ -642,23 +608,16 @@ const Index = () => {
 
     setCartSubTotal(newSubTotal)
 
-    const totalDiscount = calculateTotalCouponDiscount() // This function needs to calculate the discount based on the subtotalt
+    const totalDiscount = calculateTotalCouponDiscount()
     setCartTotal(newSubTotal - totalDiscount)
 
-    // If VIP membership is no longer in the cart, switch pricing back to regular
     if (!isVipMembershipInCart) {
       setIsVIP(false)
     }
-  }, [cartCourses, user?.data?.isVipValid, usedCoupon]) // Include `usedCoupon` if coupons affect pricing
+  }, [cartCourses, user?.data?.isVipValid, usedCoupon, vipPlan])
 
-  useEffect(() => {
-    if (cartCourses.length) {
-      setLoading(true)
-      dispatch(verifyReferralCode({ referral: referral, user: email }))
-    }
-  }, [])
 
-  const handleInputChange = e => {
+  const handleInputChange = (e) => {
     const capitalizedValue = e.target.value.toUpperCase()
     setCoupon(capitalizedValue)
   }
@@ -678,7 +637,7 @@ const Index = () => {
             <div className='col-md-6'>
               <div className='row'>
                 <div className='col-7 col-md-6'>
-                  <input type='text' onChange={e => setReferral(e.target.value)} className='form-control FNV-Text' />
+                  <input type='text' onChange={(e) => setReferral(e.target.value)} className='form-control FNV-Text' />
                 </div>
 
                 <div className='col-5 col-md-6'>
@@ -710,8 +669,8 @@ const Index = () => {
           </div>
 
           {cartCourses &&
-            cartCourses.length &&
-            cartCourses.map(cycle => (
+            cartCourses.length > 0 &&
+            cartCourses.map((cycle) => (
               <div key={cycle.id} className='row FNV-CartItems'>
                 <div className='col-3 col-md-2'>
                   <img src={cycle?.course?.image} className='img-fluid' />
@@ -744,7 +703,7 @@ const Index = () => {
                       <span>C${getDiscountedPrice(cycle)}</span>
                       <p>
                         {isVIP &&
-                          cycle.id != 150000 &&
+                          cycle.id !== 150000 &&
                           `Member Price: $${getDiscountedPrice(cycle)} Save $${(
                             cycle.regularPrice - getDiscountedPrice(cycle)
                           ).toFixed(2)} By being a FANAVARAN member`}
@@ -756,7 +715,7 @@ const Index = () => {
             ))}
 
           <div className='row FNV-Coupon'>
-            {cartCourses.length && (
+            {cartCourses.length > 0 && (
               <div className='col-md-4'>
                 <button type='button' onClick={handelClearCart} className='FNV-Btn BtnOutline SecondaryColor BtnMedium'>
                   <i data-feather='trash'></i> {t('cart-head-cart-clear')}
@@ -822,7 +781,7 @@ const Index = () => {
                           <p className='pb-0'>
                             {coupon.code}
                             <small
-                              onClick={e => handelRemoveCoupon(coupon.code)}
+                              onClick={(e) => handelRemoveCoupon(coupon.code)}
                               style={{ cursor: 'pointer' }}
                               className='FNV-Remove'
                             >
@@ -850,7 +809,7 @@ const Index = () => {
 
           <div
             className='row FNV-Terms'
-            style={{ direction: pageDirection, textAlign: pageDirection == 'rtl' ? 'right' : 'left' }}
+            style={{ direction: pageDirection, textAlign: pageDirection === 'rtl' ? 'right' : 'left' }}
           >
             <div className='col-md-12'>
               <Box sx={{ marginBottom: '2rem', padding: 2, backgroundColor: '#f5f5f5', borderRadius: 2 }}>
@@ -860,7 +819,7 @@ const Index = () => {
 
                 <ul
                   sx={{ listStyleType: 'disc', pl: 2 }}
-                  style={{ direction: pageDirection, textAlign: pageDirection == 'rtl' ? 'right' : 'left' }}
+                  style={{ direction: pageDirection, textAlign: pageDirection === 'rtl' ? 'right' : 'left' }}
                 >
                   <li sx={{ display: 'list-item' }}>
                     <Typography>{t('agree-terms-first')}</Typography>
@@ -893,7 +852,7 @@ const Index = () => {
                         borderRadius: '4px',
                         backgroundColor: agreeAlert ? 'lightcoral' : 'transparent',
                         '&.Mui-checked': {
-                          backgroundColor: 'lighgreen'
+                          backgroundColor: 'lightgreen'
                         }
                       }}
                     />
@@ -933,10 +892,10 @@ const Index = () => {
                   ) : (
                     <button
                       onClick={handleEnrollNow}
-                      disabled={!termsChecked || cartCourses.length >= 0}
+                      disabled={!termsChecked || cartCourses.length <= 0}
                       className='FNV-Btn BtnPrimary BtnXLarge'
                     >
-                      {cartCourses.length >= 0 ? 'Cart is empty!' : 'Enroll Now'}
+                      {cartCourses.length <= 0 ? 'Cart is empty!' : 'Enroll Now'}
                     </button>
                   )
                 ) : (
