@@ -7066,7 +7066,7 @@ badge.SecondaryColor {
     position: absolute;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Top svg {
-    transform: rotateY(180deg);
+    transform: rotateY(0deg);
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Object {
     top: 0;
@@ -7155,7 +7155,7 @@ badge.SecondaryColor {
     position: absolute;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom svg {
-    transform: rotateX(180deg);
+    transform: rotateY(180deg) rotateX(180deg);
   }
 }
 @media (min-width: 575.98px) and (max-width: 767.98px) {
@@ -7171,7 +7171,7 @@ badge.SecondaryColor {
     position: absolute;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Top svg {
-    transform: rotateY(180deg);
+    transform: rotateY(0deg);
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Object {
     top: 0;
@@ -7255,7 +7255,7 @@ badge.SecondaryColor {
     position: absolute;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom svg {
-    transform: rotateX(180deg);
+    transform: rotateY(180deg) rotateX(180deg);
   }
 }
 @media (min-width: 767.98px) and (max-width: 991.98px) {
@@ -7271,7 +7271,7 @@ badge.SecondaryColor {
     position: absolute;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Top svg {
-    transform: rotateY(180deg);
+    transform: rotateY(0deg);
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Object {
     top: 0;
@@ -7355,7 +7355,7 @@ badge.SecondaryColor {
     position: absolute;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom svg {
-    transform: rotateX(180deg);
+    transform: rotateY(180deg) rotateX(180deg);
   }
 }
 @media (min-width: 991.98px) {
@@ -7371,7 +7371,7 @@ badge.SecondaryColor {
     position: absolute;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Top svg {
-    transform: rotateY(180deg);
+    transform: rotateY(0deg);
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Object {
     top: 0;
@@ -7453,7 +7453,7 @@ badge.SecondaryColor {
     position: absolute;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom svg {
-    transform: rotateX(180deg);
+    transform: rotateY(180deg) rotateX(180deg);
   }
 }
 @media (min-width: 1199.98px) {
@@ -7469,7 +7469,7 @@ badge.SecondaryColor {
     position: absolute;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Top svg {
-    transform: rotateY(180deg);
+    transform: rotateY(0deg);
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Object {
     top: 0;
@@ -7551,7 +7551,7 @@ badge.SecondaryColor {
     position: absolute;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom svg {
-    transform: rotateX(180deg);
+    transform: rotateY(180deg) rotateX(180deg);
   }
 }
 @media (min-width: 1400px) {
@@ -7567,7 +7567,7 @@ badge.SecondaryColor {
     position: absolute;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Top svg {
-    transform: rotateY(180deg);
+    transform: rotateY(0deg);
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Object {
     top: 0;
@@ -7649,7 +7649,7 @@ badge.SecondaryColor {
     position: absolute;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom svg {
-    transform: rotateX(180deg);
+    transform: rotateY(180deg) rotateX(180deg);
   }
 }
 @media (min-width: 1920px) {
@@ -7665,7 +7665,7 @@ badge.SecondaryColor {
     position: absolute;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Top svg {
-    transform: rotateY(180deg);
+    transform: rotateY(0deg);
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Object {
     top: 0;
@@ -7747,7 +7747,7 @@ badge.SecondaryColor {
     position: absolute;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom svg {
-    transform: rotateX(180deg);
+    transform: rotateY(180deg) rotateX(180deg);
   }
 }
 
