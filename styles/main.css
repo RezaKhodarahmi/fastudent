@@ -6243,6 +6243,8 @@ badge.SecondaryColor {
   .FNV-TopBanner {
     width: 100%;
     height: 25px !important;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .FNV-TopBar {
     display: none;
@@ -6426,7 +6428,9 @@ badge.SecondaryColor {
 @media (min-width: 767.98px) and (max-width: 991.98px) {
   .FNV-TopBanner {
     width: 100%;
-    height: 65px !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 50px !important;
   }
   .FNV-TopBar {
     display: none;
@@ -6518,6 +6522,8 @@ badge.SecondaryColor {
 @media (min-width: 992px) {
   .FNV-TopBanner {
     width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 65px !important;
   }
   .FNV-TopBar {
@@ -7047,6 +7053,605 @@ badge.SecondaryColor {
     margin-bottom: 2rem;
   }
 }
+@media (max-width: 575.98px) {
+  body[dir=ltr] .FNV-Slider {
+    height: 400px;
+    position: relative;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Canvas-Top {
+    z-index: 3;
+    top: -2px;
+    right: 0px;
+    width: 100%;
+    position: absolute;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Canvas-Top svg {
+    transform: rotateY(180deg);
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Object {
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    background-size: contain;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Object .FNV-Slider-Object-Person {
+    width: 200px;
+    height: 350px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/images/slider/Person.png");
+    animation: moveUpDown 10s infinite alternate ease-in-out;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/MainBG.jpg");
+    animation: moveBackground 30s infinite alternate ease-in-out;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container {
+    z-index: 5;
+    position: relative;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 {
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 h1 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #223885;
+    text-align: center;
+    text-shadow: 0px 0px 10px #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 svg {
+    width: 200px;
+    stroke: #0074FF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search {
+    padding: 0.5rem;
+    margin-top: 2rem;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div {
+    box-shadow: unset;
+    border-width: 0px;
+    background-color: transparent;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::after, body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::before {
+    display: none;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div input {
+    font-size: 14px;
+    background-color: transparent;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn {
+    width: 45px;
+    height: 45px;
+    padding: 0.5rem;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 0px;
+    color: #0074FF;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
+    width: 100%;
+    stroke: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom {
+    z-index: 3;
+    right: 0px;
+    width: 100%;
+    bottom: -1px;
+    position: absolute;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom svg {
+    transform: rotateX(180deg);
+  }
+}
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+  body[dir=ltr] .FNV-Slider {
+    height: 400px;
+    position: relative;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Canvas-Top {
+    z-index: 3;
+    top: -2px;
+    right: 0px;
+    width: 100%;
+    position: absolute;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Canvas-Top svg {
+    transform: rotateY(180deg);
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Object {
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    background-size: contain;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Object .FNV-Slider-Object-Person {
+    width: 200px;
+    height: 350px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/images/slider/Person.png");
+    animation: moveUpDown 10s infinite alternate ease-in-out;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/MainBG.jpg");
+    animation: moveBackground 30s infinite alternate ease-in-out;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container {
+    z-index: 5;
+    position: relative;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 h1 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 svg {
+    width: 200px;
+    stroke: #0074FF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search {
+    padding: 0.5rem;
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.5647058824);
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div {
+    box-shadow: unset;
+    border-width: 0px;
+    background-color: transparent;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::after, body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::before {
+    display: none;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div input {
+    font-size: 14px;
+    background-color: transparent;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn {
+    width: 45px;
+    height: 45px;
+    padding: 0.5rem;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 0px;
+    color: #0074FF;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
+    width: 100%;
+    stroke: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom {
+    z-index: 3;
+    right: 0px;
+    width: 100%;
+    bottom: -1px;
+    position: absolute;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom svg {
+    transform: rotateX(180deg);
+  }
+}
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  body[dir=ltr] .FNV-Slider {
+    height: 400px;
+    position: relative;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Canvas-Top {
+    z-index: 3;
+    top: -2px;
+    right: 0px;
+    width: 100%;
+    position: absolute;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Canvas-Top svg {
+    transform: rotateY(180deg);
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Object {
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    background-size: contain;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Object .FNV-Slider-Object-Person {
+    width: 200px;
+    height: 350px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/images/slider/Person.png");
+    animation: moveUpDown 10s infinite alternate ease-in-out;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/MainBG.jpg");
+    animation: moveBackground 30s infinite alternate ease-in-out;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container {
+    z-index: 5;
+    position: relative;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 h1 {
+    font-size: 25px;
+    font-weight: 300;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 svg {
+    width: 200px;
+    stroke: #0074FF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search {
+    padding: 0.5rem;
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.5647058824);
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div {
+    box-shadow: unset;
+    border-width: 0px;
+    background-color: transparent;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::after, body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::before {
+    display: none;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div input {
+    font-size: 14px;
+    background-color: transparent;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn {
+    width: 45px;
+    height: 45px;
+    padding: 0.5rem;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 0px;
+    color: #0074FF;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
+    width: 100%;
+    stroke: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom {
+    z-index: 3;
+    right: 0px;
+    width: 100%;
+    bottom: -1px;
+    position: absolute;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom svg {
+    transform: rotateX(180deg);
+  }
+}
+@media (min-width: 991.98px) {
+  body[dir=ltr] .FNV-Slider {
+    height: 700px;
+    position: relative;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Canvas-Top {
+    z-index: 3;
+    top: -2px;
+    right: 0px;
+    width: 100%;
+    position: absolute;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Canvas-Top svg {
+    transform: rotateY(180deg);
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Object {
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    background-size: contain;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Object .FNV-Slider-Object-Person {
+    width: 370px;
+    height: 665px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/Person.png");
+    animation: moveUpDown 10s infinite alternate ease-in-out;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/MainBG.jpg");
+    animation: moveBackground 30s infinite alternate ease-in-out;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container {
+    z-index: 5;
+    position: relative;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 h1 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 svg {
+    width: 200px;
+    stroke: #0074FF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search {
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.5647058824);
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div {
+    box-shadow: unset;
+    border-width: 0px;
+    background-color: transparent;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::after, body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::before {
+    display: none;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div input {
+    background-color: transparent;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn {
+    width: 45px;
+    height: 45px;
+    padding: 0.5rem;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 0px;
+    color: #0074FF;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
+    width: 100%;
+    stroke: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom {
+    z-index: 3;
+    right: 0px;
+    width: 100%;
+    bottom: -1px;
+    position: absolute;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom svg {
+    transform: rotateX(180deg);
+  }
+}
+@media (min-width: 1199.98px) {
+  body[dir=ltr] .FNV-Slider {
+    height: 700px;
+    position: relative;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Canvas-Top {
+    z-index: 3;
+    top: -2px;
+    right: 0px;
+    width: 100%;
+    position: absolute;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Canvas-Top svg {
+    transform: rotateY(180deg);
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Object {
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    background-size: contain;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Object .FNV-Slider-Object-Person {
+    width: 370px;
+    height: 665px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/Person.png");
+    animation: moveUpDown 10s infinite alternate ease-in-out;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/MainBG.jpg");
+    animation: moveBackground 30s infinite alternate ease-in-out;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container {
+    z-index: 5;
+    position: relative;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 h1 {
+    font-size: 40px;
+    font-weight: 300;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 svg {
+    width: 200px;
+    stroke: #0074FF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search {
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.5647058824);
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div {
+    box-shadow: unset;
+    border-width: 0px;
+    background-color: transparent;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::after, body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::before {
+    display: none;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div input {
+    background-color: transparent;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn {
+    width: 45px;
+    height: 45px;
+    padding: 0.5rem;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 0px;
+    color: #0074FF;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
+    width: 100%;
+    stroke: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom {
+    z-index: 3;
+    right: 0px;
+    width: 100%;
+    bottom: -1px;
+    position: absolute;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom svg {
+    transform: rotateX(180deg);
+  }
+}
+@media (min-width: 1400px) {
+  body[dir=ltr] .FNV-Slider {
+    height: 700px;
+    position: relative;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Canvas-Top {
+    z-index: 3;
+    top: -2px;
+    right: 0px;
+    width: 100%;
+    position: absolute;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Canvas-Top svg {
+    transform: rotateY(180deg);
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Object {
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    background-size: contain;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Object .FNV-Slider-Object-Person {
+    width: 370px;
+    height: 665px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/Person.png");
+    animation: moveUpDown 10s infinite alternate ease-in-out;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/MainBG.jpg");
+    animation: moveBackground 30s infinite alternate ease-in-out;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container {
+    z-index: 5;
+    position: relative;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 h1 {
+    font-size: 50px;
+    font-weight: 300;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 svg {
+    width: 250px;
+    stroke: #0074FF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search {
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.5647058824);
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div {
+    box-shadow: unset;
+    border-width: 0px;
+    background-color: transparent;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::after, body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::before {
+    display: none;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div input {
+    background-color: transparent;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn {
+    width: 45px;
+    height: 45px;
+    padding: 0.5rem;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 0px;
+    color: #0074FF;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
+    width: 100%;
+    stroke: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom {
+    z-index: 3;
+    right: 0px;
+    width: 100%;
+    bottom: -1px;
+    position: absolute;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom svg {
+    transform: rotateX(180deg);
+  }
+}
 @media (min-width: 1920px) {
   body[dir=ltr] .FNV-Slider {
     height: 700px;
@@ -7146,6 +7751,605 @@ badge.SecondaryColor {
   }
 }
 
+@media (max-width: 575.98px) {
+  body[dir=rtl] .FNV-Slider {
+    height: 400px;
+    position: relative;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Canvas-Top {
+    z-index: 3;
+    top: -2px;
+    right: 0px;
+    width: 100%;
+    position: absolute;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Canvas-Top svg {
+    transform: rotateY(180deg);
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Object {
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    background-size: contain;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Object .FNV-Slider-Object-Person {
+    width: 200px;
+    height: 350px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/images/slider/Person.png");
+    animation: moveUpDown 10s infinite alternate ease-in-out;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/MainBG.jpg");
+    animation: moveBackground 30s infinite alternate ease-in-out;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container {
+    z-index: 5;
+    position: relative;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 {
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 h1 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #223885;
+    text-align: center;
+    text-shadow: 0px 0px 10px #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 svg {
+    width: 200px;
+    stroke: #0074FF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search {
+    padding: 0.5rem;
+    margin-top: 2rem;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div {
+    box-shadow: unset;
+    border-width: 0px;
+    background-color: transparent;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::after, body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::before {
+    display: none;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div input {
+    font-size: 14px;
+    background-color: transparent;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn {
+    width: 45px;
+    height: 45px;
+    padding: 0.5rem;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 0px;
+    color: #0074FF;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
+    width: 100%;
+    stroke: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Canvas-Bottom {
+    z-index: 3;
+    right: 0px;
+    width: 100%;
+    bottom: -1px;
+    position: absolute;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Canvas-Bottom svg {
+    transform: rotateX(180deg);
+  }
+}
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+  body[dir=rtl] .FNV-Slider {
+    height: 400px;
+    position: relative;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Canvas-Top {
+    z-index: 3;
+    top: -2px;
+    right: 0px;
+    width: 100%;
+    position: absolute;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Canvas-Top svg {
+    transform: rotateY(180deg);
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Object {
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    background-size: contain;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Object .FNV-Slider-Object-Person {
+    width: 200px;
+    height: 350px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/images/slider/Person.png");
+    animation: moveUpDown 10s infinite alternate ease-in-out;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/MainBG.jpg");
+    animation: moveBackground 30s infinite alternate ease-in-out;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container {
+    z-index: 5;
+    position: relative;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 h1 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 svg {
+    width: 200px;
+    stroke: #0074FF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search {
+    padding: 0.5rem;
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.5647058824);
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div {
+    box-shadow: unset;
+    border-width: 0px;
+    background-color: transparent;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::after, body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::before {
+    display: none;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div input {
+    font-size: 14px;
+    background-color: transparent;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn {
+    width: 45px;
+    height: 45px;
+    padding: 0.5rem;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 0px;
+    color: #0074FF;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
+    width: 100%;
+    stroke: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Canvas-Bottom {
+    z-index: 3;
+    right: 0px;
+    width: 100%;
+    bottom: -1px;
+    position: absolute;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Canvas-Bottom svg {
+    transform: rotateX(180deg);
+  }
+}
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  body[dir=rtl] .FNV-Slider {
+    height: 400px;
+    position: relative;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Canvas-Top {
+    z-index: 3;
+    top: -2px;
+    right: 0px;
+    width: 100%;
+    position: absolute;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Canvas-Top svg {
+    transform: rotateY(180deg);
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Object {
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    background-size: contain;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Object .FNV-Slider-Object-Person {
+    width: 200px;
+    height: 350px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/images/slider/Person.png");
+    animation: moveUpDown 10s infinite alternate ease-in-out;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/MainBG.jpg");
+    animation: moveBackground 30s infinite alternate ease-in-out;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container {
+    z-index: 5;
+    position: relative;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 h1 {
+    font-size: 25px;
+    font-weight: 300;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 svg {
+    width: 200px;
+    stroke: #0074FF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search {
+    padding: 0.5rem;
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.5647058824);
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div {
+    box-shadow: unset;
+    border-width: 0px;
+    background-color: transparent;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::after, body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::before {
+    display: none;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div input {
+    font-size: 14px;
+    background-color: transparent;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn {
+    width: 45px;
+    height: 45px;
+    padding: 0.5rem;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 0px;
+    color: #0074FF;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
+    width: 100%;
+    stroke: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Canvas-Bottom {
+    z-index: 3;
+    right: 0px;
+    width: 100%;
+    bottom: -1px;
+    position: absolute;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Canvas-Bottom svg {
+    transform: rotateX(180deg);
+  }
+}
+@media (min-width: 991.98px) {
+  body[dir=rtl] .FNV-Slider {
+    height: 700px;
+    position: relative;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Canvas-Top {
+    z-index: 3;
+    top: -2px;
+    right: 0px;
+    width: 100%;
+    position: absolute;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Canvas-Top svg {
+    transform: rotateY(180deg);
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Object {
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    background-size: contain;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Object .FNV-Slider-Object-Person {
+    width: 370px;
+    height: 665px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/Person.png");
+    animation: moveUpDown 10s infinite alternate ease-in-out;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/MainBG.jpg");
+    animation: moveBackground 30s infinite alternate ease-in-out;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container {
+    z-index: 5;
+    position: relative;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 h1 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 svg {
+    width: 200px;
+    stroke: #0074FF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search {
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.5647058824);
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div {
+    box-shadow: unset;
+    border-width: 0px;
+    background-color: transparent;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::after, body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::before {
+    display: none;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div input {
+    background-color: transparent;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn {
+    width: 45px;
+    height: 45px;
+    padding: 0.5rem;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 0px;
+    color: #0074FF;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
+    width: 100%;
+    stroke: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Canvas-Bottom {
+    z-index: 3;
+    right: 0px;
+    width: 100%;
+    bottom: -1px;
+    position: absolute;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Canvas-Bottom svg {
+    transform: rotateX(180deg);
+  }
+}
+@media (min-width: 1199.98px) {
+  body[dir=rtl] .FNV-Slider {
+    height: 700px;
+    position: relative;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Canvas-Top {
+    z-index: 3;
+    top: -2px;
+    right: 0px;
+    width: 100%;
+    position: absolute;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Canvas-Top svg {
+    transform: rotateY(180deg);
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Object {
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    background-size: contain;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Object .FNV-Slider-Object-Person {
+    width: 370px;
+    height: 665px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/Person.png");
+    animation: moveUpDown 10s infinite alternate ease-in-out;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/MainBG.jpg");
+    animation: moveBackground 30s infinite alternate ease-in-out;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container {
+    z-index: 5;
+    position: relative;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 h1 {
+    font-size: 40px;
+    font-weight: 300;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 svg {
+    width: 200px;
+    stroke: #0074FF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search {
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.5647058824);
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div {
+    box-shadow: unset;
+    border-width: 0px;
+    background-color: transparent;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::after, body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::before {
+    display: none;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div input {
+    background-color: transparent;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn {
+    width: 45px;
+    height: 45px;
+    padding: 0.5rem;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 0px;
+    color: #0074FF;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
+    width: 100%;
+    stroke: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Canvas-Bottom {
+    z-index: 3;
+    right: 0px;
+    width: 100%;
+    bottom: -1px;
+    position: absolute;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Canvas-Bottom svg {
+    transform: rotateX(180deg);
+  }
+}
+@media (min-width: 1400px) {
+  body[dir=rtl] .FNV-Slider {
+    height: 700px;
+    position: relative;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Canvas-Top {
+    z-index: 3;
+    top: -2px;
+    right: 0px;
+    width: 100%;
+    position: absolute;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Canvas-Top svg {
+    transform: rotateY(180deg);
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Object {
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    background-size: contain;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Object .FNV-Slider-Object-Person {
+    width: 370px;
+    height: 665px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/Person.png");
+    animation: moveUpDown 10s infinite alternate ease-in-out;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/MainBG.jpg");
+    animation: moveBackground 30s infinite alternate ease-in-out;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container {
+    z-index: 5;
+    position: relative;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 h1 {
+    font-size: 50px;
+    font-weight: 300;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 svg {
+    width: 250px;
+    stroke: #0074FF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search {
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.5647058824);
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div {
+    box-shadow: unset;
+    border-width: 0px;
+    background-color: transparent;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::after, body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::before {
+    display: none;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div input {
+    background-color: transparent;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn {
+    width: 45px;
+    height: 45px;
+    padding: 0.5rem;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 0px;
+    color: #0074FF;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
+    width: 100%;
+    stroke: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Canvas-Bottom {
+    z-index: 3;
+    right: 0px;
+    width: 100%;
+    bottom: -1px;
+    position: absolute;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Canvas-Bottom svg {
+    transform: rotateX(180deg);
+  }
+}
 @media (min-width: 1920px) {
   body[dir=rtl] .FNV-Slider {
     height: 700px;

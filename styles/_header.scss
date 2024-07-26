@@ -5,6 +5,7 @@
   .FNV-TopBanner {
     width: 100%;
     height: 25px!important;
+    object-fit: cover;
   }
 
   .FNV-TopBar {
@@ -232,7 +233,8 @@
 @media (min-width: 767.98px) and (max-width: 991.98px) {
   .FNV-TopBanner {
     width: 100%;
-    height: 65px!important;
+    object-fit: cover;
+    height: 50px!important;
   }
 
   .FNV-TopBar {
@@ -346,6 +348,7 @@
 @media (min-width: 992px) {
   .FNV-TopBanner {
     width: 100%;
+    object-fit: cover;
     height: 65px!important;
   }
 
