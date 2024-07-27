@@ -801,8 +801,8 @@ badge.SecondaryColor {
     color: #FF772C;
     border-radius: 5px;
   }
-  body[dir=ltr] .crisp-client a {
-    bottom: 80px !important;
+  body[dir=ltr] .cc-1m2mf {
+    margin-bottom: 5rem !important;
   }
 }
 @media (min-width: 575.98px) and (max-width: 767.98px) {
@@ -1326,8 +1326,8 @@ badge.SecondaryColor {
     color: #FF772C;
     border-radius: 5px;
   }
-  body[dir=ltr] .crisp-client a {
-    bottom: 80px !important;
+  body[dir=ltr] .cc-1m2mf {
+    margin-bottom: 5rem !important;
   }
 }
 @media (min-width: 767.98px) and (max-width: 991.98px) {
@@ -4234,8 +4234,8 @@ badge.SecondaryColor {
     color: #FF772C;
     border-radius: 5px;
   }
-  body[dir=rtl] .crisp-client a {
-    bottom: 80px !important;
+  body[dir=rtl] .cc-1m2mf {
+    margin-bottom: 5rem !important;
   }
 }
 @media (min-width: 575.98px) and (max-width: 767px) {
@@ -4765,8 +4765,8 @@ badge.SecondaryColor {
     color: #FF772C;
     border-radius: 5px;
   }
-  body[dir=rtl] .crisp-client a {
-    bottom: 80px !important;
+  body[dir=rtl] .cc-1m2mf {
+    margin-bottom: 5rem !important;
   }
 }
 @media (min-width: 767.98px) and (max-width: 991.98px) {
