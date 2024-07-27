@@ -10,7 +10,7 @@ import { appConfig } from 'src/configs/appConfig'
 
 export default function CheckoutForm(props) {
   //Set state's
-  const { user, fullName, allChecked } = props
+  const { user, fullName, termsChecked } = props
   const [message, setMessage] = useState(null)
   const [isLoading, setIsLoading] = useState(false)
 
@@ -104,7 +104,7 @@ export default function CheckoutForm(props) {
           />
 
           <button
-            disabled={isLoading || !stripe || !elements || !allChecked}
+            disabled={isLoading || !stripe || !elements || !termsChecked}
             id='submit'
             className='FNV-Btn BtnPrimary BtnMedium'
           >
