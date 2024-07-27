@@ -112,6 +112,10 @@ body[dir='ltr'] {
                                 }
                             }
                         }
+
+                        .col-md-7{
+                            display: none;
+                        }
                     }
                 }
             }
@@ -235,6 +239,10 @@ body[dir='ltr'] {
                                 }
                             }
                         }
+
+                        .col-md-7{
+                            display: none;
+                        }
                     }
                 }
             }
@@ -354,6 +362,49 @@ body[dir='ltr'] {
                                     svg {
                                         width: 100%;
                                         stroke: $White;
+                                    }
+                                }
+                            }
+                        }
+
+                        .col-md-7{
+                            display: flex;
+                            align-items: flex-end;
+                            flex-direction: column;
+                            justify-content: center;
+
+                            .card{
+                                width: 120px;
+                                display: flex;
+                                border-width: 0;
+                                padding: 1rem 0;
+                                position: relative;
+                                text-align: center;
+                                color: $PrimaryFour;
+                                justify-content: end;
+                                background-color: transparent;
+
+                                h3{
+                                    font-size: 18px;
+                                    font-weight: 300;
+                                }
+
+                                p{
+                                    font-size: 14px;
+                                    font-weight: 300;
+                                    margin-bottom: 0;
+                                    color: $PrimaryOne;
+                                }
+
+                                &:not(:first-child){
+                                    &::before{
+                                        content: '';
+                                        top: 0;
+                                        left: 30px;
+                                        width: 60px;
+                                        height: 1px;
+                                        position: absolute;
+                                        background-color: $PrimarySix;
                                     }
                                 }
                             }
@@ -479,6 +530,49 @@ body[dir='ltr'] {
                                 }
                             }
                         }
+
+                        .col-md-7{
+                            display: flex;
+                            align-items: flex-end;
+                            flex-direction: column;
+                            justify-content: center;
+
+                            .card{
+                                width: 120px;
+                                display: flex;
+                                border-width: 0;
+                                padding: 1rem 0;
+                                position: relative;
+                                text-align: center;
+                                color: $PrimaryFour;
+                                justify-content: end;
+                                background-color: transparent;
+
+                                h3{
+                                    font-size: 36px;
+                                    font-weight: 300;
+                                }
+
+                                p{
+                                    font-size: 20px;
+                                    font-weight: 300;
+                                    margin-bottom: 0;
+                                    color: $PrimaryOne;
+                                }
+
+                                &:not(:first-child){
+                                    &::before{
+                                        content: '';
+                                        top: 0;
+                                        left: 30px;
+                                        width: 60px;
+                                        height: 1px;
+                                        position: absolute;
+                                        background-color: $PrimarySix;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -600,6 +694,49 @@ body[dir='ltr'] {
                                 }
                             }
                         }
+
+                        .col-md-7{
+                            display: flex;
+                            align-items: flex-end;
+                            flex-direction: column;
+                            justify-content: center;
+
+                            .card{
+                                width: 120px;
+                                display: flex;
+                                border-width: 0;
+                                padding: 1rem 0;
+                                position: relative;
+                                text-align: center;
+                                color: $PrimaryFour;
+                                justify-content: end;
+                                background-color: transparent;
+
+                                h3{
+                                    font-size: 36px;
+                                    font-weight: 300;
+                                }
+
+                                p{
+                                    font-size: 20px;
+                                    font-weight: 300;
+                                    margin-bottom: 0;
+                                    color: $PrimaryOne;
+                                }
+
+                                &:not(:first-child){
+                                    &::before{
+                                        content: '';
+                                        top: 0;
+                                        left: 30px;
+                                        width: 60px;
+                                        height: 1px;
+                                        position: absolute;
+                                        background-color: $PrimarySix;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -717,6 +854,49 @@ body[dir='ltr'] {
                                     svg {
                                         width: 100%;
                                         stroke: $White;
+                                    }
+                                }
+                            }
+                        }
+
+                        .col-md-7{
+                            display: flex;
+                            align-items: flex-end;
+                            flex-direction: column;
+                            justify-content: center;
+
+                            .card{
+                                width: 120px;
+                                display: flex;
+                                border-width: 0;
+                                padding: 1rem 0;
+                                position: relative;
+                                text-align: center;
+                                color: $PrimaryFour;
+                                justify-content: end;
+                                background-color: transparent;
+
+                                h3{
+                                    font-size: 36px;
+                                    font-weight: 300;
+                                }
+
+                                p{
+                                    font-size: 20px;
+                                    font-weight: 300;
+                                    margin-bottom: 0;
+                                    color: $PrimaryOne;
+                                }
+
+                                &:not(:first-child){
+                                    &::before{
+                                        content: '';
+                                        top: 0;
+                                        left: 30px;
+                                        width: 60px;
+                                        height: 1px;
+                                        position: absolute;
+                                        background-color: $PrimarySix;
                                     }
                                 }
                             }
@@ -1016,6 +1196,10 @@ body[dir='rtl'] {
                                 }
                             }
                         }
+
+                        .col-md-7{
+                            display: none;
+                        }
                     }
                 }
             }
@@ -1139,6 +1323,10 @@ body[dir='rtl'] {
                                 }
                             }
                         }
+
+                        .col-md-7{
+                            display: none;
+                        }
                     }
                 }
             }
@@ -1258,6 +1446,49 @@ body[dir='rtl'] {
                                     svg {
                                         width: 100%;
                                         stroke: $White;
+                                    }
+                                }
+                            }
+                        }
+
+                        .col-md-7{
+                            display: flex;
+                            align-items: flex-end;
+                            flex-direction: column;
+                            justify-content: center;
+
+                            .card{
+                                width: 120px;
+                                display: flex;
+                                border-width: 0;
+                                padding: 1rem 0;
+                                position: relative;
+                                text-align: center;
+                                color: $PrimaryFour;
+                                justify-content: end;
+                                background-color: transparent;
+
+                                h3{
+                                    font-size: 18px;
+                                    font-weight: 300;
+                                }
+
+                                p{
+                                    font-size: 14px;
+                                    font-weight: 300;
+                                    margin-bottom: 0;
+                                    color: $PrimaryOne;
+                                }
+
+                                &:not(:first-child){
+                                    &::before{
+                                        content: '';
+                                        top: 0;
+                                        left: 30px;
+                                        width: 60px;
+                                        height: 1px;
+                                        position: absolute;
+                                        background-color: $PrimarySix;
                                     }
                                 }
                             }
@@ -1383,6 +1614,49 @@ body[dir='rtl'] {
                                 }
                             }
                         }
+
+                        .col-md-7{
+                            display: flex;
+                            align-items: flex-end;
+                            flex-direction: column;
+                            justify-content: center;
+
+                            .card{
+                                width: 120px;
+                                display: flex;
+                                border-width: 0;
+                                padding: 1rem 0;
+                                position: relative;
+                                text-align: center;
+                                color: $PrimaryFour;
+                                justify-content: end;
+                                background-color: transparent;
+
+                                h3{
+                                    font-size: 36px;
+                                    font-weight: 300;
+                                }
+
+                                p{
+                                    font-size: 20px;
+                                    font-weight: 300;
+                                    margin-bottom: 0;
+                                    color: $PrimaryOne;
+                                }
+
+                                &:not(:first-child){
+                                    &::before{
+                                        content: '';
+                                        top: 0;
+                                        left: 30px;
+                                        width: 60px;
+                                        height: 1px;
+                                        position: absolute;
+                                        background-color: $PrimarySix;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -1504,6 +1778,49 @@ body[dir='rtl'] {
                                 }
                             }
                         }
+
+                        .col-md-7{
+                            display: flex;
+                            align-items: flex-end;
+                            flex-direction: column;
+                            justify-content: center;
+
+                            .card{
+                                width: 120px;
+                                display: flex;
+                                border-width: 0;
+                                padding: 1rem 0;
+                                position: relative;
+                                text-align: center;
+                                color: $PrimaryFour;
+                                justify-content: end;
+                                background-color: transparent;
+
+                                h3{
+                                    font-size: 36px;
+                                    font-weight: 300;
+                                }
+
+                                p{
+                                    font-size: 20px;
+                                    font-weight: 300;
+                                    margin-bottom: 0;
+                                    color: $PrimaryOne;
+                                }
+
+                                &:not(:first-child){
+                                    &::before{
+                                        content: '';
+                                        top: 0;
+                                        left: 30px;
+                                        width: 60px;
+                                        height: 1px;
+                                        position: absolute;
+                                        background-color: $PrimarySix;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -1621,6 +1938,49 @@ body[dir='rtl'] {
                                     svg {
                                         width: 100%;
                                         stroke: $White;
+                                    }
+                                }
+                            }
+                        }
+
+                        .col-md-7{
+                            display: flex;
+                            align-items: flex-end;
+                            flex-direction: column;
+                            justify-content: center;
+
+                            .card{
+                                width: 120px;
+                                display: flex;
+                                border-width: 0;
+                                padding: 1rem 0;
+                                position: relative;
+                                text-align: center;
+                                color: $PrimaryFour;
+                                justify-content: end;
+                                background-color: transparent;
+
+                                h3{
+                                    font-size: 36px;
+                                    font-weight: 300;
+                                }
+
+                                p{
+                                    font-size: 20px;
+                                    font-weight: 300;
+                                    margin-bottom: 0;
+                                    color: $PrimaryOne;
+                                }
+
+                                &:not(:first-child){
+                                    &::before{
+                                        content: '';
+                                        top: 0;
+                                        left: 30px;
+                                        width: 60px;
+                                        height: 1px;
+                                        position: absolute;
+                                        background-color: $PrimarySix;
                                     }
                                 }
                             }
@@ -1748,12 +2108,46 @@ body[dir='rtl'] {
                         }
 
                         .col-md-7{
-                            background-color: red;
-
                             display: flex;
                             align-items: flex-end;
                             flex-direction: column;
                             justify-content: center;
+
+                            .card{
+                                width: 120px;
+                                display: flex;
+                                border-width: 0;
+                                padding: 1rem 0;
+                                position: relative;
+                                text-align: center;
+                                color: $PrimaryFour;
+                                justify-content: end;
+                                background-color: transparent;
+
+                                h3{
+                                    font-size: 36px;
+                                    font-weight: 300;
+                                }
+
+                                p{
+                                    font-size: 20px;
+                                    font-weight: 300;
+                                    margin-bottom: 0;
+                                    color: $PrimaryOne;
+                                }
+
+                                &:not(:first-child){
+                                    &::before{
+                                        content: '';
+                                        top: 0;
+                                        left: 30px;
+                                        width: 60px;
+                                        height: 1px;
+                                        position: absolute;
+                                        background-color: $PrimarySix;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
