@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @font-face {
   font-family: "Ravi";
   font-style: normal;
@@ -318,13 +317,13 @@ badge.SecondaryColor {
     justify-content: center;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li a {
-    padding: 0.5rem;
     font-size: 15px;
     font-weight: 400;
-    color: #223885;
+    padding: 0.5rem;
+    color: #B2B9D4;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li:hover a {
-    font-weight: 500;
+    font-weight: 400;
     color: #223885;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
@@ -596,13 +595,13 @@ badge.SecondaryColor {
     justify-content: center;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li a {
-    padding: 0.5rem;
     font-size: 15px;
     font-weight: 400;
-    color: #223885;
+    padding: 0.5rem;
+    color: #B2B9D4;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li:hover a {
-    font-weight: 500;
+    font-weight: 400;
     color: #223885;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
@@ -874,13 +873,13 @@ badge.SecondaryColor {
     justify-content: center;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li a {
-    padding: 0.5rem;
     font-size: 15px;
     font-weight: 400;
-    color: #223885;
+    padding: 0.5rem;
+    color: #B2B9D4;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li:hover a {
-    font-weight: 500;
+    font-weight: 400;
     color: #223885;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
@@ -1158,56 +1157,6 @@ badge.SecondaryColor {
   body[dir=ltr] nav .container .navbar-brand svg {
     width: 100%;
   }
-  body[dir=ltr] nav .container .FNV-User .FNV-Btn {
-    background-color: unset;
-    display: flex;
-    align-items: center;
-  }
-  body[dir=ltr] nav .container .FNV-User .FNV-Btn .FNV-UserAvatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #223885;
-    border: 2px solid #223885;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
-    margin: 0 0.5rem;
-  }
-  body[dir=ltr] nav .container .FNV-User .FNV-Btn .FNV-UserAvatar svg {
-    stroke: #ffffff;
-  }
-  body[dir=ltr] nav .container .FNV-User .FNV-Btn img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid #223885;
-    -o-object-fit: cover;
-       object-fit: cover;
-    margin: 0 0.5rem;
-  }
-  body[dir=ltr] nav .container .FNV-User .FNV-Btn::after {
-    margin-left: 0.5rem;
-    margin-right: unset;
-  }
-  body[dir=ltr] nav .container .FNV-User .dropdown-menu {
-    border-width: 0px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1254901961);
-  }
-  body[dir=ltr] nav .container .FNV-User .dropdown-menu li {
-    padding-bottom: 0.3rem;
-    text-align: left;
-  }
-  body[dir=ltr] nav .container .FNV-User .dropdown-menu li a {
-    font-size: 14px;
-  }
-  body[dir=ltr] nav .container .FNV-User .dropdown-menu li a svg {
-    color: #223885;
-    width: 20px;
-    height: 20px;
-    margin-right: 0.5rem;
-  }
   body[dir=ltr] nav .container .FNV_QuickAccess {
     display: flex;
   }
@@ -1446,10 +1395,10 @@ badge.SecondaryColor {
     font-size: 14px;
     font-weight: 400;
     padding: 2rem 0.5rem;
-    color: #223885;
+    color: #B2B9D4;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li:hover a {
-    font-weight: 500;
+    font-weight: 400;
     color: #223885;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
@@ -1727,56 +1676,6 @@ badge.SecondaryColor {
   body[dir=ltr] nav .container .navbar-brand svg {
     width: 100%;
   }
-  body[dir=ltr] nav .container .FNV-User .FNV-Btn {
-    background-color: unset;
-    display: flex;
-    align-items: center;
-  }
-  body[dir=ltr] nav .container .FNV-User .FNV-Btn .FNV-UserAvatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #223885;
-    border: 2px solid #223885;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
-    margin: 0 0.5rem;
-  }
-  body[dir=ltr] nav .container .FNV-User .FNV-Btn .FNV-UserAvatar svg {
-    stroke: #ffffff;
-  }
-  body[dir=ltr] nav .container .FNV-User .FNV-Btn img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid #223885;
-    -o-object-fit: cover;
-       object-fit: cover;
-    margin: 0 0.5rem;
-  }
-  body[dir=ltr] nav .container .FNV-User .FNV-Btn::after {
-    margin-left: 0.5rem;
-    margin-right: unset;
-  }
-  body[dir=ltr] nav .container .FNV-User .dropdown-menu {
-    border-width: 0px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1254901961);
-  }
-  body[dir=ltr] nav .container .FNV-User .dropdown-menu li {
-    padding-bottom: 0.3rem;
-    text-align: left;
-  }
-  body[dir=ltr] nav .container .FNV-User .dropdown-menu li a {
-    font-size: 14px;
-  }
-  body[dir=ltr] nav .container .FNV-User .dropdown-menu li a svg {
-    color: #223885;
-    width: 20px;
-    height: 20px;
-    margin-right: 0.5rem;
-  }
   body[dir=ltr] nav .container .FNV_QuickAccess {
     display: flex;
   }
@@ -2015,10 +1914,10 @@ badge.SecondaryColor {
     font-size: 14px;
     font-weight: 400;
     padding: 2rem 0.5rem;
-    color: #223885;
+    color: #B2B9D4;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li:hover a {
-    font-weight: 500;
+    font-weight: 400;
     color: #223885;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
@@ -2290,56 +2189,6 @@ badge.SecondaryColor {
   body[dir=ltr] nav .container .navbar-brand {
     width: 200px;
   }
-  body[dir=ltr] nav .container .FNV-User .FNV-Btn {
-    background-color: unset;
-    display: flex;
-    align-items: center;
-  }
-  body[dir=ltr] nav .container .FNV-User .FNV-Btn .FNV-UserAvatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #223885;
-    border: 2px solid #223885;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
-    margin: 0 0.5rem;
-  }
-  body[dir=ltr] nav .container .FNV-User .FNV-Btn .FNV-UserAvatar svg {
-    stroke: #ffffff;
-  }
-  body[dir=ltr] nav .container .FNV-User .FNV-Btn img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid #223885;
-    -o-object-fit: cover;
-       object-fit: cover;
-    margin: 0 0.5rem;
-  }
-  body[dir=ltr] nav .container .FNV-User .FNV-Btn::after {
-    margin-left: 0.5rem;
-    margin-right: unset;
-  }
-  body[dir=ltr] nav .container .FNV-User .dropdown-menu {
-    border-width: 0px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1254901961);
-  }
-  body[dir=ltr] nav .container .FNV-User .dropdown-menu li {
-    padding-bottom: 0.3rem;
-    text-align: left;
-  }
-  body[dir=ltr] nav .container .FNV-User .dropdown-menu li a {
-    font-size: 14px;
-  }
-  body[dir=ltr] nav .container .FNV-User .dropdown-menu li a svg {
-    color: #223885;
-    width: 20px;
-    height: 20px;
-    margin-right: 0.5rem;
-  }
   body[dir=ltr] nav .container .FNV_QuickAccess {
     display: flex;
   }
@@ -2578,10 +2427,10 @@ badge.SecondaryColor {
     font-size: 14px;
     font-weight: 400;
     padding: 2rem 0.5rem;
-    color: #223885;
+    color: #B2B9D4;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li:hover a {
-    font-weight: 500;
+    font-weight: 400;
     color: #223885;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
@@ -2856,56 +2705,6 @@ badge.SecondaryColor {
   body[dir=ltr] nav .container .navbar-brand {
     width: 200px;
   }
-  body[dir=ltr] nav .container .FNV-User .FNV-Btn {
-    background-color: unset;
-    display: flex;
-    align-items: center;
-  }
-  body[dir=ltr] nav .container .FNV-User .FNV-Btn .FNV-UserAvatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #223885;
-    border: 2px solid #223885;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
-    margin: 0 0.5rem;
-  }
-  body[dir=ltr] nav .container .FNV-User .FNV-Btn .FNV-UserAvatar svg {
-    stroke: #ffffff;
-  }
-  body[dir=ltr] nav .container .FNV-User .FNV-Btn img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid #223885;
-    -o-object-fit: cover;
-       object-fit: cover;
-    margin: 0 0.5rem;
-  }
-  body[dir=ltr] nav .container .FNV-User .FNV-Btn::after {
-    margin-left: 0.5rem;
-    margin-right: unset;
-  }
-  body[dir=ltr] nav .container .FNV-User .dropdown-menu {
-    border-width: 0px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1254901961);
-  }
-  body[dir=ltr] nav .container .FNV-User .dropdown-menu li {
-    padding-bottom: 0.3rem;
-    text-align: left;
-  }
-  body[dir=ltr] nav .container .FNV-User .dropdown-menu li a {
-    font-size: 14px;
-  }
-  body[dir=ltr] nav .container .FNV-User .dropdown-menu li a svg {
-    color: #223885;
-    width: 20px;
-    height: 20px;
-    margin-right: 0.5rem;
-  }
   body[dir=ltr] nav .container .FNV_QuickAccess {
     display: flex;
   }
@@ -3144,10 +2943,10 @@ badge.SecondaryColor {
     font-size: 16px;
     font-weight: 400;
     padding: 2rem 0.5rem;
-    color: #223885;
+    color: #B2B9D4;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li:hover a {
-    font-weight: 500;
+    font-weight: 400;
     color: #223885;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
@@ -3455,13 +3254,13 @@ badge.SecondaryColor {
     padding-right: 0px;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li a {
-    padding: 0.5rem;
     font-size: 15px;
     font-weight: 400;
-    color: #223885;
+    padding: 0.5rem;
+    color: #B2B9D4;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li:hover a {
-    font-weight: 500;
+    font-weight: 400;
     color: #223885;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
@@ -3739,13 +3538,13 @@ badge.SecondaryColor {
     padding-right: 0px;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li a {
-    padding: 0.5rem;
     font-size: 15px;
     font-weight: 400;
-    color: #223885;
+    padding: 0.5rem;
+    color: #B2B9D4;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li:hover a {
-    font-weight: 500;
+    font-weight: 400;
     color: #223885;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
@@ -4023,13 +3822,13 @@ badge.SecondaryColor {
     padding-right: 0px;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li a {
-    padding: 0.5rem;
     font-size: 15px;
     font-weight: 400;
-    color: #223885;
+    padding: 0.5rem;
+    color: #B2B9D4;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li:hover a {
-    font-weight: 500;
+    font-weight: 400;
     color: #223885;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
@@ -4436,12 +4235,11 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li a {
     font-size: 14px;
     font-weight: 400;
-    text-align: right;
     padding: 2rem 0.5rem;
-    color: #223885;
+    color: #B2B9D4;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li:hover a {
-    font-weight: 500;
+    font-weight: 400;
     color: #223885;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
@@ -4724,56 +4522,6 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .navbar-brand svg {
     width: 100%;
   }
-  body[dir=rtl] nav .container .FNV-User .FNV-Btn {
-    display: flex;
-    align-items: center;
-    background-color: unset;
-  }
-  body[dir=rtl] nav .container .FNV-User .FNV-Btn .FNV-UserAvatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #223885;
-    border: 2px solid #223885;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
-    margin: 0 0.5rem;
-  }
-  body[dir=rtl] nav .container .FNV-User .FNV-Btn .FNV-UserAvatar svg {
-    stroke: #ffffff;
-  }
-  body[dir=rtl] nav .container .FNV-User .FNV-Btn img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid #223885;
-    -o-object-fit: cover;
-       object-fit: cover;
-    margin: 0 0.5rem;
-  }
-  body[dir=rtl] nav .container .FNV-User .FNV-Btn::after {
-    margin-left: 0.5rem;
-    margin-right: unset;
-  }
-  body[dir=rtl] nav .container .FNV-User .dropdown-menu {
-    border-width: 0px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1254901961);
-  }
-  body[dir=rtl] nav .container .FNV-User .dropdown-menu li {
-    padding-bottom: 0.3rem;
-    text-align: left;
-  }
-  body[dir=rtl] nav .container .FNV-User .dropdown-menu li a {
-    font-size: 14px;
-  }
-  body[dir=rtl] nav .container .FNV-User .dropdown-menu li a svg {
-    color: #223885;
-    width: 20px;
-    height: 20px;
-    margin-right: 0.5rem;
-  }
   body[dir=rtl] nav .container .FNV_QuickAccess {
     display: flex;
   }
@@ -4917,17 +4665,14 @@ badge.SecondaryColor {
     position: relative;
     justify-content: center;
   }
-  body[dir=rtl] nav .container .navbar-collapse .navbar-nav li {
-    text-align: right;
-  }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li a {
     font-size: 14px;
     font-weight: 400;
     padding: 2rem 0.5rem;
-    color: #223885;
+    color: #B2B9D4;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li:hover a {
-    font-weight: 500;
+    font-weight: 400;
     color: #223885;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
@@ -5441,10 +5186,10 @@ badge.SecondaryColor {
     font-size: 14px;
     font-weight: 400;
     padding: 2rem 0.5rem;
-    color: #223885;
+    color: #B2B9D4;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li:hover a {
-    font-weight: 500;
+    font-weight: 400;
     color: #223885;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
@@ -5966,10 +5711,10 @@ badge.SecondaryColor {
     font-size: 16px;
     font-weight: 400;
     padding: 2rem 0.5rem;
-    color: #223885;
+    color: #B2B9D4;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li:hover a {
-    font-weight: 500;
+    font-weight: 400;
     color: #223885;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
@@ -7740,6 +7485,42 @@ badge.SecondaryColor {
     width: 100%;
     stroke: #FFFFFF;
   }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 .card {
+    width: 120px;
+    display: flex;
+    border-width: 0;
+    padding: 1rem 0;
+    position: relative;
+    text-align: center;
+    color: #0074FF;
+    justify-content: end;
+    background-color: transparent;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 .card h3 {
+    font-size: 36px;
+    font-weight: 300;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 .card p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 0;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 .card:not(:first-child)::before {
+    content: "";
+    top: 0;
+    left: 30px;
+    width: 60px;
+    height: 1px;
+    position: absolute;
+    background-color: rgba(34, 56, 133, 0.1882352941);
+  }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom {
     z-index: 3;
     right: 0px;
@@ -8437,6 +8218,13 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
     width: 100%;
     stroke: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 {
+    background-color: red;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
   }
   body[dir=rtl] .FNV-Slider .FNV-Canvas-Bottom {
     z-index: 3;

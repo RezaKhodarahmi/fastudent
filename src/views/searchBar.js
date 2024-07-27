@@ -94,6 +94,20 @@ const SearchSection = props => {
                 </button>
               </form>
             </div>
+            <div className='col-12 col-md-7'>
+              <div className='card'>
+                <h3>+12</h3>
+                <p>Years of Experience</p>
+              </div>
+              <div className='card'>
+                <h3>+38</h3>
+                <p>Specialized Instructor</p>
+              </div>
+              <div className='card'>
+                <h3>+9K</h3>
+                <p>Professional students</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
