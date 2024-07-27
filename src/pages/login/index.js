@@ -252,7 +252,7 @@ const LoginPage = () => {
                   </LinkStyled>
                 </Typography>
               </Box>
-              {/* <Divider
+              <Divider
                 sx={{
                   fontSize: '0.875rem',
                   color: 'text.disabled',
@@ -264,9 +264,9 @@ const LoginPage = () => {
               </Divider>
               <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <IconButton href='/' component={Link} sx={{ color: '#497ce2' }} onClick={e => e.preventDefault()}>
-                  <Icon icon='mdi:facebook' />
+                  <Icon icon='logos:zoom' />
                 </IconButton>
-                <IconButton href='/' component={Link} sx={{ color: '#1da1f2' }} onClick={e => e.preventDefault()}>
+                {/* <IconButton href='/' component={Link} sx={{ color: '#1da1f2' }} onClick={e => e.preventDefault()}>
                   <Icon icon='mdi:twitter' />
                 </IconButton>
                 <IconButton
@@ -276,11 +276,11 @@ const LoginPage = () => {
                   sx={{ color: theme => (theme.palette.mode === 'light' ? '#272727' : 'grey.300') }}
                 >
                   <Icon icon='mdi:github' />
-                </IconButton>
+                </IconButton> */}
                 <IconButton href='/' component={Link} sx={{ color: '#db4437' }} onClick={e => e.preventDefault()}>
-                  <Icon icon='mdi:google' />
+                  <Icon icon='devicon:google' />
                 </IconButton>
-              </Box> */}
+              </Box>
             </form>
           </Box>
         </Box>
