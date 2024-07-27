@@ -876,7 +876,7 @@ const Index = () => {
                       {checkout && stripePay && clientSecret ? (
                         <Elements options={options} stripe={stripePromise}>
                           <CheckoutForm
-                            termsChecked={true}
+                            termsChecked={termsChecked}
                             items={cartCourses}
                             user={email}
                             coupon={coupon}
