@@ -4231,6 +4231,9 @@ badge.SecondaryColor {
     color: #FF772C;
     border-radius: 5px;
   }
+  body[dir=rtl] .cc-1yy0g a {
+    bottom: 80px;
+  }
 }
 @media (min-width: 575.98px) and (max-width: 767px) {
   body[dir=rtl] nav {
