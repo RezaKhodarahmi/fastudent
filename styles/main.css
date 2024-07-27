@@ -7592,36 +7592,36 @@ badge.SecondaryColor {
     background-image: url("/images/slider/MainBG.jpg");
     animation: moveBackground 30s infinite alternate ease-in-out;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container {
     z-index: 5;
     position: relative;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 h1 {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 h1 {
     font-size: 64px;
     font-weight: 300;
     color: #223885;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 svg {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 svg {
     width: 300px;
     stroke: #0074FF;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 1rem;
     margin-top: 2rem;
     background-color: rgba(255, 255, 255, 0.5647058824);
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
     border-width: 0px;
     background-color: transparent;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::after, body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::before {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div::after, body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div::before {
     display: none;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div input {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input {
     background-color: transparent;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn {
     width: 45px;
     height: 45px;
     padding: 0.5rem;
@@ -7631,17 +7631,17 @@ badge.SecondaryColor {
     color: #0074FF;
     background-color: #223885;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
     width: 100%;
     stroke: #FFFFFF;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
     justify-content: center;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 .card {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card {
     width: 120px;
     display: flex;
     border-width: 0;
@@ -7652,17 +7652,17 @@ badge.SecondaryColor {
     justify-content: end;
     background-color: transparent;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 .card h3 {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card h3 {
     font-size: 36px;
     font-weight: 300;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 .card p {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card p {
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 0;
     color: #223885;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 .card:not(:first-child)::before {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card:not(:first-child)::before {
     content: "";
     top: 0;
     left: 30px;
@@ -8476,36 +8476,36 @@ badge.SecondaryColor {
     background-image: url("/images/slider/MainBG.jpg");
     animation: moveBackground 30s infinite alternate ease-in-out;
   }
-  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container {
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container {
     z-index: 5;
     position: relative;
   }
-  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 h1 {
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 h1 {
     font-size: 64px;
     font-weight: 300;
     color: #223885;
   }
-  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 svg {
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 svg {
     width: 300px;
     stroke: #0074FF;
   }
-  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search {
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 1rem;
     margin-top: 2rem;
     background-color: rgba(255, 255, 255, 0.5647058824);
   }
-  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div {
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
     border-width: 0px;
     background-color: transparent;
   }
-  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::after, body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::before {
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div::after, body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div::before {
     display: none;
   }
-  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div input {
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input {
     background-color: transparent;
   }
-  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn {
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn {
     width: 45px;
     height: 45px;
     padding: 0.5rem;
@@ -8515,17 +8515,17 @@ badge.SecondaryColor {
     color: #0074FF;
     background-color: #223885;
   }
-  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
     width: 100%;
     stroke: #FFFFFF;
   }
-  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 {
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
     justify-content: center;
   }
-  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 .card {
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card {
     width: 120px;
     display: flex;
     border-width: 0;
@@ -8536,17 +8536,17 @@ badge.SecondaryColor {
     justify-content: end;
     background-color: transparent;
   }
-  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 .card h3 {
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card h3 {
     font-size: 36px;
     font-weight: 300;
   }
-  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 .card p {
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card p {
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 0;
     color: #223885;
   }
-  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 .card:not(:first-child)::before {
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card:not(:first-child)::before {
     content: "";
     top: 0;
     left: 30px;
