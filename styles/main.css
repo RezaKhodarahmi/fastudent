@@ -295,7 +295,251 @@ badge.SecondaryColor {
     width: 100%;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess {
-    display: none;
+    padding: 0 1.5rem;
+    left: 0px;
+    bottom: -1px;
+    z-index: 50;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: #223885;
+    justify-content: space-between !important;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown {
+    position: unset;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown a svg {
+    width: 24px;
+    height: 24px;
+    stroke: #FFFFFF;
+    stroke-width: 1.5px;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown a span svg {
+    top: -0.4rem;
+    left: -0.4rem;
+    width: 8px;
+    height: 8px;
+    fill: #FFA600;
+    stroke: #FFA600;
+    position: absolute;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown a.show svg {
+    stroke: #0074FF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu {
+    top: 200%;
+    left: -150px;
+    width: 360px;
+    padding: 2rem;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-radius: 0px;
+    border-top: 1px solid #223885;
+    box-shadow: 0 10px 16px rgba(7, 16, 46, 0.1882352941);
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu.show {
+    top: -16rem;
+    left: 0rem;
+    width: 100%;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #0074FF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a {
+    margin: 0;
+    padding: 1.5rem;
+    text-align: left;
+    color: #223885;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a svg {
+    margin-right: 1rem;
+    fill: #0074FF;
+    stroke: #0074FF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User {
+    display: flex;
+    padding: 1rem;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User .FNV-UserAvatar {
+    width: 30%;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User .FNV-UserAvatar img,
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User .FNV-UserAvatar svg {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span {
+    width: 100%;
+    display: flex;
+    margin-left: 1rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span p {
+    color: #223885;
+    margin-bottom: 0rem;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span {
+    display: flex;
+    margin-left: 0;
+    flex-direction: row;
+    justify-content: start;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span svg {
+    top: unset;
+    left: unset;
+    width: 20px;
+    height: 20px;
+    stroke-width: 0px;
+    position: relative;
+    margin-right: 0.5rem;
+    stroke: #6A7BBA;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span small {
+    font-size: 14px;
+    font-weight: 300;
+    color: #6A7BBA;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu {
+    display: flex;
+    padding: 1rem;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu .FNV-UserIcon {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu .FNV-UserIcon img,
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu .FNV-UserIcon svg {
+    width: 80%;
+    height: 80%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-right: 0;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span {
+    width: 100%;
+    display: flex;
+    margin-left: 1rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span p {
+    color: #223885;
+    margin-bottom: 0rem;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span span {
+    display: flex;
+    margin-left: 0;
+    flex-direction: row;
+    justify-content: start;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span span svg {
+    top: unset;
+    left: unset;
+    width: 20px;
+    height: 20px;
+    stroke-width: 0px;
+    position: relative;
+    margin-right: 0.5rem;
+    stroke: #6A7BBA;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span span small {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6A7BBA;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover {
+    color: #FFFFFF;
+    background-color: #0074FF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover svg {
+    fill: #FFFFFF;
+    stroke: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-User span p {
+    color: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-User span span svg {
+    stroke: #3DF07A;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-User span span small {
+    color: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu .FNV-UserIcon {
+    width: 30%;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu .FNV-UserIcon img,
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu .FNV-UserIcon svg {
+    stroke: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu span p {
+    color: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu span span small {
+    color: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu.show {
+    display: flex;
+    flex-direction: column;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu ul {
+    max-height: 150px;
+    overflow: scroll;
+    padding: 0px;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu ul p {
+    font-size: 14px;
+    color: #0074FF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu ul li {
+    padding: 0;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu ul li a {
+    width: 100%;
+    display: block;
+    padding: 0.5rem;
+    font-size: 12px;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess button {
+    padding: 0;
+    border-width: 0;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: transparent;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess button svg {
+    width: 26px;
+    height: 26px;
+    stroke: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess a {
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess a svg {
+    width: 24px;
+    height: 24px;
+    stroke: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess a span svg {
+    top: -0.4rem;
+    left: -0.4rem;
+    width: 8px;
+    height: 8px;
+    fill: #FFA600;
+    stroke: #FFA600;
+    position: absolute;
   }
   body[dir=ltr] nav .container .navbar-toggler {
     border-width: 0;
@@ -556,6 +800,9 @@ badge.SecondaryColor {
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu .dropdown-menu .container-fluid .row .col li a:hover {
     color: #FF772C;
     border-radius: 5px;
+  }
+  body[dir=ltr] .cc-1yy0g a {
+    bottom: 80px;
   }
 }
 @media (min-width: 575.98px) and (max-width: 767.98px) {
@@ -6844,42 +7091,42 @@ badge.SecondaryColor {
     background-image: url("/images/slider/MainBG.jpg");
     animation: moveBackground 30s infinite alternate ease-in-out;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container {
     z-index: 5;
     position: relative;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 {
     text-align: center;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 h1 {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 h1 {
     font-size: 40px;
     font-weight: 400;
     color: #223885;
     text-align: center;
     text-shadow: 0px 0px 10px #FFFFFF;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 svg {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 svg {
     width: 200px;
     stroke: #0074FF;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 0.5rem;
     margin-top: 2rem;
     background-color: #FFFFFF;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
     border-width: 0px;
     background-color: transparent;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::after, body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::before {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div::after, body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div::before {
     display: none;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div input {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input {
     font-size: 14px;
     background-color: transparent;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn {
     width: 45px;
     height: 45px;
     padding: 0.5rem;
@@ -6889,11 +7136,11 @@ badge.SecondaryColor {
     color: #0074FF;
     background-color: #223885;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
     width: 100%;
     stroke: #FFFFFF;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 {
     display: none;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom {
@@ -6952,37 +7199,37 @@ badge.SecondaryColor {
     background-image: url("/images/slider/MainBG.jpg");
     animation: moveBackground 30s infinite alternate ease-in-out;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container {
     z-index: 5;
     position: relative;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 h1 {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 h1 {
     font-size: 40px;
     font-weight: 400;
     color: #223885;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 svg {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 svg {
     width: 200px;
     stroke: #0074FF;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 0.5rem;
     margin-top: 2rem;
     background-color: rgba(255, 255, 255, 0.5647058824);
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
     border-width: 0px;
     background-color: transparent;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::after, body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::before {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div::after, body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div::before {
     display: none;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div input {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input {
     font-size: 14px;
     background-color: transparent;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn {
     width: 45px;
     height: 45px;
     padding: 0.5rem;
@@ -6992,11 +7239,11 @@ badge.SecondaryColor {
     color: #0074FF;
     background-color: #223885;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
     width: 100%;
     stroke: #FFFFFF;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 {
     display: none;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom {
@@ -7055,37 +7302,37 @@ badge.SecondaryColor {
     background-image: url("/images/slider/MainBG.jpg");
     animation: moveBackground 30s infinite alternate ease-in-out;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container {
     z-index: 5;
     position: relative;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 h1 {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 h1 {
     font-size: 25px;
     font-weight: 300;
     color: #223885;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 svg {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 svg {
     width: 200px;
     stroke: #0074FF;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 0.5rem;
     margin-top: 2rem;
     background-color: rgba(255, 255, 255, 0.5647058824);
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
     border-width: 0px;
     background-color: transparent;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::after, body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::before {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div::after, body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div::before {
     display: none;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div input {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input {
     font-size: 14px;
     background-color: transparent;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn {
     width: 45px;
     height: 45px;
     padding: 0.5rem;
@@ -7095,17 +7342,17 @@ badge.SecondaryColor {
     color: #0074FF;
     background-color: #223885;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
     width: 100%;
     stroke: #FFFFFF;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
     justify-content: center;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 .card {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card {
     width: 120px;
     display: flex;
     border-width: 0;
@@ -7116,17 +7363,17 @@ badge.SecondaryColor {
     justify-content: end;
     background-color: transparent;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 .card h3 {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card h3 {
     font-size: 18px;
     font-weight: 300;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 .card p {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card p {
     font-size: 14px;
     font-weight: 300;
     margin-bottom: 0;
     color: #223885;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 .card:not(:first-child)::before {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card:not(:first-child)::before {
     content: "";
     top: 0;
     left: 30px;
@@ -7190,36 +7437,36 @@ badge.SecondaryColor {
     background-image: url("/images/slider/MainBG.jpg");
     animation: moveBackground 30s infinite alternate ease-in-out;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container {
     z-index: 5;
     position: relative;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 h1 {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 h1 {
     font-size: 30px;
     font-weight: 300;
     color: #223885;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 svg {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 svg {
     width: 200px;
     stroke: #0074FF;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 1rem;
     margin-top: 2rem;
     background-color: rgba(255, 255, 255, 0.5647058824);
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
     border-width: 0px;
     background-color: transparent;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::after, body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::before {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div::after, body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div::before {
     display: none;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div input {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input {
     background-color: transparent;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn {
     width: 45px;
     height: 45px;
     padding: 0.5rem;
@@ -7229,17 +7476,17 @@ badge.SecondaryColor {
     color: #0074FF;
     background-color: #223885;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
     width: 100%;
     stroke: #FFFFFF;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
     justify-content: center;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 .card {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card {
     width: 120px;
     display: flex;
     border-width: 0;
@@ -7250,17 +7497,17 @@ badge.SecondaryColor {
     justify-content: end;
     background-color: transparent;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 .card h3 {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card h3 {
     font-size: 36px;
     font-weight: 300;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 .card p {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card p {
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 0;
     color: #223885;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 .card:not(:first-child)::before {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card:not(:first-child)::before {
     content: "";
     top: 0;
     left: 30px;
@@ -7324,36 +7571,36 @@ badge.SecondaryColor {
     background-image: url("/images/slider/MainBG.jpg");
     animation: moveBackground 30s infinite alternate ease-in-out;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container {
     z-index: 5;
     position: relative;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 h1 {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 h1 {
     font-size: 40px;
     font-weight: 300;
     color: #223885;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 svg {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 svg {
     width: 200px;
     stroke: #0074FF;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 1rem;
     margin-top: 2rem;
     background-color: rgba(255, 255, 255, 0.5647058824);
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
     border-width: 0px;
     background-color: transparent;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::after, body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::before {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div::after, body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div::before {
     display: none;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div input {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input {
     background-color: transparent;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn {
     width: 45px;
     height: 45px;
     padding: 0.5rem;
@@ -7363,17 +7610,17 @@ badge.SecondaryColor {
     color: #0074FF;
     background-color: #223885;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
     width: 100%;
     stroke: #FFFFFF;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
     justify-content: center;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 .card {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card {
     width: 120px;
     display: flex;
     border-width: 0;
@@ -7384,17 +7631,17 @@ badge.SecondaryColor {
     justify-content: end;
     background-color: transparent;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 .card h3 {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card h3 {
     font-size: 36px;
     font-weight: 300;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 .card p {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card p {
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 0;
     color: #223885;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 .card:not(:first-child)::before {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card:not(:first-child)::before {
     content: "";
     top: 0;
     left: 30px;
@@ -7458,36 +7705,36 @@ badge.SecondaryColor {
     background-image: url("/images/slider/MainBG.jpg");
     animation: moveBackground 30s infinite alternate ease-in-out;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container {
     z-index: 5;
     position: relative;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 h1 {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 h1 {
     font-size: 50px;
     font-weight: 300;
     color: #223885;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 svg {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 svg {
     width: 250px;
     stroke: #0074FF;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 1rem;
     margin-top: 2rem;
     background-color: rgba(255, 255, 255, 0.5647058824);
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
     border-width: 0px;
     background-color: transparent;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::after, body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div::before {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div::after, body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div::before {
     display: none;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search div input {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input {
     background-color: transparent;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn {
     width: 45px;
     height: 45px;
     padding: 0.5rem;
@@ -7497,17 +7744,17 @@ badge.SecondaryColor {
     color: #0074FF;
     background-color: #223885;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
     width: 100%;
     stroke: #FFFFFF;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
     justify-content: center;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 .card {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card {
     width: 120px;
     display: flex;
     border-width: 0;
@@ -7518,17 +7765,17 @@ badge.SecondaryColor {
     justify-content: end;
     background-color: transparent;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 .card h3 {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card h3 {
     font-size: 36px;
     font-weight: 300;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 .card p {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card p {
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 0;
     color: #223885;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .container .row .col-md-7 .card:not(:first-child)::before {
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card:not(:first-child)::before {
     content: "";
     top: 0;
     left: 30px;

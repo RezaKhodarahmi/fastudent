@@ -39,7 +39,7 @@ const SearchSection = props => {
       </div>
 
       {/* Content */}
-      <section className="FNV-Slider-Content carousel slide" id="FNV-Slider-Carousel">
+      <div className="FNV-Slider-Content carousel slide" id="FNV-Slider-Carousel">
         {/* Indicators */}
         <div className="carousel-indicators">
           <button type="button" data-bs-target="#FNV-Slider-Carousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -138,7 +138,7 @@ const SearchSection = props => {
           <span className="carousel-control-next-icon" aria-hidden="true"></span>
           <span className="visually-hidden">Next</span>
         </button>
-      </section>
+      </div>
 
       <div className='FNV-Canvas-Bottom'>
         <svg viewBox="0 0 1454 100" fill="none" xmlns="http://www.w3.org/2000/svg">

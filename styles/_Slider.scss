@@ -53,68 +53,74 @@ body[dir='ltr'] {
                 background-image: url("/images/slider/MainBG.jpg");
                 animation: moveBackground 30s infinite alternate ease-in-out;
 
-                .container {
-                    z-index: 5;
-                    position: relative;
+                .carousel-indicators{}
 
-                    .row {
-                        .col-md-5 {
-                            text-align: center;
-                            
-                            h1 {
-                                font-size: 40px;
-                                font-weight: 400;
-                                color: $PrimaryOne;
-                                text-align: center;
-                                text-shadow: 0px 0px 10px $White;
-                            }
-
-                            svg {
-                                width: 200px;
-                                stroke: $PrimaryFour;
-                            }
-
-                            .FNV-Search {
-                                padding: .5rem;
-                                margin-top: 2rem;
-                                background-color: $White;
-
-                                div {
-                                    box-shadow: unset;
-                                    border-width: 0px;
-                                    background-color: transparent;
-
-                                    &::after,
-                                    &::before {
-                                        display: none;
+                .carousel-inner{
+                    .carousel-item{
+                        .container {
+                            z-index: 5;
+                            position: relative;
+        
+                            .row {
+                                .col-md-5 {
+                                    text-align: center;
+                                    
+                                    h1 {
+                                        font-size: 40px;
+                                        font-weight: 400;
+                                        color: $PrimaryOne;
+                                        text-align: center;
+                                        text-shadow: 0px 0px 10px $White;
                                     }
-
-                                    input {
-                                        font-size: 14px;
-                                        background-color: transparent;
-                                    }
-                                }
-
-                                .FNV-Btn {
-                                    width: 45px;
-                                    height: 45px;
-                                    padding: .5rem;
-                                    font-size: 16px;
-                                    font-weight: 300;
-                                    border-radius: 0px;
-                                    color: $PrimaryFour;
-                                    background-color: $PrimaryOne;
-
+        
                                     svg {
-                                        width: 100%;
-                                        stroke: $White;
+                                        width: 200px;
+                                        stroke: $PrimaryFour;
+                                    }
+        
+                                    .FNV-Search {
+                                        padding: .5rem;
+                                        margin-top: 2rem;
+                                        background-color: $White;
+        
+                                        div {
+                                            box-shadow: unset;
+                                            border-width: 0px;
+                                            background-color: transparent;
+        
+                                            &::after,
+                                            &::before {
+                                                display: none;
+                                            }
+        
+                                            input {
+                                                font-size: 14px;
+                                                background-color: transparent;
+                                            }
+                                        }
+        
+                                        .FNV-Btn {
+                                            width: 45px;
+                                            height: 45px;
+                                            padding: .5rem;
+                                            font-size: 16px;
+                                            font-weight: 300;
+                                            border-radius: 0px;
+                                            color: $PrimaryFour;
+                                            background-color: $PrimaryOne;
+        
+                                            svg {
+                                                width: 100%;
+                                                stroke: $White;
+                                            }
+                                        }
                                     }
                                 }
+        
+                                .col-md-7{
+                                    display: none;
+                                }
                             }
-                        }
-
-                        .col-md-7{
-                            display: none;
                         }
                     }
                 }
@@ -184,64 +190,70 @@ body[dir='ltr'] {
                 background-image: url("/images/slider/MainBG.jpg");
                 animation: moveBackground 30s infinite alternate ease-in-out;
 
-                .container {
-                    z-index: 5;
-                    position: relative;
+                .carousel-indicators{}
 
-                    .row {
-                        .col-md-5 {
-                            h1 {
-                                font-size: 40px;
-                                font-weight: 400;
-                                color: $PrimaryOne;
-                            }
-
-                            svg {
-                                width: 200px;
-                                stroke: $PrimaryFour;
-                            }
-
-                            .FNV-Search {
-                                padding: .5rem;
-                                margin-top: 2rem;
-                                background-color: $WhiteTwo;
-
-                                div {
-                                    box-shadow: unset;
-                                    border-width: 0px;
-                                    background-color: transparent;
-
-                                    &::after,
-                                    &::before {
-                                        display: none;
+                .carousel-inner{
+                    .carousel-item{
+                        .container {
+                            z-index: 5;
+                            position: relative;
+        
+                            .row {
+                                .col-md-5 {
+                                    h1 {
+                                        font-size: 40px;
+                                        font-weight: 400;
+                                        color: $PrimaryOne;
                                     }
-
-                                    input {
-                                        font-size: 14px;
-                                        background-color: transparent;
-                                    }
-                                }
-
-                                .FNV-Btn {
-                                    width: 45px;
-                                    height: 45px;
-                                    padding: .5rem;
-                                    font-size: 16px;
-                                    font-weight: 300;
-                                    border-radius: 0px;
-                                    color: $PrimaryFour;
-                                    background-color: $PrimaryOne;
-
+        
                                     svg {
-                                        width: 100%;
-                                        stroke: $White;
+                                        width: 200px;
+                                        stroke: $PrimaryFour;
+                                    }
+        
+                                    .FNV-Search {
+                                        padding: .5rem;
+                                        margin-top: 2rem;
+                                        background-color: $WhiteTwo;
+        
+                                        div {
+                                            box-shadow: unset;
+                                            border-width: 0px;
+                                            background-color: transparent;
+        
+                                            &::after,
+                                            &::before {
+                                                display: none;
+                                            }
+        
+                                            input {
+                                                font-size: 14px;
+                                                background-color: transparent;
+                                            }
+                                        }
+        
+                                        .FNV-Btn {
+                                            width: 45px;
+                                            height: 45px;
+                                            padding: .5rem;
+                                            font-size: 16px;
+                                            font-weight: 300;
+                                            border-radius: 0px;
+                                            color: $PrimaryFour;
+                                            background-color: $PrimaryOne;
+        
+                                            svg {
+                                                width: 100%;
+                                                stroke: $White;
+                                            }
+                                        }
                                     }
                                 }
+        
+                                .col-md-7{
+                                    display: none;
+                                }
                             }
-                        }
-
-                        .col-md-7{
-                            display: none;
                         }
                     }
                 }
@@ -310,101 +322,107 @@ body[dir='ltr'] {
                 background-position: center;
                 background-image: url("/images/slider/MainBG.jpg");
                 animation: moveBackground 30s infinite alternate ease-in-out;
+                
+                .carousel-indicators{}
 
-                .container {
-                    z-index: 5;
-                    position: relative;
-
-                    .row {
-                        .col-md-5 {
-                            h1 {
-                                font-size: 25px;
-                                font-weight: 300;
-                                color: $PrimaryOne;
-                            }
-
-                            svg {
-                                width: 200px;
-                                stroke: $PrimaryFour;
-                            }
-
-                            .FNV-Search {
-                                padding: .5rem;
-                                margin-top: 2rem;
-                                background-color: $WhiteTwo;
-
-                                div {
-                                    box-shadow: unset;
-                                    border-width: 0px;
-                                    background-color: transparent;
-
-                                    &::after,
-                                    &::before {
-                                        display: none;
+                .carousel-inner{
+                    .carousel-item{
+                        .container {
+                            z-index: 5;
+                            position: relative;
+        
+                            .row {
+                                .col-md-5 {
+                                    h1 {
+                                        font-size: 25px;
+                                        font-weight: 300;
+                                        color: $PrimaryOne;
                                     }
-
-                                    input {
-                                        font-size: 14px;
-                                        background-color: transparent;
-                                    }
-                                }
-
-                                .FNV-Btn {
-                                    width: 45px;
-                                    height: 45px;
-                                    padding: .5rem;
-                                    font-size: 16px;
-                                    font-weight: 300;
-                                    border-radius: 0px;
-                                    color: $PrimaryFour;
-                                    background-color: $PrimaryOne;
-
+        
                                     svg {
-                                        width: 100%;
-                                        stroke: $White;
+                                        width: 200px;
+                                        stroke: $PrimaryFour;
+                                    }
+        
+                                    .FNV-Search {
+                                        padding: .5rem;
+                                        margin-top: 2rem;
+                                        background-color: $WhiteTwo;
+        
+                                        div {
+                                            box-shadow: unset;
+                                            border-width: 0px;
+                                            background-color: transparent;
+        
+                                            &::after,
+                                            &::before {
+                                                display: none;
+                                            }
+        
+                                            input {
+                                                font-size: 14px;
+                                                background-color: transparent;
+                                            }
+                                        }
+        
+                                        .FNV-Btn {
+                                            width: 45px;
+                                            height: 45px;
+                                            padding: .5rem;
+                                            font-size: 16px;
+                                            font-weight: 300;
+                                            border-radius: 0px;
+                                            color: $PrimaryFour;
+                                            background-color: $PrimaryOne;
+        
+                                            svg {
+                                                width: 100%;
+                                                stroke: $White;
+                                            }
+                                        }
                                     }
                                 }
-                            }
-                        }
-
-                        .col-md-7{
-                            display: flex;
-                            align-items: flex-end;
-                            flex-direction: column;
-                            justify-content: center;
-
-                            .card{
-                                width: 120px;
-                                display: flex;
-                                border-width: 0;
-                                padding: 1rem 0;
-                                position: relative;
-                                text-align: center;
-                                color: $PrimaryFour;
-                                justify-content: end;
-                                background-color: transparent;
-
-                                h3{
-                                    font-size: 18px;
-                                    font-weight: 300;
-                                }
-
-                                p{
-                                    font-size: 14px;
-                                    font-weight: 300;
-                                    margin-bottom: 0;
-                                    color: $PrimaryOne;
-                                }
-
-                                &:not(:first-child){
-                                    &::before{
-                                        content: '';
-                                        top: 0;
-                                        left: 30px;
-                                        width: 60px;
-                                        height: 1px;
-                                        position: absolute;
-                                        background-color: $PrimarySix;
+        
+                                .col-md-7{
+                                    display: flex;
+                                    align-items: flex-end;
+                                    flex-direction: column;
+                                    justify-content: center;
+        
+                                    .card{
+                                        width: 120px;
+                                        display: flex;
+                                        border-width: 0;
+                                        padding: 1rem 0;
+                                        position: relative;
+                                        text-align: center;
+                                        color: $PrimaryFour;
+                                        justify-content: end;
+                                        background-color: transparent;
+        
+                                        h3{
+                                            font-size: 18px;
+                                            font-weight: 300;
+                                        }
+        
+                                        p{
+                                            font-size: 14px;
+                                            font-weight: 300;
+                                            margin-bottom: 0;
+                                            color: $PrimaryOne;
+                                        }
+        
+                                        &:not(:first-child){
+                                            &::before{
+                                                content: '';
+                                                top: 0;
+                                                left: 30px;
+                                                width: 60px;
+                                                height: 1px;
+                                                position: absolute;
+                                                background-color: $PrimarySix;
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -476,99 +494,105 @@ body[dir='ltr'] {
                 background-image: url("/images/slider/MainBG.jpg");
                 animation: moveBackground 30s infinite alternate ease-in-out;
 
-                .container {
-                    z-index: 5;
-                    position: relative;
+                .carousel-indicators{}
 
-                    .row {
-                        .col-md-5 {
-                            h1 {
-                                font-size: 30px;
-                                font-weight: 300;
-                                color: $PrimaryOne;
-                            }
-
-                            svg {
-                                width: 200px;
-                                stroke: $PrimaryFour;
-                            }
-
-                            .FNV-Search {
-                                padding: 1rem;
-                                margin-top: 2rem;
-                                background-color: $WhiteTwo;
-
-                                div {
-                                    box-shadow: unset;
-                                    border-width: 0px;
-                                    background-color: transparent;
-
-                                    &::after,
-                                    &::before {
-                                        display: none;
+                .carousel-inner{
+                    .carousel-item{
+                        .container {
+                            z-index: 5;
+                            position: relative;
+        
+                            .row {
+                                .col-md-5 {
+                                    h1 {
+                                        font-size: 30px;
+                                        font-weight: 300;
+                                        color: $PrimaryOne;
                                     }
-
-                                    input {
-                                        background-color: transparent;
-                                    }
-                                }
-
-                                .FNV-Btn {
-                                    width: 45px;
-                                    height: 45px;
-                                    padding: .5rem;
-                                    font-size: 16px;
-                                    font-weight: 300;
-                                    border-radius: 0px;
-                                    color: $PrimaryFour;
-                                    background-color: $PrimaryOne;
-
+        
                                     svg {
-                                        width: 100%;
-                                        stroke: $White;
+                                        width: 200px;
+                                        stroke: $PrimaryFour;
+                                    }
+        
+                                    .FNV-Search {
+                                        padding: 1rem;
+                                        margin-top: 2rem;
+                                        background-color: $WhiteTwo;
+        
+                                        div {
+                                            box-shadow: unset;
+                                            border-width: 0px;
+                                            background-color: transparent;
+        
+                                            &::after,
+                                            &::before {
+                                                display: none;
+                                            }
+        
+                                            input {
+                                                background-color: transparent;
+                                            }
+                                        }
+        
+                                        .FNV-Btn {
+                                            width: 45px;
+                                            height: 45px;
+                                            padding: .5rem;
+                                            font-size: 16px;
+                                            font-weight: 300;
+                                            border-radius: 0px;
+                                            color: $PrimaryFour;
+                                            background-color: $PrimaryOne;
+        
+                                            svg {
+                                                width: 100%;
+                                                stroke: $White;
+                                            }
+                                        }
                                     }
                                 }
-                            }
-                        }
-
-                        .col-md-7{
-                            display: flex;
-                            align-items: flex-end;
-                            flex-direction: column;
-                            justify-content: center;
-
-                            .card{
-                                width: 120px;
-                                display: flex;
-                                border-width: 0;
-                                padding: 1rem 0;
-                                position: relative;
-                                text-align: center;
-                                color: $PrimaryFour;
-                                justify-content: end;
-                                background-color: transparent;
-
-                                h3{
-                                    font-size: 36px;
-                                    font-weight: 300;
-                                }
-
-                                p{
-                                    font-size: 20px;
-                                    font-weight: 300;
-                                    margin-bottom: 0;
-                                    color: $PrimaryOne;
-                                }
-
-                                &:not(:first-child){
-                                    &::before{
-                                        content: '';
-                                        top: 0;
-                                        left: 30px;
-                                        width: 60px;
-                                        height: 1px;
-                                        position: absolute;
-                                        background-color: $PrimarySix;
+        
+                                .col-md-7{
+                                    display: flex;
+                                    align-items: flex-end;
+                                    flex-direction: column;
+                                    justify-content: center;
+        
+                                    .card{
+                                        width: 120px;
+                                        display: flex;
+                                        border-width: 0;
+                                        padding: 1rem 0;
+                                        position: relative;
+                                        text-align: center;
+                                        color: $PrimaryFour;
+                                        justify-content: end;
+                                        background-color: transparent;
+        
+                                        h3{
+                                            font-size: 36px;
+                                            font-weight: 300;
+                                        }
+        
+                                        p{
+                                            font-size: 20px;
+                                            font-weight: 300;
+                                            margin-bottom: 0;
+                                            color: $PrimaryOne;
+                                        }
+        
+                                        &:not(:first-child){
+                                            &::before{
+                                                content: '';
+                                                top: 0;
+                                                left: 30px;
+                                                width: 60px;
+                                                height: 1px;
+                                                position: absolute;
+                                                background-color: $PrimarySix;
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -640,99 +664,105 @@ body[dir='ltr'] {
                 background-image: url("/images/slider/MainBG.jpg");
                 animation: moveBackground 30s infinite alternate ease-in-out;
 
-                .container {
-                    z-index: 5;
-                    position: relative;
+                .carousel-indicators{}
 
-                    .row {
-                        .col-md-5 {
-                            h1 {
-                                font-size: 40px;
-                                font-weight: 300;
-                                color: $PrimaryOne;
-                            }
-
-                            svg {
-                                width: 200px;
-                                stroke: $PrimaryFour;
-                            }
-
-                            .FNV-Search {
-                                padding: 1rem;
-                                margin-top: 2rem;
-                                background-color: $WhiteTwo;
-
-                                div {
-                                    box-shadow: unset;
-                                    border-width: 0px;
-                                    background-color: transparent;
-
-                                    &::after,
-                                    &::before {
-                                        display: none;
+                .carousel-inner{
+                    .carousel-item{
+                        .container {
+                            z-index: 5;
+                            position: relative;
+        
+                            .row {
+                                .col-md-5 {
+                                    h1 {
+                                        font-size: 40px;
+                                        font-weight: 300;
+                                        color: $PrimaryOne;
                                     }
-
-                                    input {
-                                        background-color: transparent;
-                                    }
-                                }
-
-                                .FNV-Btn {
-                                    width: 45px;
-                                    height: 45px;
-                                    padding: .5rem;
-                                    font-size: 16px;
-                                    font-weight: 300;
-                                    border-radius: 0px;
-                                    color: $PrimaryFour;
-                                    background-color: $PrimaryOne;
-
+        
                                     svg {
-                                        width: 100%;
-                                        stroke: $White;
+                                        width: 200px;
+                                        stroke: $PrimaryFour;
+                                    }
+        
+                                    .FNV-Search {
+                                        padding: 1rem;
+                                        margin-top: 2rem;
+                                        background-color: $WhiteTwo;
+        
+                                        div {
+                                            box-shadow: unset;
+                                            border-width: 0px;
+                                            background-color: transparent;
+        
+                                            &::after,
+                                            &::before {
+                                                display: none;
+                                            }
+        
+                                            input {
+                                                background-color: transparent;
+                                            }
+                                        }
+        
+                                        .FNV-Btn {
+                                            width: 45px;
+                                            height: 45px;
+                                            padding: .5rem;
+                                            font-size: 16px;
+                                            font-weight: 300;
+                                            border-radius: 0px;
+                                            color: $PrimaryFour;
+                                            background-color: $PrimaryOne;
+        
+                                            svg {
+                                                width: 100%;
+                                                stroke: $White;
+                                            }
+                                        }
                                     }
                                 }
-                            }
-                        }
-
-                        .col-md-7{
-                            display: flex;
-                            align-items: flex-end;
-                            flex-direction: column;
-                            justify-content: center;
-
-                            .card{
-                                width: 120px;
-                                display: flex;
-                                border-width: 0;
-                                padding: 1rem 0;
-                                position: relative;
-                                text-align: center;
-                                color: $PrimaryFour;
-                                justify-content: end;
-                                background-color: transparent;
-
-                                h3{
-                                    font-size: 36px;
-                                    font-weight: 300;
-                                }
-
-                                p{
-                                    font-size: 20px;
-                                    font-weight: 300;
-                                    margin-bottom: 0;
-                                    color: $PrimaryOne;
-                                }
-
-                                &:not(:first-child){
-                                    &::before{
-                                        content: '';
-                                        top: 0;
-                                        left: 30px;
-                                        width: 60px;
-                                        height: 1px;
-                                        position: absolute;
-                                        background-color: $PrimarySix;
+        
+                                .col-md-7{
+                                    display: flex;
+                                    align-items: flex-end;
+                                    flex-direction: column;
+                                    justify-content: center;
+        
+                                    .card{
+                                        width: 120px;
+                                        display: flex;
+                                        border-width: 0;
+                                        padding: 1rem 0;
+                                        position: relative;
+                                        text-align: center;
+                                        color: $PrimaryFour;
+                                        justify-content: end;
+                                        background-color: transparent;
+        
+                                        h3{
+                                            font-size: 36px;
+                                            font-weight: 300;
+                                        }
+        
+                                        p{
+                                            font-size: 20px;
+                                            font-weight: 300;
+                                            margin-bottom: 0;
+                                            color: $PrimaryOne;
+                                        }
+        
+                                        &:not(:first-child){
+                                            &::before{
+                                                content: '';
+                                                top: 0;
+                                                left: 30px;
+                                                width: 60px;
+                                                height: 1px;
+                                                position: absolute;
+                                                background-color: $PrimarySix;
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -804,99 +834,105 @@ body[dir='ltr'] {
                 background-image: url("/images/slider/MainBG.jpg");
                 animation: moveBackground 30s infinite alternate ease-in-out;
 
-                .container {
-                    z-index: 5;
-                    position: relative;
+                .carousel-indicators{}
 
-                    .row {
-                        .col-md-5 {
-                            h1 {
-                                font-size: 50px;
-                                font-weight: 300;
-                                color: $PrimaryOne;
-                            }
-
-                            svg {
-                                width: 250px;
-                                stroke: $PrimaryFour;
-                            }
-
-                            .FNV-Search {
-                                padding: 1rem;
-                                margin-top: 2rem;
-                                background-color: $WhiteTwo;
-
-                                div {
-                                    box-shadow: unset;
-                                    border-width: 0px;
-                                    background-color: transparent;
-
-                                    &::after,
-                                    &::before {
-                                        display: none;
+                .carousel-inner{
+                    .carousel-item{
+                        .container {
+                            z-index: 5;
+                            position: relative;
+        
+                            .row {
+                                .col-md-5 {
+                                    h1 {
+                                        font-size: 50px;
+                                        font-weight: 300;
+                                        color: $PrimaryOne;
                                     }
-
-                                    input {
-                                        background-color: transparent;
-                                    }
-                                }
-
-                                .FNV-Btn {
-                                    width: 45px;
-                                    height: 45px;
-                                    padding: .5rem;
-                                    font-size: 16px;
-                                    font-weight: 300;
-                                    border-radius: 0px;
-                                    color: $PrimaryFour;
-                                    background-color: $PrimaryOne;
-
+        
                                     svg {
-                                        width: 100%;
-                                        stroke: $White;
+                                        width: 250px;
+                                        stroke: $PrimaryFour;
+                                    }
+        
+                                    .FNV-Search {
+                                        padding: 1rem;
+                                        margin-top: 2rem;
+                                        background-color: $WhiteTwo;
+        
+                                        div {
+                                            box-shadow: unset;
+                                            border-width: 0px;
+                                            background-color: transparent;
+        
+                                            &::after,
+                                            &::before {
+                                                display: none;
+                                            }
+        
+                                            input {
+                                                background-color: transparent;
+                                            }
+                                        }
+        
+                                        .FNV-Btn {
+                                            width: 45px;
+                                            height: 45px;
+                                            padding: .5rem;
+                                            font-size: 16px;
+                                            font-weight: 300;
+                                            border-radius: 0px;
+                                            color: $PrimaryFour;
+                                            background-color: $PrimaryOne;
+        
+                                            svg {
+                                                width: 100%;
+                                                stroke: $White;
+                                            }
+                                        }
                                     }
                                 }
-                            }
-                        }
-
-                        .col-md-7{
-                            display: flex;
-                            align-items: flex-end;
-                            flex-direction: column;
-                            justify-content: center;
-
-                            .card{
-                                width: 120px;
-                                display: flex;
-                                border-width: 0;
-                                padding: 1rem 0;
-                                position: relative;
-                                text-align: center;
-                                color: $PrimaryFour;
-                                justify-content: end;
-                                background-color: transparent;
-
-                                h3{
-                                    font-size: 36px;
-                                    font-weight: 300;
-                                }
-
-                                p{
-                                    font-size: 20px;
-                                    font-weight: 300;
-                                    margin-bottom: 0;
-                                    color: $PrimaryOne;
-                                }
-
-                                &:not(:first-child){
-                                    &::before{
-                                        content: '';
-                                        top: 0;
-                                        left: 30px;
-                                        width: 60px;
-                                        height: 1px;
-                                        position: absolute;
-                                        background-color: $PrimarySix;
+        
+                                .col-md-7{
+                                    display: flex;
+                                    align-items: flex-end;
+                                    flex-direction: column;
+                                    justify-content: center;
+        
+                                    .card{
+                                        width: 120px;
+                                        display: flex;
+                                        border-width: 0;
+                                        padding: 1rem 0;
+                                        position: relative;
+                                        text-align: center;
+                                        color: $PrimaryFour;
+                                        justify-content: end;
+                                        background-color: transparent;
+        
+                                        h3{
+                                            font-size: 36px;
+                                            font-weight: 300;
+                                        }
+        
+                                        p{
+                                            font-size: 20px;
+                                            font-weight: 300;
+                                            margin-bottom: 0;
+                                            color: $PrimaryOne;
+                                        }
+        
+                                        &:not(:first-child){
+                                            &::before{
+                                                content: '';
+                                                top: 0;
+                                                left: 30px;
+                                                width: 60px;
+                                                height: 1px;
+                                                position: absolute;
+                                                background-color: $PrimarySix;
+                                            }
+                                        }
                                     }
                                 }
                             }
