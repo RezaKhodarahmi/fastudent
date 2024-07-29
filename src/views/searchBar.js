@@ -40,12 +40,6 @@ const SearchSection = props => {
 
       {/* Content */}
       <div className="FNV-Slider-Content carousel slide" id="FNV-Slider-Carousel">
-        {/* Indicators */}
-        <div className="carousel-indicators">
-          <button type="button" data-bs-target="#FNV-Slider-Carousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#FNV-Slider-Carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#FNV-Slider-Carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
         {/* Carousel Inner */}
         <div className="carousel-inner">
           <div className="carousel-item active">
@@ -130,14 +124,28 @@ const SearchSection = props => {
             s
           </div>
         </div>
-        <button className="carousel-control-prev" type="button" data-bs-target="#FNV-Slider" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#FNV-Slider" data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-        </button>
+
+        {/* Indicators */}
+        <div className='container'>
+          <div className="carousel-indicators">
+            {/* Navigation */}
+            <button className="carousel-control-prev" type="button" data-bs-target="#FNV-Slider" data-bs-slide="prev">
+              <svg viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659729 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM14 4.5C14.2761 4.5 14.5 4.27614 14.5 4C14.5 3.72386 14.2761 3.5 14 3.5L14 4.5ZM1 4.5L14 4.5L14 3.5L1 3.5L1 4.5Z" />
+              </svg>
+            </button>
+            {/* Indicators */}
+            <button type="button" data-bs-target="#FNV-Slider-Carousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#FNV-Slider-Carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#FNV-Slider-Carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            {/* Navigation */}
+            <button className="carousel-control-next" type="button" data-bs-target="#FNV-Slider" data-bs-slide="next">
+              <svg viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464467C11.9763 0.269205 11.6597 0.269205 11.4645 0.464467C11.2692 0.659729 11.2692 0.976312 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM1 4.5L15 4.5L15 3.5L1 3.5L1 4.5Z" />
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
 
       <div className='FNV-Canvas-Bottom'>

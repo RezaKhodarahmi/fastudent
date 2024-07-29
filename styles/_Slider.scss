@@ -31,12 +31,14 @@ body[dir='ltr'] {
                 display: flex;
                 align-items: center;
                 background-size: cover;
+                flex-direction: column;
+                justify-content: flex-end;
                 background-position: center;
                 background-image: url("/images/slider/MainBG.jpg");
 
-                .carousel-indicators{}
-
                 .carousel-inner{
+                    margin-bottom: 5rem;
+
                     .carousel-item{
                         .container {
                             z-index: 5;
@@ -104,6 +106,32 @@ body[dir='ltr'] {
                         }
                     }
                 }
+
+                .container{
+                    z-index: 4;
+                    position: relative;
+                    margin-bottom: 0rem;
+
+                    .carousel-indicators{
+                        margin: 0;
+                        justify-content: end;
+
+                        button{
+                            background-color: $PrimaryTextFour;
+                            position: unset;
+
+                            svg{
+                                width: 30px;
+                                height: 30px;
+                                stroke: $PrimaryTextFour;
+                            }
+
+                            &.active{
+                                background-color: $PrimaryFour;
+                            }
+                        }
+                    }
+                }
             }
 
             .FNV-Canvas-Bottom {
@@ -166,13 +194,15 @@ body[dir='ltr'] {
                 display: flex;
                 align-items: center;
                 background-size: cover;
+                flex-direction: column;
+                justify-content: flex-end;
                 background-position: center;
                 background-image: url("/images/slider/MainBG.jpg");
                 animation: moveBackground 30s infinite alternate ease-in-out;
 
-                .carousel-indicators{}
-
                 .carousel-inner{
+                    margin-bottom: 2rem;
+
                     .carousel-item{
                         .container {
                             z-index: 5;
@@ -233,6 +263,32 @@ body[dir='ltr'] {
                                 .col-md-7{
                                     display: none;
                                 }
+                            }
+                        }
+                    }
+                }
+
+                .container{
+                    z-index: 4;
+                    position: relative;
+                    margin-bottom: 0rem;
+
+                    .carousel-indicators{
+                        margin: 0;
+                        justify-content: end;
+
+                        button{
+                            background-color: $PrimaryTextFour;
+                            position: unset;
+
+                            svg{
+                                width: 30px;
+                                height: 30px;
+                                stroke: $PrimaryTextFour;
+                            }
+
+                            &.active{
+                                background-color: $PrimaryFour;
                             }
                         }
                     }
@@ -299,13 +355,15 @@ body[dir='ltr'] {
                 display: flex;
                 align-items: center;
                 background-size: cover;
+                flex-direction: column;
+                justify-content: flex-end;
                 background-position: center;
                 background-image: url("/images/slider/MainBG.jpg");
                 animation: moveBackground 30s infinite alternate ease-in-out;
-                
-                .carousel-indicators{}
 
                 .carousel-inner{
+                    margin-bottom: 1rem;
+
                     .carousel-item{
                         .container {
                             z-index: 5;
@@ -409,6 +467,32 @@ body[dir='ltr'] {
                         }
                     }
                 }
+
+                .container{
+                    z-index: 4;
+                    position: relative;
+                    margin-bottom: 1rem;
+
+                    .carousel-indicators{
+                        margin: 0;
+                        justify-content: end;
+
+                        button{
+                            background-color: $PrimaryTextFour;
+                            position: unset;
+
+                            svg{
+                                width: 30px;
+                                height: 30px;
+                                stroke: $PrimaryTextFour;
+                            }
+
+                            &.active{
+                                background-color: $PrimaryFour;
+                            }
+                        }
+                    }
+                }
             }
 
             .FNV-Canvas-Bottom {
@@ -469,14 +553,16 @@ body[dir='ltr'] {
                 height: 100%;
                 display: flex;
                 align-items: center;
+                flex-direction: column;
                 background-size: cover;
+                justify-content: flex-end;
                 background-position: center;
                 background-image: url("/images/slider/MainBG.jpg");
                 animation: moveBackground 30s infinite alternate ease-in-out;
 
-                .carousel-indicators{}
-
                 .carousel-inner{
+                    margin-bottom: 4rem;
+
                     .carousel-item{
                         .container {
                             z-index: 5;
@@ -579,6 +665,32 @@ body[dir='ltr'] {
                         }
                     }
                 }
+
+                .container{
+                    z-index: 4;
+                    position: relative;
+                    margin-bottom: 1rem;
+
+                    .carousel-indicators{
+                        margin: 0;
+                        justify-content: end;
+
+                        button{
+                            background-color: $PrimaryTextFour;
+                            position: unset;
+
+                            svg{
+                                width: 30px;
+                                height: 30px;
+                                stroke: $PrimaryTextFour;
+                            }
+
+                            &.active{
+                                background-color: $PrimaryFour;
+                            }
+                        }
+                    }
+                }
             }
 
             .FNV-Canvas-Bottom {
@@ -640,13 +752,15 @@ body[dir='ltr'] {
                 display: flex;
                 align-items: center;
                 background-size: cover;
+                flex-direction: column;
+                justify-content: flex-end;
                 background-position: center;
                 background-image: url("/images/slider/MainBG.jpg");
                 animation: moveBackground 30s infinite alternate ease-in-out;
 
-                .carousel-indicators{}
-
                 .carousel-inner{
+                    margin-bottom: 4rem;
+
                     .carousel-item{
                         .container {
                             z-index: 5;
@@ -749,6 +863,32 @@ body[dir='ltr'] {
                         }
                     }
                 }
+
+                .container{
+                    z-index: 4;
+                    position: relative;
+                    margin-bottom: 2rem;
+
+                    .carousel-indicators{
+                        margin: 0;
+                        justify-content: end;
+
+                        button{
+                            background-color: $PrimaryTextFour;
+                            position: unset;
+
+                            svg{
+                                width: 30px;
+                                height: 30px;
+                                stroke: $PrimaryTextFour;
+                            }
+
+                            &.active{
+                                background-color: $PrimaryFour;
+                            }
+                        }
+                    }
+                }
             }
 
             .FNV-Canvas-Bottom {
@@ -810,13 +950,14 @@ body[dir='ltr'] {
                 display: flex;
                 align-items: center;
                 background-size: cover;
+                flex-direction: column;
+                justify-content: flex-end;
                 background-position: center;
                 background-image: url("/images/slider/MainBG.jpg");
                 animation: moveBackground 30s infinite alternate ease-in-out;
 
-                .carousel-indicators{}
-
                 .carousel-inner{
+                    margin-bottom: 5rem;
                     .carousel-item{
                         .container {
                             z-index: 5;
@@ -919,6 +1060,32 @@ body[dir='ltr'] {
                         }
                     }
                 }
+
+                .container{
+                    z-index: 4;
+                    position: relative;
+                    margin-bottom: 2rem;
+
+                    .carousel-indicators{
+                        margin: 0;
+                        justify-content: end;
+
+                        button{
+                            background-color: $PrimaryTextFour;
+                            position: unset;
+
+                            svg{
+                                width: 30px;
+                                height: 30px;
+                                stroke: $PrimaryTextFour;
+                            }
+
+                            &.active{
+                                background-color: $PrimaryFour;
+                            }
+                        }
+                    }
+                }
             }
 
             .FNV-Canvas-Bottom {
@@ -979,14 +1146,16 @@ body[dir='ltr'] {
                 height: 100%;
                 display: flex;
                 align-items: center;
+                flex-direction: column;
                 background-size: cover;
+                justify-content: flex-end;
                 background-position: center;
                 background-image: url("/images/slider/MainBG.jpg");
                 animation: moveBackground 30s infinite alternate ease-in-out;
 
-                .carousel-indicators{}
-
                 .carousel-inner{
+                    margin-bottom: 5rem;
+                    
                     .carousel-item{
                         .container {
                             z-index: 5;
@@ -1089,6 +1258,32 @@ body[dir='ltr'] {
                         }
                     }
                 }
+
+                .container{
+                    z-index: 4;
+                    position: relative;
+                    margin-bottom: 2rem;
+
+                    .carousel-indicators{
+                        margin: 0;
+                        justify-content: end;
+
+                        button{
+                            background-color: $PrimaryTextFour;
+                            position: unset;
+
+                            svg{
+                                width: 30px;
+                                height: 30px;
+                                stroke: $PrimaryTextFour;
+                            }
+
+                            &.active{
+                                background-color: $PrimaryFour;
+                            }
+                        }
+                    }
+                }
             }
 
             .FNV-Canvas-Bottom {
@@ -1137,72 +1332,106 @@ body[dir='rtl'] {
                 display: flex;
                 align-items: center;
                 background-size: cover;
+                flex-direction: column;
+                justify-content: flex-end;
                 background-position: center;
                 background-image: url("/images/slider/MainBG.jpg");
-                animation: moveBackground 30s infinite alternate ease-in-out;
 
-                .container {
-                    z-index: 5;
-                    position: relative;
+                .carousel-inner{
+                    margin-bottom: 5rem;
 
-                    .row {
-                        .col-md-5 {
-                            text-align: center;
-                            
-                            h1 {
-                                font-size: 40px;
-                                font-weight: 400;
-                                color: $PrimaryOne;
-                                text-align: center;
-                                text-shadow: 0px 0px 10px $White;
-                            }
-
-                            svg {
-                                width: 200px;
-                                stroke: $PrimaryFour;
-                            }
-
-                            .FNV-Search {
-                                padding: .5rem;
-                                margin-top: 2rem;
-                                background-color: $White;
-
-                                div {
-                                    box-shadow: unset;
-                                    border-width: 0px;
-                                    background-color: transparent;
-
-                                    &::after,
-                                    &::before {
-                                        display: none;
+                    .carousel-item{
+                        .container {
+                            z-index: 5;
+                            position: relative;
+        
+                            .row {
+                                .col-md-5 {
+                                    text-align: center;
+                                    
+                                    h1 {
+                                        font-size: 30px;
+                                        font-weight: 400;
+                                        color: $PrimaryOne;
+                                        text-align: center;
                                     }
-
-                                    input {
-                                        font-size: 14px;
-                                        background-color: transparent;
+        
+                                    svg {
+                                        width: 200px;
+                                        stroke: $PrimaryFour;
+                                    }
+        
+                                    .FNV-Search {
+                                        padding: .5rem;
+                                        margin-top: 2rem;
+                                        background-color: $White;
+        
+                                        div {
+                                            box-shadow: unset;
+                                            border-width: 0px;
+                                            background-color: transparent;
+        
+                                            &::after,
+                                            &::before {
+                                                display: none;
+                                            }
+        
+                                            input {
+                                                font-size: 14px;
+                                                background-color: transparent;
+                                            }
+                                        }
+        
+                                        .FNV-Btn {
+                                            width: 45px;
+                                            height: 45px;
+                                            padding: .5rem;
+                                            font-size: 16px;
+                                            font-weight: 300;
+                                            border-radius: 0px;
+                                            color: $PrimaryFour;
+                                            background-color: $PrimaryOne;
+        
+                                            svg {
+                                                width: 100%;
+                                                stroke: $White;
+                                            }
+                                        }
                                     }
                                 }
-
-                                .FNV-Btn {
-                                    width: 45px;
-                                    height: 45px;
-                                    padding: .5rem;
-                                    font-size: 16px;
-                                    font-weight: 300;
-                                    border-radius: 0px;
-                                    color: $PrimaryFour;
-                                    background-color: $PrimaryOne;
-
-                                    svg {
-                                        width: 100%;
-                                        stroke: $White;
-                                    }
+        
+                                .col-md-7{
+                                    display: none;
                                 }
                             }
                         }
+                    }
+                }
 
-                        .col-md-7{
-                            display: none;
+                .container{
+                    z-index: 4;
+                    position: relative;
+                    margin-bottom: 0rem;
+
+                    .carousel-indicators{
+                        margin: 0;
+                        padding: 0 1rem;
+                        justify-content: end;
+                        flex-direction: row-reverse;
+
+                        button{
+                            background-color: $PrimaryTextFour;
+                            position: unset;
+
+                            svg{
+                                width: 30px;
+                                height: 30px;
+                                stroke: $PrimaryTextFour;
+                            }
+
+                            &.active{
+                                background-color: $PrimaryFour;
+                            }
                         }
                     }
                 }
@@ -1250,68 +1479,106 @@ body[dir='rtl'] {
                 display: flex;
                 align-items: center;
                 background-size: cover;
+                flex-direction: column;
+                justify-content: flex-end;
                 background-position: center;
                 background-image: url("/images/slider/MainBG.jpg");
-                animation: moveBackground 60s infinite alternate ease-in-out;
 
-                .container {
-                    z-index: 5;
-                    position: relative;
+                .carousel-inner{
+                    margin-bottom: 5rem;
 
-                    .row {
-                        .col-md-5 {
-                            h1 {
-                                font-size: 30px;
-                                font-weight: 400;
-                                color: $PrimaryOne;
-                            }
-
-                            svg {
-                                width: 200px;
-                                stroke: $PrimaryFour;
-                            }
-
-                            .FNV-Search {
-                                padding: .5rem;
-                                margin-top: 2rem;
-                                background-color: $WhiteTwo;
-
-                                div {
-                                    box-shadow: unset;
-                                    border-width: 0px;
-                                    background-color: transparent;
-
-                                    &::after,
-                                    &::before {
-                                        display: none;
+                    .carousel-item{
+                        .container {
+                            z-index: 5;
+                            position: relative;
+        
+                            .row {
+                                .col-md-5 {
+                                    text-align: center;
+                                    
+                                    h1 {
+                                        font-size: 30px;
+                                        font-weight: 400;
+                                        color: $PrimaryOne;
+                                        text-align: center;
                                     }
-
-                                    input {
-                                        font-size: 14px;
-                                        background-color: transparent;
+        
+                                    svg {
+                                        width: 200px;
+                                        stroke: $PrimaryFour;
+                                    }
+        
+                                    .FNV-Search {
+                                        padding: .5rem;
+                                        margin-top: 2rem;
+                                        background-color: $White;
+        
+                                        div {
+                                            box-shadow: unset;
+                                            border-width: 0px;
+                                            background-color: transparent;
+        
+                                            &::after,
+                                            &::before {
+                                                display: none;
+                                            }
+        
+                                            input {
+                                                font-size: 14px;
+                                                background-color: transparent;
+                                            }
+                                        }
+        
+                                        .FNV-Btn {
+                                            width: 45px;
+                                            height: 45px;
+                                            padding: .5rem;
+                                            font-size: 16px;
+                                            font-weight: 300;
+                                            border-radius: 0px;
+                                            color: $PrimaryFour;
+                                            background-color: $PrimaryOne;
+        
+                                            svg {
+                                                width: 100%;
+                                                stroke: $White;
+                                            }
+                                        }
                                     }
                                 }
-
-                                .FNV-Btn {
-                                    width: 45px;
-                                    height: 45px;
-                                    padding: .5rem;
-                                    font-size: 16px;
-                                    font-weight: 300;
-                                    border-radius: 0px;
-                                    color: $PrimaryFour;
-                                    background-color: $PrimaryOne;
-
-                                    svg {
-                                        width: 100%;
-                                        stroke: $White;
-                                    }
+        
+                                .col-md-7{
+                                    display: none;
                                 }
                             }
                         }
+                    }
+                }
 
-                        .col-md-7{
-                            display: none;
+                .container{
+                    z-index: 4;
+                    position: relative;
+                    margin-bottom: 0rem;
+
+                    .carousel-indicators{
+                        margin: 0;
+                        padding: 0 1rem;
+                        justify-content: end;
+                        flex-direction: row-reverse;
+
+                        button{
+                            background-color: $PrimaryTextFour;
+                            position: unset;
+
+                            svg{
+                                width: 30px;
+                                height: 30px;
+                                stroke: $PrimaryTextFour;
+                            }
+
+                            &.active{
+                                background-color: $PrimaryFour;
+                            }
                         }
                     }
                 }
@@ -1377,106 +1644,104 @@ body[dir='rtl'] {
                 display: flex;
                 align-items: center;
                 background-size: cover;
+                flex-direction: column;
+                justify-content: flex-end;
                 background-position: center;
                 background-image: url("/images/slider/MainBG.jpg");
-                animation: moveBackground 30s infinite alternate ease-in-out;
 
-                .container {
-                    z-index: 5;
-                    position: relative;
+                .carousel-inner{
+                    margin-bottom: 5rem;
 
-                    .row {
-                        .col-md-5 {
-                            h1 {
-                                font-size: 25px;
-                                font-weight: 300;
-                                color: $PrimaryOne;
-                            }
-
-                            svg {
-                                width: 200px;
-                                stroke: $PrimaryFour;
-                            }
-
-                            .FNV-Search {
-                                padding: .5rem;
-                                margin-top: 2rem;
-                                background-color: $WhiteTwo;
-
-                                div {
-                                    box-shadow: unset;
-                                    border-width: 0px;
-                                    background-color: transparent;
-
-                                    &::after,
-                                    &::before {
-                                        display: none;
+                    .carousel-item{
+                        .container {
+                            z-index: 5;
+                            position: relative;
+        
+                            .row {
+                                .col-md-5 {
+                                    text-align: center;
+                                    
+                                    h1 {
+                                        font-size: 30px;
+                                        font-weight: 400;
+                                        color: $PrimaryOne;
+                                        text-align: center;
                                     }
-
-                                    input {
-                                        font-size: 14px;
-                                        background-color: transparent;
+        
+                                    svg {
+                                        width: 200px;
+                                        stroke: $PrimaryFour;
+                                    }
+        
+                                    .FNV-Search {
+                                        padding: .5rem;
+                                        margin-top: 2rem;
+                                        background-color: $White;
+        
+                                        div {
+                                            box-shadow: unset;
+                                            border-width: 0px;
+                                            background-color: transparent;
+        
+                                            &::after,
+                                            &::before {
+                                                display: none;
+                                            }
+        
+                                            input {
+                                                font-size: 14px;
+                                                background-color: transparent;
+                                            }
+                                        }
+        
+                                        .FNV-Btn {
+                                            width: 45px;
+                                            height: 45px;
+                                            padding: .5rem;
+                                            font-size: 16px;
+                                            font-weight: 300;
+                                            border-radius: 0px;
+                                            color: $PrimaryFour;
+                                            background-color: $PrimaryOne;
+        
+                                            svg {
+                                                width: 100%;
+                                                stroke: $White;
+                                            }
+                                        }
                                     }
                                 }
-
-                                .FNV-Btn {
-                                    width: 45px;
-                                    height: 45px;
-                                    padding: .5rem;
-                                    font-size: 16px;
-                                    font-weight: 300;
-                                    border-radius: 0px;
-                                    color: $PrimaryFour;
-                                    background-color: $PrimaryOne;
-
-                                    svg {
-                                        width: 100%;
-                                        stroke: $White;
-                                    }
+        
+                                .col-md-7{
+                                    display: none;
                                 }
                             }
                         }
+                    }
+                }
 
-                        .col-md-7{
-                            display: flex;
-                            align-items: flex-end;
-                            flex-direction: column;
-                            justify-content: center;
+                .container{
+                    z-index: 4;
+                    position: relative;
+                    margin-bottom: 1rem;
 
-                            .card{
-                                width: 120px;
-                                display: flex;
-                                border-width: 0;
-                                padding: 1rem 0;
-                                position: relative;
-                                text-align: center;
-                                color: $PrimaryFour;
-                                justify-content: end;
-                                background-color: transparent;
+                    .carousel-indicators{
+                        margin: 0;
+                        justify-content: end;
+                        flex-direction: row-reverse;
 
-                                h3{
-                                    font-size: 18px;
-                                    font-weight: 300;
-                                }
+                        button{
+                            background-color: $PrimaryTextFour;
+                            position: unset;
 
-                                p{
-                                    font-size: 14px;
-                                    font-weight: 300;
-                                    margin-bottom: 0;
-                                    color: $PrimaryOne;
-                                }
+                            svg{
+                                width: 30px;
+                                height: 30px;
+                                stroke: $PrimaryTextFour;
+                            }
 
-                                &:not(:first-child){
-                                    &::before{
-                                        content: '';
-                                        top: 0;
-                                        left: 30px;
-                                        width: 60px;
-                                        height: 1px;
-                                        position: absolute;
-                                        background-color: $PrimarySix;
-                                    }
-                                }
+                            &.active{
+                                background-color: $PrimaryFour;
                             }
                         }
                     }
@@ -1542,105 +1807,104 @@ body[dir='rtl'] {
                 display: flex;
                 align-items: center;
                 background-size: cover;
+                flex-direction: column;
+                justify-content: flex-end;
                 background-position: center;
                 background-image: url("/images/slider/MainBG.jpg");
-                animation: moveBackground 30s infinite alternate ease-in-out;
 
-                .container {
-                    z-index: 5;
-                    position: relative;
+                .carousel-inner{
+                    margin-bottom: 10rem;
 
-                    .row {
-                        .col-md-5 {
-                            h1 {
-                                font-size: 30px;
-                                font-weight: 300;
-                                color: $PrimaryOne;
-                            }
-
-                            svg {
-                                width: 200px;
-                                stroke: $PrimaryFour;
-                            }
-
-                            .FNV-Search {
-                                padding: 1rem;
-                                margin-top: 2rem;
-                                background-color: $WhiteTwo;
-
-                                div {
-                                    box-shadow: unset;
-                                    border-width: 0px;
-                                    background-color: transparent;
-
-                                    &::after,
-                                    &::before {
-                                        display: none;
+                    .carousel-item{
+                        .container {
+                            z-index: 5;
+                            position: relative;
+        
+                            .row {
+                                .col-md-5 {
+                                    text-align: center;
+                                    
+                                    h1 {
+                                        font-size: 30px;
+                                        font-weight: 400;
+                                        color: $PrimaryOne;
+                                        text-align: center;
                                     }
-
-                                    input {
-                                        background-color: transparent;
+        
+                                    svg {
+                                        width: 200px;
+                                        stroke: $PrimaryFour;
+                                    }
+        
+                                    .FNV-Search {
+                                        padding: .5rem;
+                                        margin-top: 2rem;
+                                        background-color: $White;
+        
+                                        div {
+                                            box-shadow: unset;
+                                            border-width: 0px;
+                                            background-color: transparent;
+        
+                                            &::after,
+                                            &::before {
+                                                display: none;
+                                            }
+        
+                                            input {
+                                                font-size: 14px;
+                                                background-color: transparent;
+                                            }
+                                        }
+        
+                                        .FNV-Btn {
+                                            width: 45px;
+                                            height: 45px;
+                                            padding: .5rem;
+                                            font-size: 16px;
+                                            font-weight: 300;
+                                            border-radius: 0px;
+                                            color: $PrimaryFour;
+                                            background-color: $PrimaryOne;
+        
+                                            svg {
+                                                width: 100%;
+                                                stroke: $White;
+                                            }
+                                        }
                                     }
                                 }
-
-                                .FNV-Btn {
-                                    width: 45px;
-                                    height: 45px;
-                                    padding: .5rem;
-                                    font-size: 16px;
-                                    font-weight: 300;
-                                    border-radius: 0px;
-                                    color: $PrimaryFour;
-                                    background-color: $PrimaryOne;
-
-                                    svg {
-                                        width: 100%;
-                                        stroke: $White;
-                                    }
+        
+                                .col-md-7{
+                                    display: none;
                                 }
                             }
                         }
+                    }
+                }
 
-                        .col-md-7{
-                            display: flex;
-                            align-items: flex-end;
-                            flex-direction: column;
-                            justify-content: center;
+                .container{
+                    z-index: 4;
+                    position: relative;
+                    margin-bottom: 1rem;
 
-                            .card{
-                                width: 120px;
-                                display: flex;
-                                border-width: 0;
-                                padding: 1rem 0;
-                                position: relative;
-                                text-align: center;
-                                color: $PrimaryFour;
-                                justify-content: end;
-                                background-color: transparent;
+                    .carousel-indicators{
+                        margin: 0;
+                        justify-content: end;
+                        flex-direction: row-reverse;
 
-                                h3{
-                                    font-size: 36px;
-                                    font-weight: 300;
-                                }
+                        button{
+                            background-color: $PrimaryTextFour;
+                            position: unset;
 
-                                p{
-                                    font-size: 20px;
-                                    font-weight: 300;
-                                    margin-bottom: 0;
-                                    color: $PrimaryOne;
-                                }
+                            svg{
+                                width: 30px;
+                                height: 30px;
+                                stroke: $PrimaryTextFour;
+                            }
 
-                                &:not(:first-child){
-                                    &::before{
-                                        content: '';
-                                        top: 0;
-                                        left: 30px;
-                                        width: 60px;
-                                        height: 1px;
-                                        position: absolute;
-                                        background-color: $PrimarySix;
-                                    }
-                                }
+                            &.active{
+                                background-color: $PrimaryFour;
                             }
                         }
                     }
@@ -1706,105 +1970,104 @@ body[dir='rtl'] {
                 display: flex;
                 align-items: center;
                 background-size: cover;
+                flex-direction: column;
+                justify-content: flex-end;
                 background-position: center;
                 background-image: url("/images/slider/MainBG.jpg");
-                animation: moveBackground 30s infinite alternate ease-in-out;
 
-                .container {
-                    z-index: 5;
-                    position: relative;
+                .carousel-inner{
+                    margin-bottom: 10rem;
 
-                    .row {
-                        .col-md-5 {
-                            h1 {
-                                font-size: 40px;
-                                font-weight: 300;
-                                color: $PrimaryOne;
-                            }
-
-                            svg {
-                                width: 200px;
-                                stroke: $PrimaryFour;
-                            }
-
-                            .FNV-Search {
-                                padding: 1rem;
-                                margin-top: 2rem;
-                                background-color: $WhiteTwo;
-
-                                div {
-                                    box-shadow: unset;
-                                    border-width: 0px;
-                                    background-color: transparent;
-
-                                    &::after,
-                                    &::before {
-                                        display: none;
+                    .carousel-item{
+                        .container {
+                            z-index: 5;
+                            position: relative;
+        
+                            .row {
+                                .col-md-5 {
+                                    text-align: right;
+                                    
+                                    h1 {
+                                        font-size: 30px;
+                                        font-weight: 400;
+                                        color: $PrimaryOne;
+                                        text-align: right;
                                     }
-
-                                    input {
-                                        background-color: transparent;
+        
+                                    svg {
+                                        width: 200px;
+                                        stroke: $PrimaryFour;
+                                    }
+        
+                                    .FNV-Search {
+                                        padding: .5rem;
+                                        margin-top: 2rem;
+                                        background-color: $White;
+        
+                                        div {
+                                            box-shadow: unset;
+                                            border-width: 0px;
+                                            background-color: transparent;
+        
+                                            &::after,
+                                            &::before {
+                                                display: none;
+                                            }
+        
+                                            input {
+                                                font-size: 14px;
+                                                background-color: transparent;
+                                            }
+                                        }
+        
+                                        .FNV-Btn {
+                                            width: 45px;
+                                            height: 45px;
+                                            padding: .5rem;
+                                            font-size: 16px;
+                                            font-weight: 300;
+                                            border-radius: 0px;
+                                            color: $PrimaryFour;
+                                            background-color: $PrimaryOne;
+        
+                                            svg {
+                                                width: 100%;
+                                                stroke: $White;
+                                            }
+                                        }
                                     }
                                 }
-
-                                .FNV-Btn {
-                                    width: 45px;
-                                    height: 45px;
-                                    padding: .5rem;
-                                    font-size: 16px;
-                                    font-weight: 300;
-                                    border-radius: 0px;
-                                    color: $PrimaryFour;
-                                    background-color: $PrimaryOne;
-
-                                    svg {
-                                        width: 100%;
-                                        stroke: $White;
-                                    }
+        
+                                .col-md-7{
+                                    display: none;
                                 }
                             }
                         }
+                    }
+                }
 
-                        .col-md-7{
-                            display: flex;
-                            align-items: flex-end;
-                            flex-direction: column;
-                            justify-content: center;
+                .container{
+                    z-index: 4;
+                    position: relative;
+                    margin-bottom: 2rem;
 
-                            .card{
-                                width: 120px;
-                                display: flex;
-                                border-width: 0;
-                                padding: 1rem 0;
-                                position: relative;
-                                text-align: center;
-                                color: $PrimaryFour;
-                                justify-content: end;
-                                background-color: transparent;
+                    .carousel-indicators{
+                        margin: 0;
+                        justify-content: end;
+                        flex-direction: row-reverse;
 
-                                h3{
-                                    font-size: 36px;
-                                    font-weight: 300;
-                                }
+                        button{
+                            background-color: $PrimaryTextFour;
+                            position: unset;
 
-                                p{
-                                    font-size: 20px;
-                                    font-weight: 300;
-                                    margin-bottom: 0;
-                                    color: $PrimaryOne;
-                                }
+                            svg{
+                                width: 30px;
+                                height: 30px;
+                                stroke: $PrimaryTextFour;
+                            }
 
-                                &:not(:first-child){
-                                    &::before{
-                                        content: '';
-                                        top: 0;
-                                        left: 30px;
-                                        width: 60px;
-                                        height: 1px;
-                                        position: absolute;
-                                        background-color: $PrimarySix;
-                                    }
-                                }
+                            &.active{
+                                background-color: $PrimaryFour;
                             }
                         }
                     }
@@ -1870,105 +2133,104 @@ body[dir='rtl'] {
                 display: flex;
                 align-items: center;
                 background-size: cover;
+                flex-direction: column;
+                justify-content: flex-end;
                 background-position: center;
                 background-image: url("/images/slider/MainBG.jpg");
-                animation: moveBackground 30s infinite alternate ease-in-out;
 
-                .container {
-                    z-index: 5;
-                    position: relative;
+                .carousel-inner{
+                    margin-bottom: 10rem;
 
-                    .row {
-                        .col-md-5 {
-                            h1 {
-                                font-size: 50px;
-                                font-weight: 300;
-                                color: $PrimaryOne;
-                            }
-
-                            svg {
-                                width: 250px;
-                                stroke: $PrimaryFour;
-                            }
-
-                            .FNV-Search {
-                                padding: 1rem;
-                                margin-top: 2rem;
-                                background-color: $WhiteTwo;
-
-                                div {
-                                    box-shadow: unset;
-                                    border-width: 0px;
-                                    background-color: transparent;
-
-                                    &::after,
-                                    &::before {
-                                        display: none;
+                    .carousel-item{
+                        .container {
+                            z-index: 5;
+                            position: relative;
+        
+                            .row {
+                                .col-md-5 {
+                                    text-align: right;
+                                    
+                                    h1 {
+                                        font-size: 30px;
+                                        font-weight: 400;
+                                        color: $PrimaryOne;
+                                        text-align: right;
                                     }
-
-                                    input {
-                                        background-color: transparent;
+        
+                                    svg {
+                                        width: 200px;
+                                        stroke: $PrimaryFour;
+                                    }
+        
+                                    .FNV-Search {
+                                        padding: .5rem;
+                                        margin-top: 2rem;
+                                        background-color: $White;
+        
+                                        div {
+                                            box-shadow: unset;
+                                            border-width: 0px;
+                                            background-color: transparent;
+        
+                                            &::after,
+                                            &::before {
+                                                display: none;
+                                            }
+        
+                                            input {
+                                                font-size: 14px;
+                                                background-color: transparent;
+                                            }
+                                        }
+        
+                                        .FNV-Btn {
+                                            width: 45px;
+                                            height: 45px;
+                                            padding: .5rem;
+                                            font-size: 16px;
+                                            font-weight: 300;
+                                            border-radius: 0px;
+                                            color: $PrimaryFour;
+                                            background-color: $PrimaryOne;
+        
+                                            svg {
+                                                width: 100%;
+                                                stroke: $White;
+                                            }
+                                        }
                                     }
                                 }
-
-                                .FNV-Btn {
-                                    width: 45px;
-                                    height: 45px;
-                                    padding: .5rem;
-                                    font-size: 16px;
-                                    font-weight: 300;
-                                    border-radius: 0px;
-                                    color: $PrimaryFour;
-                                    background-color: $PrimaryOne;
-
-                                    svg {
-                                        width: 100%;
-                                        stroke: $White;
-                                    }
+        
+                                .col-md-7{
+                                    display: none;
                                 }
                             }
                         }
+                    }
+                }
 
-                        .col-md-7{
-                            display: flex;
-                            align-items: flex-end;
-                            flex-direction: column;
-                            justify-content: center;
+                .container{
+                    z-index: 4;
+                    position: relative;
+                    margin-bottom: 2rem;
 
-                            .card{
-                                width: 120px;
-                                display: flex;
-                                border-width: 0;
-                                padding: 1rem 0;
-                                position: relative;
-                                text-align: center;
-                                color: $PrimaryFour;
-                                justify-content: end;
-                                background-color: transparent;
+                    .carousel-indicators{
+                        margin: 0;
+                        justify-content: end;
+                        flex-direction: row-reverse;
 
-                                h3{
-                                    font-size: 36px;
-                                    font-weight: 300;
-                                }
+                        button{
+                            background-color: $PrimaryTextFour;
+                            position: unset;
 
-                                p{
-                                    font-size: 20px;
-                                    font-weight: 300;
-                                    margin-bottom: 0;
-                                    color: $PrimaryOne;
-                                }
+                            svg{
+                                width: 30px;
+                                height: 30px;
+                                stroke: $PrimaryTextFour;
+                            }
 
-                                &:not(:first-child){
-                                    &::before{
-                                        content: '';
-                                        top: 0;
-                                        left: 30px;
-                                        width: 60px;
-                                        height: 1px;
-                                        position: absolute;
-                                        background-color: $PrimarySix;
-                                    }
-                                }
+                            &.active{
+                                background-color: $PrimaryFour;
                             }
                         }
                     }
@@ -2034,13 +2296,14 @@ body[dir='rtl'] {
                 display: flex;
                 align-items: center;
                 background-size: cover;
+                flex-direction: column;
+                justify-content: flex-end;
                 background-position: center;
                 background-image: url("/images/slider/MainBG.jpg");
-                animation: moveBackground 30s infinite alternate ease-in-out;
-
-                .carousel-indicators{}
 
                 .carousel-inner{
+                    margin-bottom: 10rem;
+
                     .carousel-item{
                         .container {
                             z-index: 5;
@@ -2048,21 +2311,24 @@ body[dir='rtl'] {
         
                             .row {
                                 .col-md-5 {
+                                    text-align: right;
+                                    
                                     h1 {
-                                        font-size: 64px;
-                                        font-weight: 300;
+                                        font-size: 30px;
+                                        font-weight: 400;
                                         color: $PrimaryOne;
+                                        text-align: right;
                                     }
         
                                     svg {
-                                        width: 300px;
+                                        width: 200px;
                                         stroke: $PrimaryFour;
                                     }
         
                                     .FNV-Search {
-                                        padding: 1rem;
+                                        padding: .5rem;
                                         margin-top: 2rem;
-                                        background-color: $WhiteTwo;
+                                        background-color: $White;
         
                                         div {
                                             box-shadow: unset;
@@ -2075,6 +2341,7 @@ body[dir='rtl'] {
                                             }
         
                                             input {
+                                                font-size: 14px;
                                                 background-color: transparent;
                                             }
                                         }
@@ -2098,47 +2365,35 @@ body[dir='rtl'] {
                                 }
         
                                 .col-md-7{
-                                    display: flex;
-                                    align-items: flex-end;
-                                    flex-direction: column;
-                                    justify-content: center;
-        
-                                    .card{
-                                        width: 120px;
-                                        display: flex;
-                                        border-width: 0;
-                                        padding: 1rem 0;
-                                        position: relative;
-                                        text-align: center;
-                                        color: $PrimaryFour;
-                                        justify-content: end;
-                                        background-color: transparent;
-        
-                                        h3{
-                                            font-size: 36px;
-                                            font-weight: 300;
-                                        }
-        
-                                        p{
-                                            font-size: 20px;
-                                            font-weight: 300;
-                                            margin-bottom: 0;
-                                            color: $PrimaryOne;
-                                        }
-        
-                                        &:not(:first-child){
-                                            &::before{
-                                                content: '';
-                                                top: 0;
-                                                left: 30px;
-                                                width: 60px;
-                                                height: 1px;
-                                                position: absolute;
-                                                background-color: $PrimarySix;
-                                            }
-                                        }
-                                    }
+                                    display: none;
                                 }
+                            }
+                        }
+                    }
+                }
+
+                .container{
+                    z-index: 4;
+                    position: relative;
+                    margin-bottom: 2rem;
+
+                    .carousel-indicators{
+                        margin: 0;
+                        justify-content: end;
+                        flex-direction: row-reverse;
+
+                        button{
+                            background-color: $PrimaryTextFour;
+                            position: unset;
+
+                            svg{
+                                width: 30px;
+                                height: 30px;
+                                stroke: $PrimaryTextFour;
+                            }
+
+                            &.active{
+                                background-color: $PrimaryFour;
                             }
                         }
                     }
