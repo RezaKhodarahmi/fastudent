@@ -628,84 +628,137 @@ const Index = () => {
             <h3>سوالات متداول</h3>
 
             <div className='accordion p-0' id='FAQEngineering'>
+              {/* Question */}
               <div className='accordion-item'>
                 <h2 className='accordion-header'>
                   <button className='accordion-button' type='button' data-bs-toggle='collapse' data-bs-target='#Question1'
                     aria-expanded='true' aria-controls='Question1'>
-                    آیا میتوان برای GSI اقدام نکرد و به طور مستقیم برای GSC اقدام کرد؟
+                    چگونه در کانادا لایسنس تکنسین بگیریم؟
                   </button>
                 </h2>
                 <div id='Question1' className='accordion-collapse collapse show' data-bs-parent='#FAQEngineering'>
                   <div className='accordion-body'>
                     <p>
-                      بله اما اگر بخواهید مستقیما برای GSC اقدام کنید لازم است که حداقل ۵ سال سابقه کار حرفه ای داشته
-                      باشید که حداقل ۴ سال آن را باید در کانادا کار کرده باشید و می توانید فقط یک سال از آن را از سوابق
-                      کاری خود در ایران و یا امتیاز تحصیلات مربوطه استفاده کنید.
+                    در کانادا، ارگان‌های استانی و فدرال صلاحیت صدور لایسنس در حرفه‌های تخصصی فنی را دارند. برای دریافت لایسنس، مقام‌های استانی یا فدرال آموزش، تجربه حرفه‌ای و مهارت‌های شما را ارزیابی می‌کنند تا تصمیم بگیرند که آیا شما واجد شرایط برای شرکت در امتحان و دریافت لایسنس هستید یا خیر. هر استان رویه خود را دارد، اما در اکثر استان‌ها این فرایند مشابه است. برای شناسایی ارگان استانی خود به متن این صفحه رجوع کنید.
                     </p>
                   </div>
                 </div>
               </div>
 
+              {/* Question */}
               <div className='accordion-item'>
                 <h2 className='accordion-header'>
                   <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse'
                     data-bs-target='#Question2' aria-expanded='false' aria-controls='Question2'>
-                    آیا امتحان Gold Seal Designation حضوری است؟
+                    آزمون RedSeal از چند سوال تشکیل شده است؟
                   </button>
                 </h2>
                 <div id='Question2' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
                   <div className='accordion-body'>
-                    <p>به خاطر شرایط ویروس کرونا امتحان در حال حاضر به صورت آنلاین برگزار میشود.</p>
+                    <p>
+                    آزمون RedSeal یک آزمون معتبر در سطح ملی برای دریافت لایسنس اکثر مشاغل فنی در کانادا می‌باشد. آزمون‌های RedSeal آزمون‌های نظری خاص هر ترید هستند که به دو زبان انگلیسی و فرانسوی در دسترس می‌باشند. این آزمون‌ها بین 100 تا 150 سوال چند گزینه‌ای دارند که میانگین تعداد سوالات هر آزمون 125 سوال است.
+                    </p>
                   </div>
                 </div>
               </div>
 
+              {/* Question */}
               <div className='accordion-item'>
                 <h2 className='accordion-header'>
                   <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse'
                     data-bs-target='#Question3' aria-expanded='false' aria-controls='Question3'>
-                    کدام مراکز تحصیلی دروس اجباری مشخص شده برای هر رشته را ارائه میدهند؟
+                    آیا در آزمون چلنج RedSeal در استان انتاریو میتوان شرکت کرد؟
                   </button>
                 </h2>
                 <div id='Question3' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
                   <div className='accordion-body'>
                     <p>
-                      شما میتوانید با کلیک بر روی تمامی درس های اجباری مشخص شده برای هر رشته در سایت Gold Seal Designation
-                      ، لیست کالج ها و دانشگاه هایی که آن درس ها را ارائه میدهند را مشاهده کنید.
+                    چلنج کردن آزمون RedSeal به معنی شرکت در این آزمون بدون گذراندن مسیر کارآموزی سنتی است. معمولا برای شرکت در آزمون چلنج نیاز به ارایه تجربه کاری قابل توجه اغلب چندین سال در حرفه خود دارید تا بتوانید در آزمون شرکت کنید. 
                     </p>
                   </div>
                 </div>
               </div>
 
+              {/* Question */}
               <div className='accordion-item'>
                 <h2 className='accordion-header'>
                   <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse'
                     data-bs-target='#Question4' aria-expanded='false' aria-controls='Question4'>
-                    آیا کسانی که در بخش محاسبات و طراحی کار میکنند میتوانند سابقه کار خود را ارائه دهند؟
+                    چگونه می‌توان در آزمون چلنج RedSeal در استان آلبرتا شرکت کرد؟
                   </button>
                 </h2>
                 <div id='Question4' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
                   <div className='accordion-body'>
                     <p>
-                      این امتحان و Designation مربوط به بخش عملی و اجرای پروژه های ساختمانی می باشد. بنابراین سابقه کار
-                      مهندسی مثل طراحی و محاسبات لحاظ نخواهد شد.
+                    کتاب رکورد (Blue Book) که نشان دهنده تکمیل دوره کارآموزی خود با اسپانسر قبلی است را با ذکر دقیق تعداد ماه‌ و ساعت‌های گذرانده شده ارسال کنید سپس با یکی از دفاتر AIT تماس بگیرید تا فرآیند ثبت‎نام در آزمون چالش را انجام دهند. اگر تجربه کار دارید، امکن چلنج امتحان برای شما وجود دارد.
                     </p>
                   </div>
                 </div>
               </div>
 
+              {/* Question */}
               <div className='accordion-item'>
                 <h2 className='accordion-header'>
                   <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse'
                     data-bs-target='#Question5' aria-expanded='false' aria-controls='Question5'>
-                    آیا باید عضو سازمان بود تا بتوان برای Gold Seal Designation اقدام کرد؟
+                    چگونه می‌توان برای یک برنامه RedSeal در بریتیش کلمبیا واجد شرایط شد؟
                   </button>
                 </h2>
                 <div id='Question5' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
                   <div className='accordion-body'>
                     <p>
-                      خیر.شما میتوانید بدون عضویت در سازمان و به طور مستقیم مدارک خود را برای سازمان فرستاده و برای Gold
-                      Seal Designation اقدام کنید.
+                    فارغ‌التحصیلی از یک برنامه آموزشی کارآموزی تایید شده استانی با رعایت الزامات تعیین شده توسط مرجع کارآموزی استانی یا داشتن تجربه کاری کافی در یک حرفه RedSeal یا استانی برای کسب صلاحیت جهت شرکت در آزمون Red Seal واحد شرایط می‌شوند.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse'
+                    data-bs-target='#Question6' aria-expanded='false' aria-controls='Question6'>
+                    مزایای دریافت تاییدیه RedSeal
+                  </button>
+                </h2>
+                <div id='Question6' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                    لایسنس RedSeal به صورت ملی شناخته می‌شود، به این معنی که دریافت آن در انتاریو به شما اجازه می‌دهد که بدون نیاز به تایید مجدد یا گذراندن آموزش اضافی به هر جای کشور نقل مکان کرده و کار کنید.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse'
+                    data-bs-target='#Question7' aria-expanded='false' aria-controls='Question7'>
+                    چگونه می‌توانم یک برقکار RedSeal در انتاریو شوم؟
+                  </button>
+                </h2>
+                <div id='Question7' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                    برای دریافت بیشتر لایسنس‎های RedSeal و قبل از اینکه اجازه شرکت در امتحان را پیدا کنید نیاز به کسب سال‌ها آموزش در محیط کاری دارید و باید کالج بروید و کارآموزی کنید. کسانی که 9000 ساعت تجربه در خارج از کانادا دارند، می‌توانند پس از ارائه تجربیات کاری خود به Skilled Trades Ontario بدون نیاز به برنامه کارآموزی، در آزمون چلنج شرکت کنند. اگر شما دوره کارآموزی رسمی را نگذرانده‌اید و آموزش‌های فنی سطوح 1، 2، 3 و 4 را در کانادا کسب نکرده‌اید، برای شرکت در آزمون RedSeal  باید مدارک کتبی از 6000 تا 9000 ساعت تجربه کاری مستقیم در این حرفه را ارائه دهید.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse'
+                    data-bs-target='#Question8' aria-expanded='false' aria-controls='Question8'>
+                    آیا یک برق‌کار با داشتن RedSeal می‌تواند در هر نقطه‌ای از کانادا کار کند؟
+                  </button>
+                </h2>
+                <div id='Question8' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                    RedSeal یک دزیگنیشن ملی است. شما با گذراندن یک آزمون بین‌استانی آن را کسب می‌کنید. این بدان معناست که می‌توانید با تاییدیه RedSeal (RSE) خود در هر نقطه‌ای از کانادا کار کنید.
                     </p>
                   </div>
                 </div>
