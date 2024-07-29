@@ -766,14 +766,14 @@ const Course = () => {
                                     className='accordion-button collapsed'
                                     type='button'
                                     data-bs-toggle='collapse'
-                                    data-bs-target='#QuestionOne'
+                                    data-bs-target={`#Question${item.id}`}
                                     aria-expanded='false'
-                                    aria-controls='QuestionOne'
+                                    aria-controls={`Question${item.id}`}
                                   >
                                     {index + 1}. {item.title}{' '}
                                   </button>
                                 </h2>
-                                <div id='QuestionOne' className='accordion-collapse collapse'>
+                                <div id={`Question${item.id}`} className='accordion-collapse collapse'>
                                   <div className='accordion-body FNV-Locked'>
                                     {t('single-course-faq-answer')}:
                                     <div
