@@ -22,25 +22,7 @@ body[dir='ltr'] {
             }
 
             .FNV-Slider-Object {
-                top: 0;
-                left: 0;
-                z-index: 4;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                position: absolute;
-                justify-content: center;
-                background-size: contain;
-
-                .FNV-Slider-Object-Person {
-                    width: 200px;
-                    height: 350px;
-                    background-size: contain;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-image: url("/images/slider/Person.png");
-                    animation: moveUpDown 10s infinite alternate ease-in-out;
-                }
+                display: none;
             }
 
             .FNV-Slider-Content {
@@ -51,7 +33,6 @@ body[dir='ltr'] {
                 background-size: cover;
                 background-position: center;
                 background-image: url("/images/slider/MainBG.jpg");
-                animation: moveBackground 30s infinite alternate ease-in-out;
 
                 .carousel-indicators{}
 
@@ -66,11 +47,10 @@ body[dir='ltr'] {
                                     text-align: center;
                                     
                                     h1 {
-                                        font-size: 40px;
+                                        font-size: 30px;
                                         font-weight: 400;
                                         color: $PrimaryOne;
                                         text-align: center;
-                                        text-shadow: 0px 0px 10px $White;
                                     }
         
                                     svg {
@@ -1148,25 +1128,7 @@ body[dir='rtl'] {
             }
 
             .FNV-Slider-Object {
-                top: 0;
-                left: 0;
-                z-index: 4;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                position: absolute;
-                justify-content: center;
-                background-size: contain;
-
-                .FNV-Slider-Object-Person {
-                    width: 200px;
-                    height: 350px;
-                    background-size: contain;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-image: url("/images/slider/Person.png");
-                    animation: moveUpDown 10s infinite alternate ease-in-out;
-                }
+                display: none;
             }
 
             .FNV-Slider-Content {
@@ -1279,25 +1241,7 @@ body[dir='rtl'] {
             }
 
             .FNV-Slider-Object {
-                top: 0;
-                left: 0;
-                z-index: 4;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                position: absolute;
-                justify-content: center;
-                background-size: contain;
-
-                .FNV-Slider-Object-Person {
-                    width: 200px;
-                    height: 350px;
-                    background-size: contain;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-image: url("/images/slider/Person.png");
-                    animation: moveUpDown 10s infinite alternate ease-in-out;
-                }
+                display: none;
             }
 
             .FNV-Slider-Content {
@@ -1308,7 +1252,7 @@ body[dir='rtl'] {
                 background-size: cover;
                 background-position: center;
                 background-image: url("/images/slider/MainBG.jpg");
-                animation: moveBackground 30s infinite alternate ease-in-out;
+                animation: moveBackground 60s infinite alternate ease-in-out;
 
                 .container {
                     z-index: 5;
@@ -1317,7 +1261,7 @@ body[dir='rtl'] {
                     .row {
                         .col-md-5 {
                             h1 {
-                                font-size: 40px;
+                                font-size: 30px;
                                 font-weight: 400;
                                 color: $PrimaryOne;
                             }

@@ -7803,24 +7803,7 @@ badge.SecondaryColor {
     transform: rotateY(0deg);
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Object {
-    top: 0;
-    left: 0;
-    z-index: 4;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    background-size: contain;
-  }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Object .FNV-Slider-Object-Person {
-    width: 200px;
-    height: 350px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("/images/slider/Person.png");
-    animation: moveUpDown 10s infinite alternate ease-in-out;
+    display: none;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content {
     width: 100%;
@@ -7830,7 +7813,6 @@ badge.SecondaryColor {
     background-size: cover;
     background-position: center;
     background-image: url("/images/slider/MainBG.jpg");
-    animation: moveBackground 30s infinite alternate ease-in-out;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container {
     z-index: 5;
@@ -7840,11 +7822,10 @@ badge.SecondaryColor {
     text-align: center;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 h1 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 400;
     color: #223885;
     text-align: center;
-    text-shadow: 0px 0px 10px #FFFFFF;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 svg {
     width: 200px;
@@ -8687,24 +8668,7 @@ badge.SecondaryColor {
     transform: rotateY(180deg);
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Object {
-    top: 0;
-    left: 0;
-    z-index: 4;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    background-size: contain;
-  }
-  body[dir=rtl] .FNV-Slider .FNV-Slider-Object .FNV-Slider-Object-Person {
-    width: 200px;
-    height: 350px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("/images/slider/Person.png");
-    animation: moveUpDown 10s infinite alternate ease-in-out;
+    display: none;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content {
     width: 100%;
@@ -8795,24 +8759,7 @@ badge.SecondaryColor {
     transform: rotateY(180deg);
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Object {
-    top: 0;
-    left: 0;
-    z-index: 4;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    background-size: contain;
-  }
-  body[dir=rtl] .FNV-Slider .FNV-Slider-Object .FNV-Slider-Object-Person {
-    width: 200px;
-    height: 350px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("/images/slider/Person.png");
-    animation: moveUpDown 10s infinite alternate ease-in-out;
+    display: none;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content {
     width: 100%;
@@ -8822,14 +8769,14 @@ badge.SecondaryColor {
     background-size: cover;
     background-position: center;
     background-image: url("/images/slider/MainBG.jpg");
-    animation: moveBackground 30s infinite alternate ease-in-out;
+    animation: moveBackground 60s infinite alternate ease-in-out;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container {
     z-index: 5;
     position: relative;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .container .row .col-md-5 h1 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 400;
     color: #223885;
   }
