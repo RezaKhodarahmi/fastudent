@@ -588,6 +588,7 @@ const Index = () => {
                 </div>
               </div>
 
+              {/* Question */}
               <div className='accordion-item'>
                 <h2 className='accordion-header'>
                   <button
@@ -608,6 +609,7 @@ const Index = () => {
                 </div>
               </div>
 
+              {/* Question */}
               <div className='accordion-item'>
                 <h2 className='accordion-header'>
                   <button
@@ -631,6 +633,7 @@ const Index = () => {
                 </div>
               </div>
 
+              {/* Question */}
               <div className='accordion-item'>
                 <h2 className='accordion-header'>
                   <button
@@ -647,6 +650,100 @@ const Index = () => {
                 <div id='Question5' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
                   <div className='accordion-body'>
                     <p>پاسخ: خير، لازم نيست.</p>
+                  </div>
+                </div>
+              </div>
+
+              <h4 className='my-5'>سوالات متداول متقاضیان P.Eng استان انتاریو</h4>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question6'
+                    aria-expanded='false'
+                    aria-controls='Question6'
+                  >
+                    من درخواست مجوز را قبل از ۱۵ می ۲۰۲۳ ثبت کرده‌ام. چه اتفاقی برای درخواست من می‌افتد؟
+                  </button>
+                </h2>
+                <div id='Question6' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                    اگر شما درخواست مجوز را قبل از ۱۵ می ۲۰۲۳ ثبت کرده‌اید، مسیر مجوزدهی که در زمان ثبت‌نام شما برقرار بود، ادامه خواهد یافت. با این حال، بسته به مرحله درخواست شما، ممکن است توسط PEO به فرآیند جدید دعوت شوید. برای مثال، متقاضیان فعلی که از قوانین جدید بهره‌مند می‌شوند، مانند حذف تجربه کاری کانادایی، در صورتی که تنها یک سال تجربه کاری کانادایی نداشته باشند، پیامی از PEO دریافت خواهند کرد.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question7'
+                    aria-expanded='false'
+                    aria-controls='Question7'
+                  >
+                    من یک متقاضی پیش از ۱۵ می ۲۰۲۳ هستم. آیا همچنان باید یک سال تجربه کاری کانادایی را ارائه دهم یا باید از طریق فرآیند جدید مجدداً درخواست دهم؟
+                  </button>
+                </h2>
+                <div id='Question7' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                    خیر، مجدداً درخواست ندهید. از ۱۵ می ۲۰۲۳ به بعد، PEO دیگر تجربه کاری کانادایی را برای ارزیابی در نظر نمی‌گیرد (برای هر دو نوع فرآیند جدید و سابق).
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question8'
+                    aria-expanded='false'
+                    aria-controls='Question8'
+                  >
+                    PEO چگونه اولویت‌بندی پردازش درخواست‌های فرآیند جدید و سابق را انجام می‌دهد؟
+                  </button>
+                </h2>
+                <div id='Question8' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                    ما دو تیم جداگانه ویژه برای هر فرآیند داریم و هیچ‌گونه ترجیحی به یکی از این فرآیندها نداریم.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question9'
+                    aria-expanded='false'
+                    aria-controls='Question9'
+                  >
+                    آیا به عنوان یک متقاضی پیش از ۱۵ می، واجد شرایط ثبت‌نام در برنامه مهندسی کارآموز (EIT) PEO هستم؟
+                  </button>
+                </h2>
+                <div id='Question9' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                    اگر ددلاین‌های تعیین‌شده در درخواست P.Eng. خود را رعایت کرده‌اید، می‌توانید در برنامه EIT ثبت‌نام کنید. لطفاً درخواست EIT خود را به ایمیل eit@peo.on.ca ارسال کنید تا بررسی و پردازش شود. پس از پرداخت و پردازش هزینه سالیانه EIT، عضویت شما فعال خواهد شد.
+                    </p>
                   </div>
                 </div>
               </div>
