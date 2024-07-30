@@ -26,7 +26,6 @@ const SearchSection = props => {
   }
 
   return (
-
     <div className='FNV-Slider'>
       <div className='FNV-Canvas-Top'>
         <svg viewBox="0 0 1454 100" fill="none" xmlns="http://www.w3.org/2000/svg">
