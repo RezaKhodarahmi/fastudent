@@ -7844,7 +7844,13 @@ badge.SecondaryColor {
     width: 100%;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 {
+    display: flex;
     text-align: center;
+    flex-direction: column;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 img {
+    width: 300px;
+    margin-top: 1rem;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 h1 {
     font-size: 25px;
@@ -7986,7 +7992,13 @@ badge.SecondaryColor {
     width: 100%;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 {
+    display: flex;
     text-align: center;
+    flex-direction: column;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 img {
+    width: 300px;
+    margin-top: 1rem;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 h1 {
     font-size: 25px;
@@ -8145,6 +8157,14 @@ badge.SecondaryColor {
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row {
     width: 100%;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 {
+    display: flex;
+    flex-direction: column;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 img {
+    width: 300px;
+    margin-top: 1rem;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 h1 {
     font-size: 25px;
@@ -8335,6 +8355,14 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row {
     width: 100%;
   }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 {
+    display: flex;
+    flex-direction: column;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 img {
+    width: 300px;
+    margin-top: 1rem;
+  }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 h1 {
     font-size: 30px;
     font-weight: 300;
@@ -8523,6 +8551,14 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row {
     width: 100%;
   }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 {
+    display: flex;
+    flex-direction: column;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 img {
+    width: 300px;
+    margin-top: 1rem;
+  }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 h1 {
     font-size: 40px;
     font-weight: 300;
@@ -8710,6 +8746,14 @@ badge.SecondaryColor {
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row {
     width: 100%;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 {
+    display: flex;
+    flex-direction: column;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 img {
+    width: 300px;
+    margin-top: 1rem;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 h1 {
     font-size: 50px;
@@ -8904,14 +8948,14 @@ badge.SecondaryColor {
     display: flex;
     flex-direction: column;
   }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 img {
+    width: 300px;
+    margin-top: 1rem;
+  }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 h1 {
     font-size: 64px;
     font-weight: 300;
     color: #223885;
-  }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 img {
-    width: 300px;
-    margin-top: 1rem;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 svg {
     width: 300px;
@@ -9062,7 +9106,7 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) {
     background-size: cover;
     background-position: right center;
-    background-image: url("/images/slider/SecondBg.jpg");
+    background-image: url("/images/slider/SecondBgR.jpg");
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container {
     z-index: 5;
@@ -9077,6 +9121,12 @@ badge.SecondaryColor {
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 img {
+    width: 300px;
+    margin-top: 1rem;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 h1 {
     font-size: 25px;
@@ -9204,7 +9254,7 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) {
     background-size: cover;
     background-position: right center;
-    background-image: url("/images/slider/SecondBg.jpg");
+    background-image: url("/images/slider/SecondBgR.jpg");
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container {
     z-index: 5;
@@ -9219,6 +9269,12 @@ badge.SecondaryColor {
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 img {
+    width: 300px;
+    margin-top: 1rem;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 h1 {
     font-size: 25px;
@@ -9364,7 +9420,7 @@ badge.SecondaryColor {
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) {
     background-position: right center;
-    background-image: url("/images/slider/SecondBg.jpg");
+    background-image: url("/images/slider/SecondBgR.jpg");
     animation: zoomBackground 10s infinite alternate ease-in-out;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container {
@@ -9377,6 +9433,14 @@ badge.SecondaryColor {
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row {
     width: 100%;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 {
+    display: flex;
+    flex-direction: column;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 img {
+    width: 300px;
+    margin-top: 1rem;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 h1 {
     font-size: 25px;
@@ -9553,7 +9617,7 @@ badge.SecondaryColor {
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) {
     background-position: right center;
-    background-image: url("/images/slider/SecondBg.jpg");
+    background-image: url("/images/slider/SecondBgR.jpg");
     animation: zoomBackground 10s infinite alternate ease-in-out;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container {
@@ -9566,6 +9630,14 @@ badge.SecondaryColor {
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row {
     width: 100%;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 {
+    display: flex;
+    flex-direction: column;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 img {
+    width: 300px;
+    margin-top: 1rem;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 h1 {
     font-size: 30px;
@@ -9741,7 +9813,7 @@ badge.SecondaryColor {
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) {
     background-position: right center;
-    background-image: url("/images/slider/SecondBg.jpg");
+    background-image: url("/images/slider/SecondBgR.jpg");
     animation: zoomBackground 10s infinite alternate ease-in-out;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container {
@@ -9754,6 +9826,14 @@ badge.SecondaryColor {
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row {
     width: 100%;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 {
+    display: flex;
+    flex-direction: column;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 img {
+    width: 300px;
+    margin-top: 1rem;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 h1 {
     font-size: 40px;
@@ -9929,7 +10009,7 @@ badge.SecondaryColor {
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) {
     background-position: right center;
-    background-image: url("/images/slider/SecondBg.jpg");
+    background-image: url("/images/slider/SecondBgR.jpg");
     animation: zoomBackground 10s infinite alternate ease-in-out;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container {
@@ -9942,6 +10022,14 @@ badge.SecondaryColor {
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row {
     width: 100%;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 {
+    display: flex;
+    flex-direction: column;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 img {
+    width: 300px;
+    margin-top: 1rem;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 h1 {
     font-size: 50px;
@@ -10098,7 +10186,7 @@ badge.SecondaryColor {
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) {
     background-position: right center;
-    background-image: url("/images/slider/SecondBg.jpg");
+    background-image: url("/images/slider/SecondBgR.jpg");
     animation: zoomBackground 10s infinite alternate ease-in-out;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .FNV-Slider-Object {
@@ -10131,6 +10219,14 @@ badge.SecondaryColor {
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row {
     width: 100%;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 {
+    display: flex;
+    flex-direction: column;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 img {
+    width: 300px;
+    margin-top: 1rem;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 h1 {
     font-size: 64px;

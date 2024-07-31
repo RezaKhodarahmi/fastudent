@@ -67,7 +67,14 @@ body[dir='ltr'] {
                                 width: 100%;
 
                                 .col-md-5 {
+                                    display: flex;
                                     text-align: center;
+                                    flex-direction: column;
+
+                                    img{
+                                        width: 300px;
+                                        margin-top: 1rem;
+                                    }
 
                                     h1 {
                                         font-size: 25px;
@@ -241,7 +248,14 @@ body[dir='ltr'] {
                                 width: 100%;
 
                                 .col-md-5 {
+                                    display: flex;
                                     text-align: center;
+                                    flex-direction: column;
+
+                                    img{
+                                        width: 300px;
+                                        margin-top: 1rem;
+                                    }
 
                                     h1 {
                                         font-size: 25px;
@@ -434,6 +448,14 @@ body[dir='ltr'] {
                                 width: 100%;
                                 
                                 .col-md-5 {
+                                    display: flex;
+                                    flex-direction: column;
+
+                                    img{
+                                        width: 300px;
+                                        margin-top: 1rem;
+                                    }
+
                                     h1 {
                                         font-size: 25px;
                                         font-weight: 300;
@@ -662,6 +684,14 @@ body[dir='ltr'] {
                                 width: 100%;
 
                                 .col-md-5 {
+                                    display: flex;
+                                    flex-direction: column;
+
+                                    img{
+                                        width: 300px;
+                                        margin-top: 1rem;
+                                    }
+
                                     h1 {
                                         font-size: 30px;
                                         font-weight: 300;
@@ -889,6 +919,14 @@ body[dir='ltr'] {
                                 width: 100%;
 
                                 .col-md-5 {
+                                    display: flex;
+                                    flex-direction: column;
+
+                                    img{
+                                        width: 300px;
+                                        margin-top: 1rem;
+                                    }
+
                                     h1 {
                                         font-size: 40px;
                                         font-weight: 300;
@@ -1116,6 +1154,14 @@ body[dir='ltr'] {
                                 width: 100%;
 
                                 .col-md-5 {
+                                    display: flex;
+                                    flex-direction: column;
+
+                                    img{
+                                        width: 300px;
+                                        margin-top: 1rem;
+                                    }
+
                                     h1 {
                                         font-size: 50px;
                                         font-weight: 300;
@@ -1347,15 +1393,15 @@ body[dir='ltr'] {
                                     display: flex;
                                     flex-direction: column;
 
+                                    img{
+                                        width: 300px;
+                                        margin-top: 1rem;
+                                    }
+
                                     h1 {
                                         font-size: 64px;
                                         font-weight: 300;
                                         color: $PrimaryOne;
-                                    }
-
-                                    img{
-                                        width: 300px;
-                                        margin-top: 1rem;
                                     }
         
                                     svg {
@@ -1544,7 +1590,7 @@ body[dir='rtl'] {
                         &:nth-child(2){
                             background-size: cover;
                             background-position: right center;
-                            background-image: url("/images/slider/SecondBg.jpg");
+                            background-image: url("/images/slider/SecondBgR.jpg");
                         }
 
 
@@ -1561,6 +1607,13 @@ body[dir='rtl'] {
 
                                 .col-md-5 {
                                     text-align: center;
+                                    display: flex;
+                                    flex-direction: column;
+
+                                    img{
+                                        width: 300px;
+                                        margin-top: 1rem;
+                                    }
 
                                     h1 {
                                         font-size: 25px;
@@ -1718,7 +1771,7 @@ body[dir='rtl'] {
                         &:nth-child(2){
                             background-size: cover;
                             background-position: right center;
-                            background-image: url("/images/slider/SecondBg.jpg");
+                            background-image: url("/images/slider/SecondBgR.jpg");
                         }
 
 
@@ -1735,6 +1788,13 @@ body[dir='rtl'] {
 
                                 .col-md-5 {
                                     text-align: center;
+                                    display: flex;
+                                    flex-direction: column;
+
+                                    img{
+                                        width: 300px;
+                                        margin-top: 1rem;
+                                    }
 
                                     h1 {
                                         font-size: 25px;
@@ -1911,7 +1971,7 @@ body[dir='rtl'] {
 
                         &:nth-child(2){
                             background-position: right center;
-                            background-image: url("/images/slider/SecondBg.jpg");
+                            background-image: url("/images/slider/SecondBgR.jpg");
                             animation: zoomBackground 10s infinite alternate ease-in-out;
                         }
 
@@ -1927,6 +1987,14 @@ body[dir='rtl'] {
                                 width: 100%;
                                 
                                 .col-md-5 {
+                                    display: flex;
+                                    flex-direction: column;
+
+                                    img{
+                                        width: 300px;
+                                        margin-top: 1rem;
+                                    }
+
                                     h1 {
                                         font-size: 25px;
                                         font-weight: 300;
@@ -2139,7 +2207,7 @@ body[dir='rtl'] {
 
                         &:nth-child(2){
                             background-position: right center;
-                            background-image: url("/images/slider/SecondBg.jpg");
+                            background-image: url("/images/slider/SecondBgR.jpg");
                             animation: zoomBackground 10s infinite alternate ease-in-out;
                         }
 
@@ -2155,6 +2223,14 @@ body[dir='rtl'] {
                                 width: 100%;
 
                                 .col-md-5 {
+                                    display: flex;
+                                    flex-direction: column;
+
+                                    img{
+                                        width: 300px;
+                                        margin-top: 1rem;
+                                    }
+
                                     h1 {
                                         font-size: 30px;
                                         font-weight: 300;
@@ -2366,7 +2442,7 @@ body[dir='rtl'] {
 
                         &:nth-child(2){
                             background-position: right center;
-                            background-image: url("/images/slider/SecondBg.jpg");
+                            background-image: url("/images/slider/SecondBgR.jpg");
                             animation: zoomBackground 10s infinite alternate ease-in-out;
                         }
 
@@ -2382,6 +2458,14 @@ body[dir='rtl'] {
                                 width: 100%;
 
                                 .col-md-5 {
+                                    display: flex;
+                                    flex-direction: column;
+
+                                    img{
+                                        width: 300px;
+                                        margin-top: 1rem;
+                                    }
+
                                     h1 {
                                         font-size: 40px;
                                         font-weight: 300;
@@ -2593,7 +2677,7 @@ body[dir='rtl'] {
 
                         &:nth-child(2){
                             background-position: right center;
-                            background-image: url("/images/slider/SecondBg.jpg");
+                            background-image: url("/images/slider/SecondBgR.jpg");
                             animation: zoomBackground 10s infinite alternate ease-in-out;
                         }
 
@@ -2609,6 +2693,14 @@ body[dir='rtl'] {
                                 width: 100%;
 
                                 .col-md-5 {
+                                    display: flex;
+                                    flex-direction: column;
+
+                                    img{
+                                        width: 300px;
+                                        margin-top: 1rem;
+                                    }
+
                                     h1 {
                                         font-size: 50px;
                                         font-weight: 300;
@@ -2799,7 +2891,7 @@ body[dir='rtl'] {
 
                         &:nth-child(2){
                             background-position: right center;
-                            background-image: url("/images/slider/SecondBg.jpg");
+                            background-image: url("/images/slider/SecondBgR.jpg");
                             animation: zoomBackground 10s infinite alternate ease-in-out;
                         }
 
@@ -2837,6 +2929,14 @@ body[dir='rtl'] {
                                 width: 100%;
 
                                 .col-md-5 {
+                                    display: flex;
+                                    flex-direction: column;
+
+                                    img{
+                                        width: 300px;
+                                        margin-top: 1rem;
+                                    }
+
                                     h1 {
                                         font-size: 64px;
                                         font-weight: 300;
