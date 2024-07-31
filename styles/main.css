@@ -7844,8 +7844,8 @@ badge.SecondaryColor {
     width: 100%;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 {
-    display: flex;
     text-align: center;
+    display: flex;
     flex-direction: column;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 img {
