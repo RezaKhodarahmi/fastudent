@@ -8208,9 +8208,9 @@ badge.SecondaryColor {
     font-weight: 300;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card p {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
-    margin-bottom: 0;
+    margin-top: 0.5rem;
     color: #223885;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card:not(:first-child)::before {
@@ -8396,9 +8396,9 @@ badge.SecondaryColor {
     font-weight: 300;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card p {
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 300;
-    margin-bottom: 0;
+    margin-top: 1rem;
     color: #223885;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card:not(:first-child)::before {
@@ -8584,9 +8584,9 @@ badge.SecondaryColor {
     font-weight: 300;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card p {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 300;
-    margin-bottom: 0;
+    margin-top: 1rem;
     color: #223885;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card:not(:first-child)::before {
@@ -8772,9 +8772,9 @@ badge.SecondaryColor {
     font-weight: 300;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card p {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 300;
-    margin-bottom: 0;
+    margin-top: 1rem;
     color: #223885;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card:not(:first-child)::before {
@@ -8900,10 +8900,18 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row {
     width: 100%;
   }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 {
+    display: flex;
+    flex-direction: column;
+  }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 h1 {
     font-size: 64px;
     font-weight: 300;
     color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 img {
+    width: 300px;
+    margin-top: 1rem;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 svg {
     width: 300px;
@@ -8949,21 +8957,17 @@ badge.SecondaryColor {
     width: 120px;
     display: flex;
     border-width: 0;
-    padding: 1rem 0;
+    padding: 2rem 0;
     position: relative;
     text-align: center;
     color: #0074FF;
     justify-content: end;
     background-color: transparent;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card h3 {
-    font-size: 36px;
-    font-weight: 300;
-  }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card p {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 300;
-    margin-bottom: 0;
+    margin-top: 1rem;
     color: #223885;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card:not(:first-child)::before {
@@ -9436,9 +9440,9 @@ badge.SecondaryColor {
     font-weight: 300;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card p {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
-    margin-bottom: 0;
+    margin-top: 1rem;
     color: #223885;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card:not(:first-child)::before {
@@ -9624,9 +9628,9 @@ badge.SecondaryColor {
     font-weight: 300;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card p {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 300;
-    margin-bottom: 0;
+    margin-top: 1rem;
     color: #223885;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card:not(:first-child)::before {
@@ -9812,9 +9816,9 @@ badge.SecondaryColor {
     font-weight: 300;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card p {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 300;
-    margin-bottom: 0;
+    margin-top: 1rem;
     color: #223885;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card:not(:first-child)::before {
@@ -10000,9 +10004,9 @@ badge.SecondaryColor {
     font-weight: 300;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card p {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 300;
-    margin-bottom: 0;
+    margin-top: 1rem;
     color: #223885;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card:not(:first-child)::before {
@@ -10189,9 +10193,9 @@ badge.SecondaryColor {
     font-weight: 300;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card p {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 300;
-    margin-bottom: 0;
+    margin-top: 1rem;
     color: #223885;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card:not(:first-child)::before {
