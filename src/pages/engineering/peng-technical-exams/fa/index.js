@@ -343,6 +343,23 @@ const Index = () => {
                       <p>20:00 EST</p>
                     </td>
                   </tr>
+                  <tr>
+                    <td>
+                      <p><Link href="/courses/peng-digital-systems-and-computers">A | 16-Elec-A4</Link></p>
+                    </td>
+                    <td>
+                      <p><Link href="/courses/peng-digital-systems-and-computers">Digital Systems and Computers</Link></p>
+                    </td>
+                    <td>
+                      <p>August-22-2024</p>
+                    </td>
+                    <td>
+                      <p>Thursdays</p>
+                    </td>
+                    <td>
+                      <p>20:00 EST</p>
+                    </td>
+                  </tr>
                 </tbody>
               </table>
 
