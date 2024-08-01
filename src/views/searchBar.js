@@ -110,11 +110,6 @@ const SearchSection = props => {
                       <p>PMI Authorized Training Partner</p>
                     </Link>
                   </div>
-
-                  <div className='card'>
-                    <img src="images/certificate/sto.png" className='img-fluid' />
-                    <p>Skilled Trades Ontario</p>
-                  </div>
                 </div>
               </div>
             </div>
