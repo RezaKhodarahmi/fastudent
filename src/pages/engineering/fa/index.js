@@ -2193,6 +2193,358 @@ const Index = () => {
                   </div>
                 </div>
               </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question64'
+                    aria-expanded='false'
+                    aria-controls='Question64'
+                  >
+                    اگر به حداقل سطوح مورد نیاز برای ارضای مهارت‌های حرفه‌ای محیط کانادایی نرسم، چه اتفاقی می‌افتد؟
+                  </button>
+                </h2>
+                <div id='Question64' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      ممکن است به شما مهارت‌های خاص در کانادا دوباره اختصاص داده شود تا زمانی که حداقل سطح مورد نیاز را
+                      برآورده کنید. برای ثبت نام به عنوان یک حرفه‌ای ثبت‌نام‌شده، تمام الزامات مهارتی، از جمله 8 مهارت
+                      حرفه‌ای محیط کانادا، باید برآورده شود.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <h5 class='my-5'>برنامه کارفرمای معتبر</h5>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question65'
+                    aria-expanded='false'
+                    aria-controls='Question65'
+                  >
+                    برنامه کارفرمای معتبر چیست؟
+                  </button>
+                </h2>
+                <div id='Question65' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      برنامه کارفرمای معتبر به ایجاد فرصت برای جذب و نگه‌داشتن استعدادهای ممتاز کمک می‌کند و فرآیند
+                      ارزیابی و پردازش درخواست‌های افرادی که به دنبال ثبت حرفه‌ای هستند را ساده‌تر می‌کند. در این
+                      برنامه، شرکت‌های مهندسی و علم زمین با Engineers and Geoscientists BC همکاری می‌کنند تا محیط‌های
+                      کاری ارائه دهند که اطمینان حاصل شود که کارآموزانشان می‌توانند در زمان درخواست ثبت حرفه‌ای خود از
+                      تجربه‌های لازم بهره‌مند شوند.
+                    </p>
+                    <p>
+                      برای جزئیات برنامه، فرم ثبت‌نام آنلاین و لیست کنونی همکاران کارفرمای معتبر، به وب‌سایت ما مراجعه
+                      کنید یا ایمیلی به AccreditedEmployer@egbc.ca ارسال کنید.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question66'
+                    aria-expanded='false'
+                    aria-controls='Question66'
+                  >
+                    زمان برگزاری آزمون‌های تحصیلی چه زمانی است؟
+                  </button>
+                </h2>
+                <div id='Question66' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      آزمون‌های تحصیلی دو بار در سال برگزار می‌شوند. نیمه اول سال (مه تا ژوئیه) و پاییز (اکتبر تا
+                      دسامبر) دوره‌های آزمونی هستند. برنامه زمانبندی آزمون دو ماه قبل از شروع دوره آزمون منتشر می‌شود.
+                      برای اطلاعات جدیدترین، لطفاً به صفحه وضعیت آزمون‌های تحصیلی آنلاین مراجعه کنید.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question67'
+                    aria-expanded='false'
+                    aria-controls='Question67'
+                  >
+                    چه زمانی نتایج آزمون‌های تحصیلی در دسترس خواهند بود؟
+                  </button>
+                </h2>
+                <div id='Question67' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      نتایج بر روی صفحه وضعیت برنامه شما قرار داده می‌شود و یک ایمیل اطلاع رسانی ارسال خواهد شد هنگامی
+                      که نمره شما به‌روز شده باشد. برای کاندیداهای متقاضی از سایر استان‌ها، لطفاً با دپارتمان آزمون
+                      مربوط به منطقه خود برای به‌روزرسانی نتایج تماس بگیرید.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question68'
+                    aria-expanded='false'
+                    aria-controls='Question68'
+                  >
+                    آیا می‌توانم آزمون‌های تحصیلی را به تعویق انداخت؟
+                  </button>
+                </h2>
+                <div id='Question68' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      برای کاندیدایان بریتیش کلمبیا، ممکن است قبل از یک زمان مشخص امکان به تعویق انداختن وجود داشته
+                      باشد. برای کاندیدایان متقاضی از سایر استان‌ها/سرزمین‌ها، لطفاً با دپارتمان آزمون منطقه خود در مورد
+                      سیاست‌ها و رویه‌های به تعویق انداختن آن‌ها تماس بگیرید.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question69'
+                    aria-expanded='false'
+                    aria-controls='Question69'
+                  >
+                    من برای آزمون (NPPE) از طریق Engineers and Geoscientists BC ثبت‌نام کردم. آیا صندلی من تضمین شده
+                    است؟
+                  </button>
+                </h2>
+                <div id='Question69' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      صندلی آزمون شما تا زمان رزرو جلسه آزمون با Meazure Learning در بازه زمانی معین تضمین نشده است.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question70'
+                    aria-expanded='false'
+                    aria-controls='Question70'
+                  >
+                    چه زمانی نتایج آزمون (NPPE) من منتشر می‌شود؟
+                  </button>
+                </h2>
+                <div id='Question70' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>نتایج آزمون حدود 3 تا 4 هفته پس از تاریخ آزمون از طریق پورتال وضعیت برنامه منتشر می‌شوند.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question72'
+                    aria-expanded='false'
+                    aria-controls='Question72'
+                  >
+                    چگونه می‌توانم آزمون (NPPE) را به تعویق انداخته و یا به تعویق بیاندازم؟
+                  </button>
+                </h2>
+                <div id='Question72' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      پیش از انقضاء مهلت ثبت‌نام، شما می‌توانید آزمون خود را هر زمان قبل از مهلت ثبت‌نام هر جلسه آزمون
+                      به تعویق بیاندازید. پس از انقضاء مهلت ثبت‌نام، ما به‌صورت خودکار آزمون شما را به جلسه آزمون بعدی
+                      موجود به صورت رایگان به تعویق می‌اندازیم.
+                    </p>
+                    <p>
+                      اطلاعات کامل در مورد نحوه ارائه درخواست و مدارک مورد نیاز در صفحه وب "نحوه ارائه درخواست" در دسترس
+                      است. لطفاً قبل از ارسال درخواست خود، این اطلاعات را به دقت مرور کنید تا مطمئن شوید که همه مدارک
+                      لازم را آماده کرده‌اید.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question73'
+                    aria-expanded='false'
+                    aria-controls='Question73'
+                  >
+                    من فارغ‌التحصیل یک برنامه معتبر از یک دانشگاه کانادایی هستم. آیا همچنان نیاز به ارزیابی تحصیلی دارم؟
+                  </button>
+                </h2>
+                <div id='Question73' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      اگر شما فارغ‌التحصیل یک برنامه معتبر توسط Engineers Canada هستید، نیاز به ارزیابی تحصیلی جداگانه
+                      ندارید. اما همچنان باید درخواست ثبت‌نام خود را تکمیل کرده و مدارک خود را ارسال کنید. مدارک تحصیلی
+                      رسمی شما باید از مؤسسه تحصیلی به صورت مستقیم به مهندسان و زمین‌شناسان بریتیش کلمبیا ارسال شود.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question74'
+                    aria-expanded='false'
+                    aria-controls='Question74'
+                  >
+                    آیا می‌توانم مدارک تحصیلی خود را به صورت الکترونیکی ارسال کنم؟
+                  </button>
+                </h2>
+                <div id='Question74' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      بله، بسیاری از مؤسسات تحصیلی اکنون امکان ارسال مدارک به صورت الکترونیکی را فراهم کرده‌اند. در
+                      صورتی که مؤسسه تحصیلی شما این امکان را فراهم کرده است، می‌توانید مدارک خود را به صورت الکترونیکی
+                      ارسال کنید. لطفاً اطمینان حاصل کنید که مدارک به صورت مستقیم از طریق مؤسسه تحصیلی به مهندسان و
+                      زمین‌شناسان بریتیش کلمبیا ارسال می‌شود تا معتبر شناخته شود.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question75'
+                    aria-expanded='false'
+                    aria-controls='Question75'
+                  >
+                    مراحل آزمون صلاحیت حرفه‌ای چیست؟
+                  </button>
+                </h2>
+                <div id='Question75' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      آزمون صلاحیت حرفه‌ای (PPE) یکی از مراحل مهم برای کسب مجوز مهندسی حرفه‌ای در بریتیش کلمبیا است. این
+                      آزمون شامل دو بخش اصلی می‌شود:
+                    </p>
+                    <ul>
+                      <li>
+                        بخش قوانین و اخلاق حرفه‌ای: این بخش شامل سؤالاتی در مورد قوانین، مقررات و اخلاق حرفه‌ای است که
+                        باید توسط مهندسین حرفه‌ای رعایت شود.
+                      </li>
+                      <li>
+                        بخش مدیریت و اقتصاد مهندسی: این بخش شامل سؤالاتی در مورد اصول مدیریت و اقتصاد مرتبط با حرفه
+                        مهندسی است.
+                      </li>
+                    </ul>
+                    <p>
+                      آزمون PPE به صورت آنلاین و در تاریخ‌های معینی برگزار می‌شود. اطلاعات بیشتر در مورد زمان‌بندی و
+                      نحوه ثبت‌نام برای آزمون PPE در وب‌سایت مهندسان و زمین‌شناسان بریتیش کلمبیا موجود است.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question75'
+                    aria-expanded='false'
+                    aria-controls='Question75'
+                  >
+                    آیا برای کسب مجوز باید تجربه کاری مرتبط داشته باشم؟
+                  </button>
+                </h2>
+                <div id='Question75' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      بله، یکی از الزامات کسب مجوز مهندسی حرفه‌ای در بریتیش کلمبیا، داشتن تجربه کاری مرتبط است. معمولاً
+                      حداقل ۴ سال تجربه کاری در زمینه مهندسی نیاز است. این تجربه باید تحت نظارت یک مهندس حرفه‌ای (P.Eng)
+                      باشد و شامل توسعه مهارت‌های فنی و حرفه‌ای لازم برای انجام وظایف مهندسی به صورت مستقل باشد.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question76'
+                    aria-expanded='false'
+                    aria-controls='Question76'
+                  >
+                    چطور می‌توانم از دوره‌های آموزشی و برنامه‌های توسعه حرفه‌ای استفاده کنم؟
+                  </button>
+                </h2>
+                <div id='Question76' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      مهندسان و زمین‌شناسان بریتیش کلمبیا دوره‌های آموزشی و برنامه‌های توسعه حرفه‌ای متنوعی را ارائه
+                      می‌دهند. این دوره‌ها به مهندسان کمک می‌کنند تا مهارت‌ها و دانش خود را به‌روز کنند و با آخرین
+                      تکنولوژی‌ها و روندهای صنعتی آشنا شوند. اطلاعات بیشتر در مورد دوره‌ها و برنامه‌های آموزشی موجود در
+                      وب‌سایت مهندسان و زمین‌شناسان بریتیش کلمبیا قابل دسترسی است.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <p>
+                این پاسخ‌ها نمونه‌ای از سوالات متداول در مورد مجوز مهندسی در بریتیش کلمبیا است. برای اطلاعات بیشتر و
+                پاسخ به سوالات خاص خود، حتماً به وب‌سایت رسمی مهندسان و زمین‌شناسان بریتیش کلمبیا مراجعه کنید.
+              </p>
             </div>
           </div>
         </div>
