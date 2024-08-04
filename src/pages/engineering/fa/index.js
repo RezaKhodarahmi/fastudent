@@ -588,6 +588,7 @@ const Index = () => {
                 </div>
               </div>
 
+              {/* Question */}
               <div className='accordion-item'>
                 <h2 className='accordion-header'>
                   <button
@@ -608,6 +609,7 @@ const Index = () => {
                 </div>
               </div>
 
+              {/* Question */}
               <div className='accordion-item'>
                 <h2 className='accordion-header'>
                   <button
@@ -631,6 +633,7 @@ const Index = () => {
                 </div>
               </div>
 
+              {/* Question */}
               <div className='accordion-item'>
                 <h2 className='accordion-header'>
                   <button
@@ -647,6 +650,1546 @@ const Index = () => {
                 <div id='Question5' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
                   <div className='accordion-body'>
                     <p>پاسخ: خير، لازم نيست.</p>
+                  </div>
+                </div>
+              </div>
+
+              <h4 className='my-5'>سوالات متداول متقاضیان P.Eng استان انتاریو</h4>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question6'
+                    aria-expanded='false'
+                    aria-controls='Question6'
+                  >
+                    من درخواست مجوز را قبل از ۱۵ می ۲۰۲۳ ثبت کرده‌ام. چه اتفاقی برای درخواست من می‌افتد؟
+                  </button>
+                </h2>
+                <div id='Question6' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      اگر شما درخواست مجوز را قبل از ۱۵ می ۲۰۲۳ ثبت کرده‌اید، مسیر مجوزدهی که در زمان ثبت‌نام شما برقرار
+                      بود، ادامه خواهد یافت. با این حال، بسته به مرحله درخواست شما، ممکن است توسط PEO به فرآیند جدید
+                      دعوت شوید. برای مثال، متقاضیان فعلی که از قوانین جدید بهره‌مند می‌شوند، مانند حذف تجربه کاری
+                      کانادایی، در صورتی که تنها یک سال تجربه کاری کانادایی نداشته باشند، پیامی از PEO دریافت خواهند
+                      کرد.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question7'
+                    aria-expanded='false'
+                    aria-controls='Question7'
+                  >
+                    من یک متقاضی پیش از ۱۵ می ۲۰۲۳ هستم. آیا همچنان باید یک سال تجربه کاری کانادایی را ارائه دهم یا باید
+                    از طریق فرآیند جدید مجدداً درخواست دهم؟
+                  </button>
+                </h2>
+                <div id='Question7' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      خیر، مجدداً درخواست ندهید. از ۱۵ می ۲۰۲۳ به بعد، PEO دیگر تجربه کاری کانادایی را برای ارزیابی در
+                      نظر نمی‌گیرد (برای هر دو نوع فرآیند جدید و سابق).
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question8'
+                    aria-expanded='false'
+                    aria-controls='Question8'
+                  >
+                    PEO چگونه اولویت‌بندی پردازش درخواست‌های فرآیند جدید و سابق را انجام می‌دهد؟
+                  </button>
+                </h2>
+                <div id='Question8' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>ما دو تیم جداگانه ویژه برای هر فرآیند داریم و هیچ‌گونه ترجیحی به یکی از این فرآیندها نداریم.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question9'
+                    aria-expanded='false'
+                    aria-controls='Question9'
+                  >
+                    آیا به عنوان یک متقاضی پیش از ۱۵ می، واجد شرایط ثبت‌نام در برنامه مهندسی کارآموز (EIT) PEO هستم؟
+                  </button>
+                </h2>
+                <div id='Question9' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      اگر ددلاین‌های تعیین‌شده در درخواست P.Eng. خود را رعایت کرده‌اید، می‌توانید در برنامه EIT ثبت‌نام
+                      کنید. لطفاً درخواست EIT خود را به ایمیل eit@peo.on.ca ارسال کنید تا بررسی و پردازش شود. پس از
+                      پرداخت و پردازش هزینه سالیانه EIT، عضویت شما فعال خواهد شد.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question10'
+                    aria-expanded='false'
+                    aria-controls='Question10'
+                  >
+                    من یک متقاضی سابق هستم که شرایط آکادمیک و NPPE را پاس کرده است و ۴۸ ماه تجربه مهندسی دارم. چگونه
+                    می‌توانم اطلاعات تجربه CBA خود را ارسال کنم؟
+                  </button>
+                </h2>
+                <div id='Question10' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      لطفاً اسناد تجربه CBA خود (فرم درخواست P.Eng. و فرم سوابق تجربه CBA) را به ایمیل
+                      experiencedocs@peo.on.ca ارسال کنید
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question11'
+                    aria-expanded='false'
+                    aria-controls='Question11'
+                  >
+                    من یک متقاضی پیش از ۱۵ می هستم، اما پرونده من به دلیل از دست دادن ددلاین بسته شده است. آیا می‌توانم
+                    دوباره درخواست دهم؟
+                  </button>
+                </h2>
+                <div id='Question11' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      ممکن است بتوانید مجدداً درخواست دهید. لطفاً دستورالعمل‌های موجود در وب‌سایت ما را دنبال کنید. هر
+                      الزامی که از برنامه قبلی خود را برآورده کرده‌اید، به درخواست جدید انتقال داده خواهد شد. اگر سوالی
+                      دارید، لطفاً با ایمیل apply@peo.on.ca تماس بگیرید و شماره PEO خود را ارائه دهید.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <h4 className='my-5'> سوالات متداول CBA</h4>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question12'
+                    aria-expanded='false'
+                    aria-controls='Question12'
+                  >
+                    آیا ارزیاب من باید یک P.Eng باشد؟
+                  </button>
+                </h2>
+                <div id='Question12' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      برای تجربه کاری مهندسی در کانادا، ارزیاب باید یک مهندس حرفه‌ای (P.Eng.) باشد که در طول دوره کاری
+                      معتبر باشد. برای تجربه کاری خارج از کانادا، ارزیاب باید یک مهندس باتجربه باشد. ترجیحاً ارزیابان
+                      بین‌المللی باید مهندس مجاز در کشور خود باشند.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question13'
+                    aria-expanded='false'
+                    aria-controls='Question13'
+                  >
+                    آیا باید قبل از درخواست، تجربه کاری مهندسی داشته باشم؟
+                  </button>
+                </h2>
+                <div id='Question13' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      بله. تحت فرآیند مجوز جدید که از ۱۵ می ۲۰۲۳ به اجرا درآمده، همه متقاضیان باید قبل از ارسال درخواست،
+                      هم شرایط تحصیلی و هم تجربه کاری را اثبات کنند. همه متقاضیان باید حداقل ۴۸ ماه تجربه کاری مهندسی
+                      قابل قبول داشته باشند که باید در زمان ارسال درخواست از طریق ارزیابی مبتنی بر شایستگی (CBA) اثبات
+                      شود.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question14'
+                    aria-expanded='false'
+                    aria-controls='Question14'
+                  >
+                    حداکثر/حداقل تعداد ارزیاب‌های مورد نیاز چیست؟
+                  </button>
+                </h2>
+                <div id='Question14' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>حداقل تعداد ارزیاب‌ها یک نفر است و حداکثر تعداد مشخصی ندارد.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question15'
+                    aria-expanded='false'
+                    aria-controls='Question15'
+                  >
+                    نقش ارزیاب چیست؟
+                  </button>
+                </h2>
+                <div id='Question15' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      ارزیاب تجربه کاری متقاضی را ارزیابی و امتیازدهی می‌کند. ارزیاب باید دانش مستقیم و دست اول از کار
+                      متقاضی را داشته باشد و نظارت حرفه‌ای مناسب بر متقاضی در طول دوره کاری ارسالی را داشته باشد و
+                      مسئولیت فنی کار متقاضی را بر عهده بگیرد. ارزیاب ممکن است عنوانی به جز سوپروایزر داشته باشد و ممکن
+                      است مدیر، منتور، مشتری یا همکار متقاضی باشد.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question16'
+                    aria-expanded='false'
+                    aria-controls='Question16'
+                  >
+                    چرا نیاز به یک ارزیاب برای تجربه کاری وجود دارد؟
+                  </button>
+                </h2>
+                <div id='Question16' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      ارزیابی به PEO کمک می‌کند تا اطمینان حاصل شود که الزامات مجوزدهی براورده شده است. ارزیابی به
+                      تنهایی نشان‌دهنده بررسی تجربه کاری متقاضی نیست، بلکه فقط تأیید می‌کند که این تجربه به دست آمده
+                      است.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question17'
+                    aria-expanded='false'
+                    aria-controls='Question17'
+                  >
+                    آیا تمامی ارزیاب‌های من باید از همان محل کار باشند؟
+                  </button>
+                </h2>
+                <div id='Question17' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      اگرچه این ایده‌آل است، اما ارزیابان نباید لزوماً از همان محل کار باشند. کافی است که ارزیابان به
+                      اندازه کافی با تجربه کاری مهندسی متقاضی آشنا باشند و با اطمینان مهارت‌های مورد نظر را امتیازدهی
+                      کنند.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question18'
+                    aria-expanded='false'
+                    aria-controls='Question18'
+                  >
+                    آیا ملزم به ارائه تجربه کاری کانادایی هستم؟
+                  </button>
+                </h2>
+                <div id='Question18' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>خیر، PEO دیگر برای تجربه کاری کانادایی ارزیابی نمی‌کند.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question19'
+                    aria-expanded='false'
+                    aria-controls='Question19'
+                  >
+                    اگر ارزیاب من ارزیابی را رد کند، چه کاری باید انجام دهم؟
+                  </button>
+                </h2>
+                <div id='Question19' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      خیمتقاضیان موظف به تعیین یک ارزیاب جدید برای مهارت‌هایی هستند که در ابتدا به ارزیابی که ارزیابی را
+                      رد کرده است، اختصاص داده شده بودند.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question20'
+                    aria-expanded='false'
+                    aria-controls='Question20'
+                  >
+                    من مدرک کارشناسی ارشد/دکترا دارم. آیا این سابقه می‌تواند به ۴۸ ماه تجربه کاری من اعمال شود؟
+                  </button>
+                </h2>
+                <div id='Question20' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      خچارچوب ارزیابی مبتنی بر شایستگی (CBA) اجازه استفاده از اعتبارات آموزشی پساکارشناسی برای الزام
+                      تجربه را نمی‌دهد. با این حال، یک متقاضی می‌تواند تجربه تحقیقات یا کار پساکارشناسی خود را در CBA
+                      خود شامل کند تا زمانی که ارزیاب واجد شرایط داشته باشد.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question21'
+                    aria-expanded='false'
+                    aria-controls='Question21'
+                  >
+                    آیا می‌توانم تجربه کاری پیش از فارغ‌التحصیلی را در ۴۸ ماه تجربه کاری خود محاسبه کنم؟
+                  </button>
+                </h2>
+                <div id='Question21' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      متقاضیان می‌توانند تا ۱۲ ماه تجربه کاری کسب شده قبل از اتمام مدرک کارشناسی‌شان را در ۴۸ ماه تجربه
+                      لحاظ کنند. متقاضیان می‌توانند این تجربه پیش از فارغ‌التحصیلی را در خلاصه تجربه‌شان لحاظ کنند و
+                      باید گزینه تجربه پیش از فارغ‌التحصیلی را انتخاب کنند. تاریخ شروع این تجربه نباید بیش از دو سال از
+                      تاریخ دریافت مدرک باشد.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question22'
+                    aria-expanded='false'
+                    aria-controls='Question22'
+                  >
+                    آیا می‌توانم درخواست پرونده خود را تسریع دهم؟
+                  </button>
+                </h2>
+                <div id='Question22' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      متقاضیان می‌توانند تا ۱۲لطفاً توجه داشته باشید که ما فقط درخواست‌های تسریع را در نظر می‌گیریم که
+                      متقاضیان به ما نامه‌ای از کارفرما ارائه داده‌اند که نشان می‌دهد:
+                      <ol>
+                        <li> نیاز به اخذ مدرک P.Eng برای انجام وظایف کاری فعلی دارند.</li>
+                        <li>مدرک P.Eng شرط پیشنهاد کاری است و عامل محدود کننده برای استخدام متقاضی است.</li>
+                      </ol>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question23'
+                    aria-expanded='false'
+                    aria-controls='Question23'
+                  >
+                    چگونه متقاضیان می‌توانند فرم‌های CBA را از بعد از ۱ جولای ۲۰۲۳ تکمیل کنند؟
+                  </button>
+                </h2>
+                <div id='Question23' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      برای مشاهده مراحل جدید فرآیند درخواست CBA و شروع فرآیند، به
+                      <a href='https://peo.on.ca/apply/become-professional-engineer'>peo.on.ca</a>
+                      مراجعه کنید.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question25'
+                    aria-expanded='false'
+                    aria-controls='Question25'
+                  >
+                    آیا کار تحقیقاتی حامی صنعتی در ۴۸ ماه تجربه مورد نیاز لحاظ می‌شود؟
+                  </button>
+                </h2>
+                <div id='Question25' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>بله، متقاضی می‌تواند کار تحقیقاتی حامی صنعتی را در چارچوب CBA ارائه دهد.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question26'
+                    aria-expanded='false'
+                    aria-controls='Question26'
+                  >
+                    برای مهارت‌های محیطی کانادا در چارچوب CBA، چگونه می‌توانم این مهارت‌ها را اثبات کنم اگر تجربه کاری
+                    کانادایی ندارم؟
+                  </button>
+                </h2>
+                <div id='Question26' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      مهارت‌های محیطی کانادا ممکن است خارج از کانادا کسب شود. به عنوان مثال، یک متقاضی که برای شرکت نفت
+                      شل در نیجریه کار می‌کند، ممکن است از استانداردهای مهندسی American Petroleum Institute (API)
+                      استفاده کند که در نروژ، ایالات متحده یا ویندزور، انتاریو نیز استفاده می‌شود.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question27'
+                    aria-expanded='false'
+                    aria-controls='Question27'
+                  >
+                    آیا می‌توانم در حالی که تجربه کاری را کسب می‌کنم، فرم CBA را پر کنم؟
+                  </button>
+                </h2>
+                <div id='Question27' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      بله، اما شما قادر به ارسال پرونده به صورت کامل نخواهید بود تا زمانی که یک CBA با حداقل ۴۸ ماه
+                      تجربه کاری را کامل کرده باشید.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question28'
+                    aria-expanded='false'
+                    aria-controls='Question28'
+                  >
+                    آیا متقاضی و ارزیاب باید امتیازهای CBA را قبل از ارسال به PEO باهم بررسی کنند؟
+                  </button>
+                </h2>
+                <div id='Question28' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>ارزیابان باید مهارت‌ها را به تنهایی بررسی و امتیازدهی کنند.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question29'
+                    aria-expanded='false'
+                    aria-controls='Question29'
+                  >
+                    من با کار یک متقاضی آشنا هستم؛ اما مسئولیت فنی برای کار او را بر عهده نگرفته بودم. آیا می‌توانم
+                    ارزیاب واجد شرایطی باشم؟
+                  </button>
+                </h2>
+                <div id='Question29' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      بله، تا زمانی که ارزیابان به اندازه کافی با کار متقاضی آشنا هستند و می‌توانند با اطمینان مهارت‌های
+                      مورد نظر را ارزیابی کنند.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question30'
+                    aria-expanded='false'
+                    aria-controls='Question30'
+                  >
+                    آیا متقاضی و ارزیاب باید امتیازهای CBA را قبل از ارسال به PEO باهم مورد بررسی قرار دهند؟
+                  </button>
+                </h2>
+                <div id='Question30' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      ارزیابان باید مهارت‌ها را به تنهایی بررسی و امتیازدهی کنند. ارزیابی‌های خود متقاضیان و ارزیابان
+                      باید به صورت مستقل به PEO ارسال شوند.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question31'
+                    aria-expanded='false'
+                    aria-controls='Question31'
+                  >
+                    من در یک شرکت خانوادگی کار می‌کردم و ناظر من یکی از اعضای خانواده بود (و مهندس بود). من در این شرایط
+                    باید چه کار کنم؟
+                  </button>
+                </h2>
+                <div id='Question31' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      ما در حال به‌روز رسانی CBA برای روشن‌تر شدن در این شرایط هستیم که یک عضو خانواده نمی‌تواند به
+                      عنوان ارزیاب شما باشد. در این شرایط، شما باید یک ارزیاب خارجی پیدا کنید که با کار شما آشنا باشد و
+                      بتواند به طور مستقل آن را ارزیابی کند.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question32'
+                    aria-expanded='false'
+                    aria-controls='Question32'
+                  >
+                    آیا می‌توانم از یک ارزیاب برای تمام ۴۸ ماه تجربه کاری استفاده کنم؟
+                  </button>
+                </h2>
+                <div id='Question32' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      بله، اگر یک ارزیاب با تمامی ۴۸ ماه تجربه کاری شما آشنا باشد و بتواند تمام مهارت‌های مورد نیاز را
+                      ارزیابی کند، می‌توانید از یک ارزیاب برای کل تجربه خود استفاده کنید.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question33'
+                    aria-expanded='false'
+                    aria-controls='Question33'
+                  >
+                    اگر ارزیاب من در حین فرآیند ارزیابی قابل دسترس نباشد، چه باید بکنم؟
+                  </button>
+                </h2>
+                <div id='Question33' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      اگر ارزیاب شما در دسترس نباشد، شما باید به سرعت یک ارزیاب جایگزین پیدا کنید. این ارزیاب جدید باید
+                      بتواند تجربه کاری شما را با همان دقت و جزئیات ارزیابی کند.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question34'
+                    aria-expanded='false'
+                    aria-controls='Question34'
+                  >
+                    آیا ارزیاب‌های من باید تجربه کاری را به صورت مستقل از هم ارزیابی کنند یا می‌توانند با هم مشورت کنند؟
+                  </button>
+                </h2>
+                <div id='Question34' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      هر ارزیاب باید به صورت مستقل تجربه کاری شما را ارزیابی کند و امتیازات خود را به طور مستقل به PEO
+                      ارسال کند. مشورت بین ارزیاب‌ها می‌تواند به شفافیت و دقت ارزیابی‌ها کمک کند، اما امتیازات نهایی
+                      باید مستقل از هم ارائه شوند.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question35'
+                    aria-expanded='false'
+                    aria-controls='Question35'
+                  >
+                    آیا PEO آموزش یا راهنمایی خاصی برای ارزیاب‌ها فراهم می‌کند؟
+                  </button>
+                </h2>
+                <div id='Question35' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      بله، PEO منابع و دستورالعمل‌هایی برای ارزیاب‌ها فراهم می‌کند تا آن‌ها بتوانند تجربه کاری متقاضیان
+                      را به درستی ارزیابی کنند. این منابع شامل دستورالعمل‌های دقیق در مورد چگونگی ارزیابی مهارت‌های
+                      مختلف و معیارهای امتیازدهی می‌شود.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question36'
+                    aria-expanded='false'
+                    aria-controls='Question36'
+                  >
+                    اگر متقاضی از یک کشور دیگر تجربه کاری داشته باشد که معیارهای مهندسی متفاوتی دارد، چگونه باید ارزیابی
+                    انجام شود؟
+                  </button>
+                </h2>
+                <div id='Question36' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      ارزیاب‌ها باید تجربه کاری متقاضی را بر اساس معیارهای PEO و استانداردهای مهندسی کانادا ارزیابی
+                      کنند. اگر معیارهای مهندسی کشور دیگر با معیارهای کانادا متفاوت باشد، ارزیاب باید این تفاوت‌ها را در
+                      نظر بگیرد و اطمینان حاصل کند که تجربه کاری متقاضی با استانداردهای PEO سازگار است.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question36'
+                    aria-expanded='false'
+                    aria-controls='Question36'
+                  >
+                    آیا می‌توانم تجربه کاری خارج از حوزه مهندسی را در CBA شامل کنم؟
+                  </button>
+                </h2>
+                <div id='Question36' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      تجربه کاری باید به طور مستقیم مرتبط با حوزه مهندسی باشد تا در CBA قابل قبول باشد. تجربه‌های کاری
+                      که به طور مستقیم با فعالیت‌های مهندسی مرتبط نیستند، ممکن است توسط PEO پذیرفته نشوند.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question37'
+                    aria-expanded='false'
+                    aria-controls='Question37'
+                  >
+                    اگر تجربه کاری من در شرکت‌های مختلفی باشد، چگونه باید آن‌ها را در CBA ارائه دهم؟
+                  </button>
+                </h2>
+                <div id='Question37' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      شما باید تجربه کاری خود را به تفکیک شرکت و موقعیت شغلی در CBA ارائه دهید. برای هر موقعیت شغلی، شما
+                      باید جزئیات مربوط به وظایف و مسئولیت‌های خود را شرح دهید و ارزیاب مرتبط با هر تجربه را تعیین کنید.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question38'
+                    aria-expanded='false'
+                    aria-controls='Question38'
+                  >
+                    آیا می‌توانم تجربه کاری را که به صورت پاره‌وقت یا پروژه‌ای کسب کرده‌ام در CBA شامل کنم؟
+                  </button>
+                </h2>
+                <div id='Question38' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      بله؛ جربه کاری پاره‌وقت یا پروژه‌ای می‌تواند در CBA شامل شود به شرطی که به طور قابل توجهی به
+                      مهارت‌های مهندسی شما افزوده باشد و توسط ارزیاب تأیید شود.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question39'
+                    aria-expanded='false'
+                    aria-controls='Question39'
+                  >
+                    آیا می‌توانم تجربه کاری را که به صورت پاره‌وقت یا پروژه‌ای کسب کرده‌ام در CBA شامل کنم؟
+                  </button>
+                </h2>
+                <div id='Question39' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      بله؛ جربه کاری پاره‌وقت یا پروژه‌ای می‌تواند در CBA شامل شود به شرطی که به طور قابل توجهی به
+                      مهارت‌های مهندسی شما افزوده باشد و توسط ارزیاب تأیید شود.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question40'
+                    aria-expanded='false'
+                    aria-controls='Question40'
+                  >
+                    آیا PEO بازخوردی در مورد امتیازات ارزیابی شده ارائه می‌دهد؟
+                  </button>
+                </h2>
+                <div id='Question40' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      PEO بازخورد کلی در مورد درخواست‌ها و امتیازات ارائه می‌دهد، اما جزئیات دقیق ارزیابی هر مهارت به
+                      صورت مستقل به متقاضیان ارائه نمی‌شود. اگر درخواست شما رد شود یا نیاز به اصلاحات داشته باشد، PEO به
+                      شما اطلاع می‌دهد که کدام مناطق نیاز به بهبود دارند.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <h4 className='mt-5'>سوالات متداول متقاضیان P.Eng استان بریتیش کلمبیا</h4>
+              <h5 className='mb-5'> درخواست ثبت نام</h5>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question41'
+                    aria-expanded='false'
+                    aria-controls='Question41'
+                  >
+                    درخواست ثبت نام من با یک نهاد مهندسی دیگر در کانادا ثبت شده است. چگونه می‌توانم با انجمن مهندسان و
+                    زمین‌شناسی بریتیش کلمبیا (EGBC) ثبت نام کنم؟
+                  </button>
+                </h2>
+                <div id='Question41' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      اگر شما قبلاً با یک نهاد مهندسی یا زمین‌شناسی دیگر در کانادا ثبت نام کرده‌اید، ثبت نام با EGBC
+                      می‌تواند فرآیندی ساده‌تر باشد. برای ثبت نام، باید مراحل، عناوین و عضویت‌های فعلی و پیشین خود در
+                      سایر انجمن‌های مهندسی و زمین‌شناسی کانادا را اعلام کنید. EGBC ممکن است وضعیت ثبت نام و پیشینه
+                      درخواست‌های قبلی شما را با انجمن‌های دیگر تأیید کند. اگر پرونده فعالی با یک انجمن دیگر دارید،
+                      توصیه می‌شود که آن را تکمیل یا لغو کنید. برای اطلاعات بیشتر و دسترسی به درخواست آنلاین، به وب‌سایت
+                      EGBC مراجعه کنید.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question42'
+                    aria-expanded='false'
+                    aria-controls='Question42'
+                  >
+                    من مطمئن نیستم که آیا باید ابتدا به عنوان فرد تحت آموزش ثبت‌نام کنم یا مستقیماً برای ثبت‌نام حرفه‌ای
+                    درخواست دهم. گزینه‌های من چیست؟
+                  </button>
+                </h2>
+                <div id='Question42' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      اگر حداقل ۴ سال تجربه کار حرفه‌ای در زمینه مهندسی یا علوم زمین دارید، می‌توانید مستقیماً برای
+                      ثبت‌نام حرفه‌ای (P.Eng. یا P.Geo.) درخواست دهید. در غیر این صورت، می‌توانید به عنوان دانشجو (EIT
+                      یا GIT) ثبت‌نام کنید. برای راهنمایی بیشتر در مورد انتخاب مناسب‌ترین مسیر، به وب‌سایت EGBC مراجعه
+                      کنید.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question43'
+                    aria-expanded='false'
+                    aria-controls='Question43'
+                  >
+                    چه مدارکی به عنوان اثبات هویت قابل قبول هستند و چگونه می‌توانم آن‌ها را تصدیق کنم؟
+                  </button>
+                </h2>
+                <div id='Question43' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      برای ثبت‌نام، باید کپی‌های تصدیق‌شده از دو مدرک شناسایی دولتی که شامل نام کامل قانونی شما هستند،
+                      ارائه دهید. یکی از این مدارک باید دارای عکس شما باشد. برای اطلاعات بیشتر و راهنمایی در مورد تصدیق
+                      مدارک شناسایی، به وب‌سایت EGBC مراجعه کنید.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question44'
+                    aria-expanded='false'
+                    aria-controls='Question44'
+                  >
+                    مدرک تحصیلی من در کارشناسی ارشد متفاوت از رشته تحصیلی کارشناسی من است و/یا من در یک رشته متفاوت از
+                    رشته کارشناسی یا زمینه مهندسی کار می‌کنم. در کدام رشته باید درخواست ثبت‌نام کنم؟
+                  </button>
+                </h2>
+                <div id='Question44' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      اگر قصد ثبت‌نام به عنوان مهندس در دوره آموزشی (EIT) را دارید، در رشته‌ای که بیشترین تطابق با مدرک
+                      کارشناسی شما دارد، درخواست دهید. اگر قصد ثبت‌نام به عنوان مهندس حرفه‌ای (P.Eng.) را دارید و تجربه
+                      کاری شما در یک رشته متفاوت است، باید در رشته‌ای که تجربه‌ی کاری خود را کسب کرده‌اید، درخواست دهید.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question45'
+                    aria-expanded='false'
+                    aria-controls='Question45'
+                  >
+                    چگونه می‌توانم امضای دیجیتال و مهر الکترونیکی دریافت کنم؟
+                  </button>
+                </h2>
+                <div id='Question45' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      برای دریافت امضای دیجیتال و مهر الکترونیکی، لطفاً به صفحه مربوط به Engineers and Geoscientists BC
+                      در وب‌سایت Notarius مراجعه کنید.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question46'
+                    aria-expanded='false'
+                    aria-controls='Question46'
+                  >
+                    من به عنوان یک حرفه‌ای P.Eng. ثبت‌نام نکرده‌ام. از چه عنوانی می‌توانم استفاده کنم و چگونه می‌توانم
+                    در محیط حرفه‌ای به خود ارجاع دهم؟
+                  </button>
+                </h2>
+                <div id='Question46' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      برای اطلاعات در مورد استفاده از عناوین شغلی برای دانشجویان مهندسی و دانشجویان علوم زمین، به
+                      مقاله‌ای که در وب‌سایت EGBC منتشر شده است، مراجعه کنید. همچنین، اطلاعات مربوط به تمرین غیرمجاز و
+                      سوءاستفاده از عنوان نیز در وب‌سایت قابل دسترسی است. اگر سوالات بیشتری دارید، با جیک شرویدر تماس
+                      بگیرید: jschroeder@egbc.ca.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question47'
+                    aria-expanded='false'
+                    aria-controls='Question47'
+                  >
+                    سوال من در این لیست نیست. چه کاری باید انجام دهم؟
+                  </button>
+                </h2>
+                <div id='Question47' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      ممکن است جواب سوال شما در یک مجموعه دیگر از سوالات متداول (FAQs) قرار داشته باشد. برای سوالات خاص
+                      مرتبط با فرآیند ثبت‌نام و ثبت، می‌توانید ایمیل به register@egbc.ca ارسال کنید.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <h5 class='my-5'>درخواست ثبت نام</h5>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question48'
+                    aria-expanded='false'
+                    aria-controls='Question48'
+                  >
+                    چگونه می‌توانم در یک مصاحبه تجربه کاری (experience interview) شرکت کنم؟
+                  </button>
+                </h2>
+                <div id='Question48' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      مصاحبه‌ها به اختیار کمیته اعتبارات (Credentials Committee) انجام می‌شوند. در صورتی که برای شما
+                      مصاحبه توصیه شده باشد، کارکنان EGBC با شما تماس خواهند گرفت تا راهنمایی‌های لازم را ارائه دهند.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question49'
+                    aria-expanded='false'
+                    aria-controls='Question49'
+                  >
+                    مصاحبه من کی برگزار می‌شود؟
+                  </button>
+                </h2>
+                <div id='Question49' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      تعیین زمان مصاحبه به عهده اعضای کمیته اعتبارات است و معمولاً زمان ترتیب دادن یک مصاحبه 2 تا 6 ماه
+                      زمان می‌برد. مصاحبه‌ها در ساعات کاری و زمانی که مصاحبه‌گران در دسترس هستند، برنامه‌ریزی می‌شوند.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question50'
+                    aria-expanded='false'
+                    aria-controls='Question50'
+                  >
+                    چه چیزی را باید به مصاحبه بیاورم؟
+                  </button>
+                </h2>
+                <div id='Question50' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      اگر به یک مصاحبه دعوت شده‌اید، باید نمونه‌ای از کار خود را ارائه دهید که به وضوح تجربیات شما را
+                      نشان دهد و نحوه استفاده از دانش خود برای حل یک مسئله فنی را توضیح دهد. همچنین باید آماده باشید به
+                      سوالات فنی درباره پروژه‌هایی که در گزارش شایستگی خود ذکر کرده‌اید، پاسخ دهید.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <h5 class='my-5'> بازیابی وضعیت</h5>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question51'
+                    aria-expanded='false'
+                    aria-controls='Question51'
+                  >
+                    من یک فرد تحت آموزش سابق، ثبت‌نام‌کننده سابق یا دارنده مجوز سابق هستم. چگونه می‌توانم وضعیت خود را
+                    با EGBC بازیابی کنم؟
+                  </button>
+                </h2>
+                <div id='Question51' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      افراد تحت آموزش (EIT)، ثبت‌نام‌کنندگان و دارندگان مجوز سابق می‌توانند وضعیت خود را به عنوان یک
+                      دانشجو یا ثبت‌نام‌کننده بدون حق کاربردی بازیابی کنند یا حقوق کاربردی خود را بازیابی کنند. برای
+                      اطلاعات بیشتر به صفحه بازیابی وضعیت (Reinstatement of Status) در وب‌سایت EGBC مراجعه کنید.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <h5 class='my-5'>تغییرات وضعیت، استعفا و بازنشستگی</h5>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question52'
+                    aria-expanded='false'
+                    aria-controls='Question52'
+                  >
+                    من یک ثبت‌ نام‌کننده حرفه‌ای با وضعیت فعال هستم. چگونه می‌توانم به وضعیت غیرفعال منتقل شوم؟
+                  </button>
+                </h2>
+                <div id='Question52' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      برای کسب اطلاعات بیشتر در مورد تغییر وضعیت به غیرفعال، به صفحه وب‌سایت EGBC مربوط به
+                      ثبت‌نام‌کنندگان غیرفعال مراجعه کنید.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question53'
+                    aria-expanded='false'
+                    aria-controls='Question53'
+                  >
+                    چگونه می‌توانم از EGBC استعفا دهم یا بازنشسته شوم؟
+                  </button>
+                </h2>
+                <div id='Question53' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>برای استعفا، وارد حساب کاربری آنلاین خود شوید و شرایط و مقررات مربوطه را تایید کنید.</p>
+                  </div>
+                </div>
+              </div>
+
+              <h5 class='my-5'> الزامات تجربه</h5>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question54'
+                    aria-expanded='false'
+                    aria-controls='Question54'
+                  >
+                    در حال استفاده از سامانه ارزیابی شایستگی برای گزارش تجربیات کاری خود هستم، اما ولیدیتور من ایمیل
+                    اطلاعیه دریافت نکرده است. چه کاری باید انجام دهم؟
+                  </button>
+                </h2>
+                <div id='Question54' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      اطلاعیه‌ها می‌توانند مجدداً از طریق ورود به سامانه ارزیابی شایستگی (Competency Assessment System)
+                      ارسال شوند. ولیدیتورها باید فولدر SPAM ایمیل خود را بررسی کنند. اگر ولیدیتور هنوز ایمیل را دریافت
+                      نکرده باشد، لطفاً یک ایمیل به competency@egbc.ca با نام ولیدیتور و درخواست خود ارسال کنید.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question55'
+                    aria-expanded='false'
+                    aria-controls='Question55'
+                  >
+                    در حال استفاده از سامانه ارزیابی شایستگی برای گزارش تجربیات کاری خود هستم، اما ولیدیتور من ایمیل
+                    اطلاعیه دریافت نکرده است. چه کاری باید انجام دهم؟
+                  </button>
+                </h2>
+                <div id='Question55' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      اطلاعیه‌ها می‌توانند مجدداً از طریق ورود به سامانه ارزیابی شایستگی (Competency Assessment System)
+                      ارسال شوند. ولیدیتورها باید فولدر SPAM ایمیل خود را بررسی کنند. اگر ولیدیتور هنوز ایمیل را دریافت
+                      نکرده باشد، لطفاً یک ایمیل به competency@egbc.ca با نام ولیدیتور و درخواست خود ارسال کنید.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question56'
+                    aria-expanded='false'
+                    aria-controls='Question56'
+                  >
+                    من از سامانه ارزیابی شایستگی برای گزارش تجربیات کاری خود استفاده می‌کنم و ولیدیتور من می‌خواهد
+                    تغییراتی اعمال کنم، اما من نمی‌توانم هیچ تغییری ایجاد کنم. چه کاری باید انجام دهم؟
+                  </button>
+                </h2>
+                <div id='Question56' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      لطفاً یک ایمیل به competency@egbc.ca با نام کامل، شناسه سیستمی و شماره شناسایی خاص شایستگی خود
+                      ارسال کنید تا تغییرات لازم اعمال شود.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <h5 class='my-5'>پاسخ‌ها و راهنمایی‌ها برای سوالات شایع در مورد ثبت‌نام و ارزیابی شایستگی</h5>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question57'
+                    aria-expanded='false'
+                    aria-controls='Question57'
+                  >
+                    من از سامانه ارزیابی شایستگی برای گزارش تجربیات کاری استفاده می‌کنم و می‌خواهم یک ولیدیتور جدید
+                    اضافه کنم، اما سامانه امکان افزودن نام ایشان را به من نمی‌دهد. چگونه می‌توانم نام ایشان را اضافه
+                    کنم؟
+                  </button>
+                </h2>
+                <div id='Question57' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      لطفاً یک ایمیل به competency@egbc.ca بفرستید و نام کامل ولیدیتور و آدرس ایمیل فعلی ایشان را ارائه
+                      دهید تا ما ولیدیتور را به لیست شما اضافه کنیم.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question58'
+                    aria-expanded='false'
+                    aria-controls='Question58'
+                  >
+                    من در زمینه مهندسی/زمین‌شناسی فعالیت می‌کنم و هیچ مهندس حرفه‌ای یا علم‌زمین‌شناس حرفه‌ای برای نظارت
+                    بر کار من وجود ندارد. چه کاری می‌توانم انجام دهم تا با مقررات هماهنگ شوم؟
+                  </button>
+                </h2>
+                <div id='Question58' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      مهندسان و علم‌زمین‌شناسان BC می‌پذیرد که دسترسی به ناظران حرفه‌ای بستگی به صنعت، پروژه و شرکت دارد
+                      و همدردی می‌کند که متقاضیان ثبت حرفه‌ای ممکن است دشواری در یافتن ناظران حرفه‌ای مناسب برای کارهای
+                      مهندسی یا علم‌زمین‌شناسی‌شان داشته باشند. برای رفع مشکلات و رعایت قوانین قانون مدیریت حرفه‌ای و
+                      کسب تجربه قابل قبول برای ثبت نام، شما باید:
+                      <ol>
+                        <li>
+                          از کارفرمای خود بخواهید که خدمات یک مهندس حرفه‌ای یا علم‌زمین‌شناس حرفه‌ای ثبت‌نام‌شده در BC
+                          را در رشته شما برای نظارت منظم و برعهده‌گیری حرفه‌ای بر کارهای شما مشغول کند.
+                        </li>
+                        <li>
+                          درخواست نظارت از مهندسان حرفه‌ای یا علم‌زمین‌شناسان حرفه‌ای ثبت‌نام‌شده در BC که با کارفرمای
+                          شما همکاری دارند و یا دانش دقیقی از کار شما دارند. از حمایت مهندسان حرفه‌ای یا ‌زمین‌شناسان
+                          حرفه‌ای مشتریان یا همکارانی که دانش دقیقی از کار شما دارند، خواهش کنید و از آنها بخواهید به
+                          عنوان داوران عمل کنند.
+                        </li>
+                      </ol>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question59'
+                    aria-expanded='false'
+                    aria-controls='Question59'
+                  >
+                    من در زمینه مهندسی/زمین‌شناسی فعالیت می‌کنم و هیچ مهندس حرفه‌ای یا علم‌زمین‌شناس حرفه‌ای برای نظارت
+                    بر کار من وجود ندارد. چه کاری می‌توانم انجام دهم تا با مقررات هماهنگ شوم؟
+                  </button>
+                </h2>
+                <div id='Question59' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      مهندسان و علم‌زمین‌شناسان BC می‌پذیرد که دسترسی به ناظران حرفه‌ای بستگی به صنعت، پروژه و شرکت دارد
+                      و همدردی می‌کند که متقاضیان ثبت حرفه‌ای ممکن است دشواری در یافتن ناظران حرفه‌ای مناسب برای کارهای
+                      مهندسی یا علم‌زمین‌شناسی‌شان داشته باشند. برای رفع مشکلات و رعایت قوانین قانون مدیریت حرفه‌ای و
+                      کسب تجربه قابل قبول برای ثبت نام، شما باید:
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question60'
+                    aria-expanded='false'
+                    aria-controls='Question60'
+                  >
+                    آیا می‌توانم از تجربیات کاری کسب شده در طول برنامه Co-op یا قبل از فارغ‌التحصیلی اعتبار کسب کنم؟
+                  </button>
+                </h2>
+                <div id='Question60' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      تا حداکثر 1 سال از تجربیات کسب شده در طول دوره Co-op یا قبل از فارغ‌التحصیلی ممکن است پذیرفته شود
+                      اگر:
+                      <ul>
+                        <li>
+                          بعد از تکمیل حداقل نصف مدت دوره مهندسی یا علوم زمین شما انجام شده باشد اما قبل از
+                          فارغ‌التحصیلی؛
+                        </li>
+                        <li>تحت نظارت حرفه‌ای مربوط صورت گرفته باشد؛</li>
+                        <li>
+                          {' '}
+                          و اگر به هر دیگر معیار تجربه که توسط مهندسان و علم‌زمین‌شناسان BC تعیین شده است، پاسخ دهد.
+                        </li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question60'
+                    aria-expanded='false'
+                    aria-controls='Question60'
+                  >
+                    آیا می‌توانم از مدرک دوره کارشناسی ارشد یا دکتری خود امتیاز کسب کنم؟
+                  </button>
+                </h2>
+                <div id='Question60' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      متقاضیان با درجه‌های ارشد یا دکتری ممکن است برای تجربیات کسب شده به عنوان بخشی از تحصیلات ارشد خود
+                      اعتبار دریافت کنند. حداکثر 1 سال اعتبار برای دوره ارشد با عنوان پایان‌نامه و حداکثر 2 سال اعتبار
+                      برای دوره دکتری اختصاص خواهد یافت. حداکثر 2 سال اعتبار برای ترکیبی از دوره ارشد و دکتری در نظر
+                      گرفته می‌شود. شما باید یک کپی از چکیده(های) پایان‌نامه خود را با درخواست خود ارسال کنید.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question61'
+                    aria-expanded='false'
+                    aria-controls='Question61'
+                  >
+                    آیا می‌توانم از مدرک دوره کارشناسی ارشد یا دکتری خود امتیاز کسب کنم؟
+                  </button>
+                </h2>
+                <div id='Question61' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      متقاضیان با درجه‌های ارشد یا دکتری ممکن است برای تجربیات کسب شده به عنوان بخشی از تحصیلات ارشد خود
+                      اعتبار دریافت کنند. حداکثر 1 سال اعتبار برای دوره ارشد با عنوان پایان‌نامه و حداکثر 2 سال اعتبار
+                      برای دوره دکتری اختصاص خواهد یافت. حداکثر 2 سال اعتبار برای ترکیبی از دوره ارشد و دکتری در نظر
+                      گرفته می‌شود. شما باید یک کپی از چکیده(های) پایان‌نامه خود را با درخواست خود ارسال کنید.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <h5 class='my-5'>تجربه کار در محیط‌های کانادایی </h5>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question62'
+                    aria-expanded='false'
+                    aria-controls='Question62'
+                  >
+                    مهارت‌های حرفه‌ای در محیط‌های کانادایی چه هستند؟
+                  </button>
+                </h2>
+                <div id='Question62' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      مهارت‌های حرفه‌ای محیط زیست کانادا زیرمجموعه‌ای از 8 مهارت است که از 34 مهارت موجود در چارچوب
+                      مهارت‌ها شناسایی شده‌اند و بهترین نمونه‌های دانسته شده از دانش و تجربه در مورد مقررات، کدها،
+                      استانداردها، کنترل کیفیت، حس آگاهی از ایمنی، مسئولیت حرفه‌ای و ارتباطات را نشان می‌دهند. هدف این
+                      است که روش ارزیابی الزامات مهارت‌های حرفه‌ای محیط زیست کانادا را با سامانه ارزیابی شایستگی آنلاین
+                      هماهنگ کرده و تعریف و شفافیت بهتری فراهم آورد.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question62'
+                    aria-expanded='false'
+                    aria-controls='Question62'
+                  >
+                    تجربه کاری در کانادا ندارم. آیا همچنان می‌توانم گزارش شایستگی خود را با نمونه‌های بین‌المللی برای
+                    مهارت‌های حرفه‌ای کانادایی ارسال کنم؟
+                  </button>
+                </h2>
+                <div id='Question62' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      بله، شما می‌توانید پیش از داشتن هر گونه تجربه کاری در کانادا درخواست ثبت نام کنید و ممکن است برای
+                      شایستگی‌های خود، از جمله مهارت‌های حرفه‌ای محیط زیست کانادا، از نمونه‌های بین‌المللی استفاده کنید.
+                      مسئولیت ارائه نمونه‌های کافی برای ایجاد معادلت بر عهده متقاضی است، اگرچه استفاده از تجربیات
+                      بین‌المللی هیچ‌گونه تضمینی برای مطابقت با شایستگی‌ها فراهم نمی‌کند. شما باید اطمینان حاصل کنید که
+                      چگونگی معادله تجربیات بین‌المللی شما با تجربیات کانادایی را توضیح دهید.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Question */}
+              <div className='accordion-item'>
+                <h2 className='accordion-header'>
+                  <button
+                    className='accordion-button collapsed'
+                    type='button'
+                    data-bs-toggle='collapse'
+                    data-bs-target='#Question63'
+                    aria-expanded='false'
+                    aria-controls='Question63'
+                  >
+                    آیا سمینار کار در کانادا می‌تواند جایگزین تجربه کار کانادایی شود؟
+                  </button>
+                </h2>
+                <div id='Question63' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
+                  <div className='accordion-body'>
+                    <p>
+                      سمینار کار در کانادا به منظور جایگزینی تجربه کار یا مهارت‌های حرفه‌ای کانادا نباید مطرح شود؛ بلکه
+                      قرار است یک گزینه تکمیلی برای متقاضیانی باشد که تجربه مستقیم در محیط کاری کانادایی (یا معادل آن)
+                      را ندارند، اما در تمام حوزه‌های مهارتی قوی دارند. دسترسی به سمینار کار در کانادا تنها در صورت
+                      توصیه پس از انجام ارزیابی فراهم می‌شود.
+                    </p>
                   </div>
                 </div>
               </div>

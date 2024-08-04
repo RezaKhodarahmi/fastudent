@@ -34,6 +34,21 @@ module.exports = {
         destination: '/signing-documents', // Use relative URL path for destination
         permanent: true // Indicates a permanent redirect (HTTP 301)
 
+      },{
+        source: '/course-category/technician/', // Use relative URL path for source
+        destination: '/courses/category/technician', // Use relative URL path for destination
+        permanent: true // Indicates a permanent redirect (HTTP 301)
+
+      },{
+        source: '/course-category/recorded-courses', // Use relative URL path for source
+        destination: '/courses/category/recorded-courses', // Use relative URL path for destination
+        permanent: true // Indicates a permanent redirect (HTTP 301)
+
+      },{
+        source: '/p-eng-courses', // Use relative URL path for source
+        destination: '/courses/category/peng-technical-exams', // Use relative URL path for destination
+        permanent: true // Indicates a permanent redirect (HTTP 301)
+
       }
     ]
   },
