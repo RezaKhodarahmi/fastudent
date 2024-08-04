@@ -108,7 +108,6 @@ const ListCourses = props => {
 
                     {course?.cycles[0]?.zoomLink && (
                       <Link
-                        // href={`/courses/${course?.slug}/zoom/fanavaran` || '#'}
                         href={course?.cycles[0]?.zoomLink}
                         passHref
                         variant='contained'
