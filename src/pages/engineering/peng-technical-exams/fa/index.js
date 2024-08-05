@@ -97,85 +97,100 @@ const Index = () => {
                     <td>
                       <p>Group | Code</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Course</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Dates</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Days of the Week</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Time</p>
+                    </td>
+                    <td>
+                      <p></p>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <p><Link href="/courses/peng-applied-thermodynamics-and-heat-transfer">A | 16-Mec-A1</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p><Link href="/courses/peng-applied-thermodynamics-and-heat-transfer">Applied Thermodynamics and Heat Transfer</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>August-19-2024</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Mondays</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>20:00 EST</p>
+                    </td>
+                    <td>
+                      <Link href="/courses/peng-applied-thermodynamics-and-heat-transfer" className='FNV-Btn BtnPrimary w-100'>{t('enroll')}</Link>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <p><Link href="/courses/peng-advanced-fluid-mechanics">A | 16-Mec-A6</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p><Link href="/courses/peng-advanced-fluid-mechanics">Advanced Fluid Mechanics</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>August-20-2024</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Tuesdays</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>20:00 EST</p>
+                    </td>
+                    <td>
+                      <Link href="/courses/peng-advanced-fluid-mechanics" className='FNV-Btn BtnPrimary w-100'>{t('enroll')}</Link>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <p><Link href="/courses/peng-advanced-strength-of-materials">A | 16-Mec-A7</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p><Link href="/courses/peng-advanced-strength-of-materials">Advanced Strength of Materials</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>August-21-2024</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Wednesdays</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>20:00 EST</p>
+                    </td>
+                    <td>
+                      <Link href="/courses/peng-advanced-strength-of-materials" className='FNV-Btn BtnPrimary w-100'>{t('enroll')}</Link>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <p><Link href="/courses/peng-engineering-materials">B | 16-Mec-B8</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p><Link href="/courses/peng-engineering-materials">Engineering Materials</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>August-22-2024</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Thursdays</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>20:00 EST</p>
+                    </td>
+                    <td>
+                      <Link href="/courses/peng-engineering-materials" className='FNV-Btn BtnPrimary w-100'>{t('enroll')}</Link>
                     </td>
                   </tr>
                 </tbody>
@@ -188,85 +203,100 @@ const Index = () => {
                     <td>
                       <p>Group | Code</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Course</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Dates</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Days of the Week</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Time</p>
+                    </td>
+                    <td>
+                      <p></p>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <p><Link href="/courses/peng-elementary-structural-analysis">A | 16-Civ-A1</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p><Link href="/courses/peng-elementary-structural-analysis">Elementary Structural Analysis</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>August-19-2024</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Mondays</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>20:00 EST</p>
+                    </td>
+                    <td>
+                      <Link href="/courses/peng-elementary-structural-analysis" className='FNV-Btn BtnPrimary w-100'>{t('enroll')}</Link>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <p><Link href="/courses/peng-hydraulic-engineering">A | 16-Civ-A5</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p><Link href="/courses/peng-hydraulic-engineering">Hydraulic Engineering</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>August-20-2024</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Tuesdays</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>20:00 EST</p>
+                    </td>
+                    <td>
+                      <Link href="/courses/peng-hydraulic-engineering" className='FNV-Btn BtnPrimary w-100'>{t('enroll')}</Link>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <p><Link href="/courses/peng-transportation-planning-and-engineering">B | 16-Civ-B7</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p><Link href="/courses/peng-transportation-planning-and-engineering">Transportation Planning and Engineering</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>August-21-2024</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Wednesdays</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>20:00 EST</p>
+                    </td>
+                    <td>
+                      <Link href="/courses/peng-transportation-planning-and-engineering" className='FNV-Btn BtnPrimary w-100'>{t('enroll')}</Link>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <p><Link href="/courses/peng-traffic-engineering">B | 16-Civ-B10</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p><Link href="/courses/peng-traffic-engineering">Traffic Engineering</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>August-22-2024</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Thursdays</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>20:00 EST</p>
+                    </td>
+                    <td>
+                      <Link href="/courses/peng-traffic-engineering" className='FNV-Btn BtnPrimary w-100'>{t('enroll')}</Link>
                     </td>
                   </tr>
                 </tbody>
@@ -279,85 +309,100 @@ const Index = () => {
                     <td>
                       <p>Group | Code</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Course</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Dates</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Days of the Week</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Time</p>
+                    </td>
+                    <td>
+                      <p></p>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <p><Link href="/courses/peng-circuits">A | 16-Elec-A1</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p><Link href="/courses/peng-circuits">Circuits</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>August-19-2024</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Mondays</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>20:00 EST</p>
+                    </td>
+                    <td>
+                      <Link href="/courses/peng-circuits" className='FNV-Btn BtnPrimary w-100'>{t('enroll')}</Link>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <p><Link href="/courses/peng-signals-and-communications">A | 16-Elec-A3</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p><Link href="/courses/peng-signals-and-communications">Signals and Communications</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>August-20-2024</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Tuesdays</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>20:00 EST</p>
+                    </td>
+                    <td>
+                      <Link href="/courses/peng-signals-and-communications" className='FNV-Btn BtnPrimary w-100'>{t('enroll')}</Link>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <p><Link href="/courses/peng-digital-communications-systems">B | 16-Elec-B3</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p><Link href="/courses/peng-digital-communications-systems">Digital Communications Systems</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>August-21-2024</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Wednesdays</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>20:00 EST</p>
+                    </td>
+                    <td>
+                      <Link href="/courses/peng-digital-communications-systems" className='FNV-Btn BtnPrimary w-100'>{t('enroll')}</Link>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <p><Link href="/courses/peng-digital-systems-and-computers">A | 16-Elec-A4</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p><Link href="/courses/peng-digital-systems-and-computers">Digital Systems and Computers</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>August-22-2024</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Thursdays</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>20:00 EST</p>
+                    </td>
+                    <td>
+                      <Link href="/courses/peng-digital-systems-and-computers" className='FNV-Btn BtnPrimary w-100'>{t('enroll')}</Link>
                     </td>
                   </tr>
                 </tbody>
@@ -370,68 +415,80 @@ const Index = () => {
                     <td>
                       <p>Group | Code</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Course</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Dates</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Days of the Week</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Time</p>
+                    </td>
+                    <td>
+                      <p></p>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <p><Link href="/courses/peng-structure-and-characterization-of-materials">A | 21‐Mat‐A3</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p><Link href="/courses/peng-structure-and-characterization-of-materials">Structure and Characterization of Materials</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>August-19-2024</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Mondays</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>20:00 EST</p>
+                    </td>
+                    <td>
+                      <Link href="/courses/peng-structure-and-characterization-of-materials" className='FNV-Btn BtnPrimary w-100'>{t('enroll')}</Link>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <p><Link href="/courses/peng-deformation-behaviour-and-properties-of-materials">A |21‐Mat‐A4</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p><Link href="/courses/peng-deformation-behaviour-and-properties-of-materials">Deformation Behaviour and Properties of Materials</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>August-20-2024</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Tuesdays</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>20:00 EST</p>
+                    </td>
+                    <td>
+                      <Link href="/courses/peng-deformation-behaviour-and-properties-of-materials" className='FNV-Btn BtnPrimary w-100'>{t('enroll')}</Link>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <p><Link href="/courses/peng-phase-transformations-and-thermal-treatment">B | 21‐Mat‐A5</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p><Link href="/courses/peng-phase-transformations-and-thermal-treatment">Phase Transformations and Thermal Treatment</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>August-21-2024</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Wednesdays</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>20:00 EST</p>
+                    </td>
+                    <td>
+                      <Link href="/courses/peng-phase-transformations-and-thermal-treatment" className='FNV-Btn BtnPrimary w-100'>{t('enroll')}</Link>
                     </td>
                   </tr>
                 </tbody>
@@ -444,51 +501,60 @@ const Index = () => {
                     <td>
                       <p>Group | Code</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Course</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Dates</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Days of the Week</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Time</p>
+                    </td>
+                    <td>
+                      <p></p>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <p><Link href="/courses/peng-engineering-economics">CS | 11-CS-1</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p><Link href="/courses/peng-engineering-economics">Engineering Economics</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>August-22-2024</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Thursdays</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>20:00 EST</p>
+                    </td>
+                    <td>
+                      <Link href="/courses/peng-engineering-economics" className='FNV-Btn BtnPrimary w-100'>{t('enroll')}</Link>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <p><Link href="/courses/peng-engineering-in-society-health-safety">CS | 11-CS-2</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p><Link href="/courses/peng-engineering-in-society-health-safety">Engineering in Society - Health &amp; Safety</Link></p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>August-23-2024</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>Fridays</p>
                     </td>
-                    <td>
+                    <td className='d-none d-md-table-cell'>
                       <p>20:00 EST</p>
+                    </td>
+                    <td>
+                      <Link href="/courses/peng-engineering-in-society-health-safety" className='FNV-Btn BtnPrimary w-100'>{t('enroll')}</Link>
                     </td>
                   </tr>
                 </tbody>
