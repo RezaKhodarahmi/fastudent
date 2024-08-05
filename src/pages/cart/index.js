@@ -59,14 +59,14 @@ const Index = () => {
 
   const [termsChecked, setTermsChecked] = useState(false)
 
-  const handleChangeCheckBox = (event) => {
+  const handleChangeCheckBox = event => {
     setTermsChecked(event.target.checked)
   }
 
-  const courses = useSelector((state) => state.cartItem)
-  const appliedCoupon = useSelector((state) => state.coupon)
-  const referralDiscount = useSelector((state) => state.referral)
-  const user = useSelector((state) => state.user)
+  const courses = useSelector(state => state.cartItem)
+  const appliedCoupon = useSelector(state => state.coupon)
+  const referralDiscount = useSelector(state => state.referral)
+  const user = useSelector(state => state.user)
   const router = useRouter()
 
   useEffect(() => {
@@ -88,7 +88,7 @@ const Index = () => {
     setNewVip(localStorage.getItem('newVIP') || true)
   }, [cartCourses])
 
-  const isDiscountActive = (cycle) => {
+  const isDiscountActive = cycle => {
     const now = new Date()
     const discountStart = new Date(cycle.discountDate)
     const discountEnd = new Date(cycle.discountDateEnd)
@@ -96,7 +96,7 @@ const Index = () => {
     return now >= discountStart && now <= discountEnd
   }
 
-  const getDiscountedPrice = (cycle) => {
+  const getDiscountedPrice = cycle => {
     return isDiscountActive(cycle)
       ? isVIP || oldVIP
         ? vipPlan === 2
@@ -144,8 +144,8 @@ const Index = () => {
 
   useEffect(() => {
     if (appliedCoupon?.data?.data && loading && appliedCoupon?.data?.data?.code === coupon) {
-      const checkCoupon = usedCoupon.filter((coupon) => coupon.code !== 'VIP MEMBER' && coupon.code != null)
-      const individualUsed = usedCoupon.filter((coupon) => coupon.individualUseOnly === true)
+      const checkCoupon = usedCoupon.filter(coupon => coupon.code !== 'VIP MEMBER' && coupon.code != null)
+      const individualUsed = usedCoupon.filter(coupon => coupon.individualUseOnly === true)
       if (appliedCoupon?.data?.data?.individual_use_only === 1 && checkCoupon.length) {
         window.alert("This coupon can't be used with other coupon")
         setLoading(false)
@@ -161,7 +161,7 @@ const Index = () => {
               discount: '$' + (cartSubTotal / 100) * appliedCoupon?.data?.data?.discount_percentage,
               individualUseOnly: appliedCoupon?.data?.data?.individual_use_only
             }
-            const exists = oldCoupons.some((obj) => areCouponApplied(obj, newCoupon))
+            const exists = oldCoupons.some(obj => areCouponApplied(obj, newCoupon))
 
             if (!exists) {
               setCouponDiscount(appliedCoupon?.data?.data?.discount_percentage)
@@ -178,7 +178,7 @@ const Index = () => {
               discount: '$' + appliedCoupon?.data?.data?.discount_amount,
               individualUseOnly: appliedCoupon?.data?.data?.individual_use_only
             }
-            const exists = oldCoupons.some((obj) => areCouponApplied(obj, newCoupon))
+            const exists = oldCoupons.some(obj => areCouponApplied(obj, newCoupon))
             if (!exists) {
               setCouponDiscountAmount(appliedCoupon?.data?.data?.discount_amount)
               oldCoupons.push(newCoupon)
@@ -204,7 +204,7 @@ const Index = () => {
         discount: '$' + '5'
       }
       setReferralUser(referralDiscount?.data?.data)
-      const exists = oldCoupons.some((obj) => areCouponApplied(obj, newCoupon))
+      const exists = oldCoupons.some(obj => areCouponApplied(obj, newCoupon))
       if (!exists) {
         setCouponDiscountAmount('5')
         oldCoupons.push(newCoupon)
@@ -243,8 +243,8 @@ const Index = () => {
                 vipPlan
               })
             })
-              .then((res) => res.json())
-              .then((data) => {
+              .then(res => res.json())
+              .then(data => {
                 const { clientSecret } = data
                 setClientSecret(clientSecret)
               })
@@ -287,8 +287,8 @@ const Index = () => {
                 vipPlan
               })
             })
-              .then((res) => res.json())
-              .then((data) => {
+              .then(res => res.json())
+              .then(data => {
                 const { redirectURL } = data
                 setRedirectURL(redirectURL)
                 router.push(redirectURL)
@@ -333,8 +333,8 @@ const Index = () => {
                 vipPlan
               })
             })
-              .then((res) => res.json())
-              .then((data) => {
+              .then(res => res.json())
+              .then(data => {
                 const { redirectURL } = data
                 setRedirectURL(redirectURL)
                 router.push(redirectURL)
@@ -369,7 +369,7 @@ const Index = () => {
     }
   }, [])
 
-  const applyCouponHandler = (e) => {
+  const applyCouponHandler = e => {
     if (!email) {
       window.alert('You must be logged in to use the discount code!')
 
@@ -390,7 +390,7 @@ const Index = () => {
     }
   }
 
-  const applyReferralHandler = (e) => {
+  const applyReferralHandler = e => {
     if (!email) {
       window.alert('You must be logged in to use the discount code!')
     }
@@ -407,7 +407,7 @@ const Index = () => {
     }
   }
 
-  const handelClearCart = (e) => {
+  const handelClearCart = e => {
     if (cartCourses.length) {
       const conformation = window.confirm('Are you sure you want to clear cart?')
       if (conformation) {
@@ -426,12 +426,12 @@ const Index = () => {
     }
   }
 
-  const handleRemoveItem = (item) => {
+  const handleRemoveItem = item => {
     if (cartCourses.length) {
       const confirmation = window.confirm('Are you sure you want to delete this item from the cart?')
       if (confirmation) {
-        const newItems = cartCourses.filter((course) => course.id !== item.id)
-        const updatedCartItems = newItems.map((course) => course.id)
+        const newItems = cartCourses.filter(course => course.id !== item.id)
+        const updatedCartItems = newItems.map(course => course.id)
         localStorage.setItem('cartItems', JSON.stringify(updatedCartItems))
         setCartCourses(newItems)
         if (item.id === 150000) {
@@ -445,9 +445,9 @@ const Index = () => {
   }
 
   useEffect(() => {
-    const isVipMembershipInCart = cartCourses.some((course) => course.id === 150000)
+    const isVipMembershipInCart = cartCourses.some(course => course.id === 150000)
 
-    const prices = cartCourses.map((course) => {
+    const prices = cartCourses.map(course => {
       let finalPrice
       if (isDiscountActive(course)) {
         finalPrice =
@@ -483,7 +483,7 @@ const Index = () => {
   const calculateTotalCouponDiscount = () => {
     let totalDiscount = 0
 
-    usedCoupon.forEach((coupon) => {
+    usedCoupon.forEach(coupon => {
       if (coupon.discount) {
         if (coupon.discount.includes('%')) {
           const percentage = parseFloat(coupon.discount.replace('%', ''))
@@ -547,9 +547,9 @@ const Index = () => {
   useEffect(() => {
     if (cartCourses) {
       const isVipMembershipInCart =
-        Array.isArray(courses?.data?.data) && courses.data.data.some((course) => course?.course?.id === 150000)
+        Array.isArray(courses?.data?.data) && courses.data.data.some(course => course?.course?.id === 150000)
 
-      const prices = cartCourses?.map((item) => {
+      const prices = cartCourses?.map(item => {
         if (!isRenew) {
           if (user?.data?.isVipValid || isVipMembershipInCart) {
             return item?.vipPrice || 0
@@ -571,53 +571,16 @@ const Index = () => {
     }
   }, [cartCourses, setCartCourses, setCartTotal, user, isRenew, courses?.data?.data])
 
-  const handelRemoveCoupon = (code) => {
+  const handelRemoveCoupon = code => {
     const oldUsedCoupon = [...usedCoupon]
     const confirmation = window.confirm('Are you sure you want to delete this coupon ?')
     if (confirmation) {
-      const newCoupon = oldUsedCoupon.filter((coupon) => coupon.code !== code)
+      const newCoupon = oldUsedCoupon.filter(coupon => coupon.code !== code)
       setUsedCoupon(newCoupon)
     }
   }
 
-  useEffect(() => {
-    const isVipMembershipInCart = cartCourses.some((course) => course.id === 150000)
-
-    const prices = cartCourses.map((course) => {
-      let finalPrice
-      if (isDiscountActive(course)) {
-        finalPrice =
-          user?.data?.isVipValid || isVipMembershipInCart
-            ? vipPlan === 2
-              ? course.discountVipPLPrice
-              : course.discountVipPrice || course.discountPrice
-            : course.discountPrice
-      } else {
-        finalPrice =
-          user?.data?.isVipValid || isVipMembershipInCart
-            ? vipPlan === 2
-              ? course.vipPLPrice
-              : course.vipPrice || course.regularPrice
-            : course.regularPrice
-      }
-
-      return finalPrice
-    })
-
-    const newSubTotal = prices.reduce((acc, price) => acc + price, 0)
-
-    setCartSubTotal(newSubTotal)
-
-    const totalDiscount = calculateTotalCouponDiscount()
-    setCartTotal(newSubTotal - totalDiscount)
-
-    if (!isVipMembershipInCart) {
-      setIsVIP(false)
-    }
-  }, [cartCourses, user?.data?.isVipValid, usedCoupon, vipPlan])
-
-
-  const handleInputChange = (e) => {
+  const handleInputChange = e => {
     const capitalizedValue = e.target.value.toUpperCase()
     setCoupon(capitalizedValue)
   }
@@ -637,7 +600,7 @@ const Index = () => {
             <div className='col-md-6'>
               <div className='row'>
                 <div className='col-7 col-md-6'>
-                  <input type='text' onChange={(e) => setReferral(e.target.value)} className='form-control FNV-Text' />
+                  <input type='text' onChange={e => setReferral(e.target.value)} className='form-control FNV-Text' />
                 </div>
 
                 <div className='col-5 col-md-6'>
@@ -670,7 +633,7 @@ const Index = () => {
 
           {cartCourses &&
             cartCourses.length > 0 &&
-            cartCourses.map((cycle) => (
+            cartCourses.map(cycle => (
               <div key={cycle.id} className='row FNV-CartItems'>
                 <div className='col-3 col-md-2'>
                   <img src={cycle?.course?.image} className='img-fluid' />
@@ -781,7 +744,7 @@ const Index = () => {
                           <p className='pb-0'>
                             {coupon.code}
                             <small
-                              onClick={(e) => handelRemoveCoupon(coupon.code)}
+                              onClick={e => handelRemoveCoupon(coupon.code)}
                               style={{ cursor: 'pointer' }}
                               className='FNV-Remove'
                             >

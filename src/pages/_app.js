@@ -117,6 +117,25 @@ const App = props => {
     setRedirectUri(window.location.origin)
   }, [])
 
+  // useEffect(() => {
+  //   const handleMessage = event => {
+  //     console.log(event.origin)
+  //     if (event.origin === 'http://localhost:8585') {
+  //       const { accessToken, refreshToken } = event.data
+  //       localStorage.setItem('accessToken', accessToken)
+  //       localStorage.setItem('refreshToken', refreshToken)
+  //     }
+  //   }
+
+  //   window.addEventListener('message', handleMessage)
+
+  //   window.opener.postMessage('ready', 'http://localhost:8585')
+
+  //   return () => {
+  //     window.removeEventListener('message', handleMessage)
+  //   }
+  // }, [])
+
   useEffect(() => {
     const lng = localStorage.getItem('i18nextLng' || 'en')
     document.documentElement.dir = lng === 'fa' ? 'rtl' : 'ltr'

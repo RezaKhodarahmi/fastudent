@@ -862,30 +862,34 @@ const Course = () => {
                         </>
                       ) : (
                         <>
-                          <h4>{t('single-course-scycle')}</h4>
-                          {data?.cycles && (
-                            <select value={selectedCycle} onChange={handleCycleChange} className='form-select'>
-                              {[...data.cycles]
-                                .reverse()
-                                .filter(cycle => cycle.status == 1)
-                                .map(cycle => (
-                                  <option key={cycle.id} value={cycle.id}>
-                                    {cycle.name}
-                                  </option>
-                                ))}
-                            </select>
+                          {data?.cycles?.length && (
+                            <>
+                              <h4>{t('single-course-scycle')}</h4>
+                              <select value={selectedCycle} onChange={handleCycleChange} className='form-select'>
+                                {[...data.cycles]
+                                  .reverse()
+                                  .filter(cycle => cycle.status == 1)
+                                  .map(cycle => (
+                                    <option key={cycle.id} value={cycle.id}>
+                                      {cycle.name}
+                                    </option>
+                                  ))}
+                              </select>
+                            </>
                           )}
 
                           {inCart ? (
                             <a
+                            disabled={!data?.cycles?.length}
                               style={{ cursor: 'pointer' }}
                               onClick={e => router.replace('/cart')}
                               className='FNV-Btn btn btn-success BtnMedium w-100'
                             >
-                              <i data-feather='shopping-cart'></i> {t('single-course-gotocart')}
+                              <i data-feather='shopping-cart'></i> {data?.cycles?.length ? t('single-course-gotocart'): "Registration is disabled!"}
                             </a>
                           ) : (
-                            <a
+                            <button
+                              disabled={!data?.cycles?.length}
                               style={{ cursor: 'pointer' }}
                               onClick={e => addToCart(selectedCycle)}
                               className='FNV-Btn BtnPrimary BtnLarge w-100'
@@ -906,8 +910,8 @@ const Course = () => {
                                 <path d='M6 5l14 1l-1 7h-13' />
                               </svg>
 
-                              <span>{t('single-course-enroll')}</span>
-                            </a>
+                              <span>{data?.cycles?.length ? t('single-course-enroll') : "Registration is disabled!"}</span>
+                            </button>
                           )}
                           {succeededMessage ? (
                             <p

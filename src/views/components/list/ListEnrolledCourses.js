@@ -67,9 +67,7 @@ const ListCourses = props => {
             <Grid item xs={12} md={6} lg={4}>
               <Card>
                 <CardHeader
-                  avatar={
-                    <Avatar src={course?.image} alt={course?.title} />
-                  }
+                  avatar={<Avatar src={course?.image} alt={course?.title} />}
                   sx={{
                     display: 'flex',
                     alignItems: 'flex-start',
@@ -102,38 +100,38 @@ const ListCourses = props => {
                 />
                 <CardContent>
                   <Box sx={{ mb: 3, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                  <Link href={`${appConfig.appUrl}/courses/${course?.slug}`} passHref>
-                  <Button variant='contained' size='small' style={{ fontSize: '11px' }}>
-                    View Courses
-                  </Button>
-                </Link>
-                
-                {course?.cycles[0]?.zoomLink && (
-                  <Link
-                    href={course?.cycles[0]?.zoomLink || '#'}
-                    passHref
-                    variant='contained'
-                    style={{ margin: '0 5px' }}
-                    size='small'
-                  >
-                    <Button variant='contained' size='small' color='success' style={{ fontSize: '11px' }}>
-                      Join the class
-                    </Button>
-                  </Link>
-                )}
-                {course?.cycles[0]?.groupLink && (
-                  <Link
-                    href={course?.cycles[0]?.groupLink || '#'}
-                    passHref
-                    variant='contained'
-                    style={{ margin: '0 0px ' }}
-                    size='small'
-                  >
-                    <Button variant='contained' size='small' color='info' style={{ fontSize: '11px' }}>
-                      Telegram Group
-                    </Button>
-                  </Link>
-                )}
+                    <Link href={`${appConfig.appUrl}/courses/${course?.slug}`} passHref>
+                      <Button variant='contained' size='small' style={{ fontSize: '11px' }}>
+                        View Courses
+                      </Button>
+                    </Link>
+
+                    {course?.cycles[0]?.zoomLink && (
+                      <Link
+                        href={course?.cycles[0]?.zoomLink}
+                        passHref
+                        variant='contained'
+                        style={{ margin: '0 5px' }}
+                        size='small'
+                      >
+                        <Button variant='contained' size='small' color='success' style={{ fontSize: '11px' }}>
+                          Join the class
+                        </Button>
+                      </Link>
+                    )}
+                    {course?.cycles[0]?.groupLink && (
+                      <Link
+                        href={course?.cycles[0]?.groupLink || '#'}
+                        passHref
+                        variant='contained'
+                        style={{ margin: '0 0px ' }}
+                        size='small'
+                      >
+                        <Button variant='contained' size='small' color='info' style={{ fontSize: '11px' }}>
+                          Telegram Group
+                        </Button>
+                      </Link>
+                    )}
                   </Box>
 
                   <LinearProgress color='success' value={85} sx={{ height: 5 }} variant='determinate' />
