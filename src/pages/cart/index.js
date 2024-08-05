@@ -469,10 +469,10 @@ const Index = () => {
     })
 
     const newSubTotal = prices.reduce((acc, price) => acc + price, 0)
+
     setCartSubTotal(newSubTotal)
 
     const totalDiscount = calculateTotalCouponDiscount()
-
     setCartTotal(newSubTotal - totalDiscount)
 
     if (!isVipMembershipInCart) {
@@ -579,6 +579,8 @@ const Index = () => {
       setUsedCoupon(newCoupon)
     }
   }
+
+ 
 
   const handleInputChange = e => {
     const capitalizedValue = e.target.value.toUpperCase()
