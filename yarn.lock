@@ -1134,6 +1134,18 @@
   "resolved" "https://registry.npmjs.org/@yr/monotone-cubic-spline/-/monotone-cubic-spline-1.0.3.tgz"
   "version" "1.0.3"
 
+"@zoom/meetingsdk@^3.8.0":
+  "integrity" "sha512-Q7nPxcZxhtU3pU7fwYqUx17HKMZc5tcptGtjO3e1NHkyvSIKDY3SV9T8kvCiDkemtrIA1LOBFz1LqG6TYVYvUQ=="
+  "resolved" "https://registry.npmjs.org/@zoom/meetingsdk/-/meetingsdk-3.8.0.tgz"
+  "version" "3.8.0"
+  dependencies:
+    "lodash" "^4.17.21"
+    "react" "18.2.0"
+    "react-dom" "18.2.0"
+    "react-redux" "8.1.2"
+    "redux" "4.2.1"
+    "redux-thunk" "2.4.2"
+
 "@zoomus/websdk@^2.18.3":
   "integrity" "sha512-7j/A82AIkc0Xgj6jsnl3x65NMMOylBI8pnjrjF10ytk4HVhRBLj1lQ8x4PQofwl2Ilh0aWVbDLTPfmOHW8fCxw=="
   "resolved" "https://registry.npmjs.org/@zoomus/websdk/-/websdk-2.18.3.tgz"
@@ -1917,6 +1929,11 @@
     "path-key" "^3.1.0"
     "shebang-command" "^2.0.0"
     "which" "^2.0.1"
+
+"crypto-js@^4.2.0":
+  "integrity" "sha512-KALDyEYgpY+Rlob/iriUtjV6d5Eq+Y191A5g4UqLAi8CyGP9N1+FdVbkc1SxKc2r4YAYqG8JzO2KGL+AizD70Q=="
+  "resolved" "https://registry.npmjs.org/crypto-js/-/crypto-js-4.2.0.tgz"
+  "version" "4.2.0"
 
 "css-line-break@^2.1.0":
   "integrity" "sha512-FHcKFCZcAha3LwfVBhCQbW2nCNbkZXn7KVUJcsT5/P8YmfsVja0FMPJr0B903j/E69HUphKiV9iQArX8SDYA4w=="
@@ -3686,6 +3703,11 @@
   "resolved" "https://registry.npmjs.org/js-base64/-/js-base64-2.6.4.tgz"
   "version" "2.6.4"
 
+"js-base64@^3.7.7":
+  "integrity" "sha512-7rCnleh0z2CkXhH67J8K1Ytz0b2Y+yxTPL+/KOJoa20hfnVQ/3/T6W/KflYI4bRHRagNeXeU2bkNGI3v1oS/lw=="
+  "resolved" "https://registry.npmjs.org/js-base64/-/js-base64-3.7.7.tgz"
+  "version" "3.7.7"
+
 "js-cookie@^3.0.5":
   "integrity" "sha512-cEiJEAEoIbWfCZYKWhVwFuvPX1gETRYPw6LlaTKoxD3s2AkXzkCjnp6h0V77ozyqj0jakteJ4YqDJT830+lVGw=="
   "resolved" "https://registry.npmjs.org/js-cookie/-/js-cookie-3.0.5.tgz"
@@ -5120,6 +5142,18 @@
   "integrity" "sha512-Q2f6fCKxPFpkXt1qNRZdEDLlScsDWyrgSj0mliK59qU6W5gvBiKkdMEG2lJzhd1rCctf0hb6EtePPLZ2e0m1uw=="
   "resolved" "https://registry.npmjs.org/react-redux/-/react-redux-8.0.5.tgz"
   "version" "8.0.5"
+  dependencies:
+    "@babel/runtime" "^7.12.1"
+    "@types/hoist-non-react-statics" "^3.3.1"
+    "@types/use-sync-external-store" "^0.0.3"
+    "hoist-non-react-statics" "^3.3.2"
+    "react-is" "^18.0.0"
+    "use-sync-external-store" "^1.0.0"
+
+"react-redux@8.1.2":
+  "integrity" "sha512-xJKYI189VwfsFc4CJvHqHlDrzyFTY/3vZACbE+rr/zQ34Xx1wQfB4OTOSeOSNrF6BDVe8OOdxIrAnMGXA3ggfw=="
+  "resolved" "https://registry.npmjs.org/react-redux/-/react-redux-8.1.2.tgz"
+  "version" "8.1.2"
   dependencies:
     "@babel/runtime" "^7.12.1"
     "@types/hoist-non-react-statics" "^3.3.1"
