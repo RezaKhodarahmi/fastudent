@@ -97,6 +97,7 @@ const Home = () => {
       localStorage.removeItem('refreshToken')
       localStorage.removeItem('accessToken')
       localStorage.removeItem('userImage')
+
       // Store tokens in localStorage
       localStorage.setItem('accessToken', accessToken)
       localStorage.setItem('refreshToken', refreshToken)
