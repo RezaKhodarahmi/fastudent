@@ -5,55 +5,68 @@
   padding: 4rem 0;
 
   .container {
-    position: relative;
-
     .row {
-      position: absolute;
-      width: 100%;
-      top: 0rem;
-      z-index: 10;
+      justify-content: center;
 
-      .col-md {
-        padding: 0 0.5rem;
+      svg{
+        width: 80%;
 
-        a {
-          background-color: $WhiteColor;
-          color: $PrimaryColor;
-          padding: 2rem 0;
-          display: block;
-          flex-direction: column;
-          align-items: center;
-          width: 100%;
-          height: 100%;
-          text-align: center;
-          border-radius: 20px;
-          overflow: hidden;
-          box-shadow: 0 0 25px rgb(0, 59, 191, 30%);
-          transition: 0.3s all ease-in-out;
-
-          svg {
-            width: 70px;
-            height: 70px;
-            color: $SecondaryColor;
+        a{
+          g{
+            fill: $White;
           }
 
-          h3 {
-            font-size: 16px;
-            font-weight: 400;
-            margin-top: 1rem;
+          rect{
+            opacity: 1;
+            stroke: $PrimaryTextFour;
           }
 
-          &:hover {
-            background: linear-gradient(-45deg, $PrimaryColor, $SecondaryColor, $PrimaryColor, $WhiteColor);
-            background-size: 400% 400%;
-            animation: gradient 3s ease-in-out alternate;
+          .FNV-Category-Text{
+            stroke-width: .5px;
+            fill: $PrimaryOne;
+            stroke: $PrimaryOne;
+          }
 
-            h3 {
-              color: $WhiteColor;
+          .FNV-Category-Shape{
+            path{
+              stroke-width: 2px;
+              stroke: $PrimaryFour;
             }
+          }
 
-            svg {
-              color: $WhiteColor;
+          path{
+            stroke: $PrimaryTextFour;
+          }
+
+          &:hover{
+            g{
+              fill: $PrimaryOne;
+            }
+  
+            rect{
+              opacity: 1;
+              stroke: $PrimaryTextFour;
+            }
+  
+            .FNV-Category-Text{
+              stroke-width: .5px;
+              fill: $White;
+              stroke: $White;
+            }
+  
+            .FNV-Category-Shape{
+              path{
+                stroke-width: 2px;
+                stroke: $White;
+              }
+            }
+  
+            path{
+              stroke: $PrimaryOne;
+
+              &.FNV-NoFill{
+                fill: $White;
+              }
             }
           }
         }
@@ -61,8 +74,6 @@
     }
 
     &:nth-child(2) {
-      padding-top: 20rem;
-
       .row {
         position: relative;
 
@@ -116,6 +127,10 @@
         width: 100%;
         top: 0rem;
         z-index: 10;
+
+        svg{
+          width: 100%;
+        }
 
         .col-md {
           padding: .5rem;
