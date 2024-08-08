@@ -62,7 +62,7 @@ const SearchPage = () => {
               {!loading ? (
                 <div class='tab-content' id='pills-tabContent'>
                   <div
-                    class='tab-pane fade show active'
+                    class='tab-pane  show active'
                     id='All-Courses'
                     role='tabpanel'
                     aria-labelledby='All-Courses-tab'

@@ -47,22 +47,22 @@ const Footer = props => {
 
       {/* NewsLetter */}
       <newsletter>
-        <div class='container'>
-          <div class='row'>
-            <div class='col-12 col-md-6'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-12 col-md-6'>
               <h3>{t('newsletter-section-title')}</h3>
               <p>{t('newsletter-section-caption')}</p>
             </div>
-            <div class='col-12 col-md-6'>
-              <div class='FNV-Newsletter input-group mb-3'>
+            <div className='col-12 col-md-6'>
+              <div className='FNV-Newsletter input-group mb-3'>
                 <Input
                   type='text'
                   placeholder={t('newsletter-section-input')}
-                  class='form-control FNV-NewsletterInput'
+                  className='form-control FNV-NewsletterInput'
                   aria-describedby='button-addon1'
                   fullWidth
                 />
-                <button class='FNV-Btn BtnMedium PrimaryColor' type='button' id='button-addon1'>
+                <button className='FNV-Btn BtnMedium PrimaryColor' type='button' id='button-addon1'>
                   <i data-feather={t('newsletter-section-button')}></i>
                 </button>
               </div>
@@ -80,12 +80,12 @@ const Footer = props => {
             <div className='col-12 col-sm-4 col-md-4'>
               <Logo />
 
-              <div class='d-flex gap-2'>
+              <div className='d-flex gap-2'>
                 <a href='tel:+16723996600'>(672) 399-6600</a>
                 <a href='tel:+19055052323'>(905) 505-2323</a>
               </div>
 
-              <div class='FNV-Social'>
+              <div className='FNV-Social'>
                 {/* Email */}
                 <a href='mailto:info@fanavaran.ca'>
                   <svg
@@ -98,7 +98,7 @@ const Footer = props => {
                     stroke-width='2'
                     stroke-linecap='round'
                     stroke-linejoin='round'
-                    class='feather feather-mail'
+                    className='feather feather-mail'
                   >
                     <path d='M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z'></path>
                     <polyline points='22,6 12,13 2,6'></polyline>

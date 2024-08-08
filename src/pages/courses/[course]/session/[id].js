@@ -47,9 +47,15 @@ const VideoPage = () => {
 
   useEffect(() => {
     if (courseData?.data?.data?.videos) {
-      setVideos(courseData?.data?.data?.videos)
-      const videoArray = courseData.data.data.videos
-      const currentVideo = videoArray.find(video => video.id.toString() === id.toString())
+      // Filter the videos to include only those with cycleId === 67
+      const filteredVideos = courseData.data.data.videos.filter(video => video.cycleId === '67')
+
+      setVideos(filteredVideos)
+
+      // Find the current video based on the filtered list
+      const currentVideo = filteredVideos.find(video => video.id.toString() === id.toString())
+      console.log(currentVideo)
+
       if (currentVideo) {
         let videoUrl = currentVideo.url
 

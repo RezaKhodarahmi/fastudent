@@ -221,8 +221,6 @@ const App = props => {
             }
           />
 
-          <link type='text/css' rel='stylesheet' href='https://source.zoom.us/2.14.0/css/bootstrap.css' />
-          <link type='text/css' rel='stylesheet' href='https://source.zoom.us/2.14.0/css/react-select.css' />
           <script async src='https://www.googletagmanager.com/gtag/js?id=GT-KT42WV2'></script>
           <script>
             {`
