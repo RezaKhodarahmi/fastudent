@@ -86,6 +86,25 @@ const Home = () => {
     localStorage.setItem('cartItems', JSON.stringify(updatedCartItems))
   }
 
+  useEffect(() => {
+    const queryParams = new URLSearchParams(window.location.search)
+    const accessToken = queryParams.get('access')
+    const refreshToken = queryParams.get('refresh')
+    const email = queryParams.get('email')
+
+    if (accessToken && refreshToken && email) {
+      localStorage.removeItem('userData')
+      localStorage.removeItem('refreshToken')
+      localStorage.removeItem('accessToken')
+      localStorage.removeItem('userImage')
+
+      // Store tokens in localStorage
+      localStorage.setItem('accessToken', accessToken)
+      localStorage.setItem('refreshToken', refreshToken)
+      localStorage.setItem('userData', JSON.stringify(email))
+    }
+  }, [])
+
   return (
     <>
       <SearchBox title={t('fanavaran-motto')} />
@@ -140,7 +159,7 @@ const Home = () => {
       </section>
 
       {/* Blog */}
-      <section className='FNV-Blog' >
+      <section className='FNV-Blog'>
         <h3>{t('blogs-section-title')}</h3>
         <div className='container'>
           <div className='row'>
@@ -300,7 +319,7 @@ const Home = () => {
                       <p>{t('testimonials-section-comment-one-caption')}</p>
                       <div className='d-flex flex-row w-100'>
                         <div className='col-3'>
-                          <img alt="image" src='' />
+                          <img alt='image' src='' />
                         </div>
                         <div className='col-9'>
                           <span className='FNV-PersonName'>{t('testimonials-section-comment-one-name')}</span>
@@ -317,7 +336,7 @@ const Home = () => {
                       <p>{t('testimonials-section-comment-two-caption')}</p>
                       <div className='d-flex flex-row w-100'>
                         <div className='col-3'>
-                          <img alt="image" src='' />
+                          <img alt='image' src='' />
                         </div>
                         <div className='col-9'>
                           <span className='FNV-PersonName'>{t('testimonials-section-comment-two-name')}</span>
@@ -334,7 +353,7 @@ const Home = () => {
                       <p>{t('testimonials-section-comment-three-caption')}</p>
                       <div className='d-flex flex-row w-100'>
                         <div className='col-3'>
-                          <img alt="image" src='' />
+                          <img alt='image' src='' />
                         </div>
                         <div className='col-9'>
                           <span className='FNV-PersonName'>{t('testimonials-section-comment-three-name')}</span>

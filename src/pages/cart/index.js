@@ -15,6 +15,7 @@ import toast from 'react-hot-toast'
 import { useRouter } from 'next/router'
 import { Checkbox, FormControlLabel, Typography, Box } from '@mui/material'
 import { useTranslation } from 'react-i18next'
+import SimpleDateFormatter from 'src/utils/simple-date-readble'
 
 const stripePromise = loadStripe(themeConfig.stripePublicKey)
 
@@ -469,10 +470,10 @@ const Index = () => {
     })
 
     const newSubTotal = prices.reduce((acc, price) => acc + price, 0)
+
     setCartSubTotal(newSubTotal)
 
     const totalDiscount = calculateTotalCouponDiscount()
-
     setCartTotal(newSubTotal - totalDiscount)
 
     if (!isVipMembershipInCart) {
@@ -545,6 +546,10 @@ const Index = () => {
   }, [courses, user])
 
   useEffect(() => {
+    console.log(courses?.data?.data[0]?.course?.type)
+  }, [courses])
+
+  useEffect(() => {
     if (cartCourses) {
       const isVipMembershipInCart =
         Array.isArray(courses?.data?.data) && courses.data.data.some(course => course?.course?.id === 150000)
@@ -584,6 +589,9 @@ const Index = () => {
     const capitalizedValue = e.target.value.toUpperCase()
     setCoupon(capitalizedValue)
   }
+
+  // Check if there is any course of type 2 in the cart
+  const hasCourseType2 = cartCourses.some(course => course.course.type == 2)
 
   return (
     <div className='FNV-Cart'>
@@ -782,27 +790,97 @@ const Index = () => {
 
                 <ul
                   sx={{ listStyleType: 'disc', pl: 2 }}
-                  style={{ direction: pageDirection, textAlign: pageDirection === 'rtl' ? 'right' : 'left' }}
+                  style={{
+                    direction: pageDirection,
+                    textAlign: pageDirection === 'rtl' ? 'right' : 'left',
+                    fontSize: '16px'
+                  }}
                 >
                   <li sx={{ display: 'list-item' }}>
-                    <Typography>{t('agree-terms-first')}</Typography>
+                    <Typography style={{ fontSize: '16px' }}>{t('agree-terms-first')}</Typography>
                   </li>
                   <li sx={{ display: 'list-item' }}>
-                    <Typography>{t('agree-terms-second')}</Typography>
+                    <Typography style={{ fontSize: '16px' }}>{t('agree-terms-second')}</Typography>
                   </li>
                   <li sx={{ display: 'list-item' }}>
-                    <Typography>{t('agree-terms-third')}</Typography>
+                    <Typography style={{ fontSize: '16px' }}>{t('agree-terms-third')}</Typography>
                   </li>
                   <li sx={{ display: 'list-item' }}>
-                    <Typography>{t('agree-terms-fourth')}</Typography>
+                    <Typography style={{ fontSize: '16px' }}>{t('agree-terms-fourth')}</Typography>
                   </li>
                   <li sx={{ display: 'list-item' }}>
-                    <Typography>{t('agree-terms-fifth')}</Typography>
+                    <Typography style={{ fontSize: '16px' }}>{t('agree-terms-fifth')}</Typography>
                   </li>
                   <li sx={{ display: 'list-item' }}>
-                    <Typography>{t('agree-terms-sixth')}</Typography>
+                    <Typography style={{ fontSize: '16px' }}>{t('agree-terms-sixth')}</Typography>
                   </li>
                 </ul>
+                {hasCourseType2 && (
+                  <Box
+                    sx={{
+                      height: '150px',
+                      overflowY: 'scroll',
+                      padding: 5,
+                      backgroundColor: '#f5f5f5',
+                      borderRadius: 2,
+                      border: '1px solid #C9D4EF'
+                    }}
+                  >
+                    <h2>Workshop Waiver and Release Agreement</h2>
+                    <p style={{ fontSize: '16px' }}>
+                      This Workshop Waiver and Release Agreement is made and entered into by and between “Fanavaran" and
+                      the undersigned participant on Date:{' '}
+                      <strong>{<SimpleDateFormatter dateString={Date.now()} />}</strong>
+                    </p>
+                    <h2>1. Assumption of Risk</h2>
+                    <p style={{ fontSize: '16px' }}>
+                      Participant understands and acknowledges that the workshop provided by Fanavaran involves certain
+                      risks and dangers, including but not limited to, the risk of personal injury, property damage, and
+                      other dangers that may arise from participation in plumbing, electrical, and HVAC activities.
+                      Participant voluntarily assumes all risks associated with participation in the workshop.
+                    </p>
+                    <h2>2. Waiver and Release</h2>
+                    <p style={{ fontSize: '16px' }}>
+                      Participant hereby waives, releases, and discharges Fanavaran, its officers, directors, employees,
+                      agents, and representatives (collectively, the "Released Parties") from any and all claims,
+                      liabilities, damages, losses, demands, actions, or causes of action that Participant may have
+                      against the Released Parties arising out of or in any way related to participation in the
+                      workshop, including, but not limited to, any claims for negligence, breach of contract, or
+                      personal injury.
+                    </p>
+                    <h2>3. Indemnification</h2>
+                    <p style={{ fontSize: '16px' }}>
+                      Participant agrees to indemnify, defend, and hold harmless the Released Parties from and against
+                      any and all claims, liabilities, damages, losses, demands, actions, or causes of action, including
+                      reasonable attorneys' fees, arising out of or in any way related to Participant's participation in
+                      the workshop or any breach of this Agreement.
+                    </p>
+                    <h2>4. Entire Agreement</h2>
+                    <p style={{ fontSize: '16px' }}>
+                      This Agreement constitutes the entire agreement between Fanavaran and Participant regarding the
+                      subject matter hereof and supersedes all prior or contemporaneous agreements, representations,
+                      warranties, and understandings, whether written or oral, relating to such subject matter.
+                    </p>
+                    <h2>5. Acknowledgment</h2>
+                    <p style={{ fontSize: '16px' }}>
+                      Participant acknowledges that Participant has read this Agreement, understands its terms, and
+                      agrees to be bound by its terms voluntarily.
+                    </p>
+                    <p style={{ fontSize: '16px' }}>© 2023 All rights reserved by Fanavaran.</p>
+                    <p style={{ fontSize: '16px' }}>
+                      The participant's signature below indicates the Participant's agreement to the terms and
+                      conditions set forth in this Agreement.
+                    </p>
+                    <p style={{ fontSize: '16px' }}>
+                      By signing below, Participant acknowledges and agrees to the terms and conditions set forth in
+                      this Agreement.
+                    </p>
+                    <p style={{ fontSize: '16px' }}>Participant's Full Name:{fullName ? fullName : 'Student Name'}</p>
+                    <p style={{ fontSize: '16px' }}>
+                      Date: <strong>{<SimpleDateFormatter dateString={Date.now()} />}</strong>
+                    </p>
+                  </Box>
+                )}
 
                 <FormControlLabel
                   control={

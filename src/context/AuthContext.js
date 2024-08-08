@@ -20,7 +20,9 @@ const defaultProvider = {
   error: null,
   setError: () => null,
   setResponse: () => null,
-  setUser: () => null,
+  setUser: () => {
+    Roles: 2000
+  },
   setLoading: () => Boolean,
   login: () => Promise.resolve(),
   logout: () => Promise.resolve(),
@@ -45,6 +47,7 @@ const AuthProvider = ({ children }) => {
   useEffect(() => {
     const initAuth = async () => {
       const storedToken = localStorage.getItem(authConfig.onTokenExpiration)
+
       if (storedToken) {
         setLoading(true)
         await axios
@@ -53,6 +56,7 @@ const AuthProvider = ({ children }) => {
           })
           .then(async response => {
             setLoading(false)
+            console.log('uyessssss', response)
             setUser({ Roles: response.data.data.role })
             localStorage.setItem('userImage', response.data.data.avatar)
             localStorage.setItem(authConfig.storageTokenKeyName, response.data.accessToken)
