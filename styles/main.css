@@ -9204,7 +9204,7 @@ badge.SecondaryColor {
     z-index: 3;
     right: 0px;
     width: 100%;
-    bottom: 0px;
+    bottom: -1px;
     position: absolute;
   }
   body[dir=rtl] .FNV-Slider .FNV-Canvas-Bottom svg {
@@ -10335,7 +10335,7 @@ badge.SecondaryColor {
     z-index: 3;
     right: 0px;
     width: 100%;
-    bottom: -2px;
+    bottom: -1px;
     position: absolute;
   }
   body[dir=rtl] .FNV-Slider .FNV-Canvas-Bottom svg {
