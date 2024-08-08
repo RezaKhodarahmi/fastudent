@@ -336,7 +336,7 @@ const CategoriesSection = () => {
               </Link>
             </div>
 
-            {/* Project Management */}
+            {/* Project Managements */}
             <div className='col-6 col-sm-12 col-md d-flex d-sm-flex d-md-none justify-content-center align-items-center'>
               <Link href='/project-management'>
                 <svg width='54' height='54' viewBox='0 0 54 54' fill='none' xmlns='http://www.w3.org/2000/svg'>
