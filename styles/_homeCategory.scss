@@ -1,227 +1,2747 @@
 @import './variables';
 
-.FNV-Top_Categories {
-  background-color: $WhiteColor;
-  padding: 4rem 0;
+// English
+body[dir='ltr'] {
 
-  .container {
-    .row {
-      justify-content: center;
+  // X-Small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) {
+    .FNV-Top_Categories {
+      background-color: $WhiteColor;
+      padding: 1rem 0;
 
-      h2 {
-        font-size: 48px;
-        font-weight: 300;
-        color: $PrimaryOne;
-        text-align: center;
-        margin-bottom: 5rem;
-      }
+      .container {
+        .row {
+          justify-content: center;
 
-      svg {
-        width: 80%;
-
-        a {
-          g {
-            fill: $White;
+          h2 {
+            font-size: 22px;
+            font-weight: 300;
+            color: $PrimaryOne;
+            text-align: center;
+            margin-bottom: 2rem;
           }
 
-          rect {
-            opacity: 1;
-            stroke: $PrimaryTextFour;
-          }
+          svg {
+            width: 100%;
 
-          .FNV-Category-Text {
-            stroke-width: .5px;
-            fill: $PrimaryOne;
-            stroke: $PrimaryOne;
-          }
-
-          .FNV-Category-Shape {
-            path {
-              stroke-width: 2px;
-              stroke: $PrimaryFour;
-            }
-          }
-
-          path {
-            stroke: $PrimaryTextFour;
-          }
-
-          &:hover {
-            g {
-              fill: $PrimaryOne;
-            }
-
-            rect {
-              opacity: 1;
-              stroke: $PrimaryTextFour;
-            }
-
-            .FNV-Category-Text {
-              stroke-width: .5px;
-              fill: $White;
-              stroke: $White;
-            }
-
-            .FNV-Category-Shape {
-              path {
-                stroke-width: 2px;
-                stroke: $White;
-              }
-            }
-
-            path {
-              stroke: $PrimaryOne;
-
-              &.FNV-NoFill {
+            a {
+              g {
                 fill: $White;
               }
-            }
-          }
-        }
-      }
-    }
 
-    &:nth-child(2) {
-      .row {
-        position: relative;
-
-        .col-12 {
-          h3 {
-            font-size: 24px;
-            line-height: 46px;
-            color: $PrimaryColor;
-            font-weight: 500;
-            min-height: 95px;
-          }
-
-          p {
-            font-size: 16px;
-            line-height: 32px;
-            color: $BlackColor;
-          }
-        }
-      }
-    }
-  }
-}
-
-.FNV-Mission {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-image: url("/images/pages/mission.jpg");
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-}
-
-/* For mobile phones: */
-@media only screen and (max-width: 768px) {
-  .FNV-Top_Categories {
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTI3OSIgaGVpZ2h0PSI1MjkiIHZpZXdCb3g9IjAgMCAxMjc5IDUyOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYzLjAwMiA2NC44MTI2TC0xIDE2OS45NDlWMTA1Ljk3OUw2My4wMDIgMC44NDIwNDFWNjQuODEyNloiIGZpbGw9IiNGMEYzRkIiLz4KPHBhdGggZD0iTTYzLjAwMiAzNTkuNjg2TC0xIDM4OS40OTZWMzI1LjUzMkw2My4wMDIgMjk1LjcxNVYzNTkuNjg2WiIgZmlsbD0iI0YwRjNGQiIvPgo8cGF0aCBkPSJNMTI2Ljk5NyAyMzMuOTEzTDYzLjAwMiAyOTUuNzE1VjIzMS43NDVMMTI2Ljk5NyAxNjkuOTQ5VjIzMy45MTNaIiBmaWxsPSIjRjBGM0ZCIi8+CjxwYXRoIGQ9Ik0xOTAuOTk5IDY0LjgxMjZMMTI2Ljk5NyAxNjkuOTQ5VjEwNS45NzlMMTkwLjk5OSAwLjg0MjA0MVY2NC44MTI2WiIgZmlsbD0iI0YwRjNGQiIvPgo8cGF0aCBkPSJNNjMuMDAyIDQ2NS4wMzZILTFWNTI5LjAwN0g2My4wMDJWNDY1LjAzNloiIGZpbGw9IiNGMEYzRkIiLz4KPHBhdGggZD0iTTEyNi45OTcgNDUzLjQ2N0w2My4wMDIgNDY1LjAzNlY0MDEuMDY1TDEyNi45OTcgMzg5LjQ5NlY0NTMuNDY3WiIgZmlsbD0iI0YwRjNGQiIvPgo8cGF0aCBkPSJNMTkwLjk5OSAzNTkuNjg2TDEyNi45OTcgMzg5LjQ5NlYzMjUuNTMyTDE5MC45OTkgMjk1LjcxNVYzNTkuNjg2WiIgZmlsbD0iI0YwRjNGQiIvPgo8cGF0aCBkPSJNMjU1LjAwMSAyMzMuOTEzTDE5MC45OTkgMjk1LjcxNVYyMzEuNzQ1TDI1NS4wMDEgMTY5Ljk0OVYyMzMuOTEzWiIgZmlsbD0iI0YwRjNGQiIvPgo8cGF0aCBkPSJNMzE4Ljk5NyA2NC44MTI2TDI1NS4wMDEgMTY5Ljk0OVYxMDUuOTc5TDMxOC45OTcgMC44NDIwNDFWNjQuODEyNloiIGZpbGw9IiNGMEYzRkIiLz4KPHBhdGggZD0iTTE5MC45OTkgNDY1LjAzNkgxMjYuOTk3VjUyOS4wMDdIMTkwLjk5OVY0NjUuMDM2WiIgZmlsbD0iI0YwRjNGQiIvPgo8cGF0aCBkPSJNMjU1LjAwMSA0NTMuNDY3TDE5MC45OTkgNDY1LjAzNlY0MDEuMDY1TDI1NS4wMDEgMzg5LjQ5NlY0NTMuNDY3WiIgZmlsbD0iI0YwRjNGQiIvPgo8cGF0aCBkPSJNMzE4Ljk5NyAzNTkuNjg2TDI1NS4wMDEgMzg5LjQ5NlYzMjUuNTMyTDMxOC45OTcgMjk1LjcxNVYzNTkuNjg2WiIgZmlsbD0iI0YwRjNGQiIvPgo8cGF0aCBkPSJNMzgyLjk5OSAyMzMuOTEzTDMxOC45OTcgMjk1LjcxNVYyMzEuNzQ1TDM4Mi45OTkgMTY5Ljk0OVYyMzMuOTEzWiIgZmlsbD0iI0YwRjNGQiIvPgo8cGF0aCBkPSJNNDQ3LjAwMSA2NC44MTI2TDM4Mi45OTkgMTY5Ljk0OVYxMDUuOTc5TDQ0Ny4wMDEgMC44NDIwNDFWNjQuODEyNloiIGZpbGw9IiNGMEYzRkIiLz4KPHBhdGggZD0iTTMxOS4wMDMgNDY1LjAzNkgyNTUuMDAxVjUyOS4wMDdIMzE5LjAwM1Y0NjUuMDM2WiIgZmlsbD0iI0YwRjNGQiIvPgo8cGF0aCBkPSJNMzgyLjk5OSA0NTMuNDY3TDMxOC45OTcgNDY1LjAzNlY0MDEuMDY1TDM4Mi45OTkgMzg5LjQ5NlY0NTMuNDY3WiIgZmlsbD0iI0YwRjNGQiIvPgo8cGF0aCBkPSJNNDQ3LjAwMSAzNTkuNjg2TDM4Mi45OTkgMzg5LjQ5NlYzMjUuNTMyTDQ0Ny4wMDEgMjk1LjcxNVYzNTkuNjg2WiIgZmlsbD0iI0YwRjNGQiIvPgo8cGF0aCBkPSJNNTExLjAwMyAyMzMuOTEzTDQ0Ny4wMDEgMjk1LjcxNVYyMzEuNzQ1TDUxMS4wMDMgMTY5Ljk0OVYyMzMuOTEzWiIgZmlsbD0iI0YwRjNGQiIvPgo8cGF0aCBkPSJNNTc0Ljk5OCA2NC44MTI2TDUxMS4wMDMgMTY5Ljk0OVYxMDUuOTc5TDU3NC45OTggMC44NDIwNDFWNjQuODEyNloiIGZpbGw9IiNGMEYzRkIiLz4KPHBhdGggZD0iTTQ0Ny4wMDEgNDY1LjAzNkgzODIuOTk5VjUyOS4wMDdINDQ3LjAwMVY0NjUuMDM2WiIgZmlsbD0iI0YwRjNGQiIvPgo8cGF0aCBkPSJNNTExLjAwMyA0NTMuNDY3TDQ0Ny4wMDEgNDY1LjAzNlY0MDEuMDY1TDUxMS4wMDMgMzg5LjQ5NlY0NTMuNDY3WiIgZmlsbD0iI0YwRjNGQiIvPgo8cGF0aCBkPSJNNTc0Ljk5OCAzNTkuNjg2TDUxMS4wMDMgMzg5LjQ5NlYzMjUuNTMyTDU3NC45OTggMjk1LjcxNVYzNTkuNjg2WiIgZmlsbD0iI0YwRjNGQiIvPgo8cGF0aCBkPSJNNjM5IDIzMy45MTNMNTc0Ljk5OCAyOTUuNzE1VjIzMS43NDVMNjM5IDE2OS45NDlWMjMzLjkxM1oiIGZpbGw9IiNGMEYzRkIiLz4KPHBhdGggZD0iTTcwMy4wMDIgNjQuODEyNkw2MzkgMTY5Ljk0OVYxMDUuOTc5TDcwMy4wMDIgMC44NDIwNDFWNjQuODEyNloiIGZpbGw9IiNGMEYzRkIiLz4KPHBhdGggZD0iTTU3NS4wMDUgNDY1LjAzNkg1MTEuMDAzVjUyOS4wMDdINTc1LjAwNVY0NjUuMDM2WiIgZmlsbD0iI0YwRjNGQiIvPgo8cGF0aCBkPSJNNjM5IDQ1My40NjdMNTc0Ljk5OCA0NjUuMDM2VjQwMS4wNjVMNjM5IDM4OS40OTZWNDUzLjQ2N1oiIGZpbGw9IiNGMEYzRkIiLz4KPHBhdGggZD0iTTcwMy4wMDIgMzU5LjY4Nkw2MzkgMzg5LjQ5NlYzMjUuNTMyTDcwMy4wMDIgMjk1LjcxNVYzNTkuNjg2WiIgZmlsbD0iI0YwRjNGQiIvPgo8cGF0aCBkPSJNNzY2Ljk5NyAyMzMuOTEzTDcwMy4wMDIgMjk1LjcxNVYyMzEuNzQ1TDc2Ni45OTcgMTY5Ljk0OVYyMzMuOTEzWiIgZmlsbD0iI0YwRjNGQiIvPgo8cGF0aCBkPSJNODMwLjk5OSA2NC44MTI2TDc2Ni45OTcgMTY5Ljk0OVYxMDUuOTc5TDgzMC45OTkgMC44NDIwNDFWNjQuODEyNloiIGZpbGw9IiNGMEYzRkIiLz4KPHBhdGggZD0iTTcwMy4wMDIgNDY1LjAzNkg2MzlWNTI5LjAwN0g3MDMuMDAyVjQ2NS4wMzZaIiBmaWxsPSIjRjBGM0ZCIi8+CjxwYXRoIGQ9Ik03NjYuOTk3IDQ1My40NjdMNzAzLjAwMiA0NjUuMDM2VjQwMS4wNjVMNzY2Ljk5NyAzODkuNDk2VjQ1My40NjdaIiBmaWxsPSIjRjBGM0ZCIi8+CjxwYXRoIGQ9Ik04MzAuOTk5IDM1OS42ODZMNzY2Ljk5NyAzODkuNDk2VjMyNS41MzJMODMwLjk5OSAyOTUuNzE1VjM1OS42ODZaIiBmaWxsPSIjRjBGM0ZCIi8+CjxwYXRoIGQ9Ik04OTUuMDAxIDIzMy45MTNMODMwLjk5OSAyOTUuNzE1VjIzMS43NDVMODk1LjAwMSAxNjkuOTQ5VjIzMy45MTNaIiBmaWxsPSIjRjBGM0ZCIi8+CjxwYXRoIGQ9Ik05NTguOTk3IDY0LjgxMjZMODk1LjAwMSAxNjkuOTQ5VjEwNS45NzlMOTU4Ljk5NyAwLjg0MjA0MVY2NC44MTI2WiIgZmlsbD0iI0YwRjNGQiIvPgo8cGF0aCBkPSJNODMwLjk5OSA0NjUuMDM2SDc2Ni45OTdWNTI5LjAwN0g4MzAuOTk5VjQ2NS4wMzZaIiBmaWxsPSIjRjBGM0ZCIi8+CjxwYXRoIGQ9Ik04OTUuMDAxIDQ1My40NjdMODMwLjk5OSA0NjUuMDM2VjQwMS4wNjVMODk1LjAwMSAzODkuNDk2VjQ1My40NjdaIiBmaWxsPSIjRjBGM0ZCIi8+CjxwYXRoIGQ9Ik05NTguOTk3IDM1OS42ODZMODk1LjAwMSAzODkuNDk2VjMyNS41MzJMOTU4Ljk5NyAyOTUuNzE1VjM1OS42ODZaIiBmaWxsPSIjRjBGM0ZCIi8+CjxwYXRoIGQ9Ik0xMDIzIDIzMy45MTNMOTU4Ljk5NyAyOTUuNzE1VjIzMS43NDVMMTAyMyAxNjkuOTQ5VjIzMy45MTNaIiBmaWxsPSIjRjBGM0ZCIi8+CjxwYXRoIGQ9Ik0xMDg3IDY0LjgxMjZMMTAyMyAxNjkuOTQ5VjEwNS45NzlMMTA4NyAwLjg0MjA0MVY2NC44MTI2WiIgZmlsbD0iI0YwRjNGQiIvPgo8cGF0aCBkPSJNOTU5LjAwMyA0NjUuMDM2SDg5NS4wMDFWNTI5LjAwN0g5NTkuMDAzVjQ2NS4wMzZaIiBmaWxsPSIjRjBGM0ZCIi8+CjxwYXRoIGQ9Ik0xMDIzIDQ1My40NjdMOTU4Ljk5NyA0NjUuMDM2VjQwMS4wNjVMMTAyMyAzODkuNDk2VjQ1My40NjdaIiBmaWxsPSIjRjBGM0ZCIi8+CjxwYXRoIGQ9Ik0xMDg3IDM1OS42ODZMMTAyMyAzODkuNDk2VjMyNS41MzJMMTA4NyAyOTUuNzE1VjM1OS42ODZaIiBmaWxsPSIjRjBGM0ZCIi8+CjxwYXRoIGQ9Ik0xMTUxIDIzMy45MTNMMTA4NyAyOTUuNzE1VjIzMS43NDVMMTE1MSAxNjkuOTQ5VjIzMy45MTNaIiBmaWxsPSIjRjBGM0ZCIi8+CjxwYXRoIGQ9Ik0xMjE1IDY0LjgxMjZMMTE1MSAxNjkuOTQ5VjEwNS45NzlMMTIxNSAwLjg0MjA0MVY2NC44MTI2WiIgZmlsbD0iI0YwRjNGQiIvPgo8cGF0aCBkPSJNMTA4NyA0NjUuMDM2SDEwMjNWNTI5LjAwN0gxMDg3VjQ2NS4wMzZaIiBmaWxsPSIjRjBGM0ZCIi8+CjxwYXRoIGQ9Ik0xMTUxIDQ1My40NjdMMTA4NyA0NjUuMDM2VjQwMS4wNjVMMTE1MSAzODkuNDk2VjQ1My40NjdaIiBmaWxsPSIjRjBGM0ZCIi8+CjxwYXRoIGQ9Ik0xMjE1IDM1OS42ODZMMTE1MSAzODkuNDk2VjMyNS41MzJMMTIxNSAyOTUuNzE1VjM1OS42ODZaIiBmaWxsPSIjRjBGM0ZCIi8+CjxwYXRoIGQ9Ik0xMjc5IDIzMy45MTNMMTIxNSAyOTUuNzE1VjIzMS43NDVMMTI3OSAxNjkuOTQ5VjIzMy45MTNaIiBmaWxsPSIjRjBGM0ZCIi8+CjxwYXRoIGQ9Ik0xMjE1IDQ2NS4wMzZIMTE1MVY1MjkuMDA3SDEyMTVWNDY1LjAzNloiIGZpbGw9IiNGMEYzRkIiLz4KPHBhdGggZD0iTTEyNzkgNDUzLjQ2N0wxMjE1IDQ2NS4wMzZWNDAxLjA2NUwxMjc5IDM4OS40OTZWNDUzLjQ2N1oiIGZpbGw9IiNGMEYzRkIiLz4KPC9zdmc+Cg==");
-    background-size: contain;
-    background-repeat: repeat-x;
-    background-position: bottom left;
-    padding: .5rem;
-
-    .container {
-      position: relative;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-
-      .row {
-        position: relative;
-        width: 100%;
-        top: 0rem;
-        z-index: 10;
-
-        svg {
-          width: 100%;
-        }
-
-        .col-md {
-          padding: .5rem;
-          margin-top: 1rem;
-
-          a {
-            background-color: $WhiteColor;
-            color: $PrimaryColor;
-            padding: 3rem 0;
-            display: block;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 0 25px rgb(0, 59, 191, 30%);
-            transition: 0.3s all ease-in-out;
-
-            svg {
-              width: 50px;
-              height: 50px;
-              color: $SecondaryColor;
-            }
-
-            h3 {
-              font-size: 12px;
-              font-weight: 400;
-              margin-top: 1rem;
-            }
-
-            &:hover {
-              background: linear-gradient(-45deg, $PrimaryColor, $SecondaryColor, $PrimaryColor, $WhiteColor);
-              background-size: 400% 400%;
-              animation: gradient 3s ease-in-out alternate;
-
-              h3 {
-                color: $WhiteColor;
+              rect {
+                opacity: 1;
+                stroke: $PrimaryTextFour;
               }
+
+              .FNV-Category-Text {
+                stroke-width: .5px;
+                fill: $PrimaryOne;
+                stroke: $PrimaryOne;
+              }
+
+              .FNV-Category-Shape {
+                path {
+                  stroke-width: 2px;
+                  stroke: $PrimaryFour;
+                }
+              }
+
+              path {
+                stroke: $PrimaryTextFour;
+              }
+
+              &:hover {
+                g {
+                  fill: $PrimaryOne;
+                }
+
+                rect {
+                  opacity: 1;
+                  stroke: $PrimaryTextFour;
+                }
+
+                .FNV-Category-Text {
+                  stroke-width: .5px;
+                  fill: $White;
+                  stroke: $White;
+                }
+
+                .FNV-Category-Shape {
+                  path {
+                    stroke-width: 2px;
+                    stroke: $White;
+                  }
+                }
+
+                path {
+                  stroke: $PrimaryOne;
+
+                  &.FNV-NoFill {
+                    fill: $White;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          .row {
+            position: relative;
+
+            .col-12 {
+              h3 {
+                font-size: 24px;
+                line-height: 46px;
+                color: $PrimaryColor;
+                font-weight: 500;
+                min-height: 95px;
+              }
+
+              p {
+                font-size: 16px;
+                line-height: 32px;
+                color: $BlackColor;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .FNV-Mission {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url("/images/pages/mission.jpg");
+
+
+
+      .container {
+        .row {
+          h2 {
+            font-size: 22px;
+            font-weight: 300;
+            text-align: center;
+            color: $PrimaryOne;
+            margin-bottom: 1rem;
+          }
+
+          .col-md-4 {
+            &.Top1 {
+              margin-bottom: 2rem;
+            }
+
+            &.Top2 {
+              margin-bottom: 2rem;
+            }
+
+            .card {
+              padding: 1rem;
+              border-radius: 0px;
+              position: relative;
+              background-color: transparent;
+              border: 1px solid $PrimaryOne;
 
               svg {
-                color: $WhiteColor;
+                margin-bottom: 1rem;
+              }
+
+              h3 {
+                font-size: 16px;
+                font-weight: 400;
+                color: $PrimaryOne;
+                margin-bottom: 1rem;
+              }
+
+              p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 28px;
+                color: $PrimaryTextOne;
+              }
+
+              a {
+                right: 1rem;
+                bottom: -21px;
+                width: 280px;
+                padding: .5rem 0;
+                color: $White;
+                display: flex;
+                position: absolute;
+                border-radius: 0px;
+                align-items: center;
+                justify-content: center;
+                background-color: $PrimaryOne;
+
+
+                span {
+                  font-size: 14px;
+                  font-weight: 400;
+                }
+
+                svg {
+                  margin: 0 .5rem;
+                  margin-bottom: 0;
+                }
               }
             }
           }
         }
       }
 
-      &:nth-child(2) {
-        padding: .5rem;
+      .FNV-Canvas-Bottom {
+        margin-top: 2rem;
+        transform: scale(-1, -1)
+      }
+    }
+  }
 
+  // `sm` applies to x-small devices (portrait phones, less than 576px)
+  @media (min-width: 575.98px) and (max-width: 767.98px) {
+    .FNV-Top_Categories {
+      background-color: $WhiteColor;
+      padding: 1rem 0;
+
+      .container {
         .row {
-          position: relative;
+          justify-content: center;
 
-          .col-12 {
-            margin: 1rem 0;
-            background-color: $WhiteColor;
-            padding: 2rem;
-            border-radius: 20px;
-            box-shadow: 0 0 25px rgb(0, 59, 191, 30%);
+          h2 {
+            font-size: 22px;
+            font-weight: 300;
+            color: $PrimaryOne;
+            text-align: center;
+            margin-bottom: 2rem;
+          }
 
-            h3 {
-              font-size: 22px;
-              line-height: 40px;
-              color: $PrimaryColor;
-              font-weight: 500;
-            }
+          svg {
+            width: 100%;
 
-            p {
-              font-size: 14px;
-              line-height: 28px;
-              color: $BlackColor;
+            a {
+              g {
+                fill: $White;
+              }
+
+              rect {
+                opacity: 1;
+                stroke: $PrimaryTextFour;
+              }
+
+              .FNV-Category-Text {
+                stroke-width: .5px;
+                fill: $PrimaryOne;
+                stroke: $PrimaryOne;
+              }
+
+              .FNV-Category-Shape {
+                path {
+                  stroke-width: 2px;
+                  stroke: $PrimaryFour;
+                }
+              }
+
+              path {
+                stroke: $PrimaryTextFour;
+              }
+
+              &:hover {
+                g {
+                  fill: $PrimaryOne;
+                }
+
+                rect {
+                  opacity: 1;
+                  stroke: $PrimaryTextFour;
+                }
+
+                .FNV-Category-Text {
+                  stroke-width: .5px;
+                  fill: $White;
+                  stroke: $White;
+                }
+
+                .FNV-Category-Shape {
+                  path {
+                    stroke-width: 2px;
+                    stroke: $White;
+                  }
+                }
+
+                path {
+                  stroke: $PrimaryOne;
+
+                  &.FNV-NoFill {
+                    fill: $White;
+                  }
+                }
+              }
             }
           }
         }
+
+        &:nth-child(2) {
+          .row {
+            position: relative;
+
+            .col-12 {
+              h3 {
+                font-size: 24px;
+                line-height: 46px;
+                color: $PrimaryColor;
+                font-weight: 500;
+                min-height: 95px;
+              }
+
+              p {
+                font-size: 16px;
+                line-height: 32px;
+                color: $BlackColor;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .FNV-Mission {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url("/images/pages/mission.jpg");
+
+      .FNV-Canvas-Top {
+        transform: unset;
+      }
+
+      .container {
+        .row {
+          h2 {
+            font-size: 22px;
+            font-weight: 300;
+            text-align: center;
+            color: $PrimaryOne;
+            margin-bottom: 1rem;
+          }
+
+          .col-md-4 {
+            &.Top1 {
+              margin-bottom: 2rem;
+            }
+
+            &.Top2 {
+              margin-bottom: 2rem;
+            }
+
+            .card {
+              padding: 1rem;
+              border-radius: 0px;
+              position: relative;
+              background-color: transparent;
+              border: 1px solid $PrimaryOne;
+
+              svg {
+                margin-bottom: 1rem;
+              }
+
+              h3 {
+                font-size: 16px;
+                font-weight: 400;
+                color: $PrimaryOne;
+                margin-bottom: 1rem;
+              }
+
+              p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 28px;
+                color: $PrimaryTextOne;
+              }
+
+              a {
+                right: 1rem;
+                bottom: -21px;
+                width: 280px;
+                padding: .5rem 0;
+                color: $White;
+                display: flex;
+                position: absolute;
+                border-radius: 0px;
+                align-items: center;
+                justify-content: center;
+                background-color: $PrimaryOne;
+
+
+                span {
+                  font-size: 14px;
+                  font-weight: 400;
+                }
+
+                svg {
+                  margin: 0 .5rem;
+                  margin-bottom: 0;
+                  transform: rotate(0deg);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .FNV-Canvas-Bottom {
+        margin-top: 2rem;
+        transform: scale(-1, -1)
+      }
+    }
+  }
+
+  // `md` applies to small devices (landscape phones, less than 768px)
+  @media (min-width: 767.98px) and (max-width: 991.98px) {
+    .FNV-Top_Categories {
+      background-color: $WhiteColor;
+      padding: 4rem 0;
+
+      .container {
+        .row {
+          justify-content: center;
+
+          h2 {
+            font-size: 22px;
+            font-weight: 300;
+            color: $PrimaryOne;
+            text-align: center;
+            margin-bottom: 2rem;
+          }
+
+          svg {
+            width: 100%;
+
+            a {
+              g {
+                fill: $White;
+              }
+
+              rect {
+                opacity: 1;
+                stroke: $PrimaryTextFour;
+              }
+
+              .FNV-Category-Text {
+                stroke-width: .5px;
+                fill: $PrimaryOne;
+                stroke: $PrimaryOne;
+              }
+
+              .FNV-Category-Shape {
+                path {
+                  stroke-width: 2px;
+                  stroke: $PrimaryFour;
+                }
+              }
+
+              path {
+                stroke: $PrimaryTextFour;
+              }
+
+              &:hover {
+                g {
+                  fill: $PrimaryOne;
+                }
+
+                rect {
+                  opacity: 1;
+                  stroke: $PrimaryTextFour;
+                }
+
+                .FNV-Category-Text {
+                  stroke-width: .5px;
+                  fill: $White;
+                  stroke: $White;
+                }
+
+                .FNV-Category-Shape {
+                  path {
+                    stroke-width: 2px;
+                    stroke: $White;
+                  }
+                }
+
+                path {
+                  stroke: $PrimaryOne;
+
+                  &.FNV-NoFill {
+                    fill: $White;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          .row {
+            position: relative;
+
+            .col-12 {
+              h3 {
+                font-size: 24px;
+                line-height: 46px;
+                color: $PrimaryColor;
+                font-weight: 500;
+                min-height: 95px;
+              }
+
+              p {
+                font-size: 16px;
+                line-height: 32px;
+                color: $BlackColor;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .FNV-Mission {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url("/images/pages/mission.jpg");
+
+      .FNV-Canvas-Top {
+        transform: unset;
+      }
+
+      .container {
+        .row {
+          h2 {
+            font-size: 22px;
+            font-weight: 300;
+            color: $PrimaryOne;
+          }
+
+          .col-md-4 {
+            &.Top1 {
+              margin-top: 5rem;
+            }
+
+            &.Top2 {
+              margin-top: 2.5rem;
+            }
+
+            .card {
+              padding: .5rem;
+              border-radius: 0px;
+              position: relative;
+              background-color: transparent;
+              border: 1px solid $PrimaryOne;
+
+              svg {
+                margin-bottom: 1rem;
+              }
+
+              h3 {
+                font-size: 12px;
+                font-weight: 400;
+                color: $PrimaryOne;
+                margin-bottom: 1rem;
+              }
+
+              p {
+                font-size: 10px;
+                font-weight: 400;
+                line-height: 20px;
+                color: $PrimaryTextOne;
+              }
+
+              a {
+                right: .5rem;
+                bottom: -21px;
+                width: 200px;
+                padding: .5rem 0;
+                color: $White;
+                display: flex;
+                position: absolute;
+                border-radius: 0px;
+                align-items: center;
+                justify-content: center;
+                background-color: $PrimaryOne;
+
+
+                span {
+                  font-size: 10px;
+                  font-weight: 400;
+                }
+
+                svg {
+                  margin: 0 .5rem;
+                  margin-bottom: 0;
+                  transform: rotate(0deg);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .FNV-Canvas-Bottom {
+        transform: scale(-1, -1);
+      }
+    }
+  }
+
+  // `lg` applies to medium devices (tablets, less than 992px)
+  @media (min-width: 991.98px) {
+    .FNV-Top_Categories {
+      background-color: $WhiteColor;
+      padding: 4rem 0;
+
+      .container {
+        .row {
+          justify-content: center;
+
+          h2 {
+            font-size: 28px;
+            font-weight: 300;
+            color: $PrimaryOne;
+            text-align: center;
+            margin-bottom: 5rem;
+          }
+
+          svg {
+            width: 100%;
+
+            a {
+              g {
+                fill: $White;
+              }
+
+              rect {
+                opacity: 1;
+                stroke: $PrimaryTextFour;
+              }
+
+              .FNV-Category-Text {
+                stroke-width: .5px;
+                fill: $PrimaryOne;
+                stroke: $PrimaryOne;
+              }
+
+              .FNV-Category-Shape {
+                path {
+                  stroke-width: 2px;
+                  stroke: $PrimaryFour;
+                }
+              }
+
+              path {
+                stroke: $PrimaryTextFour;
+              }
+
+              &:hover {
+                g {
+                  fill: $PrimaryOne;
+                }
+
+                rect {
+                  opacity: 1;
+                  stroke: $PrimaryTextFour;
+                }
+
+                .FNV-Category-Text {
+                  stroke-width: .5px;
+                  fill: $White;
+                  stroke: $White;
+                }
+
+                .FNV-Category-Shape {
+                  path {
+                    stroke-width: 2px;
+                    stroke: $White;
+                  }
+                }
+
+                path {
+                  stroke: $PrimaryOne;
+
+                  &.FNV-NoFill {
+                    fill: $White;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          .row {
+            position: relative;
+
+            .col-12 {
+              h3 {
+                font-size: 24px;
+                line-height: 46px;
+                color: $PrimaryColor;
+                font-weight: 500;
+                min-height: 95px;
+              }
+
+              p {
+                font-size: 16px;
+                line-height: 32px;
+                color: $BlackColor;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .FNV-Mission {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url("/images/pages/mission.jpg");
+
+      .FNV-Canvas-Top {
+        transform: unset;
+      }
+
+      .container {
+        .row {
+          h2 {
+            font-size: 28px;
+            font-weight: 300;
+            color: $PrimaryOne;
+          }
+
+          .col-md-4 {
+            &.Top1 {
+              margin-top: 5rem;
+            }
+
+            &.Top2 {
+              margin-top: 2.5rem;
+            }
+
+            .card {
+              padding: 1rem;
+              border-radius: 0px;
+              position: relative;
+              background-color: transparent;
+              border: 1px solid $PrimaryOne;
+
+              svg {
+                margin-bottom: 1rem;
+              }
+
+              h3 {
+                font-size: 14px;
+                font-weight: 400;
+                color: $PrimaryOne;
+                margin-bottom: 1rem;
+              }
+
+              p {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 24px;
+                color: $PrimaryTextOne;
+              }
+
+              a {
+                right: 1rem;
+                bottom: -21px;
+                width: 280px;
+                padding: .5rem 0;
+                color: $White;
+                display: flex;
+                position: absolute;
+                border-radius: 0px;
+                align-items: center;
+                justify-content: center;
+                background-color: $PrimaryOne;
+
+
+                span {
+                  font-size: 14px;
+                  font-weight: 400;
+                }
+
+                svg {
+                  margin: 0 .5rem;
+                  margin-bottom: 0;
+                  transform: rotate(0deg);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .FNV-Canvas-Bottom {
+        transform: scale(-1, -1);
+      }
+    }
+  }
+
+  // `xl` applies to large devices (desktops, less than 1200px)
+  @media (min-width: 1199.98px) {
+    .FNV-Top_Categories {
+      background-color: $WhiteColor;
+      padding: 4rem 0;
+
+      .container {
+        .row {
+          justify-content: center;
+
+          h2 {
+            font-size: 36px;
+            font-weight: 300;
+            color: $PrimaryOne;
+            text-align: center;
+            margin-bottom: 5rem;
+          }
+
+          svg {
+            width: 100%;
+
+            a {
+              g {
+                fill: $White;
+              }
+
+              rect {
+                opacity: 1;
+                stroke: $PrimaryTextFour;
+              }
+
+              .FNV-Category-Text {
+                stroke-width: .5px;
+                fill: $PrimaryOne;
+                stroke: $PrimaryOne;
+              }
+
+              .FNV-Category-Shape {
+                path {
+                  stroke-width: 2px;
+                  stroke: $PrimaryFour;
+                }
+              }
+
+              path {
+                stroke: $PrimaryTextFour;
+              }
+
+              &:hover {
+                g {
+                  fill: $PrimaryOne;
+                }
+
+                rect {
+                  opacity: 1;
+                  stroke: $PrimaryTextFour;
+                }
+
+                .FNV-Category-Text {
+                  stroke-width: .5px;
+                  fill: $White;
+                  stroke: $White;
+                }
+
+                .FNV-Category-Shape {
+                  path {
+                    stroke-width: 2px;
+                    stroke: $White;
+                  }
+                }
+
+                path {
+                  stroke: $PrimaryOne;
+
+                  &.FNV-NoFill {
+                    fill: $White;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          .row {
+            position: relative;
+
+            .col-12 {
+              h3 {
+                font-size: 24px;
+                line-height: 46px;
+                color: $PrimaryColor;
+                font-weight: 500;
+                min-height: 95px;
+              }
+
+              p {
+                font-size: 16px;
+                line-height: 32px;
+                color: $BlackColor;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .FNV-Mission {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url("/images/pages/mission.jpg");
+
+      .FNV-Canvas-Top {
+        transform: unset;
+      }
+
+      .container {
+        .row {
+          h2 {
+            font-size: 36px;
+            font-weight: 300;
+            color: $PrimaryOne;
+          }
+
+          .col-md-4 {
+            &.Top1 {
+              margin-top: 5rem;
+            }
+
+            &.Top2 {
+              margin-top: 2.5rem;
+            }
+
+            .card {
+              padding: 2rem;
+              border-radius: 0px;
+              position: relative;
+              background-color: transparent;
+              border: 1px solid $PrimaryOne;
+
+              svg {
+                margin-bottom: 1rem;
+              }
+
+              h3 {
+                font-size: 14px;
+                font-weight: 400;
+                color: $PrimaryOne;
+                margin-bottom: 1rem;
+              }
+
+              p {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 24px;
+                color: $PrimaryTextOne;
+              }
+
+              a {
+                right: 2rem;
+                bottom: -21px;
+                width: 280px;
+                padding: .5rem 0;
+                color: $White;
+                display: flex;
+                position: absolute;
+                border-radius: 0px;
+                align-items: center;
+                justify-content: center;
+                background-color: $PrimaryOne;
+
+
+                span {
+                  font-size: 14px;
+                  font-weight: 400;
+                }
+
+                svg {
+                  margin: 0 .5rem;
+                  margin-bottom: 0;
+                  transform: rotate(0deg);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .FNV-Canvas-Bottom {
+        transform: scale(-1, -1);
+      }
+    }
+  }
+
+  // XX-Large devices (larger desktops, 1400px and up)
+  @media (min-width: 1400px) {
+    .FNV-Top_Categories {
+      background-color: $WhiteColor;
+      padding: 4rem 0;
+
+      .container {
+        .row {
+          justify-content: center;
+
+          h2 {
+            font-size: 48px;
+            font-weight: 300;
+            color: $PrimaryOne;
+            text-align: center;
+            margin-bottom: 5rem;
+          }
+
+          svg {
+            width: 80%;
+
+            a {
+              g {
+                fill: $White;
+              }
+
+              rect {
+                opacity: 1;
+                stroke: $PrimaryTextFour;
+              }
+
+              .FNV-Category-Text {
+                stroke-width: .5px;
+                fill: $PrimaryOne;
+                stroke: $PrimaryOne;
+              }
+
+              .FNV-Category-Shape {
+                path {
+                  stroke-width: 2px;
+                  stroke: $PrimaryFour;
+                }
+              }
+
+              path {
+                stroke: $PrimaryTextFour;
+              }
+
+              &:hover {
+                g {
+                  fill: $PrimaryOne;
+                }
+
+                rect {
+                  opacity: 1;
+                  stroke: $PrimaryTextFour;
+                }
+
+                .FNV-Category-Text {
+                  stroke-width: .5px;
+                  fill: $White;
+                  stroke: $White;
+                }
+
+                .FNV-Category-Shape {
+                  path {
+                    stroke-width: 2px;
+                    stroke: $White;
+                  }
+                }
+
+                path {
+                  stroke: $PrimaryOne;
+
+                  &.FNV-NoFill {
+                    fill: $White;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          .row {
+            position: relative;
+
+            .col-12 {
+              h3 {
+                font-size: 24px;
+                line-height: 46px;
+                color: $PrimaryColor;
+                font-weight: 500;
+                min-height: 95px;
+              }
+
+              p {
+                font-size: 16px;
+                line-height: 32px;
+                color: $BlackColor;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .FNV-Mission {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url("/images/pages/mission.jpg");
+
+      .FNV-Canvas-Top {
+        transform: unset;
+      }
+
+      .container {
+        .row {
+          h2 {
+            font-size: 48px;
+            font-weight: 300;
+            color: $PrimaryOne;
+          }
+
+          .col-md-4 {
+            &.Top1 {
+              margin-top: 10rem;
+            }
+
+            &.Top2 {
+              margin-top: 5rem;
+            }
+
+            .card {
+              padding: 4rem 3rem;
+              border-radius: 0px;
+              position: relative;
+              background-color: transparent;
+              border: 1px solid $PrimaryOne;
+
+              svg {
+                margin-bottom: 1rem;
+              }
+
+              h3 {
+                font-size: 24px;
+                font-weight: 400;
+                color: $PrimaryOne;
+                margin-bottom: 1rem;
+              }
+
+              p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 36px;
+                color: $PrimaryTextOne;
+              }
+
+              a {
+                right: 3rem;
+                bottom: -21px;
+                width: 350px;
+                padding: 1rem 0;
+                color: $White;
+                display: flex;
+                position: absolute;
+                border-radius: 0px;
+                align-items: center;
+                justify-content: center;
+                background-color: $PrimaryOne;
+
+
+                span {
+                  font-size: 18px;
+                  font-weight: 400;
+                }
+
+                svg {
+                  margin: 0 .5rem;
+                  margin-bottom: 0;
+                  transform: rotate(0deg);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .FNV-Canvas-Bottom {
+        transform: scale(-1, -1);
+      }
+    }
+  }
+
+  // XXX-Large devices (larger desktops, 1920px and up)
+  @media (min-width: 1920px) {
+    .FNV-Top_Categories {
+      background-color: $WhiteColor;
+      padding: 4rem 0;
+
+      .container {
+        .row {
+          justify-content: center;
+
+          h2 {
+            font-size: 48px;
+            font-weight: 300;
+            color: $PrimaryOne;
+            text-align: center;
+            margin-bottom: 5rem;
+          }
+
+          svg {
+            width: 80%;
+
+            a {
+              g {
+                fill: $White;
+              }
+
+              rect {
+                opacity: 1;
+                stroke: $PrimaryTextFour;
+              }
+
+              .FNV-Category-Text {
+                stroke-width: .5px;
+                fill: $PrimaryOne;
+                stroke: $PrimaryOne;
+              }
+
+              .FNV-Category-Shape {
+                path {
+                  stroke-width: 2px;
+                  stroke: $PrimaryFour;
+                }
+              }
+
+              path {
+                stroke: $PrimaryTextFour;
+              }
+
+              &:hover {
+                g {
+                  fill: $PrimaryOne;
+                }
+
+                rect {
+                  opacity: 1;
+                  stroke: $PrimaryTextFour;
+                }
+
+                .FNV-Category-Text {
+                  stroke-width: .5px;
+                  fill: $White;
+                  stroke: $White;
+                }
+
+                .FNV-Category-Shape {
+                  path {
+                    stroke-width: 2px;
+                    stroke: $White;
+                  }
+                }
+
+                path {
+                  stroke: $PrimaryOne;
+
+                  &.FNV-NoFill {
+                    fill: $White;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          .row {
+            position: relative;
+
+            .col-12 {
+              h3 {
+                font-size: 24px;
+                line-height: 46px;
+                color: $PrimaryColor;
+                font-weight: 500;
+                min-height: 95px;
+              }
+
+              p {
+                font-size: 16px;
+                line-height: 32px;
+                color: $BlackColor;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .FNV-Mission {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url("/images/pages/mission.jpg");
+
+      .FNV-Canvas-Top {
+        transform: unset;
+      }
+
+      .container {
+        .row {
+          h2 {
+            font-size: 48px;
+            font-weight: 300;
+            color: $PrimaryOne;
+          }
+
+          .col-md-4 {
+            &.Top1 {
+              margin-top: 10rem;
+            }
+
+            &.Top2 {
+              margin-top: 5rem;
+            }
+
+            .card {
+              padding: 4rem 3rem;
+              border-radius: 0px;
+              position: relative;
+              background-color: transparent;
+              border: 1px solid $PrimaryOne;
+
+              svg {
+                margin-bottom: 1rem;
+              }
+
+              h3 {
+                font-size: 24px;
+                font-weight: 400;
+                color: $PrimaryOne;
+                margin-bottom: 1rem;
+              }
+
+              p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 36px;
+                color: $PrimaryTextOne;
+              }
+
+              a {
+                right: 3rem;
+                bottom: -21px;
+                width: 350px;
+                padding: 1rem 0;
+                color: $White;
+                display: flex;
+                position: absolute;
+                border-radius: 0px;
+                align-items: center;
+                justify-content: center;
+                background-color: $PrimaryOne;
+
+
+                span {
+                  font-size: 18px;
+                  font-weight: 400;
+                }
+
+                svg {
+                  margin: 0 .5rem;
+                  margin-bottom: 0;
+                  transform: rotate(0deg);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .FNV-Canvas-Bottom {
+        transform: scale(-1, -1);
+      }
+    }
+  }
+}
+
+// Persian
+body[dir='rtl'] {
+
+  // X-Small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) {
+    .FNV-Top_Categories {
+      background-color: $WhiteColor;
+      padding: 1rem 0;
+
+      .container {
+        .row {
+          justify-content: center;
+
+          h2 {
+            font-size: 22px;
+            font-weight: 300;
+            color: $PrimaryOne;
+            text-align: center;
+            margin-bottom: 2rem;
+          }
+
+          svg {
+            width: 100%;
+
+            a {
+              g {
+                fill: $White;
+              }
+
+              rect {
+                opacity: 1;
+                stroke: $PrimaryTextFour;
+              }
+
+              .FNV-Category-Text {
+                stroke-width: .5px;
+                fill: $PrimaryOne;
+                stroke: $PrimaryOne;
+              }
+
+              .FNV-Category-Shape {
+                path {
+                  stroke-width: 2px;
+                  stroke: $PrimaryFour;
+                }
+              }
+
+              path {
+                stroke: $PrimaryTextFour;
+              }
+
+              &:hover {
+                g {
+                  fill: $PrimaryOne;
+                }
+
+                rect {
+                  opacity: 1;
+                  stroke: $PrimaryTextFour;
+                }
+
+                .FNV-Category-Text {
+                  stroke-width: .5px;
+                  fill: $White;
+                  stroke: $White;
+                }
+
+                .FNV-Category-Shape {
+                  path {
+                    stroke-width: 2px;
+                    stroke: $White;
+                  }
+                }
+
+                path {
+                  stroke: $PrimaryOne;
+
+                  &.FNV-NoFill {
+                    fill: $White;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          .row {
+            position: relative;
+
+            .col-12 {
+              h3 {
+                font-size: 24px;
+                line-height: 46px;
+                color: $PrimaryColor;
+                font-weight: 500;
+                min-height: 95px;
+              }
+
+              p {
+                font-size: 16px;
+                line-height: 32px;
+                color: $BlackColor;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .FNV-Mission {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url("/images/pages/mission.jpg");
+
+      .FNV-Canvas-Top {
+        transform: scaleX(-1);
+      }
+
+      .container {
+        .row {
+          h2 {
+            font-size: 22px;
+            font-weight: 300;
+            text-align: center;
+            color: $PrimaryOne;
+            margin-bottom: 1rem;
+          }
+
+          .col-md-4 {
+            &.Top1 {
+              margin-bottom: 2rem;
+            }
+
+            &.Top2 {
+              margin-bottom: 2rem;
+            }
+
+            .card {
+              padding: 1rem;
+              border-radius: 0px;
+              position: relative;
+              background-color: transparent;
+              border: 1px solid $PrimaryOne;
+
+              svg {
+                margin-bottom: 1rem;
+              }
+
+              h3 {
+                font-size: 16px;
+                font-weight: 400;
+                color: $PrimaryOne;
+                margin-bottom: 1rem;
+              }
+
+              p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 28px;
+                color: $PrimaryTextOne;
+              }
+
+              a {
+                left: 1rem;
+                bottom: -21px;
+                width: 200px;
+                padding: .5rem 0;
+                color: $White;
+                display: flex;
+                position: absolute;
+                border-radius: 0px;
+                align-items: center;
+                justify-content: center;
+                background-color: $PrimaryOne;
+
+
+                span {
+                  font-size: 14px;
+                  font-weight: 400;
+                }
+
+                svg {
+                  margin: 0 .5rem;
+                  margin-bottom: 0;
+                  transform: rotate(180deg);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .FNV-Canvas-Bottom {
+        margin-top: 2rem;
+        transform: scaleY(-1);
+      }
+    }
+  }
+
+  // `sm` applies to x-small devices (portrait phones, less than 576px)
+  @media (min-width: 575.98px) and (max-width: 767.98px) {
+    .FNV-Top_Categories {
+      background-color: $WhiteColor;
+      padding: 1rem 0;
+
+      .container {
+        .row {
+          justify-content: center;
+
+          h2 {
+            font-size: 22px;
+            font-weight: 300;
+            color: $PrimaryOne;
+            text-align: center;
+            margin-bottom: 2rem;
+          }
+
+          svg {
+            width: 100%;
+
+            a {
+              g {
+                fill: $White;
+              }
+
+              rect {
+                opacity: 1;
+                stroke: $PrimaryTextFour;
+              }
+
+              .FNV-Category-Text {
+                stroke-width: .5px;
+                fill: $PrimaryOne;
+                stroke: $PrimaryOne;
+              }
+
+              .FNV-Category-Shape {
+                path {
+                  stroke-width: 2px;
+                  stroke: $PrimaryFour;
+                }
+              }
+
+              path {
+                stroke: $PrimaryTextFour;
+              }
+
+              &:hover {
+                g {
+                  fill: $PrimaryOne;
+                }
+
+                rect {
+                  opacity: 1;
+                  stroke: $PrimaryTextFour;
+                }
+
+                .FNV-Category-Text {
+                  stroke-width: .5px;
+                  fill: $White;
+                  stroke: $White;
+                }
+
+                .FNV-Category-Shape {
+                  path {
+                    stroke-width: 2px;
+                    stroke: $White;
+                  }
+                }
+
+                path {
+                  stroke: $PrimaryOne;
+
+                  &.FNV-NoFill {
+                    fill: $White;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          .row {
+            position: relative;
+
+            .col-12 {
+              h3 {
+                font-size: 24px;
+                line-height: 46px;
+                color: $PrimaryColor;
+                font-weight: 500;
+                min-height: 95px;
+              }
+
+              p {
+                font-size: 16px;
+                line-height: 32px;
+                color: $BlackColor;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .FNV-Mission {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url("/images/pages/mission.jpg");
+
+      .FNV-Canvas-Top {
+        transform: scaleX(-1);
+      }
+
+      .container {
+        .row {
+          h2 {
+            font-size: 22px;
+            font-weight: 300;
+            text-align: center;
+            color: $PrimaryOne;
+            margin-bottom: 1rem;
+          }
+
+          .col-md-4 {
+            &.Top1 {
+              margin-bottom: 2rem;
+            }
+
+            &.Top2 {
+              margin-bottom: 2rem;
+            }
+
+            .card {
+              padding: 1rem;
+              border-radius: 0px;
+              position: relative;
+              background-color: transparent;
+              border: 1px solid $PrimaryOne;
+
+              svg {
+                margin-bottom: 1rem;
+              }
+
+              h3 {
+                font-size: 16px;
+                font-weight: 400;
+                color: $PrimaryOne;
+                margin-bottom: 1rem;
+              }
+
+              p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 28px;
+                color: $PrimaryTextOne;
+              }
+
+              a {
+                left: 1rem;
+                bottom: -21px;
+                width: 200px;
+                padding: .5rem 0;
+                color: $White;
+                display: flex;
+                position: absolute;
+                border-radius: 0px;
+                align-items: center;
+                justify-content: center;
+                background-color: $PrimaryOne;
+
+
+                span {
+                  font-size: 14px;
+                  font-weight: 400;
+                }
+
+                svg {
+                  margin: 0 .5rem;
+                  margin-bottom: 0;
+                  transform: rotate(180deg);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .FNV-Canvas-Bottom {
+        margin-top: 2rem;
+        transform: scaleY(-1);
+      }
+    }
+  }
+
+  // `md` applies to small devices (landscape phones, less than 768px)
+  @media (min-width: 767.98px) and (max-width: 991.98px) {
+    .FNV-Top_Categories {
+      background-color: $WhiteColor;
+      padding: 4rem 0;
+
+      .container {
+        .row {
+          justify-content: center;
+
+          h2 {
+            font-size: 22px;
+            font-weight: 300;
+            color: $PrimaryOne;
+            text-align: center;
+            margin-bottom: 2rem;
+          }
+
+          svg {
+            width: 100%;
+
+            a {
+              g {
+                fill: $White;
+              }
+
+              rect {
+                opacity: 1;
+                stroke: $PrimaryTextFour;
+              }
+
+              .FNV-Category-Text {
+                stroke-width: .5px;
+                fill: $PrimaryOne;
+                stroke: $PrimaryOne;
+              }
+
+              .FNV-Category-Shape {
+                path {
+                  stroke-width: 2px;
+                  stroke: $PrimaryFour;
+                }
+              }
+
+              path {
+                stroke: $PrimaryTextFour;
+              }
+
+              &:hover {
+                g {
+                  fill: $PrimaryOne;
+                }
+
+                rect {
+                  opacity: 1;
+                  stroke: $PrimaryTextFour;
+                }
+
+                .FNV-Category-Text {
+                  stroke-width: .5px;
+                  fill: $White;
+                  stroke: $White;
+                }
+
+                .FNV-Category-Shape {
+                  path {
+                    stroke-width: 2px;
+                    stroke: $White;
+                  }
+                }
+
+                path {
+                  stroke: $PrimaryOne;
+
+                  &.FNV-NoFill {
+                    fill: $White;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          .row {
+            position: relative;
+
+            .col-12 {
+              h3 {
+                font-size: 24px;
+                line-height: 46px;
+                color: $PrimaryColor;
+                font-weight: 500;
+                min-height: 95px;
+              }
+
+              p {
+                font-size: 16px;
+                line-height: 32px;
+                color: $BlackColor;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .FNV-Mission {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url("/images/pages/mission.jpg");
+
+      .FNV-Canvas-Top {
+        transform: scaleX(-1);
+      }
+
+      .container {
+        .row {
+          h2 {
+            font-size: 22px;
+            font-weight: 300;
+            color: $PrimaryOne;
+          }
+
+          .col-md-4 {
+            &.Top1 {
+              margin-top: 5rem;
+            }
+
+            &.Top2 {
+              margin-top: 2.5rem;
+            }
+
+            .card {
+              padding: .5rem;
+              border-radius: 0px;
+              position: relative;
+              background-color: transparent;
+              border: 1px solid $PrimaryOne;
+
+              svg {
+                margin-bottom: 1rem;
+              }
+
+              h3 {
+                font-size: 12px;
+                font-weight: 400;
+                color: $PrimaryOne;
+                margin-bottom: 1rem;
+              }
+
+              p {
+                font-size: 10px;
+                font-weight: 400;
+                line-height: 20px;
+                color: $PrimaryTextOne;
+              }
+
+              a {
+                left: .5rem;
+                bottom: -21px;
+                width: 200px;
+                padding: .5rem 0;
+                color: $White;
+                display: flex;
+                position: absolute;
+                border-radius: 0px;
+                align-items: center;
+                justify-content: center;
+                background-color: $PrimaryOne;
+
+
+                span {
+                  font-size: 10px;
+                  font-weight: 400;
+                }
+
+                svg {
+                  margin: 0 .5rem;
+                  margin-bottom: 0;
+                  transform: rotate(180deg);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .FNV-Canvas-Bottom {
+        transform: scaleY(-1);
+      }
+    }
+  }
+
+  // `lg` applies to medium devices (tablets, less than 992px)
+  @media (min-width: 991.98px) {
+    .FNV-Top_Categories {
+      background-color: $WhiteColor;
+      padding: 4rem 0;
+
+      .container {
+        .row {
+          justify-content: center;
+
+          h2 {
+            font-size: 28px;
+            font-weight: 300;
+            color: $PrimaryOne;
+            text-align: center;
+            margin-bottom: 5rem;
+          }
+
+          svg {
+            width: 100%;
+
+            a {
+              g {
+                fill: $White;
+              }
+
+              rect {
+                opacity: 1;
+                stroke: $PrimaryTextFour;
+              }
+
+              .FNV-Category-Text {
+                stroke-width: .5px;
+                fill: $PrimaryOne;
+                stroke: $PrimaryOne;
+              }
+
+              .FNV-Category-Shape {
+                path {
+                  stroke-width: 2px;
+                  stroke: $PrimaryFour;
+                }
+              }
+
+              path {
+                stroke: $PrimaryTextFour;
+              }
+
+              &:hover {
+                g {
+                  fill: $PrimaryOne;
+                }
+
+                rect {
+                  opacity: 1;
+                  stroke: $PrimaryTextFour;
+                }
+
+                .FNV-Category-Text {
+                  stroke-width: .5px;
+                  fill: $White;
+                  stroke: $White;
+                }
+
+                .FNV-Category-Shape {
+                  path {
+                    stroke-width: 2px;
+                    stroke: $White;
+                  }
+                }
+
+                path {
+                  stroke: $PrimaryOne;
+
+                  &.FNV-NoFill {
+                    fill: $White;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          .row {
+            position: relative;
+
+            .col-12 {
+              h3 {
+                font-size: 24px;
+                line-height: 46px;
+                color: $PrimaryColor;
+                font-weight: 500;
+                min-height: 95px;
+              }
+
+              p {
+                font-size: 16px;
+                line-height: 32px;
+                color: $BlackColor;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .FNV-Mission {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url("/images/pages/mission.jpg");
+
+      .FNV-Canvas-Top {
+        transform: scaleX(-1);
+      }
+
+      .container {
+        .row {
+          h2 {
+            font-size: 28px;
+            font-weight: 300;
+            color: $PrimaryOne;
+          }
+
+          .col-md-4 {
+            &.Top1 {
+              margin-top: 5rem;
+            }
+
+            &.Top2 {
+              margin-top: 2.5rem;
+            }
+
+            .card {
+              padding: 1rem;
+              border-radius: 0px;
+              position: relative;
+              background-color: transparent;
+              border: 1px solid $PrimaryOne;
+
+              svg {
+                margin-bottom: 1rem;
+              }
+
+              h3 {
+                font-size: 14px;
+                font-weight: 400;
+                color: $PrimaryOne;
+                margin-bottom: 1rem;
+              }
+
+              p {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 24px;
+                color: $PrimaryTextOne;
+              }
+
+              a {
+                left: 1rem;
+                bottom: -21px;
+                width: 200px;
+                padding: .5rem 0;
+                color: $White;
+                display: flex;
+                position: absolute;
+                border-radius: 0px;
+                align-items: center;
+                justify-content: center;
+                background-color: $PrimaryOne;
+
+
+                span {
+                  font-size: 14px;
+                  font-weight: 400;
+                }
+
+                svg {
+                  margin: 0 .5rem;
+                  margin-bottom: 0;
+                  transform: rotate(180deg);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .FNV-Canvas-Bottom {
+        transform: scaleY(-1);
+      }
+    }
+  }
+
+  // `xl` applies to large devices (desktops, less than 1200px)
+  @media (min-width: 1199.98px) {
+    .FNV-Top_Categories {
+      background-color: $WhiteColor;
+      padding: 4rem 0;
+
+      .container {
+        .row {
+          justify-content: center;
+
+          h2 {
+            font-size: 36px;
+            font-weight: 300;
+            color: $PrimaryOne;
+            text-align: center;
+            margin-bottom: 5rem;
+          }
+
+          svg {
+            width: 100%;
+
+            a {
+              g {
+                fill: $White;
+              }
+
+              rect {
+                opacity: 1;
+                stroke: $PrimaryTextFour;
+              }
+
+              .FNV-Category-Text {
+                stroke-width: .5px;
+                fill: $PrimaryOne;
+                stroke: $PrimaryOne;
+              }
+
+              .FNV-Category-Shape {
+                path {
+                  stroke-width: 2px;
+                  stroke: $PrimaryFour;
+                }
+              }
+
+              path {
+                stroke: $PrimaryTextFour;
+              }
+
+              &:hover {
+                g {
+                  fill: $PrimaryOne;
+                }
+
+                rect {
+                  opacity: 1;
+                  stroke: $PrimaryTextFour;
+                }
+
+                .FNV-Category-Text {
+                  stroke-width: .5px;
+                  fill: $White;
+                  stroke: $White;
+                }
+
+                .FNV-Category-Shape {
+                  path {
+                    stroke-width: 2px;
+                    stroke: $White;
+                  }
+                }
+
+                path {
+                  stroke: $PrimaryOne;
+
+                  &.FNV-NoFill {
+                    fill: $White;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          .row {
+            position: relative;
+
+            .col-12 {
+              h3 {
+                font-size: 24px;
+                line-height: 46px;
+                color: $PrimaryColor;
+                font-weight: 500;
+                min-height: 95px;
+              }
+
+              p {
+                font-size: 16px;
+                line-height: 32px;
+                color: $BlackColor;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .FNV-Mission {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url("/images/pages/mission.jpg");
+
+      .FNV-Canvas-Top {
+        transform: scaleX(-1);
+      }
+
+      .container {
+        .row {
+          h2 {
+            font-size: 36px;
+            font-weight: 300;
+            color: $PrimaryOne;
+          }
+
+          .col-md-4 {
+            &.Top1 {
+              margin-top: 5rem;
+            }
+
+            &.Top2 {
+              margin-top: 2.5rem;
+            }
+
+            .card {
+              padding: 2rem;
+              border-radius: 0px;
+              position: relative;
+              background-color: transparent;
+              border: 1px solid $PrimaryOne;
+
+              svg {
+                margin-bottom: 1rem;
+              }
+
+              h3 {
+                font-size: 14px;
+                font-weight: 400;
+                color: $PrimaryOne;
+                margin-bottom: 1rem;
+              }
+
+              p {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 24px;
+                color: $PrimaryTextOne;
+              }
+
+              a {
+                left: 2rem;
+                bottom: -21px;
+                width: 200px;
+                padding: .5rem 0;
+                color: $White;
+                display: flex;
+                position: absolute;
+                border-radius: 0px;
+                align-items: center;
+                justify-content: center;
+                background-color: $PrimaryOne;
+
+
+                span {
+                  font-size: 14px;
+                  font-weight: 400;
+                }
+
+                svg {
+                  margin: 0 .5rem;
+                  margin-bottom: 0;
+                  transform: rotate(180deg);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .FNV-Canvas-Bottom {
+        transform: scaleY(-1);
+      }
+    }
+  }
+
+  // XX-Large devices (larger desktops, 1400px and up)
+  @media (min-width: 1400px) {
+    .FNV-Top_Categories {
+      background-color: $WhiteColor;
+      padding: 4rem 0;
+
+      .container {
+        .row {
+          justify-content: center;
+
+          h2 {
+            font-size: 48px;
+            font-weight: 300;
+            color: $PrimaryOne;
+            text-align: center;
+            margin-bottom: 5rem;
+          }
+
+          svg {
+            width: 80%;
+
+            a {
+              g {
+                fill: $White;
+              }
+
+              rect {
+                opacity: 1;
+                stroke: $PrimaryTextFour;
+              }
+
+              .FNV-Category-Text {
+                stroke-width: .5px;
+                fill: $PrimaryOne;
+                stroke: $PrimaryOne;
+              }
+
+              .FNV-Category-Shape {
+                path {
+                  stroke-width: 2px;
+                  stroke: $PrimaryFour;
+                }
+              }
+
+              path {
+                stroke: $PrimaryTextFour;
+              }
+
+              &:hover {
+                g {
+                  fill: $PrimaryOne;
+                }
+
+                rect {
+                  opacity: 1;
+                  stroke: $PrimaryTextFour;
+                }
+
+                .FNV-Category-Text {
+                  stroke-width: .5px;
+                  fill: $White;
+                  stroke: $White;
+                }
+
+                .FNV-Category-Shape {
+                  path {
+                    stroke-width: 2px;
+                    stroke: $White;
+                  }
+                }
+
+                path {
+                  stroke: $PrimaryOne;
+
+                  &.FNV-NoFill {
+                    fill: $White;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          .row {
+            position: relative;
+
+            .col-12 {
+              h3 {
+                font-size: 24px;
+                line-height: 46px;
+                color: $PrimaryColor;
+                font-weight: 500;
+                min-height: 95px;
+              }
+
+              p {
+                font-size: 16px;
+                line-height: 32px;
+                color: $BlackColor;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .FNV-Mission {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url("/images/pages/mission.jpg");
+
+      .FNV-Canvas-Top {
+        transform: scaleX(-1);
+      }
+
+      .container {
+        .row {
+          h2 {
+            font-size: 48px;
+            font-weight: 300;
+            color: $PrimaryOne;
+          }
+
+          .col-md-4 {
+            &.Top1 {
+              margin-top: 10rem;
+            }
+
+            &.Top2 {
+              margin-top: 5rem;
+            }
+
+            .card {
+              padding: 4rem 3rem;
+              border-radius: 0px;
+              position: relative;
+              background-color: transparent;
+              border: 1px solid $PrimaryOne;
+
+              svg {
+                margin-bottom: 1rem;
+              }
+
+              h3 {
+                font-size: 24px;
+                font-weight: 400;
+                color: $PrimaryOne;
+                margin-bottom: 1rem;
+              }
+
+              p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 36px;
+                color: $PrimaryTextOne;
+              }
+
+              a {
+                left: 3rem;
+                bottom: -21px;
+                width: 200px;
+                padding: 1rem 0;
+                color: $White;
+                display: flex;
+                position: absolute;
+                border-radius: 0px;
+                align-items: center;
+                justify-content: center;
+                background-color: $PrimaryOne;
+
+
+                span {
+                  font-size: 18px;
+                  font-weight: 400;
+                }
+
+                svg {
+                  margin: 0 .5rem;
+                  margin-bottom: 0;
+                  transform: rotate(180deg);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .FNV-Canvas-Bottom {
+        transform: scaleY(-1);
+      }
+    }
+  }
+
+  // XXX-Large devices (larger desktops, 1920px and up)
+  @media (min-width: 1920px) {
+    .FNV-Top_Categories {
+      background-color: $WhiteColor;
+      padding: 4rem 0;
+
+      .container {
+        .row {
+          justify-content: center;
+
+          h2 {
+            font-size: 48px;
+            font-weight: 300;
+            color: $PrimaryOne;
+            text-align: center;
+            margin-bottom: 5rem;
+          }
+
+          svg {
+            width: 80%;
+
+            a {
+              g {
+                fill: $White;
+              }
+
+              rect {
+                opacity: 1;
+                stroke: $PrimaryTextFour;
+              }
+
+              .FNV-Category-Text {
+                stroke-width: .5px;
+                fill: $PrimaryOne;
+                stroke: $PrimaryOne;
+              }
+
+              .FNV-Category-Shape {
+                path {
+                  stroke-width: 2px;
+                  stroke: $PrimaryFour;
+                }
+              }
+
+              path {
+                stroke: $PrimaryTextFour;
+              }
+
+              &:hover {
+                g {
+                  fill: $PrimaryOne;
+                }
+
+                rect {
+                  opacity: 1;
+                  stroke: $PrimaryTextFour;
+                }
+
+                .FNV-Category-Text {
+                  stroke-width: .5px;
+                  fill: $White;
+                  stroke: $White;
+                }
+
+                .FNV-Category-Shape {
+                  path {
+                    stroke-width: 2px;
+                    stroke: $White;
+                  }
+                }
+
+                path {
+                  stroke: $PrimaryOne;
+
+                  &.FNV-NoFill {
+                    fill: $White;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          .row {
+            position: relative;
+
+            .col-12 {
+              h3 {
+                font-size: 24px;
+                line-height: 46px;
+                color: $PrimaryColor;
+                font-weight: 500;
+                min-height: 95px;
+              }
+
+              p {
+                font-size: 16px;
+                line-height: 32px;
+                color: $BlackColor;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .FNV-Mission {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url("/images/pages/mission.jpg");
+
+      .FNV-Canvas-Top {
+        transform: scaleX(-1);
+      }
+
+      .container {
+        .row {
+          h2 {
+            font-size: 48px;
+            font-weight: 300;
+            color: $PrimaryOne;
+          }
+
+          .col-md-4 {
+            &.Top1 {
+              margin-top: 10rem;
+            }
+
+            &.Top2 {
+              margin-top: 5rem;
+            }
+
+            .card {
+              padding: 4rem 3rem;
+              border-radius: 0px;
+              position: relative;
+              background-color: transparent;
+              border: 1px solid $PrimaryOne;
+
+              svg {
+                margin-bottom: 1rem;
+              }
+
+              h3 {
+                font-size: 24px;
+                font-weight: 400;
+                color: $PrimaryOne;
+                margin-bottom: 1rem;
+              }
+
+              p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 36px;
+                color: $PrimaryTextOne;
+              }
+
+              a {
+                left: 3rem;
+                bottom: -21px;
+                width: 200px;
+                padding: 1rem 0;
+                color: $White;
+                display: flex;
+                position: absolute;
+                border-radius: 0px;
+                align-items: center;
+                justify-content: center;
+                background-color: $PrimaryOne;
+
+
+                span {
+                  font-size: 18px;
+                  font-weight: 400;
+                }
+
+                svg {
+                  margin: 0 .5rem;
+                  margin-bottom: 0;
+                  transform: rotate(180deg);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .FNV-Canvas-Bottom {
+        transform: scaleY(-1);
       }
     }
   }
