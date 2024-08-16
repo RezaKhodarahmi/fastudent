@@ -21,44 +21,51 @@ const TopBanner = () => {
         <div className='container'>
           <div className='row'>
             {/* Info */}
-            <div className='col-4'>
-              <Link href='mailto:info@fanavaran.ca'>
-                <i data-feather='mail'></i>
-                info@fanavaran.ca
-              </Link>
-
+            <div className='col-3'>
               <Link href='tel:+19055052323'>
                 <i data-feather='phone'></i>
                 (905) 505-2323
               </Link>
+              <Link href='tel:+19055052323'>
+                همکاری و ارتباط با مدیریت
+              </Link>
             </div>
 
             {/* Support */}
-            <div className='col-4'>
-              <Link href='mailto:support@fanavaran.ca'>
-                <i data-feather='mail'></i>
-                support@fanavaran.ca
-              </Link>
-
-              <Link href='tel:+16723996600'>
+            <div className='col-3'>
+              <Link href='tel:+989121433158'>
                 <i data-feather='phone'></i>
-                (672) 399-6600
+                0912 143 3158
+              </Link>
+              <Link href='tel:+989121433158'>
+                مشاوره و فروش ایران
               </Link>
             </div>
 
             {/* Iran Number */}
-            <div className='col-4'>
-              <Link href='tel:00989121433158'>
+            <div className='col-3'>
+              <Link href='tel:+16723996600'>
                 <i data-feather='phone'></i>
-                0912 143 3158
+                (672) 399-6600
               </Link>
-              <Link href='tel:00989121433158'>
-                پشتیبانی ایران
+              <Link href='tel:+16723996600'>
+                مشاوره و فروش بریتیش کلمبیا
+              </Link>
+            </div>
+
+            {/* Iran Number */}
+            <div className='col-3'>
+              <Link href='tel:+14168932110'>
+                <i data-feather='phone'></i>
+                (416) 893-2110
+              </Link>
+              <Link href='tel:+14168932110'>
+                مشاوره و فروش اونتاریو
               </Link>
             </div>
           </div>
         </div>
-      </section>
+      </section >
     </>
   )
 }

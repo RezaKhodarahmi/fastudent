@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 
 import Input from '@mui/material/Input'
@@ -16,6 +16,22 @@ const SearchSection = props => {
   const handleSearchInputChange = e => {
     setSearchInput(e.target.value)
   }
+
+  useEffect(() => {
+    // This will ensure that the bootstrap carousel is initialized
+    if (typeof window !== 'undefined') {
+      const bootstrap = require('bootstrap');
+      new bootstrap.Carousel('#FNV-Announcement', {
+        interval: 10000,  // Adjust the interval as needed
+        ride: 'carousel'
+      });
+
+      new bootstrap.Carousel('#FNV-Slider-Carousel', {
+        interval: 10000,  // Adjust the interval as needed
+        ride: 'carousel'
+      });
+    }
+  }, []);
 
   const handleSearchSubmit = e => {
     e.preventDefault()
@@ -35,8 +51,65 @@ const SearchSection = props => {
         </svg>
       </div>
 
+      <div className='FNV-Slider-Announce'>
+        <div className='container'>
+          <div class="col-12 col-md-5">
+            <div className="carousel slide" data-bs-ride="carousel" id="FNV-Announcement">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#FNV-Announcement" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#FNV-Announcement" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#FNV-Announcement" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div className="carousel-inner">
+                {/* Item */}
+                <div className="carousel-item active">
+                  <Link href="/courses/category/packages">
+                    <svg width="51" height="35" viewBox="0 0 51 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g>
+                        <path d="M25.5522 22.1783L3 12.287L25.5522 2L48.1043 12.287L25.5522 22.1783Z" stroke="#0074FF" stroke-width="2" />
+                        <path d="M8.53906 15.0566V25.7393L25.5521 33.2566L40.9825 25.7393V15.4523" stroke="#0074FF" stroke-width="2" />
+                        <path d="M48.5 12.2871V30.0915" stroke="#0074FF" stroke-width="2" />
+                      </g>
+                    </svg>
+                    <span>{t('slider-announce-1')}</span>
+                  </Link>
+                </div>
+
+                {/* Item */}
+                <div className="carousel-item">
+                  <Link href="/engineering/peng-technical-exams">
+                    <svg width="51" height="35" viewBox="0 0 51 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g>
+                        <path d="M25.5522 22.1783L3 12.287L25.5522 2L48.1043 12.287L25.5522 22.1783Z" stroke="#0074FF" stroke-width="2" />
+                        <path d="M8.53906 15.0566V25.7393L25.5521 33.2566L40.9825 25.7393V15.4523" stroke="#0074FF" stroke-width="2" />
+                        <path d="M48.5 12.2871V30.0915" stroke="#0074FF" stroke-width="2" />
+                      </g>
+                    </svg>
+                    <span>{t('slider-announce-2')}</span>
+                  </Link>
+                </div>
+
+                {/* Item */}
+                <div className="carousel-item">
+                  <Link href="/courses">
+                    <svg width="51" height="35" viewBox="0 0 51 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g>
+                        <path d="M25.5522 22.1783L3 12.287L25.5522 2L48.1043 12.287L25.5522 22.1783Z" stroke="#0074FF" stroke-width="2" />
+                        <path d="M8.53906 15.0566V25.7393L25.5521 33.2566L40.9825 25.7393V15.4523" stroke="#0074FF" stroke-width="2" />
+                        <path d="M48.5 12.2871V30.0915" stroke="#0074FF" stroke-width="2" />
+                      </g>
+                    </svg>
+                    <span>{t('slider-announce-3')}</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Content */}
-      <div className="FNV-Slider-Content carousel slide" id="FNV-Slider-Carousel" data-bs-ride="true">
+      <div className="FNV-Slider-Content carousel slide" id="FNV-Slider-Carousel" data-bs-ride="carousel">
         {/* Carousel Inner */}
         <div className="carousel-inner">
           {/* Slide */}

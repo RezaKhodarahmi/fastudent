@@ -8,7 +8,7 @@
     .row {
       justify-content: center;
 
-      h2{
+      h2 {
         font-size: 48px;
         font-weight: 300;
         color: $PrimaryOne;
@@ -16,63 +16,63 @@
         margin-bottom: 5rem;
       }
 
-      svg{
+      svg {
         width: 80%;
 
-        a{
-          g{
+        a {
+          g {
             fill: $White;
           }
 
-          rect{
+          rect {
             opacity: 1;
             stroke: $PrimaryTextFour;
           }
 
-          .FNV-Category-Text{
+          .FNV-Category-Text {
             stroke-width: .5px;
             fill: $PrimaryOne;
             stroke: $PrimaryOne;
           }
 
-          .FNV-Category-Shape{
-            path{
+          .FNV-Category-Shape {
+            path {
               stroke-width: 2px;
               stroke: $PrimaryFour;
             }
           }
 
-          path{
+          path {
             stroke: $PrimaryTextFour;
           }
 
-          &:hover{
-            g{
+          &:hover {
+            g {
               fill: $PrimaryOne;
             }
-  
-            rect{
+
+            rect {
               opacity: 1;
               stroke: $PrimaryTextFour;
             }
-  
-            .FNV-Category-Text{
+
+            .FNV-Category-Text {
               stroke-width: .5px;
               fill: $White;
               stroke: $White;
             }
-  
-            .FNV-Category-Shape{
-              path{
+
+            .FNV-Category-Shape {
+              path {
                 stroke-width: 2px;
                 stroke: $White;
               }
             }
-  
-            path{
+
+            path {
               stroke: $PrimaryOne;
 
-              &.FNV-NoFill{
+              &.FNV-NoFill {
                 fill: $White;
               }
             }
@@ -105,11 +105,10 @@
   }
 }
 
-.FNV-Mission{
-  height: 918px;
-  background-size: 100% contain;
+.FNV-Mission {
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-image: url("/images/pages/mission.jpg");
 }
 
@@ -144,7 +143,7 @@
         top: 0rem;
         z-index: 10;
 
-        svg{
+        svg {
           width: 100%;
         }
 
@@ -208,7 +207,7 @@
             padding: 2rem;
             border-radius: 20px;
             box-shadow: 0 0 25px rgb(0, 59, 191, 30%);
-            
+
             h3 {
               font-size: 22px;
               line-height: 40px;

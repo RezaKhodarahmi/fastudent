@@ -7262,47 +7262,29 @@ badge.SecondaryColor {
   }
   .FNV-TopBar {
     background-color: #F0F3FB;
-    padding: 1rem 0rem;
     direction: ltr;
+    padding: 1rem 0rem;
   }
-  .FNV-TopBar .container .row .col-4 {
-    display: flex;
+  .FNV-TopBar .container .row .col-3 {
     padding: 0;
+    display: flex;
+    justify-content: center;
   }
-  .FNV-TopBar .container .row .col-4 a {
-    font-size: 12px;
+  .FNV-TopBar .container .row .col-3 a {
+    font-size: 10px;
+    padding: 0 0.1rem;
+    font-weight: 500;
     position: relative;
-    margin-right: 1rem;
     color: #6A7BBA;
   }
-  .FNV-TopBar .container .row .col-4 a svg {
+  .FNV-TopBar .container .row .col-3 a svg {
     color: #6A7BBA;
     width: 18px;
     height: 14px;
     margin-right: 0.5rem;
   }
-  .FNV-TopBar .container .row .col-4 a:first-child::after {
-    content: "";
-    top: 0;
-    width: 1px;
-    height: 25px;
-    right: -0.5rem;
-    position: absolute;
-    background-color: #6A7BBA;
-  }
-  .FNV-TopBar .container .row .col-4:nth-child(2) {
-    justify-content: center;
-  }
-  .FNV-TopBar .container .row .col-4:nth-child(2) a {
-    margin-left: 1rem;
-    margin-right: unset;
-  }
-  .FNV-TopBar .container .row .col-4:nth-child(3) {
-    justify-content: end;
-  }
-  .FNV-TopBar .container .row .col-4:nth-child(3) a {
-    margin-left: 1rem;
-    margin-right: unset;
+  .FNV-TopBar .container .row .col-3:not(:last-child) {
+    border-right: 1px solid #6A7BBA;
   }
   .FNV-Home .FNV-Header {
     background-image: linear-gradient(89.85deg, rgba(26, 48, 211, 0.8) 0.12%, rgba(26, 48, 211, 0.2) 50%, rgba(26, 48, 211, 0.8) 99.87%), url("/img/Header-bg.jpg");
@@ -7394,48 +7376,30 @@ badge.SecondaryColor {
     height: 65px !important;
   }
   .FNV-TopBar {
-    background-color: #F0F3FB;
-    padding: 1rem 0rem;
     direction: ltr;
+    padding: 1rem 0rem;
+    background-color: #F0F3FB;
   }
-  .FNV-TopBar .container .row .col-4 {
-    display: flex;
+  .FNV-TopBar .container .row .col-3 {
     padding: 0;
+    display: flex;
+    justify-content: center;
   }
-  .FNV-TopBar .container .row .col-4 a {
+  .FNV-TopBar .container .row .col-3 a {
     font-size: 12px;
+    padding: 0 0.1rem;
+    font-weight: 500;
     position: relative;
-    margin-right: 2rem;
     color: #6A7BBA;
   }
-  .FNV-TopBar .container .row .col-4 a svg {
+  .FNV-TopBar .container .row .col-3 a svg {
     color: #6A7BBA;
     width: 18px;
     height: 14px;
     margin-right: 0.5rem;
   }
-  .FNV-TopBar .container .row .col-4 a:first-child::after {
-    content: "";
-    top: 0;
-    width: 1px;
-    height: 25px;
-    right: -1rem;
-    position: absolute;
-    background-color: #6A7BBA;
-  }
-  .FNV-TopBar .container .row .col-4:nth-child(2) {
-    justify-content: center;
-  }
-  .FNV-TopBar .container .row .col-4:nth-child(2) a {
-    margin-left: 2rem;
-    margin-right: unset;
-  }
-  .FNV-TopBar .container .row .col-4:nth-child(3) {
-    justify-content: end;
-  }
-  .FNV-TopBar .container .row .col-4:nth-child(3) a {
-    margin-left: 2rem;
-    margin-right: unset;
+  .FNV-TopBar .container .row .col-3:not(:last-child) {
+    border-right: 1px solid #6A7BBA;
   }
   .FNV-Home .FNV-Header {
     background-image: linear-gradient(89.85deg, rgba(26, 48, 211, 0.8) 0.12%, rgba(26, 48, 211, 0.2) 50%, rgba(26, 48, 211, 0.8) 99.87%), url("/img/Header-bg.jpg");
@@ -7527,48 +7491,30 @@ badge.SecondaryColor {
     height: 65px !important;
   }
   .FNV-TopBar {
-    background-color: #F0F3FB;
-    padding: 1rem 0rem;
     direction: ltr;
+    padding: 1rem 0rem;
+    background-color: #F0F3FB;
   }
-  .FNV-TopBar .container .row .col-4 {
-    display: flex;
+  .FNV-TopBar .container .row .col-3 {
     padding: 0;
+    display: flex;
+    justify-content: center;
   }
-  .FNV-TopBar .container .row .col-4 a {
-    font-size: 14px;
+  .FNV-TopBar .container .row .col-3 a {
+    font-size: 12px;
+    padding: 0 0.5rem;
+    font-weight: 500;
     position: relative;
-    margin-right: 4rem;
     color: #6A7BBA;
   }
-  .FNV-TopBar .container .row .col-4 a svg {
+  .FNV-TopBar .container .row .col-3 a svg {
     color: #6A7BBA;
     width: 18px;
     height: 14px;
     margin-right: 0.5rem;
   }
-  .FNV-TopBar .container .row .col-4 a:first-child::after {
-    content: "";
-    top: 0;
-    width: 1px;
-    height: 25px;
-    right: -2rem;
-    position: absolute;
-    background-color: #6A7BBA;
-  }
-  .FNV-TopBar .container .row .col-4:nth-child(2) {
-    justify-content: center;
-  }
-  .FNV-TopBar .container .row .col-4:nth-child(2) a {
-    margin-left: 4rem;
-    margin-right: unset;
-  }
-  .FNV-TopBar .container .row .col-4:nth-child(3) {
-    justify-content: end;
-  }
-  .FNV-TopBar .container .row .col-4:nth-child(3) a {
-    margin-left: 4rem;
-    margin-right: unset;
+  .FNV-TopBar .container .row .col-3:not(:last-child) {
+    border-right: 1px solid #6A7BBA;
   }
   .FNV-Home .FNV-Header {
     background-image: linear-gradient(89.85deg, rgba(26, 48, 211, 0.8) 0.12%, rgba(26, 48, 211, 0.2) 50%, rgba(26, 48, 211, 0.8) 99.87%), url("/img/Header-bg.jpg");
@@ -7660,48 +7606,30 @@ badge.SecondaryColor {
     height: 65px !important;
   }
   .FNV-TopBar {
-    background-color: #F0F3FB;
     padding: 1rem 0rem;
     direction: ltr;
+    background-color: #F0F3FB;
   }
-  .FNV-TopBar .container .row .col-4 {
-    display: flex;
+  .FNV-TopBar .container .row .col-3 {
     padding: 0;
+    display: flex;
+    justify-content: center;
   }
-  .FNV-TopBar .container .row .col-4 a {
+  .FNV-TopBar .container .row .col-3 a {
     font-size: 14px;
+    padding: 0 1rem;
+    font-weight: 500;
     position: relative;
-    margin-right: 4rem;
     color: #6A7BBA;
   }
-  .FNV-TopBar .container .row .col-4 a svg {
+  .FNV-TopBar .container .row .col-3 a svg {
     color: #6A7BBA;
     width: 18px;
     height: 14px;
     margin-right: 0.5rem;
   }
-  .FNV-TopBar .container .row .col-4 a:first-child::after {
-    content: "";
-    top: 0;
-    width: 1px;
-    height: 25px;
-    right: -2rem;
-    position: absolute;
-    background-color: #6A7BBA;
-  }
-  .FNV-TopBar .container .row .col-4:nth-child(2) {
-    justify-content: center;
-  }
-  .FNV-TopBar .container .row .col-4:nth-child(2) a {
-    margin-left: 4rem;
-    margin-right: unset;
-  }
-  .FNV-TopBar .container .row .col-4:nth-child(3) {
-    justify-content: end;
-  }
-  .FNV-TopBar .container .row .col-4:nth-child(3) a {
-    margin-left: 4rem;
-    margin-right: unset;
+  .FNV-TopBar .container .row .col-3:not(:last-child) {
+    border-right: 1px solid #6A7BBA;
   }
   .FNV-Home .FNV-Header {
     background-image: linear-gradient(89.85deg, rgba(26, 48, 211, 0.8) 0.12%, rgba(26, 48, 211, 0.2) 50%, rgba(26, 48, 211, 0.8) 99.87%), url("/img/Header-bg.jpg");
@@ -7802,6 +7730,9 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Top svg {
     transform: rotateY(0deg);
   }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce {
+    display: none;
+  }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Object {
     display: none;
   }
@@ -7865,7 +7796,7 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 0.5rem;
     margin-top: 2rem;
-    background-color: #F0F3FB;
+    background-color: rgba(34, 56, 133, 0.3137254902);
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
@@ -7876,8 +7807,17 @@ badge.SecondaryColor {
     display: none;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input {
-    font-size: 14px;
+    font-weight: 500;
+    color: #223885;
     background-color: transparent;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input::-moz-placeholder {
+    opacity: 1;
+    color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input::placeholder {
+    opacity: 1;
+    color: #FFFFFF;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn {
     width: 45px;
@@ -7950,6 +7890,36 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Top svg {
     transform: rotateY(0deg);
   }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce {
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+    width: 100%;
+    padding: 0rem;
+    position: absolute;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators {
+    bottom: -1rem;
+    margin: 1rem 0 0;
+    justify-content: flex-start;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button {
+    width: 5px;
+    height: 5px;
+    background-color: #B2B9D4;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button.active {
+    background-color: #0074FF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a svg {
+    width: 20px;
+    margin-right: 0.5rem;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #223885;
+  }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Object {
     display: none;
   }
@@ -8013,7 +7983,7 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 0.5rem;
     margin-top: 2rem;
-    background-color: #F0F3FB;
+    background-color: rgba(34, 56, 133, 0.3137254902);
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
@@ -8024,8 +7994,17 @@ badge.SecondaryColor {
     display: none;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input {
-    font-size: 14px;
+    font-weight: 500;
+    color: #223885;
     background-color: transparent;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input::-moz-placeholder {
+    opacity: 1;
+    color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input::placeholder {
+    opacity: 1;
+    color: #FFFFFF;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn {
     width: 45px;
@@ -8097,6 +8076,35 @@ badge.SecondaryColor {
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Top svg {
     transform: rotateY(0deg);
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce {
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+    width: 100%;
+    padding: 0rem;
+    position: absolute;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators {
+    bottom: -1.5rem;
+    margin: 1rem 0 0;
+    justify-content: flex-start;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button {
+    width: 5px;
+    height: 5px;
+    background-color: #B2B9D4;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button.active {
+    background-color: #0074FF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a svg {
+    width: 30px;
+    margin-right: 0.5rem;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a span {
+    font-weight: 600;
+    color: #223885;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Object {
     top: 0;
@@ -8178,7 +8186,7 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 0.5rem;
     margin-top: 2rem;
-    background-color: rgba(255, 255, 255, 0.5647058824);
+    background-color: rgba(34, 56, 133, 0.3137254902);
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
@@ -8189,8 +8197,17 @@ badge.SecondaryColor {
     display: none;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input {
-    font-size: 14px;
+    font-weight: 500;
+    color: #223885;
     background-color: transparent;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input::-moz-placeholder {
+    opacity: 1;
+    color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input::placeholder {
+    opacity: 1;
+    color: #FFFFFF;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn {
     width: 45px;
@@ -8315,6 +8332,35 @@ badge.SecondaryColor {
     background-image: url("/images/slider/Person.png");
     animation: moveUpDown 10s infinite alternate ease-in-out;
   }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce {
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+    width: 100%;
+    padding: 0rem;
+    position: absolute;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators {
+    bottom: -1.5rem;
+    margin: 1rem 0 0;
+    justify-content: flex-start;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button {
+    width: 5px;
+    height: 5px;
+    background-color: #B2B9D4;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button.active {
+    background-color: #0074FF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a svg {
+    width: 30px;
+    margin-right: 0.5rem;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a span {
+    font-weight: 600;
+    color: #223885;
+  }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content {
     width: 100%;
     height: 100%;
@@ -8375,7 +8421,7 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 1rem;
     margin-top: 2rem;
-    background-color: rgba(255, 255, 255, 0.5647058824);
+    background-color: rgba(34, 56, 133, 0.3137254902);
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
@@ -8386,7 +8432,17 @@ badge.SecondaryColor {
     display: none;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input {
+    font-weight: 500;
+    color: #223885;
     background-color: transparent;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input::-moz-placeholder {
+    opacity: 1;
+    color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input::placeholder {
+    opacity: 1;
+    color: #FFFFFF;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn {
     width: 45px;
@@ -8492,6 +8548,34 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Top svg {
     transform: rotateY(0deg);
   }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce {
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+    width: 100%;
+    padding: 1rem 0;
+    position: absolute;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators {
+    bottom: -2rem;
+    margin: 1rem 0 0;
+    justify-content: flex-start;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button {
+    width: 5px;
+    height: 5px;
+    background-color: #B2B9D4;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button.active {
+    background-color: #0074FF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a svg {
+    margin-right: 0.5rem;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a span {
+    font-weight: 600;
+    color: #223885;
+  }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Object {
     top: 0;
     left: 0;
@@ -8571,7 +8655,7 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 1rem;
     margin-top: 2rem;
-    background-color: rgba(255, 255, 255, 0.5647058824);
+    background-color: rgba(34, 56, 133, 0.3137254902);
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
@@ -8582,7 +8666,17 @@ badge.SecondaryColor {
     display: none;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input {
+    font-weight: 500;
+    color: #223885;
     background-color: transparent;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input::-moz-placeholder {
+    opacity: 1;
+    color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input::placeholder {
+    opacity: 1;
+    color: #FFFFFF;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn {
     width: 45px;
@@ -8767,7 +8861,7 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 1rem;
     margin-top: 2rem;
-    background-color: rgba(255, 255, 255, 0.5647058824);
+    background-color: rgba(34, 56, 133, 0.3137254902);
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
@@ -8778,7 +8872,17 @@ badge.SecondaryColor {
     display: none;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input {
+    font-weight: 500;
+    color: #223885;
     background-color: transparent;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input::-moz-placeholder {
+    opacity: 1;
+    color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input::placeholder {
+    opacity: 1;
+    color: #FFFFFF;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn {
     width: 45px;
@@ -8964,7 +9068,7 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 1rem;
     margin-top: 2rem;
-    background-color: rgba(240, 243, 251, 0.5019607843);
+    background-color: rgba(34, 56, 133, 0.3137254902);
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
@@ -8975,7 +9079,17 @@ badge.SecondaryColor {
     display: none;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input {
+    font-weight: 500;
+    color: #223885;
     background-color: transparent;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input::-moz-placeholder {
+    opacity: 1;
+    color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input::placeholder {
+    opacity: 1;
+    color: #FFFFFF;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn {
     width: 45px;
@@ -9078,6 +9192,9 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Canvas-Top svg {
     transform: rotateY(180deg);
   }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce {
+    display: none;
+  }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Object {
     display: none;
   }
@@ -9141,7 +9258,7 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 0.5rem;
     margin-top: 2rem;
-    background-color: #F0F3FB;
+    background-color: rgba(34, 56, 133, 0.3137254902);
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
@@ -9152,8 +9269,17 @@ badge.SecondaryColor {
     display: none;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input {
-    font-size: 14px;
+    font-weight: 500;
+    color: #223885;
     background-color: transparent;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input::-moz-placeholder {
+    opacity: 1;
+    color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input::placeholder {
+    opacity: 1;
+    color: #FFFFFF;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn {
     width: 45px;
@@ -9226,6 +9352,36 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Canvas-Top svg {
     transform: rotateY(180deg);
   }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce {
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+    width: 100%;
+    padding: 0rem;
+    position: absolute;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators {
+    bottom: -1rem;
+    margin: 1rem 0 0;
+    justify-content: flex-start;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button {
+    width: 5px;
+    height: 5px;
+    background-color: #B2B9D4;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button.active {
+    background-color: #0074FF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a svg {
+    width: 20px;
+    margin-left: 0.5rem;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #223885;
+  }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Object {
     display: none;
   }
@@ -9289,7 +9445,7 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 0.5rem;
     margin-top: 2rem;
-    background-color: #F0F3FB;
+    background-color: rgba(34, 56, 133, 0.3137254902);
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
@@ -9300,8 +9456,17 @@ badge.SecondaryColor {
     display: none;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input {
-    font-size: 14px;
+    font-weight: 500;
+    color: #223885;
     background-color: transparent;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input::-moz-placeholder {
+    opacity: 1;
+    color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input::placeholder {
+    opacity: 1;
+    color: #FFFFFF;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn {
     width: 45px;
@@ -9373,6 +9538,35 @@ badge.SecondaryColor {
   }
   body[dir=rtl] .FNV-Slider .FNV-Canvas-Top svg {
     transform: rotateY(180deg);
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce {
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+    width: 100%;
+    padding: 0rem;
+    position: absolute;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators {
+    bottom: -1.5rem;
+    margin: 1rem 0 0;
+    justify-content: flex-start;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button {
+    width: 5px;
+    height: 5px;
+    background-color: #B2B9D4;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button.active {
+    background-color: #0074FF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a svg {
+    width: 30px;
+    margin-left: 0.5rem;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a span {
+    font-weight: 600;
+    color: #223885;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Object {
     top: 0;
@@ -9454,7 +9648,7 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 0.5rem;
     margin-top: 2rem;
-    background-color: rgba(255, 255, 255, 0.5647058824);
+    background-color: rgba(34, 56, 133, 0.3137254902);
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
@@ -9465,8 +9659,17 @@ badge.SecondaryColor {
     display: none;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input {
-    font-size: 14px;
+    font-weight: 500;
+    color: #223885;
     background-color: transparent;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input::-moz-placeholder {
+    opacity: 1;
+    color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input::placeholder {
+    opacity: 1;
+    color: #FFFFFF;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn {
     width: 45px;
@@ -9572,6 +9775,35 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Canvas-Top svg {
     transform: rotateY(180deg);
   }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce {
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+    width: 100%;
+    padding: 0rem;
+    position: absolute;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators {
+    bottom: -1.5rem;
+    margin: 1rem 0 0;
+    justify-content: flex-start;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button {
+    width: 5px;
+    height: 5px;
+    background-color: #B2B9D4;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button.active {
+    background-color: #0074FF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a svg {
+    width: 30px;
+    margin-left: 0.5rem;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a span {
+    font-weight: 600;
+    color: #223885;
+  }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Object {
     top: 0;
     left: 0;
@@ -9651,7 +9883,7 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 1rem;
     margin-top: 2rem;
-    background-color: rgba(255, 255, 255, 0.5647058824);
+    background-color: rgba(34, 56, 133, 0.3137254902);
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
@@ -9662,7 +9894,17 @@ badge.SecondaryColor {
     display: none;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input {
+    font-weight: 500;
+    color: #223885;
     background-color: transparent;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input::-moz-placeholder {
+    opacity: 1;
+    color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input::placeholder {
+    opacity: 1;
+    color: #FFFFFF;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn {
     width: 45px;
@@ -9768,6 +10010,34 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Canvas-Top svg {
     transform: rotateY(180deg);
   }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce {
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+    width: 100%;
+    padding: 1rem 0;
+    position: absolute;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators {
+    bottom: -2rem;
+    margin: 1rem 0 0;
+    justify-content: flex-start;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button {
+    width: 5px;
+    height: 5px;
+    background-color: #B2B9D4;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button.active {
+    background-color: #0074FF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a svg {
+    margin-left: 0.5rem;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a span {
+    font-weight: 600;
+    color: #223885;
+  }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Object {
     top: 0;
     left: 0;
@@ -9847,7 +10117,7 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 1rem;
     margin-top: 2rem;
-    background-color: rgba(255, 255, 255, 0.5647058824);
+    background-color: rgba(34, 56, 133, 0.3137254902);
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
@@ -9858,7 +10128,17 @@ badge.SecondaryColor {
     display: none;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input {
+    font-weight: 500;
+    color: #223885;
     background-color: transparent;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input::-moz-placeholder {
+    opacity: 1;
+    color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input::placeholder {
+    opacity: 1;
+    color: #FFFFFF;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn {
     width: 45px;
@@ -9964,6 +10244,34 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Canvas-Top svg {
     transform: rotateY(180deg);
   }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce {
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+    width: 100%;
+    padding: 1rem 0;
+    position: absolute;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators {
+    bottom: -2rem;
+    margin: 1rem 0 0;
+    justify-content: flex-start;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button {
+    width: 5px;
+    height: 5px;
+    background-color: #B2B9D4;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button.active {
+    background-color: #0074FF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a svg {
+    margin-left: 0.5rem;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a span {
+    font-weight: 600;
+    color: #223885;
+  }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Object {
     top: 0;
     left: 0;
@@ -10043,7 +10351,7 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 1rem;
     margin-top: 2rem;
-    background-color: rgba(255, 255, 255, 0.5647058824);
+    background-color: rgba(34, 56, 133, 0.3137254902);
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
@@ -10054,7 +10362,17 @@ badge.SecondaryColor {
     display: none;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input {
+    font-weight: 500;
+    color: #223885;
     background-color: transparent;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input::-moz-placeholder {
+    opacity: 1;
+    color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input::placeholder {
+    opacity: 1;
+    color: #FFFFFF;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn {
     width: 45px;
@@ -10160,6 +10478,34 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Canvas-Top svg {
     transform: rotateY(180deg);
   }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce {
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+    width: 100%;
+    padding: 1rem 0;
+    position: absolute;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators {
+    bottom: -2rem;
+    margin: 1rem 0 0;
+    justify-content: flex-start;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button {
+    width: 5px;
+    height: 5px;
+    background-color: #B2B9D4;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button.active {
+    background-color: #0074FF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a svg {
+    margin-left: 0.5rem;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a span {
+    font-weight: 600;
+    color: #223885;
+  }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content {
     width: 100%;
     height: 100%;
@@ -10240,7 +10586,7 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 1rem;
     margin-top: 2rem;
-    background-color: rgba(240, 243, 251, 0.5019607843);
+    background-color: rgba(34, 56, 133, 0.3137254902);
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
@@ -10251,7 +10597,17 @@ badge.SecondaryColor {
     display: none;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input {
+    font-weight: 500;
+    color: #223885;
     background-color: transparent;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input::-moz-placeholder {
+    opacity: 1;
+    color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div input::placeholder {
+    opacity: 1;
+    color: #FFFFFF;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn {
     width: 45px;
@@ -10260,7 +10616,7 @@ badge.SecondaryColor {
     font-size: 16px;
     font-weight: 300;
     border-radius: 0px;
-    color: #0074FF;
+    color: #FFFFFF;
     background-color: #223885;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
@@ -10443,10 +10799,9 @@ badge.SecondaryColor {
 }
 
 .FNV-Mission {
-  height: 918px;
-  background-size: 100% contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-image: url("/images/pages/mission.jpg");
 }
 

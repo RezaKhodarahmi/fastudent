@@ -518,6 +518,8 @@ const CategoriesSection = () => {
       <section className='FNV-Mission'>
         <div className='container'>
           <div className='row'>
+            <h2>{t('mission-title')}</h2>
+
             <div className='col-12 col-md-4'>
               <h3>{t('category-section-one')}</h3>
 
