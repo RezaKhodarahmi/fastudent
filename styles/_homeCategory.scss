@@ -1495,8 +1495,10 @@ body[dir='rtl'] {
       .container {
         .row {
           h2 {
+            z-index: 4;
             font-size: 22px;
             font-weight: 300;
+            margin-top: -2rem;
             text-align: center;
             color: $PrimaryOne;
             margin-bottom: 1rem;
@@ -1693,8 +1695,10 @@ body[dir='rtl'] {
       .container {
         .row {
           h2 {
+            z-index: 4;
             font-size: 22px;
             font-weight: 300;
+            margin-top: -2rem;
             text-align: center;
             color: $PrimaryOne;
             margin-bottom: 1rem;
@@ -1891,8 +1895,10 @@ body[dir='rtl'] {
       .container {
         .row {
           h2 {
+            z-index: 4;
             font-size: 22px;
             font-weight: 300;
+            margin-top: -2rem;
             color: $PrimaryOne;
           }
 
@@ -2086,8 +2092,10 @@ body[dir='rtl'] {
       .container {
         .row {
           h2 {
+            z-index: 4;
             font-size: 28px;
             font-weight: 300;
+            margin-top: -2rem;
             color: $PrimaryOne;
           }
 
@@ -2281,8 +2289,10 @@ body[dir='rtl'] {
       .container {
         .row {
           h2 {
+            z-index: 4;
             font-size: 36px;
             font-weight: 300;
+            margin-top: -3rem;
             color: $PrimaryOne;
           }
 
@@ -2476,8 +2486,10 @@ body[dir='rtl'] {
       .container {
         .row {
           h2 {
+            z-index: 4;
             font-size: 48px;
             font-weight: 300;
+            margin-top: -3rem;
             color: $PrimaryOne;
           }
 
@@ -2671,9 +2683,11 @@ body[dir='rtl'] {
       .container {
         .row {
           h2 {
+            z-index: 4;
             font-size: 48px;
             font-weight: 300;
             color: $PrimaryOne;
+            margin-top: -3rem;
           }
 
           .col-md-4 {

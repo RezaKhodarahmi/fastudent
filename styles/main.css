@@ -401,12 +401,12 @@ badge.SecondaryColor {
     stroke-width: 0px;
     position: relative;
     margin-right: 0.5rem;
-    stroke: #6A7BBA;
+    stroke: #223885;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span small {
     font-size: 14px;
-    font-weight: 300;
-    color: #6A7BBA;
+    font-weight: 400;
+    color: #223885;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu {
     display: flex;
@@ -451,12 +451,12 @@ badge.SecondaryColor {
     stroke-width: 0px;
     position: relative;
     margin-right: 0.5rem;
-    stroke: #6A7BBA;
+    stroke: #223885;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span span small {
     font-size: 12px;
     font-weight: 400;
-    color: #6A7BBA;
+    color: #223885;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover {
     color: #FFFFFF;
@@ -639,7 +639,7 @@ badge.SecondaryColor {
     font-size: 10px;
     font-weight: 400;
     line-height: 20px;
-    color: #6A7BBA;
+    color: #223885;
     text-transform: capitalize;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane li a:hover {
@@ -682,12 +682,123 @@ badge.SecondaryColor {
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a span {
     font-size: 8px;
     margin-top: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     color: #223885;
     padding: 0.5rem;
     background-color: #FFFFFF;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a:hover span {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row.flex-row h2 {
+    padding: 0 1rem;
+    width: auto;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    color: #0074FF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 {
+    display: flex;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li {
+    padding: 0;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li:last-of-type {
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li a {
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: #223885;
+    text-transform: capitalize;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li a:hover {
+    color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #0074FF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container {
+    padding: 1rem 0 0;
+    border-top: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container span {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: #223885;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-7 p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 {
+    padding: 0;
+    text-align: left;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 a {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    text-transform: capitalize;
+    border: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 a:hover {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent.fade {
+    display: none;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent.show {
+    display: block;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a svg {
+    fill: #0074FF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a span {
+    margin-top: 2rem;
+    font-weight: 400;
+    color: #223885;
+    padding: 0.5rem 1rem;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a:hover span {
     color: #FFFFFF;
     background-color: #223885;
   }
@@ -926,12 +1037,12 @@ badge.SecondaryColor {
     stroke-width: 0px;
     position: relative;
     margin-right: 0.5rem;
-    stroke: #6A7BBA;
+    stroke: #223885;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span small {
     font-size: 14px;
-    font-weight: 300;
-    color: #6A7BBA;
+    font-weight: 400;
+    color: #223885;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu {
     display: flex;
@@ -976,12 +1087,12 @@ badge.SecondaryColor {
     stroke-width: 0px;
     position: relative;
     margin-right: 0.5rem;
-    stroke: #6A7BBA;
+    stroke: #223885;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span span small {
     font-size: 12px;
     font-weight: 400;
-    color: #6A7BBA;
+    color: #223885;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover {
     color: #FFFFFF;
@@ -1164,7 +1275,7 @@ badge.SecondaryColor {
     font-size: 10px;
     font-weight: 400;
     line-height: 20px;
-    color: #6A7BBA;
+    color: #223885;
     text-transform: capitalize;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane li a:hover {
@@ -1207,12 +1318,123 @@ badge.SecondaryColor {
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a span {
     font-size: 8px;
     margin-top: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     color: #223885;
     padding: 0.5rem;
     background-color: #FFFFFF;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a:hover span {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row.flex-row h2 {
+    padding: 0 1rem;
+    width: auto;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    color: #0074FF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 {
+    display: flex;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li {
+    padding: 0;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li:last-of-type {
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li a {
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: #223885;
+    text-transform: capitalize;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li a:hover {
+    color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #0074FF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container {
+    padding: 1rem 0 0;
+    border-top: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container span {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: #223885;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-7 p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 {
+    padding: 0;
+    text-align: left;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 a {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    text-transform: capitalize;
+    border: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 a:hover {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent.fade {
+    display: none;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent.show {
+    display: block;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a svg {
+    fill: #0074FF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a span {
+    margin-top: 2rem;
+    font-weight: 400;
+    color: #223885;
+    padding: 0.5rem 1rem;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a:hover span {
     color: #FFFFFF;
     background-color: #223885;
   }
@@ -1418,7 +1640,7 @@ badge.SecondaryColor {
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .nav button span {
     font-size: 10px;
-    font-weight: 300;
+    font-weight: 400;
     margin-left: 0.5rem;
     color: #223885;
   }
@@ -1445,7 +1667,7 @@ badge.SecondaryColor {
     font-size: 10px;
     font-weight: 400;
     line-height: 20px;
-    color: #6A7BBA;
+    color: #223885;
     text-transform: capitalize;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane li a:hover {
@@ -1465,14 +1687,14 @@ badge.SecondaryColor {
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container span {
     display: block;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     color: #223885;
     margin-bottom: 0.5rem;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-7 p {
     font-size: 5px;
-    font-weight: 300;
-    color: #6A7BBA;
+    font-weight: 400;
+    color: #223885;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-5 {
     text-align: right;
@@ -1481,7 +1703,7 @@ badge.SecondaryColor {
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-5 a {
     padding: 0.5rem;
     font-size: 8px;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: capitalize;
     border: 1px solid rgba(34, 56, 133, 0.0823529412);
   }
@@ -1517,12 +1739,123 @@ badge.SecondaryColor {
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a span {
     font-size: 8px;
     margin-top: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     color: #223885;
     padding: 0.5rem;
     background-color: #FFFFFF;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a:hover span {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row.flex-row h2 {
+    padding: 0 1rem;
+    width: auto;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    color: #0074FF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 {
+    display: flex;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li {
+    padding: 0;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li:last-of-type {
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li a {
+    padding: 0;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    color: #223885;
+    text-transform: capitalize;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li a:hover {
+    color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #0074FF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container {
+    padding: 1rem 0 0;
+    border-top: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container span {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: #223885;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-7 p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 {
+    padding: 0;
+    text-align: left;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 a {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    text-transform: capitalize;
+    border: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 a:hover {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent.fade {
+    display: none;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent.show {
+    display: block;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a svg {
+    fill: #0074FF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a span {
+    margin-top: 2rem;
+    font-weight: 400;
+    color: #223885;
+    padding: 0.5rem 1rem;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a:hover span {
     color: #FFFFFF;
     background-color: #223885;
   }
@@ -1637,7 +1970,7 @@ badge.SecondaryColor {
     border-radius: 5px;
   }
 }
-@media (min-width: 991.98px) {
+@media (min-width: 992px) {
   body[dir=ltr] nav {
     background-color: #ffffff;
   }
@@ -1740,12 +2073,12 @@ badge.SecondaryColor {
     stroke-width: 0px;
     position: relative;
     margin-right: 0.5rem;
-    stroke: #6A7BBA;
+    stroke: #223885;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span small {
     font-size: 14px;
-    font-weight: 300;
-    color: #6A7BBA;
+    font-weight: 400;
+    color: #223885;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu {
     display: flex;
@@ -1790,12 +2123,12 @@ badge.SecondaryColor {
     stroke-width: 0px;
     position: relative;
     margin-right: 0.5rem;
-    stroke: #6A7BBA;
+    stroke: #223885;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span span small {
     font-size: 12px;
     font-weight: 400;
-    color: #6A7BBA;
+    color: #223885;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover {
     color: #FFFFFF;
@@ -1886,8 +2219,8 @@ badge.SecondaryColor {
     justify-content: center;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li a {
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 13px;
+    font-weight: 400;
     padding: 2rem 0.3rem;
     color: #223885;
   }
@@ -1937,7 +2270,7 @@ badge.SecondaryColor {
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .nav button span {
     font-size: 10px;
-    font-weight: 300;
+    font-weight: 400;
     margin-left: 0.5rem;
     color: #223885;
   }
@@ -1964,7 +2297,7 @@ badge.SecondaryColor {
     font-size: 10px;
     font-weight: 400;
     line-height: 20px;
-    color: #6A7BBA;
+    color: #223885;
     text-transform: capitalize;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane li a:hover {
@@ -1984,14 +2317,14 @@ badge.SecondaryColor {
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container span {
     display: block;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     color: #223885;
     margin-bottom: 0.5rem;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-7 p {
     font-size: 5px;
-    font-weight: 300;
-    color: #6A7BBA;
+    font-weight: 400;
+    color: #223885;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-5 {
     text-align: right;
@@ -2000,7 +2333,7 @@ badge.SecondaryColor {
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-5 a {
     padding: 0.5rem;
     font-size: 8px;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: capitalize;
     border: 1px solid rgba(34, 56, 133, 0.0823529412);
   }
@@ -2036,12 +2369,123 @@ badge.SecondaryColor {
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a span {
     font-size: 8px;
     margin-top: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     color: #223885;
     padding: 0.5rem;
     background-color: #FFFFFF;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a:hover span {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row.flex-row h2 {
+    padding: 0 1rem;
+    width: auto;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    color: #0074FF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 {
+    display: flex;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li {
+    padding: 0;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li:last-of-type {
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li a {
+    padding: 0;
+    font-size: 7px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: center;
+    color: #223885;
+    text-transform: capitalize;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li a:hover {
+    color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #0074FF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container {
+    padding: 1rem 0 0;
+    border-top: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container span {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: #223885;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-7 p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 {
+    padding: 0;
+    text-align: left;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 a {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    text-transform: capitalize;
+    border: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 a:hover {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent.fade {
+    display: none;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent.show {
+    display: block;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a svg {
+    fill: #0074FF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a span {
+    margin-top: 2rem;
+    font-weight: 400;
+    color: #223885;
+    padding: 0.5rem 1rem;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a:hover span {
     color: #FFFFFF;
     background-color: #223885;
   }
@@ -2259,12 +2703,12 @@ badge.SecondaryColor {
     stroke-width: 0px;
     position: relative;
     margin-right: 0.5rem;
-    stroke: #6A7BBA;
+    stroke: #223885;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span small {
     font-size: 14px;
-    font-weight: 300;
-    color: #6A7BBA;
+    font-weight: 400;
+    color: #223885;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu {
     display: flex;
@@ -2309,12 +2753,12 @@ badge.SecondaryColor {
     stroke-width: 0px;
     position: relative;
     margin-right: 0.5rem;
-    stroke: #6A7BBA;
+    stroke: #223885;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span span small {
     font-size: 12px;
     font-weight: 400;
-    color: #6A7BBA;
+    color: #223885;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover {
     color: #FFFFFF;
@@ -2405,9 +2849,9 @@ badge.SecondaryColor {
     justify-content: center;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li a {
-    font-size: 14px;
-    font-weight: 500;
-    padding: 2rem 0.5rem;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 1.5rem 0.5rem;
     color: #223885;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li:hover a {
@@ -2455,7 +2899,7 @@ badge.SecondaryColor {
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .nav button span {
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 400;
     margin-left: 0.5rem;
     color: #223885;
   }
@@ -2482,7 +2926,7 @@ badge.SecondaryColor {
     font-size: 12px;
     font-weight: 400;
     line-height: 24px;
-    color: #6A7BBA;
+    color: #223885;
     text-transform: capitalize;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane li a:hover {
@@ -2502,14 +2946,14 @@ badge.SecondaryColor {
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container span {
     display: block;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     color: #223885;
     margin-bottom: 0.5rem;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-7 p {
     font-size: 8px;
-    font-weight: 300;
-    color: #6A7BBA;
+    font-weight: 400;
+    color: #223885;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-5 {
     text-align: right;
@@ -2518,7 +2962,7 @@ badge.SecondaryColor {
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-5 a {
     padding: 0.5rem 1rem;
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: capitalize;
     border: 1px solid rgba(34, 56, 133, 0.0823529412);
   }
@@ -2553,12 +2997,123 @@ badge.SecondaryColor {
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a span {
     font-size: 12px;
     margin-top: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     color: #223885;
     padding: 0.5rem;
     background-color: #FFFFFF;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a:hover span {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row.flex-row h2 {
+    padding: 0 1rem;
+    width: auto;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    color: #0074FF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 {
+    display: flex;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent {
+    width: 100%;
+    padding: 1rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li {
+    padding: 0;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li:last-of-type {
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li a {
+    padding: 0;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: #223885;
+    text-transform: capitalize;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li a:hover {
+    color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #0074FF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container {
+    padding: 1rem 0 0;
+    border-top: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container span {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: #223885;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-7 p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 {
+    padding: 0;
+    text-align: left;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 a {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    text-transform: capitalize;
+    border: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 a:hover {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent.fade {
+    display: none;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent.show {
+    display: block;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a svg {
+    fill: #0074FF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a span {
+    margin-top: 2rem;
+    font-weight: 400;
+    color: #223885;
+    padding: 0.5rem 1rem;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a:hover span {
     color: #FFFFFF;
     background-color: #223885;
   }
@@ -2772,12 +3327,12 @@ badge.SecondaryColor {
     stroke-width: 0px;
     position: relative;
     margin-right: 0.5rem;
-    stroke: #6A7BBA;
+    stroke: #223885;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span small {
     font-size: 14px;
-    font-weight: 300;
-    color: #6A7BBA;
+    font-weight: 400;
+    color: #223885;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu {
     display: flex;
@@ -2822,12 +3377,12 @@ badge.SecondaryColor {
     stroke-width: 0px;
     position: relative;
     margin-right: 0.5rem;
-    stroke: #6A7BBA;
+    stroke: #223885;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span span small {
     font-size: 12px;
     font-weight: 400;
-    color: #6A7BBA;
+    color: #223885;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover {
     color: #FFFFFF;
@@ -2969,7 +3524,7 @@ badge.SecondaryColor {
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .nav button span {
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     margin-left: 1rem;
     color: #223885;
   }
@@ -2996,7 +3551,7 @@ badge.SecondaryColor {
     font-size: 12px;
     font-weight: 400;
     line-height: 24px;
-    color: #6A7BBA;
+    color: #223885;
     text-transform: capitalize;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane li a:hover {
@@ -3016,14 +3571,14 @@ badge.SecondaryColor {
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container span {
     display: block;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     color: #223885;
     margin-bottom: 0.5rem;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-7 p {
     font-size: 8px;
-    font-weight: 300;
-    color: #6A7BBA;
+    font-weight: 400;
+    color: #223885;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-5 {
     padding: 0;
@@ -3033,7 +3588,7 @@ badge.SecondaryColor {
     width: 100%;
     display: block;
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 400;
     padding: 0.5rem 1rem;
     text-transform: capitalize;
     border: 1px solid rgba(34, 56, 133, 0.0823529412);
@@ -3069,12 +3624,125 @@ badge.SecondaryColor {
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a span {
     font-size: 12px;
     margin-top: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     color: #223885;
     padding: 0.5rem;
     background-color: #FFFFFF;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a:hover span {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row {
+    width: 100%;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row.flex-row h2 {
+    padding: 0;
+    width: auto;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    color: #0074FF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 {
+    display: flex;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent {
+    width: 100%;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li {
+    padding: 0;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li:last-of-type {
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li a {
+    padding: 0;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: #223885;
+    text-transform: capitalize;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li a:hover {
+    color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #0074FF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container {
+    padding: 2rem 0 0;
+    border-top: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container span {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: #223885;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-7 p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 {
+    padding: 0;
+    text-align: left;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 a {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    text-transform: capitalize;
+    border: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 a:hover {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent.fade {
+    display: none;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent.show {
+    display: block;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a svg {
+    fill: #0074FF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a span {
+    margin-top: 2rem;
+    font-weight: 400;
+    color: #223885;
+    padding: 0.5rem 1rem;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a:hover span {
     color: #FFFFFF;
     background-color: #223885;
   }
@@ -3288,12 +3956,12 @@ badge.SecondaryColor {
     stroke-width: 0px;
     position: relative;
     margin-right: 0.5rem;
-    stroke: #6A7BBA;
+    stroke: #223885;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span small {
     font-size: 14px;
-    font-weight: 300;
-    color: #6A7BBA;
+    font-weight: 400;
+    color: #223885;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu {
     display: flex;
@@ -3338,12 +4006,12 @@ badge.SecondaryColor {
     stroke-width: 0px;
     position: relative;
     margin-right: 0.5rem;
-    stroke: #6A7BBA;
+    stroke: #223885;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span span small {
     font-size: 12px;
     font-weight: 400;
-    color: #6A7BBA;
+    color: #223885;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover {
     color: #FFFFFF;
@@ -3488,7 +4156,7 @@ badge.SecondaryColor {
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .nav button span {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     margin-left: 1rem;
     color: #223885;
   }
@@ -3516,7 +4184,7 @@ badge.SecondaryColor {
     font-weight: 400;
     line-height: 28px;
     text-align: center;
-    color: #6A7BBA;
+    color: #223885;
     text-transform: capitalize;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane li a:hover {
@@ -3536,21 +4204,21 @@ badge.SecondaryColor {
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container span {
     display: block;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     color: #223885;
     margin-bottom: 0.5rem;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-7 p {
     font-size: 12px;
-    font-weight: 300;
-    color: #6A7BBA;
+    font-weight: 400;
+    color: #223885;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-5 {
     text-align: right;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-5 a {
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
     padding: 1rem 1.5rem;
     text-transform: capitalize;
@@ -3586,12 +4254,124 @@ badge.SecondaryColor {
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a span {
     margin-top: 2rem;
-    font-weight: 300;
+    font-weight: 400;
     color: #223885;
     padding: 0.5rem 1rem;
     background-color: #FFFFFF;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a:hover span {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row {
+    width: 100%;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row.flex-row h2 {
+    padding: 0;
+    width: auto;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    color: #0074FF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 {
+    display: flex;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent {
+    width: 100%;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li {
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li:last-of-type {
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li a {
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: #223885;
+    text-transform: capitalize;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li a:hover {
+    color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #0074FF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container {
+    padding: 2rem 0 0;
+    border-top: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container span {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: #223885;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-7 p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 {
+    padding: 0;
+    text-align: left;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 a {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    text-transform: capitalize;
+    border: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 a:hover {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent.fade {
+    display: none;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent.show {
+    display: block;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a svg {
+    fill: #0074FF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a span {
+    margin-top: 2rem;
+    font-weight: 400;
+    color: #223885;
+    padding: 0.5rem 1rem;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a:hover span {
     color: #FFFFFF;
     background-color: #223885;
   }
@@ -3829,12 +4609,12 @@ badge.SecondaryColor {
     stroke-width: 0px;
     position: relative;
     margin-right: 0.5rem;
-    stroke: #6A7BBA;
+    stroke: #223885;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span small {
     font-size: 14px;
-    font-weight: 300;
-    color: #6A7BBA;
+    font-weight: 400;
+    color: #223885;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu {
     display: flex;
@@ -3879,12 +4659,12 @@ badge.SecondaryColor {
     stroke-width: 0px;
     position: relative;
     margin-right: 0.5rem;
-    stroke: #6A7BBA;
+    stroke: #223885;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span span small {
     font-size: 12px;
     font-weight: 400;
-    color: #6A7BBA;
+    color: #223885;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover {
     color: #FFFFFF;
@@ -4072,7 +4852,7 @@ badge.SecondaryColor {
     font-size: 10px;
     font-weight: 400;
     line-height: 20px;
-    color: #6A7BBA;
+    color: #223885;
     text-transform: capitalize;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane li a:hover {
@@ -4115,12 +4895,122 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a span {
     font-size: 8px;
     margin-top: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     color: #223885;
     padding: 0.5rem;
     background-color: #FFFFFF;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a:hover span {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row.flex-row h2 {
+    padding: 0 1rem;
+    width: auto;
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 1.5rem;
+    color: #0074FF;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 {
+    display: flex;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent {
+    width: 100%;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li {
+    padding: 0;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li:last-of-type {
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li a {
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: #223885;
+    text-transform: capitalize;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li a:hover {
+    color: #223885;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #0074FF;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container {
+    padding: 1rem;
+    border-top: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container span {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+    color: #223885;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-7 p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: right;
+    color: #223885;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 {
+    padding: 0;
+    text-align: right;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 a {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    text-transform: capitalize;
+    border: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 a:hover {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent.fade {
+    display: none;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent.show {
+    display: block;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F0F3FB;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a svg {
+    fill: #0074FF;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a span {
+    margin-top: 2rem;
+    font-weight: 400;
+    color: #223885;
+    padding: 0.5rem 1rem;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a:hover span {
     color: #FFFFFF;
     background-color: #223885;
   }
@@ -4360,12 +5250,12 @@ badge.SecondaryColor {
     stroke-width: 0px;
     position: relative;
     margin-right: 0.5rem;
-    stroke: #6A7BBA;
+    stroke: #223885;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span small {
     font-size: 14px;
-    font-weight: 300;
-    color: #6A7BBA;
+    font-weight: 400;
+    color: #223885;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu {
     display: flex;
@@ -4410,12 +5300,12 @@ badge.SecondaryColor {
     stroke-width: 0px;
     position: relative;
     margin-right: 0.5rem;
-    stroke: #6A7BBA;
+    stroke: #223885;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span span small {
     font-size: 12px;
     font-weight: 400;
-    color: #6A7BBA;
+    color: #223885;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover {
     color: #FFFFFF;
@@ -4603,7 +5493,7 @@ badge.SecondaryColor {
     font-size: 10px;
     font-weight: 400;
     line-height: 20px;
-    color: #6A7BBA;
+    color: #223885;
     text-transform: capitalize;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane li a:hover {
@@ -4646,12 +5536,122 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a span {
     font-size: 8px;
     margin-top: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     color: #223885;
     padding: 0.5rem;
     background-color: #FFFFFF;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a:hover span {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row.flex-row h2 {
+    padding: 0 1rem;
+    width: auto;
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 1.5rem;
+    color: #0074FF;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 {
+    display: flex;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent {
+    width: 100%;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li {
+    padding: 0;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li:last-of-type {
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li a {
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: #223885;
+    text-transform: capitalize;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li a:hover {
+    color: #223885;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #0074FF;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container {
+    padding: 1rem;
+    border-top: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container span {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+    color: #223885;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-7 p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: right;
+    color: #223885;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 {
+    padding: 0;
+    text-align: right;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 a {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    text-transform: capitalize;
+    border: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 a:hover {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent.fade {
+    display: none;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent.show {
+    display: block;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F0F3FB;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a svg {
+    fill: #0074FF;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a span {
+    margin-top: 2rem;
+    font-weight: 400;
+    color: #223885;
+    padding: 0.5rem 1rem;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a:hover span {
     color: #FFFFFF;
     background-color: #223885;
   }
@@ -4862,7 +5862,7 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .nav button span {
     font-size: 10px;
-    font-weight: 300;
+    font-weight: 400;
     margin-right: 0.5rem;
     color: #223885;
   }
@@ -4890,7 +5890,7 @@ badge.SecondaryColor {
     font-size: 10px;
     font-weight: 400;
     line-height: 20px;
-    color: #6A7BBA;
+    color: #223885;
     text-transform: capitalize;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane li a:hover {
@@ -4910,16 +5910,16 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container span {
     display: block;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: right;
     color: #223885;
     margin-bottom: 0.5rem;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-7 p {
     font-size: 5px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: right;
-    color: #6A7BBA;
+    color: #223885;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-5 {
     padding: 0;
@@ -4928,7 +5928,7 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-5 a {
     padding: 0.5rem;
     font-size: 8px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: right;
     text-transform: capitalize;
     border: 1px solid rgba(34, 56, 133, 0.0823529412);
@@ -4965,12 +5965,122 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a span {
     font-size: 8px;
     margin-top: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     color: #223885;
     padding: 0.5rem;
     background-color: #FFFFFF;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a:hover span {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row.flex-row h2 {
+    padding: 0 1rem;
+    width: auto;
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 1.5rem;
+    color: #0074FF;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 {
+    display: flex;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent {
+    width: 100%;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li {
+    padding: 0;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li:last-of-type {
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li a {
+    padding: 0;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #223885;
+    text-transform: capitalize;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li a:hover {
+    color: #223885;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #0074FF;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container {
+    padding: 1rem;
+    border-top: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container span {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+    color: #223885;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-7 p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: right;
+    color: #223885;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 {
+    padding: 0;
+    text-align: right;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 a {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    text-transform: capitalize;
+    border: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 a:hover {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent.fade {
+    display: none;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent.show {
+    display: block;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F0F3FB;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a svg {
+    fill: #0074FF;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a span {
+    margin-top: 2rem;
+    font-weight: 400;
+    color: #223885;
+    padding: 0.5rem 1rem;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a:hover span {
     color: #FFFFFF;
     background-color: #223885;
   }
@@ -5273,7 +6383,7 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .nav button span {
     font-size: 10px;
-    font-weight: 300;
+    font-weight: 400;
     margin-right: 0.5rem;
     color: #223885;
   }
@@ -5301,7 +6411,7 @@ badge.SecondaryColor {
     font-size: 10px;
     font-weight: 400;
     line-height: 20px;
-    color: #6A7BBA;
+    color: #223885;
     text-transform: capitalize;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane li a:hover {
@@ -5321,16 +6431,16 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container span {
     display: block;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: right;
     color: #223885;
     margin-bottom: 0.5rem;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-7 p {
     font-size: 5px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: right;
-    color: #6A7BBA;
+    color: #223885;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-5 {
     text-align: right;
@@ -5339,7 +6449,7 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-5 a {
     padding: 0.5rem;
     font-size: 8px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: right;
     text-transform: capitalize;
     border: 1px solid rgba(34, 56, 133, 0.0823529412);
@@ -5376,12 +6486,122 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a span {
     font-size: 8px;
     margin-top: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     color: #223885;
     padding: 0.5rem;
     background-color: #FFFFFF;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a:hover span {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row.flex-row h2 {
+    padding: 0 1rem;
+    width: auto;
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 1.5rem;
+    color: #0074FF;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 {
+    display: flex;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent {
+    width: 100%;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li {
+    padding: 0;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li:last-of-type {
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li a {
+    padding: 0;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    color: #223885;
+    text-transform: capitalize;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li a:hover {
+    color: #223885;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #0074FF;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container {
+    padding: 1rem;
+    border-top: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container span {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+    color: #223885;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-7 p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: right;
+    color: #223885;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 {
+    padding: 0;
+    text-align: right;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 a {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    text-transform: capitalize;
+    border: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 a:hover {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent.fade {
+    display: none;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent.show {
+    display: block;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F0F3FB;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a svg {
+    fill: #0074FF;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a span {
+    margin-top: 2rem;
+    font-weight: 400;
+    color: #223885;
+    padding: 0.5rem 1rem;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a:hover span {
     color: #FFFFFF;
     background-color: #223885;
   }
@@ -5705,7 +6925,7 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .nav button span {
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: right;
     color: #223885;
     margin-right: 0.5rem;
@@ -5734,7 +6954,7 @@ badge.SecondaryColor {
     font-weight: 400;
     text-align: right;
     line-height: 24px;
-    color: #6A7BBA;
+    color: #223885;
     text-transform: capitalize;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane li a:hover {
@@ -5754,16 +6974,16 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container span {
     display: block;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: right;
     color: #223885;
     margin-bottom: 0.5rem;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-7 p {
     font-size: 8px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: right;
-    color: #6A7BBA;
+    color: #223885;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-5 {
     text-align: right;
@@ -5772,7 +6992,7 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-5 a {
     padding: 0.5rem 1rem;
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: capitalize;
     border: 1px solid rgba(34, 56, 133, 0.0823529412);
   }
@@ -5807,12 +7027,122 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a span {
     font-size: 12px;
     margin-top: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     color: #223885;
     padding: 0.5rem;
     background-color: #FFFFFF;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a:hover span {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row.flex-row h2 {
+    padding: 0 1rem;
+    width: auto;
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 1.5rem;
+    color: #0074FF;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 {
+    display: flex;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent {
+    width: 100%;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li {
+    padding: 0;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li:last-of-type {
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li a {
+    padding: 0;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: #223885;
+    text-transform: capitalize;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li a:hover {
+    color: #223885;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #0074FF;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container {
+    padding: 1rem;
+    border-top: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container span {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+    color: #223885;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-7 p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: right;
+    color: #223885;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 {
+    padding: 0;
+    text-align: right;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 a {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    text-transform: capitalize;
+    border: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 a:hover {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent.fade {
+    display: none;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent.show {
+    display: block;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F0F3FB;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a svg {
+    fill: #0074FF;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a span {
+    margin-top: 2rem;
+    font-weight: 400;
+    color: #223885;
+    padding: 0.5rem 1rem;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a:hover span {
     color: #FFFFFF;
     background-color: #223885;
   }
@@ -6025,12 +7355,12 @@ badge.SecondaryColor {
     stroke-width: 0px;
     position: relative;
     margin-right: 0.5rem;
-    stroke: #6A7BBA;
+    stroke: #223885;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span small {
     font-size: 14px;
-    font-weight: 300;
-    color: #6A7BBA;
+    font-weight: 400;
+    color: #223885;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu {
     display: flex;
@@ -6075,12 +7405,12 @@ badge.SecondaryColor {
     stroke-width: 0px;
     position: relative;
     margin-right: 0.5rem;
-    stroke: #6A7BBA;
+    stroke: #223885;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span span small {
     font-size: 12px;
     font-weight: 400;
-    color: #6A7BBA;
+    color: #223885;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover {
     color: #FFFFFF;
@@ -6150,7 +7480,7 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .FNV_QuickAccess a {
     color: #223885;
     position: relative;
-    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess a svg {
     width: 24px;
@@ -6223,7 +7553,7 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .nav button span {
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: right;
     margin-right: 1rem;
     color: #223885;
@@ -6253,7 +7583,7 @@ badge.SecondaryColor {
     font-weight: 400;
     text-align: right;
     line-height: 24px;
-    color: #6A7BBA;
+    color: #223885;
     text-transform: capitalize;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane li a:hover {
@@ -6273,16 +7603,16 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container span {
     display: block;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: right;
     color: #223885;
     margin-bottom: 0.5rem;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-7 p {
     font-size: 8px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: right;
-    color: #6A7BBA;
+    color: #223885;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-5 {
     padding: 0px;
@@ -6292,7 +7622,7 @@ badge.SecondaryColor {
     width: 100%;
     display: block;
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 400;
     padding: 0.5rem 1rem;
     text-transform: capitalize;
     border: 1px solid rgba(34, 56, 133, 0.0823529412);
@@ -6328,12 +7658,125 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a span {
     font-size: 12px;
     margin-top: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     color: #223885;
     padding: 0.5rem;
     background-color: #FFFFFF;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a:hover span {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row {
+    width: 100%;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row.flex-row h2 {
+    padding: 0;
+    width: auto;
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 1.5rem;
+    color: #0074FF;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 {
+    display: flex;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent {
+    width: 100%;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li {
+    padding: 0;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li:last-of-type {
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li a {
+    padding: 0;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: #223885;
+    text-transform: capitalize;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li a:hover {
+    color: #223885;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #0074FF;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container {
+    padding: 2rem 0 0;
+    border-top: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container span {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+    color: #223885;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-7 p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: right;
+    color: #223885;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 {
+    padding: 0;
+    text-align: right;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 a {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    text-transform: capitalize;
+    border: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 a:hover {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent.fade {
+    display: none;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent.show {
+    display: block;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F0F3FB;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a svg {
+    fill: #0074FF;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a span {
+    margin-top: 2rem;
+    font-weight: 400;
+    color: #223885;
+    padding: 0.5rem 1rem;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a:hover span {
     color: #FFFFFF;
     background-color: #223885;
   }
@@ -6549,12 +7992,12 @@ badge.SecondaryColor {
     stroke-width: 0px;
     position: relative;
     margin-left: 0.5rem;
-    stroke: #6A7BBA;
+    stroke: #223885;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span small {
     font-size: 14px;
-    font-weight: 300;
-    color: #6A7BBA;
+    font-weight: 400;
+    color: #223885;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu {
     display: flex;
@@ -6599,12 +8042,12 @@ badge.SecondaryColor {
     stroke-width: 0px;
     position: relative;
     margin-right: 0.5rem;
-    stroke: #6A7BBA;
+    stroke: #223885;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span span small {
     font-size: 12px;
     font-weight: 400;
-    color: #6A7BBA;
+    color: #223885;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover {
     color: #FFFFFF;
@@ -6675,7 +8118,7 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .FNV_QuickAccess a {
     color: #223885;
     position: relative;
-    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess a svg {
     width: 24px;
@@ -6698,7 +8141,7 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li a {
     font-size: 18px;
     font-weight: 500;
-    padding: 2rem 0.5rem;
+    padding: 2rem 1rem;
     color: #223885;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li:hover a {
@@ -6751,7 +8194,7 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .nav button span {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     margin-right: 1rem;
     color: #223885;
   }
@@ -6780,7 +8223,7 @@ badge.SecondaryColor {
     font-weight: 400;
     line-height: 28px;
     text-align: center;
-    color: #6A7BBA;
+    color: #223885;
     text-transform: capitalize;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane li a:hover {
@@ -6800,23 +8243,23 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container span {
     display: block;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: right;
     color: #223885;
     margin-bottom: 0.5rem;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-7 p {
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: right;
-    color: #6A7BBA;
+    color: #223885;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-5 {
     text-align: right;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-9 .tab-content .tab-pane .container .row .col-5 a {
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
     padding: 1rem 1.5rem;
     text-transform: capitalize;
@@ -6852,12 +8295,124 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a span {
     margin-top: 2rem;
-    font-weight: 300;
+    font-weight: 400;
     color: #223885;
     padding: 0.5rem 1rem;
     background-color: #FFFFFF;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-MainMega .row .col-md-3 a:hover span {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row {
+    width: 100%;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row.flex-row h2 {
+    padding: 0;
+    width: auto;
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 1.5rem;
+    color: #0074FF;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 {
+    display: flex;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent {
+    width: 100%;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li {
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li:last-of-type {
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li a {
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: #223885;
+    text-transform: capitalize;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent li a:hover {
+    color: #223885;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #0074FF;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container {
+    padding: 2rem 0 0;
+    border-top: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container span {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+    color: #223885;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-7 p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: right;
+    color: #223885;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 {
+    padding: 0;
+    text-align: right;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 a {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    text-transform: capitalize;
+    border: 1px solid rgba(34, 56, 133, 0.0823529412);
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent .container .row .col-5 a:hover {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent.fade {
+    display: none;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-9 .FNV-MenuContent.show {
+    display: block;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F0F3FB;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a svg {
+    fill: #0074FF;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a span {
+    margin-top: 2rem;
+    font-weight: 400;
+    color: #223885;
+    padding: 0.5rem 1rem;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu.FNV-SecondMega .row .col-md-3 a:hover span {
     color: #FFFFFF;
     background-color: #223885;
   }
@@ -11805,8 +13360,10 @@ badge.SecondaryColor {
     transform: scaleX(-1);
   }
   body[dir=rtl] .FNV-Mission .container .row h2 {
+    z-index: 4;
     font-size: 22px;
     font-weight: 300;
+    margin-top: -2rem;
     text-align: center;
     color: #223885;
     margin-bottom: 1rem;
@@ -11950,8 +13507,10 @@ badge.SecondaryColor {
     transform: scaleX(-1);
   }
   body[dir=rtl] .FNV-Mission .container .row h2 {
+    z-index: 4;
     font-size: 22px;
     font-weight: 300;
+    margin-top: -2rem;
     text-align: center;
     color: #223885;
     margin-bottom: 1rem;
@@ -12095,8 +13654,10 @@ badge.SecondaryColor {
     transform: scaleX(-1);
   }
   body[dir=rtl] .FNV-Mission .container .row h2 {
+    z-index: 4;
     font-size: 22px;
     font-weight: 300;
+    margin-top: -2rem;
     color: #223885;
   }
   body[dir=rtl] .FNV-Mission .container .row .col-md-4.Top1 {
@@ -12237,8 +13798,10 @@ badge.SecondaryColor {
     transform: scaleX(-1);
   }
   body[dir=rtl] .FNV-Mission .container .row h2 {
+    z-index: 4;
     font-size: 28px;
     font-weight: 300;
+    margin-top: -2rem;
     color: #223885;
   }
   body[dir=rtl] .FNV-Mission .container .row .col-md-4.Top1 {
@@ -12379,8 +13942,10 @@ badge.SecondaryColor {
     transform: scaleX(-1);
   }
   body[dir=rtl] .FNV-Mission .container .row h2 {
+    z-index: 4;
     font-size: 36px;
     font-weight: 300;
+    margin-top: -3rem;
     color: #223885;
   }
   body[dir=rtl] .FNV-Mission .container .row .col-md-4.Top1 {
@@ -12521,8 +14086,10 @@ badge.SecondaryColor {
     transform: scaleX(-1);
   }
   body[dir=rtl] .FNV-Mission .container .row h2 {
+    z-index: 4;
     font-size: 48px;
     font-weight: 300;
+    margin-top: -3rem;
     color: #223885;
   }
   body[dir=rtl] .FNV-Mission .container .row .col-md-4.Top1 {
@@ -12663,9 +14230,11 @@ badge.SecondaryColor {
     transform: scaleX(-1);
   }
   body[dir=rtl] .FNV-Mission .container .row h2 {
+    z-index: 4;
     font-size: 48px;
     font-weight: 300;
     color: #223885;
+    margin-top: -3rem;
   }
   body[dir=rtl] .FNV-Mission .container .row .col-md-4.Top1 {
     margin-top: 10rem;

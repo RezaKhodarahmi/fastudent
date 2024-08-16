@@ -8,7 +8,7 @@ import Link from 'next/link'
 // Hooks
 import { Grid, LinearProgress } from '@mui/material'
 
-function Packages() {
+function Workshops() {
   const [course, setCourse] = useState([])
   const [page, setPage] = useState(1)
   const [title, setTitle] = useState('فناوران')
@@ -25,7 +25,7 @@ function Packages() {
 
   useEffect(() => {
     if (courseData?.data) {
-      const manualSlug = 'packages' // manually set slug
+      const manualSlug = 'workshop' // manually set slug
 
       const filteredCourses =
         Array.isArray(courseData?.data?.data) &&
@@ -38,7 +38,7 @@ function Packages() {
     <>
       {Array.isArray(course) ? (
         (() => {
-          const filteredCourses = course.slice((page - 1) * 14, page * 14)
+          const filteredCourses = course.slice((page - 1) * 12, page * 12)
 
           return filteredCourses.length ? (
             filteredCourses
@@ -65,4 +65,4 @@ function Packages() {
   )
 }
 
-export default Packages
+export default Workshops

@@ -143,13 +143,13 @@ body[dir='ltr'] {
                         stroke-width: 0px;
                         position: relative;
                         margin-right: .5rem;
-                        stroke: $PrimaryTextOne;
+                        stroke: $PrimaryOne;
                       }
 
                       small {
                         font-size: 14px;
-                        font-weight: 300;
-                        color: $PrimaryTextOne;
+                        font-weight: 400;
+                        color: $PrimaryOne;
                       }
                     }
                   }
@@ -200,13 +200,13 @@ body[dir='ltr'] {
                         stroke-width: 0px;
                         position: relative;
                         margin-right: .5rem;
-                        stroke: $PrimaryTextOne;
+                        stroke: $PrimaryOne;
                       }
 
                       small {
                         font-size: 12px;
                         font-weight: 400;
-                        color: $PrimaryTextOne;
+                        color: $PrimaryOne;
                       }
                     }
                   }
@@ -461,7 +461,7 @@ body[dir='ltr'] {
                             font-size: 10px;
                             font-weight: 400;
                             line-height: 20px;
-                            color: $PrimaryTextOne;
+                            color: $PrimaryOne;
                             text-transform: capitalize;
 
                             &:hover {
@@ -516,9 +516,154 @@ body[dir='ltr'] {
                       span {
                         font-size: 8px;
                         margin-top: 1rem;
-                        font-weight: 300;
+                        font-weight: 400;
                         color: $PrimaryOne;
                         padding: .5rem;
+                        background-color: $White;
+                      }
+
+                      &:hover {
+                        span {
+                          color: $White;
+                          background-color: $PrimaryOne;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.FNV-SecondMega {
+                .row {
+                  &.flex-row {
+                    h2 {
+                      padding: 0 1rem;
+                      width: auto;
+                      font-size: 20px;
+                      text-align: left;
+                      margin-bottom: 1.5rem;
+                      color: $PrimaryTextTwo;
+                    }
+                  }
+
+                  .col-md-9 {
+                    display: flex;
+
+                    .FNV-MenuContent {
+                      width: 100%;
+                      padding: 0 1rem;
+
+                      li {
+                        padding: 0;
+                        margin-bottom: .5rem;
+
+                        &:last-of-type {
+                          margin-bottom: 2rem;
+                        }
+
+                        a {
+                          padding: 0;
+                          font-size: 14px;
+                          font-weight: 400;
+                          line-height: 28px;
+                          text-align: center;
+                          color: $PrimaryOne;
+                          text-transform: capitalize;
+
+                          &:hover {
+                            color: $PrimaryOne;
+                          }
+                        }
+                      }
+
+                      span {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 28px;
+                        color: $PrimaryFour;
+                      }
+
+                      .container {
+                        padding: 1rem 0 0;
+                        border-top: 1px solid $PrimaryFive;
+
+                        span {
+                          display: block;
+                          font-size: 16px;
+                          font-weight: 400;
+                          text-align: left;
+                          color: $PrimaryOne;
+                          margin-bottom: .5rem;
+                        }
+
+                        .row {
+                          .col-7 {
+                            p {
+                              font-size: 12px;
+                              font-weight: 400;
+                              text-align: left;
+                              color: $PrimaryOne;
+                            }
+                          }
+
+                          .col-5 {
+                            padding: 0;
+                            text-align: left;
+
+                            a {
+                              width: 100%;
+                              display: block;
+                              font-size: 14px;
+                              font-weight: 400;
+                              text-align: center;
+                              padding: 1rem 1.5rem;
+                              text-transform: capitalize;
+                              border: 1px solid $PrimaryFive;
+
+                              &:hover {
+                                color: $White;
+                                background-color: $PrimaryOne;
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                      &.fade {
+                        display: none;
+                      }
+
+                      &.show {
+                        display: block;
+                      }
+                    }
+
+                  }
+
+                  .col-md-3 {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: $PrimaryBackgroundTwo;
+
+                    a {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      align-items: center;
+                      flex-direction: column;
+                      justify-content: center;
+
+                      svg {
+                        fill: $PrimaryFour;
+                      }
+
+                      span {
+                        margin-top: 2rem;
+                        font-weight: 400;
+                        color: $PrimaryOne;
+                        padding: .5rem 1rem;
                         background-color: $White;
                       }
 
@@ -803,13 +948,13 @@ body[dir='ltr'] {
                         stroke-width: 0px;
                         position: relative;
                         margin-right: .5rem;
-                        stroke: $PrimaryTextOne;
+                        stroke: $PrimaryOne;
                       }
 
                       small {
                         font-size: 14px;
-                        font-weight: 300;
-                        color: $PrimaryTextOne;
+                        font-weight: 400;
+                        color: $PrimaryOne;
                       }
                     }
                   }
@@ -860,13 +1005,13 @@ body[dir='ltr'] {
                         stroke-width: 0px;
                         position: relative;
                         margin-right: .5rem;
-                        stroke: $PrimaryTextOne;
+                        stroke: $PrimaryOne;
                       }
 
                       small {
                         font-size: 12px;
                         font-weight: 400;
-                        color: $PrimaryTextOne;
+                        color: $PrimaryOne;
                       }
                     }
                   }
@@ -1121,7 +1266,7 @@ body[dir='ltr'] {
                             font-size: 10px;
                             font-weight: 400;
                             line-height: 20px;
-                            color: $PrimaryTextOne;
+                            color: $PrimaryOne;
                             text-transform: capitalize;
 
                             &:hover {
@@ -1176,9 +1321,154 @@ body[dir='ltr'] {
                       span {
                         font-size: 8px;
                         margin-top: 1rem;
-                        font-weight: 300;
+                        font-weight: 400;
                         color: $PrimaryOne;
                         padding: .5rem;
+                        background-color: $White;
+                      }
+
+                      &:hover {
+                        span {
+                          color: $White;
+                          background-color: $PrimaryOne;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.FNV-SecondMega {
+                .row {
+                  &.flex-row {
+                    h2 {
+                      padding: 0 1rem;
+                      width: auto;
+                      font-size: 20px;
+                      text-align: left;
+                      margin-bottom: 1.5rem;
+                      color: $PrimaryTextTwo;
+                    }
+                  }
+
+                  .col-md-9 {
+                    display: flex;
+
+                    .FNV-MenuContent {
+                      width: 100%;
+                      padding: 0 1rem;
+
+                      li {
+                        padding: 0;
+                        margin-bottom: .5rem;
+
+                        &:last-of-type {
+                          margin-bottom: 2rem;
+                        }
+
+                        a {
+                          padding: 0;
+                          font-size: 14px;
+                          font-weight: 400;
+                          line-height: 28px;
+                          text-align: center;
+                          color: $PrimaryOne;
+                          text-transform: capitalize;
+
+                          &:hover {
+                            color: $PrimaryOne;
+                          }
+                        }
+                      }
+
+                      span {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 28px;
+                        color: $PrimaryFour;
+                      }
+
+                      .container {
+                        padding: 1rem 0 0;
+                        border-top: 1px solid $PrimaryFive;
+
+                        span {
+                          display: block;
+                          font-size: 16px;
+                          font-weight: 400;
+                          text-align: left;
+                          color: $PrimaryOne;
+                          margin-bottom: .5rem;
+                        }
+
+                        .row {
+                          .col-7 {
+                            p {
+                              font-size: 12px;
+                              font-weight: 400;
+                              text-align: left;
+                              color: $PrimaryOne;
+                            }
+                          }
+
+                          .col-5 {
+                            padding: 0;
+                            text-align: left;
+
+                            a {
+                              width: 100%;
+                              display: block;
+                              font-size: 14px;
+                              font-weight: 400;
+                              text-align: center;
+                              padding: 1rem 1.5rem;
+                              text-transform: capitalize;
+                              border: 1px solid $PrimaryFive;
+
+                              &:hover {
+                                color: $White;
+                                background-color: $PrimaryOne;
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                      &.fade {
+                        display: none;
+                      }
+
+                      &.show {
+                        display: block;
+                      }
+                    }
+
+                  }
+
+                  .col-md-3 {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: $PrimaryBackgroundTwo;
+
+                    a {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      align-items: center;
+                      flex-direction: column;
+                      justify-content: center;
+
+                      svg {
+                        fill: $PrimaryFour;
+                      }
+
+                      span {
+                        margin-top: 2rem;
+                        font-weight: 400;
+                        color: $PrimaryOne;
+                        padding: .5rem 1rem;
                         background-color: $White;
                       }
 
@@ -1435,7 +1725,7 @@ body[dir='ltr'] {
 
                         span {
                           font-size: 10px;
-                          font-weight: 300;
+                          font-weight: 400;
                           margin-left: .5rem;
                           color: $PrimaryOne;
                         }
@@ -1470,7 +1760,7 @@ body[dir='ltr'] {
                             font-size: 10px;
                             font-weight: 400;
                             line-height: 20px;
-                            color: $PrimaryTextOne;
+                            color: $PrimaryOne;
                             text-transform: capitalize;
 
                             &:hover {
@@ -1494,7 +1784,7 @@ body[dir='ltr'] {
                           span {
                             display: block;
                             font-size: 14px;
-                            font-weight: 300;
+                            font-weight: 400;
                             color: $PrimaryOne;
                             margin-bottom: .5rem;
                           }
@@ -1503,8 +1793,8 @@ body[dir='ltr'] {
                             .col-7 {
                               p {
                                 font-size: 5px;
-                                font-weight: 300;
-                                color: $PrimaryTextOne;
+                                font-weight: 400;
+                                color: $PrimaryOne;
                               }
                             }
 
@@ -1515,7 +1805,7 @@ body[dir='ltr'] {
                               a {
                                 padding: .5rem;
                                 font-size: 8px;
-                                font-weight: 300;
+                                font-weight: 400;
                                 text-transform: capitalize;
                                 border: 1px solid $PrimaryFive;
 
@@ -1563,9 +1853,154 @@ body[dir='ltr'] {
                       span {
                         font-size: 8px;
                         margin-top: 1rem;
-                        font-weight: 300;
+                        font-weight: 400;
                         color: $PrimaryOne;
                         padding: .5rem;
+                        background-color: $White;
+                      }
+
+                      &:hover {
+                        span {
+                          color: $White;
+                          background-color: $PrimaryOne;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.FNV-SecondMega {
+                .row {
+                  &.flex-row {
+                    h2 {
+                      padding: 0 1rem;
+                      width: auto;
+                      font-size: 20px;
+                      text-align: left;
+                      margin-bottom: 1.5rem;
+                      color: $PrimaryTextTwo;
+                    }
+                  }
+
+                  .col-md-9 {
+                    display: flex;
+
+                    .FNV-MenuContent {
+                      width: 100%;
+                      padding: 0 1rem;
+
+                      li {
+                        padding: 0;
+                        margin-bottom: .5rem;
+
+                        &:last-of-type {
+                          margin-bottom: 2rem;
+                        }
+
+                        a {
+                          padding: 0;
+                          font-size: 8px;
+                          font-weight: 400;
+                          line-height: 16px;
+                          text-align: center;
+                          color: $PrimaryOne;
+                          text-transform: capitalize;
+
+                          &:hover {
+                            color: $PrimaryOne;
+                          }
+                        }
+                      }
+
+                      span {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 28px;
+                        color: $PrimaryFour;
+                      }
+
+                      .container {
+                        padding: 1rem 0 0;
+                        border-top: 1px solid $PrimaryFive;
+
+                        span {
+                          display: block;
+                          font-size: 16px;
+                          font-weight: 400;
+                          text-align: left;
+                          color: $PrimaryOne;
+                          margin-bottom: .5rem;
+                        }
+
+                        .row {
+                          .col-7 {
+                            p {
+                              font-size: 12px;
+                              font-weight: 400;
+                              text-align: left;
+                              color: $PrimaryOne;
+                            }
+                          }
+
+                          .col-5 {
+                            padding: 0;
+                            text-align: left;
+
+                            a {
+                              width: 100%;
+                              display: block;
+                              font-size: 14px;
+                              font-weight: 400;
+                              text-align: center;
+                              padding: 1rem 1.5rem;
+                              text-transform: capitalize;
+                              border: 1px solid $PrimaryFive;
+
+                              &:hover {
+                                color: $White;
+                                background-color: $PrimaryOne;
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                      &.fade {
+                        display: none;
+                      }
+
+                      &.show {
+                        display: block;
+                      }
+                    }
+
+                  }
+
+                  .col-md-3 {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: $PrimaryBackgroundTwo;
+
+                    a {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      align-items: center;
+                      flex-direction: column;
+                      justify-content: center;
+
+                      svg {
+                        fill: $PrimaryFour;
+                      }
+
+                      span {
+                        margin-top: 2rem;
+                        font-weight: 400;
+                        color: $PrimaryOne;
+                        padding: .5rem 1rem;
                         background-color: $White;
                       }
 
@@ -1707,7 +2142,7 @@ body[dir='ltr'] {
   }
 
   // `lg` applies to medium devices (tablets, less than 992px)
-  @media (min-width: 991.98px) {
+  @media (min-width: 992px) {
     nav {
       background-color: $WhiteColor;
 
@@ -1827,13 +2262,13 @@ body[dir='ltr'] {
                         stroke-width: 0px;
                         position: relative;
                         margin-right: .5rem;
-                        stroke: $PrimaryTextOne;
+                        stroke: $PrimaryOne;
                       }
 
                       small {
                         font-size: 14px;
-                        font-weight: 300;
-                        color: $PrimaryTextOne;
+                        font-weight: 400;
+                        color: $PrimaryOne;
                       }
                     }
                   }
@@ -1884,13 +2319,13 @@ body[dir='ltr'] {
                         stroke-width: 0px;
                         position: relative;
                         margin-right: .5rem;
-                        stroke: $PrimaryTextOne;
+                        stroke: $PrimaryOne;
                       }
 
                       small {
                         font-size: 12px;
                         font-weight: 400;
-                        color: $PrimaryTextOne;
+                        color: $PrimaryOne;
                       }
                     }
                   }
@@ -2027,8 +2462,8 @@ body[dir='ltr'] {
           .navbar-nav {
             li {
               a {
-                font-size: 14px;
-                font-weight: 500;
+                font-size: 13px;
+                font-weight: 400;
                 padding: 2rem .3rem;
                 color: $PrimaryOne;
               }
@@ -2090,7 +2525,7 @@ body[dir='ltr'] {
 
                         span {
                           font-size: 10px;
-                          font-weight: 300;
+                          font-weight: 400;
                           margin-left: .5rem;
                           color: $PrimaryOne;
                         }
@@ -2125,7 +2560,7 @@ body[dir='ltr'] {
                             font-size: 10px;
                             font-weight: 400;
                             line-height: 20px;
-                            color: $PrimaryTextOne;
+                            color: $PrimaryOne;
                             text-transform: capitalize;
 
                             &:hover {
@@ -2149,7 +2584,7 @@ body[dir='ltr'] {
                           span {
                             display: block;
                             font-size: 14px;
-                            font-weight: 300;
+                            font-weight: 400;
                             color: $PrimaryOne;
                             margin-bottom: .5rem;
                           }
@@ -2158,8 +2593,8 @@ body[dir='ltr'] {
                             .col-7 {
                               p {
                                 font-size: 5px;
-                                font-weight: 300;
-                                color: $PrimaryTextOne;
+                                font-weight: 400;
+                                color: $PrimaryOne;
                               }
                             }
 
@@ -2170,7 +2605,7 @@ body[dir='ltr'] {
                               a {
                                 padding: .5rem;
                                 font-size: 8px;
-                                font-weight: 300;
+                                font-weight: 400;
                                 text-transform: capitalize;
                                 border: 1px solid $PrimaryFive;
 
@@ -2218,9 +2653,154 @@ body[dir='ltr'] {
                       span {
                         font-size: 8px;
                         margin-top: 1rem;
-                        font-weight: 300;
+                        font-weight: 400;
                         color: $PrimaryOne;
                         padding: .5rem;
+                        background-color: $White;
+                      }
+
+                      &:hover {
+                        span {
+                          color: $White;
+                          background-color: $PrimaryOne;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.FNV-SecondMega {
+                .row {
+                  &.flex-row {
+                    h2 {
+                      padding: 0 1rem;
+                      width: auto;
+                      font-size: 20px;
+                      text-align: left;
+                      margin-bottom: 1.5rem;
+                      color: $PrimaryTextTwo;
+                    }
+                  }
+
+                  .col-md-9 {
+                    display: flex;
+
+                    .FNV-MenuContent {
+                      width: 100%;
+                      padding: 0 1rem;
+
+                      li {
+                        padding: 0;
+                        margin-bottom: .5rem;
+
+                        &:last-of-type {
+                          margin-bottom: 2rem;
+                        }
+
+                        a {
+                          padding: 0;
+                          font-size: 7px;
+                          font-weight: 400;
+                          line-height: 14px;
+                          text-align: center;
+                          color: $PrimaryOne;
+                          text-transform: capitalize;
+
+                          &:hover {
+                            color: $PrimaryOne;
+                          }
+                        }
+                      }
+
+                      span {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 28px;
+                        color: $PrimaryFour;
+                      }
+
+                      .container {
+                        padding: 1rem 0 0;
+                        border-top: 1px solid $PrimaryFive;
+
+                        span {
+                          display: block;
+                          font-size: 16px;
+                          font-weight: 400;
+                          text-align: left;
+                          color: $PrimaryOne;
+                          margin-bottom: .5rem;
+                        }
+
+                        .row {
+                          .col-7 {
+                            p {
+                              font-size: 12px;
+                              font-weight: 400;
+                              text-align: left;
+                              color: $PrimaryOne;
+                            }
+                          }
+
+                          .col-5 {
+                            padding: 0;
+                            text-align: left;
+
+                            a {
+                              width: 100%;
+                              display: block;
+                              font-size: 14px;
+                              font-weight: 400;
+                              text-align: center;
+                              padding: 1rem 1.5rem;
+                              text-transform: capitalize;
+                              border: 1px solid $PrimaryFive;
+
+                              &:hover {
+                                color: $White;
+                                background-color: $PrimaryOne;
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                      &.fade {
+                        display: none;
+                      }
+
+                      &.show {
+                        display: block;
+                      }
+                    }
+
+                  }
+
+                  .col-md-3 {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: $PrimaryBackgroundTwo;
+
+                    a {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      align-items: center;
+                      flex-direction: column;
+                      justify-content: center;
+
+                      svg {
+                        fill: $PrimaryFour;
+                      }
+
+                      span {
+                        margin-top: 2rem;
+                        font-weight: 400;
+                        color: $PrimaryOne;
+                        padding: .5rem 1rem;
                         background-color: $White;
                       }
 
@@ -2482,13 +3062,13 @@ body[dir='ltr'] {
                         stroke-width: 0px;
                         position: relative;
                         margin-right: .5rem;
-                        stroke: $PrimaryTextOne;
+                        stroke: $PrimaryOne;
                       }
 
                       small {
                         font-size: 14px;
-                        font-weight: 300;
-                        color: $PrimaryTextOne;
+                        font-weight: 400;
+                        color: $PrimaryOne;
                       }
                     }
                   }
@@ -2539,13 +3119,13 @@ body[dir='ltr'] {
                         stroke-width: 0px;
                         position: relative;
                         margin-right: .5rem;
-                        stroke: $PrimaryTextOne;
+                        stroke: $PrimaryOne;
                       }
 
                       small {
                         font-size: 12px;
                         font-weight: 400;
-                        color: $PrimaryTextOne;
+                        color: $PrimaryOne;
                       }
                     }
                   }
@@ -2682,9 +3262,9 @@ body[dir='ltr'] {
           .navbar-nav {
             li {
               a {
-                font-size: 14px;
-                font-weight: 500;
-                padding: 2rem .5rem;
+                font-size: 12px;
+                font-weight: 400;
+                padding: 1.5rem .5rem;
                 color: $PrimaryOne;
               }
 
@@ -2744,7 +3324,7 @@ body[dir='ltr'] {
 
                         span {
                           font-size: 12px;
-                          font-weight: 300;
+                          font-weight: 400;
                           margin-left: .5rem;
                           color: $PrimaryOne;
                         }
@@ -2779,7 +3359,7 @@ body[dir='ltr'] {
                             font-size: 12px;
                             font-weight: 400;
                             line-height: 24px;
-                            color: $PrimaryTextOne;
+                            color: $PrimaryOne;
                             text-transform: capitalize;
 
                             &:hover {
@@ -2803,7 +3383,7 @@ body[dir='ltr'] {
                           span {
                             display: block;
                             font-size: 14px;
-                            font-weight: 300;
+                            font-weight: 400;
                             color: $PrimaryOne;
                             margin-bottom: .5rem;
                           }
@@ -2812,8 +3392,8 @@ body[dir='ltr'] {
                             .col-7 {
                               p {
                                 font-size: 8px;
-                                font-weight: 300;
-                                color: $PrimaryTextOne;
+                                font-weight: 400;
+                                color: $PrimaryOne;
                               }
                             }
 
@@ -2824,7 +3404,7 @@ body[dir='ltr'] {
                               a {
                                 padding: .5rem 1rem;
                                 font-size: 12px;
-                                font-weight: 300;
+                                font-weight: 400;
                                 text-transform: capitalize;
                                 border: 1px solid $PrimaryFive;
 
@@ -2871,9 +3451,154 @@ body[dir='ltr'] {
                       span {
                         font-size: 12px;
                         margin-top: 1rem;
-                        font-weight: 300;
+                        font-weight: 400;
                         color: $PrimaryOne;
                         padding: .5rem;
+                        background-color: $White;
+                      }
+
+                      &:hover {
+                        span {
+                          color: $White;
+                          background-color: $PrimaryOne;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.FNV-SecondMega {
+                .row {
+                  &.flex-row {
+                    h2 {
+                      padding: 0 1rem;
+                      width: auto;
+                      font-size: 20px;
+                      text-align: left;
+                      margin-bottom: 1.5rem;
+                      color: $PrimaryTextTwo;
+                    }
+                  }
+
+                  .col-md-9 {
+                    display: flex;
+
+                    .FNV-MenuContent {
+                      width: 100%;
+                      padding: 1rem;
+
+                      li {
+                        padding: 0;
+                        margin-bottom: .5rem;
+
+                        &:last-of-type {
+                          margin-bottom: 2rem;
+                        }
+
+                        a {
+                          padding: 0;
+                          font-size: 10px;
+                          font-weight: 400;
+                          line-height: 28px;
+                          text-align: center;
+                          color: $PrimaryOne;
+                          text-transform: capitalize;
+
+                          &:hover {
+                            color: $PrimaryOne;
+                          }
+                        }
+                      }
+
+                      span {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 28px;
+                        color: $PrimaryFour;
+                      }
+
+                      .container {
+                        padding: 1rem 0 0;
+                        border-top: 1px solid $PrimaryFive;
+
+                        span {
+                          display: block;
+                          font-size: 16px;
+                          font-weight: 400;
+                          text-align: left;
+                          color: $PrimaryOne;
+                          margin-bottom: .5rem;
+                        }
+
+                        .row {
+                          .col-7 {
+                            p {
+                              font-size: 12px;
+                              font-weight: 400;
+                              text-align: left;
+                              color: $PrimaryOne;
+                            }
+                          }
+
+                          .col-5 {
+                            padding: 0;
+                            text-align: left;
+
+                            a {
+                              width: 100%;
+                              display: block;
+                              font-size: 14px;
+                              font-weight: 400;
+                              text-align: center;
+                              padding: 1rem 1.5rem;
+                              text-transform: capitalize;
+                              border: 1px solid $PrimaryFive;
+
+                              &:hover {
+                                color: $White;
+                                background-color: $PrimaryOne;
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                      &.fade {
+                        display: none;
+                      }
+
+                      &.show {
+                        display: block;
+                      }
+                    }
+
+                  }
+
+                  .col-md-3 {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: $PrimaryBackgroundTwo;
+
+                    a {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      align-items: center;
+                      flex-direction: column;
+                      justify-content: center;
+
+                      svg {
+                        fill: $PrimaryFour;
+                      }
+
+                      span {
+                        margin-top: 2rem;
+                        font-weight: 400;
+                        color: $PrimaryOne;
+                        padding: .5rem 1rem;
                         background-color: $White;
                       }
 
@@ -3130,13 +3855,13 @@ body[dir='ltr'] {
                         stroke-width: 0px;
                         position: relative;
                         margin-right: .5rem;
-                        stroke: $PrimaryTextOne;
+                        stroke: $PrimaryOne;
                       }
 
                       small {
                         font-size: 14px;
-                        font-weight: 300;
-                        color: $PrimaryTextOne;
+                        font-weight: 400;
+                        color: $PrimaryOne;
                       }
                     }
                   }
@@ -3187,13 +3912,13 @@ body[dir='ltr'] {
                         stroke-width: 0px;
                         position: relative;
                         margin-right: .5rem;
-                        stroke: $PrimaryTextOne;
+                        stroke: $PrimaryOne;
                       }
 
                       small {
                         font-size: 12px;
                         font-weight: 400;
-                        color: $PrimaryTextOne;
+                        color: $PrimaryOne;
                       }
                     }
                   }
@@ -3393,7 +4118,7 @@ body[dir='ltr'] {
 
                         span {
                           font-size: 14px;
-                          font-weight: 300;
+                          font-weight: 400;
                           margin-left: 1rem;
                           color: $PrimaryOne;
                         }
@@ -3428,7 +4153,7 @@ body[dir='ltr'] {
                             font-size: 12px;
                             font-weight: 400;
                             line-height: 24px;
-                            color: $PrimaryTextOne;
+                            color: $PrimaryOne;
                             text-transform: capitalize;
 
                             &:hover {
@@ -3452,7 +4177,7 @@ body[dir='ltr'] {
                           span {
                             display: block;
                             font-size: 14px;
-                            font-weight: 300;
+                            font-weight: 400;
                             color: $PrimaryOne;
                             margin-bottom: .5rem;
                           }
@@ -3461,8 +4186,8 @@ body[dir='ltr'] {
                             .col-7 {
                               p {
                                 font-size: 8px;
-                                font-weight: 300;
-                                color: $PrimaryTextOne;
+                                font-weight: 400;
+                                color: $PrimaryOne;
                               }
                             }
 
@@ -3474,7 +4199,7 @@ body[dir='ltr'] {
                                 width: 100%;
                                 display: block;
                                 font-size: 12px;
-                                font-weight: 300;
+                                font-weight: 400;
                                 padding: .5rem 1rem;
                                 text-transform: capitalize;
                                 border: 1px solid $PrimaryFive;
@@ -3522,9 +4247,155 @@ body[dir='ltr'] {
                       span {
                         font-size: 12px;
                         margin-top: 1rem;
-                        font-weight: 300;
+                        font-weight: 400;
                         color: $PrimaryOne;
                         padding: .5rem;
+                        background-color: $White;
+                      }
+
+                      &:hover {
+                        span {
+                          color: $White;
+                          background-color: $PrimaryOne;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.FNV-SecondMega {
+                .row {
+                  width: 100%;
+
+                  &.flex-row {
+                    h2 {
+                      padding: 0;
+                      width: auto;
+                      font-size: 20px;
+                      text-align: left;
+                      margin-bottom: 1.5rem;
+                      color: $PrimaryTextTwo;
+                    }
+                  }
+
+                  .col-md-9 {
+                    display: flex;
+
+                    .FNV-MenuContent {
+                      width: 100%;
+
+                      li {
+                        padding: 0;
+                        margin-bottom: .5rem;
+
+                        &:last-of-type {
+                          margin-bottom: 2rem;
+                        }
+
+                        a {
+                          padding: 0;
+                          font-size: 10px;
+                          font-weight: 400;
+                          line-height: 28px;
+                          text-align: center;
+                          color: $PrimaryOne;
+                          text-transform: capitalize;
+
+                          &:hover {
+                            color: $PrimaryOne;
+                          }
+                        }
+                      }
+
+                      span {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 28px;
+                        color: $PrimaryFour;
+                      }
+
+                      .container {
+                        padding: 2rem 0 0;
+                        border-top: 1px solid $PrimaryFive;
+
+                        span {
+                          display: block;
+                          font-size: 16px;
+                          font-weight: 400;
+                          text-align: left;
+                          color: $PrimaryOne;
+                          margin-bottom: .5rem;
+                        }
+
+                        .row {
+                          .col-7 {
+                            p {
+                              font-size: 12px;
+                              font-weight: 400;
+                              text-align: left;
+                              color: $PrimaryOne;
+                            }
+                          }
+
+                          .col-5 {
+                            padding: 0;
+                            text-align: left;
+
+                            a {
+                              width: 100%;
+                              display: block;
+                              font-size: 14px;
+                              font-weight: 400;
+                              text-align: center;
+                              padding: 1rem 1.5rem;
+                              text-transform: capitalize;
+                              border: 1px solid $PrimaryFive;
+
+                              &:hover {
+                                color: $White;
+                                background-color: $PrimaryOne;
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                      &.fade {
+                        display: none;
+                      }
+
+                      &.show {
+                        display: block;
+                      }
+                    }
+
+                  }
+
+                  .col-md-3 {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: $PrimaryBackgroundTwo;
+
+                    a {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      align-items: center;
+                      flex-direction: column;
+                      justify-content: center;
+
+                      svg {
+                        fill: $PrimaryFour;
+                      }
+
+                      span {
+                        margin-top: 2rem;
+                        font-weight: 400;
+                        color: $PrimaryOne;
+                        padding: .5rem 1rem;
                         background-color: $White;
                       }
 
@@ -3781,13 +4652,13 @@ body[dir='ltr'] {
                         stroke-width: 0px;
                         position: relative;
                         margin-right: .5rem;
-                        stroke: $PrimaryTextOne;
+                        stroke: $PrimaryOne;
                       }
 
                       small {
                         font-size: 14px;
-                        font-weight: 300;
-                        color: $PrimaryTextOne;
+                        font-weight: 400;
+                        color: $PrimaryOne;
                       }
                     }
                   }
@@ -3838,13 +4709,13 @@ body[dir='ltr'] {
                         stroke-width: 0px;
                         position: relative;
                         margin-right: .5rem;
-                        stroke: $PrimaryTextOne;
+                        stroke: $PrimaryOne;
                       }
 
                       small {
                         font-size: 12px;
                         font-weight: 400;
-                        color: $PrimaryTextOne;
+                        color: $PrimaryOne;
                       }
                     }
                   }
@@ -4047,7 +4918,7 @@ body[dir='ltr'] {
 
                         span {
                           font-size: 18px;
-                          font-weight: 300;
+                          font-weight: 400;
                           margin-left: 1rem;
                           color: $PrimaryOne;
                         }
@@ -4083,7 +4954,7 @@ body[dir='ltr'] {
                             font-weight: 400;
                             line-height: 28px;
                             text-align: center;
-                            color: $PrimaryTextOne;
+                            color: $PrimaryOne;
                             text-transform: capitalize;
 
                             &:hover {
@@ -4107,7 +4978,7 @@ body[dir='ltr'] {
                           span {
                             display: block;
                             font-size: 16px;
-                            font-weight: 300;
+                            font-weight: 400;
                             color: $PrimaryOne;
                             margin-bottom: .5rem;
                           }
@@ -4116,8 +4987,8 @@ body[dir='ltr'] {
                             .col-7 {
                               p {
                                 font-size: 12px;
-                                font-weight: 300;
-                                color: $PrimaryTextOne;
+                                font-weight: 400;
+                                color: $PrimaryOne;
                               }
                             }
 
@@ -4126,7 +4997,7 @@ body[dir='ltr'] {
 
                               a {
                                 font-size: 14px;
-                                font-weight: 300;
+                                font-weight: 400;
                                 text-align: center;
                                 padding: 1rem 1.5rem;
                                 text-transform: capitalize;
@@ -4174,7 +5045,152 @@ body[dir='ltr'] {
 
                       span {
                         margin-top: 2rem;
-                        font-weight: 300;
+                        font-weight: 400;
+                        color: $PrimaryOne;
+                        padding: .5rem 1rem;
+                        background-color: $White;
+                      }
+
+                      &:hover {
+                        span {
+                          color: $White;
+                          background-color: $PrimaryOne;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.FNV-SecondMega {
+                .row {
+                  width: 100%;
+
+                  &.flex-row {
+                    h2 {
+                      padding: 0;
+                      width: auto;
+                      font-size: 20px;
+                      text-align: left;
+                      margin-bottom: 1.5rem;
+                      color: $PrimaryTextTwo;
+                    }
+                  }
+
+                  .col-md-9 {
+                    display: flex;
+
+                    .FNV-MenuContent {
+                      width: 100%;
+
+                      li {
+                        margin-bottom: .5rem;
+
+                        &:last-of-type {
+                          margin-bottom: 2rem;
+                        }
+
+                        a {
+                          padding: 0;
+                          font-size: 14px;
+                          font-weight: 400;
+                          line-height: 28px;
+                          text-align: center;
+                          color: $PrimaryOne;
+                          text-transform: capitalize;
+
+                          &:hover {
+                            color: $PrimaryOne;
+                          }
+                        }
+                      }
+
+                      span {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 28px;
+                        color: $PrimaryFour;
+                      }
+
+                      .container {
+                        padding: 2rem 0 0;
+                        border-top: 1px solid $PrimaryFive;
+
+                        span {
+                          display: block;
+                          font-size: 16px;
+                          font-weight: 400;
+                          text-align: left;
+                          color: $PrimaryOne;
+                          margin-bottom: .5rem;
+                        }
+
+                        .row {
+                          .col-7 {
+                            p {
+                              font-size: 12px;
+                              font-weight: 400;
+                              text-align: left;
+                              color: $PrimaryOne;
+                            }
+                          }
+
+                          .col-5 {
+                            padding: 0;
+                            text-align: left;
+
+                            a {
+                              width: 100%;
+                              display: block;
+                              font-size: 14px;
+                              font-weight: 400;
+                              text-align: center;
+                              padding: 1rem 1.5rem;
+                              text-transform: capitalize;
+                              border: 1px solid $PrimaryFive;
+
+                              &:hover {
+                                color: $White;
+                                background-color: $PrimaryOne;
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                      &.fade {
+                        display: none;
+                      }
+
+                      &.show {
+                        display: block;
+                      }
+                    }
+
+                  }
+
+                  .col-md-3 {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: $PrimaryBackgroundTwo;
+
+                    a {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      align-items: center;
+                      flex-direction: column;
+                      justify-content: center;
+
+                      svg {
+                        fill: $PrimaryFour;
+                      }
+
+                      span {
+                        margin-top: 2rem;
+                        font-weight: 400;
                         color: $PrimaryOne;
                         padding: .5rem 1rem;
                         background-color: $White;
@@ -4462,13 +5478,13 @@ body[dir='rtl'] {
                         stroke-width: 0px;
                         position: relative;
                         margin-right: .5rem;
-                        stroke: $PrimaryTextOne;
+                        stroke: $PrimaryOne;
                       }
 
                       small {
                         font-size: 14px;
-                        font-weight: 300;
-                        color: $PrimaryTextOne;
+                        font-weight: 400;
+                        color: $PrimaryOne;
                       }
                     }
                   }
@@ -4519,13 +5535,13 @@ body[dir='rtl'] {
                         stroke-width: 0px;
                         position: relative;
                         margin-right: .5rem;
-                        stroke: $PrimaryTextOne;
+                        stroke: $PrimaryOne;
                       }
 
                       small {
                         font-size: 12px;
                         font-weight: 400;
-                        color: $PrimaryTextOne;
+                        color: $PrimaryOne;
                       }
                     }
                   }
@@ -4784,7 +5800,7 @@ body[dir='rtl'] {
                             font-size: 10px;
                             font-weight: 400;
                             line-height: 20px;
-                            color: $PrimaryTextOne;
+                            color: $PrimaryOne;
                             text-transform: capitalize;
 
                             &:hover {
@@ -4839,9 +5855,153 @@ body[dir='rtl'] {
                       span {
                         font-size: 8px;
                         margin-top: 1rem;
-                        font-weight: 300;
+                        font-weight: 400;
                         color: $PrimaryOne;
                         padding: .5rem;
+                        background-color: $White;
+                      }
+
+                      &:hover {
+                        span {
+                          color: $White;
+                          background-color: $PrimaryOne;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.FNV-SecondMega {
+                .row {
+                  &.flex-row {
+                    h2 {
+                      padding: 0 1rem;
+                      width: auto;
+                      font-size: 20px;
+                      text-align: right;
+                      margin-bottom: 1.5rem;
+                      color: $PrimaryTextTwo;
+                    }
+                  }
+
+                  .col-md-9 {
+                    display: flex;
+
+                    .FNV-MenuContent {
+                      width: 100%;
+
+                      li {
+                        padding: 0;
+                        margin-bottom: .5rem;
+
+                        &:last-of-type {
+                          margin-bottom: 2rem;
+                        }
+
+                        a {
+                          padding: 0;
+                          font-size: 14px;
+                          font-weight: 400;
+                          line-height: 28px;
+                          text-align: center;
+                          color: $PrimaryOne;
+                          text-transform: capitalize;
+
+                          &:hover {
+                            color: $PrimaryOne;
+                          }
+                        }
+                      }
+
+                      span {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 28px;
+                        color: $PrimaryFour;
+                      }
+
+                      .container {
+                        padding: 1rem;
+                        border-top: 1px solid $PrimaryFive;
+
+                        span {
+                          display: block;
+                          font-size: 16px;
+                          font-weight: 400;
+                          text-align: right;
+                          color: $PrimaryOne;
+                          margin-bottom: .5rem;
+                        }
+
+                        .row {
+                          .col-7 {
+                            p {
+                              font-size: 12px;
+                              font-weight: 400;
+                              text-align: right;
+                              color: $PrimaryOne;
+                            }
+                          }
+
+                          .col-5 {
+                            padding: 0;
+                            text-align: right;
+
+                            a {
+                              width: 100%;
+                              display: block;
+                              font-size: 14px;
+                              font-weight: 400;
+                              text-align: center;
+                              padding: 1rem 1.5rem;
+                              text-transform: capitalize;
+                              border: 1px solid $PrimaryFive;
+
+                              &:hover {
+                                color: $White;
+                                background-color: $PrimaryOne;
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                      &.fade {
+                        display: none;
+                      }
+
+                      &.show {
+                        display: block;
+                      }
+                    }
+
+                  }
+
+                  .col-md-3 {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: $PrimaryBackgroundTwo;
+
+                    a {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      align-items: center;
+                      flex-direction: column;
+                      justify-content: center;
+
+                      svg {
+                        fill: $PrimaryFour;
+                      }
+
+                      span {
+                        margin-top: 2rem;
+                        font-weight: 400;
+                        color: $PrimaryOne;
+                        padding: .5rem 1rem;
                         background-color: $White;
                       }
 
@@ -5127,13 +6287,13 @@ body[dir='rtl'] {
                         stroke-width: 0px;
                         position: relative;
                         margin-right: .5rem;
-                        stroke: $PrimaryTextOne;
+                        stroke: $PrimaryOne;
                       }
 
                       small {
                         font-size: 14px;
-                        font-weight: 300;
-                        color: $PrimaryTextOne;
+                        font-weight: 400;
+                        color: $PrimaryOne;
                       }
                     }
                   }
@@ -5184,13 +6344,13 @@ body[dir='rtl'] {
                         stroke-width: 0px;
                         position: relative;
                         margin-right: .5rem;
-                        stroke: $PrimaryTextOne;
+                        stroke: $PrimaryOne;
                       }
 
                       small {
                         font-size: 12px;
                         font-weight: 400;
-                        color: $PrimaryTextOne;
+                        color: $PrimaryOne;
                       }
                     }
                   }
@@ -5449,7 +6609,7 @@ body[dir='rtl'] {
                             font-size: 10px;
                             font-weight: 400;
                             line-height: 20px;
-                            color: $PrimaryTextOne;
+                            color: $PrimaryOne;
                             text-transform: capitalize;
 
                             &:hover {
@@ -5504,9 +6664,153 @@ body[dir='rtl'] {
                       span {
                         font-size: 8px;
                         margin-top: 1rem;
-                        font-weight: 300;
+                        font-weight: 400;
                         color: $PrimaryOne;
                         padding: .5rem;
+                        background-color: $White;
+                      }
+
+                      &:hover {
+                        span {
+                          color: $White;
+                          background-color: $PrimaryOne;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.FNV-SecondMega {
+                .row {
+                  &.flex-row {
+                    h2 {
+                      padding: 0 1rem;
+                      width: auto;
+                      font-size: 20px;
+                      text-align: right;
+                      margin-bottom: 1.5rem;
+                      color: $PrimaryTextTwo;
+                    }
+                  }
+
+                  .col-md-9 {
+                    display: flex;
+
+                    .FNV-MenuContent {
+                      width: 100%;
+
+                      li {
+                        padding: 0;
+                        margin-bottom: .5rem;
+
+                        &:last-of-type {
+                          margin-bottom: 2rem;
+                        }
+
+                        a {
+                          padding: 0;
+                          font-size: 14px;
+                          font-weight: 400;
+                          line-height: 28px;
+                          text-align: center;
+                          color: $PrimaryOne;
+                          text-transform: capitalize;
+
+                          &:hover {
+                            color: $PrimaryOne;
+                          }
+                        }
+                      }
+
+                      span {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 28px;
+                        color: $PrimaryFour;
+                      }
+
+                      .container {
+                        padding: 1rem;
+                        border-top: 1px solid $PrimaryFive;
+
+                        span {
+                          display: block;
+                          font-size: 16px;
+                          font-weight: 400;
+                          text-align: right;
+                          color: $PrimaryOne;
+                          margin-bottom: .5rem;
+                        }
+
+                        .row {
+                          .col-7 {
+                            p {
+                              font-size: 12px;
+                              font-weight: 400;
+                              text-align: right;
+                              color: $PrimaryOne;
+                            }
+                          }
+
+                          .col-5 {
+                            padding: 0;
+                            text-align: right;
+
+                            a {
+                              width: 100%;
+                              display: block;
+                              font-size: 14px;
+                              font-weight: 400;
+                              text-align: center;
+                              padding: 1rem 1.5rem;
+                              text-transform: capitalize;
+                              border: 1px solid $PrimaryFive;
+
+                              &:hover {
+                                color: $White;
+                                background-color: $PrimaryOne;
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                      &.fade {
+                        display: none;
+                      }
+
+                      &.show {
+                        display: block;
+                      }
+                    }
+
+                  }
+
+                  .col-md-3 {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: $PrimaryBackgroundTwo;
+
+                    a {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      align-items: center;
+                      flex-direction: column;
+                      justify-content: center;
+
+                      svg {
+                        fill: $PrimaryFour;
+                      }
+
+                      span {
+                        margin-top: 2rem;
+                        font-weight: 400;
+                        color: $PrimaryOne;
+                        padding: .5rem 1rem;
                         background-color: $White;
                       }
 
@@ -5767,7 +7071,7 @@ body[dir='rtl'] {
 
                         span {
                           font-size: 10px;
-                          font-weight: 300;
+                          font-weight: 400;
                           margin-right: .5rem;
                           color: $PrimaryOne;
                         }
@@ -5803,7 +7107,7 @@ body[dir='rtl'] {
                             font-size: 10px;
                             font-weight: 400;
                             line-height: 20px;
-                            color: $PrimaryTextOne;
+                            color: $PrimaryOne;
                             text-transform: capitalize;
 
                             &:hover {
@@ -5827,7 +7131,7 @@ body[dir='rtl'] {
                           span {
                             display: block;
                             font-size: 14px;
-                            font-weight: 300;
+                            font-weight: 400;
                             text-align: right;
                             color: $PrimaryOne;
                             margin-bottom: .5rem;
@@ -5837,9 +7141,9 @@ body[dir='rtl'] {
                             .col-7 {
                               p {
                                 font-size: 5px;
-                                font-weight: 300;
+                                font-weight: 400;
                                 text-align: right;
-                                color: $PrimaryTextOne;
+                                color: $PrimaryOne;
                               }
                             }
 
@@ -5850,7 +7154,7 @@ body[dir='rtl'] {
                               a {
                                 padding: .5rem;
                                 font-size: 8px;
-                                font-weight: 300;
+                                font-weight: 400;
                                 text-align: right;
                                 text-transform: capitalize;
                                 border: 1px solid $PrimaryFive;
@@ -5899,9 +7203,153 @@ body[dir='rtl'] {
                       span {
                         font-size: 8px;
                         margin-top: 1rem;
-                        font-weight: 300;
+                        font-weight: 400;
                         color: $PrimaryOne;
                         padding: .5rem;
+                        background-color: $White;
+                      }
+
+                      &:hover {
+                        span {
+                          color: $White;
+                          background-color: $PrimaryOne;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.FNV-SecondMega {
+                .row {
+                  &.flex-row {
+                    h2 {
+                      padding: 0 1rem;
+                      width: auto;
+                      font-size: 20px;
+                      text-align: right;
+                      margin-bottom: 1.5rem;
+                      color: $PrimaryTextTwo;
+                    }
+                  }
+
+                  .col-md-9 {
+                    display: flex;
+
+                    .FNV-MenuContent {
+                      width: 100%;
+
+                      li {
+                        padding: 0;
+                        margin-bottom: .5rem;
+
+                        &:last-of-type {
+                          margin-bottom: 2rem;
+                        }
+
+                        a {
+                          padding: 0;
+                          font-size: 10px;
+                          font-weight: 400;
+                          line-height: 20px;
+                          text-align: center;
+                          color: $PrimaryOne;
+                          text-transform: capitalize;
+
+                          &:hover {
+                            color: $PrimaryOne;
+                          }
+                        }
+                      }
+
+                      span {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 28px;
+                        color: $PrimaryFour;
+                      }
+
+                      .container {
+                        padding: 1rem;
+                        border-top: 1px solid $PrimaryFive;
+
+                        span {
+                          display: block;
+                          font-size: 16px;
+                          font-weight: 400;
+                          text-align: right;
+                          color: $PrimaryOne;
+                          margin-bottom: .5rem;
+                        }
+
+                        .row {
+                          .col-7 {
+                            p {
+                              font-size: 12px;
+                              font-weight: 400;
+                              text-align: right;
+                              color: $PrimaryOne;
+                            }
+                          }
+
+                          .col-5 {
+                            padding: 0;
+                            text-align: right;
+
+                            a {
+                              width: 100%;
+                              display: block;
+                              font-size: 14px;
+                              font-weight: 400;
+                              text-align: center;
+                              padding: 1rem 1.5rem;
+                              text-transform: capitalize;
+                              border: 1px solid $PrimaryFive;
+
+                              &:hover {
+                                color: $White;
+                                background-color: $PrimaryOne;
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                      &.fade {
+                        display: none;
+                      }
+
+                      &.show {
+                        display: block;
+                      }
+                    }
+
+                  }
+
+                  .col-md-3 {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: $PrimaryBackgroundTwo;
+
+                    a {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      align-items: center;
+                      flex-direction: column;
+                      justify-content: center;
+
+                      svg {
+                        fill: $PrimaryFour;
+                      }
+
+                      span {
+                        margin-top: 2rem;
+                        font-weight: 400;
+                        color: $PrimaryOne;
+                        padding: .5rem 1rem;
                         background-color: $White;
                       }
 
@@ -6280,7 +7728,7 @@ body[dir='rtl'] {
 
                         span {
                           font-size: 10px;
-                          font-weight: 300;
+                          font-weight: 400;
                           margin-right: .5rem;
                           color: $PrimaryOne;
                         }
@@ -6316,7 +7764,7 @@ body[dir='rtl'] {
                             font-size: 10px;
                             font-weight: 400;
                             line-height: 20px;
-                            color: $PrimaryTextOne;
+                            color: $PrimaryOne;
                             text-transform: capitalize;
 
                             &:hover {
@@ -6340,7 +7788,7 @@ body[dir='rtl'] {
                           span {
                             display: block;
                             font-size: 14px;
-                            font-weight: 300;
+                            font-weight: 400;
                             text-align: right;
                             color: $PrimaryOne;
                             margin-bottom: .5rem;
@@ -6350,9 +7798,9 @@ body[dir='rtl'] {
                             .col-7 {
                               p {
                                 font-size: 5px;
-                                font-weight: 300;
+                                font-weight: 400;
                                 text-align: right;
-                                color: $PrimaryTextOne;
+                                color: $PrimaryOne;
                               }
                             }
 
@@ -6363,7 +7811,7 @@ body[dir='rtl'] {
                               a {
                                 padding: .5rem;
                                 font-size: 8px;
-                                font-weight: 300;
+                                font-weight: 400;
                                 text-align: right;
                                 text-transform: capitalize;
                                 border: 1px solid $PrimaryFive;
@@ -6412,9 +7860,153 @@ body[dir='rtl'] {
                       span {
                         font-size: 8px;
                         margin-top: 1rem;
-                        font-weight: 300;
+                        font-weight: 400;
                         color: $PrimaryOne;
                         padding: .5rem;
+                        background-color: $White;
+                      }
+
+                      &:hover {
+                        span {
+                          color: $White;
+                          background-color: $PrimaryOne;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.FNV-SecondMega {
+                .row {
+                  &.flex-row {
+                    h2 {
+                      padding: 0 1rem;
+                      width: auto;
+                      font-size: 20px;
+                      text-align: right;
+                      margin-bottom: 1.5rem;
+                      color: $PrimaryTextTwo;
+                    }
+                  }
+
+                  .col-md-9 {
+                    display: flex;
+
+                    .FNV-MenuContent {
+                      width: 100%;
+
+                      li {
+                        padding: 0;
+                        margin-bottom: .5rem;
+
+                        &:last-of-type {
+                          margin-bottom: 2rem;
+                        }
+
+                        a {
+                          padding: 0;
+                          font-size: 8px;
+                          font-weight: 400;
+                          line-height: 16px;
+                          text-align: center;
+                          color: $PrimaryOne;
+                          text-transform: capitalize;
+
+                          &:hover {
+                            color: $PrimaryOne;
+                          }
+                        }
+                      }
+
+                      span {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 28px;
+                        color: $PrimaryFour;
+                      }
+
+                      .container {
+                        padding: 1rem;
+                        border-top: 1px solid $PrimaryFive;
+
+                        span {
+                          display: block;
+                          font-size: 16px;
+                          font-weight: 400;
+                          text-align: right;
+                          color: $PrimaryOne;
+                          margin-bottom: .5rem;
+                        }
+
+                        .row {
+                          .col-7 {
+                            p {
+                              font-size: 12px;
+                              font-weight: 400;
+                              text-align: right;
+                              color: $PrimaryOne;
+                            }
+                          }
+
+                          .col-5 {
+                            padding: 0;
+                            text-align: right;
+
+                            a {
+                              width: 100%;
+                              display: block;
+                              font-size: 14px;
+                              font-weight: 400;
+                              text-align: center;
+                              padding: 1rem 1.5rem;
+                              text-transform: capitalize;
+                              border: 1px solid $PrimaryFive;
+
+                              &:hover {
+                                color: $White;
+                                background-color: $PrimaryOne;
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                      &.fade {
+                        display: none;
+                      }
+
+                      &.show {
+                        display: block;
+                      }
+                    }
+
+                  }
+
+                  .col-md-3 {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: $PrimaryBackgroundTwo;
+
+                    a {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      align-items: center;
+                      flex-direction: column;
+                      justify-content: center;
+
+                      svg {
+                        fill: $PrimaryFour;
+                      }
+
+                      span {
+                        margin-top: 2rem;
+                        font-weight: 400;
+                        color: $PrimaryOne;
+                        padding: .5rem 1rem;
                         background-color: $White;
                       }
 
@@ -6834,7 +8426,7 @@ body[dir='rtl'] {
 
                         span {
                           font-size: 12px;
-                          font-weight: 300;
+                          font-weight: 400;
                           text-align: right;
                           color: $PrimaryOne;
                           margin-right: .5rem;
@@ -6871,7 +8463,7 @@ body[dir='rtl'] {
                             font-weight: 400;
                             text-align: right;
                             line-height: 24px;
-                            color: $PrimaryTextOne;
+                            color: $PrimaryOne;
                             text-transform: capitalize;
 
                             &:hover {
@@ -6895,7 +8487,7 @@ body[dir='rtl'] {
                           span {
                             display: block;
                             font-size: 14px;
-                            font-weight: 300;
+                            font-weight: 400;
                             text-align: right;
                             color: $PrimaryOne;
                             margin-bottom: .5rem;
@@ -6905,9 +8497,9 @@ body[dir='rtl'] {
                             .col-7 {
                               p {
                                 font-size: 8px;
-                                font-weight: 300;
+                                font-weight: 400;
                                 text-align: right;
-                                color: $PrimaryTextOne;
+                                color: $PrimaryOne;
                               }
                             }
 
@@ -6918,7 +8510,7 @@ body[dir='rtl'] {
                               a {
                                 padding: .5rem 1rem;
                                 font-size: 12px;
-                                font-weight: 300;
+                                font-weight: 400;
                                 text-transform: capitalize;
                                 border: 1px solid $PrimaryFive;
 
@@ -6965,9 +8557,153 @@ body[dir='rtl'] {
                       span {
                         font-size: 12px;
                         margin-top: 1rem;
-                        font-weight: 300;
+                        font-weight: 400;
                         color: $PrimaryOne;
                         padding: .5rem;
+                        background-color: $White;
+                      }
+
+                      &:hover {
+                        span {
+                          color: $White;
+                          background-color: $PrimaryOne;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.FNV-SecondMega {
+                .row {
+                  &.flex-row {
+                    h2 {
+                      padding: 0 1rem;
+                      width: auto;
+                      font-size: 20px;
+                      text-align: right;
+                      margin-bottom: 1.5rem;
+                      color: $PrimaryTextTwo;
+                    }
+                  }
+
+                  .col-md-9 {
+                    display: flex;
+
+                    .FNV-MenuContent {
+                      width: 100%;
+
+                      li {
+                        padding: 0;
+                        margin-bottom: .5rem;
+
+                        &:last-of-type {
+                          margin-bottom: 2rem;
+                        }
+
+                        a {
+                          padding: 0;
+                          font-size: 10px;
+                          font-weight: 400;
+                          line-height: 28px;
+                          text-align: center;
+                          color: $PrimaryOne;
+                          text-transform: capitalize;
+
+                          &:hover {
+                            color: $PrimaryOne;
+                          }
+                        }
+                      }
+
+                      span {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 28px;
+                        color: $PrimaryFour;
+                      }
+
+                      .container {
+                        padding: 1rem;
+                        border-top: 1px solid $PrimaryFive;
+
+                        span {
+                          display: block;
+                          font-size: 16px;
+                          font-weight: 400;
+                          text-align: right;
+                          color: $PrimaryOne;
+                          margin-bottom: .5rem;
+                        }
+
+                        .row {
+                          .col-7 {
+                            p {
+                              font-size: 12px;
+                              font-weight: 400;
+                              text-align: right;
+                              color: $PrimaryOne;
+                            }
+                          }
+
+                          .col-5 {
+                            padding: 0;
+                            text-align: right;
+
+                            a {
+                              width: 100%;
+                              display: block;
+                              font-size: 14px;
+                              font-weight: 400;
+                              text-align: center;
+                              padding: 1rem 1.5rem;
+                              text-transform: capitalize;
+                              border: 1px solid $PrimaryFive;
+
+                              &:hover {
+                                color: $White;
+                                background-color: $PrimaryOne;
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                      &.fade {
+                        display: none;
+                      }
+
+                      &.show {
+                        display: block;
+                      }
+                    }
+
+                  }
+
+                  .col-md-3 {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: $PrimaryBackgroundTwo;
+
+                    a {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      align-items: center;
+                      flex-direction: column;
+                      justify-content: center;
+
+                      svg {
+                        fill: $PrimaryFour;
+                      }
+
+                      span {
+                        margin-top: 2rem;
+                        font-weight: 400;
+                        color: $PrimaryOne;
+                        padding: .5rem 1rem;
                         background-color: $White;
                       }
 
@@ -7220,13 +8956,13 @@ body[dir='rtl'] {
                         stroke-width: 0px;
                         position: relative;
                         margin-right: .5rem;
-                        stroke: $PrimaryTextOne;
+                        stroke: $PrimaryOne;
                       }
 
                       small {
                         font-size: 14px;
-                        font-weight: 300;
-                        color: $PrimaryTextOne;
+                        font-weight: 400;
+                        color: $PrimaryOne;
                       }
                     }
                   }
@@ -7277,13 +9013,13 @@ body[dir='rtl'] {
                         stroke-width: 0px;
                         position: relative;
                         margin-right: .5rem;
-                        stroke: $PrimaryTextOne;
+                        stroke: $PrimaryOne;
                       }
 
                       small {
                         font-size: 12px;
                         font-weight: 400;
-                        color: $PrimaryTextOne;
+                        color: $PrimaryOne;
                       }
                     }
                   }
@@ -7389,7 +9125,7 @@ body[dir='rtl'] {
           a {
             color: $PrimaryOne;
             position: relative;
-            margin-left: 1.5rem;
+            margin-right: 1.5rem;
 
             svg {
               width: 24px;
@@ -7484,7 +9220,7 @@ body[dir='rtl'] {
 
                         span {
                           font-size: 14px;
-                          font-weight: 300;
+                          font-weight: 400;
                           text-align: right;
                           margin-right: 1rem;
                           color: $PrimaryOne;
@@ -7522,7 +9258,7 @@ body[dir='rtl'] {
                             font-weight: 400;
                             text-align: right;
                             line-height: 24px;
-                            color: $PrimaryTextOne;
+                            color: $PrimaryOne;
                             text-transform: capitalize;
 
                             &:hover {
@@ -7546,7 +9282,7 @@ body[dir='rtl'] {
                           span {
                             display: block;
                             font-size: 14px;
-                            font-weight: 300;
+                            font-weight: 400;
                             text-align: right;
                             color: $PrimaryOne;
                             margin-bottom: .5rem;
@@ -7556,9 +9292,9 @@ body[dir='rtl'] {
                             .col-7 {
                               p {
                                 font-size: 8px;
-                                font-weight: 300;
+                                font-weight: 400;
                                 text-align: right;
-                                color: $PrimaryTextOne;
+                                color: $PrimaryOne;
                               }
                             }
 
@@ -7570,7 +9306,7 @@ body[dir='rtl'] {
                                 width: 100%;
                                 display: block;
                                 font-size: 12px;
-                                font-weight: 300;
+                                font-weight: 400;
                                 padding: .5rem 1rem;
                                 text-transform: capitalize;
                                 border: 1px solid $PrimaryFive;
@@ -7618,9 +9354,155 @@ body[dir='rtl'] {
                       span {
                         font-size: 12px;
                         margin-top: 1rem;
-                        font-weight: 300;
+                        font-weight: 400;
                         color: $PrimaryOne;
                         padding: .5rem;
+                        background-color: $White;
+                      }
+
+                      &:hover {
+                        span {
+                          color: $White;
+                          background-color: $PrimaryOne;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.FNV-SecondMega {
+                .row {
+                  width: 100%;
+
+                  &.flex-row {
+                    h2 {
+                      padding: 0;
+                      width: auto;
+                      font-size: 20px;
+                      text-align: right;
+                      margin-bottom: 1.5rem;
+                      color: $PrimaryTextTwo;
+                    }
+                  }
+
+                  .col-md-9 {
+                    display: flex;
+
+                    .FNV-MenuContent {
+                      width: 100%;
+
+                      li {
+                        padding: 0;
+                        margin-bottom: .5rem;
+
+                        &:last-of-type {
+                          margin-bottom: 2rem;
+                        }
+
+                        a {
+                          padding: 0;
+                          font-size: 10px;
+                          font-weight: 400;
+                          line-height: 28px;
+                          text-align: center;
+                          color: $PrimaryOne;
+                          text-transform: capitalize;
+
+                          &:hover {
+                            color: $PrimaryOne;
+                          }
+                        }
+                      }
+
+                      span {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 28px;
+                        color: $PrimaryFour;
+                      }
+
+                      .container {
+                        padding: 2rem 0 0;
+                        border-top: 1px solid $PrimaryFive;
+
+                        span {
+                          display: block;
+                          font-size: 16px;
+                          font-weight: 400;
+                          text-align: right;
+                          color: $PrimaryOne;
+                          margin-bottom: .5rem;
+                        }
+
+                        .row {
+                          .col-7 {
+                            p {
+                              font-size: 12px;
+                              font-weight: 400;
+                              text-align: right;
+                              color: $PrimaryOne;
+                            }
+                          }
+
+                          .col-5 {
+                            padding: 0;
+                            text-align: right;
+
+                            a {
+                              width: 100%;
+                              display: block;
+                              font-size: 14px;
+                              font-weight: 400;
+                              text-align: center;
+                              padding: 1rem 1.5rem;
+                              text-transform: capitalize;
+                              border: 1px solid $PrimaryFive;
+
+                              &:hover {
+                                color: $White;
+                                background-color: $PrimaryOne;
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                      &.fade {
+                        display: none;
+                      }
+
+                      &.show {
+                        display: block;
+                      }
+                    }
+
+                  }
+
+                  .col-md-3 {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: $PrimaryBackgroundTwo;
+
+                    a {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      align-items: center;
+                      flex-direction: column;
+                      justify-content: center;
+
+                      svg {
+                        fill: $PrimaryFour;
+                      }
+
+                      span {
+                        margin-top: 2rem;
+                        font-weight: 400;
+                        color: $PrimaryOne;
+                        padding: .5rem 1rem;
                         background-color: $White;
                       }
 
@@ -7879,13 +9761,13 @@ body[dir='rtl'] {
                         stroke-width: 0px;
                         position: relative;
                         margin-left: .5rem;
-                        stroke: $PrimaryTextOne;
+                        stroke: $PrimaryOne;
                       }
 
                       small {
                         font-size: 14px;
-                        font-weight: 300;
-                        color: $PrimaryTextOne;
+                        font-weight: 400;
+                        color: $PrimaryOne;
                       }
                     }
                   }
@@ -7936,13 +9818,13 @@ body[dir='rtl'] {
                         stroke-width: 0px;
                         position: relative;
                         margin-right: .5rem;
-                        stroke: $PrimaryTextOne;
+                        stroke: $PrimaryOne;
                       }
 
                       small {
                         font-size: 12px;
                         font-weight: 400;
-                        color: $PrimaryTextOne;
+                        color: $PrimaryOne;
                       }
                     }
                   }
@@ -8049,7 +9931,7 @@ body[dir='rtl'] {
           a {
             color: $PrimaryOne;
             position: relative;
-            margin-left: 1.5rem;
+            margin-right: 1.5rem;
 
             svg {
               width: 24px;
@@ -8082,7 +9964,7 @@ body[dir='rtl'] {
               a {
                 font-size: 18px;
                 font-weight: 500;
-                padding: 2rem .5rem;
+                padding: 2rem 1rem;
                 color: $PrimaryOne;
               }
 
@@ -8147,7 +10029,7 @@ body[dir='rtl'] {
 
                         span {
                           font-size: 18px;
-                          font-weight: 300;
+                          font-weight: 400;
                           margin-right: 1rem;
                           color: $PrimaryOne;
                         }
@@ -8184,7 +10066,7 @@ body[dir='rtl'] {
                             font-weight: 400;
                             line-height: 28px;
                             text-align: center;
-                            color: $PrimaryTextOne;
+                            color: $PrimaryOne;
                             text-transform: capitalize;
 
                             &:hover {
@@ -8208,7 +10090,7 @@ body[dir='rtl'] {
                           span {
                             display: block;
                             font-size: 16px;
-                            font-weight: 300;
+                            font-weight: 400;
                             text-align: right;
                             color: $PrimaryOne;
                             margin-bottom: .5rem;
@@ -8218,9 +10100,9 @@ body[dir='rtl'] {
                             .col-7 {
                               p {
                                 font-size: 12px;
-                                font-weight: 300;
+                                font-weight: 400;
                                 text-align: right;
-                                color: $PrimaryTextOne;
+                                color: $PrimaryOne;
                               }
                             }
 
@@ -8229,7 +10111,7 @@ body[dir='rtl'] {
 
                               a {
                                 font-size: 14px;
-                                font-weight: 300;
+                                font-weight: 400;
                                 text-align: center;
                                 padding: 1rem 1.5rem;
                                 text-transform: capitalize;
@@ -8277,7 +10159,152 @@ body[dir='rtl'] {
 
                       span {
                         margin-top: 2rem;
-                        font-weight: 300;
+                        font-weight: 400;
+                        color: $PrimaryOne;
+                        padding: .5rem 1rem;
+                        background-color: $White;
+                      }
+
+                      &:hover {
+                        span {
+                          color: $White;
+                          background-color: $PrimaryOne;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.FNV-SecondMega {
+                .row {
+                  width: 100%;
+
+                  &.flex-row {
+                    h2 {
+                      padding: 0;
+                      width: auto;
+                      font-size: 20px;
+                      text-align: right;
+                      margin-bottom: 1.5rem;
+                      color: $PrimaryTextTwo;
+                    }
+                  }
+
+                  .col-md-9 {
+                    display: flex;
+
+                    .FNV-MenuContent {
+                      width: 100%;
+
+                      li {
+                        margin-bottom: .5rem;
+
+                        &:last-of-type {
+                          margin-bottom: 2rem;
+                        }
+
+                        a {
+                          padding: 0;
+                          font-size: 14px;
+                          font-weight: 400;
+                          line-height: 28px;
+                          text-align: center;
+                          color: $PrimaryOne;
+                          text-transform: capitalize;
+
+                          &:hover {
+                            color: $PrimaryOne;
+                          }
+                        }
+                      }
+
+                      span {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 28px;
+                        color: $PrimaryFour;
+                      }
+
+                      .container {
+                        padding: 2rem 0 0;
+                        border-top: 1px solid $PrimaryFive;
+
+                        span {
+                          display: block;
+                          font-size: 16px;
+                          font-weight: 400;
+                          text-align: right;
+                          color: $PrimaryOne;
+                          margin-bottom: .5rem;
+                        }
+
+                        .row {
+                          .col-7 {
+                            p {
+                              font-size: 12px;
+                              font-weight: 400;
+                              text-align: right;
+                              color: $PrimaryOne;
+                            }
+                          }
+
+                          .col-5 {
+                            padding: 0;
+                            text-align: right;
+
+                            a {
+                              width: 100%;
+                              display: block;
+                              font-size: 14px;
+                              font-weight: 400;
+                              text-align: center;
+                              padding: 1rem 1.5rem;
+                              text-transform: capitalize;
+                              border: 1px solid $PrimaryFive;
+
+                              &:hover {
+                                color: $White;
+                                background-color: $PrimaryOne;
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                      &.fade {
+                        display: none;
+                      }
+
+                      &.show {
+                        display: block;
+                      }
+                    }
+
+                  }
+
+                  .col-md-3 {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: $PrimaryBackgroundTwo;
+
+                    a {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      align-items: center;
+                      flex-direction: column;
+                      justify-content: center;
+
+                      svg {
+                        fill: $PrimaryFour;
+                      }
+
+                      span {
+                        margin-top: 2rem;
+                        font-weight: 400;
                         color: $PrimaryOne;
                         padding: .5rem 1rem;
                         background-color: $White;
