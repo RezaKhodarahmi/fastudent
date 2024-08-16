@@ -2,23 +2,24 @@
 
 // English
 body[dir='ltr'] {
+
   // X-Small devices (portrait phones, less than 576px)
   @media (max-width: 575.98px) {
     nav {
       background-color: $WhiteColor;
-  
+
       .container {
         padding: 1rem;
-  
+
         .navbar-brand {
           width: 200px;
           padding-right: .5rem;
-  
+
           svg {
             width: 100%;
           }
         }
-  
+
         .FNV_QuickAccess {
           padding: 0 1.5rem;
           left: 0px;
@@ -32,10 +33,11 @@ body[dir='ltr'] {
           border-top-left-radius: 1rem;
           border-top-right-radius: 1rem;
           background-color: $PrimaryOne;
-          justify-content: space-between!important;
+          justify-content: space-between !important;
 
           .dropdown {
             position: unset;
+
             a {
               svg {
                 width: 24px;
@@ -77,7 +79,7 @@ body[dir='ltr'] {
               border-top: 1px solid $PrimaryOne;
               box-shadow: 0 10px 16px $PrimaryShadow;
 
-              &.show{
+              &.show {
                 top: -16rem;
                 left: 0rem;
                 width: 100%;
@@ -332,80 +334,82 @@ body[dir='ltr'] {
             }
           }
         }
-  
-        .navbar-toggler{
+
+        .navbar-toggler {
           border-width: 0;
           border-radius: 0px;
           background-color: $PrimaryOne;
-  
-          .navbar-toggler-icon{
+
+          .navbar-toggler-icon {
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
           }
-  
-          &:focus, &:focus-visible, &:hover{
+
+          &:focus,
+          &:focus-visible,
+          &:hover {
             box-shadow: unset;
             background-color: $PrimaryBackgroundTwo;
-  
-            .navbar-toggler-icon{
+
+            .navbar-toggler-icon {
               background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23223885' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
             }
           }
         }
-  
+
         .navbar-collapse {
           position: relative;
           justify-content: center;
-  
+
           .navbar-nav {
             li {
               a {
                 font-size: 15px;
-                font-weight: 400;
+                font-weight: 500;
                 padding: .5rem;
-                color: $PrimaryTextFour;
+                color: $PrimaryOne;
               }
 
               &:hover {
                 a {
-                  font-weight: 400;
-                  color: $PrimaryOne;
+                  font-weight: 500;
+                  color: $PrimaryFour;
                 }
               }
             }
-  
+
             .FNV-MegaMenu {
               position: unset;
-  
+
               &.FNV-MainMega {
                 .row {
                   width: 100%;
-  
+
                   &.flex-row {
                     h2 {
                       font-size: 10px;
                       margin-bottom: 1.5rem;
                       color: $PrimaryTextTwo;
                       width: auto;
-  
+
                       &:first-child {
                         width: 180px;
                       }
-  
+
                       &:last-child {
                         padding-left: 2.5rem;
                       }
                     }
                   }
-  
+
                   .col-md-9 {
                     display: flex;
-  
+
                     .nav {
                       width: 60%;
                       height: 180px;
                       overflow: scroll;
                       border-right: 1px solid $PrimaryFive;
-  
+
                       button {
                         width: 100%;
                         height: 40px;
@@ -413,45 +417,45 @@ body[dir='ltr'] {
                         padding: .2rem .5rem;
                         border-radius: 0px;
                         align-items: center;
-  
+
                         svg {
                           width: 0px;
                           height: 0px;
                         }
-  
+
                         span {
                           font-size: 10px;
                           font-weight: 400;
                           margin-left: 0rem;
                           color: $PrimaryOne;
                         }
-  
+
                         &.active {
                           background-color: $PrimaryFour;
-  
+
                           svg {
                             stroke: $White;
                           }
-  
+
                           span {
                             color: $White;
                           }
                         }
                       }
                     }
-  
+
                     .tab-content {
                       width: 100%;
                       padding: 0 .5rem;
-  
+
                       .tab-pane {
                         li {
                           margin-bottom: 0rem;
-  
+
                           &:last-of-type {
                             margin-bottom: .5rem;
                           }
-  
+
                           a {
                             padding: 0;
                             font-size: 10px;
@@ -459,43 +463,43 @@ body[dir='ltr'] {
                             line-height: 20px;
                             color: $PrimaryTextOne;
                             text-transform: capitalize;
-  
+
                             &:hover {
                               color: $PrimaryOne;
                             }
                           }
                         }
-  
+
                         span {
                           font-size: 14px;
                           font-weight: 400;
                           line-height: 28px;
                           color: $PrimaryFour;
                         }
-  
+
                         .container {
                           display: none;
                         }
-  
+
                         &.fade {
                           display: none;
                         }
-  
+
                         &.show {
                           display: block;
                         }
                       }
                     }
-  
+
                   }
-  
+
                   .col-md-3 {
                     display: flex;
                     align-items: center;
                     flex-direction: column;
                     justify-content: center;
                     background-color: $PrimaryBackgroundTwo;
-  
+
                     a {
                       width: 100%;
                       height: 100%;
@@ -503,12 +507,12 @@ body[dir='ltr'] {
                       align-items: center;
                       flex-direction: column;
                       justify-content: center;
-  
+
                       svg {
                         height: 50px;
                         fill: $PrimaryFour;
                       }
-  
+
                       span {
                         font-size: 8px;
                         margin-top: 1rem;
@@ -517,7 +521,7 @@ body[dir='ltr'] {
                         padding: .5rem;
                         background-color: $White;
                       }
-  
+
                       &:hover {
                         span {
                           color: $White;
@@ -528,13 +532,13 @@ body[dir='ltr'] {
                   }
                 }
               }
-  
+
               &.FNV-VIPMemberShip {
                 .dropdown-menu {
                   width: 600px;
                 }
               }
-  
+
               .dropdown-menu {
                 width: 100%;
                 display: none;
@@ -546,7 +550,7 @@ body[dir='ltr'] {
                 left: 0;
                 position: absolute;
               }
-  
+
               &:hover .dropdown-menu {
                 display: block;
                 margin-top: 0px;
@@ -555,17 +559,17 @@ body[dir='ltr'] {
                 border-top: 1px solid #223885;
                 box-shadow: 0px 20px 20px $ShadowPrimary;
               }
-  
+
               .dropdown-menu {
                 .container-fluid {
                   padding-right: 0px;
                   padding-bottom: 0px;
-  
+
                   a {
                     font-size: 24px;
                     color: $PrimaryColor;
                     font-weight: 600;
-  
+
                     span {
                       border-left: 1px solid #ababab;
                       padding-left: 1rem;
@@ -575,19 +579,19 @@ body[dir='ltr'] {
                       font-weight: 400;
                     }
                   }
-  
+
                   .row {
                     padding-top: 1rem;
-  
+
                     .col-md-3,
                     .col-md-6,
                     .col {
                       .row {
                         padding: 0;
-  
+
                         &.FNV-QuickAction {
                           height: 100%;
-  
+
                           .col-12 {
                             a {
                               display: flex;
@@ -596,13 +600,13 @@ body[dir='ltr'] {
                               justify-content: space-evenly;
                               align-items: center;
                               background-color: $LightColor;
-  
+
                               svg {
                                 width: 50px;
                                 height: 50px;
                                 color: $SecondaryColor;
                               }
-  
+
                               span {
                                 font-size: 18px;
                                 border-width: 0;
@@ -614,7 +618,7 @@ body[dir='ltr'] {
                           }
                         }
                       }
-  
+
                       span {
                         font-size: 16px;
                         line-height: 32px;
@@ -622,7 +626,7 @@ body[dir='ltr'] {
                         color: $FourthColor;
                         margin-bottom: .8rem;
                         display: block;
-  
+
                         svg {
                           width: 12px;
                           height: 12px;
@@ -630,14 +634,14 @@ body[dir='ltr'] {
                           color: $SecondaryColor;
                         }
                       }
-  
+
                       li {
                         a {
                           font-size: 14px;
                           font-weight: 500;
                           color: $GrayThreeColor;
                           transition: .1s all ease-in-out;
-  
+
                           &:hover {
                             color: $SecondaryColor;
                             border-radius: 5px;
@@ -654,8 +658,8 @@ body[dir='ltr'] {
       }
     }
 
-    .cc-1m2mf{
-      margin-bottom: 5rem!important;
+    .cc-1m2mf {
+      margin-bottom: 5rem !important;
     }
   }
 
@@ -663,19 +667,19 @@ body[dir='ltr'] {
   @media (min-width: 575.98px) and (max-width: 767.98px) {
     nav {
       background-color: $WhiteColor;
-  
+
       .container {
         padding: 1rem;
-  
+
         .navbar-brand {
           width: 200px;
           padding-right: .5rem;
-  
+
           svg {
             width: 100%;
           }
         }
-  
+
         .FNV_QuickAccess {
           padding: 0 1.5rem;
           left: 0px;
@@ -689,10 +693,11 @@ body[dir='ltr'] {
           border-top-left-radius: 1rem;
           border-top-right-radius: 1rem;
           background-color: $PrimaryOne;
-          justify-content: space-between!important;
+          justify-content: space-between !important;
 
           .dropdown {
             position: unset;
+
             a {
               svg {
                 width: 24px;
@@ -734,7 +739,7 @@ body[dir='ltr'] {
               border-top: 1px solid $PrimaryOne;
               box-shadow: 0 10px 16px $PrimaryShadow;
 
-              &.show{
+              &.show {
                 top: -16rem;
                 left: 0rem;
                 width: 100%;
@@ -989,80 +994,82 @@ body[dir='ltr'] {
             }
           }
         }
-  
-        .navbar-toggler{
+
+        .navbar-toggler {
           border-width: 0;
           border-radius: 0px;
           background-color: $PrimaryOne;
-  
-          .navbar-toggler-icon{
+
+          .navbar-toggler-icon {
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
           }
-  
-          &:focus, &:focus-visible, &:hover{
+
+          &:focus,
+          &:focus-visible,
+          &:hover {
             box-shadow: unset;
             background-color: $PrimaryBackgroundTwo;
-  
-            .navbar-toggler-icon{
+
+            .navbar-toggler-icon {
               background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23223885' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
             }
           }
         }
-  
+
         .navbar-collapse {
           position: relative;
           justify-content: center;
-  
+
           .navbar-nav {
             li {
               a {
                 font-size: 15px;
-                font-weight: 400;
+                font-weight: 500;
                 padding: .5rem;
-                color: $PrimaryTextFour;
+                color: $PrimaryOne;
               }
 
               &:hover {
                 a {
-                  font-weight: 400;
-                  color: $PrimaryOne;
+                  font-weight: 500;
+                  color: $PrimaryFour;
                 }
               }
             }
-  
+
             .FNV-MegaMenu {
               position: unset;
-  
+
               &.FNV-MainMega {
                 .row {
                   width: 100%;
-  
+
                   &.flex-row {
                     h2 {
                       font-size: 10px;
                       margin-bottom: 1.5rem;
                       color: $PrimaryTextTwo;
                       width: auto;
-  
+
                       &:first-child {
                         width: 180px;
                       }
-  
+
                       &:last-child {
                         padding-left: 2.5rem;
                       }
                     }
                   }
-  
+
                   .col-md-9 {
                     display: flex;
-  
+
                     .nav {
                       width: 60%;
                       height: 180px;
                       overflow: scroll;
                       border-right: 1px solid $PrimaryFive;
-  
+
                       button {
                         width: 100%;
                         height: 40px;
@@ -1070,45 +1077,45 @@ body[dir='ltr'] {
                         padding: .2rem .5rem;
                         border-radius: 0px;
                         align-items: center;
-  
+
                         svg {
                           width: 0px;
                           height: 0px;
                         }
-  
+
                         span {
                           font-size: 10px;
                           font-weight: 400;
                           margin-left: 0rem;
                           color: $PrimaryOne;
                         }
-  
+
                         &.active {
                           background-color: $PrimaryFour;
-  
+
                           svg {
                             stroke: $White;
                           }
-  
+
                           span {
                             color: $White;
                           }
                         }
                       }
                     }
-  
+
                     .tab-content {
                       width: 100%;
                       padding: 0 .5rem;
-  
+
                       .tab-pane {
                         li {
                           margin-bottom: 0rem;
-  
+
                           &:last-of-type {
                             margin-bottom: .5rem;
                           }
-  
+
                           a {
                             padding: 0;
                             font-size: 10px;
@@ -1116,43 +1123,43 @@ body[dir='ltr'] {
                             line-height: 20px;
                             color: $PrimaryTextOne;
                             text-transform: capitalize;
-  
+
                             &:hover {
                               color: $PrimaryOne;
                             }
                           }
                         }
-  
+
                         span {
                           font-size: 14px;
                           font-weight: 400;
                           line-height: 28px;
                           color: $PrimaryFour;
                         }
-  
+
                         .container {
                           display: none;
                         }
-  
+
                         &.fade {
                           display: none;
                         }
-  
+
                         &.show {
                           display: block;
                         }
                       }
                     }
-  
+
                   }
-  
+
                   .col-md-3 {
                     display: flex;
                     align-items: center;
                     flex-direction: column;
                     justify-content: center;
                     background-color: $PrimaryBackgroundTwo;
-  
+
                     a {
                       width: 100%;
                       height: 100%;
@@ -1160,12 +1167,12 @@ body[dir='ltr'] {
                       align-items: center;
                       flex-direction: column;
                       justify-content: center;
-  
+
                       svg {
                         height: 50px;
                         fill: $PrimaryFour;
                       }
-  
+
                       span {
                         font-size: 8px;
                         margin-top: 1rem;
@@ -1174,7 +1181,7 @@ body[dir='ltr'] {
                         padding: .5rem;
                         background-color: $White;
                       }
-  
+
                       &:hover {
                         span {
                           color: $White;
@@ -1185,13 +1192,13 @@ body[dir='ltr'] {
                   }
                 }
               }
-  
+
               &.FNV-VIPMemberShip {
                 .dropdown-menu {
                   width: 600px;
                 }
               }
-  
+
               .dropdown-menu {
                 width: 100%;
                 display: none;
@@ -1203,7 +1210,7 @@ body[dir='ltr'] {
                 left: 0;
                 position: absolute;
               }
-  
+
               &:hover .dropdown-menu {
                 display: block;
                 margin-top: 0px;
@@ -1212,17 +1219,17 @@ body[dir='ltr'] {
                 border-top: 1px solid #223885;
                 box-shadow: 0px 20px 20px $ShadowPrimary;
               }
-  
+
               .dropdown-menu {
                 .container-fluid {
                   padding-right: 0px;
                   padding-bottom: 0px;
-  
+
                   a {
                     font-size: 24px;
                     color: $PrimaryColor;
                     font-weight: 600;
-  
+
                     span {
                       border-left: 1px solid #ababab;
                       padding-left: 1rem;
@@ -1232,19 +1239,19 @@ body[dir='ltr'] {
                       font-weight: 400;
                     }
                   }
-  
+
                   .row {
                     padding-top: 1rem;
-  
+
                     .col-md-3,
                     .col-md-6,
                     .col {
                       .row {
                         padding: 0;
-  
+
                         &.FNV-QuickAction {
                           height: 100%;
-  
+
                           .col-12 {
                             a {
                               display: flex;
@@ -1253,13 +1260,13 @@ body[dir='ltr'] {
                               justify-content: space-evenly;
                               align-items: center;
                               background-color: $LightColor;
-  
+
                               svg {
                                 width: 50px;
                                 height: 50px;
                                 color: $SecondaryColor;
                               }
-  
+
                               span {
                                 font-size: 18px;
                                 border-width: 0;
@@ -1271,7 +1278,7 @@ body[dir='ltr'] {
                           }
                         }
                       }
-  
+
                       span {
                         font-size: 16px;
                         line-height: 32px;
@@ -1279,7 +1286,7 @@ body[dir='ltr'] {
                         color: $FourthColor;
                         margin-bottom: .8rem;
                         display: block;
-  
+
                         svg {
                           width: 12px;
                           height: 12px;
@@ -1287,14 +1294,14 @@ body[dir='ltr'] {
                           color: $SecondaryColor;
                         }
                       }
-  
+
                       li {
                         a {
                           font-size: 14px;
                           font-weight: 500;
                           color: $GrayThreeColor;
                           transition: .1s all ease-in-out;
-  
+
                           &:hover {
                             color: $SecondaryColor;
                             border-radius: 5px;
@@ -1311,8 +1318,8 @@ body[dir='ltr'] {
       }
     }
 
-    .cc-1m2mf{
-      margin-bottom: 5rem!important;
+    .cc-1m2mf {
+      margin-bottom: 5rem !important;
     }
   }
 
@@ -1337,20 +1344,22 @@ body[dir='ltr'] {
           display: none;
         }
 
-        .navbar-toggler{
+        .navbar-toggler {
           border-width: 0;
           border-radius: 0px;
           background-color: $PrimaryOne;
 
-          .navbar-toggler-icon{
+          .navbar-toggler-icon {
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
           }
 
-          &:focus, &:focus-visible, &:hover{
+          &:focus,
+          &:focus-visible,
+          &:hover {
             box-shadow: unset;
             background-color: $PrimaryBackgroundTwo;
 
-            .navbar-toggler-icon{
+            .navbar-toggler-icon {
               background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23223885' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
             }
           }
@@ -1364,15 +1373,15 @@ body[dir='ltr'] {
             li {
               a {
                 font-size: 15px;
-                font-weight: 400;
+                font-weight: 500;
                 padding: .5rem;
-                color: $PrimaryTextFour;
+                color: $PrimaryOne;
               }
 
               &:hover {
                 a {
-                  font-weight: 400;
-                  color: $PrimaryOne;
+                  font-weight: 500;
+                  color: $PrimaryFour;
                 }
               }
             }
@@ -2019,15 +2028,15 @@ body[dir='ltr'] {
             li {
               a {
                 font-size: 14px;
-                font-weight: 400;
-                padding: 2rem .5rem;
-                color: $PrimaryTextFour;
+                font-weight: 500;
+                padding: 2rem .3rem;
+                color: $PrimaryOne;
               }
 
               &:hover {
                 a {
-                  font-weight: 400;
-                  color: $PrimaryOne;
+                  font-weight: 500;
+                  color: $PrimaryFour;
                 }
               }
             }
@@ -2674,15 +2683,15 @@ body[dir='ltr'] {
             li {
               a {
                 font-size: 14px;
-                font-weight: 400;
+                font-weight: 500;
                 padding: 2rem .5rem;
-                color: $PrimaryTextFour;
+                color: $PrimaryOne;
               }
 
               &:hover {
                 a {
-                  font-weight: 400;
-                  color: $PrimaryOne;
+                  font-weight: 500;
+                  color: $PrimaryFour;
                 }
               }
             }
@@ -3322,15 +3331,15 @@ body[dir='ltr'] {
             li {
               a {
                 font-size: 14px;
-                font-weight: 400;
+                font-weight: 500;
                 padding: 2rem .5rem;
-                color: $PrimaryTextFour;
+                color: $PrimaryOne;
               }
 
               &:hover {
                 a {
-                  font-weight: 400;
-                  color: $PrimaryOne;
+                  font-weight: 500;
+                  color: $PrimaryFour;
                 }
               }
             }
@@ -3973,15 +3982,15 @@ body[dir='ltr'] {
             li {
               a {
                 font-size: 16px;
-                font-weight: 400;
-                padding: 2rem .5rem;
-                color: $PrimaryTextFour;
+                font-weight: 500;
+                padding: 2rem 1rem;
+                color: $PrimaryOne;
               }
 
               &:hover {
                 a {
-                  font-weight: 400;
-                  color: $PrimaryOne;
+                  font-weight: 500;
+                  color: $PrimaryFour;
                 }
               }
             }
@@ -4311,24 +4320,25 @@ body[dir='ltr'] {
 
 // Persian
 body[dir='rtl'] {
+
   // X-Small devices (portrait phones, less than 576px)
   @media (max-width: 575px) {
     nav {
       background-color: $WhiteColor;
-  
+
       .container {
         padding: 1rem;
-  
+
         .navbar-brand {
           margin: 0;
           width: 200px;
           padding-left: .5rem;
-  
+
           svg {
             width: 100%;
           }
         }
-  
+
         .FNV_QuickAccess {
           padding: 0 1.5rem;
           left: 0px;
@@ -4342,10 +4352,11 @@ body[dir='rtl'] {
           border-top-left-radius: 1rem;
           border-top-right-radius: 1rem;
           background-color: $PrimaryOne;
-          justify-content: space-between!important;
+          justify-content: space-between !important;
 
           .dropdown {
             position: unset;
+
             a {
               svg {
                 width: 24px;
@@ -4387,7 +4398,7 @@ body[dir='rtl'] {
               border-top: 1px solid $PrimaryOne;
               box-shadow: 0 10px 16px $PrimaryShadow;
 
-              &.show{
+              &.show {
                 top: -16rem;
                 left: 0rem;
                 width: 100%;
@@ -4642,56 +4653,58 @@ body[dir='rtl'] {
             }
           }
         }
-  
-        .navbar-toggler{
+
+        .navbar-toggler {
           border-width: 0;
           border-radius: 0px;
           background-color: $PrimaryOne;
-  
-          .navbar-toggler-icon{
+
+          .navbar-toggler-icon {
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
           }
-  
-          &:focus, &:focus-visible, &:hover{
+
+          &:focus,
+          &:focus-visible,
+          &:hover {
             box-shadow: unset;
             background-color: $PrimaryBackgroundTwo;
-  
-            .navbar-toggler-icon{
+
+            .navbar-toggler-icon {
               background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23223885' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
             }
           }
         }
-  
+
         .navbar-collapse {
           position: relative;
           justify-content: center;
-  
+
           .navbar-nav {
             padding-right: 0px;
 
             li {
               a {
                 font-size: 15px;
-                font-weight: 400;
+                font-weight: 500;
                 padding: .5rem;
-                color: $PrimaryTextFour;
+                color: $PrimaryOne;
               }
 
               &:hover {
                 a {
-                  font-weight: 400;
-                  color: $PrimaryOne;
+                  font-weight: 500;
+                  color: $PrimaryFour;
                 }
               }
             }
-  
+
             .FNV-MegaMenu {
               position: unset;
-  
+
               &.FNV-MainMega {
                 .row {
                   width: 100%;
-  
+
                   &.flex-row {
                     h2 {
                       width: auto;
@@ -4699,26 +4712,26 @@ body[dir='rtl'] {
                       text-align: right;
                       margin-bottom: 1.5rem;
                       color: $PrimaryTextTwo;
-  
+
                       &:first-child {
                         width: 175px;
                       }
-  
+
                       &:last-child {
                         padding-left: 2.5rem;
                       }
                     }
                   }
-  
+
                   .col-md-9 {
                     display: flex;
-  
+
                     .nav {
                       width: 60%;
                       height: 180px;
                       overflow: scroll;
                       border-left: 1px solid $PrimaryFive;
-  
+
                       button {
                         width: 100%;
                         height: 40px;
@@ -4726,46 +4739,46 @@ body[dir='rtl'] {
                         padding: .2rem .5rem;
                         border-radius: 0px;
                         align-items: center;
-  
+
                         svg {
                           width: 0px;
                           height: 0px;
                         }
-  
+
                         span {
                           font-size: 10px;
                           font-weight: 400;
                           margin-left: 0rem;
                           color: $PrimaryOne;
                         }
-  
+
                         &.active {
                           background-color: $PrimaryFour;
-  
+
                           svg {
                             stroke: $White;
                           }
-  
+
                           span {
                             color: $White;
                           }
                         }
                       }
                     }
-  
+
                     .tab-content {
                       width: 100%;
                       padding: 0 .5rem;
-  
+
                       .tab-pane {
                         li {
                           text-align: right;
                           margin-bottom: 0rem;
-  
+
                           &:last-of-type {
                             margin-bottom: .5rem;
                           }
-  
+
                           a {
                             padding: 0;
                             font-size: 10px;
@@ -4773,43 +4786,43 @@ body[dir='rtl'] {
                             line-height: 20px;
                             color: $PrimaryTextOne;
                             text-transform: capitalize;
-  
+
                             &:hover {
                               color: $PrimaryOne;
                             }
                           }
                         }
-  
+
                         span {
                           font-size: 14px;
                           font-weight: 400;
                           line-height: 28px;
                           color: $PrimaryFour;
                         }
-  
+
                         .container {
                           display: none;
                         }
-  
+
                         &.fade {
                           display: none;
                         }
-  
+
                         &.show {
                           display: block;
                         }
                       }
                     }
-  
+
                   }
-  
+
                   .col-md-3 {
                     display: flex;
                     align-items: center;
                     flex-direction: column;
                     justify-content: center;
                     background-color: $PrimaryBackgroundTwo;
-  
+
                     a {
                       width: 100%;
                       height: 100%;
@@ -4817,12 +4830,12 @@ body[dir='rtl'] {
                       align-items: center;
                       flex-direction: column;
                       justify-content: center;
-  
+
                       svg {
                         height: 50px;
                         fill: $PrimaryFour;
                       }
-  
+
                       span {
                         font-size: 8px;
                         margin-top: 1rem;
@@ -4831,7 +4844,7 @@ body[dir='rtl'] {
                         padding: .5rem;
                         background-color: $White;
                       }
-  
+
                       &:hover {
                         span {
                           color: $White;
@@ -4842,13 +4855,13 @@ body[dir='rtl'] {
                   }
                 }
               }
-  
+
               &.FNV-VIPMemberShip {
                 .dropdown-menu {
                   width: 600px;
                 }
               }
-  
+
               .dropdown-menu {
                 width: 100%;
                 display: none;
@@ -4860,7 +4873,7 @@ body[dir='rtl'] {
                 left: 0;
                 position: absolute;
               }
-  
+
               &:hover .dropdown-menu {
                 display: block;
                 margin-top: 0px;
@@ -4869,17 +4882,17 @@ body[dir='rtl'] {
                 border-top: 1px solid #223885;
                 box-shadow: 0px 20px 20px $ShadowPrimary;
               }
-  
+
               .dropdown-menu {
                 .container-fluid {
                   padding-right: 0px;
                   padding-bottom: 0px;
-  
+
                   a {
                     font-size: 24px;
                     color: $PrimaryColor;
                     font-weight: 600;
-  
+
                     span {
                       border-left: 1px solid #ababab;
                       padding-left: 1rem;
@@ -4889,19 +4902,19 @@ body[dir='rtl'] {
                       font-weight: 400;
                     }
                   }
-  
+
                   .row {
                     padding-top: 1rem;
-  
+
                     .col-md-3,
                     .col-md-6,
                     .col {
                       .row {
                         padding: 0;
-  
+
                         &.FNV-QuickAction {
                           height: 100%;
-  
+
                           .col-12 {
                             a {
                               display: flex;
@@ -4910,13 +4923,13 @@ body[dir='rtl'] {
                               justify-content: space-evenly;
                               align-items: center;
                               background-color: $LightColor;
-  
+
                               svg {
                                 width: 50px;
                                 height: 50px;
                                 color: $SecondaryColor;
                               }
-  
+
                               span {
                                 font-size: 18px;
                                 border-width: 0;
@@ -4928,7 +4941,7 @@ body[dir='rtl'] {
                           }
                         }
                       }
-  
+
                       span {
                         font-size: 16px;
                         line-height: 32px;
@@ -4936,7 +4949,7 @@ body[dir='rtl'] {
                         color: $FourthColor;
                         margin-bottom: .8rem;
                         display: block;
-  
+
                         svg {
                           width: 12px;
                           height: 12px;
@@ -4944,14 +4957,14 @@ body[dir='rtl'] {
                           color: $SecondaryColor;
                         }
                       }
-  
+
                       li {
                         a {
                           font-size: 14px;
                           font-weight: 500;
                           color: $GrayThreeColor;
                           transition: .1s all ease-in-out;
-  
+
                           &:hover {
                             color: $SecondaryColor;
                             border-radius: 5px;
@@ -4968,8 +4981,8 @@ body[dir='rtl'] {
       }
     }
 
-    .cc-1m2mf{
-      margin-bottom: 5rem!important;
+    .cc-1m2mf {
+      margin-bottom: 5rem !important;
     }
   }
 
@@ -4977,20 +4990,20 @@ body[dir='rtl'] {
   @media (min-width: 575.98px) and (max-width: 767px) {
     nav {
       background-color: $WhiteColor;
-  
+
       .container {
         padding: 1rem;
-  
+
         .navbar-brand {
           margin: 0;
           width: 200px;
           padding-left: .5rem;
-  
+
           svg {
             width: 100%;
           }
         }
-  
+
         .FNV_QuickAccess {
           padding: 0 1.5rem;
           left: 0px;
@@ -5004,10 +5017,11 @@ body[dir='rtl'] {
           border-top-left-radius: 1rem;
           border-top-right-radius: 1rem;
           background-color: $PrimaryOne;
-          justify-content: space-between!important;
+          justify-content: space-between !important;
 
           .dropdown {
             position: unset;
+
             a {
               svg {
                 width: 24px;
@@ -5049,7 +5063,7 @@ body[dir='rtl'] {
               border-top: 1px solid $PrimaryOne;
               box-shadow: 0 10px 16px $PrimaryShadow;
 
-              &.show{
+              &.show {
                 top: -16rem;
                 left: 0rem;
                 width: 100%;
@@ -5304,56 +5318,58 @@ body[dir='rtl'] {
             }
           }
         }
-  
-        .navbar-toggler{
+
+        .navbar-toggler {
           border-width: 0;
           border-radius: 0px;
           background-color: $PrimaryOne;
-  
-          .navbar-toggler-icon{
+
+          .navbar-toggler-icon {
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
           }
-  
-          &:focus, &:focus-visible, &:hover{
+
+          &:focus,
+          &:focus-visible,
+          &:hover {
             box-shadow: unset;
             background-color: $PrimaryBackgroundTwo;
-  
-            .navbar-toggler-icon{
+
+            .navbar-toggler-icon {
               background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23223885' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
             }
           }
         }
-  
+
         .navbar-collapse {
           position: relative;
           justify-content: center;
-  
+
           .navbar-nav {
             padding-right: 0px;
 
             li {
               a {
                 font-size: 15px;
-                font-weight: 400;
+                font-weight: 500;
                 padding: .5rem;
-                color: $PrimaryTextFour;
+                color: $PrimaryOne;
               }
 
               &:hover {
                 a {
-                  font-weight: 400;
-                  color: $PrimaryOne;
+                  font-weight: 500;
+                  color: $PrimaryFour;
                 }
               }
             }
-  
+
             .FNV-MegaMenu {
               position: unset;
-  
+
               &.FNV-MainMega {
                 .row {
                   width: 100%;
-  
+
                   &.flex-row {
                     h2 {
                       width: auto;
@@ -5361,26 +5377,26 @@ body[dir='rtl'] {
                       text-align: right;
                       margin-bottom: 1.5rem;
                       color: $PrimaryTextTwo;
-  
+
                       &:first-child {
                         width: 175px;
                       }
-  
+
                       &:last-child {
                         padding-left: 2.5rem;
                       }
                     }
                   }
-  
+
                   .col-md-9 {
                     display: flex;
-  
+
                     .nav {
                       width: 60%;
                       height: 180px;
                       overflow: scroll;
                       border-left: 1px solid $PrimaryFive;
-  
+
                       button {
                         width: 100%;
                         height: 40px;
@@ -5388,46 +5404,46 @@ body[dir='rtl'] {
                         padding: .2rem .5rem;
                         border-radius: 0px;
                         align-items: center;
-  
+
                         svg {
                           width: 0px;
                           height: 0px;
                         }
-  
+
                         span {
                           font-size: 10px;
                           font-weight: 400;
                           margin-left: 0rem;
                           color: $PrimaryOne;
                         }
-  
+
                         &.active {
                           background-color: $PrimaryFour;
-  
+
                           svg {
                             stroke: $White;
                           }
-  
+
                           span {
                             color: $White;
                           }
                         }
                       }
                     }
-  
+
                     .tab-content {
                       width: 100%;
                       padding: 0 .5rem;
-  
+
                       .tab-pane {
                         li {
                           text-align: right;
                           margin-bottom: 0rem;
-  
+
                           &:last-of-type {
                             margin-bottom: .5rem;
                           }
-  
+
                           a {
                             padding: 0;
                             font-size: 10px;
@@ -5435,43 +5451,43 @@ body[dir='rtl'] {
                             line-height: 20px;
                             color: $PrimaryTextOne;
                             text-transform: capitalize;
-  
+
                             &:hover {
                               color: $PrimaryOne;
                             }
                           }
                         }
-  
+
                         span {
                           font-size: 14px;
                           font-weight: 400;
                           line-height: 28px;
                           color: $PrimaryFour;
                         }
-  
+
                         .container {
                           display: none;
                         }
-  
+
                         &.fade {
                           display: none;
                         }
-  
+
                         &.show {
                           display: block;
                         }
                       }
                     }
-  
+
                   }
-  
+
                   .col-md-3 {
                     display: flex;
                     align-items: center;
                     flex-direction: column;
                     justify-content: center;
                     background-color: $PrimaryBackgroundTwo;
-  
+
                     a {
                       width: 100%;
                       height: 100%;
@@ -5479,12 +5495,12 @@ body[dir='rtl'] {
                       align-items: center;
                       flex-direction: column;
                       justify-content: center;
-  
+
                       svg {
                         height: 50px;
                         fill: $PrimaryFour;
                       }
-  
+
                       span {
                         font-size: 8px;
                         margin-top: 1rem;
@@ -5493,7 +5509,7 @@ body[dir='rtl'] {
                         padding: .5rem;
                         background-color: $White;
                       }
-  
+
                       &:hover {
                         span {
                           color: $White;
@@ -5504,13 +5520,13 @@ body[dir='rtl'] {
                   }
                 }
               }
-  
+
               &.FNV-VIPMemberShip {
                 .dropdown-menu {
                   width: 600px;
                 }
               }
-  
+
               .dropdown-menu {
                 width: 100%;
                 display: none;
@@ -5522,7 +5538,7 @@ body[dir='rtl'] {
                 left: 0;
                 position: absolute;
               }
-  
+
               &:hover .dropdown-menu {
                 display: block;
                 margin-top: 0px;
@@ -5531,17 +5547,17 @@ body[dir='rtl'] {
                 border-top: 1px solid #223885;
                 box-shadow: 0px 20px 20px $ShadowPrimary;
               }
-  
+
               .dropdown-menu {
                 .container-fluid {
                   padding-right: 0px;
                   padding-bottom: 0px;
-  
+
                   a {
                     font-size: 24px;
                     color: $PrimaryColor;
                     font-weight: 600;
-  
+
                     span {
                       border-left: 1px solid #ababab;
                       padding-left: 1rem;
@@ -5551,19 +5567,19 @@ body[dir='rtl'] {
                       font-weight: 400;
                     }
                   }
-  
+
                   .row {
                     padding-top: 1rem;
-  
+
                     .col-md-3,
                     .col-md-6,
                     .col {
                       .row {
                         padding: 0;
-  
+
                         &.FNV-QuickAction {
                           height: 100%;
-  
+
                           .col-12 {
                             a {
                               display: flex;
@@ -5572,13 +5588,13 @@ body[dir='rtl'] {
                               justify-content: space-evenly;
                               align-items: center;
                               background-color: $LightColor;
-  
+
                               svg {
                                 width: 50px;
                                 height: 50px;
                                 color: $SecondaryColor;
                               }
-  
+
                               span {
                                 font-size: 18px;
                                 border-width: 0;
@@ -5590,7 +5606,7 @@ body[dir='rtl'] {
                           }
                         }
                       }
-  
+
                       span {
                         font-size: 16px;
                         line-height: 32px;
@@ -5598,7 +5614,7 @@ body[dir='rtl'] {
                         color: $FourthColor;
                         margin-bottom: .8rem;
                         display: block;
-  
+
                         svg {
                           width: 12px;
                           height: 12px;
@@ -5606,14 +5622,14 @@ body[dir='rtl'] {
                           color: $SecondaryColor;
                         }
                       }
-  
+
                       li {
                         a {
                           font-size: 14px;
                           font-weight: 500;
                           color: $GrayThreeColor;
                           transition: .1s all ease-in-out;
-  
+
                           &:hover {
                             color: $SecondaryColor;
                             border-radius: 5px;
@@ -5630,8 +5646,8 @@ body[dir='rtl'] {
       }
     }
 
-    .cc-1m2mf{
-      margin-bottom: 5rem!important;
+    .cc-1m2mf {
+      margin-bottom: 5rem !important;
     }
   }
 
@@ -5657,20 +5673,22 @@ body[dir='rtl'] {
           display: none;
         }
 
-        .navbar-toggler{
+        .navbar-toggler {
           border-width: 0;
           border-radius: 0px;
           background-color: $PrimaryOne;
 
-          .navbar-toggler-icon{
+          .navbar-toggler-icon {
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
           }
 
-          &:focus, &:focus-visible, &:hover{
+          &:focus,
+          &:focus-visible,
+          &:hover {
             box-shadow: unset;
             background-color: $PrimaryBackgroundTwo;
 
-            .navbar-toggler-icon{
+            .navbar-toggler-icon {
               background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23223885' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
             }
           }
@@ -5686,15 +5704,15 @@ body[dir='rtl'] {
             li {
               a {
                 font-size: 15px;
-                font-weight: 400;
+                font-weight: 500;
                 padding: .5rem;
-                color: $PrimaryTextFour;
+                color: $PrimaryOne;
               }
 
               &:hover {
                 a {
-                  font-weight: 400;
-                  color: $PrimaryOne;
+                  font-weight: 500;
+                  color: $PrimaryFour;
                 }
               }
             }
@@ -6199,15 +6217,15 @@ body[dir='rtl'] {
             li {
               a {
                 font-size: 14px;
-                font-weight: 400;
+                font-weight: 500;
                 padding: 2rem .5rem;
-                color: $PrimaryTextFour;
+                color: $PrimaryOne;
               }
 
               &:hover {
                 a {
-                  font-weight: 400;
-                  color: $PrimaryOne;
+                  font-weight: 500;
+                  color: $PrimaryThree;
                 }
               }
             }
@@ -6754,15 +6772,15 @@ body[dir='rtl'] {
             li {
               a {
                 font-size: 14px;
-                font-weight: 400;
+                font-weight: 500;
                 padding: 2rem .5rem;
-                color: $PrimaryTextFour;
+                color: $PrimaryOne
               }
 
               &:hover {
                 a {
-                  font-weight: 400;
-                  color: $PrimaryOne;
+                  font-weight: 500;
+                  color: $PrimaryThree;
                 }
               }
             }
@@ -6781,7 +6799,7 @@ body[dir='rtl'] {
                       text-align: right;
                       margin-bottom: 1.5rem;
                       color: $PrimaryTextTwo;
-                      
+
                       &:first-child {
                         width: 160px;
                       }
@@ -7403,15 +7421,15 @@ body[dir='rtl'] {
             li {
               a {
                 font-size: 14px;
-                font-weight: 400;
+                font-weight: 500;
                 padding: 2rem .5rem;
-                color: $PrimaryTextFour;
+                color: $PrimaryOne
               }
 
               &:hover {
                 a {
-                  font-weight: 400;
-                  color: $PrimaryOne;
+                  font-weight: 500;
+                  color: $PrimaryThree
                 }
               }
             }
@@ -8062,16 +8080,16 @@ body[dir='rtl'] {
           .navbar-nav {
             li {
               a {
-                font-size: 16px;
-                font-weight: 400;
+                font-size: 18px;
+                font-weight: 500;
                 padding: 2rem .5rem;
-                color: $PrimaryTextFour;
+                color: $PrimaryOne;
               }
 
               &:hover {
                 a {
-                  font-weight: 400;
-                  color: $PrimaryOne;
+                  font-weight: 500;
+                  color: $PrimaryThree;
                 }
               }
             }

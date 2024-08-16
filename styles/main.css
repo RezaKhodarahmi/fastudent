@@ -562,13 +562,13 @@ badge.SecondaryColor {
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li a {
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
     padding: 0.5rem;
-    color: #B2B9D4;
+    color: #223885;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li:hover a {
-    font-weight: 400;
-    color: #223885;
+    font-weight: 500;
+    color: #0074FF;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
     position: unset;
@@ -1087,13 +1087,13 @@ badge.SecondaryColor {
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li a {
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
     padding: 0.5rem;
-    color: #B2B9D4;
+    color: #223885;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li:hover a {
-    font-weight: 400;
-    color: #223885;
+    font-weight: 500;
+    color: #0074FF;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
     position: unset;
@@ -1368,13 +1368,13 @@ badge.SecondaryColor {
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li a {
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
     padding: 0.5rem;
-    color: #B2B9D4;
+    color: #223885;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li:hover a {
-    font-weight: 400;
-    color: #223885;
+    font-weight: 500;
+    color: #0074FF;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
     position: unset;
@@ -1887,13 +1887,13 @@ badge.SecondaryColor {
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li a {
     font-size: 14px;
-    font-weight: 400;
-    padding: 2rem 0.5rem;
-    color: #B2B9D4;
+    font-weight: 500;
+    padding: 2rem 0.3rem;
+    color: #223885;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li:hover a {
-    font-weight: 400;
-    color: #223885;
+    font-weight: 500;
+    color: #0074FF;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
     position: unset;
@@ -2406,13 +2406,13 @@ badge.SecondaryColor {
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li a {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     padding: 2rem 0.5rem;
-    color: #B2B9D4;
+    color: #223885;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li:hover a {
-    font-weight: 400;
-    color: #223885;
+    font-weight: 500;
+    color: #0074FF;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
     position: unset;
@@ -2919,13 +2919,13 @@ badge.SecondaryColor {
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li a {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     padding: 2rem 0.5rem;
-    color: #B2B9D4;
+    color: #223885;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li:hover a {
-    font-weight: 400;
-    color: #223885;
+    font-weight: 500;
+    color: #0074FF;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
     position: unset;
@@ -3435,13 +3435,13 @@ badge.SecondaryColor {
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li a {
     font-size: 16px;
-    font-weight: 400;
-    padding: 2rem 0.5rem;
-    color: #B2B9D4;
+    font-weight: 500;
+    padding: 2rem 1rem;
+    color: #223885;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav li:hover a {
-    font-weight: 400;
-    color: #223885;
+    font-weight: 500;
+    color: #0074FF;
   }
   body[dir=ltr] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
     position: unset;
@@ -3993,13 +3993,13 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li a {
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
     padding: 0.5rem;
-    color: #B2B9D4;
+    color: #223885;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li:hover a {
-    font-weight: 400;
-    color: #223885;
+    font-weight: 500;
+    color: #0074FF;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
     position: unset;
@@ -4524,13 +4524,13 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li a {
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
     padding: 0.5rem;
-    color: #B2B9D4;
+    color: #223885;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li:hover a {
-    font-weight: 400;
-    color: #223885;
+    font-weight: 500;
+    color: #0074FF;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
     position: unset;
@@ -4811,13 +4811,13 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li a {
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
     padding: 0.5rem;
-    color: #B2B9D4;
+    color: #223885;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li:hover a {
-    font-weight: 400;
-    color: #223885;
+    font-weight: 500;
+    color: #0074FF;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
     position: unset;
@@ -5222,13 +5222,13 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li a {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     padding: 2rem 0.5rem;
-    color: #B2B9D4;
+    color: #223885;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li:hover a {
-    font-weight: 400;
-    color: #223885;
+    font-weight: 500;
+    color: #233B8C;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
     position: unset;
@@ -5655,13 +5655,13 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li a {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     padding: 2rem 0.5rem;
-    color: #B2B9D4;
+    color: #223885;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li:hover a {
-    font-weight: 400;
-    color: #223885;
+    font-weight: 500;
+    color: #233B8C;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
     position: unset;
@@ -6172,13 +6172,13 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li a {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     padding: 2rem 0.5rem;
-    color: #B2B9D4;
+    color: #223885;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li:hover a {
-    font-weight: 400;
-    color: #223885;
+    font-weight: 500;
+    color: #233B8C;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
     position: unset;
@@ -6696,14 +6696,14 @@ badge.SecondaryColor {
     justify-content: center;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li a {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 500;
     padding: 2rem 0.5rem;
-    color: #B2B9D4;
+    color: #223885;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav li:hover a {
-    font-weight: 400;
-    color: #223885;
+    font-weight: 500;
+    color: #233B8C;
   }
   body[dir=rtl] nav .container .navbar-collapse .navbar-nav .FNV-MegaMenu {
     position: unset;
