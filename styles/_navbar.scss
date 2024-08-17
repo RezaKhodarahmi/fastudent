@@ -68,9 +68,10 @@ body[dir='ltr'] {
             }
 
             .dropdown-menu {
-              top: 200%;
-              left: -150px;
-              width: 360px;
+              left: 0;
+              z-index: 5;
+              top: -235px;
+              width: 100%;
               padding: 2rem;
               border-left: 0;
               border-right: 0;
@@ -332,6 +333,21 @@ body[dir='ltr'] {
                 position: absolute;
               }
             }
+          }
+
+          /* Hide the dropdown menu by default */
+          .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+          }
+
+          /* Show the dropdown menu when the parent is focused or clicked */
+          .dropdown:focus-within .dropdown-menu {
+              display: flex;
+              flex-direction: column;
           }
         }
 
@@ -873,9 +889,10 @@ body[dir='ltr'] {
             }
 
             .dropdown-menu {
-              top: 200%;
-              left: -150px;
-              width: 360px;
+              left: 0;
+              z-index: 5;
+              top: -235px;
+              width: 100%;
               padding: 2rem;
               border-left: 0;
               border-right: 0;
@@ -1137,6 +1154,20 @@ body[dir='ltr'] {
                 position: absolute;
               }
             }
+          }
+
+          .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+          }
+
+          /* Show the dropdown menu when the parent is focused or clicked */
+          .dropdown:focus-within .dropdown-menu {
+              display: flex;
+              flex-direction: column;
           }
         }
 
@@ -2453,6 +2484,21 @@ body[dir='ltr'] {
               }
             }
           }
+
+          /* Hide the dropdown menu by default */
+          .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+          }
+
+          /* Show the dropdown menu when the parent is focused or clicked */
+          .dropdown:focus-within .dropdown-menu {
+              display: flex;
+              flex-direction: column;
+          }
         }
 
         .navbar-collapse {
@@ -3253,6 +3299,21 @@ body[dir='ltr'] {
               }
             }
           }
+
+          /* Hide the dropdown menu by default */
+          .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+          }
+
+          /* Show the dropdown menu when the parent is focused or clicked */
+          .dropdown:focus-within .dropdown-menu {
+              display: flex;
+              flex-direction: column;
+          }
         }
 
         .navbar-collapse {
@@ -4045,6 +4106,21 @@ body[dir='ltr'] {
                 position: absolute;
               }
             }
+          }
+
+          /* Hide the dropdown menu by default */
+          .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+          }
+
+          /* Show the dropdown menu when the parent is focused or clicked */
+          .dropdown:focus-within .dropdown-menu {
+              display: flex;
+              flex-direction: column;
           }
         }
 
@@ -4843,6 +4919,21 @@ body[dir='ltr'] {
               }
             }
           }
+
+          /* Hide the dropdown menu by default */
+          .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+          }
+
+          /* Show the dropdown menu when the parent is focused or clicked */
+          .dropdown:focus-within .dropdown-menu {
+              display: flex;
+              flex-direction: column;
+          }
         }
 
         .navbar-collapse {
@@ -5403,10 +5494,11 @@ body[dir='rtl'] {
             }
 
             .dropdown-menu {
-              top: 200%;
-              left: -150px;
-              width: 360px;
-              padding: 2rem;
+              z-index: 5;
+              right: 0px;
+              top: -235px;
+              width: 100%;
+              padding: 2rem 4rem;
               border-left: 0;
               border-right: 0;
               border-bottom: 0;
@@ -5667,6 +5759,21 @@ body[dir='rtl'] {
                 position: absolute;
               }
             }
+          }
+
+          /* Hide the dropdown menu by default */
+          .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+          }
+
+          /* Show the dropdown menu when the parent is focused or clicked */
+          .dropdown:focus-within .dropdown-menu {
+              display: flex;
+              flex-direction: column;
           }
         }
 
@@ -6212,13 +6319,14 @@ body[dir='rtl'] {
             }
 
             .dropdown-menu {
-              top: 200%;
-              left: -150px;
-              width: 360px;
-              padding: 2rem;
+              z-index: 5;
+              right: 0px;
+              top: -235px;
+              width: 100%;
               border-left: 0;
               border-right: 0;
               border-bottom: 0;
+              padding: 2rem 5rem;
               border-radius: 0px;
               border-top: 1px solid $PrimaryOne;
               box-shadow: 0 10px 16px $PrimaryShadow;
@@ -6476,6 +6584,21 @@ body[dir='rtl'] {
                 position: absolute;
               }
             }
+          }
+
+          /* Hide the dropdown menu by default */
+          .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+          }
+
+          /* Show the dropdown menu when the parent is focused or clicked */
+          .dropdown:focus-within .dropdown-menu {
+              display: flex;
+              flex-direction: column;
           }
         }
 
@@ -7655,6 +7778,21 @@ body[dir='rtl'] {
               }
             }
           }
+
+          /* Hide the dropdown menu by default */
+          .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+          }
+
+          /* Show the dropdown menu when the parent is focused or clicked */
+          .dropdown:focus-within .dropdown-menu {
+              display: flex;
+              flex-direction: column;
+          }
         }
 
         .navbar-collapse {
@@ -8353,6 +8491,21 @@ body[dir='rtl'] {
                 position: absolute;
               }
             }
+          }
+
+          /* Hide the dropdown menu by default */
+          .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+          }
+
+          /* Show the dropdown menu when the parent is focused or clicked */
+          .dropdown:focus-within .dropdown-menu {
+              display: flex;
+              flex-direction: column;
           }
         }
 
@@ -9146,6 +9299,21 @@ body[dir='rtl'] {
                 position: absolute;
               }
             }
+          }
+
+          /* Hide the dropdown menu by default */
+          .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+          }
+
+          /* Show the dropdown menu when the parent is focused or clicked */
+          .dropdown:focus-within .dropdown-menu {
+              display: flex;
+              flex-direction: column;
           }
         }
 
@@ -9952,6 +10120,21 @@ body[dir='rtl'] {
                 position: absolute;
               }
             }
+          }
+
+          /* Hide the dropdown menu by default */
+          .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+          }
+
+          /* Show the dropdown menu when the parent is focused or clicked */
+          .dropdown:focus-within .dropdown-menu {
+              display: flex;
+              flex-direction: column;
           }
         }
 

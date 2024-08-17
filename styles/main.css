@@ -308,6 +308,8 @@ badge.SecondaryColor {
     border-top-right-radius: 1rem;
     background-color: #223885;
     justify-content: space-between !important;
+    /* Hide the dropdown menu by default */
+    /* Show the dropdown menu when the parent is focused or clicked */
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown {
     position: unset;
@@ -331,9 +333,10 @@ badge.SecondaryColor {
     stroke: #0074FF;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu {
-    top: 200%;
-    left: -150px;
-    width: 360px;
+    left: 0;
+    z-index: 5;
+    top: -235px;
+    width: 100%;
     padding: 2rem;
     border-left: 0;
     border-right: 0;
@@ -540,6 +543,17 @@ badge.SecondaryColor {
     fill: #FFA600;
     stroke: #FFA600;
     position: absolute;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown:focus-within .dropdown-menu {
+    display: flex;
+    flex-direction: column;
   }
   body[dir=ltr] nav .container .navbar-toggler {
     border-width: 0;
@@ -944,6 +958,7 @@ badge.SecondaryColor {
     border-top-right-radius: 1rem;
     background-color: #223885;
     justify-content: space-between !important;
+    /* Show the dropdown menu when the parent is focused or clicked */
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown {
     position: unset;
@@ -967,9 +982,10 @@ badge.SecondaryColor {
     stroke: #0074FF;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu {
-    top: 200%;
-    left: -150px;
-    width: 360px;
+    left: 0;
+    z-index: 5;
+    top: -235px;
+    width: 100%;
     padding: 2rem;
     border-left: 0;
     border-right: 0;
@@ -1176,6 +1192,17 @@ badge.SecondaryColor {
     fill: #FFA600;
     stroke: #FFA600;
     position: absolute;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown:focus-within .dropdown-menu {
+    display: flex;
+    flex-direction: column;
   }
   body[dir=ltr] nav .container .navbar-toggler {
     border-width: 0;
@@ -1986,6 +2013,8 @@ badge.SecondaryColor {
   }
   body[dir=ltr] nav .container .FNV_QuickAccess {
     display: flex;
+    /* Hide the dropdown menu by default */
+    /* Show the dropdown menu when the parent is focused or clicked */
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown a {
     position: relative;
@@ -2213,6 +2242,17 @@ badge.SecondaryColor {
     fill: #FFA600;
     stroke: #FFA600;
     position: absolute;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown:focus-within .dropdown-menu {
+    display: flex;
+    flex-direction: column;
   }
   body[dir=ltr] nav .container .navbar-collapse {
     position: relative;
@@ -2616,6 +2656,8 @@ badge.SecondaryColor {
   }
   body[dir=ltr] nav .container .FNV_QuickAccess {
     display: flex;
+    /* Hide the dropdown menu by default */
+    /* Show the dropdown menu when the parent is focused or clicked */
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown a {
     position: relative;
@@ -2843,6 +2885,17 @@ badge.SecondaryColor {
     fill: #FFA600;
     stroke: #FFA600;
     position: absolute;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown:focus-within .dropdown-menu {
+    display: flex;
+    flex-direction: column;
   }
   body[dir=ltr] nav .container .navbar-collapse {
     position: relative;
@@ -3240,6 +3293,8 @@ badge.SecondaryColor {
   }
   body[dir=ltr] nav .container .FNV_QuickAccess {
     display: flex;
+    /* Hide the dropdown menu by default */
+    /* Show the dropdown menu when the parent is focused or clicked */
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown a {
     position: relative;
@@ -3467,6 +3522,17 @@ badge.SecondaryColor {
     fill: #FFA600;
     stroke: #FFA600;
     position: absolute;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown:focus-within .dropdown-menu {
+    display: flex;
+    flex-direction: column;
   }
   body[dir=ltr] nav .container .navbar-collapse {
     position: relative;
@@ -3869,6 +3935,8 @@ badge.SecondaryColor {
   }
   body[dir=ltr] nav .container .FNV_QuickAccess {
     display: flex;
+    /* Hide the dropdown menu by default */
+    /* Show the dropdown menu when the parent is focused or clicked */
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown a {
     position: relative;
@@ -4096,6 +4164,17 @@ badge.SecondaryColor {
     fill: #FFA600;
     stroke: #FFA600;
     position: absolute;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown:focus-within .dropdown-menu {
+    display: flex;
+    flex-direction: column;
   }
   body[dir=ltr] nav .container .navbar-collapse {
     position: relative;
@@ -4516,6 +4595,8 @@ badge.SecondaryColor {
     border-top-right-radius: 1rem;
     background-color: #223885;
     justify-content: space-between !important;
+    /* Hide the dropdown menu by default */
+    /* Show the dropdown menu when the parent is focused or clicked */
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown {
     position: unset;
@@ -4539,10 +4620,11 @@ badge.SecondaryColor {
     stroke: #0074FF;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu {
-    top: 200%;
-    left: -150px;
-    width: 360px;
-    padding: 2rem;
+    z-index: 5;
+    right: 0px;
+    top: -235px;
+    width: 100%;
+    padding: 2rem 4rem;
     border-left: 0;
     border-right: 0;
     border-bottom: 0;
@@ -4748,6 +4830,17 @@ badge.SecondaryColor {
     fill: #FFA600;
     stroke: #FFA600;
     position: absolute;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown:focus-within .dropdown-menu {
+    display: flex;
+    flex-direction: column;
   }
   body[dir=rtl] nav .container .navbar-toggler {
     border-width: 0;
@@ -5157,6 +5250,8 @@ badge.SecondaryColor {
     border-top-right-radius: 1rem;
     background-color: #223885;
     justify-content: space-between !important;
+    /* Hide the dropdown menu by default */
+    /* Show the dropdown menu when the parent is focused or clicked */
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown {
     position: unset;
@@ -5180,13 +5275,14 @@ badge.SecondaryColor {
     stroke: #0074FF;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu {
-    top: 200%;
-    left: -150px;
-    width: 360px;
-    padding: 2rem;
+    z-index: 5;
+    right: 0px;
+    top: -235px;
+    width: 100%;
     border-left: 0;
     border-right: 0;
     border-bottom: 0;
+    padding: 2rem 5rem;
     border-radius: 0px;
     border-top: 1px solid #223885;
     box-shadow: 0 10px 16px rgba(7, 16, 46, 0.1882352941);
@@ -5389,6 +5485,17 @@ badge.SecondaryColor {
     fill: #FFA600;
     stroke: #FFA600;
     position: absolute;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown:focus-within .dropdown-menu {
+    display: flex;
+    flex-direction: column;
   }
   body[dir=rtl] nav .container .navbar-toggler {
     border-width: 0;
@@ -6211,6 +6318,8 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .FNV_QuickAccess {
     display: flex;
+    /* Hide the dropdown menu by default */
+    /* Show the dropdown menu when the parent is focused or clicked */
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown a {
     position: relative;
@@ -6325,6 +6434,17 @@ badge.SecondaryColor {
     fill: #FFA600;
     stroke: #FFA600;
     position: absolute;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown:focus-within .dropdown-menu {
+    display: flex;
+    flex-direction: column;
   }
   body[dir=rtl] nav .container .navbar-collapse {
     position: relative;
@@ -6732,6 +6852,8 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .FNV_QuickAccess {
     display: flex;
+    /* Hide the dropdown menu by default */
+    /* Show the dropdown menu when the parent is focused or clicked */
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown a {
     position: relative;
@@ -6868,6 +6990,17 @@ badge.SecondaryColor {
     fill: #FFA600;
     stroke: #FFA600;
     position: absolute;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown:focus-within .dropdown-menu {
+    display: flex;
+    flex-direction: column;
   }
   body[dir=rtl] nav .container .navbar-collapse {
     position: relative;
@@ -7266,6 +7399,8 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .FNV_QuickAccess {
     display: flex;
+    /* Hide the dropdown menu by default */
+    /* Show the dropdown menu when the parent is focused or clicked */
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown a {
     position: relative;
@@ -7495,6 +7630,17 @@ badge.SecondaryColor {
     fill: #FFA600;
     stroke: #FFA600;
     position: absolute;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown:focus-within .dropdown-menu {
+    display: flex;
+    flex-direction: column;
   }
   body[dir=rtl] nav .container .navbar-collapse {
     position: relative;
@@ -7903,6 +8049,8 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .FNV_QuickAccess {
     display: flex;
+    /* Hide the dropdown menu by default */
+    /* Show the dropdown menu when the parent is focused or clicked */
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown a {
     position: relative;
@@ -8133,6 +8281,17 @@ badge.SecondaryColor {
     fill: #FFA600;
     stroke: #FFA600;
     position: absolute;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown:focus-within .dropdown-menu {
+    display: flex;
+    flex-direction: column;
   }
   body[dir=rtl] nav .container .navbar-collapse {
     position: relative;
