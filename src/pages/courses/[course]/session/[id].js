@@ -48,7 +48,7 @@ const VideoPage = () => {
   useEffect(() => {
     if (courseData?.data?.data?.videos) {
       // Filter the videos to include only those with cycleId === 67
-      const filteredVideos = courseData.data.data.videos.filter(video => video.cycleId === '67')
+      const filteredVideos = courseData.data.data.videos.filter(video => video.cycleId == courseData?.data?.cycleId)
 
       setVideos(filteredVideos)
 

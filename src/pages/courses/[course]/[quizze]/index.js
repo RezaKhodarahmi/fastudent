@@ -43,6 +43,7 @@ const Test = () => {
   const [correctAnswers, setCorrectAnswers] = useState(0)
   const [testReview, setTestReview] = useState(null)
   const [allowRetake, setAllowRetake] = useState(0)
+  const userEmail = localStorage.getItem('userData')
 
   useEffect(() => {
     if (quizze) {
@@ -51,10 +52,14 @@ const Test = () => {
   }, [quizze])
 
   const startTest = () => {
-    setStarted(true)
-    const testDuration = parseInt(testData?.data?.data?.testTime) * 60 // Convert minutes to seconds
-    setTimer(testDuration)
-    setInitialTimer(testDuration)
+    const confirmation = window.confirm('Do you want to start the exam?')
+
+    if (confirmation) {
+      setStarted(true)
+      const testDuration = parseInt(testData?.data?.data?.testTime) * 60 // Convert minutes to seconds
+      setTimer(testDuration)
+      setInitialTimer(testDuration)
+    }
   }
 
   const handleCheckboxChange = (questionId, answerId, isChecked) => {
@@ -74,38 +79,42 @@ const Test = () => {
   }
 
   const finishTest = () => {
-    setFinished(true)
-    clearInterval(timer)
+    const confirmation = window.confirm('Do you want to close the exam?')
 
-    let correctCount = 0
-    let totalQuestions = 0
+    if (confirmation) {
+      setFinished(true)
+      clearInterval(timer)
 
-    const reviewData = testData.data.data.questions.map(question => {
-      const userAnswerIds = userAnswers[question.id] || []
-      const correctAnswerIds = question.answers.filter(a => a.isCorrect).map(a => a.id)
+      let correctCount = 0
+      let totalQuestions = 0
 
-      const isCorrect =
-        userAnswerIds.every(id => correctAnswerIds.includes(id)) && userAnswerIds.length === correctAnswerIds.length
+      const reviewData = testData.data.data.questions.map(question => {
+        const userAnswerIds = userAnswers[question.id] || []
+        const correctAnswerIds = question.answers.filter(a => a.isCorrect).map(a => a.id)
 
-      if (isCorrect) correctCount++
-      totalQuestions++
+        const isCorrect =
+          userAnswerIds.every(id => correctAnswerIds.includes(id)) && userAnswerIds.length === correctAnswerIds.length
 
-      return {
-        ...question,
-        userAnswerIds,
-        correctAnswerIds,
-        isCorrect
-      }
-    })
+        if (isCorrect) correctCount++
+        totalQuestions++
 
-    // Calculate percentage
-    const percentage = (correctCount / totalQuestions) * 100
+        return {
+          ...question,
+          userAnswerIds,
+          correctAnswerIds,
+          isCorrect
+        }
+      })
 
-    // Update state with test review data and result metrics
-    setTestReview(reviewData)
-    setCorrectAnswers(correctCount)
+      // Calculate percentage
+      const percentage = (correctCount / totalQuestions) * 100
 
-    setUserAnswers({})
+      // Update state with test review data and result metrics
+      setTestReview(reviewData)
+      setCorrectAnswers(correctCount)
+
+      setUserAnswers({})
+    }
   }
 
   const retakeTest = () => {
@@ -176,8 +185,7 @@ const Test = () => {
 
       axios
         .post(url, postData)
-        .then(response => {
-        })
+        .then(response => {})
         .catch(error => {
           console.error('Error sending data:', error)
         })
@@ -297,7 +305,7 @@ const Test = () => {
                       style={{ padding: '30px', marginBottom: '30px', borderRadius: '15px', position: 'relative' }}
                       key={qIndex}
                     >
-                      <div style={watermarkStyle}>FANAVARAN.CA</div>
+                      <div style={watermarkStyle}>{JSON.parse(userEmail) || 'FANAVARAN.CA'}</div>
                       <Typography variant='h6' style={{ marginBottom: '20px', ...preventCopyStyle }}>
                         {qIndex + 1}. {question.questionText}
                       </Typography>
@@ -414,12 +422,15 @@ const Test = () => {
             <div className='row justify-content-center'>
               <div className='col-12 col-md-8'>
                 <Paper elevation={3} style={{ padding: '20px', marginBottom: '20px', position: 'relative' }}>
-                  <div style={watermarkStyle}>FANAVARAN.CA</div>
+                  <div style={watermarkStyle}>{JSON.parse(userEmail) || 'FANAVARAN.CA'}</div>
                   <Typography variant='h5' style={{ marginBottom: '20px' }}>
                     Test Results
                   </Typography>
                   <table className='table table-striped' style={preventCopyStyle}>
                     <tbody className='text-center'>
+                      <Typography variant='h4' sx={{ mb: 4, textAlign: 'center' }}>
+                        رزرو وقت مشاوره برای نوشتن تجربه کاری مهندسی و تکنسین
+                      </Typography>
                       <tr>
                         <td>
                           <CheckCircle /> Grade Percentage
@@ -485,7 +496,7 @@ const Test = () => {
             <div className='row justify-content-center'>
               <div className='col-12 col-md-8'>
                 <Paper elevation={3} style={{ padding: '20px', marginBottom: '20px', position: 'relative' }}>
-                  <div style={watermarkStyle}>FANAVARAN.CA</div>
+                  <div style={watermarkStyle}>{JSON.parse(userEmail) || 'FANAVARAN.CA'}</div>
                   <Typography variant='h5' style={{ marginBottom: '20px' }}>
                     Test Review
                   </Typography>

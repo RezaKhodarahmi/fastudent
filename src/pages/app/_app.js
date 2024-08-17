@@ -24,7 +24,6 @@ import themeConfig from 'src/configs/themeConfig'
 // ** Third Party Import
 import { Toaster } from 'react-hot-toast'
 
-// import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3'
 // ** Component Imports
 import UserLayout from 'src/layouts/UserLayout'
 import AclGuard from 'src/@core/components/auth/AclGuard'
@@ -98,7 +97,6 @@ const App = props => {
   return (
     <Provider store={store}>
       <SessionProvider session={session}>
-        {/* <GoogleReCaptchaProvider reCaptchaKey={themeConfig.recaptchaKey}> */}
         <CacheProvider value={emotionCache}>
           <Head>
             <title>{`${themeConfig.templateName} - Students Dashboard`}</title>
@@ -122,7 +120,6 @@ const App = props => {
                             {getLayout(<Component {...pageProps} />)}
                           </AclGuard>
                         </Guard>
-                       
                       </WindowWrapper>
                       <ReactHotToast>
                         <Toaster position={settings.toastPosition} toastOptions={{ className: 'react-hot-toast' }} />
@@ -134,7 +131,6 @@ const App = props => {
             </SettingsProvider>
           </AuthProvider>
         </CacheProvider>
-        {/* </GoogleReCaptchaProvider> */}
       </SessionProvider>
     </Provider>
   )

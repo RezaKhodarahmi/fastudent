@@ -56,8 +56,8 @@ const AuthProvider = ({ children }) => {
           })
           .then(async response => {
             setLoading(false)
-            console.log('uyessssss', response)
             setUser({ Roles: response.data.data.role })
+            localStorage.setItem('userRole', response.data.data.role)
             localStorage.setItem('userImage', response.data.data.avatar)
             localStorage.setItem(authConfig.storageTokenKeyName, response.data.accessToken)
             Cookies.set(authConfig.storageTokenKeyName, response.data.accessToken)
@@ -67,6 +67,7 @@ const AuthProvider = ({ children }) => {
             localStorage.removeItem('refreshToken')
             localStorage.removeItem('accessToken')
             localStorage.removeItem('userImage')
+            localStorage.removeItem('userRole')
 
             Cookies.remove(authConfig.storageTokenKeyName)
             Cookies.remove('userData')
@@ -93,6 +94,7 @@ const AuthProvider = ({ children }) => {
         Cookies.set('userData', JSON.stringify(params.email))
         localStorage.setItem(authConfig.onTokenExpiration, response.data.refreshToken)
         localStorage.setItem('userImage', response.data.data.avatar)
+        localStorage.setItem('userRole', response.data.data.role)
 
         const returnUrl = router.query.returnUrl
         setUser({ Roles: response.data.data.role })
