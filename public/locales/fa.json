@@ -28,7 +28,7 @@
   "category-title": "با دوره‌های ما آشنا شوید",
 
   "mission-title": "اهداف و خدمات ما",
-  
+
   "certificate": "سرتیفیکیت",
   "Engineer":"مهندسی",
   "fanavaran-courses":"دوره ها",
@@ -42,7 +42,7 @@
   "engineering-3":"NPPE Exam Prep (Recorded)",
   "engineering-4":"CBA Writing (P.Eng License)",
   "engineering-5":"Profile Creation (P.Eng Application)",
-  
+
   "learning":"مهندسی",
   "learning-1":"آزمون‌های تکنیکال مهندسی",
 
@@ -229,6 +229,7 @@
   "blog-archive": "آرشیو مقالات فناوران",
 
   "cart-referal-title": "کد معرف دارید؟ اینجا وارد کنید",
+  "complete-your-profile-message":"برای ادامه، باید جزئیات حساب خود را تکمیل کنید!",
   "cart-referal-desc": "کد معرف چیست؟ و نحوه کسب درآمد در فناوران",
   "cart-referal-button": "اعمال کد",
   "cart-head-title": "سبد خرید شما",

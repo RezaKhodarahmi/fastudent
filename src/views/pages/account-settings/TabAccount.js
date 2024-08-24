@@ -98,21 +98,44 @@ const TabAccount = () => {
     }
   }, [profileDetails, dispatch, reset, avatarURL])
 
-  const onSubmit = data => {
+  const onSubmit = async data => {
     const formData = new FormData()
+
     if (avatar) {
       formData.append('avatar', avatar)
     }
+
     for (const key in data) {
       formData.append(key, data[key])
     }
-    dispatch(updateProfileDetails(formData))
+
+    setLoading(true) // Set loading state to true
+
+    try {
+      // Dispatch the action and wait for it to complete
+      await dispatch(updateProfileDetails(formData))
+
+      // Optionally, refetch the profile data after the update
+      await dispatch(getProfileInfo())
+    } catch (error) {
+      // Handle any errors here
+      console.error('Error updating profile:', error)
+    } finally {
+      setLoading(false) // Set loading state to false after submission
+    }
   }
 
   //Handle upload new avatar
   const handleAvatarChange = e => {
-    setAvatar(e.target.files[0])
-    setAvatarURL(URL.createObjectURL(e.target.files[0]))
+    const file = e.target.files[0]
+
+    if (file) {
+      setAvatar(file)
+      setAvatarURL(URL.createObjectURL(file))
+    } else {
+      // Handle case where no file was selected or the selection was canceled
+      console.error('No file selected')
+    }
   }
 
   return (
@@ -304,6 +327,16 @@ const TabAccount = () => {
                         </FormControl>
                       </Grid>
                     ) : null}
+                    <Grid item xs={12} sm={6}>
+                      <FormControl fullWidth>
+                        <TextField fullWidth type='number' label='Phone' {...register('phone')} />
+                        {detailErrors.phone && (
+                          <FormHelperText sx={{ color: 'error.main' }} id='stepper-linear-account-phone'>
+                            {detailErrors.phone.message}
+                          </FormHelperText>
+                        )}
+                      </FormControl>
+                    </Grid>
 
                     <Grid item xs={12} sx={{ pt: theme => `${theme.spacing(6.5)} !important` }}>
                       <Button type='submit' size='large' variant='contained' color='success'>
