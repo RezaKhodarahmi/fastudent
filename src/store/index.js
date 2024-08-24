@@ -4,6 +4,8 @@ import { configureStore } from '@reduxjs/toolkit'
 // ** Reducer
 import user from 'src/store/apps/user'
 import profile from 'src/store/apps/profile'
+import teacher from 'src/store/apps/teacher'
+import teacherStudent from 'src/store/apps/teacher-student'
 import course from 'src/store/apps/course'
 import search from 'src/store/apps/search'
 import stripe from 'src/store/apps/stripe'
@@ -25,6 +27,8 @@ export const store = configureStore({
     user,
     tests,
     profile,
+    teacher,
+    teacherStudent,
     course,
     category,
     search,
