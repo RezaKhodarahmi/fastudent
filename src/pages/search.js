@@ -2,15 +2,18 @@ import React, { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet'
 import { useRouter } from 'next/router'
 import BlogSection from 'src/views/blogSection'
+import { Box, Typography, Button } from '@mui/material'
 import { fetchSearchedCourse } from 'src/store/apps/search'
 import { useSelector, useDispatch } from 'react-redux'
 import { useTranslation } from 'react-i18next'
 import YoutubeSection from 'src/views/youtubeSection'
 import SingleCourse from 'src/views/courses/singleCourse'
+import LinearProgress from '@mui/material/LinearProgress'
 
 const SearchPage = () => {
   // State
   const [courses, setCourses] = useState([])
+  const [results, setResults] = useState(null) // Initially null to indicate that we haven't checked yet
   const [loading, setLoading] = useState(true)
 
   // Hooks
@@ -19,33 +22,40 @@ const SearchPage = () => {
   const searchResults = useSelector(state => state.search)
   const { t } = useTranslation()
 
-  // Give searched string from the URL
+  // Get the search term from the URL
   const { s: searchTerm } = router.query
 
-  // Fetch Searched course from the backend
+  // Fetch searched courses from the backend
   useEffect(() => {
-    dispatch(fetchSearchedCourse(searchTerm))
+    if (searchTerm) {
+      setLoading(true)
+      dispatch(fetchSearchedCourse(searchTerm))
+    }
   }, [searchTerm, dispatch])
 
   useEffect(() => {
-    setCourses(searchResults?.data?.data || [])
+    if (searchResults?.data?.data) {
+      if (searchResults.data.data.length > 0) {
+        setCourses(searchResults.data.data)
+        setResults(true)
+      } else {
+        setResults(false)
+      }
+    }
     setLoading(false)
   }, [searchResults])
 
   const addToCart = id => {
     const cartItems = JSON.parse(localStorage.getItem('cartItems')) || []
     const existInCart = cartItems.includes(id)
-    router.push('/cart')
-
     if (existInCart) {
       window.alert('Item is already in cart!')
-      router.push('/cart')
     } else {
       cartItems.push(id)
+      const updatedCartItems = [...cartItems]
+      localStorage.setItem('cartItems', JSON.stringify(updatedCartItems))
     }
-
-    const updatedCartItems = [...cartItems]
-    localStorage.setItem('cartItems', JSON.stringify(updatedCartItems))
+    router.push('/cart')
   }
 
   return (
@@ -59,31 +69,52 @@ const SearchPage = () => {
           <div className='container'>
             <div className='row justify-content-center'>
               <h1 className='m-3'>{t('fanavaran-search-result')}</h1>
-              {!loading ? (
-                <div class='tab-content' id='pills-tabContent'>
+              {loading ? (
+                <LinearProgress />
+              ) : (
+                <div className='tab-content' id='pills-tabContent'>
                   <div
-                    class='tab-pane  show active'
+                    className='tab-pane show active'
                     id='All-Courses'
                     role='tabpanel'
                     aria-labelledby='All-Courses-tab'
-                    tabindex='0'
+                    tabIndex='0'
                   >
                     <div className='row'>
-                      {courses?.length ? (
-                        courses?.map(course => <SingleCourse key={course.id} course={course} addToCart={addToCart} />)
-                      ) : (
-                        <div className='no-results'>
-                          <h2>Sorry, we can't find any results for your search</h2>
-                          <button onClick={() => router.push('/')} className='return-home-btn'>
-                            Return Home
-                          </button>
-                        </div>
-                      )}
+                      {
+                        results === true && courses.length ? (
+                          courses.map(course => <SingleCourse key={course.id} course={course} addToCart={addToCart} />)
+                        ) : results === false ? (
+                          <Box
+                            display='flex'
+                            flexDirection='column'
+                            alignItems='center'
+                            justifyContent='center'
+                            sx={{
+                              minHeight: '300px',
+                              textAlign: 'center',
+                              padding: '2rem',
+                              backgroundColor: '#f9f9f9',
+                              borderRadius: '8px'
+                            }}
+                          >
+                            <Typography variant='h4' component='h2' gutterBottom>
+                              Sorry, we can't find any results for your search
+                            </Typography>
+                            <Button
+                              variant='contained'
+                              color='primary'
+                              onClick={() => router.push('/')}
+                              sx={{ marginTop: '1rem' }}
+                            >
+                              Return Home
+                            </Button>
+                          </Box>
+                        ) : null /* Don't render anything until results are determined */
+                      }
                     </div>
                   </div>
                 </div>
-              ) : (
-                <h3>Loading...</h3>
               )}
             </div>
           </div>

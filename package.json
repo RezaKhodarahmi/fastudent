@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "cross-env TZ=America/Toronto next dev -p 8585",
     "build": "cross-env TZ=America/Toronto next build && next-sitemap ",
-    "start": "cross-env TZ=America/Toronto next start -p 8585",
+    "start": "cross-env TZ=America/Toronto next start -p 3000",
     "export": "cross-env TZ=America/Toronto next export",
     "lint": "eslint --fix \"src/**/*.{js,jsx}\"",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
@@ -40,7 +40,7 @@
     "@reduxjs/toolkit": "1.9.1",
     "@stripe/react-stripe-js": "^2.1.1",
     "@stripe/stripe-js": "^1.54.1",
-    "@zoom/meetingsdk": "^3.8.0",
+    "@zoom/meetingsdk": "^3.8.5",
     "@zoomus/websdk": "^2.18.3",
     "apexcharts": "^3.42.0",
     "apexcharts-clevision": "3.28.5",
@@ -54,9 +54,8 @@
     "clipboard-copy": "4.0.1",
     "clsx": "1.2.1",
     "cookie": "^0.5.0",
-    "crypto-js": "^4.2.0",
     "css-loader": "^7.1.2",
-    "date-fns": "^3.6.0",
+    "date-fns": "^2.23.0",
     "draft-js": "0.11.7",
     "feather-icons": "^4.29.1",
     "feather-icons-react": "^0.6.2",
@@ -65,7 +64,6 @@
     "i18next-browser-languagedetector": "7.0.1",
     "i18next-http-backend": "^2.1.1",
     "jquery": "^3.7.0",
-    "js-base64": "^3.7.7",
     "js-cookie": "^3.0.5",
     "jsonwebtoken": "^9.0.2",
     "jspdf": "^2.5.1",
@@ -144,3 +142,5 @@
     }
   }
 }
+
+

@@ -140,7 +140,7 @@ const TeacherCourses = () => {
               {students.map(student => (
                 <TableRow key={student.id}>
                   <TableCell>
-                    {student.firstName} {student.lastName}
+                    {student?.firstName} {student?.lastName}
                   </TableCell>
                   <TableCell>{student.email}</TableCell>
                   <TableCell>
