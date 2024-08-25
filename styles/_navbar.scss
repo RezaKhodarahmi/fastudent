@@ -99,11 +99,12 @@ body[dir='ltr'] {
               a {
                 margin: 0;
                 padding: 1.5rem;
-                text-align: right;
+                text-align: left;
                 color: $PrimaryOne;
 
                 svg {
-                  margin-left: 1rem;
+                  margin-left: 0;
+                  margin-right: 1rem;
                   fill: $PrimaryFour;
                   stroke: $PrimaryFour;
                 }

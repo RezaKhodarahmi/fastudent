@@ -362,11 +362,12 @@ badge.SecondaryColor {
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a {
     margin: 0;
     padding: 1.5rem;
-    text-align: right;
+    text-align: left;
     color: #223885;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a svg {
-    margin-left: 1rem;
+    margin-left: 0;
+    margin-right: 1rem;
     fill: #0074FF;
     stroke: #0074FF;
   }
