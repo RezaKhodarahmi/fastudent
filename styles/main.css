@@ -303,9 +303,8 @@ badge.SecondaryColor {
     height: 60px;
     display: flex;
     position: fixed;
+    border-radius: 0;
     align-items: center;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
     background-color: #223885;
     justify-content: space-between !important;
     /* Hide the dropdown menu by default */
@@ -333,17 +332,20 @@ badge.SecondaryColor {
     stroke: #0074FF;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu {
-    left: 0;
     z-index: 5;
+    right: 0px;
     top: -235px;
     width: 100%;
-    padding: 2rem;
+    padding: 2rem 4rem;
     border-left: 0;
     border-right: 0;
     border-bottom: 0;
-    border-radius: 0px;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 0;
     border-top: 1px solid #223885;
-    box-shadow: 0 10px 16px rgba(7, 16, 46, 0.1882352941);
+    box-shadow: 0 -10px 0px rgba(7, 16, 46, 0.1882352941);
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu.show {
     top: -16rem;
@@ -351,18 +353,20 @@ badge.SecondaryColor {
     width: 100%;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu span {
+    display: block;
     font-size: 14px;
     font-weight: 400;
+    text-align: left;
     color: #0074FF;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a {
     margin: 0;
     padding: 1.5rem;
-    text-align: left;
+    text-align: right;
     color: #223885;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a svg {
-    margin-right: 1rem;
+    margin-left: 1rem;
     fill: #0074FF;
     stroke: #0074FF;
   }
@@ -376,6 +380,7 @@ badge.SecondaryColor {
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User .FNV-UserAvatar img,
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User .FNV-UserAvatar svg {
     width: 100%;
+    padding-right: 1rem;
     -o-object-fit: contain;
        object-fit: contain;
   }
@@ -425,9 +430,10 @@ badge.SecondaryColor {
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu .FNV-UserIcon svg {
     width: 80%;
     height: 80%;
+    margin-left: 0;
+    margin-right: auto;
     -o-object-fit: contain;
        object-fit: contain;
-    margin-right: 0;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span {
     width: 100%;
@@ -512,6 +518,9 @@ badge.SecondaryColor {
     display: block;
     padding: 0.5rem;
     font-size: 12px;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown.FNV_QuickAccess_User .dropdown-menu {
+    top: -390px;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess button {
     padding: 0;
@@ -1594,7 +1603,264 @@ badge.SecondaryColor {
     width: 100%;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess {
+    padding: 0 1.5rem;
+    left: 0px;
+    bottom: -1px;
+    z-index: 50;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: #223885;
+    justify-content: space-between !important;
+    /* Show the dropdown menu when the parent is focused or clicked */
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown {
+    position: unset;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown a svg {
+    width: 24px;
+    height: 24px;
+    stroke: #FFFFFF;
+    stroke-width: 1.5px;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown a span svg {
+    top: -0.4rem;
+    left: -0.4rem;
+    width: 8px;
+    height: 8px;
+    fill: #FFA600;
+    stroke: #FFA600;
+    position: absolute;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown a.show svg {
+    stroke: #0074FF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu {
+    left: 0;
+    z-index: 5;
+    top: -235px;
+    width: 100%;
+    padding: 2rem;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-radius: 0px;
+    border-top: 1px solid #223885;
+    box-shadow: 0 10px 16px rgba(7, 16, 46, 0.1882352941);
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu.show {
+    top: -16rem;
+    left: 0rem;
+    width: 100%;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #0074FF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a {
+    margin: 0;
+    padding: 1.5rem;
+    text-align: left;
+    color: #223885;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a svg {
+    margin-right: 1rem;
+    fill: #0074FF;
+    stroke: #0074FF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User {
+    display: flex;
+    padding: 1rem;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User .FNV-UserAvatar {
+    width: 30%;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User .FNV-UserAvatar img,
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User .FNV-UserAvatar svg {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span {
+    width: 100%;
+    display: flex;
+    margin-left: 1rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span p {
+    color: #223885;
+    margin-bottom: 0rem;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span {
+    display: flex;
+    margin-left: 0;
+    flex-direction: row;
+    justify-content: start;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span svg {
+    top: unset;
+    left: unset;
+    width: 20px;
+    height: 20px;
+    stroke-width: 0px;
+    position: relative;
+    margin-right: 0.5rem;
+    stroke: #223885;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span small {
+    font-size: 14px;
+    font-weight: 400;
+    color: #223885;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu {
+    display: flex;
+    padding: 1rem;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu .FNV-UserIcon {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu .FNV-UserIcon img,
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu .FNV-UserIcon svg {
+    width: 80%;
+    height: 80%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-right: 0;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span {
+    width: 100%;
+    display: flex;
+    margin-left: 1rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span p {
+    color: #223885;
+    margin-bottom: 0rem;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span span {
+    display: flex;
+    margin-left: 0;
+    flex-direction: row;
+    justify-content: start;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span span svg {
+    top: unset;
+    left: unset;
+    width: 20px;
+    height: 20px;
+    stroke-width: 0px;
+    position: relative;
+    margin-right: 0.5rem;
+    stroke: #223885;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span span small {
+    font-size: 12px;
+    font-weight: 400;
+    color: #223885;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover {
+    color: #FFFFFF;
+    background-color: #0074FF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover svg {
+    fill: #FFFFFF;
+    stroke: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-User span p {
+    color: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-User span span svg {
+    stroke: #3DF07A;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-User span span small {
+    color: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu .FNV-UserIcon {
+    width: 30%;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu .FNV-UserIcon img,
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu .FNV-UserIcon svg {
+    stroke: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu span p {
+    color: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu span span small {
+    color: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu.show {
+    display: flex;
+    flex-direction: column;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu ul {
+    max-height: 150px;
+    overflow: scroll;
+    padding: 0px;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu ul p {
+    font-size: 14px;
+    color: #0074FF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu ul li {
+    padding: 0;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown .dropdown-menu ul li a {
+    width: 100%;
+    display: block;
+    padding: 0.5rem;
+    font-size: 12px;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess button {
+    padding: 0;
+    border-width: 0;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: transparent;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess button svg {
+    width: 26px;
+    height: 26px;
+    stroke: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess a {
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess a svg {
+    width: 24px;
+    height: 24px;
+    stroke: #FFFFFF;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess a span svg {
+    top: -0.4rem;
+    left: -0.4rem;
+    width: 8px;
+    height: 8px;
+    fill: #FFA600;
+    stroke: #FFA600;
+    position: absolute;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown-menu {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+  }
+  body[dir=ltr] nav .container .FNV_QuickAccess .dropdown:focus-within .dropdown-menu {
+    display: flex;
+    flex-direction: column;
   }
   body[dir=ltr] nav .container .navbar-toggler {
     border-width: 0;
@@ -4590,9 +4856,8 @@ badge.SecondaryColor {
     height: 60px;
     display: flex;
     position: fixed;
+    border-radius: 0;
     align-items: center;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
     background-color: #223885;
     justify-content: space-between !important;
     /* Hide the dropdown menu by default */
@@ -4628,9 +4893,12 @@ badge.SecondaryColor {
     border-left: 0;
     border-right: 0;
     border-bottom: 0;
-    border-radius: 0px;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 0;
     border-top: 1px solid #223885;
-    box-shadow: 0 10px 16px rgba(7, 16, 46, 0.1882352941);
+    box-shadow: 0 -10px 0px rgba(7, 16, 46, 0.1882352941);
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu.show {
     top: -16rem;
@@ -4638,8 +4906,10 @@ badge.SecondaryColor {
     width: 100%;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu span {
+    display: block;
     font-size: 14px;
     font-weight: 400;
+    text-align: right;
     color: #0074FF;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a {
@@ -4663,6 +4933,7 @@ badge.SecondaryColor {
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User .FNV-UserAvatar img,
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User .FNV-UserAvatar svg {
     width: 100%;
+    padding-left: 1rem;
     -o-object-fit: contain;
        object-fit: contain;
   }
@@ -4799,6 +5070,9 @@ badge.SecondaryColor {
     display: block;
     padding: 0.5rem;
     font-size: 12px;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown.FNV_QuickAccess_User .dropdown-menu {
+    top: -380px;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess button {
     padding: 0;
@@ -5892,7 +6166,265 @@ badge.SecondaryColor {
     width: 100%;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess {
+    padding: 0 1.5rem;
+    left: 0px;
+    bottom: -1px;
+    z-index: 50;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: #223885;
+    justify-content: space-between !important;
+    /* Hide the dropdown menu by default */
+    /* Show the dropdown menu when the parent is focused or clicked */
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown {
+    position: unset;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown a svg {
+    width: 24px;
+    height: 24px;
+    stroke: #FFFFFF;
+    stroke-width: 1.5px;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown a span svg {
+    top: -0.4rem;
+    left: -0.4rem;
+    width: 8px;
+    height: 8px;
+    fill: #FFA600;
+    stroke: #FFA600;
+    position: absolute;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown a.show svg {
+    stroke: #0074FF;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu {
+    z-index: 5;
+    right: 0px;
+    top: -235px;
+    width: 100%;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    padding: 2rem 5rem;
+    border-radius: 0px;
+    border-top: 1px solid #223885;
+    box-shadow: 0 10px 16px rgba(7, 16, 46, 0.1882352941);
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu.show {
+    top: -16rem;
+    left: 0rem;
+    width: 100%;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #0074FF;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a {
+    margin: 0;
+    padding: 1.5rem;
+    text-align: right;
+    color: #223885;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a svg {
+    margin-left: 1rem;
+    fill: #0074FF;
+    stroke: #0074FF;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User {
+    display: flex;
+    padding: 1rem;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User .FNV-UserAvatar {
+    width: 30%;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User .FNV-UserAvatar img,
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User .FNV-UserAvatar svg {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span {
+    width: 100%;
+    display: flex;
+    margin-left: 1rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span p {
+    color: #223885;
+    margin-bottom: 0rem;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span {
+    display: flex;
+    margin-left: 0;
+    flex-direction: row;
+    justify-content: start;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span svg {
+    top: unset;
+    left: unset;
+    width: 20px;
+    height: 20px;
+    stroke-width: 0px;
+    position: relative;
+    margin-right: 0.5rem;
+    stroke: #223885;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-User span span small {
+    font-size: 14px;
+    font-weight: 400;
+    color: #223885;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu {
+    display: flex;
+    padding: 1rem;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu .FNV-UserIcon {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu .FNV-UserIcon img,
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu .FNV-UserIcon svg {
+    width: 80%;
+    height: 80%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-right: 0;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span {
+    width: 100%;
+    display: flex;
+    margin-left: 1rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span p {
+    color: #223885;
+    margin-bottom: 0rem;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span span {
+    display: flex;
+    margin-left: 0;
+    flex-direction: row;
+    justify-content: start;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span span svg {
+    top: unset;
+    left: unset;
+    width: 20px;
+    height: 20px;
+    stroke-width: 0px;
+    position: relative;
+    margin-right: 0.5rem;
+    stroke: #223885;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a.FNV-UserMenu span span small {
+    font-size: 12px;
+    font-weight: 400;
+    color: #223885;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover {
+    color: #FFFFFF;
+    background-color: #0074FF;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover svg {
+    fill: #FFFFFF;
+    stroke: #FFFFFF;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-User span p {
+    color: #FFFFFF;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-User span span svg {
+    stroke: #3DF07A;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-User span span small {
+    color: #FFFFFF;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu .FNV-UserIcon {
+    width: 30%;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu .FNV-UserIcon img,
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu .FNV-UserIcon svg {
+    stroke: #FFFFFF;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu span p {
+    color: #FFFFFF;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu a:hover.FNV-UserMenu span span small {
+    color: #FFFFFF;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu.show {
+    display: flex;
+    flex-direction: column;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu ul {
+    max-height: 150px;
+    overflow: scroll;
+    padding: 0px;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu ul p {
+    font-size: 14px;
+    color: #0074FF;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu ul li {
+    padding: 0;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown .dropdown-menu ul li a {
+    width: 100%;
+    display: block;
+    padding: 0.5rem;
+    font-size: 12px;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess button {
+    padding: 0;
+    border-width: 0;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: transparent;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess button svg {
+    width: 26px;
+    height: 26px;
+    stroke: #FFFFFF;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess a {
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess a svg {
+    width: 24px;
+    height: 24px;
+    stroke: #FFFFFF;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess a span svg {
+    top: -0.4rem;
+    left: -0.4rem;
+    width: 8px;
+    height: 8px;
+    fill: #FFA600;
+    stroke: #FFA600;
+    position: absolute;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown-menu {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+  }
+  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown:focus-within .dropdown-menu {
+    display: flex;
+    flex-direction: column;
   }
   body[dir=rtl] nav .container .navbar-toggler {
     border-width: 0;
@@ -8049,8 +8581,6 @@ badge.SecondaryColor {
   }
   body[dir=rtl] nav .container .FNV_QuickAccess {
     display: flex;
-    /* Hide the dropdown menu by default */
-    /* Show the dropdown menu when the parent is focused or clicked */
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown a {
     position: relative;
@@ -8281,17 +8811,6 @@ badge.SecondaryColor {
     fill: #FFA600;
     stroke: #FFA600;
     position: absolute;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-  }
-  body[dir=rtl] nav .container .FNV_QuickAccess .dropdown:focus-within .dropdown-menu {
-    display: flex;
-    flex-direction: column;
   }
   body[dir=rtl] nav .container .navbar-collapse {
     position: relative;
