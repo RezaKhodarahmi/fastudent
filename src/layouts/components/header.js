@@ -898,7 +898,7 @@ const Header = props => {
             {user ? (
               <>
                 {/* Account */}
-                <div className='dropdown'>
+                <div className='dropdown FNV_QuickAccess_User'>
                   <Link className='nav-link' href='javascript:void(0);' data-bs-toggle='dropdown' aria-expanded='false'>
                     <svg width="16" height="18" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M16.236 19.3599C16.236 15.7579 12.22 12.8299 8.618 12.8299C5.016 12.8299 1 15.7579 1 19.3599M8.618 9.56586C9.77249 9.56586 10.8797 9.10725 11.696 8.2909C12.5124 7.47455 12.971 6.36735 12.971 5.21286C12.971 4.05838 12.5124 2.95117 11.696 2.13483C10.8797 1.31848 9.77249 0.859863 8.618 0.859863C7.46351 0.859863 6.35631 1.31848 5.53996 2.13483C4.72362 2.95117 4.265 4.05838 4.265 5.21286C4.265 6.36735 4.72362 7.47455 5.53996 8.2909C6.35631 9.10725 7.46351 9.56586 8.618 9.56586Z" stroke-linejoin="round" />
