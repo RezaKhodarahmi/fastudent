@@ -120,8 +120,6 @@ const SearchPage = () => {
           </div>
         </section>
       </div>
-      <YoutubeSection />
-      <BlogSection />
     </>
   )
 }
