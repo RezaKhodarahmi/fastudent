@@ -16,7 +16,6 @@ import { useRouter } from 'next/router'
 import { Checkbox, FormControlLabel, Typography, Box } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import SimpleDateFormatter from 'src/utils/simple-date-readble'
-import { appConfig } from 'src/configs/appConfig'
 
 const stripePromise = loadStripe(themeConfig.stripePublicKey)
 
@@ -218,157 +217,136 @@ const Index = () => {
   }, [appliedCoupon, referralDiscount, user, loading, coupon, cartSubTotal, usedCoupon])
 
   const handelInitiatePayment = () => {
-    if (!user.data?.userName || !user.data?.lastName || !user.data?.phone) {
-      const confirmation = window.confirm(t('complete-your-profile-message'))
-      if (confirmation) {
-        router.push(`${appConfig}/app/pages/account-settings/account`)
-      }
+    if (!termsChecked) {
+      window.alert('Please read and agree to the terms of use!')
+      setAgreeAlert(true)
     } else {
-      if (!termsChecked) {
-        window.alert('Please read and agree to the terms of use!')
-        setAgreeAlert(true)
-      } else {
-        setPartially(false)
-        if (cartTotal > 0) {
-          if (clientSecret === null) {
-            if (cartCourses.length && email) {
-              const token = window.localStorage.getItem('accessToken')
+      setPartially(false)
+      if (cartTotal > 0) {
+        if (clientSecret === null) {
+          if (cartCourses.length && email) {
+            const token = window.localStorage.getItem('accessToken')
 
-              fetch(`${BASE_URL}/student/transaction/create-payment-intent`, {
-                method: 'POST',
-                headers: {
-                  'Content-Type': 'application/json',
-                  Authorization: `Bearer ${token}`
-                },
-                body: JSON.stringify({
-                  items: cartCourses,
-                  email,
-                  coupon: usedCoupon,
-                  referralUser,
-                  cartTotal,
-                  isVIP,
-                  oldVIP,
-                  vipPlan
-                })
+            fetch(`${BASE_URL}/student/transaction/create-payment-intent`, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                Authorization: `Bearer ${token}`
+              },
+              body: JSON.stringify({
+                items: cartCourses,
+                email,
+                coupon: usedCoupon,
+                referralUser,
+                cartTotal,
+                isVIP,
+                oldVIP,
+                vipPlan
               })
-                .then(res => res.json())
-                .then(data => {
-                  const { clientSecret } = data
-                  setClientSecret(clientSecret)
-                })
-              setCheckout(true)
-            } else {
-              window.alert('Cart is Empty!')
-            }
+            })
+              .then(res => res.json())
+              .then(data => {
+                const { clientSecret } = data
+                setClientSecret(clientSecret)
+              })
+            setCheckout(true)
+          } else {
+            window.alert('Cart is Empty!')
           }
-        } else {
-          window.alert('error ')
         }
+      } else {
+        window.alert('error ')
       }
     }
   }
 
   const handelInitiatePartiallyPayment = () => {
-    if (!user.data?.userName || !user.data?.lastName || !user.data?.phone) {
-      const confirmation = window.confirm(t('complete-your-profile-message'))
-      if (confirmation) {
-        router.push('http://localhost:8585/app/pages/account-settings/account')
-      }
+    if (!termsChecked) {
+      window.alert('Please read and agree to the terms of use!')
+      setAgreeAlert(true)
     } else {
-      if (!termsChecked) {
-        window.alert('Please read and agree to the terms of use!')
-        setAgreeAlert(true)
-      } else {
-        setStripePay(false)
-        if (cartTotal > 0) {
-          if (clientSecret === null) {
-            if (cartCourses.length && email) {
-              const token = window.localStorage.getItem('accessToken')
+      setStripePay(false)
+      if (cartTotal > 0) {
+        if (clientSecret === null) {
+          if (cartCourses.length && email) {
+            const token = window.localStorage.getItem('accessToken')
 
-              fetch(`${BASE_URL}/student/transaction/partially/intent`, {
-                method: 'POST',
-                headers: {
-                  'Content-Type': 'application/json',
-                  Authorization: `Bearer ${token}`
-                },
-                body: JSON.stringify({
-                  items: cartCourses,
-                  email,
-                  coupon: usedCoupon,
-                  referralUser,
-                  cartTotal,
-                  isVIP,
-                  oldVIP,
-                  vipPlan
-                })
+            fetch(`${BASE_URL}/student/transaction/partially/intent`, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                Authorization: `Bearer ${token}`
+              },
+              body: JSON.stringify({
+                items: cartCourses,
+                email,
+                coupon: usedCoupon,
+                referralUser,
+                cartTotal,
+                isVIP,
+                oldVIP,
+                vipPlan
               })
-                .then(res => res.json())
-                .then(data => {
-                  const { redirectURL } = data
-                  setRedirectURL(redirectURL)
-                  router.push(redirectURL)
-                })
-              setCheckout(true)
-            } else {
-              window.alert('Cart is Empty!')
-            }
+            })
+              .then(res => res.json())
+              .then(data => {
+                const { redirectURL } = data
+                setRedirectURL(redirectURL)
+                router.push(redirectURL)
+              })
+            setCheckout(true)
+          } else {
+            window.alert('Cart is Empty!')
           }
-        } else {
-          window.alert('error ')
         }
+      } else {
+        window.alert('error ')
       }
     }
   }
 
   const handleEnrollNow = () => {
-    if (!user.data?.userName || !user.data?.lastName || !user.data?.phone) {
-      const confirmation = window.confirm(t('complete-your-profile-message'))
-      if (confirmation) {
-        router.push('http://localhost:8585/app/pages/account-settings/account')
-      }
+    if (!termsChecked) {
+      window.alert('Please read and agree to the terms of use!')
+      setAgreeAlert(true)
     } else {
-      if (!termsChecked) {
-        window.alert('Please read and agree to the terms of use!')
-        setAgreeAlert(true)
-      } else {
-        setStripePay(false)
-        setPartially(false)
-        if (cartTotal === 0) {
-          if (clientSecret === null) {
-            if (cartCourses.length && email) {
-              const token = window.localStorage.getItem('accessToken')
+      setStripePay(false)
+      setPartially(false)
+      if (cartTotal === 0) {
+        if (clientSecret === null) {
+          if (cartCourses.length && email) {
+            const token = window.localStorage.getItem('accessToken')
 
-              fetch(`${BASE_URL}/student/transaction/free/intent`, {
-                method: 'POST',
-                headers: {
-                  'Content-Type': 'application/json',
-                  Authorization: `Bearer ${token}`
-                },
-                body: JSON.stringify({
-                  items: cartCourses,
-                  email,
-                  coupon: usedCoupon,
-                  referralUser,
-                  cartTotal,
-                  isVIP,
-                  oldVIP,
-                  vipPlan
-                })
+            fetch(`${BASE_URL}/student/transaction/free/intent`, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                Authorization: `Bearer ${token}`
+              },
+              body: JSON.stringify({
+                items: cartCourses,
+                email,
+                coupon: usedCoupon,
+                referralUser,
+                cartTotal,
+                isVIP,
+                oldVIP,
+                vipPlan
               })
-                .then(res => res.json())
-                .then(data => {
-                  const { redirectURL } = data
-                  setRedirectURL(redirectURL)
-                  router.push(redirectURL)
-                })
-              setCheckout(true)
-            } else {
-              window.alert('Cart is Empty!')
-            }
+            })
+              .then(res => res.json())
+              .then(data => {
+                const { redirectURL } = data
+                setRedirectURL(redirectURL)
+                router.push(redirectURL)
+              })
+            setCheckout(true)
+          } else {
+            window.alert('Cart is Empty!')
           }
-        } else {
-          window.alert('error ')
         }
+      } else {
+        window.alert('error ')
       }
     }
   }
