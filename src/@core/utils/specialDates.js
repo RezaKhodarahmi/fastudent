@@ -1,81 +1,71 @@
 export const specialDates = [
   {
-    date: '2024-07-03',
+    date: '2024-11-02',
     events: [
       {
-        image: 'https://fanavaran.ca:3200/uploads/webinars/f3c3abd5-fb47-4e1e-974f-2f7a5fc72de1.jpg',
-        text: 'آشنایی با بازار کار سیستم های اطفاء حریق (Red Seal 427A-Sprinkler Fitter) در کانادا',
-        link: 'https://fanavaran.ca/webinars/job-market-of-fire-extinguishing-systems-in-Canada'
+        image: 'https://fanavaran.ca:3200/uploads/courses/3594f678-f4d9-459d-851d-3720bdd51ab9.jpg',
+        text: 'Renovation Workshop (Electrician - Basic) (Vancouver)',
+        link: 'https://fanavaran.ca/courses/workshop-of-renovation-electrical-work'
       }
     ]
   },
   {
-    date: '2024-07-06',
+    date: '2024-09-08',
     events: [
       {
-        image: 'https://fanavaran.ca:3200/uploads/courses/9e3b4628-ab1c-42b7-a2e9-3b02f9db5075.jpg',
-        text: 'اولین کارگاه عملی جامع رنوویشن (لوله‌کشی - بخش مقدماتی) ویژه ساکنان تورنتو و شهرهای نزدیک',
+        image: 'https://fanavaran.ca:3200/uploads/courses/4bf7a469-c1f6-46e0-a867-ba2a651adc90.jpg',
+        text: 'Renovation Workshop (Plumbing - Basic) (Vancouver)',
+        link: 'https://fanavaran.ca/courses/workshop-of-renovation-plumbing'
+      }
+    ]
+  },
+  {
+    date: '2024-09-28',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/4bf7a469-c1f6-46e0-a867-ba2a651adc90.jpg',
+        text: 'Renovation Workshop (Plumbing - Basic) (Toronto)',
         link: 'https://fanavaran.ca/courses/workshop-of-renovation-plumbing-toronto'
       }
     ]
   },
   {
-    date: '2024-07-10',
-    events: [
-      {
-        image: 'https://fanavaran.ca:3200/uploads/webinars/834f87c6-5459-4cfa-ae30-a378370acad7.jpg',
-        text: 'آشنایی با بازار کار معماری در کانادا',
-        link: 'https://fanavaran.ca/webinars/getting-to-know-the-architecture-job-market-in-canada'
-      }
-    ]
-  },
-  {
-    date: '2024-07-11',
-    events: [
-      {
-        image: 'https://fanavaran.ca:3200/uploads/courses/c1ea3ab6-5e3b-453d-a3e1-f9c88c783465.jpg',
-        text: 'سومین دوره دریافت لایسنس تکنسین تهویه مطبوع (HVAC) در کانادا',
-        link: 'https://fanavaran.ca/courses/hvac-313-ad'
-      },
-      {
-        image: 'https://fanavaran.ca:3200/uploads/courses/c5fc9224-2a7d-49d5-9f6a-dd84897dc227.jpg',
-        text: 'هفتمین دوره آمادگی آزمون Foundation ویژه شرکت در آزمون Energy Advisory (آزمون مرحله اول)',
-        link: 'https://fanavaran.ca/courses/energy-foundation'
-      }
-    ]
-  },
-  {
-    date: '2024-07-14',
+    date: '2024-09-22',
     events: [
       {
         image: 'https://fanavaran.ca:3200/uploads/courses/e5c956da-845e-4bf6-bb0c-2614967c40a2.jpg',
-        text: 'اولین کارگاه عملی جامع رنوویشن (برقکاری- بخش مقدماتی) ویژه ساکنان تورنتو و شهرهای نزدیک',
+        text: 'Renovation Workshop (Electrician - Basic) (Toronto)',
         link: 'https://fanavaran.ca/courses/workshop-of-renovation-electrical-work-toronto'
-      },
-      {
-        image: 'https://fanavaran.ca:3200/uploads/courses/bb4af71d-0aaa-4f9b-aaa3-f4922ce21611.jpg',
-        text: 'دومین کارگاه عملی جامع رنوویشن (Wood Framing) ویژه ساکنان ونکوور و شهرهای نزدیک',
-        link: 'https://fanavaran.ca/courses/practical-carpentry-workshop-for-residents-of-vancouver'
       }
     ]
   },
   {
-    date: '2024-07-17',
+    date: '2024-09-20',
     events: [
       {
-        image: 'https://fanavaran.ca:3200/uploads/courses/1f57b7f7-16ef-4f1e-8530-d282dad91a67.jpg',
-        text: 'پنجمین دوره آموزش نرم افزار حسابداری Quickbooks (دوره General)',
-        link: 'https://fanavaran.ca/courses/quickbooks-software-general'
+        image: 'https://fanavaran.ca:3200/uploads/courses/3e2744e3-9202-4605-bd9f-50a8fdd1def8.jpg',
+        text: 'PMI-RMP Exam Prep',
+        link: 'https://fanavaran.ca/courses/rmp-exam-prep'
       }
     ]
   },
   {
-    date: '2024-07-22',
+    date: '2024-09-24',
     events: [
       {
-        image: 'https://fanavaran.ca:3200/uploads/courses/97beda3e-b663-4dd5-9d83-f8b17d6c2959.jpg',
-        text: 'اولین دوره تست‌زنی تخصصی ویژه دریافت لایسنس Redseal برق - بریتیش کلمبیا',
-        link: 'https://fanavaran.ca/courses/codebook-electrical-exam-prep-test-bc'
+        image: 'https://fanavaran.ca:3200/uploads/courses/24f25c0f-6252-467f-a203-d6be95a2bfc5.jpg',
+        text: 'Electrical Redseal Exam Prep (test samples)',
+        link: 'https://fanavaran.ca/courses/codebook-electrical-exam-prep'
+      }
+    ]
+  },
+  {
+    date: '2024-09-17',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/594bdd25-3ff7-41f9-8b51-7d35c2479ea1.jpg',
+        text: 'HVAC Redseal (313A, 313D) Exam Prep (Test)',
+        link: 'https://fanavaran.ca/courses/313a-exam-prep'
       }
     ]
   },
@@ -83,9 +73,9 @@ export const specialDates = [
     date: '2024-07-23',
     events: [
       {
-        image: 'https://fanavaran.ca:3200/uploads/courses/de5b13ca-2fda-4992-b003-5895c7cd1d55.jpg',
-        text: 'سیزدهمین دوره آموزش کدبوک الکتریکال جهت دریافت لایسنس Redseal برق (دوره 309A)',
-        link: 'https://fanavaran.ca/courses/309a-codebook-and-test'
+        image: 'https://fanavaran.ca:3200/uploads/courses/b0feefdb-27a4-4f04-a047-19dfa54a7a58.jpg',
+        text: 'PERSONAL INCOME TAX',
+        link: 'https://fanavaran.ca/courses/tax-personal'
       }
     ]
   },
@@ -113,20 +103,5 @@ export const specialDates = [
         link: 'https://fanavaran.ca/courses/microsoft-project'
       }
     ]
-  },
-  {
-    date: '2024-07-29',
-    events: [
-      {
-        image: 'https://fanavaran.ca:3200/uploads/courses/9adda504-1b5e-494c-8679-5055a216104f.jpg',
-        text: 'پنجمین دوره آمادگی آزمون LEED GA',
-        link: 'https://fanavaran.ca/courses/leed-ga-preparation'
-      },
-      {
-        image: 'https://fanavaran.ca:3200/uploads/courses/121f801f-0e18-4841-b5fa-c0bb86b41b39.jpg',
-        text: 'بیستمین دوره آمادگی آزمون مدیریت پروژه  PMP',
-        link: 'https://fanavaran.ca/courses/pmp-certification-preparation-test'
-      }
-    ]
-  },
-];
+  }
+]
