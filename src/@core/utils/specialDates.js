@@ -1,6 +1,6 @@
 export const specialDates = [
   {
-    date: '2024-11-02',
+    date: '2024-09-07',
     events: [
       {
         image: 'https://fanavaran.ca:3200/uploads/courses/3594f678-f4d9-459d-851d-3720bdd51ab9.jpg',
@@ -60,7 +60,7 @@ export const specialDates = [
     ]
   },
   {
-    date: '2024-09-17',
+    date: '2024-09-12',
     events: [
       {
         image: 'https://fanavaran.ca:3200/uploads/courses/594bdd25-3ff7-41f9-8b51-7d35c2479ea1.jpg',
@@ -70,7 +70,7 @@ export const specialDates = [
     ]
   },
   {
-    date: '2024-07-23',
+    date: '2024-09-17',
     events: [
       {
         image: 'https://fanavaran.ca:3200/uploads/courses/b0feefdb-27a4-4f04-a047-19dfa54a7a58.jpg',
@@ -80,27 +80,42 @@ export const specialDates = [
     ]
   },
   {
-    date: '2024-07-24',
+    date: '2024-09-04',
     events: [
       {
-        image: 'https://fanavaran.ca:3200/uploads/courses/e78de340-4974-4934-94bc-65ef53f5e668.jpg',
-        text: 'پنجمین دوره آموزشی مبانی و کدهای لوله‌کشی (پلامینگ) در کانادا',
-        link: 'https://fanavaran.ca/courses/plumbing-306a'
-      },
-      {
-        image: 'https://fanavaran.ca:3200/uploads/webinars/4ef76a86-75a3-483c-9c80-0469abb82921.jpg',
-        text: 'آشنایی با آزمونهای تکنیکال اگزم برای اخذ لایسنس PENG در کانادا',
-        link: 'https://fanavaran.ca/webinars/knowing-technical-exams-for-obtaining-a-peng-license'
+        image: 'https://fanavaran.ca:3200/uploads/webinars/66272fed-be11-4a5a-9e9f-bcd4084de780.jpg',
+        text: 'نحوه اخذ وامهای دولتی برای تحصیل در کانادا',
+        link: 'https://fanavaran.ca/fa/webinars/canada-student-financial-assistance-program'
       }
     ]
   },
   {
-    date: '2024-07-25',
+    date: '2024-09-11',
     events: [
       {
-        image: 'https://fanavaran.ca:3200/uploads/courses/8b5015ea-74a6-49e9-b501-d302882f41a9.jpg',
-        text: 'سومین دوره آموزش نرم افزار Microsoft Project',
-        link: 'https://fanavaran.ca/courses/microsoft-project'
+        image: 'https://fanavaran.ca:3200/uploads/webinars/3bd5a180-c439-42d5-89c1-d026a409d240.jpg',
+        text: 'آشنایی با لوله کشی ساختمانهای مسکونی، اداری و تجاری در ونکوور	',
+        link: 'https://fanavaran.ca/fa/webinars/plumbing-profession-in-vancouver'
+      }
+    ]
+  },
+  {
+    date: '2024-09-18',
+    events: [
+      {
+        image: 'http://fanavaran.ca:3200/uploads/webinars/84d54061-00f3-48f1-b5af-c6261a83faa2.jpg',
+        text: 'راهکارها و چلنجهای مصدومیت در محیط کاری',
+        link: 'https://fanavaran.ca/fa/webinars/injury-prevention-in-worksite'
+      }
+    ]
+  },
+  {
+    date: '2024-09-25',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/webinars/3abf9fb0-6c39-48a9-b546-c1bd76588d2a.jpg',
+        text: 'آشنایی با برقکاری ساختمانهای مسکونی، اداری و تجاری در کانادا	',
+        link: 'https://fanavaran.ca/fa/webinars/electrical-profession-in-vancouver'
       }
     ]
   }
