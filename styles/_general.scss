@@ -36,16 +36,24 @@ a {
 // X-Large devices (large desktops, 1200px and up)
 //@media (min-width: 1200px) { ... }
 
+.FNV-Logo1 {
+  fill: $PrimaryTwo;
+}
+
+.FNV-Logo2 {
+  fill: $PrimaryOne;
+}
+
 // XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) { 
-  .container{
-    max-width: 1320px!important;
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px !important;
   }
 }
 
 // XX-Large devices (larger desktops, 1920px and up)
-@media (min-width: 1920px) { 
-  .container{
-    max-width: 1680px!important;
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1680px !important;
   }
 }

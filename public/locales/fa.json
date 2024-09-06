@@ -36,6 +36,17 @@
 
   "see-all": "نمایش همه دوره‌ها",
 
+  "user-menu-title-guest": "حساب کاربری",
+  "user-menu-title-member": "حساب کاربری من",
+  "user-menu-title-dashboard": "داشبورد",
+  "user-menu-title-dashboard-desc": "پورتال دانش‌آموزان",
+  "user-menu-title-certificate": "گواهینامه‌ها",
+  "user-menu-title-certificate-desc": "گواهینامه‌های کسب شده",
+  "user-menu-title-logout": "خروج",
+  "user-menu-title-logout-desc": "زود برگرد!",
+
+  "search-menu-input": "جستجو در دوره‌ها، وبینارها ...",
+
   "engineering":"مهندسی",
   "engineering-1":"P.Eng Package",
   "engineering-2":"NPPE Exam Prep + Test",
