@@ -63,8 +63,8 @@
 
         &.FNV-Department {
           a {
-            margin-bottom: 1rem;
             border-radius: 5px;
+            margin-bottom: .5rem;
             background-color: $PrimaryFour;
           }
         }
@@ -72,8 +72,8 @@
         &.FNV-Contact {
           a {
             display: flex;
-            margin-bottom: 1rem;
             border-radius: 5px;
+            margin-bottom: .5rem;
             justify-content: space-between;
             background-color: $PrimaryFour;
           }
@@ -84,7 +84,7 @@
             width: 100%;
             display: block;
             border-radius: 5px;
-            margin-bottom: 1rem;
+            margin-bottom: .5rem;
             background-color: $PrimaryFour;
           }
         }

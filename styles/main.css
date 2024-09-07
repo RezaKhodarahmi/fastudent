@@ -22724,14 +22724,14 @@ body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label span {
   width: 100%;
 }
 .FNV-Links .container .row .col-12.FNV-Department a {
-  margin-bottom: 1rem;
   border-radius: 5px;
+  margin-bottom: 0.5rem;
   background-color: #0074FF;
 }
 .FNV-Links .container .row .col-12.FNV-Contact a {
   display: flex;
-  margin-bottom: 1rem;
   border-radius: 5px;
+  margin-bottom: 0.5rem;
   justify-content: space-between;
   background-color: #0074FF;
 }
@@ -22739,7 +22739,7 @@ body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label span {
   width: 100%;
   display: block;
   border-radius: 5px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   background-color: #0074FF;
 }
 .FNV-Links .container .row .col-12 .FNV-Counter {
