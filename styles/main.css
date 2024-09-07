@@ -22671,6 +22671,114 @@ body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label span {
     display: none;
   }
 }
+.FNV-Links {
+  padding: 1rem 0;
+}
+.FNV-Links .container .row {
+  justify-content: center;
+}
+.FNV-Links .container .row .col-12 h1 {
+  margin: 1rem 0;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+.FNV-Links .container .row .col-12 p {
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+}
+.FNV-Links .container .row .col-12 h2 {
+  margin: 1rem 0;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+.FNV-Links .container .row .col-12 h3 {
+  margin: 1rem 0;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+.FNV-Links .container .row .col-12 a {
+  width: 100%;
+  color: #FFFFFF;
+  display: block;
+  padding: 0.5rem;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 25px;
+  border: 1px solid #000000;
+  background-color: #FFA600;
+}
+.FNV-Links .container .row .col-12.FNV-Logo {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  border-radius: 100%;
+  border: 1px solid grey;
+}
+.FNV-Links .container .row .col-12.FNV-Logo svg {
+  width: 100%;
+}
+.FNV-Links .container .row .col-12.FNV-Department a {
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  background-color: #0074FF;
+}
+.FNV-Links .container .row .col-12.FNV-Contact a {
+  display: flex;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  justify-content: space-between;
+  background-color: #0074FF;
+}
+.FNV-Links .container .row .col-12.FNV-Social a {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  background-color: #0074FF;
+}
+.FNV-Links .container .row .col-12 .FNV-Counter {
+  display: flex;
+  flex-direction: row;
+}
+.FNV-Links .container .row .col-12 .FNV-Counter .col-3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.FNV-Links .container .row .col-12 .FNV-Counter .col-3 span {
+  width: 90%;
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+}
+.FNV-Links .container .row .col-12 .FNV-Counter .col-3 span:first-child {
+  color: #FFFFFF;
+  padding: 0.5rem;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 65px;
+  border-radius: 10px;
+  background-color: #223885;
+}
+.FNV-Links .container .row .col-12 .FNV-Counter .col-3 span:first-child::after {
+  left: 0;
+  top: 50%;
+  height: 1px;
+  width: 100%;
+  content: "";
+  position: absolute;
+  background-color: #FFFFFF;
+}
+
 body[dir=rtl] newsletter {
   background-color: #223885;
   border-top: 0px solid #223885;
