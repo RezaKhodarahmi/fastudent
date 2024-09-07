@@ -51,6 +51,11 @@ export const specialDates = [
         image: 'https://fanavaran.ca:3200/uploads/courses/81ceba5c-c924-4381-a880-735b54e513b6.jpg',
         text: '11-CS-1- Engineering Economics',
         link: 'https://fanavaran.ca/courses/peng-engineering-economics'
+      },
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/594bdd25-3ff7-41f9-8b51-7d35c2479ea1.jpg',
+        text: 'HVAC Redseal (313A, 313D) Exam Prep (Test)',
+        link: 'https://fanavaran.ca/courses/313a-exam-prep'
       }
     ]
   },
@@ -81,16 +86,6 @@ export const specialDates = [
         image: 'https://fanavaran.ca:3200/uploads/courses/24f25c0f-6252-467f-a203-d6be95a2bfc5.jpg',
         text: 'Electrical Redseal Exam Prep (test samples)',
         link: 'https://fanavaran.ca/courses/codebook-electrical-exam-prep'
-      }
-    ]
-  },
-  {
-    date: '2024-09-12',
-    events: [
-      {
-        image: 'https://fanavaran.ca:3200/uploads/courses/594bdd25-3ff7-41f9-8b51-7d35c2479ea1.jpg',
-        text: 'HVAC Redseal (313A, 313D) Exam Prep (Test)',
-        link: 'https://fanavaran.ca/courses/313a-exam-prep'
       }
     ]
   },
