@@ -74,6 +74,7 @@
             display: flex;
             border-radius: 5px;
             margin-bottom: .5rem;
+            flex-direction: row-reverse;
             justify-content: space-between;
             background-color: $PrimaryFour;
           }
