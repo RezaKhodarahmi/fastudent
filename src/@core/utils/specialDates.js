@@ -1,5 +1,15 @@
 export const specialDates = [
   {
+    date: '2024-09-03',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/a82e667c-b779-4408-8722-0ad54a79745e.jpg',
+        text: '16-Mec-A1 -Applied Thermodynamics and Heat Transfer',
+        link: 'https://fanavaran.ca/fa/courses/peng-applied-thermodynamics-and-heat-transfer'
+      }
+    ]
+  },
+  {
     date: '2024-09-07',
     events: [
       {
@@ -20,12 +30,27 @@ export const specialDates = [
     ]
   },
   {
-    date: '2024-09-28',
+    date: '2024-09-10',
     events: [
       {
-        image: 'https://fanavaran.ca:3200/uploads/courses/4bf7a469-c1f6-46e0-a867-ba2a651adc90.jpg',
-        text: 'Renovation Workshop (Plumbing - Basic) (Toronto)',
-        link: 'https://fanavaran.ca/courses/workshop-of-renovation-plumbing-toronto'
+        image: 'https://fanavaran.ca:3200/uploads/courses/d7ab4d94-c300-41fe-9e72-8183226327a2.jpg',
+        text: '16-Elec-A4- Digital Systems and Computers',
+        link: 'https://fanavaran.ca/fa/courses/peng-digital-systems-and-computers'
+      }
+    ]
+  },
+  {
+    date: '2024-09-26',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/a58a7e1e-7db2-4ba3-bcad-1b1490533d95.jpg',
+        text: '16-Mec-B8 - Engineering Materials',
+        link: 'https://fanavaran.ca/courses/peng-engineering-materials'
+      },
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/81ceba5c-c924-4381-a880-735b54e513b6.jpg',
+        text: '11-CS-1- Engineering Economics',
+        link: 'https://fanavaran.ca/courses/peng-engineering-economics'
       }
     ]
   },
@@ -116,6 +141,66 @@ export const specialDates = [
         image: 'https://fanavaran.ca:3200/uploads/webinars/3abf9fb0-6c39-48a9-b546-c1bd76588d2a.jpg',
         text: 'آشنایی با برقکاری ساختمانهای مسکونی، اداری و تجاری در کانادا	',
         link: 'https://fanavaran.ca/fa/webinars/electrical-profession-in-vancouver'
+      }
+    ]
+  },
+  {
+    date: '2024-09-27',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/08cfcd45-d04d-4bf7-bd2f-d3e76c7b4653.jpg',
+        text: '11-CS-2- Engineering in Society - Health & Safety',
+        link: 'https://fanavaran.ca/courses/peng-engineering-in-society-health-safety'
+      }
+    ]
+  },
+  {
+    date: '2024-09-30',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/83da5563-40a2-4d85-921e-6c2ac80b8fa4.jpg',
+        text: '16-Civ-A1 - Elementary Structural Analysis',
+        link: 'https://fanavaran.ca/courses/peng-elementary-structural-analysis'
+      }
+    ]
+  },
+  {
+    date: '2024-10-02',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/f3efa1f3-233c-436e-9952-c847267b80d8.jpg',
+        text: '16-Elec-B3- Digital Communications Systems',
+        link: 'https://fanavaran.ca/courses/peng-digital-communications-systems'
+      }
+    ]
+  },
+  {
+    date: '2024-10-07',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/86bc5088-5625-4291-a8b2-285d4505205f.jpg',
+        text: '16-Elec-A1- Circuits',
+        link: 'https://fanavaran.ca/courses/peng-circuits'
+      }
+    ]
+  },
+  {
+    date: '2024-10-09',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/32b3bccc-c81a-41a3-9643-0b418345701f.jpg',
+        text: '16-Mec-A7 - Advanced Strength of Materials',
+        link: 'https://fanavaran.ca/courses/peng-advanced-strength-of-materials'
+      }
+    ]
+  },
+  {
+    date: '2024-10-15',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/13a40107-254b-4477-bdb2-107951a354be.jpg',
+        text: '16-Civ-A5 - Hydraulic Engineering',
+        link: 'https://fanavaran.ca/courses/peng-hydraulic-engineering'
       }
     ]
   }
