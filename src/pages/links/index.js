@@ -14,6 +14,7 @@ const Links = () => {
 
       if (difference <= 0) {
         setTimeRemaining({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+
         return;
       }
 

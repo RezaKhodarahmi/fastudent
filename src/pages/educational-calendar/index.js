@@ -1,10 +1,12 @@
 // React
 import React from 'react'
 import Link from 'next/link'
+
 // Date
 import { getCurrentMonthDays } from 'src/@core/utils/getCurrentMonthDays'
 import { specialDates } from 'src/@core/utils/specialDates'
 import { format, isBefore, parseISO, getDate, getMonth, getYear, format as formatDate } from 'date-fns'
+
 // ** Import Translation
 import { useTranslation } from 'react-i18next'
 
@@ -89,5 +91,7 @@ function Index() {
     </>
   )
 }
+
 Index.guestGuard = true
+
 export default Index
