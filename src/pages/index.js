@@ -37,6 +37,8 @@ import { fetchWebinarData } from 'src/store/apps/webinar'
 // ** Categories Section
 import CategoriesSection from 'src/views/categoriesSection'
 
+import ConvertTime from 'src/views/convert-timezone'
+
 const Home = () => {
   const [courses, setCourses] = useState([])
   const [webinars, setWebinars] = useState([])

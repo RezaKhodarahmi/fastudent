@@ -428,9 +428,6 @@ const Test = () => {
                   </Typography>
                   <table className='table table-striped' style={preventCopyStyle}>
                     <tbody className='text-center'>
-                      <Typography variant='h4' sx={{ mb: 4, textAlign: 'center' }}>
-                        رزرو وقت مشاوره برای نوشتن تجربه کاری مهندسی و تکنسین
-                      </Typography>
                       <tr>
                         <td>
                           <CheckCircle /> Grade Percentage
