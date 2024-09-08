@@ -5,6 +5,7 @@ import Head from 'next/head'
 import { Router } from 'next/router'
 import { useRouter } from 'next/router'
 import MainLayout from 'src/layouts/MainLayout'
+import NoHeaderFooterLayout from 'src/layouts/components/NoHeaderFooterLayout' // Import your custom layout
 import nextI18NextConfig from 'src/configs/i18n'
 import Script from 'next/script'
 
@@ -134,9 +135,14 @@ const App = props => {
 
   const router = useRouter()
 
+  // Determine if the page should use the special layout
+  const isNoHeaderFooterPage = router.pathname === '/links'; // Add other routes as needed
+
   const getLayout = router.pathname.startsWith('/app')
     ? Component.getLayout ?? (page => <UserLayout contentHeightFixed={contentHeightFixed}>{page}</UserLayout>)
-    : Component.getLayout ?? (page => <MainLayout>{page}</MainLayout>)
+    : (isNoHeaderFooterPage
+      ? Component.getLayout ?? (page => <NoHeaderFooterLayout>{page}</NoHeaderFooterLayout>)
+      : (page => <MainLayout>{page}</MainLayout>))
 
   const setConfig = Component.setConfig ?? undefined
   const authGuard = false

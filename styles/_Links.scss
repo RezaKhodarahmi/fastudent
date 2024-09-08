@@ -1,0 +1,136 @@
+@import './variables';
+
+.FNV-Links {
+  padding: 1rem 0;
+
+  .container {
+    .row {
+      justify-content: center;
+
+      .col-12 {
+        h1 {
+          margin: 1rem 0;
+          font-size: 18px;
+          font-weight: 700;
+          text-align: center;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 28px;
+          text-align: center;
+        }
+
+        h2 {
+          margin: 1rem 0;
+          font-size: 16px;
+          font-weight: 700;
+          text-align: center;
+        }
+
+        h3 {
+          margin: 1rem 0;
+          font-size: 15px;
+          font-weight: 700;
+          text-align: center;
+        }
+
+        a {
+          width: 100%;
+          color: $White;
+          display: block;
+          padding: .5rem;
+          font-size: 16px;
+          text-align: center;
+          border-radius: 25px;
+          border: 1px solid #000000;
+          background-color: $PrimaryTwo;
+        }
+
+        &.FNV-Logo {
+          width: 100px;
+          height: 100px;
+          display: flex;
+          padding: 1rem;
+          align-items: center;
+          border-radius: 100%;
+          border: 1px solid grey;
+
+          svg {
+            width: 100%;
+          }
+        }
+
+        &.FNV-Department {
+          a {
+            border-radius: 5px;
+            margin-bottom: .5rem;
+            background-color: $PrimaryFour;
+          }
+        }
+
+        &.FNV-Contact {
+          a {
+            display: flex;
+            border-radius: 5px;
+            margin-bottom: .5rem;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            background-color: $PrimaryFour;
+          }
+        }
+
+        &.FNV-Social {
+          a {
+            width: 100%;
+            display: block;
+            border-radius: 5px;
+            margin-bottom: .5rem;
+            background-color: $PrimaryFour;
+          }
+        }
+
+        .FNV-Counter {
+          display: flex;
+          flex-direction: row;
+
+          .col-3 {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+
+            span {
+              width: 90%;
+              display: block;
+              font-size: 20px;
+              font-weight: 500;
+              text-align: center;
+              position: relative;
+
+              &:first-child {
+                color: $White;
+                padding: .5rem;
+                font-size: 65px;
+                font-weight: 700;
+                line-height: 65px;
+                border-radius: 10px;
+                background-color: $PrimaryOne;
+
+                &::after {
+                  left: 0;
+                  top: 50%;
+                  height: 1px;
+                  width: 100%;
+                  content: "";
+                  position: absolute;
+                  background-color: $White;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

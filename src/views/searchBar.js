@@ -143,6 +143,7 @@ const SearchSection = props => {
                     <div className='col-3'>
                       <div className='card'>
                         <span>تورنتو</span>
+                        <span>11 اکتبر</span>
                         <span>ساعت 6:30</span>
                       </div>
                     </div>

@@ -36,6 +36,17 @@
 
   "see-all": "See All",
 
+  "user-menu-title-guest": "Account",
+  "user-menu-title-member": "My Account",
+  "user-menu-title-dashboard": "Dashboard",
+  "user-menu-title-dashboard-desc": "Student Portal",
+  "user-menu-title-certificate": "Certificate",
+  "user-menu-title-certificate-desc": "Completion of Certificates",
+  "user-menu-title-logout": "Logout",
+  "user-menu-title-logout-desc": "Get back soon!",
+
+  "search-menu-input": "Search Courses, Webinars ...",
+
   "engineering":"Engineering",
   "engineering-1":"P.Eng Package",
   "engineering-2":"NPPE Exam Prep + Test",

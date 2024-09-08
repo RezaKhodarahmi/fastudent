@@ -1,132 +1,202 @@
 export const specialDates = [
   {
-    date: '2024-07-03',
+    date: '2024-09-03',
     events: [
       {
-        image: 'https://fanavaran.ca:3200/uploads/webinars/f3c3abd5-fb47-4e1e-974f-2f7a5fc72de1.jpg',
-        text: 'آشنایی با بازار کار سیستم های اطفاء حریق (Red Seal 427A-Sprinkler Fitter) در کانادا',
-        link: 'https://fanavaran.ca/webinars/job-market-of-fire-extinguishing-systems-in-Canada'
+        image: 'https://fanavaran.ca:3200/uploads/courses/a82e667c-b779-4408-8722-0ad54a79745e.jpg',
+        text: '16-Mec-A1 -Applied Thermodynamics and Heat Transfer',
+        link: 'https://fanavaran.ca/fa/courses/peng-applied-thermodynamics-and-heat-transfer'
       }
     ]
   },
   {
-    date: '2024-07-06',
+    date: '2024-09-07',
     events: [
       {
-        image: 'https://fanavaran.ca:3200/uploads/courses/9e3b4628-ab1c-42b7-a2e9-3b02f9db5075.jpg',
-        text: 'اولین کارگاه عملی جامع رنوویشن (لوله‌کشی - بخش مقدماتی) ویژه ساکنان تورنتو و شهرهای نزدیک',
-        link: 'https://fanavaran.ca/courses/workshop-of-renovation-plumbing-toronto'
+        image: 'https://fanavaran.ca:3200/uploads/courses/3594f678-f4d9-459d-851d-3720bdd51ab9.jpg',
+        text: 'Renovation Workshop (Electrician - Basic) (Vancouver)',
+        link: 'https://fanavaran.ca/courses/workshop-of-renovation-electrical-work'
       }
     ]
   },
   {
-    date: '2024-07-10',
+    date: '2024-09-08',
     events: [
       {
-        image: 'https://fanavaran.ca:3200/uploads/webinars/834f87c6-5459-4cfa-ae30-a378370acad7.jpg',
-        text: 'آشنایی با بازار کار معماری در کانادا',
-        link: 'https://fanavaran.ca/webinars/getting-to-know-the-architecture-job-market-in-canada'
+        image: 'https://fanavaran.ca:3200/uploads/courses/4bf7a469-c1f6-46e0-a867-ba2a651adc90.jpg',
+        text: 'Renovation Workshop (Plumbing - Basic) (Vancouver)',
+        link: 'https://fanavaran.ca/courses/workshop-of-renovation-plumbing'
       }
     ]
   },
   {
-    date: '2024-07-11',
+    date: '2024-09-10',
     events: [
       {
-        image: 'https://fanavaran.ca:3200/uploads/courses/c1ea3ab6-5e3b-453d-a3e1-f9c88c783465.jpg',
-        text: 'سومین دوره دریافت لایسنس تکنسین تهویه مطبوع (HVAC) در کانادا',
-        link: 'https://fanavaran.ca/courses/hvac-313-ad'
+        image: 'https://fanavaran.ca:3200/uploads/courses/d7ab4d94-c300-41fe-9e72-8183226327a2.jpg',
+        text: '16-Elec-A4- Digital Systems and Computers',
+        link: 'https://fanavaran.ca/fa/courses/peng-digital-systems-and-computers'
+      }
+    ]
+  },
+  {
+    date: '2024-09-26',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/a58a7e1e-7db2-4ba3-bcad-1b1490533d95.jpg',
+        text: '16-Mec-B8 - Engineering Materials',
+        link: 'https://fanavaran.ca/courses/peng-engineering-materials'
       },
       {
-        image: 'https://fanavaran.ca:3200/uploads/courses/c5fc9224-2a7d-49d5-9f6a-dd84897dc227.jpg',
-        text: 'هفتمین دوره آمادگی آزمون Foundation ویژه شرکت در آزمون Energy Advisory (آزمون مرحله اول)',
-        link: 'https://fanavaran.ca/courses/energy-foundation'
+        image: 'https://fanavaran.ca:3200/uploads/courses/81ceba5c-c924-4381-a880-735b54e513b6.jpg',
+        text: '11-CS-1- Engineering Economics',
+        link: 'https://fanavaran.ca/courses/peng-engineering-economics'
+      },
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/594bdd25-3ff7-41f9-8b51-7d35c2479ea1.jpg',
+        text: 'HVAC Redseal (313A, 313D) Exam Prep (Test)',
+        link: 'https://fanavaran.ca/courses/313a-exam-prep'
       }
     ]
   },
   {
-    date: '2024-07-14',
+    date: '2024-09-22',
     events: [
       {
         image: 'https://fanavaran.ca:3200/uploads/courses/e5c956da-845e-4bf6-bb0c-2614967c40a2.jpg',
-        text: 'اولین کارگاه عملی جامع رنوویشن (برقکاری- بخش مقدماتی) ویژه ساکنان تورنتو و شهرهای نزدیک',
+        text: 'Renovation Workshop (Electrician - Basic) (Toronto)',
         link: 'https://fanavaran.ca/courses/workshop-of-renovation-electrical-work-toronto'
-      },
-      {
-        image: 'https://fanavaran.ca:3200/uploads/courses/bb4af71d-0aaa-4f9b-aaa3-f4922ce21611.jpg',
-        text: 'دومین کارگاه عملی جامع رنوویشن (Wood Framing) ویژه ساکنان ونکوور و شهرهای نزدیک',
-        link: 'https://fanavaran.ca/courses/practical-carpentry-workshop-for-residents-of-vancouver'
       }
     ]
   },
   {
-    date: '2024-07-17',
+    date: '2024-09-20',
     events: [
       {
-        image: 'https://fanavaran.ca:3200/uploads/courses/1f57b7f7-16ef-4f1e-8530-d282dad91a67.jpg',
-        text: 'پنجمین دوره آموزش نرم افزار حسابداری Quickbooks (دوره General)',
-        link: 'https://fanavaran.ca/courses/quickbooks-software-general'
+        image: 'https://fanavaran.ca:3200/uploads/courses/3e2744e3-9202-4605-bd9f-50a8fdd1def8.jpg',
+        text: 'PMI-RMP Exam Prep',
+        link: 'https://fanavaran.ca/courses/rmp-exam-prep'
       }
     ]
   },
   {
-    date: '2024-07-22',
+    date: '2024-09-24',
     events: [
       {
-        image: 'https://fanavaran.ca:3200/uploads/courses/97beda3e-b663-4dd5-9d83-f8b17d6c2959.jpg',
-        text: 'اولین دوره تست‌زنی تخصصی ویژه دریافت لایسنس Redseal برق - بریتیش کلمبیا',
-        link: 'https://fanavaran.ca/courses/codebook-electrical-exam-prep-test-bc'
+        image: 'https://fanavaran.ca:3200/uploads/courses/24f25c0f-6252-467f-a203-d6be95a2bfc5.jpg',
+        text: 'Electrical Redseal Exam Prep (test samples)',
+        link: 'https://fanavaran.ca/courses/codebook-electrical-exam-prep'
       }
     ]
   },
   {
-    date: '2024-07-23',
+    date: '2024-09-17',
     events: [
       {
-        image: 'https://fanavaran.ca:3200/uploads/courses/de5b13ca-2fda-4992-b003-5895c7cd1d55.jpg',
-        text: 'سیزدهمین دوره آموزش کدبوک الکتریکال جهت دریافت لایسنس Redseal برق (دوره 309A)',
-        link: 'https://fanavaran.ca/courses/309a-codebook-and-test'
+        image: 'https://fanavaran.ca:3200/uploads/courses/b0feefdb-27a4-4f04-a047-19dfa54a7a58.jpg',
+        text: 'PERSONAL INCOME TAX',
+        link: 'https://fanavaran.ca/courses/tax-personal'
       }
     ]
   },
   {
-    date: '2024-07-24',
+    date: '2024-09-04',
     events: [
       {
-        image: 'https://fanavaran.ca:3200/uploads/courses/e78de340-4974-4934-94bc-65ef53f5e668.jpg',
-        text: 'پنجمین دوره آموزشی مبانی و کدهای لوله‌کشی (پلامینگ) در کانادا',
-        link: 'https://fanavaran.ca/courses/plumbing-306a'
-      },
-      {
-        image: 'https://fanavaran.ca:3200/uploads/webinars/4ef76a86-75a3-483c-9c80-0469abb82921.jpg',
-        text: 'آشنایی با آزمونهای تکنیکال اگزم برای اخذ لایسنس PENG در کانادا',
-        link: 'https://fanavaran.ca/webinars/knowing-technical-exams-for-obtaining-a-peng-license'
+        image: 'https://fanavaran.ca:3200/uploads/webinars/66272fed-be11-4a5a-9e9f-bcd4084de780.jpg',
+        text: 'نحوه اخذ وامهای دولتی برای تحصیل در کانادا',
+        link: 'https://fanavaran.ca/fa/webinars/canada-student-financial-assistance-program'
       }
     ]
   },
   {
-    date: '2024-07-25',
+    date: '2024-09-11',
     events: [
       {
-        image: 'https://fanavaran.ca:3200/uploads/courses/8b5015ea-74a6-49e9-b501-d302882f41a9.jpg',
-        text: 'سومین دوره آموزش نرم افزار Microsoft Project',
-        link: 'https://fanavaran.ca/courses/microsoft-project'
+        image: 'https://fanavaran.ca:3200/uploads/webinars/3bd5a180-c439-42d5-89c1-d026a409d240.jpg',
+        text: 'آشنایی با لوله کشی ساختمانهای مسکونی، اداری و تجاری در ونکوور	',
+        link: 'https://fanavaran.ca/fa/webinars/plumbing-profession-in-vancouver'
       }
     ]
   },
   {
-    date: '2024-07-29',
+    date: '2024-09-18',
     events: [
       {
-        image: 'https://fanavaran.ca:3200/uploads/courses/9adda504-1b5e-494c-8679-5055a216104f.jpg',
-        text: 'پنجمین دوره آمادگی آزمون LEED GA',
-        link: 'https://fanavaran.ca/courses/leed-ga-preparation'
-      },
-      {
-        image: 'https://fanavaran.ca:3200/uploads/courses/121f801f-0e18-4841-b5fa-c0bb86b41b39.jpg',
-        text: 'بیستمین دوره آمادگی آزمون مدیریت پروژه  PMP',
-        link: 'https://fanavaran.ca/courses/pmp-certification-preparation-test'
+        image: 'https://fanavaran.ca:3200/uploads/webinars/84d54061-00f3-48f1-b5af-c6261a83faa2.jpg',
+        text: 'راهکارها و چلنجهای مصدومیت در محیط کاری',
+        link: 'https://fanavaran.ca/fa/webinars/injury-prevention-in-worksite'
       }
     ]
   },
-];
+  {
+    date: '2024-09-25',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/webinars/3abf9fb0-6c39-48a9-b546-c1bd76588d2a.jpg',
+        text: 'آشنایی با برقکاری ساختمانهای مسکونی، اداری و تجاری در کانادا	',
+        link: 'https://fanavaran.ca/fa/webinars/electrical-profession-in-vancouver'
+      }
+    ]
+  },
+  {
+    date: '2024-09-27',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/08cfcd45-d04d-4bf7-bd2f-d3e76c7b4653.jpg',
+        text: '11-CS-2- Engineering in Society - Health & Safety',
+        link: 'https://fanavaran.ca/courses/peng-engineering-in-society-health-safety'
+      }
+    ]
+  },
+  {
+    date: '2024-09-30',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/83da5563-40a2-4d85-921e-6c2ac80b8fa4.jpg',
+        text: '16-Civ-A1 - Elementary Structural Analysis',
+        link: 'https://fanavaran.ca/courses/peng-elementary-structural-analysis'
+      }
+    ]
+  },
+  {
+    date: '2024-10-02',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/f3efa1f3-233c-436e-9952-c847267b80d8.jpg',
+        text: '16-Elec-B3- Digital Communications Systems',
+        link: 'https://fanavaran.ca/courses/peng-digital-communications-systems'
+      }
+    ]
+  },
+  {
+    date: '2024-10-07',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/86bc5088-5625-4291-a8b2-285d4505205f.jpg',
+        text: '16-Elec-A1- Circuits',
+        link: 'https://fanavaran.ca/courses/peng-circuits'
+      }
+    ]
+  },
+  {
+    date: '2024-10-09',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/32b3bccc-c81a-41a3-9643-0b418345701f.jpg',
+        text: '16-Mec-A7 - Advanced Strength of Materials',
+        link: 'https://fanavaran.ca/courses/peng-advanced-strength-of-materials'
+      }
+    ]
+  },
+  {
+    date: '2024-10-15',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/13a40107-254b-4477-bdb2-107951a354be.jpg',
+        text: '16-Civ-A5 - Hydraulic Engineering',
+        link: 'https://fanavaran.ca/courses/peng-hydraulic-engineering'
+      }
+    ]
+  }
+]
