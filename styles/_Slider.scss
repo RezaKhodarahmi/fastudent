@@ -49,75 +49,110 @@ body[dir='ltr'] {
                             background-size: cover;
                             background-position: center;
                             background-color: #E3ECDD;
-                            background-image: url("/images/slider/mehregan_slider_bg.png");
+                            background-repeat: no-repeat;
+                            background-image: url("/images/slider/mehregan_slider.jpg");
 
-                            .container {
-                                z-index: 3;
-                                position: relative;
+                            .row {
+                                justify-content: space-between;
 
-                                .row {
-                                    height: 100%;
-                                    position: relative;
-                                    align-items: center;
+                                .col-md-5 {
+                                    svg {
+                                        display: none;
+                                    }
 
-                                    .col-12 {
-                                        .row {
-                                            position: unset;
-                                            align-items: center;
+                                    h2 {
+                                        padding: .5rem;
+                                        font-size: 40px;
+                                        font-weight: 700;
+                                        margin-bottom: 0;
+                                        line-height: 70px;
+                                        color: $PrimaryOne;
+                                        text-align: center;
+                                        background-color: #ffffff90;
+                                    }
 
-                                            .col-3 {
+                                    h3 {
+                                        color: $White;
+                                        padding: 1rem;
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                        margin-bottom: 0;
+                                        text-align: center;
+                                        background-color: #f7000b;
+                                    }
+
+                                    a {
+                                        &.FNV-Slider-ACB {
+                                            display: flex;
+                                            padding: .5rem;
+                                            line-height: 40px;
+                                            background-color: $White;
+
+                                            h4 {
+                                                width: 100%;
+                                                display: block;
+                                                font-size: 20px;
+                                                margin-bottom: 0;
+                                                color: $PrimaryOne;
+                                                text-align: center;
+                                            }
+
+                                            svg {
+                                                width: 30px !important;
+                                                height: 30px !important;
+                                                stroke: $PrimaryOne !important;
+                                            }
+
+                                            &:hover {
+                                                background-color: $PrimaryOne;
+
+                                                h4 {
+                                                    color: $White !important;
+                                                }
+
                                                 svg {
-                                                    width: 100%;
-                                                    height: 100px;
-                                                    position: relative;
-                                                    margin-bottom: -5rem;
-                                                }
-
-                                                &:last-child {
-                                                    .card {
-                                                        top: 0;
-                                                        left: 0;
-                                                        z-index: 1;
-                                                        width: 100px;
-                                                        height: 100px;
-                                                        padding: .5rem;
-                                                        border-radius: 0;
-                                                        position: absolute;
-
-                                                        display: flex;
-                                                        flex-direction: column;
-                                                        justify-content: flex-end;
-
-                                                        background: rgb(7, 9, 21);
-                                                        background: -moz-linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        background: -webkit-linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        background: linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070915", endColorstr="#3e36cc", GradientType=1);
-
-                                                        span {
-                                                            color: $White;
-                                                            font-size: 14px;
-                                                            font-weight: 600;
-                                                            text-align: center;
-                                                        }
-                                                    }
-                                                }
-
-                                                a {
-                                                    color: $White;
-                                                    padding: .5rem;
-                                                    display: block;
-                                                    font-size: 14px;
-                                                    text-align: center;
-                                                    border-radius: 25px;
-                                                    margin-bottom: -5rem;
-                                                    background: rgb(7, 9, 21);
-                                                    background: -moz-linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    background: -webkit-linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    background: linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070915", endColorstr="#3e36cc", GradientType=1);
+                                                    stroke: $White !important;
                                                 }
                                             }
+                                        }
+                                    }
+                                }
+
+                                .col-md-3 {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+
+                                    span {
+                                        &:first-child {
+                                            padding: 1rem 0;
+                                            font-size: 16px;
+                                            background-color: $PrimaryTwo;
+                                            animation: backgroundChange .3s infinite alternate;
+                                        }
+
+                                        &:nth-child(2) {
+                                            padding: .5rem 0;
+                                            background-color: $PrimaryOne;
+                                        }
+
+                                        &:nth-child(3) {
+                                            padding: .5rem 0;
+                                            background-color: $PrimaryTwo;
+                                            animation: backgroundChange .3s infinite alternate;
+                                        }
+
+                                        color: $White;
+                                        display: block;
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        text-align: center;
+                                        background-color: red;
+
+                                        strong {
+                                            font-size: 20px;
+                                            font-weight: 700;
+                                            font-family: 'Fira Sans';
                                         }
                                     }
                                 }
@@ -543,81 +578,111 @@ body[dir='ltr'] {
                         &:first-child {
                             background-size: cover;
                             background-position: center;
-                            background-image: url("/images/slider/MainBG.jpg");
-                            animation: moveBackground 30s infinite alternate ease-in-out;
-                        }
-
-                        &:first-child {
-                            background-size: cover;
-                            background-position: center;
                             background-color: #E3ECDD;
-                            background-image: url("/images/slider/mehregan_slider_bg.png");
+                            background-repeat: no-repeat;
+                            background-image: url("/images/slider/mehregan_slider.jpg");
 
-                            .container {
-                                z-index: 3;
-                                position: relative;
+                            .row {
+                                justify-content: space-between;
 
-                                .row {
-                                    height: 100%;
-                                    position: relative;
-                                    align-items: center;
+                                .col-md-5 {
+                                    svg {
+                                        display: none;
+                                    }
 
-                                    .col-12 {
-                                        .row {
-                                            position: unset;
-                                            align-items: center;
+                                    h2 {
+                                        padding: .5rem;
+                                        font-size: 40px;
+                                        font-weight: 700;
+                                        margin-bottom: 0;
+                                        line-height: 70px;
+                                        color: $PrimaryOne;
+                                        text-align: center;
+                                        background-color: #ffffff90;
+                                    }
 
-                                            .col-3 {
+                                    h3 {
+                                        color: $White;
+                                        padding: 1rem;
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                        margin-bottom: 0;
+                                        text-align: center;
+                                        background-color: #f7000b;
+                                    }
+
+                                    a {
+                                        &.FNV-Slider-ACB {
+                                            display: flex;
+                                            padding: .5rem;
+                                            line-height: 40px;
+                                            background-color: $White;
+
+                                            h4 {
+                                                width: 100%;
+                                                display: block;
+                                                font-size: 20px;
+                                                margin-bottom: 0;
+                                                color: $PrimaryOne;
+                                                text-align: center;
+                                            }
+
+                                            svg {
+                                                width: 30px !important;
+                                                height: 30px !important;
+                                                stroke: $PrimaryOne !important;
+                                            }
+
+                                            &:hover {
+                                                background-color: $PrimaryOne;
+
+                                                h4 {
+                                                    color: $White !important;
+                                                }
+
                                                 svg {
-                                                    width: 100%;
-                                                    position: relative;
-                                                    margin-bottom: -12rem;
-                                                }
-
-                                                &:last-child {
-                                                    .card {
-                                                        top: 0;
-                                                        left: 0;
-                                                        z-index: 1;
-                                                        width: 150px;
-                                                        height: 150px;
-                                                        padding: .5rem;
-                                                        border-radius: 0;
-                                                        position: absolute;
-
-                                                        display: flex;
-                                                        flex-direction: column;
-                                                        justify-content: flex-end;
-
-                                                        background: rgb(7, 9, 21);
-                                                        background: -moz-linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        background: -webkit-linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        background: linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070915", endColorstr="#3e36cc", GradientType=1);
-
-                                                        span {
-                                                            color: $White;
-                                                            font-size: 18px;
-                                                            font-weight: 600;
-                                                            text-align: center;
-                                                        }
-                                                    }
-                                                }
-
-                                                a {
-                                                    color: $White;
-                                                    padding: 1rem;
-                                                    display: block;
-                                                    text-align: center;
-                                                    border-radius: 25px;
-                                                    margin-bottom: -5rem;
-                                                    background: rgb(7, 9, 21);
-                                                    background: -moz-linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    background: -webkit-linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    background: linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070915", endColorstr="#3e36cc", GradientType=1);
+                                                    stroke: $White !important;
                                                 }
                                             }
+                                        }
+                                    }
+                                }
+
+                                .col-md-3 {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+
+                                    span {
+                                        &:first-child {
+                                            padding: 1rem 0;
+                                            font-size: 16px;
+                                            background-color: $PrimaryTwo;
+                                            animation: backgroundChange .3s infinite alternate;
+                                        }
+
+                                        &:nth-child(2) {
+                                            padding: .5rem 0;
+                                            background-color: $PrimaryOne;
+                                        }
+
+                                        &:nth-child(3) {
+                                            padding: .5rem 0;
+                                            background-color: $PrimaryTwo;
+                                            animation: backgroundChange .3s infinite alternate;
+                                        }
+
+                                        color: $White;
+                                        display: block;
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        text-align: center;
+                                        background-color: red;
+
+                                        strong {
+                                            font-size: 20px;
+                                            font-weight: 700;
+                                            font-family: 'Fira Sans';
                                         }
                                     }
                                 }
@@ -1063,73 +1128,113 @@ body[dir='ltr'] {
                             background-size: cover;
                             background-position: center;
                             background-color: #E3ECDD;
-                            background-image: url("/images/slider/mehregan_slider_bg.png");
+                            background-repeat: no-repeat;
+                            background-image: url("/images/slider/mehregan_slider.jpg");
 
-                            .container {
-                                z-index: 3;
-                                position: relative;
+                            .row {
+                                justify-content: space-between;
 
-                                .row {
-                                    height: 100%;
-                                    position: relative;
-                                    align-items: flex-end;
+                                .col-md-5 {
+                                    svg {
+                                        z-index: 2;
+                                        position: relative;
+                                        margin-bottom: -2rem;
+                                        width: 80px !important;
+                                    }
 
-                                    .col-12 {
-                                        .row {
-                                            position: unset;
-                                            align-items: flex-end;
+                                    h2 {
+                                        padding: 1rem;
+                                        font-size: 40px;
+                                        font-weight: 700;
+                                        margin-bottom: 0;
+                                        line-height: 70px;
+                                        color: $PrimaryOne;
+                                        text-align: center;
+                                        background-color: #ffffff90;
+                                    }
 
-                                            .col-3 {
+                                    h3 {
+                                        color: $White;
+                                        padding: 1rem;
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                        margin-bottom: 0;
+                                        text-align: center;
+                                        background-color: #f7000b;
+                                    }
+
+                                    a {
+                                        &.FNV-Slider-ACB {
+                                            display: flex;
+                                            padding: .5rem;
+                                            line-height: 40px;
+                                            background-color: $White;
+
+                                            h4 {
+                                                width: 100%;
+                                                display: block;
+                                                font-size: 20px;
+                                                margin-bottom: 0;
+                                                color: $PrimaryOne;
+                                                text-align: center;
+                                            }
+
+                                            svg {
+                                                width: 30px !important;
+                                                height: 30px !important;
+                                                stroke: $PrimaryOne !important;
+                                            }
+
+                                            &:hover {
+                                                background-color: $PrimaryOne;
+
+                                                h4 {
+                                                    color: $White !important;
+                                                }
+
                                                 svg {
-                                                    width: 100%;
-                                                    position: relative;
-                                                    margin-bottom: -5rem;
-                                                }
-
-                                                &:last-child {
-                                                    .card {
-                                                        top: 0;
-                                                        left: 0;
-                                                        z-index: 1;
-                                                        width: 150px;
-                                                        height: 150px;
-                                                        padding: 1rem;
-                                                        border-radius: 0;
-                                                        position: absolute;
-
-                                                        display: flex;
-                                                        flex-direction: column;
-                                                        justify-content: flex-end;
-
-                                                        background: rgb(7, 9, 21);
-                                                        background: -moz-linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        background: -webkit-linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        background: linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070915", endColorstr="#3e36cc", GradientType=1);
-
-                                                        span {
-                                                            color: $White;
-                                                            font-size: 22px;
-                                                            font-weight: 600;
-                                                            text-align: center;
-                                                        }
-                                                    }
-                                                }
-
-                                                a {
-                                                    color: $White;
-                                                    padding: 1rem;
-                                                    display: block;
-                                                    text-align: center;
-                                                    border-radius: 25px;
-                                                    margin-bottom: 2rem;
-                                                    background: rgb(7, 9, 21);
-                                                    background: -moz-linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    background: -webkit-linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    background: linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070915", endColorstr="#3e36cc", GradientType=1);
+                                                    stroke: $White !important;
                                                 }
                                             }
+                                        }
+                                    }
+                                }
+
+                                .col-md-3 {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+
+                                    span {
+                                        &:first-child {
+                                            padding: 1rem 0;
+                                            font-size: 12px;
+                                            background-color: $PrimaryTwo;
+                                            animation: backgroundChange .3s infinite alternate;
+                                        }
+
+                                        &:nth-child(2) {
+                                            padding: .5rem 0;
+                                            background-color: $PrimaryOne;
+                                        }
+
+                                        &:nth-child(3) {
+                                            padding: .5rem 0;
+                                            background-color: $PrimaryTwo;
+                                            animation: backgroundChange .3s infinite alternate;
+                                        }
+
+                                        color: $White;
+                                        display: block;
+                                        font-size: 8px;
+                                        font-weight: 500;
+                                        text-align: center;
+                                        background-color: red;
+
+                                        strong {
+                                            font-size: 8px;
+                                            font-weight: 700;
+                                            font-family: 'Fira Sans';
                                         }
                                     }
                                 }
@@ -1611,73 +1716,113 @@ body[dir='ltr'] {
                             background-size: cover;
                             background-position: center;
                             background-color: #E3ECDD;
-                            background-image: url("/images/slider/mehregan_slider_bg.png");
+                            background-repeat: no-repeat;
+                            background-image: url("/images/slider/mehregan_slider.jpg");
 
-                            .container {
-                                z-index: 3;
-                                position: relative;
+                            .row {
+                                justify-content: space-between;
 
-                                .row {
-                                    height: 100%;
-                                    position: relative;
-                                    align-items: flex-end;
+                                .col-md-5 {
+                                    svg {
+                                        z-index: 2;
+                                        position: relative;
+                                        margin-bottom: -2rem;
+                                        width: 80px !important;
+                                    }
 
-                                    .col-12 {
-                                        .row {
-                                            position: unset;
-                                            align-items: flex-end;
+                                    h2 {
+                                        padding: 1rem;
+                                        font-size: 60px;
+                                        font-weight: 700;
+                                        margin-bottom: 0;
+                                        line-height: 70px;
+                                        color: $PrimaryOne;
+                                        text-align: center;
+                                        background-color: #ffffff90;
+                                    }
 
-                                            .col-3 {
+                                    h3 {
+                                        color: $White;
+                                        padding: 1rem;
+                                        font-size: 20px;
+                                        font-weight: 500;
+                                        margin-bottom: 0;
+                                        text-align: center;
+                                        background-color: #f7000b;
+                                    }
+
+                                    a {
+                                        &.FNV-Slider-ACB {
+                                            display: flex;
+                                            padding: .5rem;
+                                            line-height: 40px;
+                                            background-color: $White;
+
+                                            h4 {
+                                                width: 100%;
+                                                display: block;
+                                                font-size: 30px;
+                                                margin-bottom: 0;
+                                                color: $PrimaryOne;
+                                                text-align: center;
+                                            }
+
+                                            svg {
+                                                width: 30px !important;
+                                                height: 30px !important;
+                                                stroke: $PrimaryOne !important;
+                                            }
+
+                                            &:hover {
+                                                background-color: $PrimaryOne;
+
+                                                h4 {
+                                                    color: $White !important;
+                                                }
+
                                                 svg {
-                                                    width: 100%;
-                                                    position: relative;
-                                                    margin-bottom: -10rem;
-                                                }
-
-                                                &:last-child {
-                                                    .card {
-                                                        top: 0;
-                                                        left: 0;
-                                                        z-index: 1;
-                                                        width: 200px;
-                                                        height: 240px;
-                                                        padding: 1rem;
-                                                        border-radius: 0;
-                                                        position: absolute;
-
-                                                        display: flex;
-                                                        flex-direction: column;
-                                                        justify-content: flex-end;
-
-                                                        background: rgb(7, 9, 21);
-                                                        background: -moz-linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        background: -webkit-linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        background: linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070915", endColorstr="#3e36cc", GradientType=1);
-
-                                                        span {
-                                                            color: $White;
-                                                            font-size: 30px;
-                                                            font-weight: 600;
-                                                            text-align: center;
-                                                        }
-                                                    }
-                                                }
-
-                                                a {
-                                                    color: $White;
-                                                    padding: 1rem;
-                                                    display: block;
-                                                    text-align: center;
-                                                    border-radius: 25px;
-                                                    margin-bottom: 0rem;
-                                                    background: rgb(7, 9, 21);
-                                                    background: -moz-linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    background: -webkit-linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    background: linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070915", endColorstr="#3e36cc", GradientType=1);
+                                                    stroke: $White !important;
                                                 }
                                             }
+                                        }
+                                    }
+                                }
+
+                                .col-md-3 {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+
+                                    span {
+                                        &:first-child {
+                                            padding: 1rem 0;
+                                            font-size: 16px;
+                                            background-color: $PrimaryTwo;
+                                            animation: backgroundChange .3s infinite alternate;
+                                        }
+
+                                        &:nth-child(2) {
+                                            padding: .5rem 0;
+                                            background-color: $PrimaryOne;
+                                        }
+
+                                        &:nth-child(3) {
+                                            padding: .5rem 0;
+                                            background-color: $PrimaryTwo;
+                                            animation: backgroundChange .3s infinite alternate;
+                                        }
+
+                                        color: $White;
+                                        display: block;
+                                        font-size: 12px;
+                                        font-weight: 700;
+                                        text-align: center;
+                                        background-color: red;
+
+                                        strong {
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            font-family: 'Fira Sans';
                                         }
                                     }
                                 }
@@ -2157,73 +2302,113 @@ body[dir='ltr'] {
                             background-size: cover;
                             background-position: center;
                             background-color: #E3ECDD;
-                            background-image: url("/images/slider/mehregan_slider_bg.png");
+                            background-repeat: no-repeat;
+                            background-image: url("/images/slider/mehregan_slider.jpg");
 
-                            .container {
-                                z-index: 3;
-                                position: relative;
+                            .row {
+                                justify-content: space-between;
 
-                                .row {
-                                    height: 100%;
-                                    position: relative;
-                                    align-items: flex-end;
+                                .col-md-5 {
+                                    svg {
+                                        z-index: 2;
+                                        position: relative;
+                                        margin-bottom: -4.5rem;
+                                        width: 120px !important;
+                                    }
 
-                                    .col-12 {
-                                        .row {
-                                            position: unset;
-                                            align-items: flex-end;
+                                    h2 {
+                                        padding: 1rem;
+                                        font-size: 70px;
+                                        font-weight: 700;
+                                        margin-bottom: 0;
+                                        line-height: 70px;
+                                        color: $PrimaryOne;
+                                        text-align: center;
+                                        background-color: #ffffff90;
+                                    }
 
-                                            .col-3 {
+                                    h3 {
+                                        color: $White;
+                                        padding: 1rem;
+                                        font-size: 30px;
+                                        font-weight: 500;
+                                        margin-bottom: 0;
+                                        text-align: center;
+                                        background-color: #f7000b;
+                                    }
+
+                                    a {
+                                        &.FNV-Slider-ACB {
+                                            display: flex;
+                                            padding: .5rem;
+                                            line-height: 40px;
+                                            background-color: $White;
+
+                                            h4 {
+                                                width: 100%;
+                                                display: block;
+                                                font-size: 30px;
+                                                margin-bottom: 0;
+                                                color: $PrimaryOne;
+                                                text-align: center;
+                                            }
+
+                                            svg {
+                                                width: 30px !important;
+                                                height: 30px !important;
+                                                stroke: $PrimaryOne !important;
+                                            }
+
+                                            &:hover {
+                                                background-color: $PrimaryOne;
+
+                                                h4 {
+                                                    color: $White !important;
+                                                }
+
                                                 svg {
-                                                    width: 100%;
-                                                    position: relative;
-                                                    margin-bottom: -10rem;
-                                                }
-
-                                                &:last-child {
-                                                    .card {
-                                                        top: 0;
-                                                        left: 0;
-                                                        z-index: 1;
-                                                        width: 200px;
-                                                        height: 240px;
-                                                        padding: 1rem;
-                                                        border-radius: 0;
-                                                        position: absolute;
-
-                                                        display: flex;
-                                                        flex-direction: column;
-                                                        justify-content: flex-end;
-
-                                                        background: rgb(7, 9, 21);
-                                                        background: -moz-linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        background: -webkit-linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        background: linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070915", endColorstr="#3e36cc", GradientType=1);
-
-                                                        span {
-                                                            color: $White;
-                                                            font-size: 30px;
-                                                            font-weight: 600;
-                                                            text-align: center;
-                                                        }
-                                                    }
-                                                }
-
-                                                a {
-                                                    color: $White;
-                                                    padding: 1rem;
-                                                    display: block;
-                                                    text-align: center;
-                                                    border-radius: 25px;
-                                                    margin-bottom: 0rem;
-                                                    background: rgb(7, 9, 21);
-                                                    background: -moz-linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    background: -webkit-linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    background: linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070915", endColorstr="#3e36cc", GradientType=1);
+                                                    stroke: $White !important;
                                                 }
                                             }
+                                        }
+                                    }
+                                }
+
+                                .col-md-3 {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+
+                                    span {
+                                        &:first-child {
+                                            padding: 1rem 0;
+                                            font-size: 20px;
+                                            background-color: $PrimaryTwo;
+                                            animation: backgroundChange .3s infinite alternate;
+                                        }
+
+                                        &:nth-child(2) {
+                                            padding: .5rem 0;
+                                            background-color: $PrimaryOne;
+                                        }
+
+                                        &:nth-child(3) {
+                                            padding: .5rem 0;
+                                            background-color: $PrimaryTwo;
+                                            animation: backgroundChange .3s infinite alternate;
+                                        }
+
+                                        color: $White;
+                                        display: block;
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        text-align: center;
+                                        background-color: red;
+
+                                        strong {
+                                            font-size: 20px;
+                                            font-weight: 700;
+                                            font-family: 'Fira Sans';
                                         }
                                     }
                                 }
@@ -2704,73 +2889,113 @@ body[dir='ltr'] {
                             background-size: cover;
                             background-position: center;
                             background-color: #E3ECDD;
-                            background-image: url("/images/slider/mehregan_slider_bg.png");
+                            background-repeat: no-repeat;
+                            background-image: url("/images/slider/mehregan_slider.jpg");
 
-                            .container {
-                                z-index: 3;
-                                position: relative;
+                            .row {
+                                justify-content: space-between;
 
-                                .row {
-                                    height: 100%;
-                                    position: relative;
-                                    align-items: flex-end;
+                                .col-md-5 {
+                                    svg {
+                                        z-index: 2;
+                                        position: relative;
+                                        margin-bottom: -4.5rem;
+                                        width: 120px !important;
+                                    }
 
-                                    .col-12 {
-                                        .row {
-                                            position: unset;
-                                            align-items: flex-end;
+                                    h2 {
+                                        padding: 1rem;
+                                        font-size: 70px;
+                                        font-weight: 700;
+                                        margin-bottom: 0;
+                                        line-height: 70px;
+                                        color: $PrimaryOne;
+                                        text-align: center;
+                                        background-color: #ffffff90;
+                                    }
 
-                                            .col-3 {
+                                    h3 {
+                                        color: $White;
+                                        padding: 1rem;
+                                        font-size: 30px;
+                                        font-weight: 500;
+                                        margin-bottom: 0;
+                                        text-align: center;
+                                        background-color: #f7000b;
+                                    }
+
+                                    a {
+                                        &.FNV-Slider-ACB {
+                                            display: flex;
+                                            padding: .5rem;
+                                            line-height: 40px;
+                                            background-color: $White;
+
+                                            h4 {
+                                                width: 100%;
+                                                display: block;
+                                                font-size: 30px;
+                                                margin-bottom: 0;
+                                                color: $PrimaryOne;
+                                                text-align: center;
+                                            }
+
+                                            svg {
+                                                width: 30px !important;
+                                                height: 30px !important;
+                                                stroke: $PrimaryOne !important;
+                                            }
+
+                                            &:hover {
+                                                background-color: $PrimaryOne;
+
+                                                h4 {
+                                                    color: $White !important;
+                                                }
+
                                                 svg {
-                                                    width: 100%;
-                                                    position: relative;
-                                                    margin-bottom: -10rem;
-                                                }
-
-                                                &:last-child {
-                                                    .card {
-                                                        top: 0;
-                                                        left: 0;
-                                                        z-index: 1;
-                                                        width: 200px;
-                                                        height: 240px;
-                                                        padding: 1rem;
-                                                        border-radius: 0;
-                                                        position: absolute;
-
-                                                        display: flex;
-                                                        flex-direction: column;
-                                                        justify-content: flex-end;
-
-                                                        background: rgb(7, 9, 21);
-                                                        background: -moz-linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        background: -webkit-linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        background: linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070915", endColorstr="#3e36cc", GradientType=1);
-
-                                                        span {
-                                                            color: $White;
-                                                            font-size: 30px;
-                                                            font-weight: 600;
-                                                            text-align: center;
-                                                        }
-                                                    }
-                                                }
-
-                                                a {
-                                                    color: $White;
-                                                    padding: 1rem;
-                                                    display: block;
-                                                    text-align: center;
-                                                    border-radius: 25px;
-                                                    margin-bottom: 0rem;
-                                                    background: rgb(7, 9, 21);
-                                                    background: -moz-linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    background: -webkit-linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    background: linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070915", endColorstr="#3e36cc", GradientType=1);
+                                                    stroke: $White !important;
                                                 }
                                             }
+                                        }
+                                    }
+                                }
+
+                                .col-md-3 {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+
+                                    span {
+                                        &:first-child {
+                                            padding: 1rem 0;
+                                            font-size: 25px;
+                                            background-color: $PrimaryTwo;
+                                            animation: backgroundChange .3s infinite alternate;
+                                        }
+
+                                        &:nth-child(2) {
+                                            padding: .5rem 0;
+                                            background-color: $PrimaryOne;
+                                        }
+
+                                        &:nth-child(3) {
+                                            padding: .5rem 0;
+                                            background-color: $PrimaryTwo;
+                                            animation: backgroundChange .3s infinite alternate;
+                                        }
+
+                                        color: $White;
+                                        display: block;
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        text-align: center;
+                                        background-color: red;
+
+                                        strong {
+                                            font-size: 20px;
+                                            font-weight: 700;
+                                            font-family: 'Fira Sans';
                                         }
                                     }
                                 }
@@ -3230,72 +3455,113 @@ body[dir='ltr'] {
                             background-size: cover;
                             background-position: center;
                             background-color: #E3ECDD;
-                            background-image: url("/images/slider/mehregan_slider_bg.png");
+                            background-repeat: no-repeat;
+                            background-image: url("/images/slider/mehregan_slider.jpg");
 
-                            .container {
-                                z-index: 3;
-                                position: relative;
+                            .row {
+                                justify-content: space-between;
 
-                                .row {
-                                    height: 100%;
-                                    position: relative;
-                                    align-items: flex-end;
+                                .col-md-5 {
+                                    svg {
+                                        z-index: 2;
+                                        position: relative;
+                                        margin-bottom: -4.5rem;
+                                        width: 120px !important;
+                                    }
 
-                                    .col-12 {
-                                        .row {
-                                            position: unset;
-                                            align-items: flex-end;
+                                    h2 {
+                                        padding: 1rem;
+                                        font-size: 70px;
+                                        font-weight: 700;
+                                        margin-bottom: 0;
+                                        line-height: 70px;
+                                        color: $PrimaryOne;
+                                        text-align: center;
+                                        background-color: #ffffff90;
+                                    }
 
-                                            .col-3 {
+                                    h3 {
+                                        color: $White;
+                                        padding: 1rem;
+                                        font-size: 30px;
+                                        font-weight: 500;
+                                        margin-bottom: 0;
+                                        text-align: center;
+                                        background-color: #f7000b;
+                                    }
+
+                                    a {
+                                        &.FNV-Slider-ACB {
+                                            display: flex;
+                                            padding: .5rem;
+                                            line-height: 40px;
+                                            background-color: $White;
+
+                                            h4 {
+                                                width: 100%;
+                                                display: block;
+                                                font-size: 30px;
+                                                margin-bottom: 0;
+                                                color: $PrimaryOne;
+                                                text-align: center;
+                                            }
+
+                                            svg {
+                                                width: 30px !important;
+                                                height: 30px !important;
+                                                stroke: $PrimaryOne !important;
+                                            }
+
+                                            &:hover {
+                                                background-color: $PrimaryOne;
+
+                                                h4 {
+                                                    color: $White !important;
+                                                }
+
                                                 svg {
-                                                    position: relative;
-                                                    margin-bottom: -20rem;
-                                                }
-
-                                                &:last-child {
-                                                    .card {
-                                                        top: 0;
-                                                        left: 0;
-                                                        z-index: 1;
-                                                        width: 200px;
-                                                        height: 240px;
-                                                        padding: 1rem;
-                                                        border-radius: 0;
-                                                        position: absolute;
-
-                                                        display: flex;
-                                                        flex-direction: column;
-                                                        justify-content: flex-end;
-
-                                                        background: rgb(7, 9, 21);
-                                                        background: -moz-linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        background: -webkit-linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        background: linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070915", endColorstr="#3e36cc", GradientType=1);
-
-                                                        span {
-                                                            color: $White;
-                                                            font-size: 30px;
-                                                            font-weight: 600;
-                                                            text-align: center;
-                                                        }
-                                                    }
-                                                }
-
-                                                a {
-                                                    color: $White;
-                                                    padding: 1rem;
-                                                    display: block;
-                                                    text-align: center;
-                                                    border-radius: 25px;
-                                                    margin-bottom: -5rem;
-                                                    background: rgb(7, 9, 21);
-                                                    background: -moz-linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    background: -webkit-linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    background: linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070915", endColorstr="#3e36cc", GradientType=1);
+                                                    stroke: $White !important;
                                                 }
                                             }
+                                        }
+                                    }
+                                }
+
+                                .col-md-3 {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+
+                                    span {
+                                        &:first-child {
+                                            padding: 1rem 0;
+                                            font-size: 30px;
+                                            background-color: $PrimaryTwo;
+                                            animation: backgroundChange .3s infinite alternate;
+                                        }
+
+                                        &:nth-child(2) {
+                                            padding: .5rem 0;
+                                            background-color: $PrimaryOne;
+                                        }
+
+                                        &:nth-child(3) {
+                                            padding: .5rem 0;
+                                            background-color: $PrimaryTwo;
+                                            animation: backgroundChange .3s infinite alternate;
+                                        }
+
+                                        color: $White;
+                                        display: block;
+                                        font-size: 20px;
+                                        font-weight: 700;
+                                        text-align: center;
+                                        background-color: red;
+
+                                        strong {
+                                            font-size: 30px;
+                                            font-weight: 700;
+                                            font-family: 'Fira Sans';
                                         }
                                     }
                                 }
@@ -3491,7 +3757,6 @@ body[dir='ltr'] {
                                 }
                             }
                         }
-
 
                         .FNV-Slider-Object {
                             top: 0;
@@ -3739,75 +4004,110 @@ body[dir='rtl'] {
                             background-size: cover;
                             background-position: center;
                             background-color: #E3ECDD;
-                            background-image: url("/images/slider/mehregan_slider_bg.png");
+                            background-repeat: no-repeat;
+                            background-image: url("/images/slider/mehregan_slider.jpg");
 
-                            .container {
-                                z-index: 3;
-                                position: relative;
+                            .row {
+                                justify-content: space-between;
 
-                                .row {
-                                    height: 100%;
-                                    position: relative;
-                                    align-items: center;
+                                .col-md-5 {
+                                    svg {
+                                        display: none;
+                                    }
 
-                                    .col-12 {
-                                        .row {
-                                            position: unset;
-                                            align-items: center;
+                                    h2 {
+                                        padding: .5rem;
+                                        font-size: 40px;
+                                        font-weight: 700;
+                                        margin-bottom: 0;
+                                        line-height: 70px;
+                                        color: $PrimaryOne;
+                                        text-align: center;
+                                        background-color: #ffffff90;
+                                    }
 
-                                            .col-3 {
+                                    h3 {
+                                        color: $White;
+                                        padding: 1rem;
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                        margin-bottom: 0;
+                                        text-align: center;
+                                        background-color: #f7000b;
+                                    }
+
+                                    a {
+                                        &.FNV-Slider-ACB {
+                                            display: flex;
+                                            padding: .5rem;
+                                            line-height: 40px;
+                                            background-color: $White;
+
+                                            h4 {
+                                                width: 100%;
+                                                display: block;
+                                                font-size: 20px;
+                                                margin-bottom: 0;
+                                                color: $PrimaryOne;
+                                                text-align: center;
+                                            }
+
+                                            svg {
+                                                width: 30px !important;
+                                                height: 30px !important;
+                                                stroke: $PrimaryOne !important;
+                                            }
+
+                                            &:hover {
+                                                background-color: $PrimaryOne;
+
+                                                h4 {
+                                                    color: $White !important;
+                                                }
+
                                                 svg {
-                                                    width: 100%;
-                                                    height: 100px;
-                                                    position: relative;
-                                                    margin-bottom: -5rem;
-                                                }
-
-                                                &:last-child {
-                                                    .card {
-                                                        top: 0;
-                                                        left: 0;
-                                                        z-index: 1;
-                                                        width: 100px;
-                                                        height: 100px;
-                                                        padding: .5rem;
-                                                        border-radius: 0;
-                                                        position: absolute;
-
-                                                        display: flex;
-                                                        flex-direction: column;
-                                                        justify-content: flex-end;
-
-                                                        background: rgb(7, 9, 21);
-                                                        background: -moz-linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        background: -webkit-linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        background: linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070915", endColorstr="#3e36cc", GradientType=1);
-
-                                                        span {
-                                                            color: $White;
-                                                            font-size: 14px;
-                                                            font-weight: 600;
-                                                            text-align: center;
-                                                        }
-                                                    }
-                                                }
-
-                                                a {
-                                                    color: $White;
-                                                    padding: .5rem;
-                                                    display: block;
-                                                    font-size: 14px;
-                                                    text-align: center;
-                                                    border-radius: 25px;
-                                                    margin-bottom: -5rem;
-                                                    background: rgb(7, 9, 21);
-                                                    background: -moz-linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    background: -webkit-linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    background: linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070915", endColorstr="#3e36cc", GradientType=1);
+                                                    stroke: $White !important;
                                                 }
                                             }
+                                        }
+                                    }
+                                }
+
+                                .col-md-3 {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+
+                                    span {
+                                        &:first-child {
+                                            padding: 1rem 0;
+                                            font-size: 16px;
+                                            background-color: $PrimaryTwo;
+                                            animation: backgroundChange .3s infinite alternate;
+                                        }
+
+                                        &:nth-child(2) {
+                                            padding: .5rem 0;
+                                            background-color: $PrimaryOne;
+                                        }
+
+                                        &:nth-child(3) {
+                                            padding: .5rem 0;
+                                            background-color: $PrimaryTwo;
+                                            animation: backgroundChange .3s infinite alternate;
+                                        }
+
+                                        color: $White;
+                                        display: block;
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        text-align: center;
+                                        background-color: red;
+
+                                        strong {
+                                            font-size: 20px;
+                                            font-weight: 700;
+                                            font-family: 'Fira Sans';
                                         }
                                     }
                                 }
@@ -4241,73 +4541,110 @@ body[dir='rtl'] {
                             background-size: cover;
                             background-position: center;
                             background-color: #E3ECDD;
-                            background-image: url("/images/slider/mehregan_slider_bg.png");
+                            background-repeat: no-repeat;
+                            background-image: url("/images/slider/mehregan_slider.jpg");
 
-                            .container {
-                                z-index: 3;
-                                position: relative;
+                            .row {
+                                justify-content: space-between;
 
-                                .row {
-                                    height: 100%;
-                                    position: relative;
-                                    align-items: center;
+                                .col-md-5 {
+                                    svg {
+                                        display: none;
+                                    }
 
-                                    .col-12 {
-                                        .row {
-                                            position: unset;
-                                            align-items: center;
+                                    h2 {
+                                        padding: .5rem;
+                                        font-size: 40px;
+                                        font-weight: 700;
+                                        margin-bottom: 0;
+                                        line-height: 70px;
+                                        color: $PrimaryOne;
+                                        text-align: center;
+                                        background-color: #ffffff90;
+                                    }
 
-                                            .col-3 {
+                                    h3 {
+                                        color: $White;
+                                        padding: 1rem;
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                        margin-bottom: 0;
+                                        text-align: center;
+                                        background-color: #f7000b;
+                                    }
+
+                                    a {
+                                        &.FNV-Slider-ACB {
+                                            display: flex;
+                                            padding: .5rem;
+                                            line-height: 40px;
+                                            background-color: $White;
+
+                                            h4 {
+                                                width: 100%;
+                                                display: block;
+                                                font-size: 20px;
+                                                margin-bottom: 0;
+                                                color: $PrimaryOne;
+                                                text-align: center;
+                                            }
+
+                                            svg {
+                                                width: 30px !important;
+                                                height: 30px !important;
+                                                stroke: $PrimaryOne !important;
+                                            }
+
+                                            &:hover {
+                                                background-color: $PrimaryOne;
+
+                                                h4 {
+                                                    color: $White !important;
+                                                }
+
                                                 svg {
-                                                    width: 100%;
-                                                    position: relative;
-                                                    margin-bottom: -12rem;
-                                                }
-
-                                                &:last-child {
-                                                    .card {
-                                                        top: 0;
-                                                        left: 0;
-                                                        z-index: 1;
-                                                        width: 150px;
-                                                        height: 150px;
-                                                        padding: .5rem;
-                                                        border-radius: 0;
-                                                        position: absolute;
-
-                                                        display: flex;
-                                                        flex-direction: column;
-                                                        justify-content: flex-end;
-
-                                                        background: rgb(7, 9, 21);
-                                                        background: -moz-linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        background: -webkit-linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        background: linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070915", endColorstr="#3e36cc", GradientType=1);
-
-                                                        span {
-                                                            color: $White;
-                                                            font-size: 18px;
-                                                            font-weight: 600;
-                                                            text-align: center;
-                                                        }
-                                                    }
-                                                }
-
-                                                a {
-                                                    color: $White;
-                                                    padding: 1rem;
-                                                    display: block;
-                                                    text-align: center;
-                                                    border-radius: 25px;
-                                                    margin-bottom: -5rem;
-                                                    background: rgb(7, 9, 21);
-                                                    background: -moz-linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    background: -webkit-linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    background: linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070915", endColorstr="#3e36cc", GradientType=1);
+                                                    stroke: $White !important;
                                                 }
                                             }
+                                        }
+                                    }
+                                }
+
+                                .col-md-3 {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+
+                                    span {
+                                        &:first-child {
+                                            padding: 1rem 0;
+                                            font-size: 16px;
+                                            background-color: $PrimaryTwo;
+                                            animation: backgroundChange .3s infinite alternate;
+                                        }
+
+                                        &:nth-child(2) {
+                                            padding: .5rem 0;
+                                            background-color: $PrimaryOne;
+                                        }
+
+                                        &:nth-child(3) {
+                                            padding: .5rem 0;
+                                            background-color: $PrimaryTwo;
+                                            animation: backgroundChange .3s infinite alternate;
+                                        }
+
+                                        color: $White;
+                                        display: block;
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        text-align: center;
+                                        background-color: red;
+
+                                        strong {
+                                            font-size: 20px;
+                                            font-weight: 700;
+                                            font-family: 'Fira Sans';
                                         }
                                     }
                                 }
@@ -4753,73 +5090,113 @@ body[dir='rtl'] {
                             background-size: cover;
                             background-position: center;
                             background-color: #E3ECDD;
-                            background-image: url("/images/slider/mehregan_slider_bg.png");
+                            background-repeat: no-repeat;
+                            background-image: url("/images/slider/mehregan_slider.jpg");
 
-                            .container {
-                                z-index: 3;
-                                position: relative;
+                            .row {
+                                justify-content: space-between;
 
-                                .row {
-                                    height: 100%;
-                                    position: relative;
-                                    align-items: flex-end;
+                                .col-md-5 {
+                                    svg {
+                                        z-index: 2;
+                                        position: relative;
+                                        margin-bottom: -2rem;
+                                        width: 80px !important;
+                                    }
 
-                                    .col-12 {
-                                        .row {
-                                            position: unset;
-                                            align-items: flex-end;
+                                    h2 {
+                                        padding: 1rem;
+                                        font-size: 40px;
+                                        font-weight: 700;
+                                        margin-bottom: 0;
+                                        line-height: 70px;
+                                        color: $PrimaryOne;
+                                        text-align: center;
+                                        background-color: #ffffff90;
+                                    }
 
-                                            .col-3 {
+                                    h3 {
+                                        color: $White;
+                                        padding: 1rem;
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                        margin-bottom: 0;
+                                        text-align: center;
+                                        background-color: #f7000b;
+                                    }
+
+                                    a {
+                                        &.FNV-Slider-ACB {
+                                            display: flex;
+                                            padding: .5rem;
+                                            line-height: 40px;
+                                            background-color: $White;
+
+                                            h4 {
+                                                width: 100%;
+                                                display: block;
+                                                font-size: 20px;
+                                                margin-bottom: 0;
+                                                color: $PrimaryOne;
+                                                text-align: center;
+                                            }
+
+                                            svg {
+                                                width: 30px !important;
+                                                height: 30px !important;
+                                                stroke: $PrimaryOne !important;
+                                            }
+
+                                            &:hover {
+                                                background-color: $PrimaryOne;
+
+                                                h4 {
+                                                    color: $White !important;
+                                                }
+
                                                 svg {
-                                                    width: 100%;
-                                                    position: relative;
-                                                    margin-bottom: -5rem;
-                                                }
-
-                                                &:last-child {
-                                                    .card {
-                                                        top: 0;
-                                                        left: 0;
-                                                        z-index: 1;
-                                                        width: 150px;
-                                                        height: 150px;
-                                                        padding: 1rem;
-                                                        border-radius: 0;
-                                                        position: absolute;
-
-                                                        display: flex;
-                                                        flex-direction: column;
-                                                        justify-content: flex-end;
-
-                                                        background: rgb(7, 9, 21);
-                                                        background: -moz-linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        background: -webkit-linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        background: linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070915", endColorstr="#3e36cc", GradientType=1);
-
-                                                        span {
-                                                            color: $White;
-                                                            font-size: 22px;
-                                                            font-weight: 600;
-                                                            text-align: center;
-                                                        }
-                                                    }
-                                                }
-
-                                                a {
-                                                    color: $White;
-                                                    padding: 1rem;
-                                                    display: block;
-                                                    text-align: center;
-                                                    border-radius: 25px;
-                                                    margin-bottom: 2rem;
-                                                    background: rgb(7, 9, 21);
-                                                    background: -moz-linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    background: -webkit-linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    background: linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070915", endColorstr="#3e36cc", GradientType=1);
+                                                    stroke: $White !important;
                                                 }
                                             }
+                                        }
+                                    }
+                                }
+
+                                .col-md-3 {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+
+                                    span {
+                                        &:first-child {
+                                            padding: 1rem 0;
+                                            font-size: 12px;
+                                            background-color: $PrimaryTwo;
+                                            animation: backgroundChange .3s infinite alternate;
+                                        }
+
+                                        &:nth-child(2) {
+                                            padding: .5rem 0;
+                                            background-color: $PrimaryOne;
+                                        }
+
+                                        &:nth-child(3) {
+                                            padding: .5rem 0;
+                                            background-color: $PrimaryTwo;
+                                            animation: backgroundChange .3s infinite alternate;
+                                        }
+
+                                        color: $White;
+                                        display: block;
+                                        font-size: 8px;
+                                        font-weight: 500;
+                                        text-align: center;
+                                        background-color: red;
+
+                                        strong {
+                                            font-size: 8px;
+                                            font-weight: 700;
+                                            font-family: 'Fira Sans';
                                         }
                                     }
                                 }
@@ -5301,73 +5678,113 @@ body[dir='rtl'] {
                             background-size: cover;
                             background-position: center;
                             background-color: #E3ECDD;
-                            background-image: url("/images/slider/mehregan_slider_bg.png");
+                            background-repeat: no-repeat;
+                            background-image: url("/images/slider/mehregan_slider.jpg");
 
-                            .container {
-                                z-index: 3;
-                                position: relative;
+                            .row {
+                                justify-content: space-between;
 
-                                .row {
-                                    height: 100%;
-                                    position: relative;
-                                    align-items: flex-end;
+                                .col-md-5 {
+                                    svg {
+                                        z-index: 2;
+                                        position: relative;
+                                        margin-bottom: -2rem;
+                                        width: 80px !important;
+                                    }
 
-                                    .col-12 {
-                                        .row {
-                                            position: unset;
-                                            align-items: flex-end;
+                                    h2 {
+                                        padding: 1rem;
+                                        font-size: 60px;
+                                        font-weight: 700;
+                                        margin-bottom: 0;
+                                        line-height: 70px;
+                                        color: $PrimaryOne;
+                                        text-align: center;
+                                        background-color: #ffffff90;
+                                    }
 
-                                            .col-3 {
+                                    h3 {
+                                        color: $White;
+                                        padding: 1rem;
+                                        font-size: 20px;
+                                        font-weight: 500;
+                                        margin-bottom: 0;
+                                        text-align: center;
+                                        background-color: #f7000b;
+                                    }
+
+                                    a {
+                                        &.FNV-Slider-ACB {
+                                            display: flex;
+                                            padding: .5rem;
+                                            line-height: 40px;
+                                            background-color: $White;
+
+                                            h4 {
+                                                width: 100%;
+                                                display: block;
+                                                font-size: 30px;
+                                                margin-bottom: 0;
+                                                color: $PrimaryOne;
+                                                text-align: center;
+                                            }
+
+                                            svg {
+                                                width: 30px !important;
+                                                height: 30px !important;
+                                                stroke: $PrimaryOne !important;
+                                            }
+
+                                            &:hover {
+                                                background-color: $PrimaryOne;
+
+                                                h4 {
+                                                    color: $White !important;
+                                                }
+
                                                 svg {
-                                                    width: 100%;
-                                                    position: relative;
-                                                    margin-bottom: -10rem;
-                                                }
-
-                                                &:last-child {
-                                                    .card {
-                                                        top: 0;
-                                                        left: 0;
-                                                        z-index: 1;
-                                                        width: 200px;
-                                                        height: 240px;
-                                                        padding: 1rem;
-                                                        border-radius: 0;
-                                                        position: absolute;
-
-                                                        display: flex;
-                                                        flex-direction: column;
-                                                        justify-content: flex-end;
-
-                                                        background: rgb(7, 9, 21);
-                                                        background: -moz-linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        background: -webkit-linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        background: linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070915", endColorstr="#3e36cc", GradientType=1);
-
-                                                        span {
-                                                            color: $White;
-                                                            font-size: 30px;
-                                                            font-weight: 600;
-                                                            text-align: center;
-                                                        }
-                                                    }
-                                                }
-
-                                                a {
-                                                    color: $White;
-                                                    padding: 1rem;
-                                                    display: block;
-                                                    text-align: center;
-                                                    border-radius: 25px;
-                                                    margin-bottom: 0rem;
-                                                    background: rgb(7, 9, 21);
-                                                    background: -moz-linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    background: -webkit-linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    background: linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070915", endColorstr="#3e36cc", GradientType=1);
+                                                    stroke: $White !important;
                                                 }
                                             }
+                                        }
+                                    }
+                                }
+
+                                .col-md-3 {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+
+                                    span {
+                                        &:first-child {
+                                            padding: 1rem 0;
+                                            font-size: 16px;
+                                            background-color: $PrimaryTwo;
+                                            animation: backgroundChange .3s infinite alternate;
+                                        }
+
+                                        &:nth-child(2) {
+                                            padding: .5rem 0;
+                                            background-color: $PrimaryOne;
+                                        }
+
+                                        &:nth-child(3) {
+                                            padding: .5rem 0;
+                                            background-color: $PrimaryTwo;
+                                            animation: backgroundChange .3s infinite alternate;
+                                        }
+
+                                        color: $White;
+                                        display: block;
+                                        font-size: 12px;
+                                        font-weight: 700;
+                                        text-align: center;
+                                        background-color: red;
+
+                                        strong {
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            font-family: 'Fira Sans';
                                         }
                                     }
                                 }
@@ -5847,73 +6264,113 @@ body[dir='rtl'] {
                             background-size: cover;
                             background-position: center;
                             background-color: #E3ECDD;
-                            background-image: url("/images/slider/mehregan_slider_bg.png");
+                            background-repeat: no-repeat;
+                            background-image: url("/images/slider/mehregan_slider.jpg");
 
-                            .container {
-                                z-index: 3;
-                                position: relative;
+                            .row {
+                                justify-content: space-between;
 
-                                .row {
-                                    height: 100%;
-                                    position: relative;
-                                    align-items: flex-end;
+                                .col-md-5 {
+                                    svg {
+                                        z-index: 2;
+                                        position: relative;
+                                        margin-bottom: -4.5rem;
+                                        width: 120px !important;
+                                    }
 
-                                    .col-12 {
-                                        .row {
-                                            position: unset;
-                                            align-items: flex-end;
+                                    h2 {
+                                        padding: 1rem;
+                                        font-size: 70px;
+                                        font-weight: 700;
+                                        margin-bottom: 0;
+                                        line-height: 70px;
+                                        color: $PrimaryOne;
+                                        text-align: center;
+                                        background-color: #ffffff90;
+                                    }
 
-                                            .col-3 {
+                                    h3 {
+                                        color: $White;
+                                        padding: 1rem;
+                                        font-size: 30px;
+                                        font-weight: 500;
+                                        margin-bottom: 0;
+                                        text-align: center;
+                                        background-color: #f7000b;
+                                    }
+
+                                    a {
+                                        &.FNV-Slider-ACB {
+                                            display: flex;
+                                            padding: .5rem;
+                                            line-height: 40px;
+                                            background-color: $White;
+
+                                            h4 {
+                                                width: 100%;
+                                                display: block;
+                                                font-size: 30px;
+                                                margin-bottom: 0;
+                                                color: $PrimaryOne;
+                                                text-align: center;
+                                            }
+
+                                            svg {
+                                                width: 30px !important;
+                                                height: 30px !important;
+                                                stroke: $PrimaryOne !important;
+                                            }
+
+                                            &:hover {
+                                                background-color: $PrimaryOne;
+
+                                                h4 {
+                                                    color: $White !important;
+                                                }
+
                                                 svg {
-                                                    width: 100%;
-                                                    position: relative;
-                                                    margin-bottom: -10rem;
-                                                }
-
-                                                &:last-child {
-                                                    .card {
-                                                        top: 0;
-                                                        left: 0;
-                                                        z-index: 1;
-                                                        width: 200px;
-                                                        height: 240px;
-                                                        padding: 1rem;
-                                                        border-radius: 0;
-                                                        position: absolute;
-
-                                                        display: flex;
-                                                        flex-direction: column;
-                                                        justify-content: flex-end;
-
-                                                        background: rgb(7, 9, 21);
-                                                        background: -moz-linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        background: -webkit-linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        background: linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070915", endColorstr="#3e36cc", GradientType=1);
-
-                                                        span {
-                                                            color: $White;
-                                                            font-size: 30px;
-                                                            font-weight: 600;
-                                                            text-align: center;
-                                                        }
-                                                    }
-                                                }
-
-                                                a {
-                                                    color: $White;
-                                                    padding: 1rem;
-                                                    display: block;
-                                                    text-align: center;
-                                                    border-radius: 25px;
-                                                    margin-bottom: 0rem;
-                                                    background: rgb(7, 9, 21);
-                                                    background: -moz-linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    background: -webkit-linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    background: linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070915", endColorstr="#3e36cc", GradientType=1);
+                                                    stroke: $White !important;
                                                 }
                                             }
+                                        }
+                                    }
+                                }
+
+                                .col-md-3 {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+
+                                    span {
+                                        &:first-child {
+                                            padding: 1rem 0;
+                                            font-size: 20px;
+                                            background-color: $PrimaryTwo;
+                                            animation: backgroundChange .3s infinite alternate;
+                                        }
+
+                                        &:nth-child(2) {
+                                            padding: .5rem 0;
+                                            background-color: $PrimaryOne;
+                                        }
+
+                                        &:nth-child(3) {
+                                            padding: .5rem 0;
+                                            background-color: $PrimaryTwo;
+                                            animation: backgroundChange .3s infinite alternate;
+                                        }
+
+                                        color: $White;
+                                        display: block;
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        text-align: center;
+                                        background-color: red;
+
+                                        strong {
+                                            font-size: 20px;
+                                            font-weight: 700;
+                                            font-family: 'Fira Sans';
                                         }
                                     }
                                 }
@@ -6394,73 +6851,113 @@ body[dir='rtl'] {
                             background-size: cover;
                             background-position: center;
                             background-color: #E3ECDD;
-                            background-image: url("/images/slider/mehregan_slider_bg.png");
+                            background-repeat: no-repeat;
+                            background-image: url("/images/slider/mehregan_slider.jpg");
 
-                            .container {
-                                z-index: 3;
-                                position: relative;
+                            .row {
+                                justify-content: space-between;
 
-                                .row {
-                                    height: 100%;
-                                    position: relative;
-                                    align-items: flex-end;
+                                .col-md-5 {
+                                    svg {
+                                        z-index: 2;
+                                        position: relative;
+                                        margin-bottom: -4.5rem;
+                                        width: 120px !important;
+                                    }
 
-                                    .col-12 {
-                                        .row {
-                                            position: unset;
-                                            align-items: flex-end;
+                                    h2 {
+                                        padding: 1rem;
+                                        font-size: 70px;
+                                        font-weight: 700;
+                                        margin-bottom: 0;
+                                        line-height: 70px;
+                                        color: $PrimaryOne;
+                                        text-align: center;
+                                        background-color: #ffffff90;
+                                    }
 
-                                            .col-3 {
+                                    h3 {
+                                        color: $White;
+                                        padding: 1rem;
+                                        font-size: 30px;
+                                        font-weight: 500;
+                                        margin-bottom: 0;
+                                        text-align: center;
+                                        background-color: #f7000b;
+                                    }
+
+                                    a {
+                                        &.FNV-Slider-ACB {
+                                            display: flex;
+                                            padding: .5rem;
+                                            line-height: 40px;
+                                            background-color: $White;
+
+                                            h4 {
+                                                width: 100%;
+                                                display: block;
+                                                font-size: 30px;
+                                                margin-bottom: 0;
+                                                color: $PrimaryOne;
+                                                text-align: center;
+                                            }
+
+                                            svg {
+                                                width: 30px !important;
+                                                height: 30px !important;
+                                                stroke: $PrimaryOne !important;
+                                            }
+
+                                            &:hover {
+                                                background-color: $PrimaryOne;
+
+                                                h4 {
+                                                    color: $White !important;
+                                                }
+
                                                 svg {
-                                                    width: 100%;
-                                                    position: relative;
-                                                    margin-bottom: -10rem;
-                                                }
-
-                                                &:last-child {
-                                                    .card {
-                                                        top: 0;
-                                                        left: 0;
-                                                        z-index: 1;
-                                                        width: 200px;
-                                                        height: 240px;
-                                                        padding: 1rem;
-                                                        border-radius: 0;
-                                                        position: absolute;
-
-                                                        display: flex;
-                                                        flex-direction: column;
-                                                        justify-content: flex-end;
-
-                                                        background: rgb(7, 9, 21);
-                                                        background: -moz-linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        background: -webkit-linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        background: linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070915", endColorstr="#3e36cc", GradientType=1);
-
-                                                        span {
-                                                            color: $White;
-                                                            font-size: 30px;
-                                                            font-weight: 600;
-                                                            text-align: center;
-                                                        }
-                                                    }
-                                                }
-
-                                                a {
-                                                    color: $White;
-                                                    padding: 1rem;
-                                                    display: block;
-                                                    text-align: center;
-                                                    border-radius: 25px;
-                                                    margin-bottom: 0rem;
-                                                    background: rgb(7, 9, 21);
-                                                    background: -moz-linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    background: -webkit-linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    background: linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070915", endColorstr="#3e36cc", GradientType=1);
+                                                    stroke: $White !important;
                                                 }
                                             }
+                                        }
+                                    }
+                                }
+
+                                .col-md-3 {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+
+                                    span {
+                                        &:first-child {
+                                            padding: 1rem 0;
+                                            font-size: 25px;
+                                            background-color: $PrimaryTwo;
+                                            animation: backgroundChange .3s infinite alternate;
+                                        }
+
+                                        &:nth-child(2) {
+                                            padding: .5rem 0;
+                                            background-color: $PrimaryOne;
+                                        }
+
+                                        &:nth-child(3) {
+                                            padding: .5rem 0;
+                                            background-color: $PrimaryTwo;
+                                            animation: backgroundChange .3s infinite alternate;
+                                        }
+
+                                        color: $White;
+                                        display: block;
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        text-align: center;
+                                        background-color: red;
+
+                                        strong {
+                                            font-size: 20px;
+                                            font-weight: 700;
+                                            font-family: 'Fira Sans';
                                         }
                                     }
                                 }
@@ -6920,72 +7417,113 @@ body[dir='rtl'] {
                             background-size: cover;
                             background-position: center;
                             background-color: #E3ECDD;
-                            background-image: url("/images/slider/mehregan_slider_bg.png");
+                            background-repeat: no-repeat;
+                            background-image: url("/images/slider/mehregan_slider.jpg");
 
-                            .container {
-                                z-index: 3;
-                                position: relative;
+                            .row {
+                                justify-content: space-between;
 
-                                .row {
-                                    height: 100%;
-                                    position: relative;
-                                    align-items: flex-end;
+                                .col-md-5 {
+                                    svg {
+                                        z-index: 2;
+                                        position: relative;
+                                        margin-bottom: -4.5rem;
+                                        width: 120px !important;
+                                    }
 
-                                    .col-12 {
-                                        .row {
-                                            position: unset;
-                                            align-items: flex-end;
+                                    h2 {
+                                        padding: 1rem;
+                                        font-size: 70px;
+                                        font-weight: 700;
+                                        margin-bottom: 0;
+                                        line-height: 70px;
+                                        color: $PrimaryOne;
+                                        text-align: center;
+                                        background-color: #ffffff90;
+                                    }
 
-                                            .col-3 {
+                                    h3 {
+                                        color: $White;
+                                        padding: 1rem;
+                                        font-size: 30px;
+                                        font-weight: 500;
+                                        margin-bottom: 0;
+                                        text-align: center;
+                                        background-color: #f7000b;
+                                    }
+
+                                    a {
+                                        &.FNV-Slider-ACB {
+                                            display: flex;
+                                            padding: .5rem;
+                                            line-height: 40px;
+                                            background-color: $White;
+
+                                            h4 {
+                                                width: 100%;
+                                                display: block;
+                                                font-size: 30px;
+                                                margin-bottom: 0;
+                                                color: $PrimaryOne;
+                                                text-align: center;
+                                            }
+
+                                            svg {
+                                                width: 30px !important;
+                                                height: 30px !important;
+                                                stroke: $PrimaryOne !important;
+                                            }
+
+                                            &:hover {
+                                                background-color: $PrimaryOne;
+
+                                                h4 {
+                                                    color: $White !important;
+                                                }
+
                                                 svg {
-                                                    position: relative;
-                                                    margin-bottom: -20rem;
-                                                }
-
-                                                &:last-child {
-                                                    .card {
-                                                        top: 0;
-                                                        left: 0;
-                                                        z-index: 1;
-                                                        width: 200px;
-                                                        height: 240px;
-                                                        padding: 1rem;
-                                                        border-radius: 0;
-                                                        position: absolute;
-
-                                                        display: flex;
-                                                        flex-direction: column;
-                                                        justify-content: flex-end;
-
-                                                        background: rgb(7, 9, 21);
-                                                        background: -moz-linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        background: -webkit-linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        background: linear-gradient(90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070915", endColorstr="#3e36cc", GradientType=1);
-
-                                                        span {
-                                                            color: $White;
-                                                            font-size: 30px;
-                                                            font-weight: 600;
-                                                            text-align: center;
-                                                        }
-                                                    }
-                                                }
-
-                                                a {
-                                                    color: $White;
-                                                    padding: 1rem;
-                                                    display: block;
-                                                    text-align: center;
-                                                    border-radius: 25px;
-                                                    margin-bottom: -5rem;
-                                                    background: rgb(7, 9, 21);
-                                                    background: -moz-linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    background: -webkit-linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    background: linear-gradient(-90deg, rgba(7, 9, 21, 1) 40%, rgba(62, 54, 204, 1) 100%);
-                                                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#070915", endColorstr="#3e36cc", GradientType=1);
+                                                    stroke: $White !important;
                                                 }
                                             }
+                                        }
+                                    }
+                                }
+
+                                .col-md-3 {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+
+                                    span {
+                                        &:first-child {
+                                            padding: 1rem 0;
+                                            font-size: 30px;
+                                            background-color: $PrimaryTwo;
+                                            animation: backgroundChange .3s infinite alternate;
+                                        }
+
+                                        &:nth-child(2) {
+                                            padding: .5rem 0;
+                                            background-color: $PrimaryOne;
+                                        }
+
+                                        &:nth-child(3) {
+                                            padding: .5rem 0;
+                                            background-color: $PrimaryTwo;
+                                            animation: backgroundChange .3s infinite alternate;
+                                        }
+
+                                        color: $White;
+                                        display: block;
+                                        font-size: 20px;
+                                        font-weight: 700;
+                                        text-align: center;
+                                        background-color: red;
+
+                                        strong {
+                                            font-size: 30px;
+                                            font-weight: 700;
+                                            font-family: 'Fira Sans';
                                         }
                                     }
                                 }
@@ -7408,5 +7946,17 @@ body[dir='rtl'] {
     100% {
         transform: translateY(10px);
         /* Adjust this value to control the distance */
+    }
+}
+
+@keyframes backgroundChange {
+    0% {
+        color: $White;
+        background-color: $PrimaryTwo;
+    }
+
+    100% {
+        color: $BlackColor;
+        background-color: $White;
     }
 }
