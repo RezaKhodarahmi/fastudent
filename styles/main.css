@@ -292,9 +292,6 @@ badge.SecondaryColor {
   body[dir=ltr] nav {
     background-color: #ffffff;
   }
-  body[dir=ltr] nav .container {
-    padding: 1rem;
-  }
   body[dir=ltr] nav .container .navbar-brand {
     width: 200px;
     padding-right: 0.5rem;
@@ -861,9 +858,6 @@ badge.SecondaryColor {
 @media (min-width: 575.98px) and (max-width: 767.98px) {
   body[dir=ltr] nav {
     background-color: #ffffff;
-  }
-  body[dir=ltr] nav .container {
-    padding: 1rem;
   }
   body[dir=ltr] nav .container .navbar-brand {
     width: 200px;
@@ -1432,9 +1426,6 @@ badge.SecondaryColor {
   body[dir=ltr] nav {
     background-color: #ffffff;
   }
-  body[dir=ltr] nav .container {
-    padding: 1rem 0;
-  }
   body[dir=ltr] nav .container .navbar-brand {
     width: 200px;
     padding-right: 0.5rem;
@@ -1998,9 +1989,6 @@ badge.SecondaryColor {
 @media (min-width: 992px) {
   body[dir=ltr] nav {
     background-color: #ffffff;
-  }
-  body[dir=ltr] nav .container {
-    padding: 0rem;
   }
   body[dir=ltr] nav .container .navbar-brand {
     width: 100px;
@@ -2645,9 +2633,6 @@ badge.SecondaryColor {
   body[dir=ltr] nav {
     background-color: #ffffff;
   }
-  body[dir=ltr] nav .container {
-    padding: 0rem;
-  }
   body[dir=ltr] nav .container .navbar-brand {
     width: 100px;
     padding-right: 0.5rem;
@@ -3285,9 +3270,6 @@ badge.SecondaryColor {
 @media (min-width: 1400px) {
   body[dir=ltr] nav {
     background-color: #ffffff;
-  }
-  body[dir=ltr] nav .container {
-    padding: 0rem;
   }
   body[dir=ltr] nav .container .navbar-brand {
     width: 200px;
@@ -3927,9 +3909,6 @@ badge.SecondaryColor {
 @media (min-width: 1920px) {
   body[dir=ltr] nav {
     background-color: #ffffff;
-  }
-  body[dir=ltr] nav .container {
-    padding: 0rem;
   }
   body[dir=ltr] nav .container .navbar-brand {
     width: 200px;
@@ -6283,9 +6262,6 @@ badge.SecondaryColor {
 @media (min-width: 992px) {
   body[dir=rtl] nav {
     background-color: #ffffff;
-  }
-  body[dir=rtl] nav .container {
-    padding: 0rem;
   }
   body[dir=rtl] nav .container .navbar-brand {
     width: 100px;
@@ -9402,7 +9378,7 @@ badge.SecondaryColor {
 }
 @media (max-width: 575.98px) {
   body[dir=ltr] .FNV-Slider {
-    height: 300px;
+    height: 600px;
     position: relative;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Top {
@@ -9413,7 +9389,7 @@ badge.SecondaryColor {
     position: absolute;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Top svg {
-    transform: rotateY(0deg);
+    transform: rotateY(180deg);
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Announce {
     display: none;
@@ -9438,7 +9414,6 @@ badge.SecondaryColor {
     height: 100%;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child {
-    direction: rtl;
     background-size: cover;
     background-position: center;
     background-color: #E3ECDD;
@@ -9500,13 +9475,156 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) {
     background-size: cover;
     background-position: center;
-    background-image: url("/images/slider/MainBG.jpg");
-    animation: moveBackground 30s infinite alternate ease-in-out;
+    background-image: url("/images/slider/risk-slider.jpg");
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) h2 {
+    padding: 1rem;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 35px;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    line-height: 40px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB h4 {
+    font-size: 15px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) {
-    background-position: right center;
-    background-image: url("/images/slider/SecondBgR.jpg");
-    animation: zoomBackground 10s infinite alternate ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/plumbing-slider.jpg");
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) h2 {
+    padding: 0.5rem;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) h3 {
+    color: #FFFFFF;
+    padding: 0.5rem;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) {
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/309-slider.jpg");
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) h2 {
+    padding: 0.5rem;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB h4 {
+    font-size: 18px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container {
     z-index: 5;
@@ -9515,6 +9633,7 @@ badge.SecondaryColor {
     display: flex;
     position: relative;
     align-items: center;
+    justify-content: center;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row {
     width: 100%;
@@ -9540,8 +9659,8 @@ badge.SecondaryColor {
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 0.5rem;
-    margin-top: 2rem;
-    background-color: rgba(34, 56, 133, 0.3137254902);
+    margin-top: 1rem;
+    background-color: rgba(34, 56, 133, 0.662745098);
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
@@ -9591,15 +9710,17 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content section .container {
     z-index: 4;
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators {
     margin: 0;
     justify-content: end;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators button {
-    background-color: #B2B9D4;
+    width: 25px;
+    height: 25px;
     position: unset;
+    background-color: #B2B9D4;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators button svg {
     width: 30px;
@@ -9617,12 +9738,12 @@ badge.SecondaryColor {
     position: absolute;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom svg {
-    transform: rotateY(180deg) rotateX(180deg);
+    transform: rotateY(0deg) rotateX(180deg);
   }
 }
 @media (min-width: 575.98px) and (max-width: 767.98px) {
   body[dir=ltr] .FNV-Slider {
-    height: 350px;
+    height: 600px;
     position: relative;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Top {
@@ -9633,7 +9754,7 @@ badge.SecondaryColor {
     position: absolute;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Top svg {
-    transform: rotateY(0deg);
+    transform: rotateY(180deg);
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Announce {
     top: 0px;
@@ -9643,25 +9764,32 @@ badge.SecondaryColor {
     padding: 0rem;
     position: absolute;
   }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 {
+    padding: 0.5rem;
+    background-color: #FFFFFF;
+  }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators {
-    bottom: -1rem;
-    margin: 1rem 0 0;
-    justify-content: flex-start;
+    bottom: -1.5rem;
+    justify-content: center;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button {
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 10px;
     background-color: #B2B9D4;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button.active {
     background-color: #0074FF;
   }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner {
+    padding-bottom: 1rem;
+  }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a svg {
     width: 20px;
-    margin-right: 0.5rem;
+    height: 20px;
+    margin-right: 1rem;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a span {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     color: #223885;
   }
@@ -9685,7 +9813,12 @@ badge.SecondaryColor {
     height: 100%;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child {
-    direction: rtl;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/MainBG.jpg");
+    animation: moveBackground 30s infinite alternate ease-in-out;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child {
     background-size: cover;
     background-position: center;
     background-color: #E3ECDD;
@@ -9706,9 +9839,8 @@ badge.SecondaryColor {
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .container .row .col-12 .row .col-3 svg {
     width: 100%;
-    height: 100px;
     position: relative;
-    margin-bottom: -5rem;
+    margin-bottom: -12rem;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .container .row .col-12 .row .col-3:last-child .card {
     top: 0;
@@ -9746,13 +9878,156 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) {
     background-size: cover;
     background-position: center;
-    background-image: url("/images/slider/MainBG.jpg");
-    animation: moveBackground 30s infinite alternate ease-in-out;
+    background-image: url("/images/slider/risk-slider.jpg");
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) h2 {
+    padding: 1rem;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 45px;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    line-height: 40px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) {
-    background-position: right center;
-    background-image: url("/images/slider/SecondBgR.jpg");
-    animation: zoomBackground 10s infinite alternate ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/plumbing-slider.jpg");
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) h2 {
+    padding: 0.5rem;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) h3 {
+    color: #FFFFFF;
+    padding: 0.5rem;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) {
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/309-slider.jpg");
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) h2 {
+    padding: 0.5rem;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB h4 {
+    font-size: 18px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container {
     z-index: 5;
@@ -9766,8 +10041,8 @@ badge.SecondaryColor {
     width: 100%;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 {
-    display: flex;
     text-align: center;
+    display: flex;
     flex-direction: column;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 img {
@@ -9787,7 +10062,7 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 0.5rem;
     margin-top: 2rem;
-    background-color: rgba(34, 56, 133, 0.3137254902);
+    background-color: rgba(34, 56, 133, 0.662745098);
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
@@ -9837,15 +10112,17 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content section .container {
     z-index: 4;
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators {
     margin: 0;
     justify-content: end;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators button {
-    background-color: #B2B9D4;
+    width: 25px;
+    height: 25px;
     position: unset;
+    background-color: #B2B9D4;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators button svg {
     width: 30px;
@@ -9863,12 +10140,12 @@ badge.SecondaryColor {
     position: absolute;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom svg {
-    transform: rotateY(180deg) rotateX(180deg);
+    transform: rotateY(0deg) rotateX(180deg);
   }
 }
 @media (min-width: 767.98px) and (max-width: 991.98px) {
   body[dir=ltr] .FNV-Slider {
-    height: 400px;
+    height: 500px;
     position: relative;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Top {
@@ -9879,7 +10156,7 @@ badge.SecondaryColor {
     position: absolute;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Top svg {
-    transform: rotateY(0deg);
+    transform: rotateY(180deg);
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Announce {
     top: 0px;
@@ -9889,24 +10166,32 @@ badge.SecondaryColor {
     padding: 0rem;
     position: absolute;
   }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 {
+    padding: 0.5rem;
+    background-color: #FFFFFF;
+  }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators {
     bottom: -1.5rem;
-    margin: 1rem 0 0;
-    justify-content: flex-start;
+    justify-content: center;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button {
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 10px;
     background-color: #B2B9D4;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button.active {
     background-color: #0074FF;
   }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner {
+    padding-bottom: 1rem;
+  }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a svg {
-    width: 30px;
-    margin-right: 0.5rem;
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a span {
+    font-size: 12px;
     font-weight: 600;
     color: #223885;
   }
@@ -9949,7 +10234,6 @@ badge.SecondaryColor {
     height: 100%;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child {
-    direction: rtl;
     background-size: cover;
     background-position: center;
     background-color: #E3ECDD;
@@ -9970,9 +10254,8 @@ badge.SecondaryColor {
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .container .row .col-12 .row .col-3 svg {
     width: 100%;
-    height: 100px;
     position: relative;
-    margin-bottom: 0rem;
+    margin-bottom: -5rem;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .container .row .col-12 .row .col-3:last-child .card {
     top: 0;
@@ -10010,13 +10293,156 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) {
     background-size: cover;
     background-position: center;
-    background-image: url("/images/slider/MainBG.jpg");
-    animation: moveBackground 30s infinite alternate ease-in-out;
+    background-image: url("/images/slider/risk-slider.jpg");
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) h2 {
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 25px;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    line-height: 40px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB h4 {
+    font-size: 12px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) {
-    background-position: right center;
-    background-image: url("/images/slider/SecondBgR.jpg");
-    animation: zoomBackground 10s infinite alternate ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/plumbing-slider.jpg");
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) h2 {
+    padding: 0.5rem;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) h3 {
+    color: #FFFFFF;
+    padding: 0.5rem;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB h4 {
+    font-size: 15px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) {
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/309-slider.jpg");
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) h2 {
+    padding: 0.5rem;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB h4 {
+    font-size: 18px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container {
     z-index: 5;
@@ -10048,8 +10474,8 @@ badge.SecondaryColor {
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 0.5rem;
-    margin-top: 2rem;
-    background-color: rgba(34, 56, 133, 0.3137254902);
+    margin-top: 1rem;
+    background-color: rgba(34, 56, 133, 0.662745098);
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
@@ -10110,7 +10536,7 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card p {
     font-size: 12px;
     font-weight: 300;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     color: #223885;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card:not(:first-child)::before {
@@ -10132,15 +10558,17 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content section .container {
     z-index: 4;
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators {
     margin: 0;
     justify-content: end;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators button {
-    background-color: #B2B9D4;
+    width: 25px;
+    height: 25px;
     position: unset;
+    background-color: #B2B9D4;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators button svg {
     width: 30px;
@@ -10158,7 +10586,7 @@ badge.SecondaryColor {
     position: absolute;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom svg {
-    transform: rotateY(180deg) rotateX(180deg);
+    transform: rotateY(0deg) rotateX(180deg);
   }
 }
 @media (min-width: 991.98px) {
@@ -10174,7 +10602,44 @@ badge.SecondaryColor {
     position: absolute;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Top svg {
-    transform: rotateY(0deg);
+    transform: rotateY(180deg);
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce {
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+    width: 100%;
+    padding: 0rem;
+    position: absolute;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 {
+    padding: 0.5rem;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators {
+    bottom: -1.5rem;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    background-color: #B2B9D4;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button.active {
+    background-color: #0074FF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner {
+    padding-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 1rem;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #223885;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Object {
     top: 0;
@@ -10195,35 +10660,6 @@ badge.SecondaryColor {
     background-image: url("/images/slider/Person.png");
     animation: moveUpDown 10s infinite alternate ease-in-out;
   }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce {
-    top: 0px;
-    right: 0px;
-    z-index: 10;
-    width: 100%;
-    padding: 0rem;
-    position: absolute;
-  }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators {
-    bottom: -1.5rem;
-    margin: 1rem 0 0;
-    justify-content: flex-start;
-  }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button {
-    width: 5px;
-    height: 5px;
-    background-color: #B2B9D4;
-  }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button.active {
-    background-color: #0074FF;
-  }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a svg {
-    width: 30px;
-    margin-right: 0.5rem;
-  }
-  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a span {
-    font-weight: 600;
-    color: #223885;
-  }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content {
     width: 100%;
     height: 100%;
@@ -10243,7 +10679,6 @@ badge.SecondaryColor {
     height: 100%;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child {
-    direction: rtl;
     background-size: cover;
     background-position: center;
     background-color: #E3ECDD;
@@ -10264,9 +10699,8 @@ badge.SecondaryColor {
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .container .row .col-12 .row .col-3 svg {
     width: 100%;
-    height: 200px;
     position: relative;
-    margin-bottom: -5rem;
+    margin-bottom: -10rem;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .container .row .col-12 .row .col-3:last-child .card {
     top: 0;
@@ -10304,13 +10738,157 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) {
     background-size: cover;
     background-position: center;
-    background-image: url("/images/slider/MainBG.jpg");
-    animation: moveBackground 30s infinite alternate ease-in-out;
+    background-image: url("/images/slider/risk-slider.jpg");
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) h2 {
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 30px;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    line-height: 40px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB h4 {
+    font-size: 15px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) {
-    background-position: right center;
-    background-image: url("/images/slider/SecondBgR.jpg");
-    animation: zoomBackground 10s infinite alternate ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/plumbing-slider.jpg");
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) h2 {
+    padding: 0.5rem;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) h3 {
+    color: #FFFFFF;
+    padding: 0.5rem;
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    line-height: 40px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) {
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/309-slider.jpg");
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) h2 {
+    padding: 0.5rem;
+    font-size: 70px;
+    font-weight: 800;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 55px;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container {
     z-index: 5;
@@ -10342,8 +10920,8 @@ badge.SecondaryColor {
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 1rem;
-    margin-top: 2rem;
-    background-color: rgba(34, 56, 133, 0.3137254902);
+    margin-top: 1rem;
+    background-color: rgba(34, 56, 133, 0.662745098);
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
@@ -10402,7 +10980,7 @@ badge.SecondaryColor {
     font-weight: 300;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card p {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
     margin-top: 1rem;
     color: #223885;
@@ -10426,15 +11004,17 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content section .container {
     z-index: 4;
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators {
     margin: 0;
     justify-content: end;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators button {
-    background-color: #B2B9D4;
+    width: 25px;
+    height: 25px;
     position: unset;
+    background-color: #B2B9D4;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators button svg {
     width: 30px;
@@ -10452,7 +11032,7 @@ badge.SecondaryColor {
     position: absolute;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom svg {
-    transform: rotateY(180deg) rotateX(180deg);
+    transform: rotateY(0deg) rotateX(180deg);
   }
 }
 @media (min-width: 1199.98px) {
@@ -10468,31 +11048,37 @@ badge.SecondaryColor {
     position: absolute;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Top svg {
-    transform: rotateY(0deg);
+    transform: rotateY(180deg);
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Announce {
     top: 0px;
     right: 0px;
     z-index: 10;
     width: 100%;
-    padding: 1rem 0;
+    padding: 0rem;
     position: absolute;
   }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 {
+    padding: 1rem;
+    background-color: #FFFFFF;
+  }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators {
-    bottom: -2rem;
-    margin: 1rem 0 0;
-    justify-content: flex-start;
+    bottom: -1rem;
+    justify-content: center;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button {
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 10px;
     background-color: #B2B9D4;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button.active {
     background-color: #0074FF;
   }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner {
+    padding-bottom: 1rem;
+  }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a svg {
-    margin-right: 0.5rem;
+    margin-right: 1rem;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a span {
     font-weight: 600;
@@ -10536,7 +11122,6 @@ badge.SecondaryColor {
     height: 100%;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child {
-    direction: rtl;
     background-size: cover;
     background-position: center;
     background-color: #E3ECDD;
@@ -10558,7 +11143,7 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .container .row .col-12 .row .col-3 svg {
     width: 100%;
     position: relative;
-    margin-bottom: -5rem;
+    margin-bottom: -10rem;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .container .row .col-12 .row .col-3:last-child .card {
     top: 0;
@@ -10596,13 +11181,158 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) {
     background-size: cover;
     background-position: center;
-    background-image: url("/images/slider/MainBG.jpg");
-    animation: moveBackground 30s infinite alternate ease-in-out;
+    background-image: url("/images/slider/risk-slider.jpg");
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) h2 {
+    padding: 1rem;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 40px;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    line-height: 40px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) {
-    background-position: right center;
-    background-image: url("/images/slider/SecondBgR.jpg");
-    animation: zoomBackground 10s infinite alternate ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/plumbing-slider.jpg");
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) h2 {
+    padding: 0.5rem;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) h3 {
+    color: #FFFFFF;
+    padding: 0.5rem;
+    font-size: 76px;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    line-height: 40px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) {
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/309-slider.jpg");
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) h2 {
+    padding: 0.5rem;
+    font-size: 80px;
+    font-weight: 800;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 65px;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    line-height: 40px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB h4 {
+    font-size: 30px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container {
     z-index: 5;
@@ -10635,7 +11365,7 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 1rem;
     margin-top: 2rem;
-    background-color: rgba(34, 56, 133, 0.3137254902);
+    background-color: rgba(34, 56, 133, 0.662745098);
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
@@ -10718,15 +11448,17 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content section .container {
     z-index: 4;
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators {
     margin: 0;
     justify-content: end;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators button {
-    background-color: #B2B9D4;
+    width: 25px;
+    height: 25px;
     position: unset;
+    background-color: #B2B9D4;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators button svg {
     width: 30px;
@@ -10744,12 +11476,12 @@ badge.SecondaryColor {
     position: absolute;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom svg {
-    transform: rotateY(180deg) rotateX(180deg);
+    transform: rotateY(0deg) rotateX(180deg);
   }
 }
 @media (min-width: 1400px) {
   body[dir=ltr] .FNV-Slider {
-    height: 700px;
+    height: 750px;
     position: relative;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Top {
@@ -10760,7 +11492,41 @@ badge.SecondaryColor {
     position: absolute;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Top svg {
-    transform: rotateY(0deg);
+    transform: rotateY(180deg);
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce {
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+    width: 100%;
+    padding: 0rem;
+    position: absolute;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 {
+    padding: 1rem;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators {
+    bottom: -1rem;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    background-color: #B2B9D4;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button.active {
+    background-color: #0074FF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner {
+    padding-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a svg {
+    margin-right: 1rem;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a span {
+    font-weight: 600;
+    color: #223885;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Object {
     top: 0;
@@ -10800,7 +11566,6 @@ badge.SecondaryColor {
     height: 100%;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child {
-    direction: rtl;
     background-size: cover;
     background-position: center;
     background-color: #E3ECDD;
@@ -10822,7 +11587,7 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .container .row .col-12 .row .col-3 svg {
     width: 100%;
     position: relative;
-    margin-bottom: -5rem;
+    margin-bottom: -10rem;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .container .row .col-12 .row .col-3:last-child .card {
     top: 0;
@@ -10860,13 +11625,158 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) {
     background-size: cover;
     background-position: center;
-    background-image: url("/images/slider/MainBG.jpg");
-    animation: moveBackground 30s infinite alternate ease-in-out;
+    background-image: url("/images/slider/risk-slider.jpg");
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) h2 {
+    padding: 1rem;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 50px;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    line-height: 40px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) {
-    background-position: right center;
-    background-image: url("/images/slider/SecondBgR.jpg");
-    animation: zoomBackground 10s infinite alternate ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/plumbing-slider.jpg");
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) h2 {
+    padding: 0.5rem;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) h3 {
+    color: #FFFFFF;
+    padding: 0.5rem;
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    line-height: 40px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB h4 {
+    font-size: 30px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) {
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/309-slider.jpg");
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) h2 {
+    padding: 0.5rem;
+    font-size: 80px;
+    font-weight: 800;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 65px;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    line-height: 40px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB h4 {
+    font-size: 30px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container {
     z-index: 5;
@@ -10898,8 +11808,8 @@ badge.SecondaryColor {
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 1rem;
-    margin-top: 2rem;
-    background-color: rgba(34, 56, 133, 0.3137254902);
+    margin-top: 1rem;
+    background-color: rgba(34, 56, 133, 0.662745098);
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
@@ -10982,15 +11892,17 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content section .container {
     z-index: 4;
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators {
     margin: 0;
     justify-content: end;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators button {
-    background-color: #B2B9D4;
+    width: 25px;
+    height: 25px;
     position: unset;
+    background-color: #B2B9D4;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators button svg {
     width: 30px;
@@ -11008,7 +11920,7 @@ badge.SecondaryColor {
     position: absolute;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom svg {
-    transform: rotateY(180deg) rotateX(180deg);
+    transform: rotateY(0deg) rotateX(180deg);
   }
 }
 @media (min-width: 1920px) {
@@ -11017,14 +11929,48 @@ badge.SecondaryColor {
     position: relative;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Top {
-    z-index: 4;
     top: -2px;
+    z-index: 4;
     right: 0px;
     width: 100%;
     position: absolute;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Top svg {
-    transform: rotateY(0deg);
+    transform: rotateY(180deg);
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce {
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+    width: 100%;
+    padding: 0rem;
+    position: absolute;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 {
+    padding: 1rem;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators {
+    bottom: -1rem;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    background-color: #B2B9D4;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button.active {
+    background-color: #0074FF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner {
+    padding-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a svg {
+    margin-right: 1rem;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a span {
+    font-weight: 600;
+    color: #223885;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content {
     width: 100%;
@@ -11045,7 +11991,6 @@ badge.SecondaryColor {
     height: 100%;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child {
-    direction: rtl;
     background-size: cover;
     background-position: center;
     background-color: #E3ECDD;
@@ -11066,7 +12011,7 @@ badge.SecondaryColor {
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .container .row .col-12 .row .col-3 svg {
     position: relative;
-    margin-bottom: -10rem;
+    margin-bottom: -20rem;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .container .row .col-12 .row .col-3:last-child .card {
     top: 0;
@@ -11104,13 +12049,159 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) {
     background-size: cover;
     background-position: center;
-    background-image: url("/images/slider/MainBG.jpg");
-    animation: moveBackground 30s infinite alternate ease-in-out;
+    background-image: url("/images/slider/risk-slider.jpg");
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) h2 {
+    padding: 1rem;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 0;
+    line-height: 70px;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    line-height: 40px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB h4 {
+    font-size: 30px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) {
-    background-position: right center;
-    background-image: url("/images/slider/SecondBgR.jpg");
-    animation: zoomBackground 10s infinite alternate ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/plumbing-slider.jpg");
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) h2 {
+    padding: 0.5rem;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 75px;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    line-height: 40px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB h4 {
+    font-size: 30px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) {
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/309-slider.jpg");
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) h2 {
+    padding: 0.5rem;
+    font-size: 80px;
+    font-weight: 800;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 65px;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    line-height: 40px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB h4 {
+    font-size: 30px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .FNV-Slider-Object {
     top: 0;
@@ -11162,8 +12253,8 @@ badge.SecondaryColor {
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 1rem;
-    margin-top: 2rem;
-    background-color: rgba(34, 56, 133, 0.3137254902);
+    margin-top: 1rem;
+    background-color: rgba(34, 56, 133, 0.662745098);
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
@@ -11193,7 +12284,7 @@ badge.SecondaryColor {
     font-size: 16px;
     font-weight: 300;
     border-radius: 0px;
-    color: #0074FF;
+    color: #FFFFFF;
     background-color: #223885;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search .FNV-Btn svg {
@@ -11210,12 +12301,16 @@ badge.SecondaryColor {
     width: 120px;
     display: flex;
     border-width: 0;
-    padding: 2rem 0;
+    padding: 1rem 0;
     position: relative;
     text-align: center;
     color: #0074FF;
     justify-content: end;
     background-color: transparent;
+  }
+  body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card h3 {
+    font-size: 36px;
+    font-weight: 300;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-7 .card p {
     font-size: 14px;
@@ -11242,15 +12337,17 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content section .container {
     z-index: 4;
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators {
     margin: 0;
     justify-content: end;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators button {
-    background-color: #B2B9D4;
+    width: 25px;
+    height: 25px;
     position: unset;
+    background-color: #B2B9D4;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators button svg {
     width: 30px;
@@ -11268,13 +12365,13 @@ badge.SecondaryColor {
     position: absolute;
   }
   body[dir=ltr] .FNV-Slider .FNV-Canvas-Bottom svg {
-    transform: rotateY(180deg) rotateX(180deg);
+    transform: rotateY(0deg) rotateX(180deg);
   }
 }
 
 @media (max-width: 575.98px) {
   body[dir=rtl] .FNV-Slider {
-    height: 300px;
+    height: 600px;
     position: relative;
   }
   body[dir=rtl] .FNV-Slider .FNV-Canvas-Top {
@@ -11371,13 +12468,156 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) {
     background-size: cover;
     background-position: center;
-    background-image: url("/images/slider/MainBG.jpg");
-    animation: moveBackground 30s infinite alternate ease-in-out;
+    background-image: url("/images/slider/risk-slider.jpg");
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) h2 {
+    padding: 1rem;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 35px;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    line-height: 40px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB h4 {
+    font-size: 15px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) {
-    background-position: right center;
-    background-image: url("/images/slider/SecondBgR.jpg");
-    animation: zoomBackground 10s infinite alternate ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/plumbing-slider.jpg");
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) h2 {
+    padding: 0.5rem;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) h3 {
+    color: #FFFFFF;
+    padding: 0.5rem;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) {
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/309-slider.jpg");
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) h2 {
+    padding: 0.5rem;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB h4 {
+    font-size: 18px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container {
     z-index: 5;
@@ -11386,6 +12626,7 @@ badge.SecondaryColor {
     display: flex;
     position: relative;
     align-items: center;
+    justify-content: center;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row {
     width: 100%;
@@ -11411,8 +12652,8 @@ badge.SecondaryColor {
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 0.5rem;
-    margin-top: 2rem;
-    background-color: rgba(34, 56, 133, 0.3137254902);
+    margin-top: 1rem;
+    background-color: rgba(34, 56, 133, 0.662745098);
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
@@ -11462,15 +12703,17 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content section .container {
     z-index: 4;
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators {
     margin: 0;
     justify-content: end;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators button {
-    background-color: #B2B9D4;
+    width: 25px;
+    height: 25px;
     position: unset;
+    background-color: #B2B9D4;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators button svg {
     width: 30px;
@@ -11493,7 +12736,7 @@ badge.SecondaryColor {
 }
 @media (min-width: 575.98px) and (max-width: 767.98px) {
   body[dir=rtl] .FNV-Slider {
-    height: 300px;
+    height: 600px;
     position: relative;
   }
   body[dir=rtl] .FNV-Slider .FNV-Canvas-Top {
@@ -11514,25 +12757,32 @@ badge.SecondaryColor {
     padding: 0rem;
     position: absolute;
   }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 {
+    padding: 0.5rem;
+    background-color: #FFFFFF;
+  }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators {
-    bottom: -1rem;
-    margin: 1rem 0 0;
-    justify-content: flex-start;
+    bottom: -1.5rem;
+    justify-content: center;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button {
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 10px;
     background-color: #B2B9D4;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button.active {
     background-color: #0074FF;
   }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner {
+    padding-bottom: 1rem;
+  }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a svg {
     width: 20px;
-    margin-left: 0.5rem;
+    height: 20px;
+    margin-left: 1rem;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a span {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     color: #223885;
   }
@@ -11621,13 +12871,156 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) {
     background-size: cover;
     background-position: center;
-    background-image: url("/images/slider/MainBG.jpg");
-    animation: moveBackground 30s infinite alternate ease-in-out;
+    background-image: url("/images/slider/risk-slider.jpg");
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) h2 {
+    padding: 1rem;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 45px;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    line-height: 40px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) {
-    background-position: right center;
-    background-image: url("/images/slider/SecondBgR.jpg");
-    animation: zoomBackground 10s infinite alternate ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/plumbing-slider.jpg");
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) h2 {
+    padding: 0.5rem;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) h3 {
+    color: #FFFFFF;
+    padding: 0.5rem;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) {
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/309-slider.jpg");
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) h2 {
+    padding: 0.5rem;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB h4 {
+    font-size: 18px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container {
     z-index: 5;
@@ -11662,7 +13055,7 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 0.5rem;
     margin-top: 2rem;
-    background-color: rgba(34, 56, 133, 0.3137254902);
+    background-color: rgba(34, 56, 133, 0.662745098);
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
@@ -11712,15 +13105,17 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content section .container {
     z-index: 4;
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators {
     margin: 0;
     justify-content: end;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators button {
-    background-color: #B2B9D4;
+    width: 25px;
+    height: 25px;
     position: unset;
+    background-color: #B2B9D4;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators button svg {
     width: 30px;
@@ -11743,7 +13138,7 @@ badge.SecondaryColor {
 }
 @media (min-width: 767.98px) and (max-width: 991.98px) {
   body[dir=rtl] .FNV-Slider {
-    height: 400px;
+    height: 500px;
     position: relative;
   }
   body[dir=rtl] .FNV-Slider .FNV-Canvas-Top {
@@ -11764,24 +13159,32 @@ badge.SecondaryColor {
     padding: 0rem;
     position: absolute;
   }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 {
+    padding: 0.5rem;
+    background-color: #FFFFFF;
+  }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators {
     bottom: -1.5rem;
-    margin: 1rem 0 0;
-    justify-content: flex-start;
+    justify-content: center;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button {
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 10px;
     background-color: #B2B9D4;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button.active {
     background-color: #0074FF;
   }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner {
+    padding-bottom: 1rem;
+  }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a svg {
-    width: 30px;
-    margin-left: 0.5rem;
+    width: 20px;
+    height: 20px;
+    margin-left: 1rem;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a span {
+    font-size: 10px;
     font-weight: 600;
     color: #223885;
   }
@@ -11883,13 +13286,156 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) {
     background-size: cover;
     background-position: center;
-    background-image: url("/images/slider/MainBG.jpg");
-    animation: moveBackground 30s infinite alternate ease-in-out;
+    background-image: url("/images/slider/risk-slider.jpg");
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) h2 {
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 25px;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    line-height: 40px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB h4 {
+    font-size: 12px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) {
-    background-position: right center;
-    background-image: url("/images/slider/SecondBgR.jpg");
-    animation: zoomBackground 10s infinite alternate ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/plumbing-slider.jpg");
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) h2 {
+    padding: 0.5rem;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) h3 {
+    color: #FFFFFF;
+    padding: 0.5rem;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB h4 {
+    font-size: 15px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) {
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/309-slider.jpg");
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) h2 {
+    padding: 0.5rem;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB h4 {
+    font-size: 18px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container {
     z-index: 5;
@@ -11921,8 +13467,8 @@ badge.SecondaryColor {
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 0.5rem;
-    margin-top: 2rem;
-    background-color: rgba(34, 56, 133, 0.3137254902);
+    margin-top: 1rem;
+    background-color: rgba(34, 56, 133, 0.662745098);
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
@@ -12005,15 +13551,17 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content section .container {
     z-index: 4;
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators {
     margin: 0;
     justify-content: end;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators button {
-    background-color: #B2B9D4;
+    width: 25px;
+    height: 25px;
     position: unset;
+    background-color: #B2B9D4;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators button svg {
     width: 30px;
@@ -12057,24 +13605,32 @@ badge.SecondaryColor {
     padding: 0rem;
     position: absolute;
   }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 {
+    padding: 0.5rem;
+    background-color: #FFFFFF;
+  }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators {
     bottom: -1.5rem;
-    margin: 1rem 0 0;
-    justify-content: flex-start;
+    justify-content: center;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button {
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 10px;
     background-color: #B2B9D4;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button.active {
     background-color: #0074FF;
   }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner {
+    padding-bottom: 1rem;
+  }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a svg {
-    width: 30px;
-    margin-left: 0.5rem;
+    width: 24px;
+    height: 24px;
+    margin-left: 1rem;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a span {
+    font-size: 14px;
     font-weight: 600;
     color: #223885;
   }
@@ -12175,13 +13731,157 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) {
     background-size: cover;
     background-position: center;
-    background-image: url("/images/slider/MainBG.jpg");
-    animation: moveBackground 30s infinite alternate ease-in-out;
+    background-image: url("/images/slider/risk-slider.jpg");
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) h2 {
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 30px;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    line-height: 40px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB h4 {
+    font-size: 15px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) {
-    background-position: right center;
-    background-image: url("/images/slider/SecondBgR.jpg");
-    animation: zoomBackground 10s infinite alternate ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/plumbing-slider.jpg");
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) h2 {
+    padding: 0.5rem;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) h3 {
+    color: #FFFFFF;
+    padding: 0.5rem;
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    line-height: 40px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) {
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/309-slider.jpg");
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) h2 {
+    padding: 0.5rem;
+    font-size: 70px;
+    font-weight: 800;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 55px;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container {
     z-index: 5;
@@ -12213,8 +13913,8 @@ badge.SecondaryColor {
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 1rem;
-    margin-top: 2rem;
-    background-color: rgba(34, 56, 133, 0.3137254902);
+    margin-top: 1rem;
+    background-color: rgba(34, 56, 133, 0.662745098);
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
@@ -12297,15 +13997,17 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content section .container {
     z-index: 4;
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators {
     margin: 0;
     justify-content: end;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators button {
-    background-color: #B2B9D4;
+    width: 25px;
+    height: 25px;
     position: unset;
+    background-color: #B2B9D4;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators button svg {
     width: 30px;
@@ -12346,24 +14048,30 @@ badge.SecondaryColor {
     right: 0px;
     z-index: 10;
     width: 100%;
-    padding: 1rem 0;
+    padding: 0rem;
     position: absolute;
   }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 {
+    padding: 1rem;
+    background-color: #FFFFFF;
+  }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators {
-    bottom: -2rem;
-    margin: 1rem 0 0;
-    justify-content: flex-start;
+    bottom: -1rem;
+    justify-content: center;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button {
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 10px;
     background-color: #B2B9D4;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button.active {
     background-color: #0074FF;
   }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner {
+    padding-bottom: 1.5rem;
+  }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a svg {
-    margin-left: 0.5rem;
+    margin-left: 1rem;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a span {
     font-weight: 600;
@@ -12466,13 +14174,158 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) {
     background-size: cover;
     background-position: center;
-    background-image: url("/images/slider/MainBG.jpg");
-    animation: moveBackground 30s infinite alternate ease-in-out;
+    background-image: url("/images/slider/risk-slider.jpg");
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) h2 {
+    padding: 1rem;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 40px;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    line-height: 40px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) {
-    background-position: right center;
-    background-image: url("/images/slider/SecondBgR.jpg");
-    animation: zoomBackground 10s infinite alternate ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/plumbing-slider.jpg");
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) h2 {
+    padding: 0.5rem;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) h3 {
+    color: #FFFFFF;
+    padding: 0.5rem;
+    font-size: 76px;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    line-height: 40px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) {
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/309-slider.jpg");
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) h2 {
+    padding: 0.5rem;
+    font-size: 80px;
+    font-weight: 800;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 65px;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    line-height: 40px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB h4 {
+    font-size: 30px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container {
     z-index: 5;
@@ -12505,7 +14358,7 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 1rem;
     margin-top: 2rem;
-    background-color: rgba(34, 56, 133, 0.3137254902);
+    background-color: rgba(34, 56, 133, 0.662745098);
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
@@ -12588,15 +14441,17 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content section .container {
     z-index: 4;
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators {
     margin: 0;
     justify-content: end;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators button {
-    background-color: #B2B9D4;
+    width: 25px;
+    height: 25px;
     position: unset;
+    background-color: #B2B9D4;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators button svg {
     width: 30px;
@@ -12619,7 +14474,7 @@ badge.SecondaryColor {
 }
 @media (min-width: 1400px) {
   body[dir=rtl] .FNV-Slider {
-    height: 700px;
+    height: 750px;
     position: relative;
   }
   body[dir=rtl] .FNV-Slider .FNV-Canvas-Top {
@@ -12637,24 +14492,30 @@ badge.SecondaryColor {
     right: 0px;
     z-index: 10;
     width: 100%;
-    padding: 1rem 0;
+    padding: 0rem;
     position: absolute;
   }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 {
+    padding: 1rem;
+    background-color: #FFFFFF;
+  }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators {
-    bottom: -2rem;
-    margin: 1rem 0 0;
-    justify-content: flex-start;
+    bottom: -1rem;
+    justify-content: center;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button {
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 10px;
     background-color: #B2B9D4;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button.active {
     background-color: #0074FF;
   }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner {
+    padding-bottom: 1rem;
+  }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a svg {
-    margin-left: 0.5rem;
+    margin-left: 1rem;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a span {
     font-weight: 600;
@@ -12757,13 +14618,158 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) {
     background-size: cover;
     background-position: center;
-    background-image: url("/images/slider/MainBG.jpg");
-    animation: moveBackground 30s infinite alternate ease-in-out;
+    background-image: url("/images/slider/risk-slider.jpg");
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) h2 {
+    padding: 1rem;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 50px;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    line-height: 40px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) {
-    background-position: right center;
-    background-image: url("/images/slider/SecondBgR.jpg");
-    animation: zoomBackground 10s infinite alternate ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/plumbing-slider.jpg");
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) h2 {
+    padding: 0.5rem;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) h3 {
+    color: #FFFFFF;
+    padding: 0.5rem;
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    line-height: 40px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB h4 {
+    font-size: 30px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) {
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/309-slider.jpg");
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) h2 {
+    padding: 0.5rem;
+    font-size: 80px;
+    font-weight: 800;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 65px;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    line-height: 40px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB h4 {
+    font-size: 30px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container {
     z-index: 5;
@@ -12795,8 +14801,8 @@ badge.SecondaryColor {
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 1rem;
-    margin-top: 2rem;
-    background-color: rgba(34, 56, 133, 0.3137254902);
+    margin-top: 1rem;
+    background-color: rgba(34, 56, 133, 0.662745098);
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
@@ -12879,15 +14885,17 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content section .container {
     z-index: 4;
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators {
     margin: 0;
     justify-content: end;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators button {
-    background-color: #B2B9D4;
+    width: 25px;
+    height: 25px;
     position: unset;
+    background-color: #B2B9D4;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators button svg {
     width: 30px;
@@ -12928,24 +14936,30 @@ badge.SecondaryColor {
     right: 0px;
     z-index: 10;
     width: 100%;
-    padding: 1rem 0;
+    padding: 0rem;
     position: absolute;
   }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 {
+    padding: 1rem;
+    background-color: #FFFFFF;
+  }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators {
-    bottom: -2rem;
-    margin: 1rem 0 0;
-    justify-content: flex-start;
+    bottom: -1rem;
+    justify-content: center;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button {
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 10px;
     background-color: #B2B9D4;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-indicators button.active {
     background-color: #0074FF;
   }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner {
+    padding-bottom: 1.5rem;
+  }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a svg {
-    margin-left: 0.5rem;
+    margin-left: 1rem;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Announce .container .col-12 .carousel .carousel-inner .carousel-item a span {
     font-weight: 600;
@@ -13028,13 +15042,159 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) {
     background-size: cover;
     background-position: center;
-    background-image: url("/images/slider/MainBG.jpg");
-    animation: moveBackground 30s infinite alternate ease-in-out;
+    background-image: url("/images/slider/risk-slider.jpg");
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) h2 {
+    padding: 1rem;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 0;
+    line-height: 70px;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    line-height: 40px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB h4 {
+    font-size: 30px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(2) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) {
-    background-position: right center;
-    background-image: url("/images/slider/SecondBgR.jpg");
-    animation: zoomBackground 10s infinite alternate ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/plumbing-slider.jpg");
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) h2 {
+    padding: 0.5rem;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 75px;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    line-height: 40px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB h4 {
+    font-size: 30px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(3) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) {
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/slider/309-slider.jpg");
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) h2 {
+    padding: 0.5rem;
+    font-size: 80px;
+    font-weight: 800;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) h3 {
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 65px;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB {
+    display: flex;
+    padding: 0.5rem;
+    line-height: 40px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB h4 {
+    font-size: 30px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB svg {
+    width: 30px !important;
+    height: 30px !important;
+    stroke: #223885 !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover {
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover h4 {
+    color: #FFFFFF !important;
+  }
+  body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:nth-child(4) a.FNV-Slider-ACB:hover svg {
+    stroke: #FFFFFF !important;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .FNV-Slider-Object {
     top: 0;
@@ -13086,8 +15246,8 @@ badge.SecondaryColor {
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search {
     padding: 1rem;
-    margin-top: 2rem;
-    background-color: rgba(34, 56, 133, 0.3137254902);
+    margin-top: 1rem;
+    background-color: rgba(34, 56, 133, 0.662745098);
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item .container .row .col-md-5 .FNV-Search div {
     box-shadow: unset;
@@ -13170,15 +15330,17 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content section .container {
     z-index: 4;
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators {
     margin: 0;
     justify-content: end;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators button {
-    background-color: #B2B9D4;
+    width: 25px;
+    height: 25px;
     position: unset;
+    background-color: #B2B9D4;
   }
   body[dir=rtl] .FNV-Slider .FNV-Slider-Content section .container .carousel-indicators button svg {
     width: 30px;
@@ -22778,6 +24940,63 @@ body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label span {
   content: "";
   position: absolute;
   background-color: #FFFFFF;
+}
+
+.FNV-Hike {
+  padding: 0;
+}
+.FNV-Hike .FNV-Hike-Slider {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.FNV-Hike .FNV-Hike-Slider::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 200px;
+  width: 100%;
+  background: linear-gradient(to top, #fff, transparent);
+  z-index: 1000;
+}
+.FNV-Hike #man {
+  top: inherit;
+  bottom: 0;
+}
+.FNV-Hike section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+}
+.FNV-Hike #text {
+  position: relative;
+  color: white;
+  font-size: 10rem;
+}
+.FNV-Hike #sec {
+  padding: 100px;
+  padding-bottom: 20px;
+}
+.FNV-Hike #sec h2 {
+  font-size: 4rem;
+  margin-bottom: 30px;
+  color: #20496a;
+}
+.FNV-Hike #sec p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 300;
+  color: #20496a;
 }
 
 body[dir=rtl] newsletter {
