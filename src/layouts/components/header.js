@@ -1156,7 +1156,7 @@ const Header = props => {
                               <Link href='/services/counseling-working-experience'>{t('menu-services-1')}</Link>
                             </li>
                             <li>
-                              <Link href='/services/educational-and-career-counseling'>{t('menu-services-2')}</Link>
+                              <Link href='/services/consultant'>{t('menu-services-2')}</Link>
                             </li>
 
                             {/* Consultant */}
@@ -2071,7 +2071,7 @@ const Header = props => {
                             <Link href='/services/counseling-working-experience'>{t('menu-services-1')}</Link>
                           </li>
                           <li>
-                            <Link href='/services/educational-and-career-counseling'>{t('menu-services-2')}</Link>
+                            <Link href='/services/consultant'>{t('menu-services-2')}</Link>
                           </li>
 
                           {/* Consultant */}
