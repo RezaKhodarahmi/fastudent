@@ -18,6 +18,11 @@ const navigation = () => {
               path: '/app/dashboards/courses'
             },
             {
+              title: 'Test results',
+              icon: 'tabler:file-dollar',
+              path: '/app/dashboards/quizzes'
+            },
+            {
               title: 'Certificates',
               icon: 'tabler:id',
               path: '/app/dashboards/certificates'

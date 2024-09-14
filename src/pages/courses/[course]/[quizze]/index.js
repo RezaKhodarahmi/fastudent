@@ -43,6 +43,9 @@ const Test = () => {
   const [correctAnswers, setCorrectAnswers] = useState(0)
   const [testReview, setTestReview] = useState(null)
   const [allowRetake, setAllowRetake] = useState(0)
+  const [correctAnswersList, setCorrectAnswersList] = useState([])
+  const [wrongAnswersList, setWrongAnswersList] = useState([])
+
   const userEmail = localStorage.getItem('userData')
 
   useEffect(() => {
@@ -88,6 +91,9 @@ const Test = () => {
       let correctCount = 0
       let totalQuestions = 0
 
+      const correctList = []
+      const wrongList = []
+
       const reviewData = testData.data.data.questions.map(question => {
         const userAnswerIds = userAnswers[question.id] || []
         const correctAnswerIds = question.answers.filter(a => a.isCorrect).map(a => a.id)
@@ -95,7 +101,13 @@ const Test = () => {
         const isCorrect =
           userAnswerIds.every(id => correctAnswerIds.includes(id)) && userAnswerIds.length === correctAnswerIds.length
 
-        if (isCorrect) correctCount++
+        if (isCorrect) {
+          correctCount++
+          correctList.push(question.id) // Add question ID to correct list
+        } else if (userAnswerIds.length > 0) {
+          wrongList.push(question.id) // Add question ID to wrong list
+        }
+
         totalQuestions++
 
         return {
@@ -112,9 +124,36 @@ const Test = () => {
       // Update state with test review data and result metrics
       setTestReview(reviewData)
       setCorrectAnswers(correctCount)
+      setCorrectAnswersList(correctList) // Save correct answers list
+      setWrongAnswersList(wrongList) // Save wrong answers list
 
       setUserAnswers({})
     }
+  }
+
+  const saveTestResult = (correctAnswersList, wrongAnswersList) => {
+    const url = `${BASE_URL}/test/result/save`
+    const user = localStorage.getItem('userData')
+
+    const postData = {
+      Percentage: ((correctAnswers / totalQuestions) * 100).toFixed(2),
+      time: Math.floor(spentTime / 60) + ':' + (spentTime % 60),
+      total: totalQuestions,
+      correct: correctAnswers,
+      wrong: totalQuestions - correctAnswers,
+      point: ((correctAnswers * 10) / totalQuestions) * 10,
+      test: testData?.data?.data?.id,
+      user: JSON.parse(user),
+      correctAnswersList, // Add this line
+      wrongAnswersList // Add this line
+    }
+
+    axios
+      .post(url, postData)
+      .then(response => {})
+      .catch(error => {
+        console.error('Error sending data:', error)
+      })
   }
 
   const retakeTest = () => {
@@ -123,6 +162,7 @@ const Test = () => {
     setUserAnswers({})
     setCorrectAnswers(0)
     setShowAnswerForQuestion({})
+
     if (testData?.data?.data?.id) {
       const user = localStorage.getItem('userData')
       const url = `${BASE_URL}/test/result/user/${JSON.parse(user)}/${testData?.data?.data?.id}`
@@ -180,7 +220,9 @@ const Test = () => {
         wrong: totalQuestions - correctAnswers,
         point: ((correctAnswers * 10) / totalQuestions) * 10,
         test: testData?.data?.data?.id,
-        user: JSON.parse(user)
+        user: JSON.parse(user),
+        correct_answers_list: correctAnswersList, // Send correct answers list
+        wrong_answers_list: wrongAnswersList // Send wrong answers list
       }
 
       axios
@@ -190,7 +232,7 @@ const Test = () => {
           console.error('Error sending data:', error)
         })
     }
-  }, [finished, correctAnswers, totalQuestions, spentTime])
+  }, [finished, correctAnswers, totalQuestions, spentTime, correctAnswersList, wrongAnswersList])
 
   useEffect(() => {
     if (testData?.data?.data?.id) {
@@ -487,7 +529,7 @@ const Test = () => {
           </div>
         </section>
       )}
-      {finished && testData?.data?.data?.showReviews && (
+      {finished && testReview && (
         <section className='FNV-Quiz-Review py-5'>
           <div className='container'>
             <div className='row justify-content-center'>
@@ -551,9 +593,9 @@ const Test = () => {
                             ...(question.userAnswerIds.includes(answer.id) &&
                             !question.correctAnswerIds.includes(answer.id)
                               ? incorrectAnswerStyle
-                              : question.userAnswerIds.length === 0 // Check if question was not answered
-                              ? { color: 'blue' } // Set style for not answered questions
                               : {}),
+                            ...(correctAnswersList.includes(question.id) ? { color: 'green' } : {}),
+                            ...(wrongAnswersList.includes(question.id) ? { color: 'red' } : {}),
                             ...preventCopyStyle
                           }}
                         >
@@ -565,7 +607,7 @@ const Test = () => {
                         style={{
                           marginLeft: '20px',
                           color: question.isCorrect ? 'green' : 'red',
-                          display: question.userAnswerIds.length === 0 ? 'none' : 'block', // Hide the "Your answer was..." text for not answered questions
+                          display: question.userAnswerIds.length === 0 ? 'none' : 'block',
                           ...preventCopyStyle
                         }}
                       >
