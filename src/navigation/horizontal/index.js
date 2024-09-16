@@ -21,6 +21,11 @@ const navigation = () => {
       path: '/app/dashboards/orders'
     },
     {
+      title: 'Test results',
+      icon: 'tabler:file-dollar',
+      path: '/app/dashboards/quizzes'
+    },
+    {
       icon: 'tabler:settings',
       title: 'Settings',
       children: [

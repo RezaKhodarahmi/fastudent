@@ -41,6 +41,8 @@ const UserLayout = ({ children, contentHeightFixed }) => {
     settings.layout = 'vertical'
   }
 
+  window.localStorage.setItem('i18nextLng', 'en')
+
   return (
     <>
       {userRole && userRole == 2000 ? (
