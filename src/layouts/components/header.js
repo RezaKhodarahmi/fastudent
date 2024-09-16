@@ -262,7 +262,11 @@ const Header = props => {
                         <span>{t('user-menu-title-member')}</span>
 
                         {/* User */}
-                        <Link href='/app/pages/account-settings/account' onClick={e => handleFullReload(e, '/app/pages/account-settings/account')} className='FNV-User'>
+                        <Link
+                          href='/app/pages/account-settings/account'
+                          onClick={e => handleFullReload(e, '/app/pages/account-settings/account')}
+                          className='FNV-User'
+                        >
                           {/* User Avatar */}
                           {userImage === null || userImage === '' || userImage === 'null' ? (
                             <div className='FNV-UserAvatar'>
@@ -442,7 +446,6 @@ const Header = props => {
                 <Link
                   className='nav-link FNV_QuickAccess_Cart'
                   href='/cart'
-
                   onClick={e => handleFullReload(e, '/cart/')}
                 >
                   <svg viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -2275,7 +2278,11 @@ const Header = props => {
                     <span>User Information</span>
 
                     {/* User */}
-                    <Link href='/app/pages/account-settings/account' onClick={e => handleFullReload(e, '/app/pages/account-settings/account')} className='FNV-User'>
+                    <Link
+                      href='/app/pages/account-settings/account'
+                      onClick={e => handleFullReload(e, '/app/pages/account-settings/account')}
+                      className='FNV-User'
+                    >
                       {/* User Avatar */}
                       {userImage === null || userImage === '' || userImage === 'null' ? (
                         <div className='FNV-UserAvatar'>
