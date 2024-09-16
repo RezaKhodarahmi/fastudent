@@ -70,6 +70,16 @@ export const specialDates = [
     ]
   },
   {
+    date: '2024-09-21',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/101a70f4-a62d-4262-b4ac-7683643440e3.jpg',
+        text: 'Renovation Workshop (Finish Carpenter) (Toronto)',
+        link: 'https://fanavaran.ca/courses/workshop-of-renovation-finish-carpenter'
+      }
+    ]
+  },
+  {
     date: '2024-09-20',
     events: [
       {
