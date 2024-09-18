@@ -100,7 +100,7 @@ export const specialDates = [
     ]
   },
   {
-    date: '2024-09-17',
+    date: '2024-10-01',
     events: [
       {
         image: 'https://fanavaran.ca:3200/uploads/courses/b0feefdb-27a4-4f04-a047-19dfa54a7a58.jpg',
