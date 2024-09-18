@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 // React
 import React, { useEffect, useState, useCallback } from 'react'
 import Link from 'next/link'
