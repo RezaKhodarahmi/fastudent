@@ -117,6 +117,10 @@ const LoginPage = () => {
     resolver: yupResolver(schema)
   })
 
+  const handleGoogleLogin = () => {
+    window.location.href = 'https://fanavaran.ca:3200/api/v1/google/login' // The URL to start the OAuth flow
+  }
+
   const onSubmit = data => {
     const { user, pass } = data
     auth.login({ email: user, password: pass })
@@ -263,23 +267,10 @@ const LoginPage = () => {
                 or
               </Divider>
               <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <IconButton href='/' component={Link} sx={{ color: '#497ce2' }} onClick={e => e.preventDefault()}>
-                  <Icon icon='logos:zoom' />
-                </IconButton>
-                {/* <IconButton href='/' component={Link} sx={{ color: '#1da1f2' }} onClick={e => e.preventDefault()}>
-                  <Icon icon='mdi:twitter' />
-                </IconButton>
-                <IconButton
-                  href='/'
-                  component={Link}
-                  onClick={e => e.preventDefault()}
-                  sx={{ color: theme => (theme.palette.mode === 'light' ? '#272727' : 'grey.300') }}
-                >
-                  <Icon icon='mdi:github' />
-                </IconButton> */}
-                <IconButton href='/' component={Link} sx={{ color: '#db4437' }} onClick={e => e.preventDefault()}>
-                  <Icon icon='devicon:google' />
-                </IconButton>
+               
+                <Link href='#'>
+                  <img src='/img/google-button.png' className='img-fluid' onClick={handleGoogleLogin} />
+                </Link>
               </Box>
             </form>
           </Box>

@@ -8,10 +8,12 @@ import { useTranslation } from 'react-i18next'
 
 // ** Hook Imports
 import Link from 'next/link'
+import useFullPageReload from './pageReload'
 
 const Footer = props => {
   //Hooks
   const { t } = useTranslation()
+  const handleFullReload = useFullPageReload()
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -204,7 +206,9 @@ const Footer = props => {
                   <Link href='/contact-us/'>{t('footer-one-contact')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <a href='/app/dashboards/main'>{t('footer-one-profile')}</a>
+                  <Link href='/app/dashboards/main' onClick={e => handleFullReload(e, '/app/dashboards/main')}>
+                    {t('footer-one-profile')}
+                  </Link>
                 </li>
                 <li className='list-group-item'>
                   <Link href='/educational-calendar'>{t('footer-one-training')}</Link>
