@@ -9427,6 +9427,7 @@ badge.SecondaryColor {
     display: none;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .row .col-md-5 h2 {
+    direction: rtl;
     padding: 0.5rem;
     font-size: 40px;
     font-weight: 700;
@@ -9439,6 +9440,7 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .row .col-md-5 h3 {
     color: #FFFFFF;
     padding: 1rem;
+    direction: rtl;
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 0;
@@ -9487,6 +9489,7 @@ badge.SecondaryColor {
     background-color: red;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .row .col-md-3 span:first-child {
+    direction: rtl;
     padding: 1rem 0;
     font-size: 16px;
     background-color: #FFA600;
@@ -9497,6 +9500,7 @@ badge.SecondaryColor {
     background-color: #223885;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .row .col-md-3 span:nth-child(3) {
+    direction: rtl;
     padding: 0.5rem 0;
     background-color: #FFA600;
     animation: backgroundChange 0.3s infinite alternate;
@@ -9860,6 +9864,7 @@ badge.SecondaryColor {
     display: none;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .row .col-md-5 h2 {
+    direction: rtl;
     padding: 0.5rem;
     font-size: 40px;
     font-weight: 700;
@@ -9872,6 +9877,7 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .row .col-md-5 h3 {
     color: #FFFFFF;
     padding: 1rem;
+    direction: rtl;
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 0;
@@ -9920,6 +9926,7 @@ badge.SecondaryColor {
     background-color: red;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .row .col-md-3 span:first-child {
+    direction: rtl;
     padding: 1rem 0;
     font-size: 16px;
     background-color: #FFA600;
@@ -9930,6 +9937,7 @@ badge.SecondaryColor {
     background-color: #223885;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .row .col-md-3 span:nth-child(3) {
+    direction: rtl;
     padding: 0.5rem 0;
     background-color: #FFA600;
     animation: backgroundChange 0.3s infinite alternate;
@@ -10315,6 +10323,7 @@ badge.SecondaryColor {
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .row .col-md-5 h2 {
     padding: 1rem;
+    direction: rtl;
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 0;
@@ -10326,6 +10335,7 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .row .col-md-5 h3 {
     color: #FFFFFF;
     padding: 1rem;
+    direction: rtl;
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 0;
@@ -10374,6 +10384,7 @@ badge.SecondaryColor {
     background-color: red;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .row .col-md-3 span:first-child {
+    direction: rtl;
     padding: 1rem 0;
     font-size: 12px;
     background-color: #FFA600;
@@ -10384,6 +10395,7 @@ badge.SecondaryColor {
     background-color: #223885;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .row .col-md-3 span:nth-child(3) {
+    direction: rtl;
     padding: 0.5rem 0;
     background-color: #FFA600;
     animation: backgroundChange 0.3s infinite alternate;
@@ -10799,6 +10811,7 @@ badge.SecondaryColor {
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .row .col-md-5 h2 {
     padding: 1rem;
+    direction: rtl;
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 0;
@@ -10810,6 +10823,7 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .row .col-md-5 h3 {
     color: #FFFFFF;
     padding: 1rem;
+    direction: rtl;
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 0;
@@ -10858,6 +10872,7 @@ badge.SecondaryColor {
     background-color: red;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .row .col-md-3 span:first-child {
+    direction: rtl;
     padding: 1rem 0;
     font-size: 16px;
     background-color: #FFA600;
@@ -10868,6 +10883,7 @@ badge.SecondaryColor {
     background-color: #223885;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .row .col-md-3 span:nth-child(3) {
+    direction: rtl;
     padding: 0.5rem 0;
     background-color: #FFA600;
     animation: backgroundChange 0.3s infinite alternate;
@@ -11292,6 +11308,7 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .row .col-md-5 h3 {
     color: #FFFFFF;
     padding: 1rem;
+    direction: rtl;
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 0;
@@ -11340,6 +11357,7 @@ badge.SecondaryColor {
     background-color: red;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .row .col-md-3 span:first-child {
+    direction: rtl;
     padding: 1rem 0;
     font-size: 20px;
     background-color: #FFA600;
@@ -11350,6 +11368,7 @@ badge.SecondaryColor {
     background-color: #223885;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .row .col-md-3 span:nth-child(3) {
+    direction: rtl;
     padding: 0.5rem 0;
     background-color: #FFA600;
     animation: backgroundChange 0.3s infinite alternate;
@@ -11764,6 +11783,7 @@ badge.SecondaryColor {
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .row .col-md-5 h2 {
     padding: 1rem;
+    direction: rtl;
     font-size: 70px;
     font-weight: 700;
     margin-bottom: 0;
@@ -11775,6 +11795,7 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .row .col-md-5 h3 {
     color: #FFFFFF;
     padding: 1rem;
+    direction: rtl;
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 0;
@@ -11823,6 +11844,7 @@ badge.SecondaryColor {
     background-color: red;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .row .col-md-3 span:first-child {
+    direction: rtl;
     padding: 1rem 0;
     font-size: 25px;
     background-color: #FFA600;
@@ -11833,6 +11855,7 @@ badge.SecondaryColor {
     background-color: #223885;
   }
   body[dir=ltr] .FNV-Slider .FNV-Slider-Content .carousel-inner .carousel-item:first-child .row .col-md-3 span:nth-child(3) {
+    direction: rtl;
     padding: 0.5rem 0;
     background-color: #FFA600;
     animation: backgroundChange 0.3s infinite alternate;
