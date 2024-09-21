@@ -3471,6 +3471,7 @@ body[dir='ltr'] {
 
                                     h2 {
                                         padding: 1rem;
+                                        direction: rtl;
                                         font-size: 70px;
                                         font-weight: 700;
                                         margin-bottom: 0;
@@ -3483,6 +3484,7 @@ body[dir='ltr'] {
                                     h3 {
                                         color: $White;
                                         padding: 1rem;
+                                        direction: rtl;
                                         font-size: 30px;
                                         font-weight: 500;
                                         margin-bottom: 0;
@@ -3534,6 +3536,7 @@ body[dir='ltr'] {
 
                                     span {
                                         &:first-child {
+                                            direction: rtl;
                                             padding: 1rem 0;
                                             font-size: 30px;
                                             background-color: $PrimaryTwo;
@@ -3546,6 +3549,7 @@ body[dir='ltr'] {
                                         }
 
                                         &:nth-child(3) {
+                                            direction: rtl;
                                             padding: .5rem 0;
                                             background-color: $PrimaryTwo;
                                             animation: backgroundChange .3s infinite alternate;
