@@ -494,13 +494,13 @@ const Header = props => {
                     </div>
                     <div className='row'>
                       <div className='col-12 col-md-9'>
-                        <div className='nav' id='v-pills-tab' role='tablist' aria-orientation='horizontal'>
+                        <div className='nav' id='offcanvas-tab' role='tablist' aria-orientation='horizontal'>
                           {/* Engineering */}
                           <button
                             className='nav-link active'
-                            id='engineering-tab'
+                            id='engineering-offtab'
                             data-bs-toggle='pill'
-                            data-bs-target='#engineering'
+                            data-bs-target='#engineering-offcanvas'
                             type='button'
                             role='tab'
                             aria-controls='engineering'
@@ -523,9 +523,9 @@ const Header = props => {
                           {/* Project Management */}
                           <button
                             className='nav-link'
-                            id='project-tab'
+                            id='project-offtab'
                             data-bs-toggle='pill'
-                            data-bs-target='#project'
+                            data-bs-target='#project-offcanvas'
                             type='button'
                             role='tab'
                             aria-controls='project'
@@ -550,9 +550,9 @@ const Header = props => {
                           {/* Technician */}
                           <button
                             className='nav-link'
-                            id='technician-tab'
+                            id='technician-offtab'
                             data-bs-toggle='pill'
-                            data-bs-target='#technician'
+                            data-bs-target='#technician-offcanvas'
                             type='button'
                             role='tab'
                             aria-controls='technician'
@@ -577,9 +577,9 @@ const Header = props => {
                           {/* Architect */}
                           <button
                             className='nav-link'
-                            id='architect-tab'
+                            id='architect-offtab'
                             data-bs-toggle='pill'
-                            data-bs-target='#architect'
+                            data-bs-target='#architect-offcanvas'
                             type='button'
                             role='tab'
                             aria-controls='architect'
@@ -605,9 +605,9 @@ const Header = props => {
                           {/* Accounting */}
                           <button
                             className='nav-link'
-                            id='accounting-tab'
+                            id='accounting-offtab'
                             data-bs-toggle='pill'
-                            data-bs-target='#accounting'
+                            data-bs-target='#accounting-offcanvas'
                             type='button'
                             role='tab'
                             aria-controls='accounting'
@@ -640,9 +640,9 @@ const Header = props => {
                           {/* English */}
                           <button
                             className='nav-link'
-                            id='english-tab'
+                            id='english-offtab'
                             data-bs-toggle='pill'
-                            data-bs-target='#english'
+                            data-bs-target='#english-offcanvas'
                             type='button'
                             role='tab'
                             aria-controls='english'
@@ -660,9 +660,9 @@ const Header = props => {
                           {/* Self Employed */}
                           <button
                             className='nav-link'
-                            id='self-tab'
+                            id='self-offtab'
                             data-bs-toggle='pill'
-                            data-bs-target='#self'
+                            data-bs-target='#self-offcanvas'
                             type='button'
                             role='tab'
                             aria-controls='self'
@@ -683,9 +683,9 @@ const Header = props => {
                           {/* Job Seeker */}
                           <button
                             className='nav-link'
-                            id='jobseeker-tab'
+                            id='jobseeker-offtab'
                             data-bs-toggle='pill'
-                            data-bs-target='#jobseeker'
+                            data-bs-target='#jobseeker-offcanvas'
                             type='button'
                             role='tab'
                             aria-controls='jobseeker'
@@ -704,13 +704,13 @@ const Header = props => {
                           </button>
                         </div>
 
-                        <div className='tab-content' id='v-pills-tabContent'>
+                        <div className='tab-content' id='offcanvas-tabContent'>
                           {/* Engineering */}
                           <div
                             className='tab-pane fade show'
-                            id='engineering'
+                            id='engineering-offcanvas'
                             role='tabpanel'
-                            aria-labelledby='engineering-tab'
+                            aria-labelledby='engineering-off-tab'
                             tabindex='0'
                           >
                             <Engineering />
@@ -732,9 +732,9 @@ const Header = props => {
                           {/* Project Management */}
                           <div
                             className='tab-pane fade'
-                            id='project'
+                            id='project-offcanvas'
                             role='tabpanel'
-                            aria-labelledby='project-tab'
+                            aria-labelledby='project-off-tab'
                             tabindex='0'
                           >
                             <ProjectManagment />
@@ -756,9 +756,9 @@ const Header = props => {
                           {/* Technician */}
                           <div
                             className='tab-pane fade'
-                            id='technician'
+                            id='technician-offcanvas'
                             role='tabpanel'
-                            aria-labelledby='technician-tab'
+                            aria-labelledby='technician-off-tab'
                             tabindex='0'
                           >
                             <Technician />
@@ -780,9 +780,9 @@ const Header = props => {
                           {/* Architect */}
                           <div
                             className='tab-pane fade'
-                            id='architect'
+                            id='architect-offcanvas'
                             role='tabpanel'
-                            aria-labelledby='architect-tab'
+                            aria-labelledby='architect-off-tab'
                             tabindex='0'
                           >
                             <Architect />
@@ -804,9 +804,9 @@ const Header = props => {
                           {/* Accounting */}
                           <div
                             className='tab-pane fade'
-                            id='accounting'
+                            id='accounting-offcanvas'
                             role='tabpanel'
-                            aria-labelledby='accounting-tab'
+                            aria-labelledby='accounting-off-tab'
                             tabindex='0'
                           >
                             <Accounting />
@@ -828,9 +828,9 @@ const Header = props => {
                           {/* English */}
                           <div
                             className='tab-pane fade'
-                            id='english'
+                            id='english-offcanvas'
                             role='tabpanel'
-                            aria-labelledby='english-tab'
+                            aria-labelledby='english-off-tab'
                             tabindex='0'
                           >
                             <English />
@@ -852,9 +852,9 @@ const Header = props => {
                           {/* Self Employee */}
                           <div
                             className='tab-pane fade'
-                            id='self'
+                            id='self-offcanvas'
                             role='tabpanel'
-                            aria-labelledby='self-tab'
+                            aria-labelledby='self-off-tab'
                             tabindex='0'
                           >
                             <SelfEmployee />
@@ -876,9 +876,9 @@ const Header = props => {
                           {/* Job Seeker */}
                           <div
                             className='tab-pane fade'
-                            id='jobseeker'
+                            id='jobseeker-offcanvas'
                             role='tabpanel'
-                            aria-labelledby='jobseeker-tab'
+                            aria-labelledby='jobseeker-off-tab'
                             tabindex='0'
                           >
                             <JobSeeker />
@@ -1067,9 +1067,9 @@ const Header = props => {
                           {/* Counseling */}
                           <button
                             className='nav-link active'
-                            id='counseling-tab'
+                            id='counseling-offbut'
                             data-bs-toggle='pill'
-                            data-bs-target='#counseling'
+                            data-bs-target='#counseling-offtab'
                             type='button'
                             role='tab'
                             aria-controls='counseling'
@@ -1092,9 +1092,9 @@ const Header = props => {
                           {/* Course Description */}
                           <button
                             className='nav-link'
-                            id='course-description-tab'
+                            id='course-description-offbut'
                             data-bs-toggle='pill'
-                            data-bs-target='#course-description'
+                            data-bs-target='#course-description-offtab'
                             type='button'
                             role='tab'
                             aria-controls='course-description'
@@ -1117,9 +1117,9 @@ const Header = props => {
                           {/* Credentials Verification */}
                           <button
                             className='nav-link'
-                            id='credentials-verification-tab'
+                            id='credentials-verification-offbut'
                             data-bs-toggle='pill'
-                            data-bs-target='#credentials-verification'
+                            data-bs-target='#credentials-verification-offtab'
                             type='button'
                             role='tab'
                             aria-controls='course-description'
@@ -1144,7 +1144,7 @@ const Header = props => {
                           {/* Counseling */}
                           <div
                             className='tab-pane fade show'
-                            id='counseling'
+                            id='counseling-offtab'
                             role='tabpanel'
                             aria-labelledby='counseling-tab'
                             tabindex='0'
@@ -1173,7 +1173,7 @@ const Header = props => {
                           {/* Course Description */}
                           <div
                             className='tab-pane fade'
-                            id='course-description'
+                            id='course-description-offtab'
                             role='tabpanel'
                             aria-labelledby='course-description-tab'
                             tabindex='0'
@@ -1199,7 +1199,7 @@ const Header = props => {
                           {/* Credentials Verification */}
                           <div
                             className='tab-pane fade'
-                            id='credentials-verification'
+                            id='credentials-verification-offtab'
                             role='tabpanel'
                             aria-labelledby='credentials-verification-tab'
                             tabindex='0'

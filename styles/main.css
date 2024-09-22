@@ -15968,46 +15968,8 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Top_Categories .container .row svg {
     width: 100%;
   }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a g {
-    fill: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a rect {
-    opacity: 1;
-    stroke: #B2B9D4;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a .FNV-Category-Text {
-    stroke-width: 0.5px;
-    fill: #223885;
-    stroke: #223885;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a .FNV-Category-Shape path {
-    stroke-width: 2px;
-    stroke: #0074FF;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a path {
-    stroke: #B2B9D4;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover g {
-    fill: #223885;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover rect {
-    opacity: 1;
-    stroke: #B2B9D4;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover .FNV-Category-Text {
-    stroke-width: 0.5px;
-    fill: #FFFFFF;
-    stroke: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover .FNV-Category-Shape path {
-    stroke-width: 2px;
-    stroke: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover path {
-    stroke: #223885;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover path.FNV-NoFill {
-    fill: #FFFFFF;
+  body[dir=ltr] .FNV-Top_Categories .container .row svg a {
+    fill: transparent;
   }
   body[dir=ltr] .FNV-Top_Categories .container:nth-child(2) .row {
     position: relative;
@@ -16109,46 +16071,8 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Top_Categories .container .row svg {
     width: 100%;
   }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a g {
-    fill: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a rect {
-    opacity: 1;
-    stroke: #B2B9D4;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a .FNV-Category-Text {
-    stroke-width: 0.5px;
-    fill: #223885;
-    stroke: #223885;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a .FNV-Category-Shape path {
-    stroke-width: 2px;
-    stroke: #0074FF;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a path {
-    stroke: #B2B9D4;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover g {
-    fill: #223885;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover rect {
-    opacity: 1;
-    stroke: #B2B9D4;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover .FNV-Category-Text {
-    stroke-width: 0.5px;
-    fill: #FFFFFF;
-    stroke: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover .FNV-Category-Shape path {
-    stroke-width: 2px;
-    stroke: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover path {
-    stroke: #223885;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover path.FNV-NoFill {
-    fill: #FFFFFF;
+  body[dir=ltr] .FNV-Top_Categories .container .row svg a {
+    fill: transparent;
   }
   body[dir=ltr] .FNV-Top_Categories .container:nth-child(2) .row {
     position: relative;
@@ -16254,46 +16178,8 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Top_Categories .container .row svg {
     width: 100%;
   }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a g {
-    fill: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a rect {
-    opacity: 1;
-    stroke: #B2B9D4;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a .FNV-Category-Text {
-    stroke-width: 0.5px;
-    fill: #223885;
-    stroke: #223885;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a .FNV-Category-Shape path {
-    stroke-width: 2px;
-    stroke: #0074FF;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a path {
-    stroke: #B2B9D4;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover g {
-    fill: #223885;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover rect {
-    opacity: 1;
-    stroke: #B2B9D4;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover .FNV-Category-Text {
-    stroke-width: 0.5px;
-    fill: #FFFFFF;
-    stroke: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover .FNV-Category-Shape path {
-    stroke-width: 2px;
-    stroke: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover path {
-    stroke: #223885;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover path.FNV-NoFill {
-    fill: #FFFFFF;
+  body[dir=ltr] .FNV-Top_Categories .container .row svg a {
+    fill: transparent;
   }
   body[dir=ltr] .FNV-Top_Categories .container:nth-child(2) .row {
     position: relative;
@@ -16396,46 +16282,8 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Top_Categories .container .row svg {
     width: 100%;
   }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a g {
-    fill: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a rect {
-    opacity: 1;
-    stroke: #B2B9D4;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a .FNV-Category-Text {
-    stroke-width: 0.5px;
-    fill: #223885;
-    stroke: #223885;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a .FNV-Category-Shape path {
-    stroke-width: 2px;
-    stroke: #0074FF;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a path {
-    stroke: #B2B9D4;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover g {
-    fill: #223885;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover rect {
-    opacity: 1;
-    stroke: #B2B9D4;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover .FNV-Category-Text {
-    stroke-width: 0.5px;
-    fill: #FFFFFF;
-    stroke: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover .FNV-Category-Shape path {
-    stroke-width: 2px;
-    stroke: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover path {
-    stroke: #223885;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover path.FNV-NoFill {
-    fill: #FFFFFF;
+  body[dir=ltr] .FNV-Top_Categories .container .row svg a {
+    fill: transparent;
   }
   body[dir=ltr] .FNV-Top_Categories .container:nth-child(2) .row {
     position: relative;
@@ -16538,46 +16386,8 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Top_Categories .container .row svg {
     width: 100%;
   }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a g {
-    fill: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a rect {
-    opacity: 1;
-    stroke: #B2B9D4;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a .FNV-Category-Text {
-    stroke-width: 0.5px;
-    fill: #223885;
-    stroke: #223885;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a .FNV-Category-Shape path {
-    stroke-width: 2px;
-    stroke: #0074FF;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a path {
-    stroke: #B2B9D4;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover g {
-    fill: #223885;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover rect {
-    opacity: 1;
-    stroke: #B2B9D4;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover .FNV-Category-Text {
-    stroke-width: 0.5px;
-    fill: #FFFFFF;
-    stroke: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover .FNV-Category-Shape path {
-    stroke-width: 2px;
-    stroke: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover path {
-    stroke: #223885;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover path.FNV-NoFill {
-    fill: #FFFFFF;
+  body[dir=ltr] .FNV-Top_Categories .container .row svg a {
+    fill: transparent;
   }
   body[dir=ltr] .FNV-Top_Categories .container:nth-child(2) .row {
     position: relative;
@@ -16680,46 +16490,8 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Top_Categories .container .row svg {
     width: 80%;
   }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a g {
-    fill: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a rect {
-    opacity: 1;
-    stroke: #B2B9D4;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a .FNV-Category-Text {
-    stroke-width: 0.5px;
-    fill: #223885;
-    stroke: #223885;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a .FNV-Category-Shape path {
-    stroke-width: 2px;
-    stroke: #0074FF;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a path {
-    stroke: #B2B9D4;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover g {
-    fill: #223885;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover rect {
-    opacity: 1;
-    stroke: #B2B9D4;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover .FNV-Category-Text {
-    stroke-width: 0.5px;
-    fill: #FFFFFF;
-    stroke: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover .FNV-Category-Shape path {
-    stroke-width: 2px;
-    stroke: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover path {
-    stroke: #223885;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover path.FNV-NoFill {
-    fill: #FFFFFF;
+  body[dir=ltr] .FNV-Top_Categories .container .row svg a {
+    fill: transparent;
   }
   body[dir=ltr] .FNV-Top_Categories .container:nth-child(2) .row {
     position: relative;
@@ -16822,46 +16594,8 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Top_Categories .container .row svg {
     width: 80%;
   }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a g {
-    fill: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a rect {
-    opacity: 1;
-    stroke: #B2B9D4;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a .FNV-Category-Text {
-    stroke-width: 0.5px;
-    fill: #223885;
-    stroke: #223885;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a .FNV-Category-Shape path {
-    stroke-width: 2px;
-    stroke: #0074FF;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a path {
-    stroke: #B2B9D4;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover g {
-    fill: #223885;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover rect {
-    opacity: 1;
-    stroke: #B2B9D4;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover .FNV-Category-Text {
-    stroke-width: 0.5px;
-    fill: #FFFFFF;
-    stroke: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover .FNV-Category-Shape path {
-    stroke-width: 2px;
-    stroke: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover path {
-    stroke: #223885;
-  }
-  body[dir=ltr] .FNV-Top_Categories .container .row svg a:hover path.FNV-NoFill {
-    fill: #FFFFFF;
+  body[dir=ltr] .FNV-Top_Categories .container .row svg a {
+    fill: transparent;
   }
   body[dir=ltr] .FNV-Top_Categories .container:nth-child(2) .row {
     position: relative;
@@ -16965,46 +16699,8 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Top_Categories .container .row svg {
     width: 100%;
   }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a g {
-    fill: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a rect {
-    opacity: 1;
-    stroke: #B2B9D4;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a .FNV-Category-Text {
-    stroke-width: 0.5px;
-    fill: #223885;
-    stroke: #223885;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a .FNV-Category-Shape path {
-    stroke-width: 2px;
-    stroke: #0074FF;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a path {
-    stroke: #B2B9D4;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover g {
-    fill: #223885;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover rect {
-    opacity: 1;
-    stroke: #B2B9D4;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover .FNV-Category-Text {
-    stroke-width: 0.5px;
-    fill: #FFFFFF;
-    stroke: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover .FNV-Category-Shape path {
-    stroke-width: 2px;
-    stroke: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover path {
-    stroke: #223885;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover path.FNV-NoFill {
-    fill: #FFFFFF;
+  body[dir=rtl] .FNV-Top_Categories .container .row svg a {
+    fill: transparent;
   }
   body[dir=rtl] .FNV-Top_Categories .container:nth-child(2) .row {
     position: relative;
@@ -17112,46 +16808,8 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Top_Categories .container .row svg {
     width: 100%;
   }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a g {
-    fill: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a rect {
-    opacity: 1;
-    stroke: #B2B9D4;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a .FNV-Category-Text {
-    stroke-width: 0.5px;
-    fill: #223885;
-    stroke: #223885;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a .FNV-Category-Shape path {
-    stroke-width: 2px;
-    stroke: #0074FF;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a path {
-    stroke: #B2B9D4;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover g {
-    fill: #223885;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover rect {
-    opacity: 1;
-    stroke: #B2B9D4;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover .FNV-Category-Text {
-    stroke-width: 0.5px;
-    fill: #FFFFFF;
-    stroke: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover .FNV-Category-Shape path {
-    stroke-width: 2px;
-    stroke: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover path {
-    stroke: #223885;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover path.FNV-NoFill {
-    fill: #FFFFFF;
+  body[dir=rtl] .FNV-Top_Categories .container .row svg a {
+    fill: transparent;
   }
   body[dir=rtl] .FNV-Top_Categories .container:nth-child(2) .row {
     position: relative;
@@ -17259,46 +16917,8 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Top_Categories .container .row svg {
     width: 100%;
   }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a g {
-    fill: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a rect {
-    opacity: 1;
-    stroke: #B2B9D4;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a .FNV-Category-Text {
-    stroke-width: 0.5px;
-    fill: #223885;
-    stroke: #223885;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a .FNV-Category-Shape path {
-    stroke-width: 2px;
-    stroke: #0074FF;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a path {
-    stroke: #B2B9D4;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover g {
-    fill: #223885;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover rect {
-    opacity: 1;
-    stroke: #B2B9D4;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover .FNV-Category-Text {
-    stroke-width: 0.5px;
-    fill: #FFFFFF;
-    stroke: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover .FNV-Category-Shape path {
-    stroke-width: 2px;
-    stroke: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover path {
-    stroke: #223885;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover path.FNV-NoFill {
-    fill: #FFFFFF;
+  body[dir=rtl] .FNV-Top_Categories .container .row svg a {
+    fill: transparent;
   }
   body[dir=rtl] .FNV-Top_Categories .container:nth-child(2) .row {
     position: relative;
@@ -17403,46 +17023,8 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Top_Categories .container .row svg {
     width: 100%;
   }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a g {
-    fill: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a rect {
-    opacity: 1;
-    stroke: #B2B9D4;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a .FNV-Category-Text {
-    stroke-width: 0.5px;
-    fill: #223885;
-    stroke: #223885;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a .FNV-Category-Shape path {
-    stroke-width: 2px;
-    stroke: #0074FF;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a path {
-    stroke: #B2B9D4;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover g {
-    fill: #223885;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover rect {
-    opacity: 1;
-    stroke: #B2B9D4;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover .FNV-Category-Text {
-    stroke-width: 0.5px;
-    fill: #FFFFFF;
-    stroke: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover .FNV-Category-Shape path {
-    stroke-width: 2px;
-    stroke: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover path {
-    stroke: #223885;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover path.FNV-NoFill {
-    fill: #FFFFFF;
+  body[dir=rtl] .FNV-Top_Categories .container .row svg a {
+    fill: transparent;
   }
   body[dir=rtl] .FNV-Top_Categories .container:nth-child(2) .row {
     position: relative;
@@ -17547,46 +17129,8 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Top_Categories .container .row svg {
     width: 100%;
   }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a g {
-    fill: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a rect {
-    opacity: 1;
-    stroke: #B2B9D4;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a .FNV-Category-Text {
-    stroke-width: 0.5px;
-    fill: #223885;
-    stroke: #223885;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a .FNV-Category-Shape path {
-    stroke-width: 2px;
-    stroke: #0074FF;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a path {
-    stroke: #B2B9D4;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover g {
-    fill: #223885;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover rect {
-    opacity: 1;
-    stroke: #B2B9D4;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover .FNV-Category-Text {
-    stroke-width: 0.5px;
-    fill: #FFFFFF;
-    stroke: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover .FNV-Category-Shape path {
-    stroke-width: 2px;
-    stroke: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover path {
-    stroke: #223885;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover path.FNV-NoFill {
-    fill: #FFFFFF;
+  body[dir=rtl] .FNV-Top_Categories .container .row svg a {
+    fill: transparent;
   }
   body[dir=rtl] .FNV-Top_Categories .container:nth-child(2) .row {
     position: relative;
@@ -17691,46 +17235,8 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Top_Categories .container .row svg {
     width: 80%;
   }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a g {
-    fill: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a rect {
-    opacity: 1;
-    stroke: #B2B9D4;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a .FNV-Category-Text {
-    stroke-width: 0.5px;
-    fill: #223885;
-    stroke: #223885;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a .FNV-Category-Shape path {
-    stroke-width: 2px;
-    stroke: #0074FF;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a path {
-    stroke: #B2B9D4;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover g {
-    fill: #223885;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover rect {
-    opacity: 1;
-    stroke: #B2B9D4;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover .FNV-Category-Text {
-    stroke-width: 0.5px;
-    fill: #FFFFFF;
-    stroke: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover .FNV-Category-Shape path {
-    stroke-width: 2px;
-    stroke: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover path {
-    stroke: #223885;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover path.FNV-NoFill {
-    fill: #FFFFFF;
+  body[dir=rtl] .FNV-Top_Categories .container .row svg a {
+    fill: transparent;
   }
   body[dir=rtl] .FNV-Top_Categories .container:nth-child(2) .row {
     position: relative;
@@ -17835,46 +17341,8 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Top_Categories .container .row svg {
     width: 80%;
   }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a g {
-    fill: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a rect {
-    opacity: 1;
-    stroke: #B2B9D4;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a .FNV-Category-Text {
-    stroke-width: 0.5px;
-    fill: #223885;
-    stroke: #223885;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a .FNV-Category-Shape path {
-    stroke-width: 2px;
-    stroke: #0074FF;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a path {
-    stroke: #B2B9D4;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover g {
-    fill: #223885;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover rect {
-    opacity: 1;
-    stroke: #B2B9D4;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover .FNV-Category-Text {
-    stroke-width: 0.5px;
-    fill: #FFFFFF;
-    stroke: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover .FNV-Category-Shape path {
-    stroke-width: 2px;
-    stroke: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover path {
-    stroke: #223885;
-  }
-  body[dir=rtl] .FNV-Top_Categories .container .row svg a:hover path.FNV-NoFill {
-    fill: #FFFFFF;
+  body[dir=rtl] .FNV-Top_Categories .container .row svg a {
+    fill: transparent;
   }
   body[dir=rtl] .FNV-Top_Categories .container:nth-child(2) .row {
     position: relative;
@@ -17960,6 +17428,116 @@ badge.SecondaryColor {
   body[dir=rtl] .FNV-Mission .FNV-Canvas-Bottom {
     transform: scaleY(-1);
   }
+}
+
+body[dir=ltr] .FNV-HomeAbout {
+  padding: 4rem 0;
+  background-color: #ffffff;
+}
+body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 h2 {
+  font-size: 48px;
+  font-weight: 300;
+  color: #223885;
+  margin-bottom: 2rem;
+}
+body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #223885;
+}
+
+body[dir=rtl] .FNV-HomeAbout {
+  padding: 4rem 0;
+  background-color: #ffffff;
+}
+body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 h2 {
+  font-size: 48px;
+  font-weight: 300;
+  color: #223885;
+  margin-bottom: 2rem;
+}
+body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #223885;
+}
+
+body[dir=ltr] .FNV-HomeWhy {
+  padding: 4rem 0;
+  background-color: #F0F3FB;
+}
+body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6 h2 {
+  font-size: 48px;
+  font-weight: 300;
+  color: #223885;
+  margin-bottom: 2rem;
+}
+body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6 p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #223885;
+}
+
+body[dir=rtl] .FNV-HomeWhy {
+  padding: 8rem 0;
+  background-color: #F0F3FB;
+}
+body[dir=rtl] .FNV-HomeWhy .container h2 {
+  font-size: 48px;
+  font-weight: 300;
+  color: #223885;
+  margin-bottom: 2rem;
+}
+body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6 p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #223885;
+}
+body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) {
+  padding-right: 4rem;
+}
+body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card {
+  width: 100%;
+  padding: 1rem;
+  border-width: 0;
+  border-radius: 0;
+  margin-bottom: 1rem;
+  align-items: center;
+  flex-direction: row;
+  background-color: #ffffff;
+}
+body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card h3 {
+  font-size: 24px;
+  font-weight: 300;
+}
+body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 0;
 }
 
 .FNV-NewCourses {

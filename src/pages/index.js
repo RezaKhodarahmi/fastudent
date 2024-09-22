@@ -34,8 +34,10 @@ import WebinarsSection from 'src/views/swiper/webinarList'
 
 import { fetchWebinarData } from 'src/store/apps/webinar'
 
-// ** Categories Section
+// ** Sections
 import CategoriesSection from 'src/views/categoriesSection'
+import AboutFanavaran from 'src/views/aboutFanavaran'
+import WhyFanavaran from 'src/views/whyFanavaran'
 
 import ConvertTime from 'src/views/convert-timezone'
 
@@ -109,10 +111,17 @@ const Home = () => {
 
   return (
     <>
+      {/* Hero */}
       <SearchBox title={t('fanavaran-motto')} />
 
       {/* Categories */}
       <CategoriesSection />
+
+      {/* About Fanavaran */}
+      <AboutFanavaran />
+
+      {/* Why Fanavaran */}
+      <WhyFanavaran />
 
       {/* New Courses */}
       <section className='FNV-NewCourses'>
