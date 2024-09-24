@@ -141,7 +141,7 @@ const AppointmentBooking = () => {
         />
         <CardContent>
           <Typography gutterBottom variant='h5' component='div' textAlign='center'>
-            Mo Amani, P.Eng, PMP, PMI-RMP​
+            Mo Amani, P.Eng, PMP, PMI-RMP
           </Typography>
 
           <Typography variant='body2' color='text.secondary'>

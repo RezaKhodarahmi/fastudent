@@ -17475,8 +17475,14 @@ body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 p {
 }
 
 body[dir=ltr] .FNV-HomeWhy {
-  padding: 4rem 0;
+  padding: 8rem 0;
   background-color: #F0F3FB;
+}
+body[dir=ltr] .FNV-HomeWhy .container h2 {
+  font-size: 48px;
+  font-weight: 300;
+  color: #223885;
+  margin-bottom: 2rem;
 }
 body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6 {
   display: flex;
@@ -17484,16 +17490,32 @@ body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6 {
   align-items: flex-start;
   justify-content: center;
 }
-body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6 h2 {
-  font-size: 48px;
-  font-weight: 300;
-  color: #223885;
-  margin-bottom: 2rem;
-}
 body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6 p {
   font-size: 20px;
   font-weight: 400;
   color: #223885;
+}
+body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) {
+  padding-right: 4rem;
+}
+body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card {
+  width: 100%;
+  padding: 1rem;
+  border-width: 0;
+  border-radius: 0;
+  margin-bottom: 1rem;
+  align-items: center;
+  flex-direction: row;
+  background-color: #ffffff;
+}
+body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card h3 {
+  font-size: 24px;
+  font-weight: 300;
+}
+body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 0;
 }
 
 body[dir=rtl] .FNV-HomeWhy {
