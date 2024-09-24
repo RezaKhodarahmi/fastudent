@@ -138,7 +138,7 @@ const Index = () => {
             <div className='col-12 col-md-4 p-0'>
               <div className='row p-0'>
                 <div className='col-5'>
-                  <img alt='image' src='img/team/mona_dejban.jpg' className='img-fluid' />
+                  <img alt='image' src={appConfig.appUrl + '/img/team/mona_dejban.jpg'} className='img-fluid' />
                 </div>
                 <div className='col-7'>
                   <h4>Mona Dejban</h4>
