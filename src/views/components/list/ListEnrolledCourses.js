@@ -61,7 +61,7 @@ const ListCourses = props => {
   return (
     <Grid container spacing={6}>
       {courses
-        ?.filter(item => item.id != 150000)
+        ?.filter(item => item?.id != 150000)
         .map(course => (
           <>
             <Grid item xs={12} md={6} lg={4}>
