@@ -35,7 +35,7 @@ const AppointmentBooking = () => {
   const appointmentData = useSelector(state => state.appointment)
   const userProfile = useSelector(state => state.profile)
   const router = useRouter()
-  const dir = window.localStorage.getItem('direction' || 'ltr')
+  const dir = window.localStorage.getItem('direction') || 'ltr'
 
   const [selectedDate, setSelectedDate] = useState(null)
   const [availableTimes, setAvailableTimes] = useState([])
@@ -57,13 +57,13 @@ const AppointmentBooking = () => {
     // Check if the day is Tuesday (2), Wednesday (3), or Friday (5)
     const isAllowedDay = day === 2 || day === 3 || day === 5
 
-    // Otherwise, return true to disable the date
+    // Return false to disable dates that are not allowed
     return !(isInRange && isAllowedDay)
   }
 
-  const fetchAvailableTimes = async selectedDate => {
+  const fetchAvailableTimes = async formattedDate => {
     try {
-      const response = await fetch(`${BASE_URL}/student/counseling/vip/times/${selectedDate}`)
+      const response = await fetch(`${BASE_URL}/student/counseling/vip/times/${formattedDate}`)
       const times = await response.json()
       setAvailableTimes(times)
     } catch (error) {
@@ -90,30 +90,33 @@ const AppointmentBooking = () => {
     }
   }, [appointmentData])
 
-  // Assuming `selectedDate` state changes on date selection
+  // Handle date selection and formatting
   useEffect(() => {
     if (selectedDate) {
-      const formattedDate = selectedDate.toISOString().split('T')[0] // Format date as YYYY-MM-DD
+      // Format the date manually to ensure it's in YYYY-MM-DD format without timezone shift
+      const formattedDate = selectedDate.toLocaleDateString('en-CA') // 'en-CA' ensures the format is YYYY-MM-DD
       fetchAvailableTimes(formattedDate)
     }
   }, [selectedDate])
 
   const handleBookAppointment = () => {
     if (!userLoggedIn) {
-    } else if ((selectedDate, selectedTime)) {
+      // Optionally handle user not logged in
+    } else if (selectedDate && selectedTime) {
       setIsLoading(true)
-      dispatch(createNewAppointment({ email: userLoggedIn, date: selectedDate, time: selectedTime }))
+      const formattedDate = selectedDate.toLocaleDateString('en-CA') // Format date without timezone shift
+      dispatch(createNewAppointment({ email: userLoggedIn, date: formattedDate, time: selectedTime }))
       setButtonDisable(true)
     } else {
       window.alert(`${t('please-select-a-date-and-time')}`)
     }
   }
 
-  const handelLogin = () => {
+  const handleLogin = () => {
     router.push('/login?returnUrl=/services/educational-and-career-counseling')
   }
 
-  const handelByVIP = () => {
+  const handleByVIP = () => {
     router.push('/membership/checkout')
   }
 
@@ -215,12 +218,12 @@ const AppointmentBooking = () => {
                 {isLoading ? <CircularProgress style={{ color: '#fff' }} size={24} /> : `${t('submit-appointment')}`}
               </Button>
             ) : (
-              <Button variant='contained' color='secondary' onClick={handelByVIP} size='large'>
+              <Button variant='contained' color='secondary' onClick={handleByVIP} size='large'>
                 By VIP membership
               </Button>
             )
           ) : (
-            <Button variant='contained' color='secondary' onClick={handelLogin} size='large'>
+            <Button variant='contained' color='secondary' onClick={handleLogin} size='large'>
               {t('log-in-to-book')}
             </Button>
           )}
@@ -229,6 +232,7 @@ const AppointmentBooking = () => {
     </Container>
   )
 }
+
 AppointmentBooking.guestGuard = true
 
 export default AppointmentBooking

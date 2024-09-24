@@ -42,7 +42,7 @@ function Selfemployee() {
 
           return filteredCourses.length ? (
             filteredCourses
-              .filter(item => item.id != 150000)
+              .filter(item => item?.id != 150000)
               .map(course =>
                 course.cycles?.length ? (
                   <li key={course.id}>
