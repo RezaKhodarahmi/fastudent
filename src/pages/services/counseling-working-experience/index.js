@@ -19,7 +19,8 @@ import {
   Select,
   MenuItem,
   FormControl,
-  InputLabel
+  InputLabel,
+  Autocomplete
 } from '@mui/material'
 import { createEXAppointment } from 'src/store/apps/appointment'
 import { getProfileInfo } from 'src/store/apps/profile'
@@ -119,102 +120,123 @@ const AppointmentBooking = () => {
   }
 
   return (
-    <Container maxWidth='sm' sx={{ mt: 5 }}>
-      <Typography variant='h4' sx={{ mb: 4, textAlign: 'center' }}>
-        رزرو وقت مشاوره برای نوشتن تجربه کاری مهندسی و تکنسین(ویژه اعضای VIP)
-      </Typography>
-      {/* Consultant Info Card */}
-      <Card
-        style={{ direction: 'ltr' }}
-        raised
-        sx={{ mb: 4, mt: 5, borderRadius: '16px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)' }}
-      >
-        <CardMedia
-          component='img'
-          height='140'
-          image='/img/babak_babaee.png' // Update the path to your image
-          alt='Consultant'
-          sx={{ width: 150, height: 150, borderRadius: '50%', margin: 'auto', marginTop: '5px', marginBottom: '2px' }}
-        />
-        <CardContent>
-          <Typography gutterBottom variant='h5' component='div' textAlign='center'>
-            Babak Babaee, P.Eng. MBA​
-          </Typography>
+    <>
+      <section className='FNV-Consultation'>
+        <div className='FNV-Canvas-Top'>
+          <svg viewBox="0 0 1454 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1453 0.999987L1 99L1 0.999987L1453 0.999987Z" fill="white" stroke="white" />
+          </svg>
+        </div>
 
-          <Typography variant='body2' color='text.secondary'>
-            Babak Babaee, P.Eng, MBA, is a seasoned Engineer, Consultant and Instructor with more than 18 years of
-            experience working in different sectors such as Power Generation,
-          </Typography>
-          <Collapse in={expanded} timeout='auto' unmountOnExit>
-            <Typography variant='body2' color='text.secondary'>
-              Oil & Gas and Mining in Canada and Iran. He graduated from the University of Tehran, Concordia University
-              and the University of Toronto. He was a member of the board of directors of the Canadian Society for
-              Mechanical Engineering (CSME), a contributor to many Codes and Standards at CSA Group and a volunteer at
-              the Professional Engineering Ontario (PEO) to assess engineering documents. At Fanavaran, he teaches the
-              NPPE course to help engineers to get their licenses and help technicians to get their electrician and
-              plumbing licenses.09:08 PM
-            </Typography>
-          </Collapse>
-          <Box textAlign='center' mt={2}>
-            <Button onClick={handleExpandClick}>{expanded ? `${t('show-less')}` : `${t('show-more')}`}</Button>
-          </Box>
-        </CardContent>
-      </Card>
-      <Card>
-        <CardContent>
-          <LocalizationProvider dateAdapter={AdapterDateFns}>
-            <Grid container style={{ marginTop: '10px' }} spacing={3}>
-              <Typography variant='subtitle1'>{t('all-show-in-toronto-time')}</Typography>
-              <Grid item xs={12}>
-                <DatePicker
-                  label={t('select-date')}
-                  value={selectedDate}
-                  onChange={setSelectedDate}
-                  shouldDisableDate={isDateAllowed} // Use the function here
-                  renderInput={params => <TextField {...params} fullWidth />}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <FormControl fullWidth>
-                  <InputLabel id='time-select-label'>{t('select-time')}</InputLabel>
-                  <Select
-                    labelId='time-select-label'
-                    id='time-select'
-                    value={selectedTime}
-                    label='Select Time'
-                    onChange={event => setSelectedTime(event.target.value)}
-                    fullWidth
-                  >
-                    {availableTimes.map((time, index) => (
-                      <MenuItem key={index} value={time}>
-                        {time}
-                      </MenuItem>
-                    ))}
-                  </Select>
-                </FormControl>
-              </Grid>
-            </Grid>
-          </LocalizationProvider>
-        </CardContent>
-        <CardActions sx={{ justifyContent: 'center', pb: 2 }}>
-          {userLoggedIn ? (
-            <Button
-              variant='contained'
-              onClick={handleBookAppointment}
-              disabled={buttonDisable}
-              color='primary'
-              size='large'
-            >
-              {isLoading ? <CircularProgress style={{ color: '#fff' }} size={24} /> : `${t('submit-appointment')}`}
-            </Button>
-          ) : (
-            <Button variant='contained' color='secondary' onClick={handelLogin} size='large'>
-              {t('log-in-to-book')}
-            </Button>
-          )}
-        </CardActions>
-      </Card>
-    </Container>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-12 col-md-8'>
+              <h1>{t("consultation-babak-title")} <br /><small>{t("consultation-babak-title-small")}</small></h1>
+
+              <Card className='card'>
+                <CardContent className='card-body'>
+                  <LocalizationProvider dateAdapter={AdapterDateFns}>
+                    <Grid container style={{ marginTop: '10px' }} spacing={3}>
+                      {/* Information text */}
+                      <Grid item xs={12}>
+                        <Typography variant="subtitle1">{t('all-show-in-bc-time')}</Typography>
+                      </Grid>
+
+                      {/* Select Date */}
+                      <Grid item xs={12} md={4} className="card-body-grid">
+                        <FormControl fullWidth className="card-body-grid-input">
+                          <DatePicker
+                            value={selectedDate}
+                            onChange={setSelectedDate}
+                            shouldDisableDate={isDateAllowed} // Use the function here
+                            renderInput={(params) => <TextField {...params} fullWidth />}
+                          />
+                        </FormControl>
+                      </Grid>
+
+                      {/* Select Time */}
+                      <Grid item xs={12} md={4} className="card-body-grid">
+                        <FormControl fullWidth className="card-body-grid-input-time">
+                          <Autocomplete
+                            id="time-select"
+                            options={availableTimes.length > 0 ? availableTimes : []}
+                            getOptionLabel={(option) => option}
+                            value={selectedTime}
+                            onChange={(event, newValue) => setSelectedTime(newValue)}
+                            noOptionsText={t('no-options-available')} // A message when no options are available
+                            renderInput={(params) => (
+                              <TextField {...params} label={t('select-time')} fullWidth />
+                            )}
+                          />
+                        </FormControl>
+                      </Grid>
+
+                      {/* Button */}
+                      <Grid item xs={12} md={4}>
+                        {userLoggedIn ? (
+                          VIP ? (
+                            <Button
+                              variant="contained"
+                              onClick={handleBookAppointment}
+                              disabled={buttonDisable}
+                              size="large"
+                              fullWidth
+                              className="SubmitButton"
+                            >
+                              {isLoading ? (
+                                <CircularProgress style={{ color: '#fff' }} size={24} />
+                              ) : (
+                                t('submit-appointment')
+                              )}
+                            </Button>
+                          ) : (
+                            <Button
+                              variant="contained"
+                              color="secondary"
+                              onClick={handleByVIP}
+                              size="large"
+                              fullWidth
+                            >
+                              By VIP membership
+                            </Button>
+                          )
+                        ) : (
+                          <Button
+                            variant="contained"
+                            color="secondary"
+                            onClick={handleLogin}
+                            size="large"
+                            fullWidth
+                          >
+                            {t('log-in-to-book')}
+                          </Button>
+                        )}
+                      </Grid>
+                    </Grid>
+                  </LocalizationProvider>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className='col-12 col-md-4'>
+              <div className='card'>
+                <img src='/images/consultant/babak.webp' alt={t("consultation-babak-title")} className='img-fluid' />
+                <h2>{t('consultation-consultant')}</h2>
+                <h3>{t('consultation-consultant-babak')}</h3>
+                <h4>{t('consultation-consultant-babak-title')}</h4>
+                <p>{t('consultation-consultant-babak-about')}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='FNV-Canvas-Bottom'>
+          <svg viewBox="0 0 1454 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1453 0.999987L1 99L1 0.999987L1453 0.999987Z" fill="white" stroke="white" />
+          </svg>
+        </div>
+      </section>
+    </>
   )
 }
 AppointmentBooking.guestGuard = true

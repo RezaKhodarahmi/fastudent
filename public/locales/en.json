@@ -114,6 +114,19 @@
   "why-fanavaran-6": "Advanced Facilities",
   "why-fanavaran-6-text": "State-of-the-art learning environments and technology.",
 
+  "consultation-mo-title": "Educational Consultation Booking",
+  "consultation-mo-title-small": "(VIP Only)",
+  "consultation-consultant": "Consultant",
+  "consultation-consultant-mo": "Mo Amani",
+  "consultation-consultant-mo-title": "P.Eng, PMP, PMI-RMP",
+  "consultation-consultant-mo-about": "Mo Amani holds positions at CONFIX Construction, Genius Camp, Genius Math, and SCON Residential, while also volunteering as the President of Fanavaran, a non-profit educational institution. He moved to Canada in 2015 and currently resides in Halifax, Nova Scotia. With 15 years of experience as a mechanical engineer, Mo has worked for various companies, excelling in design and project management for HVAC, fire suppression, and energy modeling across residential, commercial, and mission-critical facilities. His expertise has made him a highly regarded engineer in HVAC systems. His most recent role was Lead Mechanical Engineer at SNC-Lavalin. In addition to his engineering and management background, Mo is well-known for designing innovative coaching programs and providing expert educational insights to achieve specific goals.",
+
+  "consultation-babak-title": "Booking a consultation appointment for writing engineering and technician work experience",
+  "consultation-babak-title-small": "(VIP Only)",
+  "consultation-consultant-babak": "Babak Babaee",
+  "consultation-consultant-babak-title": "P.Eng. MBA",
+  "consultation-consultant-babak-about": "Babak Babaee, P.Eng, MBA, is a seasoned Engineer, Consultant and Instructor with more than 18 years of experience working in different sectors such as Power Generation, Oil & Gas and Mining in Canada and Iran. He graduated from the University of Tehran, Concordia University and the University of Toronto. He was a member of the board of directors of the Canadian Society for Mechanical Engineering (CSME), a contributor to many Codes and Standards at CSA Group and a volunteer at the Professional Engineering Ontario (PEO) to assess engineering documents. At Fanavaran, he teaches the NPPE course to help engineers to get their licenses and help technicians to get their electrician and plumbing licenses.",
+
   "contact-fanavaran-1": "",
   "contact-fanavaran-2": "",
   "contact-fanavaran-3": "",
@@ -344,7 +357,8 @@
   "resume-book-question-two":"Have you attended all resume writing classes or watched the recorded video of the class?",
   "resume-book-question-three":"Have you seen the job search videos on Fanavaran's YouTube channel?",
   "please-select-a-date-and-time":"Please select a date and time!",
-  "all-show-in-bc-time":"All times are shown in Vancouver time.",
+  "all-show-in-bc-time":"Select a time, adjusted to Vancouver's local time zone",
   "all-show-in-toronto-time": "All times are shown in Toronto time.",
-  "appointment":"Appointment"
+  "appointment":"Appointment",
+  "no-options-available": "No options (First Select Date)"
 }

@@ -21,7 +21,8 @@ import {
   Select,
   MenuItem,
   FormControl,
-  InputLabel
+  InputLabel,
+  Autocomplete
 } from '@mui/material'
 import { createNewAppointment } from 'src/store/apps/appointment'
 import { getProfileInfo } from 'src/store/apps/profile'
@@ -125,111 +126,124 @@ const AppointmentBooking = () => {
   }
 
   return (
-    <Container maxWidth='sm' sx={{ mt: 5 }}>
-      <Typography variant='h4' sx={{ mb: 4, textAlign: 'center' }}>
-        رزرو وقت مشاوره کاری و تحصیلی(ویژه اعضای VIP)
-      </Typography>
-      {/* Consultant Info Card */}
-      <Card
-        style={{ direction: 'ltr' }}
-        raised
-        sx={{ mb: 4, mt: 5, borderRadius: '16px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)' }}
-      >
-        <CardMedia
-          component='img'
-          height='140'
-          image='/img/mo_amani.jpg' // Update the path to your image
-          alt='Consultant'
-          sx={{ width: 150, height: 150, borderRadius: '50%', margin: 'auto', marginTop: '5px', marginBottom: '2px' }}
-        />
-        <CardContent>
-          <Typography gutterBottom variant='h5' component='div' textAlign='center'>
-            Mo Amani, P.Eng, PMP, PMI-RMP
-          </Typography>
+    <>
+      <section className='FNV-Consultation'>
+        <div className='FNV-Canvas-Top'>
+          <svg viewBox="0 0 1454 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1453 0.999987L1 99L1 0.999987L1453 0.999987Z" fill="white" stroke="white" />
+          </svg>
+        </div>
 
-          <Typography variant='body2' color='text.secondary'>
-            Mo is a serial entrepreneur in a variety of industries...
-          </Typography>
-          <Collapse in={expanded} timeout='auto' unmountOnExit>
-            <Typography variant='body2' color='text.secondary'>
-              He is holding positions in CONFIX Construction, Genius Camp, Genius Math, and SCON Residential, and
-              volunteering as the president of Fanavaran (a non-for-profit education institution.) He moved to Canada
-              back in 2015 and resident of Halifax, Nova Scotia. He had practiced engineering for 15 years in different
-              companies as a mechanical engineer. His experience in design and project management in HVAC, fire
-              suppression, and energy modeling in residential, commercial, and mission-critical facilities made him a
-              top ranked engineer in HVAC systems. His last position was as a lead mechanical engineer at SNC Lavalin.
-              Besides his engineering and management background, he is well-reputed in designing creative coaching
-              courses and providing educational experts’ opinions for targeted aims.
-            </Typography>
-          </Collapse>
-          <Box textAlign='center' mt={2}>
-            <Button onClick={handleExpandClick}>{expanded ? `${t('show-less')}` : `${t('show-more')}`}</Button>
-          </Box>
-        </CardContent>
-      </Card>
-      {/* Appointment Booking Card */}
+        <div className='container'>
+          <div className='row'>
+            <div className='col-12 col-md-8'>
+              <h1>{t("consultation-mo-title")} <br /><small>{t("consultation-mo-title-small")}</small></h1>
 
-      <Card>
-        <CardContent>
-          <LocalizationProvider dateAdapter={AdapterDateFns}>
-            <Grid container style={{ marginTop: '10px' }} spacing={3}>
-              <Typography variant='subtitle1'>{t('all-show-in-bc-time')}</Typography>
-              <Grid item xs={12}>
-                <DatePicker
-                  label={t('select-date')}
-                  value={selectedDate}
-                  onChange={setSelectedDate}
-                  shouldDisableDate={isDateAllowed} // Use the function here
-                  renderInput={params => <TextField {...params} fullWidth />}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <FormControl fullWidth>
-                  <InputLabel id='time-select-label'>{t('select-time')}</InputLabel>
-                  <Select
-                    labelId='time-select-label'
-                    id='time-select'
-                    value={selectedTime}
-                    label='Select Time'
-                    onChange={event => setSelectedTime(event.target.value)}
-                    fullWidth
-                  >
-                    {availableTimes.map((time, index) => (
-                      <MenuItem key={index} value={time}>
-                        {time}
-                      </MenuItem>
-                    ))}
-                  </Select>
-                </FormControl>
-              </Grid>
-            </Grid>
-          </LocalizationProvider>
-        </CardContent>
-        <CardActions sx={{ justifyContent: 'center', pb: 2 }}>
-          {userLoggedIn ? (
-            VIP ? (
-              <Button
-                variant='contained'
-                onClick={handleBookAppointment}
-                disabled={buttonDisable}
-                color='primary'
-                size='large'
-              >
-                {isLoading ? <CircularProgress style={{ color: '#fff' }} size={24} /> : `${t('submit-appointment')}`}
-              </Button>
-            ) : (
-              <Button variant='contained' color='secondary' onClick={handleByVIP} size='large'>
-                By VIP membership
-              </Button>
-            )
-          ) : (
-            <Button variant='contained' color='secondary' onClick={handleLogin} size='large'>
-              {t('log-in-to-book')}
-            </Button>
-          )}
-        </CardActions>
-      </Card>
-    </Container>
+              <Card className='card'>
+                <CardContent className='card-body'>
+                  <LocalizationProvider dateAdapter={AdapterDateFns}>
+                    <Grid container style={{ marginTop: '10px' }} spacing={3}>
+                      {/* Information text */}
+                      <Grid item xs={12}>
+                        <Typography variant="subtitle1">{t('all-show-in-bc-time')}</Typography>
+                      </Grid>
+
+                      {/* Select Date */}
+                      <Grid item xs={12} md={4} className="card-body-grid">
+                        <FormControl fullWidth className="card-body-grid-input">
+                          <DatePicker
+                            value={selectedDate}
+                            onChange={setSelectedDate}
+                            shouldDisableDate={isDateAllowed} // Use the function here
+                            renderInput={(params) => <TextField {...params} fullWidth />}
+                          />
+                        </FormControl>
+                      </Grid>
+
+                      {/* Select Time */}
+                      <Grid item xs={12} md={4} className="card-body-grid">
+                        <FormControl fullWidth className="card-body-grid-input-time">
+                          <Autocomplete
+                            id="time-select"
+                            options={availableTimes.length > 0 ? availableTimes : []}
+                            getOptionLabel={(option) => option}
+                            value={selectedTime}
+                            onChange={(event, newValue) => setSelectedTime(newValue)}
+                            noOptionsText={t('no-options-available')} // A message when no options are available
+                            renderInput={(params) => (
+                              <TextField {...params} label={t('select-time')} fullWidth />
+                            )}
+                          />
+                        </FormControl>
+                      </Grid>
+
+                      {/* Button */}
+                      <Grid item xs={12} md={4}>
+                        {userLoggedIn ? (
+                          VIP ? (
+                            <Button
+                              variant="contained"
+                              onClick={handleBookAppointment}
+                              disabled={buttonDisable}
+                              size="large"
+                              fullWidth
+                              className="SubmitButton"
+                            >
+                              {isLoading ? (
+                                <CircularProgress style={{ color: '#fff' }} size={24} />
+                              ) : (
+                                t('submit-appointment')
+                              )}
+                            </Button>
+                          ) : (
+                            <Button
+                              variant="contained"
+                              color="secondary"
+                              onClick={handleByVIP}
+                              size="large"
+                              fullWidth
+                            >
+                              By VIP membership
+                            </Button>
+                          )
+                        ) : (
+                          <Button
+                            variant="contained"
+                            color="secondary"
+                            onClick={handleLogin}
+                            size="large"
+                            fullWidth
+                          >
+                            {t('log-in-to-book')}
+                          </Button>
+                        )}
+                      </Grid>
+                    </Grid>
+                  </LocalizationProvider>
+
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className='col-12 col-md-4'>
+              <div className='card'>
+                <img src='/images/consultant/mo.webp' alt={t("consultation-mo-title")} className='img-fluid' />
+                <h2>{t('consultation-consultant')}</h2>
+                <h3>{t('consultation-consultant-mo')}</h3>
+                <h4>{t('consultation-consultant-mo-title')}</h4>
+                <p>{t('consultation-consultant-mo-about')}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='FNV-Canvas-Bottom'>
+          <svg viewBox="0 0 1454 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1453 0.999987L1 99L1 0.999987L1453 0.999987Z" fill="white" stroke="white" />
+          </svg>
+        </div>
+      </section>
+    </>
   )
 }
 
