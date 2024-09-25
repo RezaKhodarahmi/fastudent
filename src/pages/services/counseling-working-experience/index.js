@@ -108,7 +108,7 @@ const AppointmentBooking = () => {
   }
 
   const handelLogin = () => {
-    router.push('/login?returnUrl=/services/educational-and-career-counseling')
+    router.push('/login?returnUrl=/services/counseling-working-experience')
   }
 
   const handleByVIP = () => {
