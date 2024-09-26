@@ -51,6 +51,9 @@ const Index = () => {
   const cartItems = localStorage.getItem('cartItems')
   const pageDirection = localStorage.getItem('direction')
 
+  // Check if there is any course of type 2 in the cart
+  const hasCourseType2 = cartCourses.some(course => course.course.type == 2) || null
+
   useEffect(() => {
     if (!cartItems) {
       localStorage.setItem('cartItems', JSON.stringify([]))
@@ -285,7 +288,8 @@ const Index = () => {
                 cartTotal,
                 isVIP,
                 oldVIP,
-                vipPlan
+                vipPlan,
+                hasCourseType2
               })
             })
               .then(res => res.json())
@@ -585,9 +589,6 @@ const Index = () => {
     const capitalizedValue = e.target.value.toUpperCase()
     setCoupon(capitalizedValue)
   }
-
-  // Check if there is any course of type 2 in the cart
-  const hasCourseType2 = cartCourses.some(course => course.course.type == 2)
 
   return (
     <div className='FNV-Cart'>
