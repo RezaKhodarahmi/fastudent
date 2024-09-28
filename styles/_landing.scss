@@ -3990,6 +3990,13 @@ body[dir='rtl'] {
                             text-align: center;
                         }
 
+                        p {
+                            color: $White;
+                            font-size: 18px;
+                            font-weight: 400;
+                            text-align: center;
+                        }
+
                         a {
                             width: auto;
                             color: $White;
@@ -4221,6 +4228,95 @@ body[dir='rtl'] {
 
                                             a {
                                                 color: $PrimaryFour;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .col-md-3 {
+                                    span {
+                                        font-size: 26px;
+                                        font-weight: 600;
+                                        margin-bottom: 1rem;
+                                        color: $PrimaryColor;
+                                        display: inline-block;
+                                    }
+
+                                    ol {
+                                        li {
+                                            margin-bottom: .5rem;
+
+                                            a {
+                                                font-size: 14px;
+                                                font-weight: 500;
+                                                color: $PrimaryFour;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .col-md-9 {
+                                    h3 {
+                                        font-size: 30px;
+                                        font-weight: 600;
+                                        color: $PrimaryOne;
+                                        margin-bottom: 1rem;
+                                    }
+
+                                    h4 {
+                                        font-size: 25px;
+                                        font-weight: 600;
+                                        color: $PrimaryOne;
+                                        margin-bottom: .5rem;
+                                    }
+
+                                    p {
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                        line-height: 32px;
+                                        color: $BlackColor;
+                                    }
+
+                                    a {
+                                        color: $PrimaryFour;
+                                    }
+
+                                    ul {
+                                        li {
+                                            font-size: 16px;
+                                            font-weight: 500;
+                                            line-height: 32px;
+                                            color: $PrimaryThree;
+                                        }
+                                    }
+
+                                    .row {
+                                        .col-md-7 {}
+
+                                        .col-md-5 {
+                                            iframe {
+                                                top: 0;
+                                                width: 100%;
+                                                height: 300px;
+                                                position: sticky;
+                                            }
+                                        }
+
+                                        .col-md-6 {
+                                            h5 {
+                                                display: flex;
+                                                justify-content: center;
+
+                                                svg {
+                                                    width: 80px;
+                                                    height: 60px;
+                                                    margin: 0 1rem;
+                                                }
+
+                                                span {
+                                                    font-size: 22px;
+                                                    font-weight: 500;
+                                                }
                                             }
                                         }
                                     }

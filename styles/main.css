@@ -23065,6 +23065,12 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     font-weight: 400;
     text-align: center;
   }
+  body[dir=rtl] .FNV-Single header .container .row p {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+  }
   body[dir=rtl] .FNV-Single header .container .row a {
     width: auto;
     color: #FFFFFF;
@@ -23243,6 +23249,67 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   }
   body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p a {
     color: #0074FF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 span {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #223885;
+    display: inline-block;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 ol li {
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 ol li a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #0074FF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 h4 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #223885;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #000000;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 a {
+    color: #0074FF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 ul li {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #233B8C;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-5 iframe {
+    top: 0;
+    width: 100%;
+    height: 300px;
+    position: sticky;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 {
+    display: flex;
+    justify-content: center;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 svg {
+    width: 80px;
+    height: 60px;
+    margin: 0 1rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 span {
+    font-size: 22px;
+    font-weight: 500;
   }
 }
 
