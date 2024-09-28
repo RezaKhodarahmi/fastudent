@@ -176,6 +176,26 @@ export const specialDates = [
         image: 'https://fanavaran.ca:3200/uploads/courses/f3efa1f3-233c-436e-9952-c847267b80d8.jpg',
         text: '16-Elec-B3- Digital Communications Systems',
         link: 'https://fanavaran.ca/courses/peng-digital-communications-systems'
+      },
+      {
+        image: 'https://fanavaran.ca:3200/uploads/webinars/51e02c83-2f83-4adc-81db-20b17c5577a8.jpg',
+        text: 'مسیر شغلی کارپنتری در کانادا- لایسنس های مورد نیاز',
+        link: 'https://fanavaran.ca/webinars/carpentry-career-in-canada'
+      }
+    ]
+  },
+  {
+    date: '2024-10-06',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/bb4af71d-0aaa-4f9b-aaa3-f4922ce21611.jpg',
+        text: 'Renovation Workshop (Framing) (Vancouver)',
+        link: 'https://fanavaran.ca/courses/practical-carpentry-workshop-for-residents-of-vancouver'
+      },
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/353f0a81-90ed-438f-b2f2-b8e5300c16c2.jpg',
+        text: 'Renovation Workshop (Finish Carpenter)(Vancouver)',
+        link: 'https://fanavaran.ca/courses/workshop-finish-carpenter-vancouver'
       }
     ]
   },
@@ -200,12 +220,77 @@ export const specialDates = [
     ]
   },
   {
+    date: '2024-10-12',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/e5c956da-845e-4bf6-bb0c-2614967c40a2.jpg',
+        text: 'Renovation Workshop (Electrician - Basic) (Toronto)',
+        link: 'https://fanavaran.ca/courses/workshop-of-renovation-electrical-work-toronto'
+      },
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/4d06ae84-8eb6-4327-aca4-2a9129d1b46a.jpg',
+        text: 'Resume and Networking',
+        link: 'https://fanavaran.ca/courses/resume-and-networking-live'
+      }
+    ]
+  },
+  {
     date: '2024-10-15',
     events: [
       {
         image: 'https://fanavaran.ca:3200/uploads/courses/13a40107-254b-4477-bdb2-107951a354be.jpg',
         text: '16-Civ-A5 - Hydraulic Engineering',
         link: 'https://fanavaran.ca/courses/peng-hydraulic-engineering'
+      }
+    ]
+  },
+  {
+    date: '2024-10-21',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/236fb292-2c5c-4f4f-9f81-b9caa44d93d7.jpg',
+        text: 'NPPE Exam Prep',
+        link: 'https://fanavaran.ca/courses/nppe-exam-preparation-test'
+      },
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/c97e6b4b-9c8f-4bfe-93de-3f7e82645ca1.jpg',
+        text: 'Canadian Wood Framing (CWF)',
+        link: 'https://fanavaran.ca/courses/canadian-wood-framing-construction'
+      }
+    ]
+  },
+  {
+    date: '2024-10-24',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/f807810e-cb79-42a5-8764-c0b8c1572a27.jpg',
+        text: 'Energy Advisory- House Exam Prep',
+        link: 'https://fanavaran.ca/courses/energy-advisory-house'
+      }
+    ]
+  },
+  {
+    date: '2024-10-30',
+    events: [
+      {
+        image: '#',
+        text: 'Plumbing Redseal Exal Prep (Test Samples)',
+        link: 'https://fanavaran.ca/courses/plumbing-test'
+      },
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/76e07dad-395b-4254-bb6a-58a0d0ccd97f.jpg',
+        text: 'Quickbooks Payroll Training Course',
+        link: 'https://fanavaran.ca/courses/quickbooks-software-payroll'
+      }
+    ]
+  },
+  {
+    date: '2024-10-31',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/121f801f-0e18-4841-b5fa-c0bb86b41b39.jpg',
+        text: 'Project Management (PMP)',
+        link: 'https://fanavaran.ca/courses/pmp-certification-preparation-test'
       }
     ]
   }
