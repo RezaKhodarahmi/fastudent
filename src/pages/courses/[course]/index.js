@@ -41,6 +41,7 @@ const Course = () => {
   const [open, setOpen] = useState(false)
   const [countdown, setCountdown] = useState('')
   const [direction, setDirection] = useState('rtl')
+  const [courseType, setType] = useState('1')
   const dispatch = useDispatch()
   const router = useRouter()
   const courseData = useSelector(state => state.course)
@@ -128,6 +129,7 @@ const Course = () => {
     if (courseData?.data?.data && courseData?.data?.data?.id) {
       setData(courseData?.data?.data)
       setFaqs(courseData?.data?.faq)
+      setType(courseData?.data?.data?.type)
       setCourseId(courseData?.data?.data?.id)
       setIsEnrolled(courseData?.data?.enrolled)
       setCycleId(courseData?.data?.cycleId)
@@ -880,12 +882,13 @@ const Course = () => {
 
                           {inCart ? (
                             <a
-                            disabled={!data?.cycles?.length}
+                              disabled={!data?.cycles?.length}
                               style={{ cursor: 'pointer' }}
                               onClick={e => router.replace('/cart')}
                               className='FNV-Btn btn btn-success BtnMedium w-100'
                             >
-                              <i data-feather='shopping-cart'></i> {data?.cycles?.length ? t('single-course-gotocart'): "Registration is disabled!"}
+                              <i data-feather='shopping-cart'></i>{' '}
+                              {data?.cycles?.length ? t('single-course-gotocart') : 'Registration is disabled!'}
                             </a>
                           ) : (
                             <button
@@ -910,7 +913,9 @@ const Course = () => {
                                 <path d='M6 5l14 1l-1 7h-13' />
                               </svg>
 
-                              <span>{data?.cycles?.length ? t('single-course-enroll') : "Registration is disabled!"}</span>
+                              <span>
+                                {data?.cycles?.length ? t('single-course-enroll') : 'Registration is disabled!'}
+                              </span>
                             </button>
                           )}
                           {succeededMessage ? (
@@ -926,9 +931,13 @@ const Course = () => {
                               {succeededMessage}
                             </p>
                           ) : (
-                            <Button className='FNV-Btn BtnOutline PrimaryColor w-100' onClick={handleOpen}>
-                              {t('single-course-demo')}
-                            </Button>
+                            <>
+                              {courseType == '2' ? null : (
+                                <Button className='FNV-Btn BtnOutline PrimaryColor w-100' onClick={handleOpen}>
+                                  {t('single-course-demo')}
+                                </Button>
+                              )}
+                            </>
                           )}
                         </>
                       )}
