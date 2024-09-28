@@ -20040,17 +20040,27 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     left: 0;
     z-index: 1;
     width: 100%;
-    height: 600px;
+    height: 400px;
     display: flex;
     position: relative;
     align-items: center;
+  }
+  body[dir=ltr] .FNV-Single header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(34, 56, 133, 0.3137254902);
   }
   body[dir=ltr] .FNV-Single header.FNV-Single-Header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    background-image: url("/images/pages/newcomers/newcomers.webp");
+    background-image: url("/images/pages/renovations/renovations.webp");
   }
   body[dir=ltr] .FNV-Single header .FNV-Canvas-Top {
     top: -1px;
@@ -20066,19 +20076,25 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   }
   body[dir=ltr] .FNV-Single header .container .row h1 {
     color: #FFFFFF;
-    font-size: 50px;
+    font-size: 28px;
     font-weight: 700;
     text-align: center;
   }
   body[dir=ltr] .FNV-Single header .container .row h2 {
     color: #FFFFFF;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
     text-align: center;
   }
   body[dir=ltr] .FNV-Single header .container .row h3 {
     color: #FFFFFF;
-    font-size: 25px;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Single header .container .row p {
+    color: #FFFFFF;
+    font-size: 18px;
     font-weight: 400;
     text-align: center;
   }
@@ -20113,18 +20129,732 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     padding: 1rem;
   }
   body[dir=ltr] .FNV-Single main article section .container .row h2 {
-    font-size: 35px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #223885;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 {
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header {
+    margin-bottom: 0;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 0;
+    color: #223885;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button::after {
+    margin-left: unset;
+    margin-right: auto;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23223885' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button.collapsed {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button.collapsed::after {
+    margin-left: unset;
+    margin-right: auto;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button:focus {
+    box-shadow: unset;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body p {
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: justify;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body p a {
+    color: #0074FF;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 5px;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card {
+    height: 100%;
+    padding: 2rem;
+    border-radius: 0;
+    background-color: #FFFFFF;
+    border: 1px solid #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-header {
+    border-width: 0;
+    background-color: transparent;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-header h3 {
+    font-size: 25px;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-body {
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-body p {
+    font-size: 18px;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-footer {
+    padding: 0;
+    border-width: 0;
+    background-color: transparent;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-footer a {
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 1rem 4rem;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical {
+    flex-direction: column;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav {
+    width: 100%;
+    padding: 0;
+    margin-right: 0;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item {
+    width: 100%;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link {
+    width: 100%;
+    padding: 1rem;
+    color: #FFFFFF;
+    border-radius: 0;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link h3 {
+    font-size: 12px;
+    text-align: right;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link.active {
+    color: #223885;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content {
+    width: 100%;
+    padding: 1rem;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content iframe {
+    width: 100%;
+    margin: 2rem 0;
+    height: 200px;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p {
+    font-size: 14px;
+    margin-bottom: 0;
+    line-height: 32px;
+    color: #223885;
+    text-align: justify;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p a {
+    color: #0074FF;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner {
+    top: 1rem;
+    display: flex;
+    position: sticky;
+    padding: 5rem 1rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner svg {
+    margin-bottom: 2rem;
+    stroke: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner span {
+    margin-bottom: 0;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover {
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover svg {
+    stroke: #FFFFFF;
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover span {
+    color: #FFFFFF;
+    margin-bottom: 0;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card {
+    top: 1rem;
+    padding: 1rem;
+    display: block;
+    border-width: 0;
+    border-radius: 0;
+    position: sticky;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card span {
+    font-size: 18px;
+    line-height: 48px;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card ol {
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card ol li {
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card ol li a {
+    display: block;
+    padding: unset;
+    font-size: 14px;
+    font-weight: 500;
+    color: #223885;
+    background-color: unset;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #223885;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #223885;
+    margin: 2rem 0 1rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #000000;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 a {
+    color: #0074FF;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 ul li {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #233B8C;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-5 iframe {
+    top: 0;
+    width: 100%;
+    height: 280px;
+    position: sticky;
+    border: 5px solid #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 {
+    margin-top: 2rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 {
+    display: flex;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 svg {
+    width: 50px;
+    height: 30px;
+    margin: 0 1rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 span {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .col-12 caption {
+    width: 100%;
+    padding: 1rem;
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    background-color: #223885;
+  }
+}
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+  body[dir=ltr] .FNV-Single {
+    direction: rtl;
+  }
+  body[dir=ltr] .FNV-Single header {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  body[dir=ltr] .FNV-Single header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(34, 56, 133, 0.3137254902);
+  }
+  body[dir=ltr] .FNV-Single header.FNV-Single-Header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-image: url("/images/pages/renovations/renovations.webp");
+  }
+  body[dir=ltr] .FNV-Single header .FNV-Canvas-Top {
+    top: -1px;
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+  }
+  body[dir=ltr] .FNV-Single header .FNV-Canvas-Top svg {
+    transform: rotateY(180deg);
+  }
+  body[dir=ltr] .FNV-Single header .container .row {
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-Single header .container .row h1 {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Single header .container .row h2 {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Single header .container .row h3 {
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Single header .container .row p {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Single header .container .row a {
+    width: auto;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-top: 1rem;
+    padding: 1rem 5rem;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Single header .container .row a:hover {
+    color: #223885;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Single header .FNV-Canvas-Bottom {
+    z-index: 2;
+    width: 100%;
+    bottom: -2px;
+    position: absolute;
+  }
+  body[dir=ltr] .FNV-Single header .FNV-Canvas-Bottom svg {
+    transform: rotateY(0deg) rotateX(180deg);
+  }
+  body[dir=ltr] .FNV-Single main article section.FNV-WhiteBg {
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Single main article section.FNV-PrimaryBg {
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-Single main article section .container {
+    padding: 4rem 0;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row h2 {
+    font-size: 48px;
     font-weight: 500;
     color: #223885;
     text-align: center;
     margin-bottom: 4rem;
   }
-  body[dir=ltr] .FNV-Single main article section .container .row span {
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 {
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header {
+    margin-bottom: 0;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 0;
+    color: #223885;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button::after {
+    margin-left: unset;
+    margin-right: auto;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23223885' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button.collapsed {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button.collapsed::after {
+    margin-left: unset;
+    margin-right: auto;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button:focus {
+    box-shadow: unset;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body h3 {
     font-size: 20px;
-    line-height: 38px;
+    font-weight: 500;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body p {
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: justify;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body p a {
+    color: #0074FF;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 5px;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card {
+    height: 100%;
+    padding: 2rem;
+    border-radius: 0;
+    background-color: #FFFFFF;
+    border: 1px solid #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-header {
+    border-width: 0;
+    background-color: transparent;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-header h3 {
+    font-size: 25px;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-body {
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-body p {
+    font-size: 18px;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-footer {
+    padding: 0;
+    border-width: 0;
+    background-color: transparent;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-footer a {
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 1rem 4rem;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav {
+    width: 25%;
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item {
+    width: 100%;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link {
+    width: 100%;
+    padding: 1rem;
+    color: #FFFFFF;
+    border-radius: 0;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link h3 {
+    font-size: 25px;
+    text-align: right;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link.active {
+    color: #223885;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content {
+    width: 70%;
+    padding: 2rem;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content iframe {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p {
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 32px;
+    color: #223885;
+    text-align: justify;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p a {
+    color: #0074FF;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner {
+    top: 1rem;
+    display: flex;
+    position: sticky;
+    padding: 5rem 1rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner svg {
+    margin-bottom: 2rem;
+    stroke: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner span {
+    margin-bottom: 0;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover {
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover svg {
+    stroke: #FFFFFF;
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover span {
+    color: #FFFFFF;
+    margin-bottom: 0;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card {
+    top: 1rem;
+    padding: 1rem;
+    display: block;
+    border-width: 0;
+    border-radius: 0;
+    position: sticky;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card span {
+    font-size: 18px;
+    line-height: 48px;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card ol {
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card ol li {
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card ol li a {
+    display: block;
+    padding: unset;
+    font-size: 14px;
+    font-weight: 500;
+    color: #223885;
+    background-color: unset;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #223885;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #223885;
+    margin: 2rem 0 1rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #000000;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 a {
+    color: #0074FF;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 ul li {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #233B8C;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-5 iframe {
+    top: 0;
+    width: 100%;
+    height: 280px;
+    position: sticky;
+    border: 5px solid #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 {
+    margin-top: 2rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 {
+    display: flex;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 svg {
+    width: 50px;
+    height: 30px;
+    margin: 0 1rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 span {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .col-12 caption {
+    width: 100%;
+    padding: 1rem;
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    background-color: #223885;
+  }
+}
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  body[dir=ltr] .FNV-Single {
+    direction: rtl;
+  }
+  body[dir=ltr] .FNV-Single header {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  body[dir=ltr] .FNV-Single header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(34, 56, 133, 0.3137254902);
+  }
+  body[dir=ltr] .FNV-Single header.FNV-Single-Header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-image: url("/images/pages/renovations/renovations.webp");
+  }
+  body[dir=ltr] .FNV-Single header .FNV-Canvas-Top {
+    top: -1px;
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+  }
+  body[dir=ltr] .FNV-Single header .FNV-Canvas-Top svg {
+    transform: rotateY(180deg);
+  }
+  body[dir=ltr] .FNV-Single header .container .row {
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-Single header .container .row h1 {
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Single header .container .row h2 {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Single header .container .row h3 {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Single header .container .row p {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Single header .container .row a {
+    width: auto;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-top: 1rem;
+    padding: 1rem 5rem;
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Single header .container .row a:hover {
+    color: #223885;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Single header .FNV-Canvas-Bottom {
+    z-index: 2;
+    width: 100%;
+    bottom: -2px;
+    position: absolute;
+  }
+  body[dir=ltr] .FNV-Single header .FNV-Canvas-Bottom svg {
+    transform: rotateY(0deg) rotateX(180deg);
+  }
+  body[dir=ltr] .FNV-Single main article section.FNV-WhiteBg {
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Single main article section.FNV-PrimaryBg {
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-Single main article section .container {
+    padding: 4rem 0;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row h2 {
+    font-size: 30px;
+    font-weight: 500;
     color: #223885;
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
   body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 {
     margin-bottom: 1rem;
@@ -20174,7 +20904,7 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   }
   body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 iframe {
     width: 100%;
-    height: 450px;
+    height: 200px;
     border-radius: 5px;
   }
   body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card {
@@ -20189,14 +20919,14 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     background-color: transparent;
   }
   body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-header h3 {
-    font-size: 20px;
+    font-size: 25px;
     color: #223885;
   }
   body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-body {
     background-color: #FFFFFF;
   }
   body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-body p {
-    font-size: 16px;
+    font-size: 18px;
     color: #223885;
   }
   body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-footer {
@@ -20207,11 +20937,11 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-footer a {
     color: #FFFFFF;
     font-size: 20px;
-    padding: 0.5rem 2rem;
+    padding: 1rem 4rem;
     background-color: #223885;
   }
   body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav {
-    width: 50%;
+    width: 25%;
     padding: 0;
   }
   body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item {
@@ -20225,7 +20955,7 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     background-color: #223885;
   }
   body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link h3 {
-    font-size: 16px;
+    font-size: 18px;
     text-align: right;
   }
   body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link.active {
@@ -20261,467 +20991,123 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p a {
     color: #0074FF;
   }
-}
-@media (min-width: 575.98px) and (max-width: 767.98px) {
-  body[dir=ltr] .FNV-Single {
-    direction: rtl;
-  }
-  body[dir=ltr] .FNV-Single header {
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 600px;
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner {
+    top: 1rem;
     display: flex;
-    position: relative;
+    position: sticky;
+    padding: 5rem 1rem;
     align-items: center;
-  }
-  body[dir=ltr] .FNV-Single header.FNV-Single-Header {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-image: url("/images/pages/newcomers/newcomers.webp");
-  }
-  body[dir=ltr] .FNV-Single header .FNV-Canvas-Top {
-    top: -1px;
-    z-index: 2;
-    width: 100%;
-    position: absolute;
-  }
-  body[dir=ltr] .FNV-Single header .FNV-Canvas-Top svg {
-    transform: rotateY(180deg);
-  }
-  body[dir=ltr] .FNV-Single header .container .row {
+    flex-direction: column;
     justify-content: center;
+    background-color: #FFFFFF;
   }
-  body[dir=ltr] .FNV-Single header .container .row h1 {
-    color: #FFFFFF;
-    font-size: 64px;
-    font-weight: 700;
-    text-align: center;
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner svg {
+    margin-bottom: 2rem;
+    stroke: #223885;
   }
-  body[dir=ltr] .FNV-Single header .container .row h2 {
-    color: #FFFFFF;
-    font-size: 30px;
-    font-weight: 400;
-    text-align: center;
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner span {
+    margin-bottom: 0;
+    color: #223885;
   }
-  body[dir=ltr] .FNV-Single header .container .row h3 {
-    color: #FFFFFF;
-    font-size: 25px;
-    font-weight: 400;
-    text-align: center;
-  }
-  body[dir=ltr] .FNV-Single header .container .row a {
-    width: auto;
-    color: #FFFFFF;
-    font-size: 20px;
-    margin-top: 1rem;
-    padding: 1rem 5rem;
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover {
     background-color: #223885;
   }
-  body[dir=ltr] .FNV-Single header .container .row a:hover {
-    color: #223885;
-    background-color: #FFFFFF;
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover svg {
+    stroke: #FFFFFF;
+    margin-bottom: 2rem;
   }
-  body[dir=ltr] .FNV-Single header .FNV-Canvas-Bottom {
-    z-index: 2;
-    width: 100%;
-    bottom: -2px;
-    position: absolute;
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover span {
+    color: #FFFFFF;
+    margin-bottom: 0;
   }
-  body[dir=ltr] .FNV-Single header .FNV-Canvas-Bottom svg {
-    transform: rotateY(0deg) rotateX(180deg);
-  }
-  body[dir=ltr] .FNV-Single main article section.FNV-WhiteBg {
-    background-color: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Single main article section.FNV-PrimaryBg {
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card {
+    top: 1rem;
+    padding: 2rem 1rem;
+    display: block;
+    border-width: 0;
+    border-radius: 0;
+    position: sticky;
     background-color: #F0F3FB;
   }
-  body[dir=ltr] .FNV-Single main article section .container {
-    padding: 4rem 0;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row h2 {
-    font-size: 35px;
-    font-weight: 500;
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card span {
+    font-size: 20px;
+    line-height: 48px;
     color: #223885;
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row span {
-    font-size: 22px;
-    line-height: 40px;
-    color: #223885;
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 {
     margin-bottom: 1rem;
   }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header {
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card ol {
+    padding: 1rem;
     margin-bottom: 0;
   }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button {
-    color: #FFFFFF;
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 0;
-    color: #223885;
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #223885;
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card ol li {
+    margin-bottom: 0.5rem;
   }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button::after {
-    margin-left: unset;
-    margin-right: auto;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23223885' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button.collapsed {
-    color: #FFFFFF;
-    background-color: #223885;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button.collapsed::after {
-    margin-left: unset;
-    margin-right: auto;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button:focus {
-    box-shadow: unset;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body h3 {
-    font-size: 18px;
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card ol li a {
+    display: block;
+    padding: unset;
+    font-size: 10px;
     font-weight: 500;
     color: #223885;
+    background-color: unset;
   }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body p {
-    font-size: 14px;
-    margin-bottom: 0;
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 h3 {
+    font-size: 25px;
+    font-weight: 600;
     color: #223885;
-    text-align: justify;
+    margin-bottom: 0.5rem;
   }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body p a {
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #223885;
+    margin: 2rem 0 1rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #000000;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 a {
     color: #0074FF;
   }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 iframe {
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 ul li {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #233B8C;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-5 iframe {
+    top: 0;
     width: 100%;
-    height: 450px;
-    border-radius: 5px;
+    height: 160px;
+    position: sticky;
+    border: 5px solid #223885;
   }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card {
-    height: 100%;
-    padding: 2rem;
-    border-radius: 0;
-    background-color: #FFFFFF;
-    border: 1px solid #223885;
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 {
+    margin-top: 2rem;
   }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-header {
-    border-width: 0;
-    background-color: transparent;
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 {
+    display: flex;
+    justify-content: center;
   }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-header h3 {
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 svg {
+    width: 50px;
+    height: 30px;
+    margin: 0 1rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 span {
     font-size: 20px;
-    color: #223885;
+    font-weight: 500;
+    margin-bottom: 0;
   }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-body {
-    background-color: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-body p {
-    font-size: 16px;
-    color: #223885;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-footer {
-    padding: 0;
-    border-width: 0;
-    background-color: transparent;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-footer a {
-    color: #FFFFFF;
-    font-size: 20px;
-    padding: 0.5rem 2rem;
-    background-color: #223885;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav {
-    width: 40%;
-    padding: 0;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item {
-    width: 100%;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link {
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .col-12 caption {
     width: 100%;
     padding: 1rem;
     color: #FFFFFF;
-    border-radius: 0;
-    background-color: #223885;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link h3 {
-    font-size: 20px;
-    text-align: right;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link.active {
-    color: #223885;
-    background-color: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content {
-    width: 70%;
-    padding: 2rem;
-    background-color: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content h3 {
-    font-size: 20px;
-    font-weight: 500;
-    color: #223885;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content h4 {
-    font-size: 18px;
-    font-weight: 500;
-    color: #223885;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content iframe {
-    width: 100%;
-    margin: 2rem 0;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p {
-    font-size: 16px;
-    margin-bottom: 0;
-    line-height: 32px;
-    color: #223885;
-    text-align: justify;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p a {
-    color: #0074FF;
-  }
-}
-@media (min-width: 767.98px) and (max-width: 991.98px) {
-  body[dir=ltr] .FNV-Single {
-    direction: rtl;
-  }
-  body[dir=ltr] .FNV-Single header {
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 600px;
-    display: flex;
-    position: relative;
-    align-items: center;
-  }
-  body[dir=ltr] .FNV-Single header.FNV-Single-Header {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-image: url("/images/pages/newcomers/newcomers.webp");
-  }
-  body[dir=ltr] .FNV-Single header .FNV-Canvas-Top {
-    top: -1px;
-    z-index: 2;
-    width: 100%;
-    position: absolute;
-  }
-  body[dir=ltr] .FNV-Single header .FNV-Canvas-Top svg {
-    transform: rotateY(180deg);
-  }
-  body[dir=ltr] .FNV-Single header .container .row {
-    justify-content: center;
-  }
-  body[dir=ltr] .FNV-Single header .container .row h1 {
-    color: #FFFFFF;
-    font-size: 64px;
-    font-weight: 700;
+    display: block;
     text-align: center;
-  }
-  body[dir=ltr] .FNV-Single header .container .row h2 {
-    color: #FFFFFF;
-    font-size: 30px;
-    font-weight: 400;
-    text-align: center;
-  }
-  body[dir=ltr] .FNV-Single header .container .row h3 {
-    color: #FFFFFF;
-    font-size: 25px;
-    font-weight: 400;
-    text-align: center;
-  }
-  body[dir=ltr] .FNV-Single header .container .row a {
-    width: auto;
-    color: #FFFFFF;
-    font-size: 20px;
-    margin-top: 1rem;
-    padding: 1rem 5rem;
     background-color: #223885;
-  }
-  body[dir=ltr] .FNV-Single header .container .row a:hover {
-    color: #223885;
-    background-color: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Single header .FNV-Canvas-Bottom {
-    z-index: 2;
-    width: 100%;
-    bottom: -2px;
-    position: absolute;
-  }
-  body[dir=ltr] .FNV-Single header .FNV-Canvas-Bottom svg {
-    transform: rotateY(0deg) rotateX(180deg);
-  }
-  body[dir=ltr] .FNV-Single main article section.FNV-WhiteBg {
-    background-color: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Single main article section.FNV-PrimaryBg {
-    background-color: #F0F3FB;
-  }
-  body[dir=ltr] .FNV-Single main article section .container {
-    padding: 4rem 0;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row h2 {
-    font-size: 35px;
-    font-weight: 500;
-    color: #223885;
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row span {
-    font-size: 22px;
-    line-height: 40px;
-    color: #223885;
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 {
-    margin-bottom: 1rem;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header {
-    margin-bottom: 0;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button {
-    color: #FFFFFF;
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 0;
-    color: #223885;
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #223885;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button::after {
-    margin-left: unset;
-    margin-right: auto;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23223885' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button.collapsed {
-    color: #FFFFFF;
-    background-color: #223885;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button.collapsed::after {
-    margin-left: unset;
-    margin-right: auto;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button:focus {
-    box-shadow: unset;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body h3 {
-    font-size: 18px;
-    font-weight: 500;
-    color: #223885;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body p {
-    font-size: 14px;
-    margin-bottom: 0;
-    color: #223885;
-    text-align: justify;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body p a {
-    color: #0074FF;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 iframe {
-    width: 100%;
-    height: 450px;
-    border-radius: 5px;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card {
-    height: 100%;
-    padding: 2rem;
-    border-radius: 0;
-    background-color: #FFFFFF;
-    border: 1px solid #223885;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-header {
-    border-width: 0;
-    background-color: transparent;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-header h3 {
-    font-size: 20px;
-    color: #223885;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-body {
-    background-color: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-body p {
-    font-size: 16px;
-    color: #223885;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-footer {
-    padding: 0;
-    border-width: 0;
-    background-color: transparent;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .card .card-footer a {
-    color: #FFFFFF;
-    font-size: 20px;
-    padding: 0.5rem 2rem;
-    background-color: #223885;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav {
-    width: 40%;
-    padding: 0;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item {
-    width: 100%;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link {
-    width: 100%;
-    padding: 1rem;
-    color: #FFFFFF;
-    border-radius: 0;
-    background-color: #223885;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link h3 {
-    font-size: 20px;
-    text-align: right;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link.active {
-    color: #223885;
-    background-color: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content {
-    width: 70%;
-    padding: 2rem;
-    background-color: #FFFFFF;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content h3 {
-    font-size: 20px;
-    font-weight: 500;
-    color: #223885;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content h4 {
-    font-size: 18px;
-    font-weight: 500;
-    color: #223885;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content iframe {
-    width: 100%;
-    margin: 2rem 0;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p {
-    font-size: 16px;
-    margin-bottom: 0;
-    line-height: 32px;
-    color: #223885;
-    text-align: justify;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p a {
-    color: #0074FF;
   }
 }
 @media (min-width: 991.98px) {
@@ -20733,17 +21119,27 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     left: 0;
     z-index: 1;
     width: 100%;
-    height: 600px;
+    height: 500px;
     display: flex;
     position: relative;
     align-items: center;
+  }
+  body[dir=ltr] .FNV-Single header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(34, 56, 133, 0.3137254902);
   }
   body[dir=ltr] .FNV-Single header.FNV-Single-Header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    background-image: url("/images/pages/newcomers/newcomers.webp");
+    background-image: url("/images/pages/renovations/renovations.webp");
   }
   body[dir=ltr] .FNV-Single header .FNV-Canvas-Top {
     top: -1px;
@@ -20759,7 +21155,7 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   }
   body[dir=ltr] .FNV-Single header .container .row h1 {
     color: #FFFFFF;
-    font-size: 64px;
+    font-size: 50px;
     font-weight: 700;
     text-align: center;
   }
@@ -20772,6 +21168,12 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   body[dir=ltr] .FNV-Single header .container .row h3 {
     color: #FFFFFF;
     font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Single header .container .row p {
+    color: #FFFFFF;
+    font-size: 18px;
     font-weight: 400;
     text-align: center;
   }
@@ -20806,18 +21208,11 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     padding: 4rem 0;
   }
   body[dir=ltr] .FNV-Single main article section .container .row h2 {
-    font-size: 48px;
+    font-size: 35px;
     font-weight: 500;
     color: #223885;
     text-align: center;
-    margin-bottom: 4rem;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row span {
-    font-size: 28px;
-    line-height: 48px;
-    color: #223885;
-    text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
   body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 {
     margin-bottom: 1rem;
@@ -20827,7 +21222,7 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   }
   body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button {
     color: #FFFFFF;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     border-radius: 0;
     color: #223885;
@@ -20852,12 +21247,12 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     box-shadow: unset;
   }
   body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body h3 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     color: #223885;
   }
   body[dir=ltr] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body p {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 0;
     color: #223885;
     text-align: justify;
@@ -20918,7 +21313,7 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     background-color: #223885;
   }
   body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link h3 {
-    font-size: 25px;
+    font-size: 20px;
     text-align: right;
   }
   body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link.active {
@@ -20931,12 +21326,12 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     background-color: #FFFFFF;
   }
   body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content h3 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     color: #223885;
   }
   body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content h4 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     color: #223885;
   }
@@ -20945,14 +21340,132 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     margin: 2rem 0;
   }
   body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 0;
-    line-height: 32px;
+    line-height: 28px;
     color: #223885;
     text-align: justify;
   }
   body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p a {
     color: #0074FF;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner {
+    top: 1rem;
+    display: flex;
+    position: sticky;
+    padding: 5rem 1rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner svg {
+    margin-bottom: 2rem;
+    stroke: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner span {
+    margin-bottom: 0;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover {
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover svg {
+    stroke: #FFFFFF;
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover span {
+    color: #FFFFFF;
+    margin-bottom: 0;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card {
+    top: 1rem;
+    padding: 2rem 1rem;
+    display: block;
+    border-width: 0;
+    border-radius: 0;
+    position: sticky;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card span {
+    font-size: 20px;
+    line-height: 48px;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card ol {
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card ol li {
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card ol li a {
+    display: block;
+    padding: unset;
+    font-size: 10px;
+    font-weight: 500;
+    color: #223885;
+    background-color: unset;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #223885;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #223885;
+    margin: 2rem 0 1rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #000000;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 a {
+    color: #0074FF;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 ul li {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #233B8C;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-5 iframe {
+    top: 0;
+    width: 100%;
+    height: 160px;
+    position: sticky;
+    border: 5px solid #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 {
+    margin-top: 2rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 {
+    display: flex;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 svg {
+    width: 50px;
+    height: 30px;
+    margin: 0 1rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 span {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .col-12 caption {
+    width: 100%;
+    padding: 1rem;
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    background-color: #223885;
   }
 }
 @media (min-width: 1199.98px) {
@@ -20969,12 +21482,22 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     position: relative;
     align-items: center;
   }
+  body[dir=ltr] .FNV-Single header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(34, 56, 133, 0.3137254902);
+  }
   body[dir=ltr] .FNV-Single header.FNV-Single-Header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    background-image: url("/images/pages/newcomers/newcomers.webp");
+    background-image: url("/images/pages/renovations/renovations.webp");
   }
   body[dir=ltr] .FNV-Single header .FNV-Canvas-Top {
     top: -1px;
@@ -21003,6 +21526,12 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   body[dir=ltr] .FNV-Single header .container .row h3 {
     color: #FFFFFF;
     font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Single header .container .row p {
+    color: #FFFFFF;
+    font-size: 18px;
     font-weight: 400;
     text-align: center;
   }
@@ -21039,13 +21568,6 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   body[dir=ltr] .FNV-Single main article section .container .row h2 {
     font-size: 48px;
     font-weight: 500;
-    color: #223885;
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row span {
-    font-size: 28px;
-    line-height: 48px;
     color: #223885;
     text-align: center;
     margin-bottom: 4rem;
@@ -21184,6 +21706,124 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   }
   body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p a {
     color: #0074FF;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner {
+    top: 1rem;
+    display: flex;
+    position: sticky;
+    padding: 8rem 1rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner svg {
+    margin-bottom: 2rem;
+    stroke: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner span {
+    margin-bottom: 0;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover {
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover svg {
+    stroke: #FFFFFF;
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover span {
+    color: #FFFFFF;
+    margin-bottom: 0;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card {
+    top: 1rem;
+    padding: 2rem 1rem;
+    display: block;
+    border-width: 0;
+    border-radius: 0;
+    position: sticky;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card span {
+    font-size: 28px;
+    line-height: 48px;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card ol {
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card ol li {
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card ol li a {
+    display: block;
+    padding: unset;
+    font-size: 14px;
+    font-weight: 500;
+    color: #223885;
+    background-color: unset;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 h4 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #223885;
+    margin: 4rem 0 2rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #000000;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 a {
+    color: #0074FF;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 ul li {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #233B8C;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-5 iframe {
+    top: 0;
+    width: 100%;
+    height: 280px;
+    position: sticky;
+    border: 5px solid #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 {
+    margin-top: 2rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 {
+    display: flex;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 svg {
+    width: 80px;
+    height: 60px;
+    margin: 0 1rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 span {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .col-12 caption {
+    width: 100%;
+    padding: 1rem;
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    background-color: #223885;
   }
 }
 @media (min-width: 1400px) {
@@ -21200,12 +21840,22 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     position: relative;
     align-items: center;
   }
+  body[dir=ltr] .FNV-Single header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(34, 56, 133, 0.3137254902);
+  }
   body[dir=ltr] .FNV-Single header.FNV-Single-Header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    background-image: url("/images/pages/newcomers/newcomers.webp");
+    background-image: url("/images/pages/renovations/renovations.webp");
   }
   body[dir=ltr] .FNV-Single header .FNV-Canvas-Top {
     top: -1px;
@@ -21234,6 +21884,12 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   body[dir=ltr] .FNV-Single header .container .row h3 {
     color: #FFFFFF;
     font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Single header .container .row p {
+    color: #FFFFFF;
+    font-size: 18px;
     font-weight: 400;
     text-align: center;
   }
@@ -21270,13 +21926,6 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   body[dir=ltr] .FNV-Single main article section .container .row h2 {
     font-size: 48px;
     font-weight: 500;
-    color: #223885;
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row span {
-    font-size: 28px;
-    line-height: 48px;
     color: #223885;
     text-align: center;
     margin-bottom: 4rem;
@@ -21415,6 +22064,124 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   }
   body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p a {
     color: #0074FF;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner {
+    top: 1rem;
+    display: flex;
+    position: sticky;
+    padding: 8rem 1rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner svg {
+    margin-bottom: 2rem;
+    stroke: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner span {
+    margin-bottom: 0;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover {
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover svg {
+    stroke: #FFFFFF;
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover span {
+    color: #FFFFFF;
+    margin-bottom: 0;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card {
+    top: 1rem;
+    padding: 2rem 1rem;
+    display: block;
+    border-width: 0;
+    border-radius: 0;
+    position: sticky;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card span {
+    font-size: 28px;
+    line-height: 48px;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card ol {
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card ol li {
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card ol li a {
+    display: block;
+    padding: unset;
+    font-size: 14px;
+    font-weight: 500;
+    color: #223885;
+    background-color: unset;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 h4 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #223885;
+    margin: 4rem 0 2rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #000000;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 a {
+    color: #0074FF;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 ul li {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #233B8C;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-5 iframe {
+    top: 0;
+    width: 100%;
+    height: 280px;
+    position: sticky;
+    border: 5px solid #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 {
+    margin-top: 2rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 {
+    display: flex;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 svg {
+    width: 80px;
+    height: 60px;
+    margin: 0 1rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 span {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .col-12 caption {
+    width: 100%;
+    padding: 1rem;
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    background-color: #223885;
   }
 }
 @media (min-width: 1920px) {
@@ -21431,12 +22198,22 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     position: relative;
     align-items: center;
   }
+  body[dir=ltr] .FNV-Single header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(34, 56, 133, 0.3137254902);
+  }
   body[dir=ltr] .FNV-Single header.FNV-Single-Header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    background-image: url("/images/pages/newcomers/newcomers.webp");
+    background-image: url("/images/pages/renovations/renovations.webp");
   }
   body[dir=ltr] .FNV-Single header .FNV-Canvas-Top {
     top: -1px;
@@ -21465,6 +22242,12 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   body[dir=ltr] .FNV-Single header .container .row h3 {
     color: #FFFFFF;
     font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Single header .container .row p {
+    color: #FFFFFF;
+    font-size: 18px;
     font-weight: 400;
     text-align: center;
   }
@@ -21501,13 +22284,6 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   body[dir=ltr] .FNV-Single main article section .container .row h2 {
     font-size: 48px;
     font-weight: 500;
-    color: #223885;
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-  body[dir=ltr] .FNV-Single main article section .container .row span {
-    font-size: 28px;
-    line-height: 48px;
     color: #223885;
     text-align: center;
     margin-bottom: 4rem;
@@ -21646,6 +22422,124 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   }
   body[dir=ltr] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p a {
     color: #0074FF;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner {
+    top: 1rem;
+    display: flex;
+    position: sticky;
+    padding: 8rem 1rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner svg {
+    margin-bottom: 2rem;
+    stroke: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner span {
+    margin-bottom: 0;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover {
+    background-color: #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover svg {
+    stroke: #FFFFFF;
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover span {
+    color: #FFFFFF;
+    margin-bottom: 0;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card {
+    top: 1rem;
+    padding: 2rem 1rem;
+    display: block;
+    border-width: 0;
+    border-radius: 0;
+    position: sticky;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card span {
+    font-size: 28px;
+    line-height: 48px;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card ol {
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card ol li {
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-3 .card ol li a {
+    display: block;
+    padding: unset;
+    font-size: 14px;
+    font-weight: 500;
+    color: #223885;
+    background-color: unset;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 h4 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #223885;
+    margin: 4rem 0 2rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #000000;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 a {
+    color: #0074FF;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 ul li {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #233B8C;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-5 iframe {
+    top: 0;
+    width: 100%;
+    height: 280px;
+    position: sticky;
+    border: 5px solid #223885;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 {
+    margin-top: 2rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 {
+    display: flex;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 svg {
+    width: 80px;
+    height: 60px;
+    margin: 0 1rem;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 span {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  body[dir=ltr] .FNV-Single main article section .container .row .col-md-9 .col-12 caption {
+    width: 100%;
+    padding: 1rem;
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    background-color: #223885;
   }
 }
 
@@ -21655,17 +22549,27 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     left: 0;
     z-index: 1;
     width: 100%;
-    height: 600px;
+    height: 400px;
     display: flex;
     position: relative;
     align-items: center;
+  }
+  body[dir=rtl] .FNV-Single header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(34, 56, 133, 0.3137254902);
   }
   body[dir=rtl] .FNV-Single header.FNV-Single-Header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    background-image: url("/images/pages/newcomers/newcomers.webp");
+    background-image: url("/images/pages/renovations/renovations.webp");
   }
   body[dir=rtl] .FNV-Single header .FNV-Canvas-Top {
     top: -1px;
@@ -21681,19 +22585,25 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   }
   body[dir=rtl] .FNV-Single header .container .row h1 {
     color: #FFFFFF;
-    font-size: 50px;
+    font-size: 28px;
     font-weight: 700;
     text-align: center;
   }
   body[dir=rtl] .FNV-Single header .container .row h2 {
     color: #FFFFFF;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
     text-align: center;
   }
   body[dir=rtl] .FNV-Single header .container .row h3 {
     color: #FFFFFF;
-    font-size: 25px;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Single header .container .row p {
+    color: #FFFFFF;
+    font-size: 18px;
     font-weight: 400;
     text-align: center;
   }
@@ -21728,18 +22638,726 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     padding: 1rem;
   }
   body[dir=rtl] .FNV-Single main article section .container .row h2 {
-    font-size: 35px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #223885;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 {
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header {
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 0;
+    color: #223885;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button::after {
+    margin-left: unset;
+    margin-right: auto;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23223885' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button.collapsed {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button.collapsed::after {
+    margin-left: unset;
+    margin-right: auto;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button:focus {
+    box-shadow: unset;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body p {
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: justify;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body p a {
+    color: #0074FF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 5px;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card {
+    height: 100%;
+    padding: 2rem;
+    border-radius: 0;
+    background-color: #FFFFFF;
+    border: 1px solid #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-header {
+    border-width: 0;
+    background-color: transparent;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-header h3 {
+    font-size: 25px;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-body {
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-body p {
+    font-size: 18px;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-footer {
+    padding: 0;
+    border-width: 0;
+    background-color: transparent;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-footer a {
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 1rem 4rem;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical {
+    flex-direction: column;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav {
+    width: 100%;
+    padding: 0;
+    margin-right: 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item {
+    width: 100%;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link {
+    width: 100%;
+    padding: 1rem;
+    color: #FFFFFF;
+    border-radius: 0;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link h3 {
+    font-size: 12px;
+    text-align: right;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link.active {
+    color: #223885;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content {
+    width: 100%;
+    padding: 1rem;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content iframe {
+    width: 100%;
+    margin: 2rem 0;
+    height: 200px;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p {
+    font-size: 14px;
+    margin-bottom: 0;
+    line-height: 32px;
+    color: #223885;
+    text-align: justify;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p a {
+    color: #0074FF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner {
+    top: 1rem;
+    display: flex;
+    position: sticky;
+    padding: 5rem 1rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner svg {
+    margin-bottom: 2rem;
+    stroke: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner span {
+    margin-bottom: 0;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover {
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover svg {
+    stroke: #FFFFFF;
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover span {
+    color: #FFFFFF;
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card {
+    top: 1rem;
+    padding: 1rem;
+    display: block;
+    border-width: 0;
+    border-radius: 0;
+    position: sticky;
+    background-color: #F0F3FB;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card span {
+    font-size: 18px;
+    line-height: 48px;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card ol {
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card ol li {
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card ol li a {
+    display: block;
+    padding: unset;
+    font-size: 14px;
+    font-weight: 500;
+    color: #223885;
+    background-color: unset;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #223885;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #223885;
+    margin: 2rem 0 1rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #000000;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 a {
+    color: #0074FF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 ul li {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #233B8C;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-5 iframe {
+    top: 0;
+    width: 100%;
+    height: 280px;
+    position: sticky;
+    border: 5px solid #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 {
+    margin-top: 2rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 {
+    display: flex;
+    justify-content: center;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 svg {
+    width: 50px;
+    height: 30px;
+    margin: 0 1rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 span {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .col-12 caption {
+    width: 100%;
+    padding: 1rem;
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    background-color: #223885;
+  }
+}
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+  body[dir=rtl] .FNV-Single header {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  body[dir=rtl] .FNV-Single header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(34, 56, 133, 0.3137254902);
+  }
+  body[dir=rtl] .FNV-Single header.FNV-Single-Header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-image: url("/images/pages/renovations/renovations.webp");
+  }
+  body[dir=rtl] .FNV-Single header .FNV-Canvas-Top {
+    top: -1px;
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+  }
+  body[dir=rtl] .FNV-Single header .FNV-Canvas-Top svg {
+    transform: rotateY(180deg);
+  }
+  body[dir=rtl] .FNV-Single header .container .row {
+    justify-content: center;
+  }
+  body[dir=rtl] .FNV-Single header .container .row h1 {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Single header .container .row h2 {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Single header .container .row h3 {
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Single header .container .row p {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Single header .container .row a {
+    width: auto;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-top: 1rem;
+    padding: 1rem 5rem;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Single header .container .row a:hover {
+    color: #223885;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Single header .FNV-Canvas-Bottom {
+    z-index: 2;
+    width: 100%;
+    bottom: -2px;
+    position: absolute;
+  }
+  body[dir=rtl] .FNV-Single header .FNV-Canvas-Bottom svg {
+    transform: rotateY(0deg) rotateX(180deg);
+  }
+  body[dir=rtl] .FNV-Single main article section.FNV-WhiteBg {
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Single main article section.FNV-PrimaryBg {
+    background-color: #F0F3FB;
+  }
+  body[dir=rtl] .FNV-Single main article section .container {
+    padding: 4rem 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row h2 {
+    font-size: 48px;
     font-weight: 500;
     color: #223885;
     text-align: center;
     margin-bottom: 4rem;
   }
-  body[dir=rtl] .FNV-Single main article section .container .row span {
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 {
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header {
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 0;
+    color: #223885;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button::after {
+    margin-left: unset;
+    margin-right: auto;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23223885' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button.collapsed {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button.collapsed::after {
+    margin-left: unset;
+    margin-right: auto;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button:focus {
+    box-shadow: unset;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body h3 {
     font-size: 20px;
-    line-height: 38px;
+    font-weight: 500;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body p {
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: justify;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body p a {
+    color: #0074FF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 5px;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card {
+    height: 100%;
+    padding: 2rem;
+    border-radius: 0;
+    background-color: #FFFFFF;
+    border: 1px solid #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-header {
+    border-width: 0;
+    background-color: transparent;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-header h3 {
+    font-size: 25px;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-body {
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-body p {
+    font-size: 18px;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-footer {
+    padding: 0;
+    border-width: 0;
+    background-color: transparent;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-footer a {
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 1rem 4rem;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav {
+    width: 25%;
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item {
+    width: 100%;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link {
+    width: 100%;
+    padding: 1rem;
+    color: #FFFFFF;
+    border-radius: 0;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link h3 {
+    font-size: 25px;
+    text-align: right;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link.active {
+    color: #223885;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content {
+    width: 70%;
+    padding: 2rem;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content iframe {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p {
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 32px;
+    color: #223885;
+    text-align: justify;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p a {
+    color: #0074FF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner {
+    top: 1rem;
+    display: flex;
+    position: sticky;
+    padding: 5rem 1rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner svg {
+    margin-bottom: 2rem;
+    stroke: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner span {
+    margin-bottom: 0;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover {
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover svg {
+    stroke: #FFFFFF;
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover span {
+    color: #FFFFFF;
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card {
+    top: 1rem;
+    padding: 1rem;
+    display: block;
+    border-width: 0;
+    border-radius: 0;
+    position: sticky;
+    background-color: #F0F3FB;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card span {
+    font-size: 18px;
+    line-height: 48px;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card ol {
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card ol li {
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card ol li a {
+    display: block;
+    padding: unset;
+    font-size: 14px;
+    font-weight: 500;
+    color: #223885;
+    background-color: unset;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #223885;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #223885;
+    margin: 2rem 0 1rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #000000;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 a {
+    color: #0074FF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 ul li {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #233B8C;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-5 iframe {
+    top: 0;
+    width: 100%;
+    height: 280px;
+    position: sticky;
+    border: 5px solid #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 {
+    margin-top: 2rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 {
+    display: flex;
+    justify-content: center;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 svg {
+    width: 50px;
+    height: 30px;
+    margin: 0 1rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 span {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .col-12 caption {
+    width: 100%;
+    padding: 1rem;
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    background-color: #223885;
+  }
+}
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  body[dir=rtl] .FNV-Single header {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  body[dir=rtl] .FNV-Single header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(34, 56, 133, 0.3137254902);
+  }
+  body[dir=rtl] .FNV-Single header.FNV-Single-Header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-image: url("/images/pages/renovations/renovations.webp");
+  }
+  body[dir=rtl] .FNV-Single header .FNV-Canvas-Top {
+    top: -1px;
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+  }
+  body[dir=rtl] .FNV-Single header .FNV-Canvas-Top svg {
+    transform: rotateY(180deg);
+  }
+  body[dir=rtl] .FNV-Single header .container .row {
+    justify-content: center;
+  }
+  body[dir=rtl] .FNV-Single header .container .row h1 {
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Single header .container .row h2 {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Single header .container .row h3 {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Single header .container .row p {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Single header .container .row a {
+    width: auto;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-top: 1rem;
+    padding: 1rem 5rem;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Single header .container .row a:hover {
+    color: #223885;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Single header .FNV-Canvas-Bottom {
+    z-index: 2;
+    width: 100%;
+    bottom: -2px;
+    position: absolute;
+  }
+  body[dir=rtl] .FNV-Single header .FNV-Canvas-Bottom svg {
+    transform: rotateY(0deg) rotateX(180deg);
+  }
+  body[dir=rtl] .FNV-Single main article section.FNV-WhiteBg {
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Single main article section.FNV-PrimaryBg {
+    background-color: #F0F3FB;
+  }
+  body[dir=rtl] .FNV-Single main article section .container {
+    padding: 4rem 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row h2 {
+    font-size: 30px;
+    font-weight: 500;
     color: #223885;
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
   body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 {
     margin-bottom: 1rem;
@@ -21789,7 +23407,7 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   }
   body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 iframe {
     width: 100%;
-    height: 450px;
+    height: 200px;
     border-radius: 5px;
   }
   body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card {
@@ -21804,14 +23422,14 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     background-color: transparent;
   }
   body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-header h3 {
-    font-size: 20px;
+    font-size: 25px;
     color: #223885;
   }
   body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-body {
     background-color: #FFFFFF;
   }
   body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-body p {
-    font-size: 16px;
+    font-size: 18px;
     color: #223885;
   }
   body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-footer {
@@ -21822,11 +23440,11 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-footer a {
     color: #FFFFFF;
     font-size: 20px;
-    padding: 0.5rem 2rem;
+    padding: 1rem 4rem;
     background-color: #223885;
   }
   body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav {
-    width: 50%;
+    width: 25%;
     padding: 0;
   }
   body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item {
@@ -21840,7 +23458,7 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     background-color: #223885;
   }
   body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link h3 {
-    font-size: 16px;
+    font-size: 18px;
     text-align: right;
   }
   body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link.active {
@@ -21876,461 +23494,123 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p a {
     color: #0074FF;
   }
-}
-@media (min-width: 575.98px) and (max-width: 767.98px) {
-  body[dir=rtl] .FNV-Single header {
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 600px;
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner {
+    top: 1rem;
     display: flex;
-    position: relative;
+    position: sticky;
+    padding: 5rem 1rem;
     align-items: center;
-  }
-  body[dir=rtl] .FNV-Single header.FNV-Single-Header {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-image: url("/images/pages/newcomers/newcomers.webp");
-  }
-  body[dir=rtl] .FNV-Single header .FNV-Canvas-Top {
-    top: -1px;
-    z-index: 2;
-    width: 100%;
-    position: absolute;
-  }
-  body[dir=rtl] .FNV-Single header .FNV-Canvas-Top svg {
-    transform: rotateY(180deg);
-  }
-  body[dir=rtl] .FNV-Single header .container .row {
+    flex-direction: column;
     justify-content: center;
+    background-color: #FFFFFF;
   }
-  body[dir=rtl] .FNV-Single header .container .row h1 {
-    color: #FFFFFF;
-    font-size: 64px;
-    font-weight: 700;
-    text-align: center;
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner svg {
+    margin-bottom: 2rem;
+    stroke: #223885;
   }
-  body[dir=rtl] .FNV-Single header .container .row h2 {
-    color: #FFFFFF;
-    font-size: 30px;
-    font-weight: 400;
-    text-align: center;
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner span {
+    margin-bottom: 0;
+    color: #223885;
   }
-  body[dir=rtl] .FNV-Single header .container .row h3 {
-    color: #FFFFFF;
-    font-size: 25px;
-    font-weight: 400;
-    text-align: center;
-  }
-  body[dir=rtl] .FNV-Single header .container .row a {
-    width: auto;
-    color: #FFFFFF;
-    font-size: 20px;
-    margin-top: 1rem;
-    padding: 1rem 5rem;
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover {
     background-color: #223885;
   }
-  body[dir=rtl] .FNV-Single header .container .row a:hover {
-    color: #223885;
-    background-color: #FFFFFF;
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover svg {
+    stroke: #FFFFFF;
+    margin-bottom: 2rem;
   }
-  body[dir=rtl] .FNV-Single header .FNV-Canvas-Bottom {
-    z-index: 2;
-    width: 100%;
-    bottom: -2px;
-    position: absolute;
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover span {
+    color: #FFFFFF;
+    margin-bottom: 0;
   }
-  body[dir=rtl] .FNV-Single header .FNV-Canvas-Bottom svg {
-    transform: rotateY(0deg) rotateX(180deg);
-  }
-  body[dir=rtl] .FNV-Single main article section.FNV-WhiteBg {
-    background-color: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Single main article section.FNV-PrimaryBg {
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card {
+    top: 1rem;
+    padding: 2rem 1rem;
+    display: block;
+    border-width: 0;
+    border-radius: 0;
+    position: sticky;
     background-color: #F0F3FB;
   }
-  body[dir=rtl] .FNV-Single main article section .container {
-    padding: 4rem 0;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row h2 {
-    font-size: 35px;
-    font-weight: 500;
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card span {
+    font-size: 20px;
+    line-height: 48px;
     color: #223885;
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row span {
-    font-size: 22px;
-    line-height: 40px;
-    color: #223885;
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 {
     margin-bottom: 1rem;
   }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header {
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card ol {
+    padding: 1rem;
     margin-bottom: 0;
   }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button {
-    color: #FFFFFF;
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 0;
-    color: #223885;
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #223885;
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card ol li {
+    margin-bottom: 0.5rem;
   }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button::after {
-    margin-left: unset;
-    margin-right: auto;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23223885' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button.collapsed {
-    color: #FFFFFF;
-    background-color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button.collapsed::after {
-    margin-left: unset;
-    margin-right: auto;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button:focus {
-    box-shadow: unset;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body h3 {
-    font-size: 18px;
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card ol li a {
+    display: block;
+    padding: unset;
+    font-size: 10px;
     font-weight: 500;
     color: #223885;
+    background-color: unset;
   }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body p {
-    font-size: 14px;
-    margin-bottom: 0;
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 h3 {
+    font-size: 25px;
+    font-weight: 600;
     color: #223885;
-    text-align: justify;
+    margin-bottom: 0.5rem;
   }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body p a {
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #223885;
+    margin: 2rem 0 1rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #000000;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 a {
     color: #0074FF;
   }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 iframe {
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 ul li {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #233B8C;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-5 iframe {
+    top: 0;
     width: 100%;
-    height: 450px;
-    border-radius: 5px;
+    height: 160px;
+    position: sticky;
+    border: 5px solid #223885;
   }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card {
-    height: 100%;
-    padding: 2rem;
-    border-radius: 0;
-    background-color: #FFFFFF;
-    border: 1px solid #223885;
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 {
+    margin-top: 2rem;
   }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-header {
-    border-width: 0;
-    background-color: transparent;
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 {
+    display: flex;
+    justify-content: center;
   }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-header h3 {
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 svg {
+    width: 50px;
+    height: 30px;
+    margin: 0 1rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 span {
     font-size: 20px;
-    color: #223885;
+    font-weight: 500;
+    margin-bottom: 0;
   }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-body {
-    background-color: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-body p {
-    font-size: 16px;
-    color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-footer {
-    padding: 0;
-    border-width: 0;
-    background-color: transparent;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-footer a {
-    color: #FFFFFF;
-    font-size: 20px;
-    padding: 0.5rem 2rem;
-    background-color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav {
-    width: 40%;
-    padding: 0;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item {
-    width: 100%;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link {
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .col-12 caption {
     width: 100%;
     padding: 1rem;
     color: #FFFFFF;
-    border-radius: 0;
-    background-color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link h3 {
-    font-size: 20px;
-    text-align: right;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link.active {
-    color: #223885;
-    background-color: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content {
-    width: 70%;
-    padding: 2rem;
-    background-color: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content h3 {
-    font-size: 20px;
-    font-weight: 500;
-    color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content h4 {
-    font-size: 18px;
-    font-weight: 500;
-    color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content iframe {
-    width: 100%;
-    margin: 2rem 0;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p {
-    font-size: 16px;
-    margin-bottom: 0;
-    line-height: 32px;
-    color: #223885;
-    text-align: justify;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p a {
-    color: #0074FF;
-  }
-}
-@media (min-width: 767.98px) and (max-width: 991.98px) {
-  body[dir=rtl] .FNV-Single header {
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 600px;
-    display: flex;
-    position: relative;
-    align-items: center;
-  }
-  body[dir=rtl] .FNV-Single header.FNV-Single-Header {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-image: url("/images/pages/newcomers/newcomers.webp");
-  }
-  body[dir=rtl] .FNV-Single header .FNV-Canvas-Top {
-    top: -1px;
-    z-index: 2;
-    width: 100%;
-    position: absolute;
-  }
-  body[dir=rtl] .FNV-Single header .FNV-Canvas-Top svg {
-    transform: rotateY(180deg);
-  }
-  body[dir=rtl] .FNV-Single header .container .row {
-    justify-content: center;
-  }
-  body[dir=rtl] .FNV-Single header .container .row h1 {
-    color: #FFFFFF;
-    font-size: 64px;
-    font-weight: 700;
+    display: block;
     text-align: center;
-  }
-  body[dir=rtl] .FNV-Single header .container .row h2 {
-    color: #FFFFFF;
-    font-size: 30px;
-    font-weight: 400;
-    text-align: center;
-  }
-  body[dir=rtl] .FNV-Single header .container .row h3 {
-    color: #FFFFFF;
-    font-size: 25px;
-    font-weight: 400;
-    text-align: center;
-  }
-  body[dir=rtl] .FNV-Single header .container .row a {
-    width: auto;
-    color: #FFFFFF;
-    font-size: 20px;
-    margin-top: 1rem;
-    padding: 1rem 5rem;
     background-color: #223885;
-  }
-  body[dir=rtl] .FNV-Single header .container .row a:hover {
-    color: #223885;
-    background-color: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Single header .FNV-Canvas-Bottom {
-    z-index: 2;
-    width: 100%;
-    bottom: -2px;
-    position: absolute;
-  }
-  body[dir=rtl] .FNV-Single header .FNV-Canvas-Bottom svg {
-    transform: rotateY(0deg) rotateX(180deg);
-  }
-  body[dir=rtl] .FNV-Single main article section.FNV-WhiteBg {
-    background-color: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Single main article section.FNV-PrimaryBg {
-    background-color: #F0F3FB;
-  }
-  body[dir=rtl] .FNV-Single main article section .container {
-    padding: 4rem 0;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row h2 {
-    font-size: 35px;
-    font-weight: 500;
-    color: #223885;
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row span {
-    font-size: 22px;
-    line-height: 40px;
-    color: #223885;
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 {
-    margin-bottom: 1rem;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header {
-    margin-bottom: 0;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button {
-    color: #FFFFFF;
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 0;
-    color: #223885;
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button::after {
-    margin-left: unset;
-    margin-right: auto;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23223885' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button.collapsed {
-    color: #FFFFFF;
-    background-color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button.collapsed::after {
-    margin-left: unset;
-    margin-right: auto;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button:focus {
-    box-shadow: unset;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body h3 {
-    font-size: 18px;
-    font-weight: 500;
-    color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body p {
-    font-size: 14px;
-    margin-bottom: 0;
-    color: #223885;
-    text-align: justify;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body p a {
-    color: #0074FF;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 iframe {
-    width: 100%;
-    height: 450px;
-    border-radius: 5px;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card {
-    height: 100%;
-    padding: 2rem;
-    border-radius: 0;
-    background-color: #FFFFFF;
-    border: 1px solid #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-header {
-    border-width: 0;
-    background-color: transparent;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-header h3 {
-    font-size: 20px;
-    color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-body {
-    background-color: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-body p {
-    font-size: 16px;
-    color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-footer {
-    padding: 0;
-    border-width: 0;
-    background-color: transparent;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-footer a {
-    color: #FFFFFF;
-    font-size: 20px;
-    padding: 0.5rem 2rem;
-    background-color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav {
-    width: 40%;
-    padding: 0;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item {
-    width: 100%;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link {
-    width: 100%;
-    padding: 1rem;
-    color: #FFFFFF;
-    border-radius: 0;
-    background-color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link h3 {
-    font-size: 20px;
-    text-align: right;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link.active {
-    color: #223885;
-    background-color: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content {
-    width: 70%;
-    padding: 2rem;
-    background-color: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content h3 {
-    font-size: 20px;
-    font-weight: 500;
-    color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content h4 {
-    font-size: 18px;
-    font-weight: 500;
-    color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content iframe {
-    width: 100%;
-    margin: 2rem 0;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p {
-    font-size: 16px;
-    margin-bottom: 0;
-    line-height: 32px;
-    color: #223885;
-    text-align: justify;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p a {
-    color: #0074FF;
   }
 }
 @media (min-width: 991.98px) {
@@ -22339,17 +23619,27 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     left: 0;
     z-index: 1;
     width: 100%;
-    height: 600px;
+    height: 500px;
     display: flex;
     position: relative;
     align-items: center;
+  }
+  body[dir=rtl] .FNV-Single header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(34, 56, 133, 0.3137254902);
   }
   body[dir=rtl] .FNV-Single header.FNV-Single-Header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    background-image: url("/images/pages/newcomers/newcomers.webp");
+    background-image: url("/images/pages/renovations/renovations.webp");
   }
   body[dir=rtl] .FNV-Single header .FNV-Canvas-Top {
     top: -1px;
@@ -22365,7 +23655,7 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   }
   body[dir=rtl] .FNV-Single header .container .row h1 {
     color: #FFFFFF;
-    font-size: 64px;
+    font-size: 50px;
     font-weight: 700;
     text-align: center;
   }
@@ -22378,6 +23668,12 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   body[dir=rtl] .FNV-Single header .container .row h3 {
     color: #FFFFFF;
     font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Single header .container .row p {
+    color: #FFFFFF;
+    font-size: 18px;
     font-weight: 400;
     text-align: center;
   }
@@ -22412,18 +23708,11 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     padding: 4rem 0;
   }
   body[dir=rtl] .FNV-Single main article section .container .row h2 {
-    font-size: 48px;
+    font-size: 35px;
     font-weight: 500;
     color: #223885;
     text-align: center;
-    margin-bottom: 4rem;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row span {
-    font-size: 28px;
-    line-height: 48px;
-    color: #223885;
-    text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
   body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 {
     margin-bottom: 1rem;
@@ -22433,7 +23722,7 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   }
   body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button {
     color: #FFFFFF;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     border-radius: 0;
     color: #223885;
@@ -22458,12 +23747,12 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     box-shadow: unset;
   }
   body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body h3 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     color: #223885;
   }
   body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body p {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 0;
     color: #223885;
     text-align: justify;
@@ -22524,7 +23813,7 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     background-color: #223885;
   }
   body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link h3 {
-    font-size: 25px;
+    font-size: 20px;
     text-align: right;
   }
   body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link.active {
@@ -22537,12 +23826,12 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     background-color: #FFFFFF;
   }
   body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content h3 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     color: #223885;
   }
   body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content h4 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     color: #223885;
   }
@@ -22551,14 +23840,132 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     margin: 2rem 0;
   }
   body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 0;
-    line-height: 32px;
+    line-height: 28px;
     color: #223885;
     text-align: justify;
   }
   body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p a {
     color: #0074FF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner {
+    top: 1rem;
+    display: flex;
+    position: sticky;
+    padding: 5rem 1rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner svg {
+    margin-bottom: 2rem;
+    stroke: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner span {
+    margin-bottom: 0;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover {
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover svg {
+    stroke: #FFFFFF;
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover span {
+    color: #FFFFFF;
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card {
+    top: 1rem;
+    padding: 2rem 1rem;
+    display: block;
+    border-width: 0;
+    border-radius: 0;
+    position: sticky;
+    background-color: #F0F3FB;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card span {
+    font-size: 20px;
+    line-height: 48px;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card ol {
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card ol li {
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card ol li a {
+    display: block;
+    padding: unset;
+    font-size: 10px;
+    font-weight: 500;
+    color: #223885;
+    background-color: unset;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #223885;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #223885;
+    margin: 2rem 0 1rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #000000;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 a {
+    color: #0074FF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 ul li {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #233B8C;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-5 iframe {
+    top: 0;
+    width: 100%;
+    height: 160px;
+    position: sticky;
+    border: 5px solid #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 {
+    margin-top: 2rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 {
+    display: flex;
+    justify-content: center;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 svg {
+    width: 50px;
+    height: 30px;
+    margin: 0 1rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 span {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .col-12 caption {
+    width: 100%;
+    padding: 1rem;
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    background-color: #223885;
   }
 }
 @media (min-width: 1199.98px) {
@@ -22572,468 +23979,22 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     position: relative;
     align-items: center;
   }
-  body[dir=rtl] .FNV-Single header.FNV-Single-Header {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-image: url("/images/pages/newcomers/newcomers.webp");
-  }
-  body[dir=rtl] .FNV-Single header .FNV-Canvas-Top {
-    top: -1px;
-    z-index: 2;
-    width: 100%;
+  body[dir=rtl] .FNV-Single header::after {
+    content: "";
     position: absolute;
-  }
-  body[dir=rtl] .FNV-Single header .FNV-Canvas-Top svg {
-    transform: rotateY(180deg);
-  }
-  body[dir=rtl] .FNV-Single header .container .row {
-    justify-content: center;
-  }
-  body[dir=rtl] .FNV-Single header .container .row h1 {
-    color: #FFFFFF;
-    font-size: 64px;
-    font-weight: 700;
-    text-align: center;
-  }
-  body[dir=rtl] .FNV-Single header .container .row h2 {
-    color: #FFFFFF;
-    font-size: 30px;
-    font-weight: 400;
-    text-align: center;
-  }
-  body[dir=rtl] .FNV-Single header .container .row h3 {
-    color: #FFFFFF;
-    font-size: 25px;
-    font-weight: 400;
-    text-align: center;
-  }
-  body[dir=rtl] .FNV-Single header .container .row a {
-    width: auto;
-    color: #FFFFFF;
-    font-size: 20px;
-    margin-top: 1rem;
-    padding: 1rem 5rem;
-    background-color: #223885;
-  }
-  body[dir=rtl] .FNV-Single header .container .row a:hover {
-    color: #223885;
-    background-color: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Single header .FNV-Canvas-Bottom {
-    z-index: 2;
-    width: 100%;
-    bottom: -2px;
-    position: absolute;
-  }
-  body[dir=rtl] .FNV-Single header .FNV-Canvas-Bottom svg {
-    transform: rotateY(0deg) rotateX(180deg);
-  }
-  body[dir=rtl] .FNV-Single main article section.FNV-WhiteBg {
-    background-color: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Single main article section.FNV-PrimaryBg {
-    background-color: #F0F3FB;
-  }
-  body[dir=rtl] .FNV-Single main article section .container {
-    padding: 4rem 0;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row h2 {
-    font-size: 48px;
-    font-weight: 500;
-    color: #223885;
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row span {
-    font-size: 28px;
-    line-height: 48px;
-    color: #223885;
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 {
-    margin-bottom: 1rem;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header {
-    margin-bottom: 0;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button {
-    color: #FFFFFF;
-    font-size: 25px;
-    font-weight: 600;
-    border-radius: 0;
-    color: #223885;
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button::after {
-    margin-left: unset;
-    margin-right: auto;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23223885' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button.collapsed {
-    color: #FFFFFF;
-    background-color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button.collapsed::after {
-    margin-left: unset;
-    margin-right: auto;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button:focus {
-    box-shadow: unset;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body h3 {
-    font-size: 20px;
-    font-weight: 500;
-    color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body p {
-    font-size: 16px;
-    margin-bottom: 0;
-    color: #223885;
-    text-align: justify;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body p a {
-    color: #0074FF;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 iframe {
-    width: 100%;
-    height: 450px;
-    border-radius: 5px;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card {
-    height: 100%;
-    padding: 2rem;
-    border-radius: 0;
-    background-color: #FFFFFF;
-    border: 1px solid #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-header {
-    border-width: 0;
-    background-color: transparent;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-header h3 {
-    font-size: 25px;
-    color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-body {
-    background-color: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-body p {
-    font-size: 18px;
-    color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-footer {
-    padding: 0;
-    border-width: 0;
-    background-color: transparent;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-footer a {
-    color: #FFFFFF;
-    font-size: 20px;
-    padding: 1rem 4rem;
-    background-color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav {
-    width: 25%;
-    padding: 0;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item {
-    width: 100%;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link {
-    width: 100%;
-    padding: 1rem;
-    color: #FFFFFF;
-    border-radius: 0;
-    background-color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link h3 {
-    font-size: 25px;
-    text-align: right;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link.active {
-    color: #223885;
-    background-color: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content {
-    width: 70%;
-    padding: 2rem;
-    background-color: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content h3 {
-    font-size: 20px;
-    font-weight: 500;
-    color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content h4 {
-    font-size: 18px;
-    font-weight: 500;
-    color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content iframe {
-    width: 100%;
-    margin: 2rem 0;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p {
-    font-size: 16px;
-    margin-bottom: 0;
-    line-height: 32px;
-    color: #223885;
-    text-align: justify;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p a {
-    color: #0074FF;
-  }
-}
-@media (min-width: 1400px) {
-  body[dir=rtl] .FNV-Single header {
     top: 0;
     left: 0;
-    z-index: 1;
     width: 100%;
-    height: 600px;
-    display: flex;
-    position: relative;
-    align-items: center;
-  }
-  body[dir=rtl] .FNV-Single header.FNV-Single-Header {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-image: url("/images/pages/newcomers/newcomers.webp");
-  }
-  body[dir=rtl] .FNV-Single header .FNV-Canvas-Top {
-    top: -1px;
-    z-index: 2;
-    width: 100%;
-    position: absolute;
-  }
-  body[dir=rtl] .FNV-Single header .FNV-Canvas-Top svg {
-    transform: rotateY(180deg);
-  }
-  body[dir=rtl] .FNV-Single header .container .row {
-    justify-content: center;
-  }
-  body[dir=rtl] .FNV-Single header .container .row h1 {
-    color: #FFFFFF;
-    font-size: 64px;
-    font-weight: 700;
-    text-align: center;
-  }
-  body[dir=rtl] .FNV-Single header .container .row h2 {
-    color: #FFFFFF;
-    font-size: 30px;
-    font-weight: 400;
-    text-align: center;
-  }
-  body[dir=rtl] .FNV-Single header .container .row h3 {
-    color: #FFFFFF;
-    font-size: 25px;
-    font-weight: 400;
-    text-align: center;
-  }
-  body[dir=rtl] .FNV-Single header .container .row a {
-    width: auto;
-    color: #FFFFFF;
-    font-size: 20px;
-    margin-top: 1rem;
-    padding: 1rem 5rem;
-    background-color: #223885;
-  }
-  body[dir=rtl] .FNV-Single header .container .row a:hover {
-    color: #223885;
-    background-color: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Single header .FNV-Canvas-Bottom {
-    z-index: 2;
-    width: 100%;
-    bottom: -2px;
-    position: absolute;
-  }
-  body[dir=rtl] .FNV-Single header .FNV-Canvas-Bottom svg {
-    transform: rotateY(0deg) rotateX(180deg);
-  }
-  body[dir=rtl] .FNV-Single main article section.FNV-WhiteBg {
-    background-color: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Single main article section.FNV-PrimaryBg {
-    background-color: #F0F3FB;
-  }
-  body[dir=rtl] .FNV-Single main article section .container {
-    padding: 4rem 0;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row h2 {
-    font-size: 48px;
-    font-weight: 500;
-    color: #223885;
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row span {
-    font-size: 28px;
-    line-height: 48px;
-    color: #223885;
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 {
-    margin-bottom: 1rem;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header {
-    margin-bottom: 0;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button {
-    color: #FFFFFF;
-    font-size: 25px;
-    font-weight: 600;
-    border-radius: 0;
-    color: #223885;
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button::after {
-    margin-left: unset;
-    margin-right: auto;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23223885' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button.collapsed {
-    color: #FFFFFF;
-    background-color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button.collapsed::after {
-    margin-left: unset;
-    margin-right: auto;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button:focus {
-    box-shadow: unset;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body h3 {
-    font-size: 20px;
-    font-weight: 500;
-    color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body p {
-    font-size: 16px;
-    margin-bottom: 0;
-    color: #223885;
-    text-align: justify;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body p a {
-    color: #0074FF;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 iframe {
-    width: 100%;
-    height: 450px;
-    border-radius: 5px;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card {
     height: 100%;
-    padding: 2rem;
-    border-radius: 0;
-    background-color: #FFFFFF;
-    border: 1px solid #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-header {
-    border-width: 0;
-    background-color: transparent;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-header h3 {
-    font-size: 25px;
-    color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-body {
-    background-color: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-body p {
-    font-size: 18px;
-    color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-footer {
-    padding: 0;
-    border-width: 0;
-    background-color: transparent;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-footer a {
-    color: #FFFFFF;
-    font-size: 20px;
-    padding: 1rem 4rem;
-    background-color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav {
-    width: 25%;
-    padding: 0;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item {
-    width: 100%;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link {
-    width: 100%;
-    padding: 1rem;
-    color: #FFFFFF;
-    border-radius: 0;
-    background-color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link h3 {
-    font-size: 25px;
-    text-align: right;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link.active {
-    color: #223885;
-    background-color: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content {
-    width: 70%;
-    padding: 2rem;
-    background-color: #FFFFFF;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content h3 {
-    font-size: 20px;
-    font-weight: 500;
-    color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content h4 {
-    font-size: 18px;
-    font-weight: 500;
-    color: #223885;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content iframe {
-    width: 100%;
-    margin: 2rem 0;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p {
-    font-size: 16px;
-    margin-bottom: 0;
-    line-height: 32px;
-    color: #223885;
-    text-align: justify;
-  }
-  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p a {
-    color: #0074FF;
-  }
-}
-@media (min-width: 1920px) {
-  body[dir=rtl] .FNV-Single header {
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 600px;
-    display: flex;
-    position: relative;
-    align-items: center;
+    z-index: -1;
+    background-color: rgba(34, 56, 133, 0.3137254902);
   }
   body[dir=rtl] .FNV-Single header.FNV-Single-Header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    background-image: url("/images/pages/newcomers/newcomers.webp");
+    background-image: url("/images/pages/renovations/renovations.webp");
   }
   body[dir=rtl] .FNV-Single header .FNV-Canvas-Top {
     top: -1px;
@@ -23108,9 +24069,357 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     text-align: center;
     margin-bottom: 4rem;
   }
-  body[dir=rtl] .FNV-Single main article section .container .row span {
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 {
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header {
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 0;
+    color: #223885;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button::after {
+    margin-left: unset;
+    margin-right: auto;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23223885' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button.collapsed {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button.collapsed::after {
+    margin-left: unset;
+    margin-right: auto;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button:focus {
+    box-shadow: unset;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body p {
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: justify;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body p a {
+    color: #0074FF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 5px;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card {
+    height: 100%;
+    padding: 2rem;
+    border-radius: 0;
+    background-color: #FFFFFF;
+    border: 1px solid #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-header {
+    border-width: 0;
+    background-color: transparent;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-header h3 {
+    font-size: 25px;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-body {
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-body p {
+    font-size: 18px;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-footer {
+    padding: 0;
+    border-width: 0;
+    background-color: transparent;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-footer a {
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 1rem 4rem;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav {
+    width: 25%;
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item {
+    width: 100%;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link {
+    width: 100%;
+    padding: 1rem;
+    color: #FFFFFF;
+    border-radius: 0;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link h3 {
+    font-size: 25px;
+    text-align: right;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link.active {
+    color: #223885;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content {
+    width: 70%;
+    padding: 2rem;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content iframe {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p {
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 32px;
+    color: #223885;
+    text-align: justify;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p a {
+    color: #0074FF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner {
+    top: 1rem;
+    display: flex;
+    position: sticky;
+    padding: 8rem 1rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner svg {
+    margin-bottom: 2rem;
+    stroke: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner span {
+    margin-bottom: 0;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover {
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover svg {
+    stroke: #FFFFFF;
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover span {
+    color: #FFFFFF;
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card {
+    top: 1rem;
+    padding: 2rem 1rem;
+    display: block;
+    border-width: 0;
+    border-radius: 0;
+    position: sticky;
+    background-color: #F0F3FB;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card span {
     font-size: 28px;
     line-height: 48px;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card ol {
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card ol li {
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card ol li a {
+    display: block;
+    padding: unset;
+    font-size: 14px;
+    font-weight: 500;
+    color: #223885;
+    background-color: unset;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 h4 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #223885;
+    margin: 4rem 0 2rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #000000;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 a {
+    color: #0074FF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 ul li {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #233B8C;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-5 iframe {
+    top: 0;
+    width: 100%;
+    height: 280px;
+    position: sticky;
+    border: 5px solid #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 {
+    margin-top: 2rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 {
+    display: flex;
+    justify-content: center;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 svg {
+    width: 80px;
+    height: 60px;
+    margin: 0 1rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 span {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .col-12 caption {
+    width: 100%;
+    padding: 1rem;
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    background-color: #223885;
+  }
+}
+@media (min-width: 1400px) {
+  body[dir=rtl] .FNV-Single header {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  body[dir=rtl] .FNV-Single header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(34, 56, 133, 0.3137254902);
+  }
+  body[dir=rtl] .FNV-Single header.FNV-Single-Header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-image: url("/images/pages/renovations/renovations.webp");
+  }
+  body[dir=rtl] .FNV-Single header .FNV-Canvas-Top {
+    top: -1px;
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+  }
+  body[dir=rtl] .FNV-Single header .FNV-Canvas-Top svg {
+    transform: rotateY(180deg);
+  }
+  body[dir=rtl] .FNV-Single header .container .row {
+    justify-content: center;
+  }
+  body[dir=rtl] .FNV-Single header .container .row h1 {
+    color: #FFFFFF;
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Single header .container .row h2 {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Single header .container .row h3 {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Single header .container .row p {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Single header .container .row a {
+    width: auto;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-top: 1rem;
+    padding: 1rem 5rem;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Single header .container .row a:hover {
+    color: #223885;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Single header .FNV-Canvas-Bottom {
+    z-index: 2;
+    width: 100%;
+    bottom: -2px;
+    position: absolute;
+  }
+  body[dir=rtl] .FNV-Single header .FNV-Canvas-Bottom svg {
+    transform: rotateY(0deg) rotateX(180deg);
+  }
+  body[dir=rtl] .FNV-Single main article section.FNV-WhiteBg {
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Single main article section.FNV-PrimaryBg {
+    background-color: #F0F3FB;
+  }
+  body[dir=rtl] .FNV-Single main article section .container {
+    padding: 4rem 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row h2 {
+    font-size: 48px;
+    font-weight: 500;
     color: #223885;
     text-align: center;
     margin-bottom: 4rem;
@@ -23250,20 +24559,64 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p a {
     color: #0074FF;
   }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 span {
-    font-size: 26px;
-    font-weight: 600;
-    margin-bottom: 1rem;
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner {
+    top: 1rem;
+    display: flex;
+    position: sticky;
+    padding: 8rem 1rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner svg {
+    margin-bottom: 2rem;
+    stroke: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner span {
+    margin-bottom: 0;
     color: #223885;
-    display: inline-block;
   }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 ol li {
-    margin-bottom: 0.5rem;
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover {
+    background-color: #223885;
   }
-  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 ol li a {
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover svg {
+    stroke: #FFFFFF;
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover span {
+    color: #FFFFFF;
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card {
+    top: 1rem;
+    padding: 2rem 1rem;
+    display: block;
+    border-width: 0;
+    border-radius: 0;
+    position: sticky;
+    background-color: #F0F3FB;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card span {
+    font-size: 28px;
+    line-height: 48px;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card ol {
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card ol li {
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card ol li a {
+    display: block;
+    padding: unset;
     font-size: 14px;
     font-weight: 500;
-    color: #0074FF;
+    color: #223885;
+    background-color: unset;
   }
   body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 h3 {
     font-size: 30px;
@@ -23275,7 +24628,7 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     font-size: 25px;
     font-weight: 600;
     color: #223885;
-    margin-bottom: 0.5rem;
+    margin: 4rem 0 2rem;
   }
   body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 p {
     font-size: 16px;
@@ -23295,8 +24648,12 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-5 iframe {
     top: 0;
     width: 100%;
-    height: 300px;
+    height: 280px;
     position: sticky;
+    border: 5px solid #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 {
+    margin-top: 2rem;
   }
   body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 {
     display: flex;
@@ -23310,7 +24667,529 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 span {
     font-size: 22px;
     font-weight: 500;
+    margin-bottom: 0;
   }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .col-12 caption {
+    width: 100%;
+    padding: 1rem;
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    background-color: #223885;
+  }
+}
+@media (min-width: 1920px) {
+  body[dir=rtl] .FNV-Single header {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  body[dir=rtl] .FNV-Single header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(34, 56, 133, 0.3137254902);
+  }
+  body[dir=rtl] .FNV-Single header.FNV-Single-Header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-image: url("/images/pages/renovations/renovations.webp");
+  }
+  body[dir=rtl] .FNV-Single header .FNV-Canvas-Top {
+    top: -1px;
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+  }
+  body[dir=rtl] .FNV-Single header .FNV-Canvas-Top svg {
+    transform: rotateY(180deg);
+  }
+  body[dir=rtl] .FNV-Single header .container .row {
+    justify-content: center;
+  }
+  body[dir=rtl] .FNV-Single header .container .row h1 {
+    color: #FFFFFF;
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Single header .container .row h2 {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Single header .container .row h3 {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Single header .container .row p {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+  }
+  body[dir=rtl] .FNV-Single header .container .row a {
+    width: auto;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-top: 1rem;
+    padding: 1rem 5rem;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Single header .container .row a:hover {
+    color: #223885;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Single header .FNV-Canvas-Bottom {
+    z-index: 2;
+    width: 100%;
+    bottom: -2px;
+    position: absolute;
+  }
+  body[dir=rtl] .FNV-Single header .FNV-Canvas-Bottom svg {
+    transform: rotateY(0deg) rotateX(180deg);
+  }
+  body[dir=rtl] .FNV-Single main article section.FNV-WhiteBg {
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Single main article section.FNV-PrimaryBg {
+    background-color: #F0F3FB;
+  }
+  body[dir=rtl] .FNV-Single main article section .container {
+    padding: 4rem 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row h2 {
+    font-size: 48px;
+    font-weight: 500;
+    color: #223885;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 {
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header {
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 0;
+    color: #223885;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button::after {
+    margin-left: unset;
+    margin-right: auto;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23223885' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button.collapsed {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button.collapsed::after {
+    margin-left: unset;
+    margin-right: auto;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-header .accordion-button:focus {
+    box-shadow: unset;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body p {
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #223885;
+    text-align: justify;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body p a {
+    color: #0074FF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 5px;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card {
+    height: 100%;
+    padding: 2rem;
+    border-radius: 0;
+    background-color: #FFFFFF;
+    border: 1px solid #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-header {
+    border-width: 0;
+    background-color: transparent;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-header h3 {
+    font-size: 25px;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-body {
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-body p {
+    font-size: 18px;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-footer {
+    padding: 0;
+    border-width: 0;
+    background-color: transparent;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-6 .card .card-footer a {
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 1rem 4rem;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav {
+    width: 25%;
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item {
+    width: 100%;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link {
+    width: 100%;
+    padding: 1rem;
+    color: #FFFFFF;
+    border-radius: 0;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link h3 {
+    font-size: 25px;
+    text-align: right;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .nav .nav-item .nav-link.active {
+    color: #223885;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content {
+    width: 70%;
+    padding: 2rem;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content iframe {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p {
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 32px;
+    color: #223885;
+    text-align: justify;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .FNV-Tabs-Vertical .tab-content p a {
+    color: #0074FF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner {
+    top: 1rem;
+    display: flex;
+    position: sticky;
+    padding: 8rem 1rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner svg {
+    margin-bottom: 2rem;
+    stroke: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner span {
+    margin-bottom: 0;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover {
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover svg {
+    stroke: #FFFFFF;
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 a.FNV-Membership-Banner:hover span {
+    color: #FFFFFF;
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card {
+    top: 1rem;
+    padding: 2rem 1rem;
+    display: block;
+    border-width: 0;
+    border-radius: 0;
+    position: sticky;
+    background-color: #F0F3FB;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card span {
+    font-size: 28px;
+    line-height: 48px;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card ol {
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card ol li {
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-3 .card ol li a {
+    display: block;
+    padding: unset;
+    font-size: 14px;
+    font-weight: 500;
+    color: #223885;
+    background-color: unset;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 h4 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #223885;
+    margin: 4rem 0 2rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #000000;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 a {
+    color: #0074FF;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 ul li {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #233B8C;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-5 iframe {
+    top: 0;
+    width: 100%;
+    height: 280px;
+    position: sticky;
+    border: 5px solid #223885;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 {
+    margin-top: 2rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 {
+    display: flex;
+    justify-content: center;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 svg {
+    width: 80px;
+    height: 60px;
+    margin: 0 1rem;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .row .col-md-6 h5 span {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-Single main article section .container .row .col-md-9 .col-12 caption {
+    width: 100%;
+    padding: 1rem;
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    background-color: #223885;
+  }
+}
+
+body[dir=ltr] .FNV-Product {
+  padding: 1rem;
+  direction: ltr;
+  background-color: #FFFFFF;
+  border: 1px solid #223885;
+}
+body[dir=ltr] .FNV-Product.FNV-Product-BG-White {
+  background-color: #FFFFFF;
+}
+body[dir=ltr] .FNV-Product.FNV-Product-BG-Primary {
+  background-color: #F0F3FB;
+}
+body[dir=ltr] .FNV-Product.FNV-Product-Large h6 {
+  margin: 1rem 0;
+  font-size: 22px;
+  text-align: left;
+  font-weight: 400;
+  min-height: 50px;
+  color: #223885;
+  font-family: "Fira Sans", sans-serif;
+}
+body[dir=ltr] .FNV-Product.FNV-Product-Large .row .col-6 {
+  margin-bottom: 0;
+}
+body[dir=ltr] .FNV-Product.FNV-Product-Large .row .col-6 .FNV-Product-Price {
+  margin-bottom: 2rem;
+}
+body[dir=ltr] .FNV-Product.FNV-Product-Large .row .col-6 .FNV-Product-Price svg {
+  margin-bottom: 0;
+}
+body[dir=ltr] .FNV-Product.FNV-Product-Large .row .col-6 .FNV-Product-Price span {
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 0.5rem;
+  font-family: "Fira Sans", sans-serif;
+}
+body[dir=ltr] .FNV-Product.FNV-Product-Large .row .col-6 .FNV-Product-Duration {
+  margin-bottom: 2rem;
+}
+body[dir=ltr] .FNV-Product.FNV-Product-Large .row .col-6 .FNV-Product-Duration svg {
+  margin-bottom: 0;
+}
+body[dir=ltr] .FNV-Product.FNV-Product-Large .row .col-6 .FNV-Product-Duration span {
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 0.5rem;
+  font-family: "Fira Sans", sans-serif;
+}
+body[dir=ltr] .FNV-Product.FNV-Product-Large .row .col-6 .FNV-Product-Details {
+  width: 100%;
+  padding: 1rem;
+  font-size: 18px;
+  font-weight: 400;
+  color: #223885;
+  text-align: center;
+  display: inline-block;
+}
+body[dir=ltr] .FNV-Product.FNV-Product-Large .row .col-6 .FNV-Product-Details:hover {
+  color: #223885;
+  background-color: #F0F3FB;
+}
+body[dir=ltr] .FNV-Product.FNV-Product-Large .row .col-6 .FNV-Product-AddToCart {
+  width: 100%;
+  color: #FFFFFF;
+  padding: 1rem;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  background-color: #223885;
+}
+body[dir=ltr] .FNV-Product.FNV-Product-Large .row .col-6 .FNV-Product-AddToCart:hover {
+  color: #FFFFFF;
+  background-color: #0074FF;
+}
+body[dir=ltr] .FNV-Product.FNV-Product-Large .row .col-6:nth-child(2) {
+  text-align: right;
+}
+
+body[dir=rtl] .FNV-Product {
+  padding: 1rem;
+  direction: ltr;
+  background-color: #FFFFFF;
+  border: 1px solid #223885;
+}
+body[dir=rtl] .FNV-Product.FNV-Product-BG-White {
+  background-color: #FFFFFF;
+}
+body[dir=rtl] .FNV-Product.FNV-Product-BG-Primary {
+  background-color: #F0F3FB;
+}
+body[dir=rtl] .FNV-Product.FNV-Product-Large h6 {
+  margin: 1rem 0;
+  font-size: 22px;
+  text-align: left;
+  font-weight: 400;
+  min-height: 50px;
+  color: #223885;
+  font-family: "Fira Sans", sans-serif;
+}
+body[dir=rtl] .FNV-Product.FNV-Product-Large .row .col-6 {
+  margin-bottom: 0;
+}
+body[dir=rtl] .FNV-Product.FNV-Product-Large .row .col-6 .FNV-Product-Price {
+  margin-bottom: 2rem;
+}
+body[dir=rtl] .FNV-Product.FNV-Product-Large .row .col-6 .FNV-Product-Price svg {
+  margin-bottom: 0;
+}
+body[dir=rtl] .FNV-Product.FNV-Product-Large .row .col-6 .FNV-Product-Price span {
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 0.5rem;
+  font-family: "Fira Sans", sans-serif;
+}
+body[dir=rtl] .FNV-Product.FNV-Product-Large .row .col-6 .FNV-Product-Duration {
+  margin-bottom: 2rem;
+}
+body[dir=rtl] .FNV-Product.FNV-Product-Large .row .col-6 .FNV-Product-Duration svg {
+  margin-bottom: 0;
+}
+body[dir=rtl] .FNV-Product.FNV-Product-Large .row .col-6 .FNV-Product-Duration span {
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 0.5rem;
+  font-family: "Fira Sans", sans-serif;
+}
+body[dir=rtl] .FNV-Product.FNV-Product-Large .row .col-6 .FNV-Product-Details {
+  width: 100%;
+  padding: 1rem;
+  font-size: 18px;
+  font-weight: 400;
+  color: #223885;
+  text-align: center;
+  display: inline-block;
+}
+body[dir=rtl] .FNV-Product.FNV-Product-Large .row .col-6 .FNV-Product-Details:hover {
+  color: #223885;
+  background-color: #F0F3FB;
+}
+body[dir=rtl] .FNV-Product.FNV-Product-Large .row .col-6 .FNV-Product-AddToCart {
+  width: 100%;
+  color: #FFFFFF;
+  padding: 1rem;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  background-color: #223885;
+}
+body[dir=rtl] .FNV-Product.FNV-Product-Large .row .col-6 .FNV-Product-AddToCart:hover {
+  color: #FFFFFF;
+  background-color: #0074FF;
+}
+body[dir=rtl] .FNV-Product.FNV-Product-Large .row .col-6:nth-child(2) {
+  text-align: right;
 }
 
 .FNV-YoutubeCTA {
