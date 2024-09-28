@@ -2,15 +2,7 @@
 
 body[dir='rtl'] {
     .FNV-SinglePage {
-        position: relative;  
-
-        &.FNV-SinglePage-Header{
-            background-image: url('/img/pattern-bg.jpg');
-            background-size: cover;
-            border-bottom-left-radius: 50px;
-            border-bottom-right-radius: 50px;
-            z-index: 5;
-        }
+        position: relative;
 
         .container {
             position: relative;
@@ -22,6 +14,7 @@ body[dir='rtl'] {
 
                 &.FNV-Header {
                     border-radius: 15px;
+                    padding: 4rem;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -30,9 +23,8 @@ body[dir='rtl'] {
                     box-shadow: 0 0 50px #9191911a;
                     backdrop-filter: blur(6px);
                     -webkit-backdrop-filter: blur(6px);
-                    padding: 4rem;
 
-                    .col-12{
+                    .col-12 {
                         background-color: transparent;
                         box-shadow: unset;
                         padding: 0;
@@ -46,15 +38,15 @@ body[dir='rtl'] {
                             text-shadow: 0 0 5px #000000;
                         }
 
-                        &.FNV-Content-White{
+                        &.FNV-Content-White {
                             color: $WhiteColor;
 
-                            h2{
+                            h2 {
                                 font-size: 25px;
                                 color: $WhiteColor;
                             }
 
-                            p{
+                            p {
                                 font-size: 14px;
                                 font-weight: 400;
                                 line-height: 28px;
@@ -63,10 +55,10 @@ body[dir='rtl'] {
                         }
                     }
 
-                    .col-md-6{
+                    .col-md-6 {
                         margin-bottom: 0;
 
-                        span{
+                        span {
                             width: 100%;
                             padding: 1rem;
                             display: block;
@@ -76,14 +68,14 @@ body[dir='rtl'] {
                             background-color: $WhiteColor;
                         }
 
-                        iframe{
+                        iframe {
                             border-top-left-radius: 0;
                             border-top-right-radius: 0;
                             width: 100%;
                             height: 320px;
                         }
 
-                        p{
+                        p {
                             font-size: 18px;
                             font-weight: 600;
                             color: $WhiteColor;
@@ -94,15 +86,15 @@ body[dir='rtl'] {
                     }
                 }
 
-                &.FNV-CTA{
+                &.FNV-CTA {
                     background-color: $ThirdColor;
                     border-radius: 50px;
 
 
-                    .col-md-8{
+                    .col-md-8 {
                         padding-right: 4rem;
 
-                        h4{
+                        h4 {
                             color: $WhiteColor;
                             margin-top: 1rem;
                             margin-bottom: 0;
@@ -110,10 +102,10 @@ body[dir='rtl'] {
                         }
                     }
 
-                    .col-md-4{
+                    .col-md-4 {
                         text-align: center;
 
-                        img{
+                        img {
                             margin-top: -10rem;
                             width: 200px;
                         }
@@ -167,11 +159,11 @@ body[dir='rtl'] {
                         color: $BlackColor;
                     }
 
-                    ul{
+                    ul {
                         padding-right: 4rem;
                         font-size: 18px;
 
-                        li{
+                        li {
                             margin-bottom: .5rem;
                         }
                     }
@@ -182,7 +174,7 @@ body[dir='rtl'] {
                         border-radius: 15px;
                     }
 
-                    caption{
+                    caption {
                         margin-top: 2rem;
                         padding: 1rem;
                         display: block;
@@ -193,33 +185,33 @@ body[dir='rtl'] {
                         background-color: $PrimaryColor;
                     }
 
-                    .d-flex{
+                    .d-flex {
                         margin-bottom: 1rem;
 
-                        .nav{
+                        .nav {
                             width: 40%;
                             border-radius: 0;
 
-                            button{
+                            button {
                                 padding: 1rem;
                                 border-radius: 0;
                                 color: $WhiteColor;
                                 background-color: $PrimaryColor;
 
-                                &.active{
+                                &.active {
                                     background-color: $SecondaryColor;
                                 }
                             }
                         }
 
-                        .tab-content{
+                        .tab-content {
                             width: 60%;
                             padding: 1rem;
                             display: block;
                             background-color: #003cbf10;
                             transition: .3s all ease-in-out;
 
-                            p{
+                            p {
                                 font-size: 14px;
                                 font-weight: 400;
                             }
@@ -254,7 +246,7 @@ body[dir='rtl'] {
                                 font-weight: 600;
                                 text-align: right;
 
-                                &::after{
+                                &::after {
                                     margin-left: unset;
                                     margin-right: auto;
                                 }
@@ -273,31 +265,33 @@ body[dir='rtl'] {
             }
         }
 
-        &.FNV-ContentList{
-            background-color: $PrimaryColor!important;
+        &.FNV-ContentList {
+            background-color: $PrimaryColor !important;
             margin-top: -5rem;
             padding: 5rem 0 0rem;
             border-bottom-left-radius: 50px;
             border-bottom-right-radius: 50px;
 
-            .container{
+            .container {
                 padding: 0;
-                .row{
-                    .col-12{
+
+                .row {
+                    .col-12 {
                         margin-bottom: 0;
 
-                        p{
+                        p {
                             font-size: 32px;
                             font-weight: 800;
                             color: $WhiteColor;
                         }
 
-                        ol{
-                            li{
+                        ol {
+                            li {
                                 color: $WhiteColor;
                                 font-weight: 800;
                                 margin-bottom: 1rem;
-                                a{
+
+                                a {
                                     font-size: 24px;
                                     font-weight: 500;
                                     color: $WhiteColor;
@@ -309,14 +303,14 @@ body[dir='rtl'] {
             }
         }
 
-        &.FNV-GrayBG{
+        &.FNV-GrayBG {
             background-color: #F8F7FA;
             z-index: 2;
             border-bottom-left-radius: 50px;
             border-bottom-right-radius: 50px;
         }
 
-        &.FNV-WhiteBG{
+        &.FNV-WhiteBG {
             background-color: $WhiteColor;
             padding-top: 4rem;
             margin-top: -5rem;
@@ -325,7 +319,7 @@ body[dir='rtl'] {
         }
     }
 
-    .FNV-TelegramBG{
+    .FNV-TelegramBG {
         display: block;
         margin-top: -4rem;
         padding: 8rem 0 4rem;
@@ -333,20 +327,20 @@ body[dir='rtl'] {
         border-bottom-left-radius: 50px;
         border-bottom-right-radius: 50px;
 
-        .container{
-            .row{
-                .col-md-8{
-                    h4{
+        .container {
+            .row {
+                .col-md-8 {
+                    h4 {
                         font-size: 36px;
                         font-weight: 700;
                         color: $WhiteColor;
                     }
                 }
 
-                .col-md-4{
+                .col-md-4 {
                     text-align: center;
 
-                    svg{
+                    svg {
                         width: 50px;
                         height: 50px;
                         color: $WhiteColor;
@@ -360,9 +354,9 @@ body[dir='rtl'] {
 
 body[dir='ltr'] {
     .FNV-SinglePage {
-        position: relative;  
+        position: relative;
 
-        &.FNV-SinglePage-Header{
+        &.FNV-SinglePage-Header {
             background-image: url('/img/pattern-bg.jpg');
             background-size: cover;
             border-bottom-left-radius: 50px;
@@ -389,7 +383,7 @@ body[dir='ltr'] {
                     -webkit-backdrop-filter: blur(6px);
                     padding: 4rem;
 
-                    .col-12{
+                    .col-12 {
                         background-color: transparent;
                         box-shadow: unset;
                         padding: 0;
@@ -403,24 +397,24 @@ body[dir='ltr'] {
                             text-shadow: 0 0 5px #000000;
                         }
 
-                        &.FNV-Content-White{
+                        &.FNV-Content-White {
                             color: $WhiteColor;
 
-                            h2{
+                            h2 {
                                 font-size: 25px;
                                 color: $WhiteColor;
                             }
 
-                            p{
+                            p {
                                 font-size: 14px;
                                 font-weight: 400;
                                 line-height: 28px;
                                 color: $WhiteColor;
                             }
 
-                            ul{
-                                li{
-                                    a{
+                            ul {
+                                li {
+                                    a {
                                         color: $WhiteColor;
                                     }
                                 }
@@ -428,10 +422,10 @@ body[dir='ltr'] {
                         }
                     }
 
-                    .col-md-6{
+                    .col-md-6 {
                         margin-bottom: 0;
 
-                        span{
+                        span {
                             width: 100%;
                             padding: 1rem;
                             display: block;
@@ -441,14 +435,14 @@ body[dir='ltr'] {
                             background-color: $WhiteColor;
                         }
 
-                        iframe{
+                        iframe {
                             border-top-left-radius: 0;
                             border-top-right-radius: 0;
                             width: 100%;
                             height: 320px;
                         }
 
-                        p{
+                        p {
                             font-size: 18px;
                             font-weight: 600;
                             color: $WhiteColor;
@@ -459,15 +453,15 @@ body[dir='ltr'] {
                     }
                 }
 
-                &.FNV-CTA{
+                &.FNV-CTA {
                     background-color: $ThirdColor;
                     border-radius: 50px;
 
 
-                    .col-md-8{
+                    .col-md-8 {
                         padding-right: 4rem;
 
-                        h4{
+                        h4 {
                             color: $WhiteColor;
                             margin-top: 1rem;
                             margin-bottom: 0;
@@ -475,10 +469,10 @@ body[dir='ltr'] {
                         }
                     }
 
-                    .col-md-4{
+                    .col-md-4 {
                         text-align: center;
 
-                        img{
+                        img {
                             margin-top: -10rem;
                             width: 200px;
                         }
@@ -532,11 +526,11 @@ body[dir='ltr'] {
                         color: $BlackColor;
                     }
 
-                    ul{
+                    ul {
                         padding-right: 4rem;
                         font-size: 18px;
 
-                        li{
+                        li {
                             margin-bottom: .5rem;
                         }
                     }
@@ -547,7 +541,7 @@ body[dir='ltr'] {
                         border-radius: 15px;
                     }
 
-                    caption{
+                    caption {
                         margin-top: 2rem;
                         padding: 1rem;
                         display: block;
@@ -558,33 +552,33 @@ body[dir='ltr'] {
                         background-color: $PrimaryColor;
                     }
 
-                    .d-flex{
+                    .d-flex {
                         margin-bottom: 1rem;
 
-                        .nav{
+                        .nav {
                             width: 40%;
                             border-radius: 0;
 
-                            button{
+                            button {
                                 padding: 1rem;
                                 border-radius: 0;
                                 color: $WhiteColor;
                                 background-color: $PrimaryColor;
 
-                                &.active{
+                                &.active {
                                     background-color: $SecondaryColor;
                                 }
                             }
                         }
 
-                        .tab-content{
+                        .tab-content {
                             width: 60%;
                             padding: 1rem;
                             display: block;
                             background-color: #003cbf10;
                             transition: .3s all ease-in-out;
 
-                            p{
+                            p {
                                 font-size: 14px;
                                 font-weight: 400;
                             }
@@ -618,7 +612,7 @@ body[dir='ltr'] {
                                 line-height: 36px;
                                 font-weight: 600;
 
-                                &::after{
+                                &::after {
                                     margin-left: unset;
                                     margin-right: auto;
                                 }
@@ -637,31 +631,33 @@ body[dir='ltr'] {
             }
         }
 
-        &.FNV-ContentList{
-            background-color: $PrimaryColor!important;
+        &.FNV-ContentList {
+            background-color: $PrimaryColor !important;
             margin-top: -5rem;
             padding: 5rem 0 0rem;
             border-bottom-left-radius: 50px;
             border-bottom-right-radius: 50px;
 
-            .container{
+            .container {
                 padding: 0;
-                .row{
-                    .col-12{
+
+                .row {
+                    .col-12 {
                         margin-bottom: 0;
 
-                        p{
+                        p {
                             font-size: 32px;
                             font-weight: 800;
                             color: $WhiteColor;
                         }
 
-                        ol{
-                            li{
+                        ol {
+                            li {
                                 color: $WhiteColor;
                                 font-weight: 800;
                                 margin-bottom: 1rem;
-                                a{
+
+                                a {
                                     font-size: 24px;
                                     font-weight: 500;
                                     color: $WhiteColor;
@@ -673,14 +669,14 @@ body[dir='ltr'] {
             }
         }
 
-        &.FNV-GrayBG{
+        &.FNV-GrayBG {
             background-color: #F8F7FA;
             z-index: 2;
             border-bottom-left-radius: 50px;
             border-bottom-right-radius: 50px;
         }
 
-        &.FNV-WhiteBG{
+        &.FNV-WhiteBG {
             background-color: $WhiteColor;
             padding-top: 4rem;
             margin-top: -5rem;
@@ -689,7 +685,7 @@ body[dir='ltr'] {
         }
     }
 
-    .FNV-TelegramBG{
+    .FNV-TelegramBG {
         display: block;
         margin-top: -4rem;
         padding: 8rem 0 4rem;
@@ -697,20 +693,20 @@ body[dir='ltr'] {
         border-bottom-left-radius: 50px;
         border-bottom-right-radius: 50px;
 
-        .container{
-            .row{
-                .col-md-8{
-                    h4{
+        .container {
+            .row {
+                .col-md-8 {
+                    h4 {
                         font-size: 36px;
                         font-weight: 700;
                         color: $WhiteColor;
                     }
                 }
 
-                .col-md-4{
+                .col-md-4 {
                     text-align: center;
 
-                    svg{
+                    svg {
                         width: 50px;
                         height: 50px;
                         color: $WhiteColor;
@@ -723,20 +719,21 @@ body[dir='ltr'] {
 }
 
 @media only screen and (max-width: 768px) {
+
     /* For mobile phones: */
     body[dir='rtl'] {
         .FNV-SinglePage {
             position: relative;
             overflow: hidden;
 
-            .FNV-BG{
+            .FNV-BG {
                 position: absolute;
                 width: 100%;
                 top: 0px;
                 left: 0px;
                 z-index: 1;
 
-                img{
+                img {
                     width: 100%;
                     height: 800px;
                     object-fit: cover;
@@ -765,7 +762,7 @@ body[dir='ltr'] {
                         -webkit-backdrop-filter: blur(0px);
                         padding: 2rem;
 
-                        .col-12{
+                        .col-12 {
                             background-color: transparent;
                             box-shadow: unset;
                             padding: 0;
@@ -780,10 +777,10 @@ body[dir='ltr'] {
                             }
                         }
 
-                        .col-md-6{
+                        .col-md-6 {
                             margin-bottom: 0;
 
-                            span{
+                            span {
                                 width: 100%;
                                 padding: 1rem;
                                 display: block;
@@ -793,14 +790,14 @@ body[dir='ltr'] {
                                 background-color: $WhiteColor;
                             }
 
-                            iframe{
+                            iframe {
                                 border-top-left-radius: 0;
                                 border-top-right-radius: 0;
                                 width: 100%;
                                 height: 200px;
                             }
 
-                            p{
+                            p {
                                 font-size: 14px;
                                 font-weight: 600;
                                 color: $BlackColor;
@@ -811,16 +808,16 @@ body[dir='ltr'] {
                         }
                     }
 
-                    &.FNV-CTA{
+                    &.FNV-CTA {
                         background-color: $ThirdColor;
                         border-radius: 50px;
                         padding: 2rem;
 
 
-                        .col-md-8{
+                        .col-md-8 {
                             padding: 0rem;
 
-                            h4{
+                            h4 {
                                 font-size: 16px;
                                 margin-bottom: 0;
                                 line-height: 36px;
@@ -828,7 +825,7 @@ body[dir='ltr'] {
                             }
                         }
 
-                        .col-6{
+                        .col-6 {
                             display: none;
                         }
                     }
@@ -881,11 +878,11 @@ body[dir='ltr'] {
                             color: $BlackColor;
                         }
 
-                        ul{
+                        ul {
                             padding-right: 2rem;
                             font-size: 14px;
 
-                            li{
+                            li {
                                 margin-bottom: .1rem;
                             }
                         }
@@ -908,7 +905,7 @@ body[dir='ltr'] {
 
                     .accordion {
                         border-radius: 15px;
-                        padding: 2rem!important;
+                        padding: 2rem !important;
 
                         .accordion-item {
                             margin-bottom: 1rem;
@@ -926,7 +923,7 @@ body[dir='ltr'] {
                                     text-align: right;
                                     padding: .5rem;
 
-                                    &::after{
+                                    &::after {
                                         margin-left: unset;
                                         margin-right: auto;
                                     }
@@ -940,7 +937,7 @@ body[dir='ltr'] {
                                     font-weight: 500;
                                     padding: .5rem;
 
-                                    p{
+                                    p {
                                         margin-bottom: 0;
                                     }
                                 }
@@ -950,31 +947,33 @@ body[dir='ltr'] {
                 }
             }
 
-            &.FNV-ContentList{
-                background-color: $PrimaryColor!important;
+            &.FNV-ContentList {
+                background-color: $PrimaryColor !important;
                 margin-top: 0rem;
                 padding: 1rem;
                 border-bottom-left-radius: 50px;
                 border-bottom-right-radius: 50px;
 
-                .container{
+                .container {
                     padding: 0;
-                    .row{
-                        .col-12{
+
+                    .row {
+                        .col-12 {
                             margin-bottom: 0;
 
-                            p{
+                            p {
                                 font-size: 20px;
                                 font-weight: 800;
                                 color: $WhiteColor;
                             }
 
-                            ol{
-                                li{
+                            ol {
+                                li {
                                     color: $WhiteColor;
                                     font-weight: 800;
                                     margin-bottom: .5rem;
-                                    a{
+
+                                    a {
                                         font-size: 14px;
                                         font-weight: 500;
                                         color: $WhiteColor;
@@ -986,14 +985,14 @@ body[dir='ltr'] {
                 }
             }
 
-            &.FNV-GrayBG{
+            &.FNV-GrayBG {
                 background-color: #F8F7FA;
                 z-index: 2;
                 border-bottom-left-radius: 50px;
                 border-bottom-right-radius: 50px;
             }
 
-            &.FNV-WhiteBG{
+            &.FNV-WhiteBG {
                 background-color: $WhiteColor;
                 padding-top: 4rem;
                 margin-top: -5rem;
@@ -1002,7 +1001,7 @@ body[dir='ltr'] {
             }
         }
 
-        .FNV-TelegramBG{
+        .FNV-TelegramBG {
             display: block;
             margin-top: -4rem;
             padding: 6rem 0 2rem;
@@ -1010,20 +1009,20 @@ body[dir='ltr'] {
             border-bottom-left-radius: 50px;
             border-bottom-right-radius: 50px;
 
-            .container{
-                .row{
-                    .col-md-8{
-                        h4{
+            .container {
+                .row {
+                    .col-md-8 {
+                        h4 {
                             font-size: 14px;
                             font-weight: 700;
                             color: $WhiteColor;
                         }
                     }
 
-                    .col-md-4{
+                    .col-md-4 {
                         text-align: center;
-                        
-                        svg{
+
+                        svg {
                             width: 20px;
                             height: 20px;
                             color: $WhiteColor;
@@ -1040,14 +1039,14 @@ body[dir='ltr'] {
             position: relative;
             overflow: hidden;
 
-            .FNV-BG{
+            .FNV-BG {
                 position: absolute;
                 width: 100%;
                 top: 0px;
                 left: 0px;
                 z-index: 1;
 
-                img{
+                img {
                     width: 100%;
                     height: 800px;
                     object-fit: cover;
@@ -1076,7 +1075,7 @@ body[dir='ltr'] {
                         -webkit-backdrop-filter: blur(0px);
                         padding: 2rem;
 
-                        .col-12{
+                        .col-12 {
                             background-color: transparent;
                             box-shadow: unset;
                             padding: 0;
@@ -1090,15 +1089,15 @@ body[dir='ltr'] {
                                 text-shadow: unset;
                             }
 
-                            &.FNV-Content-White{
+                            &.FNV-Content-White {
                                 color: $BlackColor;
-    
-                                h2{
+
+                                h2 {
                                     font-size: 18px;
                                     color: $BlackColor;
                                 }
-    
-                                p{
+
+                                p {
                                     font-size: 14px;
                                     font-weight: 400;
                                     line-height: 28px;
@@ -1107,10 +1106,10 @@ body[dir='ltr'] {
                             }
                         }
 
-                        .col-md-6{
+                        .col-md-6 {
                             margin-bottom: 0;
 
-                            span{
+                            span {
                                 width: 100%;
                                 padding: 1rem;
                                 display: block;
@@ -1120,14 +1119,14 @@ body[dir='ltr'] {
                                 background-color: $WhiteColor;
                             }
 
-                            iframe{
+                            iframe {
                                 border-top-left-radius: 0;
                                 border-top-right-radius: 0;
                                 width: 100%;
                                 height: 200px;
                             }
 
-                            caption{
+                            caption {
                                 margin-top: 2rem;
                                 padding: 1rem;
                                 display: block;
@@ -1137,39 +1136,39 @@ body[dir='ltr'] {
                                 border-top-right-radius: 15px;
                                 background-color: $PrimaryColor;
                             }
-        
-                            .d-flex{        
-                                .nav{
+
+                            .d-flex {
+                                .nav {
                                     width: 100%;
                                     border-radius: 0;
-        
-                                    button{
+
+                                    button {
                                         padding: 1rem;
                                         border-radius: 0;
                                         color: $WhiteColor;
                                         background-color: $PrimaryColor;
-        
-                                        &.active{
+
+                                        &.active {
                                             background-color: $SecondaryColor;
                                         }
                                     }
                                 }
-        
-                                .tab-content{
+
+                                .tab-content {
                                     width: 100%;
                                     padding: 1rem;
                                     display: block;
                                     background-color: #003cbf10;
                                     transition: .3s all ease-in-out;
-        
-                                    p{
+
+                                    p {
                                         font-size: 14px;
                                         font-weight: 400;
                                     }
                                 }
                             }
 
-                            p{
+                            p {
                                 font-size: 14px;
                                 font-weight: 600;
                                 color: $BlackColor;
@@ -1180,16 +1179,16 @@ body[dir='ltr'] {
                         }
                     }
 
-                    &.FNV-CTA{
+                    &.FNV-CTA {
                         background-color: $ThirdColor;
                         border-radius: 50px;
                         padding: 2rem;
 
 
-                        .col-md-8{
+                        .col-md-8 {
                             padding: 0rem;
 
-                            h4{
+                            h4 {
                                 font-size: 16px;
                                 margin-bottom: 0;
                                 line-height: 36px;
@@ -1197,7 +1196,7 @@ body[dir='ltr'] {
                             }
                         }
 
-                        .col-6{
+                        .col-6 {
                             display: none;
                         }
                     }
@@ -1250,11 +1249,11 @@ body[dir='ltr'] {
                             color: $BlackColor;
                         }
 
-                        ul{
+                        ul {
                             padding-right: 2rem;
                             font-size: 14px;
 
-                            li{
+                            li {
                                 margin-bottom: .1rem;
                             }
                         }
@@ -1265,7 +1264,7 @@ body[dir='ltr'] {
                             border-radius: 15px;
                         }
 
-                        caption{
+                        caption {
                             margin-top: 2rem;
                             padding: 1rem;
                             display: block;
@@ -1275,35 +1274,35 @@ body[dir='ltr'] {
                             border-top-right-radius: 15px;
                             background-color: $PrimaryColor;
                         }
-    
-                        .d-flex{
+
+                        .d-flex {
                             margin-bottom: 1rem;
                             flex-direction: column;
-    
-                            .nav{
+
+                            .nav {
                                 width: 100%;
                                 border-radius: 0;
-    
-                                button{
+
+                                button {
                                     padding: 1rem;
                                     border-radius: 0;
                                     color: $WhiteColor;
                                     background-color: $PrimaryColor;
-    
-                                    &.active{
+
+                                    &.active {
                                         background-color: $SecondaryColor;
                                     }
                                 }
                             }
-    
-                            .tab-content{
+
+                            .tab-content {
                                 width: 100%;
                                 padding: 1rem;
                                 display: block;
                                 background-color: #003cbf10;
                                 transition: .3s all ease-in-out;
-    
-                                p{
+
+                                p {
                                     font-size: 14px;
                                     font-weight: 400;
                                 }
@@ -1322,7 +1321,7 @@ body[dir='ltr'] {
 
                     .accordion {
                         border-radius: 15px;
-                        padding: 2rem!important;
+                        padding: 2rem !important;
 
                         .accordion-item {
                             margin-bottom: 1rem;
@@ -1340,7 +1339,7 @@ body[dir='ltr'] {
                                     text-align: right;
                                     padding: .5rem;
 
-                                    &::after{
+                                    &::after {
                                         margin-left: unset;
                                         margin-right: auto;
                                     }
@@ -1354,7 +1353,7 @@ body[dir='ltr'] {
                                     font-weight: 500;
                                     padding: .5rem;
 
-                                    p{
+                                    p {
                                         margin-bottom: 0;
                                     }
                                 }
@@ -1364,31 +1363,33 @@ body[dir='ltr'] {
                 }
             }
 
-            &.FNV-ContentList{
-                background-color: $PrimaryColor!important;
+            &.FNV-ContentList {
+                background-color: $PrimaryColor !important;
                 margin-top: 0rem;
                 padding: 1rem;
                 border-bottom-left-radius: 50px;
                 border-bottom-right-radius: 50px;
 
-                .container{
+                .container {
                     padding: 0;
-                    .row{
-                        .col-12{
+
+                    .row {
+                        .col-12 {
                             margin-bottom: 0;
 
-                            p{
+                            p {
                                 font-size: 20px;
                                 font-weight: 800;
                                 color: $WhiteColor;
                             }
 
-                            ol{
-                                li{
+                            ol {
+                                li {
                                     color: $WhiteColor;
                                     font-weight: 800;
                                     margin-bottom: .5rem;
-                                    a{
+
+                                    a {
                                         font-size: 14px;
                                         font-weight: 500;
                                         color: $WhiteColor;
@@ -1400,14 +1401,14 @@ body[dir='ltr'] {
                 }
             }
 
-            &.FNV-GrayBG{
+            &.FNV-GrayBG {
                 background-color: #F8F7FA;
                 z-index: 2;
                 border-bottom-left-radius: 50px;
                 border-bottom-right-radius: 50px;
             }
 
-            &.FNV-WhiteBG{
+            &.FNV-WhiteBG {
                 background-color: $WhiteColor;
                 padding-top: 4rem;
                 margin-top: -5rem;
@@ -1416,7 +1417,7 @@ body[dir='ltr'] {
             }
         }
 
-        .FNV-TelegramBG{
+        .FNV-TelegramBG {
             display: block;
             margin-top: -4rem;
             padding: 6rem 0 2rem;
@@ -1424,20 +1425,20 @@ body[dir='ltr'] {
             border-bottom-left-radius: 50px;
             border-bottom-right-radius: 50px;
 
-            .container{
-                .row{
-                    .col-md-8{
-                        h4{
+            .container {
+                .row {
+                    .col-md-8 {
+                        h4 {
                             font-size: 14px;
                             font-weight: 700;
                             color: $WhiteColor;
                         }
                     }
 
-                    .col-md-4{
+                    .col-md-4 {
                         text-align: center;
-                        
-                        svg{
+
+                        svg {
                             width: 20px;
                             height: 20px;
                             color: $WhiteColor;
