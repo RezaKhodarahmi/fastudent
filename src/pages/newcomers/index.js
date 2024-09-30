@@ -161,7 +161,7 @@ const Index = () => {
                   <h2>چالش‌های مهاجرت</h2>
 
                   <div class="FNV-Tabs-Vertical d-flex">
-                    <ul class="nav nav-pills flex-column me-3" id="myTab" role="tablist">
+                    <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
                       <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="english-tab" data-bs-toggle="tab" data-bs-target="#english-tab-pane" type="button" role="tab" aria-controls="english-tab-pane" aria-selected="true">
                           <h3>زبان انگلیسی</h3>
