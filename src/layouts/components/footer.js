@@ -206,7 +206,7 @@ const Footer = props => {
                   <Link href='/contact-us/'>{t('footer-one-contact')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='/app/dashboards/main' onClick={e => handleFullReload(e, '/app/dashboards/main')}>
+                  <Link href='/login' onClick={e => handleFullReload(e, '/app/dashboards/main')}>
                     {t('footer-one-profile')}
                   </Link>
                 </li>
@@ -220,7 +220,7 @@ const Footer = props => {
                   <Link href='/webinars'>{t('footer-one-webinars')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='#'>{t('footer-one-newcomers')}</Link>
+                  <Link href='/newcomers'>{t('footer-one-newcomers')}</Link>
                 </li>
                 <li className='list-group-item'>
                   <Link href='#'>{t('footer-one-brochure')}</Link>

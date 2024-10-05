@@ -107,7 +107,7 @@ const AppointmentBooking = () => {
     }
   }
 
-  const handelLogin = () => {
+  const handleLogin = () => {
     router.push('/login?returnUrl=/services/counseling-working-experience')
   }
 

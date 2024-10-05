@@ -602,7 +602,7 @@ const Header = props => {
                             <span>{t('architect')}</span>
                           </button>
 
-                          {/* Accounting */}
+                          {/* Accounting 
                           <button
                             className='nav-link'
                             id='accounting-offtab'
@@ -636,8 +636,9 @@ const Header = props => {
                             </svg>
                             <span>{t('accounting')}</span>
                           </button>
+                          */}
 
-                          {/* English */}
+                          {/* English 
                           <button
                             className='nav-link'
                             id='english-offtab'
@@ -655,7 +656,7 @@ const Header = props => {
                               <path d='M33.0039 0H0.996094C0.445984 0 0 0.445984 0 0.996094V4.98047C0 5.53058 0.445984 5.97656 0.996094 5.97656H2.05859V23.5742C2.05859 24.1243 2.50458 24.5703 3.05469 24.5703H12.7319L8.738 32.5582C8.49197 33.0502 8.69138 33.6486 9.18345 33.8946C9.67552 34.1406 10.2738 33.9412 10.5199 33.4492L12.303 29.8828H21.697L23.4802 33.4492C23.7262 33.9412 24.3245 34.1406 24.8166 33.8946C25.3086 33.6486 25.5081 33.0503 25.2621 32.5582L21.2681 24.5703H30.9453C31.4954 24.5703 31.9414 24.1243 31.9414 23.5742V5.97656H33.0039C33.554 5.97656 34 5.53058 34 4.98047V0.996094C34 0.445984 33.554 0 33.0039 0ZM20.7009 27.8906H13.2991L14.9593 24.5703H19.0407L20.7009 27.8906ZM29.9492 22.5781H4.05078V5.97656H29.9492V22.5781ZM32.0078 3.98438H1.99219V1.99219H32.0078V3.98438Z' />
                             </svg>
                             <span>{t('english')}</span>
-                          </button>
+                          </button> */}
 
                           {/* Self Employed */}
                           <button
@@ -680,7 +681,7 @@ const Header = props => {
                             <span>{t('self-employed')}</span>
                           </button>
 
-                          {/* Job Seeker */}
+                          {/* Job Seeker 
                           <button
                             className='nav-link'
                             id='jobseeker-offtab'
@@ -702,6 +703,7 @@ const Header = props => {
 
                             <span>{t('job-seeker')}</span>
                           </button>
+                          */}
                         </div>
 
                         <div className='tab-content' id='offcanvas-tabContent'>
@@ -1517,7 +1519,7 @@ const Header = props => {
                           <span>{t('architect')}</span>
                         </button>
 
-                        {/* Accounting */}
+                        {/* Accounting 
                         <button
                           className='nav-link'
                           id='accounting-tab'
@@ -1550,9 +1552,9 @@ const Header = props => {
                             <path d='M28.0063 15.8597C28.0063 15.3857 27.6207 15 27.1466 15H17.4627C16.9886 15 16.6029 15.3857 16.6029 15.8597V18.3469C16.6029 18.821 16.9886 19.2067 17.4627 19.2067H27.1466C27.6206 19.2067 28.0063 18.821 28.0063 18.3469V15.8597ZM27.0344 18.2347H17.5749V15.972H27.0343V18.2347H27.0344Z' />
                           </svg>
                           <span>{t('accounting')}</span>
-                        </button>
+                        </button> */}
 
-                        {/* English */}
+                        {/* English 
                         <button
                           className='nav-link'
                           id='english-tab'
@@ -1570,7 +1572,7 @@ const Header = props => {
                             <path d='M33.0039 0H0.996094C0.445984 0 0 0.445984 0 0.996094V4.98047C0 5.53058 0.445984 5.97656 0.996094 5.97656H2.05859V23.5742C2.05859 24.1243 2.50458 24.5703 3.05469 24.5703H12.7319L8.738 32.5582C8.49197 33.0502 8.69138 33.6486 9.18345 33.8946C9.67552 34.1406 10.2738 33.9412 10.5199 33.4492L12.303 29.8828H21.697L23.4802 33.4492C23.7262 33.9412 24.3245 34.1406 24.8166 33.8946C25.3086 33.6486 25.5081 33.0503 25.2621 32.5582L21.2681 24.5703H30.9453C31.4954 24.5703 31.9414 24.1243 31.9414 23.5742V5.97656H33.0039C33.554 5.97656 34 5.53058 34 4.98047V0.996094C34 0.445984 33.554 0 33.0039 0ZM20.7009 27.8906H13.2991L14.9593 24.5703H19.0407L20.7009 27.8906ZM29.9492 22.5781H4.05078V5.97656H29.9492V22.5781ZM32.0078 3.98438H1.99219V1.99219H32.0078V3.98438Z' />
                           </svg>
                           <span>{t('english')}</span>
-                        </button>
+                        </button> */}
 
                         {/* Self Employed */}
                         <button
@@ -1595,7 +1597,7 @@ const Header = props => {
                           <span>{t('self-employed')}</span>
                         </button>
 
-                        {/* Job Seeker */}
+                        {/* Job Seeker 
                         <button
                           className='nav-link'
                           id='jobseeker-tab'
@@ -1616,7 +1618,7 @@ const Header = props => {
                           </svg>
 
                           <span>{t('job-seeker')}</span>
-                        </button>
+                        </button> */}
                       </div>
 
                       <div className='tab-content' id='v-pills-tabContent'>
