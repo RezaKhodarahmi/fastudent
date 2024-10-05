@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { ZoomMtg } from '@zoom/meetingsdk'
 import axios from 'axios'
 import NoHeaderFooterLayout from 'src/layouts/components/NoHeaderFooterLayout'
+
 const ZoomMeeting = () => {
   useEffect(() => {
     const initializeZoom = async () => {
