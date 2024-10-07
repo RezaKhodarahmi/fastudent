@@ -31906,7 +31906,7 @@ body[dir=ltr] .FNV-Footer .container .row:first-child .col-md {
   justify-content: center;
 }
 body[dir=ltr] .FNV-Footer .container .row .col-md-4 {
-  padding: 0 0rem 0 4rem;
+  padding: 0 4rem 0 0rem;
 }
 body[dir=ltr] .FNV-Footer .container .row .col-md-4 p {
   margin-bottom: 2rem;
