@@ -31893,353 +31893,22 @@ body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label span {
   color: #20496a;
 }
 
-body[dir=rtl] newsletter {
-  background-color: #223885;
-  border-top: 0px solid #223885;
-  padding: 2rem;
-  display: block;
-  border-bottom: 2px solid #ffffff;
-}
-body[dir=rtl] newsletter .container .row .col-md-6 {
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-body[dir=rtl] newsletter .container .row .col-md-6 h3 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #ffffff;
-}
-body[dir=rtl] newsletter .container .row .col-md-6 p {
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 400;
-  margin-bottom: 0;
-}
-body[dir=rtl] newsletter .container .row .col-md-6 .FNV-Newsletter {
-  background-color: rgba(255, 255, 255, 0.6);
-  width: 100%;
-  border-radius: 15px;
-  overflow: hidden;
-  padding: 0.8rem;
-  border: 1px solid #ffffff;
-}
-body[dir=rtl] newsletter .container .row .col-md-6 .FNV-Newsletter div {
-  width: 85%;
-}
-body[dir=rtl] newsletter .container .row .col-md-6 .FNV-Newsletter div .FNV-NewsletterInput {
-  background-color: transparent !important;
-  border-width: 0;
-  box-shadow: unset;
-  border-radius: 15px;
-  color: #223885;
-  font-size: 16px;
-  font-weight: 400;
-}
-body[dir=rtl] newsletter .container .row .col-md-6 .FNV-Newsletter div .FNV-NewsletterInput::placeholder, body[dir=rtl] newsletter .container .row .col-md-6 .FNV-Newsletter div .FNV-NewsletterInput:-ms-input-placeholder {
-  color: #223885 !important;
-}
-body[dir=rtl] newsletter .container .row .col-md-6 .FNV-Newsletter div::after, body[dir=rtl] newsletter .container .row .col-md-6 .FNV-Newsletter div::before {
-  display: none;
-}
-body[dir=rtl] newsletter .container .row .col-md-6 .FNV-Newsletter button {
-  background-color: #223885;
-  color: #ffffff;
-  border-radius: 15px 15px 15px 15px !important;
-  width: 15%;
-}
-body[dir=rtl] newsletter .container .row .col-md-6 .FNV-Newsletter button svg {
-  width: 30px;
-  height: 30px;
-  color: #ffffff;
-}
-body[dir=rtl] .FNV-Footer {
-  background-color: #223885;
+body[dir=ltr] .FNV-Footer {
   padding: 4rem 2rem;
+  background-color: #223885;
 }
-body[dir=rtl] .FNV-Footer .container {
-  padding: 0;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md-4 {
-  padding: 0 0rem 0 4rem;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md-4 svg.FNV-Logo {
-  width: 80%;
+body[dir=ltr] .FNV-Footer .container .row:first-child {
   margin-bottom: 2rem;
 }
-body[dir=rtl] .FNV-Footer .container .row .col-md-4 .d-flex {
-  justify-content: space-between;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md-4 .d-flex a {
-  font-size: 14px;
-  font-weight: 400;
-  border: 1px solid #ffffff;
-  border-radius: 8px;
-  color: #ffffff;
-  width: 100%;
-  text-align: center;
-  padding: 0.2rem 1rem;
-  direction: ltr;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md-4 h4 {
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: bold;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md-4 .list-group {
-  background-color: transparent;
-  padding: 0;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md-4 .list-group .list-group-item {
-  background-color: transparent;
-  border-width: 0;
-  padding: 0rem 0 0;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md-4 .list-group .list-group-item a {
-  color: #d9d9d9;
-  font-size: 14px;
-  transition: 0.3s all ease-in-out;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md-4 .list-group .list-group-item a svg {
-  width: 16px;
-  height: 16px;
-  margin-left: 0.5rem;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md-4 .list-group .list-group-item a:hover {
-  color: #ffffff;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md-4 .FNV-Social {
+body[dir=ltr] .FNV-Footer .container .row:first-child .col-md {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  color: #ffffff;
-  overflow: hidden;
-  z-index: 11;
-  margin: 1rem 0;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md-4 .FNV-Social a {
-  color: #ffffff;
-  border-radius: 5px;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md-4 .FNV-Social a svg {
-  width: 20;
-  height: 20;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md-4 p {
-  font-size: 16px;
-  font-weight: 200;
-  color: #ffffff;
-  text-align: justify;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Address {
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: space-between;
-  width: 100%;
-  direction: ltr;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Address span {
-  font-size: 14px;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Address span svg {
-  width: 15px;
-  margin: 0 0.5rem 0 0;
-  padding: 0;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Address a {
-  font-size: 14px;
-  color: #ffffff;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Address a {
-  display: block;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md {
-  padding: 0 1rem;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md h4 {
-  font-size: 18px;
-  color: #ffffff;
-  font-weight: bold;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md .list-group {
-  background-color: transparent;
-  padding: 0;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md .list-group .list-group-item {
-  background-color: transparent;
-  border-width: 0;
-  padding: 0.5rem 0 0;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md .list-group .list-group-item a {
-  color: #d9d9d9;
-  font-size: 14px;
-  transition: 0.3s all ease-in-out;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md .list-group .list-group-item a svg {
-  width: 16px;
-  height: 16px;
-  margin-right: 0.5rem;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md .list-group .list-group-item a:hover {
-  color: #ffffff;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  color: #ffffff;
-  overflow: hidden;
-  z-index: 11;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social a {
-  color: #ffffff;
-  border-radius: 5px;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social a.FNV-Instagram {
-  width: 50px;
-  height: 50px;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  background: #d6249f;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social a.FNV-Youtube {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #c4302b;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social a.FNV-Linkedin {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #0072b1;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social a.FNV-Facebook {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #3b5998;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social a.FNV-Telegram {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #0088cc;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social a svg {
-  width: 18px;
-  height: 18px;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md:first-child {
-  padding-right: 1rem;
-  padding-left: 0;
-}
-body[dir=rtl] .FNV-Footer .container .row .col-md:last-child {
-  padding-left: 1rem;
-  padding-right: 0;
-}
-body[dir=rtl] .FNV-Copyright {
-  background-color: #FF772C;
-  padding: 1rem;
-  direction: ltr;
-}
-body[dir=rtl] .FNV-Copyright .row .col-12 {
-  text-align: center;
-}
-body[dir=rtl] .FNV-Copyright .row .col-12 small {
-  font-size: 14px;
-  color: #d9d9d9;
-  font-weight: 600;
-}
-
-body[dir=ltr] newsletter {
-  background-color: #223885;
-  border-top: 0px solid #223885;
-  padding: 2rem;
-  display: block;
-  border-bottom: 2px solid #ffffff;
-}
-body[dir=ltr] newsletter .container .row .col-md-6 {
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-body[dir=ltr] newsletter .container .row .col-md-6 h3 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #ffffff;
-}
-body[dir=ltr] newsletter .container .row .col-md-6 p {
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 400;
-  margin-bottom: 0;
-}
-body[dir=ltr] newsletter .container .row .col-md-6 .FNV-Newsletter {
-  background-color: rgba(255, 255, 255, 0.6);
-  width: 100%;
-  border-radius: 15px;
-  overflow: hidden;
-  padding: 0.8rem;
-  border: 1px solid #ffffff;
-}
-body[dir=ltr] newsletter .container .row .col-md-6 .FNV-Newsletter div {
-  width: 85%;
-}
-body[dir=ltr] newsletter .container .row .col-md-6 .FNV-Newsletter div .FNV-NewsletterInput {
-  background-color: transparent !important;
-  border-width: 0;
-  box-shadow: unset;
-  border-radius: 15px;
-  color: #223885;
-  font-size: 16px;
-  font-weight: 400;
-}
-body[dir=ltr] newsletter .container .row .col-md-6 .FNV-Newsletter div .FNV-NewsletterInput::placeholder, body[dir=ltr] newsletter .container .row .col-md-6 .FNV-Newsletter div .FNV-NewsletterInput:-ms-input-placeholder {
-  color: #223885 !important;
-}
-body[dir=ltr] newsletter .container .row .col-md-6 .FNV-Newsletter div::after, body[dir=ltr] newsletter .container .row .col-md-6 .FNV-Newsletter div::before {
-  display: none;
-}
-body[dir=ltr] newsletter .container .row .col-md-6 .FNV-Newsletter button {
-  background-color: #223885;
-  color: #ffffff;
-  border-radius: 15px 15px 15px 15px !important;
-  width: 15%;
-}
-body[dir=ltr] newsletter .container .row .col-md-6 .FNV-Newsletter button svg {
-  width: 30px;
-  height: 30px;
-  color: #ffffff;
-}
-body[dir=ltr] .FNV-Footer {
-  background-color: #223885;
-  padding: 4rem 2rem;
-}
-body[dir=ltr] .FNV-Footer .container {
-  padding: 0;
 }
 body[dir=ltr] .FNV-Footer .container .row .col-md-4 {
-  padding: 0 4rem 0 0rem;
+  padding: 0 0rem 0 4rem;
 }
-body[dir=ltr] .FNV-Footer .container .row .col-md-4 svg.FNV-Logo {
-  width: 80%;
+body[dir=ltr] .FNV-Footer .container .row .col-md-4 p {
   margin-bottom: 2rem;
 }
 body[dir=ltr] .FNV-Footer .container .row .col-md-4 .d-flex {
@@ -32284,14 +31953,14 @@ body[dir=ltr] .FNV-Footer .container .row .col-md-4 .list-group .list-group-item
   color: #ffffff;
 }
 body[dir=ltr] .FNV-Footer .container .row .col-md-4 .FNV-Social {
+  z-index: 11;
   display: flex;
+  margin-top: 0rem;
+  overflow: hidden;
+  color: #ffffff;
+  align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  color: #ffffff;
-  overflow: hidden;
-  z-index: 11;
-  margin: 1rem 0;
 }
 body[dir=ltr] .FNV-Footer .container .row .col-md-4 .FNV-Social a {
   color: #ffffff;
@@ -32308,21 +31977,18 @@ body[dir=ltr] .FNV-Footer .container .row .col-md-4 p {
   text-align: justify;
 }
 body[dir=ltr] .FNV-Footer .container .row .col-md-4 p.FNV-Address {
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: space-between;
   width: 100%;
-  direction: ltr;
+  display: flex;
+  text-align: left;
+  align-items: start;
+  margin-bottom: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
 }
 body[dir=ltr] .FNV-Footer .container .row .col-md-4 p.FNV-Address span {
   font-size: 14px;
-}
-body[dir=ltr] .FNV-Footer .container .row .col-md-4 p.FNV-Address span svg {
-  width: 15px;
-  margin: 0 0.5rem 0 0;
-  padding: 0;
+  color: #FFA600;
+  margin-bottom: 0.5rem;
 }
 body[dir=ltr] .FNV-Footer .container .row .col-md-4 p.FNV-Address a {
   font-size: 14px;
@@ -32330,6 +31996,39 @@ body[dir=ltr] .FNV-Footer .container .row .col-md-4 p.FNV-Address a {
 }
 body[dir=ltr] .FNV-Footer .container .row .col-md-4 p.FNV-Address a {
   display: block;
+}
+body[dir=ltr] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone {
+  display: flex;
+  direction: rtl;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+body[dir=ltr] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone a {
+  display: flex;
+  padding: 0.5rem;
+  font-size: 10px;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  justify-content: space-between;
+}
+body[dir=ltr] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone a:first-child {
+  padding-right: 0;
+}
+body[dir=ltr] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone a:nth-child(2) {
+  padding-left: 0;
+}
+body[dir=ltr] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone a:nth-child(3) {
+  padding-right: 0;
+}
+body[dir=ltr] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone a:nth-child(4) {
+  padding-left: 0;
+}
+body[dir=ltr] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone a span:nth-child(2) {
+  direction: ltr;
+  font-size: 12px;
+}
+body[dir=ltr] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone a:hover {
+  color: #FFA600;
 }
 body[dir=ltr] .FNV-Footer .container .row .col-md {
   padding: 0 1rem;
@@ -32362,13 +32061,13 @@ body[dir=ltr] .FNV-Footer .container .row .col-md .list-group .list-group-item a
   color: #ffffff;
 }
 body[dir=ltr] .FNV-Footer .container .row .col-md .FNV-Social {
+  z-index: 11;
   display: flex;
+  overflow: hidden;
+  color: #ffffff;
+  align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  color: #ffffff;
-  overflow: hidden;
-  z-index: 11;
 }
 body[dir=ltr] .FNV-Footer .container .row .col-md .FNV-Social a {
   color: #ffffff;
@@ -32427,362 +32126,36 @@ body[dir=ltr] .FNV-Footer .container .row .col-md:last-child {
   padding-left: 1rem;
   padding-right: 0;
 }
-body[dir=ltr] .FNV-Copyright {
-  background-color: #FF772C;
-  padding: 1rem;
-  direction: ltr;
-}
-body[dir=ltr] .FNV-Copyright .row .col-12 {
+body[dir=ltr] .FNV-Footer .container .row .col-12.FNV-Copyright {
+  padding: 2rem 0 0;
   text-align: center;
 }
-body[dir=ltr] .FNV-Copyright .row .col-12 small {
-  font-size: 14px;
-  color: #d9d9d9;
-  font-weight: 600;
+body[dir=ltr] .FNV-Footer .container .row .col-12.FNV-Copyright p small {
+  direction: ltr;
+  color: #ffffff;
 }
-
-/* For mobile phones: */
-@media only screen and (max-width: 768px) {
-  body[dir=rtl] newsletter {
-    background-color: #223885;
-    border-top: 0px solid #223885;
-    padding: 2rem 2rem;
-    display: block;
-    border-bottom: 2px solid #ffffff;
-  }
-  body[dir=rtl] newsletter .container .row .col-md-6 {
-    padding: 0;
-  }
-  body[dir=rtl] newsletter .container .row .col-md-6 h3 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffffff;
-  }
-  body[dir=rtl] newsletter .container .row .col-md-6 p {
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: 400;
-  }
-  body[dir=rtl] newsletter .container .row .col-md-6 .FNV-Newsletter {
-    background-color: rgba(255, 255, 255, 0.6);
-    width: 100%;
-    border-radius: 15px;
-    overflow: hidden;
-    padding: 0.8rem;
-    border: 1px solid #ffffff;
-  }
-  body[dir=rtl] newsletter .container .row .col-md-6 .FNV-Newsletter div {
-    width: 85%;
-  }
-  body[dir=rtl] newsletter .container .row .col-md-6 .FNV-Newsletter div .FNV-NewsletterInput {
-    background-color: transparent !important;
-    border-width: 0;
-    box-shadow: unset;
-    border-radius: 15px;
-    color: #223885;
-    font-size: 16px;
-    font-weight: 400;
-  }
-  body[dir=rtl] newsletter .container .row .col-md-6 .FNV-Newsletter div .FNV-NewsletterInput::placeholder, body[dir=rtl] newsletter .container .row .col-md-6 .FNV-Newsletter div .FNV-NewsletterInput:-ms-input-placeholder {
-    color: #223885 !important;
-  }
-  body[dir=rtl] newsletter .container .row .col-md-6 .FNV-Newsletter div::after, body[dir=rtl] newsletter .container .row .col-md-6 .FNV-Newsletter div::before {
-    display: none;
-  }
-  body[dir=rtl] newsletter .container .row .col-md-6 .FNV-Newsletter button {
-    background-color: #223885;
-    color: #ffffff;
-    border-radius: 15px 15px 15px 15px !important;
-    width: 15%;
-  }
-  body[dir=rtl] newsletter .container .row .col-md-6 .FNV-Newsletter button svg {
-    width: 30px;
-    height: 30px;
-    color: #ffffff;
-  }
-  body[dir=rtl] .FNV-Footer {
-    background-color: #223885;
-    padding: 2rem;
-  }
-  body[dir=rtl] .FNV-Footer .container {
-    padding: 0;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md-4 {
-    padding: 0 0rem 0 0rem;
-    text-align: center;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md-4 svg.FNV-Logo {
-    width: 80%;
-    margin-bottom: 2rem;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md-4 .d-flex {
-    justify-content: space-between;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md-4 .d-flex a {
-    font-size: 14px;
-    font-weight: 400;
-    border: 1px solid #ffffff;
-    border-radius: 8px;
-    color: #ffffff;
-    width: 100%;
-    text-align: center;
-    padding: 0.2rem 1rem;
-    direction: ltr;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md-4 h4 {
-    font-size: 16px;
-    color: #ffffff;
-    font-weight: bold;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md-4 .list-group {
-    background-color: transparent;
-    padding: 0;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md-4 .list-group .list-group-item {
-    background-color: transparent;
-    border-width: 0;
-    padding: 0rem 0 0;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md-4 .list-group .list-group-item a {
-    color: #d9d9d9;
-    font-size: 14px;
-    transition: 0.3s all ease-in-out;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md-4 .list-group .list-group-item a svg {
-    width: 16px;
-    height: 16px;
-    margin-left: 0.5rem;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md-4 .list-group .list-group-item a:hover {
-    color: #ffffff;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md-4 .FNV-Social {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    color: #ffffff;
-    overflow: hidden;
-    z-index: 11;
-    margin: 1rem 0;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md-4 .FNV-Social a {
-    color: #ffffff;
-    border-radius: 5px;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md-4 .FNV-Social a svg {
-    width: 20;
-    height: 20;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md-4 p {
-    font-size: 16px;
-    font-weight: 200;
-    color: #ffffff;
-    text-align: justify;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Address {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
-    width: 100%;
-    direction: ltr;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Address span {
-    font-size: 14px;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Address span svg {
-    width: 15px;
-    margin: 0 0.5rem 0 0;
-    padding: 0;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Address a {
-    font-size: 14px;
-    color: #ffffff;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Address a {
-    display: block;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md {
-    padding: 0 1rem;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md h4 {
-    font-size: 18px;
-    color: #ffffff;
-    font-weight: bold;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md .list-group {
-    background-color: transparent;
-    padding: 0;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md .list-group .list-group-item {
-    background-color: transparent;
-    border-width: 0;
-    padding: 0.5rem 0 0;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md .list-group .list-group-item a {
-    color: #d9d9d9;
-    font-size: 14px;
-    transition: 0.3s all ease-in-out;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md .list-group .list-group-item a svg {
-    width: 16px;
-    height: 16px;
-    margin-right: 0.5rem;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md .list-group .list-group-item a:hover {
-    color: #ffffff;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    color: #ffffff;
-    overflow: hidden;
-    z-index: 11;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social a {
-    color: #ffffff;
-    border-radius: 5px;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social a.FNV-Instagram {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #d6249f;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social a.FNV-Youtube {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #c4302b;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social a.FNV-Linkedin {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #0072b1;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social a.FNV-Facebook {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #3b5998;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social a.FNV-Telegram {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #0088cc;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social a svg {
-    width: 18px;
-    height: 18px;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md:first-child {
-    padding-right: 1rem;
-    padding-left: 0;
-  }
-  body[dir=rtl] .FNV-Footer .container .row .col-md:last-child {
-    padding-right: 1rem;
-    padding-left: 0;
-  }
-  body[dir=rtl] .FNV-Copyright {
-    background-color: #FF772C;
-    padding: 1rem;
-    direction: ltr;
-  }
-  body[dir=rtl] .FNV-Copyright .row .col-12 {
-    text-align: center;
-  }
-  body[dir=rtl] .FNV-Copyright .row .col-12 small {
-    font-size: 14px;
-    color: #d9d9d9;
-    font-weight: 600;
-  }
-  body[dir=ltr] newsletter {
-    background-color: #223885;
-    border-top: 0px solid #223885;
-    padding: 2rem;
-    display: block;
-    border-bottom: 2px solid #ffffff;
-  }
-  body[dir=ltr] newsletter .container .row .col-md-6 {
-    padding: 0;
-  }
-  body[dir=ltr] newsletter .container .row .col-md-6 h3 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffffff;
-  }
-  body[dir=ltr] newsletter .container .row .col-md-6 p {
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: 400;
-  }
-  body[dir=ltr] newsletter .container .row .col-md-6 .FNV-Newsletter {
-    background-color: rgba(255, 255, 255, 0.6);
-    width: 100%;
-    border-radius: 15px;
-    overflow: hidden;
-    padding: 0.8rem;
-    border: 1px solid #ffffff;
-  }
-  body[dir=ltr] newsletter .container .row .col-md-6 .FNV-Newsletter div {
-    width: 85%;
-  }
-  body[dir=ltr] newsletter .container .row .col-md-6 .FNV-Newsletter div .FNV-NewsletterInput {
-    background-color: transparent !important;
-    border-width: 0;
-    box-shadow: unset;
-    border-radius: 15px;
-    color: #223885;
-    font-size: 16px;
-    font-weight: 400;
-  }
-  body[dir=ltr] newsletter .container .row .col-md-6 .FNV-Newsletter div .FNV-NewsletterInput::placeholder, body[dir=ltr] newsletter .container .row .col-md-6 .FNV-Newsletter div .FNV-NewsletterInput:-ms-input-placeholder {
-    color: #223885 !important;
-  }
-  body[dir=ltr] newsletter .container .row .col-md-6 .FNV-Newsletter div::after, body[dir=ltr] newsletter .container .row .col-md-6 .FNV-Newsletter div::before {
-    display: none;
-  }
-  body[dir=ltr] newsletter .container .row .col-md-6 .FNV-Newsletter button {
-    background-color: #223885;
-    color: #ffffff;
-    border-radius: 15px 15px 15px 15px !important;
-    width: 15%;
-  }
-  body[dir=ltr] newsletter .container .row .col-md-6 .FNV-Newsletter button svg {
-    width: 30px;
-    height: 30px;
-    color: #ffffff;
-  }
+@media (max-width: 575px) {
   body[dir=ltr] .FNV-Footer {
+    padding: 1rem;
     background-color: #223885;
-    padding: 2rem;
   }
-  body[dir=ltr] .FNV-Footer .container {
-    padding: 0;
+  body[dir=ltr] .FNV-Footer .container .row:first-child {
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Footer .container .row:first-child .col-md {
+    display: flex;
+    margin: 0.5rem 0;
+    align-items: center;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-Footer .container .row svg.col-12 {
+    margin: 0.5rem 0 !important;
   }
   body[dir=ltr] .FNV-Footer .container .row .col-md-4 {
-    padding: 0 0rem 0 0rem;
+    padding: 0rem;
   }
-  body[dir=ltr] .FNV-Footer .container .row .col-md-4 svg.FNV-Logo {
-    width: 80%;
-    margin-bottom: 2rem;
+  body[dir=ltr] .FNV-Footer .container .row .col-md-4 p {
+    margin-bottom: 0.5rem;
   }
   body[dir=ltr] .FNV-Footer .container .row .col-md-4 .d-flex {
     justify-content: space-between;
@@ -32799,7 +32172,7 @@ body[dir=ltr] .FNV-Copyright .row .col-12 small {
     direction: ltr;
   }
   body[dir=ltr] .FNV-Footer .container .row .col-md-4 h4 {
-    font-size: 16px;
+    font-size: 14px;
     color: #ffffff;
     font-weight: bold;
   }
@@ -32826,14 +32199,14 @@ body[dir=ltr] .FNV-Copyright .row .col-12 small {
     color: #ffffff;
   }
   body[dir=ltr] .FNV-Footer .container .row .col-md-4 .FNV-Social {
+    z-index: 11;
     display: flex;
+    margin: 1rem 0 2rem;
+    overflow: hidden;
+    color: #ffffff;
+    align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    color: #ffffff;
-    overflow: hidden;
-    z-index: 11;
-    margin: 1rem 0;
   }
   body[dir=ltr] .FNV-Footer .container .row .col-md-4 .FNV-Social a {
     color: #ffffff;
@@ -32850,21 +32223,18 @@ body[dir=ltr] .FNV-Copyright .row .col-12 small {
     text-align: justify;
   }
   body[dir=ltr] .FNV-Footer .container .row .col-md-4 p.FNV-Address {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
     width: 100%;
-    direction: ltr;
+    display: flex;
+    text-align: left;
+    align-items: start;
+    margin-bottom: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
   }
   body[dir=ltr] .FNV-Footer .container .row .col-md-4 p.FNV-Address span {
     font-size: 14px;
-  }
-  body[dir=ltr] .FNV-Footer .container .row .col-md-4 p.FNV-Address span svg {
-    width: 15px;
-    margin: 0 0.5rem 0 0;
-    padding: 0;
+    color: #FFA600;
+    margin-bottom: 0.5rem;
   }
   body[dir=ltr] .FNV-Footer .container .row .col-md-4 p.FNV-Address a {
     font-size: 14px;
@@ -32873,11 +32243,44 @@ body[dir=ltr] .FNV-Copyright .row .col-12 small {
   body[dir=ltr] .FNV-Footer .container .row .col-md-4 p.FNV-Address a {
     display: block;
   }
+  body[dir=ltr] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone {
+    display: flex;
+    direction: rtl;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone a {
+    display: flex;
+    padding: 0.5rem;
+    font-size: 10px;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone a:first-child {
+    padding-right: 0;
+  }
+  body[dir=ltr] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone a:nth-child(2) {
+    padding-left: 0;
+  }
+  body[dir=ltr] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone a:nth-child(3) {
+    padding-right: 0;
+  }
+  body[dir=ltr] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone a:nth-child(4) {
+    padding-left: 0;
+  }
+  body[dir=ltr] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone a span:nth-child(2) {
+    direction: ltr;
+    font-size: 12px;
+  }
+  body[dir=ltr] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone a:hover {
+    color: #FFA600;
+  }
   body[dir=ltr] .FNV-Footer .container .row .col-md {
-    padding: 0 1rem;
+    padding: 0rem;
   }
   body[dir=ltr] .FNV-Footer .container .row .col-md h4 {
-    font-size: 18px;
+    font-size: 12px;
     color: #ffffff;
     font-weight: bold;
   }
@@ -32888,11 +32291,11 @@ body[dir=ltr] .FNV-Copyright .row .col-12 small {
   body[dir=ltr] .FNV-Footer .container .row .col-md .list-group .list-group-item {
     background-color: transparent;
     border-width: 0;
-    padding: 0.5rem 0 0;
+    padding: 0.2rem 0 0;
   }
   body[dir=ltr] .FNV-Footer .container .row .col-md .list-group .list-group-item a {
     color: #d9d9d9;
-    font-size: 14px;
+    font-size: 12px;
     transition: 0.3s all ease-in-out;
   }
   body[dir=ltr] .FNV-Footer .container .row .col-md .list-group .list-group-item a svg {
@@ -32904,13 +32307,13 @@ body[dir=ltr] .FNV-Copyright .row .col-12 small {
     color: #ffffff;
   }
   body[dir=ltr] .FNV-Footer .container .row .col-md .FNV-Social {
+    z-index: 11;
     display: flex;
+    overflow: hidden;
+    color: #ffffff;
+    align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    color: #ffffff;
-    overflow: hidden;
-    z-index: 11;
   }
   body[dir=ltr] .FNV-Footer .container .row .col-md .FNV-Social a {
     color: #ffffff;
@@ -32969,30 +32372,505 @@ body[dir=ltr] .FNV-Copyright .row .col-12 small {
     padding-left: 1rem;
     padding-right: 0;
   }
-  body[dir=ltr] .FNV-Copyright {
-    background-color: #FF772C;
-    padding: 1rem;
-    direction: ltr;
-  }
-  body[dir=ltr] .FNV-Copyright .row .col-12 {
+  body[dir=ltr] .FNV-Footer .container .row .col-12.FNV-Copyright {
+    padding: 0.5rem 0 0;
     text-align: center;
   }
-  body[dir=ltr] .FNV-Copyright .row .col-12 small {
-    font-size: 14px;
-    color: #d9d9d9;
-    font-weight: 600;
+  body[dir=ltr] .FNV-Footer .container .row .col-12.FNV-Copyright p small {
+    direction: ltr;
+    color: #ffffff;
   }
-  .FNV-Copyright {
-    background-color: #FF772C;
+}
+
+body[dir=rtl] .FNV-Footer {
+  padding: 4rem 2rem;
+  background-color: #223885;
+}
+body[dir=rtl] .FNV-Footer .container .row:first-child {
+  margin-bottom: 2rem;
+}
+body[dir=rtl] .FNV-Footer .container .row:first-child .col-md {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md-4 {
+  padding: 0 0rem 0 4rem;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md-4 p {
+  margin-bottom: 2rem;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md-4 svg.FNV-Logo {
+  width: 80%;
+  margin-bottom: 4rem;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md-4 .d-flex {
+  justify-content: space-between;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md-4 .d-flex a {
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  padding: 0.2rem 1rem;
+  direction: ltr;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md-4 h4 {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md-4 .list-group {
+  background-color: transparent;
+  padding: 0;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md-4 .list-group .list-group-item {
+  background-color: transparent;
+  border-width: 0;
+  padding: 0rem 0 0;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md-4 .list-group .list-group-item a {
+  color: #d9d9d9;
+  font-size: 14px;
+  transition: 0.3s all ease-in-out;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md-4 .list-group .list-group-item a svg {
+  width: 16px;
+  height: 16px;
+  margin-left: 0.5rem;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md-4 .list-group .list-group-item a:hover {
+  color: #ffffff;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md-4 .FNV-Social {
+  z-index: 11;
+  display: flex;
+  margin-top: 0rem;
+  overflow: hidden;
+  color: #ffffff;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md-4 .FNV-Social a {
+  color: #ffffff;
+  border-radius: 5px;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md-4 .FNV-Social a svg {
+  width: 20;
+  height: 20;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md-4 p {
+  font-size: 16px;
+  font-weight: 200;
+  color: #ffffff;
+  text-align: justify;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Address {
+  width: 100%;
+  display: flex;
+  direction: ltr;
+  text-align: left;
+  align-items: start;
+  margin-bottom: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Address span {
+  font-size: 14px;
+  color: #FFA600;
+  margin-bottom: 0.5rem;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Address a {
+  font-size: 14px;
+  color: #ffffff;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Address a {
+  display: block;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone a {
+  display: flex;
+  padding: 0.5rem;
+  font-size: 10px;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  justify-content: space-between;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone a:first-child {
+  padding-right: 0;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone a:nth-child(2) {
+  padding-left: 0;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone a:nth-child(3) {
+  padding-right: 0;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone a:nth-child(4) {
+  padding-left: 0;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone a span:nth-child(2) {
+  direction: ltr;
+  font-size: 12px;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone a:hover {
+  color: #FFA600;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md {
+  padding: 0 1rem;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md h4 {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md .list-group {
+  background-color: transparent;
+  padding: 0;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md .list-group .list-group-item {
+  background-color: transparent;
+  border-width: 0;
+  padding: 0.5rem 0 0;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md .list-group .list-group-item a {
+  color: #d9d9d9;
+  font-size: 14px;
+  transition: 0.3s all ease-in-out;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md .list-group .list-group-item a svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 0.5rem;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md .list-group .list-group-item a:hover {
+  color: #ffffff;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social {
+  z-index: 11;
+  display: flex;
+  overflow: hidden;
+  color: #ffffff;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social a {
+  color: #ffffff;
+  border-radius: 5px;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social a.FNV-Instagram {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social a.FNV-Youtube {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c4302b;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social a.FNV-Linkedin {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0072b1;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social a.FNV-Facebook {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3b5998;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social a.FNV-Telegram {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0088cc;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social a svg {
+  width: 18px;
+  height: 18px;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md:first-child {
+  padding-right: 1rem;
+  padding-left: 0;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-md:last-child {
+  padding-left: 1rem;
+  padding-right: 0;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-12.FNV-Copyright {
+  padding: 2rem 0 0;
+  text-align: center;
+}
+body[dir=rtl] .FNV-Footer .container .row .col-12.FNV-Copyright p small {
+  direction: ltr;
+  color: #ffffff;
+}
+@media (max-width: 575px) {
+  body[dir=rtl] .FNV-Footer {
     padding: 1rem;
+    background-color: #223885;
+  }
+  body[dir=rtl] .FNV-Footer .container .row:first-child {
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Footer .container .row:first-child .col-md {
+    display: flex;
+    margin: 0.5rem 0;
+    align-items: center;
+    justify-content: center;
+  }
+  body[dir=rtl] .FNV-Footer .container .row svg.col-12 {
+    margin: 0.5rem 0 !important;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md-4 {
+    padding: 0rem;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md-4 p {
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md-4 .d-flex {
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md-4 .d-flex a {
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding: 0.2rem 1rem;
     direction: ltr;
   }
-  .FNV-Copyright .row .col-12 {
+  body[dir=rtl] .FNV-Footer .container .row .col-md-4 h4 {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md-4 .list-group {
+    background-color: transparent;
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md-4 .list-group .list-group-item {
+    background-color: transparent;
+    border-width: 0;
+    padding: 0rem 0 0;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md-4 .list-group .list-group-item a {
+    color: #d9d9d9;
+    font-size: 14px;
+    transition: 0.3s all ease-in-out;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md-4 .list-group .list-group-item a svg {
+    width: 16px;
+    height: 16px;
+    margin-left: 0.5rem;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md-4 .list-group .list-group-item a:hover {
+    color: #ffffff;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md-4 .FNV-Social {
+    z-index: 11;
+    display: flex;
+    margin: 1rem 0 2rem;
+    overflow: hidden;
+    color: #ffffff;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md-4 .FNV-Social a {
+    color: #ffffff;
+    border-radius: 5px;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md-4 .FNV-Social a svg {
+    width: 20;
+    height: 20;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md-4 p {
+    font-size: 16px;
+    font-weight: 200;
+    color: #ffffff;
+    text-align: justify;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Address {
+    width: 100%;
+    display: flex;
+    text-align: left;
+    align-items: start;
+    margin-bottom: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Address span {
+    font-size: 14px;
+    color: #FFA600;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Address a {
+    font-size: 14px;
+    color: #ffffff;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Address a {
+    display: block;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone {
+    display: flex;
+    direction: rtl;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone a {
+    display: flex;
+    padding: 0.5rem;
+    font-size: 10px;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone a:first-child {
+    padding-right: 0;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone a:nth-child(2) {
+    padding-left: 0;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone a:nth-child(3) {
+    padding-right: 0;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone a:nth-child(4) {
+    padding-left: 0;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone a span:nth-child(2) {
+    direction: ltr;
+    font-size: 12px;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md-4 p.FNV-Telephone a:hover {
+    color: #FFA600;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md {
+    padding: 0rem;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md h4 {
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md .list-group {
+    background-color: transparent;
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md .list-group .list-group-item {
+    background-color: transparent;
+    border-width: 0;
+    padding: 0.2rem 0 0;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md .list-group .list-group-item a {
+    color: #d9d9d9;
+    font-size: 12px;
+    transition: 0.3s all ease-in-out;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md .list-group .list-group-item a svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 0.5rem;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md .list-group .list-group-item a:hover {
+    color: #ffffff;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social {
+    z-index: 11;
+    display: flex;
+    overflow: hidden;
+    color: #ffffff;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social a {
+    color: #ffffff;
+    border-radius: 5px;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social a.FNV-Instagram {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social a.FNV-Youtube {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #c4302b;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social a.FNV-Linkedin {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0072b1;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social a.FNV-Facebook {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3b5998;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social a.FNV-Telegram {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0088cc;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md .FNV-Social a svg {
+    width: 18px;
+    height: 18px;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md:first-child {
+    padding-right: 1rem;
+    padding-left: 0;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-md:last-child {
+    padding-left: 1rem;
+    padding-right: 0;
+  }
+  body[dir=rtl] .FNV-Footer .container .row .col-12.FNV-Copyright {
+    padding: 0.5rem 0 0;
     text-align: center;
   }
-  .FNV-Copyright .row .col-12 small {
-    font-size: 14px;
-    color: #d9d9d9;
-    font-weight: 600;
+  body[dir=rtl] .FNV-Footer .container .row .col-12.FNV-Copyright p small {
+    direction: ltr;
+    color: #ffffff;
   }
 }/*# sourceMappingURL=main.css.map */
