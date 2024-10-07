@@ -10,6 +10,7 @@ import Avatar from '@mui/material/Avatar'
 import Typography from '@mui/material/Typography'
 import LinearProgress from '@mui/material/LinearProgress'
 import Box from '@mui/material/Box'
+import ZoomButton from 'src/views/zoom/zoomButton'
 
 // Dynamically load ZoomMeeting without SSR
 const ZoomMeeting = dynamic(() => import('src/views/zoom/ZoomMeeting'), {
@@ -77,9 +78,7 @@ const ListCourses = props => {
                   </Link>
 
                   {parseInt(user?.role) === 1000 ? (
-                    <Button variant='contained' size='small'>
-                      Zoom Button (Admin)
-                    </Button>
+                    <ZoomButton courseId={course?.cycles[0].id} />
                   ) : (
                     <>
                       {course?.cycles[0]?.zoomLink && (

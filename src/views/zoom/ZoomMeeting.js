@@ -17,7 +17,7 @@ const ZoomMeeting = ({ meetingId }) => {
         // Request the signature from the server
         const {
           data: { signature }
-        } = await axios.get('https://fanavaran:3200/api/zoom/signature', {
+        } = await axios.get('https://fanavaran.ca:3200/api/zoom/signature', {
           params: {
             meetingNumber: meetingId,
             role: 0
@@ -29,7 +29,7 @@ const ZoomMeeting = ({ meetingId }) => {
         ZoomMtg.prepareWebSDK()
 
         ZoomMtg.init({
-          leaveUrl: 'http://localhost:8585',
+          leaveUrl: 'https://fanavaran.ca/app/dashboards/courses',
           isSupportAV: true,
           success: () => {
             ZoomMtg.join({
