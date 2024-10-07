@@ -17,6 +17,7 @@ const AnalyticsDashboard = () => {
   //state
 
   const [courses, setCourses] = useState()
+  const [user, setUser] = useState()
 
   //Hooks
   const dispatch = useDispatch()
@@ -31,6 +32,7 @@ const AnalyticsDashboard = () => {
 
   useEffect(() => {
     if (profileDetails?.data.user) {
+      setUser(profileDetails?.data?.user)
       setCourses(profileDetails?.data?.courses)
     }
   }, [profileDetails])
@@ -42,7 +44,7 @@ const AnalyticsDashboard = () => {
           {/* Popular Courses */}
           <Grid item xs={12} sm={6} md={12}>
             <CardSnippet title='Enrolled Courses' code={{ tsx: null, jsx: null }}>
-              <ListEnrolledCourses courses={courses} />
+              <ListEnrolledCourses courses={courses} user={user} />
             </CardSnippet>
           </Grid>
         </Grid>

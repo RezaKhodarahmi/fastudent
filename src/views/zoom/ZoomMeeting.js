@@ -3,7 +3,11 @@ import { ZoomMtg } from '@zoom/meetingsdk'
 import axios from 'axios'
 import NoHeaderFooterLayout from 'src/layouts/components/NoHeaderFooterLayout'
 
-const ZoomMeeting = () => {
+const ZoomMeeting = ({ meetingId }) => {
+  useEffect(() => {
+    console.log(meetingId)
+  }, [meetingId])
+
   useEffect(() => {
     const initializeZoom = async () => {
       const SDK_KEY = 'DYfpXbQaQNq4kFStDhOidQ' // Your SDK Key
@@ -13,9 +17,9 @@ const ZoomMeeting = () => {
         // Request the signature from the server
         const {
           data: { signature }
-        } = await axios.get('http://localhost:3200/api/zoom/signature', {
+        } = await axios.get('https://fanavaran:3200/api/zoom/signature', {
           params: {
-            meetingNumber: '7506505500',
+            meetingNumber: meetingId,
             role: 0
           }
         })
@@ -31,8 +35,8 @@ const ZoomMeeting = () => {
             ZoomMtg.join({
               signature,
               sdkKey: SDK_KEY,
-              meetingNumber: '7506505500',
-              userName: 'Your Name',
+              meetingNumber: meetingId,
+              userName: 'Reza Khodarahmi',
               passWord: 'Meeting Password',
               success: res => {
                 console.log('Join meeting success:', res)
@@ -60,7 +64,7 @@ const ZoomMeeting = () => {
 
   return (
     <NoHeaderFooterLayout>
-      <div id='meetingSDKElement' style={{ width: '100%', height: '100%' }}></div>
+      <div id='meetingSDKElement' style={{ width: '100%', height: '100vh',zIndex:"9999" }}></div>
     </NoHeaderFooterLayout>
   )
 }
