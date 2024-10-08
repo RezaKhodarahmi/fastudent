@@ -9,7 +9,49 @@
   }
 
   .FNV-TopBar {
-    display: none;
+    padding: .5rem 0rem;
+    direction: ltr;
+    background-color: $PrimaryBackgroundTwo;
+
+    .container {
+      .row {
+        .col-6 {
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          a {
+            font-size: 12px;
+            padding: 0 1rem;
+            font-weight: 500;
+            position: relative;
+            text-align: center;
+            color: $PrimaryTextOne;
+
+            &:first-child {
+              font-size: 14px;
+            }
+
+            svg {
+              display: none;
+            }
+          }
+
+          &:not(:last-child) {
+            border-right: 1px solid $PrimaryTextOne;
+          }
+
+          &:first-child {
+            margin-bottom: .5rem;
+          }
+
+          &:nth-child(2) {
+            margin-bottom: .5rem;
+          }
+        }
+      }
+    }
   }
 
   .FNV-Home {
@@ -123,7 +165,49 @@
   }
 
   .FNV-TopBar {
-    display: none;
+    padding: .5rem 0rem;
+    direction: ltr;
+    background-color: $PrimaryBackgroundTwo;
+
+    .container {
+      .row {
+        .col-6 {
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          a {
+            font-size: 12px;
+            padding: 0 1rem;
+            font-weight: 500;
+            position: relative;
+            text-align: center;
+            color: $PrimaryTextOne;
+
+            &:first-child {
+              font-size: 14px;
+            }
+
+            svg {
+              display: none;
+            }
+          }
+
+          &:not(:last-child) {
+            border-right: 1px solid $PrimaryTextOne;
+          }
+
+          &:first-child {
+            margin-bottom: .5rem;
+          }
+
+          &:nth-child(2) {
+            margin-bottom: .5rem;
+          }
+        }
+      }
+    }
   }
 
   .FNV-Home {
@@ -238,7 +322,49 @@
   }
 
   .FNV-TopBar {
-    display: none;
+    padding: .5rem 0rem;
+    direction: ltr;
+    background-color: $PrimaryBackgroundTwo;
+
+    .container {
+      .row {
+        .col-6 {
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          a {
+            font-size: 10px;
+            padding: 0 1rem;
+            font-weight: 500;
+            position: relative;
+            text-align: center;
+            color: $PrimaryTextOne;
+
+            &:first-child {
+              font-size: 14px;
+            }
+
+            svg {
+              display: none;
+            }
+          }
+
+          &:not(:last-child) {
+            border-right: 1px solid $PrimaryTextOne;
+          }
+
+          &:first-child {
+            margin-bottom: .5rem;
+          }
+
+          &:nth-child(2) {
+            margin-bottom: .5rem;
+          }
+        }
+      }
+    }
   }
 
   .FNV-Home {
@@ -359,7 +485,7 @@
 
     .container {
       .row {
-        .col-3 {
+        .col-6 {
           padding: 0;
           display: flex;
           justify-content: center;
@@ -372,10 +498,7 @@
             color: $PrimaryTextOne;
 
             svg {
-              color: $PrimaryTextOne;
-              width: 18px;
-              height: 14px;
-              margin-right: .5rem;
+              display: none;
             }
           }
 
@@ -504,7 +627,7 @@
 
     .container {
       .row {
-        .col-3 {
+        .col-6 {
           padding: 0;
           display: flex;
           justify-content: center;
@@ -517,10 +640,10 @@
             color: $PrimaryTextOne;
 
             svg {
-              color: $PrimaryTextOne;
               width: 18px;
               height: 14px;
               margin-right: .5rem;
+              color: $PrimaryTextOne;
             }
           }
 
@@ -649,23 +772,26 @@
 
     .container {
       .row {
-        .col-3 {
+        .col-6 {
           padding: 0;
           display: flex;
           justify-content: center;
 
           a {
+            display: flex;
             font-size: 12px;
             padding: 0 .5rem;
             font-weight: 500;
             position: relative;
+            align-items: center;
             color: $PrimaryTextOne;
 
             svg {
-              color: $PrimaryTextOne;
               width: 18px;
               height: 14px;
+              display: block;
               margin-right: .5rem;
+              color: $PrimaryTextOne;
             }
           }
 
@@ -783,8 +909,36 @@
 // XXX-Large devices (larger desktops, 1920px and up)
 @media (min-width: 1920px) {
   .FNV-TopBanner {
-    width: 100%;
-    height: 65px !important;
+    background-color: #e9f7fc;
+
+    .container-fluid {
+      padding: .5rem 0;
+
+      .row {
+        .col-12 {
+          p {
+            display: flex;
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 0;
+            text-align: center;
+            color: $PrimaryTwo;
+            justify-content: center;
+
+            svg {
+              width: 120px;
+              margin-left: 1rem;
+            }
+
+            strong {
+              margin: 0 .5rem;
+              font-weight: 700;
+              color: $PrimaryOne;
+            }
+          }
+        }
+      }
+    }
   }
 
   .FNV-TopBar {
@@ -794,23 +948,26 @@
 
     .container {
       .row {
-        .col-3 {
+        .col-6 {
           padding: 0;
           display: flex;
           justify-content: center;
 
           a {
+            display: flex;
             font-size: 14px;
             padding: 0 1rem;
             font-weight: 500;
             position: relative;
+            align-items: center;
             color: $PrimaryTextOne;
 
             svg {
-              color: $PrimaryTextOne;
               width: 18px;
               height: 14px;
+              display: block;
               margin-right: .5rem;
+              color: $PrimaryTextOne;
             }
           }
 
