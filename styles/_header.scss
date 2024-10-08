@@ -3,9 +3,38 @@
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575px) {
   .FNV-TopBanner {
-    width: 100%;
-    height: 25px !important;
-    object-fit: cover;
+    background-color: #f6fcff;
+
+    .container-fluid {
+      padding: .5rem 0;
+
+      .row {
+        width: 100%;
+
+        .col-12 {
+          p {
+            display: flex;
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 0;
+            text-align: center;
+            color: $PrimaryTwo;
+            justify-content: center;
+
+            svg {
+              width: 50px;
+              margin-left: .5rem;
+            }
+
+            strong {
+              margin: 0 .4rem;
+              font-weight: 700;
+              color: $PrimaryOne;
+            }
+          }
+        }
+      }
+    }
   }
 
   .FNV-TopBar {
@@ -160,8 +189,38 @@
 // `sm` applies to x-small devices (portrait phones, less than 576px)
 @media (min-width: 575.98px) and (max-width: 767px) {
   .FNV-TopBanner {
-    width: 100%;
-    height: 25px !important;
+    background-color: #f6fcff;
+
+    .container-fluid {
+      padding: .5rem 0;
+
+      .row {
+        width: 100%;
+
+        .col-12 {
+          p {
+            display: flex;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 0;
+            text-align: center;
+            color: $PrimaryTwo;
+            justify-content: center;
+
+            svg {
+              width: 120px;
+              margin-left: 1rem;
+            }
+
+            strong {
+              margin: 0 .5rem;
+              font-weight: 700;
+              color: $PrimaryOne;
+            }
+          }
+        }
+      }
+    }
   }
 
   .FNV-TopBar {
@@ -316,9 +375,38 @@
 // `md` applies to small devices (landscape phones, less than 768px)
 @media (min-width: 767.98px) and (max-width: 991.98px) {
   .FNV-TopBanner {
-    width: 100%;
-    object-fit: cover;
-    height: 50px !important;
+    background-color: #f6fcff;
+
+    .container-fluid {
+      padding: .5rem 0;
+
+      .row {
+        width: 100%;
+
+        .col-12 {
+          p {
+            display: flex;
+            font-size: 25px;
+            font-weight: 500;
+            margin-bottom: 0;
+            text-align: center;
+            color: $PrimaryTwo;
+            justify-content: center;
+
+            svg {
+              width: 120px;
+              margin-left: 1rem;
+            }
+
+            strong {
+              margin: 0 .5rem;
+              font-weight: 700;
+              color: $PrimaryOne;
+            }
+          }
+        }
+      }
+    }
   }
 
   .FNV-TopBar {
@@ -473,9 +561,38 @@
 // `lg` applies to medium devices (tablets, less than 992px)
 @media (min-width: 992px) {
   .FNV-TopBanner {
-    width: 100%;
-    object-fit: cover;
-    height: 65px !important;
+    background-color: #f6fcff;
+
+    .container-fluid {
+      padding: .5rem 0;
+
+      .row {
+        width: 100%;
+
+        .col-12 {
+          p {
+            display: flex;
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 0;
+            text-align: center;
+            color: $PrimaryTwo;
+            justify-content: center;
+
+            svg {
+              width: 120px;
+              margin-left: 1rem;
+            }
+
+            strong {
+              margin: 0 .5rem;
+              font-weight: 700;
+              color: $PrimaryOne;
+            }
+          }
+        }
+      }
+    }
   }
 
   .FNV-TopBar {
@@ -616,8 +733,38 @@
 // `xl` applies to large devices (desktops, less than 1200px)
 @media (min-width: 1199.98px) {
   .FNV-TopBanner {
-    width: 100%;
-    height: 65px !important;
+    background-color: #f6fcff;
+
+    .container-fluid {
+      padding: .5rem 0;
+
+      .row {
+        width: 100%;
+
+        .col-12 {
+          p {
+            display: flex;
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 0;
+            text-align: center;
+            color: $PrimaryTwo;
+            justify-content: center;
+
+            svg {
+              width: 120px;
+              margin-left: 1rem;
+            }
+
+            strong {
+              margin: 0 .5rem;
+              font-weight: 700;
+              color: $PrimaryOne;
+            }
+          }
+        }
+      }
+    }
   }
 
   .FNV-TopBar {
@@ -761,8 +908,38 @@
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
   .FNV-TopBanner {
-    width: 100%;
-    height: 65px !important;
+    background-color: #f6fcff;
+
+    .container-fluid {
+      padding: .5rem 0;
+
+      .row {
+        width: 100%;
+
+        .col-12 {
+          p {
+            display: flex;
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 0;
+            text-align: center;
+            color: $PrimaryTwo;
+            justify-content: center;
+
+            svg {
+              width: 120px;
+              margin-left: 1rem;
+            }
+
+            strong {
+              margin: 0 .5rem;
+              font-weight: 700;
+              color: $PrimaryOne;
+            }
+          }
+        }
+      }
+    }
   }
 
   .FNV-TopBar {
@@ -909,12 +1086,14 @@
 // XXX-Large devices (larger desktops, 1920px and up)
 @media (min-width: 1920px) {
   .FNV-TopBanner {
-    background-color: #e9f7fc;
+    background-color: #f6fcff;
 
     .container-fluid {
       padding: .5rem 0;
 
       .row {
+        width: 100%;
+
         .col-12 {
           p {
             display: flex;
