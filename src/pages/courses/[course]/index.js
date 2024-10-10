@@ -267,6 +267,7 @@ const Course = () => {
     }
   }, [selectedCycle, data])
 
+
   if (loading) return <Spinner />
 
   return (
@@ -287,7 +288,7 @@ const Course = () => {
                 {/* Course Section */}
                 <div className="container">
                   <div className="row FNV-SingleCourse-SD">
-                    <article className="col-12 col-md-7">
+                    <article className="col-12 col-md-8">
                       <header>
                         <h1>{data?.title}</h1>
                       </header>
@@ -497,6 +498,305 @@ const Course = () => {
                           </h3>
                         </div>
                       </div>
+
+                      <div className='FNV-Single-Video'>
+                        {/* Course Video */}
+                        {data?.introURL ? (
+                          <ReactPlayer className='FNV-Course-Video w-100' url={data?.introURL} controls={true} />
+                        ) : null}
+                      </div>
+
+                      {/* Short Description */}
+                      <h4 className='FNV-SingleCourse-Detail-Title' id="FNV-CheckMate">
+                        <svg width="99" height="65" viewBox="0 0 99 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g opacity="0.3">
+                            <path d="M25.1606 8.4337L14.9396 34.8455L3 30.0516L13.221 4.00159L19.1908 6.21765L25.1606 8.4337ZM25.1606 8.4337C29.653 4.8458 40.8629 -0.575253 49.7634 6.44377C54.793 10.4103 58.5383 13.3696 61.084 15.3839C63.1539 17.0216 63.4448 20.0483 61.7292 22.0542V22.0542C60.1736 23.8731 57.4931 24.2182 55.5274 22.8527L47.1403 17.0266L17.3818 34.1219" stroke="#0074FF" strokeWidth="4" />
+                            <path d="M68.3297 9.09517L80.3488 34.366L92.011 28.9319L79.7279 3.41375L74.0288 6.25446L68.3297 9.09517Z" stroke="#0074FF" strokeWidth="4" />
+                            <path d="M18.0152 33.7599L16.0933 34.8051C14.0069 35.9398 13.2341 38.5501 14.3664 40.6377V40.6377C15.4996 42.727 18.1119 43.502 20.2012 42.3688L36.5441 33.5047" stroke="#0074FF" strokeWidth="4" />
+                            <path d="M36.6178 33.6095L22.0671 41.5016C19.979 42.6341 19.2044 45.245 20.3369 47.3331V47.3331C21.4695 49.4212 24.0804 50.1959 26.1685 49.0633L40.7192 41.1712" stroke="#0074FF" strokeWidth="4" />
+                            <path d="M40.7382 41.2386L28.58 47.8331C26.4918 48.9657 25.7172 51.5765 26.8498 53.6647V53.6647C27.9823 55.7528 30.5932 56.5274 32.6813 55.3949L44.8396 48.8004" stroke="#0074FF" strokeWidth="4" />
+                            <path d="M44.8784 48.8717L35.4457 53.9879C33.362 55.118 32.589 57.7233 33.7192 59.807V59.807C34.8527 61.897 37.4693 62.6672 39.5544 61.5248L50.939 55.287" stroke="#0074FF" strokeWidth="4" />
+                            <rect width="18.8513" height="8.60242" rx="4.30121" transform="matrix(-0.657259 -0.753665 -0.753665 0.657259 83.8164 39.6929)" stroke="#0074FF" strokeWidth="4" />
+                            <rect width="21.6567" height="8.60242" rx="4.30121" transform="matrix(-0.657259 -0.753665 -0.753665 0.657259 77.3204 45.5254)" stroke="#0074FF" strokeWidth="4" />
+                            <rect width="17.6113" height="8.60242" rx="4.30121" transform="matrix(-0.657259 -0.753665 -0.753665 0.657259 70.843 51.4385)" stroke="#0074FF" strokeWidth="4" />
+                            <rect width="11.3865" height="8.60242" rx="4.30121" transform="matrix(-0.657259 -0.753665 -0.753665 0.657259 63.8418 56.5303)" stroke="#0074FF" strokeWidth="4" />
+                            <path d="M55.1904 10.6943H69.3008" stroke="#0074FF" strokeWidth="4" />
+                          </g>
+                        </svg>
+
+                        {t('single-course-introduction')}
+                      </h4>
+
+                      <div
+                        className='non-clickable-content'
+                        dangerouslySetInnerHTML={{ __html: data?.description }}
+                      />
+
+                      {/* Course Materials */}
+                      {data?.abstract ? (
+                        <div id='CourseDetails'>
+                          <h4 className='FNV-SingleCourse-Detail-Title'>
+                            <svg width="88" height="80" viewBox="0 0 88 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g opacity="0.3">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.93613 24.9924L8.95438 22.5487L44.4084 0.987305L79.8326 22.5463L83.8518 24.9924L79.8293 27.4304L77.0911 29.09L84.6694 33.8017L87.8382 35.772L87.7953 35.798V41.8846L87.7953 43.2691L86.7665 43.8605L79.6009 47.9792L84.6553 51.0531L87.8739 53.0105L84.6531 54.9627L45.1559 78.9022L44.3539 79.3883L43.5523 78.9014L4.13386 54.9619L0.90332 52.9999L4.13863 51.0496L9.21949 47.9868L2.23012 43.9551L1.20355 43.3629V41.9805L1.20355 35.9223L0.99587 35.7961L4.10098 33.8128L11.5867 29.0314L8.95547 27.4334L4.93613 24.9924ZM13.3536 50.3715L8.96928 53.0145L44.3555 74.5052L79.8299 53.0039L75.471 50.353L45.1094 67.8045L44.3411 68.2461L43.5732 67.8032L13.3536 50.3715ZM45.1557 61.6421L84.2038 37.9748V40.5L44.3438 63.4111L4.7951 40.5981L4.7951 38.1035L43.5521 61.6413L44.3537 62.1282L45.1557 61.6421ZM15.5476 31.4369L8.87639 35.6981L44.3553 57.2451L79.8653 35.7223L73.0944 31.5125L44.3545 48.9319L15.5476 31.4369ZM44.3561 44.0488L12.9737 24.9897L44.4078 5.87304L75.8101 24.9843L44.3561 44.0488Z" fill="#0074FF" />
+                              </g>
+                            </svg>
+
+                            {t('single-course-materials')}
+                          </h4>
+                          {/* Contents */}
+                          {inEnrolled && data?.abstract ? (
+                            <div className='FNV-Course-Card-Body'>
+                              <div className='non-clickable-content' dangerouslySetInnerHTML={{ __html: data?.abstract }} />
+                            </div>
+                          ) : null}
+                        </div>
+                      ) : null}
+
+                      {/* Course Mock Exams */}
+                      {filteredTests && filteredTests.length > 0 && (
+                        <>
+                          <h5 className='FNV-SingleCourse-Detail-Title'>
+                            <svg width="55" height="51" viewBox="0 0 55 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g opacity="0.3">
+                                <rect x="2" y="2" width="51" height="47" stroke="#FFA600" strokeWidth="4" />
+                                <rect x="12" y="11" width="9" height="9" stroke="#FFA600" strokeWidth="4" />
+                                <rect x="12" y="31" width="9" height="9" stroke="#FFA600" strokeWidth="4" />
+                                <path d="M27 13H45" stroke="#FFA600" strokeWidth="4" />
+                                <path d="M27 33H45" stroke="#FFA600" strokeWidth="4" />
+                                <path d="M27 18H36" stroke="#FFA600" strokeWidth="4" />
+                                <path d="M27 38H36" stroke="#FFA600" strokeWidth="4" />
+                              </g>
+                            </svg>
+                            {t('single-course-mock-exams')}
+                          </h5>
+
+                          <div className="accordion" id="courseMockExamsAccordion">
+                            {filteredTests.map((test, index) => (
+                              <div key={test.id} className='accordion-item'>
+                                <h2 className='accordion-header' id={`headingTest${test.id}`}>
+                                  <button
+                                    className='accordion-button collapsed'
+                                    type='button'
+                                    data-bs-toggle='collapse'
+                                    data-bs-target={`#collapseTest${test.id}`}
+                                    aria-expanded='false'
+                                    aria-controls={`collapseTest${test.id}`}
+                                  >
+                                    {/* Icon */}
+                                    <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M0 2.83863L13 0V7.16137L0 10V2.83863Z" fill="#0074FF" />
+                                    </svg>
+
+                                    {test.title}
+
+                                    {/* Quiz Type */}
+                                    <span className='FNV-Badge-Quiz'>
+                                      <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.809 10.7216C8.99217 10.7216 9.15258 10.654 9.29025 10.5186C9.42733 10.3845 9.49588 10.2255 9.49588 10.0417C9.49588 9.858 9.4285 9.69758 9.29375 9.5605C9.159 9.42342 9.00004 9.35488 8.81688 9.35488C8.63371 9.35488 8.47329 9.42225 8.33562 9.557C8.19796 9.69175 8.12912 9.85071 8.12912 10.0339C8.12912 10.217 8.1965 10.3775 8.33125 10.5151C8.466 10.6528 8.62525 10.7222 8.809 10.7216ZM8.42575 8.25762H9.19925C9.222 7.89071 9.28004 7.6145 9.37337 7.429C9.46612 7.2435 9.68983 6.9845 10.0445 6.652C10.4143 6.316 10.6722 6.01558 10.818 5.75075C10.9638 5.48708 11.0367 5.18404 11.0367 4.84162C11.0367 4.25246 10.8267 3.76158 10.4067 3.369C9.98675 2.97583 9.45533 2.77925 8.8125 2.77925C8.32658 2.77925 7.89492 2.9105 7.5175 3.173C7.14008 3.4355 6.85279 3.79338 6.65562 4.24662L7.36525 4.559C7.53033 4.21717 7.73158 3.9605 7.969 3.789C8.20642 3.6175 8.48758 3.53204 8.8125 3.53262C9.23017 3.53262 9.57638 3.65629 9.85113 3.90363C10.1253 4.15096 10.2624 4.47033 10.2624 4.86175C10.2624 5.09975 10.1959 5.32113 10.0629 5.52588C9.92929 5.73062 9.69975 5.97708 9.37425 6.26525C9.00558 6.58725 8.75533 6.88271 8.6235 7.15162C8.49167 7.42054 8.42575 7.78921 8.42575 8.25762ZM2.6875 12.875V0.625H14.9375V12.875H2.6875ZM3.5625 12H14.0625V1.5H3.5625V12ZM0.0625 15.5V3.789H0.9375V14.625H11.7744V15.5H0.0625Z" fill="#6A7BBA" />
+                                      </svg>
+                                      {t('single-course-quiz')}
+                                    </span>
+
+                                    {inEnrolled ? (
+                                      <span className='FNV-Badge-Unlock'>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1 5.7027V1H5.7027" />
+                                          <path d="M15.5 10.7973L15.5 15.5L10.7973 15.5" />
+                                          <path d="M15.5 5.7027V1H10.7973" />
+                                          <path d="M1 10.7973L1 15.5L5.7027 15.5" />
+                                          <rect x="5.02734" y="6.5946" width="6.83784" height="5.27027" />
+                                          <path d="M7.27051 6.48648V4.13513H9.62186V6.48648" />
+                                        </svg>
+                                        {t('single-course-unlocked')}
+                                      </span>
+                                    ) : (
+                                      <span className='FNV-Badge-Locked'>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1 5.7027V1H5.7027" />
+                                          <path d="M15.5 10.7973L15.5 15.5L10.7973 15.5" />
+                                          <path d="M15.5 5.7027V1H10.7973" />
+                                          <path d="M1 10.7973L1 15.5L5.7027 15.5" />
+                                          <rect x="5.02734" y="6.5946" width="6.83784" height="5.27027" />
+                                          <path d="M7.27051 6.48648V4.13513H9.62186V6.48648" />
+                                        </svg>
+
+                                        {test.needEnroll ? t('single-course-locked') : t('single-course-unlocked')}
+                                      </span>
+                                    )}
+
+                                    {/* Information */}
+                                    <span className='FNV-Badge-Information'>
+                                      <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.99425 3.95C8.15881 3.95 8.29524 4.0018 8.39811 4.10877C8.49979 4.2145 8.55 4.34679 8.55 4.50199C8.55 4.65719 8.49979 4.78949 8.39811 4.89522C8.29524 5.00218 8.15881 5.05398 7.99425 5.05398C7.83653 5.05398 7.70424 5.00164 7.60189 4.89522M7.99425 3.95L7.60189 4.89522M7.99425 3.95C7.83653 3.95 7.70424 4.00234 7.60189 4.10877C7.50021 4.2145 7.45 4.34679 7.45 4.50199C7.45 4.65719 7.50021 4.78949 7.60189 4.89522M7.99425 3.95L7.60189 4.89522M8.38908 6.749V6.699H8.33908H7.67241H7.62241V6.749V13V13.05H7.67241H8.33908H8.38908V13V6.749Z" fill="#6A7BBA" stroke-width="0.1" />
+                                        <rect x="0.5" y="1" width="15" height="15" />
+                                      </svg>
+                                      {t('single-course-information')}
+                                    </span>
+                                  </button>
+                                </h2>
+                                <div
+                                  id={`collapseTest${test.id}`}
+                                  className='accordion-collapse collapse'
+                                  aria-labelledby={`headingTest${test.id}`}
+                                  data-bs-parent='#courseMockExamsAccordion'
+                                >
+                                  <div className='accordion-body FNV-Locked'>
+                                    <ul>
+                                      <li>
+                                        {t('single-course-quiz-name')}: {test.title}
+                                      </li>
+                                      <li>
+                                        {t('single-course-quiz-time')}: {test.testTime} {t('single-course-quiz-min')}
+                                      </li>
+                                      <li>
+                                        {t('single-course-quiz-agenda')}:{' '}
+                                        <div
+                                          className='non-clickable-content'
+                                          dangerouslySetInnerHTML={{ __html: test.agenda }}
+                                        />
+                                      </li>
+                                      {inEnrolled ? (
+                                        <Link
+                                          className='FNV-Btn BtnPrimary'
+                                          href={`${data?.slug}/${test.slug}/`}
+                                          passHref
+                                        >
+                                          {t('single-course-quiz-start')}
+                                        </Link>
+                                      ) : (
+                                        <Typography className='FNV-Locked-Text'>
+                                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 5.7027V1H5.7027" stroke="#981837" />
+                                            <path d="M15.5 10.7973L15.5 15.5L10.7973 15.5" stroke="#981837" />
+                                            <path d="M15.5 5.7027V1H10.7973" stroke="#981837" />
+                                            <path d="M1 10.7973L1 15.5L5.7027 15.5" stroke="#981837" />
+                                            <rect x="5.02734" y="6.5946" width="6.83784" height="5.27027" stroke="#981837" />
+                                            <path d="M7.27051 6.48648V4.13513H9.62186V6.48648" stroke="#981837" />
+                                          </svg>
+
+                                          {t('single-course-quiz-comment')}
+                                        </Typography>
+                                      )}
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </>
+                      )}
+
+                      {/* Course Videos */}
+                      {filteredVideos && filteredVideos.length > 0 && (
+                        <>
+                          <h5 className='FNV-SingleCourse-Detail-Title'>
+                            <svg width="78" height="51" viewBox="0 0 78 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g opacity="0.35">
+                                <rect x="2" y="2" width="51" height="47" stroke="#FFA600" strokeWidth="4" />
+                                <path d="M76 8L53 17.697V31.3781L76 41V8Z" stroke="#FFA600" strokeWidth="4" />
+                              </g>
+                            </svg>
+
+                            {t('single-course-videos-title')}
+                          </h5>
+
+                          <div className='accordion' id='courseMockExamsAccordion'>
+                            {filteredVideos.map(video => (
+                              <div key={video.id} className='accordion-item'>
+                                <h2 className='accordion-header'>
+                                  <button
+                                    className='accordion-button collapsed'
+                                    type='button'
+                                    data-bs-toggle='collapse'
+                                    data-bs-target={`#panelsStayOpen-collapseVideo${video.id}`}
+                                    aria-expanded='false'
+                                    aria-controls={`panelsStayOpen-collapseVideo${video.id}`}
+                                  >
+                                    {/* Icon */}
+                                    <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M0 2.83863L13 0V7.16137L0 10V2.83863Z" fill="#0074FF" />
+                                    </svg>
+
+                                    {video.title}
+
+                                    {/* Quiz Type */}
+                                    <span className='FNV-Badge-Quiz'>
+                                      <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.809 10.7216C8.99217 10.7216 9.15258 10.654 9.29025 10.5186C9.42733 10.3845 9.49588 10.2255 9.49588 10.0417C9.49588 9.858 9.4285 9.69758 9.29375 9.5605C9.159 9.42342 9.00004 9.35488 8.81688 9.35488C8.63371 9.35488 8.47329 9.42225 8.33562 9.557C8.19796 9.69175 8.12912 9.85071 8.12912 10.0339C8.12912 10.217 8.1965 10.3775 8.33125 10.5151C8.466 10.6528 8.62525 10.7222 8.809 10.7216ZM8.42575 8.25762H9.19925C9.222 7.89071 9.28004 7.6145 9.37337 7.429C9.46612 7.2435 9.68983 6.9845 10.0445 6.652C10.4143 6.316 10.6722 6.01558 10.818 5.75075C10.9638 5.48708 11.0367 5.18404 11.0367 4.84162C11.0367 4.25246 10.8267 3.76158 10.4067 3.369C9.98675 2.97583 9.45533 2.77925 8.8125 2.77925C8.32658 2.77925 7.89492 2.9105 7.5175 3.173C7.14008 3.4355 6.85279 3.79338 6.65562 4.24662L7.36525 4.559C7.53033 4.21717 7.73158 3.9605 7.969 3.789C8.20642 3.6175 8.48758 3.53204 8.8125 3.53262C9.23017 3.53262 9.57638 3.65629 9.85113 3.90363C10.1253 4.15096 10.2624 4.47033 10.2624 4.86175C10.2624 5.09975 10.1959 5.32113 10.0629 5.52588C9.92929 5.73062 9.69975 5.97708 9.37425 6.26525C9.00558 6.58725 8.75533 6.88271 8.6235 7.15162C8.49167 7.42054 8.42575 7.78921 8.42575 8.25762ZM2.6875 12.875V0.625H14.9375V12.875H2.6875ZM3.5625 12H14.0625V1.5H3.5625V12ZM0.0625 15.5V3.789H0.9375V14.625H11.7744V15.5H0.0625Z" fill="#6A7BBA" />
+                                      </svg>
+                                      {t('single-course-quiz')}
+                                    </span>
+
+                                    {inEnrolled ? (
+                                      <span className='FNV-Badge-Unlock'>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1 5.7027V1H5.7027" />
+                                          <path d="M15.5 10.7973L15.5 15.5L10.7973 15.5" />
+                                          <path d="M15.5 5.7027V1H10.7973" />
+                                          <path d="M1 10.7973L1 15.5L5.7027 15.5" />
+                                          <rect x="5.02734" y="6.5946" width="6.83784" height="5.27027" />
+                                          <path d="M7.27051 6.48648V4.13513H9.62186V6.48648" />
+                                        </svg>
+                                        {t('single-course-unlocked')}
+                                      </span>
+                                    ) : (
+                                      <span className='FNV-Badge-Locked'>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1 5.7027V1H5.7027" />
+                                          <path d="M15.5 10.7973L15.5 15.5L10.7973 15.5" />
+                                          <path d="M15.5 5.7027V1H10.7973" />
+                                          <path d="M1 10.7973L1 15.5L5.7027 15.5" />
+                                          <rect x="5.02734" y="6.5946" width="6.83784" height="5.27027" />
+                                          <path d="M7.27051 6.48648V4.13513H9.62186V6.48648" />
+                                        </svg>
+
+                                        {test.needEnroll ? t('single-course-locked') : t('single-course-unlocked')}
+                                      </span>
+                                    )}
+
+                                    {/* Information */}
+                                    <span className='FNV-Badge-Information'>
+                                      <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.99425 3.95C8.15881 3.95 8.29524 4.0018 8.39811 4.10877C8.49979 4.2145 8.55 4.34679 8.55 4.50199C8.55 4.65719 8.49979 4.78949 8.39811 4.89522C8.29524 5.00218 8.15881 5.05398 7.99425 5.05398C7.83653 5.05398 7.70424 5.00164 7.60189 4.89522M7.99425 3.95L7.60189 4.89522M7.99425 3.95C7.83653 3.95 7.70424 4.00234 7.60189 4.10877C7.50021 4.2145 7.45 4.34679 7.45 4.50199C7.45 4.65719 7.50021 4.78949 7.60189 4.89522M7.99425 3.95L7.60189 4.89522M8.38908 6.749V6.699H8.33908H7.67241H7.62241V6.749V13V13.05H7.67241H8.33908H8.38908V13V6.749Z" fill="#6A7BBA" stroke-width="0.1" />
+                                        <rect x="0.5" y="1" width="15" height="15" />
+                                      </svg>
+                                      {t('single-course-information')}
+                                    </span>
+                                  </button>
+                                </h2>
+                                <div
+                                  id={`panelsStayOpen-collapseVideo${video.id}`}
+                                  className='accordion-collapse collapse'
+                                >
+                                  <div className='accordion-body FNV-Locked'>
+                                    <ul>
+                                      <li>
+                                        {t('single-course-video-title')}: {video.title}
+                                      </li>
+                                      <li>
+                                        {t('single-course-video-time')}: {video.time} {t('single-course-quiz-min')}
+                                      </li>
+                                      {inEnrolled ? (
+                                        <Link
+                                          className='FNV-Btn BtnPrimary BtnSmall mt-2'
+                                          href={`${data?.slug}/session/${video?.id}`}
+                                        >
+                                          {t('single-course-video-start')}
+                                        </Link>
+                                      ) : (
+                                        <Typography className='start-test-button'>
+                                          {t('single-course-quiz-comment')}
+                                        </Typography>
+                                      )}
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </>
+                      )}
                     </article>
 
                     <aside className="col-12 col-md-4">
@@ -511,7 +811,7 @@ const Course = () => {
                           {/* Diploma */}
                           <div className='row'>
                             {/* SVG */}
-                            <div className='col-3 col-md-2'>
+                            <div className='col-3 col-md-1'>
                               <svg
                                 xmlns='http://www.w3.org/2000/svg'
                                 class='icon icon-tabler icon-tabler-certificate'
@@ -532,7 +832,7 @@ const Course = () => {
                             </div>
 
                             {/* Title */}
-                            <div className='col-9 col-md-10'>
+                            <div className='col-9 col-md-11'>
                               <h4>{t('single-course-diploma')}</h4>
                               <p>{t('single-course-diploma-desc')}</p>
                             </div>
@@ -541,7 +841,7 @@ const Course = () => {
                           {/* Regular Price */}
                           <div className='row'>
                             {/* SVG */}
-                            <div className='col-3 col-md-2'>
+                            <div className='col-3 col-md-1'>
                               <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M25.2956 11.2296L25.2955 11.2296C24.9193 11.1433 24.6841 10.7684 24.7703 10.3921C24.8565 10.0158 25.2316 9.7805 25.6079 9.86687L25.2956 11.2296ZM25.2956 11.2296C25.6957 11.3213 26.1312 11.3834 26.5883 11.4148M25.2956 11.2296L26.5883 11.4148M26.5883 11.4148C26.3265 11.7574 25.9142 11.9785 25.4517 11.9785C24.6633 11.9785 24.0215 11.3367 24.0215 10.5483C24.0215 9.75987 24.6633 9.11809 25.4517 9.11809C26.0553 9.11809 26.5732 9.49448 26.7825 10.0251C26.3589 10.0016 25.962 9.94801 25.608 9.86689L26.5883 11.4148ZM15.1333 4.82217L15.1333 4.82218L1.47149 18.484C0.576169 19.3794 0.576169 20.8357 1.47149 21.731L14.269 34.5285C14.7167 34.9762 15.3051 35.1999 15.8924 35.1999C16.4798 35.1999 17.0682 34.9762 17.5159 34.5285L31.1778 20.8666L31.0364 20.7252L31.1778 20.8666C31.7117 20.3327 32.0061 19.6218 32.0061 18.8667V10.3285C32.3872 10.1252 32.7495 9.8916 33.0838 9.62524C34.4667 8.52342 35.2 6.99826 35.2 5.22516C35.2 2.78495 33.215 0.8 30.7748 0.8C28.7937 0.8 27.0646 2.13624 26.5247 3.99382H17.1332C16.3782 3.99382 15.6672 4.2883 15.1333 4.82217ZM30.1892 19.8781L16.5273 33.5399C16.1773 33.8899 15.6075 33.8899 15.2575 33.5399L2.46005 20.7425C2.46005 20.7425 2.46004 20.7425 2.46004 20.7425C2.11011 20.3925 2.1101 19.8226 2.46004 19.4726C2.46004 19.4726 2.46005 19.4726 2.46005 19.4726L16.1219 5.81079C16.3923 5.54036 16.7508 5.3919 17.1332 5.3919H29.7102C30.2051 5.3919 30.6081 5.79487 30.6081 6.28977V9.43315C29.8502 9.72964 29.027 9.91183 28.2241 9.9916C27.9648 8.69787 26.8211 7.71995 25.4518 7.71995C23.8921 7.71995 22.6235 8.98855 22.6235 10.5482C22.6235 12.1079 23.8921 13.3765 25.4518 13.3765C26.7133 13.3765 27.7834 12.5467 28.1471 11.4049C28.9631 11.3404 29.8039 11.1829 30.6081 10.9202V18.8668C30.6081 19.2492 30.4596 19.6076 30.1892 19.8781ZM32.2125 8.53185C32.1455 8.5853 32.0766 8.63724 32.0061 8.6877V6.28977C32.0061 5.02362 30.9763 3.99382 29.7102 3.99382H28.0097C28.4872 2.92986 29.5634 2.19807 30.7748 2.19807C32.4438 2.19807 33.8019 3.5562 33.8019 5.22516C33.8019 6.58233 33.2693 7.6898 32.2125 8.53185Z" fill="white" stroke="white" strokeWidth="0.4" />
                               </svg>
@@ -553,7 +853,7 @@ const Course = () => {
                             </div>
 
                             {/* Price */}
-                            <div className='col-9 col-md-5'>
+                            <div className='col-9 col-md-6'>
                               <price>
                                 {data?.cycles
                                   ? data?.cycles?.map(cycle =>
@@ -597,7 +897,7 @@ const Course = () => {
                           {/* Gold Price */}
                           <div className='row'>
                             {/* SVG */}
-                            <div className='col-3 col-md-2'>
+                            <div className='col-3 col-md-1'>
                               <svg
                                 xmlns='http://www.w3.org/2000/svg'
                                 class='icon icon-tabler icon-tabler-crown'
@@ -618,7 +918,7 @@ const Course = () => {
                             </div>
 
                             {/* Price */}
-                            <div className='col-9 col-md-5'>
+                            <div className='col-9 col-md-6'>
                               <price>
                                 {data?.cycles
                                   ? data?.cycles?.map(cycle =>
@@ -645,7 +945,7 @@ const Course = () => {
                           {/* Platinium Price */}
                           <div className='row'>
                             {/* SVG */}
-                            <div className='col-3 col-md-2'>
+                            <div className='col-3 col-md-1'>
                               <svg width="35" height="28" viewBox="0 0 35 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6.97916 0.3H6.97921L28.0223 0.3L28.0223 0.3C28.2074 0.299974 28.3899 0.344207 28.5551 0.429251C28.7203 0.514303 28.8636 0.637835 28.973 0.790009L28.973 0.790044L34.6154 8.63392C34.6154 8.63394 34.6154 8.63396 34.6154 8.63399C34.6754 8.71748 34.7052 8.81987 34.6992 8.9237C34.6932 9.02752 34.6518 9.12554 34.5828 9.20119C34.5828 9.20121 34.5828 9.20122 34.5828 9.20124L17.821 27.5575L17.8209 27.5575C17.7419 27.6442 17.6328 27.6949 17.5178 27.6996C17.4064 27.7043 17.2971 27.6654 17.2125 27.5905L0.417226 9.20124C0.417216 9.20123 0.417172 9.20118 0.417162 9.20117C0.348124 9.12551 0.306762 9.02753 0.300758 8.9237C0.294755 8.81988 0.324558 8.7175 0.38454 8.63402C0.384564 8.63398 0.384589 8.63395 0.384613 8.63392L6.0284 0.790074L6.02845 0.790009C6.13788 0.637835 6.28116 0.514303 6.44636 0.429251C6.61155 0.344207 6.79412 0.299974 6.97916 0.3ZM7.73062 2.68476L7.57691 2.68477L7.48713 2.80953L3.35352 8.5537L3.21126 8.75138L3.37549 8.93123L17.2792 24.1565L17.5007 24.3991L17.7223 24.1565L31.6245 8.93121L31.7887 8.75139L31.6465 8.55373L27.5129 2.80806L27.4231 2.68325L27.2693 2.68327L7.73062 2.68476Z" fill="white" stroke="#223885" strokeWidth="0.6" />
                               </svg>
@@ -657,7 +957,7 @@ const Course = () => {
                             </div>
 
                             {/* Price */}
-                            <div className='col-9 col-md-5'>
+                            <div className='col-9 col-md-6'>
                               <price>
                                 {data?.cycles
                                   ? data?.cycles?.map(cycle =>
@@ -843,284 +1143,169 @@ const Course = () => {
                         <p></p>
                       </div>
                     </aside>
-                  </div>
-                </div>
 
-                <div className='FNV-Canvas-Bottom'>
-                  <svg viewBox="0 0 1454 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1453 0.999987L1 99L1 0.999987L1453 0.999987Z" fill="white" stroke="white" />
-                  </svg>
-                </div>
-              </section>
-
-              <section className='FNV-SingleCourse-Instructor'>
-                {/* Instructor and Video */}
-                <div className='container'>
-                  <div className='row'>
-                    <article className='col-12 col-md-8'>
-                      {/* Course Video */}
-                      {data?.introURL ? (
-                        <ReactPlayer className='FNV-Course-Video w-100' url={data?.introURL} controls={true} />
-                      ) : null}
-
-                      {/* Short Description */}
-                      <h4 className='FNV-SingleCourse-Detail-Title'>
-                        <svg width="99" height="65" viewBox="0 0 99 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <g opacity="0.3">
-                            <path d="M25.1606 8.4337L14.9396 34.8455L3 30.0516L13.221 4.00159L19.1908 6.21765L25.1606 8.4337ZM25.1606 8.4337C29.653 4.8458 40.8629 -0.575253 49.7634 6.44377C54.793 10.4103 58.5383 13.3696 61.084 15.3839C63.1539 17.0216 63.4448 20.0483 61.7292 22.0542V22.0542C60.1736 23.8731 57.4931 24.2182 55.5274 22.8527L47.1403 17.0266L17.3818 34.1219" stroke="#0074FF" strokeWidth="4" />
-                            <path d="M68.3297 9.09517L80.3488 34.366L92.011 28.9319L79.7279 3.41375L74.0288 6.25446L68.3297 9.09517Z" stroke="#0074FF" strokeWidth="4" />
-                            <path d="M18.0152 33.7599L16.0933 34.8051C14.0069 35.9398 13.2341 38.5501 14.3664 40.6377V40.6377C15.4996 42.727 18.1119 43.502 20.2012 42.3688L36.5441 33.5047" stroke="#0074FF" strokeWidth="4" />
-                            <path d="M36.6178 33.6095L22.0671 41.5016C19.979 42.6341 19.2044 45.245 20.3369 47.3331V47.3331C21.4695 49.4212 24.0804 50.1959 26.1685 49.0633L40.7192 41.1712" stroke="#0074FF" strokeWidth="4" />
-                            <path d="M40.7382 41.2386L28.58 47.8331C26.4918 48.9657 25.7172 51.5765 26.8498 53.6647V53.6647C27.9823 55.7528 30.5932 56.5274 32.6813 55.3949L44.8396 48.8004" stroke="#0074FF" strokeWidth="4" />
-                            <path d="M44.8784 48.8717L35.4457 53.9879C33.362 55.118 32.589 57.7233 33.7192 59.807V59.807C34.8527 61.897 37.4693 62.6672 39.5544 61.5248L50.939 55.287" stroke="#0074FF" strokeWidth="4" />
-                            <rect width="18.8513" height="8.60242" rx="4.30121" transform="matrix(-0.657259 -0.753665 -0.753665 0.657259 83.8164 39.6929)" stroke="#0074FF" strokeWidth="4" />
-                            <rect width="21.6567" height="8.60242" rx="4.30121" transform="matrix(-0.657259 -0.753665 -0.753665 0.657259 77.3204 45.5254)" stroke="#0074FF" strokeWidth="4" />
-                            <rect width="17.6113" height="8.60242" rx="4.30121" transform="matrix(-0.657259 -0.753665 -0.753665 0.657259 70.843 51.4385)" stroke="#0074FF" strokeWidth="4" />
-                            <rect width="11.3865" height="8.60242" rx="4.30121" transform="matrix(-0.657259 -0.753665 -0.753665 0.657259 63.8418 56.5303)" stroke="#0074FF" strokeWidth="4" />
-                            <path d="M55.1904 10.6943H69.3008" stroke="#0074FF" strokeWidth="4" />
-                          </g>
-                        </svg>
-
-                        {t('single-course-introduction')}
-                      </h4>
-
-                      <div
-                        className='non-clickable-content'
-                        dangerouslySetInnerHTML={{ __html: data?.description }}
-                      />
-
-                      <div id='CourseDetails'>
-                        <h4 className='FNV-SingleCourse-Detail-Title'>
-                          <svg width="88" height="80" viewBox="0 0 88 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g opacity="0.3">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M4.93613 24.9924L8.95438 22.5487L44.4084 0.987305L79.8326 22.5463L83.8518 24.9924L79.8293 27.4304L77.0911 29.09L84.6694 33.8017L87.8382 35.772L87.7953 35.798V41.8846L87.7953 43.2691L86.7665 43.8605L79.6009 47.9792L84.6553 51.0531L87.8739 53.0105L84.6531 54.9627L45.1559 78.9022L44.3539 79.3883L43.5523 78.9014L4.13386 54.9619L0.90332 52.9999L4.13863 51.0496L9.21949 47.9868L2.23012 43.9551L1.20355 43.3629V41.9805L1.20355 35.9223L0.99587 35.7961L4.10098 33.8128L11.5867 29.0314L8.95547 27.4334L4.93613 24.9924ZM13.3536 50.3715L8.96928 53.0145L44.3555 74.5052L79.8299 53.0039L75.471 50.353L45.1094 67.8045L44.3411 68.2461L43.5732 67.8032L13.3536 50.3715ZM45.1557 61.6421L84.2038 37.9748V40.5L44.3438 63.4111L4.7951 40.5981L4.7951 38.1035L43.5521 61.6413L44.3537 62.1282L45.1557 61.6421ZM15.5476 31.4369L8.87639 35.6981L44.3553 57.2451L79.8653 35.7223L73.0944 31.5125L44.3545 48.9319L15.5476 31.4369ZM44.3561 44.0488L12.9737 24.9897L44.4078 5.87304L75.8101 24.9843L44.3561 44.0488Z" fill="#0074FF" />
-                            </g>
-                          </svg>
-
-                          {t('single-course-materials')}
-                        </h4>
-
-                        {inEnrolled && data?.abstract ? (
-                          <div className='FNV-Course-Card-Body'>
-                            <div className='non-clickable-content' dangerouslySetInnerHTML={{ __html: data?.abstract }} />
-                          </div>
-                        ) : null}
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </section>
-
-              <section className='FNV-SingleCourse-Detail'>
-                <div className='container'>
-                  <div className='row'>
-                    <div className='col-md-8'>
-                      <h4 className='FNV-SingleCourse-Detail-Title'>
-                        <svg width="64" height="68" viewBox="0 0 64 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <g opacity="0.3">
-                            <path d="M61.4286 66V2H2V66H61.4286Z" stroke="#0074FF" strokeWidth="4" />
-                            <rect x="11.0645" y="11.7576" width="40.6061" height="7.63636" stroke="#0074FF" strokeWidth="4" />
-                            <path d="M9.61926 29.1515H32.4764" stroke="#0074FF" strokeWidth="4" />
-                            <path d="M9.61926 38.2945H53.8097" stroke="#0074FF" strokeWidth="4" />
-                            <path d="M9.61926 47.4375H53.8097" stroke="#0074FF" strokeWidth="4" />
-                            <path d="M9.61926 56.5805H53.8097" stroke="#0074FF" strokeWidth="4" />
-                          </g>
-                        </svg>
-
-                        {t('single-course-videos')}
-                      </h4>
-
-                      <div className='accordion' id='accordionPanelsStayOpenExample'>
-                        {/* 
-                          <div className='accordion-item'>
-                            <h2 className='accordion-header'>
-                              <button
-                                className='accordion-button collapsed'
-                                type='button'
-                                data-bs-toggle='collapse'
-                                data-bs-target='#panelsStayOpen-collapseTwo'
-                                aria-expanded='false'
-                                aria-controls='panelsStayOpen-collapseTwo'
-                              >
-                                <i data-feather='file-text'></i> 1.1 Course Documents{' '}
-                                <span className='badge text-bg-practice'>{t('single-course-practise')}</span>
-                                <span className='badge text-bg-primary FNV-Badge-Private'>
-                                  <i data-feather='lock'></i> {t('single-course-locked')}
-                                </span>
-                              </button>
-                            </h2>
-                            <div id='panelsStayOpen-collapseTwo' className='accordion-collapse collapse'>
-                              <div className='accordion-body FNV-Locked'>
-                                {t('single-course-quiz-comment')}
-                              </div>
-                            </div>
-                          </div> 
-                        */}
-
-                        <h5 className='FNV-SingleCourse-Detail-Title'>
-                          <svg width="55" height="51" viewBox="0 0 55 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g opacity="0.3">
-                              <rect x="2" y="2" width="51" height="47" stroke="#FFA600" stroke-width="4" />
-                              <rect x="12" y="11" width="9" height="9" stroke="#FFA600" stroke-width="4" />
-                              <rect x="12" y="31" width="9" height="9" stroke="#FFA600" stroke-width="4" />
-                              <path d="M27 13H45" stroke="#FFA600" stroke-width="4" />
-                              <path d="M27 33H45" stroke="#FFA600" stroke-width="4" />
-                              <path d="M27 18H36" stroke="#FFA600" stroke-width="4" />
-                              <path d="M27 38H36" stroke="#FFA600" stroke-width="4" />
-                            </g>
-                          </svg>
-                          {t('single-course-mock-exams')}
-                        </h5>
-
-                        {filteredTests
-                          ? filteredTests.map(test => (
-                            <div key={test.id} className='accordion-item'>
-                              <h2 className='accordion-header'>
-                                <button
-                                  className='accordion-button collapsed'
-                                  type='button'
-                                  data-bs-toggle='collapse'
-                                  data-bs-target={`#panelsStayOpen-collapseTest${test.id}`}
-                                  aria-expanded='false'
-                                  aria-controls={`panelsStayOpen-collapseTest${test.id}`}
-                                >
-                                  <i data-feather='check-square'></i> {test.title}
-                                  <span className='badge text-bg-quiz'>{t('single-course-quiz')}</span>
-                                  {inEnrolled ? (
-                                    <span className='badge text-bg-primary FNV-Badge-Private'>
-                                      <i data-feather='unlock'></i>
-                                      {t('single-course-unlocked')}
-                                    </span>
-                                  ) : (
-                                    <span className='badge text-bg-primary FNV-Badge-Private'>
-                                      <i data-feather='lock'></i>
-
-                                      {
-                                        test.needEnroll
-                                          ? t('single-course-locked') // Display this if test.needEnroll is true
-                                          : t('single-course-unlocked') // Display this if test.needEnroll is false
-                                      }
-                                    </span>
-                                  )}
-                                </button>
-                              </h2>
-                              <div
-                                id={`panelsStayOpen-collapseTest${test.id}`}
-                                className='accordion-collapse collapse'
-                              >
-                                <div className='accordion-body FNV-Locked'>
-                                  <ul>
-                                    <li>
-                                      {t('single-course-quiz-name')}: {test.title}
-                                    </li>
-                                    <li>
-                                      {t('single-course-quiz-time')}: {test.testTime} {t('single-course-quiz-min')}
-                                    </li>
-                                    <li>
-                                      {t('single-course-quiz-agenda')}:{' '}
-                                      <div
-                                        className='non-clickable-content'
-                                        dangerouslySetInnerHTML={{ __html: test.agenda }}
-                                      />
-                                    </li>
-                                    {inEnrolled ? (
-                                      <Link
-                                        className='FNV-Btn BtnPrimary BtnSmall mt-2'
-                                        href={`${data?.slug}/${test.slug}/`}
-                                        passHref
-                                      >
-                                        {t('single-course-quiz-start')}
-                                      </Link>
-                                    ) : (
-                                      <Typography className='start-test-button'>
-                                        {t('single-course-quiz-comment')}
-                                      </Typography>
-                                    )}
-                                  </ul>
+                    <div className='col-12 FNV-SingleCourse-Comment'>
+                      <h4>{t('single-course-comment-title')}</h4>
+                      {
+                        !loading && (
+                          <>
+                            {user ? (
+                              <>
+                                <div className='FNV-SingleCourse-Comment-Section'>
+                                  <TextareaAutosize
+                                    minRows={5}
+                                    value={newComment}
+                                    onChange={e => setNewComment(e.target.value)}
+                                    placeholder='Write a comment...'
+                                  />
+                                  <Button onClick={handleCommentSubmit}>
+                                    {t('single-course-comment-submit')}
+                                  </Button>
                                 </div>
-                              </div>
-                            </div>
-                          ))
-                          : null}
-
-                        <h5 className='FNV-SingleCourse-Detail-Title'>
-                          <svg width="78" height="51" viewBox="0 0 78 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g opacity="0.35">
-                              <rect x="2" y="2" width="51" height="47" stroke="#FFA600" stroke-width="4" />
-                              <path d="M76 8L53 17.697V31.3781L76 41V8Z" stroke="#FFA600" stroke-width="4" />
-                            </g>
-                          </svg>
-
-                          {t('single-course-videos-title')}
-                        </h5>
-
-                        {filteredVideos
-                          ? filteredVideos.map(video => (
-                            <div key={video.id} className='accordion-item'>
-                              <h2 className='accordion-header'>
-                                <button
-                                  className='accordion-button collapsed'
-                                  type='button'
-                                  data-bs-toggle='collapse'
-                                  data-bs-target={`#panelsStayOpen-collapseVideo${video.id}`}
-                                  aria-expanded='false'
-                                  aria-controls={`panelsStayOpen-collapseVideo${video.id}`}
-                                >
-                                  <i data-feather='play'></i> {video.title}
-                                  <span className='badge text-bg-quiz'>{t('single-course-video-title')}</span>
-                                  {inEnrolled ? (
-                                    <span className='badge text-bg-primary FNV-Badge-Private'>
-                                      <i data-feather='unlock'></i> {t('single-course-unlocked')}
-                                    </span>
-                                  ) : (
-                                    <span className='badge text-bg-primary FNV-Badge-Private'>
-                                      <i data-feather='lock'></i>
-                                      {
-                                        video.needEnroll
-                                          ? t('single-course-locked') // Display this if test.needEnroll is true
-                                          : t('single-course-unlocked') // Display this if test.needEnroll is false
-                                      }
-                                    </span>
-                                  )}
-                                </button>
-                              </h2>
-                              <div
-                                id={`panelsStayOpen-collapseVideo${video.id}`}
-                                className='accordion-collapse collapse'
+                              </>
+                            ) : (
+                              <Button
+                                onClick={() => {
+                                  router.push(`/login/?returnUrl=/courses/${data?.slug}`)
+                                }}
                               >
-                                <div className='accordion-body FNV-Locked'>
-                                  <ul>
-                                    <li>
-                                      {t('single-course-video-title')}: {video.title}
-                                    </li>
-                                    <li>
-                                      {t('single-course-video-time')}: {video.time} {t('single-course-quiz-min')}
-                                    </li>
-                                    {inEnrolled ? (
-                                      <Link
-                                        className='FNV-Btn BtnPrimary BtnSmall mt-2'
-                                        href={`${data?.slug}/session/${video?.id}`}
-                                      >
-                                        {t('single-course-video-start')}
-                                      </Link>
-                                    ) : (
-                                      <Typography className='start-test-button'>
-                                        {t('single-course-quiz-comment')}
-                                      </Typography>
+                                <svg
+                                  xmlns='http://www.w3.org/2000/svg'
+                                  class='icon icon-tabler icon-tabler-login'
+                                  width='44'
+                                  height='44'
+                                  viewBox='0 0 24 24'
+                                  strokeWidth='1.5'
+                                  stroke='#2c3e50'
+                                  fill='none'
+                                  stroke-linecap='round'
+                                  stroke-linejoin='round'
+                                >
+                                  <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+                                  <path d='M15 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2' />
+                                  <path d='M21 12h-13l3 -3' />
+                                  <path d='M11 15l-3 -3' />
+                                </svg>
+                                Login to Post a Comment
+                              </Button>
+                            )}
+                            <div style={{ paddingTop: '15px' }}>
+                              <List component='nav' aria-label='comments'>
+                                {data?.comments?.map(comment => (
+                                  <React.Fragment key={comment.id}>
+                                    <div>
+                                      <b>{comment?.user?.firstName + ' ' + comment?.user?.lastName}</b>
+                                    </div>
+                                    <ListItem alignItems='flex-start'>
+                                      <ListItemText primary={comment.content} />
+                                    </ListItem>
+                                    {comment.replies && comment.replies.length > 0 && (
+                                      <>
+                                        <p>Answer:</p>
+                                        <List component='div' disablePadding>
+                                          {comment.replies.map(reply => (
+                                            <ListItem key={reply.id} sx={{ pl: 4, px: 10 }}>
+                                              <ListItemText primary={reply.content} />
+                                            </ListItem>
+                                          ))}
+                                        </List>
+                                      </>
                                     )}
-                                  </ul>
-                                </div>
-                              </div>
+                                    <Divider variant='inset' component='li' />
+                                  </React.Fragment>
+                                ))}
+                              </List>
                             </div>
-                          ))
-                          : null}
-                      </div>
+
+                            {/* Related Courses */}
+                            {/* <section className='FNV-Course-Related'>
+                                  <h3>Related Courses</h3>
+                                  <div className='container'>
+                                    <div className='row'>
+                                      <div className='col-12'></div>
+                                    </div>
+                                  </div>
+                                </section> */}
+                          </>
+                        )
+                      }
+                      <Modal
+                        open={open}
+                        onClose={handleClose}
+                        aria-labelledby='simple-modal-title'
+                        aria-describedby='simple-modal-description'
+                      >
+                        <Box
+                          component='form'
+                          onSubmit={handleSubmit(onSubmit)}
+                          noValidate
+                          sx={{
+                            position: 'absolute',
+                            top: '50%',
+                            left: '50%',
+                            transform: 'translate(-50%, -50%)',
+                            width: 400,
+                            bgcolor: 'background.paper',
+                            border: '2px solid #000',
+                            boxShadow: 24,
+                            p: 4
+                          }}
+                        >
+                          <TextField
+                            margin='normal'
+                            required
+                            fullWidth
+                            id='name'
+                            label='Your Name'
+                            name='name'
+                            autoComplete='name'
+                            autoFocus
+                            {...register('name', { required: true })}
+                          />
+
+                          {errors.name && <span>This field is required</span>}
+                          <TextField
+                            margin='normal'
+                            required
+                            fullWidth
+                            id='email'
+                            label='Email Address'
+                            name='email'
+                            autoComplete='email'
+                            {...register('email', { required: true })}
+                          />
+                          {errors.email && <span>This field is required</span>}
+
+                          <TextField
+                            margin='normal'
+                            required
+                            fullWidth
+                            id='phone'
+                            label='Phone'
+                            name='phone'
+                            autoComplete='phone'
+                            {...register('phone', { required: true })}
+                          />
+                          {errors.phone && <span>This field is required</span>}
+
+                          <ReCAPTCHA
+                            ref={recaptchaRef}
+                            sitekey='6Ld3vRchAAAAANNHnay731SB7BpaV1F1NxXx8WWT'
+                            onChange={onReCAPTCHAChange}
+                          />
+
+                          <Button type='submit' fullWidth variant='contained' sx={{ mt: 3, mb: 2 }}>
+                            Send Request
+                          </Button>
+                        </Box>
+                      </Modal>
                     </div>
                   </div>
                 </div>
+
               </section>
 
-              <section className='FNV-SingleCourse-Detail FNV-BG-White'>
+              <section className='FNV-SingleCourse-FAQ'>
                 <div className='container'>
                   <div className='row'>
                     <div className='col-md-12'>
@@ -1165,166 +1350,11 @@ const Course = () => {
                   </div>
                 </div>
               </section>
-            </main>
+            </main >
           </>
         )
       )}
-
-      {!loading && (
-        <>
-          <Box className='container' sx={{ maxWidth: 600, mx: 'auto', my: 4 }}>
-            {user ? (
-              <Box sx={{ display: 'flex', flexDirection: 'column', mb: 2 }}>
-                <TextareaAutosize
-                  minRows={3}
-                  style={{ marginBottom: '1rem', padding: '12px' }}
-                  value={newComment}
-                  onChange={e => setNewComment(e.target.value)}
-                  placeholder='Write a comment...'
-                />
-                <Button variant='contained' onClick={handleCommentSubmit} style={{ backgroundColor: '#003BBF' }}>
-                  Post
-                </Button>
-              </Box>
-            ) : (
-              <Button
-                variant='outlined'
-                style={{ backgroundColor: '#003BBF', color: '#fff' }}
-                onClick={() => {
-                  router.push(`/login/?returnUrl=/courses/${data?.slug}`)
-                }}
-              >
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  class='icon icon-tabler icon-tabler-login'
-                  width='44'
-                  height='44'
-                  viewBox='0 0 24 24'
-                  strokeWidth='1.5'
-                  stroke='#2c3e50'
-                  fill='none'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                >
-                  <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-                  <path d='M15 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2' />
-                  <path d='M21 12h-13l3 -3' />
-                  <path d='M11 15l-3 -3' />
-                </svg>
-                Login to Post a Comment
-              </Button>
-            )}
-            <div style={{ paddingTop: '15px' }}>
-              <List component='nav' aria-label='comments'>
-                {data?.comments?.map(comment => (
-                  <React.Fragment key={comment.id}>
-                    <div>
-                      <b>{comment?.user?.firstName + ' ' + comment?.user?.lastName}</b>
-                    </div>
-                    <ListItem alignItems='flex-start'>
-                      <ListItemText primary={comment.content} />
-                    </ListItem>
-                    {comment.replies && comment.replies.length > 0 && (
-                      <>
-                        <p>Answer:</p>
-                        <List component='div' disablePadding>
-                          {comment.replies.map(reply => (
-                            <ListItem key={reply.id} sx={{ pl: 4, px: 10 }}>
-                              <ListItemText primary={reply.content} />
-                            </ListItem>
-                          ))}
-                        </List>
-                      </>
-                    )}
-                    <Divider variant='inset' component='li' />
-                  </React.Fragment>
-                ))}
-              </List>
-            </div>
-          </Box>
-
-          {/* Related Courses */}
-          {/* <section className='FNV-Course-Related'>
-            <h3>Related Courses</h3>
-            <div className='container'>
-              <div className='row'>
-                <div className='col-12'></div>
-              </div>
-            </div>
-          </section> */}
-        </>
-      )}
-      <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby='simple-modal-title'
-        aria-describedby='simple-modal-description'
-      >
-        <Box
-          component='form'
-          onSubmit={handleSubmit(onSubmit)}
-          noValidate
-          sx={{
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            width: 400,
-            bgcolor: 'background.paper',
-            border: '2px solid #000',
-            boxShadow: 24,
-            p: 4
-          }}
-        >
-          <TextField
-            margin='normal'
-            required
-            fullWidth
-            id='name'
-            label='Your Name'
-            name='name'
-            autoComplete='name'
-            autoFocus
-            {...register('name', { required: true })}
-          />
-
-          {errors.name && <span>This field is required</span>}
-          <TextField
-            margin='normal'
-            required
-            fullWidth
-            id='email'
-            label='Email Address'
-            name='email'
-            autoComplete='email'
-            {...register('email', { required: true })}
-          />
-          {errors.email && <span>This field is required</span>}
-
-          <TextField
-            margin='normal'
-            required
-            fullWidth
-            id='phone'
-            label='Phone'
-            name='phone'
-            autoComplete='phone'
-            {...register('phone', { required: true })}
-          />
-          {errors.phone && <span>This field is required</span>}
-
-          <ReCAPTCHA
-            ref={recaptchaRef}
-            sitekey='6Ld3vRchAAAAANNHnay731SB7BpaV1F1NxXx8WWT'
-            onChange={onReCAPTCHAChange}
-          />
-
-          <Button type='submit' fullWidth variant='contained' sx={{ mt: 3, mb: 2 }}>
-            Send Request
-          </Button>
-        </Box>
-      </Modal>
-    </div>
+    </div >
   )
 }
 

@@ -211,6 +211,7 @@
   "single-course-practise": "تمرین",
   "single-course-locked": "قفل شده",
   "single-course-unlocked": "باز",
+  "single-course-information": "مشاهده جزییات",
   "single-course-faq": "سوالات متداول",
   "single-course-faq-question": "سوال",
   "single-course-faq-answer": "جواب",
@@ -231,6 +232,8 @@
   "single-course-vip-price-desc": "برای تسهیلات ویژه به ما بپیوندید",
   "single-course-mock-exams":"آزمون ها",
   "single-course-videos-title":"ویدیو‌ها",
+  "single-course-comment-title":"نظرات کاربران",
+  "single-course-comment-submit":"ارسال نظر",
 
   "webinar-more": "نمایش همه وبینارها",
 

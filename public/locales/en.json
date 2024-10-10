@@ -211,6 +211,7 @@
   "single-course-practise": "Practise",
   "single-course-locked": "Locked",
   "single-course-unlocked": "Unlocked",
+  "single-course-information": "Information",
   "single-course-faq": "Frequently Asked Questions",
   "single-course-faq-question": "Question",
   "single-course-faq-answer": "Answer",
@@ -231,6 +232,8 @@
   "single-course-vip-price-desc": "Join for extra perks!",
   "single-course-mock-exams":"Mock exams",
   "single-course-videos-title":"Videos",
+  "single-course-comment-title":"Reviews",
+  "single-course-comment-submit":"Submit Review",
 
   "webinar-more": "Show More",
 
