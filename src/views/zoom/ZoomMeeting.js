@@ -64,7 +64,7 @@ const ZoomMeeting = ({ meetingId }) => {
 
   return (
     <NoHeaderFooterLayout>
-      <div id='meetingSDKElement' style={{ width: '100%', height: '100vh',zIndex:"9999" }}></div>
+      <div id='meetingSDKElement' style={{ width: '100%', height: '100vh', zIndex: "9999" }}></div>
     </NoHeaderFooterLayout>
   )
 }

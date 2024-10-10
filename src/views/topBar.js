@@ -21,7 +21,7 @@ const TopBanner = () => {
         <div className='container'>
           <div className='row'>
             {/* Info */}
-            <div className='col-3'>
+            <div className='col-6 col-md-3'>
               <Link href='tel:+19055052323'>
                 <i data-feather='phone'></i>
                 (905) 505-2323
@@ -32,7 +32,7 @@ const TopBanner = () => {
             </div>
 
             {/* Support */}
-            <div className='col-3'>
+            <div className='col-6 col-md-3'>
               <Link href='tel:+989121433158'>
                 <i data-feather='phone'></i>
                 0912 143 3158
@@ -43,7 +43,7 @@ const TopBanner = () => {
             </div>
 
             {/* Iran Number */}
-            <div className='col-3'>
+            <div className='col-6 col-md-3'>
               <Link href='tel:+16723996600'>
                 <i data-feather='phone'></i>
                 (672) 399-6600
@@ -54,7 +54,7 @@ const TopBanner = () => {
             </div>
 
             {/* Iran Number */}
-            <div className='col-3'>
+            <div className='col-6 col-md-3'>
               <Link href='tel:+14168932110'>
                 <i data-feather='phone'></i>
                 (416) 893-2110
