@@ -5094,6 +5094,12 @@ body[dir='rtl'] {
                   }
                 }
 
+                img {
+                  width: 100%;
+                  height: 250px;
+                  object-fit: cover;
+                }
+
                 .accordion {
                   transition: .3s all ease-in-out;
 
@@ -5211,6 +5217,7 @@ body[dir='rtl'] {
                 bottom: 0;
                 padding: 0;
                 width: 100%;
+                z-index: 9995;
                 position: fixed;
 
                 .card {
