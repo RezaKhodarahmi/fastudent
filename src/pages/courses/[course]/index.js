@@ -532,6 +532,56 @@ const Course = () => {
                         dangerouslySetInnerHTML={{ __html: data?.description }}
                       />
 
+
+ {/* Short Description */}
+ <h4 className='FNV-SingleCourse-Detail-Title' id="FNV-CheckMate">
+                        <svg width="99" height="65" viewBox="0 0 99 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g opacity="0.3">
+                            <path d="M25.1606 8.4337L14.9396 34.8455L3 30.0516L13.221 4.00159L19.1908 6.21765L25.1606 8.4337ZM25.1606 8.4337C29.653 4.8458 40.8629 -0.575253 49.7634 6.44377C54.793 10.4103 58.5383 13.3696 61.084 15.3839C63.1539 17.0216 63.4448 20.0483 61.7292 22.0542V22.0542C60.1736 23.8731 57.4931 24.2182 55.5274 22.8527L47.1403 17.0266L17.3818 34.1219" stroke="#0074FF" strokeWidth="4" />
+                            <path d="M68.3297 9.09517L80.3488 34.366L92.011 28.9319L79.7279 3.41375L74.0288 6.25446L68.3297 9.09517Z" stroke="#0074FF" strokeWidth="4" />
+                            <path d="M18.0152 33.7599L16.0933 34.8051C14.0069 35.9398 13.2341 38.5501 14.3664 40.6377V40.6377C15.4996 42.727 18.1119 43.502 20.2012 42.3688L36.5441 33.5047" stroke="#0074FF" strokeWidth="4" />
+                            <path d="M36.6178 33.6095L22.0671 41.5016C19.979 42.6341 19.2044 45.245 20.3369 47.3331V47.3331C21.4695 49.4212 24.0804 50.1959 26.1685 49.0633L40.7192 41.1712" stroke="#0074FF" strokeWidth="4" />
+                            <path d="M40.7382 41.2386L28.58 47.8331C26.4918 48.9657 25.7172 51.5765 26.8498 53.6647V53.6647C27.9823 55.7528 30.5932 56.5274 32.6813 55.3949L44.8396 48.8004" stroke="#0074FF" strokeWidth="4" />
+                            <path d="M44.8784 48.8717L35.4457 53.9879C33.362 55.118 32.589 57.7233 33.7192 59.807V59.807C34.8527 61.897 37.4693 62.6672 39.5544 61.5248L50.939 55.287" stroke="#0074FF" strokeWidth="4" />
+                            <rect width="18.8513" height="8.60242" rx="4.30121" transform="matrix(-0.657259 -0.753665 -0.753665 0.657259 83.8164 39.6929)" stroke="#0074FF" strokeWidth="4" />
+                            <rect width="21.6567" height="8.60242" rx="4.30121" transform="matrix(-0.657259 -0.753665 -0.753665 0.657259 77.3204 45.5254)" stroke="#0074FF" strokeWidth="4" />
+                            <rect width="17.6113" height="8.60242" rx="4.30121" transform="matrix(-0.657259 -0.753665 -0.753665 0.657259 70.843 51.4385)" stroke="#0074FF" strokeWidth="4" />
+                            <rect width="11.3865" height="8.60242" rx="4.30121" transform="matrix(-0.657259 -0.753665 -0.753665 0.657259 63.8418 56.5303)" stroke="#0074FF" strokeWidth="4" />
+                            <path d="M55.1904 10.6943H69.3008" stroke="#0074FF" strokeWidth="4" />
+                          </g>
+                        </svg>
+
+                        {t('single-course-introduction')}
+                      </h4>
+
+                      <div
+                        className='non-clickable-content'
+                        dangerouslySetInnerHTML={{ __html: data?.description }}
+                      /> {/* english Description */}
+                      <h4 className='FNV-SingleCourse-Detail-Title' id="FNV-CheckMate">
+                        <svg width="99" height="65" viewBox="0 0 99 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g opacity="0.3">
+                            <path d="M25.1606 8.4337L14.9396 34.8455L3 30.0516L13.221 4.00159L19.1908 6.21765L25.1606 8.4337ZM25.1606 8.4337C29.653 4.8458 40.8629 -0.575253 49.7634 6.44377C54.793 10.4103 58.5383 13.3696 61.084 15.3839C63.1539 17.0216 63.4448 20.0483 61.7292 22.0542V22.0542C60.1736 23.8731 57.4931 24.2182 55.5274 22.8527L47.1403 17.0266L17.3818 34.1219" stroke="#0074FF" strokeWidth="4" />
+                            <path d="M68.3297 9.09517L80.3488 34.366L92.011 28.9319L79.7279 3.41375L74.0288 6.25446L68.3297 9.09517Z" stroke="#0074FF" strokeWidth="4" />
+                            <path d="M18.0152 33.7599L16.0933 34.8051C14.0069 35.9398 13.2341 38.5501 14.3664 40.6377V40.6377C15.4996 42.727 18.1119 43.502 20.2012 42.3688L36.5441 33.5047" stroke="#0074FF" strokeWidth="4" />
+                            <path d="M36.6178 33.6095L22.0671 41.5016C19.979 42.6341 19.2044 45.245 20.3369 47.3331V47.3331C21.4695 49.4212 24.0804 50.1959 26.1685 49.0633L40.7192 41.1712" stroke="#0074FF" strokeWidth="4" />
+                            <path d="M40.7382 41.2386L28.58 47.8331C26.4918 48.9657 25.7172 51.5765 26.8498 53.6647V53.6647C27.9823 55.7528 30.5932 56.5274 32.6813 55.3949L44.8396 48.8004" stroke="#0074FF" strokeWidth="4" />
+                            <path d="M44.8784 48.8717L35.4457 53.9879C33.362 55.118 32.589 57.7233 33.7192 59.807V59.807C34.8527 61.897 37.4693 62.6672 39.5544 61.5248L50.939 55.287" stroke="#0074FF" strokeWidth="4" />
+                            <rect width="18.8513" height="8.60242" rx="4.30121" transform="matrix(-0.657259 -0.753665 -0.753665 0.657259 83.8164 39.6929)" stroke="#0074FF" strokeWidth="4" />
+                            <rect width="21.6567" height="8.60242" rx="4.30121" transform="matrix(-0.657259 -0.753665 -0.753665 0.657259 77.3204 45.5254)" stroke="#0074FF" strokeWidth="4" />
+                            <rect width="17.6113" height="8.60242" rx="4.30121" transform="matrix(-0.657259 -0.753665 -0.753665 0.657259 70.843 51.4385)" stroke="#0074FF" strokeWidth="4" />
+                            <rect width="11.3865" height="8.60242" rx="4.30121" transform="matrix(-0.657259 -0.753665 -0.753665 0.657259 63.8418 56.5303)" stroke="#0074FF" strokeWidth="4" />
+                            <path d="M55.1904 10.6943H69.3008" stroke="#0074FF" strokeWidth="4" />
+                          </g>
+                        </svg>
+
+                        {t('single-course-introduction')}
+                      </h4>
+
+                      <div
+                        className='non-clickable-content'
+                        dangerouslySetInnerHTML={{ __html: data?.englishDescription }}
+                      />
                       {/* Course Materials */}
                       {data?.abstract ? (
                         <div id='CourseDetails'>
@@ -621,7 +671,7 @@ const Course = () => {
                                           <path d="M7.27051 6.48648V4.13513H9.62186V6.48648" />
                                         </svg>
 
-                                        {test.needEnroll ? t('single-course-locked') : t('single-course-unlocked')}
+                                        {test?.needEnroll ? t('single-course-locked') : t('single-course-unlocked')}
                                       </span>
                                     )}
 
@@ -751,7 +801,7 @@ const Course = () => {
                                           <path d="M7.27051 6.48648V4.13513H9.62186V6.48648" />
                                         </svg>
 
-                                        {test.needEnroll ? t('single-course-locked') : t('single-course-unlocked')}
+                                        {test?.needEnroll ? t('single-course-locked') : t('single-course-unlocked')}
                                       </span>
                                     )}
 
