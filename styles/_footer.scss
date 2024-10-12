@@ -286,6 +286,11 @@ body[dir='ltr'] {
         }
 
         .col-12 {
+          svg {
+            width: 100%;
+            margin-bottom: 2rem;
+          }
+
           &.FNV-Copyright {
             padding: 2rem 0 0;
             text-align: center;
@@ -443,7 +448,7 @@ body[dir='ltr'] {
                 a {
                   display: flex;
                   padding: .5rem;
-                  font-size: 10px;
+                  font-size: 8px;
                   color: $WhiteColor;
                   margin-bottom: .5rem;
                   justify-content: space-between;
@@ -467,7 +472,7 @@ body[dir='ltr'] {
                   span {
                     &:nth-child(2) {
                       direction: ltr;
-                      font-size: 12px;
+                      font-size: 10px;
                     }
                   }
 
@@ -903,6 +908,11 @@ body[dir='rtl'] {
         }
 
         .col-12 {
+          svg {
+            width: 100%;
+            margin-bottom: 2rem;
+          }
+
           &.FNV-Copyright {
             padding: 2rem 0 0;
             text-align: center;
@@ -1060,7 +1070,7 @@ body[dir='rtl'] {
                 a {
                   display: flex;
                   padding: .5rem;
-                  font-size: 10px;
+                  font-size: 8px;
                   color: $WhiteColor;
                   margin-bottom: .5rem;
                   justify-content: space-between;
@@ -1084,7 +1094,7 @@ body[dir='rtl'] {
                   span {
                     &:nth-child(2) {
                       direction: ltr;
-                      font-size: 12px;
+                      font-size: 10px;
                     }
                   }
 

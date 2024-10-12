@@ -54,71 +54,6 @@ const SearchSection = props => {
         <div className="carousel-inner">
           {/* Slide */}
           <div className="carousel-item active">
-            {/* Object 
-              <div className='FNV-Slider-Object'>
-                <div className='FNV-Slider-Object-Person'></div>
-              </div>
-            */}
-
-            <div className='container'>
-              <div className='row'>
-                {/* Left */}
-                <div className='col-12 col-md-5 pt-5'>
-                  <h2>ریسک‌ها ر و مدیریت کن</h2>
-                  <h3>کلی درآمد کسب کن!</h3>
-                  <Link href="/courses/rmp-exam-prep" className='FNV-Slider-ACB'>
-                    <h4>ثبت نام در دوره مدیریت ریسک (PMI-RMP)</h4>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg>
-                  </Link>
-
-                  <form onSubmit={handleSearchSubmit} className='FNV-Search input-group'>
-                    <Input
-                      type='text'
-                      placeholder={t('search-placeholder')}
-                      className='form-control'
-                      aria-describedby='button-addon1'
-                      fullWidth
-                      autoFocus
-                      value={searchInput}
-                      onChange={handleSearchInputChange}
-                    />
-
-                    <button className='FNV-Btn BtnMedium PrimaryColor' type='submit' id='button-addon1' disabled={loading}>
-                      {loading ? (
-                        <CircularProgress size={22} />
-                      ) : (
-                        <svg
-                          xmlns='http://www.w3.org/2000/svg'
-                          viewBox='0 0 24 24'
-                          fill='none'
-                          stroke='currentColor'
-                          strokeWidth='2'
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                          className='feather feather-search'
-                        >
-                          <circle cx='11' cy='11' r='8'></circle>
-                          <line x1='21' y1='21' x2='16.65' y2='16.65'></line>
-                        </svg>
-                      )}
-                    </button>
-                  </form>
-                </div>
-                {/* Right */}
-                <div className='col-12 col-md-7'>
-                  <div className='card'>
-                    <Link href="https://www.credly.com/badges/652e555d-4a36-44ae-9f94-c1ebd26b863f/public_url" target="_blank">
-                      <img src="images/certificate/pmi.png" className='img-fluid' />
-                      <p>PMI Authorized Training Partner</p>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Slide */}
-          <div className="carousel-item">
             <div className='container'>
               <div className='row'>
                 {/* Left */}
@@ -237,7 +172,6 @@ const SearchSection = props => {
               {/* Indicators */}
               <button type="button" data-bs-target="#FNV-Slider-Carousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#FNV-Slider-Carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#FNV-Slider-Carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
               {/* Navigation 
               <button className="carousel-control-next" type="button" data-bs-target="#FNV-Slider" data-bs-slide="next">
                 <svg viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">

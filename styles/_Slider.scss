@@ -48,69 +48,6 @@ body[dir='ltr'] {
                         &:first-child {
                             background-size: cover;
                             background-position: center;
-                            background-image: url("/images/slider/risk-slider.jpg");
-
-                            h2 {
-                                padding: 1rem;
-                                font-size: 25px;
-                                font-weight: 500;
-                                margin-bottom: 0;
-                                color: $PrimaryOne;
-                                text-align: center;
-                                background-color: $White;
-                            }
-
-                            h3 {
-                                color: $White;
-                                padding: 1rem;
-                                font-size: 35px;
-                                margin-bottom: 0;
-                                font-weight: 700;
-                                text-align: center;
-                                background-color: $PrimaryOne;
-                            }
-
-                            a {
-                                &.FNV-Slider-ACB {
-                                    display: flex;
-                                    padding: .5rem;
-                                    line-height: 40px;
-                                    align-items: center;
-                                    flex-direction: row;
-                                    background-color: $White;
-                                    justify-content: space-between;
-
-                                    h4 {
-                                        font-size: 15px;
-                                        margin-bottom: 0;
-                                        color: $PrimaryOne;
-                                        text-align: center;
-                                    }
-
-                                    svg {
-                                        width: 30px !important;
-                                        height: 30px !important;
-                                        stroke: $PrimaryOne !important;
-                                    }
-
-                                    &:hover {
-                                        background-color: $PrimaryOne;
-
-                                        h4 {
-                                            color: $White !important;
-                                        }
-
-                                        svg {
-                                            stroke: $White !important;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        &:nth-child(2) {
-                            background-size: cover;
-                            background-position: center;
                             background-image: url("/images/slider/plumbing-slider.jpg");
 
                             h2 {
@@ -170,7 +107,7 @@ body[dir='ltr'] {
                             }
                         }
 
-                        &:nth-child(3) {
+                        &:nth-child(2) {
                             background-size: cover;
                             background-position: center;
                             background-image: url("/images/slider/309-slider.jpg");
@@ -464,69 +401,6 @@ body[dir='ltr'] {
                         &:first-child {
                             background-size: cover;
                             background-position: center;
-                            background-image: url("/images/slider/risk-slider.jpg");
-
-                            h2 {
-                                padding: 1rem;
-                                font-size: 30px;
-                                font-weight: 500;
-                                margin-bottom: 0;
-                                color: $PrimaryOne;
-                                text-align: center;
-                                background-color: $White;
-                            }
-
-                            h3 {
-                                color: $White;
-                                padding: 1rem;
-                                font-size: 45px;
-                                margin-bottom: 0;
-                                font-weight: 700;
-                                text-align: center;
-                                background-color: $PrimaryOne;
-                            }
-
-                            a {
-                                &.FNV-Slider-ACB {
-                                    display: flex;
-                                    padding: .5rem;
-                                    line-height: 40px;
-                                    align-items: center;
-                                    flex-direction: row;
-                                    background-color: $White;
-                                    justify-content: space-between;
-
-                                    h4 {
-                                        font-size: 20px;
-                                        margin-bottom: 0;
-                                        color: $PrimaryOne;
-                                        text-align: center;
-                                    }
-
-                                    svg {
-                                        width: 30px !important;
-                                        height: 30px !important;
-                                        stroke: $PrimaryOne !important;
-                                    }
-
-                                    &:hover {
-                                        background-color: $PrimaryOne;
-
-                                        h4 {
-                                            color: $White !important;
-                                        }
-
-                                        svg {
-                                            stroke: $White !important;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        &:nth-child(2) {
-                            background-size: cover;
-                            background-position: center;
                             background-image: url("/images/slider/plumbing-slider.jpg");
 
                             h2 {
@@ -586,7 +460,7 @@ body[dir='ltr'] {
                             }
                         }
 
-                        &:nth-child(3) {
+                        &:nth-child(2) {
                             background-size: cover;
                             background-position: center;
                             background-image: url("/images/slider/309-slider.jpg");
@@ -899,69 +773,6 @@ body[dir='ltr'] {
                         &:first-child {
                             background-size: cover;
                             background-position: center;
-                            background-image: url("/images/slider/risk-slider.jpg");
-
-                            h2 {
-                                padding: 1rem;
-                                font-size: 20px;
-                                font-weight: 500;
-                                margin-bottom: 0;
-                                color: $PrimaryOne;
-                                text-align: center;
-                                background-color: $White;
-                            }
-
-                            h3 {
-                                color: $White;
-                                padding: 1rem;
-                                font-size: 25px;
-                                margin-bottom: 0;
-                                font-weight: 700;
-                                text-align: center;
-                                background-color: $PrimaryOne;
-                            }
-
-                            a {
-                                &.FNV-Slider-ACB {
-                                    display: flex;
-                                    padding: .5rem;
-                                    line-height: 40px;
-                                    align-items: center;
-                                    flex-direction: row;
-                                    background-color: $White;
-                                    justify-content: space-between;
-
-                                    h4 {
-                                        font-size: 12px;
-                                        margin-bottom: 0;
-                                        color: $PrimaryOne;
-                                        text-align: center;
-                                    }
-
-                                    svg {
-                                        width: 30px !important;
-                                        height: 30px !important;
-                                        stroke: $PrimaryOne !important;
-                                    }
-
-                                    &:hover {
-                                        background-color: $PrimaryOne;
-
-                                        h4 {
-                                            color: $White !important;
-                                        }
-
-                                        svg {
-                                            stroke: $White !important;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        &:nth-child(2) {
-                            background-size: cover;
-                            background-position: center;
                             background-image: url("/images/slider/plumbing-slider.jpg");
 
                             h2 {
@@ -1021,7 +832,7 @@ body[dir='ltr'] {
                             }
                         }
 
-                        &:nth-child(3) {
+                        &:nth-child(2) {
                             background-size: cover;
                             background-position: center;
                             background-image: url("/images/slider/309-slider.jpg");
@@ -1370,69 +1181,6 @@ body[dir='ltr'] {
                         &:first-child {
                             background-size: cover;
                             background-position: center;
-                            background-image: url("/images/slider/risk-slider.jpg");
-
-                            h2 {
-                                padding: 1rem;
-                                font-size: 20px;
-                                font-weight: 500;
-                                margin-bottom: 0;
-                                color: $PrimaryOne;
-                                text-align: center;
-                                background-color: $White;
-                            }
-
-                            h3 {
-                                color: $White;
-                                padding: 1rem;
-                                font-size: 30px;
-                                margin-bottom: 0;
-                                font-weight: 700;
-                                text-align: center;
-                                background-color: $PrimaryOne;
-                            }
-
-                            a {
-                                &.FNV-Slider-ACB {
-                                    display: flex;
-                                    padding: .5rem;
-                                    line-height: 40px;
-                                    align-items: center;
-                                    flex-direction: row;
-                                    background-color: $White;
-                                    justify-content: space-between;
-
-                                    h4 {
-                                        font-size: 15px;
-                                        margin-bottom: 0;
-                                        color: $PrimaryOne;
-                                        text-align: center;
-                                    }
-
-                                    svg {
-                                        width: 30px !important;
-                                        height: 30px !important;
-                                        stroke: $PrimaryOne !important;
-                                    }
-
-                                    &:hover {
-                                        background-color: $PrimaryOne;
-
-                                        h4 {
-                                            color: $White !important;
-                                        }
-
-                                        svg {
-                                            stroke: $White !important;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        &:nth-child(2) {
-                            background-size: cover;
-                            background-position: center;
                             background-image: url("/images/slider/plumbing-slider.jpg");
 
                             h2 {
@@ -1493,7 +1241,7 @@ body[dir='ltr'] {
                             }
                         }
 
-                        &:nth-child(3) {
+                        &:nth-child(2) {
                             background-size: cover;
                             background-position: center;
                             background-image: url("/images/slider/309-slider.jpg");
@@ -1839,69 +1587,6 @@ body[dir='ltr'] {
                         &:first-child {
                             background-size: cover;
                             background-position: center;
-                            background-image: url("/images/slider/risk-slider.jpg");
-
-                            h2 {
-                                padding: 1rem;
-                                font-size: 30px;
-                                font-weight: 500;
-                                margin-bottom: 0;
-                                color: $PrimaryOne;
-                                text-align: center;
-                                background-color: $White;
-                            }
-
-                            h3 {
-                                color: $White;
-                                padding: 1rem;
-                                font-size: 40px;
-                                margin-bottom: 0;
-                                font-weight: 700;
-                                text-align: center;
-                                background-color: $PrimaryOne;
-                            }
-
-                            a {
-                                &.FNV-Slider-ACB {
-                                    display: flex;
-                                    padding: .5rem;
-                                    line-height: 40px;
-                                    align-items: center;
-                                    flex-direction: row;
-                                    background-color: $White;
-                                    justify-content: space-between;
-
-                                    h4 {
-                                        font-size: 20px;
-                                        margin-bottom: 0;
-                                        color: $PrimaryOne;
-                                        text-align: center;
-                                    }
-
-                                    svg {
-                                        width: 30px !important;
-                                        height: 30px !important;
-                                        stroke: $PrimaryOne !important;
-                                    }
-
-                                    &:hover {
-                                        background-color: $PrimaryOne;
-
-                                        h4 {
-                                            color: $White !important;
-                                        }
-
-                                        svg {
-                                            stroke: $White !important;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        &:nth-child(2) {
-                            background-size: cover;
-                            background-position: center;
                             background-image: url("/images/slider/plumbing-slider.jpg");
 
                             h2 {
@@ -1962,7 +1647,7 @@ body[dir='ltr'] {
                             }
                         }
 
-                        &:nth-child(3) {
+                        &:nth-child(2) {
                             background-size: cover;
                             background-position: center;
                             background-image: url("/images/slider/309-slider.jpg");
@@ -2309,69 +1994,6 @@ body[dir='ltr'] {
                         &:first-child {
                             background-size: cover;
                             background-position: center;
-                            background-image: url("/images/slider/risk-slider.jpg");
-
-                            h2 {
-                                padding: 1rem;
-                                font-size: 40px;
-                                font-weight: 500;
-                                margin-bottom: 0;
-                                color: $PrimaryOne;
-                                text-align: center;
-                                background-color: $White;
-                            }
-
-                            h3 {
-                                color: $White;
-                                padding: 1rem;
-                                font-size: 50px;
-                                margin-bottom: 0;
-                                font-weight: 700;
-                                text-align: center;
-                                background-color: $PrimaryOne;
-                            }
-
-                            a {
-                                &.FNV-Slider-ACB {
-                                    display: flex;
-                                    padding: .5rem;
-                                    line-height: 40px;
-                                    align-items: center;
-                                    flex-direction: row;
-                                    background-color: $White;
-                                    justify-content: space-between;
-
-                                    h4 {
-                                        font-size: 20px;
-                                        margin-bottom: 0;
-                                        color: $PrimaryOne;
-                                        text-align: center;
-                                    }
-
-                                    svg {
-                                        width: 30px !important;
-                                        height: 30px !important;
-                                        stroke: $PrimaryOne !important;
-                                    }
-
-                                    &:hover {
-                                        background-color: $PrimaryOne;
-
-                                        h4 {
-                                            color: $White !important;
-                                        }
-
-                                        svg {
-                                            stroke: $White !important;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        &:nth-child(2) {
-                            background-size: cover;
-                            background-position: center;
                             background-image: url("/images/slider/plumbing-slider.jpg");
 
                             h2 {
@@ -2432,7 +2054,7 @@ body[dir='ltr'] {
                             }
                         }
 
-                        &:nth-child(3) {
+                        &:nth-child(2) {
                             background-size: cover;
                             background-position: center;
                             background-image: url("/images/slider/309-slider.jpg");
@@ -2758,70 +2380,6 @@ body[dir='ltr'] {
                         &:first-child {
                             background-size: cover;
                             background-position: center;
-                            background-image: url("/images/slider/risk-slider.jpg");
-
-                            h2 {
-                                padding: 1rem;
-                                font-size: 50px;
-                                font-weight: 500;
-                                margin-bottom: 0;
-                                line-height: 70px;
-                                color: $PrimaryOne;
-                                text-align: center;
-                                background-color: $White;
-                            }
-
-                            h3 {
-                                color: $White;
-                                padding: 1rem;
-                                font-size: 60px;
-                                font-weight: 700;
-                                margin-bottom: 0;
-                                text-align: center;
-                                background-color: $PrimaryOne;
-                            }
-
-                            a {
-                                &.FNV-Slider-ACB {
-                                    display: flex;
-                                    padding: .5rem;
-                                    line-height: 40px;
-                                    align-items: center;
-                                    flex-direction: row;
-                                    background-color: $White;
-                                    justify-content: space-between;
-
-                                    h4 {
-                                        font-size: 30px;
-                                        margin-bottom: 0;
-                                        color: $PrimaryOne;
-                                        text-align: center;
-                                    }
-
-                                    svg {
-                                        width: 30px !important;
-                                        height: 30px !important;
-                                        stroke: $PrimaryOne !important;
-                                    }
-
-                                    &:hover {
-                                        background-color: $PrimaryOne;
-
-                                        h4 {
-                                            color: $White !important;
-                                        }
-
-                                        svg {
-                                            stroke: $White !important;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        &:nth-child(2) {
-                            background-size: cover;
-                            background-position: center;
                             background-image: url("/images/slider/plumbing-slider.jpg");
 
                             h2 {
@@ -2882,7 +2440,7 @@ body[dir='ltr'] {
                             }
                         }
 
-                        &:nth-child(3) {
+                        &:nth-child(2) {
                             background-size: cover;
                             background-position: center;
                             background-image: url("/images/slider/309-slider.jpg");
@@ -3190,69 +2748,6 @@ body[dir='rtl'] {
                         &:first-child {
                             background-size: cover;
                             background-position: center;
-                            background-image: url("/images/slider/risk-slider.jpg");
-
-                            h2 {
-                                padding: 1rem;
-                                font-size: 25px;
-                                font-weight: 500;
-                                margin-bottom: 0;
-                                color: $PrimaryOne;
-                                text-align: center;
-                                background-color: $White;
-                            }
-
-                            h3 {
-                                color: $White;
-                                padding: 1rem;
-                                font-size: 35px;
-                                margin-bottom: 0;
-                                font-weight: 700;
-                                text-align: center;
-                                background-color: $PrimaryOne;
-                            }
-
-                            a {
-                                &.FNV-Slider-ACB {
-                                    display: flex;
-                                    padding: .5rem;
-                                    line-height: 40px;
-                                    align-items: center;
-                                    flex-direction: row;
-                                    background-color: $White;
-                                    justify-content: space-between;
-
-                                    h4 {
-                                        font-size: 15px;
-                                        margin-bottom: 0;
-                                        color: $PrimaryOne;
-                                        text-align: center;
-                                    }
-
-                                    svg {
-                                        width: 30px !important;
-                                        height: 30px !important;
-                                        stroke: $PrimaryOne !important;
-                                    }
-
-                                    &:hover {
-                                        background-color: $PrimaryOne;
-
-                                        h4 {
-                                            color: $White !important;
-                                        }
-
-                                        svg {
-                                            stroke: $White !important;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        &:nth-child(2) {
-                            background-size: cover;
-                            background-position: center;
                             background-image: url("/images/slider/plumbing-slider.jpg");
 
                             h2 {
@@ -3312,7 +2807,7 @@ body[dir='rtl'] {
                             }
                         }
 
-                        &:nth-child(3) {
+                        &:nth-child(2) {
                             background-size: cover;
                             background-position: center;
                             background-image: url("/images/slider/309-slider.jpg");
@@ -3606,76 +3101,6 @@ body[dir='rtl'] {
                         &:first-child {
                             background-size: cover;
                             background-position: center;
-                            background-image: url("/images/slider/MainBG.jpg");
-                            animation: moveBackground 30s infinite alternate ease-in-out;
-                        }
-
-                        &:first-child {
-                            background-size: cover;
-                            background-position: center;
-                            background-image: url("/images/slider/risk-slider.jpg");
-
-                            h2 {
-                                padding: 1rem;
-                                font-size: 30px;
-                                font-weight: 500;
-                                margin-bottom: 0;
-                                color: $PrimaryOne;
-                                text-align: center;
-                                background-color: $White;
-                            }
-
-                            h3 {
-                                color: $White;
-                                padding: 1rem;
-                                font-size: 45px;
-                                margin-bottom: 0;
-                                font-weight: 700;
-                                text-align: center;
-                                background-color: $PrimaryOne;
-                            }
-
-                            a {
-                                &.FNV-Slider-ACB {
-                                    display: flex;
-                                    padding: .5rem;
-                                    line-height: 40px;
-                                    align-items: center;
-                                    flex-direction: row;
-                                    background-color: $White;
-                                    justify-content: space-between;
-
-                                    h4 {
-                                        font-size: 20px;
-                                        margin-bottom: 0;
-                                        color: $PrimaryOne;
-                                        text-align: center;
-                                    }
-
-                                    svg {
-                                        width: 30px !important;
-                                        height: 30px !important;
-                                        stroke: $PrimaryOne !important;
-                                    }
-
-                                    &:hover {
-                                        background-color: $PrimaryOne;
-
-                                        h4 {
-                                            color: $White !important;
-                                        }
-
-                                        svg {
-                                            stroke: $White !important;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        &:nth-child(2) {
-                            background-size: cover;
-                            background-position: center;
                             background-image: url("/images/slider/plumbing-slider.jpg");
 
                             h2 {
@@ -3735,7 +3160,7 @@ body[dir='rtl'] {
                             }
                         }
 
-                        &:nth-child(3) {
+                        &:nth-child(2) {
                             background-size: cover;
                             background-position: center;
                             background-image: url("/images/slider/309-slider.jpg");
@@ -4048,69 +3473,6 @@ body[dir='rtl'] {
                         &:first-child {
                             background-size: cover;
                             background-position: center;
-                            background-image: url("/images/slider/risk-slider.jpg");
-
-                            h2 {
-                                padding: 1rem;
-                                font-size: 20px;
-                                font-weight: 500;
-                                margin-bottom: 0;
-                                color: $PrimaryOne;
-                                text-align: center;
-                                background-color: $White;
-                            }
-
-                            h3 {
-                                color: $White;
-                                padding: 1rem;
-                                font-size: 25px;
-                                margin-bottom: 0;
-                                font-weight: 700;
-                                text-align: center;
-                                background-color: $PrimaryOne;
-                            }
-
-                            a {
-                                &.FNV-Slider-ACB {
-                                    display: flex;
-                                    padding: .5rem;
-                                    line-height: 40px;
-                                    align-items: center;
-                                    flex-direction: row;
-                                    background-color: $White;
-                                    justify-content: space-between;
-
-                                    h4 {
-                                        font-size: 12px;
-                                        margin-bottom: 0;
-                                        color: $PrimaryOne;
-                                        text-align: center;
-                                    }
-
-                                    svg {
-                                        width: 30px !important;
-                                        height: 30px !important;
-                                        stroke: $PrimaryOne !important;
-                                    }
-
-                                    &:hover {
-                                        background-color: $PrimaryOne;
-
-                                        h4 {
-                                            color: $White !important;
-                                        }
-
-                                        svg {
-                                            stroke: $White !important;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        &:nth-child(2) {
-                            background-size: cover;
-                            background-position: center;
                             background-image: url("/images/slider/plumbing-slider.jpg");
 
                             h2 {
@@ -4170,7 +3532,7 @@ body[dir='rtl'] {
                             }
                         }
 
-                        &:nth-child(3) {
+                        &:nth-child(2) {
                             background-size: cover;
                             background-position: center;
                             background-image: url("/images/slider/309-slider.jpg");
@@ -4519,69 +3881,6 @@ body[dir='rtl'] {
                         &:first-child {
                             background-size: cover;
                             background-position: center;
-                            background-image: url("/images/slider/risk-slider.jpg");
-
-                            h2 {
-                                padding: 1rem;
-                                font-size: 20px;
-                                font-weight: 500;
-                                margin-bottom: 0;
-                                color: $PrimaryOne;
-                                text-align: center;
-                                background-color: $White;
-                            }
-
-                            h3 {
-                                color: $White;
-                                padding: 1rem;
-                                font-size: 30px;
-                                margin-bottom: 0;
-                                font-weight: 700;
-                                text-align: center;
-                                background-color: $PrimaryOne;
-                            }
-
-                            a {
-                                &.FNV-Slider-ACB {
-                                    display: flex;
-                                    padding: .5rem;
-                                    line-height: 40px;
-                                    align-items: center;
-                                    flex-direction: row;
-                                    background-color: $White;
-                                    justify-content: space-between;
-
-                                    h4 {
-                                        font-size: 15px;
-                                        margin-bottom: 0;
-                                        color: $PrimaryOne;
-                                        text-align: center;
-                                    }
-
-                                    svg {
-                                        width: 30px !important;
-                                        height: 30px !important;
-                                        stroke: $PrimaryOne !important;
-                                    }
-
-                                    &:hover {
-                                        background-color: $PrimaryOne;
-
-                                        h4 {
-                                            color: $White !important;
-                                        }
-
-                                        svg {
-                                            stroke: $White !important;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        &:nth-child(2) {
-                            background-size: cover;
-                            background-position: center;
                             background-image: url("/images/slider/plumbing-slider.jpg");
 
                             h2 {
@@ -4642,7 +3941,7 @@ body[dir='rtl'] {
                             }
                         }
 
-                        &:nth-child(3) {
+                        &:nth-child(2) {
                             background-size: cover;
                             background-position: center;
                             background-image: url("/images/slider/309-slider.jpg");
@@ -4988,69 +4287,6 @@ body[dir='rtl'] {
                         &:first-child {
                             background-size: cover;
                             background-position: center;
-                            background-image: url("/images/slider/risk-slider.jpg");
-
-                            h2 {
-                                padding: 1rem;
-                                font-size: 30px;
-                                font-weight: 500;
-                                margin-bottom: 0;
-                                color: $PrimaryOne;
-                                text-align: center;
-                                background-color: $White;
-                            }
-
-                            h3 {
-                                color: $White;
-                                padding: 1rem;
-                                font-size: 40px;
-                                margin-bottom: 0;
-                                font-weight: 700;
-                                text-align: center;
-                                background-color: $PrimaryOne;
-                            }
-
-                            a {
-                                &.FNV-Slider-ACB {
-                                    display: flex;
-                                    padding: .5rem;
-                                    line-height: 40px;
-                                    align-items: center;
-                                    flex-direction: row;
-                                    background-color: $White;
-                                    justify-content: space-between;
-
-                                    h4 {
-                                        font-size: 20px;
-                                        margin-bottom: 0;
-                                        color: $PrimaryOne;
-                                        text-align: center;
-                                    }
-
-                                    svg {
-                                        width: 30px !important;
-                                        height: 30px !important;
-                                        stroke: $PrimaryOne !important;
-                                    }
-
-                                    &:hover {
-                                        background-color: $PrimaryOne;
-
-                                        h4 {
-                                            color: $White !important;
-                                        }
-
-                                        svg {
-                                            stroke: $White !important;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        &:nth-child(2) {
-                            background-size: cover;
-                            background-position: center;
                             background-image: url("/images/slider/plumbing-slider.jpg");
 
                             h2 {
@@ -5111,7 +4347,7 @@ body[dir='rtl'] {
                             }
                         }
 
-                        &:nth-child(3) {
+                        &:nth-child(2) {
                             background-size: cover;
                             background-position: center;
                             background-image: url("/images/slider/309-slider.jpg");
@@ -5458,69 +4694,6 @@ body[dir='rtl'] {
                         &:first-child {
                             background-size: cover;
                             background-position: center;
-                            background-image: url("/images/slider/risk-slider.jpg");
-
-                            h2 {
-                                padding: 1rem;
-                                font-size: 40px;
-                                font-weight: 500;
-                                margin-bottom: 0;
-                                color: $PrimaryOne;
-                                text-align: center;
-                                background-color: $White;
-                            }
-
-                            h3 {
-                                color: $White;
-                                padding: 1rem;
-                                font-size: 50px;
-                                margin-bottom: 0;
-                                font-weight: 700;
-                                text-align: center;
-                                background-color: $PrimaryOne;
-                            }
-
-                            a {
-                                &.FNV-Slider-ACB {
-                                    display: flex;
-                                    padding: .5rem;
-                                    line-height: 40px;
-                                    align-items: center;
-                                    flex-direction: row;
-                                    background-color: $White;
-                                    justify-content: space-between;
-
-                                    h4 {
-                                        font-size: 20px;
-                                        margin-bottom: 0;
-                                        color: $PrimaryOne;
-                                        text-align: center;
-                                    }
-
-                                    svg {
-                                        width: 30px !important;
-                                        height: 30px !important;
-                                        stroke: $PrimaryOne !important;
-                                    }
-
-                                    &:hover {
-                                        background-color: $PrimaryOne;
-
-                                        h4 {
-                                            color: $White !important;
-                                        }
-
-                                        svg {
-                                            stroke: $White !important;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        &:nth-child(2) {
-                            background-size: cover;
-                            background-position: center;
                             background-image: url("/images/slider/plumbing-slider.jpg");
 
                             h2 {
@@ -5581,7 +4754,7 @@ body[dir='rtl'] {
                             }
                         }
 
-                        &:nth-child(3) {
+                        &:nth-child(2) {
                             background-size: cover;
                             background-position: center;
                             background-image: url("/images/slider/309-slider.jpg");
@@ -5907,70 +5080,6 @@ body[dir='rtl'] {
                         &:first-child {
                             background-size: cover;
                             background-position: center;
-                            background-image: url("/images/slider/risk-slider.jpg");
-
-                            h2 {
-                                padding: 1rem;
-                                font-size: 50px;
-                                font-weight: 500;
-                                margin-bottom: 0;
-                                line-height: 70px;
-                                color: $PrimaryOne;
-                                text-align: center;
-                                background-color: $White;
-                            }
-
-                            h3 {
-                                color: $White;
-                                padding: 1rem;
-                                font-size: 60px;
-                                font-weight: 700;
-                                margin-bottom: 0;
-                                text-align: center;
-                                background-color: $PrimaryOne;
-                            }
-
-                            a {
-                                &.FNV-Slider-ACB {
-                                    display: flex;
-                                    padding: .5rem;
-                                    line-height: 40px;
-                                    align-items: center;
-                                    flex-direction: row;
-                                    background-color: $White;
-                                    justify-content: space-between;
-
-                                    h4 {
-                                        font-size: 30px;
-                                        margin-bottom: 0;
-                                        color: $PrimaryOne;
-                                        text-align: center;
-                                    }
-
-                                    svg {
-                                        width: 30px !important;
-                                        height: 30px !important;
-                                        stroke: $PrimaryOne !important;
-                                    }
-
-                                    &:hover {
-                                        background-color: $PrimaryOne;
-
-                                        h4 {
-                                            color: $White !important;
-                                        }
-
-                                        svg {
-                                            stroke: $White !important;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        &:nth-child(2) {
-                            background-size: cover;
-                            background-position: center;
                             background-image: url("/images/slider/plumbing-slider.jpg");
 
                             h2 {
@@ -6031,7 +5140,7 @@ body[dir='rtl'] {
                             }
                         }
 
-                        &:nth-child(3) {
+                        &:nth-child(2) {
                             background-size: cover;
                             background-position: center;
                             background-image: url("/images/slider/309-slider.jpg");
