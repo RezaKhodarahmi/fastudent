@@ -11,7 +11,6 @@ import CourseMobileSingle from 'src/views/swiper/courseMobileSingle'
 // ** Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-import { fetchCourseData } from 'src/store/apps/course'
 import { useRouter } from 'next/router'
 import { useDispatch, useSelector } from 'react-redux'
 
@@ -33,9 +32,6 @@ const Index = () => {
     }
   }, [])
 
-  useEffect(() => {
-    dispatch(fetchCourseData())
-  }, [])
 
   useEffect(() => {
     if (courseData?.data) {
@@ -673,7 +669,7 @@ const Index = () => {
                 <div id='Question3' className='accordion-collapse collapse' data-bs-parent='#FAQEngineering'>
                   <div className='accordion-body'>
                     <p>
-                    چلنج کردن آزمون RedSeal به معنی شرکت در این آزمون بدون گذراندن مسیر کارآموزی سنتی است. معمولا برای شرکت در آزمون چلنج نیاز به ارایه تجربه کاری قابل توجه اغلب چندین سال در حرفه خود دارید تا بتوانید در آزمون شرکت کنید. 
+                    چلنج کردن آزمون RedSeal به معنی شرکت در این آزمون بدون گذراندن مسیر کارآموزی سنتی است. معمولا برای شرکت در آزمون چلنج نیاز به ارایه تجربه کاری قابل توجه اغلب چندین سال در حرفه خود دارید تا بتوانید در آزمون شرکت کنید.
                     </p>
                   </div>
                 </div>

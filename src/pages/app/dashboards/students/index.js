@@ -37,10 +37,6 @@ const TeacherCourses = () => {
   const studentList = useSelector(state => state.teacherStudent)
 
   useEffect(() => {
-    console.log(selectedDate)
-  }, [selectedDate])
-
-  useEffect(() => {
     setStudents(studentList?.data?.data)
   }, [studentList])
 

@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet'
 import CoursePagination from '@mui/material/Pagination'
 import { Grid } from '@mui/material'
 import { useRouter } from 'next/router'
-import { fetchCourseData } from 'src/store/apps/course'
 import { fetchCategoryData } from 'src/store/apps/category'
 import { useSelector, useDispatch } from 'react-redux'
 import SearchBox from 'src/views/searchBar.js'
@@ -38,7 +37,6 @@ const Index = () => {
 
   useEffect(() => {
     dispatch(fetchCategoryData())
-    dispatch(fetchCourseData())
   }, [])
 
   useEffect(() => {

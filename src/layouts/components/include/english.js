@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import { useSelector, useDispatch } from 'react-redux'
-import { fetchCourseData } from 'src/store/apps/course'
 import Link from 'next/link'
 
 // Hooks
@@ -16,12 +15,7 @@ function English() {
   // Hooks
   const router = useRouter()
   const { slug } = router.query
-  const dispatch = useDispatch()
   const courseData = useSelector(state => state.course)
-
-  useEffect(() => {
-    dispatch(fetchCourseData())
-  }, [])
 
   useEffect(() => {
     if (courseData?.data) {

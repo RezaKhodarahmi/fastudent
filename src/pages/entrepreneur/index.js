@@ -11,7 +11,7 @@ import CourseMobileSingle from 'src/views/swiper/courseMobileSingle'
 // ** Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-import { fetchCourseData } from 'src/store/apps/course'
+
 import { useRouter } from 'next/router'
 import { useDispatch, useSelector } from 'react-redux'
 

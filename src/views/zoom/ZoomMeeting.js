@@ -4,9 +4,6 @@ import axios from 'axios'
 import NoHeaderFooterLayout from 'src/layouts/components/NoHeaderFooterLayout'
 
 const ZoomMeeting = ({ meetingId }) => {
-  useEffect(() => {
-    console.log(meetingId)
-  }, [meetingId])
 
   useEffect(() => {
     const initializeZoom = async () => {

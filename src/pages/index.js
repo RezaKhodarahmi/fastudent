@@ -13,7 +13,6 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 // ** Import Search Section
 import SearchBox from 'src/views/searchBar.js'
 
-import { fetchCourseData } from 'src/store/apps/course'
 import { useRouter } from 'next/router'
 import { useDispatch, useSelector } from 'react-redux'
 import feather from 'feather-icons'
@@ -54,7 +53,6 @@ const Home = () => {
   const webinarData = useSelector(state => state.webinar)
 
   useEffect(() => {
-    dispatch(fetchCourseData())
     dispatch(fetchWebinarData())
   }, [])
 
