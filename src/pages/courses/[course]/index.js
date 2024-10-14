@@ -1384,14 +1384,7 @@ const Course = () => {
                                         <span className="FNV-Price-LineThrough">
                                           CA$ {cycle.regularPrice}
                                         </span>
-                                        {isDiscountActive(cycle) && <span> - CA$ {cycle.discountPrice}</span>}
-                                        {isDiscountActive(cycle) && (
-                                          <>
-                                            <div className='FNV-CountDown'>
-                                              DISCOUNT ENDS IN <span className='FNV-CountDown-Counter' dangerouslySetInnerHTML={{ __html: countdown }} />
-                                            </div>
-                                          </>
-                                        )}
+                                        {isDiscountActive(cycle) && <span> CA$ {cycle.discountPrice}</span>}
                                       </>
                                     ) : null
                                   )
@@ -1434,7 +1427,7 @@ const Course = () => {
                                         <span className="FNV-Price-LineThrough">
                                           C$ {cycle.vipPrice}
                                         </span>
-                                        {isDiscountActive(cycle) && <span> - CA$ {cycle.discountVipPrice} </span>}
+                                        {isDiscountActive(cycle) && <span> CA$ {cycle.discountVipPrice} </span>}
                                       </>
                                     ) : null
                                   )
@@ -1479,13 +1472,32 @@ const Course = () => {
                                         <span className="FNV-Price-LineThrough">
                                           CA$ {cycle.vipPLPrice}
                                         </span>
-                                        {isDiscountActive(cycle) && <span> - CA$ {cycle.discountVipPLPrice}</span>}
+                                        {isDiscountActive(cycle) && <span> CA$ {cycle.discountVipPLPrice}</span>}
                                       </>
                                     ) : null
                                   )
                                   : '0'}
                               </price>
                             </div>
+                          </div>
+
+                          {/* Discount CountDown */}
+                          <div className='row'>
+                            {data?.cycles
+                              ? data?.cycles?.map(cycle =>
+                                cycle.id == selectedCycle ? (
+                                  <>
+                                    {isDiscountActive(cycle) && (
+                                      <>
+                                        <div className='FNV-CountDown'>
+                                          DISCOUNT ENDS IN <span className='FNV-CountDown-Counter' dangerouslySetInnerHTML={{ __html: countdown }} />
+                                        </div>
+                                      </>
+                                    )}
+                                  </>
+                                ) : null
+                              )
+                              : '0'}
                           </div>
 
                           {inEnrolled ? (

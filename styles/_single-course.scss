@@ -222,15 +222,17 @@ body[dir='ltr'] {
 
                     .accordion-header {
                       .accordion-button {
-                        font-size: 10px;
+                        display: flex;
+                        font-size: 12px;
                         font-weight: 300;
                         border-radius: 0;
                         color: $PrimaryOne;
                         position: relative;
                         background-color: $White;
+                        justify-content: space-between;
 
                         svg {
-                          margin-right: .5rem;
+                          margin-left: 1rem;
                         }
 
                         .FNV-Badge-Quiz {
@@ -238,37 +240,28 @@ body[dir='ltr'] {
                         }
 
                         .FNV-Badge-Unlock {
-                          right: 2rem;
-                          padding: .5rem;
-                          font-size: 10px;
-                          font-weight: 400;
-                          border-radius: 0;
-                          position: absolute;
-                          color: $CourseUnlocked;
-
-                          svg {
-                            margin: 0 .5rem;
-                            stroke: $CourseUnlocked;
-                          }
+                          display: none;
                         }
 
                         .FNV-Badge-Locked {
-                          right: 2rem;
-                          padding: .5rem;
-                          font-size: 10px;
-                          font-weight: 400;
-                          border-radius: 0;
-                          position: absolute;
-                          color: $CourseLocked;
-
-                          svg {
-                            margin: 0 .5rem;
-                            stroke: $CourseLocked;
-                          }
+                          display: none;
                         }
 
                         .FNV-Badge-Information {
-                          display: none;
+                          padding: .25rem;
+                          font-size: 10px;
+                          font-weight: 400;
+                          border-radius: 0;
+                          color: $PrimaryTextOne;
+
+                          display: flex;
+                          align-items: center;
+                          flex-direction: column;
+
+                          svg {
+                            margin: .5rem;
+                            stroke: $PrimaryTextOne;
+                          }
                         }
 
                         &:focus {
@@ -276,9 +269,17 @@ body[dir='ltr'] {
                         }
 
                         &::after {
-                          right: 1rem;
-                          margin-right: -10px;
-                          margin-left: auto;
+                          margin-left: unset;
+                          margin-right: unset;
+                        }
+
+                        &:focus {
+                          box-shadow: unset;
+                        }
+
+                        &::after {
+                          margin-left: unset;
+                          margin-right: unset;
                         }
                       }
                     }
@@ -328,11 +329,11 @@ body[dir='ltr'] {
                 bottom: 0;
                 padding: 0;
                 width: 100%;
-                z-index: 9950;
+                z-index: 9995;
                 position: fixed;
 
                 .card {
-                  padding: .5rem;
+                  padding: 0rem;
                   border-width: 0;
                   border-radius: 0;
                   background-color: $PrimaryOne;
@@ -348,8 +349,8 @@ body[dir='ltr'] {
                     justify-content: center;
 
                     .row {
-                      padding: 0;
                       width: 33.3333%;
+                      padding: 0;
                       flex-direction: column;
 
                       &:first-child {
@@ -400,11 +401,132 @@ body[dir='ltr'] {
                       }
 
                       &:nth-child(2) {
-                        padding: .5rem 0;
+                        padding: 0;
+                        width: 100%;
+
+                        .col-md-5 {
+                          h4 {
+                            font-size: 14px;
+                          }
+                        }
+
+                        .col-md-6 {
+                          price {
+                            font-size: 20px;
+
+                            .FNV-Price-LineThrough {
+                              color: $PrimaryTextFive;
+                              text-decoration: line-through;
+                            }
+
+                            .FNV-CountDown {
+                              display: flex;
+                              direction: ltr;
+                              font-size: 18px;
+                              font-weight: 600;
+                              align-items: center;
+                              justify-content: center;
+
+                              .FNV-CountDown-Counter {
+                                display: flex;
+
+                                span {
+                                  font-size: 18px;
+                                  font-weight: 600;
+                                  text-transform: uppercase;
+
+                                  &.num {
+                                    margin: 0 .2rem;
+                                    color: $PrimaryTwo;
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                      &:nth-child(3) {
+                        padding: 0;
+                        width: 50%;
+                        margin-top: .25rem;
+
+                        .col-md-5 {
+                          h4 {
+                            font-size: 16px;
+                            font-weight: 600;
+                            margin-bottom: .5rem;
+                          }
+                        }
+
+                        .col-md-6 {
+                          price {
+                            font-size: 20px;
+                            color: $PrimaryTwo;
+
+                            .FNV-Price-LineThrough {
+                              color: $PrimaryTextFive;
+                              text-decoration: line-through;
+                            }
+                          }
+                        }
                       }
 
                       &:nth-child(4) {
-                        padding: .5rem 0;
+                        padding: 0;
+                        width: 50%;
+                        margin-top: .25rem;
+
+                        .col-md-5 {
+                          h4 {
+                            font-size: 16px;
+                            font-weight: 600;
+                            margin-bottom: .5rem;
+                          }
+                        }
+
+                        .col-md-6 {
+                          price {
+                            font-size: 20px;
+                            color: $PrimaryTwo;
+
+                            .FNV-Price-LineThrough {
+                              color: $PrimaryTextFive;
+                              text-decoration: line-through;
+                            }
+                          }
+                        }
+                      }
+
+                      &:nth-child(5) {
+                        padding: 0;
+                        width: 100%;
+
+                        .FNV-CountDown {
+                          display: flex;
+                          color: $White;
+                          padding: .5rem;
+                          direction: ltr;
+                          font-size: 18px;
+                          font-weight: 600;
+                          align-items: center;
+                          justify-content: space-evenly;
+
+                          .FNV-CountDown-Counter {
+                            display: flex;
+
+                            span {
+                              font-size: 18px;
+                              font-weight: 600;
+                              text-transform: uppercase;
+
+                              &.num {
+                                margin: 0 .2rem;
+                                color: $PrimaryTwo;
+                              }
+                            }
+                          }
+                        }
                       }
                     }
 
@@ -412,6 +534,7 @@ body[dir='ltr'] {
                       width: 100%;
                       display: block;
                       border-radius: 0;
+                      margin-top: .5rem;
                       text-align: center;
 
                       option,
@@ -823,65 +946,46 @@ body[dir='ltr'] {
 
                     .accordion-header {
                       .accordion-button {
-                        font-size: 10px;
+                        display: flex;
+                        font-size: 12px;
                         font-weight: 300;
                         border-radius: 0;
                         color: $PrimaryOne;
                         position: relative;
                         background-color: $White;
+                        justify-content: space-between;
 
                         svg {
-                          margin-left: .5rem;
+                          margin-left: 1rem;
                         }
 
                         .FNV-Badge-Quiz {
-                          right: 7rem;
-                          color: $White;
-                          padding: .5rem;
-                          font-size: 10px;
-                          font-weight: 400;
-                          border-radius: 0;
-                          position: absolute;
-                          color: $PrimaryTextOne;
-
-                          svg {
-                            margin: 0 .5rem;
-                            color: $PrimaryTextOne;
-                          }
+                          display: none;
                         }
 
                         .FNV-Badge-Unlock {
-                          right: 2rem;
-                          padding: .5rem;
-                          font-size: 10px;
-                          font-weight: 400;
-                          border-radius: 0;
-                          position: absolute;
-                          color: $CourseUnlocked;
-
-                          svg {
-                            margin: 0 .5rem;
-                            stroke: $CourseUnlocked;
-                          }
+                          display: none;
                         }
 
                         .FNV-Badge-Locked {
-                          right: 2rem;
-                          padding: .5rem;
-                          font-size: 10px;
-                          font-weight: 400;
-                          border-radius: 0;
-                          position: absolute;
-                          color: $CourseLocked;
-
-                          svg {
-                            margin: 0 .5rem;
-                            stroke: $CourseLocked;
-                          }
+                          display: none;
                         }
 
                         .FNV-Badge-Information {
-                          display: none;
+                          padding: .25rem;
+                          font-size: 10px;
+                          font-weight: 400;
+                          border-radius: 0;
+                          color: $PrimaryTextOne;
+
+                          display: flex;
+                          align-items: center;
+                          flex-direction: column;
+
+                          svg {
+                            margin: .5rem;
+                            stroke: $PrimaryTextOne;
+                          }
                         }
 
                         &:focus {
@@ -889,9 +993,17 @@ body[dir='ltr'] {
                         }
 
                         &::after {
-                          right: 1rem;
-                          margin-left: auto;
-                          margin-right: -10px;
+                          margin-left: unset;
+                          margin-right: unset;
+                        }
+
+                        &:focus {
+                          box-shadow: unset;
+                        }
+
+                        &::after {
+                          margin-left: unset;
+                          margin-right: unset;
                         }
                       }
                     }
@@ -941,11 +1053,11 @@ body[dir='ltr'] {
                 bottom: 0;
                 padding: 0;
                 width: 100%;
-                z-index: 9990;
+                z-index: 9995;
                 position: fixed;
 
                 .card {
-                  padding: .5rem;
+                  padding: 0rem;
                   border-width: 0;
                   border-radius: 0;
                   background-color: $PrimaryOne;
@@ -961,8 +1073,8 @@ body[dir='ltr'] {
                     justify-content: center;
 
                     .row {
-                      padding: 0;
                       width: 33.3333%;
+                      padding: 0;
                       flex-direction: column;
 
                       &:first-child {
@@ -1013,16 +1125,146 @@ body[dir='ltr'] {
                       }
 
                       &:nth-child(2) {
-                        padding: .5rem 0;
+                        padding: 0;
+                        width: 100%;
+
+                        .col-md-5 {
+                          h4 {
+                            font-size: 14px;
+                          }
+                        }
+
+                        .col-md-6 {
+                          price {
+                            font-size: 20px;
+
+                            .FNV-Price-LineThrough {
+                              color: $PrimaryTextFive;
+                              text-decoration: line-through;
+                            }
+
+                            .FNV-CountDown {
+                              display: flex;
+                              direction: ltr;
+                              font-size: 18px;
+                              font-weight: 600;
+                              align-items: center;
+                              justify-content: center;
+
+                              .FNV-CountDown-Counter {
+                                display: flex;
+
+                                span {
+                                  font-size: 18px;
+                                  font-weight: 600;
+                                  text-transform: uppercase;
+
+                                  &.num {
+                                    margin: 0 .2rem;
+                                    color: $PrimaryTwo;
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                      &:nth-child(3) {
+                        padding: 0;
+                        width: 50%;
+                        margin-top: .25rem;
+
+                        .col-md-5 {
+                          h4 {
+                            font-size: 16px;
+                            font-weight: 600;
+                            margin-bottom: .5rem;
+                          }
+                        }
+
+                        .col-md-6 {
+                          price {
+                            font-size: 20px;
+                            color: $PrimaryTwo;
+
+                            .FNV-Price-LineThrough {
+                              color: $PrimaryTextFive;
+                              text-decoration: line-through;
+                            }
+                          }
+                        }
                       }
 
                       &:nth-child(4) {
-                        padding: .5rem 0;
+                        padding: 0;
+                        width: 50%;
+                        margin-top: .25rem;
+
+                        .col-md-5 {
+                          h4 {
+                            font-size: 16px;
+                            font-weight: 600;
+                            margin-bottom: .5rem;
+                          }
+                        }
+
+                        .col-md-6 {
+                          price {
+                            font-size: 20px;
+                            color: $PrimaryTwo;
+
+                            .FNV-Price-LineThrough {
+                              color: $PrimaryTextFive;
+                              text-decoration: line-through;
+                            }
+                          }
+                        }
+                      }
+
+                      &:nth-child(5) {
+                        padding: 0;
+                        width: 100%;
+
+                        .FNV-CountDown {
+                          display: flex;
+                          color: $White;
+                          padding: .5rem;
+                          direction: ltr;
+                          font-size: 18px;
+                          font-weight: 600;
+                          align-items: center;
+                          justify-content: space-evenly;
+
+                          .FNV-CountDown-Counter {
+                            display: flex;
+
+                            span {
+                              font-size: 18px;
+                              font-weight: 600;
+                              text-transform: uppercase;
+
+                              &.num {
+                                margin: 0 .2rem;
+                                color: $PrimaryTwo;
+                              }
+                            }
+                          }
+                        }
                       }
                     }
 
                     .form-select {
-                      display: none;
+                      width: 100%;
+                      display: block;
+                      border-radius: 0;
+                      margin-top: .5rem;
+                      text-align: center;
+
+                      option,
+                      &::placeholder {
+                        text-align: center;
+                      }
                     }
 
                     .FNV-Submit {
@@ -2168,25 +2410,28 @@ body[dir='ltr'] {
 
                     .accordion-header {
                       .accordion-button {
-                        font-size: 10px;
+                        display: flex;
+                        font-size: 12px;
                         font-weight: 300;
                         border-radius: 0;
                         color: $PrimaryOne;
                         position: relative;
                         background-color: $White;
+                        justify-content: space-between;
 
                         svg {
-                          margin-right: .5rem;
+                          margin-right: 1rem;
                         }
 
                         .FNV-Badge-Quiz {
-                          right: 12rem;
+                          margin-left: auto;
+                          margin-right: 0;
                           color: $White;
                           padding: .5rem;
                           font-size: 10px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
+                          position: unset;
                           color: $PrimaryTextOne;
 
                           svg {
@@ -2196,12 +2441,11 @@ body[dir='ltr'] {
                         }
 
                         .FNV-Badge-Unlock {
-                          right: 7rem;
                           padding: .5rem;
                           font-size: 10px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
+                          position: unset;
                           color: $CourseUnlocked;
 
                           svg {
@@ -2211,12 +2455,10 @@ body[dir='ltr'] {
                         }
 
                         .FNV-Badge-Locked {
-                          right: 7rem;
                           padding: .5rem;
                           font-size: 10px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
                           color: $CourseLocked;
 
                           svg {
@@ -2226,12 +2468,10 @@ body[dir='ltr'] {
                         }
 
                         .FNV-Badge-Information {
-                          right: 1.5rem;
                           padding: .5rem;
                           font-size: 10px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
                           color: $PrimaryTextOne;
 
                           svg {
@@ -2245,9 +2485,8 @@ body[dir='ltr'] {
                         }
 
                         &::after {
-                          right: 1rem;
-                          margin-left: auto;
-                          margin-right: -10px;
+                          margin-right: unset;
+                          margin-left: unset;
                         }
                       }
                     }
@@ -2860,25 +3099,28 @@ body[dir='ltr'] {
 
                     .accordion-header {
                       .accordion-button {
+                        display: flex;
                         font-size: 14px;
                         font-weight: 300;
                         border-radius: 0;
                         color: $PrimaryOne;
                         position: relative;
                         background-color: $White;
+                        justify-content: space-between;
 
                         svg {
-                          margin-left: .5rem;
+                          margin-right: 1rem;
                         }
 
                         .FNV-Badge-Quiz {
-                          right: 14rem;
+                          margin-left: auto;
+                          margin-right: 0;
                           color: $White;
                           padding: .5rem;
                           font-size: 12px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
+                          position: unset;
                           color: $PrimaryTextOne;
 
                           svg {
@@ -2888,12 +3130,11 @@ body[dir='ltr'] {
                         }
 
                         .FNV-Badge-Unlock {
-                          right: 8.5rem;
                           padding: .5rem;
                           font-size: 12px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
+                          position: unset;
                           color: $CourseUnlocked;
 
                           svg {
@@ -2903,12 +3144,10 @@ body[dir='ltr'] {
                         }
 
                         .FNV-Badge-Locked {
-                          right: 8.5rem;
                           padding: .5rem;
                           font-size: 12px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
                           color: $CourseLocked;
 
                           svg {
@@ -2918,12 +3157,10 @@ body[dir='ltr'] {
                         }
 
                         .FNV-Badge-Information {
-                          right: 2rem;
                           padding: .5rem;
                           font-size: 12px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
                           color: $PrimaryTextOne;
 
                           svg {
@@ -2937,8 +3174,8 @@ body[dir='ltr'] {
                         }
 
                         &::after {
-                          margin-right: 0;
-                          margin-left: auto;
+                          margin-right: unset;
+                          margin-left: unset;
                         }
                       }
                     }
@@ -3082,6 +3319,36 @@ body[dir='ltr'] {
 
                       &:nth-child(4) {
                         padding: .5rem 0;
+                      }
+
+                      &:nth-child(5) {
+                        padding: .5rem 0;
+
+                        .FNV-CountDown {
+                          display: flex;
+                          color: $White;
+                          padding: .5rem;
+                          direction: ltr;
+                          font-size: 18px;
+                          font-weight: 600;
+                          align-items: center;
+                          justify-content: space-evenly;
+
+                          .FNV-CountDown-Counter {
+                            display: flex;
+
+                            span {
+                              font-size: 18px;
+                              font-weight: 600;
+                              text-transform: uppercase;
+
+                              &.num {
+                                margin: 0 .2rem;
+                                color: $PrimaryTwo;
+                              }
+                            }
+                          }
+                        }
                       }
                     }
 
@@ -3610,25 +3877,28 @@ body[dir='ltr'] {
 
                     .accordion-header {
                       .accordion-button {
-                        font-size: 16px;
+                        display: flex;
+                        font-size: 18px;
                         font-weight: 300;
                         border-radius: 0;
                         color: $PrimaryOne;
                         position: relative;
                         background-color: $White;
+                        justify-content: space-between;
 
                         svg {
-                          margin-right: .5rem;
+                          margin-right: 1rem;
                         }
 
                         .FNV-Badge-Quiz {
-                          right: 18rem;
+                          margin-left: auto;
+                          margin-right: 0;
                           color: $White;
                           padding: .5rem;
                           font-size: 15px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
+                          position: unset;
                           color: $PrimaryTextOne;
 
                           svg {
@@ -3638,12 +3908,11 @@ body[dir='ltr'] {
                         }
 
                         .FNV-Badge-Unlock {
-                          right: 11rem;
                           padding: .5rem;
                           font-size: 15px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
+                          position: unset;
                           color: $CourseUnlocked;
 
                           svg {
@@ -3653,12 +3922,10 @@ body[dir='ltr'] {
                         }
 
                         .FNV-Badge-Locked {
-                          right: 11rem;
                           padding: .5rem;
                           font-size: 15px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
                           color: $CourseLocked;
 
                           svg {
@@ -3668,12 +3935,10 @@ body[dir='ltr'] {
                         }
 
                         .FNV-Badge-Information {
-                          right: 3rem;
                           padding: .5rem;
                           font-size: 15px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
                           color: $PrimaryTextOne;
 
                           svg {
@@ -3687,8 +3952,8 @@ body[dir='ltr'] {
                         }
 
                         &::after {
-                          margin-right: 0;
-                          margin-left: auto;
+                          margin-right: unset;
+                          margin-left: unset;
                         }
                       }
                     }
@@ -3832,6 +4097,36 @@ body[dir='ltr'] {
 
                       &:nth-child(4) {
                         padding: 1rem 0;
+                      }
+
+                      &:nth-child(5) {
+                        padding: .5rem 0;
+
+                        .FNV-CountDown {
+                          display: flex;
+                          color: $White;
+                          padding: .5rem;
+                          direction: ltr;
+                          font-size: 18px;
+                          font-weight: 600;
+                          align-items: center;
+                          justify-content: space-evenly;
+
+                          .FNV-CountDown-Counter {
+                            display: flex;
+
+                            span {
+                              font-size: 18px;
+                              font-weight: 600;
+                              text-transform: uppercase;
+
+                              &.num {
+                                margin: 0 .2rem;
+                                color: $PrimaryTwo;
+                              }
+                            }
+                          }
+                        }
                       }
                     }
 
@@ -4357,25 +4652,28 @@ body[dir='ltr'] {
 
                     .accordion-header {
                       .accordion-button {
+                        display: flex;
                         font-size: 18px;
                         font-weight: 300;
                         border-radius: 0;
                         color: $PrimaryOne;
                         position: relative;
                         background-color: $White;
+                        justify-content: space-between;
 
                         svg {
                           margin-right: 1rem;
                         }
 
                         .FNV-Badge-Quiz {
-                          right: 18rem;
+                          margin-left: auto;
+                          margin-right: 0;
                           color: $White;
                           padding: .5rem;
                           font-size: 15px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
+                          position: unset;
                           color: $PrimaryTextOne;
 
                           svg {
@@ -4385,12 +4683,11 @@ body[dir='ltr'] {
                         }
 
                         .FNV-Badge-Unlock {
-                          right: 11.5rem;
                           padding: .5rem;
                           font-size: 15px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
+                          position: unset;
                           color: $CourseUnlocked;
 
                           svg {
@@ -4400,12 +4697,10 @@ body[dir='ltr'] {
                         }
 
                         .FNV-Badge-Locked {
-                          right: 11.5rem;
                           padding: .5rem;
                           font-size: 15px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
                           color: $CourseLocked;
 
                           svg {
@@ -4415,12 +4710,10 @@ body[dir='ltr'] {
                         }
 
                         .FNV-Badge-Information {
-                          right: 3rem;
                           padding: .5rem;
                           font-size: 15px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
                           color: $PrimaryTextOne;
 
                           svg {
@@ -4434,8 +4727,8 @@ body[dir='ltr'] {
                         }
 
                         &::after {
-                          margin-right: 0;
-                          margin-left: auto;
+                          margin-right: unset;
+                          margin-left: unset;
                         }
                       }
                     }
@@ -4579,6 +4872,36 @@ body[dir='ltr'] {
 
                       &:nth-child(4) {
                         padding: 1rem 0;
+                      }
+
+                      &:nth-child(5) {
+                        padding: .5rem 0;
+
+                        .FNV-CountDown {
+                          display: flex;
+                          color: $White;
+                          padding: .5rem;
+                          direction: ltr;
+                          font-size: 18px;
+                          font-weight: 600;
+                          align-items: center;
+                          justify-content: space-evenly;
+
+                          .FNV-CountDown-Counter {
+                            display: flex;
+
+                            span {
+                              font-size: 18px;
+                              font-weight: 600;
+                              text-transform: uppercase;
+
+                              &.num {
+                                margin: 0 .2rem;
+                                color: $PrimaryTwo;
+                              }
+                            }
+                          }
+                        }
                       }
                     }
 
@@ -5111,15 +5434,17 @@ body[dir='rtl'] {
 
                     .accordion-header {
                       .accordion-button {
-                        font-size: 10px;
+                        display: flex;
+                        font-size: 12px;
                         font-weight: 300;
                         border-radius: 0;
                         color: $PrimaryOne;
                         position: relative;
                         background-color: $White;
+                        justify-content: space-between;
 
                         svg {
-                          margin-left: .5rem;
+                          margin-left: 1rem;
                         }
 
                         .FNV-Badge-Quiz {
@@ -5127,37 +5452,28 @@ body[dir='rtl'] {
                         }
 
                         .FNV-Badge-Unlock {
-                          left: 2rem;
-                          padding: .5rem;
-                          font-size: 10px;
-                          font-weight: 400;
-                          border-radius: 0;
-                          position: absolute;
-                          color: $CourseUnlocked;
-
-                          svg {
-                            margin: 0 .5rem;
-                            stroke: $CourseUnlocked;
-                          }
+                          display: none;
                         }
 
                         .FNV-Badge-Locked {
-                          left: 2rem;
-                          padding: .5rem;
-                          font-size: 10px;
-                          font-weight: 400;
-                          border-radius: 0;
-                          position: absolute;
-                          color: $CourseLocked;
-
-                          svg {
-                            margin: 0 .5rem;
-                            stroke: $CourseLocked;
-                          }
+                          display: none;
                         }
 
                         .FNV-Badge-Information {
-                          display: none;
+                          padding: .25rem;
+                          font-size: 10px;
+                          font-weight: 400;
+                          border-radius: 0;
+                          color: $PrimaryTextOne;
+
+                          display: flex;
+                          align-items: center;
+                          flex-direction: column;
+
+                          svg {
+                            margin: .5rem;
+                            stroke: $PrimaryTextOne;
+                          }
                         }
 
                         &:focus {
@@ -5165,9 +5481,17 @@ body[dir='rtl'] {
                         }
 
                         &::after {
-                          left: 1rem;
-                          margin-left: -10px;
-                          margin-right: auto;
+                          margin-left: unset;
+                          margin-right: unset;
+                        }
+
+                        &:focus {
+                          box-shadow: unset;
+                        }
+
+                        &::after {
+                          margin-left: unset;
+                          margin-right: unset;
                         }
                       }
                     }
@@ -5381,6 +5705,37 @@ body[dir='rtl'] {
                             .FNV-Price-LineThrough {
                               color: $PrimaryTextFive;
                               text-decoration: line-through;
+                            }
+                          }
+                        }
+                      }
+
+                      &:nth-child(5) {
+                        padding: 0;
+                        width: 100%;
+
+                        .FNV-CountDown {
+                          display: flex;
+                          color: $White;
+                          padding: .5rem;
+                          direction: ltr;
+                          font-size: 18px;
+                          font-weight: 600;
+                          align-items: center;
+                          justify-content: space-evenly;
+
+                          .FNV-CountDown-Counter {
+                            display: flex;
+
+                            span {
+                              font-size: 18px;
+                              font-weight: 600;
+                              text-transform: uppercase;
+
+                              &.num {
+                                margin: 0 .2rem;
+                                color: $PrimaryTwo;
+                              }
                             }
                           }
                         }
@@ -5801,74 +6156,44 @@ body[dir='rtl'] {
 
                     .accordion-header {
                       .accordion-button {
-                        font-size: 10px;
+                        display: flex;
+                        font-size: 12px;
                         font-weight: 300;
                         border-radius: 0;
                         color: $PrimaryOne;
                         position: relative;
                         background-color: $White;
+                        justify-content: space-between;
 
                         svg {
-                          margin-left: .5rem;
+                          margin-left: 1rem;
                         }
 
                         .FNV-Badge-Quiz {
-                          left: 12rem;
-                          color: $White;
-                          padding: .5rem;
-                          font-size: 10px;
-                          font-weight: 400;
-                          border-radius: 0;
-                          position: absolute;
-                          color: $PrimaryTextOne;
-
-                          svg {
-                            margin: 0 .5rem;
-                            color: $PrimaryTextOne;
-                          }
+                          display: none;
                         }
 
                         .FNV-Badge-Unlock {
-                          left: 9rem;
-                          padding: .5rem;
-                          font-size: 10px;
-                          font-weight: 400;
-                          border-radius: 0;
-                          position: absolute;
-                          color: $CourseUnlocked;
-
-                          svg {
-                            margin: 0 .5rem;
-                            stroke: $CourseUnlocked;
-                          }
+                          display: none;
                         }
 
                         .FNV-Badge-Locked {
-                          left: 9rem;
-                          padding: .5rem;
-                          font-size: 10px;
-                          font-weight: 400;
-                          border-radius: 0;
-                          position: absolute;
-                          color: $CourseLocked;
-
-                          svg {
-                            margin: 0 .5rem;
-                            stroke: $CourseLocked;
-                          }
+                          display: none;
                         }
 
                         .FNV-Badge-Information {
-                          left: 2rem;
-                          padding: .5rem;
+                          padding: .25rem;
                           font-size: 10px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
                           color: $PrimaryTextOne;
 
+                          display: flex;
+                          align-items: center;
+                          flex-direction: column;
+
                           svg {
-                            margin: 0 .5rem;
+                            margin: .5rem;
                             stroke: $PrimaryTextOne;
                           }
                         }
@@ -5878,9 +6203,17 @@ body[dir='rtl'] {
                         }
 
                         &::after {
-                          left: 1rem;
-                          margin-left: -10px;
-                          margin-right: auto;
+                          margin-left: unset;
+                          margin-right: unset;
+                        }
+
+                        &:focus {
+                          box-shadow: unset;
+                        }
+
+                        &::after {
+                          margin-left: unset;
+                          margin-right: unset;
                         }
                       }
                     }
@@ -5930,10 +6263,11 @@ body[dir='rtl'] {
                 bottom: 0;
                 padding: 0;
                 width: 100%;
+                z-index: 9995;
                 position: fixed;
 
                 .card {
-                  padding: .5rem;
+                  padding: 0rem;
                   border-width: 0;
                   border-radius: 0;
                   background-color: $PrimaryOne;
@@ -5943,11 +6277,13 @@ body[dir='rtl'] {
                   }
 
                   .container {
+                    padding: 1rem;
                     display: flex;
-                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
 
                     .row {
-                      width: 90%;
+                      width: 33.3333%;
                       padding: 0;
                       flex-direction: column;
 
@@ -5999,16 +6335,146 @@ body[dir='rtl'] {
                       }
 
                       &:nth-child(2) {
-                        padding: .5rem 0;
+                        padding: 0;
+                        width: 100%;
+
+                        .col-md-5 {
+                          h4 {
+                            font-size: 14px;
+                          }
+                        }
+
+                        .col-md-6 {
+                          price {
+                            font-size: 20px;
+
+                            .FNV-Price-LineThrough {
+                              color: $PrimaryTextFive;
+                              text-decoration: line-through;
+                            }
+
+                            .FNV-CountDown {
+                              display: flex;
+                              direction: ltr;
+                              font-size: 18px;
+                              font-weight: 600;
+                              align-items: center;
+                              justify-content: center;
+
+                              .FNV-CountDown-Counter {
+                                display: flex;
+
+                                span {
+                                  font-size: 18px;
+                                  font-weight: 600;
+                                  text-transform: uppercase;
+
+                                  &.num {
+                                    margin: 0 .2rem;
+                                    color: $PrimaryTwo;
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                      &:nth-child(3) {
+                        padding: 0;
+                        width: 50%;
+                        margin-top: .25rem;
+
+                        .col-md-5 {
+                          h4 {
+                            font-size: 16px;
+                            font-weight: 600;
+                            margin-bottom: .5rem;
+                          }
+                        }
+
+                        .col-md-6 {
+                          price {
+                            font-size: 20px;
+                            color: $PrimaryTwo;
+
+                            .FNV-Price-LineThrough {
+                              color: $PrimaryTextFive;
+                              text-decoration: line-through;
+                            }
+                          }
+                        }
                       }
 
                       &:nth-child(4) {
-                        padding: .5rem 0;
+                        padding: 0;
+                        width: 50%;
+                        margin-top: .25rem;
+
+                        .col-md-5 {
+                          h4 {
+                            font-size: 16px;
+                            font-weight: 600;
+                            margin-bottom: .5rem;
+                          }
+                        }
+
+                        .col-md-6 {
+                          price {
+                            font-size: 20px;
+                            color: $PrimaryTwo;
+
+                            .FNV-Price-LineThrough {
+                              color: $PrimaryTextFive;
+                              text-decoration: line-through;
+                            }
+                          }
+                        }
+                      }
+
+                      &:nth-child(5) {
+                        padding: 0;
+                        width: 100%;
+
+                        .FNV-CountDown {
+                          display: flex;
+                          color: $White;
+                          padding: .5rem;
+                          direction: ltr;
+                          font-size: 18px;
+                          font-weight: 600;
+                          align-items: center;
+                          justify-content: space-evenly;
+
+                          .FNV-CountDown-Counter {
+                            display: flex;
+
+                            span {
+                              font-size: 18px;
+                              font-weight: 600;
+                              text-transform: uppercase;
+
+                              &.num {
+                                margin: 0 .2rem;
+                                color: $PrimaryTwo;
+                              }
+                            }
+                          }
+                        }
                       }
                     }
 
                     .form-select {
-                      display: none;
+                      width: 100%;
+                      display: block;
+                      border-radius: 0;
+                      margin-top: .5rem;
+                      text-align: center;
+
+                      option,
+                      &::placeholder {
+                        text-align: center;
+                      }
                     }
 
                     .FNV-Submit {
@@ -7163,25 +7629,27 @@ body[dir='rtl'] {
 
                     .accordion-header {
                       .accordion-button {
+                        display: flex;
                         font-size: 10px;
                         font-weight: 300;
                         border-radius: 0;
                         color: $PrimaryOne;
                         position: relative;
                         background-color: $White;
+                        justify-content: space-between;
 
                         svg {
-                          margin-left: .5rem;
+                          margin-left: 1rem;
                         }
 
                         .FNV-Badge-Quiz {
-                          left: 12rem;
+                          margin-right: auto;
+                          margin-left: 0;
                           color: $White;
-                          padding: .5rem;
+                          padding: .25rem;
                           font-size: 10px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
                           color: $PrimaryTextOne;
 
                           svg {
@@ -7191,12 +7659,10 @@ body[dir='rtl'] {
                         }
 
                         .FNV-Badge-Unlock {
-                          left: 9rem;
-                          padding: .5rem;
+                          padding: .25rem;
                           font-size: 10px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
                           color: $CourseUnlocked;
 
                           svg {
@@ -7206,12 +7672,10 @@ body[dir='rtl'] {
                         }
 
                         .FNV-Badge-Locked {
-                          left: 9rem;
-                          padding: .5rem;
+                          padding: .25rem;
                           font-size: 10px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
                           color: $CourseLocked;
 
                           svg {
@@ -7221,12 +7685,10 @@ body[dir='rtl'] {
                         }
 
                         .FNV-Badge-Information {
-                          left: 2rem;
-                          padding: .5rem;
+                          padding: .25rem;
                           font-size: 10px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
                           color: $PrimaryTextOne;
 
                           svg {
@@ -7240,9 +7702,17 @@ body[dir='rtl'] {
                         }
 
                         &::after {
-                          left: 1rem;
-                          margin-left: -10px;
-                          margin-right: auto;
+                          margin-left: unset;
+                          margin-right: unset;
+                        }
+
+                        &:focus {
+                          box-shadow: unset;
+                        }
+
+                        &::after {
+                          margin-left: unset;
+                          margin-right: unset;
                         }
                       }
                     }
@@ -7388,6 +7858,36 @@ body[dir='rtl'] {
 
                       &:nth-child(4) {
                         padding: .5rem 0;
+                      }
+
+                      &:nth-child(5) {
+                        padding: .5rem 0;
+
+                        .FNV-CountDown {
+                          display: flex;
+                          color: $White;
+                          padding: .5rem;
+                          direction: ltr;
+                          font-size: 18px;
+                          font-weight: 600;
+                          align-items: center;
+                          justify-content: space-evenly;
+
+                          .FNV-CountDown-Counter {
+                            display: flex;
+
+                            span {
+                              font-size: 18px;
+                              font-weight: 600;
+                              text-transform: uppercase;
+
+                              &.num {
+                                margin: 0 .2rem;
+                                color: $PrimaryTwo;
+                              }
+                            }
+                          }
+                        }
                       }
                     }
 
@@ -7916,25 +8416,27 @@ body[dir='rtl'] {
 
                     .accordion-header {
                       .accordion-button {
+                        display: flex;
                         font-size: 14px;
                         font-weight: 300;
                         border-radius: 0;
                         color: $PrimaryOne;
                         position: relative;
                         background-color: $White;
+                        justify-content: space-between;
 
                         svg {
-                          margin-left: .5rem;
+                          margin-left: 1rem;
                         }
 
                         .FNV-Badge-Quiz {
-                          left: 18rem;
+                          margin-right: auto;
+                          margin-left: 0;
                           color: $White;
-                          padding: .5rem;
-                          font-size: 12px;
+                          padding: .25rem;
+                          font-size: 10px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
                           color: $PrimaryTextOne;
 
                           svg {
@@ -7944,12 +8446,10 @@ body[dir='rtl'] {
                         }
 
                         .FNV-Badge-Unlock {
-                          left: 14rem;
-                          padding: .5rem;
-                          font-size: 12px;
+                          padding: .25rem;
+                          font-size: 10px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
                           color: $CourseUnlocked;
 
                           svg {
@@ -7959,12 +8459,10 @@ body[dir='rtl'] {
                         }
 
                         .FNV-Badge-Locked {
-                          left: 14rem;
-                          padding: .5rem;
-                          font-size: 12px;
+                          padding: .25rem;
+                          font-size: 10px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
                           color: $CourseLocked;
 
                           svg {
@@ -7974,12 +8472,10 @@ body[dir='rtl'] {
                         }
 
                         .FNV-Badge-Information {
-                          left: 4rem;
-                          padding: .5rem;
-                          font-size: 12px;
+                          padding: .25rem;
+                          font-size: 10px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
                           color: $PrimaryTextOne;
 
                           svg {
@@ -7993,8 +8489,17 @@ body[dir='rtl'] {
                         }
 
                         &::after {
-                          margin-left: 0;
-                          margin-right: auto;
+                          margin-left: unset;
+                          margin-right: unset;
+                        }
+
+                        &:focus {
+                          box-shadow: unset;
+                        }
+
+                        &::after {
+                          margin-left: unset;
+                          margin-right: unset;
                         }
                       }
                     }
@@ -8138,6 +8643,36 @@ body[dir='rtl'] {
 
                       &:nth-child(4) {
                         padding: .5rem 0;
+                      }
+
+                      &:nth-child(5) {
+                        padding: .5rem 0;
+
+                        .FNV-CountDown {
+                          display: flex;
+                          color: $White;
+                          padding: .5rem;
+                          direction: ltr;
+                          font-size: 18px;
+                          font-weight: 600;
+                          align-items: center;
+                          justify-content: space-evenly;
+
+                          .FNV-CountDown-Counter {
+                            display: flex;
+
+                            span {
+                              font-size: 18px;
+                              font-weight: 600;
+                              text-transform: uppercase;
+
+                              &.num {
+                                margin: 0 .2rem;
+                                color: $PrimaryTwo;
+                              }
+                            }
+                          }
+                        }
                       }
                     }
 
@@ -8666,25 +9201,27 @@ body[dir='rtl'] {
 
                     .accordion-header {
                       .accordion-button {
-                        font-size: 16px;
+                        display: flex;
+                        font-size: 14px;
                         font-weight: 300;
                         border-radius: 0;
                         color: $PrimaryOne;
                         position: relative;
                         background-color: $White;
+                        justify-content: space-between;
 
                         svg {
-                          margin-left: .5rem;
+                          margin-left: 1rem;
                         }
 
                         .FNV-Badge-Quiz {
-                          left: 18rem;
+                          margin-right: auto;
+                          margin-left: 0;
                           color: $White;
                           padding: .5rem;
-                          font-size: 15px;
+                          font-size: 12px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
                           color: $PrimaryTextOne;
 
                           svg {
@@ -8694,12 +9231,10 @@ body[dir='rtl'] {
                         }
 
                         .FNV-Badge-Unlock {
-                          left: 14rem;
                           padding: .5rem;
-                          font-size: 15px;
+                          font-size: 12px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
                           color: $CourseUnlocked;
 
                           svg {
@@ -8709,12 +9244,10 @@ body[dir='rtl'] {
                         }
 
                         .FNV-Badge-Locked {
-                          left: 14rem;
                           padding: .5rem;
-                          font-size: 15px;
+                          font-size: 12px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
                           color: $CourseLocked;
 
                           svg {
@@ -8724,18 +9257,25 @@ body[dir='rtl'] {
                         }
 
                         .FNV-Badge-Information {
-                          left: 4rem;
                           padding: .5rem;
-                          font-size: 15px;
+                          font-size: 12px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
                           color: $PrimaryTextOne;
 
                           svg {
                             margin: 0 .5rem;
                             stroke: $PrimaryTextOne;
                           }
+                        }
+
+                        &:focus {
+                          box-shadow: unset;
+                        }
+
+                        &::after {
+                          margin-left: unset;
+                          margin-right: unset;
                         }
 
                         &:focus {
@@ -8889,6 +9429,36 @@ body[dir='rtl'] {
                       &:nth-child(4) {
                         padding: 1rem 0;
                       }
+
+                      &:nth-child(5) {
+                        padding: .5rem 0;
+
+                        .FNV-CountDown {
+                          display: flex;
+                          color: $White;
+                          padding: .5rem;
+                          direction: ltr;
+                          font-size: 18px;
+                          font-weight: 600;
+                          align-items: center;
+                          justify-content: space-evenly;
+
+                          .FNV-CountDown-Counter {
+                            display: flex;
+
+                            span {
+                              font-size: 18px;
+                              font-weight: 600;
+                              text-transform: uppercase;
+
+                              &.num {
+                                margin: 0 .2rem;
+                                color: $PrimaryTwo;
+                              }
+                            }
+                          }
+                        }
+                      }
                     }
 
                     .form-select {
@@ -8902,6 +9472,7 @@ body[dir='rtl'] {
 
                     .FNV-Submit {
                       margin: 1rem 0;
+                      font-size: 20px;
                     }
 
                     .FNV-Submit-Demo {
@@ -9606,14 +10177,14 @@ body[dir='rtl'] {
                         price {
                           width: 100%;
                           color: $White;
-                          display: block;
+                          display: flex;
                           font-size: 24px;
+                          padding: 0 2rem;
                           text-align: left;
                           font-weight: 300;
-                          padding: 0 2rem;
+                          flex-direction: column;
                         }
                       }
-
 
                       &:first-child {
                         padding: 0 0 .5rem;
@@ -9622,6 +10193,16 @@ body[dir='rtl'] {
 
                       &:nth-child(2) {
                         padding: .5rem 0;
+                        position: relative;
+
+                        .col-md-6 {
+                          price {
+                            .FNV-Price-LineThrough {
+                              color: $PrimaryTextFive;
+                              text-decoration: line-through;
+                            }
+                          }
+                        }
                       }
 
                       &:nth-child(3) {
@@ -9634,10 +10215,49 @@ body[dir='rtl'] {
                             height: 40px;
                           }
                         }
+
+                        .col-md-6 {
+                          price {
+                            .FNV-Price-LineThrough {
+                              color: $PrimaryTextFive;
+                              text-decoration: line-through;
+                            }
+                          }
+                        }
                       }
 
                       &:nth-child(4) {
                         padding: 1rem 0;
+                      }
+
+                      &:nth-child(5) {
+                        padding: .5rem 0;
+
+                        .FNV-CountDown {
+                          display: flex;
+                          color: $White;
+                          padding: .5rem;
+                          direction: ltr;
+                          font-size: 18px;
+                          font-weight: 600;
+                          align-items: center;
+                          justify-content: space-evenly;
+
+                          .FNV-CountDown-Counter {
+                            display: flex;
+
+                            span {
+                              font-size: 18px;
+                              font-weight: 600;
+                              text-transform: uppercase;
+
+                              &.num {
+                                margin: 0 .2rem;
+                                color: $PrimaryTwo;
+                              }
+                            }
+                          }
+                        }
                       }
                     }
 
@@ -9652,6 +10272,7 @@ body[dir='rtl'] {
 
                     .FNV-Submit {
                       margin: 1rem 0;
+                      font-size: 22px;
                     }
 
                     .FNV-Submit-Demo {
