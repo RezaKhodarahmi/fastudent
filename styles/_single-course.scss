@@ -8627,6 +8627,15 @@ body[dir='rtl'] {
 
                       &:nth-child(2) {
                         padding: .5rem 0;
+
+                        .col-md-6 {
+                          price {
+                            .FNV-Price-LineThrough {
+                              color: $PrimaryTextFive;
+                              text-decoration: line-through;
+                            }
+                          }
+                        }
                       }
 
                       &:nth-child(3) {
@@ -8639,10 +8648,32 @@ body[dir='rtl'] {
                             height: 40px;
                           }
                         }
+
+                        .col-md-6 {
+                          price {
+                            color: $PrimaryTwo;
+
+                            .FNV-Price-LineThrough {
+                              color: $PrimaryTextFive;
+                              text-decoration: line-through;
+                            }
+                          }
+                        }
                       }
 
                       &:nth-child(4) {
-                        padding: .5rem 0;
+                        padding: 1rem 0;
+
+                        .col-md-6 {
+                          price {
+                            color: $PrimaryTwo;
+
+                            .FNV-Price-LineThrough {
+                              color: $PrimaryTextFive;
+                              text-decoration: line-through;
+                            }
+                          }
+                        }
                       }
 
                       &:nth-child(5) {
@@ -9412,6 +9443,15 @@ body[dir='rtl'] {
 
                       &:nth-child(2) {
                         padding: .5rem 0;
+
+                        .col-md-6 {
+                          price {
+                            .FNV-Price-LineThrough {
+                              color: $PrimaryTextFive;
+                              text-decoration: line-through;
+                            }
+                          }
+                        }
                       }
 
                       &:nth-child(3) {
@@ -9424,10 +9464,32 @@ body[dir='rtl'] {
                             height: 40px;
                           }
                         }
+
+                        .col-md-6 {
+                          price {
+                            color: $PrimaryTwo;
+
+                            .FNV-Price-LineThrough {
+                              color: $PrimaryTextFive;
+                              text-decoration: line-through;
+                            }
+                          }
+                        }
                       }
 
                       &:nth-child(4) {
                         padding: 1rem 0;
+
+                        .col-md-6 {
+                          price {
+                            color: $PrimaryTwo;
+
+                            .FNV-Price-LineThrough {
+                              color: $PrimaryTextFive;
+                              text-decoration: line-through;
+                            }
+                          }
+                        }
                       }
 
                       &:nth-child(5) {
@@ -10218,6 +10280,8 @@ body[dir='rtl'] {
 
                         .col-md-6 {
                           price {
+                            color: $PrimaryTwo;
+
                             .FNV-Price-LineThrough {
                               color: $PrimaryTextFive;
                               text-decoration: line-through;
@@ -10228,6 +10292,17 @@ body[dir='rtl'] {
 
                       &:nth-child(4) {
                         padding: 1rem 0;
+
+                        .col-md-6 {
+                          price {
+                            color: $PrimaryTwo;
+
+                            .FNV-Price-LineThrough {
+                              color: $PrimaryTextFive;
+                              text-decoration: line-through;
+                            }
+                          }
+                        }
                       }
 
                       &:nth-child(5) {
