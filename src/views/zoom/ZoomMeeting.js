@@ -59,9 +59,16 @@ const ZoomMeeting = ({ meetingId, email }) => {
   }, [])
 
   return (
-    <NoHeaderFooterLayout>
+    <>
+      <style>
+        {`
+        header {
+          display: none!important;
+        }
+      `}
+      </style>
       <div id='meetingSDKElement' style={{ width: '100%', height: '100vh', zIndex: '9999' }}></div>
-    </NoHeaderFooterLayout>
+    </>
   )
 }
 

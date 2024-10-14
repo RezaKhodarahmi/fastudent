@@ -311,11 +311,11 @@ const Course = () => {
                           {t('single-course-category')}:
                           {data?.categories
                             ? data?.categories?.map((category, index, array) => (
-                                <small key={category.id}>
-                                  <a href={category.id}>{category.title}</a>
-                                  {index < array.length - 1 ? ', ' : ''}
-                                </small>
-                              ))
+                              <small key={category.id}>
+                                <a href={category.id}>{category.title}</a>
+                                {index < array.length - 1 ? ', ' : ''}
+                              </small>
+                            ))
                             : 'uncategorized'}
                         </span>
                       </h2>
@@ -1378,38 +1378,38 @@ const Course = () => {
                               <price>
                                 {data?.cycles
                                   ? data?.cycles?.map(cycle =>
-                                      cycle.id == selectedCycle ? (
-                                        <>
-                                          {' '}
-                                          <span
-                                            style={{
-                                              textDecoration: isDiscountActive(cycle) ? 'line-through' : 'none',
-                                              color: isDiscountActive(cycle) ? 'red' : 'none'
-                                            }}
-                                          >
-                                            C$ {cycle.regularPrice}
-                                          </span>
-                                          {isDiscountActive(cycle) && <span> - ${cycle.discountPrice}</span>}
-                                          {isDiscountActive(cycle) && (
-                                            <>
-                                              {' '}
-                                              <br />
-                                              <div
-                                                style={{
-                                                  color: '#fff',
-                                                  backgroundColor: 'green',
-                                                  padding: '5px',
-                                                  borderRadius: '5px',
-                                                  fontSize: '17px'
-                                                }}
-                                              >
-                                                Time Remaining: {countdown}
-                                              </div>
-                                            </>
-                                          )}
-                                        </>
-                                      ) : null
-                                    )
+                                    cycle.id == selectedCycle ? (
+                                      <>
+                                        {' '}
+                                        <span
+                                          style={{
+                                            textDecoration: isDiscountActive(cycle) ? 'line-through' : 'none',
+                                            color: isDiscountActive(cycle) ? 'red' : 'none'
+                                          }}
+                                        >
+                                          C$ {cycle.regularPrice}
+                                        </span>
+                                        {isDiscountActive(cycle) && <span> - ${cycle.discountPrice}</span>}
+                                        {isDiscountActive(cycle) && (
+                                          <>
+                                            {' '}
+                                            <br />
+                                            <div
+                                              style={{
+                                                color: '#fff',
+                                                backgroundColor: 'green',
+                                                padding: '5px',
+                                                borderRadius: '5px',
+                                                fontSize: '17px'
+                                              }}
+                                            >
+                                              Time Remaining: {countdown}
+                                            </div>
+                                          </>
+                                        )}
+                                      </>
+                                    ) : null
+                                  )
                                   : '0'}
                               </price>
                             </div>
@@ -1443,21 +1443,21 @@ const Course = () => {
                               <price>
                                 {data?.cycles
                                   ? data?.cycles?.map(cycle =>
-                                      cycle.id == selectedCycle ? (
-                                        <>
-                                          {' '}
-                                          <span
-                                            style={{
-                                              textDecoration: isDiscountActive(cycle) ? 'line-through' : 'none',
-                                              color: isDiscountActive(cycle) ? '#000' : 'none'
-                                            }}
-                                          >
-                                            C$ {cycle.vipPrice}
-                                          </span>
-                                          {isDiscountActive(cycle) && <span> - ${cycle.discountVipPrice} </span>}
-                                        </>
-                                      ) : null
-                                    )
+                                    cycle.id == selectedCycle ? (
+                                      <>
+                                        {' '}
+                                        <span
+                                          style={{
+                                            textDecoration: isDiscountActive(cycle) ? 'line-through' : 'none',
+                                            color: isDiscountActive(cycle) ? '#000' : 'none'
+                                          }}
+                                        >
+                                          C$ {cycle.vipPrice}
+                                        </span>
+                                        {isDiscountActive(cycle) && <span> - ${cycle.discountVipPrice} </span>}
+                                      </>
+                                    ) : null
+                                  )
                                   : '0'}
                               </price>
                             </div>
@@ -1493,21 +1493,21 @@ const Course = () => {
                               <price>
                                 {data?.cycles
                                   ? data?.cycles?.map(cycle =>
-                                      cycle.id == selectedCycle ? (
-                                        <>
-                                          {' '}
-                                          <span
-                                            style={{
-                                              textDecoration: isDiscountActive(cycle) ? 'line-through' : 'none',
-                                              color: isDiscountActive(cycle) ? '#000' : 'none'
-                                            }}
-                                          >
-                                            C$ {cycle.vipPLPrice}
-                                          </span>
-                                          {isDiscountActive(cycle) && <span> - ${cycle.discountVipPLPrice}</span>}
-                                        </>
-                                      ) : null
-                                    )
+                                    cycle.id == selectedCycle ? (
+                                      <>
+                                        {' '}
+                                        <span
+                                          style={{
+                                            textDecoration: isDiscountActive(cycle) ? 'line-through' : 'none',
+                                            color: isDiscountActive(cycle) ? '#000' : 'none'
+                                          }}
+                                        >
+                                          C$ {cycle.vipPLPrice}
+                                        </span>
+                                        {isDiscountActive(cycle) && <span> - ${cycle.discountVipPLPrice}</span>}
+                                      </>
+                                    ) : null
+                                  )
                                   : '0'}
                               </price>
                             </div>
@@ -1651,7 +1651,7 @@ const Course = () => {
                         </div>
                       </div>
 
-                      <div className='card FNV-Instructor'>
+                      <div className='card FNV-Instructor d-none'>
                         {/* Image */}
                         {/* <figure>
                           <img src='' className='img-fluid' />
