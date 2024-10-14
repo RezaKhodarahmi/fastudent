@@ -72,7 +72,7 @@ const AnalyticsDashboard = () => {
                 Enrolled Courses
               </Typography>
               <Divider sx={{ my: '20px !important' }} />
-              <ListEnrolledCourses courses={courses} />
+              <ListEnrolledCourses courses={courses} user={user} />
             </Grid>
           </Grid>
         </Grid>

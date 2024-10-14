@@ -54,7 +54,6 @@ const VideoPage = () => {
 
       // Find the current video based on the filtered list
       const currentVideo = filteredVideos.find(video => video.id.toString() === id.toString())
-      console.log(currentVideo)
 
       if (currentVideo) {
         let videoUrl = currentVideo.url

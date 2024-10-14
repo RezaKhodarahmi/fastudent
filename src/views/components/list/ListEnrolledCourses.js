@@ -81,13 +81,13 @@ const ListCourses = props => {
                     <ZoomButton courseId={course?.cycles[0].id} />
                   ) : (
                     <>
-                      {course?.cycles[0]?.zoomLink && (
+                      {course?.cycles[0]?.zoomLinks[0]?.zoomId && (
                         <Button
                           variant='contained'
                           size='small'
                           color='success'
                           style={{ fontSize: '11px' }}
-                          onClick={() => handleZoomClick(course?.cycles[0]?.zoomLink)} // Set zoom link on click
+                          onClick={() => handleZoomClick(course?.cycles[0]?.zoomLinks[0]?.zoomId)} // Set zoom link on click
                         >
                           Join the class
                         </Button>
@@ -111,7 +111,7 @@ const ListCourses = props => {
         ))}
 
       {/* Conditionally render the ZoomMeeting component when selectedZoomLink is set */}
-      {selectedZoomLink && <ZoomMeeting meetingId={selectedZoomLink} />}
+      {selectedZoomLink && <ZoomMeeting meetingId={selectedZoomLink} email={user?.email} />}
     </Grid>
   )
 }

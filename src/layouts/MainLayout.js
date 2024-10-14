@@ -1,7 +1,9 @@
+import {useEffect} from "react"
 import Header from 'src/layouts/components/header'
 import Footer from 'src/layouts/components/footer'
 
 const MainLayout = ({ children }, props) => (
+
   <div>
     <Header />
     {children}

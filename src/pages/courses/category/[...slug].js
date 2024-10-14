@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet'
 import CoursePagination from '@mui/material/Pagination'
 import { Grid, LinearProgress } from '@mui/material'
 import { useRouter } from 'next/router'
-import { fetchCourseData } from 'src/store/apps/course'
 
 import { useSelector, useDispatch } from 'react-redux'
 import SearchBox from 'src/views/searchBar.js'
@@ -33,10 +32,6 @@ const Index = () => {
   const courseData = useSelector(state => state.course)
   const { t } = useTranslation()
   const { slug } = router.query
-
-  useEffect(() => {
-    dispatch(fetchCourseData())
-  }, [])
 
   useEffect(() => {
     if (courseData?.data) {
