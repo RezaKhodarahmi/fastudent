@@ -4,7 +4,7 @@ import feather from 'feather-icons'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 
-const Index = () => {
+const Renovation = () => {
 
   // Feathericon
   useEffect(() => {
@@ -1087,6 +1087,6 @@ const Index = () => {
   )
 }
 
-Index.guestGuard = true
+Renovation.guestGuard = true
 
-export default Index
+export default Renovation

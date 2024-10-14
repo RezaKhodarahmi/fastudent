@@ -14,6 +14,89 @@ body[dir='ltr'] {
             background-color: $PrimaryBackgroundTwo;
         }
 
+        &.FNV-Product-Medium {
+            h6 {
+                margin: 1rem 0;
+                font-size: 18px;
+                text-align: left;
+                font-weight: 400;
+                min-height: 50px;
+                color: $PrimaryOne;
+                font-family: 'Fira Sans', sans-serif;
+            }
+
+            .row {
+                .col-6 {
+                    margin-bottom: 0;
+
+                    .FNV-Product-Price {
+                        margin-bottom: 2rem;
+
+                        svg {
+                            margin-bottom: 0;
+                        }
+
+                        span {
+                            font-size: 14px;
+                            font-weight: 400;
+                            margin-left: .5rem;
+                            font-family: 'Fira Sans', sans-serif;
+                        }
+                    }
+
+                    .FNV-Product-Duration {
+                        margin-bottom: 2rem;
+
+                        svg {
+                            margin-bottom: 0;
+                        }
+
+                        span {
+                            font-size: 14px;
+                            font-weight: 400;
+                            margin-left: .5rem;
+                            font-family: 'Fira Sans', sans-serif;
+                        }
+                    }
+
+                    .FNV-Product-Details {
+                        width: 100%;
+                        padding: .5rem;
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: $PrimaryOne;
+                        text-align: center;
+                        display: inline-block;
+
+                        &:hover {
+                            color: $PrimaryOne;
+                            background-color: $PrimaryBackgroundTwo;
+                        }
+                    }
+
+                    .FNV-Product-AddToCart {
+                        width: 100%;
+                        color: $White;
+                        padding: .5rem;
+                        font-size: 14px;
+                        font-weight: 400;
+                        text-align: center;
+                        display: inline-block;
+                        background-color: $PrimaryOne;
+
+                        &:hover {
+                            color: $White;
+                            background-color: $PrimaryFour;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+
         &.FNV-Product-Large {
             h6 {
                 margin: 1rem 0;
@@ -113,6 +196,89 @@ body[dir='rtl'] {
 
         &.FNV-Product-BG-Primary {
             background-color: $PrimaryBackgroundTwo;
+        }
+
+        &.FNV-Product-Medium {
+            h6 {
+                margin: 1rem 0;
+                font-size: 18px;
+                text-align: left;
+                font-weight: 400;
+                min-height: 50px;
+                color: $PrimaryOne;
+                font-family: 'Fira Sans', sans-serif;
+            }
+
+            .row {
+                .col-6 {
+                    margin-bottom: 0;
+
+                    .FNV-Product-Price {
+                        margin-bottom: 2rem;
+
+                        svg {
+                            margin-bottom: 0;
+                        }
+
+                        span {
+                            font-size: 14px;
+                            font-weight: 400;
+                            margin-left: .5rem;
+                            font-family: 'Fira Sans', sans-serif;
+                        }
+                    }
+
+                    .FNV-Product-Duration {
+                        margin-bottom: 2rem;
+
+                        svg {
+                            margin-bottom: 0;
+                        }
+
+                        span {
+                            font-size: 14px;
+                            font-weight: 400;
+                            margin-left: .5rem;
+                            font-family: 'Fira Sans', sans-serif;
+                        }
+                    }
+
+                    .FNV-Product-Details {
+                        width: 100%;
+                        padding: .5rem;
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: $PrimaryOne;
+                        text-align: center;
+                        display: inline-block;
+
+                        &:hover {
+                            color: $PrimaryOne;
+                            background-color: $PrimaryBackgroundTwo;
+                        }
+                    }
+
+                    .FNV-Product-AddToCart {
+                        width: 100%;
+                        color: $White;
+                        padding: .5rem;
+                        font-size: 14px;
+                        font-weight: 400;
+                        text-align: center;
+                        display: inline-block;
+                        background-color: $PrimaryOne;
+
+                        &:hover {
+                            color: $White;
+                            background-color: $PrimaryFour;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        text-align: right;
+                    }
+                }
+            }
         }
 
         &.FNV-Product-Large {
