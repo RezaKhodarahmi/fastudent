@@ -90,7 +90,7 @@ function English() {
                         </h5>
 
                         <div className='FNV-Product FNV-Product-BG-Primary FNV-Product-Medium'>
-                          <img src='https://fanavaran.ca:3200/uploads/courses/487b7203-fcc3-4ba6-832f-606ae1829ddc.jpg' className='img-fluid' />
+                          <img src='https://fanavaran.ca:3200/uploads/courses/d6adaf44-8bb8-4ce4-933b-82129cc4bea2.webp' className='img-fluid' />
 
                           <h6>Pre-Intermediate</h6>
 
@@ -136,7 +136,7 @@ function English() {
                         </h5>
 
                         <div className='FNV-Product FNV-Product-BG-Primary FNV-Product-Medium'>
-                          <img src='https://fanavaran.ca:3200/uploads/courses/487b7203-fcc3-4ba6-832f-606ae1829ddc.jpg' className='img-fluid' />
+                          <img src='https://fanavaran.ca:3200/uploads/courses/d8f21611-52cb-46a0-9936-28e22f76cd8d.webp' className='img-fluid' />
 
                           <h6>Intermediate</h6>
 
@@ -182,7 +182,7 @@ function English() {
                         </h5>
 
                         <div className='FNV-Product FNV-Product-BG-Primary FNV-Product-Medium'>
-                          <img src='https://fanavaran.ca:3200/uploads/courses/487b7203-fcc3-4ba6-832f-606ae1829ddc.jpg' className='img-fluid' />
+                          <img src='https://fanavaran.ca:3200/uploads/courses/a220a84b-a2a4-4e74-bead-8dd5d3e06993.webp' className='img-fluid' />
 
                           <h6>Upper-Intermediate</h6>
 
@@ -325,7 +325,7 @@ function English() {
                         </h5>
 
                         <div className='FNV-Product FNV-Product-BG-Primary FNV-Product-Medium'>
-                          <img src='https://fanavaran.ca:3200/uploads/courses/487b7203-fcc3-4ba6-832f-606ae1829ddc.jpg' className='img-fluid' />
+                          <img src='https://fanavaran.ca:3200/uploads/courses/d6adaf44-8bb8-4ce4-933b-82129cc4bea2.webp' className='img-fluid' />
 
                           <h6>Pre-Intermediate</h6>
 
@@ -371,7 +371,7 @@ function English() {
                         </h5>
 
                         <div className='FNV-Product FNV-Product-BG-Primary FNV-Product-Medium'>
-                          <img src='https://fanavaran.ca:3200/uploads/courses/487b7203-fcc3-4ba6-832f-606ae1829ddc.jpg' className='img-fluid' />
+                          <img src='https://fanavaran.ca:3200/uploads/courses/d8f21611-52cb-46a0-9936-28e22f76cd8d.webp' className='img-fluid' />
 
                           <h6>Intermediate</h6>
 
@@ -417,7 +417,7 @@ function English() {
                         </h5>
 
                         <div className='FNV-Product FNV-Product-BG-Primary FNV-Product-Medium'>
-                          <img src='https://fanavaran.ca:3200/uploads/courses/487b7203-fcc3-4ba6-832f-606ae1829ddc.jpg' className='img-fluid' />
+                          <img src='https://fanavaran.ca:3200/uploads/courses/a220a84b-a2a4-4e74-bead-8dd5d3e06993.webp' className='img-fluid' />
 
                           <h6>Upper-Intermediate</h6>
 

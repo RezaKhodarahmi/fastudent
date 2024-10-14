@@ -255,7 +255,7 @@ const Course = () => {
     const discountEnd = parseISO(cycle.discountDateEnd)
     if (now <= discountEnd) {
       const duration = intervalToDuration({ start: now, end: discountEnd })
-      const formatted = `${duration.days} days, ${duration.hours} hours, ${duration.minutes} minutes, ${duration.seconds} seconds`
+      const formatted = `<span><span>${duration.days}</span> <span>Day</span></span><span><span>${duration.hours}</span><span>Hr</span></span><span><span>${duration.minutes}</span><span>Min</span></span><span><span>${duration.seconds}</span><span>Sec</span></span>`
       setCountdown(formatted)
     } else {
       setCountdown('Discount period has ended.')
@@ -1381,29 +1381,14 @@ const Course = () => {
                                     cycle.id == selectedCycle ? (
                                       <>
                                         {' '}
-                                        <span
-                                          style={{
-                                            textDecoration: isDiscountActive(cycle) ? 'line-through' : 'none',
-                                            color: isDiscountActive(cycle) ? 'red' : 'none'
-                                          }}
-                                        >
-                                          C$ {cycle.regularPrice}
+                                        <span className="FNV-Price-LineThrough">
+                                          CA$ {cycle.regularPrice}
                                         </span>
-                                        {isDiscountActive(cycle) && <span> - ${cycle.discountPrice}</span>}
+                                        {isDiscountActive(cycle) && <span> - CA$ {cycle.discountPrice}</span>}
                                         {isDiscountActive(cycle) && (
                                           <>
-                                            {' '}
-                                            <br />
-                                            <div
-                                              style={{
-                                                color: '#fff',
-                                                backgroundColor: 'green',
-                                                padding: '5px',
-                                                borderRadius: '5px',
-                                                fontSize: '17px'
-                                              }}
-                                            >
-                                              Time Remaining: {countdown}
+                                            <div className='FNV-CountDown'>
+                                              ENDS IN <span className='FNV-CountDown-Counter' dangerouslySetInnerHTML={{ __html: countdown }} />
                                             </div>
                                           </>
                                         )}
@@ -1446,15 +1431,10 @@ const Course = () => {
                                     cycle.id == selectedCycle ? (
                                       <>
                                         {' '}
-                                        <span
-                                          style={{
-                                            textDecoration: isDiscountActive(cycle) ? 'line-through' : 'none',
-                                            color: isDiscountActive(cycle) ? '#000' : 'none'
-                                          }}
-                                        >
+                                        <span className="FNV-Price-LineThrough">
                                           C$ {cycle.vipPrice}
                                         </span>
-                                        {isDiscountActive(cycle) && <span> - ${cycle.discountVipPrice} </span>}
+                                        {isDiscountActive(cycle) && <span> - CA$ {cycle.discountVipPrice} </span>}
                                       </>
                                     ) : null
                                   )
@@ -1496,15 +1476,10 @@ const Course = () => {
                                     cycle.id == selectedCycle ? (
                                       <>
                                         {' '}
-                                        <span
-                                          style={{
-                                            textDecoration: isDiscountActive(cycle) ? 'line-through' : 'none',
-                                            color: isDiscountActive(cycle) ? '#000' : 'none'
-                                          }}
-                                        >
-                                          C$ {cycle.vipPLPrice}
+                                        <span className="FNV-Price-LineThrough">
+                                          CA$ {cycle.vipPLPrice}
                                         </span>
-                                        {isDiscountActive(cycle) && <span> - ${cycle.discountVipPLPrice}</span>}
+                                        {isDiscountActive(cycle) && <span> - CA$ {cycle.discountVipPLPrice}</span>}
                                       </>
                                     ) : null
                                   )

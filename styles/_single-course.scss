@@ -5221,7 +5221,7 @@ body[dir='rtl'] {
                 position: fixed;
 
                 .card {
-                  padding: .5rem;
+                  padding: 0rem;
                   border-width: 0;
                   border-radius: 0;
                   background-color: $PrimaryOne;
@@ -5289,11 +5289,90 @@ body[dir='rtl'] {
                       }
 
                       &:nth-child(2) {
-                        padding: .5rem 0;
+                        padding: 0;
+                        width: 100%;
+
+                        .col-md-5 {
+                          h4 {
+                            font-size: 14px;
+                          }
+                        }
+
+                        .col-md-6 {
+                          price {
+                            font-size: 20px;
+
+                            .FNV-Price-LineThrough {
+                              color: $PrimaryTextFive;
+                              text-decoration: line-through;
+                            }
+
+                            .FNV-CountDown {
+                              display: flex;
+                              direction: ltr;
+                              font-size: 18px;
+                              font-weight: 600;
+                              align-items: center;
+                              justify-content: center;
+
+                              .FNV-CountDown-Counter {
+                                display: flex;
+
+                                span {
+                                  padding: .1rem;
+                                  font-size: 18px;
+                                  font-weight: 600;
+                                  color: $PrimaryTwo;
+                                  text-transform: uppercase;
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                      &:nth-child(3) {
+                        padding: 0;
+                        width: 50%;
+
+                        .col-md-5 {
+                          h4 {
+                            font-size: 14px;
+                          }
+                        }
+
+                        .col-md-6 {
+                          price {
+                            font-size: 20px;
+
+                            .FNV-Price-LineThrough {
+                              color: $PrimaryTextFive;
+                              text-decoration: line-through;
+                            }
+                          }
+                        }
                       }
 
                       &:nth-child(4) {
-                        padding: .5rem 0;
+                        padding: 0;
+                        width: 50%;
+
+                        .col-md-5 {
+                          h4 {
+                            font-size: 14px;
+                          }
+                        }
+
+                        .col-md-6 {
+                          price {
+                            font-size: 20px;
+
+                            .FNV-Price-LineThrough {
+                              color: $PrimaryTextFive;
+                              text-decoration: line-through;
+                            }
+                          }
+                        }
                       }
                     }
 
@@ -8652,8 +8731,8 @@ body[dir='rtl'] {
                         }
 
                         &::after {
-                          margin-left: 0;
-                          margin-right: auto;
+                          margin-left: unset;
+                          margin-right: unset;
                         }
                       }
                     }
@@ -9322,25 +9401,28 @@ body[dir='rtl'] {
 
                     .accordion-header {
                       .accordion-button {
+                        display: flex;
                         font-size: 18px;
                         font-weight: 300;
                         border-radius: 0;
                         color: $PrimaryOne;
                         position: relative;
                         background-color: $White;
+                        justify-content: space-between;
 
                         svg {
                           margin-left: 1rem;
                         }
 
                         .FNV-Badge-Quiz {
-                          left: 18rem;
+                          margin-right: auto;
+                          margin-left: 0;
                           color: $White;
                           padding: .5rem;
                           font-size: 15px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
+                          position: unset;
                           color: $PrimaryTextOne;
 
                           svg {
@@ -9355,7 +9437,7 @@ body[dir='rtl'] {
                           font-size: 15px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
+                          position: unset;
                           color: $CourseUnlocked;
 
                           svg {
@@ -9370,7 +9452,7 @@ body[dir='rtl'] {
                           font-size: 15px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
+                          position: unset;
                           color: $CourseLocked;
 
                           svg {
@@ -9385,7 +9467,7 @@ body[dir='rtl'] {
                           font-size: 15px;
                           font-weight: 400;
                           border-radius: 0;
-                          position: absolute;
+                          position: unset;
                           color: $PrimaryTextOne;
 
                           svg {
@@ -9399,8 +9481,8 @@ body[dir='rtl'] {
                         }
 
                         &::after {
-                          margin-left: 0;
-                          margin-right: auto;
+                          margin-left: unset;
+                          margin-right: unset;
                         }
                       }
                     }
