@@ -852,7 +852,7 @@ badge.SecondaryColor {
     background-color: #FFFFFF;
   }
   body[dir=ltr] .cc-1m2mf {
-    margin-bottom: 5rem !important;
+    margin-bottom: 15rem !important;
   }
 }
 @media (min-width: 575.98px) and (max-width: 767.98px) {
@@ -1419,7 +1419,7 @@ badge.SecondaryColor {
     background-color: #FFFFFF;
   }
   body[dir=ltr] .cc-1m2mf {
-    margin-bottom: 5rem !important;
+    margin-bottom: 15rem !important;
   }
 }
 @media (min-width: 767.98px) and (max-width: 991.98px) {
@@ -5115,7 +5115,7 @@ badge.SecondaryColor {
     background-color: #FFFFFF;
   }
   body[dir=rtl] .cc-1m2mf {
-    margin-bottom: 5rem !important;
+    margin-bottom: 15rem !important;
   }
 }
 @media (min-width: 575.98px) and (max-width: 767px) {
@@ -5687,7 +5687,7 @@ badge.SecondaryColor {
     background-color: #FFFFFF;
   }
   body[dir=rtl] .cc-1m2mf {
-    margin-bottom: 5rem !important;
+    margin-bottom: 15rem !important;
   }
 }
 @media (min-width: 767.98px) and (max-width: 991.98px) {
@@ -31253,21 +31253,27 @@ body[dir=rtl] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-
     display: flex;
   }
   .FNV-SingleCourse body[dir=rtl] main.FNV-SingleCourse .FNV-SingleCourse-Details .container .row aside.col-md-4 .card .container .row:nth-child(2) .col-md-6 price .FNV-CountDown .FNV-CountDown-Counter span {
-    padding: 0.1rem;
     font-size: 18px;
     font-weight: 600;
-    color: #FFA600;
     text-transform: uppercase;
+  }
+  .FNV-SingleCourse body[dir=rtl] main.FNV-SingleCourse .FNV-SingleCourse-Details .container .row aside.col-md-4 .card .container .row:nth-child(2) .col-md-6 price .FNV-CountDown .FNV-CountDown-Counter span.num {
+    margin: 0 0.2rem;
+    color: #FFA600;
   }
   .FNV-SingleCourse body[dir=rtl] main.FNV-SingleCourse .FNV-SingleCourse-Details .container .row aside.col-md-4 .card .container .row:nth-child(3) {
     padding: 0;
     width: 50%;
+    margin-top: 0.25rem;
   }
   .FNV-SingleCourse body[dir=rtl] main.FNV-SingleCourse .FNV-SingleCourse-Details .container .row aside.col-md-4 .card .container .row:nth-child(3) .col-md-5 h4 {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
   }
   .FNV-SingleCourse body[dir=rtl] main.FNV-SingleCourse .FNV-SingleCourse-Details .container .row aside.col-md-4 .card .container .row:nth-child(3) .col-md-6 price {
     font-size: 20px;
+    color: #FFA600;
   }
   .FNV-SingleCourse body[dir=rtl] main.FNV-SingleCourse .FNV-SingleCourse-Details .container .row aside.col-md-4 .card .container .row:nth-child(3) .col-md-6 price .FNV-Price-LineThrough {
     color: #B2B9D4;
@@ -31276,12 +31282,16 @@ body[dir=rtl] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-
   .FNV-SingleCourse body[dir=rtl] main.FNV-SingleCourse .FNV-SingleCourse-Details .container .row aside.col-md-4 .card .container .row:nth-child(4) {
     padding: 0;
     width: 50%;
+    margin-top: 0.25rem;
   }
   .FNV-SingleCourse body[dir=rtl] main.FNV-SingleCourse .FNV-SingleCourse-Details .container .row aside.col-md-4 .card .container .row:nth-child(4) .col-md-5 h4 {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
   }
   .FNV-SingleCourse body[dir=rtl] main.FNV-SingleCourse .FNV-SingleCourse-Details .container .row aside.col-md-4 .card .container .row:nth-child(4) .col-md-6 price {
     font-size: 20px;
+    color: #FFA600;
   }
   .FNV-SingleCourse body[dir=rtl] main.FNV-SingleCourse .FNV-SingleCourse-Details .container .row aside.col-md-4 .card .container .row:nth-child(4) .col-md-6 price .FNV-Price-LineThrough {
     color: #B2B9D4;
@@ -31291,6 +31301,7 @@ body[dir=rtl] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-
     width: 100%;
     display: block;
     border-radius: 0;
+    margin-top: 0.5rem;
     text-align: center;
   }
   .FNV-SingleCourse body[dir=rtl] main.FNV-SingleCourse .FNV-SingleCourse-Details .container .row aside.col-md-4 .card .container .form-select::-moz-placeholder {

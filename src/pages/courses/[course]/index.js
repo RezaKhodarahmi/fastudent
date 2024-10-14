@@ -255,7 +255,7 @@ const Course = () => {
     const discountEnd = parseISO(cycle.discountDateEnd)
     if (now <= discountEnd) {
       const duration = intervalToDuration({ start: now, end: discountEnd })
-      const formatted = `<span><span>${duration.days}</span> <span>Day</span></span><span><span>${duration.hours}</span><span>Hr</span></span><span><span>${duration.minutes}</span><span>Min</span></span><span><span>${duration.seconds}</span><span>Sec</span></span>`
+      const formatted = `<span><span class="num">${duration.days}</span> <span>Day</span></span><span><span class="num">${duration.hours}</span><span>Hr</span></span><span><span class="num">${duration.minutes}</span><span>Min</span></span><span><span class="num">${duration.seconds}</span><span>Sec</span></span>`
       setCountdown(formatted)
     } else {
       setCountdown('Discount period has ended.')
@@ -1388,7 +1388,7 @@ const Course = () => {
                                         {isDiscountActive(cycle) && (
                                           <>
                                             <div className='FNV-CountDown'>
-                                              ENDS IN <span className='FNV-CountDown-Counter' dangerouslySetInnerHTML={{ __html: countdown }} />
+                                              DISCOUNT ENDS IN <span className='FNV-CountDown-Counter' dangerouslySetInnerHTML={{ __html: countdown }} />
                                             </div>
                                           </>
                                         )}

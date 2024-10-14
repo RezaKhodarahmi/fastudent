@@ -5319,11 +5319,14 @@ body[dir='rtl'] {
                                 display: flex;
 
                                 span {
-                                  padding: .1rem;
                                   font-size: 18px;
                                   font-weight: 600;
-                                  color: $PrimaryTwo;
                                   text-transform: uppercase;
+
+                                  &.num {
+                                    margin: 0 .2rem;
+                                    color: $PrimaryTwo;
+                                  }
                                 }
                               }
                             }
@@ -5334,16 +5337,20 @@ body[dir='rtl'] {
                       &:nth-child(3) {
                         padding: 0;
                         width: 50%;
+                        margin-top: .25rem;
 
                         .col-md-5 {
                           h4 {
-                            font-size: 14px;
+                            font-size: 16px;
+                            font-weight: 600;
+                            margin-bottom: .5rem;
                           }
                         }
 
                         .col-md-6 {
                           price {
                             font-size: 20px;
+                            color: $PrimaryTwo;
 
                             .FNV-Price-LineThrough {
                               color: $PrimaryTextFive;
@@ -5356,16 +5363,20 @@ body[dir='rtl'] {
                       &:nth-child(4) {
                         padding: 0;
                         width: 50%;
+                        margin-top: .25rem;
 
                         .col-md-5 {
                           h4 {
-                            font-size: 14px;
+                            font-size: 16px;
+                            font-weight: 600;
+                            margin-bottom: .5rem;
                           }
                         }
 
                         .col-md-6 {
                           price {
                             font-size: 20px;
+                            color: $PrimaryTwo;
 
                             .FNV-Price-LineThrough {
                               color: $PrimaryTextFive;
@@ -5380,6 +5391,7 @@ body[dir='rtl'] {
                       width: 100%;
                       display: block;
                       border-radius: 0;
+                      margin-top: .5rem;
                       text-align: center;
 
                       option,
