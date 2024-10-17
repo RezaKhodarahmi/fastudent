@@ -31454,7 +31454,7 @@ body[dir=rtl] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-
   }
   .FNV-SingleCourse body[dir=ltr] main.FNV-SingleCourse .FNV-SingleCourse-FAQ .container .row .col-md-12 .accordion .accordion-item .accordion-header .accordion-button::after {
     margin-right: 0;
-    margin-right: auto;
+    margin-left: auto;
   }
   .FNV-SingleCourse body[dir=ltr] main.FNV-SingleCourse .FNV-SingleCourse-FAQ .container .row .col-md-12 .accordion .accordion-item .accordion-collapse {
     background-color: #F0F3FB;
