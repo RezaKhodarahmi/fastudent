@@ -75,7 +75,37 @@
     background-color: $PrimaryTwo;
 
     &:hover {
-      color: $PrimaryOne;
+      color: $PrimaryTwo;
+      background-color: $White;
+    }
+  }
+
+  &.ThirdColor {
+    color: $White;
+    background-color: $PrimaryFour;
+
+    &:hover {
+      color: $PrimaryFour;
+      background-color: $White;
+    }
+  }
+
+  &.SuccessColor {
+    color: $White;
+    background-color: $CourseUnlocked;
+
+    &:hover {
+      color: $CourseUnlocked;
+      background-color: $White;
+    }
+  }
+
+  &.DangerColor {
+    color: $White;
+    background-color: $CourseLocked;
+
+    &:hover {
+      color: $CourseLocked;
       background-color: $White;
     }
   }

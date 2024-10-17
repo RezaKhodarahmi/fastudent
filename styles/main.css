@@ -188,7 +188,31 @@ a {
   background-color: #FFA600;
 }
 .FNV-Btn.SecondaryColor:hover {
-  color: #223885;
+  color: #FFA600;
+  background-color: #FFFFFF;
+}
+.FNV-Btn.ThirdColor {
+  color: #FFFFFF;
+  background-color: #0074FF;
+}
+.FNV-Btn.ThirdColor:hover {
+  color: #0074FF;
+  background-color: #FFFFFF;
+}
+.FNV-Btn.SuccessColor {
+  color: #FFFFFF;
+  background-color: #18988d;
+}
+.FNV-Btn.SuccessColor:hover {
+  color: #18988d;
+  background-color: #FFFFFF;
+}
+.FNV-Btn.DangerColor {
+  color: #FFFFFF;
+  background-color: #981837;
+}
+.FNV-Btn.DangerColor:hover {
+  color: #981837;
   background-color: #FFFFFF;
 }
 .FNV-Btn.LightColor {
@@ -35929,610 +35953,1034 @@ body[dir=rtl] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-
   display: none !important;
 }
 
-body[dir=rtl] .FNV-Cart-Detail {
-  margin-top: 1rem;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode {
-  padding: 2rem;
-  border-radius: 20px;
-  background-color: rgba(0, 60, 191, 0.062745098);
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 h2 {
-  font-size: 25px;
-  font-weight: 600;
-  color: #223885;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong {
-  color: #FF772C;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong svg {
-  color: #223885;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row {
-  height: 100%;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 {
-  padding: 0;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input {
-  width: 100%;
-  height: 100%;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text {
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  color: #223885;
-  font-weight: 600;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text:focus {
-  box-shadow: unset;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Btn {
-  font-size: 20px;
-  font-weight: 600;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 h2 {
-  font-size: 25px;
-  font-weight: 600;
-  color: #223885;
-  padding: 2.5rem 0;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 {
-  padding: 0;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row {
-  margin: 1.5rem 0 0;
-  padding: 1rem;
-  border-radius: 20px;
-  background-color: rgba(0, 60, 191, 0.062745098);
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-8 span, body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-4 span {
-  font-size: 20px;
-  font-weight: 600;
-  color: #223885;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems {
-  overflow: hidden;
-  margin-bottom: 1rem;
-  border-radius: 20px;
-  background-color: #ffffff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.062745098);
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 {
-  padding: 0;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 img {
-  border-radius: 20px;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 {
-  padding: 0;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row {
-  margin: 0;
-  padding: 1rem;
-  border-radius: 20px;
-  height: 100%;
-  align-items: center;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 {
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  flex-direction: column;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row {
-  padding: 0;
-  width: 100%;
-  gap: 10px;
-  flex-direction: row;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row p {
-  font-size: 22px;
-  font-weight: 600;
-  color: #223885;
-  width: 100%;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row a {
-  width: 30%;
-  font-size: 14px;
-  font-weight: 600;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 span {
-  font-size: 30px;
-  font-weight: 600;
-  color: #223885;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 p {
-  font-size: 30px;
-  font-weight: 600;
-  color: #FF772C;
-  margin-bottom: 0;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon {
-  padding: 2rem 0;
-  border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
-  margin-bottom: 1rem;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-4 {
-  display: flex;
-  align-items: center;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 span {
-  display: block;
-  font-size: 25px;
-  padding: 0.5rem 0;
-  font-weight: 600;
-  color: #223885;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row {
-  height: 100%;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 {
-  padding: 0;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input {
-  width: 100%;
-  height: 100%;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text {
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  color: #223885;
-  font-weight: 600;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text:focus {
-  box-shadow: unset;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Btn {
-  font-size: 20px;
-  font-weight: 600;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total {
-  padding: 1rem 0;
-  border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
-  margin-bottom: 1rem;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 {
-  border-bottom: 2px solid rgba(0, 60, 191, 0.1882352941);
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p {
-  display: block;
-  font-size: 22px;
-  margin-bottom: 0px;
-  padding: 0.5rem 0;
-  font-weight: 600;
-  color: #223885;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p small {
-  color: red;
-  font-size: 14px;
-  margin: 0 1rem;
-  font-weight: 400;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 span {
-  display: block;
-  font-size: 22px;
-  font-weight: 800;
-  padding: 0.5rem 0;
-  text-align: center;
-  color: #223885;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 h6 {
-  font-size: 25px;
-  font-weight: 600;
-  color: #223885;
-}
-body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label span {
-  font-size: 16px;
-  font-weight: 600;
-}
-
-body[dir=ltr] .FNV-Cart-Detail {
-  font-family: Poppins;
-  margin-top: 1rem;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode {
-  padding: 2rem;
-  border-radius: 20px;
-  background-color: rgba(0, 60, 191, 0.062745098);
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 h2 {
-  font-size: 25px;
-  font-weight: 600;
-  color: #223885;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong {
-  color: #FF772C;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong svg {
-  color: #223885;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row {
-  height: 100%;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 {
-  padding: 0;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input {
-  width: 100%;
-  height: 100%;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text {
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  color: #223885;
-  font-weight: 600;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text:focus {
-  box-shadow: unset;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Btn {
-  font-size: 20px;
-  font-weight: 600;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 h2 {
-  font-size: 25px;
-  font-weight: 600;
-  color: #223885;
-  padding: 2.5rem 0;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 {
-  padding: 0;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row {
-  margin: 1.5rem 0 0;
-  padding: 1rem;
-  border-radius: 20px;
-  background-color: rgba(0, 60, 191, 0.062745098);
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-8 span, body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-4 span {
-  font-size: 20px;
-  font-weight: 600;
-  color: #223885;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems {
-  overflow: hidden;
-  margin-bottom: 1rem;
-  border-radius: 20px;
-  background-color: #ffffff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.062745098);
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 {
-  padding: 0;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 img {
-  border-radius: 20px;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 {
-  padding: 0;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row {
-  margin: 0;
-  padding: 1rem;
-  border-radius: 20px;
-  height: 100%;
-  align-items: center;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 {
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  flex-direction: column;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row {
-  padding: 0;
-  width: 100%;
-  gap: 10px;
-  flex-direction: row;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row p {
-  font-size: 22px;
-  font-weight: 600;
-  color: #223885;
-  width: 100%;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row a {
-  width: 30%;
-  font-size: 14px;
-  font-weight: 600;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 span {
-  font-size: 30px;
-  font-weight: 600;
-  color: #223885;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 p {
-  font-size: 30px;
-  font-weight: 600;
-  color: #FF772C;
-  margin-bottom: 0;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon {
-  padding: 2rem 0;
-  border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
-  margin-bottom: 1rem;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-4 {
-  display: flex;
-  align-items: center;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 span {
-  display: block;
-  font-size: 25px;
-  padding: 0.5rem 0;
-  font-weight: 600;
-  color: #223885;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row {
-  height: 100%;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 {
-  padding: 0;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input {
-  width: 100%;
-  height: 100%;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text {
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  color: #223885;
-  font-weight: 600;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text:focus {
-  box-shadow: unset;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Btn {
-  font-size: 20px;
-  font-weight: 600;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total {
-  padding: 1rem 0;
-  border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
-  margin-bottom: 1rem;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 {
-  border-bottom: 2px solid rgba(0, 60, 191, 0.1882352941);
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p {
-  display: block;
-  font-size: 22px;
-  margin-bottom: 0px;
-  padding: 0.5rem 0;
-  font-weight: 600;
-  color: #223885;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p small {
-  color: red;
-  font-size: 14px;
-  margin: 0 1rem;
-  font-weight: 400;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 span {
-  display: block;
-  font-size: 22px;
-  font-weight: 800;
-  padding: 0.5rem 0;
-  text-align: center;
-  color: #223885;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 h6 {
-  font-size: 25px;
-  font-weight: 600;
-  color: #223885;
-}
-body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label span {
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 500;
-}
-
 @media (max-width: 575.98px) {
-  .FNV-Cart-Detail {
+  body[dir=ltr] .FNV-Cart-Detail {
+    padding: 0 1rem;
+    margin-top: 0rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode {
     padding: 1rem;
+    background-color: #223885;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
-  .FNV-Cart-Detail .container .row.FNV-ReferalCode {
-    padding: 2rem;
-    border-radius: 20px;
-    background-color: rgba(0, 60, 191, 0.062745098);
-  }
-  .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 h2 {
-    font-size: 20px;
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 h2 {
+    color: #FFFFFF;
+    font-size: 16px;
     font-weight: 600;
-    text-align: center;
-    color: #223885;
   }
-  .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong {
-    font-size: 12px;
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong {
+    font-size: 10px;
     color: #FF772C;
   }
-  .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong svg {
-    color: #223885;
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong svg {
+    color: #FFFFFF;
   }
-  .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row {
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row {
     height: 100%;
   }
-  .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 {
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 {
     padding: 0;
   }
-  .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input {
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input {
     width: 100%;
     height: 100%;
   }
-  .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text {
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text {
+    border-radius: 0;
     color: #223885;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 16px;
     text-transform: uppercase;
   }
-  .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text:focus {
     box-shadow: unset;
   }
-  .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Btn {
-    font-size: 20px;
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Btn {
+    font-size: 16px;
     font-weight: 600;
   }
-  .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 h2 {
-    font-size: 10px;
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 {
+    display: flex;
+    align-items: center;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 h2 {
+    padding: 0;
+    font-size: 14px;
     font-weight: 600;
     color: #223885;
-    padding: 2.5rem 0;
   }
-  .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 {
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 {
     padding: 0;
   }
-  .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row {
-    margin: 1.5rem 0 0;
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row {
     padding: 1rem;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     background-color: rgba(0, 60, 191, 0.062745098);
   }
-  .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-8 span, .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-4 span {
-    font-size: 10px;
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-8 span,
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-4 span {
+    font-size: 14px;
     font-weight: 600;
     color: #223885;
   }
-  .FNV-Cart-Detail .container .row.FNV-CartItems {
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems {
+    width: 100%;
+    margin: auto;
     overflow: hidden;
     margin-bottom: 1rem;
-    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.062745098);
   }
-  .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 {
-    padding: 0;
-  }
-  .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 img {
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems:not(:first-of-type) {
     border-radius: 20px;
   }
-  .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 {
-    padding: 0;
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 {
+    display: none;
   }
-  .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row {
-    margin: 0;
-    padding: 1rem;
-    border-radius: 20px;
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 {
+    padding: 0;
     width: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row {
+    margin: 0;
+    padding: 0.5rem;
+    border-radius: 20px;
     height: 100%;
     align-items: center;
   }
-  .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 {
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 {
     display: flex;
     align-items: start;
     justify-content: center;
     flex-direction: column;
   }
-  .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row {
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row {
     padding: 0;
     width: 100%;
     gap: 10px;
-    flex-direction: column;
+    flex-direction: row;
   }
-  .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row p {
-    font-size: 10px;
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row p {
+    font-size: 12px;
     font-weight: 600;
     color: #223885;
     width: 100%;
   }
-  .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row a {
-    width: 100%;
-    font-size: 8px;
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row a {
+    width: auto;
+    padding: 0.5rem;
+    font-size: 10px;
     font-weight: 600;
   }
-  .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 span {
-    font-size: 10px;
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 span {
+    font-size: 14px;
     font-weight: 600;
     color: #223885;
   }
-  .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 p {
-    font-size: 10px;
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 p {
+    font-size: 14px;
     font-weight: 600;
     color: #FF772C;
     margin-bottom: 0;
   }
-  .FNV-Cart-Detail .container .row.FNV-Coupon {
-    padding: 1rem 0;
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon {
+    padding: 2rem 0;
     border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
     margin-bottom: 1rem;
   }
-  .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-4 {
-    display: none;
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-4 {
+    display: flex;
     align-items: center;
   }
-  .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 span {
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-4 button {
+    padding: 0.5rem;
+    font-size: 12px;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 span {
     display: block;
-    font-size: 20px;
-    text-align: center;
+    font-size: 14px;
     padding: 0.5rem 0;
     font-weight: 600;
     color: #223885;
   }
-  .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row {
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row {
     height: 100%;
   }
-  .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 {
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 {
     padding: 0;
   }
-  .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input {
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input {
     width: 100%;
     height: 100%;
   }
-  .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text {
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     color: #223885;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 12px;
     text-transform: uppercase;
   }
-  .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text:focus {
     box-shadow: unset;
   }
-  .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Btn {
-    font-size: 20px;
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Btn {
+    font-size: 14px;
     font-weight: 600;
   }
-  .FNV-Cart-Detail .container .row.FNV-Total {
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total {
     padding: 1rem 0;
     border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
     margin-bottom: 1rem;
   }
-  .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 {
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 {
     border-bottom: 2px solid rgba(0, 60, 191, 0.1882352941);
   }
-  .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p {
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 0px;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p small {
+    color: red;
+    font-size: 14px;
+    margin: 0 1rem;
+    font-weight: 400;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 span {
+    display: block;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 0.5rem 0;
+    text-align: center;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 h6 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label span {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .gap-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .gap-2 button {
+    width: 45%;
+    font-size: 14px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment {
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 span,
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 p {
+    margin: 0 0.5rem;
+    font-size: 18px;
+    font-weight: 600;
+    color: #223885;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row button {
+    width: 45%;
+    padding: 1rem;
+    font-size: 14px;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .BtnXLarge {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+  body[dir=ltr] .FNV-Cart-Detail {
+    margin-top: 0rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode {
+    padding: 1rem;
+    background-color: #223885;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 h2 {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong {
+    font-size: 10px;
+    color: #FF772C;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong svg {
+    color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row {
+    height: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input {
+    width: 100%;
+    height: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text {
+    border-radius: 0;
+    color: #223885;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+    box-shadow: unset;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Btn {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 {
+    display: flex;
+    align-items: center;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 h2 {
+    padding: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row {
+    padding: 1rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgba(0, 60, 191, 0.062745098);
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-8 span,
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-4 span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.062745098);
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems:not(:first-of-type) {
+    border-radius: 20px;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 {
+    display: none;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 {
+    padding: 0;
+    width: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row {
+    margin: 0;
+    padding: 0.5rem;
+    border-radius: 20px;
+    height: 100%;
+    align-items: center;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row {
+    padding: 0;
+    width: 100%;
+    gap: 10px;
+    flex-direction: row;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row p {
+    font-size: 12px;
+    font-weight: 600;
+    color: #223885;
+    width: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row a {
+    width: auto;
+    padding: 0.5rem;
+    font-size: 10px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #FF772C;
+    margin-bottom: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon {
+    padding: 2rem 0;
+    border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-4 {
+    display: flex;
+    align-items: center;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-4 button {
+    padding: 0.5rem;
+    font-size: 12px;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 span {
+    display: block;
+    font-size: 14px;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row {
+    height: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input {
+    width: 100%;
+    height: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: #223885;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+    box-shadow: unset;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Btn {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total {
+    padding: 1rem 0;
+    border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 {
+    border-bottom: 2px solid rgba(0, 60, 191, 0.1882352941);
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 0px;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p small {
+    color: red;
+    font-size: 14px;
+    margin: 0 1rem;
+    font-weight: 400;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 span {
+    display: block;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 0.5rem 0;
+    text-align: center;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 h6 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label span {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .gap-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .gap-2 button {
+    width: 45%;
+    font-size: 14px;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment {
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 span,
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 p {
+    margin: 0 0.5rem;
+    font-size: 18px;
+    font-weight: 600;
+    color: #223885;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row button {
+    width: 45%;
+    padding: 1rem;
+    font-size: 14px;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .BtnXLarge {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  body[dir=ltr] .FNV-Cart-Detail {
+    margin-top: 0rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode {
+    padding: 1rem;
+    background-color: #223885;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 h2 {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong {
+    font-size: 10px;
+    color: #FF772C;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong svg {
+    color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row {
+    height: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input {
+    width: 100%;
+    height: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text {
+    border-radius: 0;
+    color: #223885;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+    box-shadow: unset;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Btn {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 {
+    display: flex;
+    align-items: center;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 h2 {
+    padding: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row {
+    padding: 1rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgba(0, 60, 191, 0.062745098);
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-8 span,
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-4 span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.062745098);
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems:not(:first-of-type) {
+    border-radius: 20px;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 img {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row {
+    margin: 0;
+    padding: 1rem;
+    border-radius: 20px;
+    height: 100%;
+    align-items: center;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row {
+    padding: 0;
+    width: 100%;
+    gap: 10px;
+    flex-direction: row;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row p {
+    font-size: 12px;
+    font-weight: 600;
+    color: #223885;
+    width: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row a {
+    width: auto;
+    padding: 0.5rem;
+    font-size: 10px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #FF772C;
+    margin-bottom: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon {
+    padding: 2rem 0;
+    border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-4 {
+    display: flex;
+    align-items: center;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-4 button {
+    padding: 0.5rem;
+    font-size: 12px;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 span {
+    display: block;
+    font-size: 14px;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row {
+    height: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input {
+    width: 100%;
+    height: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: #223885;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+    box-shadow: unset;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Btn {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total {
+    padding: 1rem 0;
+    border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 {
+    border-bottom: 2px solid rgba(0, 60, 191, 0.1882352941);
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 0px;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p small {
+    color: red;
+    font-size: 14px;
+    margin: 0 1rem;
+    font-weight: 400;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 span {
+    display: block;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 0.5rem 0;
+    text-align: center;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 h6 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label span {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .gap-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .gap-2 button {
+    width: 45%;
+    font-size: 14px;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment {
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 span,
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 p {
+    margin: 0 0.5rem;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row button {
+    width: 30%;
+    padding: 1rem;
+    font-size: 12px;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .BtnXLarge {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 991.98px) {
+  body[dir=ltr] .FNV-Cart-Detail {
+    margin-top: 0rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode {
+    padding: 1rem;
+    background-color: #223885;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 h2 {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong {
+    color: #FF772C;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong svg {
+    color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row {
+    height: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input {
+    width: 100%;
+    height: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text {
+    border-radius: 0;
+    color: #223885;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+    box-shadow: unset;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Btn {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 {
+    display: flex;
+    align-items: center;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 h2 {
+    padding: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row {
+    padding: 1rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgba(0, 60, 191, 0.062745098);
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-8 span,
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-4 span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.062745098);
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems:not(:first-of-type) {
+    border-radius: 20px;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 img {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row {
+    margin: 0;
+    padding: 1rem;
+    border-radius: 20px;
+    height: 100%;
+    align-items: center;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row {
+    padding: 0;
+    width: 100%;
+    gap: 10px;
+    flex-direction: row;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #223885;
+    width: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row a {
+    width: 30%;
+    font-size: 10px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #FF772C;
+    margin-bottom: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon {
+    padding: 2rem 0;
+    border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-4 {
+    display: flex;
+    align-items: center;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 span {
     display: block;
     font-size: 18px;
     padding: 0.5rem 0;
     font-weight: 600;
     color: #223885;
   }
-  .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 span {
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row {
+    height: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input {
+    width: 100%;
+    height: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: #223885;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+    box-shadow: unset;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Btn {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total {
+    padding: 1rem 0;
+    border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 {
+    border-bottom: 2px solid rgba(0, 60, 191, 0.1882352941);
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 0px;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p small {
+    color: red;
+    font-size: 14px;
+    margin: 0 1rem;
+    font-weight: 400;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 span {
     display: block;
     font-size: 18px;
     font-weight: 800;
@@ -36540,25 +36988,2673 @@ body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label span {
     text-align: center;
     color: #223885;
   }
-  .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 h6 {
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 h6 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label span {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment {
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 span,
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 p {
+    margin: 0 0.5rem;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row button {
+    width: 30%;
+    padding: 1rem;
+    font-size: 14px;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .BtnXLarge {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1199.98px) {
+  body[dir=ltr] .FNV-Cart-Detail {
+    margin-top: 0rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode {
+    padding: 1rem;
+    background-color: #223885;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 h2 {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong {
+    color: #FF772C;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong svg {
+    color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row {
+    height: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input {
+    width: 100%;
+    height: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text {
+    border-radius: 0;
+    color: #223885;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+    box-shadow: unset;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Btn {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 {
+    display: flex;
+    align-items: center;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 h2 {
+    padding: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row {
+    padding: 1rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgba(0, 60, 191, 0.062745098);
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-8 span,
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-4 span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.062745098);
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems:not(:first-of-type) {
+    border-radius: 20px;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 img {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row {
+    margin: 0;
+    padding: 1rem;
+    border-radius: 20px;
+    height: 100%;
+    align-items: center;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row {
+    padding: 0;
+    width: 100%;
+    gap: 10px;
+    flex-direction: row;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #223885;
+    width: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row a {
+    width: 30%;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 span {
+    font-size: 22px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 p {
+    font-size: 22px;
+    font-weight: 600;
+    color: #FF772C;
+    margin-bottom: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon {
+    padding: 2rem 0;
+    border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-4 {
+    display: flex;
+    align-items: center;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 span {
+    display: block;
+    font-size: 20px;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row {
+    height: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input {
+    width: 100%;
+    height: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: #223885;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+    box-shadow: unset;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Btn {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total {
+    padding: 1rem 0;
+    border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 {
+    border-bottom: 2px solid rgba(0, 60, 191, 0.1882352941);
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 0px;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p small {
+    color: red;
+    font-size: 14px;
+    margin: 0 1rem;
+    font-weight: 400;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 span {
+    display: block;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 0.5rem 0;
+    text-align: center;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 h6 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label span {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment {
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 span,
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 p {
+    margin: 0 0.5rem;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row button {
+    width: 25%;
+    padding: 1rem;
+    font-size: 18px;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .BtnXLarge {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1400px) {
+  body[dir=ltr] .FNV-Cart-Detail {
+    margin-top: 0rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode {
+    padding: 1rem;
+    background-color: #223885;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 h2 {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong {
+    color: #FF772C;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong svg {
+    color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row {
+    height: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input {
+    width: 100%;
+    height: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text {
+    border-radius: 0;
+    color: #223885;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+    box-shadow: unset;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Btn {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 {
+    display: flex;
+    align-items: center;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 h2 {
+    padding: 0;
+    font-size: 25px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row {
+    padding: 1rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgba(0, 60, 191, 0.062745098);
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-8 span,
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-4 span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.062745098);
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems:not(:first-of-type) {
+    border-radius: 20px;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 img {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row {
+    margin: 0;
+    padding: 1rem;
+    border-radius: 20px;
+    height: 100%;
+    align-items: center;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row {
+    padding: 0;
+    width: 100%;
+    gap: 10px;
+    flex-direction: row;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row p {
+    font-size: 22px;
+    font-weight: 600;
+    color: #223885;
+    width: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row a {
+    width: 30%;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 span {
+    font-size: 30px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 p {
+    font-size: 30px;
+    font-weight: 600;
+    color: #FF772C;
+    margin-bottom: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon {
+    padding: 2rem 0;
+    border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-4 {
+    display: flex;
+    align-items: center;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 span {
+    display: block;
+    font-size: 25px;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row {
+    height: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input {
+    width: 100%;
+    height: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: #223885;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+    box-shadow: unset;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Btn {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total {
+    padding: 1rem 0;
+    border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 {
+    border-bottom: 2px solid rgba(0, 60, 191, 0.1882352941);
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 0px;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p small {
+    color: red;
+    font-size: 14px;
+    margin: 0 1rem;
+    font-weight: 400;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 span {
+    display: block;
+    font-size: 22px;
+    font-weight: 800;
+    padding: 0.5rem 0;
+    text-align: center;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 h6 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label span {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment {
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 span,
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 p {
+    margin: 0 0.5rem;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row button {
+    width: auto;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .BtnXLarge {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1920px) {
+  body[dir=ltr] .FNV-Cart-Detail {
+    margin-top: 0rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode {
+    padding: 1rem;
+    background-color: #223885;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 h2 {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong {
+    color: #FF772C;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong svg {
+    color: #FFFFFF;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row {
+    height: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input {
+    width: 100%;
+    height: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text {
+    border-radius: 0;
+    color: #223885;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+    box-shadow: unset;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Btn {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 {
+    display: flex;
+    align-items: center;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 h2 {
+    padding: 0;
+    font-size: 25px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row {
+    padding: 1rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgba(0, 60, 191, 0.062745098);
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-8 span,
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-4 span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.062745098);
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems:not(:first-of-type) {
+    border-radius: 20px;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 img {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row {
+    margin: 0;
+    padding: 1rem;
+    border-radius: 20px;
+    height: 100%;
+    align-items: center;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row {
+    padding: 0;
+    width: 100%;
+    gap: 10px;
+    flex-direction: row;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row p {
+    font-size: 22px;
+    font-weight: 600;
+    color: #223885;
+    width: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row a {
+    width: 30%;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 span {
+    font-size: 30px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 p {
+    font-size: 30px;
+    font-weight: 600;
+    color: #FF772C;
+    margin-bottom: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon {
+    padding: 2rem 0;
+    border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-4 {
+    display: flex;
+    align-items: center;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 span {
+    display: block;
+    font-size: 25px;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row {
+    height: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input {
+    width: 100%;
+    height: 100%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: #223885;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+    box-shadow: unset;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Btn {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total {
+    padding: 1rem 0;
+    border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 {
+    border-bottom: 2px solid rgba(0, 60, 191, 0.1882352941);
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 0px;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p small {
+    color: red;
+    font-size: 14px;
+    margin: 0 1rem;
+    font-weight: 400;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 span {
+    display: block;
+    font-size: 22px;
+    font-weight: 800;
+    padding: 0.5rem 0;
+    text-align: center;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 h6 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label span {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment {
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 span,
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 p {
+    margin: 0 0.5rem;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row button {
+    width: auto;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .BtnXLarge {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body[dir=rtl] .FNV-Cart-Detail {
+    padding: 0 1rem;
+    margin-top: 0rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode {
+    padding: 1rem;
+    background-color: #223885;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 h2 {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong {
+    font-size: 10px;
+    color: #FF772C;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong svg {
+    color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row {
+    height: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input {
+    width: 100%;
+    height: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text {
+    border-radius: 0;
+    color: #223885;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+    box-shadow: unset;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Btn {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 {
+    display: flex;
+    align-items: center;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 h2 {
+    padding: 0;
     font-size: 14px;
     font-weight: 600;
     color: #223885;
   }
-  .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label {
-    margin: 0.5rem 0;
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 {
     padding: 0;
   }
-  .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label span {
-    font-size: 12px;
-    font-weight: 600;
-    text-align: justify;
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row {
+    padding: 1rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgba(0, 60, 191, 0.062745098);
   }
-  .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .col-md-12 {
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-8 span,
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-4 span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.062745098);
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems:not(:first-of-type) {
+    border-radius: 20px;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 {
+    display: none;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 {
+    padding: 0;
+    width: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row {
+    margin: 0;
+    padding: 0.5rem;
+    border-radius: 20px;
+    height: 100%;
+    align-items: center;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 {
     display: flex;
+    align-items: start;
+    justify-content: center;
     flex-direction: column;
   }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row {
+    padding: 0;
+    width: 100%;
+    gap: 10px;
+    flex-direction: row;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row p {
+    font-size: 12px;
+    font-weight: 600;
+    color: #223885;
+    width: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row a {
+    width: auto;
+    padding: 0.5rem;
+    font-size: 10px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #FF772C;
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon {
+    padding: 2rem 0;
+    border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-4 {
+    display: flex;
+    align-items: center;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-4 button {
+    padding: 0.5rem;
+    font-size: 12px;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 span {
+    display: block;
+    font-size: 14px;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row {
+    height: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input {
+    width: 100%;
+    height: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: #223885;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+    box-shadow: unset;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Btn {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total {
+    padding: 1rem 0;
+    border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 {
+    border-bottom: 2px solid rgba(0, 60, 191, 0.1882352941);
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 0px;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p small {
+    color: red;
+    font-size: 14px;
+    margin: 0 1rem;
+    font-weight: 400;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 span {
+    display: block;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 0.5rem 0;
+    text-align: center;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 h6 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label span {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .gap-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .gap-2 button {
+    width: 45%;
+    font-size: 14px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment {
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 span,
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 p {
+    margin: 0 0.5rem;
+    font-size: 18px;
+    font-weight: 600;
+    color: #223885;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row button {
+    width: 45%;
+    padding: 1rem;
+    font-size: 14px;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .BtnXLarge {
+    margin-bottom: 0;
+  }
 }
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+  body[dir=rtl] .FNV-Cart-Detail {
+    margin-top: 0rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode {
+    padding: 1rem;
+    background-color: #223885;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 h2 {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong {
+    font-size: 10px;
+    color: #FF772C;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong svg {
+    color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row {
+    height: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input {
+    width: 100%;
+    height: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text {
+    border-radius: 0;
+    color: #223885;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+    box-shadow: unset;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Btn {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 {
+    display: flex;
+    align-items: center;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 h2 {
+    padding: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row {
+    padding: 1rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgba(0, 60, 191, 0.062745098);
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-8 span,
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-4 span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.062745098);
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems:not(:first-of-type) {
+    border-radius: 20px;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 {
+    display: none;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 {
+    padding: 0;
+    width: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row {
+    margin: 0;
+    padding: 0.5rem;
+    border-radius: 20px;
+    height: 100%;
+    align-items: center;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row {
+    padding: 0;
+    width: 100%;
+    gap: 10px;
+    flex-direction: row;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row p {
+    font-size: 12px;
+    font-weight: 600;
+    color: #223885;
+    width: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row a {
+    width: auto;
+    padding: 0.5rem;
+    font-size: 10px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #FF772C;
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon {
+    padding: 2rem 0;
+    border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-4 {
+    display: flex;
+    align-items: center;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-4 button {
+    padding: 0.5rem;
+    font-size: 12px;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 span {
+    display: block;
+    font-size: 14px;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row {
+    height: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input {
+    width: 100%;
+    height: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: #223885;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+    box-shadow: unset;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Btn {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total {
+    padding: 1rem 0;
+    border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 {
+    border-bottom: 2px solid rgba(0, 60, 191, 0.1882352941);
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 0px;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p small {
+    color: red;
+    font-size: 14px;
+    margin: 0 1rem;
+    font-weight: 400;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 span {
+    display: block;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 0.5rem 0;
+    text-align: center;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 h6 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label span {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .gap-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .gap-2 button {
+    width: 45%;
+    font-size: 14px;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment {
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 span,
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 p {
+    margin: 0 0.5rem;
+    font-size: 18px;
+    font-weight: 600;
+    color: #223885;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row button {
+    width: 45%;
+    padding: 1rem;
+    font-size: 14px;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .BtnXLarge {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  body[dir=rtl] .FNV-Cart-Detail {
+    margin-top: 0rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode {
+    padding: 1rem;
+    background-color: #223885;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 h2 {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong {
+    font-size: 10px;
+    color: #FF772C;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong svg {
+    color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row {
+    height: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input {
+    width: 100%;
+    height: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text {
+    border-radius: 0;
+    color: #223885;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+    box-shadow: unset;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Btn {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 {
+    display: flex;
+    align-items: center;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 h2 {
+    padding: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row {
+    padding: 1rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgba(0, 60, 191, 0.062745098);
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-8 span,
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-4 span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.062745098);
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems:not(:first-of-type) {
+    border-radius: 20px;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 img {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row {
+    margin: 0;
+    padding: 1rem;
+    border-radius: 20px;
+    height: 100%;
+    align-items: center;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row {
+    padding: 0;
+    width: 100%;
+    gap: 10px;
+    flex-direction: row;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row p {
+    font-size: 12px;
+    font-weight: 600;
+    color: #223885;
+    width: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row a {
+    width: auto;
+    padding: 0.5rem;
+    font-size: 10px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #FF772C;
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon {
+    padding: 2rem 0;
+    border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-4 {
+    display: flex;
+    align-items: center;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-4 button {
+    padding: 0.5rem;
+    font-size: 12px;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 span {
+    display: block;
+    font-size: 14px;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row {
+    height: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input {
+    width: 100%;
+    height: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: #223885;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+    box-shadow: unset;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Btn {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total {
+    padding: 1rem 0;
+    border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 {
+    border-bottom: 2px solid rgba(0, 60, 191, 0.1882352941);
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 0px;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p small {
+    color: red;
+    font-size: 14px;
+    margin: 0 1rem;
+    font-weight: 400;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 span {
+    display: block;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 0.5rem 0;
+    text-align: center;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 h6 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label span {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .gap-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .gap-2 button {
+    width: 45%;
+    font-size: 14px;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment {
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 span,
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 p {
+    margin: 0 0.5rem;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row button {
+    width: 30%;
+    padding: 1rem;
+    font-size: 12px;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .BtnXLarge {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 991.98px) {
+  body[dir=rtl] .FNV-Cart-Detail {
+    margin-top: 0rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode {
+    padding: 1rem;
+    background-color: #223885;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 h2 {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong {
+    color: #FF772C;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong svg {
+    color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row {
+    height: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input {
+    width: 100%;
+    height: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text {
+    border-radius: 0;
+    color: #223885;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+    box-shadow: unset;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Btn {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 {
+    display: flex;
+    align-items: center;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 h2 {
+    padding: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row {
+    padding: 1rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgba(0, 60, 191, 0.062745098);
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-8 span,
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-4 span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.062745098);
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems:not(:first-of-type) {
+    border-radius: 20px;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 img {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row {
+    margin: 0;
+    padding: 1rem;
+    border-radius: 20px;
+    height: 100%;
+    align-items: center;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row {
+    padding: 0;
+    width: 100%;
+    gap: 10px;
+    flex-direction: row;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #223885;
+    width: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row a {
+    width: 30%;
+    font-size: 10px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #FF772C;
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon {
+    padding: 2rem 0;
+    border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-4 {
+    display: flex;
+    align-items: center;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 span {
+    display: block;
+    font-size: 18px;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row {
+    height: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input {
+    width: 100%;
+    height: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: #223885;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+    box-shadow: unset;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Btn {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total {
+    padding: 1rem 0;
+    border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 {
+    border-bottom: 2px solid rgba(0, 60, 191, 0.1882352941);
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 0px;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p small {
+    color: red;
+    font-size: 14px;
+    margin: 0 1rem;
+    font-weight: 400;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 span {
+    display: block;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 0.5rem 0;
+    text-align: center;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 h6 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label span {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment {
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 span,
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 p {
+    margin: 0 0.5rem;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row button {
+    width: 30%;
+    padding: 1rem;
+    font-size: 14px;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .BtnXLarge {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1199.98px) {
+  body[dir=rtl] .FNV-Cart-Detail {
+    margin-top: 0rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode {
+    padding: 1rem;
+    background-color: #223885;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 h2 {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong {
+    color: #FF772C;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong svg {
+    color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row {
+    height: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input {
+    width: 100%;
+    height: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text {
+    border-radius: 0;
+    color: #223885;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+    box-shadow: unset;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Btn {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 {
+    display: flex;
+    align-items: center;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 h2 {
+    padding: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row {
+    padding: 1rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgba(0, 60, 191, 0.062745098);
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-8 span,
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-4 span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.062745098);
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems:not(:first-of-type) {
+    border-radius: 20px;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 img {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row {
+    margin: 0;
+    padding: 1rem;
+    border-radius: 20px;
+    height: 100%;
+    align-items: center;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row {
+    padding: 0;
+    width: 100%;
+    gap: 10px;
+    flex-direction: row;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #223885;
+    width: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row a {
+    width: 30%;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 span {
+    font-size: 22px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 p {
+    font-size: 22px;
+    font-weight: 600;
+    color: #FF772C;
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon {
+    padding: 2rem 0;
+    border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-4 {
+    display: flex;
+    align-items: center;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 span {
+    display: block;
+    font-size: 20px;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row {
+    height: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input {
+    width: 100%;
+    height: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: #223885;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+    box-shadow: unset;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Btn {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total {
+    padding: 1rem 0;
+    border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 {
+    border-bottom: 2px solid rgba(0, 60, 191, 0.1882352941);
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 0px;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p small {
+    color: red;
+    font-size: 14px;
+    margin: 0 1rem;
+    font-weight: 400;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 span {
+    display: block;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 0.5rem 0;
+    text-align: center;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 h6 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label span {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment {
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 span,
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 p {
+    margin: 0 0.5rem;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row button {
+    width: 25%;
+    padding: 1rem;
+    font-size: 18px;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .BtnXLarge {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1400px) {
+  body[dir=rtl] .FNV-Cart-Detail {
+    margin-top: 0rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode {
+    padding: 1rem;
+    background-color: #223885;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 h2 {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong {
+    color: #FF772C;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong svg {
+    color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row {
+    height: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input {
+    width: 100%;
+    height: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text {
+    border-radius: 0;
+    color: #223885;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+    box-shadow: unset;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Btn {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 {
+    display: flex;
+    align-items: center;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 h2 {
+    padding: 0;
+    font-size: 25px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row {
+    padding: 1rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgba(0, 60, 191, 0.062745098);
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-8 span,
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-4 span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.062745098);
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems:not(:first-of-type) {
+    border-radius: 20px;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 img {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row {
+    margin: 0;
+    padding: 1rem;
+    border-radius: 20px;
+    height: 100%;
+    align-items: center;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row {
+    padding: 0;
+    width: 100%;
+    gap: 10px;
+    flex-direction: row;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row p {
+    font-size: 22px;
+    font-weight: 600;
+    color: #223885;
+    width: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row a {
+    width: 30%;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 span {
+    font-size: 30px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 p {
+    font-size: 30px;
+    font-weight: 600;
+    color: #FF772C;
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon {
+    padding: 2rem 0;
+    border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-4 {
+    display: flex;
+    align-items: center;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 span {
+    display: block;
+    font-size: 25px;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row {
+    height: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input {
+    width: 100%;
+    height: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: #223885;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+    box-shadow: unset;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Btn {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total {
+    padding: 1rem 0;
+    border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 {
+    border-bottom: 2px solid rgba(0, 60, 191, 0.1882352941);
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 0px;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p small {
+    color: red;
+    font-size: 14px;
+    margin: 0 1rem;
+    font-weight: 400;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 span {
+    display: block;
+    font-size: 22px;
+    font-weight: 800;
+    padding: 0.5rem 0;
+    text-align: center;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 h6 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label span {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment {
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 span,
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 p {
+    margin: 0 0.5rem;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row button {
+    width: auto;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .BtnXLarge {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1920px) {
+  body[dir=rtl] .FNV-Cart-Detail {
+    margin-top: 0rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode {
+    padding: 1rem;
+    background-color: #223885;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 h2 {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong {
+    color: #FF772C;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 strong svg {
+    color: #FFFFFF;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row {
+    height: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input {
+    width: 100%;
+    height: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text {
+    border-radius: 0;
+    color: #223885;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+    box-shadow: unset;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-ReferalCode .col-md-6 .row .col-md-6 input.FNV-Btn {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 {
+    display: flex;
+    align-items: center;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-2 h2 {
+    padding: 0;
+    font-size: 25px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row {
+    padding: 1rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgba(0, 60, 191, 0.062745098);
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-8 span,
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Heading .col-md-10 .row .col-md-4 span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.062745098);
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems:not(:first-of-type) {
+    border-radius: 20px;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-2 img {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row {
+    margin: 0;
+    padding: 1rem;
+    border-radius: 20px;
+    height: 100%;
+    align-items: center;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row {
+    padding: 0;
+    width: 100%;
+    gap: 10px;
+    flex-direction: row;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row p {
+    font-size: 22px;
+    font-weight: 600;
+    color: #223885;
+    width: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-8 .row a {
+    width: 30%;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 span {
+    font-size: 30px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-CartItems .col-md-10 .row .col-md-4 p {
+    font-size: 30px;
+    font-weight: 600;
+    color: #FF772C;
+    margin-bottom: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon {
+    padding: 2rem 0;
+    border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-4 {
+    display: flex;
+    align-items: center;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 span {
+    display: block;
+    font-size: 25px;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row {
+    height: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 {
+    padding: 0;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input {
+    width: 100%;
+    height: 100%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: #223885;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Text:focus {
+    box-shadow: unset;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Coupon .col-md-8 .row .col-md-6 .row .col-md-6 input.FNV-Btn {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total {
+    padding: 1rem 0;
+    border-top: 4px solid rgba(0, 60, 191, 0.1882352941);
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 {
+    border-bottom: 2px solid rgba(0, 60, 191, 0.1882352941);
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 0px;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 p small {
+    color: red;
+    font-size: 14px;
+    margin: 0 1rem;
+    font-weight: 400;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Total .col-md-8 .row .col-md-6 span {
+    display: block;
+    font-size: 22px;
+    font-weight: 800;
+    padding: 0.5rem 0;
+    text-align: center;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 h6 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 label span {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment {
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 span,
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .col-md-3 p {
+    margin: 0 0.5rem;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row button {
+    width: auto;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .BtnXLarge {
+    margin-bottom: 0;
+  }
+}
+
 .FNV-Calendar {
   padding: 4rem 0;
 }

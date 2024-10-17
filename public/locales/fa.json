@@ -271,7 +271,7 @@
   "cart-referal-title": "کد معرف دارید؟ اینجا وارد کنید",
   "complete-your-profile-message":"برای ادامه، باید جزئیات حساب خود را تکمیل کنید!",
   "cart-referal-desc": "کد معرف چیست؟ و نحوه کسب درآمد در فناوران",
-  "cart-referal-button": "اعمال کد",
+  "cart-referal-button": "اعمال کد معرف",
   "cart-head-title": "سبد خرید شما",
   "cart-head-product-title": "عنوان",
   "cart-head-product-price": "قیمت (دلار کانادا)",
@@ -287,6 +287,7 @@
   "cart-total-text": "مبلغ قابل پرداخت",
   "cart-partial-button": "پرداخت وجه بصورت اقساط",
   "cart-full-payment-button": "پرداخت وجه بصورت کامل",
+  "cart-login-button": "لطفاً برای ادامه خرید ابتدا وارد حساب کاربری خود شوید.",
 
   "single-webinar-instructor": "سخنران",
   "single-webinar-startingdate": "تاریخ برگزاری",

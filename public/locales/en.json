@@ -280,7 +280,7 @@
   "cart-referal-title": "Have a referral code? Enter it here",
   "complete-your-profile-message":"You must complete your account details to continue!",
   "cart-referal-desc": "What is a referral code? Learn how to earn with Fanavaran",
-  "cart-referal-button": "Apply Code",
+  "cart-referal-button": "Apply Referal Code",
   "cart-head-title": "Your Cart",
   "cart-head-product-title": "Product Title",
   "cart-head-product-price": "Price (CAD)",
@@ -296,6 +296,7 @@
   "cart-total-text": "Total Amount",
   "cart-partial-button": "Pay in Installments",
   "cart-full-payment-button": "Pay in Full",
+  "cart-login-button": "Please log in to your account before proceeding with the purchase.",
 
   "single-webinar-instructor": "Instructor",
   "single-webinar-startingdate": "Starting Date",

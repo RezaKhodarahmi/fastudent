@@ -108,10 +108,10 @@ const Index = () => {
           : cycle.discountVipPrice
         : cycle.discountPrice
       : isVIP || oldVIP
-      ? vipPlan === 2
-        ? cycle.vipPLPrice
-        : cycle.vipPrice
-      : cycle.regularPrice
+        ? vipPlan === 2
+          ? cycle.vipPLPrice
+          : cycle.vipPrice
+        : cycle.regularPrice
   }
 
   function areCouponApplied(obj1, obj2) {
@@ -612,7 +612,7 @@ const Index = () => {
                   <input
                     type='button'
                     onClick={applyReferralHandler}
-                    className='FNV-Btn BtnPrimary BtnMedium'
+                    className='FNV-Btn ThirdColor BtnMedium'
                     value={t('cart-referal-button')}
                   />
                 </div>
@@ -661,14 +661,14 @@ const Index = () => {
                         <Link
                           href='#'
                           onClick={() => handleRemoveItem(cycle)}
-                          className='FNV-Btn BtnOutline SecondaryColor BtnMedium'
+                          className='FNV-Btn SecondaryColor BtnMedium'
                         >
                           {t('cart-head-product-remove')}
                         </Link>
                       </div>
                     </div>
                     <div className='col-2 col-md-4'>
-                      <span>C${getDiscountedPrice(cycle)}</span>
+                      <span>CA$ {getDiscountedPrice(cycle)}</span>
                       <p>
                         {isVIP &&
                           cycle.id !== 150000 &&
@@ -685,7 +685,7 @@ const Index = () => {
           <div className='row FNV-Coupon'>
             {cartCourses.length > 0 && (
               <div className='col-md-4'>
-                <button type='button' onClick={handelClearCart} className='FNV-Btn BtnOutline SecondaryColor BtnMedium'>
+                <button type='button' onClick={handelClearCart} className='FNV-Btn SecondaryColor BtnMedium px-5'>
                   <i data-feather='trash'></i> {t('cart-head-cart-clear')}
                 </button>
               </div>
@@ -734,33 +734,33 @@ const Index = () => {
                   <p>{t('cart-tax-text')}</p>
                 </div>
                 <div className='col-6 col-md-6'>
-                  <p className='text-center'>C$0</p>
+                  <p className='text-center'>CA$ 0</p>
                 </div>
               </div>
 
               {usedCoupon
                 ? usedCoupon?.map((coupon, index) =>
-                    coupon.code ? (
-                      <div key={index} className='row'>
-                        <div className='col-6 col-md-6'>
-                          <p>{t('cart-coupon-text')}</p>
-                        </div>
-                        <div className='col-6 col-md-6 text-center'>
-                          <p className='pb-0'>
-                            {coupon.code}
-                            <small
-                              onClick={e => handelRemoveCoupon(coupon.code)}
-                              style={{ cursor: 'pointer' }}
-                              className='FNV-Remove'
-                            >
-                              {t('cart-coupon-remove')}
-                            </small>
-                          </p>
-                          <p>{coupon.discount}</p>
-                        </div>
+                  coupon.code ? (
+                    <div key={index} className='row'>
+                      <div className='col-6 col-md-6'>
+                        <p>{t('cart-coupon-text')}</p>
                       </div>
-                    ) : null
-                  )
+                      <div className='col-6 col-md-6 text-center'>
+                        <p className='pb-0'>
+                          {coupon.code}
+                          <small
+                            onClick={e => handelRemoveCoupon(coupon.code)}
+                            style={{ cursor: 'pointer' }}
+                            className='FNV-Remove'
+                          >
+                            {t('cart-coupon-remove')}
+                          </small>
+                        </p>
+                        <p>{coupon.discount}</p>
+                      </div>
+                    </div>
+                  ) : null
+                )
                 : null}
 
               {/* Total */}
@@ -769,7 +769,7 @@ const Index = () => {
                   <p>{t('cart-total-text')}</p>
                 </div>
                 <div className='col-6 col-md-6'>
-                  <span>C${cartTotal || 0}</span>
+                  <span>CA$ {cartTotal || 0}</span>
                 </div>
               </div>
             </div>
@@ -899,7 +899,7 @@ const Index = () => {
                 />
               </Box>
 
-              <div className='col-md-12 d-flex justify-content-end gap-2'>
+              <div className='col-md-12 gap-2 g-2'>
                 {email ? (
                   cartTotal > 0 ? (
                     <>
@@ -922,25 +922,92 @@ const Index = () => {
                           />
                         </Elements>
                       ) : (
-                        <button onClick={handelInitiatePayment} className='FNV-Btn SecondaryColor BtnXLarge'>
+                        <button onClick={handelInitiatePayment} className='FNV-Btn SuccessColor BtnXLarge'>
                           {t('cart-full-payment-button')}
                         </button>
                       )}
                     </>
                   ) : (
-                    <button
-                      onClick={handleEnrollNow}
-                      disabled={!termsChecked || cartCourses.length <= 0}
-                      className='FNV-Btn BtnPrimary BtnXLarge'
-                    >
-                      {cartCourses.length <= 0 ? 'Cart is empty!' : 'Enroll Now'}
-                    </button>
+                    <>
+                      <div className='col-md-3'>
+                        <p>{t('cart-total-text')}</p>
+                        <span>CA$ {cartTotal || 0}</span>
+                      </div>
+
+                      <button
+                        onClick={handleEnrollNow}
+                        disabled={!termsChecked || cartCourses.length <= 0}
+                        className='FNV-Btn BtnPrimary BtnXLarge'
+                      >
+                        {cartCourses.length <= 0 ? 'Cart is empty!' : 'Enroll Now'}
+                      </button>
+                    </>
                   )
                 ) : (
-                  <Link href='/login/?returnUrl=cart' className='FNV-Btn BtnPrimary BtnMedium'>
-                    Login
+                  <Link href='/login/?returnUrl=cart' className='FNV-Btn DangerColor BtnXLarge'>
+                    {t('cart-login-button')}
                   </Link>
                 )}
+              </div>
+
+              <div className='FNV-Cart-Payment'>
+                <div className='container'>
+                  <div className='row'>
+                    {email ? (
+                      cartTotal > 0 ? (
+                        <>
+                          <div className='col-md-3'>
+                            <p>{t('cart-total-text')}</p>
+                            <span>CA$ {cartTotal || 0}</span>
+                          </div>
+
+                          {partially && cartTotal > 300 && (
+                            <button
+                              onClick={handelInitiatePartiallyPayment}
+                              className='FNV-Btn BtnOutline SecondaryColor BtnXLarge'
+                            >
+                              {t('cart-partial-button')}
+                            </button>
+                          )}
+                          {checkout && stripePay && clientSecret ? (
+                            <Elements options={options} stripe={stripePromise}>
+                              <CheckoutForm
+                                termsChecked={termsChecked}
+                                items={cartCourses}
+                                user={email}
+                                coupon={coupon}
+                                fullName={fullName}
+                              />
+                            </Elements>
+                          ) : (
+                            <button onClick={handelInitiatePayment} className='FNV-Btn SuccessColor BtnXLarge'>
+                              {t('cart-full-payment-button')}
+                            </button>
+                          )}
+                        </>
+                      ) : (
+                        <>
+                          <div className='col-md-3'>
+                            <p>{t('cart-total-text')}</p>
+                            <span>CA$ {cartTotal || 0}</span>
+                          </div>
+
+                          <button
+                            onClick={handleEnrollNow}
+                            disabled={!termsChecked || cartCourses.length <= 0}
+                            className='FNV-Btn BtnPrimary BtnXLarge'
+                          >
+                            {cartCourses.length <= 0 ? 'Cart is empty!' : 'Enroll Now'}
+                          </button>
+                        </>
+                      )
+                    ) : (
+                      <Link href='/login/?returnUrl=cart' className='FNV-Btn DangerColor BtnXLarge'>
+                        {t('cart-login-button')}
+                      </Link>
+                    )}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
