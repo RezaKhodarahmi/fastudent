@@ -1425,7 +1425,7 @@ const Course = () => {
                                       <>
                                         {' '}
                                         <span className="FNV-Price-LineThrough">
-                                          C$ {cycle.vipPrice}
+                                          CA$ {cycle.vipPrice}
                                         </span>
                                         {isDiscountActive(cycle) && <span> CA$ {cycle.discountVipPrice} </span>}
                                       </>

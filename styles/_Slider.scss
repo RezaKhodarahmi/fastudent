@@ -51,6 +51,7 @@ body[dir='ltr'] {
                             background-image: url("/images/slider/plumbing-slider.jpg");
 
                             h2 {
+                                direction: rtl;
                                 padding: .5rem;
                                 font-size: 30px;
                                 font-weight: 500;
@@ -62,6 +63,7 @@ body[dir='ltr'] {
 
                             h3 {
                                 color: $White;
+                                direction: rtl;
                                 padding: .5rem;
                                 font-size: 50px;
                                 font-weight: 700;
@@ -73,6 +75,7 @@ body[dir='ltr'] {
                             a {
                                 &.FNV-Slider-ACB {
                                     display: flex;
+                                    direction: rtl;
                                     padding: .5rem;
                                     align-items: center;
                                     flex-direction: row;
@@ -114,6 +117,7 @@ body[dir='ltr'] {
 
                             h2 {
                                 padding: .5rem;
+                                direction: rtl;
                                 font-size: 50px;
                                 font-weight: 800;
                                 margin-bottom: 0;
@@ -125,6 +129,7 @@ body[dir='ltr'] {
                             h3 {
                                 color: $White;
                                 padding: 1rem;
+                                direction: rtl;
                                 font-size: 40px;
                                 font-weight: 400;
                                 margin-bottom: 0;
@@ -135,6 +140,7 @@ body[dir='ltr'] {
                             a {
                                 &.FNV-Slider-ACB {
                                     display: flex;
+                                    direction: rtl;
                                     padding: .5rem;
                                     align-items: center;
                                     flex-direction: row;
@@ -220,7 +226,7 @@ body[dir='ltr'] {
 
                                             input {
                                                 font-weight: 500;
-                                                color: $PrimaryOne;
+                                                color: $White;
                                                 background-color: transparent;
 
                                                 &::placeholder {
@@ -362,7 +368,7 @@ body[dir='ltr'] {
                                         svg {
                                             width: 20px;
                                             height: 20px;
-                                            margin-right: 1rem;
+                                            margin-left: 1rem;
                                         }
 
                                         span {
@@ -404,6 +410,7 @@ body[dir='ltr'] {
                             background-image: url("/images/slider/plumbing-slider.jpg");
 
                             h2 {
+                                direction: rtl;
                                 padding: .5rem;
                                 font-size: 30px;
                                 font-weight: 500;
@@ -414,6 +421,7 @@ body[dir='ltr'] {
                             }
 
                             h3 {
+                                direction: rtl;
                                 color: $White;
                                 padding: .5rem;
                                 font-size: 50px;
@@ -426,6 +434,7 @@ body[dir='ltr'] {
                             a {
                                 &.FNV-Slider-ACB {
                                     display: flex;
+                                    direction: rtl;
                                     padding: .5rem;
                                     align-items: center;
                                     flex-direction: row;
@@ -467,6 +476,7 @@ body[dir='ltr'] {
 
                             h2 {
                                 padding: .5rem;
+                                direction: rtl;
                                 font-size: 50px;
                                 font-weight: 800;
                                 margin-bottom: 0;
@@ -478,6 +488,7 @@ body[dir='ltr'] {
                             h3 {
                                 color: $White;
                                 padding: 1rem;
+                                direction: rtl;
                                 font-size: 40px;
                                 font-weight: 400;
                                 margin-bottom: 0;
@@ -488,6 +499,7 @@ body[dir='ltr'] {
                             a {
                                 &.FNV-Slider-ACB {
                                     display: flex;
+                                    direction: rtl;
                                     padding: .5rem;
                                     align-items: center;
                                     flex-direction: row;
@@ -572,7 +584,7 @@ body[dir='ltr'] {
 
                                             input {
                                                 font-weight: 500;
-                                                color: $PrimaryOne;
+                                                color: $White;
                                                 background-color: transparent;
 
                                                 &::placeholder {
@@ -714,11 +726,11 @@ body[dir='ltr'] {
                                         svg {
                                             width: 20px;
                                             height: 20px;
-                                            margin-right: 1rem;
+                                            margin-left: 1rem;
                                         }
 
                                         span {
-                                            font-size: 12px;
+                                            font-size: 10px;
                                             font-weight: 600;
                                             color: $PrimaryOne;
                                         }
@@ -776,6 +788,7 @@ body[dir='ltr'] {
                             background-image: url("/images/slider/plumbing-slider.jpg");
 
                             h2 {
+                                direction: rtl;
                                 padding: .5rem;
                                 font-size: 20px;
                                 font-weight: 500;
@@ -787,6 +800,7 @@ body[dir='ltr'] {
 
                             h3 {
                                 color: $White;
+                                direction: rtl;
                                 padding: .5rem;
                                 font-size: 40px;
                                 font-weight: 700;
@@ -798,6 +812,7 @@ body[dir='ltr'] {
                             a {
                                 &.FNV-Slider-ACB {
                                     display: flex;
+                                    direction: rtl;
                                     padding: .5rem;
                                     align-items: center;
                                     flex-direction: row;
@@ -839,6 +854,7 @@ body[dir='ltr'] {
 
                             h2 {
                                 padding: .5rem;
+                                direction: rtl;
                                 font-size: 50px;
                                 font-weight: 800;
                                 margin-bottom: 0;
@@ -850,6 +866,7 @@ body[dir='ltr'] {
                             h3 {
                                 color: $White;
                                 padding: 1rem;
+                                direction: rtl;
                                 font-size: 40px;
                                 font-weight: 400;
                                 margin-bottom: 0;
@@ -860,6 +877,7 @@ body[dir='ltr'] {
                             a {
                                 &.FNV-Slider-ACB {
                                     display: flex;
+                                    direction: rtl;
                                     padding: .5rem;
                                     align-items: center;
                                     flex-direction: row;
@@ -942,7 +960,7 @@ body[dir='ltr'] {
 
                                             input {
                                                 font-weight: 500;
-                                                color: $PrimaryOne;
+                                                color: $White;
                                                 background-color: transparent;
 
                                                 &::placeholder {
@@ -1123,11 +1141,11 @@ body[dir='ltr'] {
                                         svg {
                                             width: 24px;
                                             height: 24px;
-                                            margin-right: 1rem;
+                                            margin-left: 1rem;
                                         }
 
                                         span {
-                                            font-size: 16px;
+                                            font-size: 14px;
                                             font-weight: 600;
                                             color: $PrimaryOne;
                                         }
@@ -1185,6 +1203,7 @@ body[dir='ltr'] {
 
                             h2 {
                                 padding: .5rem;
+                                direction: rtl;
                                 font-size: 30px;
                                 font-weight: 500;
                                 margin-bottom: 0;
@@ -1195,6 +1214,7 @@ body[dir='ltr'] {
 
                             h3 {
                                 color: $White;
+                                direction: rtl;
                                 padding: .5rem;
                                 font-size: 55px;
                                 font-weight: 700;
@@ -1206,6 +1226,7 @@ body[dir='ltr'] {
                             a {
                                 &.FNV-Slider-ACB {
                                     display: flex;
+                                    direction: rtl;
                                     padding: .5rem;
                                     line-height: 40px;
                                     align-items: center;
@@ -1248,6 +1269,7 @@ body[dir='ltr'] {
 
                             h2 {
                                 padding: .5rem;
+                                direction: rtl;
                                 font-size: 70px;
                                 font-weight: 800;
                                 margin-bottom: 0;
@@ -1259,6 +1281,7 @@ body[dir='ltr'] {
                             h3 {
                                 color: $White;
                                 padding: 1rem;
+                                direction: rtl;
                                 font-size: 55px;
                                 font-weight: 400;
                                 margin-bottom: 0;
@@ -1269,6 +1292,7 @@ body[dir='ltr'] {
                             a {
                                 &.FNV-Slider-ACB {
                                     display: flex;
+                                    direction: rtl;
                                     padding: .5rem;
                                     align-items: center;
                                     flex-direction: row;
@@ -1351,7 +1375,7 @@ body[dir='ltr'] {
 
                                             input {
                                                 font-weight: 500;
-                                                color: $PrimaryOne;
+                                                color: $White;
                                                 background-color: transparent;
 
                                                 &::placeholder {
@@ -1525,12 +1549,12 @@ body[dir='ltr'] {
                             }
 
                             .carousel-inner {
-                                padding-bottom: 1rem;
+                                padding-bottom: 1.5rem;
 
                                 .carousel-item {
                                     a {
                                         svg {
-                                            margin-right: 1rem;
+                                            margin-left: 1rem;
                                         }
 
                                         span {
@@ -1601,6 +1625,7 @@ body[dir='ltr'] {
 
                             h3 {
                                 color: $White;
+                                direction: rtl;
                                 padding: .5rem;
                                 font-size: 76px;
                                 font-weight: 700;
@@ -1612,6 +1637,7 @@ body[dir='ltr'] {
                             a {
                                 &.FNV-Slider-ACB {
                                     display: flex;
+                                    direction: rtl;
                                     padding: .5rem;
                                     line-height: 40px;
                                     align-items: center;
@@ -1654,6 +1680,7 @@ body[dir='ltr'] {
 
                             h2 {
                                 padding: .5rem;
+                                direction: rtl;
                                 font-size: 80px;
                                 font-weight: 800;
                                 margin-bottom: 0;
@@ -1665,6 +1692,7 @@ body[dir='ltr'] {
                             h3 {
                                 color: $White;
                                 padding: 1rem;
+                                direction: rtl;
                                 font-size: 65px;
                                 font-weight: 400;
                                 margin-bottom: 0;
@@ -1675,6 +1703,7 @@ body[dir='ltr'] {
                             a {
                                 &.FNV-Slider-ACB {
                                     display: flex;
+                                    direction: rtl;
                                     padding: .5rem;
                                     line-height: 40px;
                                     align-items: center;
@@ -1758,7 +1787,7 @@ body[dir='ltr'] {
 
                                             input {
                                                 font-weight: 500;
-                                                color: $PrimaryOne;
+                                                color: $White;
                                                 background-color: transparent;
 
                                                 &::placeholder {
@@ -1937,7 +1966,7 @@ body[dir='ltr'] {
                                 .carousel-item {
                                     a {
                                         svg {
-                                            margin-right: 1rem;
+                                            margin-left: 1rem;
                                         }
 
                                         span {
@@ -1997,6 +2026,7 @@ body[dir='ltr'] {
                             background-image: url("/images/slider/plumbing-slider.jpg");
 
                             h2 {
+                                direction: rtl;
                                 padding: .5rem;
                                 font-size: 40px;
                                 font-weight: 500;
@@ -2008,6 +2038,7 @@ body[dir='ltr'] {
 
                             h3 {
                                 color: $White;
+                                direction: rtl;
                                 padding: .5rem;
                                 font-size: 70px;
                                 font-weight: 700;
@@ -2019,6 +2050,7 @@ body[dir='ltr'] {
                             a {
                                 &.FNV-Slider-ACB {
                                     display: flex;
+                                    direction: rtl;
                                     padding: .5rem;
                                     line-height: 40px;
                                     align-items: center;
@@ -2061,6 +2093,7 @@ body[dir='ltr'] {
 
                             h2 {
                                 padding: .5rem;
+                                direction: rtl;
                                 font-size: 80px;
                                 font-weight: 800;
                                 margin-bottom: 0;
@@ -2072,6 +2105,7 @@ body[dir='ltr'] {
                             h3 {
                                 color: $White;
                                 padding: 1rem;
+                                direction: rtl;
                                 font-size: 65px;
                                 font-weight: 400;
                                 margin-bottom: 0;
@@ -2082,6 +2116,7 @@ body[dir='ltr'] {
                             a {
                                 &.FNV-Slider-ACB {
                                     display: flex;
+                                    direction: rtl;
                                     padding: .5rem;
                                     line-height: 40px;
                                     align-items: center;
@@ -2165,7 +2200,7 @@ body[dir='ltr'] {
 
                                             input {
                                                 font-weight: 500;
-                                                color: $PrimaryOne;
+                                                color: $White;
                                                 background-color: transparent;
 
                                                 &::placeholder {
@@ -2339,12 +2374,12 @@ body[dir='ltr'] {
                             }
 
                             .carousel-inner {
-                                padding-bottom: 1rem;
+                                padding-bottom: 1.5rem;
 
                                 .carousel-item {
                                     a {
                                         svg {
-                                            margin-right: 1rem;
+                                            margin-left: 1rem;
                                         }
 
                                         span {
@@ -2383,6 +2418,7 @@ body[dir='ltr'] {
                             background-image: url("/images/slider/plumbing-slider.jpg");
 
                             h2 {
+                                direction: rtl;
                                 padding: .5rem;
                                 font-size: 50px;
                                 font-weight: 500;
@@ -2395,6 +2431,7 @@ body[dir='ltr'] {
                             h3 {
                                 color: $White;
                                 padding: 1rem;
+                                direction: rtl;
                                 font-size: 75px;
                                 font-weight: 700;
                                 margin-bottom: 0;
@@ -2405,6 +2442,7 @@ body[dir='ltr'] {
                             a {
                                 &.FNV-Slider-ACB {
                                     display: flex;
+                                    direction: rtl;
                                     padding: .5rem;
                                     line-height: 40px;
                                     align-items: center;
@@ -2447,6 +2485,7 @@ body[dir='ltr'] {
 
                             h2 {
                                 padding: .5rem;
+                                direction: rtl;
                                 font-size: 80px;
                                 font-weight: 800;
                                 margin-bottom: 0;
@@ -2458,6 +2497,7 @@ body[dir='ltr'] {
                             h3 {
                                 color: $White;
                                 padding: 1rem;
+                                direction: rtl;
                                 font-size: 65px;
                                 font-weight: 400;
                                 margin-bottom: 0;
@@ -2468,6 +2508,7 @@ body[dir='ltr'] {
                             a {
                                 &.FNV-Slider-ACB {
                                     display: flex;
+                                    direction: rtl;
                                     padding: .5rem;
                                     line-height: 40px;
                                     align-items: center;
@@ -2502,6 +2543,7 @@ body[dir='ltr'] {
                                 }
                             }
                         }
+
 
                         .FNV-Slider-Object {
                             top: 0;
@@ -2572,8 +2614,8 @@ body[dir='ltr'] {
                                             }
 
                                             input {
-                                                font-weight: 500;
-                                                color: $PrimaryOne;
+                                                color: $White;
+                                                font-weight: 400;
                                                 background-color: transparent;
 
                                                 &::placeholder {
@@ -2920,7 +2962,7 @@ body[dir='rtl'] {
 
                                             input {
                                                 font-weight: 500;
-                                                color: $PrimaryOne;
+                                                color: $White;
                                                 background-color: transparent;
 
                                                 &::placeholder {
@@ -3272,7 +3314,7 @@ body[dir='rtl'] {
 
                                             input {
                                                 font-weight: 500;
-                                                color: $PrimaryOne;
+                                                color: $White;
                                                 background-color: transparent;
 
                                                 &::placeholder {
@@ -3642,7 +3684,7 @@ body[dir='rtl'] {
 
                                             input {
                                                 font-weight: 500;
-                                                color: $PrimaryOne;
+                                                color: $White;
                                                 background-color: transparent;
 
                                                 &::placeholder {
@@ -4051,7 +4093,7 @@ body[dir='rtl'] {
 
                                             input {
                                                 font-weight: 500;
-                                                color: $PrimaryOne;
+                                                color: $White;
                                                 background-color: transparent;
 
                                                 &::placeholder {
@@ -4458,7 +4500,7 @@ body[dir='rtl'] {
 
                                             input {
                                                 font-weight: 500;
-                                                color: $PrimaryOne;
+                                                color: $White;
                                                 background-color: transparent;
 
                                                 &::placeholder {
@@ -4865,7 +4907,7 @@ body[dir='rtl'] {
 
                                             input {
                                                 font-weight: 500;
-                                                color: $PrimaryOne;
+                                                color: $White;
                                                 background-color: transparent;
 
                                                 &::placeholder {
@@ -5273,8 +5315,8 @@ body[dir='rtl'] {
                                             }
 
                                             input {
-                                                font-weight: 500;
-                                                color: $PrimaryOne;
+                                                color: $White;
+                                                font-weight: 400;
                                                 background-color: transparent;
 
                                                 &::placeholder {
