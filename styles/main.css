@@ -37541,7 +37541,10 @@ body[dir=rtl] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-
     color: #223885;
   }
   body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row button {
-    width: auto;
+    width: 30%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row button:first-child {
+    margin-right: auto;
   }
   body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .BtnXLarge {
     margin-bottom: 0;
@@ -37797,7 +37800,10 @@ body[dir=rtl] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-
     color: #223885;
   }
   body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row button {
-    width: auto;
+    width: 30%;
+  }
+  body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row button:first-child {
+    margin-left: auto;
   }
   body[dir=ltr] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .BtnXLarge {
     margin-bottom: 0;
@@ -39392,7 +39398,10 @@ body[dir=rtl] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-
     color: #223885;
   }
   body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row button {
-    width: auto;
+    width: 30%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row button:first-child {
+    margin-right: auto;
   }
   body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .BtnXLarge {
     margin-bottom: 0;
@@ -39648,7 +39657,10 @@ body[dir=rtl] .FNV-BlogPage .FNV-BlogList .container .row .col-md-4 .card .card-
     color: #223885;
   }
   body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row button {
-    width: auto;
+    width: 30%;
+  }
+  body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row button:first-child {
+    margin-right: auto;
   }
   body[dir=rtl] .FNV-Cart-Detail .container .row.FNV-Terms .col-md-12 .FNV-Cart-Payment .container .row .BtnXLarge {
     margin-bottom: 0;

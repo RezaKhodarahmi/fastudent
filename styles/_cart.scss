@@ -2076,7 +2076,11 @@ body[dir='ltr'] {
                     }
 
                     button {
-                      width: auto;
+                      width: 30%;
+
+                      &:first-child {
+                        margin-right: auto;
+                      }
                     }
 
                     .BtnXLarge {
@@ -2414,7 +2418,11 @@ body[dir='ltr'] {
                     }
 
                     button {
-                      width: auto;
+                      width: 30%;
+
+                      &:first-child {
+                        margin-left: auto;
+                      }
                     }
 
                     .BtnXLarge {
@@ -4505,7 +4513,11 @@ body[dir='rtl'] {
                     }
 
                     button {
-                      width: auto;
+                      width: 30%;
+
+                      &:first-child {
+                        margin-right: auto;
+                      }
                     }
 
                     .BtnXLarge {
@@ -4843,7 +4855,11 @@ body[dir='rtl'] {
                     }
 
                     button {
-                      width: auto;
+                      width: 30%;
+
+                      &:first-child {
+                        margin-right: auto;
+                      }
                     }
 
                     .BtnXLarge {
