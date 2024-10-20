@@ -8665,6 +8665,7 @@ badge.SecondaryColor {
 
 @media (max-width: 575px) {
   .FNV-TopBanner {
+    direction: rtl;
     background-color: #f6fcff;
   }
   .FNV-TopBanner .container-fluid {
@@ -8815,6 +8816,7 @@ badge.SecondaryColor {
 }
 @media (min-width: 575.98px) and (max-width: 767px) {
   .FNV-TopBanner {
+    direction: rtl;
     padding: 0 1rem;
     background-color: #f6fcff;
   }
@@ -8966,6 +8968,7 @@ badge.SecondaryColor {
 }
 @media (min-width: 767.98px) and (max-width: 991.98px) {
   .FNV-TopBanner {
+    direction: rtl;
     background-color: #f6fcff;
   }
   .FNV-TopBanner .container-fluid {
@@ -9112,6 +9115,7 @@ badge.SecondaryColor {
 }
 @media (min-width: 992px) {
   .FNV-TopBanner {
+    direction: rtl;
     background-color: #f6fcff;
   }
   .FNV-TopBanner .container-fluid {
@@ -9247,6 +9251,7 @@ badge.SecondaryColor {
 }
 @media (min-width: 1199.98px) {
   .FNV-TopBanner {
+    direction: rtl;
     background-color: #f6fcff;
   }
   .FNV-TopBanner .container-fluid {
@@ -9385,6 +9390,7 @@ badge.SecondaryColor {
 }
 @media (min-width: 1400px) {
   .FNV-TopBanner {
+    direction: rtl;
     background-color: #f6fcff;
   }
   .FNV-TopBanner .container-fluid {
@@ -9526,6 +9532,7 @@ badge.SecondaryColor {
 }
 @media (min-width: 1920px) {
   .FNV-TopBanner {
+    direction: rtl;
     background-color: #f6fcff;
   }
   .FNV-TopBanner .container-fluid {
