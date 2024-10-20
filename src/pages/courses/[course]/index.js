@@ -1381,10 +1381,10 @@ const Course = () => {
                                     cycle.id == selectedCycle ? (
                                       <>
                                         {' '}
-                                        <span className="FNV-Price-LineThrough">
+                                        <span className={isDiscountActive(cycle) ? "FNV-Price-LineThrough" : ""}>
                                           CA$ {cycle.regularPrice}
                                         </span>
-                                        {isDiscountActive(cycle) && <span> CA$ {cycle.discountPrice}</span>}
+                                        {isDiscountActive(cycle) && <span> CA$ {cycle.discountPrice} </span>}
                                       </>
                                     ) : null
                                   )
@@ -1424,7 +1424,7 @@ const Course = () => {
                                     cycle.id == selectedCycle ? (
                                       <>
                                         {' '}
-                                        <span className="FNV-Price-LineThrough">
+                                        <span className={isDiscountActive(cycle) ? "FNV-Price-LineThrough" : ""}>
                                           CA$ {cycle.vipPrice}
                                         </span>
                                         {isDiscountActive(cycle) && <span> CA$ {cycle.discountVipPrice} </span>}
@@ -1469,10 +1469,10 @@ const Course = () => {
                                     cycle.id == selectedCycle ? (
                                       <>
                                         {' '}
-                                        <span className="FNV-Price-LineThrough">
+                                        <span className={isDiscountActive(cycle) ? "FNV-Price-LineThrough" : ""}>
                                           CA$ {cycle.vipPLPrice}
                                         </span>
-                                        {isDiscountActive(cycle) && <span> CA$ {cycle.discountVipPLPrice}</span>}
+                                        {isDiscountActive(cycle) && <span> CA$ {cycle.discountVipPLPrice} </span>}
                                       </>
                                     ) : null
                                   )

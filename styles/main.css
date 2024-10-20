@@ -273,6 +273,11 @@ a {
     font-size: 18px;
     padding: 7px 14px;
   }
+  .FNV-Btn.BtnXLarge {
+    font-size: 14px;
+    margin-bottom: 4rem;
+    padding: 1rem;
+  }
 }
 badge {
   border-radius: 5px;
@@ -2261,7 +2266,7 @@ badge.SecondaryColor {
     position: absolute;
     top: 100%;
     left: 0;
-    z-index: 1000;
+    z-index: 9999;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown:focus-within .dropdown-menu {
     display: flex;
@@ -2901,7 +2906,7 @@ badge.SecondaryColor {
     position: absolute;
     top: 100%;
     left: 0;
-    z-index: 1000;
+    z-index: 9999;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown:focus-within .dropdown-menu {
     display: flex;
@@ -3535,7 +3540,7 @@ badge.SecondaryColor {
     position: absolute;
     top: 100%;
     left: 0;
-    z-index: 1000;
+    z-index: 9999;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown:focus-within .dropdown-menu {
     display: flex;
@@ -4174,7 +4179,7 @@ badge.SecondaryColor {
     position: absolute;
     top: 100%;
     left: 0;
-    z-index: 1000;
+    z-index: 9999;
   }
   body[dir=ltr] nav .container .FNV_QuickAccess .dropdown:focus-within .dropdown-menu {
     display: flex;
@@ -6421,7 +6426,7 @@ badge.SecondaryColor {
     position: absolute;
     top: 100%;
     left: 0;
-    z-index: 1000;
+    z-index: 9999;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown:focus-within .dropdown-menu {
     display: flex;
@@ -6977,7 +6982,7 @@ badge.SecondaryColor {
     position: absolute;
     top: 100%;
     left: 0;
-    z-index: 1000;
+    z-index: 9999;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown:focus-within .dropdown-menu {
     display: flex;
@@ -7617,7 +7622,7 @@ badge.SecondaryColor {
     position: absolute;
     top: 100%;
     left: 0;
-    z-index: 1000;
+    z-index: 9999;
   }
   body[dir=rtl] nav .container .FNV_QuickAccess .dropdown:focus-within .dropdown-menu {
     display: flex;
@@ -15660,48 +15665,328 @@ badge.SecondaryColor {
   }
 }
 
-body[dir=ltr] .FNV-HomeAbout {
-  padding: 4rem 0;
-  background-color: #ffffff;
+@media (max-width: 575px) {
+  body[dir=ltr] .FNV-HomeAbout {
+    padding: 1rem;
+    background-color: #ffffff;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 h2 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #223885;
+  }
 }
-body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+@media (min-width: 575.98px) and (max-width: 767px) {
+  body[dir=ltr] .FNV-HomeAbout {
+    padding: 1rem;
+    background-color: #ffffff;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 h2 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #223885;
+  }
 }
-body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 h2 {
-  font-size: 48px;
-  font-weight: 300;
-  color: #223885;
-  margin-bottom: 2rem;
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  body[dir=ltr] .FNV-HomeAbout {
+    padding: 2rem 0;
+    background-color: #ffffff;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 h2 {
+    font-size: 22px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #223885;
+  }
 }
-body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 p {
-  font-size: 20px;
-  font-weight: 400;
-  color: #223885;
+@media (min-width: 992px) {
+  body[dir=ltr] .FNV-HomeAbout {
+    padding: 2rem 0;
+    background-color: #ffffff;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 h2 {
+    font-size: 36px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #223885;
+  }
+}
+@media (min-width: 1199.98px) {
+  body[dir=ltr] .FNV-HomeAbout {
+    padding: 2rem 0;
+    background-color: #ffffff;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 h2 {
+    font-size: 36px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #223885;
+  }
+}
+@media (min-width: 1400px) {
+  body[dir=ltr] .FNV-HomeAbout {
+    padding: 2rem 0;
+    background-color: #ffffff;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 h2 {
+    font-size: 48px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #223885;
+  }
+}
+@media (min-width: 1920px) {
+  body[dir=ltr] .FNV-HomeAbout {
+    padding: 4rem 0;
+    background-color: #ffffff;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 h2 {
+    font-size: 48px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #223885;
+  }
 }
 
-body[dir=rtl] .FNV-HomeAbout {
-  padding: 4rem 0;
-  background-color: #ffffff;
+@media (max-width: 575px) {
+  body[dir=rtl] .FNV-HomeAbout {
+    padding: 1rem;
+    background-color: #ffffff;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 h2 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #223885;
+  }
 }
-body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+@media (min-width: 575.98px) and (max-width: 767px) {
+  body[dir=rtl] .FNV-HomeAbout {
+    padding: 1rem;
+    background-color: #ffffff;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 h2 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #223885;
+  }
 }
-body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 h2 {
-  font-size: 48px;
-  font-weight: 300;
-  color: #223885;
-  margin-bottom: 2rem;
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  body[dir=rtl] .FNV-HomeAbout {
+    padding: 2rem 0;
+    background-color: #ffffff;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 h2 {
+    font-size: 22px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #223885;
+  }
 }
-body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 p {
-  font-size: 20px;
-  font-weight: 400;
-  color: #223885;
+@media (min-width: 992px) {
+  body[dir=rtl] .FNV-HomeAbout {
+    padding: 2rem 0;
+    background-color: #ffffff;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 h2 {
+    font-size: 36px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #223885;
+  }
+}
+@media (min-width: 1199.98px) {
+  body[dir=rtl] .FNV-HomeAbout {
+    padding: 2rem 0;
+    background-color: #ffffff;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 h2 {
+    font-size: 36px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #223885;
+  }
+}
+@media (min-width: 1400px) {
+  body[dir=rtl] .FNV-HomeAbout {
+    padding: 2rem 0;
+    background-color: #ffffff;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 h2 {
+    font-size: 48px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #223885;
+  }
+}
+@media (min-width: 1920px) {
+  body[dir=rtl] .FNV-HomeAbout {
+    padding: 4rem 0;
+    background-color: #ffffff;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 h2 {
+    font-size: 48px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #223885;
+  }
 }
 
 body[dir=ltr] .FNV-HomeWhy {
