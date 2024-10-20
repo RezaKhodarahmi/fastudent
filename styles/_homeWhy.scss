@@ -1,52 +1,482 @@
 body[dir='ltr'] {
-    .FNV-HomeWhy {
-        padding: 8rem 0;
-        background-color: $PrimaryBackgroundTwo;
 
-        .container {
-            h2 {
-                font-size: 48px;
-                font-weight: 300;
-                color: $PrimaryOne;
-                margin-bottom: 2rem;
-            }
+    // X-Small devices (portrait phones, less than 576px)
+    @media (max-width: 575.98px) {
+        .FNV-HomeWhy {
+            padding: 1rem;
+            background-color: $PrimaryBackgroundTwo;
 
-            .row {
-                .col-md-6 {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    justify-content: center;
+            .container {
+                h2 {
+                    font-size: 20px;
+                    font-weight: 300;
+                    color: $PrimaryOne;
+                    margin-bottom: 1rem;
+                }
 
-                    p {
-                        font-size: 20px;
-                        font-weight: 400;
-                        color: $PrimaryOne;
-                    }
+                .row {
+                    .col-md-6 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
 
-                    &:nth-child(2) {
-                        padding-right: 4rem;
+                        p {
+                            font-size: 14px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                        }
 
-                        .row {
-                            &.card {
-                                width: 100%;
-                                padding: 1rem;
-                                border-width: 0;
-                                border-radius: 0;
-                                margin-bottom: 1rem;
-                                align-items: center;
-                                flex-direction: row;
-                                background-color: $WhiteColor;
+                        &:nth-child(2) {
+                            padding-left: 1rem;
+                            padding-right: 1rem;
 
-                                h3 {
-                                    font-size: 24px;
-                                    font-weight: 300;
+                            .row {
+                                margin: 0 auto;
+
+                                &.card {
+                                    width: 100%;
+                                    padding: .5rem;
+                                    flex-direction: row;
+                                    margin-bottom: .5rem;
+
+                                    .col-2 {
+                                        padding: 0;
+                                        width: 16.66666667%;
+
+                                        svg {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    .col-9 {
+                                        width: 75%;
+                                        padding: 1rem;
+                                        border-width: 0;
+                                        border-radius: 0;
+                                        margin-bottom: 0rem;
+                                        align-items: center;
+                                        flex-direction: row;
+                                        background-color: $WhiteColor;
+
+                                        h3 {
+                                            font-size: 16px;
+                                            font-weight: 300;
+                                        }
+
+                                        p {
+                                            font-size: 12px;
+                                            font-weight: 300;
+                                            margin-bottom: 0;
+                                        }
+                                    }
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-                                p {
-                                    font-size: 16px;
-                                    font-weight: 300;
-                                    margin-bottom: 0;
+    // `sm` applies to x-small devices (portrait phones, less than 576px)
+    @media (min-width: 575.98px) and (max-width: 767.98px) {
+        .FNV-HomeWhy {
+            padding: 1rem;
+            background-color: $PrimaryBackgroundTwo;
+
+            .container {
+                h2 {
+                    font-size: 22px;
+                    font-weight: 300;
+                    color: $PrimaryOne;
+                    margin-bottom: 1rem;
+                }
+
+                .row {
+                    .col-md-6 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        p {
+                            font-size: 14px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                        }
+
+                        &:nth-child(2) {
+                            padding-right: 0rem;
+
+                            .row {
+                                &.card {
+                                    width: 100%;
+                                    padding: .5rem;
+                                    margin-bottom: 1rem;
+                                    flex-direction: row;
+
+                                    .col-2 {
+                                        padding: 0;
+                                        width: 16.66666667%;
+
+                                        svg {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    .col-9 {
+                                        width: 75%;
+                                        padding: 1rem;
+                                        border-width: 0;
+                                        border-radius: 0;
+                                        margin-bottom: 0rem;
+                                        align-items: center;
+                                        flex-direction: row;
+                                        background-color: $WhiteColor;
+
+                                        h3 {
+                                            font-size: 16px;
+                                            font-weight: 300;
+                                        }
+
+                                        p {
+                                            font-size: 12px;
+                                            font-weight: 300;
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // `md` applies to small devices (landscape phones, less than 768px)
+    @media (min-width: 767.98px) and (max-width: 991.98px) {
+        .FNV-HomeWhy {
+            padding: 2rem 0;
+            background-color: $PrimaryBackgroundTwo;
+
+            .container {
+                h2 {
+                    font-size: 22px;
+                    font-weight: 300;
+                    color: $PrimaryOne;
+                    margin-bottom: 1rem;
+                }
+
+                .row {
+                    .col-md-6 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        p {
+                            font-size: 14px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                        }
+
+                        &:nth-child(2) {
+                            padding-left: 4rem;
+
+                            .row {
+                                &.card {
+                                    padding: .5rem;
+                                    flex-direction: row;
+                                    margin-bottom: .5rem;
+
+                                    .col-2 {
+                                        padding: 0;
+                                        width: 16.66666667%;
+
+                                        svg {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    .col-9 {
+                                        width: 75%;
+                                        padding: 1rem;
+                                        border-width: 0;
+                                        border-radius: 0;
+                                        margin-bottom: 0rem;
+                                        align-items: center;
+                                        flex-direction: row;
+                                        background-color: $WhiteColor;
+
+                                        h3 {
+                                            font-size: 16px;
+                                            font-weight: 300;
+                                        }
+
+                                        p {
+                                            font-size: 12px;
+                                            font-weight: 300;
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // `lg` applies to medium devices (tablets, less than 992px)
+    @media (min-width: 991.98px) {
+        .FNV-HomeWhy {
+            padding: 2rem 0;
+            background-color: $PrimaryBackgroundTwo;
+
+            .container {
+                h2 {
+                    font-size: 36px;
+                    font-weight: 300;
+                    color: $PrimaryOne;
+                    margin-bottom: 1rem;
+                }
+
+                .row {
+                    .col-md-6 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        p {
+                            font-size: 14px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                        }
+
+                        &:nth-child(2) {
+                            padding-left: 4rem;
+
+                            .row {
+                                &.card {
+                                    width: 100%;
+                                    padding: 1rem;
+                                    border-width: 0;
+                                    border-radius: 0;
+                                    margin-bottom: 1rem;
+                                    align-items: center;
+                                    flex-direction: row;
+                                    background-color: $WhiteColor;
+
+                                    .col-2 {
+                                        svg {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    .col-9 {
+                                        h3 {
+                                            font-size: 20px;
+                                            font-weight: 300;
+                                        }
+
+                                        p {
+                                            font-size: 12px;
+                                            font-weight: 300;
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // `xl` applies to large devices (desktops, less than 1200px)
+    @media (min-width: 1199.98px) {
+        .FNV-HomeWhy {
+            padding: 4rem 0;
+            background-color: $PrimaryBackgroundTwo;
+
+            .container {
+                h2 {
+                    font-size: 36px;
+                    font-weight: 300;
+                    color: $PrimaryOne;
+                    margin-bottom: 2rem;
+                }
+
+                .row {
+                    .col-md-6 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        p {
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $PrimaryOne;
+                        }
+
+                        &:nth-child(2) {
+                            padding-right: 4rem;
+
+                            .row {
+                                &.card {
+                                    width: 100%;
+                                    padding: 1rem;
+                                    border-width: 0;
+                                    border-radius: 0;
+                                    margin-bottom: 1rem;
+                                    align-items: center;
+                                    flex-direction: row;
+                                    background-color: $WhiteColor;
+
+                                    .col-2 {
+                                        svg {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    .col-9 {
+                                        h3 {
+                                            font-size: 22px;
+                                            font-weight: 300;
+                                        }
+
+                                        p {
+                                            font-size: 14px;
+                                            font-weight: 300;
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // XX-Large devices (larger desktops, 1400px and up)
+    @media (min-width: 1400px) {
+        .FNV-HomeWhy {
+            padding: 6rem 0;
+            background-color: $PrimaryBackgroundTwo;
+
+            .container {
+                h2 {
+                    font-size: 48px;
+                    font-weight: 300;
+                    color: $PrimaryOne;
+                    margin-bottom: 2rem;
+                }
+
+                .row {
+                    .col-md-6 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        p {
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $PrimaryOne;
+                        }
+
+                        &:nth-child(2) {
+                            padding-left: 4rem;
+
+                            .row {
+                                &.card {
+                                    width: 100%;
+                                    padding: 1rem;
+                                    border-width: 0;
+                                    border-radius: 0;
+                                    margin-bottom: 1rem;
+                                    align-items: center;
+                                    flex-direction: row;
+                                    background-color: $WhiteColor;
+
+                                    h3 {
+                                        font-size: 24px;
+                                        font-weight: 300;
+                                    }
+
+                                    p {
+                                        font-size: 16px;
+                                        font-weight: 300;
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // XXX-Large devices (larger desktops, 1920px and up)
+    @media (min-width: 1920px) {
+        .FNV-HomeWhy {
+            padding: 8rem 0;
+            background-color: $PrimaryBackgroundTwo;
+
+            .container {
+                h2 {
+                    font-size: 48px;
+                    font-weight: 300;
+                    color: $PrimaryOne;
+                    margin-bottom: 2rem;
+                }
+
+                .row {
+                    .col-md-6 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        p {
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $PrimaryOne;
+                        }
+
+                        &:nth-child(2) {
+                            padding-right: 4rem;
+
+                            .row {
+                                &.card {
+                                    width: 100%;
+                                    padding: 1rem;
+                                    border-width: 0;
+                                    border-radius: 0;
+                                    margin-bottom: 1rem;
+                                    align-items: center;
+                                    flex-direction: row;
+                                    background-color: $WhiteColor;
+
+                                    h3 {
+                                        font-size: 24px;
+                                        font-weight: 300;
+                                    }
+
+                                    p {
+                                        font-size: 16px;
+                                        font-weight: 300;
+                                        margin-bottom: 0;
+                                    }
                                 }
                             }
                         }
@@ -58,54 +488,467 @@ body[dir='ltr'] {
 }
 
 body[dir='rtl'] {
-    .FNV-HomeWhy {
-        padding: 8rem 0;
-        background-color: $PrimaryBackgroundTwo;
 
-        .container {
-            h2 {
-                font-size: 48px;
-                font-weight: 300;
-                color: $PrimaryOne;
-                margin-bottom: 2rem;
-            }
+    // X-Small devices (portrait phones, less than 576px)
+    @media (max-width: 575.98px) {
+        .FNV-HomeWhy {
+            padding: 1rem;
+            background-color: $PrimaryBackgroundTwo;
 
-            .row {
-                .col-md-6 {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    justify-content: center;
+            .container {
+                h2 {
+                    font-size: 20px;
+                    font-weight: 300;
+                    color: $PrimaryOne;
+                    margin-bottom: 1rem;
+                }
 
-                    p {
-                        font-size: 20px;
-                        font-weight: 400;
-                        color: $PrimaryOne;
-                    }
+                .row {
+                    .col-md-6 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
 
-                    &:nth-child(2) {
-                        padding-right: 4rem;
+                        p {
+                            font-size: 14px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                        }
 
-                        .row {
-                            &.card {
-                                width: 100%;
-                                padding: 1rem;
-                                border-width: 0;
-                                border-radius: 0;
-                                margin-bottom: 1rem;
-                                align-items: center;
-                                flex-direction: row;
-                                background-color: $WhiteColor;
+                        &:nth-child(2) {
+                            padding-left: 1rem;
+                            padding-right: 1rem;
 
-                                h3 {
-                                    font-size: 24px;
-                                    font-weight: 300;
+                            .row {
+                                margin: 0 auto;
+
+                                &.card {
+                                    width: 100%;
+                                    padding: .5rem;
+                                    flex-direction: row;
+                                    margin-bottom: .5rem;
+
+                                    .col-2 {
+                                        padding: 0;
+                                        width: 16.66666667%;
+
+                                        svg {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    .col-9 {
+                                        width: 75%;
+                                        padding: 1rem;
+                                        border-width: 0;
+                                        border-radius: 0;
+                                        margin-bottom: 0rem;
+                                        align-items: center;
+                                        flex-direction: row;
+                                        background-color: $WhiteColor;
+
+                                        h3 {
+                                            font-size: 16px;
+                                            font-weight: 300;
+                                        }
+
+                                        p {
+                                            font-size: 12px;
+                                            font-weight: 300;
+                                            margin-bottom: 0;
+                                        }
+                                    }
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-                                p {
-                                    font-size: 16px;
-                                    font-weight: 300;
-                                    margin-bottom: 0;
+    // `sm` applies to x-small devices (portrait phones, less than 576px)
+    @media (min-width: 575.98px) and (max-width: 767.98px) {
+        .FNV-HomeWhy {
+            padding: 1rem;
+            background-color: $PrimaryBackgroundTwo;
+
+            .container {
+                h2 {
+                    font-size: 22px;
+                    font-weight: 300;
+                    color: $PrimaryOne;
+                    margin-bottom: 1rem;
+                }
+
+                .row {
+                    .col-md-6 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        p {
+                            font-size: 14px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                        }
+
+                        &:nth-child(2) {
+                            padding-right: 0rem;
+
+                            .row {
+                                &.card {
+                                    width: 100%;
+                                    padding: .5rem;
+                                    margin-bottom: 1rem;
+                                    flex-direction: row;
+
+                                    .col-2 {
+                                        padding: 0;
+                                        width: 16.66666667%;
+
+                                        svg {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    .col-9 {
+                                        width: 75%;
+                                        padding: 1rem;
+                                        border-width: 0;
+                                        border-radius: 0;
+                                        margin-bottom: 0rem;
+                                        align-items: center;
+                                        flex-direction: row;
+                                        background-color: $WhiteColor;
+
+                                        h3 {
+                                            font-size: 16px;
+                                            font-weight: 300;
+                                        }
+
+                                        p {
+                                            font-size: 12px;
+                                            font-weight: 300;
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // `md` applies to small devices (landscape phones, less than 768px)
+    @media (min-width: 767.98px) and (max-width: 991.98px) {
+        .FNV-HomeWhy {
+            padding: 2rem 0;
+            background-color: $PrimaryBackgroundTwo;
+
+            .container {
+                h2 {
+                    font-size: 22px;
+                    font-weight: 300;
+                    color: $PrimaryOne;
+                    margin-bottom: 1rem;
+                }
+
+                .row {
+                    .col-md-6 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        p {
+                            font-size: 14px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                        }
+
+                        &:nth-child(2) {
+                            padding-right: 4rem;
+
+                            .row {
+                                &.card {
+                                    padding: .5rem;
+                                    flex-direction: row;
+
+                                    .col-2 {
+                                        padding: 0;
+                                        width: 16.66666667%;
+
+                                        svg {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    .col-9 {
+                                        width: 75%;
+                                        padding: 1rem;
+                                        border-width: 0;
+                                        border-radius: 0;
+                                        margin-bottom: 0rem;
+                                        align-items: center;
+                                        flex-direction: row;
+                                        background-color: $WhiteColor;
+
+                                        h3 {
+                                            font-size: 16px;
+                                            font-weight: 300;
+                                        }
+
+                                        p {
+                                            font-size: 12px;
+                                            font-weight: 300;
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // `lg` applies to medium devices (tablets, less than 992px)
+    @media (min-width: 991.98px) {
+        .FNV-HomeWhy {
+            padding: 2rem 0;
+            background-color: $PrimaryBackgroundTwo;
+
+            .container {
+                h2 {
+                    font-size: 36px;
+                    font-weight: 300;
+                    color: $PrimaryOne;
+                    margin-bottom: 1rem;
+                }
+
+                .row {
+                    .col-md-6 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        p {
+                            font-size: 14px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                        }
+
+                        &:nth-child(2) {
+                            padding-right: 4rem;
+
+                            .row {
+                                &.card {
+                                    width: 100%;
+                                    padding: 1rem;
+                                    border-width: 0;
+                                    border-radius: 0;
+                                    margin-bottom: 1rem;
+                                    align-items: center;
+                                    flex-direction: row;
+                                    background-color: $WhiteColor;
+
+                                    h3 {
+                                        font-size: 20px;
+                                        font-weight: 300;
+                                    }
+
+                                    p {
+                                        font-size: 12px;
+                                        font-weight: 300;
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // `xl` applies to large devices (desktops, less than 1200px)
+    @media (min-width: 1199.98px) {
+        .FNV-HomeWhy {
+            padding: 4rem 0;
+            background-color: $PrimaryBackgroundTwo;
+
+            .container {
+                h2 {
+                    font-size: 36px;
+                    font-weight: 300;
+                    color: $PrimaryOne;
+                    margin-bottom: 2rem;
+                }
+
+                .row {
+                    .col-md-6 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        p {
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $PrimaryOne;
+                        }
+
+                        &:nth-child(2) {
+                            padding-right: 4rem;
+
+                            .row {
+                                &.card {
+                                    width: 100%;
+                                    padding: 1rem;
+                                    border-width: 0;
+                                    border-radius: 0;
+                                    margin-bottom: 1rem;
+                                    align-items: center;
+                                    flex-direction: row;
+                                    background-color: $WhiteColor;
+
+                                    h3 {
+                                        font-size: 22px;
+                                        font-weight: 300;
+                                    }
+
+                                    p {
+                                        font-size: 14px;
+                                        font-weight: 300;
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // XX-Large devices (larger desktops, 1400px and up)
+    @media (min-width: 1400px) {
+        .FNV-HomeWhy {
+            padding: 6rem 0;
+            background-color: $PrimaryBackgroundTwo;
+
+            .container {
+                h2 {
+                    font-size: 48px;
+                    font-weight: 300;
+                    color: $PrimaryOne;
+                    margin-bottom: 2rem;
+                }
+
+                .row {
+                    .col-md-6 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        p {
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $PrimaryOne;
+                        }
+
+                        &:nth-child(2) {
+                            padding-right: 4rem;
+
+                            .row {
+                                &.card {
+                                    width: 100%;
+                                    padding: 1rem;
+                                    border-width: 0;
+                                    border-radius: 0;
+                                    margin-bottom: 1rem;
+                                    align-items: center;
+                                    flex-direction: row;
+                                    background-color: $WhiteColor;
+
+                                    h3 {
+                                        font-size: 24px;
+                                        font-weight: 300;
+                                    }
+
+                                    p {
+                                        font-size: 16px;
+                                        font-weight: 300;
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // XXX-Large devices (larger desktops, 1920px and up)
+    @media (min-width: 1920px) {
+        .FNV-HomeWhy {
+            padding: 8rem 0;
+            background-color: $PrimaryBackgroundTwo;
+
+            .container {
+                h2 {
+                    font-size: 48px;
+                    font-weight: 300;
+                    color: $PrimaryOne;
+                    margin-bottom: 2rem;
+                }
+
+                .row {
+                    .col-md-6 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        p {
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $PrimaryOne;
+                        }
+
+                        &:nth-child(2) {
+                            padding-right: 4rem;
+
+                            .row {
+                                &.card {
+                                    width: 100%;
+                                    padding: 1rem;
+                                    border-width: 0;
+                                    border-radius: 0;
+                                    margin-bottom: 1rem;
+                                    align-items: center;
+                                    flex-direction: row;
+                                    background-color: $WhiteColor;
+
+                                    h3 {
+                                        font-size: 24px;
+                                        font-weight: 300;
+                                    }
+
+                                    p {
+                                        font-size: 16px;
+                                        font-weight: 300;
+                                        margin-bottom: 0;
+                                    }
                                 }
                             }
                         }

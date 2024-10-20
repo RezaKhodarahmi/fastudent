@@ -14198,10 +14198,11 @@ badge.SecondaryColor {
     font-weight: 300;
     color: #223885;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   body[dir=ltr] .FNV-Top_Categories .container .row svg {
     width: 100%;
+    height: 150px;
   }
   body[dir=ltr] .FNV-Top_Categories .container .row svg a {
     fill: transparent;
@@ -14227,9 +14228,14 @@ badge.SecondaryColor {
     background-position: center center;
     background-image: url("/images/pages/mission.jpg");
   }
+  body[dir=ltr] .FNV-Mission .FNV-Canvas-Top {
+    transform: scaleX(-1);
+  }
   body[dir=ltr] .FNV-Mission .container .row h2 {
+    z-index: 4;
     font-size: 22px;
     font-weight: 300;
+    margin-top: -2rem;
     text-align: center;
     color: #223885;
     margin-bottom: 1rem;
@@ -14263,9 +14269,9 @@ badge.SecondaryColor {
     color: #6A7BBA;
   }
   body[dir=ltr] .FNV-Mission .container .row .col-md-4 .card a {
-    right: 1rem;
+    left: 1rem;
     bottom: -21px;
-    width: 280px;
+    width: 200px;
     padding: 0.5rem 0;
     color: #FFFFFF;
     display: flex;
@@ -14282,10 +14288,11 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Mission .container .row .col-md-4 .card a svg {
     margin: 0 0.5rem;
     margin-bottom: 0;
+    transform: rotate(180deg);
   }
   body[dir=ltr] .FNV-Mission .FNV-Canvas-Bottom {
     margin-top: 2rem;
-    transform: scale(-1, -1);
+    transform: scaleY(-1);
   }
 }
 @media (min-width: 575.98px) and (max-width: 767.98px) {
@@ -14305,6 +14312,7 @@ badge.SecondaryColor {
   }
   body[dir=ltr] .FNV-Top_Categories .container .row svg {
     width: 100%;
+    height: 220px;
   }
   body[dir=ltr] .FNV-Top_Categories .container .row svg a {
     fill: transparent;
@@ -14331,11 +14339,13 @@ badge.SecondaryColor {
     background-image: url("/images/pages/mission.jpg");
   }
   body[dir=ltr] .FNV-Mission .FNV-Canvas-Top {
-    transform: unset;
+    transform: scaleX(-1);
   }
   body[dir=ltr] .FNV-Mission .container .row h2 {
+    z-index: 4;
     font-size: 22px;
     font-weight: 300;
+    margin-top: -2rem;
     text-align: center;
     color: #223885;
     margin-bottom: 1rem;
@@ -14369,9 +14379,9 @@ badge.SecondaryColor {
     color: #6A7BBA;
   }
   body[dir=ltr] .FNV-Mission .container .row .col-md-4 .card a {
-    right: 1rem;
+    left: 1rem;
     bottom: -21px;
-    width: 280px;
+    width: 200px;
     padding: 0.5rem 0;
     color: #FFFFFF;
     display: flex;
@@ -14388,11 +14398,11 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Mission .container .row .col-md-4 .card a svg {
     margin: 0 0.5rem;
     margin-bottom: 0;
-    transform: rotate(0deg);
+    transform: rotate(180deg);
   }
   body[dir=ltr] .FNV-Mission .FNV-Canvas-Bottom {
     margin-top: 2rem;
-    transform: scale(-1, -1);
+    transform: scaleY(-1);
   }
 }
 @media (min-width: 767.98px) and (max-width: 991.98px) {
@@ -14412,6 +14422,7 @@ badge.SecondaryColor {
   }
   body[dir=ltr] .FNV-Top_Categories .container .row svg {
     width: 100%;
+    height: 250px;
   }
   body[dir=ltr] .FNV-Top_Categories .container .row svg a {
     fill: transparent;
@@ -14438,11 +14449,13 @@ badge.SecondaryColor {
     background-image: url("/images/pages/mission.jpg");
   }
   body[dir=ltr] .FNV-Mission .FNV-Canvas-Top {
-    transform: unset;
+    transform: scaleX(-1);
   }
   body[dir=ltr] .FNV-Mission .container .row h2 {
+    z-index: 4;
     font-size: 22px;
     font-weight: 300;
+    margin-top: -2rem;
     color: #223885;
   }
   body[dir=ltr] .FNV-Mission .container .row .col-md-4.Top1 {
@@ -14474,7 +14487,7 @@ badge.SecondaryColor {
     color: #6A7BBA;
   }
   body[dir=ltr] .FNV-Mission .container .row .col-md-4 .card a {
-    right: 0.5rem;
+    left: 0.5rem;
     bottom: -21px;
     width: 200px;
     padding: 0.5rem 0;
@@ -14493,10 +14506,10 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Mission .container .row .col-md-4 .card a svg {
     margin: 0 0.5rem;
     margin-bottom: 0;
-    transform: rotate(0deg);
+    transform: rotate(180deg);
   }
   body[dir=ltr] .FNV-Mission .FNV-Canvas-Bottom {
-    transform: scale(-1, -1);
+    transform: scaleY(-1);
   }
 }
 @media (min-width: 991.98px) {
@@ -14516,6 +14529,7 @@ badge.SecondaryColor {
   }
   body[dir=ltr] .FNV-Top_Categories .container .row svg {
     width: 100%;
+    height: 250px;
   }
   body[dir=ltr] .FNV-Top_Categories .container .row svg a {
     fill: transparent;
@@ -14542,11 +14556,13 @@ badge.SecondaryColor {
     background-image: url("/images/pages/mission.jpg");
   }
   body[dir=ltr] .FNV-Mission .FNV-Canvas-Top {
-    transform: unset;
+    transform: scaleX(-1);
   }
   body[dir=ltr] .FNV-Mission .container .row h2 {
+    z-index: 4;
     font-size: 28px;
     font-weight: 300;
+    margin-top: -2rem;
     color: #223885;
   }
   body[dir=ltr] .FNV-Mission .container .row .col-md-4.Top1 {
@@ -14578,9 +14594,9 @@ badge.SecondaryColor {
     color: #6A7BBA;
   }
   body[dir=ltr] .FNV-Mission .container .row .col-md-4 .card a {
-    right: 1rem;
+    left: 1rem;
     bottom: -21px;
-    width: 280px;
+    width: 200px;
     padding: 0.5rem 0;
     color: #FFFFFF;
     display: flex;
@@ -14597,10 +14613,10 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Mission .container .row .col-md-4 .card a svg {
     margin: 0 0.5rem;
     margin-bottom: 0;
-    transform: rotate(0deg);
+    transform: rotate(180deg);
   }
   body[dir=ltr] .FNV-Mission .FNV-Canvas-Bottom {
-    transform: scale(-1, -1);
+    transform: scaleY(-1);
   }
 }
 @media (min-width: 1199.98px) {
@@ -14620,6 +14636,7 @@ badge.SecondaryColor {
   }
   body[dir=ltr] .FNV-Top_Categories .container .row svg {
     width: 100%;
+    height: 300px;
   }
   body[dir=ltr] .FNV-Top_Categories .container .row svg a {
     fill: transparent;
@@ -14646,11 +14663,13 @@ badge.SecondaryColor {
     background-image: url("/images/pages/mission.jpg");
   }
   body[dir=ltr] .FNV-Mission .FNV-Canvas-Top {
-    transform: unset;
+    transform: scaleX(-1);
   }
   body[dir=ltr] .FNV-Mission .container .row h2 {
+    z-index: 4;
     font-size: 36px;
     font-weight: 300;
+    margin-top: -3rem;
     color: #223885;
   }
   body[dir=ltr] .FNV-Mission .container .row .col-md-4.Top1 {
@@ -14682,9 +14701,9 @@ badge.SecondaryColor {
     color: #6A7BBA;
   }
   body[dir=ltr] .FNV-Mission .container .row .col-md-4 .card a {
-    right: 2rem;
+    left: 2rem;
     bottom: -21px;
-    width: 280px;
+    width: 200px;
     padding: 0.5rem 0;
     color: #FFFFFF;
     display: flex;
@@ -14701,10 +14720,10 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Mission .container .row .col-md-4 .card a svg {
     margin: 0 0.5rem;
     margin-bottom: 0;
-    transform: rotate(0deg);
+    transform: rotate(180deg);
   }
   body[dir=ltr] .FNV-Mission .FNV-Canvas-Bottom {
-    transform: scale(-1, -1);
+    transform: scaleY(-1);
   }
 }
 @media (min-width: 1400px) {
@@ -14724,6 +14743,7 @@ badge.SecondaryColor {
   }
   body[dir=ltr] .FNV-Top_Categories .container .row svg {
     width: 80%;
+    height: 300px;
   }
   body[dir=ltr] .FNV-Top_Categories .container .row svg a {
     fill: transparent;
@@ -14750,11 +14770,13 @@ badge.SecondaryColor {
     background-image: url("/images/pages/mission.jpg");
   }
   body[dir=ltr] .FNV-Mission .FNV-Canvas-Top {
-    transform: unset;
+    transform: scaleX(-1);
   }
   body[dir=ltr] .FNV-Mission .container .row h2 {
+    z-index: 4;
     font-size: 48px;
     font-weight: 300;
+    margin-top: -3rem;
     color: #223885;
   }
   body[dir=ltr] .FNV-Mission .container .row .col-md-4.Top1 {
@@ -14786,9 +14808,9 @@ badge.SecondaryColor {
     color: #6A7BBA;
   }
   body[dir=ltr] .FNV-Mission .container .row .col-md-4 .card a {
-    right: 3rem;
+    left: 3rem;
     bottom: -21px;
-    width: 350px;
+    width: 200px;
     padding: 1rem 0;
     color: #FFFFFF;
     display: flex;
@@ -14805,10 +14827,10 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Mission .container .row .col-md-4 .card a svg {
     margin: 0 0.5rem;
     margin-bottom: 0;
-    transform: rotate(0deg);
+    transform: rotate(180deg);
   }
   body[dir=ltr] .FNV-Mission .FNV-Canvas-Bottom {
-    transform: scale(-1, -1);
+    transform: scaleY(-1);
   }
 }
 @media (min-width: 1920px) {
@@ -14854,12 +14876,14 @@ badge.SecondaryColor {
     background-image: url("/images/pages/mission.jpg");
   }
   body[dir=ltr] .FNV-Mission .FNV-Canvas-Top {
-    transform: unset;
+    transform: scaleX(-1);
   }
   body[dir=ltr] .FNV-Mission .container .row h2 {
+    z-index: 4;
     font-size: 48px;
     font-weight: 300;
     color: #223885;
+    margin-top: -3rem;
   }
   body[dir=ltr] .FNV-Mission .container .row .col-md-4.Top1 {
     margin-top: 10rem;
@@ -14890,9 +14914,9 @@ badge.SecondaryColor {
     color: #6A7BBA;
   }
   body[dir=ltr] .FNV-Mission .container .row .col-md-4 .card a {
-    right: 3rem;
+    left: 3rem;
     bottom: -21px;
-    width: 350px;
+    width: 200px;
     padding: 1rem 0;
     color: #FFFFFF;
     display: flex;
@@ -14909,10 +14933,10 @@ badge.SecondaryColor {
   body[dir=ltr] .FNV-Mission .container .row .col-md-4 .card a svg {
     margin: 0 0.5rem;
     margin-bottom: 0;
-    transform: rotate(0deg);
+    transform: rotate(180deg);
   }
   body[dir=ltr] .FNV-Mission .FNV-Canvas-Bottom {
-    transform: scale(-1, -1);
+    transform: scaleY(-1);
   }
 }
 
@@ -14929,10 +14953,11 @@ badge.SecondaryColor {
     font-weight: 300;
     color: #223885;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   body[dir=rtl] .FNV-Top_Categories .container .row svg {
     width: 100%;
+    height: 150px;
   }
   body[dir=rtl] .FNV-Top_Categories .container .row svg a {
     fill: transparent;
@@ -15042,6 +15067,7 @@ badge.SecondaryColor {
   }
   body[dir=rtl] .FNV-Top_Categories .container .row svg {
     width: 100%;
+    height: 220px;
   }
   body[dir=rtl] .FNV-Top_Categories .container .row svg a {
     fill: transparent;
@@ -15151,6 +15177,7 @@ badge.SecondaryColor {
   }
   body[dir=rtl] .FNV-Top_Categories .container .row svg {
     width: 100%;
+    height: 250px;
   }
   body[dir=rtl] .FNV-Top_Categories .container .row svg a {
     fill: transparent;
@@ -15257,6 +15284,7 @@ badge.SecondaryColor {
   }
   body[dir=rtl] .FNV-Top_Categories .container .row svg {
     width: 100%;
+    height: 250px;
   }
   body[dir=rtl] .FNV-Top_Categories .container .row svg a {
     fill: transparent;
@@ -15363,6 +15391,7 @@ badge.SecondaryColor {
   }
   body[dir=rtl] .FNV-Top_Categories .container .row svg {
     width: 100%;
+    height: 300px;
   }
   body[dir=rtl] .FNV-Top_Categories .container .row svg a {
     fill: transparent;
@@ -15469,6 +15498,7 @@ badge.SecondaryColor {
   }
   body[dir=rtl] .FNV-Top_Categories .container .row svg {
     width: 80%;
+    height: 300px;
   }
   body[dir=rtl] .FNV-Top_Categories .container .row svg a {
     fill: transparent;
@@ -15989,92 +16019,725 @@ badge.SecondaryColor {
   }
 }
 
-body[dir=ltr] .FNV-HomeWhy {
-  padding: 8rem 0;
-  background-color: #F0F3FB;
+@media (max-width: 575.98px) {
+  body[dir=ltr] .FNV-HomeWhy {
+    padding: 1rem;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container h2 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6 p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row {
+    margin: 0 auto;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card {
+    width: 100%;
+    padding: 0.5rem;
+    flex-direction: row;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-2 {
+    padding: 0;
+    width: 16.66666667%;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-2 svg {
+    width: 100%;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-9 {
+    width: 75%;
+    padding: 1rem;
+    border-width: 0;
+    border-radius: 0;
+    margin-bottom: 0rem;
+    align-items: center;
+    flex-direction: row;
+    background-color: #ffffff;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-9 h3 {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-9 p {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
 }
-body[dir=ltr] .FNV-HomeWhy .container h2 {
-  font-size: 48px;
-  font-weight: 300;
-  color: #223885;
-  margin-bottom: 2rem;
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+  body[dir=ltr] .FNV-HomeWhy {
+    padding: 1rem;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container h2 {
+    font-size: 22px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6 p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) {
+    padding-right: 0rem;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    flex-direction: row;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-2 {
+    padding: 0;
+    width: 16.66666667%;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-2 svg {
+    width: 100%;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-9 {
+    width: 75%;
+    padding: 1rem;
+    border-width: 0;
+    border-radius: 0;
+    margin-bottom: 0rem;
+    align-items: center;
+    flex-direction: row;
+    background-color: #ffffff;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-9 h3 {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-9 p {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
 }
-body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  body[dir=ltr] .FNV-HomeWhy {
+    padding: 2rem 0;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container h2 {
+    font-size: 22px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6 p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) {
+    padding-left: 4rem;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card {
+    padding: 0.5rem;
+    flex-direction: row;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-2 {
+    padding: 0;
+    width: 16.66666667%;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-2 svg {
+    width: 100%;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-9 {
+    width: 75%;
+    padding: 1rem;
+    border-width: 0;
+    border-radius: 0;
+    margin-bottom: 0rem;
+    align-items: center;
+    flex-direction: row;
+    background-color: #ffffff;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-9 h3 {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-9 p {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
 }
-body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6 p {
-  font-size: 20px;
-  font-weight: 400;
-  color: #223885;
+@media (min-width: 991.98px) {
+  body[dir=ltr] .FNV-HomeWhy {
+    padding: 2rem 0;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container h2 {
+    font-size: 36px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6 p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) {
+    padding-left: 4rem;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card {
+    width: 100%;
+    padding: 1rem;
+    border-width: 0;
+    border-radius: 0;
+    margin-bottom: 1rem;
+    align-items: center;
+    flex-direction: row;
+    background-color: #ffffff;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-2 svg {
+    width: 100%;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-9 h3 {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-9 p {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
 }
-body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) {
-  padding-right: 4rem;
+@media (min-width: 1199.98px) {
+  body[dir=ltr] .FNV-HomeWhy {
+    padding: 4rem 0;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container h2 {
+    font-size: 36px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6 p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) {
+    padding-right: 4rem;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card {
+    width: 100%;
+    padding: 1rem;
+    border-width: 0;
+    border-radius: 0;
+    margin-bottom: 1rem;
+    align-items: center;
+    flex-direction: row;
+    background-color: #ffffff;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-2 svg {
+    width: 100%;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-9 h3 {
+    font-size: 22px;
+    font-weight: 300;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-9 p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
 }
-body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card {
-  width: 100%;
-  padding: 1rem;
-  border-width: 0;
-  border-radius: 0;
-  margin-bottom: 1rem;
-  align-items: center;
-  flex-direction: row;
-  background-color: #ffffff;
+@media (min-width: 1400px) {
+  body[dir=ltr] .FNV-HomeWhy {
+    padding: 6rem 0;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container h2 {
+    font-size: 48px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6 p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) {
+    padding-left: 4rem;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card {
+    width: 100%;
+    padding: 1rem;
+    border-width: 0;
+    border-radius: 0;
+    margin-bottom: 1rem;
+    align-items: center;
+    flex-direction: row;
+    background-color: #ffffff;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card h3 {
+    font-size: 24px;
+    font-weight: 300;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
 }
-body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card h3 {
-  font-size: 24px;
-  font-weight: 300;
-}
-body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card p {
-  font-size: 16px;
-  font-weight: 300;
-  margin-bottom: 0;
+@media (min-width: 1920px) {
+  body[dir=ltr] .FNV-HomeWhy {
+    padding: 8rem 0;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container h2 {
+    font-size: 48px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6 p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) {
+    padding-right: 4rem;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card {
+    width: 100%;
+    padding: 1rem;
+    border-width: 0;
+    border-radius: 0;
+    margin-bottom: 1rem;
+    align-items: center;
+    flex-direction: row;
+    background-color: #ffffff;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card h3 {
+    font-size: 24px;
+    font-weight: 300;
+  }
+  body[dir=ltr] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
 }
 
-body[dir=rtl] .FNV-HomeWhy {
-  padding: 8rem 0;
-  background-color: #F0F3FB;
+@media (max-width: 575.98px) {
+  body[dir=rtl] .FNV-HomeWhy {
+    padding: 1rem;
+    background-color: #F0F3FB;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container h2 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6 p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row {
+    margin: 0 auto;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card {
+    width: 100%;
+    padding: 0.5rem;
+    flex-direction: row;
+    margin-bottom: 0.5rem;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-2 {
+    padding: 0;
+    width: 16.66666667%;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-2 svg {
+    width: 100%;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-9 {
+    width: 75%;
+    padding: 1rem;
+    border-width: 0;
+    border-radius: 0;
+    margin-bottom: 0rem;
+    align-items: center;
+    flex-direction: row;
+    background-color: #ffffff;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-9 h3 {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-9 p {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
 }
-body[dir=rtl] .FNV-HomeWhy .container h2 {
-  font-size: 48px;
-  font-weight: 300;
-  color: #223885;
-  margin-bottom: 2rem;
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+  body[dir=rtl] .FNV-HomeWhy {
+    padding: 1rem;
+    background-color: #F0F3FB;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container h2 {
+    font-size: 22px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6 p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) {
+    padding-right: 0rem;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    flex-direction: row;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-2 {
+    padding: 0;
+    width: 16.66666667%;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-2 svg {
+    width: 100%;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-9 {
+    width: 75%;
+    padding: 1rem;
+    border-width: 0;
+    border-radius: 0;
+    margin-bottom: 0rem;
+    align-items: center;
+    flex-direction: row;
+    background-color: #ffffff;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-9 h3 {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-9 p {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
 }
-body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  body[dir=rtl] .FNV-HomeWhy {
+    padding: 2rem 0;
+    background-color: #F0F3FB;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container h2 {
+    font-size: 22px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6 p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) {
+    padding-right: 4rem;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card {
+    padding: 0.5rem;
+    flex-direction: row;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-2 {
+    padding: 0;
+    width: 16.66666667%;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-2 svg {
+    width: 100%;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-9 {
+    width: 75%;
+    padding: 1rem;
+    border-width: 0;
+    border-radius: 0;
+    margin-bottom: 0rem;
+    align-items: center;
+    flex-direction: row;
+    background-color: #ffffff;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-9 h3 {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card .col-9 p {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
 }
-body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6 p {
-  font-size: 20px;
-  font-weight: 400;
-  color: #223885;
+@media (min-width: 991.98px) {
+  body[dir=rtl] .FNV-HomeWhy {
+    padding: 2rem 0;
+    background-color: #F0F3FB;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container h2 {
+    font-size: 36px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6 p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) {
+    padding-right: 4rem;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card {
+    width: 100%;
+    padding: 1rem;
+    border-width: 0;
+    border-radius: 0;
+    margin-bottom: 1rem;
+    align-items: center;
+    flex-direction: row;
+    background-color: #ffffff;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card h3 {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card p {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
 }
-body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) {
-  padding-right: 4rem;
+@media (min-width: 1199.98px) {
+  body[dir=rtl] .FNV-HomeWhy {
+    padding: 4rem 0;
+    background-color: #F0F3FB;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container h2 {
+    font-size: 36px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6 p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) {
+    padding-right: 4rem;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card {
+    width: 100%;
+    padding: 1rem;
+    border-width: 0;
+    border-radius: 0;
+    margin-bottom: 1rem;
+    align-items: center;
+    flex-direction: row;
+    background-color: #ffffff;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card h3 {
+    font-size: 22px;
+    font-weight: 300;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
 }
-body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card {
-  width: 100%;
-  padding: 1rem;
-  border-width: 0;
-  border-radius: 0;
-  margin-bottom: 1rem;
-  align-items: center;
-  flex-direction: row;
-  background-color: #ffffff;
+@media (min-width: 1400px) {
+  body[dir=rtl] .FNV-HomeWhy {
+    padding: 6rem 0;
+    background-color: #F0F3FB;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container h2 {
+    font-size: 48px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6 p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) {
+    padding-right: 4rem;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card {
+    width: 100%;
+    padding: 1rem;
+    border-width: 0;
+    border-radius: 0;
+    margin-bottom: 1rem;
+    align-items: center;
+    flex-direction: row;
+    background-color: #ffffff;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card h3 {
+    font-size: 24px;
+    font-weight: 300;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
 }
-body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card h3 {
-  font-size: 24px;
-  font-weight: 300;
-}
-body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card p {
-  font-size: 16px;
-  font-weight: 300;
-  margin-bottom: 0;
+@media (min-width: 1920px) {
+  body[dir=rtl] .FNV-HomeWhy {
+    padding: 8rem 0;
+    background-color: #F0F3FB;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container h2 {
+    font-size: 48px;
+    font-weight: 300;
+    color: #223885;
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6 p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #223885;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) {
+    padding-right: 4rem;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card {
+    width: 100%;
+    padding: 1rem;
+    border-width: 0;
+    border-radius: 0;
+    margin-bottom: 1rem;
+    align-items: center;
+    flex-direction: row;
+    background-color: #ffffff;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card h3 {
+    font-size: 24px;
+    font-weight: 300;
+  }
+  body[dir=rtl] .FNV-HomeWhy .container .row .col-md-6:nth-child(2) .row.card p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
 }
 
 .FNV-NewCourses {
