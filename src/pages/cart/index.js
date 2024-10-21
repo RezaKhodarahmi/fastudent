@@ -52,12 +52,13 @@ const Index = () => {
   const pageDirection = localStorage.getItem('direction')
 
   // Check if there is any course of type 2 in the cart
-  const hasCourseType2 = cartCourses.some(course => course.course.type == 2) || null
+  const hasCourseType2 = cartCourses.some(course => course.course.type === 2) || null
 
   useEffect(() => {
     if (!cartItems) {
       localStorage.setItem('cartItems', JSON.stringify([]))
       setCartCourses([])
+    } else {
     }
   }, [cartItems])
 
@@ -96,8 +97,9 @@ const Index = () => {
     const now = new Date()
     const discountStart = new Date(cycle.discountDate)
     const discountEnd = new Date(cycle.discountDateEnd)
+    const result = now >= discountStart && now <= discountEnd
 
-    return now >= discountStart && now <= discountEnd
+    return result
   }
 
   const getDiscountedPrice = cycle => {
@@ -132,69 +134,49 @@ const Index = () => {
   }
 
   useEffect(() => {
-    const localCartItems = typeof window !== 'undefined' ? JSON.parse(window.localStorage.getItem('cartItems')) : []
-    dispatch(setCartItems(localCartItems || []))
-    setLocalCartItem(localCartItems)
-
-    const handleStorage = () => {
-      const updatedCartItems = typeof window !== 'undefined' ? JSON.parse(window.localStorage.getItem('cartItems')) : []
-      dispatch(setCartItems(updatedCartItems || []))
-    }
-
-    window.addEventListener('storage', handleStorage)
-
-    return () => window.removeEventListener('storage', handleStorage)
-  }, [cartCourses, cartTotal, dispatch])
-
-  useEffect(() => {
     if (appliedCoupon?.data?.data && loading && appliedCoupon?.data?.data?.code === coupon) {
       const checkCoupon = usedCoupon.filter(coupon => coupon.code !== 'VIP MEMBER' && coupon.code != null)
       const individualUsed = usedCoupon.filter(coupon => coupon.individualUseOnly === true)
       if (appliedCoupon?.data?.data?.individual_use_only === 1 && checkCoupon.length) {
-        window.alert("This coupon can't be used with other coupon")
+        window.alert("This coupon can't be used with other coupons")
+        setLoading(false)
+      } else if (individualUsed.length) {
+        window.alert(`This coupon can't be used with ${individualUsed[0].code}`)
         setLoading(false)
       } else {
-        if (individualUsed.length) {
-          window.alert(`This coupon can't be used with ${individualUsed[0].code}`)
-          setLoading(false)
-        } else {
-          const oldCoupons = [...usedCoupon]
-          if (appliedCoupon?.data?.data?.discount_percentage) {
-            const newCoupon = {
-              code: appliedCoupon?.data?.data?.code,
-              discount: '$' + (cartSubTotal / 100) * appliedCoupon?.data?.data?.discount_percentage,
-              individualUseOnly: appliedCoupon?.data?.data?.individual_use_only
-            }
-            const exists = oldCoupons.some(obj => areCouponApplied(obj, newCoupon))
-
-            if (!exists) {
-              setCouponDiscount(appliedCoupon?.data?.data?.discount_percentage)
-
-              oldCoupons.push(newCoupon)
-
-              setUsedCoupon(oldCoupons)
-              setLoading(false)
-              toast.success('Coupon applied!')
-            }
-          } else if (appliedCoupon?.data?.data?.discount_amount) {
-            const newCoupon = {
-              code: appliedCoupon?.data?.data?.code,
-              discount: '$' + appliedCoupon?.data?.data?.discount_amount,
-              individualUseOnly: appliedCoupon?.data?.data?.individual_use_only
-            }
-            const exists = oldCoupons.some(obj => areCouponApplied(obj, newCoupon))
-            if (!exists) {
-              setCouponDiscountAmount(appliedCoupon?.data?.data?.discount_amount)
-              oldCoupons.push(newCoupon)
-
-              setUsedCoupon(oldCoupons)
-              setLoading(false)
-              toast.success('Coupon applied!')
-            }
-          } else {
-            setCouponDiscountAmount(null)
-            setCouponDiscount(null)
+        const oldCoupons = [...usedCoupon]
+        if (appliedCoupon?.data?.data?.discount_percentage) {
+          const newCoupon = {
+            code: appliedCoupon?.data?.data?.code,
+            discount: '$' + (cartSubTotal / 100) * appliedCoupon?.data?.data?.discount_percentage,
+            individualUseOnly: appliedCoupon?.data?.data?.individual_use_only
           }
+          const exists = oldCoupons.some(obj => areCouponApplied(obj, newCoupon))
+
+          if (!exists) {
+            setCouponDiscount(appliedCoupon?.data?.data?.discount_percentage)
+            oldCoupons.push(newCoupon)
+            setUsedCoupon(oldCoupons)
+            setLoading(false)
+            toast.success('Coupon applied!')
+          }
+        } else if (appliedCoupon?.data?.data?.discount_amount) {
+          const newCoupon = {
+            code: appliedCoupon?.data?.data?.code,
+            discount: '$' + appliedCoupon?.data?.data?.discount_amount,
+            individualUseOnly: appliedCoupon?.data?.data?.individual_use_only
+          }
+          const exists = oldCoupons.some(obj => areCouponApplied(obj, newCoupon))
+          if (!exists) {
+            setCouponDiscountAmount(appliedCoupon?.data?.data?.discount_amount)
+            oldCoupons.push(newCoupon)
+            setUsedCoupon(oldCoupons)
+            setLoading(false)
+            toast.success('Coupon applied!')
+          }
+        } else {
+          setCouponDiscountAmount(null)
+          setCouponDiscount(null)
         }
       }
     }
@@ -212,7 +194,6 @@ const Index = () => {
       if (!exists) {
         setCouponDiscountAmount('5')
         oldCoupons.push(newCoupon)
-
         setUsedCoupon(oldCoupons)
         setLoading(false)
       }
@@ -258,7 +239,7 @@ const Index = () => {
           }
         }
       } else {
-        window.alert('error ')
+        window.alert('Error: Cart total is 0.')
       }
     }
   }
@@ -304,7 +285,7 @@ const Index = () => {
           }
         }
       } else {
-        window.alert('error ')
+        window.alert('Error: Cart total is 0.')
       }
     }
   }
@@ -350,29 +331,16 @@ const Index = () => {
           }
         }
       } else {
-        window.alert('error ')
+        window.alert('Error: Cart total is greater than 0.')
       }
     }
   }
 
-  const appearance = {
-    theme: 'flat'
+  const handleInputChange = e => {
+    const capitalizedValue = e.target.value.toUpperCase()
+    setCoupon(capitalizedValue)
   }
 
-  const options = {
-    clientSecret,
-    appearance
-  }
-
-  useEffect(() => {
-    const appliedCouponData = JSON.parse(localStorage.getItem('appliedCoupon'))
-    if (appliedCouponData) {
-      setCoupon(appliedCouponData.coupon)
-      setCouponDiscount(appliedCouponData.couponDiscount)
-      setCouponDiscountAmount(appliedCouponData.couponDiscountAmount)
-      setUsedCoupon(appliedCouponData.usedCoupon)
-    }
-  }, [])
 
   const applyCouponHandler = e => {
     if (!email) {
@@ -518,7 +486,6 @@ const Index = () => {
       }, 0)
 
       setCartSubTotal(newSubTotal)
-
       const totalDiscount = calculateTotalCouponDiscount()
       setCartTotal(newSubTotal - totalDiscount)
     }
@@ -534,6 +501,7 @@ const Index = () => {
       couponDiscountAmount,
       usedCoupon
     }
+
     localStorage.setItem('appliedCoupon', JSON.stringify(appliedCouponData))
   }, [cartSubTotal, usedCoupon])
 
@@ -549,33 +517,6 @@ const Index = () => {
     }
   }, [courses, user])
 
-  useEffect(() => {
-    if (cartCourses) {
-      const isVipMembershipInCart =
-        Array.isArray(courses?.data?.data) && courses.data.data.some(course => course?.course?.id === 150000)
-
-      const prices = cartCourses?.map(item => {
-        if (!isRenew) {
-          if (user?.data?.isVipValid || isVipMembershipInCart) {
-            return item?.vipPrice || 0
-          } else {
-            return item?.regularPrice || 0
-          }
-        } else {
-          return item?.regularPrice || 0
-        }
-      })
-
-      const sumOfCoursePrice = prices.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
-      setCartTotal(sumOfCoursePrice)
-      setCartSubTotal(sumOfCoursePrice)
-
-      if (isVipMembershipInCart) {
-        setIsVIP(true)
-      }
-    }
-  }, [cartCourses, setCartCourses, setCartTotal, user, isRenew, courses?.data?.data])
-
   const handelRemoveCoupon = code => {
     const oldUsedCoupon = [...usedCoupon]
     const confirmation = window.confirm('Are you sure you want to delete this coupon ?')
@@ -583,11 +524,6 @@ const Index = () => {
       const newCoupon = oldUsedCoupon.filter(coupon => coupon.code !== code)
       setUsedCoupon(newCoupon)
     }
-  }
-
-  const handleInputChange = e => {
-    const capitalizedValue = e.target.value.toUpperCase()
-    setCoupon(capitalizedValue)
   }
 
   return (
