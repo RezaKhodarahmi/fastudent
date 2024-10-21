@@ -65,6 +65,7 @@
   "project-management-5":"Microsoft Project",
   "project-management-6":"Project Coordinator (CAPM Designation)",
 
+  "fanavaran-ads": "Fanavaran Ads",
 
   "architect":"Architect",
   "accounting":"Accounting",
@@ -218,7 +219,7 @@
   "single-course-scycle": "Select a Cycle",
   "single-course-gotocart": "Go to Cart",
   "single-course-enroll": "Enroll Now!",
-  "single-course-watch": "Continue Learning",
+  "single-course-watch": "You might also enjoy these articles",
   "single-course-watch-expire": "days remaining until your course access expired!",
   "single-course-renew": "Renew Now",
   "single-course-demo": "Register for the First Session for Free",
@@ -368,4 +369,6 @@
   "all-show-in-toronto-time": "All times are shown in Toronto time.",
   "appointment":"Appointment",
   "no-options-available": "No options (First Select Date)"
+
+
 }

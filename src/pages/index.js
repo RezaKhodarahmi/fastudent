@@ -139,52 +139,42 @@ const Home = () => {
       {/* New Webinars */}
       {Array.isArray(webinars) && <WebinarsSection webinars={webinars} />}
 
-      {/* Youtube CTA */}
-      <section className='FNV-YoutubeCTA'>
-        <div className='container d-flex justify-content-center align-items-center flex-column'>
-          <svg width='42' height='30' viewBox='0 0 42 30' fill='none' xmlns='http://www.w3.org/2000/svg'>
-            <path
-              d='M41.1346 4.69428C40.6507 2.85867 39.232 1.41168 37.433 0.917412C34.1463 0 20.9995 0 20.9995 0C20.9995 0 7.85323 0 4.56659 0.88263C2.80214 1.37638 1.3489 2.85894 0.864919 4.69428C0 8.04697 0 15 0 15C0 15 0 21.9881 0.864919 25.3057C1.34942 27.1411 2.76753 28.5881 4.56684 29.0823C7.88783 30 21 30 21 30C21 30 34.1463 30 37.433 29.1174C39.2323 28.6234 40.6507 27.1764 41.1352 25.341C41.9998 21.9881 41.9998 15.0353 41.9998 15.0353C41.9998 15.0353 42.0344 8.04697 41.1346 4.69428ZM16.8139 21.4235V8.57655L27.7461 15L16.8139 21.4235Z'
-              fill='white'
-            />
-          </svg>
-
-          <p>
-            {t('we-provide-useful-content')}
-            <br />
-            {t('collected-about-courses')}
-            <br />
-            {t('just-visit-our-channel')}
-          </p>
-
-          <Link
-            href='https://www.youtube.com/channel/UCKbfvGZBXPn2Y3LGb9YDiIA'
-            target='_blank'
-            className='FNV-Btn BtnOutline BtnLarge'
-          >
-            {t('fanavaran-youtube-channel')}
-          </Link>
-        </div>
-      </section>
-
       {/* Blog */}
-      <section className='FNV-Blog'>
-        <h3>{t('blogs-section-title')}</h3>
+      <section className='FNV-NewBlogs'>
         <div className='container'>
-          <div className='row'>
-            <div className='col-12'>
-              {/* Blogs Desktop */}
-              <SingleDeskBlog />
-              {/* Blogs Mobile */}
-              <SingleMobileBlog />
-            </div>
-          </div>
+          <h3>
+            {t('blogs-section-title')}
 
-          <div className='row justify-content-center'>
-            <Link href='/blog' className='FNV-Btn BtnOutline PrimaryColor BtnLarge FNV-SeeMore'>
+            <Link href="/blog/">
               {t('blogs-section-button')}
+
+              <svg
+                width="23"
+                height="22"
+                viewBox="0 0 23 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 2L2 11L11 20"
+                  stroke="#223885"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M13 11H21"
+                  stroke="#223885"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
             </Link>
-          </div>
+          </h3>
+
+          {/* Blogs Desktop */}
+          <SingleDeskBlog />
         </div>
       </section>
 

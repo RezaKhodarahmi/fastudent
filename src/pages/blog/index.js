@@ -8,6 +8,7 @@ import { fetchBlogData } from 'src/store/apps/blog'
 import { useSelector, useDispatch } from 'react-redux'
 import YoutubeSection from 'src/views/youtubeSection'
 import SinglePost from 'src/views/blog/singleBlog'
+import Link from 'next/link';
 
 // Import Translation
 import { useTranslation } from 'react-i18next'
@@ -48,58 +49,59 @@ const BlogPage = () => {
 
   return (
     <>
-      <div className='FNV-BlogPage'>
-        <Helmet>
-          <title>{t('Fanavaran Blogs Archhive')}</title>
-        </Helmet>
+      <section class="FNV-Blogs">
+        <head>
+          <title>Fanavaran Blogs Archive</title>
+        </head>
 
-        <section className='FNV-Header'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-12 FNV-HCard'>
-                <h5 class='text-white my-2'>{t('blog-read-with-us')}</h5>
-                <h1>{t('blog-archive')}</h1>
-              </div>
-            </div>
-          </div>
-        </section>
+        <header>
+          <h2>{t('blog-read-with-us')}</h2>
+          <h1>{t('blog-archive')}</h1>
+        </header>
 
-        <section className='FNV-BlogList'>
-          <div className='container'>
-            <div className='row'>
-              {Array.isArray(posts) ? (
-                (() => {
-                  const filteredPosts = posts.slice((page - 1) * 12, page * 12)
+        <div className="container">
+          <main className="row">
+            <aside className="col-12 col-md-3">
+              <Link href="#">
+                <span>{t('fanavaran-ads')}</span>
+                <span>370 x 424</span>
+              </Link>
+            </aside>
 
-                  return filteredPosts.length ? (
-                    filteredPosts.map(post => (
-                      <>
+            <article className="col-12 col-md-9">
+              <div className='row'>
+                {Array.isArray(posts) ? (
+                  (() => {
+                    const filteredPosts = posts.slice((page - 1) * 12, page * 12);
+                    return filteredPosts.length ? (
+                      filteredPosts.map(post => (
                         <SinglePost post={post} />
-                      </>
-                    ))
-                  ) : (
-                    <Grid p={5} mt={5} mb={5} container justifyContent='center'>
-                      <h3>No Post found matching the selected filters.</h3>
-                    </Grid>
-                  )
-                })()
-              ) : (
-                <h3>Loading...</h3>
-              )}
+                      ))
+                    ) : (
+                      <div className="grid p-5 mt-5 mb-5 container justify-content-center">
+                        <h3>No Post found matching the selected filters.</h3>
+                      </div>
+                    );
+                  })()
+                ) : (
+                  <h3>Loading...</h3>
+                )}
+              </div>
+            </article>
 
-              <Grid container justifyContent='center' marginTop={'3rem'}>
-                <PostsPagination
-                  count={Math.ceil(blogData?.data?.data?.length / 5)}
-                  page={page}
-                  onChange={handleChangePage}
-                  color='primary'
-                  dir='ltr'
-                />
-              </Grid>
+            <div className='col-md-12'>
+              <PostsPagination
+                count={Math.ceil(blogData?.data?.data?.length / 5)}
+                page={page}
+                onChange={handleChangePage}
+                color='primary'
+                dir='ltr'
+              />
             </div>
-          </div>
-        </section>
-      </div>
+          </main>
+        </div>
+      </section>
+
     </>
   )
 }

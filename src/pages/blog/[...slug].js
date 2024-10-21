@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import SingleDeskBlog from 'src/views/blog/singleDeskPost'
 import SingleMobileBlog from 'src/views/blog/singleMobileBlog'
 import Head from 'next/head'
+import Link from 'next/link';
 
 const SinglePost = ({ pageProps }) => {
   const { post } = pageProps
@@ -16,7 +17,7 @@ const SinglePost = ({ pageProps }) => {
 
   return (
     <>
-    
+
       <Head>
         <title>{post.metaTitle || 'Default Title'}</title>
         <meta name='description' content={post.metaDescription || 'Default description'} />
@@ -44,101 +45,83 @@ const SinglePost = ({ pageProps }) => {
         <meta property='article:author' content={post.author || 'Unknown'} />
       </Head>
 
-      <section className='FNV-Single-Post' style={{ direction: 'rtl' }}>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-12 FNV-FeatureImage'>
-              <img src={post.image || '/default-image.jpg'} alt={post.title || 'Default Title'} />
-              <div className='FNV-Meta'>
-                <div className='FNV-Meta-Title'>
-                  <h1>{post.title || 'Default Title'}</h1>
-                </div>
-                <span className='FNV-Author'>
-                  <div className='FNV-Author-Image'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      className='icon icon-tabler icon-tabler-user-pentagon'
-                      viewBox='0 0 24 24'
-                      strokeWidth='1.5'
-                      fill='none'
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                    >
-                      <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-                      <path d='M13.163 2.168l8.021 5.828c.694 .504 .984 1.397 .719 2.212l-3.064 9.43a1.978 1.978 0 0 1 -1.881 1.367h-9.916a1.978 1.978 0 0 1 -1.881 -1.367l-3.064 -9.43a1.978 1.978 0 0 1 .719 -2.212l8.021 -5.828a1.978 1.978 0 0 1 2.326 0z' />
-                      <path d='M12 13a3 3 0 1 0 0 -6a3 3 0 0 0 0 6z' />
-                      <path d='M6 20.703v-.703a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v.707' />
-                    </svg>
-                  </div>
-                  <div className='FNV-Author-Name'>
-                    <span>
-                      Author: <strong>{post.author || 'Unknown'}</strong>
-                    </span>
-                  </div>
-                  <div className='FNV-Author-Image'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      className='icon icon-tabler icon-tabler-calendar-time'
-                      viewBox='0 0 24 24'
-                      strokeWidth='1.5'
-                      fill='none'
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                    >
-                      <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-                      <path d='M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4' />
-                      <path d='M18 18m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0' />
-                      <path d='M15 3v4' />
-                      <path d='M7 3v4' />
-                      <path d='M3 11h16' />
-                      <path d='M18 16.496v1.504l1 1' />
-                    </svg>
-                  </div>
-                  <div className='FNV-Author-Name'>
-                    <span>
-                      Date: <strong>{new Date(post.createdAt).toLocaleDateString() || 'Unknown'}</strong>
-                    </span>
-                  </div>
-                  <div className='FNV-Author-Image'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      className='icon icon-tabler icon-tabler-message-circle-2'
-                      viewBox='0 0 24 24'
-                      strokeWidth='1.5'
-                      fill='none'
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                    >
-                      <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-                      <path d='M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1' />
-                    </svg>
-                  </div>
-                  <div className='FNV-Author-Name'>
-                    <span>
-                      Comments: <strong>{post.commentsCount || '0'}</strong>
-                    </span>
-                  </div>
-                </span>
-              </div>
-            </div>
-            <div className='col-12 FNV-Content'>
-              <div dangerouslySetInnerHTML={{ __html: post.description || '<p>No content available</p>' }} />
-            </div>
-          </div>
-        </div>
-      </section>
+      <article className="FNV-Blog-Single" style={{ direction: 'rtl' }}>
+        <div className="container">
+          <div className="row">
+            <aside className="col-md-3">
+              {post.slug === 'Renewing-Iranian-passport-in-Canada' || post.slug === 'renewing-iranian-passport-in-canada' ? (
+                <Link href="https://mikhak.mfa.gov.ir/" target='_blank'>
+                  <img
+                    src="/images/ads/mikhak.webp"
+                    alt={post.title}
+                  />
+                </Link>
+              ) : (
+                <Link href="#">
+                  <span>{t('fanavaran-ads')}</span>
+                  <span>370 x 424</span>
+                </Link>
+              )}
+            </aside>
 
-      <section className='FNV-Blog-Related'>
-        <h3>{t('continue-reading')}</h3>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-12'>
-              <SingleDeskBlog />
-              <SingleMobileBlog />
-            </div>
+            <main className="col-md-9">
+              <figure>
+                {/* Using Next.js Image component for optimization */}
+                <img
+                  src={post.image || '/default-image.jpg'}
+                  alt={post.title || 'Default Title'}
+                  layout="responsive"
+                />
+
+                <figcaption>{post.title}</figcaption>
+              </figure>
+
+              <header>
+                <h1>{post.title || 'Default Title'}</h1>
+
+                <span><strong>{new Date(post.createdAt).toLocaleDateString() || 'Unknown'}</strong></span>
+              </header>
+
+              <div className='FNV-Blog-Single-Content' dangerouslySetInnerHTML={{ __html: post.description || '<p>No content available</p>' }} />
+
+              <div className="col-md-12">
+                <h3>
+                  {t('continue-reading')}
+
+                  <Link href="/blog/">
+                    {t('blogs-section-button')}
+
+                    <svg
+                      width="23"
+                      height="22"
+                      viewBox="0 0 23 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11 2L2 11L11 20"
+                        stroke="#223885"
+                        strokeWidth="3"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M13 11H21"
+                        stroke="#223885"
+                        strokeWidth="3"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </Link>
+                </h3>
+
+                <SingleDeskBlog />
+              </div>
+            </main>
           </div>
         </div>
-      </section>
+      </article>
     </>
   )
 }
