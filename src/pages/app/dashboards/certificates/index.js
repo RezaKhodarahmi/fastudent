@@ -44,8 +44,19 @@ const Index = () => {
     dispatch(getProfileInfo())
   }, [dispatch])
 
+  // Function to format the date
   function formatDate(isoDateString) {
+    if (!isoDateString) {
+
+      return ''
+    }
+
     const date = new Date(isoDateString)
+
+    if (isNaN(date.getTime())) {
+
+      return ''
+    }
 
     let year = date.getFullYear()
     let month = date.getMonth() + 1 // getMonth() returns 0-11
@@ -62,14 +73,21 @@ const Index = () => {
     if (profileDetails?.data?.courses) {
       const courseCertificates = profileDetails.data.courses
         .filter(course => course.certificate && course.id != 150000)
-        .map(course => ({
-          certificateUrl: course.certificate,
-          courseName: course.title,
-          userName: profileDetails.data.user.firstName,
-          lastName: profileDetails.data.user.lastName,
-          userID: profileDetails.data.user.id + formatDate(course.createdAt),
-          cycle: course.cycles[0]?.name
-        }))
+        .map(course => {
+          const dateString =
+            course.completedAt || course.createdAt || course.updatedAt || new Date().toISOString()
+
+          const userID = profileDetails.data.user.id + (formatDate(dateString) || '')
+
+          return {
+            certificateUrl: course.certificate,
+            courseName: course.title,
+            userName: profileDetails.data.user.firstName,
+            lastName: profileDetails.data.user.lastName,
+            userID: userID,
+            cycle: course.cycles[0]?.name
+          }
+        })
       setCertificates(courseCertificates)
     }
   }, [profileDetails])
@@ -86,7 +104,7 @@ const Index = () => {
         const canvas = canvasRef.current
         const ctx = canvas.getContext('2d')
         const image = new Image()
-        image.crossOrigin = 'anonymous' // This should be set before the src attribute
+        image.crossOrigin = 'anonymous'
 
         image.onload = () => {
           canvas.width = image.width
@@ -99,7 +117,7 @@ const Index = () => {
           ctx.fillText(`${certificate.userName} ${certificate.lastName}`, 820, 430)
 
           // Set font weight, size, and color for the cycle name, and capitalize the first letter
-          ctx.font = '600 25px Arial' // Font weight 900, size 30px, Arial font
+          ctx.font = '600 25px Arial' // Font weight 600, size 25px, Arial font
           ctx.fillStyle = '#003bbf'
           const cycleText = capitalizeFirstLetter(certificate.cycle)
           ctx.fillText(cycleText, 990, 770)
@@ -116,7 +134,7 @@ const Index = () => {
           setLoading(false)
         }
 
-        // image.crossOrigin = 'anonymous'
+        // Set the image source after setting crossOrigin
         image.src = certificate.certificateUrl
       }
     }, 0)

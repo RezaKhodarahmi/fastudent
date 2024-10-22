@@ -8,7 +8,7 @@ import { fetchBlogData } from 'src/store/apps/blog'
 import { useSelector, useDispatch } from 'react-redux'
 import YoutubeSection from 'src/views/youtubeSection'
 import SinglePost from 'src/views/blog/singleBlog'
-import Link from 'next/link';
+import Link from 'next/link'
 
 // Import Translation
 import { useTranslation } from 'react-i18next'
@@ -49,7 +49,7 @@ const BlogPage = () => {
 
   return (
     <>
-      <section class="FNV-Blogs">
+      <section class='FNV-Blogs'>
         <head>
           <title>Fanavaran Blogs Archive</title>
         </head>
@@ -59,29 +59,28 @@ const BlogPage = () => {
           <h1>{t('blog-archive')}</h1>
         </header>
 
-        <div className="container">
-          <main className="row">
-            <aside className="col-12 col-md-3">
-              <Link href="#">
+        <div className='container'>
+          <main className='row'>
+            <aside className='col-12 col-md-3'>
+              <Link href='#'>
                 <span>{t('fanavaran-ads')}</span>
                 <span>370 x 424</span>
               </Link>
             </aside>
 
-            <article className="col-12 col-md-9">
+            <article className='col-12 col-md-9'>
               <div className='row'>
                 {Array.isArray(posts) ? (
                   (() => {
-                    const filteredPosts = posts.slice((page - 1) * 12, page * 12);
+                    const filteredPosts = posts.slice((page - 1) * 12, page * 12)
+
                     return filteredPosts.length ? (
-                      filteredPosts.map(post => (
-                        <SinglePost post={post} />
-                      ))
+                      filteredPosts.map(post => <SinglePost key={post.id} post={post} />)
                     ) : (
-                      <div className="grid p-5 mt-5 mb-5 container justify-content-center">
+                      <div className='grid p-5 mt-5 mb-5 container justify-content-center'>
                         <h3>No Post found matching the selected filters.</h3>
                       </div>
-                    );
+                    )
                   })()
                 ) : (
                   <h3>Loading...</h3>
@@ -101,10 +100,10 @@ const BlogPage = () => {
           </main>
         </div>
       </section>
-
     </>
   )
 }
+
 BlogPage.guestGuard = true
 
 export default BlogPage
