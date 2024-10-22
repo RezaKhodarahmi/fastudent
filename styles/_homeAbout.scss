@@ -1,27 +1,223 @@
 body[dir='ltr'] {
-    .FNV-HomeAbout {
-        padding: 4rem 0;
-        background-color: $WhiteColor;
 
-        .container {
-            .row {
-                .col-md-6 {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    justify-content: center;
+    // X-Small devices (portrait phones, less than 576px)
+    @media (max-width: 575px) {
+        .FNV-HomeAbout {
+            padding: 1rem;
+            background-color: $WhiteColor;
 
-                    h2 {
-                        font-size: 48px;
-                        font-weight: 300;
-                        color: $PrimaryOne;
-                        margin-bottom: 2rem;
+            .container {
+                .row {
+                    .col-md-6 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        h2 {
+                            font-size: 20px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                            margin-bottom: 2rem;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: $PrimaryOne;
+                        }
                     }
+                }
+            }
+        }
+    }
 
-                    p {
-                        font-size: 20px;
-                        font-weight: 400;
-                        color: $PrimaryOne;
+    // `sm` applies to x-small devices (portrait phones, less than 576px)
+    @media (min-width: 575.98px) and (max-width: 767px) {
+        .FNV-HomeAbout {
+            padding: 1rem;
+            background-color: $WhiteColor;
+
+            .container {
+                .row {
+                    .col-md-6 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        h2 {
+                            font-size: 20px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                            margin-bottom: 2rem;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: $PrimaryOne;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // `md` applies to small devices (landscape phones, less than 768px)
+    @media (min-width: 767.98px) and (max-width: 991.98px) {
+        .FNV-HomeAbout {
+            padding: 2rem 0;
+            background-color: $WhiteColor;
+
+            .container {
+                .row {
+                    .col-md-6 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        h2 {
+                            font-size: 22px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                        }
+
+                        p {
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: $PrimaryOne;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // `lg` applies to medium devices (tablets, less than 992px)
+    @media (min-width: 992px) {
+        .FNV-HomeAbout {
+            padding: 2rem 0;
+            background-color: $WhiteColor;
+
+            .container {
+                .row {
+                    .col-md-6 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        h2 {
+                            font-size: 36px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                        }
+
+                        p {
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: $PrimaryOne;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // `xl` applies to large devices (desktops, less than 1200px)
+    @media (min-width: 1199.98px) {
+        .FNV-HomeAbout {
+            padding: 2rem 0;
+            background-color: $WhiteColor;
+
+            .container {
+                .row {
+                    .col-md-6 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        h2 {
+                            font-size: 36px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                        }
+
+                        p {
+                            font-size: 18px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // XX-Large devices (larger desktops, 1400px and up)
+    @media (min-width: 1400px) {
+        .FNV-HomeAbout {
+            padding: 2rem 0;
+            background-color: $WhiteColor;
+
+            .container {
+                .row {
+                    .col-md-6 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        h2 {
+                            font-size: 48px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                        }
+
+                        p {
+                            font-size: 18px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // XXX-Large devices (larger desktops, 1920px and up)
+    @media (min-width: 1920px) {
+        .FNV-HomeAbout {
+            padding: 4rem 0;
+            background-color: $WhiteColor;
+
+            .container {
+                .row {
+                    .col-md-6 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        h2 {
+                            font-size: 48px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                            margin-bottom: 2rem;
+                        }
+
+                        p {
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $PrimaryOne;
+                        }
                     }
                 }
             }
@@ -30,29 +226,225 @@ body[dir='ltr'] {
 }
 
 body[dir='rtl'] {
-    .FNV-HomeAbout {
-        padding: 4rem 0;
-        background-color: $WhiteColor;
 
-        .container {
-            .row {
-                .col-md-6 {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    justify-content: center;
+    // X-Small devices (portrait phones, less than 576px)
+    @media (max-width: 575px) {
+        .FNV-HomeAbout {
+            padding: 1rem;
+            background-color: $WhiteColor;
 
-                    h2 {
-                        font-size: 48px;
-                        font-weight: 300;
-                        color: $PrimaryOne;
-                        margin-bottom: 2rem;
+            .container {
+                .row {
+                    .col-md-6 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        h2 {
+                            font-size: 20px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                            margin-bottom: 2rem;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: $PrimaryOne;
+                        }
                     }
+                }
+            }
+        }
+    }
 
-                    p {
-                        font-size: 20px;
-                        font-weight: 400;
-                        color: $PrimaryOne;
+    // `sm` applies to x-small devices (portrait phones, less than 576px)
+    @media (min-width: 575.98px) and (max-width: 767px) {
+        .FNV-HomeAbout {
+            padding: 1rem;
+            background-color: $WhiteColor;
+
+            .container {
+                .row {
+                    .col-md-6 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        h2 {
+                            font-size: 20px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                            margin-bottom: 2rem;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: $PrimaryOne;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // `md` applies to small devices (landscape phones, less than 768px)
+    @media (min-width: 767.98px) and (max-width: 991.98px) {
+        .FNV-HomeAbout {
+            padding: 2rem 0;
+            background-color: $WhiteColor;
+
+            .container {
+                .row {
+                    .col-md-6 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        h2 {
+                            font-size: 22px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                        }
+
+                        p {
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: $PrimaryOne;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // `lg` applies to medium devices (tablets, less than 992px)
+    @media (min-width: 992px) {
+        .FNV-HomeAbout {
+            padding: 2rem 0;
+            background-color: $WhiteColor;
+
+            .container {
+                .row {
+                    .col-md-6 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        h2 {
+                            font-size: 36px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                        }
+
+                        p {
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: $PrimaryOne;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // `xl` applies to large devices (desktops, less than 1200px)
+    @media (min-width: 1199.98px) {
+        .FNV-HomeAbout {
+            padding: 2rem 0;
+            background-color: $WhiteColor;
+
+            .container {
+                .row {
+                    .col-md-6 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        h2 {
+                            font-size: 36px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                        }
+
+                        p {
+                            font-size: 18px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // XX-Large devices (larger desktops, 1400px and up)
+    @media (min-width: 1400px) {
+        .FNV-HomeAbout {
+            padding: 2rem 0;
+            background-color: $WhiteColor;
+
+            .container {
+                .row {
+                    .col-md-6 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        h2 {
+                            font-size: 48px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                        }
+
+                        p {
+                            font-size: 18px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // XXX-Large devices (larger desktops, 1920px and up)
+    @media (min-width: 1920px) {
+        .FNV-HomeAbout {
+            padding: 4rem 0;
+            background-color: $WhiteColor;
+
+            .container {
+                .row {
+                    .col-md-6 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        h2 {
+                            font-size: 48px;
+                            font-weight: 300;
+                            color: $PrimaryOne;
+                            margin-bottom: 2rem;
+                        }
+
+                        p {
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $PrimaryOne;
+                        }
                     }
                 }
             }

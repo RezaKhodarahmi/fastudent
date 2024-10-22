@@ -59,11 +59,8 @@ a {
 // Products
 @import './products';
 
-// Youtube CTA
-@import './YoutubeCTA';
-
-// LatestBlog
-@import './LatestBlog';
+// Home Blog
+@import './homeBlog';
 
 // Membership
 @import './membership';
@@ -96,15 +93,13 @@ a {
 @import './Single-Page';
 
 // Blogs Single
-@import './Blogs-Single';
+@import './sinlge-blog';
 
 // All Blogs Page
-@import './Blogs';
+@import './blogs';
 
-.FNV-SingleCourse {
-  // All Courses Page
-  @import './single-course';
-}
+// All Courses Page
+@import './single-course';
 
 // Cart
 @import './cart';

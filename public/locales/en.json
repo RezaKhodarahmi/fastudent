@@ -65,6 +65,7 @@
   "project-management-5":"Microsoft Project",
   "project-management-6":"Project Coordinator (CAPM Designation)",
 
+  "fanavaran-ads": "Fanavaran Ads",
 
   "architect":"Architect",
   "accounting":"Accounting",
@@ -218,7 +219,7 @@
   "single-course-scycle": "Select a Cycle",
   "single-course-gotocart": "Go to Cart",
   "single-course-enroll": "Enroll Now!",
-  "single-course-watch": "Continue Learning",
+  "single-course-watch": "You might also enjoy these articles",
   "single-course-watch-expire": "days remaining until your course access expired!",
   "single-course-renew": "Renew Now",
   "single-course-demo": "Register for the First Session for Free",
@@ -280,7 +281,7 @@
   "cart-referal-title": "Have a referral code? Enter it here",
   "complete-your-profile-message":"You must complete your account details to continue!",
   "cart-referal-desc": "What is a referral code? Learn how to earn with Fanavaran",
-  "cart-referal-button": "Apply Code",
+  "cart-referal-button": "Apply Referal Code",
   "cart-head-title": "Your Cart",
   "cart-head-product-title": "Product Title",
   "cart-head-product-price": "Price (CAD)",
@@ -296,6 +297,7 @@
   "cart-total-text": "Total Amount",
   "cart-partial-button": "Pay in Installments",
   "cart-full-payment-button": "Pay in Full",
+  "cart-login-button": "Please log in to your account before proceeding with the purchase.",
 
   "single-webinar-instructor": "Instructor",
   "single-webinar-startingdate": "Starting Date",
@@ -367,4 +369,6 @@
   "all-show-in-toronto-time": "All times are shown in Toronto time.",
   "appointment":"Appointment",
   "no-options-available": "No options (First Select Date)"
+
+
 }

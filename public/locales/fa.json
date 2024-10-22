@@ -65,6 +65,8 @@
   "project-management-5":"Microsoft Project",
   "project-management-6":"Project Coordinator (CAPM Designation)",
 
+  "fanavaran-ads": "تبلیغات فناوران",
+
   "architect":"معماری",
   "accounting":"حسابداری",
   "english":"زبان انگلیسی",
@@ -271,7 +273,7 @@
   "cart-referal-title": "کد معرف دارید؟ اینجا وارد کنید",
   "complete-your-profile-message":"برای ادامه، باید جزئیات حساب خود را تکمیل کنید!",
   "cart-referal-desc": "کد معرف چیست؟ و نحوه کسب درآمد در فناوران",
-  "cart-referal-button": "اعمال کد",
+  "cart-referal-button": "اعمال کد معرف",
   "cart-head-title": "سبد خرید شما",
   "cart-head-product-title": "عنوان",
   "cart-head-product-price": "قیمت (دلار کانادا)",
@@ -287,6 +289,7 @@
   "cart-total-text": "مبلغ قابل پرداخت",
   "cart-partial-button": "پرداخت وجه بصورت اقساط",
   "cart-full-payment-button": "پرداخت وجه بصورت کامل",
+  "cart-login-button": "لطفاً برای ادامه خرید ابتدا وارد حساب کاربری خود شوید.",
 
   "single-webinar-instructor": "سخنران",
   "single-webinar-startingdate": "تاریخ برگزاری",
@@ -333,7 +336,7 @@
   "collected-about-courses":"در کانال یوتیوب به اشتراک بگذارد. برای دسترسی به داده‌های ارزشمند دوره‌ها، دزیگنیشن‌ها و لایسنس‌های کانادایی، کانال ما را در یوتیوب دنبال کنید.",
   "we-provide-useful-content":"تیم فناوران برای کمک به جامعه‌ ایرانی کانادا، تلاش کرده است اطلاعات و داده‌های ارزشمند جمع‌آوری‌شده را در قالب محتوای ویدئویی منتشر کرده و",
 
-  "continue-reading":"به خواندن ادامه دهید",
+  "continue-reading":"شاید از این مقالات هم خوشتان بیاید",
   "contact-us":"تماس با ما",
   "about-us":"درباره ما",
   "courses":"دوره ها",

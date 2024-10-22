@@ -1,11 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react';
 
 // ** Hook Imports
 import Link from 'next/link'
-
-// ** Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 
 // ** Import translation
 import { useTranslation } from 'react-i18next'
@@ -36,44 +32,61 @@ const SingleDeskPost = () => {
     }
   }, [blogData])
 
+  useEffect(() => {
+    const lazyLoadImages = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          img.src = img.dataset.src; // Load the image
+          observer.unobserve(img); // Stop observing once the image is loaded
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(lazyLoadImages, {
+      rootMargin: '0px 0px 200px 0px', // Adjust margin to trigger earlier if desired
+      threshold: 0.1 // Trigger when at least 10% of the image is visible
+    });
+
+    const images = document.querySelectorAll('img[data-src]');
+    images.forEach(img => observer.observe(img));
+
+    return () => {
+      if (observer && images) {
+        images.forEach(img => observer.unobserve(img));
+      }
+    };
+  }, [posts]);
+
   return (
     <>
-      <Swiper
-        slidesPerView={3}
-        spaceBetween={10}
-        centeredSlides={false}
-        loop={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false
-        }}
-        navigation={false}
-        modules={[Autoplay, Pagination]}
-        className='d-none d-sm-none d-md-block'
-      >
+      <div className='row'>
         {Array.isArray(posts) &&
-          posts?.map(post => (
-            <SwiperSlide key={post.id}>
-              <div className='card'>
-                <img src={post.image} className='card-img-top' alt='...' />
-                <div className='card-body'>
-                  <h4 className='card-title'>{post.title}</h4>
+          posts.slice(0, 3).map((post, index) => (
+            <article className="col-12 col-md-4" key={index}>
+              <Link className="FNV-Blog" href={`/blog/${post.slug}`}>
+                <figure>
+                  <img
+                    src="/placeholder-image.jpg" // Use a placeholder image initially
+                    alt={post.title}
+                    data-src={post.image} // The actual image URL for lazy loading
+                  />
+                  <figcaption>{post.title}</figcaption>
+                </figure>
 
-                  <span>
-                    {/* SVG and DateFormat component here */}
-                    <i data-feather="calendar"></i> <DateFormat date={post.createdAt} />
-                  </span>
+                <header>
+                  <h3>{post.title}</h3>
+                </header>
 
-                  <Link href={`/blog/${post.slug}`} className='FNV-Btn BtnPrimary BtnLarge'>
-                    {t('blogs-section-readmore')}
-                  </Link>
-                </div>
-              </div>
-            </SwiperSlide>
+                <footer>
+                  <DateFormat date={post.createdAt} />
+                </footer>
+              </Link>
+            </article>
           ))}
-      </Swiper>
+      </div>
     </>
-  )
+  );
 }
 
-export default SingleDeskPost
+export default SingleDeskPost;

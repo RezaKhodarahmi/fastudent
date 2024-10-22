@@ -3,6 +3,7 @@
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575px) {
   .FNV-TopBanner {
+    direction: rtl;
     background-color: #f6fcff;
 
     .container-fluid {
@@ -14,7 +15,7 @@
         .col-12 {
           p {
             display: flex;
-            font-size: 12px;
+            font-size: 10px;
             font-weight: 500;
             margin-bottom: 0;
             text-align: center;
@@ -46,12 +47,9 @@
       .row {
         .col-6 {
           padding: 0;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
 
           a {
-            font-size: 12px;
+            font-size: 16px;
             padding: 0 1rem;
             font-weight: 500;
             position: relative;
@@ -67,16 +65,24 @@
             }
           }
 
-          &:not(:last-child) {
-            border-right: 1px solid $PrimaryTextOne;
-          }
-
           &:first-child {
-            margin-bottom: .5rem;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 0rem;
+            justify-content: space-evenly;
           }
 
           &:nth-child(2) {
-            margin-bottom: .5rem;
+            display: none;
+          }
+
+          &:nth-child(3) {
+            display: none;
+          }
+
+          &:nth-child(4) {
+            display: none;
           }
         }
       }
@@ -189,6 +195,8 @@
 // `sm` applies to x-small devices (portrait phones, less than 576px)
 @media (min-width: 575.98px) and (max-width: 767px) {
   .FNV-TopBanner {
+    direction: rtl;
+    padding: 0 1rem;
     background-color: #f6fcff;
 
     .container-fluid {
@@ -200,7 +208,7 @@
         .col-12 {
           p {
             display: flex;
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 500;
             margin-bottom: 0;
             text-align: center;
@@ -208,7 +216,7 @@
             justify-content: center;
 
             svg {
-              width: 120px;
+              width: 80px;
               margin-left: 1rem;
             }
 
@@ -232,12 +240,9 @@
       .row {
         .col-6 {
           padding: 0;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
 
           a {
-            font-size: 12px;
+            font-size: 16px;
             padding: 0 1rem;
             font-weight: 500;
             position: relative;
@@ -253,16 +258,24 @@
             }
           }
 
-          &:not(:last-child) {
-            border-right: 1px solid $PrimaryTextOne;
-          }
-
           &:first-child {
-            margin-bottom: .5rem;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 0rem;
+            justify-content: space-evenly;
           }
 
           &:nth-child(2) {
-            margin-bottom: .5rem;
+            display: none;
+          }
+
+          &:nth-child(3) {
+            display: none;
+          }
+
+          &:nth-child(4) {
+            display: none;
           }
         }
       }
@@ -375,6 +388,7 @@
 // `md` applies to small devices (landscape phones, less than 768px)
 @media (min-width: 767.98px) and (max-width: 991.98px) {
   .FNV-TopBanner {
+    direction: rtl;
     background-color: #f6fcff;
 
     .container-fluid {
@@ -561,6 +575,7 @@
 // `lg` applies to medium devices (tablets, less than 992px)
 @media (min-width: 992px) {
   .FNV-TopBanner {
+    direction: rtl;
     background-color: #f6fcff;
 
     .container-fluid {
@@ -733,6 +748,7 @@
 // `xl` applies to large devices (desktops, less than 1200px)
 @media (min-width: 1199.98px) {
   .FNV-TopBanner {
+    direction: rtl;
     background-color: #f6fcff;
 
     .container-fluid {
@@ -908,6 +924,7 @@
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
   .FNV-TopBanner {
+    direction: rtl;
     background-color: #f6fcff;
 
     .container-fluid {
@@ -1086,6 +1103,7 @@
 // XXX-Large devices (larger desktops, 1920px and up)
 @media (min-width: 1920px) {
   .FNV-TopBanner {
+    direction: rtl;
     background-color: #f6fcff;
 
     .container-fluid {

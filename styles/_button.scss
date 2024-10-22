@@ -75,7 +75,37 @@
     background-color: $PrimaryTwo;
 
     &:hover {
-      color: $PrimaryOne;
+      color: $PrimaryTwo;
+      background-color: $White;
+    }
+  }
+
+  &.ThirdColor {
+    color: $White;
+    background-color: $PrimaryFour;
+
+    &:hover {
+      color: $PrimaryFour;
+      background-color: $White;
+    }
+  }
+
+  &.SuccessColor {
+    color: $White;
+    background-color: $CourseUnlocked;
+
+    &:hover {
+      color: $CourseUnlocked;
+      background-color: $White;
+    }
+  }
+
+  &.DangerColor {
+    color: $White;
+    background-color: $CourseLocked;
+
+    &:hover {
+      color: $CourseLocked;
       background-color: $White;
     }
   }
@@ -149,6 +179,12 @@
     &.BtnLarge {
       font-size: 18px;
       padding: 7px 14px;
+    }
+
+    &.BtnXLarge {
+      font-size: 14px;
+      margin-bottom: 4rem;
+      padding: 1rem;
     }
   }
 }
