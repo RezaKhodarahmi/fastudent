@@ -9673,6 +9673,664 @@ badge.SecondaryColor {
   }
 }
 @media (max-width: 575.98px) {
+  .FNV-Login {
+    background-color: #ffffff;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 {
+    padding: 1rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 h1 {
+    margin: 2rem 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form label {
+    font-size: 18px;
+    font-weight: 400;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form input {
+    z-index: 1;
+    font-size: 18px;
+    color: #223885;
+    padding: 1rem 1.5rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form input, .FNV-Login .container-fluid .row .col-lg-4 form fieldset {
+    border-width: 0;
+    border-radius: 10px;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form .FNV-Login_PassEye {
+    z-index: 1;
+    padding: 1rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form .FNV-Login_PassEye svg {
+    stroke: #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form fieldset {
+    background-color: #F0F3FB;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form fieldset, .FNV-Login .container-fluid .row .col-lg-4 form div {
+    padding: 0;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex {
+    padding: 0.5rem 0;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex .FNV-Login_Forgot {
+    font-size: 14px;
+    padding: 0.5rem 0;
+    font-weight: 400;
+    line-height: 30px;
+    color: #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex .FNV-Login_Remember {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex .FNV-Login_Remember span {
+    padding: 0;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex .FNV-Login_Remember input {
+    display: none;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex a {
+    line-height: 30px;
+    color: #223885;
+    text-decoration: underline !important;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .FNV-Login_Submit {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 1rem;
+    color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background-color: #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .FNV-Login_Google {
+    width: 100%;
+    font-size: 20px;
+    padding: 1rem;
+    text-align: center;
+    color: #223885;
+    border-radius: 10px;
+    border: 2px solid #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .FNV-Login_Google svg {
+    margin: 0 1rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-8 {
+    background-size: cover;
+    background-image: url("/images/pages/login/login.jpg");
+  }
+}
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+  .FNV-Login {
+    background-color: #ffffff;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 {
+    padding: 2rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 h1 {
+    margin: 2rem 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form label {
+    font-size: 18px;
+    font-weight: 400;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form input {
+    z-index: 1;
+    font-size: 18px;
+    color: #223885;
+    padding: 1rem 1.5rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form input, .FNV-Login .container-fluid .row .col-lg-4 form fieldset {
+    border-width: 0;
+    border-radius: 10px;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form .FNV-Login_PassEye {
+    z-index: 1;
+    padding: 1rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form .FNV-Login_PassEye svg {
+    stroke: #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form fieldset {
+    background-color: #F0F3FB;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form fieldset, .FNV-Login .container-fluid .row .col-lg-4 form div {
+    padding: 0;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex {
+    padding: 0.5rem 0;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex .FNV-Login_Forgot {
+    font-size: 14px;
+    padding: 0.5rem 0;
+    font-weight: 400;
+    line-height: 30px;
+    color: #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex .FNV-Login_Remember {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex .FNV-Login_Remember span {
+    padding: 0;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex .FNV-Login_Remember input {
+    display: none;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex a {
+    line-height: 30px;
+    color: #223885;
+    text-decoration: underline !important;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .FNV-Login_Submit {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 1rem;
+    color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background-color: #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .FNV-Login_Google {
+    width: 100%;
+    font-size: 20px;
+    padding: 1rem;
+    text-align: center;
+    color: #223885;
+    border-radius: 10px;
+    border: 2px solid #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .FNV-Login_Google svg {
+    margin: 0 1rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-8 {
+    background-size: cover;
+    background-image: url("/images/pages/login/login.jpg");
+  }
+}
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  .FNV-Login {
+    background-color: #ffffff;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 {
+    padding: 2rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 h1 {
+    margin: 2rem 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form label {
+    font-size: 18px;
+    font-weight: 400;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form input {
+    z-index: 1;
+    font-size: 18px;
+    color: #223885;
+    padding: 1rem 1.5rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form input, .FNV-Login .container-fluid .row .col-lg-4 form fieldset {
+    border-width: 0;
+    border-radius: 10px;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form .FNV-Login_PassEye {
+    z-index: 1;
+    padding: 1rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form .FNV-Login_PassEye svg {
+    stroke: #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form fieldset {
+    background-color: #F0F3FB;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form fieldset, .FNV-Login .container-fluid .row .col-lg-4 form div {
+    padding: 0;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex {
+    padding: 0.5rem 0;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex .FNV-Login_Forgot {
+    font-size: 14px;
+    padding: 0.5rem 0;
+    font-weight: 400;
+    line-height: 30px;
+    color: #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex .FNV-Login_Remember {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex .FNV-Login_Remember span {
+    padding: 0;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex .FNV-Login_Remember input {
+    display: none;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex a {
+    line-height: 30px;
+    color: #223885;
+    text-decoration: underline !important;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .FNV-Login_Submit {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 1rem;
+    color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background-color: #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .FNV-Login_Google {
+    width: 100%;
+    font-size: 20px;
+    padding: 1rem;
+    text-align: center;
+    color: #223885;
+    border-radius: 10px;
+    border: 2px solid #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .FNV-Login_Google svg {
+    margin: 0 1rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-8 {
+    background-size: cover;
+    background-image: url("/images/pages/login/login.jpg");
+  }
+}
+@media (min-width: 991.98px) {
+  .FNV-Login {
+    background-color: #ffffff;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 {
+    padding: 2rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 h1 {
+    margin: 2rem 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form label {
+    font-size: 18px;
+    font-weight: 400;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form input {
+    z-index: 1;
+    font-size: 18px;
+    color: #223885;
+    padding: 1rem 1.5rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form input, .FNV-Login .container-fluid .row .col-lg-4 form fieldset {
+    border-width: 0;
+    border-radius: 10px;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form .FNV-Login_PassEye {
+    z-index: 1;
+    padding: 1rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form .FNV-Login_PassEye svg {
+    stroke: #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form fieldset {
+    background-color: #F0F3FB;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form fieldset, .FNV-Login .container-fluid .row .col-lg-4 form div {
+    padding: 0;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex {
+    padding: 0.5rem 0;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex .FNV-Login_Forgot {
+    font-size: 14px;
+    padding: 0.5rem 0;
+    font-weight: 400;
+    line-height: 30px;
+    color: #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex .FNV-Login_Remember {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex .FNV-Login_Remember span {
+    padding: 0;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex .FNV-Login_Remember input {
+    display: none;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex a {
+    line-height: 30px;
+    color: #223885;
+    text-decoration: underline !important;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .FNV-Login_Submit {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 1rem;
+    color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background-color: #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .FNV-Login_Google {
+    width: 100%;
+    font-size: 20px;
+    padding: 1rem;
+    text-align: center;
+    color: #223885;
+    border-radius: 10px;
+    border: 2px solid #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .FNV-Login_Google svg {
+    margin: 0 1rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-8 {
+    background-size: cover;
+    background-image: url("/images/pages/login/login.jpg");
+  }
+}
+@media (min-width: 1199.98px) {
+  .FNV-Login {
+    background-color: #ffffff;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 {
+    padding: 5rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 h1 {
+    margin: 2rem 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form label {
+    font-size: 20px;
+    font-weight: 400;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form input {
+    z-index: 1;
+    font-size: 20px;
+    color: #223885;
+    padding: 1rem 1.5rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form input, .FNV-Login .container-fluid .row .col-lg-4 form fieldset {
+    border-width: 0;
+    border-radius: 10px;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form .FNV-Login_PassEye {
+    z-index: 1;
+    padding: 1rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form .FNV-Login_PassEye svg {
+    stroke: #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form fieldset {
+    background-color: #F0F3FB;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form fieldset, .FNV-Login .container-fluid .row .col-lg-4 form div {
+    padding: 0;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex {
+    padding: 0.5rem 0;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex .FNV-Login_Forgot {
+    font-size: 14px;
+    padding: 0.5rem 0;
+    font-weight: 400;
+    line-height: 30px;
+    color: #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex .FNV-Login_Remember {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex .FNV-Login_Remember span {
+    padding: 0;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex .FNV-Login_Remember input {
+    display: none;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex a {
+    line-height: 30px;
+    color: #223885;
+    text-decoration: underline !important;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .FNV-Login_Submit {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 1rem 2rem;
+    color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background-color: #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .FNV-Login_Google {
+    width: 100%;
+    font-size: 20px;
+    padding: 1rem 2rem;
+    text-align: center;
+    color: #223885;
+    border-radius: 10px;
+    border: 2px solid #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .FNV-Login_Google svg {
+    margin: 0 1rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-8 {
+    background-size: cover;
+    background-image: url("/images/pages/login/login.jpg");
+  }
+}
+@media (min-width: 1400px) {
+  .FNV-Login {
+    background-color: #ffffff;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 {
+    padding: 5rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 h1 {
+    margin: 2rem 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form label {
+    font-size: 20px;
+    font-weight: 400;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form input {
+    z-index: 1;
+    font-size: 20px;
+    color: #223885;
+    padding: 1rem 1.5rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form input, .FNV-Login .container-fluid .row .col-lg-4 form fieldset {
+    border-width: 0;
+    border-radius: 10px;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form .FNV-Login_PassEye {
+    z-index: 1;
+    padding: 1rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form .FNV-Login_PassEye svg {
+    stroke: #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form fieldset {
+    background-color: #F0F3FB;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form fieldset, .FNV-Login .container-fluid .row .col-lg-4 form div {
+    padding: 0;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex {
+    padding: 0.5rem 0;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex .FNV-Login_Forgot {
+    font-size: 14px;
+    padding: 0.5rem 0;
+    font-weight: 400;
+    line-height: 30px;
+    color: #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex .FNV-Login_Remember {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex .FNV-Login_Remember span {
+    padding: 0;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex .FNV-Login_Remember input {
+    display: none;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex a {
+    line-height: 30px;
+    color: #223885;
+    text-decoration: underline !important;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .FNV-Login_Submit {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 1rem 2rem;
+    color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background-color: #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .FNV-Login_Google {
+    width: 100%;
+    font-size: 20px;
+    padding: 1rem 2rem;
+    text-align: center;
+    color: #223885;
+    border-radius: 10px;
+    border: 2px solid #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .FNV-Login_Google svg {
+    margin: 0 1rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-8 {
+    background-size: cover;
+    background-image: url("/images/pages/login/login.jpg");
+  }
+}
+@media (min-width: 1920px) {
+  .FNV-Login {
+    background-color: #ffffff;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 {
+    padding: 5rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 h1 {
+    margin: 2rem 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form label {
+    font-size: 20px;
+    font-weight: 400;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form input {
+    z-index: 1;
+    font-size: 20px;
+    color: #223885;
+    padding: 1rem 1.5rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form input, .FNV-Login .container-fluid .row .col-lg-4 form fieldset {
+    border-width: 0;
+    border-radius: 10px;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form .FNV-Login_PassEye {
+    z-index: 1;
+    padding: 1rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form .FNV-Login_PassEye svg {
+    stroke: #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form fieldset {
+    background-color: #F0F3FB;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 form fieldset, .FNV-Login .container-fluid .row .col-lg-4 form div {
+    padding: 0;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex {
+    padding: 0.5rem 0;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex .FNV-Login_Forgot {
+    font-size: 14px;
+    padding: 0.5rem 0;
+    font-weight: 400;
+    line-height: 30px;
+    color: #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex .FNV-Login_Remember {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex .FNV-Login_Remember span {
+    padding: 0;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex .FNV-Login_Remember input {
+    display: none;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .d-flex a {
+    line-height: 30px;
+    color: #223885;
+    text-decoration: underline !important;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .FNV-Login_Submit {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 1rem 2rem;
+    color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background-color: #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .FNV-Login_Google {
+    width: 100%;
+    font-size: 20px;
+    padding: 1rem 2rem;
+    text-align: center;
+    color: #223885;
+    border-radius: 10px;
+    border: 2px solid #223885;
+  }
+  .FNV-Login .container-fluid .row .col-lg-4 .FNV-Login_Google svg {
+    margin: 0 1rem;
+  }
+  .FNV-Login .container-fluid .row .col-lg-8 {
+    background-size: cover;
+    background-image: url("/images/pages/login/login.jpg");
+  }
+}
+@media (max-width: 575.98px) {
   body[dir=ltr] .FNV-Slider {
     height: 600px;
     position: relative;
@@ -28412,6 +29070,639 @@ body[dir=ltr] .FNV-TelegramBG .container .row .col-md-4 svg {
     color: #A7AFCE;
   }
 }
+@media (max-width: 575px) {
+  body[dir=ltr] .FNV-Blogs {
+    background-color: #ffffff;
+  }
+  body[dir=ltr] .FNV-Blogs header {
+    padding: 1rem;
+  }
+  body[dir=ltr] .FNV-Blogs header h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #223885;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Blogs header h1 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-3 {
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-3 a {
+    top: 0.5rem;
+    width: 100%;
+    height: 350px;
+    padding: 1rem;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    position: -webkit-sticky;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-3 a span {
+    direction: ltr;
+    margin: 0.5rem 0;
+    font-size: 14px;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .col-md-4 {
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .col-md-4 .FNV-Blog {
+    padding: 1rem;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .col-md-4 .FNV-Blog figure {
+    width: 100%;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .col-md-4 .FNV-Blog figure img {
+    width: 100%;
+    max-width: 520px;
+    border-radius: 10px;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .col-md-4 .FNV-Blog figure figcaption {
+    display: none;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .col-md-4 .FNV-Blog header {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .col-md-4 .FNV-Blog header h3 {
+    margin: 1rem 0;
+    font-size: 18px;
+    min-height: 70px;
+    line-height: 36px;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .col-md-4 .FNV-Blog footer {
+    display: block;
+    font-size: 10px;
+    text-align: left;
+    color: #A7AFCE;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-12 {
+    display: flex;
+    padding: 2rem 0;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-12 nav ul li button {
+    font-size: 16px;
+    color: #223885;
+    border-radius: 5px;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-12 nav ul li button[aria-current=true] {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+}
+@media (min-width: 575.98px) and (max-width: 767px) {
+  body[dir=ltr] .FNV-Blogs {
+    background-color: #ffffff;
+  }
+  body[dir=ltr] .FNV-Blogs header {
+    padding: 1rem;
+  }
+  body[dir=ltr] .FNV-Blogs header h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #223885;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Blogs header h1 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-3 a {
+    top: 0.5rem;
+    width: 100%;
+    height: 424px;
+    padding: 1rem;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    position: -webkit-sticky;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-3 a span {
+    direction: ltr;
+    margin: 0.5rem 0;
+    font-size: 20px;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .col-md-4 {
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .col-md-4 .FNV-Blog {
+    padding: 1rem;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .col-md-4 .FNV-Blog figure {
+    width: 100%;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .col-md-4 .FNV-Blog figure img {
+    width: 100%;
+    max-width: 520px;
+    border-radius: 10px;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .col-md-4 .FNV-Blog figure figcaption {
+    display: none;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .col-md-4 .FNV-Blog header {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .col-md-4 .FNV-Blog header h3 {
+    margin: 1rem 0;
+    font-size: 18px;
+    min-height: 70px;
+    line-height: 36px;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .col-md-4 .FNV-Blog footer {
+    display: block;
+    font-size: 10px;
+    text-align: left;
+    color: #A7AFCE;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-12 {
+    display: flex;
+    padding: 2rem 0;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-12 nav ul li button {
+    font-size: 16px;
+    color: #223885;
+    border-radius: 5px;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-12 nav ul li button[aria-current=true] {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+}
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  body[dir=ltr] .FNV-Blogs {
+    background-color: #ffffff;
+  }
+  body[dir=ltr] .FNV-Blogs header {
+    padding: 2rem 0;
+  }
+  body[dir=ltr] .FNV-Blogs header h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #223885;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Blogs header h1 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-3 a {
+    top: 0.5rem;
+    width: 100%;
+    height: 200px;
+    padding: 1rem;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    position: -webkit-sticky;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-3 a span {
+    direction: ltr;
+    margin: 0.5rem 0;
+    font-size: 14px;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog {
+    padding: 0.5rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog figure {
+    width: 100%;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog figure img {
+    width: 100%;
+    max-width: 365px;
+    border-radius: 10px;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog figure figcaption {
+    display: none;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog header {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog header h3 {
+    margin: 1rem 0;
+    font-size: 12px;
+    min-height: 70px;
+    line-height: 24px;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog footer {
+    display: block;
+    font-size: 10px;
+    text-align: left;
+    color: #A7AFCE;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-12 {
+    display: flex;
+    padding: 2rem 0;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-12 nav ul li button {
+    font-size: 16px;
+    color: #223885;
+    border-radius: 5px;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-12 nav ul li button[aria-current=true] {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+}
+@media (min-width: 992px) {
+  body[dir=ltr] .FNV-Blogs {
+    background-color: #ffffff;
+  }
+  body[dir=ltr] .FNV-Blogs header {
+    padding: 2rem 0;
+  }
+  body[dir=ltr] .FNV-Blogs header h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #223885;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Blogs header h1 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-3 a {
+    top: 0.5rem;
+    width: 100%;
+    height: 250px;
+    padding: 1rem;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    position: -webkit-sticky;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-3 a span {
+    direction: ltr;
+    margin: 0.5rem 0;
+    font-size: 20px;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog {
+    padding: 0.5rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog figure {
+    width: 100%;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog figure img {
+    width: 100%;
+    max-width: 365px;
+    border-radius: 10px;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog figure figcaption {
+    display: none;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog header {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog header h3 {
+    margin: 1rem 0;
+    font-size: 12px;
+    min-height: 70px;
+    line-height: 24px;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog footer {
+    display: block;
+    font-size: 12px;
+    text-align: left;
+    color: #A7AFCE;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-12 {
+    display: flex;
+    padding: 2rem 0;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-12 nav ul li button {
+    font-size: 16px;
+    color: #223885;
+    border-radius: 5px;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-12 nav ul li button[aria-current=true] {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+}
+@media (min-width: 1199.98px) {
+  body[dir=ltr] .FNV-Blogs {
+    background-color: #ffffff;
+  }
+  body[dir=ltr] .FNV-Blogs header {
+    padding: 2rem 0;
+  }
+  body[dir=ltr] .FNV-Blogs header h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #223885;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Blogs header h1 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-3 a {
+    top: 0.5rem;
+    width: 100%;
+    height: 324px;
+    padding: 1rem;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    position: -webkit-sticky;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-3 a span {
+    direction: ltr;
+    margin: 0.5rem 0;
+    font-size: 20px;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog {
+    padding: 1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog figure {
+    width: 100%;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog figure img {
+    width: 100%;
+    max-width: 365px;
+    border-radius: 10px;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog figure figcaption {
+    display: none;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog header {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog header h3 {
+    margin: 1rem 0;
+    font-size: 14px;
+    min-height: 70px;
+    line-height: 30px;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog footer {
+    display: block;
+    font-size: 12px;
+    text-align: left;
+    color: #A7AFCE;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-12 {
+    display: flex;
+    padding: 2rem 0;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-12 nav ul li button {
+    font-size: 16px;
+    color: #223885;
+    border-radius: 5px;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-12 nav ul li button[aria-current=true] {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+}
+@media (min-width: 1400px) {
+  body[dir=ltr] .FNV-Blogs {
+    background-color: #ffffff;
+  }
+  body[dir=ltr] .FNV-Blogs header {
+    padding: 5rem 0;
+  }
+  body[dir=ltr] .FNV-Blogs header h2 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #223885;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Blogs header h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-3 a {
+    top: 0.5rem;
+    width: 100%;
+    height: 424px;
+    padding: 1rem;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    position: -webkit-sticky;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-3 a span {
+    direction: ltr;
+    margin: 0.5rem 0;
+    font-size: 20px;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog {
+    padding: 1rem;
+    display: block;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog figure {
+    width: 100%;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog figure img {
+    width: 100%;
+    max-width: 365px;
+    border-radius: 10px;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog figure figcaption {
+    display: none;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog header {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog header h3 {
+    margin: 1rem 0;
+    font-size: 20px;
+    min-height: 80px;
+    line-height: 30px;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog footer {
+    display: block;
+    font-size: 14px;
+    text-align: left;
+    color: #A7AFCE;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-12 {
+    display: flex;
+    padding: 2rem 0;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-12 nav ul li button {
+    font-size: 16px;
+    color: #223885;
+    border-radius: 5px;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-12 nav ul li button[aria-current=true] {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+}
+@media (min-width: 1920px) {
+  body[dir=ltr] .FNV-Blogs {
+    background-color: #ffffff;
+  }
+  body[dir=ltr] .FNV-Blogs header {
+    padding: 5rem 0;
+  }
+  body[dir=ltr] .FNV-Blogs header h2 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #223885;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  body[dir=ltr] .FNV-Blogs header h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #223885;
+    text-align: center;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-3 a {
+    top: 0.5rem;
+    width: 100%;
+    height: 424px;
+    padding: 1rem;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    position: -webkit-sticky;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-3 a span {
+    direction: ltr;
+    margin: 0.5rem 0;
+    font-size: 20px;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog {
+    padding: 1rem;
+    display: block;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    background-color: #F0F3FB;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog figure {
+    width: 100%;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog figure img {
+    width: 100%;
+    max-width: 365px;
+    border-radius: 10px;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog figure figcaption {
+    display: none;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog header {
+    padding: 0;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog header h3 {
+    margin: 1rem 0;
+    font-size: 20px;
+    min-height: 80px;
+    line-height: 30px;
+    color: #223885;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-9 .FNV-Blog footer {
+    display: block;
+    font-size: 14px;
+    text-align: left;
+    color: #A7AFCE;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-12 {
+    display: flex;
+    padding: 2rem 0;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-12 nav ul li button {
+    font-size: 16px;
+    color: #223885;
+    border-radius: 5px;
+  }
+  body[dir=ltr] .FNV-Blogs .container .row .col-md-12 nav ul li button[aria-current=true] {
+    color: #FFFFFF;
+    background-color: #223885;
+  }
+}
+
 @media (max-width: 575px) {
   body[dir=rtl] .FNV-Blogs {
     background-color: #ffffff;
