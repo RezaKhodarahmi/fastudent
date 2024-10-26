@@ -1,6 +1,9 @@
 // ** React Imports
 import { useState } from 'react'
 
+// ** Import Translation
+import { useTranslation } from 'react-i18next'
+
 // ** Next Imports
 import Link from 'next/link'
 import { appConfig } from 'src/configs/appConfig'
@@ -103,6 +106,7 @@ const LoginPage = () => {
   const bgColors = useBgColor()
   const { settings } = useSettings()
   const hidden = useMediaQuery(theme.breakpoints.down('md'))
+  const { t } = useTranslation()
 
   // ** Vars
   const { skin } = settings
@@ -128,155 +132,132 @@ const LoginPage = () => {
   const imageSource = skin === 'bordered' ? 'MainLogo' : 'MainLogo'
 
   return (
-    <Box className='content-right' sx={{ backgroundColor: 'background.paper' }}>
-      {!hidden ? (
-        <Box
-          sx={{
-            flex: 1,
-            display: 'flex',
-            position: 'relative',
-            alignItems: 'center',
-            borderRadius: '20px',
-            overflow: 'hidden',
-            objectFit: 'cover',
-            justifyContent: 'center',
-            backgroundImage: 'url("/images/pages/login/current.jpg")',
-            backgroundSize: 'cover',
-            margin: theme => theme.spacing(8, 0, 8, 8)
-          }}
-        ></Box>
-      ) : null}
-      <RightWrapper>
-        <Box
-          sx={{
-            p: [6, 12],
-            height: '100%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center'
-          }}
-        >
-          <Box sx={{ width: '100%', maxWidth: 400 }}>
-            <img src={appConfig.appUrl + '/img/logo.png'} alt='logo' width='200' height='50' />
+    <>
+      <section className='FNV-Login'>
+        <div className='container-fluid'>
+          <div className='row'>
+            <div className='col-12 col-lg-4'>
+              <h1>{t('login-heading')}</h1>
+              {/* Login Form */}
+              <form noValidate autoComplete='off' onSubmit={handleSubmit(onSubmit)}>
+                {/* Username or Email */}
+                <InputLabel htmlFor='auth-login-v2-username'>{t('login-email-address')}</InputLabel>
+                <FormControl fullWidth sx={{ mb: 1.5 }}>
+                  <Controller
+                    name='user'
+                    control={control}
+                    className='form-control'
+                    rules={{ required: true }}
+                    render={({ field: { value, onChange, onBlur } }) => (
+                      <TextField
+                        id='auth-login-v2-username'
+                        autoFocus
+                        value={value}
+                        onBlur={onBlur}
+                        onChange={onChange}
+                        error={Boolean(errors.user)}
+                        placeholder='info@fanavaran.com'
+                      />
+                    )}
+                  />
+                  {errors.user && <FormHelperText sx={{ color: 'error.main' }}>{errors.user.message}</FormHelperText>}
+                </FormControl>
 
-            <Box sx={{ my: 6 }}>
-              <Typography sx={{ mb: 1.5, fontWeight: 500, fontSize: '1.625rem', lineHeight: 1.385 }}>
-                {`Welcome to ${themeConfig.templateName}!`}
-              </Typography>
-              <Typography sx={{ color: 'text.secondary' }}>
-                Please sign-in to your account and start the adventure
-              </Typography>
-            </Box>
-
-            {/* Login Form */}
-            <form noValidate autoComplete='off' onSubmit={handleSubmit(onSubmit)}>
-              {/* Username or Email */}
-              <FormControl fullWidth sx={{ mb: 4 }}>
-                <Controller
-                  name='user'
-                  control={control}
-                  rules={{ required: true }}
-                  render={({ field: { value, onChange, onBlur } }) => (
-                    <TextField
-                      autoFocus
-                      label='Email'
-                      value={value}
-                      onBlur={onBlur}
-                      onChange={onChange}
-                      error={Boolean(errors.user)}
-                      placeholder='info@fanavaran.com'
-                    />
-                  )}
-                />
-                {errors.user && <FormHelperText sx={{ color: 'error.main' }}>{errors.user.message}</FormHelperText>}
-              </FormControl>
-
-              {/* Password */}
-              <FormControl fullWidth sx={{ mb: 1.5 }}>
+                {/* Password */}
                 <InputLabel htmlFor='auth-login-v2-password' error={Boolean(errors.pass)}>
-                  Password
+                  {t('login-user-password')}
                 </InputLabel>
-                <Controller
-                  name='pass'
-                  control={control}
-                  rules={{ required: true }}
-                  render={({ field: { value, onChange, onBlur } }) => (
-                    <OutlinedInput
-                      value={value}
-                      onBlur={onBlur}
-                      label='Password'
-                      onChange={onChange}
-                      id='auth-login-v2-password'
-                      error={Boolean(errors.pass)}
-                      type={showPassword ? 'text' : 'password'}
-                      endAdornment={
-                        <InputAdornment position='end'>
-                          <IconButton
-                            edge='end'
-                            onMouseDown={e => e.preventDefault()}
-                            onClick={() => setShowPassword(!showPassword)}
-                          >
-                            <Icon icon={showPassword ? 'tabler:eye' : 'tabler:eye-off'} fontSize={20} />
-                          </IconButton>
-                        </InputAdornment>
-                      }
-                    />
-                  )}
-                />
-                {errors.pass && (
-                  <FormHelperText sx={{ color: 'error.main' }} id=''>
-                    {errors.pass.message}
-                  </FormHelperText>
-                )}
-              </FormControl>
-              <Box
-                sx={{
-                  mb: 1.75,
-                  display: 'flex',
-                  flexWrap: 'wrap',
-                  alignItems: 'center',
-                  justifyContent: 'space-between'
-                }}
-              >
-                <FormControlLabel
-                  label='Remember Me'
-                  control={<Checkbox checked={rememberMe} onChange={e => setRememberMe(e.target.checked)} />}
-                />
-                <LinkStyled href='/forgot-password'>Forgot Password?</LinkStyled>
-              </Box>
-              <Button fullWidth size='large' type='submit' variant='contained' sx={{ mb: 4 }}>
-                Login
-              </Button>
 
-              <Box sx={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
-                <Typography sx={{ color: 'text.secondary', mr: 2 }}>New on our platform?</Typography>
-                <Typography variant='body2'>
-                  <LinkStyled href='/register' sx={{ fontSize: '1rem' }}>
-                    Create an account
-                  </LinkStyled>
-                </Typography>
-              </Box>
-              <Divider
-                sx={{
-                  fontSize: '0.875rem',
-                  color: 'text.disabled',
-                  '& .MuiDivider-wrapper': { px: 6 },
-                  my: theme => `${theme.spacing(6)} !important`
-                }}
-              >
-                or
-              </Divider>
-              <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-               
-                <Link href='#'>
-                  <img src='/img/google-button.png' className='img-fluid' onClick={handleGoogleLogin} />
-                </Link>
-              </Box>
-            </form>
-          </Box>
-        </Box>
-      </RightWrapper>
-    </Box>
+                <FormControl fullWidth>
+                  <Controller
+                    name='pass'
+                    control={control}
+                    rules={{ required: true }}
+                    render={({ field: { value, onChange, onBlur } }) => (
+                      <OutlinedInput
+                        value={value}
+                        onBlur={onBlur}
+                        onChange={onChange}
+                        id='auth-login-v2-password'
+                        error={Boolean(errors.pass)}
+                        type={showPassword ? 'text' : 'password'}
+                        endAdornment={
+                          <InputAdornment position='end'>
+                            <IconButton
+                              edge='end'
+                              onMouseDown={e => e.preventDefault()}
+                              onClick={() => setShowPassword(!showPassword)}
+                              className='FNV-Login_PassEye'
+                            >
+                              <Icon icon={showPassword ? 'tabler:eye' : 'tabler:eye-off'} fontSize={20} />
+                            </IconButton>
+                          </InputAdornment>
+                        }
+                      />
+                    )}
+                  />
+                  {errors.pass && (
+                    <FormHelperText sx={{ color: 'error.main' }} id=''>
+                      {errors.pass.message}
+                    </FormHelperText>
+                  )}
+                </FormControl>
+
+                <div className='d-flex justify-content-between'>
+                  <LinkStyled href='/forgot-password' className='FNV-Login_Forgot'>{t('login-forgot-password')}</LinkStyled>
+
+                  <FormControlLabel
+                    label={t('login-remember-me')}
+                    className='FNV-Login_Remember'
+                    control={<Checkbox checked={rememberMe} onChange={e => setRememberMe(e.target.checked)} />}
+                  />
+                </div>
+
+                <Button fullWidth type='submit' className='FNV-Login_Submit'>
+                  {t('login-login-submit')}
+                </Button>
+
+                <Box className="d-flex justify-content-center">
+                  <Typography sx={{ color: 'text.secondary', mx: 2 }}> {t('login-register-one')} </Typography>
+                  <Typography variant='body2'>
+                    <LinkStyled href='/register' sx={{ fontSize: '1rem' }}>
+                      {t('login-register-two')}
+                    </LinkStyled>
+                  </Typography>
+                </Box>
+
+                <Divider
+                  sx={{
+                    fontSize: '0.875rem',
+                    color: 'text.disabled',
+                    '& .MuiDivider-wrapper': { px: 6 },
+                    my: theme => `${theme.spacing(2)} !important`
+                  }}
+                >
+                  {t('login-or')}
+                </Divider>
+
+                <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                
+                  <Link href='#' className='FNV-Login_Google' onClick={handleGoogleLogin}>
+                    {t('login-with-google')}
+
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.8684 10.2281C19.8693 9.54663 19.8113 8.8664 19.695 8.19482H10.1992V12.046H15.638C15.5267 12.6611 15.2911 13.2475 14.9455 13.7697C14.5999 14.292 14.1513 14.7393 13.6269 15.0848V17.5846H16.8728C18.7734 15.8444 19.8684 13.271 19.8684 10.2281Z" fill="#4285F4"/>
+                      <path d="M10.1997 19.9998C12.9169 19.9998 15.2049 19.1137 16.8733 17.586L13.6274 15.0861C12.7239 15.6944 11.5604 16.0416 10.1997 16.0416C7.57328 16.0416 5.34408 14.2834 4.54693 11.9141H1.20312V14.4903C2.0412 16.1465 3.32629 17.5387 4.91494 18.5116C6.50358 19.4844 8.33324 19.9997 10.1997 19.9998Z" fill="#34A853"/>
+                      <path d="M4.54686 11.9141C4.12543 10.6726 4.12543 9.32806 4.54686 8.08651V5.51025H1.20305C0.498032 6.90345 0.130859 8.44108 0.130859 10.0003C0.130859 11.5595 0.498032 13.0972 1.20305 14.4904L4.54686 11.9141Z" fill="#FBBC04"/>
+                      <path d="M10.1997 3.95879C11.6356 3.93549 13.0231 4.47429 14.0623 5.45872L16.9362 2.60469C15.1139 0.904883 12.6996 -0.0283412 10.1997 0.000656061C8.33324 0.000740536 6.50358 0.515984 4.91494 1.48886C3.32629 2.46174 2.0412 3.85397 1.20312 5.5101L4.54693 8.08636C5.34408 5.71704 7.57328 3.95879 10.1997 3.95879Z" fill="#EA4335"/>
+                    </svg>
+                  </Link>
+                </Box>
+              </form>
+            </div>
+
+            <div className='col-12 col-lg-8 d-md-none d-lg-block'></div>
+          </div>
+        </div>
+      </section>
+    </>
   )
 }
 LoginPage.getLayout = page => <BlankLayout>{page}</BlankLayout>
