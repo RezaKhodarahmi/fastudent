@@ -103,7 +103,7 @@ const AuthProvider = ({ children }) => {
           'userName',
           JSON.stringify(response.data.data.firstName + ' ' + response.data.data.lastName)
         )
-        const redirectURL = returnUrl && returnUrl !== '/' ? returnUrl : '/'
+        const redirectURL = returnUrl && returnUrl !== '/' ? returnUrl : '/app/dashboards/main'
         toast.success('Login was successful')
 
         router.replace(redirectURL)

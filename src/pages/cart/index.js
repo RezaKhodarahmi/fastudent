@@ -52,7 +52,7 @@ const Index = () => {
   const pageDirection = localStorage.getItem('direction')
 
   // Check if there is any course of type 2 in the cart
-  const hasCourseType2 = cartCourses.some(course => course.course.type === 2) || null
+  const hasCourseType2 = cartCourses.some(course => course.course.type == 2) || null
 
   useEffect(() => {
     if (!cartItems) {
