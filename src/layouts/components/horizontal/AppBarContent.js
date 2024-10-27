@@ -1,5 +1,6 @@
 // ** MUI Imports
 import Box from '@mui/material/Box'
+import Button from '@mui/material/Button'
 
 // ** Components
 import Autocomplete from 'src/layouts/components/Autocomplete'
@@ -8,6 +9,9 @@ import UserDropdown from 'src/@core/layouts/components/shared-components/UserDro
 import LanguageDropdown from 'src/@core/layouts/components/shared-components/LanguageDropdown'
 import NotificationDropdown from 'src/@core/layouts/components/shared-components/NotificationDropdown'
 import ShortcutsDropdown from 'src/@core/layouts/components/shared-components/ShortcutsDropdown'
+
+// ** Icon Imports
+import Icon from 'src/@core/components/icon'
 
 const notifications = [
   {
@@ -111,6 +115,18 @@ const AppBarContent = props => {
 
   return (
     <Box sx={{ display: 'flex', alignItems: 'center' }}>
+      {/* Button */}
+      <Button
+      variant="contained"
+      component="a"
+      href="https://fanavaran.ca" // Replace with your desired link
+      target="_blank"
+      sx={{ marginRight: '1rem' }}
+      startIcon={<Icon icon="tabler:eye" />}
+    >
+      مشاهده وبسایت
+    </Button>
+
       {/* <Autocomplete hidden={hidden} settings={settings} /> */}
       {/* <LanguageDropdown settings={settings} saveSettings={saveSettings} /> */}
       <ModeToggler settings={settings} saveSettings={saveSettings} />
