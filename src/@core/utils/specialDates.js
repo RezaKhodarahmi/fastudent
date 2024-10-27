@@ -245,7 +245,22 @@ export const specialDates = [
     ]
   },
   {
-    date: '2024-10-21',
+    date: '2024-10-16',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/5121a245-7bab-47b3-ba90-2320ddc04e98.webp',
+        text: 'Electrical Redseal Exam Prep',
+        link: 'https://fanavaran.ca/courses/codebook-electrical'
+      },
+      {
+        image: 'https://fanavaran.ca:3200/uploads/webinars/43b0c029-2354-4e60-9978-19c8d357d314.webp',
+        text: 'کد های ساختمانی در کانادا (BCIN, P.ENG, NBC, OBC, OAA,) آشنایی با مدارک حرفه ای',
+        link: 'https://fanavaran.ca/webinars/architecture-career-in-canada'
+      }
+    ]
+  },
+  {
+    date: '2024-10-28',
     events: [
       {
         image: 'https://fanavaran.ca:3200/uploads/courses/236fb292-2c5c-4f4f-9f81-b9caa44d93d7.jpg',
@@ -260,12 +275,42 @@ export const specialDates = [
     ]
   },
   {
-    date: '2024-10-24',
+    date: '2024-10-23',
     events: [
       {
-        image: 'https://fanavaran.ca:3200/uploads/courses/f807810e-cb79-42a5-8764-c0b8c1572a27.jpg',
-        text: 'Energy Advisory- House Exam Prep',
-        link: 'https://fanavaran.ca/courses/energy-advisory-house'
+        image: 'https://fanavaran.ca:3200/uploads/webinars/c6fd0cae-25fc-4e1e-9cea-3456348eb9a6.webp',
+        text: 'وبینار رایگان آشنایی با چالش های راه اندازی بیزینس رنویشن در کانادا',
+        link: 'https://fanavaran.ca/webinars/renovation-in-canada'
+      }
+    ]
+  },
+  {
+    date: '2024-10-26',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/8ed292cd-8d1d-4991-81d1-d96daf87fe22.webp',
+        text: 'Renovation Workshop (Framing) (Toronto)',
+        link: 'https://fanavaran.ca/courses/workshop-of-renovation'
+      },
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/ef1f71df-505c-405c-ace5-10fe51ce48e8.webp',
+        text: 'Renovation Workshop (Electrician - Basic) (Vancouver)',
+        link: 'https://fanavaran.ca/courses/workshop-of-renovation-electrical-work'
+      }
+    ]
+  },
+  {
+    date: '2024-10-27',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/4681fcd1-c22b-42b1-9506-855470e9231e.webp',
+        text: 'Renovation Workshop (Finish Carpentery) (Toronto)',
+        link: 'https://fanavaran.ca/courses/workshop-of-renovation-finish-carpenter'
+      },
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/4681fcd1-c22b-42b1-9506-855470e9231e.webp',
+        text: 'Renovation Workshop (Plumbing - Basic) (Vancouver)',
+        link: 'https://fanavaran.ca/courses/workshop-of-renovation-plumbing'
       }
     ]
   },
@@ -274,8 +319,8 @@ export const specialDates = [
     events: [
       {
         image: '#',
-        text: 'Plumbing Redseal Exal Prep (Test Samples)',
-        link: 'https://fanavaran.ca/courses/plumbing-test'
+        text: 'بازار کاری تکنسین گاز در انتاریو و لایسنس های مربوطه',
+        link: 'https://fanavaran.ca/webinars/gas-technician-webinar'
       },
       {
         image: 'https://fanavaran.ca:3200/uploads/courses/76e07dad-395b-4254-bb6a-58a0d0ccd97f.jpg',
@@ -288,9 +333,79 @@ export const specialDates = [
     date: '2024-10-31',
     events: [
       {
-        image: 'https://fanavaran.ca:3200/uploads/courses/121f801f-0e18-4841-b5fa-c0bb86b41b39.jpg',
+        image: 'https://fanavaran.ca:3200/uploads/courses/560b38fe-2f45-429d-96f3-9f2a639bbbad.webp',
         text: 'Project Management (PMP)',
         link: 'https://fanavaran.ca/courses/pmp-certification-preparation-test'
+      }
+    ]
+  },
+  {
+    date: '2024-11-02',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/2eb1efa2-c80e-40d2-985d-c42a75cbc504.webp',
+        text: 'Resumeand Networking Live',
+        link: 'https://fanavaran.ca/courses/resume-and-networking-live'
+      }
+    ]
+  },
+  {
+    date: '2024-11-05',
+    events: [
+      {
+        image: '#',
+        text: 'Plumbing Redseal Exal Prep (Test Samples)',
+        link: 'https://fanavaran.ca/courses/plumbing-test'
+      }
+    ]
+  },
+  {
+    date: '2024-11-09',
+    events: [
+      {
+        image: '#',
+        text: 'Heating Systems and Gas technician Workshop (Vancouver)',
+        link: 'https://fanavaran.ca/courses/heating-systems-workshop-vancouver'
+      },
+      {
+        image: '#',
+        text: 'Renovation Workshop - Decorative and Patina design (Toronto)',
+        link: 'https://fanavaran.ca/courses/renovation-workshop-decorative'
+      },
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/9cb9549b-d57a-4bb7-aa15-ffce2a7f2816.webp',
+        text: 'Renovation Workshop (Plumbing - Basic) (Toronto)',
+        link: 'https://fanavaran.ca/courses/workshop-of-renovation-plumbing-toronto'
+      }
+    ]
+  },
+  {
+    date: '2024-11-10',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/171c406c-604b-4ae2-92bd-d3ac8737c78b.webp',
+        text: 'Renovation Workshop (Electrician - Basic) (Toronto)',
+        link: 'https://fanavaran.ca/courses/workshop-of-renovation-electrical-work-toronto'
+      }
+    ]
+  },
+  {
+    date: '2024-11-14',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/ef1f71df-505c-405c-ace5-10fe51ce48e8.webp',
+        text: 'Renovation Workshop (Electrician - Basic) (Toronto)',
+        link: 'https://fanavaran.ca/courses/workshop-of-renovation-electrical-work'
+      }
+    ]
+  },
+  {
+    date: '2024-11-15',
+    events: [
+      {
+        image: 'https://fanavaran.ca:3200/uploads/courses/c7125720-550d-414b-a3d2-0827a93c5bec.webp',
+        text: 'Renovation Workshop (Plumbing - Basic) (Vancouver)',
+        link: 'https://fanavaran.ca/courses/workshop-of-renovation-plumbing'
       }
     ]
   }
