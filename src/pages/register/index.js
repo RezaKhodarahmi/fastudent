@@ -1,6 +1,9 @@
 // ** React Imports
 import { useState, Fragment } from 'react'
 
+// ** Import Translation
+import { useTranslation } from 'react-i18next'
+
 // ** Next Import
 import Link from 'next/link'
 import Grid from '@mui/material/Grid'
@@ -98,6 +101,7 @@ const Register = () => {
   const theme = useTheme()
   const { register } = useAuth()
   const { settings } = useSettings()
+  const { t } = useTranslation()
 
   // const hidden = useMediaQuery(theme.breakpoints.down('md'))
   const hidden = false
@@ -143,35 +147,9 @@ const Register = () => {
   const imageSource = skin === 'bordered' ? 'auth-v2-register-illustration-bordered' : 'auth-v2-register-illustration'
 
   return (
-    <Box className='content-right' sx={{ backgroundColor: 'background.paper' }}>
-      {!hidden ? (
-        <Box
-          sx={{
-            flex: 1,
-            display: 'flex',
-            position: 'relative',
-            alignItems: 'center',
-            borderRadius: '20px',
-            justifyContent: 'center',
-            backgroundColor: 'customColors.bodyBg',
-            margin: theme => theme.spacing(8, 8, 8, 8)
-          }}
-        >
-          <Box sx={{ width: '70%' }}>
-            <img src={appConfig.appUrl + '/img/logo.png'} alt='logo' width='200' height='50' />
-
-            <Box sx={{ my: 6 }}>
-              <Typography sx={{ mb: 1.5, fontWeight: 500, fontSize: '1.625rem', lineHeight: 1.385 }}>
-                Sign Up For The Fanavaran
-              </Typography>
-              <Typography sx={{ color: 'text.secondary' }}>Join Our Community</Typography>
-            </Box>
-
-            <RegisterWizard />
-          </Box>
-        </Box>
-      ) : null}
-    </Box>
+    <>
+      <RegisterWizard />
+    </>
   )
 }
 Register.getLayout = page => <BlankLayout>{page}</BlankLayout>

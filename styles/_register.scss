@@ -1,0 +1,1342 @@
+@media (max-width: 575.98px) {
+    .FNV-Register {
+        background-color: $WhiteColor;
+
+        .container-fluid {
+            .row {
+                .col-lg-4 {
+                    padding: 2rem;
+
+                    h1 {
+                        margin: 2rem 0;
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: $PrimaryOne;
+                    }
+
+                    form {
+                        label {
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                        }
+
+                        input {
+                            z-index: 1;
+                            font-size: 20px;
+                            color: $PrimaryOne;
+                            padding: 1rem 1.5rem;
+                        }
+
+                        input,
+                        fieldset {
+                            border-width: 0;
+                            border-radius: 10px;
+                        }
+
+                        .FNV-Register_PassEye {
+                            z-index: 1;
+                            padding: 1rem;
+
+                            svg {
+                                stroke: $PrimaryOne;
+                            }
+                        }
+
+                        fieldset {
+                            background-color: $PrimaryBackgroundTwo;
+                        }
+
+                        fieldset,
+                        div {
+                            padding: 0;
+                        }
+
+                        .FNV-Phone {
+                            .PhoneInput {
+                                padding: 0;
+                                border-radius: 10px;
+                                background-color: $PrimaryBackgroundTwo;
+
+                                .PhoneInputCountry {
+                                    padding: 0 1rem;
+
+                                    .PhoneInputCountryIcon {
+                                        border-width: 0;
+                                        border-radius: 5px;
+
+                                        img {
+                                            border-width: 0;
+                                        }
+                                    }
+
+                                    .PhoneInputCountrySelectArrow {
+                                        margin: 0 1rem;
+                                    }
+                                }
+
+                                input {
+                                    background-color: transparent;
+
+                                    &::placeholder {
+                                        color: $PrimaryBackgroundFive;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .d-flex {
+                        padding: .5rem 0;
+
+                        .FNV-Register_Forgot {
+                            font-size: 14px;
+                            padding: .5rem 0;
+                            font-weight: 400;
+                            line-height: 30px;
+                            color: $PrimaryOne;
+                        }
+
+                        .FNV-Register_Remember {
+                            margin: 0;
+                            padding: 0;
+                            color: $BlackColor;
+
+                            span {
+                                padding: 0;
+                            }
+
+                            input {
+                                display: none;
+                            }
+                        }
+
+                        a {
+                            line-height: 30px;
+                            color: $PrimaryOne;
+                            text-decoration: underline !important;
+                        }
+                    }
+
+                    .FNV-Register_Submit,
+                    .FNV-SendEmail {
+                        width: 100%;
+                        font-size: 20px;
+                        font-weight: 400;
+                        padding: 1rem 2rem;
+                        color: $WhiteColor;
+                        border-radius: 10px;
+                        margin-bottom: 1rem;
+                        background-color: $PrimaryOne;
+                    }
+
+                    .FNV-Register_Google {
+                        width: 100%;
+                        font-size: 20px;
+                        padding: 1rem 2rem;
+                        text-align: center;
+                        color: $PrimaryOne;
+                        border-radius: 10px;
+                        border: 2px solid $PrimaryOne;
+
+                        svg {
+                            margin: 0 1rem;
+                        }
+                    }
+                }
+
+                .col-lg-8 {
+                    background-size: cover;
+                    background-position: right center;
+                    background-image: url('/images/pages/register/register.jpg');
+                }
+            }
+        }
+    }
+
+    .FNV-Register-Verification-Sent {
+        background-color: $WhiteColor;
+
+        .container-fluid {
+            .row {
+                .col-lg-12 {
+                    height: 50vh;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    background-size: cover;
+                    justify-content: center;
+                    background-image: url('/images/pages/register/verification_sent.jpg');
+
+                    img {
+                        width: 150px;
+                    }
+
+                    h1 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: $PrimaryOne;
+                        text-align: center;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        font-weight: 400;
+                        text-align: center;
+                        color: $PrimaryOne;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+    .FNV-Register {
+        background-color: $WhiteColor;
+
+        .container-fluid {
+            .row {
+                .col-lg-4 {
+                    padding: 2rem;
+
+                    h1 {
+                        margin: 2rem 0;
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: $PrimaryOne;
+                    }
+
+                    form {
+                        label {
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                        }
+
+                        input {
+                            z-index: 1;
+                            font-size: 20px;
+                            color: $PrimaryOne;
+                            padding: 1rem 1.5rem;
+                        }
+
+                        input,
+                        fieldset {
+                            border-width: 0;
+                            border-radius: 10px;
+                        }
+
+                        .FNV-Register_PassEye {
+                            z-index: 1;
+                            padding: 1rem;
+
+                            svg {
+                                stroke: $PrimaryOne;
+                            }
+                        }
+
+                        fieldset {
+                            background-color: $PrimaryBackgroundTwo;
+                        }
+
+                        fieldset,
+                        div {
+                            padding: 0;
+                        }
+
+                        .FNV-Phone {
+                            .PhoneInput {
+                                padding: 0;
+                                border-radius: 10px;
+                                background-color: $PrimaryBackgroundTwo;
+
+                                .PhoneInputCountry {
+                                    padding: 0 1rem;
+
+                                    .PhoneInputCountryIcon {
+                                        border-width: 0;
+                                        border-radius: 5px;
+
+                                        img {
+                                            border-width: 0;
+                                        }
+                                    }
+
+                                    .PhoneInputCountrySelectArrow {
+                                        margin: 0 1rem;
+                                    }
+                                }
+
+                                input {
+                                    background-color: transparent;
+
+                                    &::placeholder {
+                                        color: $PrimaryBackgroundFive;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .d-flex {
+                        padding: .5rem 0;
+
+                        .FNV-Register_Forgot {
+                            font-size: 14px;
+                            padding: .5rem 0;
+                            font-weight: 400;
+                            line-height: 30px;
+                            color: $PrimaryOne;
+                        }
+
+                        .FNV-Register_Remember {
+                            margin: 0;
+                            padding: 0;
+                            color: $BlackColor;
+
+                            span {
+                                padding: 0;
+                            }
+
+                            input {
+                                display: none;
+                            }
+                        }
+
+                        a {
+                            line-height: 30px;
+                            color: $PrimaryOne;
+                            text-decoration: underline !important;
+                        }
+                    }
+
+                    .FNV-Register_Submit,
+                    .FNV-SendEmail {
+                        width: 100%;
+                        font-size: 20px;
+                        font-weight: 400;
+                        padding: 1rem 2rem;
+                        color: $WhiteColor;
+                        border-radius: 10px;
+                        margin-bottom: 1rem;
+                        background-color: $PrimaryOne;
+                    }
+
+                    .FNV-Register_Google {
+                        width: 100%;
+                        font-size: 20px;
+                        padding: 1rem 2rem;
+                        text-align: center;
+                        color: $PrimaryOne;
+                        border-radius: 10px;
+                        border: 2px solid $PrimaryOne;
+
+                        svg {
+                            margin: 0 1rem;
+                        }
+                    }
+                }
+
+                .col-lg-8 {
+                    background-size: cover;
+                    background-position: right center;
+                    background-image: url('/images/pages/register/register.jpg');
+                }
+            }
+        }
+    }
+
+    .FNV-Register-Verification-Sent {
+        background-color: $WhiteColor;
+
+        .container-fluid {
+            .row {
+                .col-lg-12 {
+                    height: 50vh;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    background-size: cover;
+                    justify-content: center;
+                    background-image: url('/images/pages/register/verification_sent.jpg');
+
+                    img {
+                        width: 150px;
+                    }
+
+                    h1 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: $PrimaryOne;
+                        text-align: center;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        font-weight: 400;
+                        text-align: center;
+                        color: $PrimaryOne;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+    .FNV-Register {
+        background-color: $WhiteColor;
+
+        .container-fluid {
+            .row {
+                .col-lg-4 {
+                    padding: 2rem;
+
+                    h1 {
+                        margin: 2rem 0;
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: $PrimaryOne;
+                    }
+
+                    form {
+                        label {
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                        }
+
+                        input {
+                            z-index: 1;
+                            font-size: 20px;
+                            color: $PrimaryOne;
+                            padding: 1rem 1.5rem;
+                        }
+
+                        input,
+                        fieldset {
+                            border-width: 0;
+                            border-radius: 10px;
+                        }
+
+                        .FNV-Register_PassEye {
+                            z-index: 1;
+                            padding: 1rem;
+
+                            svg {
+                                stroke: $PrimaryOne;
+                            }
+                        }
+
+                        fieldset {
+                            background-color: $PrimaryBackgroundTwo;
+                        }
+
+                        fieldset,
+                        div {
+                            padding: 0;
+                        }
+
+                        .FNV-Phone {
+                            .PhoneInput {
+                                padding: 0;
+                                border-radius: 10px;
+                                background-color: $PrimaryBackgroundTwo;
+
+                                .PhoneInputCountry {
+                                    padding: 0 1rem;
+
+                                    .PhoneInputCountryIcon {
+                                        border-width: 0;
+                                        border-radius: 5px;
+
+                                        img {
+                                            border-width: 0;
+                                        }
+                                    }
+
+                                    .PhoneInputCountrySelectArrow {
+                                        margin: 0 1rem;
+                                    }
+                                }
+
+                                input {
+                                    background-color: transparent;
+
+                                    &::placeholder {
+                                        color: $PrimaryBackgroundFive;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .d-flex {
+                        padding: .5rem 0;
+
+                        .FNV-Register_Forgot {
+                            font-size: 14px;
+                            padding: .5rem 0;
+                            font-weight: 400;
+                            line-height: 30px;
+                            color: $PrimaryOne;
+                        }
+
+                        .FNV-Register_Remember {
+                            margin: 0;
+                            padding: 0;
+                            color: $BlackColor;
+
+                            span {
+                                padding: 0;
+                            }
+
+                            input {
+                                display: none;
+                            }
+                        }
+
+                        a {
+                            line-height: 30px;
+                            color: $PrimaryOne;
+                            text-decoration: underline !important;
+                        }
+                    }
+
+                    .FNV-Register_Submit,
+                    .FNV-SendEmail {
+                        width: 100%;
+                        font-size: 20px;
+                        font-weight: 400;
+                        padding: 1rem 2rem;
+                        color: $WhiteColor;
+                        border-radius: 10px;
+                        margin-bottom: 1rem;
+                        background-color: $PrimaryOne;
+                    }
+
+                    .FNV-Register_Google {
+                        width: 100%;
+                        font-size: 20px;
+                        padding: 1rem 2rem;
+                        text-align: center;
+                        color: $PrimaryOne;
+                        border-radius: 10px;
+                        border: 2px solid $PrimaryOne;
+
+                        svg {
+                            margin: 0 1rem;
+                        }
+                    }
+                }
+
+                .col-lg-8 {
+                    background-size: cover;
+                    background-position: right center;
+                    background-image: url('/images/pages/register/register.jpg');
+                }
+            }
+        }
+    }
+
+    .FNV-Register-Verification-Sent {
+        background-color: $WhiteColor;
+
+        .container-fluid {
+            .row {
+                .col-lg-12 {
+                    height: 50vh;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    background-size: cover;
+                    justify-content: center;
+                    background-image: url('/images/pages/register/verification_sent.jpg');
+
+                    img {
+                        width: 150px;
+                    }
+
+                    h1 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: $PrimaryOne;
+                        text-align: center;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        font-weight: 400;
+                        text-align: center;
+                        color: $PrimaryOne;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (min-width: 991.98px) {
+    .FNV-Register {
+        background-color: $WhiteColor;
+
+        .container-fluid {
+            .row {
+                .col-lg-4 {
+                    padding: 2rem;
+
+                    h1 {
+                        margin: 2rem 0;
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: $PrimaryOne;
+                    }
+
+                    form {
+                        label {
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                        }
+
+                        input {
+                            z-index: 1;
+                            font-size: 16px;
+                            color: $PrimaryOne;
+                            padding: 1rem 1.5rem;
+                        }
+
+                        input,
+                        fieldset {
+                            border-width: 0;
+                            border-radius: 10px;
+                        }
+
+                        .FNV-Register_PassEye {
+                            z-index: 1;
+                            padding: 1rem;
+
+                            svg {
+                                stroke: $PrimaryOne;
+                            }
+                        }
+
+                        fieldset {
+                            background-color: $PrimaryBackgroundTwo;
+                        }
+
+                        fieldset,
+                        div {
+                            padding: 0;
+                        }
+
+                        .FNV-Phone {
+                            .PhoneInput {
+                                padding: 0;
+                                border-radius: 10px;
+                                background-color: $PrimaryBackgroundTwo;
+
+                                .PhoneInputCountry {
+                                    padding: 0 1rem;
+
+                                    .PhoneInputCountryIcon {
+                                        border-width: 0;
+                                        border-radius: 5px;
+
+                                        img {
+                                            border-width: 0;
+                                        }
+                                    }
+
+                                    .PhoneInputCountrySelectArrow {
+                                        margin: 0 1rem;
+                                    }
+                                }
+
+                                input {
+                                    background-color: transparent;
+
+                                    &::placeholder {
+                                        color: $PrimaryBackgroundFive;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .d-flex {
+                        padding: .5rem 0;
+
+                        .FNV-Register_Forgot {
+                            font-size: 14px;
+                            padding: .5rem 0;
+                            font-weight: 400;
+                            line-height: 30px;
+                            color: $PrimaryOne;
+                        }
+
+                        .FNV-Register_Remember {
+                            margin: 0;
+                            padding: 0;
+                            color: $BlackColor;
+
+                            span {
+                                padding: 0;
+                            }
+
+                            input {
+                                display: none;
+                            }
+                        }
+
+                        a {
+                            line-height: 30px;
+                            color: $PrimaryOne;
+                            text-decoration: underline !important;
+                        }
+                    }
+
+                    .FNV-Register_Submit,
+                    .FNV-SendEmail {
+                        width: 100%;
+                        font-size: 16px;
+                        font-weight: 400;
+                        padding: 1rem 1rem;
+                        color: $WhiteColor;
+                        border-radius: 10px;
+                        margin-bottom: 1rem;
+                        background-color: $PrimaryOne;
+                    }
+
+                    .FNV-Register_Google {
+                        width: 100%;
+                        font-size: 20px;
+                        padding: 1rem 2rem;
+                        text-align: center;
+                        color: $PrimaryOne;
+                        border-radius: 10px;
+                        border: 2px solid $PrimaryOne;
+
+                        svg {
+                            margin: 0 1rem;
+                        }
+                    }
+                }
+
+                .col-lg-8 {
+                    background-size: cover;
+                    background-position: right center;
+                    background-image: url('/images/pages/register/register.jpg');
+                }
+            }
+        }
+    }
+
+    .FNV-Register-Verification-Sent {
+        background-color: $WhiteColor;
+
+        .container-fluid {
+            .row {
+                .col-lg-12 {
+                    height: 50vh;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    background-size: cover;
+                    justify-content: center;
+                    background-image: url('/images/pages/register/verification_sent.jpg');
+
+                    h1 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: $PrimaryOne;
+                        text-align: center;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        font-weight: 400;
+                        text-align: center;
+                        color: $PrimaryOne;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (min-width: 1199.98px) {
+    .FNV-Register {
+        background-color: $WhiteColor;
+
+        .container-fluid {
+            .row {
+                .col-lg-4 {
+                    padding: 1rem;
+
+                    h1 {
+                        margin: 2rem 0;
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: $PrimaryOne;
+                    }
+
+                    form {
+                        label {
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                        }
+
+                        input {
+                            z-index: 1;
+                            font-size: 16px;
+                            color: $PrimaryOne;
+                            padding: 1rem 1.5rem;
+                        }
+
+                        input,
+                        fieldset {
+                            border-width: 0;
+                            border-radius: 10px;
+                        }
+
+                        .FNV-Register_PassEye {
+                            z-index: 1;
+                            padding: 1rem;
+
+                            svg {
+                                stroke: $PrimaryOne;
+                            }
+                        }
+
+                        fieldset {
+                            background-color: $PrimaryBackgroundTwo;
+                        }
+
+                        fieldset,
+                        div {
+                            padding: 0;
+                        }
+
+                        .FNV-Phone {
+                            .PhoneInput {
+                                padding: 0;
+                                border-radius: 10px;
+                                background-color: $PrimaryBackgroundTwo;
+
+                                .PhoneInputCountry {
+                                    padding: 0 1rem;
+
+                                    .PhoneInputCountryIcon {
+                                        border-width: 0;
+                                        border-radius: 5px;
+
+                                        img {
+                                            border-width: 0;
+                                        }
+                                    }
+
+                                    .PhoneInputCountrySelectArrow {
+                                        margin: 0 1rem;
+                                    }
+                                }
+
+                                input {
+                                    background-color: transparent;
+
+                                    &::placeholder {
+                                        color: $PrimaryBackgroundFive;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .d-flex {
+                        padding: .5rem 0;
+
+                        .FNV-Register_Forgot {
+                            font-size: 14px;
+                            padding: .5rem 0;
+                            font-weight: 400;
+                            line-height: 30px;
+                            color: $PrimaryOne;
+                        }
+
+                        .FNV-Register_Remember {
+                            margin: 0;
+                            padding: 0;
+                            color: $BlackColor;
+
+                            span {
+                                padding: 0;
+                            }
+
+                            input {
+                                display: none;
+                            }
+                        }
+
+                        a {
+                            line-height: 30px;
+                            color: $PrimaryOne;
+                            text-decoration: underline !important;
+                        }
+                    }
+
+                    .FNV-Register_Submit,
+                    .FNV-SendEmail {
+                        font-size: 20px;
+                        font-weight: 400;
+                        padding: 1rem 2rem;
+                        color: $WhiteColor;
+                        border-radius: 10px;
+                        margin-bottom: 1rem;
+                        background-color: $PrimaryOne;
+                    }
+
+                    .FNV-Register_Google {
+                        width: 100%;
+                        font-size: 20px;
+                        padding: 1rem 2rem;
+                        text-align: center;
+                        color: $PrimaryOne;
+                        border-radius: 10px;
+                        border: 2px solid $PrimaryOne;
+
+                        svg {
+                            margin: 0 1rem;
+                        }
+                    }
+                }
+
+                .col-lg-8 {
+                    background-size: cover;
+                    background-position: right center;
+                    background-image: url('/images/pages/register/register.jpg');
+                }
+            }
+        }
+    }
+
+    .FNV-Register-Verification-Sent {
+        background-color: $WhiteColor;
+
+        .container-fluid {
+            .row {
+                .col-lg-12 {
+                    height: 50vh;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    background-size: cover;
+                    justify-content: center;
+                    background-image: url('/images/pages/register/verification_sent.jpg');
+
+                    h1 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: $PrimaryOne;
+                        text-align: center;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        font-weight: 400;
+                        text-align: center;
+                        color: $PrimaryOne;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    .FNV-Register {
+        background-color: $WhiteColor;
+
+        .container-fluid {
+            .row {
+                .col-lg-4 {
+                    padding: 2rem;
+
+                    h1 {
+                        margin: 2rem 0;
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: $PrimaryOne;
+                    }
+
+                    form {
+                        label {
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                        }
+
+                        input {
+                            z-index: 1;
+                            font-size: 20px;
+                            color: $PrimaryOne;
+                            padding: 1rem 1.5rem;
+                        }
+
+                        input,
+                        fieldset {
+                            border-width: 0;
+                            border-radius: 10px;
+                        }
+
+                        .FNV-Register_PassEye {
+                            z-index: 1;
+                            padding: 1rem;
+
+                            svg {
+                                stroke: $PrimaryOne;
+                            }
+                        }
+
+                        fieldset {
+                            background-color: $PrimaryBackgroundTwo;
+                        }
+
+                        fieldset,
+                        div {
+                            padding: 0;
+                        }
+
+                        .FNV-Phone {
+                            .PhoneInput {
+                                padding: 0;
+                                border-radius: 10px;
+                                background-color: $PrimaryBackgroundTwo;
+
+                                .PhoneInputCountry {
+                                    padding: 0 1rem;
+
+                                    .PhoneInputCountryIcon {
+                                        border-width: 0;
+                                        border-radius: 5px;
+
+                                        img {
+                                            border-width: 0;
+                                        }
+                                    }
+
+                                    .PhoneInputCountrySelectArrow {
+                                        margin: 0 1rem;
+                                    }
+                                }
+
+                                input {
+                                    background-color: transparent;
+
+                                    &::placeholder {
+                                        color: $PrimaryBackgroundFive;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .d-flex {
+                        padding: .5rem 0;
+
+                        .FNV-Register_Forgot {
+                            font-size: 14px;
+                            padding: .5rem 0;
+                            font-weight: 400;
+                            line-height: 30px;
+                            color: $PrimaryOne;
+                        }
+
+                        .FNV-Register_Remember {
+                            margin: 0;
+                            padding: 0;
+                            color: $BlackColor;
+
+                            span {
+                                padding: 0;
+                            }
+
+                            input {
+                                display: none;
+                            }
+                        }
+
+                        a {
+                            line-height: 30px;
+                            color: $PrimaryOne;
+                            text-decoration: underline !important;
+                        }
+                    }
+
+                    .FNV-Register_Submit,
+                    .FNV-SendEmail {
+                        font-size: 20px;
+                        font-weight: 400;
+                        padding: 1rem 2rem;
+                        color: $WhiteColor;
+                        border-radius: 10px;
+                        margin-bottom: 1rem;
+                        background-color: $PrimaryOne;
+                    }
+
+                    .FNV-Register_Google {
+                        width: 100%;
+                        font-size: 20px;
+                        padding: 1rem 2rem;
+                        text-align: center;
+                        color: $PrimaryOne;
+                        border-radius: 10px;
+                        border: 2px solid $PrimaryOne;
+
+                        svg {
+                            margin: 0 1rem;
+                        }
+                    }
+                }
+
+                .col-lg-8 {
+                    background-size: cover;
+                    background-position: right center;
+                    background-image: url('/images/pages/register/register.jpg');
+                }
+            }
+        }
+    }
+
+    .FNV-Register-Verification-Sent {
+        background-color: $WhiteColor;
+
+        .container-fluid {
+            .row {
+                .col-lg-12 {
+                    height: 50vh;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    background-size: cover;
+                    justify-content: center;
+                    background-image: url('/images/pages/register/verification_sent.jpg');
+
+                    h1 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: $PrimaryOne;
+                        text-align: center;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        font-weight: 400;
+                        text-align: center;
+                        color: $PrimaryOne;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// XXX-Large devices (larger desktops, 1920px and up)
+@media (min-width: 1920px) {
+    .FNV-Register {
+        background-color: $WhiteColor;
+
+        .container-fluid {
+            .row {
+                .col-lg-4 {
+                    padding: 5rem;
+
+                    h1 {
+                        margin: 2rem 0;
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: $PrimaryOne;
+                    }
+
+                    form {
+                        label {
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                        }
+
+                        input {
+                            z-index: 1;
+                            font-size: 20px;
+                            color: $PrimaryOne;
+                            padding: 1rem 1.5rem;
+                        }
+
+                        input,
+                        fieldset {
+                            border-width: 0;
+                            border-radius: 10px;
+                        }
+
+                        .FNV-Register_PassEye {
+                            z-index: 1;
+                            padding: 1rem;
+
+                            svg {
+                                stroke: $PrimaryOne;
+                            }
+                        }
+
+                        fieldset {
+                            background-color: $PrimaryBackgroundTwo;
+                        }
+
+                        fieldset,
+                        div {
+                            padding: 0;
+                        }
+
+                        .FNV-Phone {
+                            .PhoneInput {
+                                padding: 0;
+                                border-radius: 10px;
+                                background-color: $PrimaryBackgroundTwo;
+
+                                .PhoneInputCountry {
+                                    padding: 0 1rem;
+
+                                    .PhoneInputCountryIcon {
+                                        border-width: 0;
+                                        border-radius: 5px;
+
+                                        img {
+                                            border-width: 0;
+                                        }
+                                    }
+
+                                    .PhoneInputCountrySelectArrow {
+                                        margin: 0 1rem;
+                                    }
+                                }
+
+                                input {
+                                    background-color: transparent;
+
+                                    &::placeholder {
+                                        color: $PrimaryBackgroundFive;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .d-flex {
+                        padding: .5rem 0;
+
+                        .FNV-Register_Forgot {
+                            font-size: 14px;
+                            padding: .5rem 0;
+                            font-weight: 400;
+                            line-height: 30px;
+                            color: $PrimaryOne;
+                        }
+
+                        .FNV-Register_Remember {
+                            margin: 0;
+                            padding: 0;
+                            color: $BlackColor;
+
+                            span {
+                                padding: 0;
+                            }
+
+                            input {
+                                display: none;
+                            }
+                        }
+
+                        a {
+                            line-height: 30px;
+                            color: $PrimaryOne;
+                            text-decoration: underline !important;
+                        }
+                    }
+
+                    .FNV-Register_Submit,
+                    .FNV-SendEmail {
+                        font-size: 20px;
+                        font-weight: 400;
+                        padding: 1rem 2rem;
+                        color: $WhiteColor;
+                        border-radius: 10px;
+                        margin-bottom: 1rem;
+                        background-color: $PrimaryOne;
+                    }
+
+                    .FNV-Register_Google {
+                        width: 100%;
+                        font-size: 20px;
+                        padding: 1rem 2rem;
+                        text-align: center;
+                        color: $PrimaryOne;
+                        border-radius: 10px;
+                        border: 2px solid $PrimaryOne;
+
+                        svg {
+                            margin: 0 1rem;
+                        }
+                    }
+                }
+
+                .col-lg-8 {
+                    background-size: cover;
+                    background-position: right center;
+                    background-image: url('/images/pages/register/register.jpg');
+                }
+            }
+        }
+    }
+
+    .FNV-Register-Verification-Sent {
+        background-color: $WhiteColor;
+
+        .container-fluid {
+            .row {
+                .col-lg-12 {
+                    display: flex;
+                    height: 80vh;
+                    align-items: center;
+                    flex-direction: column;
+                    background-size: cover;
+                    justify-content: center;
+                    background-image: url('/images/pages/register/verification_sent.jpg');
+
+                    h1 {
+                        font-size: 25px;
+                        font-weight: 600;
+                        color: $PrimaryOne;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: $PrimaryOne;
+                    }
+                }
+            }
+        }
+    }
+}

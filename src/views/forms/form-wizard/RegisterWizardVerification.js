@@ -1,5 +1,8 @@
 import React, { Fragment, useState, useEffect } from 'react'
 
+// ** Import Translation
+import { useTranslation } from 'react-i18next'
+
 // ** MUI Imports
 import Card from '@mui/material/Card'
 import Step from '@mui/material/Step'
@@ -15,6 +18,7 @@ import InputLabel from '@mui/material/InputLabel'
 import IconButton from '@mui/material/IconButton'
 import CardContent from '@mui/material/CardContent'
 import FormControl from '@mui/material/FormControl'
+import FormControlLabel from '@mui/material/FormControlLabel'
 import OutlinedInput from '@mui/material/OutlinedInput'
 import FormHelperText from '@mui/material/FormHelperText'
 import InputAdornment from '@mui/material/InputAdornment'
@@ -108,6 +112,7 @@ const StepperLinearWithValidationVerification = props => {
 
   // ** Hooks
   const auth = useAuth()
+  const { t } = useTranslation()
 
   //validate token
   useEffect(() => {
@@ -190,272 +195,263 @@ const StepperLinearWithValidationVerification = props => {
     switch (step) {
       case 1:
         return (
-          <form key={0} onSubmit={handlePasswordSubmit(onSubmit)}>
-            <Grid container spacing={5}>
-              <Grid item xs={12}>
-                <Typography variant='body2' sx={{ fontWeight: 600, color: 'text.primary' }}>
-                  {steps[1].title}
-                </Typography>
-                <Typography variant='caption' component='p'>
-                  {steps[1].subtitle}
-                </Typography>
-              </Grid>
+          <>
+            <section className='FNV-Register'>
+              <div className='container-fluid'>
+                <div className='row'>
+                  <div className='col-12 col-lg-4'>
+                    <h1>{t('register-email-title')}</h1>
+                    <form key={0} onSubmit={handlePasswordSubmit(onSubmit)}>
+                      {/* Password */}
+                      <InputLabel htmlFor='password'>{t('register-email-pass')}</InputLabel>
+                      <FormControl fullWidth sx={{ mb: 4 }}>
+                        <Controller
+                          name='password'
+                          control={passwordControl}
+                          rules={{ required: true }}
+                          render={({ field: { value, onChange } }) => (
+                            <OutlinedInput
+                              value={value}
+                              onChange={onChange}
+                              placeholder={t('register-email-pass')}
+                              id='password'
+                              type={state.showPassword ? 'text' : 'password'}
+                              endAdornment={
+                                <InputAdornment position='end'>
+                                  <IconButton
+                                    edge='end'
+                                    onClick={handleClickShowPassword}
+                                    onMouseDown={e => e.preventDefault()}
+                                    aria-label='toggle password visibility'
+                                  >
+                                    <Icon icon={state.showPassword ? 'tabler:eye' : 'tabler:eye-off'} />
+                                  </IconButton>
+                                </InputAdornment>
+                              }
+                            />
+                          )}
+                        />
+                        {passwordErrors.password && (
+                          <FormHelperText sx={{ color: 'error.main' }} id='stepper-linear-account-password-helper'>
+                            {passwordErrors.password.message}
+                          </FormHelperText>
+                        )}
+                      </FormControl>
 
-              {/* Password */}
-              <Grid item xs={12} sm={6}>
-                <FormControl fullWidth>
-                  <InputLabel htmlFor='stepper-linear-account-password'>Password</InputLabel>
-                  <Controller
-                    name='password'
-                    control={passwordControl}
-                    rules={{ required: true }}
-                    render={({ field: { value, onChange } }) => (
-                      <OutlinedInput
-                        value={value}
-                        label='Password'
-                        onChange={onChange}
-                        id='stepper-linear-account-password'
-                        type={state.showPassword ? 'text' : 'password'}
-                        endAdornment={
-                          <InputAdornment position='end'>
-                            <IconButton
-                              edge='end'
-                              onClick={handleClickShowPassword}
-                              onMouseDown={e => e.preventDefault()}
-                              aria-label='toggle password visibility'
-                            >
-                              <Icon icon={state.showPassword ? 'tabler:eye' : 'tabler:eye-off'} />
-                            </IconButton>
-                          </InputAdornment>
-                        }
-                      />
-                    )}
-                  />
-                  {passwordErrors.password && (
-                    <FormHelperText sx={{ color: 'error.main' }} id='stepper-linear-account-password-helper'>
-                      {passwordErrors.password.message}
-                    </FormHelperText>
-                  )}
-                </FormControl>
-              </Grid>
+                      {/* Confirm Password */}
+                      <InputLabel htmlFor='confirm-passwor'>{t('register-email-pass-confirm')}</InputLabel>
+                      <FormControl fullWidth sx={{ mb: 4 }}>
+                        <Controller
+                          name='confirm-password'
+                          control={passwordControl}
+                          rules={{ required: true }}
+                          render={({ field: { value, onChange } }) => (
+                            <OutlinedInput
+                              value={value}
+                              onChange={onChange}
+                              id='confirm-password'
+                              placeholder={t('register-email-pass-confirm')}
+                              type={state.showPassword2 ? 'text' : 'password'}
+                              endAdornment={
+                                <InputAdornment position='end'>
+                                  <IconButton
+                                    edge='end'
+                                    onMouseDown={e => e.preventDefault()}
+                                    aria-label='toggle password visibility'
+                                    onClick={handleClickShowConfirmPassword}
+                                  >
+                                    <Icon icon={state.showPassword2 ? 'tabler:eye' : 'tabler:eye-off'} />
+                                  </IconButton>
+                                </InputAdornment>
+                              }
+                            />
+                          )}
+                        />
+                        {passwordErrors['confirm-password'] && (
+                          <FormHelperText sx={{ color: 'error.main' }} id='stepper-linear-account-confirm-password-helper'>
+                            {passwordErrors['confirm-password'].message}
+                          </FormHelperText>
+                        )}
+                      </FormControl>
 
-              {/* Confirm Password */}
-              <Grid item xs={12} sm={6}>
-                <FormControl fullWidth>
-                  <InputLabel htmlFor='stepper-linear-account-confirm-password'>Confirm Password</InputLabel>
-                  <Controller
-                    name='confirm-password'
-                    control={passwordControl}
-                    rules={{ required: true }}
-                    render={({ field: { value, onChange } }) => (
-                      <OutlinedInput
-                        value={value}
-                        onChange={onChange}
-                        label='Confirm Password'
-                        id='stepper-linear-account-confirm-password'
-                        type={state.showPassword2 ? 'text' : 'password'}
-                        endAdornment={
-                          <InputAdornment position='end'>
-                            <IconButton
-                              edge='end'
-                              onMouseDown={e => e.preventDefault()}
-                              aria-label='toggle password visibility'
-                              onClick={handleClickShowConfirmPassword}
-                            >
-                              <Icon icon={state.showPassword2 ? 'tabler:eye' : 'tabler:eye-off'} />
-                            </IconButton>
-                          </InputAdornment>
-                        }
-                      />
-                    )}
-                  />
-                  {passwordErrors['confirm-password'] && (
-                    <FormHelperText sx={{ color: 'error.main' }} id='stepper-linear-account-confirm-password-helper'>
-                      {passwordErrors['confirm-password'].message}
-                    </FormHelperText>
-                  )}
-                </FormControl>
-              </Grid>
-
-              <Grid item sm={12}>
-                <Button size='large' type='submit' variant='contained'>
-                  Next
-                </Button>
-              </Grid>
-            </Grid>
-          </form>
+                      <Button className='FNV-SendEmail' size='small' type='submit'>
+                        {t('register-email-pass-button')}
+                      </Button>
+                    </form>
+                  </div>
+                  <div className='col-12 col-lg-8 d-md-none d-lg-block'></div>
+                </div>
+              </div>
+            </section>
+          </>
         )
+
+      // case 2:
+      //   return (
+      //     <>
+      //       <section className='FNV-Register'>
+      //         <div className='container-fluid'>
+      //           <div className='row'>
+      //             <div className='col-12 col-lg-4'>
+      //               <form key={1} onSubmit={handlePersonalSubmit(onSubmit)}>
+      //                 {/* City */}
+      //                 <FormControl fullWidth sx={{ mb: 4 }}>
+      //                   <Controller
+      //                     name='country'
+      //                     control={personalControl}
+      //                     rules={{ required: false }}
+      //                     render={({ field: { value, onChange } }) => (
+      //                       <TextField
+      //                         value={value}
+      //                         label='Country'
+      //                         onChange={onChange}
+      //                         placeholder='Canada'
+      //                         aria-describedby='stepper-linear-personal-country'
+      //                       />
+      //                     )}
+      //                   />
+      //                   {personalErrors['country'] && (
+      //                     <FormHelperText sx={{ color: 'error.main' }} id='stepper-linear-personal-country'>
+      //                       {personalErrors.country.message}
+      //                     </FormHelperText>
+      //                   )}
+      //                 </FormControl>
+
+      //                 {/* Country */}
+      //                 <FormControl fullWidth sx={{ mb: 4 }}>
+      //                   <Controller
+      //                     name='city'
+      //                     control={personalControl}
+      //                     rules={{ required: true }}
+      //                     render={({ field: { value, onChange } }) => (
+      //                       <TextField
+      //                         value={value}
+      //                         label='City'
+      //                         onChange={onChange}
+      //                         placeholder='Toronto'
+      //                         aria-describedby='stepper-linear-personal-city'
+      //                       />
+      //                     )}
+      //                   />
+      //                   {personalErrors['city'] && (
+      //                     <FormHelperText sx={{ color: 'error.main' }} id='stepper-linear-personal-city'>
+      //                       {personalErrors.city.message}
+      //                     </FormHelperText>
+      //                   )}
+      //                 </FormControl>
+
+      //                 {/* Address */}
+      //                 <FormControl fullWidth sx={{ mb: 4 }}>
+      //                   <Controller
+      //                     name='postalCode'
+      //                     control={personalControl}
+      //                     rules={{ required: true }}
+      //                     render={({ field: { value, onChange } }) => (
+      //                       <TextField
+      //                         value={value}
+      //                         label='Postal code'
+      //                         onChange={onChange}
+      //                         placeholder='Postal code'
+      //                         aria-describedby='stepper-linear-personal-city'
+      //                       />
+      //                     )}
+      //                   />
+      //                   {personalErrors['postalCode'] && (
+      //                     <FormHelperText sx={{ color: 'error.main' }} id='stepper-linear-personal-postalCode'>
+      //                       {personalErrors.postalCode.message}
+      //                     </FormHelperText>
+      //                   )}
+      //                 </FormControl>
+
+      //                 {/* Postal Code */}
+      //                 <FormControl fullWidth sx={{ mb: 4 }}>
+      //                   <Controller
+      //                     name='address'
+      //                     control={personalControl}
+      //                     rules={{ required: true }}
+      //                     render={({ field: { value, onChange } }) => (
+      //                       <TextField
+      //                         value={value}
+      //                         label='Address'
+      //                         onChange={onChange}
+      //                         placeholder='Address'
+      //                         aria-describedby='stepper-linear-personal-address'
+      //                       />
+      //                     )}
+      //                   />
+      //                   {personalErrors['address'] && (
+      //                     <FormHelperText sx={{ color: 'error.main' }} id='stepper-linear-personal-city'>
+      //                       {personalErrors.address.message}
+      //                     </FormHelperText>
+      //                   )}
+      //                 </FormControl>
+
+      //                 {/* Button */}
+      //                 <Button className='FNV-SendEmail' size='small' type='submit'>
+      //                   Next
+      //                 </Button>
+      //               </form>
+      //             </div>
+      //             <div className='col-12 col-lg-8 d-md-none d-lg-block'></div>
+      //           </div>
+      //         </div>
+      //       </section>
+      //     </>
+      //   )
 
       case 2:
         return (
-          <form key={1} onSubmit={handlePersonalSubmit(onSubmit)}>
-            <Grid container spacing={5}>
-              <Grid item xs={12}>
-                <Typography variant='body2' sx={{ fontWeight: 600, color: 'text.primary' }}>
-                  {steps[2].title}
-                </Typography>
-                <Typography variant='caption' component='p'>
-                  {steps[2].subtitle}
-                </Typography>
-              </Grid>
+          <>
+            <section className='FNV-Register'>
+              <div className='container-fluid'>
+                <div className='row'>
+                  <div className='col-12 col-lg-4'>
+                    <h1>{t('register-terms')}</h1>
 
-              {/* First Name */}
-              <Grid item xs={12} sm={6}>
-                <FormControl fullWidth>
-                  <Controller
-                    name='country'
-                    control={personalControl}
-                    rules={{ required: false }}
-                    render={({ field: { value, onChange } }) => (
-                      <TextField
-                        value={value}
-                        label='Country'
-                        onChange={onChange}
-                        placeholder='Canada'
-                        aria-describedby='stepper-linear-personal-country'
-                      />
-                    )}
-                  />
-                  {personalErrors['country'] && (
-                    <FormHelperText sx={{ color: 'error.main' }} id='stepper-linear-personal-country'>
-                      {personalErrors.country.message}
-                    </FormHelperText>
-                  )}
-                </FormControl>
-              </Grid>
+                    <p>{t('register-terms-text')}</p>
 
-              {/* Last Name */}
-              <Grid item xs={12} sm={6}>
-                <FormControl fullWidth>
-                  <Controller
-                    name='city'
-                    control={personalControl}
-                    rules={{ required: true }}
-                    render={({ field: { value, onChange } }) => (
-                      <TextField
-                        value={value}
-                        label='City'
-                        onChange={onChange}
-                        placeholder='Toronto'
-                        aria-describedby='stepper-linear-personal-city'
-                      />
-                    )}
-                  />
-                  {personalErrors['city'] && (
-                    <FormHelperText sx={{ color: 'error.main' }} id='stepper-linear-personal-city'>
-                      {personalErrors.city.message}
-                    </FormHelperText>
-                  )}
-                </FormControl>
-              </Grid>
-              {/* Last Name */}
-              <Grid item xs={12} sm={6}>
-                <FormControl fullWidth>
-                  <Controller
-                    name='postalCode'
-                    control={personalControl}
-                    rules={{ required: true }}
-                    render={({ field: { value, onChange } }) => (
-                      <TextField
-                        value={value}
-                        label='Postal code'
-                        onChange={onChange}
-                        placeholder='Postal code'
-                        aria-describedby='stepper-linear-personal-city'
-                      />
-                    )}
-                  />
-                  {personalErrors['postalCode'] && (
-                    <FormHelperText sx={{ color: 'error.main' }} id='stepper-linear-personal-postalCode'>
-                      {personalErrors.postalCode.message}
-                    </FormHelperText>
-                  )}
-                </FormControl>
-              </Grid>
-              {/* Last Name */}
-              <Grid item xs={12} sm={6}>
-                <FormControl fullWidth>
-                  <Controller
-                    name='address'
-                    control={personalControl}
-                    rules={{ required: true }}
-                    render={({ field: { value, onChange } }) => (
-                      <TextField
-                        value={value}
-                        label='Address'
-                        onChange={onChange}
-                        placeholder='Address'
-                        aria-describedby='stepper-linear-personal-address'
-                      />
-                    )}
-                  />
-                  {personalErrors['address'] && (
-                    <FormHelperText sx={{ color: 'error.main' }} id='stepper-linear-personal-city'>
-                      {personalErrors.address.message}
-                    </FormHelperText>
-                  )}
-                </FormControl>
-              </Grid>
-              {/* Navigation */}
-              <Grid item sm={12}>
-                <Button size='large' type='submit' variant='contained'>
-                  Next
-                </Button>
-              </Grid>
-            </Grid>
-          </form>
-        )
+                    <form key={2} onSubmit={handleContractSubmit(onSubmit)}>
+                      <Button className='mb-4' size='large' variant='outlined' color='secondary'>
+                        <Link href='/assets/terms-and-conditions.pdf' download=''>
+                          {t('register-terms-download')}
+                        </Link>
+                      </Button>
 
-      case 3:
-        return (
-          <form key={2} onSubmit={handleContractSubmit(onSubmit)}>
-            <Grid container spacing={5}>
-              <Grid item xs={12}>
-                <Typography variant='body2' sx={{ fontWeight: 600, color: 'text.primary' }}>
-                  Fanavaran Terms & Conditions.
-                </Typography>
-                <Typography variant='caption' component='p'>
-                  Please Download & read the following Privacy and Policy carefully and check the box below.
-                </Typography>
-              </Grid>
-              <Grid item xs={12} sm={12} sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                <Grid item xs={1} sm={1}>
-                  <FormControl fullWidth>
-                    <Controller
-                      name='contract'
-                      control={contractControl}
-                      rules={{ required: true }}
-                      render={({ field: { value, onChange } }) => (
-                        <Checkbox checked={value} onChange={e => onChange(e.target.checked)} color='primary' />
+                      {contractErrors['contract'] && (
+                        <FormHelperText fullWidth sx={{ color: 'error.main', textAlign: 'center', fontSize: '16px', fontWeight: '700' }}>
+                          {t('register-terms-download-checkbox-warning')}
+                        </FormHelperText>
                       )}
-                    />
-                  </FormControl>
-                </Grid>
-                <Grid item xs={11} sm={11}>
-                  <Typography variant='caption' component='p'>
-                    Please Download & read the following Terms and Conditions carefully and check the box below.
-                  </Typography>
-                </Grid>
-              </Grid>
-              <Grid item xs={6} sm={6}>
-                {contractErrors['contract'] && (
-                  <FormHelperText sx={{ color: 'error.main' }} id='stepper-linear-social-twitter'>
-                    To continue, you must read and accept the Terms and Conditions
-                  </FormHelperText>
-                )}
-              </Grid>
-              <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                <Button size='large' variant='outlined' color='secondary'>
-                  <Link href='/assets/terms-and-conditions.pdf' download=''>
-                    DOWNLOAD Terms and Conditions
-                  </Link>
-                </Button>
-                <Button size='large' type='submit' variant='contained'>
-                  Submit
-                </Button>
-              </Grid>
-            </Grid>
-          </form>
+                      <FormControl fullWidth sx={{ mb: 4 }}>
+                        <Controller
+                          name='contract'
+                          control={contractControl}
+                          rules={{ required: true }}
+                          render={({ field: { value, onChange } }) => (
+                            <FormControlLabel
+                              control={
+                                <Checkbox
+                                  checked={value}
+                                  onChange={e => onChange(e.target.checked)}
+                                  color='primary'
+                                />
+                              }
+                              label={t('register-terms-download-checkbox')}
+                            />
+                          )}
+                        />
+                      </FormControl>
+
+                      <Button className='FNV-SendEmail' size='small' type='submit'>
+                        {t('register-complete')}
+                      </Button>
+                    </form>
+                  </div>
+                  <div className='col-12 col-lg-8 d-md-none d-lg-block'></div>
+                </div>
+              </div>
+            </section>
+          </>
         )
       default:
         return null
@@ -481,36 +477,9 @@ const StepperLinearWithValidationVerification = props => {
   if (loading) return <p>Loading</p>
 
   return (
-    <Card>
-      <CardContent>
-        <StepperWrapper>
-          <Stepper activeStep={activeStep}>
-            {steps.map((step, index) => {
-              const labelProps = {}
-              if (index === activeStep) {
-                labelProps.error = false
-              }
-
-              return (
-                <Step key={index}>
-                  <StepLabel {...labelProps} StepIconComponent={StepperCustomDot}>
-                    <div className='step-label'>
-                      <Typography className='step-number'>{`0${index + 1}`}</Typography>
-                      <div>
-                        <Typography className='step-title'>{step.title}</Typography>
-                        <Typography className='step-subtitle'>{step.subtitle}</Typography>
-                      </div>
-                    </div>
-                  </StepLabel>
-                </Step>
-              )
-            })}
-          </Stepper>
-        </StepperWrapper>
-      </CardContent>
-      <Divider sx={{ m: '0 !important' }} />
-      <CardContent>{renderContent()}</CardContent>
-    </Card>
+    <>
+      {renderContent()}
+    </>
   )
 }
 

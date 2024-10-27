@@ -1,6 +1,9 @@
 // ** React Imports
 import { Fragment, useState, useCallback, useEffect } from 'react'
 
+// ** Import Translation
+import { useTranslation } from 'react-i18next'
+
 // ** MUI Imports
 import Box from '@mui/material/Box'
 import Card from '@mui/material/Card'
@@ -10,6 +13,7 @@ import Button from '@mui/material/Button'
 import Divider from '@mui/material/Divider'
 import Stepper from '@mui/material/Stepper'
 import StepLabel from '@mui/material/StepLabel'
+import InputLabel from '@mui/material/InputLabel'
 import TextField from '@mui/material/TextField'
 import Typography from '@mui/material/Typography'
 import CardContent from '@mui/material/CardContent'
@@ -69,6 +73,8 @@ const EmailPhoneSchema = yup.object().shape({
 })
 
 const StepperLinearWithValidation = () => {
+  const { t } = useTranslation()
+
   // ** States
   const [activeStep, setActiveStep] = useState(0)
   const [Email, setEmail] = useState(null)
@@ -132,128 +138,133 @@ const StepperLinearWithValidation = () => {
     switch (step) {
       case 0:
         return (
-          <form key={0} onSubmit={handleDetailsSubmit(onSubmit)}>
-            <Grid container spacing={5}>
-              <Grid item xs={12}>
-                <Typography variant='body2' sx={{ fontWeight: 600, color: 'text.primary' }}>
-                  {steps[0].title}
-                </Typography>
-                <Typography variant='caption' component='p'>
-                  {steps[0].subtitle}
-                </Typography>
-              </Grid>
+          <>
+            <section className='FNV-Register'>
+              <div className='container-fluid'>
+                <div className='row'>
+                  <div className='col-12 col-lg-4'>
+                    <h1>{t('register-heading')}</h1>
+                    <form key={0} onSubmit={handleDetailsSubmit(onSubmit)}>
+                      <div className='row px-1'>
+                        <div className='col-6 px-1'>
+                          {/* First name */}
+                          <InputLabel htmlFor='firstName'>{t('register-first-name')}</InputLabel>
+                          <FormControl fullWidth sx={{ mb: 4 }}>
+                            <Controller
+                              name='firstName'
+                              id='firstName'
+                              control={detailsControl}
+                              rules={{ required: true }}
+                              render={({ field: { value, onChange } }) => (
+                                <TextField
+                                  value={value}
+                                  onChange={onChange}
+                                  placeholder={t('register-first-name')}
+                                  error={Boolean(detailErrors.firstName)}
+                                  aria-describedby='stepper-linear-account-username'
+                                />
+                              )}
+                            />
 
-              {/* Email */}
-              <Grid item xs={12} sm={6}>
-                <FormControl fullWidth>
-                  <Controller
-                    name='email'
-                    control={detailsControl}
-                    rules={{ required: true }}
-                    render={({ field: { value, onChange } }) => (
-                      <TextField
-                        type='email'
-                        value={value}
-                        label='Email'
-                        onChange={onChange}
-                        error={Boolean(detailErrors.email)}
-                        placeholder='example@gmail.com'
-                        aria-describedby='stepper-linear-account-email'
-                      />
-                    )}
-                  />
-                  {detailErrors.email && (
-                    <FormHelperText sx={{ color: 'error.main' }} id='stepper-linear-account-email'>
-                      {detailErrors.email.message}
-                    </FormHelperText>
-                  )}
-                </FormControl>
-              </Grid>
+                            {detailErrors.firstName && (
+                              <FormHelperText sx={{ color: 'error.main' }} id='stepper-linear-account-username'>
+                                This field is required
+                              </FormHelperText>
+                            )}
+                          </FormControl>
+                        </div>
 
-              {/* Phone */}
-              <Grid item xs={12} sm={6}>
-                <FormControl fullWidth>
-                  <Controller
-                    name='phone'
-                    control={detailsControl}
-                    rules={{ required: true }}
-                    render={({ field: { value, onChange } }) => (
-                      <PhoneInput
-                        defaultCountry='CA'
-                        style={{ padding: '1.5px 14px', borderRadius: '6px', border: ' 1px solid #c7c7c7' }}
-                        placeholder='+372 699 1515'
-                        value={value}
-                        onChange={onChange}
-                        aria-describedby='stepper-linear-personal-phone'
-                      />
-                    )}
-                  />
-                  {detailErrors['phone'] && (
-                    <FormHelperText sx={{ color: 'error.main' }} id='stepper-linear-personal-lastname'>
-                      {detailErrors.phone.message}
-                    </FormHelperText>
-                  )}
-                </FormControl>
-              </Grid>
-              {/* First name */}
-              <Grid item xs={12} sm={6}>
-                <FormControl fullWidth>
-                  <Controller
-                    name='firstName'
-                    control={detailsControl}
-                    rules={{ required: true }}
-                    render={({ field: { value, onChange } }) => (
-                      <TextField
-                        value={value}
-                        label='First name'
-                        onChange={onChange}
-                        placeholder='Your name'
-                        error={Boolean(detailErrors.firstName)}
-                        aria-describedby='stepper-linear-account-username'
-                      />
-                    )}
-                  />
+                        <div className='col-6 px-2'>
+                          {/* Last name */}
+                          <InputLabel htmlFor='lastName'>{t('register-last-name')}</InputLabel>
+                          <FormControl fullWidth sx={{ mb: 4 }}>
+                            <Controller
+                              name='lastName'
+                              id='lastName'
+                              control={detailsControl}
+                              rules={{ required: true }}
+                              render={({ field: { value, onChange } }) => (
+                                <TextField
+                                  value={value}
+                                  onChange={onChange}
+                                  placeholder={t('register-last-name')}
+                                  error={Boolean(detailErrors.lastName)}
+                                  aria-describedby='stepper-linear-account-lastName'
+                                />
+                              )}
+                            />
 
-                  {detailErrors.firstName && (
-                    <FormHelperText sx={{ color: 'error.main' }} id='stepper-linear-account-username'>
-                      This field is required
-                    </FormHelperText>
-                  )}
-                </FormControl>
-              </Grid>
-              {/* First name */}
-              <Grid item xs={12} sm={6}>
-                <FormControl fullWidth>
-                  <Controller
-                    name='lastName'
-                    control={detailsControl}
-                    rules={{ required: true }}
-                    render={({ field: { value, onChange } }) => (
-                      <TextField
-                        value={value}
-                        label='Last name'
-                        onChange={onChange}
-                        placeholder='Your last name'
-                        error={Boolean(detailErrors.lastName)}
-                        aria-describedby='stepper-linear-account-lastName'
-                      />
-                    )}
-                  />
+                            {detailErrors.lastName && (
+                              <FormHelperText sx={{ color: 'error.main' }} id='stepper-linear-account-lastName'>
+                                This field is required
+                              </FormHelperText>
+                            )}
+                          </FormControl>
+                        </div>
+                      </div>
 
-                  {detailErrors.lastName && (
-                    <FormHelperText sx={{ color: 'error.main' }} id='stepper-linear-account-lastName'>
-                      This field is required
-                    </FormHelperText>
-                  )}
-                </FormControl>
-              </Grid>
-              <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                <Button size='large' type='submit' variant='contained'>
-                  Next
-                </Button>
-              </Grid>
-            </Grid>
-          </form>
+                      {/* Email */}
+                      <InputLabel htmlFor='email'>{t('register-user-email')}</InputLabel>
+                      <FormControl fullWidth sx={{ mb: 4 }}>
+                        <Controller
+                          name='email'
+                          id='email'
+                          control={detailsControl}
+                          rules={{ required: true }}
+                          render={({ field: { value, onChange } }) => (
+                            <TextField
+                              type='email'
+                              value={value}
+                              onChange={onChange}
+                              error={Boolean(detailErrors.email)}
+                              placeholder={t('register-user-email')}
+                              aria-describedby='stepper-linear-account-email'
+                            />
+                          )}
+                        />
+                        {detailErrors.email && (
+                          <FormHelperText sx={{ color: 'error.main' }} id='stepper-linear-account-email'>
+                            {detailErrors.email.message}
+                          </FormHelperText>
+                        )}
+                      </FormControl>
+
+                      {/* Phone */}
+                      <InputLabel htmlFor='phone'>{t('register-user-phone')}</InputLabel>
+                      <FormControl fullWidth sx={{ mb: 8 }} className='FNV-Phone'>
+                        <Controller
+                          name='phone'
+                          id='phone'
+                          control={detailsControl}
+                          rules={{ required: true }}
+                          render={({ field: { value, onChange } }) => (
+                            <PhoneInput
+                              defaultCountry='CA'
+                              placeholder={t('register-user-phone')}
+                              value={value}
+                              onChange={onChange}
+                              aria-describedby='stepper-linear-personal-phone'
+                            />
+                          )}
+                        />
+                        {detailErrors['phone'] && (
+                          <FormHelperText sx={{ color: 'error.main' }} id='stepper-linear-personal-lastname'>
+                            {detailErrors.phone.message}
+                          </FormHelperText>
+                        )}
+                      </FormControl>
+
+                      <Button className='FNV-SendEmail' size='small' type='submit'>
+                        {t('register-step-one')}
+                      </Button>
+                    </form>
+                  </div>
+                  <div className='col-12 col-lg-8 d-md-none d-lg-block'></div>
+                </div>
+              </div>
+            </section>
+          </>
+
         )
 
       default:
@@ -274,12 +285,17 @@ const StepperLinearWithValidation = () => {
             </>
           ) : (
             <>
-              {' '}
-              <h2>Verification Email Sent!</h2>
-              <p>
-                To verify your account please click on the link in the email we have sent to {Email} and follow the
-                steps there after.
-              </p>
+              <section className='FNV-Register-Verification-Sent'>
+                <div className='container-fluid'>
+                  <div className='row'>
+                    <div className='col-12 col-lg-12'>
+                      <img src='/images/pages/register/email.webp' className='img-fluid mb-4' />
+                      <h1 className='mb-4'>{t('register-email-verification-title')}</h1>
+                      <p className='mb-4'>{t('register-email-verification-text')}</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </>
           )}
         </Fragment>
@@ -290,40 +306,9 @@ const StepperLinearWithValidation = () => {
   }
 
   return (
-    <Card>
-      <CardContent>
-        <StepperWrapper>
-          <Stepper activeStep={activeStep}>
-            {steps.map((step, index) => {
-              const labelProps = {}
-              if (index === 0) {
-                {
-                  error ? (labelProps.error = true) : (labelProps.error = false)
-                }
-              }
-
-              return (
-                <Step key={index}>
-                  <StepLabel {...labelProps} StepIconComponent={StepperCustomDot}>
-                    <div className='step-label'>
-                      <Typography className='step-number'>{`0${index + 1}`}</Typography>
-                      <div>
-                        <Typography className='step-title'>{step.title}</Typography>
-                        <Typography className='step-subtitle'>{step.subtitle}</Typography>
-                      </div>
-                    </div>
-                  </StepLabel>
-                </Step>
-              )
-            })}
-          </Stepper>
-        </StepperWrapper>
-      </CardContent>
-
-      <Divider sx={{ m: '0 !important' }} />
-
-      <CardContent>{renderContent()}</CardContent>
-    </Card>
+    <>
+      {renderContent()}
+    </>
   )
 }
 

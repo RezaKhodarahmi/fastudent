@@ -85,38 +85,11 @@ const TokenVerification = () => {
   }
 
   return (
-    <Box className='content-right' sx={{ backgroundColor: 'background.paper' }}>
+    <>
       {!hidden ? (
-        <Box
-          sx={{
-            flex: 1,
-            display: 'flex',
-            position: 'relative',
-            alignItems: 'center',
-            borderRadius: '20px',
-            justifyContent: 'center',
-            backgroundColor: 'customColors.bodyBg',
-            margin: theme => theme.spacing(8, 8, 8, 8)
-          }}
-        >
-          <Box sx={{ width: '70%' }}>
-            <Logo />
-            <Box sx={{ my: 6 }}>
-              <Typography sx={{ mb: 1.5, fontWeight: 500, fontSize: '1.625rem', lineHeight: 1.385 }}>
-                Sign Up For The Fanavaran
-              </Typography>
-              <Typography sx={{ color: 'text.secondary' }}>
-                No cost for registration. Competitive commission. Highest value. Take 4 simple steps right now to gain
-                access to our arsenal of hundreds of adventures all on one booking platform, all ready to satisfy
-                everything a travel agent needs!
-              </Typography>
-            </Box>
-
-            <RegisterWizardVerification token={token} />
-          </Box>
-        </Box>
+        <RegisterWizardVerification token={token} />
       ) : null}
-    </Box>
+    </>
   )
 }
 TokenVerification.getLayout = page => <BlankLayout>{page}</BlankLayout>
