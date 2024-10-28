@@ -1,769 +1,144 @@
 @import './variables';
 
-// English
-body[dir='ltr'] {
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .FNV-Top_Categories {
+    background-color: $WhiteColor;
+    padding: 4rem 0;
 
-  // X-Small devices (portrait phones, less than 576px)
-  @media (max-width: 575.98px) {
-    .FNV-Top_Categories {
-      background-color: $WhiteColor;
-      padding: 1rem 0;
+    .container {
+      .row {
+        justify-content: center;
 
-      .container {
-        .row {
-          justify-content: center;
-
-          h2 {
-            font-size: 22px;
-            font-weight: 300;
-            color: $PrimaryOne;
-            text-align: center;
-            margin-bottom: 1rem;
-          }
-
-          svg {
-            width: 100%;
-            height: 150px;
-
-            a {
-              fill: transparent;
-            }
-          }
+        h2 {
+          font-size: 35px;
+          font-weight: 800;
+          color: $PrimaryOne;
+          text-align: center;
+          margin-bottom: 5rem;
         }
 
-        &:nth-child(2) {
-          .row {
-            position: relative;
-
-            .col-12 {
-              h3 {
-                font-size: 24px;
-                line-height: 46px;
-                color: $PrimaryColor;
-                font-weight: 500;
-                min-height: 95px;
-              }
-
-              p {
-                font-size: 16px;
-                line-height: 32px;
-                color: $BlackColor;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .FNV-Mission {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-image: url("/images/pages/mission.jpg");
-
-      .FNV-Canvas-Top {
-        transform: scaleX(-1);
-      }
-
-      .container {
-        .row {
-          h2 {
-            z-index: 4;
-            font-size: 22px;
-            font-weight: 300;
-            margin-top: -2rem;
-            text-align: center;
-            color: $PrimaryOne;
+        .col-md-3 {
+          .card {
+            display: flex;
+            padding: 2rem;
+            border-width: 0;
+            border-radius: 27px;
             margin-bottom: 1rem;
-          }
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $WhiteThree;
 
-          .col-md-4 {
-            &.Top1 {
+            svg {
+              width: 80px;
               margin-bottom: 2rem;
             }
 
-            &.Top2 {
-              margin-bottom: 2rem;
+            h3 {
+              font-size: 14px;
+              font-weight: 700;
+              color: $PrimaryOne;
             }
 
-            .card {
-              padding: 1rem;
-              border-radius: 0px;
-              position: relative;
-              background-color: transparent;
-              border: 1px solid $PrimaryOne;
+            &:hover {
+              background-color: $PrimaryOne;
 
               svg {
-                margin-bottom: 1rem;
+                path {
+                  stroke: $White;
+                }
               }
 
               h3 {
-                font-size: 16px;
-                font-weight: 400;
-                color: $PrimaryOne;
-                margin-bottom: 1rem;
-              }
-
-              p {
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 28px;
-                color: $PrimaryTextOne;
-              }
-
-              a {
-                left: 1rem;
-                bottom: -21px;
-                width: 200px;
-                padding: .5rem 0;
                 color: $White;
-                display: flex;
-                position: absolute;
-                border-radius: 0px;
-                align-items: center;
-                justify-content: center;
-                background-color: $PrimaryOne;
-
-
-                span {
-                  font-size: 14px;
-                  font-weight: 400;
-                }
-
-                svg {
-                  margin: 0 .5rem;
-                  margin-bottom: 0;
-                  transform: rotate(180deg);
-                }
               }
             }
           }
         }
-      }
-
-      .FNV-Canvas-Bottom {
-        margin-top: 2rem;
-        transform: scaleY(-1);
       }
     }
   }
 
-  // `sm` applies to x-small devices (portrait phones, less than 576px)
-  @media (min-width: 575.98px) and (max-width: 767.98px) {
-    .FNV-Top_Categories {
-      background-color: $WhiteColor;
-      padding: 1rem 0;
+  .FNV-Mission {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("/images/pages/mission.jpg");
 
-      .container {
-        .row {
-          justify-content: center;
+    .FNV-Canvas-Top {
+      transform: scaleX(-1);
+    }
 
-          h2 {
-            font-size: 22px;
-            font-weight: 300;
-            color: $PrimaryOne;
-            text-align: center;
+    .container {
+      .row {
+        h2 {
+          z-index: 4;
+          font-size: 22px;
+          font-weight: 300;
+          margin-top: -2rem;
+          text-align: center;
+          color: $PrimaryOne;
+          margin-bottom: 1rem;
+        }
+
+        .col-md-4 {
+          &.Top1 {
             margin-bottom: 2rem;
           }
 
-          svg {
-            width: 100%;
-            height: 220px;
-
-            a {
-              fill: transparent;
-            }
-          }
-        }
-
-        &:nth-child(2) {
-          .row {
-            position: relative;
-
-            .col-12 {
-              h3 {
-                font-size: 24px;
-                line-height: 46px;
-                color: $PrimaryColor;
-                font-weight: 500;
-                min-height: 95px;
-              }
-
-              p {
-                font-size: 16px;
-                line-height: 32px;
-                color: $BlackColor;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .FNV-Mission {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-image: url("/images/pages/mission.jpg");
-
-      .FNV-Canvas-Top {
-        transform: scaleX(-1);
-      }
-
-      .container {
-        .row {
-          h2 {
-            z-index: 4;
-            font-size: 22px;
-            font-weight: 300;
-            margin-top: -2rem;
-            text-align: center;
-            color: $PrimaryOne;
-            margin-bottom: 1rem;
-          }
-
-          .col-md-4 {
-            &.Top1 {
-              margin-bottom: 2rem;
-            }
-
-            &.Top2 {
-              margin-bottom: 2rem;
-            }
-
-            .card {
-              padding: 1rem;
-              border-radius: 0px;
-              position: relative;
-              background-color: transparent;
-              border: 1px solid $PrimaryOne;
-
-              svg {
-                margin-bottom: 1rem;
-              }
-
-              h3 {
-                font-size: 16px;
-                font-weight: 400;
-                color: $PrimaryOne;
-                margin-bottom: 1rem;
-              }
-
-              p {
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 28px;
-                color: $PrimaryTextOne;
-              }
-
-              a {
-                left: 1rem;
-                bottom: -21px;
-                width: 200px;
-                padding: .5rem 0;
-                color: $White;
-                display: flex;
-                position: absolute;
-                border-radius: 0px;
-                align-items: center;
-                justify-content: center;
-                background-color: $PrimaryOne;
-
-
-                span {
-                  font-size: 14px;
-                  font-weight: 400;
-                }
-
-                svg {
-                  margin: 0 .5rem;
-                  margin-bottom: 0;
-                  transform: rotate(180deg);
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .FNV-Canvas-Bottom {
-        margin-top: 2rem;
-        transform: scaleY(-1);
-      }
-    }
-  }
-
-  // `md` applies to small devices (landscape phones, less than 768px)
-  @media (min-width: 767.98px) and (max-width: 991.98px) {
-    .FNV-Top_Categories {
-      background-color: $WhiteColor;
-      padding: 4rem 0;
-
-      .container {
-        .row {
-          justify-content: center;
-
-          h2 {
-            font-size: 22px;
-            font-weight: 300;
-            color: $PrimaryOne;
-            text-align: center;
+          &.Top2 {
             margin-bottom: 2rem;
           }
 
-          svg {
-            width: 100%;
-            height: 250px;
+          .card {
+            padding: 1rem;
+            border-radius: 0px;
+            position: relative;
+            background-color: transparent;
+            border: 1px solid $PrimaryOne;
+
+            svg {
+              margin-bottom: 1rem;
+            }
+
+            h3 {
+              font-size: 16px;
+              font-weight: 400;
+              color: $PrimaryOne;
+              margin-bottom: 1rem;
+            }
+
+            p {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 28px;
+              color: $PrimaryTextOne;
+            }
 
             a {
-              fill: transparent;
-            }
-          }
-        }
-
-        &:nth-child(2) {
-          .row {
-            position: relative;
-
-            .col-12 {
-              h3 {
-                font-size: 24px;
-                line-height: 46px;
-                color: $PrimaryColor;
-                font-weight: 500;
-                min-height: 95px;
-              }
-
-              p {
-                font-size: 16px;
-                line-height: 32px;
-                color: $BlackColor;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .FNV-Mission {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-image: url("/images/pages/mission.jpg");
-
-      .FNV-Canvas-Top {
-        transform: scaleX(-1);
-      }
-
-      .container {
-        .row {
-          h2 {
-            z-index: 4;
-            font-size: 22px;
-            font-weight: 300;
-            margin-top: -2rem;
-            color: $PrimaryOne;
-          }
-
-          .col-md-4 {
-            &.Top1 {
-              margin-top: 5rem;
-            }
-
-            &.Top2 {
-              margin-top: 2.5rem;
-            }
-
-            .card {
-              padding: .5rem;
+              left: 1rem;
+              bottom: -21px;
+              width: 200px;
+              padding: .5rem 0;
+              color: $White;
+              display: flex;
+              position: absolute;
               border-radius: 0px;
-              position: relative;
-              background-color: transparent;
-              border: 1px solid $PrimaryOne;
-
-              svg {
-                margin-bottom: 1rem;
-              }
-
-              h3 {
-                font-size: 12px;
-                font-weight: 400;
-                color: $PrimaryOne;
-                margin-bottom: 1rem;
-              }
-
-              p {
-                font-size: 10px;
-                font-weight: 400;
-                line-height: 20px;
-                color: $PrimaryTextOne;
-              }
-
-              a {
-                left: .5rem;
-                bottom: -21px;
-                width: 200px;
-                padding: .5rem 0;
-                color: $White;
-                display: flex;
-                position: absolute;
-                border-radius: 0px;
-                align-items: center;
-                justify-content: center;
-                background-color: $PrimaryOne;
+              align-items: center;
+              justify-content: center;
+              background-color: $PrimaryOne;
 
 
-                span {
-                  font-size: 10px;
-                  font-weight: 400;
-                }
-
-                svg {
-                  margin: 0 .5rem;
-                  margin-bottom: 0;
-                  transform: rotate(180deg);
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .FNV-Canvas-Bottom {
-        transform: scaleY(-1);
-      }
-    }
-  }
-
-  // `lg` applies to medium devices (tablets, less than 992px)
-  @media (min-width: 991.98px) {
-    .FNV-Top_Categories {
-      background-color: $WhiteColor;
-      padding: 4rem 0;
-
-      .container {
-        .row {
-          justify-content: center;
-
-          h2 {
-            font-size: 28px;
-            font-weight: 300;
-            color: $PrimaryOne;
-            text-align: center;
-            margin-bottom: 5rem;
-          }
-
-          svg {
-            width: 100%;
-            height: 250px;
-
-            a {
-              fill: transparent;
-            }
-          }
-        }
-
-        &:nth-child(2) {
-          .row {
-            position: relative;
-
-            .col-12 {
-              h3 {
-                font-size: 24px;
-                line-height: 46px;
-                color: $PrimaryColor;
-                font-weight: 500;
-                min-height: 95px;
-              }
-
-              p {
-                font-size: 16px;
-                line-height: 32px;
-                color: $BlackColor;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .FNV-Mission {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-image: url("/images/pages/mission.jpg");
-
-      .FNV-Canvas-Top {
-        transform: scaleX(-1);
-      }
-
-      .container {
-        .row {
-          h2 {
-            z-index: 4;
-            font-size: 28px;
-            font-weight: 300;
-            margin-top: -2rem;
-            color: $PrimaryOne;
-          }
-
-          .col-md-4 {
-            &.Top1 {
-              margin-top: 5rem;
-            }
-
-            &.Top2 {
-              margin-top: 2.5rem;
-            }
-
-            .card {
-              padding: 1rem;
-              border-radius: 0px;
-              position: relative;
-              background-color: transparent;
-              border: 1px solid $PrimaryOne;
-
-              svg {
-                margin-bottom: 1rem;
-              }
-
-              h3 {
+              span {
                 font-size: 14px;
                 font-weight: 400;
-                color: $PrimaryOne;
-                margin-bottom: 1rem;
               }
-
-              p {
-                font-size: 12px;
-                font-weight: 400;
-                line-height: 24px;
-                color: $PrimaryTextOne;
-              }
-
-              a {
-                left: 1rem;
-                bottom: -21px;
-                width: 200px;
-                padding: .5rem 0;
-                color: $White;
-                display: flex;
-                position: absolute;
-                border-radius: 0px;
-                align-items: center;
-                justify-content: center;
-                background-color: $PrimaryOne;
-
-
-                span {
-                  font-size: 14px;
-                  font-weight: 400;
-                }
-
-                svg {
-                  margin: 0 .5rem;
-                  margin-bottom: 0;
-                  transform: rotate(180deg);
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .FNV-Canvas-Bottom {
-        transform: scaleY(-1);
-      }
-    }
-  }
-
-  // `xl` applies to large devices (desktops, less than 1200px)
-  @media (min-width: 1199.98px) {
-    .FNV-Top_Categories {
-      background-color: $WhiteColor;
-      padding: 4rem 0;
-
-      .container {
-        .row {
-          justify-content: center;
-
-          h2 {
-            font-size: 36px;
-            font-weight: 300;
-            color: $PrimaryOne;
-            text-align: center;
-            margin-bottom: 5rem;
-          }
-
-          svg {
-            width: 100%;
-            height: 300px;
-
-            a {
-              fill: transparent;
-            }
-          }
-        }
-
-        &:nth-child(2) {
-          .row {
-            position: relative;
-
-            .col-12 {
-              h3 {
-                font-size: 24px;
-                line-height: 46px;
-                color: $PrimaryColor;
-                font-weight: 500;
-                min-height: 95px;
-              }
-
-              p {
-                font-size: 16px;
-                line-height: 32px;
-                color: $BlackColor;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .FNV-Mission {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-image: url("/images/pages/mission.jpg");
-
-      .FNV-Canvas-Top {
-        transform: scaleX(-1);
-      }
-
-      .container {
-        .row {
-          h2 {
-            z-index: 4;
-            font-size: 36px;
-            font-weight: 300;
-            margin-top: -3rem;
-            color: $PrimaryOne;
-          }
-
-          .col-md-4 {
-            &.Top1 {
-              margin-top: 5rem;
-            }
-
-            &.Top2 {
-              margin-top: 2.5rem;
-            }
-
-            .card {
-              padding: 2rem;
-              border-radius: 0px;
-              position: relative;
-              background-color: transparent;
-              border: 1px solid $PrimaryOne;
 
               svg {
-                margin-bottom: 1rem;
-              }
-
-              h3 {
-                font-size: 14px;
-                font-weight: 400;
-                color: $PrimaryOne;
-                margin-bottom: 1rem;
-              }
-
-              p {
-                font-size: 12px;
-                font-weight: 400;
-                line-height: 24px;
-                color: $PrimaryTextOne;
-              }
-
-              a {
-                left: 2rem;
-                bottom: -21px;
-                width: 200px;
-                padding: .5rem 0;
-                color: $White;
-                display: flex;
-                position: absolute;
-                border-radius: 0px;
-                align-items: center;
-                justify-content: center;
-                background-color: $PrimaryOne;
-
-
-                span {
-                  font-size: 14px;
-                  font-weight: 400;
-                }
-
-                svg {
-                  margin: 0 .5rem;
-                  margin-bottom: 0;
-                  transform: rotate(180deg);
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .FNV-Canvas-Bottom {
-        transform: scaleY(-1);
-      }
-    }
-  }
-
-  // XX-Large devices (larger desktops, 1400px and up)
-  @media (min-width: 1400px) {
-    .FNV-Top_Categories {
-      background-color: $WhiteColor;
-      padding: 4rem 0;
-
-      .container {
-        .row {
-          justify-content: center;
-
-          h2 {
-            font-size: 48px;
-            font-weight: 300;
-            color: $PrimaryOne;
-            text-align: center;
-            margin-bottom: 5rem;
-          }
-
-          svg {
-            width: 80%;
-            height: 300px;
-
-            a {
-              fill: transparent;
-            }
-          }
-        }
-
-        &:nth-child(2) {
-          .row {
-            position: relative;
-
-            .col-12 {
-              h3 {
-                font-size: 24px;
-                line-height: 46px;
-                color: $PrimaryColor;
-                font-weight: 500;
-                min-height: 95px;
-              }
-
-              p {
-                font-size: 16px;
-                line-height: 32px;
-                color: $BlackColor;
+                margin: 0 .5rem;
+                margin-bottom: 0;
+                transform: rotate(180deg);
               }
             }
           }
@@ -771,431 +146,152 @@ body[dir='ltr'] {
       }
     }
 
-    .FNV-Mission {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-image: url("/images/pages/mission.jpg");
-
-      .FNV-Canvas-Top {
-        transform: scaleX(-1);
-      }
-
-      .container {
-        .row {
-          h2 {
-            z-index: 4;
-            font-size: 48px;
-            font-weight: 300;
-            margin-top: -3rem;
-            color: $PrimaryOne;
-          }
-
-          .col-md-4 {
-            &.Top1 {
-              margin-top: 10rem;
-            }
-
-            &.Top2 {
-              margin-top: 5rem;
-            }
-
-            .card {
-              padding: 4rem 3rem;
-              border-radius: 0px;
-              position: relative;
-              background-color: transparent;
-              border: 1px solid $PrimaryOne;
-
-              svg {
-                margin-bottom: 1rem;
-              }
-
-              h3 {
-                font-size: 24px;
-                font-weight: 400;
-                color: $PrimaryOne;
-                margin-bottom: 1rem;
-              }
-
-              p {
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 36px;
-                color: $PrimaryTextOne;
-              }
-
-              a {
-                left: 3rem;
-                bottom: -21px;
-                width: 200px;
-                padding: 1rem 0;
-                color: $White;
-                display: flex;
-                position: absolute;
-                border-radius: 0px;
-                align-items: center;
-                justify-content: center;
-                background-color: $PrimaryOne;
-
-
-                span {
-                  font-size: 18px;
-                  font-weight: 400;
-                }
-
-                svg {
-                  margin: 0 .5rem;
-                  margin-bottom: 0;
-                  transform: rotate(180deg);
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .FNV-Canvas-Bottom {
-        transform: scaleY(-1);
-      }
-    }
-  }
-
-  // XXX-Large devices (larger desktops, 1920px and up)
-  @media (min-width: 1920px) {
-    .FNV-Top_Categories {
-      background-color: $WhiteColor;
-      padding: 4rem 0;
-
-      .container {
-        .row {
-          justify-content: center;
-
-          h2 {
-            font-size: 48px;
-            font-weight: 300;
-            color: $PrimaryOne;
-            text-align: center;
-            margin-bottom: 5rem;
-          }
-
-          svg {
-            width: 80%;
-
-            a {
-              fill: transparent;
-            }
-          }
-        }
-
-        &:nth-child(2) {
-          .row {
-            position: relative;
-
-            .col-12 {
-              h3 {
-                font-size: 24px;
-                line-height: 46px;
-                color: $PrimaryColor;
-                font-weight: 500;
-                min-height: 95px;
-              }
-
-              p {
-                font-size: 16px;
-                line-height: 32px;
-                color: $BlackColor;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .FNV-Mission {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-image: url("/images/pages/mission.jpg");
-
-      .FNV-Canvas-Top {
-        transform: scaleX(-1);
-      }
-
-      .container {
-        .row {
-          h2 {
-            z-index: 4;
-            font-size: 48px;
-            font-weight: 300;
-            color: $PrimaryOne;
-            margin-top: -3rem;
-          }
-
-          .col-md-4 {
-            &.Top1 {
-              margin-top: 10rem;
-            }
-
-            &.Top2 {
-              margin-top: 5rem;
-            }
-
-            .card {
-              padding: 4rem 3rem;
-              border-radius: 0px;
-              position: relative;
-              background-color: transparent;
-              border: 1px solid $PrimaryOne;
-
-              svg {
-                margin-bottom: 1rem;
-              }
-
-              h3 {
-                font-size: 24px;
-                font-weight: 400;
-                color: $PrimaryOne;
-                margin-bottom: 1rem;
-              }
-
-              p {
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 36px;
-                color: $PrimaryTextOne;
-              }
-
-              a {
-                left: 3rem;
-                bottom: -21px;
-                width: 200px;
-                padding: 1rem 0;
-                color: $White;
-                display: flex;
-                position: absolute;
-                border-radius: 0px;
-                align-items: center;
-                justify-content: center;
-                background-color: $PrimaryOne;
-
-
-                span {
-                  font-size: 18px;
-                  font-weight: 400;
-                }
-
-                svg {
-                  margin: 0 .5rem;
-                  margin-bottom: 0;
-                  transform: rotate(180deg);
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .FNV-Canvas-Bottom {
-        transform: scaleY(-1);
-      }
+    .FNV-Canvas-Bottom {
+      margin-top: 2rem;
+      transform: scaleY(-1);
     }
   }
 }
 
-// Persian
-body[dir='rtl'] {
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+  .FNV-Top_Categories {
+    background-color: $WhiteColor;
+    padding: 4rem 0;
 
-  // X-Small devices (portrait phones, less than 576px)
-  @media (max-width: 575.98px) {
-    .FNV-Top_Categories {
-      background-color: $WhiteColor;
-      padding: 1rem 0;
+    .container {
+      .row {
+        justify-content: center;
 
-      .container {
-        .row {
-          justify-content: center;
-
-          h2 {
-            font-size: 22px;
-            font-weight: 300;
-            color: $PrimaryOne;
-            text-align: center;
-            margin-bottom: 1rem;
-          }
-
-          svg {
-            width: 100%;
-            height: 150px;
-
-            a {
-              fill: transparent;
-            }
-          }
+        h2 {
+          font-size: 35px;
+          font-weight: 800;
+          color: $PrimaryOne;
+          text-align: center;
+          margin-bottom: 5rem;
         }
 
-        &:nth-child(2) {
-          .row {
-            position: relative;
-
-            .col-12 {
-              h3 {
-                font-size: 24px;
-                line-height: 46px;
-                color: $PrimaryColor;
-                font-weight: 500;
-                min-height: 95px;
-              }
-
-              p {
-                font-size: 16px;
-                line-height: 32px;
-                color: $BlackColor;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .FNV-Mission {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-image: url("/images/pages/mission.jpg");
-
-      .FNV-Canvas-Top {
-        transform: scaleX(-1);
-      }
-
-      .container {
-        .row {
-          h2 {
-            z-index: 4;
-            font-size: 22px;
-            font-weight: 300;
-            margin-top: -2rem;
-            text-align: center;
-            color: $PrimaryOne;
+        .col-md-3 {
+          .card {
+            display: flex;
+            padding: 2rem;
+            border-width: 0;
+            border-radius: 27px;
             margin-bottom: 1rem;
-          }
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $WhiteThree;
 
-          .col-md-4 {
-            &.Top1 {
+            svg {
+              width: 80px;
               margin-bottom: 2rem;
             }
 
-            &.Top2 {
-              margin-bottom: 2rem;
+            h3 {
+              font-size: 14px;
+              font-weight: 700;
+              color: $PrimaryOne;
             }
 
-            .card {
-              padding: 1rem;
-              border-radius: 0px;
-              position: relative;
-              background-color: transparent;
-              border: 1px solid $PrimaryOne;
+            &:hover {
+              background-color: $PrimaryOne;
 
               svg {
-                margin-bottom: 1rem;
+                path {
+                  stroke: $White;
+                }
               }
 
               h3 {
-                font-size: 16px;
-                font-weight: 400;
-                color: $PrimaryOne;
-                margin-bottom: 1rem;
-              }
-
-              p {
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 28px;
-                color: $PrimaryTextOne;
-              }
-
-              a {
-                left: 1rem;
-                bottom: -21px;
-                width: 200px;
-                padding: .5rem 0;
                 color: $White;
-                display: flex;
-                position: absolute;
-                border-radius: 0px;
-                align-items: center;
-                justify-content: center;
-                background-color: $PrimaryOne;
-
-
-                span {
-                  font-size: 14px;
-                  font-weight: 400;
-                }
-
-                svg {
-                  margin: 0 .5rem;
-                  margin-bottom: 0;
-                  transform: rotate(180deg);
-                }
               }
             }
           }
         }
-      }
-
-      .FNV-Canvas-Bottom {
-        margin-top: 2rem;
-        transform: scaleY(-1);
       }
     }
   }
 
-  // `sm` applies to x-small devices (portrait phones, less than 576px)
-  @media (min-width: 575.98px) and (max-width: 767.98px) {
-    .FNV-Top_Categories {
-      background-color: $WhiteColor;
-      padding: 1rem 0;
+  .FNV-Mission {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("/images/pages/mission.jpg");
 
-      .container {
-        .row {
-          justify-content: center;
+    .FNV-Canvas-Top {
+      transform: scaleX(-1);
+    }
 
-          h2 {
-            font-size: 22px;
-            font-weight: 300;
-            color: $PrimaryOne;
-            text-align: center;
+    .container {
+      .row {
+        h2 {
+          z-index: 4;
+          font-size: 22px;
+          font-weight: 300;
+          margin-top: -2rem;
+          text-align: center;
+          color: $PrimaryOne;
+          margin-bottom: 1rem;
+        }
+
+        .col-md-4 {
+          &.Top1 {
             margin-bottom: 2rem;
           }
 
-          svg {
-            width: 100%;
-            height: 220px;
+          &.Top2 {
+            margin-bottom: 2rem;
+          }
+
+          .card {
+            padding: 1rem;
+            border-radius: 0px;
+            position: relative;
+            background-color: transparent;
+            border: 1px solid $PrimaryOne;
+
+            svg {
+              margin-bottom: 1rem;
+            }
+
+            h3 {
+              font-size: 16px;
+              font-weight: 400;
+              color: $PrimaryOne;
+              margin-bottom: 1rem;
+            }
+
+            p {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 28px;
+              color: $PrimaryTextOne;
+            }
 
             a {
-              fill: transparent;
-            }
-          }
-        }
+              left: 1rem;
+              bottom: -21px;
+              width: 200px;
+              padding: .5rem 0;
+              color: $White;
+              display: flex;
+              position: absolute;
+              border-radius: 0px;
+              align-items: center;
+              justify-content: center;
+              background-color: $PrimaryOne;
 
-        &:nth-child(2) {
-          .row {
-            position: relative;
 
-            .col-12 {
-              h3 {
-                font-size: 24px;
-                line-height: 46px;
-                color: $PrimaryColor;
-                font-weight: 500;
-                min-height: 95px;
+              span {
+                font-size: 14px;
+                font-weight: 400;
               }
 
-              p {
-                font-size: 16px;
-                line-height: 32px;
-                color: $BlackColor;
+              svg {
+                margin: 0 .5rem;
+                margin-bottom: 0;
+                transform: rotate(180deg);
               }
             }
           }
@@ -1203,719 +299,300 @@ body[dir='rtl'] {
       }
     }
 
-    .FNV-Mission {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-image: url("/images/pages/mission.jpg");
+    .FNV-Canvas-Bottom {
+      margin-top: 2rem;
+      transform: scaleY(-1);
+    }
+  }
+}
 
-      .FNV-Canvas-Top {
-        transform: scaleX(-1);
-      }
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  .FNV-Top_Categories {
+    background-color: $WhiteColor;
+    padding: 4rem 0;
 
-      .container {
-        .row {
-          h2 {
-            z-index: 4;
-            font-size: 22px;
-            font-weight: 300;
-            margin-top: -2rem;
-            text-align: center;
-            color: $PrimaryOne;
-            margin-bottom: 1rem;
-          }
+    .container {
+      .row {
+        justify-content: center;
 
-          .col-md-4 {
-            &.Top1 {
+        h2 {
+          font-size: 35px;
+          font-weight: 800;
+          color: $PrimaryOne;
+          text-align: center;
+          margin-bottom: 5rem;
+        }
+
+        .col-md-3 {
+          .card {
+            display: flex;
+            padding: 2rem;
+            border-width: 0;
+            border-radius: 27px;
+            margin-bottom: 2rem;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $WhiteThree;
+
+            svg {
+              width: 80px;
               margin-bottom: 2rem;
             }
 
-            &.Top2 {
-              margin-bottom: 2rem;
+            h3 {
+              font-size: 14px;
+              font-weight: 700;
+              color: $PrimaryOne;
             }
 
-            .card {
-              padding: 1rem;
-              border-radius: 0px;
-              position: relative;
-              background-color: transparent;
-              border: 1px solid $PrimaryOne;
+            &:hover {
+              background-color: $PrimaryOne;
 
               svg {
-                margin-bottom: 1rem;
+                path {
+                  stroke: $White;
+                }
               }
 
               h3 {
-                font-size: 16px;
-                font-weight: 400;
-                color: $PrimaryOne;
-                margin-bottom: 1rem;
-              }
-
-              p {
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 28px;
-                color: $PrimaryTextOne;
-              }
-
-              a {
-                left: 1rem;
-                bottom: -21px;
-                width: 200px;
-                padding: .5rem 0;
                 color: $White;
-                display: flex;
-                position: absolute;
-                border-radius: 0px;
-                align-items: center;
-                justify-content: center;
-                background-color: $PrimaryOne;
-
-
-                span {
-                  font-size: 14px;
-                  font-weight: 400;
-                }
-
-                svg {
-                  margin: 0 .5rem;
-                  margin-bottom: 0;
-                  transform: rotate(180deg);
-                }
               }
             }
           }
         }
-      }
-
-      .FNV-Canvas-Bottom {
-        margin-top: 2rem;
-        transform: scaleY(-1);
       }
     }
   }
 
-  // `md` applies to small devices (landscape phones, less than 768px)
-  @media (min-width: 767.98px) and (max-width: 991.98px) {
-    .FNV-Top_Categories {
-      background-color: $WhiteColor;
-      padding: 4rem 0;
+  .FNV-Mission {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("/images/pages/mission.jpg");
 
-      .container {
-        .row {
-          justify-content: center;
-
-          h2 {
-            font-size: 22px;
-            font-weight: 300;
-            color: $PrimaryOne;
-            text-align: center;
-            margin-bottom: 2rem;
-          }
-
-          svg {
-            width: 100%;
-            height: 250px;
-
-            a {
-              fill: transparent;
-            }
-          }
-        }
-
-        &:nth-child(2) {
-          .row {
-            position: relative;
-
-            .col-12 {
-              h3 {
-                font-size: 24px;
-                line-height: 46px;
-                color: $PrimaryColor;
-                font-weight: 500;
-                min-height: 95px;
-              }
-
-              p {
-                font-size: 16px;
-                line-height: 32px;
-                color: $BlackColor;
-              }
-            }
-          }
-        }
-      }
+    .FNV-Canvas-Top {
+      transform: scaleX(-1);
     }
 
-    .FNV-Mission {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-image: url("/images/pages/mission.jpg");
+    .container {
+      .row {
+        h2 {
+          z-index: 4;
+          font-size: 22px;
+          font-weight: 300;
+          margin-top: -2rem;
+          color: $PrimaryOne;
+        }
 
-      .FNV-Canvas-Top {
-        transform: scaleX(-1);
-      }
-
-      .container {
-        .row {
-          h2 {
-            z-index: 4;
-            font-size: 22px;
-            font-weight: 300;
-            margin-top: -2rem;
-            color: $PrimaryOne;
+        .col-md-4 {
+          &.Top1 {
+            margin-top: 5rem;
           }
 
-          .col-md-4 {
-            &.Top1 {
-              margin-top: 5rem;
+          &.Top2 {
+            margin-top: 2.5rem;
+          }
+
+          .card {
+            padding: .5rem;
+            border-radius: 0px;
+            position: relative;
+            background-color: transparent;
+            border: 1px solid $PrimaryOne;
+
+            svg {
+              margin-bottom: 1rem;
             }
 
-            &.Top2 {
-              margin-top: 2.5rem;
+            h3 {
+              font-size: 12px;
+              font-weight: 400;
+              color: $PrimaryOne;
+              margin-bottom: 1rem;
             }
 
-            .card {
-              padding: .5rem;
+            p {
+              font-size: 10px;
+              font-weight: 400;
+              line-height: 20px;
+              color: $PrimaryTextOne;
+            }
+
+            a {
+              left: .5rem;
+              bottom: -21px;
+              width: 200px;
+              padding: .5rem 0;
+              color: $White;
+              display: flex;
+              position: absolute;
               border-radius: 0px;
-              position: relative;
-              background-color: transparent;
-              border: 1px solid $PrimaryOne;
+              align-items: center;
+              justify-content: center;
+              background-color: $PrimaryOne;
 
-              svg {
-                margin-bottom: 1rem;
-              }
 
-              h3 {
-                font-size: 12px;
-                font-weight: 400;
-                color: $PrimaryOne;
-                margin-bottom: 1rem;
-              }
-
-              p {
+              span {
                 font-size: 10px;
                 font-weight: 400;
-                line-height: 20px;
-                color: $PrimaryTextOne;
               }
-
-              a {
-                left: .5rem;
-                bottom: -21px;
-                width: 200px;
-                padding: .5rem 0;
-                color: $White;
-                display: flex;
-                position: absolute;
-                border-radius: 0px;
-                align-items: center;
-                justify-content: center;
-                background-color: $PrimaryOne;
-
-
-                span {
-                  font-size: 10px;
-                  font-weight: 400;
-                }
-
-                svg {
-                  margin: 0 .5rem;
-                  margin-bottom: 0;
-                  transform: rotate(180deg);
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .FNV-Canvas-Bottom {
-        transform: scaleY(-1);
-      }
-    }
-  }
-
-  // `lg` applies to medium devices (tablets, less than 992px)
-  @media (min-width: 991.98px) {
-    .FNV-Top_Categories {
-      background-color: $WhiteColor;
-      padding: 4rem 0;
-
-      .container {
-        .row {
-          justify-content: center;
-
-          h2 {
-            font-size: 28px;
-            font-weight: 300;
-            color: $PrimaryOne;
-            text-align: center;
-            margin-bottom: 5rem;
-          }
-
-          svg {
-            width: 100%;
-            height: 250px;
-
-            a {
-              fill: transparent;
-            }
-          }
-        }
-
-        &:nth-child(2) {
-          .row {
-            position: relative;
-
-            .col-12 {
-              h3 {
-                font-size: 24px;
-                line-height: 46px;
-                color: $PrimaryColor;
-                font-weight: 500;
-                min-height: 95px;
-              }
-
-              p {
-                font-size: 16px;
-                line-height: 32px;
-                color: $BlackColor;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .FNV-Mission {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-image: url("/images/pages/mission.jpg");
-
-      .FNV-Canvas-Top {
-        transform: scaleX(-1);
-      }
-
-      .container {
-        .row {
-          h2 {
-            z-index: 4;
-            font-size: 28px;
-            font-weight: 300;
-            margin-top: -2rem;
-            color: $PrimaryOne;
-          }
-
-          .col-md-4 {
-            &.Top1 {
-              margin-top: 5rem;
-            }
-
-            &.Top2 {
-              margin-top: 2.5rem;
-            }
-
-            .card {
-              padding: 1rem;
-              border-radius: 0px;
-              position: relative;
-              background-color: transparent;
-              border: 1px solid $PrimaryOne;
 
               svg {
-                margin-bottom: 1rem;
-              }
-
-              h3 {
-                font-size: 14px;
-                font-weight: 400;
-                color: $PrimaryOne;
-                margin-bottom: 1rem;
-              }
-
-              p {
-                font-size: 12px;
-                font-weight: 400;
-                line-height: 24px;
-                color: $PrimaryTextOne;
-              }
-
-              a {
-                left: 1rem;
-                bottom: -21px;
-                width: 200px;
-                padding: .5rem 0;
-                color: $White;
-                display: flex;
-                position: absolute;
-                border-radius: 0px;
-                align-items: center;
-                justify-content: center;
-                background-color: $PrimaryOne;
-
-
-                span {
-                  font-size: 14px;
-                  font-weight: 400;
-                }
-
-                svg {
-                  margin: 0 .5rem;
-                  margin-bottom: 0;
-                  transform: rotate(180deg);
-                }
+                margin: 0 .5rem;
+                margin-bottom: 0;
+                transform: rotate(180deg);
               }
             }
           }
         }
       }
+    }
 
-      .FNV-Canvas-Bottom {
-        transform: scaleY(-1);
-      }
+    .FNV-Canvas-Bottom {
+      transform: scaleY(-1);
     }
   }
+}
 
-  // `xl` applies to large devices (desktops, less than 1200px)
-  @media (min-width: 1199.98px) {
-    .FNV-Top_Categories {
-      background-color: $WhiteColor;
-      padding: 4rem 0;
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (min-width: 991.98px) {
+  .FNV-Top_Categories {
+    background-color: $WhiteColor;
+    padding: 4rem 0;
 
-      .container {
-        .row {
-          justify-content: center;
+    .container {
+      .row {
+        justify-content: center;
 
-          h2 {
-            font-size: 36px;
-            font-weight: 300;
-            color: $PrimaryOne;
-            text-align: center;
-            margin-bottom: 5rem;
-          }
-
-          svg {
-            width: 100%;
-            height: 300px;
-
-            a {
-              fill: transparent;
-            }
-          }
+        h2 {
+          font-size: 35px;
+          font-weight: 800;
+          color: $PrimaryOne;
+          text-align: center;
+          margin-bottom: 5rem;
         }
 
-        &:nth-child(2) {
-          .row {
-            position: relative;
+        .col-md-3 {
+          .card {
+            display: flex;
+            padding: 2rem;
+            border-width: 0;
+            border-radius: 27px;
+            margin-bottom: 2rem;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $WhiteThree;
 
-            .col-12 {
-              h3 {
-                font-size: 24px;
-                line-height: 46px;
-                color: $PrimaryColor;
-                font-weight: 500;
-                min-height: 95px;
-              }
-
-              p {
-                font-size: 16px;
-                line-height: 32px;
-                color: $BlackColor;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .FNV-Mission {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-image: url("/images/pages/mission.jpg");
-
-      .FNV-Canvas-Top {
-        transform: scaleX(-1);
-      }
-
-      .container {
-        .row {
-          h2 {
-            z-index: 4;
-            font-size: 36px;
-            font-weight: 300;
-            margin-top: -3rem;
-            color: $PrimaryOne;
-          }
-
-          .col-md-4 {
-            &.Top1 {
-              margin-top: 5rem;
+            svg {
+              width: 80px;
+              margin-bottom: 2rem;
             }
 
-            &.Top2 {
-              margin-top: 2.5rem;
+            h3 {
+              font-size: 18px;
+              font-weight: 700;
+              color: $PrimaryOne;
             }
 
-            .card {
-              padding: 2rem;
-              border-radius: 0px;
-              position: relative;
-              background-color: transparent;
-              border: 1px solid $PrimaryOne;
+            &:hover {
+              background-color: $PrimaryOne;
 
               svg {
-                margin-bottom: 1rem;
+                path {
+                  stroke: $White;
+                }
               }
 
               h3 {
-                font-size: 14px;
-                font-weight: 400;
-                color: $PrimaryOne;
-                margin-bottom: 1rem;
-              }
-
-              p {
-                font-size: 12px;
-                font-weight: 400;
-                line-height: 24px;
-                color: $PrimaryTextOne;
-              }
-
-              a {
-                left: 2rem;
-                bottom: -21px;
-                width: 200px;
-                padding: .5rem 0;
                 color: $White;
-                display: flex;
-                position: absolute;
-                border-radius: 0px;
-                align-items: center;
-                justify-content: center;
-                background-color: $PrimaryOne;
-
-
-                span {
-                  font-size: 14px;
-                  font-weight: 400;
-                }
-
-                svg {
-                  margin: 0 .5rem;
-                  margin-bottom: 0;
-                  transform: rotate(180deg);
-                }
               }
             }
           }
         }
-      }
-
-      .FNV-Canvas-Bottom {
-        transform: scaleY(-1);
       }
     }
   }
 
-  // XX-Large devices (larger desktops, 1400px and up)
-  @media (min-width: 1400px) {
-    .FNV-Top_Categories {
-      background-color: $WhiteColor;
-      padding: 4rem 0;
+  .FNV-Mission {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("/images/pages/mission.jpg");
 
-      .container {
-        .row {
-          justify-content: center;
+    .FNV-Canvas-Top {
+      transform: scaleX(-1);
+    }
 
-          h2 {
-            font-size: 48px;
-            font-weight: 300;
-            color: $PrimaryOne;
-            text-align: center;
-            margin-bottom: 5rem;
-          }
-
-          svg {
-            width: 80%;
-            height: 300px;
-
-            a {
-              fill: transparent;
-            }
-          }
+    .container {
+      .row {
+        h2 {
+          z-index: 4;
+          font-size: 28px;
+          font-weight: 300;
+          margin-top: -2rem;
+          color: $PrimaryOne;
         }
 
-        &:nth-child(2) {
-          .row {
+        .col-md-4 {
+          &.Top1 {
+            margin-top: 5rem;
+          }
+
+          &.Top2 {
+            margin-top: 2.5rem;
+          }
+
+          .card {
+            padding: 1rem;
+            border-radius: 0px;
             position: relative;
+            background-color: transparent;
+            border: 1px solid $PrimaryOne;
 
-            .col-12 {
-              h3 {
-                font-size: 24px;
-                line-height: 46px;
-                color: $PrimaryColor;
-                font-weight: 500;
-                min-height: 95px;
-              }
-
-              p {
-                font-size: 16px;
-                line-height: 32px;
-                color: $BlackColor;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .FNV-Mission {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-image: url("/images/pages/mission.jpg");
-
-      .FNV-Canvas-Top {
-        transform: scaleX(-1);
-      }
-
-      .container {
-        .row {
-          h2 {
-            z-index: 4;
-            font-size: 48px;
-            font-weight: 300;
-            margin-top: -3rem;
-            color: $PrimaryOne;
-          }
-
-          .col-md-4 {
-            &.Top1 {
-              margin-top: 10rem;
-            }
-
-            &.Top2 {
-              margin-top: 5rem;
-            }
-
-            .card {
-              padding: 4rem 3rem;
-              border-radius: 0px;
-              position: relative;
-              background-color: transparent;
-              border: 1px solid $PrimaryOne;
-
-              svg {
-                margin-bottom: 1rem;
-              }
-
-              h3 {
-                font-size: 24px;
-                font-weight: 400;
-                color: $PrimaryOne;
-                margin-bottom: 1rem;
-              }
-
-              p {
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 36px;
-                color: $PrimaryTextOne;
-              }
-
-              a {
-                left: 3rem;
-                bottom: -21px;
-                width: 200px;
-                padding: 1rem 0;
-                color: $White;
-                display: flex;
-                position: absolute;
-                border-radius: 0px;
-                align-items: center;
-                justify-content: center;
-                background-color: $PrimaryOne;
-
-
-                span {
-                  font-size: 18px;
-                  font-weight: 400;
-                }
-
-                svg {
-                  margin: 0 .5rem;
-                  margin-bottom: 0;
-                  transform: rotate(180deg);
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .FNV-Canvas-Bottom {
-        transform: scaleY(-1);
-      }
-    }
-  }
-
-  // XXX-Large devices (larger desktops, 1920px and up)
-  @media (min-width: 1920px) {
-    .FNV-Top_Categories {
-      background-color: $WhiteColor;
-      padding: 4rem 0;
-
-      .container {
-        .row {
-          justify-content: center;
-
-          h2 {
-            font-size: 35px;
-            font-weight: 800;
-            color: $PrimaryOne;
-            text-align: center;
-            margin-bottom: 5rem;
-          }
-
-          .col-md-3 {
-            .card {
-              display: flex;
-              padding: 2rem;
-              border-width: 0;
-              border-radius: 27px;
+            svg {
               margin-bottom: 1rem;
+            }
+
+            h3 {
+              font-size: 14px;
+              font-weight: 400;
+              color: $PrimaryOne;
+              margin-bottom: 1rem;
+            }
+
+            p {
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 24px;
+              color: $PrimaryTextOne;
+            }
+
+            a {
+              left: 1rem;
+              bottom: -21px;
+              width: 200px;
+              padding: .5rem 0;
+              color: $White;
+              display: flex;
+              position: absolute;
+              border-radius: 0px;
               align-items: center;
-              flex-direction: column;
               justify-content: center;
-              background-color: $WhiteThree;
+              background-color: $PrimaryOne;
+
+
+              span {
+                font-size: 14px;
+                font-weight: 400;
+              }
 
               svg {
-                width: 150px;
-              }
-
-              h3 {
-                font-size: 24px;
-                font-weight: 700;
-                color: $PrimaryOne;
-              }
-
-              &:hover {
-                background-color: $PrimaryOne;
-
-                svg {
-                  path {
-                    stroke: $White;
-                  }
-                }
-
-                h3 {
-                  color: $White;
-                }
+                margin: 0 .5rem;
+                margin-bottom: 0;
+                transform: rotate(180deg);
               }
             }
           }
@@ -1923,93 +600,455 @@ body[dir='rtl'] {
       }
     }
 
-    .FNV-Mission {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-image: url("/images/pages/mission.jpg");
+    .FNV-Canvas-Bottom {
+      transform: scaleY(-1);
+    }
+  }
+}
 
-      .FNV-Canvas-Top {
-        transform: scaleX(-1);
-      }
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (min-width: 1199.98px) {
+  .FNV-Top_Categories {
+    background-color: $WhiteColor;
+    padding: 4rem 0;
 
-      .container {
-        .row {
-          h2 {
-            z-index: 4;
-            font-size: 48px;
-            font-weight: 300;
-            color: $PrimaryOne;
-            margin-top: -3rem;
-          }
+    .container {
+      .row {
+        justify-content: center;
 
-          .col-md-4 {
-            &.Top1 {
-              margin-top: 10rem;
+        h2 {
+          font-size: 35px;
+          font-weight: 800;
+          color: $PrimaryOne;
+          text-align: center;
+          margin-bottom: 5rem;
+        }
+
+        .col-md-3 {
+          .card {
+            display: flex;
+            padding: 2rem;
+            border-width: 0;
+            border-radius: 27px;
+            margin-bottom: 2rem;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $WhiteThree;
+
+            svg {
+              width: 100px;
             }
 
-            &.Top2 {
-              margin-top: 5rem;
+            h3 {
+              font-size: 24px;
+              font-weight: 700;
+              color: $PrimaryOne;
             }
 
-            .card {
-              padding: 4rem 3rem;
-              border-radius: 0px;
-              position: relative;
-              background-color: transparent;
-              border: 1px solid $PrimaryOne;
+            &:hover {
+              background-color: $PrimaryOne;
 
               svg {
-                margin-bottom: 1rem;
+                path {
+                  stroke: $White;
+                }
               }
 
               h3 {
-                font-size: 24px;
-                font-weight: 400;
-                color: $PrimaryOne;
-                margin-bottom: 1rem;
-              }
-
-              p {
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 36px;
-                color: $PrimaryTextOne;
-              }
-
-              a {
-                left: 3rem;
-                bottom: -21px;
-                width: 200px;
-                padding: 1rem 0;
                 color: $White;
-                display: flex;
-                position: absolute;
-                border-radius: 0px;
-                align-items: center;
-                justify-content: center;
-                background-color: $PrimaryOne;
-
-
-                span {
-                  font-size: 18px;
-                  font-weight: 400;
-                }
-
-                svg {
-                  margin: 0 .5rem;
-                  margin-bottom: 0;
-                  transform: rotate(180deg);
-                }
               }
             }
           }
         }
       }
+    }
+  }
 
-      .FNV-Canvas-Bottom {
-        transform: scaleY(-1);
+  .FNV-Mission {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("/images/pages/mission.jpg");
+
+    .FNV-Canvas-Top {
+      transform: scaleX(-1);
+    }
+
+    .container {
+      .row {
+        h2 {
+          z-index: 4;
+          font-size: 36px;
+          font-weight: 300;
+          margin-top: -3rem;
+          color: $PrimaryOne;
+        }
+
+        .col-md-4 {
+          &.Top1 {
+            margin-top: 5rem;
+          }
+
+          &.Top2 {
+            margin-top: 2.5rem;
+          }
+
+          .card {
+            padding: 2rem;
+            border-radius: 0px;
+            position: relative;
+            background-color: transparent;
+            border: 1px solid $PrimaryOne;
+
+            svg {
+              margin-bottom: 1rem;
+            }
+
+            h3 {
+              font-size: 14px;
+              font-weight: 400;
+              color: $PrimaryOne;
+              margin-bottom: 1rem;
+            }
+
+            p {
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 24px;
+              color: $PrimaryTextOne;
+            }
+
+            a {
+              left: 2rem;
+              bottom: -21px;
+              width: 200px;
+              padding: .5rem 0;
+              color: $White;
+              display: flex;
+              position: absolute;
+              border-radius: 0px;
+              align-items: center;
+              justify-content: center;
+              background-color: $PrimaryOne;
+
+
+              span {
+                font-size: 14px;
+                font-weight: 400;
+              }
+
+              svg {
+                margin: 0 .5rem;
+                margin-bottom: 0;
+                transform: rotate(180deg);
+              }
+            }
+          }
+        }
       }
+    }
+
+    .FNV-Canvas-Bottom {
+      transform: scaleY(-1);
+    }
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+  .FNV-Top_Categories {
+    background-color: $WhiteColor;
+    padding: 4rem 0;
+
+    .container {
+      .row {
+        justify-content: center;
+
+        h2 {
+          font-size: 35px;
+          font-weight: 800;
+          color: $PrimaryOne;
+          text-align: center;
+          margin-bottom: 5rem;
+        }
+
+        .col-md-3 {
+          .card {
+            display: flex;
+            padding: 2rem;
+            border-width: 0;
+            border-radius: 27px;
+            margin-bottom: 2rem;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $WhiteThree;
+
+            svg {
+              width: 150px;
+            }
+
+            h3 {
+              font-size: 24px;
+              font-weight: 700;
+              color: $PrimaryOne;
+            }
+
+            &:hover {
+              background-color: $PrimaryOne;
+
+              svg {
+                path {
+                  stroke: $White;
+                }
+              }
+
+              h3 {
+                color: $White;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .FNV-Mission {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("/images/pages/mission.jpg");
+
+    .FNV-Canvas-Top {
+      transform: scaleX(-1);
+    }
+
+    .container {
+      .row {
+        h2 {
+          z-index: 4;
+          font-size: 48px;
+          font-weight: 300;
+          margin-top: -3rem;
+          color: $PrimaryOne;
+        }
+
+        .col-md-4 {
+          &.Top1 {
+            margin-top: 10rem;
+          }
+
+          &.Top2 {
+            margin-top: 5rem;
+          }
+
+          .card {
+            padding: 4rem 3rem;
+            border-radius: 0px;
+            position: relative;
+            background-color: transparent;
+            border: 1px solid $PrimaryOne;
+
+            svg {
+              margin-bottom: 1rem;
+            }
+
+            h3 {
+              font-size: 24px;
+              font-weight: 400;
+              color: $PrimaryOne;
+              margin-bottom: 1rem;
+            }
+
+            p {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 36px;
+              color: $PrimaryTextOne;
+            }
+
+            a {
+              left: 3rem;
+              bottom: -21px;
+              width: 200px;
+              padding: 1rem 0;
+              color: $White;
+              display: flex;
+              position: absolute;
+              border-radius: 0px;
+              align-items: center;
+              justify-content: center;
+              background-color: $PrimaryOne;
+
+
+              span {
+                font-size: 18px;
+                font-weight: 400;
+              }
+
+              svg {
+                margin: 0 .5rem;
+                margin-bottom: 0;
+                transform: rotate(180deg);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .FNV-Canvas-Bottom {
+      transform: scaleY(-1);
+    }
+  }
+}
+
+// XXX-Large devices (larger desktops, 1920px and up)
+@media (min-width: 1920px) {
+  .FNV-Top_Categories {
+    background-color: $WhiteColor;
+    padding: 4rem 0;
+
+    .container {
+      .row {
+        justify-content: center;
+
+        h2 {
+          font-size: 35px;
+          font-weight: 800;
+          color: $PrimaryOne;
+          text-align: center;
+          margin-bottom: 5rem;
+        }
+
+        .col-md-3 {
+          .card {
+            display: flex;
+            padding: 2rem;
+            border-width: 0;
+            border-radius: 27px;
+            margin-bottom: 2rem;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $WhiteThree;
+
+            svg {
+              width: 150px;
+            }
+
+            h3 {
+              font-size: 24px;
+              font-weight: 700;
+              color: $PrimaryOne;
+            }
+
+            &:hover {
+              background-color: $PrimaryOne;
+
+              svg {
+                path {
+                  stroke: $White;
+                }
+              }
+
+              h3 {
+                color: $White;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .FNV-Mission {
+    padding: 5rem 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("/images/pages/mission.jpg");
+
+    .FNV-Canvas-Top {
+      transform: scaleX(-1);
+    }
+
+    .container {
+      .row {
+        h2 {
+          z-index: 4;
+          font-size: 48px;
+          font-weight: 300;
+          color: $PrimaryOne;
+        }
+
+        .col-md-4 {
+          &.Top1 {
+            margin-top: 10rem;
+          }
+
+          &.Top2 {
+            margin-top: 5rem;
+          }
+
+          .card {
+            padding: 4rem 3rem;
+            border-radius: 0px;
+            position: relative;
+            background-color: transparent;
+            border: 1px solid $PrimaryOne;
+
+            svg {
+              margin-bottom: 1rem;
+            }
+
+            h3 {
+              font-size: 24px;
+              font-weight: 400;
+              color: $PrimaryOne;
+              margin-bottom: 1rem;
+            }
+
+            p {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 36px;
+              color: $PrimaryTextOne;
+            }
+
+            a {
+              left: 3rem;
+              bottom: -21px;
+              width: 200px;
+              padding: 1rem 0;
+              color: $White;
+              display: flex;
+              position: absolute;
+              border-radius: 0px;
+              align-items: center;
+              justify-content: center;
+              background-color: $PrimaryOne;
+
+
+              span {
+                font-size: 18px;
+                font-weight: 400;
+              }
+
+              svg {
+                margin: 0 .5rem;
+                margin-bottom: 0;
+                transform: rotate(180deg);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .FNV-Canvas-Bottom {
+      transform: scaleY(-1);
     }
   }
 }
