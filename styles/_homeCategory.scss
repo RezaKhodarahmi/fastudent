@@ -1875,39 +1875,47 @@ body[dir='rtl'] {
           justify-content: center;
 
           h2 {
-            font-size: 48px;
-            font-weight: 300;
+            font-size: 35px;
+            font-weight: 800;
             color: $PrimaryOne;
             text-align: center;
             margin-bottom: 5rem;
           }
 
-          svg {
-            width: 80%;
+          .col-md-3 {
+            .card {
+              display: flex;
+              padding: 2rem;
+              border-width: 0;
+              border-radius: 27px;
+              margin-bottom: 1rem;
+              align-items: center;
+              flex-direction: column;
+              justify-content: center;
+              background-color: $WhiteThree;
 
-            a {
-              fill: transparent;
-            }
-          }
-        }
-
-        &:nth-child(2) {
-          .row {
-            position: relative;
-
-            .col-12 {
-              h3 {
-                font-size: 24px;
-                line-height: 46px;
-                color: $PrimaryColor;
-                font-weight: 500;
-                min-height: 95px;
+              svg {
+                width: 150px;
               }
 
-              p {
-                font-size: 16px;
-                line-height: 32px;
-                color: $BlackColor;
+              h3 {
+                font-size: 24px;
+                font-weight: 700;
+                color: $PrimaryOne;
+              }
+
+              &:hover {
+                background-color: $PrimaryOne;
+
+                svg {
+                  path {
+                    stroke: $White;
+                  }
+                }
+
+                h3 {
+                  color: $White;
+                }
               }
             }
           }
