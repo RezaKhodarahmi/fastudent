@@ -7,6 +7,12 @@ body[dir='ltr'] {
             background-color: $WhiteColor;
 
             .container {
+                padding: 2rem;
+                border-radius: 28px;
+                background-size: cover;
+                background-position: right center;
+                background-image: url("/images/pages/about/about-us-r.jpg");
+
                 .row {
                     .col-md-6 {
                         display: flex;
@@ -15,16 +21,30 @@ body[dir='ltr'] {
                         justify-content: center;
 
                         h2 {
-                            font-size: 20px;
-                            font-weight: 300;
-                            color: $PrimaryOne;
+                            font-size: 35px;
+                            font-weight: 600;
+                            color: $WhiteColor;
                             margin-bottom: 2rem;
                         }
 
                         p {
-                            font-size: 14px;
+                            font-size: 20px;
                             font-weight: 400;
-                            color: $PrimaryOne;
+                            color: $WhiteColor;
+
+                            &:last-child {
+                                margin-bottom: 2rem;
+                            }
+                        }
+
+                        a {
+                            margin: 1rem 0;
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $WhiteColor;
+                            padding: .5rem 2rem;
+                            border-radius: 8px;
+                            border: 2px solid $WhiteColor;
                         }
                     }
                 }
@@ -35,10 +55,16 @@ body[dir='ltr'] {
     // `sm` applies to x-small devices (portrait phones, less than 576px)
     @media (min-width: 575.98px) and (max-width: 767px) {
         .FNV-HomeAbout {
-            padding: 1rem;
+            padding: 0;
             background-color: $WhiteColor;
 
             .container {
+                padding: 2rem;
+                border-radius: 28px;
+                background-size: cover;
+                background-position: right center;
+                background-image: url("/images/pages/about/about-us-r.jpg");
+
                 .row {
                     .col-md-6 {
                         display: flex;
@@ -47,16 +73,30 @@ body[dir='ltr'] {
                         justify-content: center;
 
                         h2 {
-                            font-size: 20px;
-                            font-weight: 300;
-                            color: $PrimaryOne;
+                            font-size: 35px;
+                            font-weight: 600;
+                            color: $WhiteColor;
                             margin-bottom: 2rem;
                         }
 
                         p {
-                            font-size: 14px;
+                            font-size: 20px;
                             font-weight: 400;
-                            color: $PrimaryOne;
+                            color: $WhiteColor;
+
+                            &:last-child {
+                                margin-bottom: 2rem;
+                            }
+                        }
+
+                        a {
+                            margin: 1rem 0;
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $WhiteColor;
+                            padding: .5rem 2rem;
+                            border-radius: 8px;
+                            border: 2px solid $WhiteColor;
                         }
                     }
                 }
@@ -71,6 +111,12 @@ body[dir='ltr'] {
             background-color: $WhiteColor;
 
             .container {
+                padding: 2rem;
+                border-radius: 28px;
+                background-size: cover;
+                background-position: center;
+                background-image: url("/images/pages/about/about-us-r.jpg");
+
                 .row {
                     .col-md-6 {
                         display: flex;
@@ -79,16 +125,30 @@ body[dir='ltr'] {
                         justify-content: center;
 
                         h2 {
-                            font-size: 22px;
-                            font-weight: 300;
-                            color: $PrimaryOne;
-                            margin-bottom: 1rem;
+                            font-size: 35px;
+                            font-weight: 600;
+                            color: $WhiteColor;
+                            margin-bottom: 2rem;
                         }
 
                         p {
-                            font-size: 16px;
+                            font-size: 20px;
                             font-weight: 400;
-                            color: $PrimaryOne;
+                            color: $WhiteColor;
+
+                            &:last-child {
+                                margin-bottom: 2rem;
+                            }
+                        }
+
+                        a {
+                            margin: 1rem 0;
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $WhiteColor;
+                            padding: .5rem 2rem;
+                            border-radius: 8px;
+                            border: 2px solid $WhiteColor;
                         }
                     }
                 }
@@ -103,6 +163,12 @@ body[dir='ltr'] {
             background-color: $WhiteColor;
 
             .container {
+                padding: 2rem;
+                border-radius: 28px;
+                background-size: cover;
+                background-position: center;
+                background-image: url("/images/pages/about/about-us-r.jpg");
+
                 .row {
                     .col-md-6 {
                         display: flex;
@@ -111,16 +177,30 @@ body[dir='ltr'] {
                         justify-content: center;
 
                         h2 {
-                            font-size: 36px;
-                            font-weight: 300;
-                            color: $PrimaryOne;
-                            margin-bottom: 1rem;
+                            font-size: 35px;
+                            font-weight: 600;
+                            color: $WhiteColor;
+                            margin-bottom: 2rem;
                         }
 
                         p {
-                            font-size: 16px;
+                            font-size: 20px;
                             font-weight: 400;
-                            color: $PrimaryOne;
+                            color: $WhiteColor;
+
+                            &:last-child {
+                                margin-bottom: 2rem;
+                            }
+                        }
+
+                        a {
+                            margin: 1rem 0;
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $WhiteColor;
+                            padding: .5rem 2rem;
+                            border-radius: 8px;
+                            border: 2px solid $WhiteColor;
                         }
                     }
                 }
@@ -135,6 +215,12 @@ body[dir='ltr'] {
             background-color: $WhiteColor;
 
             .container {
+                padding: 2rem;
+                border-radius: 28px;
+                background-size: cover;
+                background-position: center;
+                background-image: url("/images/pages/about/about-us-r.jpg");
+
                 .row {
                     .col-md-6 {
                         display: flex;
@@ -143,16 +229,30 @@ body[dir='ltr'] {
                         justify-content: center;
 
                         h2 {
-                            font-size: 36px;
-                            font-weight: 300;
-                            color: $PrimaryOne;
-                            margin-bottom: 1rem;
+                            font-size: 35px;
+                            font-weight: 600;
+                            color: $WhiteColor;
+                            margin-bottom: 2rem;
                         }
 
                         p {
-                            font-size: 18px;
-                            font-weight: 300;
-                            color: $PrimaryOne;
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $WhiteColor;
+
+                            &:last-child {
+                                margin-bottom: 2rem;
+                            }
+                        }
+
+                        a {
+                            margin: 1rem 0;
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $WhiteColor;
+                            padding: .5rem 2rem;
+                            border-radius: 8px;
+                            border: 2px solid $WhiteColor;
                         }
                     }
                 }
@@ -167,6 +267,12 @@ body[dir='ltr'] {
             background-color: $WhiteColor;
 
             .container {
+                padding: 4rem;
+                border-radius: 28px;
+                background-size: cover;
+                background-position: center;
+                background-image: url("/images/pages/about/about-us-r.jpg");
+
                 .row {
                     .col-md-6 {
                         display: flex;
@@ -175,16 +281,30 @@ body[dir='ltr'] {
                         justify-content: center;
 
                         h2 {
-                            font-size: 48px;
-                            font-weight: 300;
-                            color: $PrimaryOne;
-                            margin-bottom: 1rem;
+                            font-size: 35px;
+                            font-weight: 600;
+                            color: $WhiteColor;
+                            margin-bottom: 2rem;
                         }
 
                         p {
-                            font-size: 18px;
-                            font-weight: 300;
-                            color: $PrimaryOne;
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $WhiteColor;
+
+                            &:last-child {
+                                margin-bottom: 2rem;
+                            }
+                        }
+
+                        a {
+                            margin: 1rem 0;
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $WhiteColor;
+                            padding: .5rem 2rem;
+                            border-radius: 8px;
+                            border: 2px solid $WhiteColor;
                         }
                     }
                 }
@@ -195,10 +315,16 @@ body[dir='ltr'] {
     // XXX-Large devices (larger desktops, 1920px and up)
     @media (min-width: 1920px) {
         .FNV-HomeAbout {
-            padding: 4rem 0;
+            padding: 2rem 0;
             background-color: $WhiteColor;
 
             .container {
+                padding: 4rem;
+                border-radius: 28px;
+                background-size: cover;
+                background-position: center;
+                background-image: url("/images/pages/about/about-us-r.jpg");
+
                 .row {
                     .col-md-6 {
                         display: flex;
@@ -207,16 +333,30 @@ body[dir='ltr'] {
                         justify-content: center;
 
                         h2 {
-                            font-size: 48px;
-                            font-weight: 300;
-                            color: $PrimaryOne;
+                            font-size: 35px;
+                            font-weight: 600;
+                            color: $WhiteColor;
                             margin-bottom: 2rem;
                         }
 
                         p {
                             font-size: 20px;
                             font-weight: 400;
-                            color: $PrimaryOne;
+                            color: $WhiteColor;
+
+                            &:last-child {
+                                margin-bottom: 2rem;
+                            }
+                        }
+
+                        a {
+                            margin: 1rem 0;
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $WhiteColor;
+                            padding: .5rem 2rem;
+                            border-radius: 8px;
+                            border: 2px solid $WhiteColor;
                         }
                     }
                 }
@@ -234,6 +374,12 @@ body[dir='rtl'] {
             background-color: $WhiteColor;
 
             .container {
+                padding: 2rem;
+                border-radius: 28px;
+                background-size: cover;
+                background-position: right center;
+                background-image: url("/images/pages/about/about-us.jpg");
+
                 .row {
                     .col-md-6 {
                         display: flex;
@@ -242,16 +388,30 @@ body[dir='rtl'] {
                         justify-content: center;
 
                         h2 {
-                            font-size: 20px;
-                            font-weight: 300;
-                            color: $PrimaryOne;
+                            font-size: 35px;
+                            font-weight: 600;
+                            color: $WhiteColor;
                             margin-bottom: 2rem;
                         }
 
                         p {
-                            font-size: 14px;
+                            font-size: 20px;
                             font-weight: 400;
-                            color: $PrimaryOne;
+                            color: $WhiteColor;
+
+                            &:last-child {
+                                margin-bottom: 2rem;
+                            }
+                        }
+
+                        a {
+                            margin: 1rem 0;
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $WhiteColor;
+                            padding: .5rem 2rem;
+                            border-radius: 8px;
+                            border: 2px solid $WhiteColor;
                         }
                     }
                 }
@@ -262,10 +422,16 @@ body[dir='rtl'] {
     // `sm` applies to x-small devices (portrait phones, less than 576px)
     @media (min-width: 575.98px) and (max-width: 767px) {
         .FNV-HomeAbout {
-            padding: 1rem;
+            padding: 0;
             background-color: $WhiteColor;
 
             .container {
+                padding: 2rem;
+                border-radius: 28px;
+                background-size: cover;
+                background-position: right center;
+                background-image: url("/images/pages/about/about-us.jpg");
+
                 .row {
                     .col-md-6 {
                         display: flex;
@@ -274,16 +440,30 @@ body[dir='rtl'] {
                         justify-content: center;
 
                         h2 {
-                            font-size: 20px;
-                            font-weight: 300;
-                            color: $PrimaryOne;
+                            font-size: 35px;
+                            font-weight: 600;
+                            color: $WhiteColor;
                             margin-bottom: 2rem;
                         }
 
                         p {
-                            font-size: 14px;
+                            font-size: 20px;
                             font-weight: 400;
-                            color: $PrimaryOne;
+                            color: $WhiteColor;
+
+                            &:last-child {
+                                margin-bottom: 2rem;
+                            }
+                        }
+
+                        a {
+                            margin: 1rem 0;
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $WhiteColor;
+                            padding: .5rem 2rem;
+                            border-radius: 8px;
+                            border: 2px solid $WhiteColor;
                         }
                     }
                 }
@@ -298,6 +478,12 @@ body[dir='rtl'] {
             background-color: $WhiteColor;
 
             .container {
+                padding: 2rem;
+                border-radius: 28px;
+                background-size: cover;
+                background-position: center;
+                background-image: url("/images/pages/about/about-us.jpg");
+
                 .row {
                     .col-md-6 {
                         display: flex;
@@ -306,16 +492,30 @@ body[dir='rtl'] {
                         justify-content: center;
 
                         h2 {
-                            font-size: 22px;
-                            font-weight: 300;
-                            color: $PrimaryOne;
-                            margin-bottom: 1rem;
+                            font-size: 35px;
+                            font-weight: 600;
+                            color: $WhiteColor;
+                            margin-bottom: 2rem;
                         }
 
                         p {
-                            font-size: 16px;
+                            font-size: 20px;
                             font-weight: 400;
-                            color: $PrimaryOne;
+                            color: $WhiteColor;
+
+                            &:last-child {
+                                margin-bottom: 2rem;
+                            }
+                        }
+
+                        a {
+                            margin: 1rem 0;
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $WhiteColor;
+                            padding: .5rem 2rem;
+                            border-radius: 8px;
+                            border: 2px solid $WhiteColor;
                         }
                     }
                 }
@@ -330,6 +530,12 @@ body[dir='rtl'] {
             background-color: $WhiteColor;
 
             .container {
+                padding: 2rem;
+                border-radius: 28px;
+                background-size: cover;
+                background-position: center;
+                background-image: url("/images/pages/about/about-us.jpg");
+
                 .row {
                     .col-md-6 {
                         display: flex;
@@ -338,16 +544,30 @@ body[dir='rtl'] {
                         justify-content: center;
 
                         h2 {
-                            font-size: 36px;
-                            font-weight: 300;
-                            color: $PrimaryOne;
-                            margin-bottom: 1rem;
+                            font-size: 35px;
+                            font-weight: 600;
+                            color: $WhiteColor;
+                            margin-bottom: 2rem;
                         }
 
                         p {
-                            font-size: 16px;
+                            font-size: 20px;
                             font-weight: 400;
-                            color: $PrimaryOne;
+                            color: $WhiteColor;
+
+                            &:last-child {
+                                margin-bottom: 2rem;
+                            }
+                        }
+
+                        a {
+                            margin: 1rem 0;
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $WhiteColor;
+                            padding: .5rem 2rem;
+                            border-radius: 8px;
+                            border: 2px solid $WhiteColor;
                         }
                     }
                 }
@@ -362,6 +582,12 @@ body[dir='rtl'] {
             background-color: $WhiteColor;
 
             .container {
+                padding: 2rem;
+                border-radius: 28px;
+                background-size: cover;
+                background-position: center;
+                background-image: url("/images/pages/about/about-us.jpg");
+
                 .row {
                     .col-md-6 {
                         display: flex;
@@ -370,16 +596,30 @@ body[dir='rtl'] {
                         justify-content: center;
 
                         h2 {
-                            font-size: 36px;
-                            font-weight: 300;
-                            color: $PrimaryOne;
-                            margin-bottom: 1rem;
+                            font-size: 35px;
+                            font-weight: 600;
+                            color: $WhiteColor;
+                            margin-bottom: 2rem;
                         }
 
                         p {
-                            font-size: 18px;
-                            font-weight: 300;
-                            color: $PrimaryOne;
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $WhiteColor;
+
+                            &:last-child {
+                                margin-bottom: 2rem;
+                            }
+                        }
+
+                        a {
+                            margin: 1rem 0;
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $WhiteColor;
+                            padding: .5rem 2rem;
+                            border-radius: 8px;
+                            border: 2px solid $WhiteColor;
                         }
                     }
                 }
@@ -394,6 +634,12 @@ body[dir='rtl'] {
             background-color: $WhiteColor;
 
             .container {
+                padding: 4rem;
+                border-radius: 28px;
+                background-size: cover;
+                background-position: center;
+                background-image: url("/images/pages/about/about-us.jpg");
+
                 .row {
                     .col-md-6 {
                         display: flex;
@@ -402,16 +648,30 @@ body[dir='rtl'] {
                         justify-content: center;
 
                         h2 {
-                            font-size: 48px;
-                            font-weight: 300;
-                            color: $PrimaryOne;
-                            margin-bottom: 1rem;
+                            font-size: 35px;
+                            font-weight: 600;
+                            color: $WhiteColor;
+                            margin-bottom: 2rem;
                         }
 
                         p {
-                            font-size: 18px;
-                            font-weight: 300;
-                            color: $PrimaryOne;
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $WhiteColor;
+
+                            &:last-child {
+                                margin-bottom: 2rem;
+                            }
+                        }
+
+                        a {
+                            margin: 1rem 0;
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $WhiteColor;
+                            padding: .5rem 2rem;
+                            border-radius: 8px;
+                            border: 2px solid $WhiteColor;
                         }
                     }
                 }
@@ -422,10 +682,16 @@ body[dir='rtl'] {
     // XXX-Large devices (larger desktops, 1920px and up)
     @media (min-width: 1920px) {
         .FNV-HomeAbout {
-            padding: 4rem 0;
+            padding: 2rem 0;
             background-color: $WhiteColor;
 
             .container {
+                padding: 4rem;
+                border-radius: 28px;
+                background-size: cover;
+                background-position: center;
+                background-image: url("/images/pages/about/about-us.jpg");
+
                 .row {
                     .col-md-6 {
                         display: flex;
@@ -434,16 +700,30 @@ body[dir='rtl'] {
                         justify-content: center;
 
                         h2 {
-                            font-size: 48px;
-                            font-weight: 300;
-                            color: $PrimaryOne;
+                            font-size: 35px;
+                            font-weight: 600;
+                            color: $WhiteColor;
                             margin-bottom: 2rem;
                         }
 
                         p {
                             font-size: 20px;
                             font-weight: 400;
-                            color: $PrimaryOne;
+                            color: $WhiteColor;
+
+                            &:last-child {
+                                margin-bottom: 2rem;
+                            }
+                        }
+
+                        a {
+                            margin: 1rem 0;
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $WhiteColor;
+                            padding: .5rem 2rem;
+                            border-radius: 8px;
+                            border: 2px solid $WhiteColor;
                         }
                     }
                 }

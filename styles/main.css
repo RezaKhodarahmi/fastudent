@@ -16595,7 +16595,7 @@ badge.SecondaryColor {
 @media (min-width: 1920px) {
   .FNV-Top_Categories {
     background-color: #ffffff;
-    padding: 4rem 0;
+    padding: 2rem 0;
   }
   .FNV-Top_Categories .container .row {
     justify-content: center;
@@ -16710,6 +16710,13 @@ badge.SecondaryColor {
     padding: 1rem;
     background-color: #ffffff;
   }
+  body[dir=ltr] .FNV-HomeAbout .container {
+    padding: 2rem;
+    border-radius: 28px;
+    background-size: cover;
+    background-position: right center;
+    background-image: url("/images/pages/about/about-us-r.jpg");
+  }
   body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 {
     display: flex;
     flex-direction: column;
@@ -16717,21 +16724,40 @@ badge.SecondaryColor {
     justify-content: center;
   }
   body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 h2 {
-    font-size: 20px;
-    font-weight: 300;
-    color: #223885;
+    font-size: 35px;
+    font-weight: 600;
+    color: #ffffff;
     margin-bottom: 2rem;
   }
   body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 p {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 400;
-    color: #223885;
+    color: #ffffff;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 p:last-child {
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 a {
+    margin: 1rem 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
   }
 }
 @media (min-width: 575.98px) and (max-width: 767px) {
   body[dir=ltr] .FNV-HomeAbout {
-    padding: 1rem;
+    padding: 0;
     background-color: #ffffff;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container {
+    padding: 2rem;
+    border-radius: 28px;
+    background-size: cover;
+    background-position: right center;
+    background-image: url("/images/pages/about/about-us-r.jpg");
   }
   body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 {
     display: flex;
@@ -16740,15 +16766,27 @@ badge.SecondaryColor {
     justify-content: center;
   }
   body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 h2 {
-    font-size: 20px;
-    font-weight: 300;
-    color: #223885;
+    font-size: 35px;
+    font-weight: 600;
+    color: #ffffff;
     margin-bottom: 2rem;
   }
   body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 p {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 400;
-    color: #223885;
+    color: #ffffff;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 p:last-child {
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 a {
+    margin: 1rem 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
   }
 }
 @media (min-width: 767.98px) and (max-width: 991.98px) {
@@ -16756,6 +16794,13 @@ badge.SecondaryColor {
     padding: 2rem 0;
     background-color: #ffffff;
   }
+  body[dir=ltr] .FNV-HomeAbout .container {
+    padding: 2rem;
+    border-radius: 28px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/pages/about/about-us-r.jpg");
+  }
   body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 {
     display: flex;
     flex-direction: column;
@@ -16763,15 +16808,27 @@ badge.SecondaryColor {
     justify-content: center;
   }
   body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 h2 {
-    font-size: 22px;
-    font-weight: 300;
-    color: #223885;
-    margin-bottom: 1rem;
+    font-size: 35px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 2rem;
   }
   body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 p {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
-    color: #223885;
+    color: #ffffff;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 p:last-child {
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 a {
+    margin: 1rem 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
   }
 }
 @media (min-width: 992px) {
@@ -16779,6 +16836,13 @@ badge.SecondaryColor {
     padding: 2rem 0;
     background-color: #ffffff;
   }
+  body[dir=ltr] .FNV-HomeAbout .container {
+    padding: 2rem;
+    border-radius: 28px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/pages/about/about-us-r.jpg");
+  }
   body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 {
     display: flex;
     flex-direction: column;
@@ -16786,15 +16850,27 @@ badge.SecondaryColor {
     justify-content: center;
   }
   body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 h2 {
-    font-size: 36px;
-    font-weight: 300;
-    color: #223885;
-    margin-bottom: 1rem;
+    font-size: 35px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 2rem;
   }
   body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 p {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
-    color: #223885;
+    color: #ffffff;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 p:last-child {
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 a {
+    margin: 1rem 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
   }
 }
 @media (min-width: 1199.98px) {
@@ -16802,6 +16878,13 @@ badge.SecondaryColor {
     padding: 2rem 0;
     background-color: #ffffff;
   }
+  body[dir=ltr] .FNV-HomeAbout .container {
+    padding: 2rem;
+    border-radius: 28px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/pages/about/about-us-r.jpg");
+  }
   body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 {
     display: flex;
     flex-direction: column;
@@ -16809,15 +16892,27 @@ badge.SecondaryColor {
     justify-content: center;
   }
   body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 h2 {
-    font-size: 36px;
-    font-weight: 300;
-    color: #223885;
-    margin-bottom: 1rem;
+    font-size: 35px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 2rem;
   }
   body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 p {
-    font-size: 18px;
-    font-weight: 300;
-    color: #223885;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 p:last-child {
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 a {
+    margin: 1rem 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
   }
 }
 @media (min-width: 1400px) {
@@ -16825,28 +16920,12 @@ badge.SecondaryColor {
     padding: 2rem 0;
     background-color: #ffffff;
   }
-  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-  }
-  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 h2 {
-    font-size: 48px;
-    font-weight: 300;
-    color: #223885;
-    margin-bottom: 1rem;
-  }
-  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 p {
-    font-size: 18px;
-    font-weight: 300;
-    color: #223885;
-  }
-}
-@media (min-width: 1920px) {
-  body[dir=ltr] .FNV-HomeAbout {
-    padding: 4rem 0;
-    background-color: #ffffff;
+  body[dir=ltr] .FNV-HomeAbout .container {
+    padding: 4rem;
+    border-radius: 28px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/pages/about/about-us-r.jpg");
   }
   body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 {
     display: flex;
@@ -16855,15 +16934,69 @@ badge.SecondaryColor {
     justify-content: center;
   }
   body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 h2 {
-    font-size: 48px;
-    font-weight: 300;
-    color: #223885;
+    font-size: 35px;
+    font-weight: 600;
+    color: #ffffff;
     margin-bottom: 2rem;
   }
   body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 p {
     font-size: 20px;
     font-weight: 400;
-    color: #223885;
+    color: #ffffff;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 p:last-child {
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 a {
+    margin: 1rem 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
+  }
+}
+@media (min-width: 1920px) {
+  body[dir=ltr] .FNV-HomeAbout {
+    padding: 2rem 0;
+    background-color: #ffffff;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container {
+    padding: 4rem;
+    border-radius: 28px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/pages/about/about-us-r.jpg");
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 p:last-child {
+    margin-bottom: 2rem;
+  }
+  body[dir=ltr] .FNV-HomeAbout .container .row .col-md-6 a {
+    margin: 1rem 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
   }
 }
 
@@ -16872,6 +17005,13 @@ badge.SecondaryColor {
     padding: 1rem;
     background-color: #ffffff;
   }
+  body[dir=rtl] .FNV-HomeAbout .container {
+    padding: 2rem;
+    border-radius: 28px;
+    background-size: cover;
+    background-position: right center;
+    background-image: url("/images/pages/about/about-us.jpg");
+  }
   body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 {
     display: flex;
     flex-direction: column;
@@ -16879,21 +17019,40 @@ badge.SecondaryColor {
     justify-content: center;
   }
   body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 h2 {
-    font-size: 20px;
-    font-weight: 300;
-    color: #223885;
+    font-size: 35px;
+    font-weight: 600;
+    color: #ffffff;
     margin-bottom: 2rem;
   }
   body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 p {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 400;
-    color: #223885;
+    color: #ffffff;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 p:last-child {
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 a {
+    margin: 1rem 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
   }
 }
 @media (min-width: 575.98px) and (max-width: 767px) {
   body[dir=rtl] .FNV-HomeAbout {
-    padding: 1rem;
+    padding: 0;
     background-color: #ffffff;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container {
+    padding: 2rem;
+    border-radius: 28px;
+    background-size: cover;
+    background-position: right center;
+    background-image: url("/images/pages/about/about-us.jpg");
   }
   body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 {
     display: flex;
@@ -16902,15 +17061,27 @@ badge.SecondaryColor {
     justify-content: center;
   }
   body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 h2 {
-    font-size: 20px;
-    font-weight: 300;
-    color: #223885;
+    font-size: 35px;
+    font-weight: 600;
+    color: #ffffff;
     margin-bottom: 2rem;
   }
   body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 p {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 400;
-    color: #223885;
+    color: #ffffff;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 p:last-child {
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 a {
+    margin: 1rem 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
   }
 }
 @media (min-width: 767.98px) and (max-width: 991.98px) {
@@ -16918,6 +17089,13 @@ badge.SecondaryColor {
     padding: 2rem 0;
     background-color: #ffffff;
   }
+  body[dir=rtl] .FNV-HomeAbout .container {
+    padding: 2rem;
+    border-radius: 28px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/pages/about/about-us.jpg");
+  }
   body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 {
     display: flex;
     flex-direction: column;
@@ -16925,15 +17103,27 @@ badge.SecondaryColor {
     justify-content: center;
   }
   body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 h2 {
-    font-size: 22px;
-    font-weight: 300;
-    color: #223885;
-    margin-bottom: 1rem;
+    font-size: 35px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 2rem;
   }
   body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 p {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
-    color: #223885;
+    color: #ffffff;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 p:last-child {
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 a {
+    margin: 1rem 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
   }
 }
 @media (min-width: 992px) {
@@ -16941,6 +17131,13 @@ badge.SecondaryColor {
     padding: 2rem 0;
     background-color: #ffffff;
   }
+  body[dir=rtl] .FNV-HomeAbout .container {
+    padding: 2rem;
+    border-radius: 28px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/pages/about/about-us.jpg");
+  }
   body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 {
     display: flex;
     flex-direction: column;
@@ -16948,15 +17145,27 @@ badge.SecondaryColor {
     justify-content: center;
   }
   body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 h2 {
-    font-size: 36px;
-    font-weight: 300;
-    color: #223885;
-    margin-bottom: 1rem;
+    font-size: 35px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 2rem;
   }
   body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 p {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
-    color: #223885;
+    color: #ffffff;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 p:last-child {
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 a {
+    margin: 1rem 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
   }
 }
 @media (min-width: 1199.98px) {
@@ -16964,6 +17173,13 @@ badge.SecondaryColor {
     padding: 2rem 0;
     background-color: #ffffff;
   }
+  body[dir=rtl] .FNV-HomeAbout .container {
+    padding: 2rem;
+    border-radius: 28px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/pages/about/about-us.jpg");
+  }
   body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 {
     display: flex;
     flex-direction: column;
@@ -16971,15 +17187,27 @@ badge.SecondaryColor {
     justify-content: center;
   }
   body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 h2 {
-    font-size: 36px;
-    font-weight: 300;
-    color: #223885;
-    margin-bottom: 1rem;
+    font-size: 35px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 2rem;
   }
   body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 p {
-    font-size: 18px;
-    font-weight: 300;
-    color: #223885;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 p:last-child {
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 a {
+    margin: 1rem 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
   }
 }
 @media (min-width: 1400px) {
@@ -16987,28 +17215,12 @@ badge.SecondaryColor {
     padding: 2rem 0;
     background-color: #ffffff;
   }
-  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-  }
-  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 h2 {
-    font-size: 48px;
-    font-weight: 300;
-    color: #223885;
-    margin-bottom: 1rem;
-  }
-  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 p {
-    font-size: 18px;
-    font-weight: 300;
-    color: #223885;
-  }
-}
-@media (min-width: 1920px) {
-  body[dir=rtl] .FNV-HomeAbout {
-    padding: 4rem 0;
-    background-color: #ffffff;
+  body[dir=rtl] .FNV-HomeAbout .container {
+    padding: 4rem;
+    border-radius: 28px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/pages/about/about-us.jpg");
   }
   body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 {
     display: flex;
@@ -17017,15 +17229,69 @@ badge.SecondaryColor {
     justify-content: center;
   }
   body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 h2 {
-    font-size: 48px;
-    font-weight: 300;
-    color: #223885;
+    font-size: 35px;
+    font-weight: 600;
+    color: #ffffff;
     margin-bottom: 2rem;
   }
   body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 p {
     font-size: 20px;
     font-weight: 400;
-    color: #223885;
+    color: #ffffff;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 p:last-child {
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 a {
+    margin: 1rem 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
+  }
+}
+@media (min-width: 1920px) {
+  body[dir=rtl] .FNV-HomeAbout {
+    padding: 2rem 0;
+    background-color: #ffffff;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container {
+    padding: 4rem;
+    border-radius: 28px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/pages/about/about-us.jpg");
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 p:last-child {
+    margin-bottom: 2rem;
+  }
+  body[dir=rtl] .FNV-HomeAbout .container .row .col-md-6 a {
+    margin: 1rem 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
   }
 }
 
