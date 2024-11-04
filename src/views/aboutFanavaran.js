@@ -27,9 +27,9 @@ const AboutFanavaran = () => {
       <section className='FNV-Mission'>
         {/* Content */}
         <div className='container'>
-          <div className='row'>
-            <h2>{t('mission-title')}</h2>
+          <h2>{t('mission-title')}</h2>
 
+          <div className='row'>
             <div className='col-12 col-md-4 Top1'>
               <div className='card'>
                 {/* Icon */}
