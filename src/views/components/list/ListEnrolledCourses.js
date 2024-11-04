@@ -10,6 +10,8 @@ import Avatar from '@mui/material/Avatar'
 import Typography from '@mui/material/Typography'
 import LinearProgress from '@mui/material/LinearProgress'
 import Box from '@mui/material/Box'
+import axios from 'axios'
+import BASE_URL from 'src/api/BASE_URL'
 import ZoomButton from 'src/views/zoom/zoomButton'
 
 // Dynamically load ZoomMeeting without SSR
@@ -21,6 +23,7 @@ const ListCourses = props => {
   const [courses, setCourses] = useState([])
   const [user, setUser] = useState([])
   const [selectedZoomLink, setSelectedZoomLink] = useState(null)
+  const [selectedCycle, setSelectedCycle] = useState(null)
 
   useEffect(() => {
     if (props?.courses) {
@@ -32,8 +35,17 @@ const ListCourses = props => {
   }, [props])
 
   // Function to handle zoom button click and set the selected zoom link
-  const handleZoomClick = zoomLink => {
-    setSelectedZoomLink(zoomLink) // Set the selected zoom link when button is clicked
+  const handleZoomClick = (zoomLink, id) => {
+    setSelectedZoomLink(zoomLink)
+    handleShowAttendanceHistory(id)
+  }
+
+  const handleShowAttendanceHistory = async cycleId => {
+    try {
+      const response = await axios.get(`${BASE_URL}/student/attendance/${user.id}/${cycleId}`)
+    } catch (error) {
+      console.error('Error fetching attendance history:', error)
+    }
   }
 
   return (
@@ -87,7 +99,7 @@ const ListCourses = props => {
                           size='small'
                           color='success'
                           style={{ fontSize: '11px' }}
-                          onClick={() => handleZoomClick(course?.cycles[0]?.zoomLinks[0]?.zoomId)} // Set zoom link on click
+                          onClick={() => handleZoomClick(course?.cycles[0]?.zoomLinks[0]?.zoomId, course?.cycles[0].id)} // Set zoom link on click
                         >
                           Join the class
                         </Button>

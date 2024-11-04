@@ -110,10 +110,10 @@ const Index = () => {
           : cycle.discountVipPrice
         : cycle.discountPrice
       : isVIP || oldVIP
-        ? vipPlan === 2
-          ? cycle.vipPLPrice
-          : cycle.vipPrice
-        : cycle.regularPrice
+      ? vipPlan === 2
+        ? cycle.vipPLPrice
+        : cycle.vipPrice
+      : cycle.regularPrice
   }
 
   function areCouponApplied(obj1, obj2) {
@@ -131,6 +131,15 @@ const Index = () => {
     }
 
     return true
+  }
+
+  const appearance = {
+    theme: 'flat'
+  }
+
+  const options = {
+    clientSecret,
+    appearance
   }
 
   useEffect(() => {
@@ -340,7 +349,6 @@ const Index = () => {
     const capitalizedValue = e.target.value.toUpperCase()
     setCoupon(capitalizedValue)
   }
-
 
   const applyCouponHandler = e => {
     if (!email) {
@@ -676,27 +684,27 @@ const Index = () => {
 
               {usedCoupon
                 ? usedCoupon?.map((coupon, index) =>
-                  coupon.code ? (
-                    <div key={index} className='row'>
-                      <div className='col-6 col-md-6'>
-                        <p>{t('cart-coupon-text')}</p>
+                    coupon.code ? (
+                      <div key={index} className='row'>
+                        <div className='col-6 col-md-6'>
+                          <p>{t('cart-coupon-text')}</p>
+                        </div>
+                        <div className='col-6 col-md-6 text-center'>
+                          <p className='pb-0'>
+                            {coupon.code}
+                            <small
+                              onClick={e => handelRemoveCoupon(coupon.code)}
+                              style={{ cursor: 'pointer' }}
+                              className='FNV-Remove'
+                            >
+                              {t('cart-coupon-remove')}
+                            </small>
+                          </p>
+                          <p>{coupon.discount}</p>
+                        </div>
                       </div>
-                      <div className='col-6 col-md-6 text-center'>
-                        <p className='pb-0'>
-                          {coupon.code}
-                          <small
-                            onClick={e => handelRemoveCoupon(coupon.code)}
-                            style={{ cursor: 'pointer' }}
-                            className='FNV-Remove'
-                          >
-                            {t('cart-coupon-remove')}
-                          </small>
-                        </p>
-                        <p>{coupon.discount}</p>
-                      </div>
-                    </div>
-                  ) : null
-                )
+                    ) : null
+                  )
                 : null}
 
               {/* Total */}
