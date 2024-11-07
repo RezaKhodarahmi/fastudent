@@ -1626,7 +1626,7 @@ const Course = () => {
                                 </p>
                               ) : (
                                 <>
-                                  {courseType == '2' ? null : (
+                                  {courseType !== '2' ? null : (
                                     <Button className='FNV-Btn LightColor FNV-Submit-Demo w-100' onClick={handleOpen}>
                                       {t('single-course-demo')}
                                     </Button>

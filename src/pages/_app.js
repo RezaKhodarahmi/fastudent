@@ -136,13 +136,13 @@ const App = props => {
   const router = useRouter()
 
   // Determine if the page should use the special layout
-  const isNoHeaderFooterPage = router.pathname === '/links'; // Add other routes as needed
+  const isNoHeaderFooterPage = router.pathname === '/links' // Add other routes as needed
 
   const getLayout = router.pathname.startsWith('/app')
     ? Component.getLayout ?? (page => <UserLayout contentHeightFixed={contentHeightFixed}>{page}</UserLayout>)
-    : (isNoHeaderFooterPage
-      ? Component.getLayout ?? (page => <NoHeaderFooterLayout>{page}</NoHeaderFooterLayout>)
-      : (page => <MainLayout>{page}</MainLayout>))
+    : isNoHeaderFooterPage
+    ? Component.getLayout ?? (page => <NoHeaderFooterLayout>{page}</NoHeaderFooterLayout>)
+    : page => <MainLayout>{page}</MainLayout>
 
   const setConfig = Component.setConfig ?? undefined
   const authGuard = false
@@ -268,6 +268,23 @@ const App = props => {
         d.getElementsByTagName("head")[0].appendChild(s);
       })();
     `}
+          </script>
+
+          <script>
+            {`
+               var script = document.createElement('script');
+    script.src = "https://www.googletagmanager.com/gtag/js?id=AW-11103999225";
+    script.async = true;
+    document.head.appendChild(script);
+
+    // Initialize gtag
+    script.onload = () => {
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { window.dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'AW-11103999225');
+    };
+              `}
           </script>
         </Head>
 
