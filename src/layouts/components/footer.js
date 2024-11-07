@@ -414,16 +414,16 @@ const Footer = props => {
                   <Link href='/guide'>{t('footer-three-guide')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='/how-to-register'>{t('footer-three-registration')}</Link>
+                  <Link href='/guide'>{t('footer-three-registration')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='/view-recorded-courses'>{t('footer-three-watching')}</Link>
+                  <Link href='/guide'>{t('footer-three-watching')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='/mock-exam-tutorials'>{t('footer-three-mock')}</Link>
+                  <Link href='/guide'>{t('footer-three-mock')}</Link>
                 </li>
                 <li className='list-group-item'>
-                  <Link href='/fanavaran-certificate'>{t('footer-three-certificate')}</Link>
+                  <Link href='/guide'>{t('footer-three-certificate')}</Link>
                 </li>
                 <li className='list-group-item'>
                   <Link href='/privacy-policy'>{t('footer-three-privacy')}</Link>
