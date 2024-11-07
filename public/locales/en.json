@@ -349,5 +349,6 @@
   "register-terms-download": "Read & Download Fanavaran Terms",
   "register-terms-download-checkbox": "Read & Download Fanavaran Terms",
   "register-terms-download-checkbox-warning": "To continue, you must read and accept the Terms and Conditions",
-  "register-complete": "Complete Registration"
+  "register-complete": "Complete Registration",
+  "single-content-table": "Table of contents"
 }

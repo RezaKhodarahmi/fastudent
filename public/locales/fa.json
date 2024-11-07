@@ -343,5 +343,6 @@
   "register-terms-download": "مطالعه و دانلود قوانین و مقررات فناوران",
   "register-terms-download-checkbox": "قوانین و مقررات فناوران را خوانده و قبول دارم",
   "register-terms-download-checkbox-warning": "برای ادامه، باید قوانین و مقررات را بخوانید و بپذیرید.",
-  "register-complete": "تکمیل ثبت‌نام"
+  "register-complete": "تکمیل ثبت‌نام",
+  "single-content-table": "فهرست مطالب:"
 }
