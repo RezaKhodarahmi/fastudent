@@ -139,11 +139,15 @@ const Course = () => {
       setIsEnrolled(courseData?.data?.enrolled)
       setCycleId(courseData?.data?.cycleId)
       setRemindedDays(courseData?.data?.remainingDays)
-      setSelectedCycle(
-        courseData?.data?.data?.cycles
-          ? courseData?.data?.data?.cycles[parseInt(courseData?.data?.data?.cycles.length) - 1]?.id
-          : null
-      )
+      const sortedCycles = courseData?.data?.data?.cycles?.slice().sort((a, b) => {
+        const dateA = new Date(a.startDate || a.createdAt)
+        const dateB = new Date(b.startDate || b.createdAt)
+        return dateB - dateA 
+      })
+
+      const lastCycleId = sortedCycles?.[0]?.id || null
+      setSelectedCycle(lastCycleId)
+
       const cycles = courseData?.data?.data?.cycles?.id
 
       // Check if the course is in the cart
@@ -311,11 +315,11 @@ const Course = () => {
                           {t('single-course-category')}:
                           {data?.categories
                             ? data?.categories?.map((category, index, array) => (
-                              <small key={category.id}>
-                                <a href={category.id}>{category.title}</a>
-                                {index < array.length - 1 ? ', ' : ''}
-                              </small>
-                            ))
+                                <small key={category.id}>
+                                  <a href={category.id}>{category.title}</a>
+                                  {index < array.length - 1 ? ', ' : ''}
+                                </small>
+                              ))
                             : 'uncategorized'}
                         </span>
                       </h2>
@@ -1378,16 +1382,16 @@ const Course = () => {
                               <price>
                                 {data?.cycles
                                   ? data?.cycles?.map(cycle =>
-                                    cycle.id == selectedCycle ? (
-                                      <>
-                                        {' '}
-                                        <span className={isDiscountActive(cycle) ? "FNV-Price-LineThrough" : ""}>
-                                          CA$ {cycle.regularPrice}
-                                        </span>
-                                        {isDiscountActive(cycle) && <span> CA$ {cycle.discountPrice} </span>}
-                                      </>
-                                    ) : null
-                                  )
+                                      cycle.id == selectedCycle ? (
+                                        <>
+                                          {' '}
+                                          <span className={isDiscountActive(cycle) ? 'FNV-Price-LineThrough' : ''}>
+                                            CA$ {cycle.regularPrice}
+                                          </span>
+                                          {isDiscountActive(cycle) && <span> CA$ {cycle.discountPrice} </span>}
+                                        </>
+                                      ) : null
+                                    )
                                   : '0'}
                               </price>
                             </div>
@@ -1421,16 +1425,16 @@ const Course = () => {
                               <price>
                                 {data?.cycles
                                   ? data?.cycles?.map(cycle =>
-                                    cycle.id == selectedCycle ? (
-                                      <>
-                                        {' '}
-                                        <span className={isDiscountActive(cycle) ? "FNV-Price-LineThrough" : ""}>
-                                          CA$ {cycle.vipPrice}
-                                        </span>
-                                        {isDiscountActive(cycle) && <span> CA$ {cycle.discountVipPrice} </span>}
-                                      </>
-                                    ) : null
-                                  )
+                                      cycle.id == selectedCycle ? (
+                                        <>
+                                          {' '}
+                                          <span className={isDiscountActive(cycle) ? 'FNV-Price-LineThrough' : ''}>
+                                            CA$ {cycle.vipPrice}
+                                          </span>
+                                          {isDiscountActive(cycle) && <span> CA$ {cycle.discountVipPrice} </span>}
+                                        </>
+                                      ) : null
+                                    )
                                   : '0'}
                               </price>
                             </div>
@@ -1466,16 +1470,16 @@ const Course = () => {
                               <price>
                                 {data?.cycles
                                   ? data?.cycles?.map(cycle =>
-                                    cycle.id == selectedCycle ? (
-                                      <>
-                                        {' '}
-                                        <span className={isDiscountActive(cycle) ? "FNV-Price-LineThrough" : ""}>
-                                          CA$ {cycle.vipPLPrice}
-                                        </span>
-                                        {isDiscountActive(cycle) && <span> CA$ {cycle.discountVipPLPrice} </span>}
-                                      </>
-                                    ) : null
-                                  )
+                                      cycle.id == selectedCycle ? (
+                                        <>
+                                          {' '}
+                                          <span className={isDiscountActive(cycle) ? 'FNV-Price-LineThrough' : ''}>
+                                            CA$ {cycle.vipPLPrice}
+                                          </span>
+                                          {isDiscountActive(cycle) && <span> CA$ {cycle.discountVipPLPrice} </span>}
+                                        </>
+                                      ) : null
+                                    )
                                   : '0'}
                               </price>
                             </div>
@@ -1485,18 +1489,22 @@ const Course = () => {
                           <div className='row'>
                             {data?.cycles
                               ? data?.cycles?.map(cycle =>
-                                cycle.id == selectedCycle ? (
-                                  <>
-                                    {isDiscountActive(cycle) && (
-                                      <>
-                                        <div className='FNV-CountDown'>
-                                          DISCOUNT ENDS IN <span className='FNV-CountDown-Counter' dangerouslySetInnerHTML={{ __html: countdown }} />
-                                        </div>
-                                      </>
-                                    )}
-                                  </>
-                                ) : null
-                              )
+                                  cycle.id == selectedCycle ? (
+                                    <>
+                                      {isDiscountActive(cycle) && (
+                                        <>
+                                          <div className='FNV-CountDown'>
+                                            DISCOUNT ENDS IN{' '}
+                                            <span
+                                              className='FNV-CountDown-Counter'
+                                              dangerouslySetInnerHTML={{ __html: countdown }}
+                                            />
+                                          </div>
+                                        </>
+                                      )}
+                                    </>
+                                  ) : null
+                                )
                               : '0'}
                           </div>
 

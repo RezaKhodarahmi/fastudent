@@ -123,7 +123,7 @@ const Index = () => {
           ctx.fillText(cycleText, 990, 770)
 
           // Change font size and color for the userID
-          ctx.font = '30px Arial' // Smaller font size for userID
+          ctx.font = '25px Arial' // Smaller font size for userID
           ctx.fillStyle = 'white' // Different color for userID
           ctx.fillText(`${certificate.userID}`, 445, 832)
 
