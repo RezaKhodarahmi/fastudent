@@ -1,0 +1,93 @@
+@media (max-width: 575.98px) {}
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (min-width: 575.98px) and (max-width: 767.98px) {}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (min-width: 767.98px) and (max-width: 991.98px) {}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (min-width: 991.98px) {}
+
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (min-width: 1199.98px) {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {}
+
+// XXX-Large devices (larger desktops, 1920px and up)
+@media (min-width: 1920px) {
+    .FNV-Qualification {
+        padding: 0;
+
+        .container {
+            border-radius: 2.5rem;
+
+            .card {
+                padding: 5rem;
+                border-width: 0;
+                border-radius: 0;
+
+                h1 {
+                    font-size: 55px;
+                    font-weight: 700;
+                    text-align: center;
+                    color: $PrimaryOne;
+                    margin-bottom: 2rem;
+                }
+
+                .progress {
+                    margin-bottom: 2rem;
+
+                    .progress-bar {
+                        font-weight: 700;
+                        color: $PrimaryOne;
+                        background-color: $PrimaryTwo;
+                    }
+                }
+
+                .row {
+
+                    label {
+                        font-size: 16px;
+                        color: $PrimaryOne;
+                        margin-left: .5rem;
+                        margin-right: .5rem;
+                        margin-bottom: .5rem;
+
+                        &.LabelMain {
+                            margin: 1rem 0;
+                            font-size: 18px;
+                            font-weight: 700;
+                            color: $PrimaryOne;
+                        }
+                    }
+
+                    input,
+                    select {
+                        color: $PrimaryOne;
+                        background-color: $PrimaryBackgroundTwo;
+
+                        border-width: 0;
+                        border-radius: 0;
+
+                        &:focus,
+                        &:focus-visible {
+                            box-shadow: unset;
+                            border: 1px solid $PrimaryOne;
+                        }
+                    }
+
+                    input[type="radio"] {
+                        border-radius: 50%;
+                    }
+                }
+
+                p {
+                    font-size: 16px;
+                    color: $PrimaryOne;
+                }
+            }
+        }
+    }
+}

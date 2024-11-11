@@ -20413,6 +20413,67 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   }
 }
 
+@media (min-width: 1920px) {
+  .FNV-Qualification {
+    padding: 0;
+  }
+  .FNV-Qualification .container {
+    border-radius: 2.5rem;
+  }
+  .FNV-Qualification .container .card {
+    padding: 5rem;
+    border-width: 0;
+    border-radius: 0;
+  }
+  .FNV-Qualification .container .card h1 {
+    font-size: 55px;
+    font-weight: 700;
+    text-align: center;
+    color: #223885;
+    margin-bottom: 2rem;
+  }
+  .FNV-Qualification .container .card .progress {
+    margin-bottom: 2rem;
+  }
+  .FNV-Qualification .container .card .progress .progress-bar {
+    font-weight: 700;
+    color: #223885;
+    background-color: #FFA600;
+  }
+  .FNV-Qualification .container .card .row label {
+    font-size: 16px;
+    color: #223885;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .FNV-Qualification .container .card .row label.LabelMain {
+    margin: 1rem 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #223885;
+  }
+  .FNV-Qualification .container .card .row input,
+  .FNV-Qualification .container .card .row select {
+    color: #223885;
+    background-color: #F0F3FB;
+    border-width: 0;
+    border-radius: 0;
+  }
+  .FNV-Qualification .container .card .row input:focus, .FNV-Qualification .container .card .row input:focus-visible,
+  .FNV-Qualification .container .card .row select:focus,
+  .FNV-Qualification .container .card .row select:focus-visible {
+    box-shadow: unset;
+    border: 1px solid #223885;
+  }
+  .FNV-Qualification .container .card .row input[type=radio] {
+    border-radius: 50%;
+  }
+  .FNV-Qualification .container .card p {
+    font-size: 16px;
+    color: #223885;
+  }
+}
 @media (max-width: 575.98px) {
   body[dir=ltr] .FNV-Single {
     direction: rtl;
