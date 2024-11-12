@@ -894,7 +894,7 @@ const Index = () => {
                 )}
               </div>
 
-              <div className='FNV-Cart-Payment'>
+              <div className='FNV-Cart-Payment sd'>
                 <div className='container'>
                   <div className='row'>
                     {email ? (
