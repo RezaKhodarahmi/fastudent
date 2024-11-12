@@ -25,6 +25,11 @@ function Qualification() {
         architectSoftware: '',
         projectManagementField: '',
         projectManagementDesiredPosition: '',
+        projectManagementExperienceOutsideCanada: '',
+        projectManagementExperienceInsideCanada: '',
+        technicianField: '',
+        technicianExperienceOutsideCanada: '',
+        technicianExperienceInsideCanada: '',
     });
 
     const canadaLocations = {
@@ -692,6 +697,103 @@ function Qualification() {
                             </div>
                         </>
                     );
+                } else if (formData.fieldOfActivity === 'Technician') {
+                    return (
+                        <>
+                            <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
+                                <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '60%' }} >مرحله پنجم</div>
+                            </div>
+
+                            <div className='row'>
+                                <div className='col-12 mb-2'>
+                                    <label className='LabelMain'>زمینه فعالیت شما: </label>
+
+                                    <div>
+                                        <input
+                                            type="radio"
+                                            id="technicianField-carpentry"
+                                            name="technicianField"
+                                            value="نجاری"
+                                            checked={formData.technicianField === "نجاری"}
+                                            onChange={handleChange}
+                                        />
+                                        <label htmlFor="technicianField-carpentry">نجاری (Carpentry)</label>
+                                    </div>
+
+                                    <div>
+                                        <input
+                                            type="radio"
+                                            id="technicianField-plumbing"
+                                            name="technicianField"
+                                            value="لوله کشی"
+                                            checked={formData.technicianField === "لوله کشی"}
+                                            onChange={handleChange}
+                                        />
+                                        <label htmlFor="technicianField-plumbing">لوله کشی (Plumbing)</label>
+                                    </div>
+
+                                    <div>
+                                        <input
+                                            type="radio"
+                                            id="technicianField-welding"
+                                            name="technicianField"
+                                            value="جوشکاری"
+                                            checked={formData.technicianField === "جوشکاری"}
+                                            onChange={handleChange}
+                                        />
+                                        <label htmlFor="technicianField-welding">جوشکاری (Welding)</label>
+                                    </div>
+
+                                    <div>
+                                        <input
+                                            type="radio"
+                                            id="technicianField-electrical"
+                                            name="technicianField"
+                                            value="برقکاری"
+                                            checked={formData.technicianField === "برقکاری"}
+                                            onChange={handleChange}
+                                        />
+                                        <label htmlFor="technicianField-electrical">برقکاری (Electrical)</label>
+                                    </div>
+
+                                    <div>
+                                        <input
+                                            type="radio"
+                                            id="technicianField-hvac"
+                                            name="technicianField"
+                                            value="تهویه مطبوع"
+                                            checked={formData.technicianField === "تهویه مطبوع"}
+                                            onChange={handleChange}
+                                        />
+                                        <label htmlFor="technicianField-hvac">تهویه مطبوع (HVAC)</label>
+                                    </div>
+
+                                    <div>
+                                        <input
+                                            type="radio"
+                                            id="technicianField-other"
+                                            name="technicianField"
+                                            value="سایر"
+                                            checked={formData.technicianField === "سایر"}
+                                            onChange={handleChange}
+                                        />
+                                        <label htmlFor="technicianField-other">سایر (Other)</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Next & Previous */}
+                            <div className='row justify-content-between mt-4'>
+                                <div className='col-md-4'>
+                                    <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>برگشت به مرحله قبل</button>
+                                </div>
+
+                                <div className='col-md-4'>
+                                    <button className='FNV-Btn BtnPrimary BtnMedium w-100' onClick={nextStep}>رفتن به مرحله بعد</button>
+                                </div>
+                            </div>
+                        </>
+                    ) 
                 }
             case 6:
                 if (formData.fieldOfActivity === 'Engineering') {
@@ -964,7 +1066,55 @@ function Qualification() {
                             </>
                         )
                     }
+                } else if (formData.fieldOfActivity === 'Technician') {
+                    return (
+                        <>
+                            <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
+                                <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '80%' }} >مرحله ششم</div>
+                            </div>
 
+                            <div className='row'>
+                                <div className='col-12 mb-2'>
+                                    <label className='LabelMain'>سابقه کار خارج از کانادا:</label>
+
+                                    <div>
+                                        <input
+                                            type="radio"
+                                            id="technicianExperienceOutsideCanada-more"
+                                            name="technicianExperienceOutsideCanada"
+                                            value="بیشتر از ۹۰۰۰ ساعت (بیشتر از ۵ سال)"
+                                            checked={formData.technicianExperienceOutsideCanada === "بیشتر از ۹۰۰۰ ساعت (بیشتر از ۵ سال)"}
+                                            onChange={handleChange}
+                                        />
+                                        <label htmlFor="technicianExperienceOutsideCanada-more">بیشتر از ۹۰۰۰ ساعت (بیشتر از ۵ سال)</label>
+                                    </div>
+
+                                    <div>
+                                        <input
+                                            type="radio"
+                                            id="technicianExperienceOutsideCanada-less"
+                                            name="technicianExperienceOutsideCanada"
+                                            value="کمتر از ۹۰۰۰ ساعت (کمتر از ۵ سال)"
+                                            checked={formData.technicianExperienceOutsideCanada === "کمتر از ۹۰۰۰ ساعت (کمتر از ۵ سال)"}
+                                            onChange={handleChange}
+                                        />
+                                        <label htmlFor="technicianExperienceOutsideCanada-less">کمتر از ۹۰۰۰ ساعت (کمتر از ۵ سال)</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Next & Previous */}
+                            <div className='row justify-content-between mt-4'>
+                                <div className='col-md-4'>
+                                    <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>برگشت به مرحله قبل</button>
+                                </div>
+
+                                <div className='col-md-4'>
+                                    <button className='FNV-Btn BtnPrimary BtnMedium w-100' onClick={nextStep}>رفتن به مرحله بعد</button>
+                                </div>
+                            </div>
+                        </>
+                    )
                 }
             case 7:
                 if (formData.fieldOfActivity === 'Engineering') {
@@ -1125,6 +1275,117 @@ function Qualification() {
                             </div>
                         </>
                     );
+                } else if (formData.fieldOfActivity === 'Project Management'){
+                    return(
+                        <>
+                            <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
+                                <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '80%' }} >مرحله هفتم</div>
+                            </div>
+
+                            <div className='row'>
+                                <div className='col-12 mb-2'>
+                                    <label className='LabelMain'>سابقه کار شما خارج از کانادا</label>
+
+                                    <div>
+                                        <input
+                                            type="radio"
+                                            id="projectManagementExperienceOutsideCanada-more"
+                                            name="projectManagementExperienceOutsideCanada"
+                                            value="بیشتر از 3 سال"
+                                            checked={formData.projectManagementExperienceOutsideCanada === "بیشتر از 3 سال"}
+                                            onChange={handleChange}
+                                        />
+                                        <label htmlFor="projectManagementExperienceOutsideCanada-more">بیشتر از 3 سال</label>
+                                    </div>
+
+                                    <div>
+                                        <input
+                                            type="radio"
+                                            id="projectManagementExperienceOutsideCanada-less"
+                                            name="projectManagementExperienceOutsideCanada"
+                                            value="کمتر از 3 سال"
+                                            checked={formData.projectManagementExperienceOutsideCanada === "کمتر از 3 سال"}
+                                            onChange={handleChange}
+                                        />
+                                        <label htmlFor="projectManagementExperienceOutsideCanada-less">کمتر از 3 سال</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Next & Previous */}
+                            <div className='row justify-content-between mt-4'>
+                                <div className='col-md-4'>
+                                    <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>برگشت به مرحله قبل</button>
+                                </div>
+
+                                <div className='col-md-4'>
+                                    <button className='FNV-Btn BtnPrimary BtnMedium w-100' onClick={nextStep}>رفتن به مرحله بعد</button>
+                                </div>
+                            </div>
+                        </>
+                    )
+                } else if (formData.fieldOfActivity === 'Technician') {
+                    return (
+                        <>
+                            <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
+                                <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '100%' }} >مرحله هشتم</div>
+                            </div>
+
+                            <div className='row'>
+                                <div className='col-12 mb-2'>
+                                    <label className='LabelMain'>سابقه کار کانادایی</label>
+                                    
+                                    <div>
+                                        <input
+                                            type="radio"
+                                            id="technicianExperienceInsideCanada-6monthsOrMore"
+                                            name="technicianExperienceInsideCanada"
+                                            value="6 ماه و بیشتر"
+                                            checked={formData.technicianExperienceInsideCanada === "6 ماه و بیشتر"}
+                                            onChange={handleChange}
+                                        />
+                                        <label htmlFor="technicianExperienceInsideCanada-6monthsOrMore">6 ماه و بیشتر (6 months or more)</label>
+                                    </div>
+
+                                    <div>
+                                        <input
+                                            type="radio"
+                                            id="technicianExperienceInsideCanada-lessThan6Months"
+                                            name="technicianExperienceInsideCanada"
+                                            value="کمتر از 6 ماه"
+                                            checked={formData.technicianExperienceInsideCanada === "کمتر از 6 ماه"}
+                                            onChange={handleChange}
+                                        />
+                                        <label htmlFor="technicianExperienceInsideCanada-lessThan6Months">کمتر از 6 ماه (Less than 6 months)</label>
+                                    </div>
+
+                                    <div>
+                                        <input
+                                            type="radio"
+                                            id="technicianExperienceInsideCanada-noExperience"
+                                            name="technicianExperienceInsideCanada"
+                                            value="بدون سابقه کار کانادایی"
+                                            checked={formData.technicianExperienceInsideCanada === "بدون سابقه کار کانادایی"}
+                                            onChange={handleChange}
+                                        />
+                                        <label htmlFor="technicianExperienceInsideCanada-noExperience">بدون سابقه کار کانادایی (No Canadian work experience)</label>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            {/* Next & Previous */}
+                            <div className='row justify-content-between mt-4'>
+                                <div className='col-md-4'>
+                                    <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>برگشت به مرحله قبل</button>
+                                </div>
+
+                                <div className='col-md-4'>
+                                    <button className='FNV-Btn BtnPrimary BtnMedium w-100' onClick={nextStep}>رفتن به مرحله بعد</button>
+                                </div>
+                            </div>
+                        </>
+                    )
                 }
             case 8:
                 if (formData.fieldOfActivity === 'Engineering') {
@@ -1200,7 +1461,7 @@ function Qualification() {
                             </div>
                         </>
                     );
-                } if (formData.fieldOfActivity === 'Architect') {
+                } else if (formData.fieldOfActivity === 'Architect') {
                     return (
                         <>
                             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
@@ -1285,9 +1546,86 @@ function Qualification() {
                             </div>
                         </>
                     );
+                } else if (formData.fieldOfActivity === 'Project Management') {
+                    return(
+                        <>
+                            <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
+                                <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '100%' }} >مرحله هشتم</div>
+                            </div>
+
+                            <div className='row'>
+                                <div className='col-12 mb-2'>
+                                    <label className='LabelMain'>سابقه کار کانادایی</label>
+
+                                    <div>
+                                        <input
+                                            type="radio"
+                                            id="projectManagementExperienceInsideCanada-less"
+                                            name="projectManagementExperienceInsideCanada"
+                                            value="کمتر از 2 سال"
+                                            checked={formData.projectManagementExperienceInsideCanada === "کمتر از 2 سال"}
+                                            onChange={handleChange}
+                                        />
+                                        <label htmlFor="projectManagementExperienceInsideCanada-less">کمتر از 2 سال</label>
+                                    </div>
+
+                                    <div>
+                                        <input
+                                            type="radio"
+                                            id="projectManagementExperienceInsideCanada-more"
+                                            name="projectManagementExperienceInsideCanada"
+                                            value="بیشتر از 2 سال"
+                                            checked={formData.projectManagementExperienceInsideCanada === "بیشتر از 2 سال"}
+                                            onChange={handleChange}
+                                        />
+                                        <label htmlFor="projectManagementExperienceInsideCanada-more">بیشتر از 2 سال</label>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            {/* Next & Previous */}
+                            <div className='row justify-content-between mt-4'>
+                                <div className='col-md-4'>
+                                    <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>برگشت به مرحله قبل</button>
+                                </div>
+
+                                <div className='col-md-4'>
+                                    <button className='FNV-Btn BtnPrimary BtnMedium w-100' onClick={nextStep}>رفتن به مرحله بعد</button>
+                                </div>
+                            </div>
+                        </>
+                    )
+                } else if (formData.fieldOfActivity === 'Technician') {
+                    return (
+                        <>
+                            <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
+                                <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '100%' }} >چک کردن اطلاعت</div>
+                            </div>
+    
+                            <h2>چک کردن اطلاعات</h2>
+                            <pre>{JSON.stringify(
+                                Object.fromEntries(
+                                    Object.entries(formData).filter(([_, value]) => value !== "")
+                                ),
+                                null,
+                                2
+                            )}</pre>
+    
+                            {/* Next & Previous */}
+                            <div className='row justify-content-between mt-4'>
+                                <div className='col-md-4'>
+                                    <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>برگشت به مرحله قبل</button>
+                                </div>
+    
+                                <div className='col-md-4'>
+                                    <button className='FNV-Btn BtnPrimary BtnMedium w-100' onClick={() => alert("Form Submitted")}>تکمیل اطلاعات</button>
+                                </div>
+                            </div>
+                        </>
+                    );
                 }
                 return null;
-
 
             default:
                 return (
