@@ -66,7 +66,7 @@ const Header = props => {
   }, [])
 
   useEffect(() => {
-    const currentLang = localStorage.getItem('i18nextLng') || 'en'
+    const currentLang = localStorage.getItem('i18nextLng') || 'fa'
     document.body.dir = currentLang === 'fa' ? 'rtl' : 'ltr'
     document.body.lang = currentLang
   }, [])

@@ -9,7 +9,7 @@ const themeConfig = {
   templateName: 'Fanavaran' /* App Name */,
   layout: 'horizontal' /* vertical | horizontal */,
   mode: 'light' /* light | dark | semi-dark /*! Note: semi-dark value will only work for Vertical Layout */,
-  direction: 'ltr' /* ltr | rtl */,
+  direction: 'rtl' /* ltr | rtl */,
   skin: 'default' /* default | bordered */,
   contentWidth: 'boxed' /* full | boxed */,
   footer: 'static' /* fixed | static | hidden */,

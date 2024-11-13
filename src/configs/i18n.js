@@ -8,8 +8,9 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: 'en', // use English if the translation isn't available
-    whitelist: ['en', 'fa'], // only load these languages
+    lng: 'fa',
+    fallbackLng: 'fa', // use English if the translation isn't available
+    whitelist: ['fa', 'en'], // only load these languages
     backend: {
       loadPath: '/locales/{{lng}}.json'
     },

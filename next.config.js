@@ -14,8 +14,8 @@ module.exports = {
     esmExternals: false
   },
   i18n: {
-    locales: ['en', 'fa'], // Specify your locales
-    defaultLocale: 'en' // Specify your default locale
+    locales: ['fa', 'en'], // Specify your locales
+    defaultLocale: 'fa' // Specify your default locale
   },
   // Add more configuration options here
   async redirects() {

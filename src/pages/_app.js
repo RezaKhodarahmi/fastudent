@@ -119,7 +119,7 @@ const App = props => {
   }, [])
 
   useEffect(() => {
-    const lng = localStorage.getItem('i18nextLng' || 'en')
+    const lng = localStorage.getItem('i18nextLng' || 'fa')
     document.documentElement.dir = lng === 'fa' ? 'rtl' : 'ltr'
     setLoading(false)
   }, [])
