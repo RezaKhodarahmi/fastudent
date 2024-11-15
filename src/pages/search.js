@@ -8,7 +8,9 @@ import { useSelector, useDispatch } from 'react-redux'
 import { useTranslation } from 'react-i18next'
 import YoutubeSection from 'src/views/youtubeSection'
 import SingleCourse from 'src/views/courses/singleCourse'
-import LinearProgress from '@mui/material/LinearProgress'
+
+// ** Loader
+import Loader from 'src/views/components/loader/loader.js'
 
 const SearchPage = () => {
   // State
@@ -69,8 +71,9 @@ const SearchPage = () => {
           <div className='container'>
             <div className='row justify-content-center'>
               <h1 className='m-3'>{t('fanavaran-search-result')}</h1>
+
               {loading ? (
-                <LinearProgress />
+                <Loader />
               ) : (
                 <div className='tab-content' id='pills-tabContent'>
                   <div
