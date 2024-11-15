@@ -1,0 +1,390 @@
+@media (max-width: 575.98px) {
+    .FNV-SearchBar {
+        padding: 2rem 1rem;
+        background-color: $White;
+
+        .container {
+            .row {
+                justify-content: center;
+
+                .FNV-Search {
+                    width: 100%;
+                    padding: .5rem;
+                    border-radius: 10px;
+                    background-color: $White;
+                    border: 2px solid $PrimaryOne;
+
+                    div {
+                        border-width: 0;
+
+                        .form-control {
+                            border-width: 0;
+                            box-shadow: unset;
+                            color: $PrimaryOne;
+
+                            &::placeholder {
+                                opacity: 1;
+                                font-size: 1rem;
+                                line-height: 1.5;
+                                color: $PrimaryOne;
+                            }
+                        }
+
+                        &::after,
+                        &::before {
+                            display: none;
+                        }
+                    }
+
+                    button {
+                        background-color: transparent;
+
+                        svg {
+                            width: 22px;
+                            height: 22px;
+                            stroke-width: 2px;
+                            color: $PrimaryOne;
+                            stroke: $PrimaryOne;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+    .FNV-SearchBar {
+        padding: 2rem 1rem;
+        background-color: $White;
+
+        .container {
+            .row {
+                justify-content: center;
+
+                .FNV-Search {
+                    width: 100%;
+                    padding: .5rem;
+                    border-radius: 10px;
+                    background-color: $White;
+                    border: 2px solid $PrimaryOne;
+
+                    div {
+                        border-width: 0;
+
+                        .form-control {
+                            border-width: 0;
+                            box-shadow: unset;
+                            color: $PrimaryOne;
+
+                            &::placeholder {
+                                opacity: 1;
+                                font-size: 1rem;
+                                line-height: 1.5;
+                                color: $PrimaryOne;
+                            }
+                        }
+
+                        &::after,
+                        &::before {
+                            display: none;
+                        }
+                    }
+
+                    button {
+                        background-color: transparent;
+
+                        svg {
+                            width: 22px;
+                            height: 22px;
+                            stroke-width: 2px;
+                            color: $PrimaryOne;
+                            stroke: $PrimaryOne;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+    .FNV-SearchBar {
+        padding: 2rem 1rem;
+        background-color: $White;
+
+        .container {
+            .row {
+                justify-content: center;
+
+                .FNV-Search {
+                    width: 80%;
+                    padding: .5rem;
+                    border-radius: 10px;
+                    background-color: $White;
+                    border: 2px solid $PrimaryOne;
+
+                    div {
+                        border-width: 0;
+
+                        .form-control {
+                            border-width: 0;
+                            box-shadow: unset;
+                            color: $PrimaryOne;
+
+                            &::placeholder {
+                                opacity: 1;
+                                font-size: 1rem;
+                                line-height: 1.5;
+                                color: $PrimaryOne;
+                            }
+                        }
+
+                        &::after,
+                        &::before {
+                            display: none;
+                        }
+                    }
+
+                    button {
+                        background-color: transparent;
+
+                        svg {
+                            width: 22px;
+                            height: 22px;
+                            stroke-width: 2px;
+                            color: $PrimaryOne;
+                            stroke: $PrimaryOne;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (min-width: 991.98px) {
+    .FNV-SearchBar {
+        padding: 5rem;
+        background-color: $White;
+
+        .container {
+            .row {
+                justify-content: center;
+
+                .FNV-Search {
+                    width: 50%;
+                    padding: .5rem;
+                    border-radius: 10px;
+                    background-color: $White;
+                    border: 2px solid $PrimaryOne;
+
+                    div {
+                        border-width: 0;
+
+                        .form-control {
+                            border-width: 0;
+                            box-shadow: unset;
+                            color: $PrimaryOne;
+
+                            &::placeholder {
+                                opacity: 1;
+                                font-size: 1rem;
+                                line-height: 1.5;
+                                color: $PrimaryOne;
+                            }
+                        }
+
+                        &::after,
+                        &::before {
+                            display: none;
+                        }
+                    }
+
+                    button {
+                        background-color: transparent;
+
+                        svg {
+                            width: 22px;
+                            height: 22px;
+                            stroke-width: 2px;
+                            color: $PrimaryOne;
+                            stroke: $PrimaryOne;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (min-width: 1199.98px) {
+    .FNV-SearchBar {
+        padding: 5rem;
+        background-color: $White;
+
+        .container {
+            .row {
+                justify-content: center;
+
+                .FNV-Search {
+                    width: 50%;
+                    padding: .5rem;
+                    border-radius: 10px;
+                    background-color: $White;
+                    border: 2px solid $PrimaryOne;
+
+                    div {
+                        border-width: 0;
+
+                        .form-control {
+                            border-width: 0;
+                            box-shadow: unset;
+                            color: $PrimaryOne;
+
+                            &::placeholder {
+                                opacity: 1;
+                                font-size: 1rem;
+                                line-height: 1.5;
+                                color: $PrimaryOne;
+                            }
+                        }
+
+                        &::after,
+                        &::before {
+                            display: none;
+                        }
+                    }
+
+                    button {
+                        background-color: transparent;
+
+                        svg {
+                            width: 22px;
+                            height: 22px;
+                            stroke-width: 2px;
+                            color: $PrimaryOne;
+                            stroke: $PrimaryOne;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    .FNV-SearchBar {
+        padding: 5rem;
+        background-color: $White;
+
+        .container {
+            .row {
+                justify-content: center;
+
+                .FNV-Search {
+                    width: 50%;
+                    padding: .5rem;
+                    border-radius: 10px;
+                    background-color: $White;
+                    border: 2px solid $PrimaryOne;
+
+                    div {
+                        border-width: 0;
+
+                        .form-control {
+                            border-width: 0;
+                            box-shadow: unset;
+                            color: $PrimaryOne;
+
+                            &::placeholder {
+                                opacity: 1;
+                                font-size: 1rem;
+                                line-height: 1.5;
+                                color: $PrimaryOne;
+                            }
+                        }
+
+                        &::after,
+                        &::before {
+                            display: none;
+                        }
+                    }
+
+                    button {
+                        background-color: transparent;
+
+                        svg {
+                            width: 22px;
+                            height: 22px;
+                            stroke-width: 2px;
+                            color: $PrimaryOne;
+                            stroke: $PrimaryOne;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// XXX-Large devices (larger desktops, 1920px and up)
+@media (min-width: 1920px) {
+    .FNV-SearchBar {
+        padding: 5rem;
+        background-color: $White;
+
+        .container {
+            .row {
+                justify-content: center;
+
+                .FNV-Search {
+                    width: 50%;
+                    padding: .5rem;
+                    border-radius: 10px;
+                    background-color: $White;
+                    border: 2px solid $PrimaryOne;
+
+                    div {
+                        border-width: 0;
+
+                        .form-control {
+                            border-width: 0;
+                            box-shadow: unset;
+                            color: $PrimaryOne;
+
+                            &::placeholder {
+                                opacity: 1;
+                                font-size: 1rem;
+                                line-height: 1.5;
+                                color: $PrimaryOne;
+                            }
+                        }
+
+                        &::after,
+                        &::before {
+                            display: none;
+                        }
+                    }
+
+                    button {
+                        background-color: transparent;
+
+                        svg {
+                            width: 22px;
+                            height: 22px;
+                            stroke-width: 2px;
+                            color: $PrimaryOne;
+                            stroke: $PrimaryOne;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

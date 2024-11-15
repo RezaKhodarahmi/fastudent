@@ -13,6 +13,9 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 // ** Import Search Section
 import SearchBox from 'src/views/searchBar.js'
 
+// ** Import Search Section
+import Slider from 'src/views/slider.js'
+
 import { useRouter } from 'next/router'
 import { useDispatch, useSelector } from 'react-redux'
 import feather from 'feather-icons'
@@ -109,8 +112,11 @@ const Home = () => {
 
   return (
     <>
-      {/* Hero */}
+      {/* Search */}
       <SearchBox title={t('fanavaran-motto')} />
+
+      {/* Slider */}
+      <Slider />
 
       {/* Categories */}
       <CategoriesSection />

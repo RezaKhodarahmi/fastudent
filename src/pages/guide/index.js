@@ -17,7 +17,7 @@ function Guide() {
         // When the API is ready, initialize the YouTube player
         window.onYouTubeIframeAPIReady = () => {
           playerRef.current = new window.YT.Player('youtube-player', {
-            videoId: 'SyoFHS7B9No',
+            videoId: 'nmsTJZ2LmbA', // Updated video ID
             events: {
               onReady: () => {
                 setPlayerReady(true);
@@ -30,7 +30,7 @@ function Guide() {
     } else {
       // Initialize the player immediately if the API is already loaded
       playerRef.current = new window.YT.Player('youtube-player', {
-        videoId: 'SyoFHS7B9No',
+        videoId: 'nmsTJZ2LmbA', // Updated video ID
         events: {
           onReady: () => {
             setPlayerReady(true);
@@ -50,7 +50,7 @@ function Guide() {
   return (
     <>
       <section className='FNV-Single'>
-        <header className='FNV-Single-Header' 
+        <header className='FNV-Single-Header'
           style={{
             backgroundImage: `url("/images/pages/header-bg.png")`,
             backgroundSize: 'cover',
@@ -60,7 +60,7 @@ function Guide() {
         >
           <div className='container'>
             <div className='row'>
-              <h1 style={{ color: "#223885"}}>{t('footer-three-guide')}</h1>
+              <h1 style={{ color: "#223885" }}>{t('footer-three-guide')}</h1>
             </div>
           </div>
         </header>
@@ -96,7 +96,7 @@ function Guide() {
                       <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
                         <iframe
                           id="youtube-player"
-                          src="https://www.youtube.com/embed/SyoFHS7B9No?enablejsapi=1&rel=0&si=GV6rJFFnXlz3GZAC"
+                          src="https://www.youtube.com/embed/nmsTJZ2LmbA?enablejsapi=1&rel=0&si=Ih_UqGT8r1Wxf8Q0"
                           title="آموزش استفاده از داشبورد و سایت فناوران"
                           frameBorder="0"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -109,14 +109,14 @@ function Guide() {
                       {/* Buttons to Jump to Specific Times */}
                       <ul className='list-group list-group-flush mt-3 p-0'>
                         <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary BtnMedium' onClick={() => seekToTime(4)}>آموزش ثبت نام در سایت فناوران</button></li>
-                        <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary BtnMedium' onClick={() => seekToTime(72)}>چطور دوره های فناوران را قسطی خریداری کنیم؟</button></li>
-                        <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary BtnMedium' onClick={() => seekToTime(130)}>چطور دوره های فناوران را بخریم و یا ثبت نام کنیم؟</button></li>
-                        <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary BtnMedium' onClick={() => seekToTime(178)}>چطور رمزعبور خود را بازیابی کنیم؟</button></li>
-                        <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary BtnMedium' onClick={() => seekToTime(237)}>چطور می توانیم فاکتور خرید را دریافت کنیم؟</button></li>
-                        <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary BtnMedium' onClick={() => seekToTime(263)}>چطور اسم و فامیلی خود را در پروفایل ویرایش کنیم؟</button></li>
-                        <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary BtnMedium' onClick={() => seekToTime(295)}>چگونه سرتیفیکیت دوره را دریافت کنیم؟</button></li>
-                        <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary BtnMedium' onClick={() => seekToTime(358)}>چگونه وارد کلاس آنلاین شویم؟</button></li>
-                        <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary BtnMedium' onClick={() => seekToTime(478)}>چگونه به متریال های کلاس دسترسی پیدا کنیم؟</button></li>
+                        <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary BtnMedium' onClick={() => seekToTime(65)}>چطور دوره های فناوران را قسطی خریداری کنیم؟</button></li>
+                        <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary BtnMedium' onClick={() => seekToTime(126)}>چطور دوره های فناوران را بخریم و یا ثبت نام کنیم؟</button></li>
+                        <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary BtnMedium' onClick={() => seekToTime(174)}>چطور رمزعبور خود را بازیابی کنیم؟</button></li>
+                        <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary BtnMedium' onClick={() => seekToTime(230)}>چطور می توانیم فاکتور خرید را دریافت کنیم؟</button></li>
+                        <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary BtnMedium' onClick={() => seekToTime(257)}>چطور اسم و فامیلی خود را در پروفایل ویرایش کنیم؟</button></li>
+                        <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary BtnMedium' onClick={() => seekToTime(288)}>چگونه سرتیفیکیت دوره را دریافت کنیم؟</button></li>
+                        <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary BtnMedium' onClick={() => seekToTime(350)}>چگونه وارد کلاس آنلاین شویم؟</button></li>
+                        <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary BtnMedium' onClick={() => seekToTime(471)}>چگونه به متریال های کلاس دسترسی پیدا کنیم؟</button></li>
                       </ul>
                     </div>
                   </main>

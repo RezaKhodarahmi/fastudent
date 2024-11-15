@@ -9777,6 +9777,7 @@ body[dir='rtl'] {
   @media (min-width: 1920px) {
     nav {
       background-color: $WhiteColor;
+      box-shadow: 0 5px 10px $ShadowPrimary;
 
       .container {
         padding: 0rem;
