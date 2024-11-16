@@ -25,7 +25,7 @@ import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts';
 import { getProfileInfo } from 'src/store/apps/profile';
 import { useSelector, useDispatch } from 'react-redux';
 
-const AnalyticsDashboard = () => { 
+const AnalyticsDashboard = () => {
   // State
   const [user, setUser] = useState();
   const [courses, setCourses] = useState();
@@ -81,7 +81,7 @@ const AnalyticsDashboard = () => {
         // When the API is ready, initialize the YouTube player
         window.onYouTubeIframeAPIReady = () => {
           playerRef.current = new window.YT.Player('youtube-player', {
-            videoId: 'SyoFHS7B9No',
+            videoId: 'nmsTJZ2LmbA', // Updated video ID
             events: {
               onReady: () => {
                 setPlayerReady(true);
@@ -94,7 +94,7 @@ const AnalyticsDashboard = () => {
     } else {
       // Initialize the player immediately if the API is already loaded
       playerRef.current = new window.YT.Player('youtube-player', {
-        videoId: 'SyoFHS7B9No',
+        videoId: 'nmsTJZ2LmbA', // Updated video ID
         events: {
           onReady: () => {
             setPlayerReady(true);
@@ -144,20 +144,20 @@ const AnalyticsDashboard = () => {
       </KeenSliderWrapper>
 
       {/* Full-Screen Dialog Box */}
-      <Dialog 
-        open={openDialog} 
-        onClose={handleCloseDialog} 
-        fullWidth 
+      <Dialog
+        open={openDialog}
+        onClose={handleCloseDialog}
+        fullWidth
         maxWidth="xl" // Options: 'xs', 'sm', 'md', 'lg', 'xl'
       >
         <DialogTitle>{t('footer-three-guide')}</DialogTitle>
         <DialogContent>
           <DialogContentText>
             <div className='row'>
-              <div className='col-12 col-md-9'>
+              <div className='col-12 col-md-8'>
                 <iframe
                   id="youtube-player"
-                  src="https://www.youtube.com/embed/SyoFHS7B9No?enablejsapi=1&rel=0&si=GV6rJFFnXlz3GZAC"
+                  src="https://www.youtube.com/embed/nmsTJZ2LmbA?enablejsapi=1&rel=0&si=Ih_UqGT8r1Wxf8Q0"
                   title="آموزش استفاده از داشبورد و سایت فناوران"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -166,18 +166,19 @@ const AnalyticsDashboard = () => {
                   style={{ width: '100%', height: '100%' }}
                 ></iframe>
               </div>
-              <div className='col-12 col-md-3'>
+
+              <div className='col-12 col-md-4'>
                 {/* Buttons to Jump to Specific Times */}
-                <ul className='list-group list-group-flush mt-3 p-0'>
-                  <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary w-100' onClick={() => seekToTime(4)}>آموزش ثبت نام در سایت فناوران</button></li>
-                  <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary w-100' onClick={() => seekToTime(72)}>چطور دوره های فناوران را قسطی خریداری کنیم؟</button></li>
-                  <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary w-100' onClick={() => seekToTime(130)}>چطور دوره های فناوران را بخریم و یا ثبت نام کنیم؟</button></li>
-                  <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary w-100' onClick={() => seekToTime(178)}>چطور رمزعبور خود را بازیابی کنیم؟</button></li>
-                  <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary w-100' onClick={() => seekToTime(237)}>چطور می توانیم فاکتور خرید را دریافت کنیم؟</button></li>
-                  <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary w-100' onClick={() => seekToTime(263)}>چطور اسم و فامیلی خود را در پروفایل ویرایش کنیم؟</button></li>
-                  <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary w-100' onClick={() => seekToTime(295)}>چگونه سرتیفیکیت دوره را دریافت کنیم؟</button></li>
-                  <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary w-100' onClick={() => seekToTime(358)}>چگونه وارد کلاس آنلاین شویم؟</button></li>
-                  <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary w-100' onClick={() => seekToTime(478)}>چگونه به متریال های کلاس دسترسی پیدا کنیم؟</button></li>
+                <ul className='list-group list-group-flush p-0'>
+                  <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary BtnMedium' onClick={() => seekToTime(4)}>آموزش ثبت نام در سایت فناوران</button></li>
+                  <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary BtnMedium' onClick={() => seekToTime(65)}>چطور دوره های فناوران را قسطی خریداری کنیم؟</button></li>
+                  <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary BtnMedium' onClick={() => seekToTime(126)}>چطور دوره های فناوران را بخریم و یا ثبت نام کنیم؟</button></li>
+                  <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary BtnMedium' onClick={() => seekToTime(174)}>چطور رمزعبور خود را بازیابی کنیم؟</button></li>
+                  <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary BtnMedium' onClick={() => seekToTime(230)}>چطور می توانیم فاکتور خرید را دریافت کنیم؟</button></li>
+                  <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary BtnMedium' onClick={() => seekToTime(257)}>چطور اسم و فامیلی خود را در پروفایل ویرایش کنیم؟</button></li>
+                  <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary BtnMedium' onClick={() => seekToTime(288)}>چگونه سرتیفیکیت دوره را دریافت کنیم؟</button></li>
+                  <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary BtnMedium' onClick={() => seekToTime(350)}>چگونه وارد کلاس آنلاین شویم؟</button></li>
+                  <li class="list-group-item p-0 mt-2"><button className='FNV-Btn BtnPrimary BtnMedium' onClick={() => seekToTime(471)}>چگونه به متریال های کلاس دسترسی پیدا کنیم؟</button></li>
                 </ul>
               </div>
             </div>

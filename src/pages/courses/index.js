@@ -11,6 +11,9 @@ import SingleCourse from 'src/views/courses/singleCourse'
 import CategoryFilter from 'src/views/filters/categoryFilters'
 import LinearProgress from '@mui/material/LinearProgress'
 
+// ** Loader
+import Loader from 'src/views/components/loader/loader.js'
+
 // ** Hook Imports
 import Link from 'next/link'
 
@@ -146,7 +149,10 @@ const Index = () => {
                         )
                       })()
                     ) : (
-                      <LinearProgress />
+                      <>
+                        <Loader />
+                      </>
+
                     )}
 
                     <Grid container justifyContent='center' marginTop={'3rem'}>
