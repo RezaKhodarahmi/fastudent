@@ -41,7 +41,6 @@ function Qualification() {
 
         // Check if all required fields are filled
         if (!formData.firstName.trim()) {
-<<<<<<< HEAD
             alert("لطفاً نام خود را وارد کنید.");
 
             return;
@@ -58,9 +57,8 @@ function Qualification() {
         }
         if (!formData.phoneNumber.trim()) {
             alert("لطفاً شماره تلفن خود را وارد کنید.");
-
-=======
             toast.error("لطفاً نام خود را وارد کنید.", { position: "bottom-center" });
+
             return;
         }
         if (!formData.lastName.trim()) {
@@ -73,7 +71,7 @@ function Qualification() {
         }
         if (!formData.phoneNumber.trim()) {
             toast.error("لطفاً شماره تلفن خود را وارد کنید.", { position: "bottom-center" });
->>>>>>> 1e31325cb2243bf59e8f20d058d285e11799c0b2
+
             return;
         }
 
