@@ -16620,6 +16620,12 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     color: #223885;
     background-color: #FFA600;
   }
+  .FNV-Qualification .container .card .row h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #223885;
+    text-align: center;
+  }
   .FNV-Qualification .container .card .row label {
     font-size: 16px;
     color: #223885;
@@ -16649,9 +16655,30 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   .FNV-Qualification .container .card .row input[type=radio] {
     border-radius: 50%;
   }
+  .FNV-Qualification .container .card .row.CheckDetails .col-12 p {
+    padding: 0;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
   .FNV-Qualification .container .card p {
+    padding: 1rem;
     font-size: 16px;
+    font-weight: 400;
     color: #223885;
+    border-radius: 10px;
+  }
+  .FNV-Qualification .container .card p.FNV-InfoBox-Default {
+    color: #223885;
+    background-color: #F0F3FB;
+  }
+  .FNV-Qualification .container .card p.FNV-InfoBox-Warning {
+    color: #223885;
+    background-color: #FFA600;
+  }
+  .FNV-Qualification .container .card p.FNV-InfoBox-Danger {
+    color: #FFFFFF;
+    background-color: #981837;
   }
 }
 @media (max-width: 575.98px) {
