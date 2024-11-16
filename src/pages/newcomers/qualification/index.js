@@ -1359,7 +1359,7 @@ function Qualification() {
 
                                 </div>
                             </div>
-
+ 
                             {/* Next & Previous */}
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
