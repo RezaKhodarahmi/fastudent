@@ -139,13 +139,16 @@ const Course = () => {
       setIsEnrolled(courseData?.data?.enrolled)
       setCycleId(courseData?.data?.cycleId)
       setRemindedDays(courseData?.data?.remainingDays)
+
       const sortedCycles = courseData?.data?.data?.cycles?.slice().sort((a, b) => {
         const dateA = new Date(a.startDate || a.createdAt)
         const dateB = new Date(b.startDate || b.createdAt)
-        return dateB - dateA 
+
+        return dateB - dateA
       })
 
       const lastCycleId = sortedCycles?.[0]?.id || null
+
       setSelectedCycle(lastCycleId)
 
       const cycles = courseData?.data?.data?.cycles?.id

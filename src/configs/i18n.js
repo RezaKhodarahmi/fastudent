@@ -9,7 +9,7 @@ i18n
   .use(initReactI18next)
   .init({
     lng: 'fa',
-    fallbackLng: 'fa', // use English if the translation isn't available
+    fallbackLng: 'en', // use English if the translation isn't available
     whitelist: ['fa', 'en'], // only load these languages
     backend: {
       loadPath: '/locales/{{lng}}.json'

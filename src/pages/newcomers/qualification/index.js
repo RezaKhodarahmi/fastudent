@@ -793,7 +793,7 @@ function Qualification() {
                                 </div>
                             </div>
                         </>
-                    ) 
+                    )
                 }
             case 6:
                 if (formData.fieldOfActivity === 'Engineering') {
@@ -1334,7 +1334,7 @@ function Qualification() {
                             <div className='row'>
                                 <div className='col-12 mb-2'>
                                     <label className='LabelMain'>سابقه کار کانادایی</label>
-                                    
+
                                     <div>
                                         <input
                                             type="radio"
@@ -1602,7 +1602,7 @@ function Qualification() {
                             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
                                 <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '100%' }} >چک کردن اطلاعت</div>
                             </div>
-    
+
                             <h2>چک کردن اطلاعات</h2>
                             <pre>{JSON.stringify(
                                 Object.fromEntries(
@@ -1611,13 +1611,13 @@ function Qualification() {
                                 null,
                                 2
                             )}</pre>
-    
+
                             {/* Next & Previous */}
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>برگشت به مرحله قبل</button>
                                 </div>
-    
+
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn BtnPrimary BtnMedium w-100' onClick={() => alert("Form Submitted")}>تکمیل اطلاعات</button>
                                 </div>
@@ -1625,6 +1625,7 @@ function Qualification() {
                         </>
                     );
                 }
+
                 return null;
 
             default:
