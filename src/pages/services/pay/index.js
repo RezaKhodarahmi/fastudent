@@ -20,6 +20,7 @@ import { loadStripe } from '@stripe/stripe-js'
 import { useRouter } from 'next/router'
 import themeConfig from 'src/configs/themeConfig'
 import CheckoutForm from 'src/utils/stripeCheckout'
+
 const stripePromise = loadStripe(themeConfig.stripePublicKey)
 
 const caseOptions = [
