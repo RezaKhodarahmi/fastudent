@@ -1,6 +1,9 @@
 import React from 'react'
 import { useState } from 'react';
 
+// Components
+import { toast, Toaster } from 'react-hot-toast';
+
 function Qualification() {
     const [step, setStep] = useState(1);
 
@@ -34,10 +37,11 @@ function Qualification() {
     });
 
     const validateAndNextStep = (e) => {
-        e.preventDefault(); // Prevent default form submission
+        e.preventDefault(); // Prevent default button behavior
 
         // Check if all required fields are filled
         if (!formData.firstName.trim()) {
+<<<<<<< HEAD
             alert("لطفاً نام خود را وارد کنید.");
 
             return;
@@ -55,27 +59,86 @@ function Qualification() {
         if (!formData.phoneNumber.trim()) {
             alert("لطفاً شماره تلفن خود را وارد کنید.");
 
+=======
+            toast.error("لطفاً نام خود را وارد کنید.", { position: "bottom-center" });
+            return;
+        }
+        if (!formData.lastName.trim()) {
+            toast.error("لطفاً نام خانوادگی خود را وارد کنید.", { position: "bottom-center" });
+            return;
+        }
+        if (!formData.email.trim()) {
+            toast.error("لطفاً ایمیل خود را وارد کنید.", { position: "bottom-center" });
+            return;
+        }
+        if (!formData.phoneNumber.trim()) {
+            toast.error("لطفاً شماره تلفن خود را وارد کنید.", { position: "bottom-center" });
+>>>>>>> 1e31325cb2243bf59e8f20d058d285e11799c0b2
             return;
         }
 
-        // If all fields are filled, proceed to the next step
+        // If all validations pass
+        toast.success("اطلاعات کامل است! به مرحله بعد می‌رویم.", { position: "bottom-center" });
         nextStep();
     };
 
     const canadaLocations = {
-        "Ontario": ["Toronto", "Ottawa", "Mississauga", "Brampton", "Hamilton", "London", "Markham"],
-        "Quebec": ["Montreal", "Quebec City", "Laval", "Gatineau", "Longueuil", "Sherbrooke", "Saguenay"],
-        "British Columbia": ["Vancouver", "Victoria", "Surrey", "Burnaby", "Richmond", "Kelowna", "Abbotsford"],
-        "Alberta": ["Calgary", "Edmonton", "Red Deer", "Lethbridge", "St. Albert", "Medicine Hat", "Grande Prairie"],
-        "Manitoba": ["Winnipeg", "Brandon", "Steinbach", "Thompson", "Portage la Prairie"],
-        "Saskatchewan": ["Saskatoon", "Regina", "Prince Albert", "Moose Jaw", "Lloydminster"],
-        "Nova Scotia": ["Halifax", "Sydney", "Truro", "New Glasgow", "Glace Bay"],
-        "New Brunswick": ["Moncton", "Saint John", "Fredericton", "Dieppe", "Riverview"],
-        "Newfoundland and Labrador": ["St. John's", "Corner Brook", "Gander", "Mount Pearl", "Paradise"],
-        "Prince Edward Island": ["Charlottetown", "Summerside", "Stratford", "Cornwall"],
-        "Northwest Territories": ["Yellowknife", "Inuvik", "Hay River", "Fort Smith"],
-        "Yukon": ["Whitehorse", "Dawson City", "Watson Lake"],
-        "Nunavut": ["Iqaluit", "Rankin Inlet", "Arviat"]
+        "Ontario": [
+            "Toronto", "Ottawa", "Mississauga", "Brampton", "Hamilton",
+            "London", "Markham", "Kingston", "Windsor", "Sudbury",
+            "Thunder Bay", "Peterborough", "Barrie", "Sarnia", "Guelph",
+            "Kitchener", "Waterloo", "Cambridge", "Niagara Falls", "St. Catharines",
+            "Oakville", "Burlington"
+        ],
+        "Quebec": [
+            "Montreal", "Quebec City", "Laval", "Gatineau", "Longueuil",
+            "Sherbrooke", "Saguenay", "Trois-Rivières", "Drummondville",
+            "Saint-Jérôme", "Granby", "Shawinigan", "Blainville", "Châteauguay",
+            "Saint-Hyacinthe", "Saint-Jean-sur-Richelieu", "Repentigny"
+        ],
+        "British Columbia": [
+            "Vancouver", "Victoria", "Surrey", "Burnaby", "Richmond",
+            "Kelowna", "Abbotsford", "Langley", "Nanaimo", "Kamloops",
+            "Chilliwack", "Maple Ridge", "Prince George", "New Westminster",
+            "North Vancouver", "Coquitlam", "Port Coquitlam", "White Rock"
+        ],
+        "Alberta": [
+            "Calgary", "Edmonton", "Red Deer", "Lethbridge", "St. Albert",
+            "Medicine Hat", "Grande Prairie", "Airdrie", "Spruce Grove",
+            "Okotoks", "Leduc", "Fort Saskatchewan"
+        ],
+        "Manitoba": [
+            "Winnipeg", "Brandon", "Steinbach", "Thompson", "Portage la Prairie",
+            "Selkirk", "Winkler", "Morden", "Dauphin"
+        ],
+        "Saskatchewan": [
+            "Saskatoon", "Regina", "Prince Albert", "Moose Jaw",
+            "North Battleford", "Yorkton", "Swift Current", "Estevan"
+        ],
+        "Nova Scotia": [
+            "Halifax", "Sydney", "Truro", "New Glasgow", "Glace Bay",
+            "Dartmouth", "Bridgewater", "Kentville"
+        ],
+        "New Brunswick": [
+            "Moncton", "Saint John", "Fredericton", "Dieppe", "Riverview",
+            "Miramichi", "Bathurst", "Edmundston"
+        ],
+        "Newfoundland and Labrador": [
+            "St. John's", "Corner Brook", "Gander", "Mount Pearl", "Paradise",
+            "Grand Falls-Windsor", "Conception Bay South", "Happy Valley-Goose Bay"
+        ],
+        "Prince Edward Island": [
+            "Charlottetown", "Summerside", "Stratford", "Cornwall"
+        ],
+        "Northwest Territories": [
+            "Yellowknife", "Inuvik", "Hay River", "Fort Smith", "Norman Wells"
+        ],
+        "Yukon": [
+            "Whitehorse", "Dawson City", "Watson Lake", "Haines Junction"
+        ],
+        "Nunavut": [
+            "Iqaluit", "Rankin Inlet", "Arviat", "Cambridge Bay", "Pond Inlet"
+        ]
     };
 
     const nextStep = () => setStep((prevStep) => prevStep + 1);
@@ -165,6 +228,13 @@ function Qualification() {
                             <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '20%' }} >مرحله دوم</div>
                         </div>
 
+                        {/* Conditional Warning Message */}
+                        {formData.englishLevel === "کمتر از CLB 4" && (
+                            <p className="FNV-InfoBox-Danger">
+                                پیش مشخص کردن فاکتورهای دیگر، باید ابتدا سطح زبان خود را تقویت کنید. لطفا از طریق کالج ITD ونکوور برای این منظور اقدام بفرمایید.
+                            </p>
+                        )}
+
                         <div className='row'>
                             {/* English Level */}
                             <div className='col-6 mb-4'>
@@ -184,8 +254,8 @@ function Qualification() {
                                     <input
                                         type="radio"
                                         name="englishLevel"
-                                        value=" CLB 5 تا CLB 7"
-                                        checked={formData.englishLevel === " CLB 5 تا CLB 7"}
+                                        value="CLB 5 تا CLB 7"
+                                        checked={formData.englishLevel === "CLB 5 تا CLB 7"}
                                         onChange={handleChange}
                                     />
                                     <label> CLB 5 تا CLB 7</label>
@@ -213,8 +283,17 @@ function Qualification() {
                             </div>
                         </div>
 
-                        <p>
-                            English is the most important factor for the success of immigrants in Canada...
+                        {/* Conditional Warning Message */}
+                        {(formData.englishLevel === "کمتر از CLB 4" ||
+                            formData.englishLevel === "CLB 5 تا CLB 7" ||
+                            formData.englishLevel === "بیشتر از CLB 7 و کمتر از CLB 10") && (
+                                <p className="FNV-InfoBox-Default">
+                                    آیا می‌دانستید فناوران در همکاری با کالج ITD کانادا (مستقر در ونکوور) دوره‌های تقویت زبان انگلیسی به صورت تخصصی مطابق با فیلد کاری شما برگزار می‌کند.
+                                </p>
+                            )}
+
+                        <p className='FNV-InfoBox-Default'>
+                            زبان انگلیسی مهمترین اسکیل برای موفقیت مهاجران در کانادا است. حتی اگر لایسنس و سرتیفیکیت‌های حوزه شغلی خود را دریافت کرده باشید و از سابقه کار خوبی هم برخودار باشید، بدون داشتن دانش قوی زبان انگلیسی، شانس موفقیت شما در کانادا به شدت کاهش می‌یابد.
                         </p>
 
                         {/* Next & Previous */}
@@ -407,16 +486,51 @@ function Qualification() {
                                 <div>
                                     <input
                                         type="radio"
-                                        id="fieldOfActivity-EnergyAdvisory"
+                                        id="fieldOfActivity-Accounting"
                                         name="fieldOfActivity"
-                                        value="Energy Advisory"
-                                        checked={formData.fieldOfActivity === "Energy Advisory"}
+                                        value="Accounting"
+                                        checked={formData.fieldOfActivity === "Accounting"}
                                         onChange={handleChange}
                                     />
-                                    <label htmlFor="fieldOfActivity-EnergyAdvisory">انرژی</label>
+                                    <label htmlFor="fieldOfActivity-Accounting">حسابداری</label>
                                 </div>
                             </div>
                         </div>
+
+                        {/* Conditional Warning Message */}
+                        {formData.fieldOfActivity === "Engineering" && (
+                            <p className="FNV-InfoBox-Default">
+                                آیا می‌دانستید فناوران در همکاری با کالج ITD کانادا (مستقر در ونکوور) دوره‌های تقویت زبان انگلیسی به صورت تخصصی مطابق با فیلد کاری شما برگزار می‌کند.
+                            </p>
+                        )}
+
+                        {/* Conditional Warning Message */}
+                        {formData.fieldOfActivity === "Architect" && (
+                            <p className="FNV-InfoBox-Default">
+                                معماری در کانادا به معنای برنامه‌ریزی، طراحی و نظارت بر ساخت‌وساز ساختمان‌ها و فضاهای فیزیکی است. برای فعالیت به عنوان معمار و کسب «لایسنس معماری» در کانادا، شما باید تحصیلات تخصصی معماری داشته و در آزمون‌های لایسنس شرکت کنید. کارهای کارگاهی و اجرایی ساخت، جزو حوزه معماری محسوب نمی‌شوند.
+                            </p>
+                        )}
+
+                        {/* Conditional Warning Message */}
+                        {formData.fieldOfActivity === "Project Management" && (
+                            <p className="FNV-InfoBox-Default">
+                                مطابق با تعریف، مدیریت پروژه فرآیند رهبری یک تیم برای دستیابی به تمام اهداف پروژه در چارچوب محدودیت‌های داده شده است.
+                            </p>
+                        )}
+
+                        {/* Conditional Warning Message */}
+                        {formData.fieldOfActivity === "Technician" && (
+                            <p className="FNV-InfoBox-Default">
+                                مطابق با تعریف، تکنسین فنی فردی است که سابقه کار اجرایی (به عبارتی، کار یدی) دارد. بعضی از مشاغل فنی در کانادا نظام‌مند هستند و برای فعالیت نیاز به دریافت لایسنس دارید.
+                            </p>
+                        )}
+
+                        {/* Conditional Warning Message */}
+                        {formData.fieldOfActivity === "Accounting" && (
+                            <p className="FNV-InfoBox-Default">
+                                حسابداری حرفه‌ای است که شامل ثبت، طبقه‌بندی و گزارش‌گیری از معاملات مالی و اقتصادی یک نهاد است. در کانادا، برخی از حوزه‌های حسابداری به طور نظام‌مند نیازمند دریافت مدارک حرفه‌ای و عضویت در نهادهای معتبر هستند، تا فرد بتواند به عنوان حسابدار رسمی فعالیت کند.
+                            </p>
+                        )}
 
                         {/* Next & Previous */}
                         <div className='row justify-content-between mt-4'>
@@ -432,6 +546,22 @@ function Qualification() {
                 );
             case 5:
                 if (formData.fieldOfActivity === 'Engineering') {
+                    const engineeringMajors = [
+                        "مهندسی کشاورزی",
+                        "مهندسی مکانیک",
+                        "مهندسی الکترونیک",
+                        "مهندسی عمران و سازه",
+                        "مهندسی شیمی",
+                        "مهندسی صنایع",
+                        "مهندسی زمین شناسی",
+                        "مهندسی متالورژی (مواد)",
+                        "مهندسی معدن",
+                        "مهندسی هوافضا",
+                        "مهندسی نفت",
+                        "مهندسی نرم افزار",
+                        "مهندسی محیط زیست"
+                    ];
+
                     return (
                         <>
                             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
@@ -440,150 +570,22 @@ function Qualification() {
 
                             <div className='row'>
                                 <div className='col-12 mb-2'>
-                                    <label className='LabelMain'>گرایش مهندسی شما:</label>
+                                    <label className='LabelMain'>گرایش مهندسی:</label>
 
                                     <div>
-                                        <input
-                                            type="radio"
-                                            id="engineeringMajor-Civil"
-                                            name="engineeringMajor"
-                                            value="مهندسی عمران و سازه"
-                                            checked={formData.engineeringMajor === "مهندسی عمران و سازه"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="engineeringMajor-Civil">مهندسی عمران و سازه</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="engineeringMajor-Mechanical"
-                                            name="engineeringMajor"
-                                            value="مهندسی مکانیک"
-                                            checked={formData.engineeringMajor === "مهندسی مکانیک"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="engineeringMajor-Mechanical">مهندسی مکانیک</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="engineeringMajor-Electronic"
-                                            name="engineeringMajor"
-                                            value="مهندسی الکترونیک"
-                                            checked={formData.engineeringMajor === "مهندسی الکترونیک"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="engineeringMajor-Electronic">مهندسی الکترونیک</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="engineeringMajor-Agricultural"
-                                            name="engineeringMajor"
-                                            value="مهندسی کشاورزی"
-                                            checked={formData.engineeringMajor === "مهندسی کشاورزی"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="engineeringMajor-Agricultural">مهندسی کشاورزی</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="engineeringMajor-Chemical"
-                                            name="engineeringMajor"
-                                            value="مهندسی شیمی"
-                                            checked={formData.engineeringMajor === "مهندسی شیمی"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="engineeringMajor-Chemical">مهندسی شیمی</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="engineeringMajor-Industrial"
-                                            name="engineeringMajor"
-                                            value="مهندسی صنایع"
-                                            checked={formData.engineeringMajor === "مهندسی صنایع"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="engineeringMajor-Industrial">مهندسی صنایع</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="engineeringMajor-Energy"
-                                            name="engineeringMajor"
-                                            value="مهندسی انرژی"
-                                            checked={formData.engineeringMajor === "مهندسی انرژی"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="engineeringMajor-Energy">مهندسی انرژی</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="engineeringMajor-Metallurgy"
-                                            name="engineeringMajor"
-                                            value="مهندسی متالورژی (مواد)"
-                                            checked={formData.engineeringMajor === "مهندسی متالورژی (مواد)"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="engineeringMajor-Metallurgy">مهندسی متالورژی (مواد)</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="engineeringMajor-Mining"
-                                            name="engineeringMajor"
-                                            value="مهندسی معدن"
-                                            checked={formData.engineeringMajor === "مهندسی معدن"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="engineeringMajor-Mining">مهندسی معدن</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="engineeringMajor-Aerospace"
-                                            name="engineeringMajor"
-                                            value="مهندسی هوافضا"
-                                            checked={formData.engineeringMajor === "مهندسی هوافضا"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="engineeringMajor-Aerospace">مهندسی هوافضا</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="engineeringMajor-Petroleum"
-                                            name="engineeringMajor"
-                                            value="مهندسی نفت"
-                                            checked={formData.engineeringMajor === "مهندسی نفت"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="engineeringMajor-Petroleum">مهندسی نفت</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="engineeringMajor-Geology"
-                                            name="engineeringMajor"
-                                            value="مهندسی زمین شناسی"
-                                            checked={formData.engineeringMajor === "مهندسی زمین شناسی"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="engineeringMajor-Geology">مهندسی زمین شناسی</label>
+                                        {engineeringMajors.map((major, index) => (
+                                            <div key={index}>
+                                                <input
+                                                    type="radio"
+                                                    id={`engineeringMajor-${index}`}
+                                                    name="engineeringMajor"
+                                                    value={major}
+                                                    checked={formData.engineeringMajor === major}
+                                                    onChange={handleChange}
+                                                />
+                                                <label htmlFor={`engineeringMajor-${index}`}>{major}</label>
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
@@ -822,6 +824,12 @@ function Qualification() {
                 }
             case 6:
                 if (formData.fieldOfActivity === 'Engineering') {
+                    const engineeringActivities = [
+                        "فعالیت مهندسی - کارمندی (مانند مهندس مشاور، مهندس محاسب یا مهندس طراح)",
+                        "مدیریت پروژه و کارگاهی - کارمندی",
+                        "کارآفرینی"
+                    ];
+
                     return (
                         <>
                             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
@@ -833,39 +841,19 @@ function Qualification() {
                                     <label className='LabelMain'>پوزیشن مورد نظر برای ادامه فعالیت در کانادا:</label>
 
                                     <div>
-                                        <input
-                                            type="radio"
-                                            id="engineeringActivity-Employee"
-                                            name="engineeringActivity"
-                                            value="فعالیت مهندسی - کارمندی (مانند مهندس مشاور، مهندس محاسب یا مهندس طراح)"
-                                            checked={formData.engineeringActivity === "فعالیت مهندسی - کارمندی (مانند مهندس مشاور، مهندس محاسب یا مهندس طراح)"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="engineeringActivity-Employee">فعالیت مهندسی - کارمندی (مانند مهندس مشاور، مهندس محاسب یا مهندس طراح)</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="engineeringActivity-ProjectManagement"
-                                            name="engineeringActivity"
-                                            value="مدیریت پروژه و کارگاهی - کارمندی"
-                                            checked={formData.engineeringActivity === "مدیریت پروژه و کارگاهی - کارمندی"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="engineeringActivity-ProjectManagement">مدیریت پروژه و کارگاهی - کارمندی</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="engineeringActivity-Entrepreneurship"
-                                            name="engineeringActivity"
-                                            value="کارآفرینی"
-                                            checked={formData.engineeringActivity === "کارآفرینی"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="engineeringActivity-Entrepreneurship">کارآفرینی</label>
+                                        {engineeringActivities.map((activity, index) => (
+                                            <div key={index}>
+                                                <input
+                                                    type="radio"
+                                                    id={`engineeringActivity-${index}`}
+                                                    name="engineeringActivity"
+                                                    value={activity}
+                                                    checked={formData.engineeringActivity === activity}
+                                                    onChange={handleChange}
+                                                />
+                                                <label htmlFor={`engineeringActivity-${index}`}>{activity}</label>
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
@@ -1143,6 +1131,13 @@ function Qualification() {
                 }
             case 7:
                 if (formData.fieldOfActivity === 'Engineering') {
+                    const engineeringExperiences = [
+                        "0 تا 3 سال",
+                        "3 سال تا 6 سال",
+                        "7 سال تا 12 سال",
+                        "12 سال به بالا"
+                    ];
+
                     return (
                         <>
                             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
@@ -1154,51 +1149,19 @@ function Qualification() {
                                     <label className='LabelMain'>سابقه کار</label>
 
                                     <div>
-                                        <input
-                                            type="radio"
-                                            id="experience-0-3"
-                                            name="engineeringExperience"
-                                            value="0 تا 3 سال"
-                                            checked={formData.engineeringExperience === "0 تا 3 سال"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="engineeringExperience-0-3">0 تا 3 سال</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="engineeringExperience-3-6"
-                                            name="engineeringExperience"
-                                            value="3 سال تا 6 سال"
-                                            checked={formData.engineeringExperience === "3 سال تا 6 سال"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="engineeringExperience-3-6">3 سال تا 6 سال</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="engineeringExperience-7-12"
-                                            name="engineeringExperience"
-                                            value="7 سال تا 12 سال"
-                                            checked={formData.engineeringExperience === "7 سال تا 12 سال"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="engineeringExperience-7-12">7 سال تا 12 سال</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="engineeringExperience-12-plus"
-                                            name="engineeringExperience"
-                                            value="12 سال به بالا"
-                                            checked={formData.engineeringExperience === "12 سال به بالا"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="engineeringExperience-12-plus">12 سال به بالا</label>
+                                        {engineeringExperiences.map((experience, index) => (
+                                            <div key={index}>
+                                                <input
+                                                    type="radio"
+                                                    id={`engineeringExperience-${index}`}
+                                                    name="engineeringExperience"
+                                                    value={experience}
+                                                    checked={formData.engineeringExperience === experience}
+                                                    onChange={handleChange}
+                                                />
+                                                <label htmlFor={`engineeringExperience-${index}`}>{experience}</label>
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
@@ -1414,6 +1377,17 @@ function Qualification() {
                 }
             case 8:
                 if (formData.fieldOfActivity === 'Engineering') {
+                    const engineeringLicenses = [
+                        "لایسنس مهندسی (P.Eng)",
+                        "لایسنس مهندسی OIQ (فقط ساکنان استان کبک)",
+                        "لایسنس BCIN (فقط ساکنان استان انتاریو)",
+                        "سرتیفیکیت LEED",
+                        "لایسنس P.Geo",
+                        "لایسنس CET",
+                        "دزیگنیشن EIT",
+                        "هیچکدام"
+                    ];
+
                     return (
                         <>
                             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
@@ -1422,54 +1396,22 @@ function Qualification() {
 
                             <div className='row'>
                                 <div className='col-12 mb-2'>
-                                    <label className='LabelMain'>کدامیک از لایسنس‌ها و سرتیفیکیت‌های زیر را دارید؟</label>
+                                    <label className='LabelMain'>کدامیک از لایسنس‌های زیر را دارید؟</label>
 
                                     <div>
-                                        <input
-                                            type="radio"
-                                            id="engineeringLicense-0-3"
-                                            name="engineeringLicense"
-                                            value="0 تا 3 سال"
-                                            checked={formData.engineeringLicense === "0 تا 3 سال"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="engineeringLicense-0-3">0 تا 3 سال</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="engineeringLicense-3-6"
-                                            name="engineeringLicense"
-                                            value="3 سال تا 6 سال"
-                                            checked={formData.engineeringLicense === "3 سال تا 6 سال"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="engineeringLicense-3-6">3 سال تا 6 سال</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="engineeringLicense-7-12"
-                                            name="engineeringLicense"
-                                            value="7 سال تا 12 سال"
-                                            checked={formData.engineeringLicense === "7 سال تا 12 سال"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="engineeringLicense-7-12">7 سال تا 12 سال</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="engineeringLicense-12-plus"
-                                            name="engineeringLicense"
-                                            value="12 سال به بالا"
-                                            checked={formData.engineeringLicense === "12 سال به بالا"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="engineeringLicense-12-plus">12 سال به بالا</label>
+                                        {engineeringLicenses.map((license, index) => (
+                                            <div key={index}>
+                                                <input
+                                                    type="radio"
+                                                    id={`engineeringLicense-${index}`}
+                                                    name="engineeringLicense"
+                                                    value={license}
+                                                    checked={formData.engineeringLicense === license}
+                                                    onChange={handleChange}
+                                                />
+                                                <label htmlFor={`engineeringLicense-${index}`}>{license}</label>
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
@@ -1654,20 +1596,41 @@ function Qualification() {
                 return null;
 
             default:
+                const fieldLabels = {
+                    firstName: "نام",
+                    lastName: "نام خانوادگی",
+                    email: "ایمیل",
+                    phoneNumber: "شماره تلفن",
+                    englishLevel: "سطح زبان انگلیسی",
+                    ageRange: "محدوده سنی",
+                    province: "استان",
+                    city: "شهر",
+                    fieldOfActivity: "حوزه فعالیت",
+                    engineeringMajor: "رشته مهندسی",
+                    engineeringActivity: "نوع فعالیت مهندسی",
+                    engineeringExperience: "تجربه کاری مهندسی",
+                    engineeringLicense: "نوع لایسنس مهندسی"
+                };
+
                 return (
                     <>
                         <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
                             <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '100%' }} >چک کردن اطلاعت</div>
                         </div>
 
-                        <h2>چک کردن اطلاعات</h2>
-                        <pre>{JSON.stringify(
-                            Object.fromEntries(
-                                Object.entries(formData).filter(([_, value]) => value !== "")
-                            ),
-                            null,
-                            2
-                        )}</pre>
+                        <div className='row CheckDetails'>
+                            <h2>بررسی اطلاعات</h2>
+
+                            <div className='col-12'>
+                                {Object.entries(
+                                    Object.fromEntries(
+                                        Object.entries(formData).filter(([_, value]) => value !== "")
+                                    )
+                                ).map(([key, value]) => (
+                                    <p><strong>{fieldLabels[key]}:</strong> {value}</p>
+                                ))}
+                            </div>
+                        </div>
 
                         {/* Next & Previous */}
                         <div className='row justify-content-between mt-4'>

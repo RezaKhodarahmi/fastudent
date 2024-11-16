@@ -47,6 +47,12 @@
                 }
 
                 .row {
+                    h2 {
+                        font-size: 32px;
+                        font-weight: 600;
+                        color: $PrimaryOne;
+                        text-align: center;
+                    }
 
                     label {
                         font-size: 16px;
@@ -81,11 +87,40 @@
                     input[type="radio"] {
                         border-radius: 50%;
                     }
+
+                    &.CheckDetails {
+                        .col-12 {
+                            p {
+                                padding: 0;
+                                font-size: 13px;
+                                font-weight: 400;
+                                margin-bottom: .5rem;
+                            }
+                        }
+                    }
                 }
 
                 p {
+                    padding: 1rem;
                     font-size: 16px;
+                    font-weight: 400;
                     color: $PrimaryOne;
+                    border-radius: 10px;
+
+                    &.FNV-InfoBox-Default {
+                        color: $PrimaryOne;
+                        background-color: $PrimaryBackgroundTwo;
+                    }
+
+                    &.FNV-InfoBox-Warning {
+                        color: $PrimaryOne;
+                        background-color: $PrimaryTwo;
+                    }
+
+                    &.FNV-InfoBox-Danger {
+                        color: $White;
+                        background-color: $CourseLocked;
+                    }
                 }
             }
         }
