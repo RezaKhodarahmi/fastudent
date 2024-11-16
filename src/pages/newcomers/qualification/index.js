@@ -32,6 +32,31 @@ function Qualification() {
         technicianExperienceInsideCanada: '',
     });
 
+    const validateAndNextStep = (e) => {
+        e.preventDefault(); // Prevent default form submission
+
+        // Check if all required fields are filled
+        if (!formData.firstName.trim()) {
+            alert("لطفاً نام خود را وارد کنید.");
+            return;
+        }
+        if (!formData.lastName.trim()) {
+            alert("لطفاً نام خانوادگی خود را وارد کنید.");
+            return;
+        }
+        if (!formData.email.trim()) {
+            alert("لطفاً ایمیل خود را وارد کنید.");
+            return;
+        }
+        if (!formData.phoneNumber.trim()) {
+            alert("لطفاً شماره تلفن خود را وارد کنید.");
+            return;
+        }
+
+        // If all fields are filled, proceed to the next step
+        nextStep();
+    };
+
     const canadaLocations = {
         "Ontario": ["Toronto", "Ottawa", "Mississauga", "Brampton", "Hamilton", "London", "Markham"],
         "Quebec": ["Montreal", "Quebec City", "Laval", "Gatineau", "Longueuil", "Sherbrooke", "Saguenay"],
@@ -90,17 +115,6 @@ function Qualification() {
                                 />
                             </div>
 
-                            {/* Residency Status */}
-                            <div className='col-12 mb-4'>
-                                <select className='form-select form-select-lg' name="residencyStatus" value={formData.residencyStatus} onChange={handleChange}>
-                                    <option value="">وضعیت اقامت شما در کانادا</option>
-                                    <option value="Work Permit">Work Permit</option>
-                                    <option value="Visitor">Visitor</option>
-                                    <option value="Citizen">Citizen</option>
-                                    <option value="Others">Others</option>
-                                </select>
-                            </div>
-
                             {/* Email */}
                             <div className='col-6 mb-4'>
                                 <input
@@ -129,7 +143,12 @@ function Qualification() {
                         {/* Next */}
                         <div className='row justify-content-end mt-4'>
                             <div className='col-md-4'>
-                                <button className='FNV-Btn BtnPrimary BtnMedium w-100' onClick={nextStep}>رفتن به مرحله بعد</button>
+                                <button
+                                    className='FNV-Btn BtnPrimary BtnMedium w-100'
+                                    onClick={validateAndNextStep}
+                                >
+                                    رفتن به مرحله بعد
+                                </button>
                             </div>
                         </div>
                     </>
@@ -793,7 +812,7 @@ function Qualification() {
                                 </div>
                             </div>
                         </>
-                    ) 
+                    )
                 }
             case 6:
                 if (formData.fieldOfActivity === 'Engineering') {
@@ -1275,8 +1294,8 @@ function Qualification() {
                             </div>
                         </>
                     );
-                } else if (formData.fieldOfActivity === 'Project Management'){
-                    return(
+                } else if (formData.fieldOfActivity === 'Project Management') {
+                    return (
                         <>
                             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
                                 <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '80%' }} >مرحله هفتم</div>
@@ -1334,7 +1353,7 @@ function Qualification() {
                             <div className='row'>
                                 <div className='col-12 mb-2'>
                                     <label className='LabelMain'>سابقه کار کانادایی</label>
-                                    
+
                                     <div>
                                         <input
                                             type="radio"
@@ -1547,7 +1566,7 @@ function Qualification() {
                         </>
                     );
                 } else if (formData.fieldOfActivity === 'Project Management') {
-                    return(
+                    return (
                         <>
                             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
                                 <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '100%' }} >مرحله هشتم</div>
@@ -1602,7 +1621,7 @@ function Qualification() {
                             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
                                 <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '100%' }} >چک کردن اطلاعت</div>
                             </div>
-    
+
                             <h2>چک کردن اطلاعات</h2>
                             <pre>{JSON.stringify(
                                 Object.fromEntries(
@@ -1611,13 +1630,13 @@ function Qualification() {
                                 null,
                                 2
                             )}</pre>
-    
+
                             {/* Next & Previous */}
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>برگشت به مرحله قبل</button>
                                 </div>
-    
+
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn BtnPrimary BtnMedium w-100' onClick={() => alert("Form Submitted")}>تکمیل اطلاعات</button>
                                 </div>

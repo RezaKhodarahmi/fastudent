@@ -6,7 +6,9 @@ body[dir='ltr'] {
   // X-Small devices (portrait phones, less than 576px)
   @media (max-width: 575.98px) {
     nav {
+      z-index: 1;
       background-color: $WhiteColor;
+      box-shadow: 0 5px 10px $ShadowPrimary;
 
       .container {
         .navbar-brand {
@@ -726,7 +728,9 @@ body[dir='ltr'] {
   // `sm` applies to x-small devices (portrait phones, less than 576px)
   @media (min-width: 575.98px) and (max-width: 767.98px) {
     nav {
+      z-index: 1;
       background-color: $WhiteColor;
+      box-shadow: 0 5px 10px $ShadowPrimary;
 
       .container {
         .navbar-brand {
@@ -1446,7 +1450,9 @@ body[dir='ltr'] {
   // `md` applies to small devices (landscape phones, less than 768px)
   @media (min-width: 767.98px) and (max-width: 991.98px) {
     nav {
+      z-index: 1;
       background-color: $WhiteColor;
+      box-shadow: 0 5px 10px $ShadowPrimary;
 
       .container {
         .navbar-brand {
@@ -2162,7 +2168,9 @@ body[dir='ltr'] {
   // `lg` applies to medium devices (tablets, less than 992px)
   @media (min-width: 992px) {
     nav {
+      z-index: 1;
       background-color: $WhiteColor;
+      box-shadow: 0 5px 10px $ShadowPrimary;
 
       .container {
         .navbar-brand {
@@ -2979,7 +2987,9 @@ body[dir='ltr'] {
   // `xl` applies to large devices (desktops, less than 1200px)
   @media (min-width: 1199.98px) {
     nav {
+      z-index: 1;
       background-color: $WhiteColor;
+      box-shadow: 0 5px 10px $ShadowPrimary;
 
       .container {
         .navbar-brand {
@@ -3790,7 +3800,9 @@ body[dir='ltr'] {
   // XX-Large devices (larger desktops, 1400px and up)
   @media (min-width: 1400px) {
     nav {
+      z-index: 1;
       background-color: $WhiteColor;
+      box-shadow: 0 5px 10px $ShadowPrimary;
 
       .container {
         .navbar-brand {
@@ -4600,7 +4612,9 @@ body[dir='ltr'] {
   // XXX-Large devices (larger desktops, 1920px and up)
   @media (min-width: 1920px) {
     nav {
+      z-index: 1;
       background-color: $WhiteColor;
+      box-shadow: 0 5px 10px $ShadowPrimary;
 
       .container {
         .navbar-brand {
@@ -5414,7 +5428,9 @@ body[dir='rtl'] {
   // X-Small devices (portrait phones, less than 576px)
   @media (max-width: 575px) {
     nav {
+      z-index: 1;
       background-color: $WhiteColor;
+      box-shadow: 0 5px 10px $ShadowPrimary;
 
       .container {
         padding: 1rem;
@@ -6136,7 +6152,9 @@ body[dir='rtl'] {
   // `sm` applies to x-small devices (portrait phones, less than 576px)
   @media (min-width: 575.98px) and (max-width: 767px) {
     nav {
+      z-index: 1;
       background-color: $WhiteColor;
+      box-shadow: 0 5px 10px $ShadowPrimary;
 
       .container {
         padding: 1rem;
@@ -6858,7 +6876,9 @@ body[dir='rtl'] {
   // `md` applies to small devices (landscape phones, less than 768px)
   @media (min-width: 767.98px) and (max-width: 991.98px) {
     nav {
+      z-index: 1;
       background-color: $WhiteColor;
+      box-shadow: 0 5px 10px $ShadowPrimary;
 
       .container {
         display: flex;
@@ -7576,7 +7596,9 @@ body[dir='rtl'] {
   // `lg` applies to medium devices (tablets, less than 992px)
   @media (min-width: 992px) {
     nav {
+      z-index: 1;
       background-color: $WhiteColor;
+      box-shadow: 0 5px 10px $ShadowPrimary;
 
       .container {
         .navbar-brand {
@@ -8250,7 +8272,9 @@ body[dir='rtl'] {
   // `xl` applies to large devices (desktops, less than 1200px)
   @media (min-width: 1199.98px) {
     nav {
+      z-index: 1;
       background-color: $WhiteColor;
+      box-shadow: 0 5px 10px $ShadowPrimary;
 
       .container {
         padding: 0rem;
@@ -8956,7 +8980,9 @@ body[dir='rtl'] {
   // XX-Large devices (larger desktops, 1400px and up)
   @media (min-width: 1400px) {
     nav {
+      z-index: 1;
       background-color: $WhiteColor;
+      box-shadow: 0 5px 10px $ShadowPrimary;
 
       .container {
         padding: 0rem;
@@ -9776,6 +9802,7 @@ body[dir='rtl'] {
   // XXX-Large devices (larger desktops, 1920px and up)
   @media (min-width: 1920px) {
     nav {
+      z-index: 1;
       background-color: $WhiteColor;
       box-shadow: 0 5px 10px $ShadowPrimary;
 

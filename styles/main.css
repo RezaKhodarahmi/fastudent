@@ -319,7 +319,9 @@ badge.SecondaryColor {
 
 @media (max-width: 575.98px) {
   body[dir=ltr] nav {
+    z-index: 1;
     background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1411764706);
   }
   body[dir=ltr] nav .container .navbar-brand {
     width: 200px;
@@ -886,7 +888,9 @@ badge.SecondaryColor {
 }
 @media (min-width: 575.98px) and (max-width: 767.98px) {
   body[dir=ltr] nav {
+    z-index: 1;
     background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1411764706);
   }
   body[dir=ltr] nav .container .navbar-brand {
     width: 200px;
@@ -1453,7 +1457,9 @@ badge.SecondaryColor {
 }
 @media (min-width: 767.98px) and (max-width: 991.98px) {
   body[dir=ltr] nav {
+    z-index: 1;
     background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1411764706);
   }
   body[dir=ltr] nav .container .navbar-brand {
     width: 200px;
@@ -2017,7 +2023,9 @@ badge.SecondaryColor {
 }
 @media (min-width: 992px) {
   body[dir=ltr] nav {
+    z-index: 1;
     background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1411764706);
   }
   body[dir=ltr] nav .container .navbar-brand {
     width: 100px;
@@ -2660,7 +2668,9 @@ badge.SecondaryColor {
 }
 @media (min-width: 1199.98px) {
   body[dir=ltr] nav {
+    z-index: 1;
     background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1411764706);
   }
   body[dir=ltr] nav .container .navbar-brand {
     width: 100px;
@@ -3298,7 +3308,9 @@ badge.SecondaryColor {
 }
 @media (min-width: 1400px) {
   body[dir=ltr] nav {
+    z-index: 1;
     background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1411764706);
   }
   body[dir=ltr] nav .container .navbar-brand {
     width: 200px;
@@ -3937,7 +3949,9 @@ badge.SecondaryColor {
 }
 @media (min-width: 1920px) {
   body[dir=ltr] nav {
+    z-index: 1;
     background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1411764706);
   }
   body[dir=ltr] nav .container .navbar-brand {
     width: 200px;
@@ -4577,7 +4591,9 @@ badge.SecondaryColor {
 
 @media (max-width: 575px) {
   body[dir=rtl] nav {
+    z-index: 1;
     background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1411764706);
   }
   body[dir=rtl] nav .container {
     padding: 1rem;
@@ -5149,7 +5165,9 @@ badge.SecondaryColor {
 }
 @media (min-width: 575.98px) and (max-width: 767px) {
   body[dir=rtl] nav {
+    z-index: 1;
     background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1411764706);
   }
   body[dir=rtl] nav .container {
     padding: 1rem;
@@ -5721,7 +5739,9 @@ badge.SecondaryColor {
 }
 @media (min-width: 767.98px) and (max-width: 991.98px) {
   body[dir=rtl] nav {
+    z-index: 1;
     background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1411764706);
   }
   body[dir=rtl] nav .container {
     display: flex;
@@ -6290,7 +6310,9 @@ badge.SecondaryColor {
 }
 @media (min-width: 992px) {
   body[dir=rtl] nav {
+    z-index: 1;
     background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1411764706);
   }
   body[dir=rtl] nav .container .navbar-brand {
     width: 100px;
@@ -6824,7 +6846,9 @@ badge.SecondaryColor {
 }
 @media (min-width: 1199.98px) {
   body[dir=rtl] nav {
+    z-index: 1;
     background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1411764706);
   }
   body[dir=rtl] nav .container {
     padding: 0rem;
@@ -7375,7 +7399,9 @@ badge.SecondaryColor {
 }
 @media (min-width: 1400px) {
   body[dir=rtl] nav {
+    z-index: 1;
     background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1411764706);
   }
   body[dir=rtl] nav .container {
     padding: 0rem;
@@ -8025,6 +8051,7 @@ badge.SecondaryColor {
 }
 @media (min-width: 1920px) {
   body[dir=rtl] nav {
+    z-index: 1;
     background-color: #ffffff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1411764706);
   }
