@@ -1570,6 +1570,7 @@ function Qualification() {
                         </>
                     );
                 }
+
                 return null;
 
             default:
