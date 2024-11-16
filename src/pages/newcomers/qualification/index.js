@@ -201,10 +201,41 @@ function Qualification() {
                     </>
                 );
             case 2:
+                const englishLevels = [
+                    { value: "کمتر از CLB 4", label: "کمتر از CLB 4" },
+                    { value: "CLB 5 تا CLB 7", label: "CLB 5 تا CLB 7" },
+                    { value: "بیشتر از CLB 7 و کمتر از CLB 10", label: "بیشتر از CLB 7 و کمتر از CLB 10" },
+                    { value: "بیشتر از CLB 10", label: "بیشتر از CLB 10" }
+                ];
+
                 return (
                     <>
                         <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
                             <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '20%' }} >مرحله دوم</div>
+                        </div>
+
+                        <div className='row'>
+                            {/* English Level */}
+                            <div className='col-6 mb-4'>
+                                <label className='LabelMain'>سطح زبان انگلیسی شما :</label>
+
+                                <div>
+                                    {englishLevels.map((level, index) => (
+                                        <div key={index}>
+                                            <input
+                                                type="radio"
+                                                id={`englishLevel-${index}`}
+                                                name="englishLevel"
+                                                value={level.value}
+                                                checked={formData.englishLevel === level.value}
+                                                onChange={handleChange}
+                                            />
+                                            <label htmlFor={`englishLevel-${index}`}>{level.label}</label>
+                                        </div>
+                                    ))}
+                                </div>
+
+                            </div>
                         </div>
 
                         {/* Conditional Warning Message */}
@@ -214,59 +245,11 @@ function Qualification() {
                             </p>
                         )}
 
-                        <div className='row'>
-                            {/* English Level */}
-                            <div className='col-6 mb-4'>
-                                <label className='LabelMain'>سطح زبان انگلیسی شما :</label>
-
-                                <div>
-                                    <input
-                                        type="radio"
-                                        name="englishLevel"
-                                        value="کمتر از CLB 4"
-                                        checked={formData.englishLevel === "کمتر از CLB 4"}
-                                        onChange={handleChange}
-                                    />
-                                    <label>کمتر از CLB 4</label>
-                                </div>
-                                <div>
-                                    <input
-                                        type="radio"
-                                        name="englishLevel"
-                                        value="CLB 5 تا CLB 7"
-                                        checked={formData.englishLevel === "CLB 5 تا CLB 7"}
-                                        onChange={handleChange}
-                                    />
-                                    <label> CLB 5 تا CLB 7</label>
-                                </div>
-                                <div>
-                                    <input
-                                        type="radio"
-                                        name="englishLevel"
-                                        value="بیشتر از CLB 7 و کمتر از CLB 10"
-                                        checked={formData.englishLevel === "بیشتر از CLB 7 و کمتر از CLB 10"}
-                                        onChange={handleChange}
-                                    />
-                                    <label>بیشتر از CLB 7 و کمتر از CLB 10</label>
-                                </div>
-                                <div>
-                                    <input
-                                        type="radio"
-                                        name="englishLevel"
-                                        value="بیشتر از CLB 10"
-                                        checked={formData.englishLevel === "بیشتر از CLB 10"}
-                                        onChange={handleChange}
-                                    />
-                                    <label>بیشتر از CLB 10</label>
-                                </div>
-                            </div>
-                        </div>
-
                         {/* Conditional Warning Message */}
                         {(formData.englishLevel === "کمتر از CLB 4" ||
                             formData.englishLevel === "CLB 5 تا CLB 7" ||
                             formData.englishLevel === "بیشتر از CLB 7 و کمتر از CLB 10") && (
-                                <p className="FNV-InfoBox-Default">
+                                <p className="FNV-InfoBox-Warning">
                                     آیا می‌دانستید فناوران در همکاری با کالج ITD کانادا (مستقر در ونکوور) دوره‌های تقویت زبان انگلیسی به صورت تخصصی مطابق با فیلد کاری شما برگزار می‌کند.
                                 </p>
                             )}
@@ -289,6 +272,15 @@ function Qualification() {
                 );
             //return <button onClick={nextStep}>Next</button>; // Skip if not Work Permit
             case 3:
+                const ageRanges = [
+                    { value: "Under 30", label: "کمتر از 30 سال" },
+                    { value: "30-35", label: "30-35 سال" },
+                    { value: "35-40", label: "35-40 سال" },
+                    { value: "40-45", label: "40-45 سال" },
+                    { value: "45-50", label: "45-50 سال" },
+                    { value: "50+", label: "+50 سال" }
+                ];
+
                 return (
                     <>
                         <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
@@ -301,61 +293,20 @@ function Qualification() {
                                 <label className='LabelMain'>محدوده سنی :</label>
 
                                 <div>
-                                    <input
-                                        type="radio"
-                                        id="ageRange-30-35"
-                                        name="ageRange"
-                                        value="30-35"
-                                        checked={formData.ageRange === "30-35"}
-                                        onChange={handleChange}
-                                    />
-                                    <label htmlFor="ageRange-30-35">30-35</label>
+                                    {ageRanges.map((range, index) => (
+                                        <div key={index}>
+                                            <input
+                                                type="radio"
+                                                id={`ageRange-${range.value}`}
+                                                name="ageRange"
+                                                value={range.value}
+                                                checked={formData.ageRange === range.value}
+                                                onChange={handleChange}
+                                            />
+                                            <label htmlFor={`ageRange-${range.value}`}>{range.label}</label>
+                                        </div>
+                                    ))}
                                 </div>
-                                <div>
-                                    <input
-                                        type="radio"
-                                        id="ageRange-35-40"
-                                        name="ageRange"
-                                        value="35-40"
-                                        checked={formData.ageRange === "35-40"}
-                                        onChange={handleChange}
-                                    />
-                                    <label htmlFor="ageRange-35-40">35-40</label>
-                                </div>
-                                <div>
-                                    <input
-                                        type="radio"
-                                        id="ageRange-40-45"
-                                        name="ageRange"
-                                        value="40-45"
-                                        checked={formData.ageRange === "40-45"}
-                                        onChange={handleChange}
-                                    />
-                                    <label htmlFor="ageRange-40-45">40-45</label>
-                                </div>
-                                <div>
-                                    <input
-                                        type="radio"
-                                        id="ageRange-45-50"
-                                        name="ageRange"
-                                        value="45-50"
-                                        checked={formData.ageRange === "45-50"}
-                                        onChange={handleChange}
-                                    />
-                                    <label htmlFor="ageRange-45-50">45-50</label>
-                                </div>
-                                <div>
-                                    <input
-                                        type="radio"
-                                        id="ageRange-50+"
-                                        name="ageRange"
-                                        value="50+"
-                                        checked={formData.ageRange === "50+"}
-                                        onChange={handleChange}
-                                    />
-                                    <label htmlFor="ageRange-50+">50+</label>
-                                </div>
-
                             </div>
 
                             {/* Province */}
@@ -406,6 +357,14 @@ function Qualification() {
                     </>
                 );
             case 4:
+                const fieldOfActivityOptions = [
+                    { id: "fieldOfActivity-Engineering", value: "Engineering", label: "مهندسی" },
+                    { id: "fieldOfActivity-Architect", value: "Architect", label: "معماری" },
+                    { id: "fieldOfActivity-ProjectManagement", value: "Project Management", label: "مدیریت پروژه" },
+                    { id: "fieldOfActivity-Technician", value: "Technician", label: "تکنسین" },
+                    { id: "fieldOfActivity-Accounting", value: "Accounting", label: "حسابداری" }
+                ];
+
                 return (
                     <>
                         <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
@@ -418,59 +377,19 @@ function Qualification() {
                                 <label className='LabelMain'>زمینه فعالیت مورد نظر در کانادا:</label>
 
                                 <div>
-                                    <input
-                                        type="radio"
-                                        id="fieldOfActivity-Engineering"
-                                        name="fieldOfActivity"
-                                        value="Engineering"
-                                        checked={formData.fieldOfActivity === "Engineering"}
-                                        onChange={handleChange}
-                                    />
-                                    <label htmlFor="fieldOfActivity-Engineering">مهندسی</label>
-                                </div>
-                                <div>
-                                    <input
-                                        type="radio"
-                                        id="fieldOfActivity-Architect"
-                                        name="fieldOfActivity"
-                                        value="Architect"
-                                        checked={formData.fieldOfActivity === "Architect"}
-                                        onChange={handleChange}
-                                    />
-                                    <label htmlFor="fieldOfActivity-Architect">معماری</label>
-                                </div>
-                                <div>
-                                    <input
-                                        type="radio"
-                                        id="fieldOfActivity-ProjectManagement"
-                                        name="fieldOfActivity"
-                                        value="Project Management"
-                                        checked={formData.fieldOfActivity === "Project Management"}
-                                        onChange={handleChange}
-                                    />
-                                    <label htmlFor="fieldOfActivity-ProjectManagement">مدیریت پروژه</label>
-                                </div>
-                                <div>
-                                    <input
-                                        type="radio"
-                                        id="fieldOfActivity-Technician"
-                                        name="fieldOfActivity"
-                                        value="Technician"
-                                        checked={formData.fieldOfActivity === "Technician"}
-                                        onChange={handleChange}
-                                    />
-                                    <label htmlFor="fieldOfActivity-Technician">تکنسین</label>
-                                </div>
-                                <div>
-                                    <input
-                                        type="radio"
-                                        id="fieldOfActivity-Accounting"
-                                        name="fieldOfActivity"
-                                        value="Accounting"
-                                        checked={formData.fieldOfActivity === "Accounting"}
-                                        onChange={handleChange}
-                                    />
-                                    <label htmlFor="fieldOfActivity-Accounting">حسابداری</label>
+                                    {fieldOfActivityOptions.map((option) => (
+                                        <div key={option.id}>
+                                            <input
+                                                type="radio"
+                                                id={option.id}
+                                                name="fieldOfActivity"
+                                                value={option.value}
+                                                checked={formData.fieldOfActivity === option.value}
+                                                onChange={handleChange}
+                                            />
+                                            <label htmlFor={option.id}>{option.label}</label>
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
                         </div>
@@ -581,6 +500,13 @@ function Qualification() {
                         </>
                     );
                 } else if (formData.fieldOfActivity === 'Architect') {
+                    const architectFields = [
+                        { value: "Interior Designer", label: "Interior Designer" },
+                        { value: "Small Building Architect", label: "Small Building Architect" },
+                        { value: "Landscape and Urban Design", label: "Landscape and Urban Design" },
+                        { value: "Architects", label: "Architects" }
+                    ];
+
                     return (
                         <>
                             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
@@ -589,54 +515,22 @@ function Qualification() {
 
                             <div className='row'>
                                 <div className='col-12 mb-2'>
-                                    <label className='LabelMain'>زمینه فعالیت:</label>
+                                    <label className='LabelMain'>حوزه فعالیت:</label>
 
                                     <div>
-                                        <input
-                                            type="radio"
-                                            id="architectField-InteriorDesigner"
-                                            name="architectField"
-                                            value="Interior Designer"
-                                            checked={formData.architectField === "Interior Designer"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="architectField-InteriorDesigner">Interior Designer</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="architectField-SmallBuildingArchitect"
-                                            name="architectField"
-                                            value="Small Building architect"
-                                            checked={formData.architectField === "Small Building architect"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="architectField-SmallBuildingArchitect">Small Building architect</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="architectField-LandscapeUrbanDesign"
-                                            name="architectField"
-                                            value="Landscape and urban design"
-                                            checked={formData.architectField === "Landscape and urban design"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="architectField-LandscapeUrbanDesign">Landscape and urban design</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="architectField-Architects"
-                                            name="architectField"
-                                            value="Architects"
-                                            checked={formData.architectField === "Architects"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="architectField-Architects">Architects</label>
+                                        {architectFields.map((field, index) => (
+                                            <div key={index}>
+                                                <input
+                                                    type="radio"
+                                                    id={`architectField-${index}`}
+                                                    name="architectField"
+                                                    value={field.value}
+                                                    checked={formData.architectField === field.value}
+                                                    onChange={handleChange}
+                                                />
+                                                <label htmlFor={`architectField-${index}`}>{field.label}</label>
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
@@ -654,6 +548,17 @@ function Qualification() {
                         </>
                     );
                 } else if (formData.fieldOfActivity === 'Project Management') {
+                    const projectManagementFields = [
+                        {
+                            value: "پروژه‌های پیش‌بینی‌پذیر (Predictive)- ساختمانی و صنعتی",
+                            label: "پروژه‌های پیش‌بینی‌پذیر (Predictive) - ساختمانی و صنعتی"
+                        },
+                        {
+                            value: "پروژه‌های منعطف (Agile )- مارکتینگ و فناوری اطلاعات (IT)",
+                            label: "پروژه‌های منعطف (Agile) - مارکتینگ و فناوری اطلاعات (IT)"
+                        }
+                    ];
+
                     return (
                         <>
                             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
@@ -665,27 +570,19 @@ function Qualification() {
                                     <label className='LabelMain'>زمینه فعالیت شما: </label>
 
                                     <div>
-                                        <input
-                                            type="radio"
-                                            id="projectManagementField-Predictive"
-                                            name="projectManagementField"
-                                            value="پروژه‌های پیش‌بینی‌پذیر (Predictive)- ساختمانی و صنعتی"
-                                            checked={formData.projectManagementField === "پروژه‌های پیش‌بینی‌پذیر (Predictive)- ساختمانی و صنعتی"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="projectManagementField-Predictive">پروژه‌های پیش‌بینی‌پذیر (Predictive) - ساختمانی و صنعتی</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="projectManagementField-Agile"
-                                            name="projectManagementField"
-                                            value="پروژه‌های منعطف (Agile )- مارکتینگ و فناوری اطلاعات (IT)"
-                                            checked={formData.projectManagementField === "پروژه‌های منعطف (Agile )- مارکتینگ و فناوری اطلاعات (IT)"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="projectManagementField-Agile">پروژه‌های منعطف (Agile) - مارکتینگ و فناوری اطلاعات (IT)</label>
+                                        {projectManagementFields.map((field, index) => (
+                                            <div key={index}>
+                                                <input
+                                                    type="radio"
+                                                    id={`projectManagementField-${index}`}
+                                                    name="projectManagementField"
+                                                    value={field.value}
+                                                    checked={formData.projectManagementField === field.value}
+                                                    onChange={handleChange}
+                                                />
+                                                <label htmlFor={`projectManagementField-${index}`}>{field.label}</label>
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
@@ -703,6 +600,15 @@ function Qualification() {
                         </>
                     );
                 } else if (formData.fieldOfActivity === 'Technician') {
+                    const technicianFields = [
+                        { id: "technicianField-carpentry", value: "نجاری", label: "نجاری" },
+                        { id: "technicianField-plumbing", value: "لوله کشی", label: "لوله کشی" },
+                        { id: "technicianField-welding", value: "جوشکاری", label: "جوشکاری" },
+                        { id: "technicianField-electrical", value: "برقکاری", label: "برقکاری" },
+                        { id: "technicianField-hvac", value: "تهویه مطبوع", label: "تهویه مطبوع" },
+                        { id: "technicianField-other", value: "سایر", label: "سایر" }
+                    ];
+
                     return (
                         <>
                             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
@@ -714,75 +620,45 @@ function Qualification() {
                                     <label className='LabelMain'>زمینه فعالیت شما: </label>
 
                                     <div>
-                                        <input
-                                            type="radio"
-                                            id="technicianField-carpentry"
-                                            name="technicianField"
-                                            value="نجاری"
-                                            checked={formData.technicianField === "نجاری"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="technicianField-carpentry">نجاری (Carpentry)</label>
-                                    </div>
+                                        {technicianFields.map((field, index) => (
+                                            <div key={index}>
+                                                <input
+                                                    type="radio"
+                                                    id={field.id}
+                                                    name="technicianField"
+                                                    value={field.value}
+                                                    checked={formData.technicianField === field.value}
+                                                    onChange={(e) => {
+                                                        handleChange(e);
+                                                        if (field.value === "سایر") {
+                                                            setFormData((prev) => ({
+                                                                ...prev,
+                                                                otherTechnicianField: "" // Reset "سایر" input field
+                                                            }));
+                                                        }
+                                                    }}
+                                                />
+                                                <label htmlFor={field.id}>{field.label}</label>
+                                            </div>
+                                        ))}
 
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="technicianField-plumbing"
-                                            name="technicianField"
-                                            value="لوله کشی"
-                                            checked={formData.technicianField === "لوله کشی"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="technicianField-plumbing">لوله کشی (Plumbing)</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="technicianField-welding"
-                                            name="technicianField"
-                                            value="جوشکاری"
-                                            checked={formData.technicianField === "جوشکاری"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="technicianField-welding">جوشکاری (Welding)</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="technicianField-electrical"
-                                            name="technicianField"
-                                            value="برقکاری"
-                                            checked={formData.technicianField === "برقکاری"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="technicianField-electrical">برقکاری (Electrical)</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="technicianField-hvac"
-                                            name="technicianField"
-                                            value="تهویه مطبوع"
-                                            checked={formData.technicianField === "تهویه مطبوع"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="technicianField-hvac">تهویه مطبوع (HVAC)</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="technicianField-other"
-                                            name="technicianField"
-                                            value="سایر"
-                                            checked={formData.technicianField === "سایر"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="technicianField-other">سایر (Other)</label>
+                                        {/* Show input box when "سایر" is selected */}
+                                        {formData.technicianField === "سایر" && (
+                                            <div className="mt-3">
+                                                <label className="LabelMain">زمینه فعالیت را وارد کنید:</label>
+                                                <input
+                                                    type="text"
+                                                    className="form-control"
+                                                    value={formData.otherTechnicianField || ""}
+                                                    onChange={(e) =>
+                                                        setFormData((prev) => ({
+                                                            ...prev,
+                                                            otherTechnicianField: e.target.value
+                                                        }))
+                                                    }
+                                                />
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
                             </div>
@@ -795,6 +671,25 @@ function Qualification() {
 
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn BtnPrimary BtnMedium w-100' onClick={nextStep}>رفتن به مرحله بعد</button>
+                                </div>
+                            </div>
+                        </>
+                    )
+                } else if (formData.fieldOfActivity === 'Accounting') {
+                    return (
+                        <>
+                            <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
+                                <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '60%' }} >مرحله پنجم</div>
+                            </div>
+
+                            <div className='row'>
+                                <h2>در روزهای آینده بارگذاری می‌شود</h2>
+                            </div>
+
+                            {/* Next & Previous */}
+                            <div className='row justify-content-between mt-4'>
+                                <div className='col-md-4'>
+                                    <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>برگشت به مرحله قبل</button>
                                 </div>
                             </div>
                         </>
@@ -849,6 +744,13 @@ function Qualification() {
                         </>
                     );
                 } else if (formData.fieldOfActivity === 'Architect') {
+                    const architectWorkHistories = [
+                        { value: "0 تا 3 سال", label: "0 تا 3 سال" },
+                        { value: "3 سال تا 6 سال", label: "3 سال تا 6 سال" },
+                        { value: "7 سال تا 12 سال", label: "7 سال تا 12 سال" },
+                        { value: "12 سال به بالا", label: "12 سال به بالا" }
+                    ];
+
                     return (
                         <>
                             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
@@ -860,51 +762,19 @@ function Qualification() {
                                     <label className='LabelMain'>سابقه کار:</label>
 
                                     <div>
-                                        <input
-                                            type="radio"
-                                            id="architectWorkHistory-0-3"
-                                            name="architectWorkHistory"
-                                            value="0 تا 3 سال"
-                                            checked={formData.architectWorkHistory === "0 تا 3 سال"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="architectWorkHistory-0-3">0 تا 3 سال</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="architectWorkHistory-3-6"
-                                            name="architectWorkHistory"
-                                            value="3 سال تا 6 سال"
-                                            checked={formData.architectWorkHistory === "3 سال تا 6 سال"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="architectWorkHistory-3-6">3 سال تا 6 سال</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="architectWorkHistory-7-12"
-                                            name="architectWorkHistory"
-                                            value="7 سال تا 12 سال"
-                                            checked={formData.architectWorkHistory === "7 سال تا 12 سال"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="architectWorkHistory-7-12">7 سال تا 12 سال</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="architectWorkHistory-12-plus"
-                                            name="architectWorkHistory"
-                                            value="12 سال به بالا"
-                                            checked={formData.architectWorkHistory === "12 سال به بالا"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="architectWorkHistory-12-plus">12 سال به بالا</label>
+                                        {architectWorkHistories.map((history, index) => (
+                                            <div key={index}>
+                                                <input
+                                                    type="radio"
+                                                    id={`architectWorkHistory-${index}`}
+                                                    name="architectWorkHistory"
+                                                    value={history.value}
+                                                    checked={formData.architectWorkHistory === history.value}
+                                                    onChange={handleChange}
+                                                />
+                                                <label htmlFor={`architectWorkHistory-${index}`}>{history.label}</label>
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
@@ -923,6 +793,13 @@ function Qualification() {
                     );
                 } else if (formData.fieldOfActivity === 'Project Management') {
                     if (formData.projectManagementField === 'پروژه‌های پیش‌بینی‌پذیر (Predictive)- ساختمانی و صنعتی') {
+                        const desiredPositions = [
+                            { value: "Site Supervisor", label: "Site Supervisor" },
+                            { value: "Site Technician", label: "Site Technician" },
+                            { value: "Project Coordinator", label: "Project Coordinator" },
+                            { value: "Project Manager", label: "Project Manager" }
+                        ];
+
                         return (
                             <>
                                 <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
@@ -934,51 +811,19 @@ function Qualification() {
                                         <label className='LabelMain'>عنوان شغلی مورد نظر شما:</label>
 
                                         <div>
-                                            <input
-                                                type="radio"
-                                                id="projectManagementDesiredPosition-SiteSupervisor"
-                                                name="projectManagementDesiredPosition"
-                                                value="Site Supervisor"
-                                                checked={formData.projectManagementDesiredPosition === "Site Supervisor"}
-                                                onChange={handleChange}
-                                            />
-                                            <label htmlFor="projectManagementDesiredPosition-SiteSupervisor">Site Supervisor</label>
-                                        </div>
-
-                                        <div>
-                                            <input
-                                                type="radio"
-                                                id="projectManagementDesiredPosition-SiteTechnician"
-                                                name="projectManagementDesiredPosition"
-                                                value="Site Technician"
-                                                checked={formData.projectManagementDesiredPosition === "Site Technician"}
-                                                onChange={handleChange}
-                                            />
-                                            <label htmlFor="projectManagementDesiredPosition-SiteTechnician">Site Technician</label>
-                                        </div>
-
-                                        <div>
-                                            <input
-                                                type="radio"
-                                                id="projectManagementDesiredPosition-ProjectCoordinator"
-                                                name="projectManagementDesiredPosition"
-                                                value="Project Coordinator"
-                                                checked={formData.projectManagementDesiredPosition === "Project Coordinator"}
-                                                onChange={handleChange}
-                                            />
-                                            <label htmlFor="projectManagementDesiredPosition-ProjectCoordinator">Project Coordinator</label>
-                                        </div>
-
-                                        <div>
-                                            <input
-                                                type="radio"
-                                                id="projectManagementDesiredPosition-ProjectManager"
-                                                name="projectManagementDesiredPosition"
-                                                value="Project Manager"
-                                                checked={formData.projectManagementDesiredPosition === "Project Manager"}
-                                                onChange={handleChange}
-                                            />
-                                            <label htmlFor="projectManagementDesiredPosition-ProjectManager">Project Manager</label>
+                                            {desiredPositions.map((position, index) => (
+                                                <div key={index}>
+                                                    <input
+                                                        type="radio"
+                                                        id={`projectManagementDesiredPosition-${index}`}
+                                                        name="projectManagementDesiredPosition"
+                                                        value={position.value}
+                                                        checked={formData.projectManagementDesiredPosition === position.value}
+                                                        onChange={handleChange}
+                                                    />
+                                                    <label htmlFor={`projectManagementDesiredPosition-${index}`}>{position.label}</label>
+                                                </div>
+                                            ))}
                                         </div>
                                     </div>
                                 </div>
@@ -996,6 +841,12 @@ function Qualification() {
                             </>
                         )
                     } else if (formData.projectManagementField === 'پروژه‌های منعطف (Agile )- مارکتینگ و فناوری اطلاعات (IT)') {
+                        const desiredPositions = [
+                            { value: "Product Owner", label: "Product Owner" },
+                            { value: "Scrum Master", label: "Scrum Master" },
+                            { value: "Developer", label: "Developer" }
+                        ];
+
                         return (
                             <>
                                 <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
@@ -1007,39 +858,19 @@ function Qualification() {
                                         <label className='LabelMain'>عنوان شغلی مورد نظر شما:</label>
 
                                         <div>
-                                            <input
-                                                type="radio"
-                                                id="projectManagementDesiredPosition-ProductOwner"
-                                                name="projectManagementDesiredPosition"
-                                                value="Product Owner"
-                                                checked={formData.projectManagementDesiredPosition === "Product Owner"}
-                                                onChange={handleChange}
-                                            />
-                                            <label htmlFor="projectManagementDesiredPosition-ProductOwner">Product Owner</label>
-                                        </div>
-
-                                        <div>
-                                            <input
-                                                type="radio"
-                                                id="projectManagementDesiredPosition-ScrumMaster"
-                                                name="projectManagementDesiredPosition"
-                                                value="Scrum Master"
-                                                checked={formData.projectManagementDesiredPosition === "Scrum Master"}
-                                                onChange={handleChange}
-                                            />
-                                            <label htmlFor="projectManagementDesiredPosition-ScrumMaster">Scrum Master</label>
-                                        </div>
-
-                                        <div>
-                                            <input
-                                                type="radio"
-                                                id="projectManagementDesiredPosition-Developer"
-                                                name="projectManagementDesiredPosition"
-                                                value="Developer"
-                                                checked={formData.projectManagementDesiredPosition === "Developer"}
-                                                onChange={handleChange}
-                                            />
-                                            <label htmlFor="projectManagementDesiredPosition-Developer">Developer</label>
+                                            {desiredPositions.map((position, index) => (
+                                                <div key={index}>
+                                                    <input
+                                                        type="radio"
+                                                        id={`projectManagementDesiredPosition-${index}`}
+                                                        name="projectManagementDesiredPosition"
+                                                        value={position.value}
+                                                        checked={formData.projectManagementDesiredPosition === position.value}
+                                                        onChange={handleChange}
+                                                    />
+                                                    <label htmlFor={`projectManagementDesiredPosition-${index}`}>{position.label}</label>
+                                                </div>
+                                            ))}
                                         </div>
                                     </div>
                                 </div>
@@ -1058,6 +889,11 @@ function Qualification() {
                         )
                     }
                 } else if (formData.fieldOfActivity === 'Technician') {
+                    const technicianExperienceOptions = [
+                        { id: "technicianExperienceOutsideCanada-more", value: "بیشتر از ۹۰۰۰ ساعت (بیشتر از ۵ سال)", label: "بیشتر از ۹۰۰۰ ساعت (بیشتر از ۵ سال)" },
+                        { id: "technicianExperienceOutsideCanada-less", value: "کمتر از ۹۰۰۰ ساعت (کمتر از ۵ سال)", label: "کمتر از ۹۰۰۰ ساعت (کمتر از ۵ سال)" }
+                    ];
+
                     return (
                         <>
                             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
@@ -1069,27 +905,19 @@ function Qualification() {
                                     <label className='LabelMain'>سابقه کار خارج از کانادا:</label>
 
                                     <div>
-                                        <input
-                                            type="radio"
-                                            id="technicianExperienceOutsideCanada-more"
-                                            name="technicianExperienceOutsideCanada"
-                                            value="بیشتر از ۹۰۰۰ ساعت (بیشتر از ۵ سال)"
-                                            checked={formData.technicianExperienceOutsideCanada === "بیشتر از ۹۰۰۰ ساعت (بیشتر از ۵ سال)"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="technicianExperienceOutsideCanada-more">بیشتر از ۹۰۰۰ ساعت (بیشتر از ۵ سال)</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="technicianExperienceOutsideCanada-less"
-                                            name="technicianExperienceOutsideCanada"
-                                            value="کمتر از ۹۰۰۰ ساعت (کمتر از ۵ سال)"
-                                            checked={formData.technicianExperienceOutsideCanada === "کمتر از ۹۰۰۰ ساعت (کمتر از ۵ سال)"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="technicianExperienceOutsideCanada-less">کمتر از ۹۰۰۰ ساعت (کمتر از ۵ سال)</label>
+                                        {technicianExperienceOptions.map((option, index) => (
+                                            <div key={index}>
+                                                <input
+                                                    type="radio"
+                                                    id={option.id}
+                                                    name="technicianExperienceOutsideCanada"
+                                                    value={option.value}
+                                                    checked={formData.technicianExperienceOutsideCanada === option.value}
+                                                    onChange={handleChange}
+                                                />
+                                                <label htmlFor={option.id}>{option.label}</label>
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
@@ -1157,6 +985,14 @@ function Qualification() {
                         </>
                     );
                 } else if (formData.fieldOfActivity === 'Architect') {
+                    const architectLicenses = [
+                        { value: "لایسنس معماری (Architect)", label: "لایسنس معماری (Architect)" },
+                        { value: "لایسنس BCIN (فقط ساکنان استان انتاریو)", label: "لایسنس BCIN (فقط ساکنان استان انتاریو)" },
+                        { value: "سرتیفیکیت PMP", label: "سرتیفیکیت PMP" },
+                        { value: "سرتیفیکیت LEED", label: "سرتیفیکیت LEED" },
+                        { value: "هیچکدام", label: "هیچکدام" }
+                    ];
+
                     return (
                         <>
                             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
@@ -1168,63 +1004,19 @@ function Qualification() {
                                     <label className='LabelMain'>کدامیک از لایسنس‌ها و سرتیفیکیت‌های زیر را دارید؟</label>
 
                                     <div>
-                                        <input
-                                            type="radio"
-                                            id="architectLicense-Architect"
-                                            name="architectLicense"
-                                            value="لایسنس معماری (Architect)"
-                                            checked={formData.architectLicense === "لایسنس معماری (Architect)"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="architectLicense-Architect">لایسنس معماری (Architect)</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="architectLicense-BCIN"
-                                            name="architectLicense"
-                                            value="لایسنس BCIN (فقط ساکنان استان انتاریو)"
-                                            checked={formData.architectLicense === "لایسنس BCIN (فقط ساکنان استان انتاریو)"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="architectLicense-BCIN">لایسنس BCIN (فقط ساکنان استان انتاریو)</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="architectLicense-PMP"
-                                            name="architectLicense"
-                                            value="سرتیفیکیت PMP"
-                                            checked={formData.architectLicense === "سرتیفیکیت PMP"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="architectLicense-PMP">سرتیفیکیت PMP</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="architectLicense-LEED"
-                                            name="architectLicense"
-                                            value="سرتیفیکیت LEED"
-                                            checked={formData.architectLicense === "سرتیفیکیت LEED"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="architectLicense-LEED">سرتیفیکیت LEED</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="architectLicense-None"
-                                            name="architectLicense"
-                                            value="هیچکدام"
-                                            checked={formData.architectLicense === "هیچکدام"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="architectLicense-None">هیچکدام</label>
+                                        {architectLicenses.map((license, index) => (
+                                            <div key={index}>
+                                                <input
+                                                    type="radio"
+                                                    id={`architectLicense-${index}`}
+                                                    name="architectLicense"
+                                                    value={license.value}
+                                                    checked={formData.architectLicense === license.value}
+                                                    onChange={handleChange}
+                                                />
+                                                <label htmlFor={`architectLicense-${index}`}>{license.label}</label>
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
@@ -1242,6 +1034,11 @@ function Qualification() {
                         </>
                     );
                 } else if (formData.fieldOfActivity === 'Project Management') {
+                    const projectManagementExperienceOptions = [
+                        { value: "کمتر از 3 سال", label: "کمتر از 3 سال" },
+                        { value: "بیشتر از 3 سال", label: "بیشتر از 3 سال" }
+                    ];
+
                     return (
                         <>
                             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
@@ -1250,30 +1047,22 @@ function Qualification() {
 
                             <div className='row'>
                                 <div className='col-12 mb-2'>
-                                    <label className='LabelMain'>سابقه کار شما خارج از کانادا</label>
+                                    <label className='LabelMain'>سابقه کار خارج از کانادا</label>
 
                                     <div>
-                                        <input
-                                            type="radio"
-                                            id="projectManagementExperienceOutsideCanada-more"
-                                            name="projectManagementExperienceOutsideCanada"
-                                            value="بیشتر از 3 سال"
-                                            checked={formData.projectManagementExperienceOutsideCanada === "بیشتر از 3 سال"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="projectManagementExperienceOutsideCanada-more">بیشتر از 3 سال</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="projectManagementExperienceOutsideCanada-less"
-                                            name="projectManagementExperienceOutsideCanada"
-                                            value="کمتر از 3 سال"
-                                            checked={formData.projectManagementExperienceOutsideCanada === "کمتر از 3 سال"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="projectManagementExperienceOutsideCanada-less">کمتر از 3 سال</label>
+                                        {projectManagementExperienceOptions.map((option, index) => (
+                                            <div key={index}>
+                                                <input
+                                                    type="radio"
+                                                    id={`projectManagementExperienceOutsideCanada-${index}`}
+                                                    name="projectManagementExperienceOutsideCanada"
+                                                    value={option.value}
+                                                    checked={formData.projectManagementExperienceOutsideCanada === option.value}
+                                                    onChange={handleChange}
+                                                />
+                                                <label htmlFor={`projectManagementExperienceOutsideCanada-${index}`}>{option.label}</label>
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
@@ -1291,6 +1080,12 @@ function Qualification() {
                         </>
                     )
                 } else if (formData.fieldOfActivity === 'Technician') {
+                    const technicianExperienceInsideCanadaOptions = [
+                        { id: "technicianExperienceInsideCanada-6monthsOrMore", value: "6 ماه و بیشتر", label: "6 ماه و بیشتر" },
+                        { id: "technicianExperienceInsideCanada-lessThan6Months", value: "کمتر از 6 ماه", label: "کمتر از 6 ماه" },
+                        { id: "technicianExperienceInsideCanada-noExperience", value: "بدون سابقه کار کانادایی", label: "بدون سابقه کار کانادایی" }
+                    ];
+
                     return (
                         <>
                             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
@@ -1302,41 +1097,20 @@ function Qualification() {
                                     <label className='LabelMain'>سابقه کار کانادایی</label>
 
                                     <div>
-                                        <input
-                                            type="radio"
-                                            id="technicianExperienceInsideCanada-6monthsOrMore"
-                                            name="technicianExperienceInsideCanada"
-                                            value="6 ماه و بیشتر"
-                                            checked={formData.technicianExperienceInsideCanada === "6 ماه و بیشتر"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="technicianExperienceInsideCanada-6monthsOrMore">6 ماه و بیشتر (6 months or more)</label>
+                                        {technicianExperienceInsideCanadaOptions.map((option, index) => (
+                                            <div key={index}>
+                                                <input
+                                                    type="radio"
+                                                    id={option.id}
+                                                    name="technicianExperienceInsideCanada"
+                                                    value={option.value}
+                                                    checked={formData.technicianExperienceInsideCanada === option.value}
+                                                    onChange={handleChange}
+                                                />
+                                                <label htmlFor={option.id}>{option.label}</label>
+                                            </div>
+                                        ))}
                                     </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="technicianExperienceInsideCanada-lessThan6Months"
-                                            name="technicianExperienceInsideCanada"
-                                            value="کمتر از 6 ماه"
-                                            checked={formData.technicianExperienceInsideCanada === "کمتر از 6 ماه"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="technicianExperienceInsideCanada-lessThan6Months">کمتر از 6 ماه (Less than 6 months)</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="technicianExperienceInsideCanada-noExperience"
-                                            name="technicianExperienceInsideCanada"
-                                            value="بدون سابقه کار کانادایی"
-                                            checked={formData.technicianExperienceInsideCanada === "بدون سابقه کار کانادایی"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="technicianExperienceInsideCanada-noExperience">بدون سابقه کار کانادایی (No Canadian work experience)</label>
-                                    </div>
-
                                 </div>
                             </div>
 
@@ -1407,6 +1181,13 @@ function Qualification() {
                         </>
                     );
                 } else if (formData.fieldOfActivity === 'Architect') {
+                    const architectLicenses = [
+                        { value: "Revit", label: "Revit" },
+                        { value: "Autodesk 3D Max", label: "Autodesk 3D Max" },
+                        { value: "AutoCAD", label: "AutoCAD" },
+                        { value: "هیچکدام", label: "هیچکدام" }
+                    ];
+
                     return (
                         <>
                             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
@@ -1418,63 +1199,19 @@ function Qualification() {
                                     <label className='LabelMain'>به کدامیک از نرم افزارهای زیر تسلط دارید؟</label>
 
                                     <div>
-                                        <input
-                                            type="radio"
-                                            id="architectLicense-Architect"
-                                            name="architectLicense"
-                                            value="لایسنس معماری (Architect)"
-                                            checked={formData.architectLicense === "لایسنس معماری (Architect)"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="architectLicense-Architect">لایسنس معماری (Architect)</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="architectLicense-BCIN"
-                                            name="architectLicense"
-                                            value="لایسنس BCIN (فقط ساکنان استان انتاریو)"
-                                            checked={formData.architectLicense === "لایسنس BCIN (فقط ساکنان استان انتاریو)"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="architectLicense-BCIN">لایسنس BCIN (فقط ساکنان استان انتاریو)</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="architectLicense-PMP"
-                                            name="architectLicense"
-                                            value="سرتیفیکیت PMP"
-                                            checked={formData.architectLicense === "سرتیفیکیت PMP"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="architectLicense-PMP">سرتیفیکیت PMP</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="architectLicense-LEED"
-                                            name="architectLicense"
-                                            value="سرتیفیکیت LEED"
-                                            checked={formData.architectLicense === "سرتیفیکیت LEED"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="architectLicense-LEED">سرتیفیکیت LEED</label>
-                                    </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="architectLicense-None"
-                                            name="architectLicense"
-                                            value="هیچکدام"
-                                            checked={formData.architectLicense === "هیچکدام"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="architectLicense-None">هیچکدام</label>
+                                        {architectLicenses.map((license, index) => (
+                                            <div key={index}>
+                                                <input
+                                                    type="radio"
+                                                    id={`architectLicense-${index}`}
+                                                    name="architectLicense"
+                                                    value={license.value}
+                                                    checked={formData.architectLicense === license.value}
+                                                    onChange={handleChange}
+                                                />
+                                                <label htmlFor={`architectLicense-${index}`}>{license.label}</label>
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
@@ -1492,10 +1229,15 @@ function Qualification() {
                         </>
                     );
                 } else if (formData.fieldOfActivity === 'Project Management') {
+                    const projectManagementExperienceInsideCanadaOptions = [
+                        { value: "کمتر از 2 سال", label: "کمتر از 2 سال" },
+                        { value: "بیشتر از 2 سال", label: "بیشتر از 2 سال" }
+                    ];
+
                     return (
                         <>
                             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
-                                <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '100%' }} >مرحله هشتم</div>
+                                <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '90%' }} >مرحله هشتم</div>
                             </div>
 
                             <div className='row'>
@@ -1503,29 +1245,20 @@ function Qualification() {
                                     <label className='LabelMain'>سابقه کار کانادایی</label>
 
                                     <div>
-                                        <input
-                                            type="radio"
-                                            id="projectManagementExperienceInsideCanada-less"
-                                            name="projectManagementExperienceInsideCanada"
-                                            value="کمتر از 2 سال"
-                                            checked={formData.projectManagementExperienceInsideCanada === "کمتر از 2 سال"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="projectManagementExperienceInsideCanada-less">کمتر از 2 سال</label>
+                                        {projectManagementExperienceInsideCanadaOptions.map((option, index) => (
+                                            <div key={index}>
+                                                <input
+                                                    type="radio"
+                                                    id={`projectManagementExperienceInsideCanada-${index}`}
+                                                    name="projectManagementExperienceInsideCanada"
+                                                    value={option.value}
+                                                    checked={formData.projectManagementExperienceInsideCanada === option.value}
+                                                    onChange={handleChange}
+                                                />
+                                                <label htmlFor={`projectManagementExperienceInsideCanada-${index}`}>{option.label}</label>
+                                            </div>
+                                        ))}
                                     </div>
-
-                                    <div>
-                                        <input
-                                            type="radio"
-                                            id="projectManagementExperienceInsideCanada-more"
-                                            name="projectManagementExperienceInsideCanada"
-                                            value="بیشتر از 2 سال"
-                                            checked={formData.projectManagementExperienceInsideCanada === "بیشتر از 2 سال"}
-                                            onChange={handleChange}
-                                        />
-                                        <label htmlFor="projectManagementExperienceInsideCanada-more">بیشتر از 2 سال</label>
-                                    </div>
-
                                 </div>
                             </div>
 
@@ -1542,20 +1275,42 @@ function Qualification() {
                         </>
                     )
                 } else if (formData.fieldOfActivity === 'Technician') {
+                    const fieldLabels = {
+                        firstName: "نام",
+                        lastName: "نام خانوادگی",
+                        email: "ایمیل",
+                        phoneNumber: "شماره تلفن",
+                        englishLevel: "سطح زبان انگلیسی",
+                        ageRange: "محدوده سنی",
+                        province: "استان",
+                        city: "شهر",
+                        fieldOfActivity: "زمینه فعالیت مورد نظر در کانادا",
+                        technicianField: "حوزه فعالیت",
+                        otherTechnicianField: "حوزه فعالیت تکنسینی",
+                        projectManagementDesiredPosition: "عنوان شغلی مورد نظر",
+                        technicianExperienceOutsideCanada: "سابقه کار خارج از کانادا",
+                        technicianExperienceInsideCanada: "سابقه کار کانادایی",
+                    };
+
                     return (
                         <>
                             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
                                 <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '100%' }} >چک کردن اطلاعت</div>
                             </div>
 
-                            <h2>چک کردن اطلاعات</h2>
-                            <pre>{JSON.stringify(
-                                Object.fromEntries(
-                                    Object.entries(formData).filter(([_, value]) => value !== "")
-                                ),
-                                null,
-                                2
-                            )}</pre>
+                            <div className='row CheckDetails'>
+                                <h2>بررسی اطلاعات</h2>
+
+                                <div className='col-12'>
+                                    {Object.entries(
+                                        Object.fromEntries(
+                                            Object.entries(formData).filter(([_, value]) => value !== "")
+                                        )
+                                    ).map(([key, value]) => (
+                                        <p><strong>{fieldLabels[key]}:</strong> {value}</p>
+                                    ))}
+                                </div>
+                            </div>
 
                             {/* Next & Previous */}
                             <div className='row justify-content-between mt-4'>
@@ -1571,57 +1326,238 @@ function Qualification() {
                     );
                 }
 
-                return null;
+            case 9:
+                if (formData.fieldOfActivity === 'Project Management') {
+                    return (
+                        <>
+                            <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
+                                <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '100%' }}>مرحله نهم</div>
+                            </div>
+
+                            <div className='row'>
+                                <div className='col-12 mb-2'>
+                                    <label className='LabelMain'>سرتیفیکیت‌های مدیریت پروژه</label>
+
+                                    <div>
+                                        {[
+                                            { value: "سرتیفیکیت PMP- مدیریت پروژه", label: "سرتیفیکیت PMP- مدیریت پروژه" },
+                                            { value: "سرتیفیکیت PMI-RMP- مدیریت ریسک", label: "سرتیفیکیت PMI-RMP- مدیریت ریسک" },
+                                            { value: "سرتیفیکیت CAPM- مدیریت پروژه جونیور لول", label: "سرتیفیکیت CAPM- مدیریت پروژه جونیور لول" },
+                                            { value: "سرتیفیکیت PSM- اسکرام مستر", label: "سرتیفیکیت PSM- اسکرام مستر" },
+                                            { value: "سرتیفیکیت ACP- اسکرام مستر", label: "سرتیفیکیت ACP- اسکرام مستر" }
+                                        ].map((certificate, index) => (
+                                            <div key={index}>
+                                                <input
+                                                    type="radio"
+                                                    id={`projectManagementCertificate-${index}`}
+                                                    name="projectManagementCertificate"
+                                                    value={certificate.value}
+                                                    checked={formData.projectManagementCertificate === certificate.value}
+                                                    onChange={handleChange}
+                                                />
+                                                <label htmlFor={`projectManagementCertificate-${index}`}>{certificate.label}</label>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Next & Previous */}
+                            <div className='row justify-content-between mt-4'>
+                                <div className='col-md-4'>
+                                    <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>برگشت به مرحله قبل</button>
+                                </div>
+
+                                <div className='col-md-4'>
+                                    <button className='FNV-Btn BtnPrimary BtnMedium w-100' onClick={nextStep}>رفتن به مرحله بعد</button>
+                                </div>
+                            </div>
+                        </>
+                    );
+                } else {
+                    // Skip this case and move to the last step or next logic
+                    nextStep(); // Move to the next step
+                }
+                break;
 
             default:
-                const fieldLabels = {
-                    firstName: "نام",
-                    lastName: "نام خانوادگی",
-                    email: "ایمیل",
-                    phoneNumber: "شماره تلفن",
-                    englishLevel: "سطح زبان انگلیسی",
-                    ageRange: "محدوده سنی",
-                    province: "استان",
-                    city: "شهر",
-                    fieldOfActivity: "حوزه فعالیت",
-                    engineeringMajor: "رشته مهندسی",
-                    engineeringActivity: "نوع فعالیت مهندسی",
-                    engineeringExperience: "تجربه کاری مهندسی",
-                    engineeringLicense: "نوع لایسنس مهندسی"
-                };
+                if (formData.fieldOfActivity === 'Engineering') {
+                    const fieldLabels = {
+                        firstName: "نام",
+                        lastName: "نام خانوادگی",
+                        email: "ایمیل",
+                        phoneNumber: "شماره تلفن",
+                        englishLevel: "سطح زبان انگلیسی",
+                        ageRange: "محدوده سنی",
+                        province: "استان",
+                        city: "شهر",
+                        fieldOfActivity: "حوزه فعالیت",
+                        engineeringMajor: "رشته مهندسی",
+                        engineeringActivity: "نوع فعالیت مهندسی",
+                        engineeringExperience: "تجربه کاری مهندسی",
+                        engineeringLicense: "نوع لایسنس مهندسی"
+                    };
 
-                return (
-                    <>
-                        <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
-                            <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '100%' }} >چک کردن اطلاعت</div>
-                        </div>
-
-                        <div className='row CheckDetails'>
-                            <h2>بررسی اطلاعات</h2>
-
-                            <div className='col-12'>
-                                {Object.entries(
-                                    Object.fromEntries(
-                                        Object.entries(formData).filter(([_, value]) => value !== "")
-                                    )
-                                ).map(([key, value]) => (
-                                    <p><strong>{fieldLabels[key]}:</strong> {value}</p>
-                                ))}
-                            </div>
-                        </div>
-
-                        {/* Next & Previous */}
-                        <div className='row justify-content-between mt-4'>
-                            <div className='col-md-4'>
-                                <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>برگشت به مرحله قبل</button>
+                    return (
+                        <>
+                            <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
+                                <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '100%' }} >چک کردن اطلاعت</div>
                             </div>
 
-                            <div className='col-md-4'>
-                                <button className='FNV-Btn BtnPrimary BtnMedium w-100' onClick={() => alert("Form Submitted")}>تکمیل اطلاعات</button>
+                            <div className='row CheckDetails'>
+                                <h2>بررسی اطلاعات</h2>
+
+                                <div className='col-12'>
+                                    {Object.entries(
+                                        Object.fromEntries(
+                                            Object.entries(formData).filter(([_, value]) => value !== "")
+                                        )
+                                    ).map(([key, value]) => (
+                                        <p><strong>{fieldLabels[key]}:</strong> {value}</p>
+                                    ))}
+                                </div>
                             </div>
-                        </div>
-                    </>
-                );
+
+                            {/* Next & Previous */}
+                            <div className='row justify-content-between mt-4'>
+                                <div className='col-md-4'>
+                                    <button
+                                        className='FNV-Btn ThirdColor BtnMedium w-100'
+                                        onClick={() => {
+                                            if (formData.fieldOfActivity !== 'Project Management') {
+                                                // Go back two steps for non-Project Management users
+                                                prevStep();
+                                                prevStep();
+                                            } else {
+                                                // Normal one-step back for Project Management users
+                                                prevStep();
+                                            }
+                                        }}
+                                    >
+                                        برگشت به مرحله قبل
+                                    </button>
+                                </div>
+
+                                <div className='col-md-4'>
+                                    <button className='FNV-Btn BtnPrimary BtnMedium w-100' onClick={() => alert("Form Submitted")}>تکمیل اطلاعات</button>
+                                </div>
+                            </div>
+                        </>
+                    );
+                } else if (formData.fieldOfActivity === 'Architect') {
+                    const fieldLabels = {
+                        firstName: "نام",
+                        lastName: "نام خانوادگی",
+                        email: "ایمیل",
+                        phoneNumber: "شماره تلفن",
+                        englishLevel: "سطح زبان انگلیسی",
+                        ageRange: "محدوده سنی",
+                        province: "استان",
+                        city: "شهر",
+                        fieldOfActivity: "زمینه فعالیت مورد نظر در کانادا",
+                        architectField: "حوزه فعالیت",
+                        architectWorkHistory: "سابقه کار",
+                        architectLicense: "تسلط نرم افزاری",
+                    };
+
+                    return (
+                        <>
+                            <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
+                                <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '100%' }} >چک کردن اطلاعت</div>
+                            </div>
+
+                            <div className='row CheckDetails'>
+                                <h2>بررسی اطلاعات</h2>
+
+                                <div className='col-12'>
+                                    {Object.entries(
+                                        Object.fromEntries(
+                                            Object.entries(formData).filter(([_, value]) => value !== "")
+                                        )
+                                    ).map(([key, value]) => (
+                                        <p><strong>{fieldLabels[key]}:</strong> {value}</p>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Next & Previous */}
+                            <div className='row justify-content-between mt-4'>
+                                <div className='col-md-4'>
+                                    <button
+                                        className='FNV-Btn ThirdColor BtnMedium w-100'
+                                        onClick={() => {
+                                            if (formData.fieldOfActivity !== 'Project Management') {
+                                                // Go back two steps for non-Project Management users
+                                                prevStep();
+                                                prevStep();
+                                            } else {
+                                                // Normal one-step back for Project Management users
+                                                prevStep();
+                                            }
+                                        }}
+                                    >
+                                        برگشت به مرحله قبل
+                                    </button>
+                                </div>
+
+                                <div className='col-md-4'>
+                                    <button className='FNV-Btn BtnPrimary BtnMedium w-100' onClick={() => alert("Form Submitted")}>تکمیل اطلاعات</button>
+                                </div>
+                            </div>
+                        </>
+                    );
+                } else if (formData.fieldOfActivity === 'Project Management') {
+                    const fieldLabels = {
+                        firstName: "نام",
+                        lastName: "نام خانوادگی",
+                        email: "ایمیل",
+                        phoneNumber: "شماره تلفن",
+                        englishLevel: "سطح زبان انگلیسی",
+                        ageRange: "محدوده سنی",
+                        province: "استان",
+                        city: "شهر",
+                        fieldOfActivity: "زمینه فعالیت مورد نظر در کانادا",
+                        projectManagementField: "حوزه فعالیت",
+                        projectManagementDesiredPosition: "عنوان شغلی مورد نظر",
+                        projectManagementExperienceOutsideCanada: "سابقه کار خارج از کانادا",
+                        projectManagementExperienceInsideCanada: "سابقه کار کانادایی",
+                        projectManagementCertificate: "سرتیفیکت‌های مدیریت پروژه",
+                    };
+
+                    return (
+                        <>
+                            <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
+                                <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '100%' }} >چک کردن اطلاعت</div>
+                            </div>
+
+                            <div className='row CheckDetails'>
+                                <h2>بررسی اطلاعات</h2>
+
+                                <div className='col-12'>
+                                    {Object.entries(
+                                        Object.fromEntries(
+                                            Object.entries(formData).filter(([_, value]) => value !== "")
+                                        )
+                                    ).map(([key, value]) => (
+                                        <p><strong>{fieldLabels[key]}:</strong> {value}</p>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Next & Previous */}
+                            <div className='row justify-content-between mt-4'>
+                                <div className='col-md-4'>
+                                    <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>برگشت به مرحله قبل</button>
+                                </div>
+
+                                <div className='col-md-4'>
+                                    <button className='FNV-Btn BtnPrimary BtnMedium w-100' onClick={() => alert("Form Submitted")}>تکمیل اطلاعات</button>
+                                </div>
+                            </div>
+                        </>
+                    );
+                }
+                break;
         }
     };
 
