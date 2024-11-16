@@ -6,6 +6,7 @@ import { toast, Toaster } from 'react-hot-toast';
 
 function Qualification() {
     const [step, setStep] = useState(1);
+
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
@@ -40,7 +41,24 @@ function Qualification() {
 
         // Check if all required fields are filled
         if (!formData.firstName.trim()) {
+            alert("لطفاً نام خود را وارد کنید.");
+
+            return;
+        }
+        if (!formData.lastName.trim()) {
+            alert("لطفاً نام خانوادگی خود را وارد کنید.");
+
+            return;
+        }
+        if (!formData.email.trim()) {
+            alert("لطفاً ایمیل خود را وارد کنید.");
+
+            return;
+        }
+        if (!formData.phoneNumber.trim()) {
+            alert("لطفاً شماره تلفن خود را وارد کنید.");
             toast.error("لطفاً نام خود را وارد کنید.", { position: "bottom-center" });
+
             return;
         }
         if (!formData.lastName.trim()) {
@@ -53,6 +71,7 @@ function Qualification() {
         }
         if (!formData.phoneNumber.trim()) {
             toast.error("لطفاً شماره تلفن خود را وارد کنید.", { position: "bottom-center" });
+
             return;
         }
 
@@ -270,7 +289,8 @@ function Qualification() {
                         </div>
                     </>
                 );
-            //return <button onClick={nextStep}>Next</button>; // Skip if not Work Permit
+
+                //return <button onClick={nextStep}>Next</button>; // Skip if not Work Permit
             case 3:
                 const ageRanges = [
                     { value: "Under 30", label: "کمتر از 30 سال" },
@@ -1113,7 +1133,7 @@ function Qualification() {
                                     </div>
                                 </div>
                             </div>
-
+ 
                             {/* Next & Previous */}
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
