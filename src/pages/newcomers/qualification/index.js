@@ -63,10 +63,12 @@ function Qualification() {
         }
         if (!formData.lastName.trim()) {
             toast.error("لطفاً نام خانوادگی خود را وارد کنید.", { position: "bottom-center" });
+
             return;
         }
         if (!formData.email.trim()) {
             toast.error("لطفاً ایمیل خود را وارد کنید.", { position: "bottom-center" });
+
             return;
         }
         if (!formData.phoneNumber.trim()) {
@@ -1359,7 +1361,7 @@ function Qualification() {
 
                                 </div>
                             </div>
- 
+
                             {/* Next & Previous */}
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
@@ -1624,8 +1626,8 @@ function Qualification() {
                                     Object.fromEntries(
                                         Object.entries(formData).filter(([_, value]) => value !== "")
                                     )
-                                ).map(([key, value]) => (
-                                    <p><strong>{fieldLabels[key]}:</strong> {value}</p>
+                                  ).map(([key, value]) => (
+                                    <p key={key}><strong>{fieldLabels[key]}:</strong> {value}</p>
                                 ))}
                             </div>
                         </div>
