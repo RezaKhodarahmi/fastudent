@@ -135,8 +135,71 @@ function Qualification() {
         ]
     };
 
+    // Define nextStep and prevStep outside the switch-case
     const nextStep = () => setStep((prevStep) => prevStep + 1);
-    const prevStep = () => setStep((prevStep) => prevStep - 1);
+
+    const prevStep = () => {
+        setStep((prevStep) => {
+            const newStep = prevStep - 1;
+    
+            // Reset fields for specific steps
+            switch (newStep) {
+                case 1:
+                    setFormData((prevData) => ({
+                        ...prevData,
+                        englishLevel: ""
+                    }));
+                    break;
+    
+                case 2:
+                    setFormData((prevData) => ({
+                        ...prevData,
+                        ageRange: "",
+                        province: "",
+                        city: ""
+                    }));
+                    break;
+    
+                case 3:
+                    setFormData((prevData) => ({
+                        ...prevData,
+                        fieldOfActivity: ""
+                    }));
+                    break;
+    
+                case 4:
+                    setFormData((prevData) => {
+                        const resetData = { ...prevData };
+                        if (prevData.fieldOfActivity === "Engineering") {
+                            resetData.engineeringMajor = ""; // Reset engineering major
+                        } else if (prevData.fieldOfActivity === "Architect") {
+                            resetData.architectField = ""; // Reset architect field
+                        } else if (prevData.fieldOfActivity === "Project Management") {
+                            resetData.projectManagementField = ""; // Reset project management field
+                        } else if (prevData.fieldOfActivity === "Technician") {
+                            resetData.technicianField = ""; // Reset technician field
+                            resetData.otherTechnicianField = ""; // Reset "سایر" input field
+                        }
+                        return resetData;
+                    });
+                    break;
+    
+                case 5: // New case for engineering majors
+                    setFormData((prevData) => ({
+                        ...prevData,
+                        engineeringMajor: "" // Reset engineering major field
+                    }));
+                    break;
+    
+                default:
+                    break;
+            }
+    
+            return newStep;
+        });
+    };
+    
+    
 
     const handleChange = (e) => {
         const { name, value } = e.target;
