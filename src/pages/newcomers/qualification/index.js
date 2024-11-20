@@ -149,7 +149,7 @@ function Qualification() {
                 return (
                     <>
                         <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
-                            <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '10%' }} >مرحله اول</div>
+                            <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '10%' }} >10%</div>
                         </div>
 
                         <div className='row'>
@@ -209,7 +209,7 @@ function Qualification() {
                                     className='FNV-Btn BtnPrimary BtnMedium w-100'
                                     onClick={validateAndNextStep}
                                 >
-                                    رفتن به مرحله بعد
+                                    Next
                                 </button>
                             </div>
                         </div>
@@ -249,7 +249,7 @@ function Qualification() {
                                 className="progress-bar progress-bar-striped progress-bar-animated"
                                 style={{ width: '20%' }}
                             >
-                                مرحله دوم
+                                20%
                             </div>
                         </div>
 
@@ -299,7 +299,7 @@ function Qualification() {
                         {/* Next & Previous */}
                         <div className='row justify-content-between mt-4'>
                             <div className='col-md-4'>
-                                <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>برگشت به مرحله قبل</button>
+                                <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>Previous</button>
                             </div>
 
                             <div className='col-md-4'>
@@ -307,7 +307,7 @@ function Qualification() {
                                     className='FNV-Btn BtnPrimary BtnMedium w-100'
                                     onClick={validateAndGoToNextStep}
                                 >
-                                    رفتن به مرحله بعد
+                                    Next
                                 </button>
                             </div>
                         </div>
@@ -360,7 +360,7 @@ function Qualification() {
                                 className="progress-bar progress-bar-striped progress-bar-animated"
                                 style={{ width: '30%' }}
                             >
-                                مرحله سوم
+                                30%
                             </div>
                         </div>
 
@@ -424,7 +424,7 @@ function Qualification() {
                         {/* Next & Previous */}
                         <div className='row justify-content-between mt-4'>
                             <div className='col-md-4'>
-                                <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>برگشت به مرحله قبل</button>
+                                <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>Previous</button>
                             </div>
 
                             <div className='col-md-4'>
@@ -432,7 +432,7 @@ function Qualification() {
                                     className='FNV-Btn BtnPrimary BtnMedium w-100'
                                     onClick={validateCase3AndNextStep}
                                 >
-                                    رفتن به مرحله بعد
+                                    Next
                                 </button>
                             </div>
                         </div>
@@ -472,7 +472,7 @@ function Qualification() {
                                 className="progress-bar progress-bar-striped progress-bar-animated"
                                 style={{ width: '40%' }}
                             >
-                                مرحله چهارم
+                                40%
                             </div>
                         </div>
 
@@ -534,7 +534,7 @@ function Qualification() {
                         <div className='row justify-content-between mt-4'>
                             <div className='col-md-4'>
                                 <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                    برگشت به مرحله قبل
+                                    Previous
                                 </button>
                             </div>
 
@@ -543,7 +543,7 @@ function Qualification() {
                                     className='FNV-Btn BtnPrimary BtnMedium w-100'
                                     onClick={validateCase4AndNextStep}
                                 >
-                                    رفتن به مرحله بعد
+                                    Next
                                 </button>
                             </div>
                         </div>
@@ -581,7 +581,7 @@ function Qualification() {
                     return (
                         <>
                             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
-                                <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '50%' }} >مرحله پنجم</div>
+                                <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '50%' }} >50%</div>
                             </div>
 
                             <div className='row'>
@@ -610,7 +610,7 @@ function Qualification() {
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -619,7 +619,7 @@ function Qualification() {
                                         className='FNV-Btn BtnPrimary BtnMedium w-100'
                                         onClick={validateCase5EngineeringAndNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -658,7 +658,7 @@ function Qualification() {
                                     className="progress-bar progress-bar-striped progress-bar-animated"
                                     style={{ width: '50%' }}
                                 >
-                                    مرحله پنجم
+                                    50%
                                 </div>
                             </div>
 
@@ -688,7 +688,7 @@ function Qualification() {
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -697,7 +697,7 @@ function Qualification() {
                                         className='FNV-Btn BtnPrimary BtnMedium w-100'
                                         onClick={validateCase5ArchitectAndNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -740,7 +740,7 @@ function Qualification() {
                                     className="progress-bar progress-bar-striped progress-bar-animated"
                                     style={{ width: '50%' }}
                                 >
-                                    مرحله پنجم
+                                    50%
                                 </div>
                             </div>
 
@@ -770,7 +770,7 @@ function Qualification() {
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -779,7 +779,7 @@ function Qualification() {
                                         className='FNV-Btn BtnPrimary BtnMedium w-100'
                                         onClick={validateCase5ProjectManagementAndNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -825,7 +825,7 @@ function Qualification() {
                                     className="progress-bar progress-bar-striped progress-bar-animated"
                                     style={{ width: '60%' }}
                                 >
-                                    مرحله پنجم
+                                    60%
                                 </div>
                             </div>
 
@@ -881,7 +881,7 @@ function Qualification() {
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -890,7 +890,7 @@ function Qualification() {
                                         className='FNV-Btn BtnPrimary BtnMedium w-100'
                                         onClick={validateCase5TechnicianAndNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -900,7 +900,7 @@ function Qualification() {
                     return (
                         <>
                             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
-                                <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '60%' }} >مرحله پنجم</div>
+                                <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '60%' }} >60%</div>
                             </div>
 
                             <div className='row'>
@@ -910,7 +910,7 @@ function Qualification() {
                             {/* Next & Previous */}
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
-                                    <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>برگشت به مرحله قبل</button>
+                                    <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>Previous</button>
                                 </div>
                             </div>
                         </>
@@ -949,7 +949,7 @@ function Qualification() {
                                     className="progress-bar progress-bar-striped progress-bar-animated"
                                     style={{ width: '60%' }}
                                 >
-                                    مرحله ششم
+                                    60%
                                 </div>
                             </div>
 
@@ -979,7 +979,7 @@ function Qualification() {
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -988,7 +988,7 @@ function Qualification() {
                                         className='FNV-Btn BtnPrimary BtnMedium w-100'
                                         onClick={validateCase6EngineeringAndNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -1027,7 +1027,7 @@ function Qualification() {
                                     className="progress-bar progress-bar-striped progress-bar-animated"
                                     style={{ width: '60%' }}
                                 >
-                                    مرحله ششم
+                                    60%
                                 </div>
                             </div>
 
@@ -1057,7 +1057,7 @@ function Qualification() {
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -1066,7 +1066,7 @@ function Qualification() {
                                         className='FNV-Btn BtnPrimary BtnMedium w-100'
                                         onClick={validateCase6ArchitectAndNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -1106,7 +1106,7 @@ function Qualification() {
                                         className="progress-bar progress-bar-striped progress-bar-animated"
                                         style={{ width: '60%' }}
                                     >
-                                        مرحله ششم
+                                        60%
                                     </div>
                                 </div>
 
@@ -1136,7 +1136,7 @@ function Qualification() {
                                 <div className='row justify-content-between mt-4'>
                                     <div className='col-md-4'>
                                         <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                            برگشت به مرحله قبل
+                                            Previous
                                         </button>
                                     </div>
 
@@ -1145,7 +1145,7 @@ function Qualification() {
                                             className='FNV-Btn BtnPrimary BtnMedium w-100'
                                             onClick={validateCase6ProjectManagementP1AndNextStep}
                                         >
-                                            رفتن به مرحله بعد
+                                            Next
                                         </button>
                                     </div>
                                 </div>
@@ -1183,7 +1183,7 @@ function Qualification() {
                                         className="progress-bar progress-bar-striped progress-bar-animated"
                                         style={{ width: '60%' }}
                                     >
-                                        مرحله ششم
+                                        60%
                                     </div>
                                 </div>
 
@@ -1213,7 +1213,7 @@ function Qualification() {
                                 <div className='row justify-content-between mt-4'>
                                     <div className='col-md-4'>
                                         <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                            برگشت به مرحله قبل
+                                            Previous
                                         </button>
                                     </div>
 
@@ -1222,7 +1222,7 @@ function Qualification() {
                                             className='FNV-Btn BtnPrimary BtnMedium w-100'
                                             onClick={validateCase6ProjectManagementPart2AndNextStep}
                                         >
-                                            رفتن به مرحله بعد
+                                            Next
                                         </button>
                                     </div>
                                 </div>
@@ -1260,7 +1260,7 @@ function Qualification() {
                                     className="progress-bar progress-bar-striped progress-bar-animated"
                                     style={{ width: '80%' }}
                                 >
-                                    مرحله ششم
+                                    80%
                                 </div>
                             </div>
 
@@ -1290,7 +1290,7 @@ function Qualification() {
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -1299,7 +1299,7 @@ function Qualification() {
                                         className='FNV-Btn BtnPrimary BtnMedium w-100'
                                         onClick={validateCase6TechnicianAndNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -1340,7 +1340,7 @@ function Qualification() {
                                     className="progress-bar progress-bar-striped progress-bar-animated"
                                     style={{ width: '80%' }}
                                 >
-                                    مرحله هفتم
+                                    80%
                                 </div>
                             </div>
 
@@ -1370,7 +1370,7 @@ function Qualification() {
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -1379,7 +1379,7 @@ function Qualification() {
                                         className='FNV-Btn BtnPrimary BtnMedium w-100'
                                         onClick={validateCase7EngineeringAndNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -1419,7 +1419,7 @@ function Qualification() {
                                     className="progress-bar progress-bar-striped progress-bar-animated"
                                     style={{ width: '80%' }}
                                 >
-                                    مرحله هفتم
+                                    80%
                                 </div>
                             </div>
 
@@ -1449,7 +1449,7 @@ function Qualification() {
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -1458,7 +1458,7 @@ function Qualification() {
                                         className='FNV-Btn BtnPrimary BtnMedium w-100'
                                         onClick={validateCase7ArchitectAndNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -1495,7 +1495,7 @@ function Qualification() {
                                     className="progress-bar progress-bar-striped progress-bar-animated"
                                     style={{ width: '80%' }}
                                 >
-                                    مرحله هفتم
+                                    80%
                                 </div>
                             </div>
 
@@ -1525,7 +1525,7 @@ function Qualification() {
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -1534,7 +1534,7 @@ function Qualification() {
                                         className='FNV-Btn BtnPrimary BtnMedium w-100'
                                         onClick={validateCase7ProjectManagementAndNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -1572,7 +1572,7 @@ function Qualification() {
                                     className="progress-bar progress-bar-striped progress-bar-animated"
                                     style={{ width: '100%' }}
                                 >
-                                    مرحله هفتم
+                                    100%
                                 </div>
                             </div>
 
@@ -1602,7 +1602,7 @@ function Qualification() {
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -1611,7 +1611,7 @@ function Qualification() {
                                         className='FNV-Btn BtnPrimary BtnMedium w-100'
                                         onClick={validateCase7TechnicianAndNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -1656,7 +1656,7 @@ function Qualification() {
                                     className="progress-bar progress-bar-striped progress-bar-animated"
                                     style={{ width: '100%' }}
                                 >
-                                    مرحله هشتم
+                                    100%
                                 </div>
                             </div>
 
@@ -1686,7 +1686,7 @@ function Qualification() {
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -1695,7 +1695,7 @@ function Qualification() {
                                         className='FNV-Btn BtnPrimary BtnMedium w-100'
                                         onClick={validateCase8EngineeringAndNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -1734,7 +1734,7 @@ function Qualification() {
                                     className="progress-bar progress-bar-striped progress-bar-animated"
                                     style={{ width: '100%' }}
                                 >
-                                    مرحله هشتم
+                                    100%
                                 </div>
                             </div>
 
@@ -1764,7 +1764,7 @@ function Qualification() {
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -1773,7 +1773,7 @@ function Qualification() {
                                         className='FNV-Btn BtnPrimary BtnMedium w-100'
                                         onClick={validateCase8ArchitectAndNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -1810,7 +1810,7 @@ function Qualification() {
                                     className="progress-bar progress-bar-striped progress-bar-animated"
                                     style={{ width: '90%' }}
                                 >
-                                    مرحله هشتم
+                                    90%
                                 </div>
                             </div>
 
@@ -1840,7 +1840,7 @@ function Qualification() {
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -1849,7 +1849,7 @@ function Qualification() {
                                         className='FNV-Btn BtnPrimary BtnMedium w-100'
                                         onClick={validateCase8ProjectManagementAndNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -1896,7 +1896,7 @@ function Qualification() {
                             {/* Next & Previous */}
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
-                                    <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>برگشت به مرحله قبل</button>
+                                    <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>Previous</button>
                                 </div>
 
                                 <div className='col-md-4'>
@@ -1946,7 +1946,7 @@ function Qualification() {
                                     className="progress-bar progress-bar-striped progress-bar-animated"
                                     style={{ width: "100%" }}
                                 >
-                                    مرحله نهم
+                                    100%
                                 </div>
                             </div>
 
@@ -1978,7 +1978,7 @@ function Qualification() {
                             <div className="row justify-content-between mt-4">
                                 <div className="col-md-4">
                                     <button className="FNV-Btn ThirdColor BtnMedium w-100" onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -1987,7 +1987,7 @@ function Qualification() {
                                         className="FNV-Btn BtnPrimary BtnMedium w-100"
                                         onClick={handleNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -2053,7 +2053,7 @@ function Qualification() {
                                             }
                                         }}
                                     >
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -2115,7 +2115,7 @@ function Qualification() {
                                             }
                                         }}
                                     >
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -2166,7 +2166,7 @@ function Qualification() {
                             {/* Next & Previous */}
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
-                                    <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>برگشت به مرحله قبل</button>
+                                    <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>Previous</button>
                                 </div>
 
                                 <div className='col-md-4'>
