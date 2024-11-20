@@ -90,9 +90,18 @@ const Header = props => {
   }
 
   useEffect(() => {
-    setUserName(JSON.parse(window.localStorage.getItem('userName' || '')))
-    setUserImage(window.localStorage.getItem('userImage' || ''))
-  }, [dispatch])
+    const storedUserName = window.localStorage.getItem('userName');
+    const storedUserImage = window.localStorage.getItem('userImage');
+
+    try {
+      setUserName(storedUserName ? JSON.parse(storedUserName) : '');
+    } catch (error) {
+      console.error("Error parsing userName from localStorage:", error);
+      setUserName(''); // Default value if parsing fails
+    }
+
+    setUserImage(storedUserImage || ''); // Use empty string as default if no image is found
+  }, [dispatch]);
 
   useEffect(() => {
     const handleKeyDown = e => {
