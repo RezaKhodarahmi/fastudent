@@ -135,8 +135,95 @@ function Qualification() {
         ]
     };
 
+    // Define nextStep and prevStep outside the switch-case
     const nextStep = () => setStep((prevStep) => prevStep + 1);
-    const prevStep = () => setStep((prevStep) => prevStep - 1);
+
+    const prevStep = () => {
+        setStep((prevStep) => {
+            const newStep = prevStep - 1;
+
+            setFormData((prevData) => {
+                const resetData = { ...prevData };
+
+                switch (newStep) {
+                    case 1:
+                        resetData.firstName = "";
+                        resetData.lastName = "";
+                        resetData.email = "";
+                        resetData.phoneNumber = "";
+                        break;
+
+                    case 2:
+                        resetData.englishLevel = "";
+                        break;
+
+                    case 3:
+                        resetData.ageRange = "";
+                        resetData.province = "";
+                        resetData.city = "";
+                        break;
+
+                    case 4:
+                        resetData.fieldOfActivity = "";
+                        break;
+
+                    case 5:
+                        if (prevData.fieldOfActivity === "Engineering") {
+                            resetData.engineeringMajor = "";
+                        } else if (prevData.fieldOfActivity === "Architect") {
+                            resetData.architectField = "";
+                        } else if (prevData.fieldOfActivity === "Project Management") {
+                            resetData.projectManagementField = "";
+                        } else if (prevData.fieldOfActivity === "Technician") {
+                            resetData.technicianField = "";
+                            resetData.otherTechnicianField = "";
+                        }
+                        break;
+
+                    case 6:
+                        if (prevData.fieldOfActivity === "Engineering") {
+                            resetData.engineeringActivity = "";
+                        } else if (prevData.fieldOfActivity === "Architect") {
+                            resetData.architectWorkHistory = "";
+                        } else if (prevData.fieldOfActivity === "Project Management") {
+                            resetData.projectManagementDesiredPosition = "";
+                        } else if (prevData.fieldOfActivity === "Technician") {
+                            resetData.technicianExperienceOutsideCanada = "";
+                        }
+                        break;
+
+                    case 7:
+                        if (prevData.fieldOfActivity === "Engineering") {
+                            resetData.engineeringExperience = "";
+                        } else if (prevData.fieldOfActivity === "Architect") {
+                            resetData.architectLicense = "";
+                        } else if (prevData.fieldOfActivity === "Project Management") {
+                            resetData.projectManagementExperienceOutsideCanada = "";
+                        } else if (prevData.fieldOfActivity === "Technician") {
+                            resetData.technicianExperienceInsideCanada = "";
+                        }
+                        break;
+
+                    case 8:
+                        if (prevData.fieldOfActivity === "Engineering") {
+                            resetData.engineeringLicense = "";
+                        } else if (prevData.fieldOfActivity === "Architect") {
+                            resetData.architectLicense = "";
+                        } else if (prevData.fieldOfActivity === "Project Management") {
+                            resetData.projectManagementExperienceInsideCanada = "";
+                        }
+                        break;
+
+                    default:
+                        break;
+                }
+
+                return resetData;
+            });
+
+            return newStep;
+        });
+    };
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -149,7 +236,7 @@ function Qualification() {
                 return (
                     <>
                         <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
-                            <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '10%' }} >مرحله اول</div>
+                            <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '10%' }} >10%</div>
                         </div>
 
                         <div className='row'>
@@ -209,7 +296,7 @@ function Qualification() {
                                     className='FNV-Btn BtnPrimary BtnMedium w-100'
                                     onClick={validateAndNextStep}
                                 >
-                                    رفتن به مرحله بعد
+                                    Next
                                 </button>
                             </div>
                         </div>
@@ -227,7 +314,6 @@ function Qualification() {
                     if (!formData.englishLevel) {
                         // Show error toast and prevent going to the next step
                         toast.error("لطفاً سطح زبان انگلیسی خود را انتخاب کنید.", { position: "bottom-center" });
-
                         return; // Prevent navigation
                     }
 
@@ -250,7 +336,7 @@ function Qualification() {
                                 className="progress-bar progress-bar-striped progress-bar-animated"
                                 style={{ width: '20%' }}
                             >
-                                مرحله دوم
+                                20%
                             </div>
                         </div>
 
@@ -300,7 +386,7 @@ function Qualification() {
                         {/* Next & Previous */}
                         <div className='row justify-content-between mt-4'>
                             <div className='col-md-4'>
-                                <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>برگشت به مرحله قبل</button>
+                                <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>Previous</button>
                             </div>
 
                             <div className='col-md-4'>
@@ -308,7 +394,7 @@ function Qualification() {
                                     className='FNV-Btn BtnPrimary BtnMedium w-100'
                                     onClick={validateAndGoToNextStep}
                                 >
-                                    رفتن به مرحله بعد
+                                    Next
                                 </button>
                             </div>
                         </div>
@@ -329,19 +415,16 @@ function Qualification() {
                 const validateCase3AndNextStep = () => {
                     if (!formData.ageRange) {
                         toast.error("لطفاً محدوده سنی خود را انتخاب کنید.", { position: "bottom-center" });
-
                         return;
                     }
 
                     if (!formData.province) {
                         toast.error("لطفاً استان محل زندگی خود را انتخاب کنید.", { position: "bottom-center" });
-
                         return;
                     }
 
                     if (!formData.city) {
                         toast.error("لطفاً شهر محل زندگی خود را انتخاب کنید.", { position: "bottom-center" });
-
                         return;
                     }
 
@@ -364,7 +447,7 @@ function Qualification() {
                                 className="progress-bar progress-bar-striped progress-bar-animated"
                                 style={{ width: '30%' }}
                             >
-                                مرحله سوم
+                                30%
                             </div>
                         </div>
 
@@ -428,7 +511,7 @@ function Qualification() {
                         {/* Next & Previous */}
                         <div className='row justify-content-between mt-4'>
                             <div className='col-md-4'>
-                                <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>برگشت به مرحله قبل</button>
+                                <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>Previous</button>
                             </div>
 
                             <div className='col-md-4'>
@@ -436,7 +519,7 @@ function Qualification() {
                                     className='FNV-Btn BtnPrimary BtnMedium w-100'
                                     onClick={validateCase3AndNextStep}
                                 >
-                                    رفتن به مرحله بعد
+                                    Next
                                 </button>
                             </div>
                         </div>
@@ -454,7 +537,6 @@ function Qualification() {
                 const validateCase4AndNextStep = () => {
                     if (!formData.fieldOfActivity) {
                         toast.error("لطفاً زمینه فعالیت خود را انتخاب کنید.", { position: "bottom-center" });
-
                         return; // Prevent navigation if validation fails
                     }
 
@@ -477,7 +559,7 @@ function Qualification() {
                                 className="progress-bar progress-bar-striped progress-bar-animated"
                                 style={{ width: '40%' }}
                             >
-                                مرحله چهارم
+                                40%
                             </div>
                         </div>
 
@@ -507,31 +589,31 @@ function Qualification() {
                         {/* Conditional Warning Messages */}
                         {formData.fieldOfActivity === "Engineering" && (
                             <p className="FNV-InfoBox-Default">
-                                آیا می‌دانستید فناوران در همکاری با کالج ITD کانادا (مستقر در ونکوور) دوره‌های تقویت زبان انگلیسی به صورت تخصصی مطابق با فیلد کاری شما برگزار می‌کند.
+                                مهندسی در کانادا فقط شامل «طراحی، آنالیز و محاسبات» است. اگر فعالیت قبلی شما در این سه حوزه قرار ندارد، شما همچنان می‌توانید برای «لایسنس مهندسی» و فعالیت به عنوان مهندس اقدام کنید، اما آزمون‌های متعددی در مقابل شما قرار خواهد داشت. برای مثال، کارهای کارگاهی، مدیریت پروژه و … در دسته فعالیت‌های مهندسی قرار نمی‌گیرد.
                             </p>
                         )}
 
                         {formData.fieldOfActivity === "Architect" && (
                             <p className="FNV-InfoBox-Default">
-                                معماری در کانادا به معنای برنامه‌ریزی، طراحی و نظارت بر ساخت‌وساز ساختمان‌ها و فضاهای فیزیکی است...
+                                معماری در کانادا به معنای برنامه‌ریزی، طراحی و نظارت بر ساخت‌وساز ساختمان‌ها و فضاهای فیزیکی است. برای فعالیت به عنوان معمار و کسب «لایسنس معماری» در کانادا، شما باید تحصیلات تخصصی معماری داشته و در آزمون‌های لایسنس شرکت کنید. کارهای کارگاهی و اجرایی ساخت، جزو حوزه معماری محسوب نمی‌شوند.
                             </p>
                         )}
 
                         {formData.fieldOfActivity === "Project Management" && (
                             <p className="FNV-InfoBox-Default">
-                                مطابق با تعریف، مدیریت پروژه فرآیند رهبری یک تیم برای دستیابی به تمام اهداف پروژه...
+                                مطابق با تعریف، مدیریت پروژه فرآیند رهبری یک تیم برای دستیابی به تمام اهداف پروژه در چارچوب محدودیت‌های داده شده است.
                             </p>
                         )}
 
                         {formData.fieldOfActivity === "Technician" && (
                             <p className="FNV-InfoBox-Default">
-                                مطابق با تعریف، تکنسین فنی فردی است که سابقه کار اجرایی (به عبارتی، کار یدی) دارد...
+                                مطابق با تعریف، تکنسین فنی فردی است که سابقه کار اجرایی (به عبارتی، کار یدی) دارد. بعضی از مشاغل فنی در کانادا نظام‌مند هستند و برای فعالیت نیاز به دریافت لایسنس دارید.
                             </p>
                         )}
 
                         {formData.fieldOfActivity === "Accounting" && (
                             <p className="FNV-InfoBox-Default">
-                                حسابداری حرفه‌ای است که شامل ثبت، طبقه‌بندی و گزارش‌گیری از معاملات مالی و اقتصادی یک نهاد است...
+                                حسابداری حرفه‌ای است که شامل ثبت، طبقه‌بندی و گزارش‌گیری از معاملات مالی و اقتصادی یک نهاد است. در کانادا، برخی از حوزه‌های حسابداری به طور نظام‌مند نیازمند دریافت مدارک حرفه‌ای و عضویت در نهادهای معتبر هستند، تا فرد بتواند به عنوان حسابدار رسمی فعالیت کند.
                             </p>
                         )}
 
@@ -539,7 +621,7 @@ function Qualification() {
                         <div className='row justify-content-between mt-4'>
                             <div className='col-md-4'>
                                 <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                    برگشت به مرحله قبل
+                                    Previous
                                 </button>
                             </div>
 
@@ -548,7 +630,7 @@ function Qualification() {
                                     className='FNV-Btn BtnPrimary BtnMedium w-100'
                                     onClick={validateCase4AndNextStep}
                                 >
-                                    رفتن به مرحله بعد
+                                    Next
                                 </button>
                             </div>
                         </div>
@@ -576,7 +658,6 @@ function Qualification() {
                     const validateCase5EngineeringAndNextStep = () => {
                         if (!formData.engineeringMajor) {
                             toast.error("لطفاً گرایش مهندسی خود را انتخاب کنید.", { position: "bottom-center" });
-
                             return; // Prevent navigation if no selection is made
                         }
 
@@ -587,7 +668,7 @@ function Qualification() {
                     return (
                         <>
                             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
-                                <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '50%' }} >مرحله پنجم</div>
+                                <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '50%' }} >50%</div>
                             </div>
 
                             <div className='row'>
@@ -616,7 +697,7 @@ function Qualification() {
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -625,7 +706,7 @@ function Qualification() {
                                         className='FNV-Btn BtnPrimary BtnMedium w-100'
                                         onClick={validateCase5EngineeringAndNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -642,7 +723,6 @@ function Qualification() {
                     const validateCase5ArchitectAndNextStep = () => {
                         if (!formData.architectField) {
                             toast.error("لطفاً حوزه فعالیت خود را انتخاب کنید.", { position: "bottom-center" });
-
                             return; // Prevent navigation if no selection is made
                         }
 
@@ -665,7 +745,7 @@ function Qualification() {
                                     className="progress-bar progress-bar-striped progress-bar-animated"
                                     style={{ width: '50%' }}
                                 >
-                                    مرحله پنجم
+                                    50%
                                 </div>
                             </div>
 
@@ -695,7 +775,7 @@ function Qualification() {
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -704,7 +784,7 @@ function Qualification() {
                                         className='FNV-Btn BtnPrimary BtnMedium w-100'
                                         onClick={validateCase5ArchitectAndNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -725,7 +805,6 @@ function Qualification() {
                     const validateCase5ProjectManagementAndNextStep = () => {
                         if (!formData.projectManagementField) {
                             toast.error("لطفاً زمینه فعالیت خود را انتخاب کنید.", { position: "bottom-center" });
-
                             return; // Prevent navigation if no selection is made
                         }
 
@@ -748,7 +827,7 @@ function Qualification() {
                                     className="progress-bar progress-bar-striped progress-bar-animated"
                                     style={{ width: '50%' }}
                                 >
-                                    مرحله پنجم
+                                    50%
                                 </div>
                             </div>
 
@@ -778,7 +857,7 @@ function Qualification() {
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -787,7 +866,7 @@ function Qualification() {
                                         className='FNV-Btn BtnPrimary BtnMedium w-100'
                                         onClick={validateCase5ProjectManagementAndNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -806,13 +885,11 @@ function Qualification() {
                     const validateCase5TechnicianAndNextStep = () => {
                         if (!formData.technicianField) {
                             toast.error("لطفاً زمینه فعالیت خود را انتخاب کنید.", { position: "bottom-center" });
-
                             return; // Prevent navigation if no selection is made
                         }
 
                         if (formData.technicianField === "سایر" && !formData.otherTechnicianField.trim()) {
                             toast.error("لطفاً زمینه فعالیت خود را وارد کنید.", { position: "bottom-center" });
-
                             return; // Prevent navigation if "سایر" is selected but input is empty
                         }
 
@@ -835,7 +912,7 @@ function Qualification() {
                                     className="progress-bar progress-bar-striped progress-bar-animated"
                                     style={{ width: '60%' }}
                                 >
-                                    مرحله پنجم
+                                    60%
                                 </div>
                             </div>
 
@@ -891,7 +968,7 @@ function Qualification() {
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -900,18 +977,17 @@ function Qualification() {
                                         className='FNV-Btn BtnPrimary BtnMedium w-100'
                                         onClick={validateCase5TechnicianAndNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
                         </>
                     )
                 } else if (formData.fieldOfActivity === 'Accounting') {
-
-                  return (
+                    return (
                         <>
                             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
-                                <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '60%' }} >مرحله پنجم</div>
+                                <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '60%' }} >60%</div>
                             </div>
 
                             <div className='row'>
@@ -921,7 +997,7 @@ function Qualification() {
                             {/* Next & Previous */}
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
-                                    <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>برگشت به مرحله قبل</button>
+                                    <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>Previous</button>
                                 </div>
                             </div>
                         </>
@@ -938,7 +1014,6 @@ function Qualification() {
                     const validateCase6EngineeringAndNextStep = () => {
                         if (!formData.engineeringActivity) {
                             toast.error("لطفاً پوزیشن مورد نظر خود را انتخاب کنید.", { position: "bottom-center" });
-
                             return; // Prevent navigation if no selection is made
                         }
 
@@ -961,7 +1036,7 @@ function Qualification() {
                                     className="progress-bar progress-bar-striped progress-bar-animated"
                                     style={{ width: '60%' }}
                                 >
-                                    مرحله ششم
+                                    60%
                                 </div>
                             </div>
 
@@ -991,7 +1066,7 @@ function Qualification() {
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -1000,7 +1075,7 @@ function Qualification() {
                                         className='FNV-Btn BtnPrimary BtnMedium w-100'
                                         onClick={validateCase6EngineeringAndNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -1017,7 +1092,6 @@ function Qualification() {
                     const validateCase6ArchitectAndNextStep = () => {
                         if (!formData.architectWorkHistory) {
                             toast.error("لطفاً سابقه کار خود را انتخاب کنید.", { position: "bottom-center" });
-
                             return; // Prevent navigation if no selection is made
                         }
 
@@ -1040,7 +1114,7 @@ function Qualification() {
                                     className="progress-bar progress-bar-striped progress-bar-animated"
                                     style={{ width: '60%' }}
                                 >
-                                    مرحله ششم
+                                    60%
                                 </div>
                             </div>
 
@@ -1070,7 +1144,7 @@ function Qualification() {
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -1079,7 +1153,7 @@ function Qualification() {
                                         className='FNV-Btn BtnPrimary BtnMedium w-100'
                                         onClick={validateCase6ArchitectAndNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -1097,7 +1171,6 @@ function Qualification() {
                         const validateCase6ProjectManagementP1AndNextStep = () => {
                             if (!formData.projectManagementDesiredPosition) {
                                 toast.error("لطفاً عنوان شغلی مورد نظر خود را انتخاب کنید.", { position: "bottom-center" });
-
                                 return; // Prevent navigation if no selection is made
                             }
 
@@ -1120,7 +1193,7 @@ function Qualification() {
                                         className="progress-bar progress-bar-striped progress-bar-animated"
                                         style={{ width: '60%' }}
                                     >
-                                        مرحله ششم
+                                        60%
                                     </div>
                                 </div>
 
@@ -1150,7 +1223,7 @@ function Qualification() {
                                 <div className='row justify-content-between mt-4'>
                                     <div className='col-md-4'>
                                         <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                            برگشت به مرحله قبل
+                                            Previous
                                         </button>
                                     </div>
 
@@ -1159,7 +1232,7 @@ function Qualification() {
                                             className='FNV-Btn BtnPrimary BtnMedium w-100'
                                             onClick={validateCase6ProjectManagementP1AndNextStep}
                                         >
-                                            رفتن به مرحله بعد
+                                            Next
                                         </button>
                                     </div>
                                 </div>
@@ -1175,7 +1248,6 @@ function Qualification() {
                         const validateCase6ProjectManagementPart2AndNextStep = () => {
                             if (!formData.projectManagementDesiredPosition) {
                                 toast.error("لطفاً عنوان شغلی مورد نظر خود را انتخاب کنید.", { position: "bottom-center" });
-
                                 return; // Prevent navigation if no selection is made
                             }
 
@@ -1198,7 +1270,7 @@ function Qualification() {
                                         className="progress-bar progress-bar-striped progress-bar-animated"
                                         style={{ width: '60%' }}
                                     >
-                                        مرحله ششم
+                                        60%
                                     </div>
                                 </div>
 
@@ -1228,7 +1300,7 @@ function Qualification() {
                                 <div className='row justify-content-between mt-4'>
                                     <div className='col-md-4'>
                                         <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                            برگشت به مرحله قبل
+                                            Previous
                                         </button>
                                     </div>
 
@@ -1237,7 +1309,7 @@ function Qualification() {
                                             className='FNV-Btn BtnPrimary BtnMedium w-100'
                                             onClick={validateCase6ProjectManagementPart2AndNextStep}
                                         >
-                                            رفتن به مرحله بعد
+                                            Next
                                         </button>
                                     </div>
                                 </div>
@@ -1253,7 +1325,6 @@ function Qualification() {
                     const validateCase6TechnicianAndNextStep = () => {
                         if (!formData.technicianExperienceOutsideCanada) {
                             toast.error("لطفاً سابقه کار خود را انتخاب کنید.", { position: "bottom-center" });
-
                             return; // Prevent navigation if no selection is made
                         }
 
@@ -1276,7 +1347,7 @@ function Qualification() {
                                     className="progress-bar progress-bar-striped progress-bar-animated"
                                     style={{ width: '80%' }}
                                 >
-                                    مرحله ششم
+                                    80%
                                 </div>
                             </div>
 
@@ -1306,7 +1377,7 @@ function Qualification() {
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -1315,7 +1386,7 @@ function Qualification() {
                                         className='FNV-Btn BtnPrimary BtnMedium w-100'
                                         onClick={validateCase6TechnicianAndNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -1334,7 +1405,6 @@ function Qualification() {
                     const validateCase7EngineeringAndNextStep = () => {
                         if (!formData.engineeringExperience) {
                             toast.error("لطفاً سابقه کار خود را انتخاب کنید.", { position: "bottom-center" });
-
                             return; // Prevent navigation if no selection is made
                         }
 
@@ -1357,7 +1427,7 @@ function Qualification() {
                                     className="progress-bar progress-bar-striped progress-bar-animated"
                                     style={{ width: '80%' }}
                                 >
-                                    مرحله هفتم
+                                    80%
                                 </div>
                             </div>
 
@@ -1387,7 +1457,7 @@ function Qualification() {
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -1396,7 +1466,7 @@ function Qualification() {
                                         className='FNV-Btn BtnPrimary BtnMedium w-100'
                                         onClick={validateCase7EngineeringAndNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -1414,7 +1484,6 @@ function Qualification() {
                     const validateCase7ArchitectAndNextStep = () => {
                         if (!formData.architectLicense) {
                             toast.error("لطفاً یکی از لایسنس‌ها یا سرتیفیکیت‌های موجود را انتخاب کنید.", { position: "bottom-center" });
-
                             return; // Prevent navigation if no selection is made
                         }
 
@@ -1437,7 +1506,7 @@ function Qualification() {
                                     className="progress-bar progress-bar-striped progress-bar-animated"
                                     style={{ width: '80%' }}
                                 >
-                                    مرحله هفتم
+                                    80%
                                 </div>
                             </div>
 
@@ -1467,7 +1536,7 @@ function Qualification() {
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -1476,7 +1545,7 @@ function Qualification() {
                                         className='FNV-Btn BtnPrimary BtnMedium w-100'
                                         onClick={validateCase7ArchitectAndNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -1491,7 +1560,6 @@ function Qualification() {
                     const validateCase7ProjectManagementAndNextStep = () => {
                         if (!formData.projectManagementExperienceOutsideCanada) {
                             toast.error("لطفاً سابقه کار خود را مشخص کنید.", { position: "bottom-center" });
-
                             return; // Prevent navigation if no selection is made
                         }
 
@@ -1514,7 +1582,7 @@ function Qualification() {
                                     className="progress-bar progress-bar-striped progress-bar-animated"
                                     style={{ width: '80%' }}
                                 >
-                                    مرحله هفتم
+                                    80%
                                 </div>
                             </div>
 
@@ -1544,7 +1612,7 @@ function Qualification() {
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -1553,7 +1621,7 @@ function Qualification() {
                                         className='FNV-Btn BtnPrimary BtnMedium w-100'
                                         onClick={validateCase7ProjectManagementAndNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -1569,7 +1637,6 @@ function Qualification() {
                     const validateCase7TechnicianAndNextStep = () => {
                         if (!formData.technicianExperienceInsideCanada) {
                             toast.error("لطفاً سابقه کار کانادایی خود را مشخص کنید.", { position: "bottom-center" });
-
                             return; // Prevent navigation if no selection is made
                         }
 
@@ -1592,13 +1659,14 @@ function Qualification() {
                                     className="progress-bar progress-bar-striped progress-bar-animated"
                                     style={{ width: '100%' }}
                                 >
-                                    مرحله هفتم
+                                    100%
                                 </div>
                             </div>
 
                             <div className='row'>
                                 <div className='col-12 mb-2'>
                                     <label className='LabelMain'>سابقه کار کانادایی</label>
+
                                     <div>
                                         {technicianExperienceInsideCanadaOptions.map((option, index) => (
                                             <div key={index}>
@@ -1621,7 +1689,7 @@ function Qualification() {
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -1630,7 +1698,7 @@ function Qualification() {
                                         className='FNV-Btn BtnPrimary BtnMedium w-100'
                                         onClick={validateCase7TechnicianAndNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -1653,7 +1721,6 @@ function Qualification() {
                     const validateCase8EngineeringAndNextStep = () => {
                         if (!formData.engineeringLicense) {
                             toast.error("لطفاً یکی از گزینه‌ها را انتخاب کنید.", { position: "bottom-center" });
-
                             return; // Prevent navigation if no selection is made
                         }
 
@@ -1676,7 +1743,7 @@ function Qualification() {
                                     className="progress-bar progress-bar-striped progress-bar-animated"
                                     style={{ width: '100%' }}
                                 >
-                                    مرحله هشتم
+                                    100%
                                 </div>
                             </div>
 
@@ -1706,7 +1773,7 @@ function Qualification() {
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -1715,7 +1782,7 @@ function Qualification() {
                                         className='FNV-Btn BtnPrimary BtnMedium w-100'
                                         onClick={validateCase8EngineeringAndNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -1732,7 +1799,6 @@ function Qualification() {
                     const validateCase8ArchitectAndNextStep = () => {
                         if (!formData.architectLicense) {
                             toast.error("لطفاً یکی از گزینه‌ها را انتخاب کنید.", { position: "bottom-center" });
-
                             return; // Prevent navigation if no selection is made
                         }
 
@@ -1755,7 +1821,7 @@ function Qualification() {
                                     className="progress-bar progress-bar-striped progress-bar-animated"
                                     style={{ width: '100%' }}
                                 >
-                                    مرحله هشتم
+                                    100%
                                 </div>
                             </div>
 
@@ -1785,7 +1851,7 @@ function Qualification() {
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -1794,7 +1860,7 @@ function Qualification() {
                                         className='FNV-Btn BtnPrimary BtnMedium w-100'
                                         onClick={validateCase8ArchitectAndNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -1809,7 +1875,6 @@ function Qualification() {
                     const validateCase8ProjectManagementAndNextStep = () => {
                         if (!formData.projectManagementExperienceInsideCanada) {
                             toast.error("لطفاً یکی از گزینه‌های سابقه کار کانادایی را انتخاب کنید.", { position: "bottom-center" });
-
                             return; // Prevent navigation if no selection is made
                         }
 
@@ -1832,7 +1897,7 @@ function Qualification() {
                                     className="progress-bar progress-bar-striped progress-bar-animated"
                                     style={{ width: '90%' }}
                                 >
-                                    مرحله هشتم
+                                    90%
                                 </div>
                             </div>
 
@@ -1862,7 +1927,7 @@ function Qualification() {
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
                                     <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -1871,7 +1936,7 @@ function Qualification() {
                                         className='FNV-Btn BtnPrimary BtnMedium w-100'
                                         onClick={validateCase8ProjectManagementAndNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -1910,7 +1975,7 @@ function Qualification() {
                                             Object.entries(formData).filter(([_, value]) => value !== "")
                                         )
                                     ).map(([key, value]) => (
-                                        <p key={key}><strong>{fieldLabels[key]}:</strong> {value}</p>
+                                        <p><strong>{fieldLabels[key]}:</strong> {value}</p>
                                     ))}
                                 </div>
                             </div>
@@ -1918,7 +1983,7 @@ function Qualification() {
                             {/* Next & Previous */}
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
-                                    <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>برگشت به مرحله قبل</button>
+                                    <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>Previous</button>
                                 </div>
 
                                 <div className='col-md-4'>
@@ -1942,10 +2007,8 @@ function Qualification() {
                     const validateCertificateSelection = () => {
                         if (!formData.projectManagementCertificate) {
                             toast.error("لطفاً یک سرتیفیکیت انتخاب کنید.", { position: "bottom-center" });
-
                             return false;
                         }
-
                         return true;
                     };
 
@@ -1970,7 +2033,7 @@ function Qualification() {
                                     className="progress-bar progress-bar-striped progress-bar-animated"
                                     style={{ width: "100%" }}
                                 >
-                                    مرحله نهم
+                                    100%
                                 </div>
                             </div>
 
@@ -2002,7 +2065,7 @@ function Qualification() {
                             <div className="row justify-content-between mt-4">
                                 <div className="col-md-4">
                                     <button className="FNV-Btn ThirdColor BtnMedium w-100" onClick={prevStep}>
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -2011,7 +2074,7 @@ function Qualification() {
                                         className="FNV-Btn BtnPrimary BtnMedium w-100"
                                         onClick={handleNextStep}
                                     >
-                                        رفتن به مرحله بعد
+                                        Next
                                     </button>
                                 </div>
                             </div>
@@ -2041,6 +2104,183 @@ function Qualification() {
                         engineeringLicense: "نوع لایسنس مهندسی"
                     };
 
+                    const generateReportContent = (formData) => {
+                        const { firstName, englishLevel, ageRange, province, engineeringLicense, engineeringExperience } = formData;
+                        const name = firstName || "کاربر";
+
+                        // Helper functions for assessment
+                        const getColor = (assessment) => {
+                            const colors = {
+                                "بسیار ضعیف": "#FF0000",
+                                "خوب": "#FFA600",
+                                "بسیار قوی": "#00FF00",
+                            };
+                            return colors[assessment] || "#000000";
+                        };
+
+                        const calculateAssessment = () => {
+                            const hasLicense = engineeringLicense && engineeringLicense !== "هیچکدام";
+                            if (englishLevel === "بیشتر از CLB 10") return "بسیار قوی";
+                            if (englishLevel === "بیشتر از CLB 7 و کمتر از CLB 10") return hasLicense ? "خوب" : "بسیار ضعیف";
+                            return "بسیار ضعیف";
+                        };
+
+                        const assessment = calculateAssessment();
+                        const assessmentColor = getColor(assessment);
+
+                        // Helper function to determine strengths, weaknesses, etc.
+                        const getStrengths = () => {
+                            const strengths = [];
+                            if (ageRange === "Under 30" || (ageRange && ageRange.startsWith("30") && ageRange < "50")) strengths.push("محدوده سنی ایده‌آل");
+                            if (province === "انتاریو") strengths.push("سکونت در استان انتاریو با فرصت‌های شغلی زیاد");
+                            if (["آلبرتا", "بریتیش کلمبیا", "کبک"].includes(province)) strengths.push("سکونت در استانی با فرصت‌های کاری نسبتا خوب");
+                            if (englishLevel === "بیشتر از CLB 7 و کمتر از CLB 10") strengths.push("دانش زبان انگلیسی متوسط");
+                            if (englishLevel === "بیشتر از CLB 10") strengths.push("دانش زبان انگلیسی قوی");
+                            if (engineeringLicense && engineeringLicense !== "هیچکدام") strengths.push("دارای یک لایسنس کانادایی");
+                            return strengths;
+                        };
+
+                        const getWeaknesses = () => {
+                            const weaknesses = [];
+                            if (ageRange && ageRange.startsWith("50")) weaknesses.push("محدوده سنی نامطلوب");
+                            if (!["آلبرتا", "انتاریو", "بریتیش کلمبیا", "کبک"].includes(province)) weaknesses.push("سکونت در استانی با فرصت‌های کاری کم");
+                            if (englishLevel && englishLevel.startsWith("CLB 4")) weaknesses.push("دانش زبان انگلیسی ضعیف");
+                            if (!engineeringLicense || engineeringLicense === "هیچکدام") weaknesses.push("بدون یک لایسنس کانادایی");
+                            return weaknesses;
+                        };
+
+                        const getThreats = () => [
+                            "بازار رقابتی بسیار زیاد",
+                            (!engineeringLicense || engineeringLicense === "P.Eng" || engineeringLicense === "P.Geo")
+                                ? "فرایند دشوار دریافت لایسنس (P.Eng)"
+                                : null,
+                            "نیاز به دانش قوی زبان انگلیسی",
+                        ].filter(Boolean);
+
+                        const getOpportunities = () => {
+                            const opportunities = [];
+                            if (province === "انتاریو") opportunities.push("موقعیت شغلی فراوان");
+                            if (["آلبرتا", "انتاریو", "بریتیش کلمبیا", "کبک"].includes(province)) opportunities.push("موقعیت‌های شغلی نسبتا خوب");
+                            if (!engineeringLicense || engineeringLicense === "هیچکدام") opportunities.push("امکان اقدام برای دریافت لایسنس مهندسی");
+                            return opportunities;
+                        };
+
+                        // Detailed section
+                        const detailedSection = () => {
+                            const languageLevelText =
+                                englishLevel === "کمتر از CLB 7" ? "ضعیف" :
+                                    englishLevel === "بیشتر از CLB 7 و کمتر از CLB 10" ? "متوسط" :
+                                        "قوی";
+
+                            const experienceLevelText =
+                                engineeringExperience === "0 تا 3 سال" ? "(Junior Level)" :
+                                    engineeringExperience === "3 سال تا 6 سال" ? "(Intermediate Level)" :
+                                        engineeringExperience === "7 سال تا 12 سال" ? "(Senior Level)" :
+                                            "(Lead Level)";
+
+                            const ageText =
+                                ageRange === "Under 30" || (ageRange && ageRange.startsWith("30") && ageRange < "50") ? "ایده‌آل" :
+                                    ageRange && ageRange.startsWith("50") ? "ضعیف" :
+                                        "متوسط";
+
+                            const provinceText = {
+                                "انتاریو": "زیاد",
+                                "آلبرتا": "زیاد",
+                                "ونکوور": "متوسط",
+                                "کبک": "متوسط",
+                                "هلیفکس": "متوسط",
+                            }[province] || "ضعیف";
+
+                            return (
+                                <>
+                                    <p style={{ fontSize: "18px" }}>
+                                        سطح زبان شما <strong style={{ color: getColor(languageLevelText) }}>{languageLevelText}</strong> است. برای فعالیت مهندسی، سطح زبان شما باید متوسط رو به بالا باشد.
+                                    </p>
+                                    <p style={{ fontSize: "18px" }}>
+                                        براساس سابقه کار انتخابی، شما در رده <strong>{experienceLevelText}</strong> قرار دارید. سایر فاکتورها را بررسی کنید.
+                                    </p>
+                                    <p style={{ fontSize: "18px" }}>
+                                        براساس محدوده سنی، شانس کاریابی شما <strong>{ageText}</strong> است. سایر فاکتورها را بررسی کنید.
+                                    </p>
+                                    <p style={{ fontSize: "18px" }}>
+                                        براساس شهر یا استان محل سکونت، شانس کاریابی در زمینه مهندسی <strong>{provinceText}</strong> است. سایر فاکتورها را بررسی کنید.
+                                    </p>
+                                </>
+                            );
+                        };
+
+                        const recommendations = () => {
+                            const recommends = [];
+                            if (!engineeringLicense || engineeringLicense === "هیچکدام") {
+                                recommends.push("دریافت یک لایسنس کانادایی");
+                                recommends.push("لایسنس مهندسی P.Eng (میزان اعتبار بالا - فرایند دریافت دشوار)");
+                                recommends.push("لایسنس مهندسی OIQ (فقط ساکنان استان کبک) (میزان اعتبار بالا - فرایند دریافت دشوار)");
+                                recommends.push("لایسنس BCIN- تنها ساکنان استان انتاریو (میزان اعتبار: متوسط - فرایند دریافت نسبتا آسان)");
+                            }
+
+                            if (!englishLevel || englishLevel.startsWith("CLB 4")) {
+                                recommends.push("تقویت زبان انگلیسی");
+                            }
+
+                            recommends.push("تهیه رزومه مطابق با استانداردهای کانادایی");
+                            recommends.push("یادگیری کدهای استاندارد کانادایی در فیلد شغلی خود");
+
+                            // Software recommendations for engineering fields
+                            recommends.push("آشنایی/تسلط بر نرم افزارهای زیر برای رشته‌های مرتبط:");
+                            recommends.push("Revit، AutoCAD، Tekla Structures، STAAD.Pro، SAP2000 برای مهندسی طراحی سازه");
+                            recommends.push("AutoCAD، Solidworks، Autodesk Inventor، Revit و PTC Creo برای مهندسی مکانیک");
+                            recommends.push("AutoCAD، Revit، ETAP، EPLAN و SKM PowerTools برای مهندسی برق");
+                            recommends.push("AutoCAD، Civil 3D، Revit، MicroStation و STAAD.Pro برای مهندسی عمران");
+
+                            // Specific engineering-related recommendation
+                            recommends.push("آشنایی و تسلط بر Canadian Wood Framing برای رشته‌های مهندسی مرتبط با حوزه ساخت و ساز");
+
+                            // Energy Advisory recommendation
+                            recommends.push("شما می‌توانید برای دریافت لایسنس Energy Advisory نیز اقدام کنید. انرژی ادوایزری یک موقعیت شغلی آینده‌دار و پرتقاضا در کانادا است. برای دریافت لایسنس نیازی به سابقه کار یا مدرک تحصیلی خاصی ندارید و تنها کافیست از سد دو آزمون Foundation‌ و House بگذرید.");
+
+                            // BCIN License details
+                            recommends.push("درباره لایسنس BCIN بیشتر بدانید:");
+                            recommends.push("فرایند دریافت لایسنس مهندسی در کانادا بسیار سخت، طاقت فرسا و زمان‌بر است. اگر می‌خواهید هرچه زودتر وارد بازار کار شوید (تا زمانی که لایسنس مهندسی خود را دریافت کنید) راه جایگزین دریافت لایسنس BCIN است. BCIN یک لایسنس محدود محسوب می‌شود که با داشتن آن می‌توانید در زمینه طراحی ساختمان‌هایی با متراژ کمتر از ۶۰۰ متر مربع فعالیت کنید. (ویژه مهندسان و معماران)");
+
+                            // Priorities section
+                            recommends.push("اولویت‌های شما:");
+                            if (!engineeringLicense || engineeringLicense === "هیچکدام") recommends.push("دریافت لایسنس و سرتیفیکیت");
+                            if (englishLevel !== "بیشتر از CLB 10") recommends.push("تقویت زبان انگلیسی");
+                            recommends.push("چنانچه قصد دارید تا هرچه زودتر وارد بازار کار شوید؛ دریافت لایسنس BCIN یا دریافت لایسنس Energy Advisory");
+
+                            return recommends.map((recommend, index) => <p style={{ fontSize: "18px", lineHeight: "32px" }} key={index}>{recommend}</p>);
+                        };
+
+                        // Combine report
+                        return (
+                            <>
+                                <p style={{ fontSize: "18px" }}>
+                                    تبریک! شما اولین قدم برای کاریابی در کانادا را برداشتید!
+                                </p>
+                                <p style={{ fontSize: "18px" }}>
+                                    <strong>{name}</strong> عزیز! از اینکه به ما اعتماد کردید سپاسگذاریم. براساس موارد انتخابی، گزارشی برای شما آماده کرده‌ایم تا شانس کاریابی خود را ارزیابی کنید.
+                                </p>
+                                <p style={{ fontSize: "18px" }}>
+                                    براساس موارد انتخاب شده، شانس کاریابی شما در کانادا <strong style={{ color: assessmentColor }}>{assessment}</strong> است.
+                                </p>
+                                <p style={{ fontSize: "18px" }}>نقاط قوت شما:</p>
+                                <ul>{getStrengths().map((strength, index) => <li key={index}>{strength}</li>)}</ul>
+                                <p style={{ fontSize: "18px" }}>نقاط ضعف شما:</p>
+                                <ul>{getWeaknesses().map((weakness, index) => <li key={index}>{weakness}</li>)}</ul>
+                                <p style={{ fontSize: "18px" }}>تهدیدات فیلد شغلی:</p>
+                                <ul>{getThreats().map((threat, index) => <li key={index}>{threat}</li>)}</ul>
+                                <p style={{ fontSize: "18px" }}>فرصت‌های شما:</p>
+                                <ul>{getOpportunities().map((opportunity, index) => <li style={{ fontSize: "18px" }} key={index}>{opportunity}</li>)}</ul>
+                                {detailedSection()}
+                                <p style={{ fontSize: "18px" }}>توصیه‌های فناوران برای شما:</p>
+                                {recommendations()}
+                            </>
+                        );
+                    };
+
+                    // Example usage
+                    const reportContent = generateReportContent(formData);
+
                     return (
                         <>
                             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
@@ -2048,16 +2288,10 @@ function Qualification() {
                             </div>
 
                             <div className='row CheckDetails'>
-                                <h2>بررسی اطلاعات</h2>
+                                <h3>ریپورت</h3>
 
                                 <div className='col-12'>
-                                    {Object.entries(
-                                        Object.fromEntries(
-                                            Object.entries(formData).filter(([_, value]) => value !== "")
-                                        )
-                                    ).map(([key, value]) => (
-                                        <p key={key}><strong>{fieldLabels[key]}:</strong> {value}</p>
-                                    ))}
+                                    {reportContent}
                                 </div>
                             </div>
 
@@ -2077,7 +2311,7 @@ function Qualification() {
                                             }
                                         }}
                                     >
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -2118,7 +2352,7 @@ function Qualification() {
                                             Object.entries(formData).filter(([_, value]) => value !== "")
                                         )
                                     ).map(([key, value]) => (
-                                        <p key={key}><strong>{fieldLabels[key]}:</strong> {value}</p>
+                                        <p><strong>{fieldLabels[key]}:</strong> {value}</p>
                                     ))}
                                 </div>
                             </div>
@@ -2139,7 +2373,7 @@ function Qualification() {
                                             }
                                         }}
                                     >
-                                        برگشت به مرحله قبل
+                                        Previous
                                     </button>
                                 </div>
 
@@ -2182,7 +2416,7 @@ function Qualification() {
                                             Object.entries(formData).filter(([_, value]) => value !== "")
                                         )
                                     ).map(([key, value]) => (
-                                        <p key={key}><strong>{fieldLabels[key]}:</strong> {value}</p>
+                                        <p><strong>{fieldLabels[key]}:</strong> {value}</p>
                                     ))}
                                 </div>
                             </div>
@@ -2190,7 +2424,7 @@ function Qualification() {
                             {/* Next & Previous */}
                             <div className='row justify-content-between mt-4'>
                                 <div className='col-md-4'>
-                                    <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>برگشت به مرحله قبل</button>
+                                    <button className='FNV-Btn ThirdColor BtnMedium w-100' onClick={prevStep}>Previous</button>
                                 </div>
 
                                 <div className='col-md-4'>
