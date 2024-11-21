@@ -227,6 +227,7 @@ function Qualification() {
                     if (!formData.englishLevel) {
                         // Show error toast and prevent going to the next step
                         toast.error("لطفاً سطح زبان انگلیسی خود را انتخاب کنید.", { position: "bottom-center" });
+
                         return; // Prevent navigation
                     }
 
@@ -328,16 +329,19 @@ function Qualification() {
                 const validateCase3AndNextStep = () => {
                     if (!formData.ageRange) {
                         toast.error("لطفاً محدوده سنی خود را انتخاب کنید.", { position: "bottom-center" });
+
                         return;
                     }
 
                     if (!formData.province) {
                         toast.error("لطفاً استان محل زندگی خود را انتخاب کنید.", { position: "bottom-center" });
+
                         return;
                     }
 
                     if (!formData.city) {
                         toast.error("لطفاً شهر محل زندگی خود را انتخاب کنید.", { position: "bottom-center" });
+
                         return;
                     }
 
@@ -450,6 +454,7 @@ function Qualification() {
                 const validateCase4AndNextStep = () => {
                     if (!formData.fieldOfActivity) {
                         toast.error("لطفاً زمینه فعالیت خود را انتخاب کنید.", { position: "bottom-center" });
+
                         return; // Prevent navigation if validation fails
                     }
 
@@ -571,6 +576,7 @@ function Qualification() {
                     const validateCase5EngineeringAndNextStep = () => {
                         if (!formData.engineeringMajor) {
                             toast.error("لطفاً گرایش مهندسی خود را انتخاب کنید.", { position: "bottom-center" });
+
                             return; // Prevent navigation if no selection is made
                         }
 
@@ -636,6 +642,7 @@ function Qualification() {
                     const validateCase5ArchitectAndNextStep = () => {
                         if (!formData.architectField) {
                             toast.error("لطفاً حوزه فعالیت خود را انتخاب کنید.", { position: "bottom-center" });
+
                             return; // Prevent navigation if no selection is made
                         }
 
@@ -718,6 +725,7 @@ function Qualification() {
                     const validateCase5ProjectManagementAndNextStep = () => {
                         if (!formData.projectManagementField) {
                             toast.error("لطفاً زمینه فعالیت خود را انتخاب کنید.", { position: "bottom-center" });
+
                             return; // Prevent navigation if no selection is made
                         }
 
@@ -798,11 +806,13 @@ function Qualification() {
                     const validateCase5TechnicianAndNextStep = () => {
                         if (!formData.technicianField) {
                             toast.error("لطفاً زمینه فعالیت خود را انتخاب کنید.", { position: "bottom-center" });
+
                             return; // Prevent navigation if no selection is made
                         }
 
                         if (formData.technicianField === "سایر" && !formData.otherTechnicianField.trim()) {
                             toast.error("لطفاً زمینه فعالیت خود را وارد کنید.", { position: "bottom-center" });
+
                             return; // Prevent navigation if "سایر" is selected but input is empty
                         }
 
@@ -897,7 +907,8 @@ function Qualification() {
                         </>
                     )
                 } else if (formData.fieldOfActivity === 'Accounting') {
-                    return (
+
+                  return (
                         <>
                             <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ height: '50px' }}>
                                 <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: '60%' }} >مرحله پنجم</div>
@@ -927,6 +938,7 @@ function Qualification() {
                     const validateCase6EngineeringAndNextStep = () => {
                         if (!formData.engineeringActivity) {
                             toast.error("لطفاً پوزیشن مورد نظر خود را انتخاب کنید.", { position: "bottom-center" });
+
                             return; // Prevent navigation if no selection is made
                         }
 
@@ -1005,6 +1017,7 @@ function Qualification() {
                     const validateCase6ArchitectAndNextStep = () => {
                         if (!formData.architectWorkHistory) {
                             toast.error("لطفاً سابقه کار خود را انتخاب کنید.", { position: "bottom-center" });
+
                             return; // Prevent navigation if no selection is made
                         }
 
@@ -1084,6 +1097,7 @@ function Qualification() {
                         const validateCase6ProjectManagementP1AndNextStep = () => {
                             if (!formData.projectManagementDesiredPosition) {
                                 toast.error("لطفاً عنوان شغلی مورد نظر خود را انتخاب کنید.", { position: "bottom-center" });
+
                                 return; // Prevent navigation if no selection is made
                             }
 
@@ -1161,6 +1175,7 @@ function Qualification() {
                         const validateCase6ProjectManagementPart2AndNextStep = () => {
                             if (!formData.projectManagementDesiredPosition) {
                                 toast.error("لطفاً عنوان شغلی مورد نظر خود را انتخاب کنید.", { position: "bottom-center" });
+
                                 return; // Prevent navigation if no selection is made
                             }
 
@@ -1238,6 +1253,7 @@ function Qualification() {
                     const validateCase6TechnicianAndNextStep = () => {
                         if (!formData.technicianExperienceOutsideCanada) {
                             toast.error("لطفاً سابقه کار خود را انتخاب کنید.", { position: "bottom-center" });
+
                             return; // Prevent navigation if no selection is made
                         }
 
@@ -1318,6 +1334,7 @@ function Qualification() {
                     const validateCase7EngineeringAndNextStep = () => {
                         if (!formData.engineeringExperience) {
                             toast.error("لطفاً سابقه کار خود را انتخاب کنید.", { position: "bottom-center" });
+
                             return; // Prevent navigation if no selection is made
                         }
 
@@ -1397,6 +1414,7 @@ function Qualification() {
                     const validateCase7ArchitectAndNextStep = () => {
                         if (!formData.architectLicense) {
                             toast.error("لطفاً یکی از لایسنس‌ها یا سرتیفیکیت‌های موجود را انتخاب کنید.", { position: "bottom-center" });
+
                             return; // Prevent navigation if no selection is made
                         }
 
@@ -1473,6 +1491,7 @@ function Qualification() {
                     const validateCase7ProjectManagementAndNextStep = () => {
                         if (!formData.projectManagementExperienceOutsideCanada) {
                             toast.error("لطفاً سابقه کار خود را مشخص کنید.", { position: "bottom-center" });
+
                             return; // Prevent navigation if no selection is made
                         }
 
@@ -1550,6 +1569,7 @@ function Qualification() {
                     const validateCase7TechnicianAndNextStep = () => {
                         if (!formData.technicianExperienceInsideCanada) {
                             toast.error("لطفاً سابقه کار کانادایی خود را مشخص کنید.", { position: "bottom-center" });
+
                             return; // Prevent navigation if no selection is made
                         }
 
@@ -1579,7 +1599,6 @@ function Qualification() {
                             <div className='row'>
                                 <div className='col-12 mb-2'>
                                     <label className='LabelMain'>سابقه کار کانادایی</label>
-
                                     <div>
                                         {technicianExperienceInsideCanadaOptions.map((option, index) => (
                                             <div key={index}>
@@ -1634,6 +1653,7 @@ function Qualification() {
                     const validateCase8EngineeringAndNextStep = () => {
                         if (!formData.engineeringLicense) {
                             toast.error("لطفاً یکی از گزینه‌ها را انتخاب کنید.", { position: "bottom-center" });
+
                             return; // Prevent navigation if no selection is made
                         }
 
@@ -1712,6 +1732,7 @@ function Qualification() {
                     const validateCase8ArchitectAndNextStep = () => {
                         if (!formData.architectLicense) {
                             toast.error("لطفاً یکی از گزینه‌ها را انتخاب کنید.", { position: "bottom-center" });
+
                             return; // Prevent navigation if no selection is made
                         }
 
@@ -1788,6 +1809,7 @@ function Qualification() {
                     const validateCase8ProjectManagementAndNextStep = () => {
                         if (!formData.projectManagementExperienceInsideCanada) {
                             toast.error("لطفاً یکی از گزینه‌های سابقه کار کانادایی را انتخاب کنید.", { position: "bottom-center" });
+
                             return; // Prevent navigation if no selection is made
                         }
 
@@ -1888,7 +1910,7 @@ function Qualification() {
                                             Object.entries(formData).filter(([_, value]) => value !== "")
                                         )
                                     ).map(([key, value]) => (
-                                        <p><strong>{fieldLabels[key]}:</strong> {value}</p>
+                                        <p key={key}><strong>{fieldLabels[key]}:</strong> {value}</p>
                                     ))}
                                 </div>
                             </div>
@@ -1920,8 +1942,10 @@ function Qualification() {
                     const validateCertificateSelection = () => {
                         if (!formData.projectManagementCertificate) {
                             toast.error("لطفاً یک سرتیفیکیت انتخاب کنید.", { position: "bottom-center" });
+
                             return false;
                         }
+
                         return true;
                     };
 
@@ -2032,7 +2056,7 @@ function Qualification() {
                                             Object.entries(formData).filter(([_, value]) => value !== "")
                                         )
                                     ).map(([key, value]) => (
-                                        <p><strong>{fieldLabels[key]}:</strong> {value}</p>
+                                        <p key={key}><strong>{fieldLabels[key]}:</strong> {value}</p>
                                     ))}
                                 </div>
                             </div>
@@ -2094,7 +2118,7 @@ function Qualification() {
                                             Object.entries(formData).filter(([_, value]) => value !== "")
                                         )
                                     ).map(([key, value]) => (
-                                        <p><strong>{fieldLabels[key]}:</strong> {value}</p>
+                                        <p key={key}><strong>{fieldLabels[key]}:</strong> {value}</p>
                                     ))}
                                 </div>
                             </div>
@@ -2158,7 +2182,7 @@ function Qualification() {
                                             Object.entries(formData).filter(([_, value]) => value !== "")
                                         )
                                     ).map(([key, value]) => (
-                                        <p><strong>{fieldLabels[key]}:</strong> {value}</p>
+                                        <p key={key}><strong>{fieldLabels[key]}:</strong> {value}</p>
                                     ))}
                                 </div>
                             </div>
