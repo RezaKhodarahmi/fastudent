@@ -47,7 +47,8 @@ const Index = () => {
   const [stripePay, setStripePay] = useState(true)
   const [isRenew, setIsRenew] = useState(false)
   const [agreeAlert, setAgreeAlert] = useState(false)
-
+  const [termsChecked, setTermsChecked] = useState(false)
+  const [stripeDiscount, setStripeDiscount] = useState(0)
   const cartItems = localStorage.getItem('cartItems')
   const pageDirection = localStorage.getItem('direction')
 
@@ -62,7 +63,7 @@ const Index = () => {
     }
   }, [cartItems])
 
-  const [termsChecked, setTermsChecked] = useState(false)
+  // Calculate Stripe Discount
 
   const handleChangeCheckBox = event => {
     setTermsChecked(event.target.checked)
@@ -231,7 +232,7 @@ const Index = () => {
                 email,
                 coupon: usedCoupon,
                 referralUser,
-                cartTotal,
+                cartTotal: cartTotal - stripeDiscount,
                 isVIP,
                 oldVIP,
                 vipPlan
@@ -480,12 +481,6 @@ const Index = () => {
   }
 
   useEffect(() => {
-    const totalDiscount = calculateTotalCouponDiscount()
-    const finalTotal = cartSubTotal - totalDiscount
-    setCartTotal(Math.max(0, finalTotal))
-  }, [cartSubTotal, usedCoupon])
-
-  useEffect(() => {
     if (cartCourses.length) {
       const newSubTotal = cartCourses.reduce((acc, cycle) => {
         const price = getDiscountedPrice(cycle)
@@ -533,6 +528,23 @@ const Index = () => {
       setUsedCoupon(newCoupon)
     }
   }
+
+  useEffect(() => {
+    if (stripePay && cartSubTotal > 0) {
+      const discount = Math.floor(cartSubTotal * 0.05)
+      setStripeDiscount(discount)
+    } else {
+      setStripeDiscount(0)
+    }
+  }, [stripePay, cartSubTotal])
+
+  useEffect(() => {
+    const totalDiscount = calculateTotalCouponDiscount() + stripeDiscount
+
+    const finalTotal = cartSubTotal - totalDiscount
+
+    setCartTotal(finalTotal)
+  }, [cartSubTotal, usedCoupon, stripeDiscount])
 
   return (
     <div className='FNV-Cart'>
@@ -681,7 +693,17 @@ const Index = () => {
                   <p className='text-center'>CA$ 0</p>
                 </div>
               </div>
-
+              {/* Stripe Discount */}
+              {stripePay && stripeDiscount > 0 && (
+                <div className='row'>
+                  <div className='col-6 col-md-6'>
+                    <p>{t('cart-stripe-discount-text')}</p>
+                  </div>
+                  <div className='col-6 col-md-6'>
+                    <p className='text-center'>-CA$ {stripeDiscount}</p>
+                  </div>
+                </div>
+              )}
               {usedCoupon
                 ? usedCoupon?.map((coupon, index) =>
                     coupon.code ? (
