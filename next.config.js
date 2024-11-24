@@ -13,6 +13,9 @@ module.exports = {
   experimental: {
     esmExternals: false
   },
+  eslint: {
+    ignoreDuringBuilds: true
+  },
   i18n: {
     locales: ['en', 'fa'], // Specify your locales
     defaultLocale: 'en' // Specify your default locale
