@@ -78,7 +78,7 @@ import '../../styles/_homeCategory.scss'
 import '../../styles/_social.scss'
 import '../../styles/_youtube.scss'
 import '../../styles/_content.scss'
-import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 // ** Import Swiper styles
 import 'swiper/css'
@@ -141,8 +141,8 @@ const App = props => {
   const getLayout = router.pathname.startsWith('/app')
     ? Component.getLayout ?? (page => <UserLayout contentHeightFixed={contentHeightFixed}>{page}</UserLayout>)
     : isNoHeaderFooterPage
-      ? Component.getLayout ?? (page => <NoHeaderFooterLayout>{page}</NoHeaderFooterLayout>)
-      : page => <MainLayout>{page}</MainLayout>
+    ? Component.getLayout ?? (page => <NoHeaderFooterLayout>{page}</NoHeaderFooterLayout>)
+    : page => <MainLayout>{page}</MainLayout>
 
   const setConfig = Component.setConfig ?? undefined
   const authGuard = false
