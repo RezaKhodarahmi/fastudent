@@ -30,31 +30,49 @@ function Packages() {
 
   return (
     <>
-      {Array.isArray(course) ? (
-        (() => {
-          const filteredCourses = course.slice((page - 1) * 14, page * 14)
+      <li className='col-12 col-md-6'>
+        <Link href='https://fanavaran.ca/courses/nppe-package'>P.Eng Package</Link>
+      </li>
 
-          return filteredCourses.length ? (
-            filteredCourses
-              .filter(item => item?.id != 150000)
-              .map(course =>
-                course.cycles?.length ? (
-                  <li key={course.id} className='col-12 col-md-6'>
-                    <Link href={`/courses/${course.slug}`}>{course.title}</Link>
-                  </li>
-                ) : null
-              )
-          ) : (
-            <>
-              <li>
-                <Link href='#'>No courses found.</Link>
-              </li>
-            </>
-          )
-        })()
-      ) : (
-        <LinearProgress />
-      )}
+      <li className='col-12 col-md-6'>
+        <Link href='https://fanavaran.ca/courses/pmp-package'>Project Management Package I</Link>
+      </li>
+
+      <li className='col-12 col-md-6'>
+        <Link href='https://fanavaran.ca/courses/pmp-package-ii'>Project Management Package II</Link>
+      </li>
+
+      <li className='col-12 col-md-6'>
+        <Link href='https://fanavaran.ca/courses/accounting-package'>Accounting Package</Link>
+      </li>
+
+      <li className='col-12 col-md-6'>
+        <Link href='https://fanavaran.ca/courses/electrical-redseal-309a-package'>Electrical Redseal Package</Link>
+      </li>
+
+      <li className='col-12 col-md-6'>
+        <Link href='https://fanavaran.ca/courses/ele-redseal-package-bc'>Electrical Redseal Package - British Columbia</Link>
+      </li>
+
+      <li className='col-12 col-md-6'>
+        <Link href='https://fanavaran.ca/courses/plumbing-redseal-306a-package'>Plumbing Redseal Package</Link>
+      </li>
+
+      <li className='col-12 col-md-6'>
+        <Link href='https://fanavaran.ca/courses/gas-technician-g2-g3-package'>Gas Technician Package</Link>
+      </li>
+
+      <li className='col-12 col-md-6'>
+        <Link href='https://fanavaran.ca/courses/millwright-package'>Millwright Redseal Package</Link>
+      </li>
+
+      <li className='col-12 col-md-6'>
+        <Link href='https://fanavaran.ca/courses/hvac-313a-package'>HVAC Redseal Package</Link>
+      </li>
+
+      <li className='col-12 col-md-6'>
+        <Link href='https://fanavaran.ca/courses/energy-advisory-package'>Energy Advisory Package</Link>
+      </li>
     </>
   )
 }
