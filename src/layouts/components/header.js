@@ -944,19 +944,6 @@ const Header = props => {
                           tabindex='0'
                         >
                           <Workshops />
-
-                          {/* Consultant */}
-                          <div className='container'>
-                            <span>{t('mega_menu-sales-title')}</span>
-                            <div className='row'>
-                              <div className='col-7'>
-                                <p>{t('mega_menu-sales-desc')}</p>
-                              </div>
-                              <div className='col-5'>
-                                <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -983,19 +970,6 @@ const Header = props => {
                           tabindex='0'
                         >
                           <Packages />
-
-                          {/* Consultant */}
-                          <div className='container'>
-                            <span>{t('mega_menu-sales-title')}</span>
-                            <div className='row'>
-                              <div className='col-7'>
-                                <p>{t('mega_menu-sales-desc')}</p>
-                              </div>
-                              <div className='col-5'>
-                                <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -1651,19 +1625,6 @@ const Header = props => {
                           tabindex='0'
                         >
                           <Engineering />
-
-                          {/* Consultant */}
-                          <div className='container'>
-                            <span>{t('mega_menu-sales-title')}</span>
-                            <div className='row'>
-                              <div className='col-7'>
-                                <p>{t('mega_menu-sales-desc')}</p>
-                              </div>
-                              <div className='col-5'>
-                                <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
-                              </div>
-                            </div>
-                          </div>
                         </div>
 
                         {/* Project Management */}
@@ -1675,19 +1636,6 @@ const Header = props => {
                           tabindex='0'
                         >
                           <ProjectManagment />
-
-                          {/* Consultant */}
-                          <div className='container'>
-                            <span>{t('mega_menu-sales-title')}</span>
-                            <div className='row'>
-                              <div className='col-7'>
-                                <p>{t('mega_menu-sales-desc')}</p>
-                              </div>
-                              <div className='col-5'>
-                                <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
-                              </div>
-                            </div>
-                          </div>
                         </div>
 
                         {/* Technician */}
@@ -1699,19 +1647,6 @@ const Header = props => {
                           tabindex='0'
                         >
                           <Technician />
-
-                          {/* Consultant */}
-                          <div className='container'>
-                            <span>{t('mega_menu-sales-title')}</span>
-                            <div className='row'>
-                              <div className='col-7'>
-                                <p>{t('mega_menu-sales-desc')}</p>
-                              </div>
-                              <div className='col-5'>
-                                <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
-                              </div>
-                            </div>
-                          </div>
                         </div>
 
                         {/* Architect */}
@@ -1723,19 +1658,6 @@ const Header = props => {
                           tabindex='0'
                         >
                           <Architect />
-
-                          {/* Consultant */}
-                          <div className='container'>
-                            <span>{t('mega_menu-sales-title')}</span>
-                            <div className='row'>
-                              <div className='col-7'>
-                                <p>{t('mega_menu-sales-desc')}</p>
-                              </div>
-                              <div className='col-5'>
-                                <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
-                              </div>
-                            </div>
-                          </div>
                         </div>
 
                         {/* Accounting */}
@@ -1747,19 +1669,6 @@ const Header = props => {
                           tabindex='0'
                         >
                           <Accounting />
-
-                          {/* Consultant */}
-                          <div className='container'>
-                            <span>{t('mega_menu-sales-title')}</span>
-                            <div className='row'>
-                              <div className='col-7'>
-                                <p>{t('mega_menu-sales-desc')}</p>
-                              </div>
-                              <div className='col-5'>
-                                <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
-                              </div>
-                            </div>
-                          </div>
                         </div>
 
                         {/* English */}
@@ -1771,19 +1680,6 @@ const Header = props => {
                           tabindex='0'
                         >
                           <English />
-
-                          {/* Consultant */}
-                          <div className='container'>
-                            <span>{t('mega_menu-sales-title')}</span>
-                            <div className='row'>
-                              <div className='col-7'>
-                                <p>{t('mega_menu-sales-desc')}</p>
-                              </div>
-                              <div className='col-5'>
-                                <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
-                              </div>
-                            </div>
-                          </div>
                         </div>
 
                         {/* Self Employee */}
@@ -1795,19 +1691,6 @@ const Header = props => {
                           tabindex='0'
                         >
                           <SelfEmployee />
-
-                          {/* Consultant */}
-                          <div className='container'>
-                            <span>{t('mega_menu-sales-title')}</span>
-                            <div className='row'>
-                              <div className='col-7'>
-                                <p>{t('mega_menu-sales-desc')}</p>
-                              </div>
-                              <div className='col-5'>
-                                <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
-                              </div>
-                            </div>
-                          </div>
                         </div>
 
                         {/* Job Seeker */}
@@ -1819,19 +1702,6 @@ const Header = props => {
                           tabindex='0'
                         >
                           <JobSeeker />
-
-                          {/* Consultant */}
-                          <div className='container'>
-                            <span>{t('mega_menu-sales-title')}</span>
-                            <div className='row'>
-                              <div className='col-7'>
-                                <p>{t('mega_menu-sales-desc')}</p>
-                              </div>
-                              <div className='col-5'>
-                                <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -2021,19 +1891,6 @@ const Header = props => {
                           <li>
                             <Link href='/services/consultant'>{t('menu-services-2')}</Link>
                           </li>
-
-                          {/* Consultant */}
-                          <div className='container'>
-                            <span>{t('mega_menu-sales-title')}</span>
-                            <div className='row'>
-                              <div className='col-7'>
-                                <p>{t('mega_menu-sales-desc')}</p>
-                              </div>
-                              <div className='col-5'>
-                                <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
-                              </div>
-                            </div>
-                          </div>
                         </div>
 
                         {/* Course Description */}
@@ -2047,19 +1904,6 @@ const Header = props => {
                           <li>
                             <Link href='/services/course-description'>{t('menu-services-3')}</Link>
                           </li>
-
-                          {/* Consultant */}
-                          <div className='container'>
-                            <span>{t('mega_menu-sales-title')}</span>
-                            <div className='row'>
-                              <div className='col-7'>
-                                <p>{t('mega_menu-sales-desc')}</p>
-                              </div>
-                              <div className='col-5'>
-                                <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
-                              </div>
-                            </div>
-                          </div>
                         </div>
 
                         {/* Credentials Verification */}
@@ -2074,18 +1918,7 @@ const Header = props => {
                             <Link href='/services/signing-documents'>{t('menu-services-4')}</Link>
                           </li>
 
-                          {/* Credentials Verification */}
-                          <div className='container'>
-                            <span>{t('mega_menu-sales-title')}</span>
-                            <div className='row'>
-                              <div className='col-7'>
-                                <p>{t('mega_menu-sales-desc')}</p>
-                              </div>
-                              <div className='col-5'>
-                                <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
-                              </div>
-                            </div>
-                          </div>
+
                         </div>
                       </div>
                     </div>
@@ -2144,19 +1977,6 @@ const Header = props => {
                           <li>
                             <Link href='#'>{t('menu-membership-faq')}</Link>
                           </li>
-
-                          {/* Consultant */}
-                          <div className='container'>
-                            <span>{t('mega_menu-sales-title')}</span>
-                            <div className='row'>
-                              <div className='col-7'>
-                                <p>{t('mega_menu-sales-desc')}</p>
-                              </div>
-                              <div className='col-5'>
-                                <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                     </div>
