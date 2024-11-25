@@ -1,0 +1,973 @@
+
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+    .FNV-NewOnFanavaran {
+        padding: 1rem;
+        background-color: $White;
+    
+        h2 {
+            font-size: 28px;
+            font-weight: 800;
+            text-align: center;
+            position: relative;
+            margin-bottom: 4rem;
+            color: $PrimaryColor;
+        }
+    
+        .container {
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 28px;
+            background-color: $PrimaryOne;
+    
+            .row {
+                .col-md-2{
+                    display: flex;
+                    margin-bottom: 1rem;
+                    flex-direction: row;
+                    justify-content: space-between;
+    
+                    h3{
+                        color: $White;
+                        font-size: 30px;
+                        font-weight: 800;
+                    }
+    
+                    a{
+                        color: $White;
+                        font-size: 20px;
+                        font-weight: 400;
+    
+                        svg{
+                            margin: 0 1rem;
+                        }
+                    }
+                }
+                
+                .col-md-10 {
+                    .swiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                padding: 0 0;
+    
+                                .card {
+                                    border-width: 0;
+                                    border-radius: 18px;
+                                    overflow: hidden;
+                                    position: relative;
+                                    cursor: grab;
+    
+                                    img{
+                                        height: 250px;
+                                        object-fit: cover;
+                                    }
+    
+                                    &:active,
+                                    &:target {
+                                        cursor: grabbing;
+                                    }
+    
+                                    badge {
+                                        position: absolute;
+                                        top: 1rem;
+                                        left: 1rem;
+                                        font-size: 14px;
+                                        line-height: 28px;
+                                        font-weight: 500;
+                                        color: $PrimaryColor;
+                                        background-color: $WhiteColor;
+                                        border-radius: 5px;
+                                        padding: .2rem 1rem;
+                                    }
+    
+                                    .card-body {
+                                        background-color: $WhiteColor;
+                                        border-radius: 18px;
+                                        margin-top: -3rem;
+    
+                                        h4 {
+                                            font-size: 16px;
+                                            line-height: 20px;
+                                            font-weight: 700;
+                                            color: $PrimaryColor;
+                                            text-align: center;
+                                            min-height: 50px;
+                                        }
+    
+                                        price {
+                                            font-size: 30px;
+                                            font-weight: 900;
+                                            line-height: 44px;
+                                            color: $SecondaryColor;
+                                            text-align: center;
+                                            width: 100%;
+                                            display: inline-block;
+                                        }
+    
+                                        .d-flex {
+                                            margin-top: 1rem;
+                                            gap: 10px;
+    
+                                            .FNV-Btn {
+                                                width: 100%;
+                                                font-size: 15px;
+                                                font-weight: 800;
+    
+                                                &:first-child {
+                                                    margin-right: 5px;
+                                                }
+    
+                                                &:nth-child(2) {
+                                                    margin-left: 5px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                    .swiper-pagination {
+                        top: unset;
+                        bottom: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (min-width: 575.98px) and (max-width: 767px) {
+    .FNV-NewOnFanavaran {
+        padding: 1rem;
+        background-color: $White;
+    
+        h2 {
+            font-size: 28px;
+            font-weight: 800;
+            text-align: center;
+            position: relative;
+            margin-bottom: 4rem;
+            color: $PrimaryColor;
+        }
+    
+        .container {
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 28px;
+            background-color: $PrimaryOne;
+    
+            .row {
+                .col-md-2{
+                    display: flex;
+                    margin-bottom: 1rem;
+                    flex-direction: row;
+                    justify-content: space-between;
+    
+                    h3{
+                        color: $White;
+                        font-size: 30px;
+                        font-weight: 800;
+                    }
+    
+                    a{
+                        color: $White;
+                        font-size: 20px;
+                        font-weight: 400;
+    
+                        svg{
+                            margin: 0 1rem;
+                        }
+                    }
+                }
+                
+                .col-md-10 {
+                    .swiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                padding: 0 0;
+    
+                                .card {
+                                    border-width: 0;
+                                    border-radius: 18px;
+                                    overflow: hidden;
+                                    position: relative;
+                                    cursor: grab;
+    
+                                    img{
+                                        height: 250px;
+                                        object-fit: cover;
+                                    }
+    
+                                    &:active,
+                                    &:target {
+                                        cursor: grabbing;
+                                    }
+    
+                                    badge {
+                                        position: absolute;
+                                        top: 1rem;
+                                        left: 1rem;
+                                        font-size: 14px;
+                                        line-height: 28px;
+                                        font-weight: 500;
+                                        color: $PrimaryColor;
+                                        background-color: $WhiteColor;
+                                        border-radius: 5px;
+                                        padding: .2rem 1rem;
+                                    }
+    
+                                    .card-body {
+                                        background-color: $WhiteColor;
+                                        border-radius: 18px;
+                                        margin-top: -3rem;
+    
+                                        h4 {
+                                            font-size: 16px;
+                                            line-height: 20px;
+                                            font-weight: 700;
+                                            color: $PrimaryColor;
+                                            text-align: center;
+                                            min-height: 50px;
+                                        }
+    
+                                        price {
+                                            font-size: 30px;
+                                            font-weight: 900;
+                                            line-height: 44px;
+                                            color: $SecondaryColor;
+                                            text-align: center;
+                                            width: 100%;
+                                            display: inline-block;
+                                        }
+    
+                                        .d-flex {
+                                            margin-top: 1rem;
+                                            gap: 10px;
+    
+                                            .FNV-Btn {
+                                                width: 100%;
+                                                font-size: 15px;
+                                                font-weight: 800;
+    
+                                                &:first-child {
+                                                    margin-right: 5px;
+                                                }
+    
+                                                &:nth-child(2) {
+                                                    margin-left: 5px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                    .swiper-pagination {
+                        top: unset;
+                        bottom: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+    .FNV-NewOnFanavaran {
+        padding: 1rem;
+        background-color: $White;
+    
+        h2 {
+            font-size: 28px;
+            font-weight: 800;
+            text-align: center;
+            position: relative;
+            margin-bottom: 4rem;
+            color: $PrimaryColor;
+        }
+    
+        .container {
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 28px;
+            background-color: $PrimaryOne;
+    
+            .row {
+                .col-md-2{
+                    width: 100%;
+                    display: flex;
+                    margin-bottom: 1rem;
+                    flex-direction: row;
+                    justify-content: space-between;
+    
+                    h3{
+                        color: $White;
+                        font-size: 30px;
+                        font-weight: 800;
+                    }
+    
+                    a{
+                        color: $White;
+                        font-size: 20px;
+                        font-weight: 400;
+    
+                        svg{
+                            margin: 0 1rem;
+                        }
+                    }
+                }
+                
+                .col-md-10 {
+                    width: 100%;
+
+                    .swiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                padding: 0 0;
+    
+                                .card {
+                                    border-width: 0;
+                                    border-radius: 18px;
+                                    overflow: hidden;
+                                    position: relative;
+                                    cursor: grab;
+    
+                                    img{
+                                        height: 250px;
+                                        object-fit: cover;
+                                    }
+    
+                                    &:active,
+                                    &:target {
+                                        cursor: grabbing;
+                                    }
+    
+                                    badge {
+                                        position: absolute;
+                                        top: 1rem;
+                                        left: 1rem;
+                                        font-size: 14px;
+                                        line-height: 28px;
+                                        font-weight: 500;
+                                        color: $PrimaryColor;
+                                        background-color: $WhiteColor;
+                                        border-radius: 5px;
+                                        padding: .2rem 1rem;
+                                    }
+    
+                                    .card-body {
+                                        background-color: $WhiteColor;
+                                        border-radius: 18px;
+                                        margin-top: -3rem;
+    
+                                        h4 {
+                                            font-size: 16px;
+                                            line-height: 20px;
+                                            font-weight: 700;
+                                            color: $PrimaryColor;
+                                            text-align: center;
+                                            min-height: 50px;
+                                        }
+    
+                                        price {
+                                            font-size: 30px;
+                                            font-weight: 900;
+                                            line-height: 44px;
+                                            color: $SecondaryColor;
+                                            text-align: center;
+                                            width: 100%;
+                                            display: inline-block;
+                                        }
+    
+                                        .d-flex {
+                                            margin-top: 1rem;
+                                            gap: 10px;
+    
+                                            .FNV-Btn {
+                                                width: 100%;
+                                                font-size: 15px;
+                                                font-weight: 800;
+    
+                                                &:first-child {
+                                                    margin-right: 5px;
+                                                }
+    
+                                                &:nth-child(2) {
+                                                    margin-left: 5px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                    .swiper-pagination {
+                        top: unset;
+                        bottom: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (min-width: 992px) {
+    .FNV-NewOnFanavaran {
+        padding: 2rem;
+        background-color: $White;
+    
+        h2 {
+            font-size: 36px;
+            font-weight: 800;
+            text-align: center;
+            position: relative;
+            margin-bottom: 4rem;
+            color: $PrimaryColor;
+        }
+    
+        .container {
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 28px;
+            background-color: $PrimaryOne;
+    
+            .row {
+                .col-md-2{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+    
+                    h3{
+                        color: $White;
+                        font-size: 20px;
+                        font-weight: 800;
+                    }
+    
+                    a{
+                        color: $White;
+                        font-size: 14px;
+                        font-weight: 400;
+    
+                        svg{
+                            margin: 0 .5rem;
+                        }
+                    }
+                }
+                
+                .col-md-10 {
+                    .swiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                padding: 0 0;
+    
+                                .card {
+                                    border-width: 0;
+                                    border-radius: 18px;
+                                    overflow: hidden;
+                                    position: relative;
+                                    cursor: grab;
+    
+                                    img{
+                                        height: 250px;
+                                        object-fit: cover;
+                                    }
+    
+                                    &:active,
+                                    &:target {
+                                        cursor: grabbing;
+                                    }
+    
+                                    badge {
+                                        position: absolute;
+                                        top: 1rem;
+                                        left: 1rem;
+                                        font-size: 14px;
+                                        line-height: 28px;
+                                        font-weight: 500;
+                                        color: $PrimaryColor;
+                                        background-color: $WhiteColor;
+                                        border-radius: 5px;
+                                        padding: .2rem 1rem;
+                                    }
+    
+                                    .card-body {
+                                        background-color: $WhiteColor;
+                                        border-radius: 18px;
+                                        margin-top: -3rem;
+    
+                                        h4 {
+                                            font-size: 16px;
+                                            line-height: 20px;
+                                            font-weight: 700;
+                                            color: $PrimaryColor;
+                                            text-align: center;
+                                            min-height: 50px;
+                                        }
+    
+                                        price {
+                                            font-size: 30px;
+                                            font-weight: 900;
+                                            line-height: 44px;
+                                            color: $SecondaryColor;
+                                            text-align: center;
+                                            width: 100%;
+                                            display: inline-block;
+                                        }
+    
+                                        .d-flex {
+                                            margin-top: 1rem;
+                                            gap: 10px;
+    
+                                            .FNV-Btn {
+                                                width: 100%;
+                                                font-size: 15px;
+                                                font-weight: 800;
+    
+                                                &:first-child {
+                                                    margin-right: 5px;
+                                                }
+    
+                                                &:nth-child(2) {
+                                                    margin-left: 5px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                    .swiper-pagination {
+                        top: unset;
+                        bottom: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (min-width: 1199.98px) {
+    .FNV-NewOnFanavaran {
+        padding: 2rem;
+        background-color: $White;
+    
+        h2 {
+            font-size: 36px;
+            font-weight: 800;
+            text-align: center;
+            position: relative;
+            margin-bottom: 4rem;
+            color: $PrimaryColor;
+        }
+    
+        .container {
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 28px;
+            background-color: $PrimaryOne;
+    
+            .row {
+                .col-md-2{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+    
+                    h3{
+                        color: $White;
+                        font-size: 20px;
+                        font-weight: 800;
+                    }
+    
+                    a{
+                        color: $White;
+                        font-size: 14px;
+                        font-weight: 400;
+    
+                        svg{
+                            margin: 0 .5rem;
+                        }
+                    }
+                }
+                
+                .col-md-10 {
+                    .swiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                padding: 0 0;
+    
+                                .card {
+                                    border-width: 0;
+                                    border-radius: 18px;
+                                    overflow: hidden;
+                                    position: relative;
+                                    cursor: grab;
+    
+                                    img{
+                                        height: 250px;
+                                        object-fit: cover;
+                                    }
+    
+                                    &:active,
+                                    &:target {
+                                        cursor: grabbing;
+                                    }
+    
+                                    badge {
+                                        position: absolute;
+                                        top: 1rem;
+                                        left: 1rem;
+                                        font-size: 14px;
+                                        line-height: 28px;
+                                        font-weight: 500;
+                                        color: $PrimaryColor;
+                                        background-color: $WhiteColor;
+                                        border-radius: 5px;
+                                        padding: .2rem 1rem;
+                                    }
+    
+                                    .card-body {
+                                        background-color: $WhiteColor;
+                                        border-radius: 18px;
+                                        margin-top: -3rem;
+    
+                                        h4 {
+                                            font-size: 16px;
+                                            line-height: 20px;
+                                            font-weight: 700;
+                                            color: $PrimaryColor;
+                                            text-align: center;
+                                            min-height: 50px;
+                                        }
+    
+                                        price {
+                                            font-size: 30px;
+                                            font-weight: 900;
+                                            line-height: 44px;
+                                            color: $SecondaryColor;
+                                            text-align: center;
+                                            width: 100%;
+                                            display: inline-block;
+                                        }
+    
+                                        .d-flex {
+                                            margin-top: 1rem;
+                                            gap: 10px;
+    
+                                            .FNV-Btn {
+                                                width: 100%;
+                                                font-size: 15px;
+                                                font-weight: 800;
+    
+                                                &:first-child {
+                                                    margin-right: 5px;
+                                                }
+    
+                                                &:nth-child(2) {
+                                                    margin-left: 5px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                    .swiper-pagination {
+                        top: unset;
+                        bottom: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    .FNV-NewOnFanavaran {
+        padding: 2rem;
+        background-color: $White;
+    
+        h2 {
+            font-size: 36px;
+            font-weight: 800;
+            text-align: center;
+            position: relative;
+            margin-bottom: 4rem;
+            color: $PrimaryColor;
+        }
+    
+        .container {
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 28px;
+            background-color: $PrimaryOne;
+    
+            .row {
+                .col-md-2{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+    
+                    h3{
+                        color: $White;
+                        font-size: 30px;
+                        font-weight: 800;
+                    }
+    
+                    a{
+                        color: $White;
+                        font-size: 20px;
+                        font-weight: 400;
+    
+                        svg{
+                            margin: 0 1rem;
+                        }
+                    }
+                }
+                
+                .col-md-10 {
+                    .swiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                padding: 0 0;
+    
+                                .card {
+                                    border-width: 0;
+                                    border-radius: 18px;
+                                    overflow: hidden;
+                                    position: relative;
+                                    cursor: grab;
+    
+                                    img{
+                                        height: 250px;
+                                        object-fit: cover;
+                                    }
+    
+                                    &:active,
+                                    &:target {
+                                        cursor: grabbing;
+                                    }
+    
+                                    badge {
+                                        position: absolute;
+                                        top: 1rem;
+                                        left: 1rem;
+                                        font-size: 14px;
+                                        line-height: 28px;
+                                        font-weight: 500;
+                                        color: $PrimaryColor;
+                                        background-color: $WhiteColor;
+                                        border-radius: 5px;
+                                        padding: .2rem 1rem;
+                                    }
+    
+                                    .card-body {
+                                        background-color: $WhiteColor;
+                                        border-radius: 18px;
+                                        margin-top: -3rem;
+    
+                                        h4 {
+                                            font-size: 16px;
+                                            line-height: 20px;
+                                            font-weight: 700;
+                                            color: $PrimaryColor;
+                                            text-align: center;
+                                            min-height: 50px;
+                                        }
+    
+                                        price {
+                                            font-size: 30px;
+                                            font-weight: 900;
+                                            line-height: 44px;
+                                            color: $SecondaryColor;
+                                            text-align: center;
+                                            width: 100%;
+                                            display: inline-block;
+                                        }
+    
+                                        .d-flex {
+                                            margin-top: 1rem;
+                                            gap: 10px;
+    
+                                            .FNV-Btn {
+                                                width: 100%;
+                                                font-size: 15px;
+                                                font-weight: 800;
+    
+                                                &:first-child {
+                                                    margin-right: 5px;
+                                                }
+    
+                                                &:nth-child(2) {
+                                                    margin-left: 5px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                    .swiper-pagination {
+                        top: unset;
+                        bottom: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// XXX-Large devices (larger desktops, 1920px and up)
+@media (min-width: 1920px) {
+    .FNV-NewOnFanavaran {
+        padding: 4rem 0 1rem;
+        background-color: $White;
+    
+        h2 {
+            font-size: 36px;
+            font-weight: 800;
+            text-align: center;
+            position: relative;
+            margin-bottom: 4rem;
+            color: $PrimaryColor;
+        }
+    
+        .container {
+            padding: 4rem;
+            margin-bottom: 2rem;
+            border-radius: 28px;
+            background-color: $PrimaryOne;
+    
+            .row {
+                .col-md-2{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+    
+                    h3{
+                        color: $White;
+                        font-size: 30px;
+                        font-weight: 800;
+                    }
+    
+                    a{
+                        color: $White;
+                        font-size: 20px;
+                        font-weight: 400;
+    
+                        svg{
+                            margin: 0 1rem;
+                        }
+                    }
+                }
+                
+                .col-md-10 {
+                    .swiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                padding: 0 0;
+    
+                                .card {
+                                    border-width: 0;
+                                    border-radius: 18px;
+                                    overflow: hidden;
+                                    position: relative;
+                                    cursor: grab;
+    
+                                    img{
+                                        height: 250px;
+                                        object-fit: cover;
+                                    }
+    
+                                    &:active,
+                                    &:target {
+                                        cursor: grabbing;
+                                    }
+    
+                                    badge {
+                                        position: absolute;
+                                        top: 1rem;
+                                        left: 1rem;
+                                        font-size: 14px;
+                                        line-height: 28px;
+                                        font-weight: 500;
+                                        color: $PrimaryColor;
+                                        background-color: $WhiteColor;
+                                        border-radius: 5px;
+                                        padding: .2rem 1rem;
+                                    }
+    
+                                    .card-body {
+                                        background-color: $WhiteColor;
+                                        border-radius: 18px;
+                                        margin-top: -3rem;
+    
+                                        h4 {
+                                            font-size: 16px;
+                                            line-height: 20px;
+                                            font-weight: 700;
+                                            color: $PrimaryColor;
+                                            text-align: center;
+                                            min-height: 50px;
+                                        }
+    
+                                        price {
+                                            font-size: 30px;
+                                            font-weight: 900;
+                                            line-height: 44px;
+                                            color: $SecondaryColor;
+                                            text-align: center;
+                                            width: 100%;
+                                            display: inline-block;
+                                        }
+    
+                                        .d-flex {
+                                            margin-top: 1rem;
+                                            gap: 10px;
+    
+                                            .FNV-Btn {
+                                                width: 100%;
+                                                font-size: 15px;
+                                                font-weight: 800;
+    
+                                                &:first-child {
+                                                    margin-right: 5px;
+                                                }
+    
+                                                &:nth-child(2) {
+                                                    margin-left: 5px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                    .swiper-pagination {
+                        top: unset;
+                        bottom: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}

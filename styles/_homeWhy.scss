@@ -1,481 +1,66 @@
-body[dir='ltr'] {
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .FNV-HomeWhy {
+        padding: 1rem;
+        background-color: $White;
 
-    // X-Small devices (portrait phones, less than 576px)
-    @media (max-width: 575.98px) {
-        .FNV-HomeWhy {
-            padding: 1rem;
-            background-color: $PrimaryBackgroundTwo;
+        .container {
+            padding: 2rem;
+            border-radius: 28px;
+            background-color: $PrimaryOne;
 
-            .container {
-                h2 {
-                    font-size: 20px;
-                    font-weight: 300;
-                    color: $PrimaryOne;
-                    margin-bottom: 1rem;
-                }
+            .row {
+                .col-md-6 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
 
-                .row {
-                    .col-md-6 {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        justify-content: center;
-
-                        p {
-                            font-size: 14px;
-                            font-weight: 300;
-                            color: $PrimaryOne;
-                        }
-
-                        &:nth-child(2) {
-                            padding-left: 1rem;
-                            padding-right: 1rem;
-
-                            .row {
-                                margin: 0 auto;
-
-                                &.card {
-                                    width: 100%;
-                                    padding: .5rem;
-                                    flex-direction: row;
-                                    margin-bottom: .5rem;
-
-                                    .col-2 {
-                                        padding: 0;
-                                        width: 16.66666667%;
-
-                                        svg {
-                                            width: 100%;
-                                        }
-                                    }
-
-                                    .col-9 {
-                                        width: 75%;
-                                        padding: 1rem;
-                                        border-width: 0;
-                                        border-radius: 0;
-                                        margin-bottom: 0rem;
-                                        align-items: center;
-                                        flex-direction: row;
-                                        background-color: $WhiteColor;
-
-                                        h3 {
-                                            font-size: 16px;
-                                            font-weight: 300;
-                                        }
-
-                                        p {
-                                            font-size: 12px;
-                                            font-weight: 300;
-                                            margin-bottom: 0;
-                                        }
-                                    }
-                                }
-                            }
-                        }
+                    h2 {
+                        font-size: 22px;
+                        font-weight: 600;
+                        color: $WhiteThree;
+                        margin-bottom: 1rem;
                     }
-                }
-            }
-        }
-    }
 
-    // `sm` applies to x-small devices (portrait phones, less than 576px)
-    @media (min-width: 575.98px) and (max-width: 767.98px) {
-        .FNV-HomeWhy {
-            padding: 1rem;
-            background-color: $PrimaryBackgroundTwo;
-
-            .container {
-                h2 {
-                    font-size: 22px;
-                    font-weight: 300;
-                    color: $PrimaryOne;
-                    margin-bottom: 1rem;
-                }
-
-                .row {
-                    .col-md-6 {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        justify-content: center;
-
-                        p {
-                            font-size: 14px;
-                            font-weight: 300;
-                            color: $PrimaryOne;
-                        }
-
-                        &:nth-child(2) {
-                            padding-right: 0rem;
-
-                            .row {
-                                &.card {
-                                    width: 100%;
-                                    padding: .5rem;
-                                    margin-bottom: 1rem;
-                                    flex-direction: row;
-
-                                    .col-2 {
-                                        padding: 0;
-                                        width: 16.66666667%;
-
-                                        svg {
-                                            width: 100%;
-                                        }
-                                    }
-
-                                    .col-9 {
-                                        width: 75%;
-                                        padding: 1rem;
-                                        border-width: 0;
-                                        border-radius: 0;
-                                        margin-bottom: 0rem;
-                                        align-items: center;
-                                        flex-direction: row;
-                                        background-color: $WhiteColor;
-
-                                        h3 {
-                                            font-size: 16px;
-                                            font-weight: 300;
-                                        }
-
-                                        p {
-                                            font-size: 12px;
-                                            font-weight: 300;
-                                            margin-bottom: 0;
-                                        }
-                                    }
-                                }
-                            }
-                        }
+                    p {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: $WhiteThree;
                     }
-                }
-            }
-        }
-    }
 
-    // `md` applies to small devices (landscape phones, less than 768px)
-    @media (min-width: 767.98px) and (max-width: 991.98px) {
-        .FNV-HomeWhy {
-            padding: 2rem 0;
-            background-color: $PrimaryBackgroundTwo;
+                    &:nth-child(2) {
+                        padding: 0rem;
 
-            .container {
-                h2 {
-                    font-size: 22px;
-                    font-weight: 300;
-                    color: $PrimaryOne;
-                    margin-bottom: 1rem;
-                }
+                        .row {
+                            margin: auto;
 
-                .row {
-                    .col-md-6 {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        justify-content: center;
+                            &.card {
+                                width: 100%;
+                                padding: 1rem;
+                                border-width: 0;
+                                border-radius: 16px;
+                                margin-bottom: 2rem;
+                                align-items: center;
+                                flex-direction: row;
+                                background-color: $WhiteColor;
 
-                        p {
-                            font-size: 14px;
-                            font-weight: 300;
-                            color: $PrimaryOne;
-                        }
-
-                        &:nth-child(2) {
-                            padding-left: 4rem;
-
-                            .row {
-                                &.card {
-                                    padding: .5rem;
-                                    flex-direction: row;
-                                    margin-bottom: .5rem;
-
-                                    .col-2 {
-                                        padding: 0;
-                                        width: 16.66666667%;
-
-                                        svg {
-                                            width: 100%;
-                                        }
-                                    }
-
-                                    .col-9 {
-                                        width: 75%;
-                                        padding: 1rem;
-                                        border-width: 0;
-                                        border-radius: 0;
-                                        margin-bottom: 0rem;
-                                        align-items: center;
-                                        flex-direction: row;
-                                        background-color: $WhiteColor;
-
-                                        h3 {
-                                            font-size: 16px;
-                                            font-weight: 300;
-                                        }
-
-                                        p {
-                                            font-size: 12px;
-                                            font-weight: 300;
-                                            margin-bottom: 0;
-                                        }
-                                    }
+                                svg{
+                                    width: 30px;
+                                    height: 30px;
                                 }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
 
-    // `lg` applies to medium devices (tablets, less than 992px)
-    @media (min-width: 991.98px) {
-        .FNV-HomeWhy {
-            padding: 2rem 0;
-            background-color: $PrimaryBackgroundTwo;
-
-            .container {
-                h2 {
-                    font-size: 36px;
-                    font-weight: 300;
-                    color: $PrimaryOne;
-                    margin-bottom: 1rem;
-                }
-
-                .row {
-                    .col-md-6 {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        justify-content: center;
-
-                        p {
-                            font-size: 14px;
-                            font-weight: 300;
-                            color: $PrimaryOne;
-                        }
-
-                        &:nth-child(2) {
-                            padding-left: 4rem;
-
-                            .row {
-                                &.card {
-                                    width: 100%;
-                                    padding: 1rem;
-                                    border-width: 0;
-                                    border-radius: 0;
-                                    margin-bottom: 1rem;
-                                    align-items: center;
-                                    flex-direction: row;
-                                    background-color: $WhiteColor;
-
-                                    .col-2 {
-                                        svg {
-                                            width: 100%;
-                                        }
-                                    }
-
-                                    .col-9 {
-                                        h3 {
-                                            font-size: 20px;
-                                            font-weight: 300;
-                                        }
-
-                                        p {
-                                            font-size: 12px;
-                                            font-weight: 300;
-                                            margin-bottom: 0;
-                                        }
-                                    }
+                                h3 {
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    color: $PrimaryOne;
                                 }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
 
-    // `xl` applies to large devices (desktops, less than 1200px)
-    @media (min-width: 1199.98px) {
-        .FNV-HomeWhy {
-            padding: 4rem 0;
-            background-color: $PrimaryBackgroundTwo;
-
-            .container {
-                h2 {
-                    font-size: 36px;
-                    font-weight: 300;
-                    color: $PrimaryOne;
-                    margin-bottom: 2rem;
-                }
-
-                .row {
-                    .col-md-6 {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        justify-content: center;
-
-                        p {
-                            font-size: 20px;
-                            font-weight: 400;
-                            color: $PrimaryOne;
-                        }
-
-                        &:nth-child(2) {
-                            padding-right: 4rem;
-
-                            .row {
-                                &.card {
-                                    width: 100%;
-                                    padding: 1rem;
-                                    border-width: 0;
-                                    border-radius: 0;
-                                    margin-bottom: 1rem;
-                                    align-items: center;
-                                    flex-direction: row;
-                                    background-color: $WhiteColor;
-
-                                    .col-2 {
-                                        svg {
-                                            width: 100%;
-                                        }
-                                    }
-
-                                    .col-9 {
-                                        h3 {
-                                            font-size: 22px;
-                                            font-weight: 300;
-                                        }
-
-                                        p {
-                                            font-size: 14px;
-                                            font-weight: 300;
-                                            margin-bottom: 0;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    // XX-Large devices (larger desktops, 1400px and up)
-    @media (min-width: 1400px) {
-        .FNV-HomeWhy {
-            padding: 4rem 0;
-
-            .container {
-                h2 {
-                    font-size: 48px;
-                    font-weight: 300;
-                    color: $PrimaryOne;
-                    margin-bottom: 2rem;
-                }
-
-                .row {
-                    .col-md-6 {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        justify-content: center;
-
-                        p {
-                            font-size: 20px;
-                            font-weight: 400;
-                            color: $PrimaryOne;
-                        }
-
-                        &:nth-child(2) {
-                            padding-left: 4rem;
-
-                            .row {
-                                &.card {
-                                    width: 100%;
-                                    padding: 1rem;
-                                    border-width: 0;
-                                    border-radius: 0;
-                                    margin-bottom: 1rem;
-                                    align-items: center;
-                                    flex-direction: row;
-                                    background-color: $WhiteColor;
-
-                                    h3 {
-                                        font-size: 24px;
-                                        font-weight: 300;
-                                    }
-
-                                    p {
-                                        font-size: 16px;
-                                        font-weight: 300;
-                                        margin-bottom: 0;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    // XXX-Large devices (larger desktops, 1920px and up)
-    @media (min-width: 1920px) {
-        .FNV-HomeWhy {
-            padding: 8rem 0;
-            background-color: $PrimaryBackgroundTwo;
-
-            .container {
-                h2 {
-                    font-size: 48px;
-                    font-weight: 300;
-                    color: $PrimaryOne;
-                    margin-bottom: 2rem;
-                }
-
-                .row {
-                    .col-md-6 {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        justify-content: center;
-
-                        p {
-                            font-size: 20px;
-                            font-weight: 400;
-                            color: $PrimaryOne;
-                        }
-
-                        &:nth-child(2) {
-                            padding-right: 4rem;
-
-                            .row {
-                                &.card {
-                                    width: 100%;
-                                    padding: 1rem;
-                                    border-width: 0;
-                                    border-radius: 0;
-                                    margin-bottom: 1rem;
-                                    align-items: center;
-                                    flex-direction: row;
-                                    background-color: $WhiteColor;
-
-                                    h3 {
-                                        font-size: 24px;
-                                        font-weight: 300;
-                                    }
-
-                                    p {
-                                        font-size: 16px;
-                                        font-weight: 300;
-                                        margin-bottom: 0;
-                                    }
+                                p {
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    margin-bottom: 0;
+                                    color: $PrimaryOne;
                                 }
                             }
                         }
@@ -486,78 +71,62 @@ body[dir='ltr'] {
     }
 }
 
-body[dir='rtl'] {
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+    .FNV-HomeWhy {
+        padding: 0;
+        background-color: $White;
 
-    // X-Small devices (portrait phones, less than 576px)
-    @media (max-width: 575.98px) {
-        .FNV-HomeWhy {
-            padding: 1rem;
-            background-color: $PrimaryBackgroundTwo;
+        .container {
+            padding: 2rem;
+            border-radius: 28px;
+            background-color: $PrimaryOne;
 
-            .container {
-                h2 {
-                    font-size: 20px;
-                    font-weight: 300;
-                    color: $PrimaryOne;
-                    margin-bottom: 1rem;
-                }
+            .row {
+                .col-md-6 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
 
-                .row {
-                    .col-md-6 {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        justify-content: center;
+                    h2 {
+                        font-size: 28px;
+                        font-weight: 600;
+                        color: $WhiteThree;
+                        margin-bottom: 1rem;
+                    }
 
-                        p {
-                            font-size: 14px;
-                            font-weight: 300;
-                            color: $PrimaryOne;
-                        }
+                    p {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: $WhiteThree;
+                    }
 
-                        &:nth-child(2) {
-                            padding-left: 1rem;
-                            padding-right: 1rem;
+                    &:nth-child(2) {
+                        padding-right: 4rem;
 
-                            .row {
-                                margin: 0 auto;
+                        .row {
+                            &.card {
+                                width: 100%;
+                                padding: 1rem;
+                                border-width: 0;
+                                border-radius: 16px;
+                                margin-bottom: 2rem;
+                                align-items: center;
+                                flex-direction: row;
+                                background-color: $WhiteColor;
 
-                                &.card {
-                                    width: 100%;
-                                    padding: .5rem;
-                                    flex-direction: row;
-                                    margin-bottom: .5rem;
+                                h3 {
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    color: $PrimaryOne;
+                                }
 
-                                    .col-2 {
-                                        padding: 0;
-                                        width: 16.66666667%;
-
-                                        svg {
-                                            width: 100%;
-                                        }
-                                    }
-
-                                    .col-9 {
-                                        width: 75%;
-                                        padding: 1rem;
-                                        border-width: 0;
-                                        border-radius: 0;
-                                        margin-bottom: 0rem;
-                                        align-items: center;
-                                        flex-direction: row;
-                                        background-color: $WhiteColor;
-
-                                        h3 {
-                                            font-size: 16px;
-                                            font-weight: 300;
-                                        }
-
-                                        p {
-                                            font-size: 12px;
-                                            font-weight: 300;
-                                            margin-bottom: 0;
-                                        }
-                                    }
+                                p {
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    margin-bottom: 0;
+                                    color: $PrimaryOne;
                                 }
                             }
                         }
@@ -566,74 +135,68 @@ body[dir='rtl'] {
             }
         }
     }
+}
 
-    // `sm` applies to x-small devices (portrait phones, less than 576px)
-    @media (min-width: 575.98px) and (max-width: 767.98px) {
-        .FNV-HomeWhy {
-            padding: 1rem;
-            background-color: $PrimaryBackgroundTwo;
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+    .FNV-HomeWhy {
+        padding: 0;
+        background-color: $White;
 
-            .container {
-                h2 {
-                    font-size: 22px;
-                    font-weight: 300;
-                    color: $PrimaryOne;
-                    margin-bottom: 1rem;
-                }
+        .container {
+            padding: 2rem;
+            border-radius: 28px;
+            background-color: $PrimaryOne;
 
-                .row {
-                    .col-md-6 {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        justify-content: center;
+            .row {
+                .col-md-6 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
 
-                        p {
-                            font-size: 14px;
-                            font-weight: 300;
-                            color: $PrimaryOne;
-                        }
+                    h2 {
+                        font-size: 28px;
+                        font-weight: 600;
+                        color: $WhiteThree;
+                        margin-bottom: 1rem;
+                    }
 
-                        &:nth-child(2) {
-                            padding-right: 0rem;
+                    p {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: $WhiteThree;
+                    }
 
-                            .row {
-                                &.card {
-                                    width: 100%;
-                                    padding: .5rem;
-                                    margin-bottom: 1rem;
-                                    flex-direction: row;
+                    &:nth-child(2) {
+                        padding-right: 4rem;
 
-                                    .col-2 {
-                                        padding: 0;
-                                        width: 16.66666667%;
+                        .row {
+                            &.card {
+                                width: 100%;
+                                padding: 1rem;
+                                border-width: 0;
+                                border-radius: 16px;
+                                margin-bottom: 2rem;
+                                align-items: center;
+                                flex-direction: row;
+                                background-color: $WhiteColor;
 
-                                        svg {
-                                            width: 100%;
-                                        }
-                                    }
+                                svg{
+                                    width: 20px;
+                                }
 
-                                    .col-9 {
-                                        width: 75%;
-                                        padding: 1rem;
-                                        border-width: 0;
-                                        border-radius: 0;
-                                        margin-bottom: 0rem;
-                                        align-items: center;
-                                        flex-direction: row;
-                                        background-color: $WhiteColor;
+                                h3 {
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    color: $PrimaryOne;
+                                }
 
-                                        h3 {
-                                            font-size: 16px;
-                                            font-weight: 300;
-                                        }
-
-                                        p {
-                                            font-size: 12px;
-                                            font-weight: 300;
-                                            margin-bottom: 0;
-                                        }
-                                    }
+                                p {
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    margin-bottom: 0;
+                                    color: $PrimaryOne;
                                 }
                             }
                         }
@@ -642,72 +205,64 @@ body[dir='rtl'] {
             }
         }
     }
+}
 
-    // `md` applies to small devices (landscape phones, less than 768px)
-    @media (min-width: 767.98px) and (max-width: 991.98px) {
-        .FNV-HomeWhy {
-            padding: 2rem 0;
-            background-color: $PrimaryBackgroundTwo;
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (min-width: 991.98px) {
+    .FNV-HomeWhy {
+        padding: 0;
+        background-color: $White;
 
-            .container {
-                h2 {
-                    font-size: 22px;
-                    font-weight: 300;
-                    color: $PrimaryOne;
-                    margin-bottom: 1rem;
-                }
+        .container {
+            padding: 2rem;
+            border-radius: 28px;
+            background-color: $PrimaryOne;
 
-                .row {
-                    .col-md-6 {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        justify-content: center;
+            .row {
+                .col-md-6 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
 
-                        p {
-                            font-size: 14px;
-                            font-weight: 300;
-                            color: $PrimaryOne;
-                        }
+                    h2 {
+                        font-size: 28px;
+                        font-weight: 600;
+                        color: $WhiteThree;
+                        margin-bottom: 1rem;
+                    }
 
-                        &:nth-child(2) {
-                            padding-right: 4rem;
+                    p {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: $WhiteThree;
+                    }
 
-                            .row {
-                                &.card {
-                                    padding: .5rem;
-                                    flex-direction: row;
+                    &:nth-child(2) {
+                        padding-right: 4rem;
 
-                                    .col-2 {
-                                        padding: 0;
-                                        width: 16.66666667%;
+                        .row {
+                            &.card {
+                                width: 100%;
+                                padding: 1rem;
+                                border-width: 0;
+                                border-radius: 16px;
+                                margin-bottom: 2rem;
+                                align-items: center;
+                                flex-direction: row;
+                                background-color: $WhiteColor;
 
-                                        svg {
-                                            width: 100%;
-                                        }
-                                    }
+                                h3 {
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    color: $PrimaryOne;
+                                }
 
-                                    .col-9 {
-                                        width: 75%;
-                                        padding: 1rem;
-                                        border-width: 0;
-                                        border-radius: 0;
-                                        margin-bottom: 0rem;
-                                        align-items: center;
-                                        flex-direction: row;
-                                        background-color: $WhiteColor;
-
-                                        h3 {
-                                            font-size: 16px;
-                                            font-weight: 300;
-                                        }
-
-                                        p {
-                                            font-size: 12px;
-                                            font-weight: 300;
-                                            margin-bottom: 0;
-                                        }
-                                    }
+                                p {
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    margin-bottom: 0;
+                                    color: $PrimaryOne;
                                 }
                             }
                         }
@@ -716,58 +271,64 @@ body[dir='rtl'] {
             }
         }
     }
+}
 
-    // `lg` applies to medium devices (tablets, less than 992px)
-    @media (min-width: 991.98px) {
-        .FNV-HomeWhy {
-            padding: 2rem 0;
-            background-color: $PrimaryBackgroundTwo;
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (min-width: 1199.98px) {
+    .FNV-HomeWhy {
+        padding: 0;
+        background-color: $White;
 
-            .container {
-                h2 {
-                    font-size: 36px;
-                    font-weight: 300;
-                    color: $PrimaryOne;
-                    margin-bottom: 1rem;
-                }
+        .container {
+            padding: 2rem;
+            border-radius: 28px;
+            background-color: $PrimaryOne;
 
-                .row {
-                    .col-md-6 {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        justify-content: center;
+            .row {
+                .col-md-6 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
 
-                        p {
-                            font-size: 14px;
-                            font-weight: 300;
-                            color: $PrimaryOne;
-                        }
+                    h2 {
+                        font-size: 28px;
+                        font-weight: 600;
+                        color: $WhiteThree;
+                        margin-bottom: 1rem;
+                    }
 
-                        &:nth-child(2) {
-                            padding-right: 4rem;
+                    p {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: $WhiteThree;
+                    }
 
-                            .row {
-                                &.card {
-                                    width: 100%;
-                                    padding: 1rem;
-                                    border-width: 0;
-                                    border-radius: 0;
-                                    margin-bottom: 1rem;
-                                    align-items: center;
-                                    flex-direction: row;
-                                    background-color: $WhiteColor;
+                    &:nth-child(2) {
+                        padding-right: 4rem;
 
-                                    h3 {
-                                        font-size: 20px;
-                                        font-weight: 300;
-                                    }
+                        .row {
+                            &.card {
+                                width: 100%;
+                                padding: 1rem;
+                                border-width: 0;
+                                border-radius: 16px;
+                                margin-bottom: 2rem;
+                                align-items: center;
+                                flex-direction: row;
+                                background-color: $WhiteColor;
 
-                                    p {
-                                        font-size: 12px;
-                                        font-weight: 300;
-                                        margin-bottom: 0;
-                                    }
+                                h3 {
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    color: $PrimaryOne;
+                                }
+
+                                p {
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    margin-bottom: 0;
+                                    color: $PrimaryOne;
                                 }
                             }
                         }
@@ -776,58 +337,64 @@ body[dir='rtl'] {
             }
         }
     }
+}
 
-    // `xl` applies to large devices (desktops, less than 1200px)
-    @media (min-width: 1199.98px) {
-        .FNV-HomeWhy {
-            padding: 4rem 0;
-            background-color: $PrimaryBackgroundTwo;
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    .FNV-HomeWhy {
+        padding: 0;
+        background-color: $White;
 
-            .container {
-                h2 {
-                    font-size: 36px;
-                    font-weight: 300;
-                    color: $PrimaryOne;
-                    margin-bottom: 2rem;
-                }
+        .container {
+            padding: 2rem;
+            border-radius: 28px;
+            background-color: $PrimaryOne;
 
-                .row {
-                    .col-md-6 {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        justify-content: center;
+            .row {
+                .col-md-6 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
 
-                        p {
-                            font-size: 20px;
-                            font-weight: 400;
-                            color: $PrimaryOne;
-                        }
+                    h2 {
+                        font-size: 28px;
+                        font-weight: 600;
+                        color: $WhiteThree;
+                        margin-bottom: 1rem;
+                    }
 
-                        &:nth-child(2) {
-                            padding-right: 4rem;
+                    p {
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: $WhiteThree;
+                    }
 
-                            .row {
-                                &.card {
-                                    width: 100%;
-                                    padding: 1rem;
-                                    border-width: 0;
-                                    border-radius: 0;
-                                    margin-bottom: 1rem;
-                                    align-items: center;
-                                    flex-direction: row;
-                                    background-color: $WhiteColor;
+                    &:nth-child(2) {
+                        padding-right: 4rem;
 
-                                    h3 {
-                                        font-size: 22px;
-                                        font-weight: 300;
-                                    }
+                        .row {
+                            &.card {
+                                width: 100%;
+                                padding: 1rem;
+                                border-width: 0;
+                                border-radius: 16px;
+                                margin-bottom: 2rem;
+                                align-items: center;
+                                flex-direction: row;
+                                background-color: $WhiteColor;
 
-                                    p {
-                                        font-size: 14px;
-                                        font-weight: 300;
-                                        margin-bottom: 0;
-                                    }
+                                h3 {
+                                    font-size: 20px;
+                                    font-weight: 700;
+                                    color: $PrimaryOne;
+                                }
+
+                                p {
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    margin-bottom: 0;
+                                    color: $PrimaryOne;
                                 }
                             }
                         }
@@ -836,118 +403,64 @@ body[dir='rtl'] {
             }
         }
     }
+}
 
-    // XX-Large devices (larger desktops, 1400px and up)
-    @media (min-width: 1400px) {
-        .FNV-HomeWhy {
-            padding: 6rem 0;
-            background-color: $PrimaryBackgroundTwo;
+// XXX-Large devices (larger desktops, 1920px and up)
+@media (min-width: 1920px) {
+    .FNV-HomeWhy {
+        padding: 0;
+        background-color: $White;
 
-            .container {
-                h2 {
-                    font-size: 48px;
-                    font-weight: 300;
-                    color: $PrimaryOne;
-                    margin-bottom: 2rem;
-                }
+        .container {
+            padding: 4rem;
+            border-radius: 28px;
+            background-color: $PrimaryOne;
 
-                .row {
-                    .col-md-6 {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        justify-content: center;
+            .row {
+                .col-md-6 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
 
-                        p {
-                            font-size: 20px;
-                            font-weight: 400;
-                            color: $PrimaryOne;
-                        }
-
-                        &:nth-child(2) {
-                            padding-right: 4rem;
-
-                            .row {
-                                &.card {
-                                    width: 100%;
-                                    padding: 1rem;
-                                    border-width: 0;
-                                    border-radius: 0;
-                                    margin-bottom: 1rem;
-                                    align-items: center;
-                                    flex-direction: row;
-                                    background-color: $WhiteColor;
-
-                                    h3 {
-                                        font-size: 24px;
-                                        font-weight: 300;
-                                    }
-
-                                    p {
-                                        font-size: 16px;
-                                        font-weight: 300;
-                                        margin-bottom: 0;
-                                    }
-                                }
-                            }
-                        }
+                    h2 {
+                        font-size: 35px;
+                        font-weight: 600;
+                        color: $WhiteThree;
+                        margin-bottom: 1rem;
                     }
-                }
-            }
-        }
-    }
 
-    // XXX-Large devices (larger desktops, 1920px and up)
-    @media (min-width: 1920px) {
-        .FNV-HomeWhy {
-            padding: 8rem 0;
-            background-color: $PrimaryBackgroundTwo;
+                    p {
+                        font-size: 20px;
+                        font-weight: 400;
+                        color: $WhiteThree;
+                    }
 
-            .container {
-                h2 {
-                    font-size: 48px;
-                    font-weight: 300;
-                    color: $PrimaryOne;
-                    margin-bottom: 2rem;
-                }
+                    &:nth-child(2) {
+                        padding-right: 4rem;
 
-                .row {
-                    .col-md-6 {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        justify-content: center;
+                        .row {
+                            &.card {
+                                width: 100%;
+                                padding: 1rem;
+                                border-width: 0;
+                                border-radius: 16px;
+                                margin-bottom: 2rem;
+                                align-items: center;
+                                flex-direction: row;
+                                background-color: $WhiteColor;
 
-                        p {
-                            font-size: 20px;
-                            font-weight: 400;
-                            color: $PrimaryOne;
-                        }
+                                h3 {
+                                    font-size: 24px;
+                                    font-weight: 700;
+                                    color: $PrimaryOne;
+                                }
 
-                        &:nth-child(2) {
-                            padding-right: 4rem;
-
-                            .row {
-                                &.card {
-                                    width: 100%;
-                                    padding: 1rem;
-                                    border-width: 0;
-                                    border-radius: 0;
-                                    margin-bottom: 1rem;
-                                    align-items: center;
-                                    flex-direction: row;
-                                    background-color: $WhiteColor;
-
-                                    h3 {
-                                        font-size: 24px;
-                                        font-weight: 300;
-                                    }
-
-                                    p {
-                                        font-size: 16px;
-                                        font-weight: 300;
-                                        margin-bottom: 0;
-                                    }
+                                p {
+                                    font-size: 20px;
+                                    font-weight: 400;
+                                    margin-bottom: 0;
+                                    color: $PrimaryOne;
                                 }
                             }
                         }

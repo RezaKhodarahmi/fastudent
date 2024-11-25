@@ -1,18 +1,17 @@
 @import './variables';
 
 .FNV-Btn {
-  padding: 5px 15px;
-  font-size: 14px;
-  line-height: 22px;
-  font-weight: 400;
-  display: inline-block;
-  text-align: center;
   border-width: 0;
-  border-radius: 0px !important;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px 15px;
+  line-height: 22px;
+  text-align: center;
+  border-radius: 8px;
+  display: inline-block;
 
   &.BtnOutline {
     background-color: transparent;
-    border-radius: 10px;
 
     &.PrimaryColor {
       border: 1px solid $PrimaryOne;
@@ -53,11 +52,9 @@
   }
 
   &.BtnPrimary {
+    color: $WhiteColor;
     background-color: $PrimaryOne;
     border: 1px solid $PrimaryOne;
-    color: $WhiteColor;
-    border-radius: 0.25rem;
-    border-radius: 10px;
 
     &:hover {
       background-color: $WhiteColor;
@@ -148,7 +145,6 @@
 
     &.BtnOutline {
       background-color: transparent;
-      border-radius: 10px;
 
       &.PrimaryColor {
         border: 2px solid $PrimaryColor;
@@ -157,9 +153,8 @@
     }
 
     &.BtnPrimary {
-      background-color: $PrimaryColor;
       color: $WhiteColor;
-      border-radius: 10px;
+      background-color: $PrimaryColor;
     }
 
     &.PrimaryColor {

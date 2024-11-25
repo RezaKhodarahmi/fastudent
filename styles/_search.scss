@@ -280,15 +280,16 @@
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
     .FNV-SearchBar {
-        padding: 5rem;
+        padding: 1rem;
         background-color: $White;
 
         .container {
             .row {
-                justify-content: center;
+                padding: 1rem;
+                justify-content: flex-end;
 
                 .FNV-Search {
-                    width: 50%;
+                    width: 25%;
                     padding: .5rem;
                     border-radius: 10px;
                     background-color: $White;
@@ -336,15 +337,16 @@
 // XXX-Large devices (larger desktops, 1920px and up)
 @media (min-width: 1920px) {
     .FNV-SearchBar {
-        padding: 5rem;
+        padding: 2rem;
         background-color: $White;
 
         .container {
             .row {
-                justify-content: center;
+                padding: 1rem;
+                justify-content: flex-end;
 
                 .FNV-Search {
-                    width: 50%;
+                    width: 25%;
                     padding: .5rem;
                     border-radius: 10px;
                     background-color: $White;

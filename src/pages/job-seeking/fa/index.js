@@ -6,7 +6,7 @@ import { appConfig } from 'src/configs/appConfig'
 import { useTranslation } from 'react-i18next'
 
 // ** Import course section
-import CourseDeskSingle from 'src/views/swiper/courseDeskSingle'
+import CourseDeskSingle from 'src/views/swiper/courseSection'
 import CourseMobileSingle from 'src/views/swiper/courseMobileSingle'
 
 // ** Import Swiper React components
@@ -569,7 +569,7 @@ const Index = () => {
                 <div id='Question2' className='accordion-collapse collapse' data-bs-parent='#FAQJob'>
                   <div className='accordion-body'>
                     <p>
-                       تنها مدرک هایی که برای گرفتن کار کافی هستند لایسنسها هستند. مثل مهندسی پی انچ. هیچ سرتیفیکیت دیگه
+                      تنها مدرک هایی که برای گرفتن کار کافی هستند لایسنسها هستند. مثل مهندسی پی انچ. هیچ سرتیفیکیت دیگه
                       ای شرط کافی نیست. در مورد سوال شما پی ام پی شرط لازم (برخی مواقع شرط اختیاری) گرفتن شغلهای مرتبط
                       به پروژه است اما کافی نیست
                     </p>

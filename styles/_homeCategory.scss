@@ -3,20 +3,20 @@
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
   .FNV-Top_Categories {
+    padding: 1rem;
     background-color: $WhiteColor;
-    padding: 4rem 0;
 
     .container {
+      h2 {
+        font-size: 28px;
+        font-weight: 800;
+        color: $PrimaryOne;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
       .row {
         justify-content: center;
-
-        h2 {
-          font-size: 35px;
-          font-weight: 800;
-          color: $PrimaryOne;
-          text-align: center;
-          margin-bottom: 5rem;
-        }
 
         .col-md-3 {
           .card {
@@ -24,21 +24,21 @@
             padding: 2rem;
             border-width: 0;
             border-radius: 27px;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
             align-items: center;
             flex-direction: column;
             justify-content: center;
             background-color: $WhiteThree;
 
             svg {
-              width: 80px;
-              margin-bottom: 2rem;
+              width: 150px;
             }
 
             h3 {
-              font-size: 14px;
+              font-size: 18px;
+              margin: 1rem 0 0;
               font-weight: 700;
-              color: $PrimaryOne;
+              color: $PrimaryOne; 
             }
 
             &:hover {
@@ -62,17 +62,13 @@
 
   .FNV-Mission {
     padding: 1rem;
-    margin-top: 2rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url("/images/pages/mission.jpg");
+    background-color: $White;
 
     .container {
       h2 {
         z-index: 4;
-        font-size: 35px;
-        font-weight: 600;
+        font-size: 28px;
+        font-weight: 800;
         color: $PrimaryOne;
         text-align: center;
         margin-bottom: 2rem;
@@ -80,16 +76,21 @@
 
       .row {
         .col-md-4 {
+          padding: 0;
+
           .card {
             display: flex;
             padding: 2rem;
             margin-top: 2rem;
-            min-height: 400px;
-            border-radius: 0px;
+            min-height: unset;
+            border-radius: 28px;
             flex-direction: column;
-            background-color: transparent;
+            background-size: cover;
+            background-repeat: no-repeat;
             border: 1px solid $PrimaryOne;
             justify-content: space-between;
+            background-position: center center;
+            background-image: url("/images/pages/mission.jpg");
 
             svg {
               margin-bottom: 1rem;
@@ -105,21 +106,22 @@
             p {
               font-size: 14px;
               font-weight: 500;
-              line-height: 28px;
+              line-height: 22px;
+              min-height: unset;
               color: $PrimaryOne;
             }
 
             a {
               color: $White;
               display: flex;
-              padding: .5rem;
-              border-radius: 0px;
+              padding: 1rem;
               align-items: center;
               justify-content: center;
+              border-radius: 16px!important;
               background-color: $PrimaryOne;
 
               span {
-                font-size: 12px;
+                font-size: 14px;
                 font-weight: 400;
               }
 
@@ -143,16 +145,16 @@
     padding: 4rem 0;
 
     .container {
+      h2 {
+        font-size: 35px;
+        font-weight: 800;
+        color: $PrimaryOne;
+        text-align: center;
+        margin-bottom: 5rem;
+      }
+
       .row {
         justify-content: center;
-
-        h2 {
-          font-size: 35px;
-          font-weight: 800;
-          color: $PrimaryOne;
-          text-align: center;
-          margin-bottom: 5rem;
-        }
 
         .col-md-3 {
           .card {
@@ -160,21 +162,21 @@
             padding: 2rem;
             border-width: 0;
             border-radius: 27px;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
             align-items: center;
             flex-direction: column;
             justify-content: center;
             background-color: $WhiteThree;
 
             svg {
-              width: 80px;
-              margin-bottom: 2rem;
+              width: 150px;
             }
 
             h3 {
-              font-size: 14px;
+              font-size: 24px;
+              margin: 1rem 0 0;
               font-weight: 700;
-              color: $PrimaryOne;
+              color: $PrimaryOne; 
             }
 
             &:hover {
@@ -197,12 +199,8 @@
   }
 
   .FNV-Mission {
-    padding: 2rem 0;
-    margin-top: 2rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url("/images/pages/mission.jpg");
+    padding: 4rem 0;
+    background-color: $White;
 
     .container {
       h2 {
@@ -220,12 +218,15 @@
             display: flex;
             padding: 2rem;
             margin-top: 2rem;
-            min-height: 400px;
-            border-radius: 0px;
+            min-height: unset;
+            border-radius: 28px;
             flex-direction: column;
-            background-color: transparent;
+            background-size: cover;
+            background-repeat: no-repeat;
             border: 1px solid $PrimaryOne;
             justify-content: space-between;
+            background-position: center center;
+            background-image: url("/images/pages/mission.jpg");
 
             svg {
               margin-bottom: 1rem;
@@ -241,21 +242,22 @@
             p {
               font-size: 14px;
               font-weight: 500;
-              line-height: 28px;
+              line-height: 22px;
+              min-height: unset;
               color: $PrimaryOne;
             }
 
             a {
               color: $White;
               display: flex;
-              padding: .5rem;
-              border-radius: 0px;
+              padding: 1rem;
               align-items: center;
               justify-content: center;
+              border-radius: 16px!important;
               background-color: $PrimaryOne;
 
               span {
-                font-size: 12px;
+                font-size: 14px;
                 font-weight: 400;
               }
 
@@ -279,16 +281,16 @@
     padding: 4rem 0;
 
     .container {
+      h2 {
+        font-size: 35px;
+        font-weight: 800;
+        color: $PrimaryOne;
+        text-align: center;
+        margin-bottom: 5rem;
+      }
+
       .row {
         justify-content: center;
-
-        h2 {
-          font-size: 35px;
-          font-weight: 800;
-          color: $PrimaryOne;
-          text-align: center;
-          margin-bottom: 5rem;
-        }
 
         .col-md-3 {
           .card {
@@ -303,14 +305,14 @@
             background-color: $WhiteThree;
 
             svg {
-              width: 80px;
-              margin-bottom: 2rem;
+              width: 150px;
             }
 
             h3 {
-              font-size: 14px;
+              font-size: 16px;
+              margin: 1rem 0 0;
               font-weight: 700;
-              color: $PrimaryOne;
+              color: $PrimaryOne; 
             }
 
             &:hover {
@@ -333,11 +335,8 @@
   }
 
   .FNV-Mission {
-    padding: 2rem 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url("/images/pages/mission.jpg");
+    padding: 4rem 0;
+    background-color: $White;
 
     .container {
       h2 {
@@ -355,12 +354,15 @@
             display: flex;
             padding: 1rem;
             margin-top: 2rem;
-            min-height: 650px;
-            border-radius: 0px;
+            min-height: 600px;
+            border-radius: 28px;
             flex-direction: column;
-            background-color: transparent;
+            background-size: cover;
+            background-repeat: no-repeat;
             border: 1px solid $PrimaryOne;
             justify-content: space-between;
+            background-position: center center;
+            background-image: url("/images/pages/mission.jpg");
 
             svg {
               margin-bottom: 1rem;
@@ -376,21 +378,22 @@
             p {
               font-size: 14px;
               font-weight: 500;
-              line-height: 28px;
+              line-height: 22px;
+              min-height: 270px;
               color: $PrimaryOne;
             }
 
             a {
               color: $White;
               display: flex;
-              padding: .5rem;
-              border-radius: 0px;
+              padding: 1rem;
               align-items: center;
               justify-content: center;
+              border-radius: 16px!important;
               background-color: $PrimaryOne;
 
               span {
-                font-size: 12px;
+                font-size: 14px;
                 font-weight: 400;
               }
 
@@ -414,16 +417,16 @@
     padding: 4rem 0;
 
     .container {
+      h2 {
+        font-size: 35px;
+        font-weight: 800;
+        color: $PrimaryOne;
+        text-align: center;
+        margin-bottom: 5rem;
+      }
+
       .row {
         justify-content: center;
-
-        h2 {
-          font-size: 35px;
-          font-weight: 800;
-          color: $PrimaryOne;
-          text-align: center;
-          margin-bottom: 5rem;
-        }
 
         .col-md-3 {
           .card {
@@ -438,14 +441,14 @@
             background-color: $WhiteThree;
 
             svg {
-              width: 80px;
-              margin-bottom: 2rem;
+              width: 150px;
             }
 
             h3 {
-              font-size: 18px;
+              font-size: 24px;
+              margin: 1rem 0 0;
               font-weight: 700;
-              color: $PrimaryOne;
+              color: $PrimaryOne; 
             }
 
             &:hover {
@@ -468,11 +471,8 @@
   }
 
   .FNV-Mission {
-    padding: 2rem 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url("/images/pages/mission.jpg");
+    padding: 4rem 0;
+    background-color: $White;
 
     .container {
       h2 {
@@ -488,14 +488,17 @@
         .col-md-4 {
           .card {
             display: flex;
-            padding: 2rem;
+            padding: 1rem;
             margin-top: 2rem;
             min-height: 600px;
-            border-radius: 0px;
+            border-radius: 28px;
             flex-direction: column;
-            background-color: transparent;
+            background-size: cover;
+            background-repeat: no-repeat;
             border: 1px solid $PrimaryOne;
             justify-content: space-between;
+            background-position: center center;
+            background-image: url("/images/pages/mission.jpg");
 
             svg {
               margin-bottom: 1rem;
@@ -511,21 +514,22 @@
             p {
               font-size: 14px;
               font-weight: 500;
-              line-height: 28px;
+              line-height: 36px;
+              min-height: 270px;
               color: $PrimaryOne;
             }
 
             a {
               color: $White;
               display: flex;
-              padding: 1rem;
-              border-radius: 0px;
+              padding: 1rem 2rem;
               align-items: center;
               justify-content: center;
+              border-radius: 16px!important;
               background-color: $PrimaryOne;
 
               span {
-                font-size: 14px;
+                font-size: 18px;
                 font-weight: 400;
               }
 
@@ -549,16 +553,16 @@
     padding: 4rem 0;
 
     .container {
+      h2 {
+        font-size: 35px;
+        font-weight: 800;
+        color: $PrimaryOne;
+        text-align: center;
+        margin-bottom: 5rem;
+      }
+
       .row {
         justify-content: center;
-
-        h2 {
-          font-size: 35px;
-          font-weight: 800;
-          color: $PrimaryOne;
-          text-align: center;
-          margin-bottom: 5rem;
-        }
 
         .col-md-3 {
           .card {
@@ -573,13 +577,14 @@
             background-color: $WhiteThree;
 
             svg {
-              width: 100px;
+              width: 150px;
             }
 
             h3 {
               font-size: 24px;
+              margin: 1rem 0 0;
               font-weight: 700;
-              color: $PrimaryOne;
+              color: $PrimaryOne; 
             }
 
             &:hover {
@@ -603,16 +608,13 @@
 
   .FNV-Mission {
     padding: 4rem 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url("/images/pages/mission.jpg");
+    background-color: $White;
 
     .container {
       h2 {
         z-index: 4;
         font-size: 35px;
-        font-weight: 600;
+        font-weight: 800;
         color: $PrimaryOne;
         text-align: center;
         margin-bottom: 2rem;
@@ -621,29 +623,32 @@
       .row {
         .col-md-4 {
           .card {
-            margin-top: 2rem;
-            min-height: 720px;
-            padding: 2rem;
-            border-radius: 0px;
             display: flex;
+            padding: 1rem;
+            margin-top: 2rem;
+            min-height: 540px;
+            border-radius: 28px;
             flex-direction: column;
-            background-color: transparent;
+            background-size: cover;
+            background-repeat: no-repeat;
             border: 1px solid $PrimaryOne;
             justify-content: space-between;
+            background-position: center center;
+            background-image: url("/images/pages/mission.jpg");
 
             svg {
               margin-bottom: 1rem;
             }
 
             h3 {
-              font-size: 24px;
+              font-size: 16px;
               font-weight: 600;
               color: $PrimaryOne;
               margin-bottom: 1rem;
             }
 
             p {
-              font-size: 16px;
+              font-size: 14px;
               font-weight: 500;
               line-height: 36px;
               min-height: 270px;
@@ -654,9 +659,9 @@
               color: $White;
               display: flex;
               padding: 1rem 2rem;
-              border-radius: 0px;
               align-items: center;
               justify-content: center;
+              border-radius: 16px!important;
               background-color: $PrimaryOne;
 
               span {
@@ -684,16 +689,16 @@
     padding: 4rem 0;
 
     .container {
+      h2 {
+        font-size: 35px;
+        font-weight: 800;
+        color: $PrimaryOne;
+        text-align: center;
+        margin-bottom: 5rem;
+      }
+
       .row {
         justify-content: center;
-
-        h2 {
-          font-size: 35px;
-          font-weight: 800;
-          color: $PrimaryOne;
-          text-align: center;
-          margin-bottom: 5rem;
-        }
 
         .col-md-3 {
           .card {
@@ -738,16 +743,13 @@
 
   .FNV-Mission {
     padding: 4rem 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url("/images/pages/mission.jpg");
+    background-color: $White;
 
     .container {
       h2 {
         z-index: 4;
         font-size: 35px;
-        font-weight: 600;
+        font-weight: 800;
         color: $PrimaryOne;
         text-align: center;
         margin-bottom: 2rem;
@@ -756,29 +758,32 @@
       .row {
         .col-md-4 {
           .card {
-            margin-top: 2rem;
-            min-height: 720px;
-            padding: 4rem 3rem;
-            border-radius: 0px;
             display: flex;
+            margin-top: 2rem;
+            min-height: 640px;
+            padding: 4rem 3rem;
+            border-radius: 28px;
             flex-direction: column;
-            background-color: transparent;
+            background-size: cover;
+            background-repeat: no-repeat;
             border: 1px solid $PrimaryOne;
             justify-content: space-between;
+            background-position: center center;
+            background-image: url("/images/pages/mission.jpg");
 
             svg {
               margin-bottom: 1rem;
             }
 
             h3 {
-              font-size: 24px;
+              font-size: 16px;
               font-weight: 600;
               color: $PrimaryOne;
               margin-bottom: 1rem;
             }
 
             p {
-              font-size: 16px;
+              font-size: 14px;
               font-weight: 500;
               line-height: 36px;
               min-height: 270px;
@@ -789,9 +794,9 @@
               color: $White;
               display: flex;
               padding: 1rem 2rem;
-              border-radius: 0px;
               align-items: center;
               justify-content: center;
+              border-radius: 16px!important;
               background-color: $PrimaryOne;
 
               span {
@@ -873,16 +878,13 @@
 
   .FNV-Mission {
     padding: 4rem 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url("/images/pages/mission.jpg");
+    background-color: $White;
 
     .container {
       h2 {
         z-index: 4;
         font-size: 35px;
-        font-weight: 600;
+        font-weight: 800;
         color: $PrimaryOne;
         text-align: center;
         margin-bottom: 2rem;
@@ -891,15 +893,18 @@
       .row {
         .col-md-4 {
           .card {
+            display: flex;
             margin-top: 2rem;
             min-height: 620px;
             padding: 4rem 3rem;
-            border-radius: 0px;
-            display: flex;
+            border-radius: 28px;
             flex-direction: column;
-            background-color: transparent;
+            background-size: cover;
+            background-repeat: no-repeat;
             border: 1px solid $PrimaryOne;
             justify-content: space-between;
+            background-position: center center;
+            background-image: url("/images/pages/mission.jpg");
 
             svg {
               margin-bottom: 1rem;
@@ -924,9 +929,9 @@
               color: $White;
               display: flex;
               padding: 1rem 2rem;
-              border-radius: 0px;
               align-items: center;
               justify-content: center;
+              border-radius: 16px!important;
               background-color: $PrimaryOne;
 
               span {

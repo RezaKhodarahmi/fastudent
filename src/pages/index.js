@@ -27,12 +27,8 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 import SingleDeskBlog from 'src/views/blog/singleDeskPost'
 import SingleMobileBlog from 'src/views/blog/singleMobileBlog'
 
-// ** Import course section
-import CourseDeskSingle from 'src/views/swiper/courseDeskSingle'
-import CourseMobileSingle from 'src/views/swiper/courseMobileSingle'
-
 // ** Import Webinars section
-import WebinarsSection from 'src/views/swiper/webinarList'
+import WebinarsSection from 'src/views/newWebinars'
 
 import { fetchWebinarData } from 'src/store/apps/webinar'
 
@@ -40,6 +36,8 @@ import { fetchWebinarData } from 'src/store/apps/webinar'
 import CategoriesSection from 'src/views/categoriesSection'
 import AboutFanavaran from 'src/views/aboutFanavaran'
 import WhyFanavaran from 'src/views/whyFanavaran'
+import NewCourses from 'src/views/newCourses'
+import NewWorkshops from 'src/views/newWorkshops'
 
 import ConvertTime from 'src/views/convert-timezone'
 
@@ -127,23 +125,20 @@ const Home = () => {
       {/* Why Fanavaran */}
       <WhyFanavaran />
 
-      {/* New Courses */}
-      <section className='FNV-NewCourses'>
-        <h3>{t('courses-section-title')}</h3>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-12' dir='ltr'>
-              {/* Courses Desktop */}
-              <CourseDeskSingle courses={courses} addToCart={addToCart} />
-              {/* Courses Mobile */}
-              <CourseMobileSingle courses={courses} addToCart={addToCart} />
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* New Webinars */}
-      {Array.isArray(webinars) && <WebinarsSection webinars={webinars} />}
+      {/* New on Fanavaran */}
+      <section className='FNV-NewOnFanavaran'>
+        <h2>{t('lastest-fanavaran')}</h2>
+
+        {/* Courses */}
+        <NewCourses />
+
+        {/* Workshops */}
+        <NewWorkshops />
+
+        {/* New Webinars */}
+        {Array.isArray(webinars) && <WebinarsSection webinars={webinars} />}
+      </section>
 
       {/* Blog */}
       <section className='FNV-NewBlogs'>

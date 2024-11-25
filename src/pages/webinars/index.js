@@ -9,7 +9,7 @@ import YoutubeSection from 'src/views/youtubeSection'
 import SingleWebinar from 'src/views/webinar/singleWebinar'
 
 // ** Import Webinars section
-import WebinarsSection from 'src/views/swiper/webinarList'
+import WebinarsSection from 'src/views/newWebinars'
 
 // Import Translation
 import { useTranslation } from 'react-i18next'

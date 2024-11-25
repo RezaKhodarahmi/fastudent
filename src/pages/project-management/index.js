@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
 
 // ** Import course section
-import CourseDeskSingle from 'src/views/swiper/courseDeskSingle'
+import CourseDeskSingle from 'src/views/swiper/courseSection'
 import CourseMobileSingle from 'src/views/swiper/courseMobileSingle'
 
 // ** Import Swiper React components
