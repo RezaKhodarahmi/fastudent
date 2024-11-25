@@ -27,6 +27,17 @@ const incorrectAnswerStyle = {
   textDecoration: 'line-through'
 }
 
+// Fisher-Yates Shuffle Function
+const shuffleArray = array => {
+  const shuffled = [...array] // Clone the array to avoid mutating the original
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1)) // Random index
+    ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]] // Swap elements
+  }
+
+  return shuffled
+}
+
 const Test = () => {
   const router = useRouter()
   const dispatch = useDispatch()
@@ -45,7 +56,7 @@ const Test = () => {
   const [allowRetake, setAllowRetake] = useState(0)
   const [correctAnswersList, setCorrectAnswersList] = useState([])
   const [wrongAnswersList, setWrongAnswersList] = useState([])
-
+  const [shuffledQuestions, setShuffledQuestions] = useState([])
   const userEmail = localStorage.getItem('userData')
 
   useEffect(() => {
@@ -203,10 +214,14 @@ const Test = () => {
     setShowAnswerForQuestion(prev => ({ ...prev, [questionId]: true }))
   }
 
-  const paginatedQuestions = testData?.data?.data?.questions?.slice(
-    (currentPage - 1) * testsPerPage,
-    currentPage * testsPerPage
-  )
+  useEffect(() => {
+    if (testData?.data?.data?.questions) {
+      const randomizedQuestions = shuffleArray(testData.data.data.questions)
+      setShuffledQuestions(randomizedQuestions) // Save shuffled questions
+    }
+  }, [testData])
+
+  const paginatedQuestions = shuffledQuestions.slice((currentPage - 1) * testsPerPage, currentPage * testsPerPage)
 
   useEffect(() => {
     const url = `${BASE_URL}/test/result/save`
