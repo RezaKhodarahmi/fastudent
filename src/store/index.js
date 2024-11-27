@@ -12,6 +12,7 @@ import stripe from 'src/store/apps/stripe'
 import partially from 'src/store/apps/partially'
 import coupon from 'src/store/apps/coupon'
 import tests from 'src/store/apps/tests'
+import materials from 'src/store/apps/course-material'
 import referral from 'src/store/apps/referral'
 import cart from 'src/store/apps/cart'
 import cartItem from 'src/store/apps/cartItem'
@@ -30,6 +31,7 @@ export const store = configureStore({
     teacher,
     teacherStudent,
     course,
+    materials,
     category,
     search,
     coupon,

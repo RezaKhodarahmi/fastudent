@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { format, parseISO, isWithinInterval, intervalToDuration } from 'date-fns'
+import { parseISO, isWithinInterval, intervalToDuration } from 'date-fns'
 
 // ** Import Translation
 import { useTranslation } from 'react-i18next'
@@ -8,6 +8,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { setCartItems } from 'src/store/apps/cart'
 import { getCourseWithSlug, getEnrolledCourse } from 'src/store/apps/course'
+import { fetchCourseFaqs, fetchCourseTests, fetchCourseVideos } from 'src/store/apps/course-material'
 import { submitDemoRequest } from 'src/store/apps/demo-request'
 import { postNewComment } from 'src/store/apps/comment'
 import LinearProgress from '@mui/material/LinearProgress'
@@ -46,6 +47,7 @@ const Course = () => {
   const dispatch = useDispatch()
   const router = useRouter()
   const courseData = useSelector(state => state.course)
+  const { tests, videos, faqs } = useSelector(state => state.materials)
   const reqCourseDemo = useSelector(state => state.reqCourseDemo)
   const userEmail = localStorage.getItem('userData') || null
   const token = localStorage.getItem('accessToken') || null
@@ -107,6 +109,19 @@ const Course = () => {
   }, [dispatch, userEmail, token, course])
 
   useEffect(() => {
+    if (courseId) {
+      dispatch(fetchCourseFaqs(courseId))
+    }
+  }, [courseId])
+
+  useEffect(() => {
+    if (courseId) {
+      dispatch(fetchCourseTests(courseId))
+      dispatch(fetchCourseVideos(courseId))
+    }
+  }, [courseId])
+
+  useEffect(() => {
     if (commentSubmit && newComment) {
       dispatch(postNewComment({ content: newComment, email: JSON.parse(userEmail), courseId: courseId }))
       setCommentSubmit(false)
@@ -133,7 +148,6 @@ const Course = () => {
     // }
     if (courseData?.data?.data && courseData?.data?.data?.id) {
       setData(courseData?.data?.data)
-      setFaqs(courseData?.data?.faq)
       setType(courseData?.data?.data?.type)
       setCourseId(courseData?.data?.data?.id)
       setIsEnrolled(courseData?.data?.enrolled)
@@ -164,6 +178,12 @@ const Course = () => {
       setLoading(false)
     }
   }, [courseData, setData, setCourseId, setIsEnrolled, setRemindedDays, setSelectedCycle, setInCart])
+
+  useEffect(() => {
+    if (faqs) {
+      setFaqs(faqs)
+    }
+  }, [faqs])
 
   const onSubmit = data => {
     // Ensure CAPTCHA is validated
@@ -224,21 +244,26 @@ const Course = () => {
 
   useEffect(() => {
     if (courseData?.data?.data?.accessAll) {
-      // Filtered tests and videos based on cycleId
-      const filteredTests = data?.tests || []
-      const filteredVideos = data?.videos || []
-
-      setFilteredVideos(filteredVideos)
+      const filteredTests = tests || []
       setFilteredTests(filteredTests)
     } else {
-      // Filtered tests and videos based on cycleId
-      const filteredTests = data?.tests || []
-      const filteredVideos = data?.videos?.filter(video => parseInt(video.cycleId) == cycleId)
-
-      setFilteredVideos(filteredVideos)
+      const filteredTests = tests || []
       setFilteredTests(filteredTests)
     }
-  }, [cycleId, data])
+  }, [cycleId, tests])
+
+  useEffect(() => {
+    if (courseData?.data?.data?.accessAll) {
+      // Filtered tests and videos based on cycleId
+      const filteredVideos = videos || []
+
+      setFilteredVideos(filteredVideos)
+    } else {
+      const filteredVideos = videos?.filter(video => parseInt(video.cycleId) == cycleId)
+
+      setFilteredVideos(filteredVideos)
+    }
+  }, [cycleId, videos])
 
   // Determines if the current date is within the discount period
   const isDiscountActive = cycle => {
