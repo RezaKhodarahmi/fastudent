@@ -17,6 +17,7 @@ import { Clock, PlayCircle, List as ListIcon } from 'feather-icons-react'
 import { useRouter } from 'next/router'
 import { useDispatch, useSelector } from 'react-redux'
 import { checkEnrollInCourse } from 'src/store/apps/course'
+import { fetchCourseVideos } from 'src/store/apps/course-material'
 import Link from 'next/link'
 import Spinner from 'src/@core/components/spinner'
 
@@ -26,17 +27,18 @@ const VideoPage = () => {
   const router = useRouter()
 
   //States
-  const [videos, setVideos] = useState(null)
+  const [StoredVideos, setVideos] = useState(null)
   const [loading, setLoading] = useState(true)
   const [enrolled, setEnrolled] = useState(false)
   const [currentVideoURL, setCurrentVideoURL] = useState(null)
+  const [courseId, setCourseId] = useState(null)
 
   //Give the course Id
   const { id, course } = router.query
-  const userData = window.localStorage.getItem('userData')
-
-  //Give data from state
   const courseData = useSelector(state => state.course)
+  const { videos } = useSelector(state => state.materials)
+
+  const userData = window.localStorage.getItem('userData')
 
   useEffect(() => {
     if (course && id) {
@@ -46,13 +48,23 @@ const VideoPage = () => {
   }, [id, course, userData])
 
   useEffect(() => {
-    if (courseData?.data?.data?.videos) {
-      // Filter the videos to include only those with cycleId === 67
-      const filteredVideos = courseData.data.data.videos.filter(video => video.cycleId == courseData?.data?.cycleId)
+    if (courseData?.data?.data) {
+      setCourseId(courseData?.data?.data?.id)
+    }
+  }, [courseData])
+
+  useEffect(() => {
+    if (courseId) {
+      dispatch(fetchCourseVideos(courseId))
+    }
+  }, [courseId])
+
+  useEffect(() => {
+    if (videos) {
+      const filteredVideos = videos.filter(video => video.cycleId == courseData?.data?.cycleId)
 
       setVideos(filteredVideos)
 
-      // Find the current video based on the filtered list
       const currentVideo = filteredVideos.find(video => video.id.toString() === id.toString())
 
       if (currentVideo) {
@@ -68,7 +80,7 @@ const VideoPage = () => {
       setLoading(false)
       setEnrolled(courseData?.data?.enrolled)
     }
-  }, [courseData, id])
+  }, [videos, id, courseData])
 
   // Handler to disable right-click
   const handleContextMenu = e => {
@@ -125,7 +137,7 @@ const VideoPage = () => {
                   </Typography>
                   <Divider />
                   <List>
-                    {videos?.map((video, index) => (
+                    {StoredVideos?.map((video, index) => (
                       <Link href={`/courses/${course}/session/${video?.id}`} key={index}>
                         <ListItem
                           alignItems='flex-start'
