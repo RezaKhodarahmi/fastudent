@@ -17,14 +17,19 @@ function ProjectManagment() {
   const { slug } = router.query
   const courseData = useSelector(state => state.course)
 
-
   useEffect(() => {
     if (courseData?.data) {
       const manualSlug = 'project-managment' // manually set slug
 
+      // Filter courses by category slug and featured = 1
       const filteredCourses =
         Array.isArray(courseData?.data?.data) &&
-        courseData?.data?.data?.filter(course => course?.categories?.some(category => category.slug === manualSlug))
+        courseData?.data?.data?.filter(
+          course =>
+            course?.categories?.some(category => category.slug === manualSlug) && // Filter by category
+            course?.featured === 1 // Filter by featured
+        )
+
       setCourse(filteredCourses)
     }
   }, [courseData])

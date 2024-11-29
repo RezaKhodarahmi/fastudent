@@ -66,11 +66,6 @@ const SingleDeskPost = () => {
             <article className="col-12 col-md-4" key={index}>
               <Link className="FNV-Blog" href={`/blog/${post.slug}`}>
                 <figure>
-                  <img
-                    src="/placeholder-image.jpg" // Use a placeholder image initially
-                    alt={post.title}
-                    data-src={post.image} // The actual image URL for lazy loading
-                  />
                   <figcaption>{post.title}</figcaption>
                 </figure>
 

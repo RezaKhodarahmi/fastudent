@@ -10168,7 +10168,7 @@ body[dir='rtl'] {
 
                     .nav {
                       width: 300px;
-                      height: 350px;
+                      height: unset;
                       display: flex;
                       overflow: scroll;
                       align-items: start;

@@ -1399,10 +1399,6 @@ const Header = props => {
                   {t('menu-courses')}
                 </Link>
                 <ul className='dropdown-menu'>
-                  <div className='row flex-row'>
-                    <h2>{t('mega_menu-1-title')}</h2>
-                    <h2>{t('courses')}</h2>
-                  </div>
                   <div className='row'>
                     <div className='col-12 col-md-9'>
                       <div className='nav' id='v-pills-tab' role='tablist' aria-orientation='horizontal'>
@@ -1513,7 +1509,7 @@ const Header = props => {
                           <span>{t('architect')}</span>
                         </button>
 
-                        {/* Accounting
+                        {/* Accounting */}
                         <button
                           className='nav-link'
                           id='accounting-tab'
@@ -1546,7 +1542,7 @@ const Header = props => {
                             <path d='M28.0063 15.8597C28.0063 15.3857 27.6207 15 27.1466 15H17.4627C16.9886 15 16.6029 15.3857 16.6029 15.8597V18.3469C16.6029 18.821 16.9886 19.2067 17.4627 19.2067H27.1466C27.6206 19.2067 28.0063 18.821 28.0063 18.3469V15.8597ZM27.0344 18.2347H17.5749V15.972H27.0343V18.2347H27.0344Z' />
                           </svg>
                           <span>{t('accounting')}</span>
-                        </button> */}
+                        </button>
 
                         {/* English
                         <button
@@ -1588,7 +1584,7 @@ const Header = props => {
                             <path d='M30.3017 15.3971V13.7026C30.3017 8.42815 27.6776 4.94803 23.6047 2.69312V7.775' />
                           </svg>
 
-                          <span>{t('self-employed')}</span>
+                          <span>{t('energy')}</span>
                         </button>
 
                         {/* Job Seeker
