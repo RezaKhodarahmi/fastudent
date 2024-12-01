@@ -47,14 +47,12 @@ const Index = () => {
   // Function to format the date
   function formatDate(isoDateString) {
     if (!isoDateString) {
-
       return ''
     }
 
     const date = new Date(isoDateString)
 
     if (isNaN(date.getTime())) {
-
       return ''
     }
 
@@ -72,10 +70,11 @@ const Index = () => {
   useEffect(() => {
     if (profileDetails?.data?.courses) {
       const courseCertificates = profileDetails.data.courses
-        .filter(course => course.certificate && course.id != 150000)
+        .filter(
+          course => course.certificate && course.id != 150000 && course.cycles[0]?.srt_publish === 1 // Access srt_publish within course.cycles[0]
+        )
         .map(course => {
-          const dateString =
-            course.completedAt || course.createdAt || course.updatedAt || new Date().toISOString()
+          const dateString = course.completedAt || course.createdAt || course.updatedAt || new Date().toISOString()
 
           const userID = profileDetails.data.user.id + (formatDate(dateString) || '')
 
