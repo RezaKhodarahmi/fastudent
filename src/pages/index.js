@@ -23,10 +23,6 @@ import feather from 'feather-icons'
 // ** Import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 
-// ** Import blog section
-import SingleDeskBlog from 'src/views/blog/singleDeskPost'
-import SingleMobileBlog from 'src/views/blog/singleMobileBlog'
-
 // ** Import Webinars section
 import WebinarsSection from 'src/views/newWebinars'
 
@@ -38,6 +34,7 @@ import AboutFanavaran from 'src/views/aboutFanavaran'
 import WhyFanavaran from 'src/views/whyFanavaran'
 import NewCourses from 'src/views/newCourses'
 import NewWorkshops from 'src/views/newWorkshops'
+import BlogSection from 'src/views/blogSection'
 
 import ConvertTime from 'src/views/convert-timezone'
 
@@ -141,43 +138,7 @@ const Home = () => {
       </section>
 
       {/* Blog */}
-      <section className='FNV-NewBlogs'>
-        <div className='container'>
-          <h3>
-            {t('blogs-section-title')}
-
-            <Link href="/blog/">
-              {t('blogs-section-button')}
-
-              <svg
-                width="23"
-                height="22"
-                viewBox="0 0 23 22"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11 2L2 11L11 20"
-                  stroke="#223885"
-                  strokeWidth="3"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M13 11H21"
-                  stroke="#223885"
-                  strokeWidth="3"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </Link>
-          </h3>
-
-          {/* Blogs Desktop */}
-          <SingleDeskBlog />
-        </div>
-      </section>
+      <BlogSection />
 
       {/* Testimonials */}
       <section className='FNV-Testimonial'>
