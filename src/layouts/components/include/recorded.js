@@ -7,7 +7,7 @@ import Link from 'next/link'
 // Hooks
 import { Grid, LinearProgress } from '@mui/material'
 
-function Packages() {
+function Recorded() {
   const [course, setCourse] = useState([])
   const [page, setPage] = useState(1)
   const [title, setTitle] = useState('فناوران')
@@ -19,7 +19,7 @@ function Packages() {
 
   useEffect(() => {
     if (courseData?.data) {
-      const manualSlug = 'packages' // manually set slug
+      const manualSlug = 'recorded-courses' // manually set slug
 
       // Filter courses by category slug and featured = 1
       const filteredCourses =
@@ -65,4 +65,4 @@ function Packages() {
   )
 }
 
-export default Packages
+export default Recorded

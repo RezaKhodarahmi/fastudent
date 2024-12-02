@@ -30,6 +30,7 @@ import English from 'src/layouts/components/include/english'
 import SelfEmployee from 'src/layouts/components/include/selfemployee'
 import JobSeeker from 'src/layouts/components/include/jobseekers'
 import Packages from 'src/layouts/components/include/packages'
+import Recorded from 'src/layouts/components/include/recorded'
 import Workshops from 'src/layouts/components/include/workshops'
 import useFullPageReload from './pageReload'
 import { fetchCourseData } from 'src/store/apps/course'
@@ -508,10 +509,6 @@ const Header = props => {
                     {t('menu-courses')}
                   </Link>
                   <ul className='dropdown-menu'>
-                    <div className='row flex-row'>
-                      <h2>{t('mega_menu-1-title')}</h2>
-                      <h2>{t('courses')}</h2>
-                    </div>
                     <div className='row'>
                       <div className='col-12 col-md-9'>
                         <div className='nav' id='offcanvas-tab' role='tablist' aria-orientation='horizontal'>
@@ -930,9 +927,6 @@ const Header = props => {
                     {t('menu-workshops')}
                   </Link>
                   <ul className='dropdown-menu'>
-                    <div className='row flex-row'>
-                      <h2>{t('menu-workshops')}</h2>
-                    </div>
                     <div className='row'>
                       <div className='col-md-9'>
                         {/* Workshops */}
@@ -956,9 +950,6 @@ const Header = props => {
                     {t('menu-packages')}
                   </Link>
                   <ul className='dropdown-menu'>
-                    <div className='row flex-row'>
-                      <h2>{t('menu-packages')}</h2>
-                    </div>
                     <div className='row'>
                       <div className='col-md-9'>
                         {/* Packages */}
@@ -976,71 +967,23 @@ const Header = props => {
                   </ul>
                 </li>
 
-                {/* Learning */}
-                <li className='nav-item dropdown FNV-MegaMenu FNV-MainMega'>
+                {/* Recorded */}
+                <li className='nav-item dropdown FNV-MegaMenu FNV-SecondMega'>
                   <Link className='nav-link' href='#' aria-expanded='false'>
-                    {t('menu-learning')}
+                    {t('menu-recorded')}
                   </Link>
                   <ul className='dropdown-menu'>
-                    <div className='row flex-row'>
-                      <h2>{t('mega_menu-2-title')}</h2>
-                      <h2>{t('mega_menu-2-desc')}</h2>
-                    </div>
                     <div className='row'>
                       <div className='col-md-9'>
-                        <div className='nav h-auto' id='v-pills-tab' role='tablist' aria-orientation='horizontal'>
-                          {/* Learning */}
-                          <button
-                            className='nav-link active'
-                            id='eng-tab'
-                            data-bs-toggle='pill'
-                            data-bs-target='#eng'
-                            type='button'
-                            role='tab'
-                            aria-controls='eng'
-                            aria-selected='true'
-                          >
-                            <svg viewBox='0 0 39 37' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                              <path d='M10.6822 20.3645H1V27.6265H10.6822V20.3645Z' />
-                              <path d='M6.20426 27.6279L3.48596 35.6957' />
-                              <path d='M12.3608 7.4548C14.1432 7.4548 15.5882 6.00985 15.5882 4.2274C15.5882 2.44496 14.1432 1 12.3608 1C10.5783 1 9.13336 2.44496 9.13336 4.2274C9.13336 6.00985 10.5783 7.4548 12.3608 7.4548Z' />
-                              <path d='M13.168 15.5593L17.9457 18.1966' />
-                              <path d='M6.71313 35.6957L9.84422 27.6279' />
-                              <path d='M19.5585 30.8554L18.7191 23.5934L13.1021 20.366V12.2967C13.1021 10.7831 12.0778 10.5752 10.7141 9.87652C9.40233 9.20382 8.11963 9.09222 6.69627 9.87652C5.84928 10.3428 5.06804 10.9024 5.06804 10.9024C4.51613 11.3626 4.22717 11.9068 4.22717 12.6239V20.366M10.6942 23.7554L15.5086 25.6099L16.2913 30.8554M7.4561 13.5565V19.8783C7.4561 20.0418 7.46222 20.207 7.47598 20.3721' />
-                              <path d='M19.1887 27.6524C23.4297 24.98 26.6036 22.1577 28.4184 17.4565L24.5014 16.0301L36.2522 7.4563L37.622 21.1502C37.622 21.1502 35.1896 20.3919 34.2739 20.0082C31.5112 26.7213 21.4422 35.6972 10.0645 35.6024' />
-                              <path d='M8.09552 32.1365C10.7832 31.5433 13.5031 30.6244 16.0715 29.3784' />
-                              <path d='M1 33.2754C2.12676 33.2754 3.28257 33.0094 4.45826 32.7449' />
-                            </svg>
-                            <span>{t('engineering')}</span>
-                          </button>
-                        </div>
-
-                        <div className='tab-content' id='v-pills-tabContent'>
-                          {/* Learning */}
-                          <div
-                            className='tab-pane fade show'
-                            id='eng'
-                            role='tabpanel'
-                            aria-labelledby='eng-tab'
-                            tabindex='0'
-                          >
-                            <li>
-                              <Link href='/engineering/peng-technical-exams/'>{t('learning-1')}</Link>
-                            </li>
-
-                            {/* Consultant */}
-                            <div className='container'>
-                              <span>{t('mega_menu-sales-title')}</span>
-                              <div className='row'>
-                                <div className='col-7'>
-                                  <p>{t('mega_menu-sales-desc')}</p>
-                                </div>
-                                <div className='col-5'>
-                                  <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                        {/* Recorded */}
+                        <div
+                          className='FNV-MenuContent row'
+                          id='eng'
+                          role='tabpanel'
+                          aria-labelledby='eng-tab'
+                          tabindex='0'
+                        >
+                          <Recorded />
                         </div>
                       </div>
                     </div>
@@ -1053,10 +996,6 @@ const Header = props => {
                     {t('menu-services')}
                   </Link>
                   <ul className='dropdown-menu'>
-                    <div className='row flex-row'>
-                      <h2>{t('mega_menu-3-title')}</h2>
-                      <h2>{t('mega_menu-3-desc')}</h2>
-                    </div>
                     <div className='row'>
                       <div className='col-md-9'>
                         <div className='nav h-auto' id='services-tab' role='tablist' aria-orientation='horizontal'>
@@ -1229,10 +1168,6 @@ const Header = props => {
                     {t('membership')}
                   </Link>
                   <ul className='dropdown-menu'>
-                    <div className='row flex-row'>
-                      <h2>{t('mega_menu-4-title')}</h2>
-                      <h2>{t('mega_menu-4-desc')}</h2>
-                    </div>
                     <div className='row'>
                       <div className='col-md-9'>
                         <div className='nav h-auto' id='membership-tab' role='tablist' aria-orientation='horizontal'>
@@ -1400,7 +1335,7 @@ const Header = props => {
                 </Link>
                 <ul className='dropdown-menu'>
                   <div className='row'>
-                    <div className='col-12 col-md-9'>
+                    <div className='col-12 col-md-12'>
                       <div className='nav' id='v-pills-tab' role='tablist' aria-orientation='horizontal'>
                         {/* Engineering */}
                         <button
@@ -1711,11 +1646,8 @@ const Header = props => {
                   {t('menu-workshops')}
                 </Link>
                 <ul className='dropdown-menu'>
-                  <div className='row flex-row'>
-                    <h2>{t('menu-workshops')}</h2>
-                  </div>
                   <div className='row'>
-                    <div className='col-md-9'>
+                    <div className='col-md-12'>
                       {/* Workshops */}
                       <div
                         className='FNV-MenuContent row'
@@ -1725,19 +1657,6 @@ const Header = props => {
                         tabindex='0'
                       >
                         <Workshops />
-
-                        {/* Consultant */}
-                        <div className='container'>
-                          <span>{t('mega_menu-sales-title')}</span>
-                          <div className='row'>
-                            <div className='col-7'>
-                              <p>{t('mega_menu-sales-desc')}</p>
-                            </div>
-                            <div className='col-5'>
-                              <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
-                            </div>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -1750,11 +1669,8 @@ const Header = props => {
                   {t('menu-packages')}
                 </Link>
                 <ul className='dropdown-menu'>
-                  <div className='row flex-row'>
-                    <h2>{t('menu-packages')}</h2>
-                  </div>
                   <div className='row'>
-                    <div className='col-md-9'>
+                    <div className='col-md-12'>
                       {/* Packages */}
                       <div
                         className='FNV-MenuContent row'
@@ -1764,19 +1680,29 @@ const Header = props => {
                         tabindex='0'
                       >
                         <Packages />
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
 
-                        {/* Consultant */}
-                        <div className='container'>
-                          <span>{t('mega_menu-sales-title')}</span>
-                          <div className='row'>
-                            <div className='col-7'>
-                              <p>{t('mega_menu-sales-desc')}</p>
-                            </div>
-                            <div className='col-5'>
-                              <Link href='tel:+16723996600'>{t('mega_menu-sales-button')}</Link>
-                            </div>
-                          </div>
-                        </div>
+              {/* Recorded */}
+              <li className='nav-item dropdown FNV-MegaMenu FNV-SecondMega'>
+                <Link className='nav-link' href='#' aria-expanded='false'>
+                  {t('menu-recorded')}
+                </Link>
+                <ul className='dropdown-menu'>
+                  <div className='row'>
+                    <div className='col-md-12'>
+                      {/* Recorded */}
+                      <div
+                        className='FNV-MenuContent row'
+                        id='eng'
+                        role='tabpanel'
+                        aria-labelledby='eng-tab'
+                        tabindex='0'
+                      >
+                        <Recorded />
                       </div>
                     </div>
                   </div>
@@ -1789,12 +1715,8 @@ const Header = props => {
                   {t('menu-services')}
                 </Link>
                 <ul className='dropdown-menu'>
-                  <div className='row flex-row'>
-                    <h2>{t('mega_menu-3-title')}</h2>
-                    <h2>{t('mega_menu-3-desc')}</h2>
-                  </div>
                   <div className='row'>
-                    <div className='col-md-9'>
+                    <div className='col-md-12'>
                       <div className='nav h-auto' id='services-tab' role='tablist' aria-orientation='horizontal'>
                         {/* Counseling */}
                         <button
@@ -1928,12 +1850,8 @@ const Header = props => {
                   {t('membership')}
                 </Link>
                 <ul className='dropdown-menu'>
-                  <div className='row flex-row'>
-                    <h2>{t('mega_menu-4-title')}</h2>
-                    <h2>{t('mega_menu-4-desc')}</h2>
-                  </div>
                   <div className='row'>
-                    <div className='col-md-9'>
+                    <div className='col-md-12'>
                       <div className='nav h-auto' id='membership-tab' role='tablist' aria-orientation='horizontal'>
                         {/* Membership Overview */}
                         <button
@@ -1975,24 +1893,6 @@ const Header = props => {
                           </li>
                         </div>
                       </div>
-                    </div>
-
-                    <div className='col-md-3'>
-                      <Link href='/membership/checkout'>
-                        <svg
-                          width='102'
-                          height='84'
-                          viewBox='0 0 102 84'
-                          fill='none'
-                          xmlns='http://www.w3.org/2000/svg'
-                        >
-                          <path d='M76.915 83.1341H25.085C23.1962 83.1366 21.3609 82.5062 19.8723 81.3436C18.3838 80.1809 17.3277 78.5529 16.8727 76.7197L8.88382 44.7731C8.63363 43.7709 8.64715 42.7209 8.92307 41.7254C9.19899 40.73 9.72791 39.8229 10.4584 39.0924C11.1888 38.362 12.0959 37.8331 13.0914 37.5571C14.0868 37.2812 15.1368 37.2677 16.139 37.5179L28.8971 40.708C29.1695 40.7759 29.4556 40.7641 29.7214 40.674C29.9872 40.5839 30.2216 40.4194 30.3965 40.1999L44.3897 22.7092C45.2087 21.7584 46.2231 20.9954 47.3638 20.4723C48.5045 19.9492 49.7446 19.6783 50.9995 19.678C52.2544 19.6778 53.4946 19.9483 54.6355 20.471C55.7764 20.9937 56.791 21.7564 57.6103 22.7069L71.6035 40.2023C71.781 40.4197 72.0164 40.5826 72.2825 40.6721C72.5486 40.7616 72.8346 40.7741 73.1074 40.7081L85.8588 37.518C86.8609 37.2675 87.9109 37.2807 88.9064 37.5563C89.902 37.8319 90.8092 38.3605 91.5399 39.0908C92.2706 39.821 92.7998 40.7279 93.076 41.7233C93.3522 42.7187 93.3661 43.7686 93.1162 44.7709L85.1273 76.722C84.6719 78.5548 83.6156 80.1821 82.127 81.3444C80.6385 82.5066 78.8036 83.1367 76.915 83.1341ZM16.0866 44.7207L23.6631 75.0221C23.7415 75.3398 23.9242 75.6221 24.182 75.8237C24.4398 76.0252 24.7577 76.1345 25.085 76.1341H76.915C77.242 76.1346 77.5597 76.0256 77.8174 75.8245C78.0751 75.6233 78.258 75.3416 78.3369 75.0244L85.9134 44.7207L74.8028 47.4983C73.2303 47.889 71.5789 47.8212 70.0436 47.3032C68.5084 46.7851 67.1536 45.8384 66.1393 44.5748L52.1462 27.0795C51.3805 26.127 50.6195 26.1247 49.8538 27.0818L35.8607 44.5726C34.8473 45.836 33.4934 46.7829 31.959 47.3014C30.4246 47.8199 28.7738 47.8882 27.2018 47.4984L16.0866 44.7207Z' />
-                          <path d='M7.83334 33.8333C11.6993 33.8333 14.8333 30.6993 14.8333 26.8333C14.8333 22.9674 11.6993 19.8333 7.83334 19.8333C3.96735 19.8333 0.833344 22.9674 0.833344 26.8333C0.833344 30.6993 3.96735 33.8333 7.83334 33.8333Z' />
-                          <path d='M94.1667 33.8333C98.0327 33.8333 101.167 30.6993 101.167 26.8333C101.167 22.9674 98.0327 19.8333 94.1667 19.8333C90.3007 19.8333 87.1667 22.9674 87.1667 26.8333C87.1667 30.6993 90.3007 33.8333 94.1667 33.8333Z' />
-                          <path d='M51 14C54.866 14 58 10.866 58 7C58 3.13401 54.866 0 51 0C47.134 0 44 3.13401 44 7C44 10.866 47.134 14 51 14Z' />
-                        </svg>
-                        <span>Become a Member</span>
-                      </Link>
                     </div>
                   </div>
                 </ul>

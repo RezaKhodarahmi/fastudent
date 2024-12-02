@@ -340,7 +340,7 @@ body[dir='ltr'] {
                 bottom: 0;
                 padding: 0;
                 width: 100%;
-                z-index: 9995;
+                z-index: 1;
                 position: fixed;
 
                 .card {
@@ -1071,7 +1071,7 @@ body[dir='ltr'] {
                 bottom: 0;
                 padding: 0;
                 width: 100%;
-                z-index: 9995;
+                z-index: 1;
                 position: fixed;
 
                 .card {
@@ -1803,7 +1803,7 @@ body[dir='ltr'] {
                 bottom: 0;
                 padding: 0;
                 width: 100%;
-                z-index: 9995;
+                z-index: 1;
                 position: fixed;
 
                 .card {
@@ -2533,7 +2533,7 @@ body[dir='ltr'] {
                 bottom: 0;
                 padding: 0;
                 width: 100%;
-                z-index: 9995;
+                z-index: 1;
                 position: fixed;
 
                 .card {
@@ -3283,6 +3283,7 @@ body[dir='ltr'] {
               }
 
               aside.col-md-4 {
+                z-index: 1;
                 position: unset;
                 width: 33.33333333%;
 
@@ -4164,6 +4165,7 @@ body[dir='ltr'] {
               }
 
               aside.col-md-4 {
+                z-index: 1;
                 position: unset;
                 width: 33.33333333%;
 
@@ -5045,6 +5047,7 @@ body[dir='ltr'] {
               }
 
               aside.col-md-4 {
+                z-index: 1;
                 position: unset;
                 width: 33.33333333%;
 
@@ -5910,7 +5913,7 @@ body[dir='rtl'] {
                 bottom: 0;
                 padding: 0;
                 width: 100%;
-                z-index: 9995;
+                z-index: 1;
                 position: fixed;
 
                 .card {
@@ -6641,7 +6644,7 @@ body[dir='rtl'] {
                 bottom: 0;
                 padding: 0;
                 width: 100%;
-                z-index: 9995;
+                z-index: 1;
                 position: fixed;
 
                 .card {
@@ -7373,7 +7376,7 @@ body[dir='rtl'] {
                 bottom: 0;
                 padding: 0;
                 width: 100%;
-                z-index: 9995;
+                z-index: 1;
                 position: fixed;
 
                 .card {
@@ -8103,7 +8106,7 @@ body[dir='rtl'] {
                 bottom: 0;
                 padding: 0;
                 width: 100%;
-                z-index: 9995;
+                z-index: 1;
                 position: fixed;
 
                 .card {
@@ -8853,6 +8856,7 @@ body[dir='rtl'] {
               }
 
               aside.col-md-4 {
+                z-index: 1;
                 position: unset;
                 width: 33.33333333%;
 
@@ -9734,6 +9738,7 @@ body[dir='rtl'] {
               }
 
               aside.col-md-4 {
+                z-index: 1;
                 position: unset;
                 width: 33.33333333%;
 
@@ -10615,6 +10620,7 @@ body[dir='rtl'] {
               }
 
               aside.col-md-4 {
+                z-index: 1;
                 position: unset;
                 width: 33.33333333%;
 

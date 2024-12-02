@@ -35,7 +35,7 @@ function Engineering() {
       {Array.isArray(course) ? (
         (() => {
           // Paginate the filtered courses
-          const paginatedCourses = course.slice((page - 1) * 6, page * 6)
+          const paginatedCourses = course.slice((page - 1) * 12, page * 12)
 
           return paginatedCourses.length ? (
             paginatedCourses
@@ -58,6 +58,7 @@ function Engineering() {
       ) : (
         <LinearProgress />
       )}
+
     </>
   )
 }

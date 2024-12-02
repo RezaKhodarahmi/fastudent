@@ -22,9 +22,15 @@ function Workshops() {
     if (courseData?.data) {
       const manualSlug = 'workshop' // manually set slug
 
+      // Filter courses by category slug and featured = 1
       const filteredCourses =
         Array.isArray(courseData?.data?.data) &&
-        courseData?.data?.data?.filter(course => course?.categories?.some(category => category.slug === manualSlug))
+        courseData?.data?.data?.filter(
+          course =>
+            course?.categories?.some(category => category.slug === manualSlug) && // Filter by category
+            course?.featured === 1 // Filter by featured
+        )
+
       setCourse(filteredCourses)
     }
   }, [courseData])
@@ -33,7 +39,7 @@ function Workshops() {
     <>
       {Array.isArray(course) ? (
         (() => {
-          const filteredCourses = course.slice((page - 1) * 12, page * 12)
+          const filteredCourses = course.slice((page - 1) * 14, page * 14)
 
           return filteredCourses.length ? (
             filteredCourses
