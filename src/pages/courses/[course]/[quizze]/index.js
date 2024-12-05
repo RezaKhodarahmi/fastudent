@@ -16,6 +16,7 @@ import {
 } from '@mui/material'
 import { Clock, List, BarChart, BarChart2, CheckCircle, Repeat } from 'feather-icons-react'
 import BASE_URL from 'src/api/BASE_URL'
+import Spinner from 'src/@core/components/spinner'
 
 const correctAnswerStyle = {
   color: 'green',
@@ -287,10 +288,17 @@ const Test = () => {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    fontSize: '3em',
+    fontSize: '3em', // Default font size
     color: 'rgba(0, 0, 0, 0.1)',
     fontWeight: 'bold',
-    transform: 'rotate(-30deg)'
+    transform: 'rotate(-30deg)',
+    whiteSpace: 'nowrap', // Prevent text wrapping
+    overflow: 'hidden' // Hide overflow
+  }
+
+  const watermarkCombinedStyle = {
+    ...watermarkStyle,
+    ...(window.innerWidth <= 768 ? { fontSize: '1.5em', transform: 'rotate(-25deg)' } : {})
   }
 
   return (
@@ -317,7 +325,7 @@ const Test = () => {
         <div className='container'>
           <div className='row justify-content-center'>
             {allowRetake > 0 ? (
-              <div className='col-12 col-md-10 text-center'>
+              <div className='col-12 col-md-10 text-left'>
                 {!started ? (
                   <Paper elevation={3} style={{ padding: '20px', marginBottom: '20px' }}>
                     <Typography variant='h5' style={{ marginBottom: '20px' }}>
@@ -364,7 +372,8 @@ const Test = () => {
                       style={{ padding: '30px', marginBottom: '30px', borderRadius: '15px', position: 'relative' }}
                       key={qIndex}
                     >
-                      <div style={watermarkStyle}>{JSON.parse(userEmail) || 'FANAVARAN.CA'}</div>
+                      <div style={watermarkCombinedStyle}>{JSON.parse(userEmail) || 'FANAVARAN.CA'}</div>
+
                       <Typography variant='h6' style={{ marginBottom: '20px', ...preventCopyStyle }}>
                         {qIndex + 1}. {question.questionText}
                       </Typography>
@@ -386,7 +395,9 @@ const Test = () => {
                                 {/* Updated key */}
                                 <FormControlLabel
                                   control={
-                                    <Checkbox
+                                    <input
+                                      style={{ zoom: '1.5', marginRight: '5px' }}
+                                      type='checkbox'
                                       color='primary'
                                       onChange={e => handleCheckboxChange(question.id, answer.id, e.target.checked)}
                                       checked={userAnswers[question.id] && userAnswers[question.id].includes(answer.id)}
@@ -481,7 +492,8 @@ const Test = () => {
             <div className='row justify-content-center'>
               <div className='col-12 col-md-8'>
                 <Paper elevation={3} style={{ padding: '20px', marginBottom: '20px', position: 'relative' }}>
-                  <div style={watermarkStyle}>{JSON.parse(userEmail) || 'FANAVARAN.CA'}</div>
+                  <div style={watermarkCombinedStyle}>{JSON.parse(userEmail) || 'FANAVARAN.CA'}</div>
+
                   <Typography variant='h5' style={{ marginBottom: '20px' }}>
                     Test Results
                   </Typography>
@@ -552,7 +564,8 @@ const Test = () => {
             <div className='row justify-content-center'>
               <div className='col-12 col-md-8'>
                 <Paper elevation={3} style={{ padding: '20px', marginBottom: '20px', position: 'relative' }}>
-                  <div style={watermarkStyle}>{JSON.parse(userEmail) || 'FANAVARAN.CA'}</div>
+                  <div style={watermarkCombinedStyle}>{JSON.parse(userEmail) || 'FANAVARAN.CA'}</div>
+
                   <Typography variant='h5' style={{ marginBottom: '20px' }}>
                     Test Review
                   </Typography>
