@@ -32,14 +32,14 @@ const themeOptions = settings => {
           [
             'Fira Sans',
             'Public Sans',
-            'Ravi',
+            'Dana',
             '-apple-system',
             'BlinkMacSystemFont',
             '"Segoe UI"',
             'Roboto',
             '"Helvetica Neue"',
             'Arial',
-            'Ravi',
+            'Dana',
             '"Apple Color Emoji"',
             '"Segoe UI Emoji"',
             '"Segoe UI Symbol"'

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet'
 import { useRouter } from 'next/router'
-import BlogSection from 'src/views/blogSection'
 import { Box, Typography, Button } from '@mui/material'
 import { fetchSearchedCourse } from 'src/store/apps/search'
 import { useSelector, useDispatch } from 'react-redux'
