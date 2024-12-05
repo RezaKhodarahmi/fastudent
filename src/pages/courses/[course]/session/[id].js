@@ -32,6 +32,7 @@ const VideoPage = () => {
   const [enrolled, setEnrolled] = useState(false)
   const [currentVideoURL, setCurrentVideoURL] = useState(null)
   const [courseId, setCourseId] = useState(null)
+  const [courseCycle, setCourseCycle] = useState(null)
 
   //Give the course Id
   const { id, course } = router.query
@@ -48,8 +49,10 @@ const VideoPage = () => {
   }, [id, course, userData])
 
   useEffect(() => {
-    if (courseData?.data?.data) {
+    if (courseData?.data?.data?.id) {
       setCourseId(courseData?.data?.data?.id)
+      setEnrolled(courseData?.data?.enrolled)
+      setCourseCycle(courseData?.data?.cycleId)
     }
   }, [courseData])
 
@@ -60,8 +63,8 @@ const VideoPage = () => {
   }, [courseId])
 
   useEffect(() => {
-    if (videos) {
-      const filteredVideos = videos.filter(video => video.cycleId == courseData?.data?.cycleId)
+    if (videos?.length) {
+      const filteredVideos = videos.filter(video => video.cycleId == courseCycle)
 
       setVideos(filteredVideos)
 
@@ -78,9 +81,8 @@ const VideoPage = () => {
         setCurrentVideoURL(videoUrl) // Set the corrected URL
       }
       setLoading(false)
-      setEnrolled(courseData?.data?.enrolled)
     }
-  }, [videos, id, courseData])
+  }, [videos, id])
 
   // Handler to disable right-click
   const handleContextMenu = e => {

@@ -28,15 +28,15 @@ const incorrectAnswerStyle = {
 }
 
 // Fisher-Yates Shuffle Function
-const shuffleArray = array => {
-  const shuffled = [...array] // Clone the array to avoid mutating the original
-  for (let i = shuffled.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1)) // Random index
-    ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]] // Swap elements
-  }
+// const shuffleArray = array => {
+//   const shuffled = [...array] // Clone the array to avoid mutating the original
+//   for (let i = shuffled.length - 1; i > 0; i--) {
+//     const j = Math.floor(Math.random() * (i + 1)) // Random index
+//     ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]] // Swap elements
+//   }
 
-  return shuffled
-}
+//   return shuffled
+// }
 
 const Test = () => {
   const router = useRouter()
@@ -216,7 +216,9 @@ const Test = () => {
 
   useEffect(() => {
     if (testData?.data?.data?.questions) {
-      const randomizedQuestions = shuffleArray(testData.data.data.questions)
+      // const randomizedQuestions = shuffleArray(testData.data.data.questions)
+
+      const randomizedQuestions = testData.data.data.questions
       setShuffledQuestions(randomizedQuestions) // Save shuffled questions
     }
   }, [testData])
