@@ -1,0 +1,1164 @@
+@import './variables';
+
+@media (max-width: 575.98px) {
+    .FNV-ReservationForm{
+        padding: 1rem;
+        background-color: $White;
+    
+        .container-fluid{
+            .row{
+                .col-md-5{
+                    h1{
+                        font-size: 28px;
+                        font-weight: 700;
+                        color: $PrimaryOne;
+                        margin-bottom: 2rem;
+                    }
+    
+                    label{
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: $PrimaryOne;
+                        margin-bottom: 1rem;
+                    }
+    
+                    .FNV-Form-Select{
+                        border-width: 0;
+                        border-radius: 8px;
+                        background-color: $PrimaryBackgroundTwo;
+    
+                        .FNV-Form-Select-Chip{
+                            span{
+                                font-size: 16px;
+                                border-radius: 4px;
+                                color: $PrimaryOne;
+                                padding: .5rem 1.5rem;
+                                background-color: $White;
+                            }
+                        }
+    
+                        fieldset{
+                            display: none;
+                        }
+                    }
+    
+                    .FNV-Form-Icon{
+                        padding: 1rem;
+                        margin: 0 .5rem;
+                        border-radius: 8px;
+                        background-color: $PrimaryBackgroundTwo;
+    
+                        svg{
+                            fill: $DangerColor;
+                        }
+                    }
+    
+                    .FNV-Form-Total{
+                        padding: 1rem;
+                        border-radius: 8px;
+                        background-color: $PrimaryBackgroundTwo;
+    
+                        h2{
+                            font-size: 24px;
+                            font-weight: 600;
+                            color: $PrimaryOne;
+                        }
+    
+                        p{
+                            display: flex;
+                            font-size: 20px;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                            justify-content: space-between;
+                        }
+    
+                        .FNV-Form-Discount{
+                            display: flex;
+                            margin-top: 1rem;
+                            justify-content: space-between;
+    
+                            label{
+                                width: 40%;
+                                display: flex;
+                                font-size: 14px;
+                                font-weight: 400;
+                                margin-bottom: 0;
+                                color: $PrimaryOne;
+                                align-items: center;
+                            }
+    
+                            .FNV-Form-Discount-Input{
+                                width: 60%;
+                                display: flex;
+                                padding: .5rem;
+                                border-radius: 5px;
+                                background-color: $White;
+                                justify-content: space-between;
+    
+                                fieldset{
+                                    display: none;
+                                }
+    
+                                button{
+                                    color: $White;
+                                    padding: .7rem 2rem;
+                                    font-size: 20px;
+                                    text-align: center;
+                                    background-color: $PrimaryOne;
+                                }
+                            }
+                        }
+                    }
+    
+                    .FNV-Form-Terms{
+                        padding: 2rem 0;
+    
+                        h3{
+                            font-size: 20px;
+                            font-weight: 600;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                        }
+    
+                        p{
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 28px;
+                            color: $PrimaryOne;
+                        }
+                    }
+    
+                    .FNV-Form-Terms-Agreement{
+                        padding: 0 1rem;
+    
+                        label{
+                            .FNV-Form-Terms-Agreement-Checkbox{
+                                padding: 0;
+                                span{
+                                    font-size: 20px;
+                                    font-weight: 700;
+                                    border-radius: 3px;
+                                    color: $PrimaryOne;
+                                    border: 1px solid $PrimaryOne;
+                                }
+                            }
+    
+                            span{
+                                font-size: 20px;
+                                font-weight: 700;
+                                padding: 0 .5rem;
+                                color: $PrimaryOne;
+                            }
+                        }
+                    }
+                }
+    
+                .col-md-7{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+    .FNV-ReservationForm{
+        padding: 2rem;
+        background-color: $White;
+    
+        .container-fluid{
+            .row{
+                .col-md-5{
+                    h1{
+                        font-size: 28px;
+                        font-weight: 700;
+                        color: $PrimaryOne;
+                        margin-bottom: 2rem;
+                    }
+    
+                    label{
+                        font-size: 20px;
+                        font-weight: 400;
+                        color: $PrimaryOne;
+                        margin-bottom: 1rem;
+                    }
+    
+                    .FNV-Form-Select{
+                        border-width: 0;
+                        border-radius: 8px;
+                        background-color: $PrimaryBackgroundTwo;
+    
+                        .FNV-Form-Select-Chip{
+                            span{
+                                font-size: 16px;
+                                border-radius: 4px;
+                                color: $PrimaryOne;
+                                padding: .5rem 1.5rem;
+                                background-color: $White;
+                            }
+                        }
+    
+                        fieldset{
+                            display: none;
+                        }
+                    }
+    
+                    .FNV-Form-Icon{
+                        padding: 1rem;
+                        margin: 0 .5rem;
+                        border-radius: 8px;
+                        background-color: $PrimaryBackgroundTwo;
+    
+                        svg{
+                            fill: $DangerColor;
+                        }
+                    }
+    
+                    .FNV-Form-Total{
+                        padding: 2rem;
+                        border-radius: 8px;
+                        background-color: $PrimaryBackgroundTwo;
+    
+                        h2{
+                            font-size: 24px;
+                            font-weight: 600;
+                            color: $PrimaryOne;
+                        }
+    
+                        p{
+                            display: flex;
+                            font-size: 20px;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                            justify-content: space-between;
+                        }
+    
+                        .FNV-Form-Discount{
+                            display: flex;
+                            margin-top: 1rem;
+                            justify-content: space-between;
+    
+                            label{
+                                width: 40%;
+                                display: flex;
+                                font-size: 20px;
+                                font-weight: 400;
+                                margin-bottom: 0;
+                                color: $PrimaryOne;
+                                align-items: center;
+                            }
+    
+                            .FNV-Form-Discount-Input{
+                                width: 60%;
+                                display: flex;
+                                padding: .5rem;
+                                border-radius: 5px;
+                                background-color: $White;
+                                justify-content: space-between;
+    
+                                fieldset{
+                                    display: none;
+                                }
+    
+                                button{
+                                    color: $White;
+                                    padding: .7rem 2rem;
+                                    font-size: 20px;
+                                    text-align: center;
+                                    background-color: $PrimaryOne;
+                                }
+                            }
+                        }
+                    }
+    
+                    .FNV-Form-Terms{
+                        padding: 2rem 0;
+    
+                        h3{
+                            font-size: 24px;
+                            font-weight: 600;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                        }
+    
+                        p{
+                            font-size: 20px;
+                            font-weight: 400;
+                            line-height: 36px;
+                            color: $PrimaryOne;
+                        }
+                    }
+    
+                    .FNV-Form-Terms-Agreement{
+                        padding: 0 1rem;
+    
+                        label{
+                            .FNV-Form-Terms-Agreement-Checkbox{
+                                padding: 0;
+                                span{
+                                    font-size: 20px;
+                                    font-weight: 700;
+                                    border-radius: 3px;
+                                    color: $PrimaryOne;
+                                    border: 1px solid $PrimaryOne;
+                                }
+                            }
+    
+                            span{
+                                font-size: 20px;
+                                font-weight: 700;
+                                padding: 0 .5rem;
+                                color: $PrimaryOne;
+                            }
+                        }
+                    }
+                }
+    
+                .col-md-7{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+    .FNV-ReservationForm{
+        padding: 2rem;
+        background-color: $White;
+    
+        .container-fluid{
+            .row{
+                .col-md-5{
+                    h1{
+                        font-size: 28px;
+                        font-weight: 700;
+                        color: $PrimaryOne;
+                        margin-bottom: 2rem;
+                    }
+    
+                    label{
+                        font-size: 20px;
+                        font-weight: 400;
+                        color: $PrimaryOne;
+                        margin-bottom: 1rem;
+                    }
+    
+                    .FNV-Form-Select{
+                        border-width: 0;
+                        border-radius: 8px;
+                        background-color: $PrimaryBackgroundTwo;
+    
+                        .FNV-Form-Select-Chip{
+                            span{
+                                font-size: 16px;
+                                border-radius: 4px;
+                                color: $PrimaryOne;
+                                padding: .5rem 1.5rem;
+                                background-color: $White;
+                            }
+                        }
+    
+                        fieldset{
+                            display: none;
+                        }
+                    }
+    
+                    .FNV-Form-Icon{
+                        padding: 1rem;
+                        margin: 0 .5rem;
+                        border-radius: 8px;
+                        background-color: $PrimaryBackgroundTwo;
+    
+                        svg{
+                            fill: $DangerColor;
+                        }
+                    }
+    
+                    .FNV-Form-Total{
+                        padding: 2rem;
+                        border-radius: 8px;
+                        background-color: $PrimaryBackgroundTwo;
+    
+                        h2{
+                            font-size: 24px;
+                            font-weight: 600;
+                            color: $PrimaryOne;
+                        }
+    
+                        p{
+                            display: flex;
+                            font-size: 20px;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                            justify-content: space-between;
+                        }
+    
+                        .FNV-Form-Discount{
+                            display: flex;
+                            margin-top: 1rem;
+                            justify-content: space-between;
+    
+                            label{
+                                width: 40%;
+                                display: flex;
+                                font-size: 20px;
+                                font-weight: 400;
+                                margin-bottom: 0;
+                                color: $PrimaryOne;
+                                align-items: center;
+                            }
+    
+                            .FNV-Form-Discount-Input{
+                                width: 60%;
+                                display: flex;
+                                padding: .5rem;
+                                border-radius: 5px;
+                                background-color: $White;
+                                justify-content: space-between;
+    
+                                fieldset{
+                                    display: none;
+                                }
+    
+                                button{
+                                    color: $White;
+                                    padding: .7rem 2rem;
+                                    font-size: 20px;
+                                    text-align: center;
+                                    background-color: $PrimaryOne;
+                                }
+                            }
+                        }
+                    }
+    
+                    .FNV-Form-Terms{
+                        padding: 2rem 0;
+    
+                        h3{
+                            font-size: 24px;
+                            font-weight: 600;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                        }
+    
+                        p{
+                            font-size: 20px;
+                            font-weight: 400;
+                            line-height: 36px;
+                            color: $PrimaryOne;
+                        }
+                    }
+    
+                    .FNV-Form-Terms-Agreement{
+                        padding: 0 1rem;
+    
+                        label{
+                            .FNV-Form-Terms-Agreement-Checkbox{
+                                padding: 0;
+                                span{
+                                    font-size: 20px;
+                                    font-weight: 700;
+                                    border-radius: 3px;
+                                    color: $PrimaryOne;
+                                    border: 1px solid $PrimaryOne;
+                                }
+                            }
+    
+                            span{
+                                font-size: 20px;
+                                font-weight: 700;
+                                padding: 0 .5rem;
+                                color: $PrimaryOne;
+                            }
+                        }
+                    }
+                }
+    
+                .col-md-7{
+                    position: relative;
+    
+                    img{
+                        top: 1rem;
+                        position: sticky;
+                        position: -webkit-sticky;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (min-width: 991.98px) {
+    .FNV-ReservationForm{
+        padding: 2rem;
+        background-color: $White;
+    
+        .container-fluid{
+            .row{
+                .col-md-5{
+                    h1{
+                        font-size: 28px;
+                        font-weight: 700;
+                        color: $PrimaryOne;
+                        margin-bottom: 2rem;
+                    }
+    
+                    label{
+                        font-size: 20px;
+                        font-weight: 400;
+                        color: $PrimaryOne;
+                        margin-bottom: 1rem;
+                    }
+    
+                    .FNV-Form-Select{
+                        border-width: 0;
+                        border-radius: 8px;
+                        background-color: $PrimaryBackgroundTwo;
+    
+                        .FNV-Form-Select-Chip{
+                            span{
+                                font-size: 16px;
+                                border-radius: 4px;
+                                color: $PrimaryOne;
+                                padding: .5rem 1.5rem;
+                                background-color: $White;
+                            }
+                        }
+    
+                        fieldset{
+                            display: none;
+                        }
+                    }
+    
+                    .FNV-Form-Icon{
+                        padding: 1rem;
+                        margin: 0 .5rem;
+                        border-radius: 8px;
+                        background-color: $PrimaryBackgroundTwo;
+    
+                        svg{
+                            fill: $DangerColor;
+                        }
+                    }
+    
+                    .FNV-Form-Total{
+                        padding: 2rem;
+                        border-radius: 8px;
+                        background-color: $PrimaryBackgroundTwo;
+    
+                        h2{
+                            font-size: 24px;
+                            font-weight: 600;
+                            color: $PrimaryOne;
+                        }
+    
+                        p{
+                            display: flex;
+                            font-size: 20px;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                            justify-content: space-between;
+                        }
+    
+                        .FNV-Form-Discount{
+                            display: flex;
+                            margin-top: 1rem;
+                            justify-content: space-between;
+    
+                            label{
+                                width: 40%;
+                                display: flex;
+                                font-size: 20px;
+                                font-weight: 400;
+                                margin-bottom: 0;
+                                color: $PrimaryOne;
+                                align-items: center;
+                            }
+    
+                            .FNV-Form-Discount-Input{
+                                width: 60%;
+                                display: flex;
+                                padding: .5rem;
+                                border-radius: 5px;
+                                background-color: $White;
+                                justify-content: space-between;
+    
+                                fieldset{
+                                    display: none;
+                                }
+    
+                                button{
+                                    color: $White;
+                                    padding: .7rem 2rem;
+                                    font-size: 20px;
+                                    text-align: center;
+                                    background-color: $PrimaryOne;
+                                }
+                            }
+                        }
+                    }
+    
+                    .FNV-Form-Terms{
+                        padding: 2rem 0;
+    
+                        h3{
+                            font-size: 24px;
+                            font-weight: 600;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                        }
+    
+                        p{
+                            font-size: 20px;
+                            font-weight: 400;
+                            line-height: 36px;
+                            color: $PrimaryOne;
+                        }
+                    }
+    
+                    .FNV-Form-Terms-Agreement{
+                        padding: 0 1rem;
+    
+                        label{
+                            .FNV-Form-Terms-Agreement-Checkbox{
+                                padding: 0;
+                                span{
+                                    font-size: 20px;
+                                    font-weight: 700;
+                                    border-radius: 3px;
+                                    color: $PrimaryOne;
+                                    border: 1px solid $PrimaryOne;
+                                }
+                            }
+    
+                            span{
+                                font-size: 20px;
+                                font-weight: 700;
+                                padding: 0 .5rem;
+                                color: $PrimaryOne;
+                            }
+                        }
+                    }
+                }
+    
+                .col-md-7{
+                    position: relative;
+    
+                    img{
+                        top: 1rem;
+                        position: sticky;
+                        position: -webkit-sticky;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (min-width: 1199.98px) {
+    .FNV-ReservationForm{
+        padding: 2rem;
+        background-color: $White;
+    
+        .container-fluid{
+            .row{
+                .col-md-5{
+                    h1{
+                        font-size: 28px;
+                        font-weight: 700;
+                        color: $PrimaryOne;
+                        margin-bottom: 2rem;
+                    }
+    
+                    label{
+                        font-size: 20px;
+                        font-weight: 400;
+                        color: $PrimaryOne;
+                        margin-bottom: 1rem;
+                    }
+    
+                    .FNV-Form-Select{
+                        border-width: 0;
+                        border-radius: 8px;
+                        background-color: $PrimaryBackgroundTwo;
+    
+                        .FNV-Form-Select-Chip{
+                            span{
+                                font-size: 16px;
+                                border-radius: 4px;
+                                color: $PrimaryOne;
+                                padding: .5rem 1.5rem;
+                                background-color: $White;
+                            }
+                        }
+    
+                        fieldset{
+                            display: none;
+                        }
+                    }
+    
+                    .FNV-Form-Icon{
+                        padding: 1rem;
+                        margin: 0 .5rem;
+                        border-radius: 8px;
+                        background-color: $PrimaryBackgroundTwo;
+    
+                        svg{
+                            fill: $DangerColor;
+                        }
+                    }
+    
+                    .FNV-Form-Total{
+                        padding: 2rem;
+                        border-radius: 8px;
+                        background-color: $PrimaryBackgroundTwo;
+    
+                        h2{
+                            font-size: 24px;
+                            font-weight: 600;
+                            color: $PrimaryOne;
+                        }
+    
+                        p{
+                            display: flex;
+                            font-size: 20px;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                            justify-content: space-between;
+                        }
+    
+                        .FNV-Form-Discount{
+                            display: flex;
+                            margin-top: 1rem;
+                            justify-content: space-between;
+    
+                            label{
+                                width: 40%;
+                                display: flex;
+                                font-size: 20px;
+                                font-weight: 400;
+                                margin-bottom: 0;
+                                color: $PrimaryOne;
+                                align-items: center;
+                            }
+    
+                            .FNV-Form-Discount-Input{
+                                width: 60%;
+                                display: flex;
+                                padding: .5rem;
+                                border-radius: 5px;
+                                background-color: $White;
+                                justify-content: space-between;
+    
+                                fieldset{
+                                    display: none;
+                                }
+    
+                                button{
+                                    color: $White;
+                                    padding: .7rem 2rem;
+                                    font-size: 20px;
+                                    text-align: center;
+                                    background-color: $PrimaryOne;
+                                }
+                            }
+                        }
+                    }
+    
+                    .FNV-Form-Terms{
+                        padding: 2rem 0;
+    
+                        h3{
+                            font-size: 24px;
+                            font-weight: 600;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                        }
+    
+                        p{
+                            font-size: 20px;
+                            font-weight: 400;
+                            line-height: 36px;
+                            color: $PrimaryOne;
+                        }
+                    }
+    
+                    .FNV-Form-Terms-Agreement{
+                        padding: 0 1rem;
+    
+                        label{
+                            .FNV-Form-Terms-Agreement-Checkbox{
+                                padding: 0;
+                                span{
+                                    font-size: 20px;
+                                    font-weight: 700;
+                                    border-radius: 3px;
+                                    color: $PrimaryOne;
+                                    border: 1px solid $PrimaryOne;
+                                }
+                            }
+    
+                            span{
+                                font-size: 20px;
+                                font-weight: 700;
+                                padding: 0 .5rem;
+                                color: $PrimaryOne;
+                            }
+                        }
+                    }
+                }
+    
+                .col-md-7{
+                    position: relative;
+    
+                    img{
+                        top: 1rem;
+                        position: sticky;
+                        position: -webkit-sticky;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    .FNV-ReservationForm{
+        padding: 2rem;
+        background-color: $White;
+    
+        .container-fluid{
+            .row{
+                .col-md-5{
+                    h1{
+                        font-size: 28px;
+                        font-weight: 700;
+                        color: $PrimaryOne;
+                        margin-bottom: 2rem;
+                    }
+    
+                    label{
+                        font-size: 20px;
+                        font-weight: 400;
+                        color: $PrimaryOne;
+                        margin-bottom: 1rem;
+                    }
+    
+                    .FNV-Form-Select{
+                        border-width: 0;
+                        border-radius: 8px;
+                        background-color: $PrimaryBackgroundTwo;
+    
+                        .FNV-Form-Select-Chip{
+                            span{
+                                font-size: 16px;
+                                border-radius: 4px;
+                                color: $PrimaryOne;
+                                padding: .5rem 1.5rem;
+                                background-color: $White;
+                            }
+                        }
+    
+                        fieldset{
+                            display: none;
+                        }
+                    }
+    
+                    .FNV-Form-Icon{
+                        padding: 1rem;
+                        margin: 0 .5rem;
+                        border-radius: 8px;
+                        background-color: $PrimaryBackgroundTwo;
+    
+                        svg{
+                            fill: $DangerColor;
+                        }
+                    }
+    
+                    .FNV-Form-Total{
+                        padding: 2rem;
+                        border-radius: 8px;
+                        background-color: $PrimaryBackgroundTwo;
+    
+                        h2{
+                            font-size: 24px;
+                            font-weight: 600;
+                            color: $PrimaryOne;
+                        }
+    
+                        p{
+                            display: flex;
+                            font-size: 20px;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                            justify-content: space-between;
+                        }
+    
+                        .FNV-Form-Discount{
+                            display: flex;
+                            margin-top: 1rem;
+                            justify-content: space-between;
+    
+                            label{
+                                width: 40%;
+                                display: flex;
+                                font-size: 20px;
+                                font-weight: 400;
+                                margin-bottom: 0;
+                                color: $PrimaryOne;
+                                align-items: center;
+                            }
+    
+                            .FNV-Form-Discount-Input{
+                                width: 60%;
+                                display: flex;
+                                padding: .5rem;
+                                border-radius: 5px;
+                                background-color: $White;
+                                justify-content: space-between;
+    
+                                fieldset{
+                                    display: none;
+                                }
+    
+                                button{
+                                    color: $White;
+                                    padding: .7rem 2rem;
+                                    font-size: 20px;
+                                    text-align: center;
+                                    background-color: $PrimaryOne;
+                                }
+                            }
+                        }
+                    }
+    
+                    .FNV-Form-Terms{
+                        padding: 2rem 0;
+    
+                        h3{
+                            font-size: 24px;
+                            font-weight: 600;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                        }
+    
+                        p{
+                            font-size: 20px;
+                            font-weight: 400;
+                            line-height: 36px;
+                            color: $PrimaryOne;
+                        }
+                    }
+    
+                    .FNV-Form-Terms-Agreement{
+                        padding: 0 1rem;
+    
+                        label{
+                            .FNV-Form-Terms-Agreement-Checkbox{
+                                padding: 0;
+                                span{
+                                    font-size: 20px;
+                                    font-weight: 700;
+                                    border-radius: 3px;
+                                    color: $PrimaryOne;
+                                    border: 1px solid $PrimaryOne;
+                                }
+                            }
+    
+                            span{
+                                font-size: 20px;
+                                font-weight: 700;
+                                padding: 0 .5rem;
+                                color: $PrimaryOne;
+                            }
+                        }
+                    }
+                }
+    
+                .col-md-7{
+                    position: relative;
+    
+                    img{
+                        top: 1rem;
+                        position: sticky;
+                        position: -webkit-sticky;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// XXX-Large devices (larger desktops, 1920px and up)
+@media (min-width: 1920px) {
+    .FNV-ReservationForm{
+        padding: 2rem;
+        background-color: $White;
+    
+        .container-fluid{
+            .row{
+                .col-md-5{
+                    h1{
+                        font-size: 28px;
+                        font-weight: 700;
+                        color: $PrimaryOne;
+                        margin-bottom: 2rem;
+                    }
+    
+                    label{
+                        font-size: 20px;
+                        font-weight: 400;
+                        color: $PrimaryOne;
+                        margin-bottom: 1rem;
+                    }
+    
+                    .FNV-Form-Select{
+                        border-width: 0;
+                        border-radius: 8px;
+                        background-color: $PrimaryBackgroundTwo;
+    
+                        .FNV-Form-Select-Chip{
+                            span{
+                                font-size: 16px;
+                                border-radius: 4px;
+                                color: $PrimaryOne;
+                                padding: .5rem 1.5rem;
+                                background-color: $White;
+                            }
+                        }
+    
+                        fieldset{
+                            display: none;
+                        }
+                    }
+    
+                    .FNV-Form-Icon{
+                        padding: 1rem;
+                        margin: 0 .5rem;
+                        border-radius: 8px;
+                        background-color: $PrimaryBackgroundTwo;
+    
+                        svg{
+                            fill: $DangerColor;
+                        }
+                    }
+    
+                    .FNV-Form-Total{
+                        padding: 2rem;
+                        border-radius: 8px;
+                        background-color: $PrimaryBackgroundTwo;
+    
+                        h2{
+                            font-size: 24px;
+                            font-weight: 600;
+                            color: $PrimaryOne;
+                        }
+    
+                        p{
+                            display: flex;
+                            font-size: 20px;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                            justify-content: space-between;
+                        }
+    
+                        .FNV-Form-Discount{
+                            display: flex;
+                            margin-top: 1rem;
+                            justify-content: space-between;
+    
+                            label{
+                                width: 40%;
+                                display: flex;
+                                font-size: 20px;
+                                font-weight: 400;
+                                margin-bottom: 0;
+                                color: $PrimaryOne;
+                                align-items: center;
+                            }
+    
+                            .FNV-Form-Discount-Input{
+                                width: 60%;
+                                display: flex;
+                                padding: .5rem;
+                                border-radius: 5px;
+                                background-color: $White;
+                                justify-content: space-between;
+    
+                                fieldset{
+                                    display: none;
+                                }
+    
+                                button{
+                                    color: $White;
+                                    padding: .7rem 2rem;
+                                    font-size: 20px;
+                                    text-align: center;
+                                    background-color: $PrimaryOne;
+                                }
+                            }
+                        }
+                    }
+    
+                    .FNV-Form-Terms{
+                        padding: 2rem 0;
+    
+                        h3{
+                            font-size: 24px;
+                            font-weight: 600;
+                            color: $PrimaryOne;
+                            margin-bottom: 1rem;
+                        }
+    
+                        p{
+                            font-size: 20px;
+                            font-weight: 400;
+                            line-height: 36px;
+                            color: $PrimaryOne;
+                        }
+                    }
+    
+                    .FNV-Form-Terms-Agreement{
+                        padding: 0 1rem;
+    
+                        label{
+                            .FNV-Form-Terms-Agreement-Checkbox{
+                                padding: 0;
+                                span{
+                                    font-size: 20px;
+                                    font-weight: 700;
+                                    border-radius: 3px;
+                                    color: $PrimaryOne;
+                                    border: 1px solid $PrimaryOne;
+                                }
+                            }
+    
+                            span{
+                                font-size: 20px;
+                                font-weight: 700;
+                                padding: 0 .5rem;
+                                color: $PrimaryOne;
+                            }
+                        }
+                    }
+                }
+    
+                .col-md-7{
+                    position: relative;
+    
+                    img{
+                        top: 1rem;
+                        position: sticky;
+                        position: -webkit-sticky;
+                    }
+                }
+            }
+        }
+    }
+}

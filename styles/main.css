@@ -37242,6 +37242,927 @@ body[dir=rtl] {
   background-color: #FFFFFF;
 }
 
+@media (max-width: 575.98px) {
+  .FNV-ReservationForm {
+    padding: 1rem;
+    background-color: #FFFFFF;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #223885;
+    margin-bottom: 2rem;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 label {
+    font-size: 18px;
+    font-weight: 400;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Select {
+    border-width: 0;
+    border-radius: 8px;
+    background-color: #F0F3FB;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Select .FNV-Form-Select-Chip span {
+    font-size: 16px;
+    border-radius: 4px;
+    color: #223885;
+    padding: 0.5rem 1.5rem;
+    background-color: #FFFFFF;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Select fieldset {
+    display: none;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Icon {
+    padding: 1rem;
+    margin: 0 0.5rem;
+    border-radius: 8px;
+    background-color: #F0F3FB;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Icon svg {
+    fill: #dc3545;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total {
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #F0F3FB;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total p {
+    display: flex;
+    font-size: 20px;
+    color: #223885;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount label {
+    width: 40%;
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: #223885;
+    align-items: center;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount .FNV-Form-Discount-Input {
+    width: 60%;
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount .FNV-Form-Discount-Input fieldset {
+    display: none;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount .FNV-Form-Discount-Input button {
+    color: #FFFFFF;
+    padding: 0.7rem 2rem;
+    font-size: 20px;
+    text-align: center;
+    background-color: #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms {
+    padding: 2rem 0;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms-Agreement {
+    padding: 0 1rem;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms-Agreement label .FNV-Form-Terms-Agreement-Checkbox {
+    padding: 0;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms-Agreement label .FNV-Form-Terms-Agreement-Checkbox span {
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 3px;
+    color: #223885;
+    border: 1px solid #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms-Agreement label span {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 0.5rem;
+    color: #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-7 {
+    display: none;
+  }
+}
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+  .FNV-ReservationForm {
+    padding: 2rem;
+    background-color: #FFFFFF;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #223885;
+    margin-bottom: 2rem;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 label {
+    font-size: 20px;
+    font-weight: 400;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Select {
+    border-width: 0;
+    border-radius: 8px;
+    background-color: #F0F3FB;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Select .FNV-Form-Select-Chip span {
+    font-size: 16px;
+    border-radius: 4px;
+    color: #223885;
+    padding: 0.5rem 1.5rem;
+    background-color: #FFFFFF;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Select fieldset {
+    display: none;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Icon {
+    padding: 1rem;
+    margin: 0 0.5rem;
+    border-radius: 8px;
+    background-color: #F0F3FB;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Icon svg {
+    fill: #dc3545;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total {
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: #F0F3FB;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total p {
+    display: flex;
+    font-size: 20px;
+    color: #223885;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount label {
+    width: 40%;
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: #223885;
+    align-items: center;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount .FNV-Form-Discount-Input {
+    width: 60%;
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount .FNV-Form-Discount-Input fieldset {
+    display: none;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount .FNV-Form-Discount-Input button {
+    color: #FFFFFF;
+    padding: 0.7rem 2rem;
+    font-size: 20px;
+    text-align: center;
+    background-color: #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms {
+    padding: 2rem 0;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms-Agreement {
+    padding: 0 1rem;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms-Agreement label .FNV-Form-Terms-Agreement-Checkbox {
+    padding: 0;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms-Agreement label .FNV-Form-Terms-Agreement-Checkbox span {
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 3px;
+    color: #223885;
+    border: 1px solid #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms-Agreement label span {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 0.5rem;
+    color: #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-7 {
+    display: none;
+  }
+}
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  .FNV-ReservationForm {
+    padding: 2rem;
+    background-color: #FFFFFF;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #223885;
+    margin-bottom: 2rem;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 label {
+    font-size: 20px;
+    font-weight: 400;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Select {
+    border-width: 0;
+    border-radius: 8px;
+    background-color: #F0F3FB;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Select .FNV-Form-Select-Chip span {
+    font-size: 16px;
+    border-radius: 4px;
+    color: #223885;
+    padding: 0.5rem 1.5rem;
+    background-color: #FFFFFF;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Select fieldset {
+    display: none;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Icon {
+    padding: 1rem;
+    margin: 0 0.5rem;
+    border-radius: 8px;
+    background-color: #F0F3FB;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Icon svg {
+    fill: #dc3545;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total {
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: #F0F3FB;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total p {
+    display: flex;
+    font-size: 20px;
+    color: #223885;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount label {
+    width: 40%;
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: #223885;
+    align-items: center;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount .FNV-Form-Discount-Input {
+    width: 60%;
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount .FNV-Form-Discount-Input fieldset {
+    display: none;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount .FNV-Form-Discount-Input button {
+    color: #FFFFFF;
+    padding: 0.7rem 2rem;
+    font-size: 20px;
+    text-align: center;
+    background-color: #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms {
+    padding: 2rem 0;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms-Agreement {
+    padding: 0 1rem;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms-Agreement label .FNV-Form-Terms-Agreement-Checkbox {
+    padding: 0;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms-Agreement label .FNV-Form-Terms-Agreement-Checkbox span {
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 3px;
+    color: #223885;
+    border: 1px solid #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms-Agreement label span {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 0.5rem;
+    color: #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-7 {
+    position: relative;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-7 img {
+    top: 1rem;
+    position: sticky;
+    position: -webkit-sticky;
+  }
+}
+@media (min-width: 991.98px) {
+  .FNV-ReservationForm {
+    padding: 2rem;
+    background-color: #FFFFFF;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #223885;
+    margin-bottom: 2rem;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 label {
+    font-size: 20px;
+    font-weight: 400;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Select {
+    border-width: 0;
+    border-radius: 8px;
+    background-color: #F0F3FB;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Select .FNV-Form-Select-Chip span {
+    font-size: 16px;
+    border-radius: 4px;
+    color: #223885;
+    padding: 0.5rem 1.5rem;
+    background-color: #FFFFFF;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Select fieldset {
+    display: none;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Icon {
+    padding: 1rem;
+    margin: 0 0.5rem;
+    border-radius: 8px;
+    background-color: #F0F3FB;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Icon svg {
+    fill: #dc3545;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total {
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: #F0F3FB;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total p {
+    display: flex;
+    font-size: 20px;
+    color: #223885;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount label {
+    width: 40%;
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: #223885;
+    align-items: center;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount .FNV-Form-Discount-Input {
+    width: 60%;
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount .FNV-Form-Discount-Input fieldset {
+    display: none;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount .FNV-Form-Discount-Input button {
+    color: #FFFFFF;
+    padding: 0.7rem 2rem;
+    font-size: 20px;
+    text-align: center;
+    background-color: #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms {
+    padding: 2rem 0;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms-Agreement {
+    padding: 0 1rem;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms-Agreement label .FNV-Form-Terms-Agreement-Checkbox {
+    padding: 0;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms-Agreement label .FNV-Form-Terms-Agreement-Checkbox span {
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 3px;
+    color: #223885;
+    border: 1px solid #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms-Agreement label span {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 0.5rem;
+    color: #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-7 {
+    position: relative;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-7 img {
+    top: 1rem;
+    position: sticky;
+    position: -webkit-sticky;
+  }
+}
+@media (min-width: 1199.98px) {
+  .FNV-ReservationForm {
+    padding: 2rem;
+    background-color: #FFFFFF;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #223885;
+    margin-bottom: 2rem;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 label {
+    font-size: 20px;
+    font-weight: 400;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Select {
+    border-width: 0;
+    border-radius: 8px;
+    background-color: #F0F3FB;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Select .FNV-Form-Select-Chip span {
+    font-size: 16px;
+    border-radius: 4px;
+    color: #223885;
+    padding: 0.5rem 1.5rem;
+    background-color: #FFFFFF;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Select fieldset {
+    display: none;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Icon {
+    padding: 1rem;
+    margin: 0 0.5rem;
+    border-radius: 8px;
+    background-color: #F0F3FB;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Icon svg {
+    fill: #dc3545;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total {
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: #F0F3FB;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total p {
+    display: flex;
+    font-size: 20px;
+    color: #223885;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount label {
+    width: 40%;
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: #223885;
+    align-items: center;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount .FNV-Form-Discount-Input {
+    width: 60%;
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount .FNV-Form-Discount-Input fieldset {
+    display: none;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount .FNV-Form-Discount-Input button {
+    color: #FFFFFF;
+    padding: 0.7rem 2rem;
+    font-size: 20px;
+    text-align: center;
+    background-color: #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms {
+    padding: 2rem 0;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms-Agreement {
+    padding: 0 1rem;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms-Agreement label .FNV-Form-Terms-Agreement-Checkbox {
+    padding: 0;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms-Agreement label .FNV-Form-Terms-Agreement-Checkbox span {
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 3px;
+    color: #223885;
+    border: 1px solid #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms-Agreement label span {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 0.5rem;
+    color: #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-7 {
+    position: relative;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-7 img {
+    top: 1rem;
+    position: sticky;
+    position: -webkit-sticky;
+  }
+}
+@media (min-width: 1400px) {
+  .FNV-ReservationForm {
+    padding: 2rem;
+    background-color: #FFFFFF;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #223885;
+    margin-bottom: 2rem;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 label {
+    font-size: 20px;
+    font-weight: 400;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Select {
+    border-width: 0;
+    border-radius: 8px;
+    background-color: #F0F3FB;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Select .FNV-Form-Select-Chip span {
+    font-size: 16px;
+    border-radius: 4px;
+    color: #223885;
+    padding: 0.5rem 1.5rem;
+    background-color: #FFFFFF;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Select fieldset {
+    display: none;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Icon {
+    padding: 1rem;
+    margin: 0 0.5rem;
+    border-radius: 8px;
+    background-color: #F0F3FB;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Icon svg {
+    fill: #dc3545;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total {
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: #F0F3FB;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total p {
+    display: flex;
+    font-size: 20px;
+    color: #223885;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount label {
+    width: 40%;
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: #223885;
+    align-items: center;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount .FNV-Form-Discount-Input {
+    width: 60%;
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount .FNV-Form-Discount-Input fieldset {
+    display: none;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount .FNV-Form-Discount-Input button {
+    color: #FFFFFF;
+    padding: 0.7rem 2rem;
+    font-size: 20px;
+    text-align: center;
+    background-color: #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms {
+    padding: 2rem 0;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms-Agreement {
+    padding: 0 1rem;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms-Agreement label .FNV-Form-Terms-Agreement-Checkbox {
+    padding: 0;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms-Agreement label .FNV-Form-Terms-Agreement-Checkbox span {
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 3px;
+    color: #223885;
+    border: 1px solid #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms-Agreement label span {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 0.5rem;
+    color: #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-7 {
+    position: relative;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-7 img {
+    top: 1rem;
+    position: sticky;
+    position: -webkit-sticky;
+  }
+}
+@media (min-width: 1920px) {
+  .FNV-ReservationForm {
+    padding: 2rem;
+    background-color: #FFFFFF;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #223885;
+    margin-bottom: 2rem;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 label {
+    font-size: 20px;
+    font-weight: 400;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Select {
+    border-width: 0;
+    border-radius: 8px;
+    background-color: #F0F3FB;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Select .FNV-Form-Select-Chip span {
+    font-size: 16px;
+    border-radius: 4px;
+    color: #223885;
+    padding: 0.5rem 1.5rem;
+    background-color: #FFFFFF;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Select fieldset {
+    display: none;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Icon {
+    padding: 1rem;
+    margin: 0 0.5rem;
+    border-radius: 8px;
+    background-color: #F0F3FB;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Icon svg {
+    fill: #dc3545;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total {
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: #F0F3FB;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total p {
+    display: flex;
+    font-size: 20px;
+    color: #223885;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount label {
+    width: 40%;
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: #223885;
+    align-items: center;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount .FNV-Form-Discount-Input {
+    width: 60%;
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount .FNV-Form-Discount-Input fieldset {
+    display: none;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Total .FNV-Form-Discount .FNV-Form-Discount-Input button {
+    color: #FFFFFF;
+    padding: 0.7rem 2rem;
+    font-size: 20px;
+    text-align: center;
+    background-color: #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms {
+    padding: 2rem 0;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #223885;
+    margin-bottom: 1rem;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms-Agreement {
+    padding: 0 1rem;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms-Agreement label .FNV-Form-Terms-Agreement-Checkbox {
+    padding: 0;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms-Agreement label .FNV-Form-Terms-Agreement-Checkbox span {
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 3px;
+    color: #223885;
+    border: 1px solid #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-5 .FNV-Form-Terms-Agreement label span {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 0.5rem;
+    color: #223885;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-7 {
+    position: relative;
+  }
+  .FNV-ReservationForm .container-fluid .row .col-md-7 img {
+    top: 1rem;
+    position: sticky;
+    position: -webkit-sticky;
+  }
+}
 .FNV-Hike {
   padding: 0;
 }
