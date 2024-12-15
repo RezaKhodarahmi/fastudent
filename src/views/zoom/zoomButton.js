@@ -20,7 +20,7 @@ const CreateMeeting = ({ courseId }) => {
 
       // Open the meeting URL in a new tab if the meeting is created successfully
       if (response.data && response.data.join_url) {
-        window.open(response.data.join_url, '_blank')
+        window.open(response.data.start_url, '_blank')
       }
     } catch (err) {
       setError('Failed to create meeting')

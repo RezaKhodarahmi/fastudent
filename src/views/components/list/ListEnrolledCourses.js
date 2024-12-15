@@ -89,7 +89,7 @@ const ListCourses = props => {
                     </Button>
                   </Link>
 
-                  {parseInt(user?.role) === 1000 ? (
+                  {parseInt(user?.role) == 1000 ? (
                     <ZoomButton courseId={course?.cycles[0].id} />
                   ) : (
                     <>
