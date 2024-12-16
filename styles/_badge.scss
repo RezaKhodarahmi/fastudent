@@ -1,18 +1,16 @@
-badge{
-  border-radius: 5px;
+.FNV-Badge{
+  padding: .5rem;
   font-size: 14px;
   font-weight: 400;
-  line-height: 28px;
-  padding: .2rem .5rem;
-  margin: .2rem;
+  border-radius: 8px;
 
   &.PrimaryColor{
-    background-color: $LightColor;
-    color: $PrimaryColor;
+    color: $White;
+    background-color: $PrimaryOne;
   }
 
-  &.SecondaryColor{
-    background-color: $LightSecond;
-    color: $SecondaryColor;
+  &.Large{
+    font-size: 35px;
+    padding: .5rem 1rem;
   }
 }
