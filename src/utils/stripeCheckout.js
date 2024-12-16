@@ -92,11 +92,11 @@ export default function CheckoutForm(props) {
 
   return (
     <>
-      {user ? (
+      {userEmail ? (
         <form id='payment-form' onSubmit={handleSubmit}>
           <LinkAuthenticationElement
             id='link-authentication-element'
-            options={{ defaultValues: { email: userEmail } }}
+            options={{ defaultValues: { email: JSON.parse(userEmail) } }}
           />
           <PaymentElement id='payment-element' options={paymentElementOptions} />
           <AddressElement
