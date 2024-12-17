@@ -23,11 +23,50 @@ module.exports = {
   async redirects() {
     return [
       {
-        source: '/membership-account/membership-levels',
-        destination: '/membership/checkout',
+        source: '/membership-account/membership-levels', // Use relative URL path for source
+        destination: '/membership/checkout', // Use relative URL path for destination
+        permanent: true // Indicates a permanent redirect (HTTP 301)
+      },
+      {
+        source: '/courses/bcin-house-1', // Use relative URL path for source
+        destination: '/courses/bcin-house', // Use relative URL path for destination
+        permanent: true // Indicates a permanent redirect (HTTP 301)
+      },
+      {
+        source: '/verification-of-educational-qualifications-of-engineering-graduates', // Use relative URL path for source
+        destination: '/signing-documents', // Use relative URL path for destination
+        permanent: true // Indicates a permanent redirect (HTTP 301)
+      },
+      {
+        source: '/course-category/technician/', // Use relative URL path for source
+        destination: '/courses/category/technician', // Use relative URL path for destination
+        permanent: true // Indicates a permanent redirect (HTTP 301)
+      },
+      {
+        source: '/course-category/recorded-courses', // Use relative URL path for source
+        destination: '/courses/category/recorded-courses', // Use relative URL path for destination
+        permanent: true // Indicates a permanent redirect (HTTP 301)
+      },
+      {
+        source: '/p-eng-courses', // Use relative URL path for source
+        destination: '/courses/category/peng-technical-exams', // Use relative URL path for destination
+        permanent: true // Indicates a permanent redirect (HTTP 301)
+      },
+      {
+        source: '/writing-technician-experiences', // Use relative URL path for source
+        destination: '/services/counseling-working-experience', // Use relative URL path for destination
+        permanent: true // Indicates a permanent redirect (HTTP 301)
+      },
+      {
+        source: '/courses/gas-technician-g2-g3', // Use relative URL path for source
+        destination: '/courses/gas-technician-g3', // Use relative URL path for destination
+        permanent: true // Indicates a permanent redirect (HTTP 301)
+      },
+      {
+        source: '/courses/writing-technician-experiences',
+        destination: '/services/writing-technician-experiences',
         permanent: true
       }
-      // ...other redirects
     ]
   },
   async headers() {

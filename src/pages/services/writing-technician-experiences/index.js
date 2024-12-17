@@ -46,20 +46,18 @@ const BookingForm = () => {
   const [userEmail, setUserEmail] = useState(null)
   const [numCases, setNumCases] = useState(1)
   const [caseSelections, setCaseSelections] = useState([caseOptions[0]?.id || null])
-  const [totalPrice, setTotalPrice] = useState(200)
+  const [totalPrice, setTotalPrice] = useState(659)
   const [couponCode, setCouponCode] = useState('')
   const [discountedPrice, setDiscountedPrice] = useState(totalPrice)
   const [discountAmount, setDiscountAmount] = useState(0)
   const [clientSecret, setClientSecret] = useState(null)
   const [paymentType, setPaymentType] = useState(null) // Track selected payment type
+  const [isChecked, setIsChecked] = useState(false) // Track agreement checkbox
   const { t } = useTranslation()
 
   useEffect(() => {
-    const calculatedTotal = numCases * 200
-    setTotalPrice(calculatedTotal)
-    setDiscountedPrice(calculatedTotal)
-    setDiscountAmount(0)
-  }, [numCases])
+    calculateTotalPrice()
+  }, [numCases, caseSelections])
 
   useEffect(() => {
     setUserEmail(localStorage.getItem('userData') || null)
@@ -74,8 +72,22 @@ const BookingForm = () => {
     appearance
   }
 
+  const calculateTotalPrice = () => {
+    const basePrice = 659
+    let total = 0
+
+    if (caseSelections.length > 0) {
+      total += basePrice // First case price
+      total += (caseSelections.length - 1) * (basePrice * 0.5) // Additional cases at 50% discount
+    }
+
+    setTotalPrice(total)
+    setDiscountedPrice(total - discountAmount)
+  }
+
   const handlePayPartial = () => {
-    setPaymentType('partial') // Set payment type to partial
+    if (!isChecked) return // Prevent payment if terms are not agreed
+    setPaymentType('partial')
     const token = window.localStorage.getItem('accessToken')
     fetch(`${BASE_URL}/student/transaction/partial_intent_client_secret`, {
       method: 'POST',
@@ -85,32 +97,24 @@ const BookingForm = () => {
       },
       body: JSON.stringify({
         email: JSON.parse(userEmail),
-        cartTotal: totalPrice, // Example: Partial payment is 50% of total
+        cartTotal: totalPrice,
         items: caseSelections,
         couponCode
       })
     })
-      .then(res => {
-        if (!res.ok) {
-          throw new Error(`HTTP error! status: ${res.status}`)
-        }
-        return res.json()
-      })
+      .then(res => res.json())
       .then(data => {
         const { redirectURL } = data
         if (redirectURL) {
           router.push(redirectURL)
-        } else {
-          throw new Error('Redirect URL not found in response.')
         }
       })
-      .catch(error => {
-        console.error('Partial payment error:', error)
-        alert('An error occurred while initiating partial payment. Please try again.')
-      })
+      .catch(error => console.error('Partial payment error:', error))
   }
+
   const handelInitiatePayment = () => {
-    setPaymentType('full') // Set payment type to full
+    if (!isChecked) return // Prevent payment if terms are not agreed
+    setPaymentType('full')
     const token = window.localStorage.getItem('accessToken')
     fetch(`${BASE_URL}/student/transaction/payment_intent_client_secret`, {
       method: 'POST',
@@ -121,7 +125,7 @@ const BookingForm = () => {
       body: JSON.stringify({
         email: JSON.parse(userEmail),
         cartTotal: totalPrice,
-        items: caseSelections, // Pass IDs to the API
+        items: caseSelections,
         couponCode
       })
     })
@@ -130,6 +134,19 @@ const BookingForm = () => {
         const { clientSecret } = data
         setClientSecret(clientSecret)
       })
+  }
+
+  const handleCouponApply = () => {
+    const coupon = coupons.find(c => c.code === couponCode && new Date(c.expiration) >= new Date())
+    if (coupon) {
+      const discount = (totalPrice * coupon.discount) / 100
+      setDiscountAmount(discount)
+      setDiscountedPrice(totalPrice - discount)
+    } else {
+      alert('کد تخفیف معتبر نیست یا تاریخ آن گذشته است')
+      setDiscountAmount(0)
+      setDiscountedPrice(totalPrice)
+    }
   }
 
   const handleNumCasesChange = event => {
@@ -162,24 +179,8 @@ const BookingForm = () => {
     setNumCases(updatedSelections.length)
   }
 
-  const handleCouponApply = () => {
-    const coupon = coupons.find(c => c.code === couponCode && new Date(c.expiration) >= new Date())
-    if (coupon) {
-      const discount = (totalPrice * coupon.discount) / 100
-      setDiscountAmount(discount)
-      setDiscountedPrice(totalPrice - discount)
-    } else {
-      alert('کد تخفیف معتبر نیست یا تاریخ آن گذشته است')
-      setDiscountAmount(0)
-      setDiscountedPrice(totalPrice)
-    }
-  }
-
-  const [isChecked, setIsChecked] = useState(false)
-  const isReadyToPay = caseSelections.every(selection => selection)
-
   const redirectToLogin = () => {
-    router.push('/login?returnUrl=/services/pay')
+    router.push('/login?returnUrl=/services/writing-technician-experiences')
   }
 
   return (
@@ -204,7 +205,13 @@ const BookingForm = () => {
 
               <InputLabel>تعداد پرونده های مورد نیاز خود را انتخاب کنید</InputLabel>
               <FormControl fullWidth margin='normal'>
-                <Select value={numCases} onChange={handleNumCasesChange} className='FNV-Form-Select' displayEmpty>
+                <Select
+                  disabled={!userEmail}
+                  value={numCases}
+                  onChange={handleNumCasesChange}
+                  className='FNV-Form-Select'
+                  displayEmpty
+                >
                   {[1, 2, 3, 4].map(num => (
                     <MenuItem key={num} value={num}>
                       {num}
@@ -218,7 +225,11 @@ const BookingForm = () => {
                   <InputLabel>{`پرونده ${index + 1}`}</InputLabel>
                   <Box display='flex' alignItems='center'>
                     <FormControl fullWidth>
-                      <Select value={selection || ''} onChange={e => handleCaseSelectionChange(index, e.target.value)}>
+                      <Select
+                        disabled={!userEmail}
+                        value={selection || ''}
+                        onChange={e => handleCaseSelectionChange(index, e.target.value)}
+                      >
                         {caseOptions.map(option => (
                           <MenuItem key={option.id} value={option.id}>
                             {option.label}
@@ -266,7 +277,7 @@ const BookingForm = () => {
                       placeholder='کد تخفیف'
                       className='FNV-Form-Discount-Input-Field'
                       onChange={e => setCouponCode(e.target.value)}
-                      inputProps={{ pattern: '^[\\u0600-\\u06FF0-9]*$' }}
+                      inputProps={{ pattern: '^[\u0600-\u06FF0-9]*$' }}
                     />
                     <Button onClick={handleCouponApply}>ثبت</Button>
                   </Box>
@@ -304,7 +315,7 @@ const BookingForm = () => {
                   <Button
                     className='FNV-Btn BtnOutline PrimaryColor BtnMedium w-100'
                     onClick={handlePayPartial}
-                    disabled={paymentType === 'partial'}
+                    disabled={!isChecked || paymentType === 'partial'}
                   >
                     پرداخت اقساطی
                   </Button>
@@ -313,7 +324,7 @@ const BookingForm = () => {
                   <Button
                     className='FNV-Btn BtnPrimary BtnMedium w-100'
                     onClick={handelInitiatePayment}
-                    disabled={paymentType === 'full'}
+                    disabled={!isChecked || paymentType === 'full'}
                   >
                     پرداخت کامل وجه
                   </Button>

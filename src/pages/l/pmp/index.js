@@ -6,7 +6,7 @@ import Link from 'next/link'
 import Logo from 'src/views/logoWhite'
 
 // PMI Logi
-import Pmi from 'src/views/components/svg/pmi'
+import Pmi from 'src/views/components/svg/Pmi'
 
 function PMP() {
     return (
