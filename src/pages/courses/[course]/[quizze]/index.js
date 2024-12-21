@@ -213,6 +213,10 @@ const Test = () => {
 
   const handleShowAnswer = questionId => {
     setShowAnswerForQuestion(prev => ({ ...prev, [questionId]: true }))
+    // Disable selection for this question
+    document.querySelectorAll(`input[name="question-${questionId}"]`).forEach(input => {
+      input.disabled = true
+    })
   }
 
   useEffect(() => {
@@ -239,8 +243,8 @@ const Test = () => {
         point: ((correctAnswers * 10) / totalQuestions) * 10,
         test: testData?.data?.data?.id,
         user: JSON.parse(user),
-        correct_answers_list: correctAnswersList, // Send correct answers list
-        wrong_answers_list: wrongAnswersList // Send wrong answers list
+        correct_answers_list: correctAnswersList, // Include correct answers
+        wrong_answers_list: wrongAnswersList // Include wrong answers
       }
 
       axios
@@ -457,7 +461,10 @@ const Test = () => {
                           <Button
                             key={index}
                             variant='outlined'
-                            style={{ margin: '0 5px' }}
+                            style={{
+                              margin: '0 5px',
+                              backgroundColor: currentPage === index + 1 ? 'rgba(0, 128, 0, 0.1)' : 'transparent'
+                            }}
                             onClick={() => setCurrentPage(index + 1)}
                           >
                             {index + 1}
@@ -569,79 +576,24 @@ const Test = () => {
                   <Typography variant='h5' style={{ marginBottom: '20px' }}>
                     Test Review
                   </Typography>
-                  {testReview && (
-                    <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
-                      <div style={{ marginRight: '20px', display: 'flex', alignItems: 'center' }}>
-                        <div
-                          style={{
-                            width: '12px',
-                            height: '12px',
-                            borderRadius: '50%',
-                            backgroundColor: 'blue',
-                            marginRight: '5px'
-                          }}
-                        ></div>
-                        <Typography variant='body2'>Not Answered</Typography>
-                      </div>
-                      <div style={{ marginRight: '20px', display: 'flex', alignItems: 'center' }}>
-                        <div
-                          style={{
-                            width: '12px',
-                            height: '12px',
-                            borderRadius: '50%',
-                            backgroundColor: 'green',
-                            marginRight: '5px'
-                          }}
-                        ></div>
-                        <Typography variant='body2'>Correct</Typography>
-                      </div>
-                      <div style={{ display: 'flex', alignItems: 'center' }}>
-                        <div
-                          style={{
-                            width: '12px',
-                            height: '12px',
-                            borderRadius: '50%',
-                            backgroundColor: 'red',
-                            marginRight: '5px'
-                          }}
-                        ></div>
-                        <Typography variant='body2'>Wrong</Typography>
-                      </div>
-                    </div>
-                  )}
+
+                  {/* Review Questions */}
                   {testReview?.map((question, index) => (
                     <div key={index} style={{ marginBottom: '20px' }}>
-                      <Typography variant='h6' style={preventCopyStyle}>
-                        {question.questionText}
+                      <Typography variant='h6' style={{ marginBottom: '10px', ...preventCopyStyle }}>
+                        Question {index + 1}:
                       </Typography>
-                      {question.answers.map(answer => (
-                        <Typography
-                          key={answer.id}
-                          style={{
-                            marginLeft: '20px',
-                            ...(question.correctAnswerIds.includes(answer.id) ? correctAnswerStyle : {}),
-                            ...(question.userAnswerIds.includes(answer.id) &&
-                            !question.correctAnswerIds.includes(answer.id)
-                              ? incorrectAnswerStyle
-                              : {}),
-                            ...(correctAnswersList.includes(question.id) ? { color: 'green' } : {}),
-                            ...(wrongAnswersList.includes(question.id) ? { color: 'red' } : {}),
-                            ...preventCopyStyle
-                          }}
-                        >
-                          {answer.answerText}
-                          {question.correctAnswerIds.includes(answer.id) ? ' (Correct Answer)' : ''}
-                        </Typography>
-                      ))}
-                      <Typography
-                        style={{
-                          marginLeft: '20px',
-                          color: question.isCorrect ? 'green' : 'red',
-                          display: question.userAnswerIds.length === 0 ? 'none' : 'block',
-                          ...preventCopyStyle
-                        }}
-                      >
-                        Your answer was {question.isCorrect ? 'correct' : 'incorrect'}.
+                      <Typography style={{ marginLeft: '20px', color: 'green' }}>
+                        Correct Answer:{' '}
+                        {question.correctAnswerIds.map(
+                          id => question.answers.find(answer => answer.id === id)?.answerText || ''
+                        )}
+                      </Typography>
+                      <Typography style={{ marginLeft: '20px', color: question.isCorrect ? 'green' : 'red' }}>
+                        Your Answer:{' '}
+                        {question.userAnswerIds.map(
+                          id => question.answers.find(answer => answer.id === id)?.answerText || 'Not Answered'
+                        )}
                       </Typography>
                     </div>
                   ))}
