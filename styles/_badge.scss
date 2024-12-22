@@ -9,6 +9,11 @@
     background-color: $PrimaryOne;
   }
 
+  &.SecondaryColor{
+    color: $PrimaryOne;
+    background-color: $PrimaryTwo;
+  }
+
   &.Large{
     font-size: 35px;
     padding: .5rem 1rem;

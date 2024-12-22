@@ -11,39 +11,20 @@ import Pmi from 'src/views/components/svg/Pmi'
 function PMP() {
     return (
         <>
-            <main className='FNV-Landings PMP-Landings'>
+            <main className='FNV-Landings Electrician-Landings'>
                 <header>
                     <div className='container'>
                         <div className='row'>
-                            <div className='col-12 col-md-4 align-items-start'>
-                                <span className='FNV-Badge PrimaryColor Large mb-4'>ثبت نام دوره جدید</span>
-
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 137 134" width="137" height="134" fill="none">
-                                    <path fillRule="evenodd" clipRule="evenodd" d="M48.9285 101.58C48.9285 92.7192 56.3222 85.3708 65.238 85.3708V69.1611H0V85.3708C8.91586 85.3708 16.3095 92.7192 16.3095 101.58C16.3095 110.442 8.91586 117.79 0 117.79V134H65.238V117.79C56.3222 117.79 48.9285 110.658 48.9285 101.58Z" fill="#0BBFE2" />
-                                    <path fillRule="evenodd" clipRule="evenodd" d="M102.619 32.4194C102.619 14.4806 88.0492 0 70 0V64.8387C88.0492 64.8387 102.619 50.3581 102.619 32.4194C102.619 50.3581 117.189 64.8387 135.238 64.8387V0C117.189 0 102.619 14.4806 102.619 32.4194Z" fill="#FE620D" />
-                                    <path fillRule="evenodd" clipRule="evenodd" d="M42.8396 32.4194H12.3952V12.1032H42.8396C48.4936 12.1032 53.0603 16.6419 53.0603 22.2613C53.0603 27.8806 48.4936 32.4194 42.8396 32.4194ZM44.7968 0H0V64.8387H12.1778V44.5226H44.7968C57.192 43.4419 66.3253 32.6355 65.0206 20.3161C64.1507 9.50968 55.6698 1.08065 44.7968 0Z" fill="black" />
-                                    <path fillRule="evenodd" clipRule="evenodd" d="M69.5869 133.999V114.548L89.1583 133.999H69.5869Z" fill="#5014A8" />
-                                    <path fillRule="evenodd" clipRule="evenodd" d="M107.86 134L71.7617 98.1226V79.9678L126.127 134H107.86Z" fill="#5014A8" />
-                                    <path fillRule="evenodd" clipRule="evenodd" d="M137 69.1611V88.6127L117.429 69.1611H137Z" fill="#5014A8" />
-                                    <path fillRule="evenodd" clipRule="evenodd" d="M134.825 123.193L80.46 69.1611H98.7266L134.825 105.039V123.193Z" fill="#5014A8" />
-                                </svg>
-
-                            </div>
-
-                            <div className='col-12 col-md-4 align-items-center d-none d-md-flex'>
+                            <div className='col-12 d-flex justify-content-center'>
                                 <Logo />
                             </div>
                         </div>
 
                         <div className='row'>
-                            <div className='col-12 col-md-8'>
-                                <div className='row'>
-                                    {[...Array(8)].map((_, index) => (
-                                        <div className='col-2 col-md-3' key={index}>
-                                            <img src={`/images/pages/landings/pmp/books/${index + 1}.webp`} alt={`Book ${index + 1}`} className='img-fluid' />
-                                        </div>
-                                    ))}
-                                </div>
+                            <div className='col-12 col-md-5'>
+                                <h1>دوره 309A</h1>
+                                <p>دوره برق فناوران، تنها دوره مورد تایید اسکیلد ترید انتاریو به زبان فارسی در کانادا</p>
+                                <Link href="#" className='FNV-Badge SecondaryColor Large mb-4'>ثبت نام دوره جدید</Link>
                             </div>
                         </div>
                     </div>
