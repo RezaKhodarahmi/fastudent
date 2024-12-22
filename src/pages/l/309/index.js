@@ -28,7 +28,7 @@ function PMP() {
                 </header>
 
                 <article>
-                    <section className='WhatsPMI'>
+                    <section className='Whats309'>
                         <div className='container'>
                             <div className='row justify-content-center'>
                                 <div className='col-12 text-center'>
@@ -43,20 +43,18 @@ function PMP() {
                         </div>
                     </section>
 
-                    <section className='WhyPMI'>
+                    <section className='Why309'>
                         <div className='container'>
                             <div className='row'>
-                                <div className='col-12'>
-                                    <h2>چرا گواهینامه PMP مهم است؟</h2>
+                                <div className='col-12 col-md-6'>
+                                    <p>
+                                        در صورت داشتن سابقه کار برق، دوره فناوران کمک می‌کند تا مهارتهای لازم در زمینه کدبوک را آموزش ببینید و با تدریس فارسی و ترمینولوژی انگلیسی، واژگان تخصصی و اصطلاحات درست این پوزیشن شغلی را بیاموزید.
+                                    </p>
+
+                                    <Link href="#" className='FNV-Badge SecondaryColor Large mb-4'>ثبت نام دوره جدید</Link>
                                 </div>
                                 <div className='col-12 col-md-6'>
-                                    <img src='/images/pages/landings/pmp/Whypmp.webp' className='img-fluid w-100' />
-                                </div>
-                                <div className='col-12 col-md-6'>
-                                    <p><strong>اعتبار جهانی:</strong> گواهینامه PMP در سراسر جهان به عنوان نشانه&zwnj;ای از توانمندی بالا در مدیریت پروژه شناخته می&zwnj;شود و در هر صنعتی قابل استفاده است.</p>
-                                    <p><strong>پیشرفت شغلی:</strong> داشتن این گواهینامه می&zwnj;تواند فرصت&zwnj;های شغلی را گسترش دهد و درآمد افراد را به طور قابل توجهی افزایش دهد.</p>
-                                    <p><strong>ارتقای مهارت&zwnj;ها</strong>: فرایند اخذ pmp، افراد را به مجموعه&zwnj;ای از مهارت&zwnj;های پیشرفته از جمله رهبری، مدیریت استراتژیک و دانش فنی مجهز می&zwnj;کند.</p>
-                                    <p><strong>استانداردسازی و تضمین کیفیت</strong>: PMP نشان&zwnj;دهنده پایبندب به استانداردهای جهانی و استفاده از شیوه&zwnj;های بهینه در مدیریت پروژه است، که به نتایج موفق&zwnj;تر و بهره&zwnj;وری بالاتر موجر می&zwnj;شود.</p>
+                                    <img src='/images/pages/landings/309/309Certificate.webp' className='img-fluid w-100' />
                                 </div>
                             </div>
                         </div>
