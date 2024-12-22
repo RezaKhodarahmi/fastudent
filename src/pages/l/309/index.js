@@ -5,9 +5,6 @@ import Link from 'next/link'
 // Logo
 import Logo from 'src/views/logoWhite'
 
-// PMI Logi
-import Pmi from 'src/views/components/svg/Pmi'
-
 function PMP() {
     return (
         <>
@@ -35,14 +32,12 @@ function PMP() {
                         <div className='container'>
                             <div className='row justify-content-center'>
                                 <div className='col-12 text-center'>
-                                    <Pmi />
+                                    <img src='/images/pages/landings/309/redseal.webp' className='img-fluid' />
                                 </div>
+
                                 <div className='col-12'>
-                                    <h2>موسسه مدیریت پروژه (PMI)</h2>
-                                </div>
-                                <div className='col-12'>
-                                    <h3>سایت رسمی: pmi.org</h3>
-                                    <p><strong>موسسه مدیریت پروژه (PMI)</strong> یکی از <strong>معتبرترین و پیشروترین</strong> سازمان&zwnj;های جهانی در زمینه <strong>مدیریت پروژه</strong> است. این موسسه به توسعه و پیشرفت حرفه مدیریت پروژه در سطح بین&zwnj;المللی اختصاص دارد و با ارایه گواهیه&zwnj;نامه&zwnj;های معتبر و منابع آموزشی جامع، نقش مهمی در ارتقای این حرفه ایفا می&zwnj;کند. یکی از<strong> شناخته&zwnj;ترین گواهی&zwnj;نامه&zwnj;های</strong> آن، مدیر پروژه (PMP) است که به عنوان یکی از معتبرترین مدارک در مدیریت پروژه شناخته می&zwnj;شود.</p>
+                                    <h3>چرا باید ردسیل برق بگیرید و چه موانعی وجود دارد؟</h3>
+                                    <p>برای فعالیت به عنوان برقکار در کانادا، باید لایسنس برقکاری (لایسنس نشنال Redseal یا استانی با مهر تایید Redseal) بگیرید. پیش‌نیازهای دریافت این لایسنس در اکثر استان‌ها ۹۰۰۰ ساعت (معادل ۵ سال) سابقه کار و پاس کردن آزمون Redseal است. بسیاری از نیوکامرها و ایرانیان در پاس کردن این آزمون با چالش مواجه می‌شوند.</p>
                                 </div>
                             </div>
                         </div>
