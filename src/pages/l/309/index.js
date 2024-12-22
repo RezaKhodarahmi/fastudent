@@ -16,7 +16,7 @@ function PMP() {
                     <div className='container'>
                         <div className='row'>
                             <div className='col-12 col-md-4 align-items-start'>
-                                <Link href="/courses/pmp-certification-preparation-test" className='FNV-Badge PrimaryColor Large mb-4'>ثبت نام دوره جدید</Link>
+                                <span className='FNV-Badge PrimaryColor Large mb-4'>ثبت نام دوره جدید</span>
 
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 137 134" width="137" height="134" fill="none">
                                     <path fillRule="evenodd" clipRule="evenodd" d="M48.9285 101.58C48.9285 92.7192 56.3222 85.3708 65.238 85.3708V69.1611H0V85.3708C8.91586 85.3708 16.3095 92.7192 16.3095 101.58C16.3095 110.442 8.91586 117.79 0 117.79V134H65.238V117.79C56.3222 117.79 48.9285 110.658 48.9285 101.58Z" fill="#0BBFE2" />
@@ -194,7 +194,7 @@ function PMP() {
                         <div className='container'>
                             <div className='row'>
                                 <div className='col-12 col-md-6'>
-                                    <Link href="/courses/capm-course">
+                                    <Link href="#">
                                         Apply now for CAPM
 
                                         <svg width="69" height="51" viewBox="0 0 69 51" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -206,7 +206,7 @@ function PMP() {
                                 </div>
 
                                 <div className='col-12 col-md-6'>
-                                    <Link href="/courses/pmp-certification-preparation-test">
+                                    <Link href="#">
                                         Apply now for PMP
 
                                         <svg width="69" height="51" viewBox="0 0 69 51" fill="none" xmlns="http://www.w3.org/2000/svg">
