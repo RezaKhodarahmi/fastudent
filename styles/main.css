@@ -13689,39 +13689,43 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
   .FNV-Landings.Electrician-Landings article section.Why309 .container .row .col-12 a {
     font-weight: 700;
   }
-  .FNV-Landings.Electrician-Landings article section.WhyFanavaranPMP {
+  .FNV-Landings.Electrician-Landings article section.WhyFanavaran309 {
     padding: 4rem 0;
   }
-  .FNV-Landings.Electrician-Landings article section.WhyFanavaranPMP .container {
+  .FNV-Landings.Electrician-Landings article section.WhyFanavaran309 .container {
     position: relative;
     padding: 8rem 5rem;
     border-radius: 40px;
-    background: rgb(4, 18, 135);
-    background: linear-gradient(130deg, rgb(4, 18, 135) 0%, rgb(134, 141, 197) 25%, rgb(204, 207, 230) 46%, rgba(255, 255, 255, 0) 79%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#041287",endColorstr="#ffffff",GradientType=1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("/images/pages/landings/309/WhyFanavaran309.webp");
   }
-  .FNV-Landings.Electrician-Landings article section.WhyFanavaranPMP .container .AuthBadge {
-    top: -5rem;
-    left: 5rem;
-    position: absolute;
-  }
-  .FNV-Landings.Electrician-Landings article section.WhyFanavaranPMP .container .col-12 h2 {
-    color: #FFFFFF;
+  .FNV-Landings.Electrician-Landings article section.WhyFanavaran309 .container .col-12 h2 {
     padding: 1rem;
     font-size: 45px;
     font-weight: 700;
-    border-radius: 20px;
     margin-bottom: 1rem;
     display: inline-block;
-    background-color: #F56322;
+    color: #40DDA9;
   }
-  .FNV-Landings.Electrician-Landings article section.WhyFanavaranPMP .container .col-12 p {
+  .FNV-Landings.Electrician-Landings article section.WhyFanavaran309 .container .col-12 p {
+    color: #FFFFFF;
     font-size: 45px;
     font-weight: 800;
     line-height: 85px;
-    color: #223885;
     margin-bottom: 1rem;
     text-align: justify;
+  }
+  .FNV-Landings.Electrician-Landings article section.WhyFanavaran309 .container .col-12 p mark {
+    color: #FFA600;
+    background-color: transparent;
+  }
+  .FNV-Landings.Electrician-Landings article section.WhyFanavaran309 .container .col-12 a {
+    color: #FFFFFF;
+    direction: ltr;
+  }
+  .FNV-Landings.Electrician-Landings article section.WhyFanavaran309 .container .col-12 a svg {
+    margin-right: 1rem;
   }
   .FNV-Landings.Electrician-Landings article section.VerifyFanavaran .container .row .col-12 span {
     font-size: 24px;
