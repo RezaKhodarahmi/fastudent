@@ -86,32 +86,23 @@ function PMP() {
                         </div>
                     </section>
 
-                    <section className='VerifyFanavaran'>
+                    <section className='WhyFanavaran309-2'>
                         <div className='container'>
                             <div className='row'>
-                                <div className='col-12 d-flex justify-content-between'>
-                                    <span>برای مشاهده تاییدیه فناوران به عنوان آموزشگاه مورد تایید PMI، روی لینک زیر کلیک کنید.</span>
-                                    <span>روش راستی آزمایی</span>
-                                </div>
+                                <div className='col-12 d-flex flex-column align-items-start'>
+                                    <h2>چرا دوره برق فناوران؟</h2>
 
-                                <div className='col-12 col-md-6'>
-                                    <div className='card'>
-                                        <img src='/images/pages/landings/pmp/verify/1.webp' className='img-fluid' />
-                                    </div>
-                                </div>
-
-                                <div className='col-12 col-md-6'>
-                                    <div className='card'>
-                                        <img src='/images/pages/landings/pmp/verify/2.webp' className='img-fluid' />
-                                    </div>
+                                    <ul>
+                                        <li>مورد تایید Skilled Trade of Ontario</li>
+                                        <li>طراحی شده برای قبولی در آزمون مطابق با آخرین تغییرات کدبوک</li>
+                                        <li>اساتید مجرب لایسنس دار و Master با سابقه چندین ساله به عنوان تکنسین برق در کانادا</li>
+                                        <li>مقرون&zwnj;به&zwnj;صرفه در مقایسه با دوره&zwnj;های مشابه</li>
+                                        <li>پرداخت به صورت اقساط</li>
+                                        <li>امکان دسترسی به ویدوهای رکورد شده دوره&zwnj;ها به مدت ۸ ماه</li>
+                                        <li>تدریس به زبان فارسی و ترمینولوژی انگلیسی برای یادگیری واژگان و اصطلاحات درست برقکاری در کانادا</li>
+                                    </ul>
                                 </div>
                             </div>
-                        </div>
-                    </section>
-
-                    <section className='AuthorizedFanvaaran'>
-                        <div className='container'>
-                            <img src='/images/pages/landings/pmp/section6.webp' className='img-fluid w-100' />
                         </div>
                     </section>
 

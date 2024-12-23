@@ -1574,82 +1574,42 @@
                             }
                         }
                     }
+
+                    &.WhyFanavaran309-2{
+                        padding: 4rem 0;
     
-                    &.VerifyFanavaran{
                         .container{
-                            .row{
-                                .col-12{
-                                    span{
-                                        font-size: 24px;
-                                        font-weight: 800;
-                                        color: $PrimaryOne;
-                                    }
-                                }
-                                
-                                .col-md-6{
-                                    margin: 2rem 0;
+                            position: relative;
+                            padding: 8rem 5rem;
+                            border-radius: 40px;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-image: url('/images/pages/landings/309/WhyFanavaran309-2.webp');
     
-                                    .card{
-                                        width: 100%;
-                                        height: 100%;
-                                        padding: 2rem;
-                                        border-width: 0;
-                                        text-align: center;
-                                        border-radius: 40px;
-                                        display: inline-block;
-                                        background-color: $White;
-                                        box-shadow: 0 0 20px $PrimaryShadow;
+                            .col-12{
+                                h2{
+                                    padding: 1rem;
+                                    font-size: 35px;
+                                    font-weight: 700;
+                                    color: $PrimaryOne;
+                                    margin-bottom: 1rem;
+                                    display: inline-block;
+                                }
+    
+                                ul{
+                                    font-size: 30px;
+                                    font-weight: 600;
+                                    color: $PrimaryOne;
+                                    margin-bottom: 1rem;
+                                    text-align: justify;
+
+                                    mark{
+                                        color: $PrimaryTwo;
+                                        background-color: transparent;
                                     }
                                 }
                             }
                         }
-                    }
-    
-                    &.AuthorizedFanvaaran{
-                        padding: 2rem 0;
-                    }
-    
-                    &.BuyCourse{
-                        padding: 2rem 0;
-    
-                        .container{
-                            .row{
-                                .col-12{
-                                    position: relative;
-    
-                                    .row{
-                                        left: 0;
-                                        z-index: 2;
-                                        width: 100%;
-                                        bottom: 4rem;
-                                        padding: 5rem;
-                                        position: absolute;
-                                        align-items: flex-end;
-    
-    
-                                        .col-md-6{
-                                            a{
-                                                padding: 1rem;
-                                                color: $White;
-                                                font-size: 26px;
-                                                font-weight: 800;
-                                                border-radius: 8px;
-                                                background-color: $PrimaryNine;
-                                            }
-    
-                                            &:last-child{
-                                                display: flex;
-                                                justify-content: flex-end;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-    
-                    &.OnlineClass{
-                        padding: 2rem 0;
                     }
     
                     &.Register{
