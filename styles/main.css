@@ -13757,72 +13757,126 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     color: #FFA600;
     background-color: transparent;
   }
-  .FNV-Landings.Electrician-Landings article section.Register {
+  .FNV-Landings.Electrician-Landings article section.FanvaranStudents {
+    padding: 0 0 2rem;
+  }
+  .FNV-Landings.Electrician-Landings article section.FanvaranText1 {
     padding: 2rem 0;
   }
-  .FNV-Landings.Electrician-Landings article section.Register .container h2 {
-    direction: ltr;
-    text-align: left;
-    font-weight: 600;
-    font-size: 100px;
-    color: #223885;
-    margin-bottom: 2rem;
-  }
-  .FNV-Landings.Electrician-Landings article section.Register .container h2 span {
-    font-weight: 900;
-    color: #F56322;
-  }
-  .FNV-Landings.Electrician-Landings article section.Register .container .row {
-    padding: 2rem 0;
-  }
-  .FNV-Landings.Electrician-Landings article section.Register .container .row .col-md-6 {
-    background: unset;
-  }
-  .FNV-Landings.Electrician-Landings article section.Register .container .row .col-md-6 a {
-    padding: 1rem;
-    color: #FFFFFF;
-    direction: ltr;
-    display: block;
-    font-size: 48px;
-    font-weight: 800;
-    text-align: center;
+  .FNV-Landings.Electrician-Landings article section.FanvaranText1 .container {
+    padding: 4rem;
+    border-radius: 20px;
     background-color: #223885;
   }
-  .FNV-Landings.Electrician-Landings article section.Register .container .row .col-md-6 a svg {
-    margin-left: 1rem;
-  }
-  .FNV-Landings.Electrician-Landings article section.Register .col-12 {
-    padding: 0.5rem;
-    background: rgb(34, 56, 133);
-    background: linear-gradient(180deg, rgb(34, 56, 133) 0%, rgb(112, 129, 230) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#223885",endColorstr="#7081e6",GradientType=1);
-  }
-  .FNV-Landings.Electrician-Landings article section.Register .col-12 p {
+  .FNV-Landings.Electrician-Landings article section.FanvaranText1 .container .row h2 {
     color: #FFFFFF;
-    font-size: 33px;
-    font-weight: 800;
-    text-align: center;
-  }
-  .FNV-Landings.Electrician-Landings article section.ComparePmpCapm {
-    padding: 2rem 0;
-  }
-  .FNV-Landings.Electrician-Landings article section.ComparePmpCapm .container .row .col-12 {
-    position: relative;
-  }
-  .FNV-Landings.Electrician-Landings article section.ComparePmpCapm .container .row .col-12 .row {
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    bottom: 0rem;
-    padding: 5rem;
-    position: absolute;
-    align-items: flex-end;
-  }
-  .FNV-Landings.Electrician-Landings article section.ComparePmpCapm .container .row .col-12 .row h2 {
     font-size: 35px;
     font-weight: 800;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .FNV-Landings.Electrician-Landings article section.FanvaranText1 .container .row p {
+    color: #FFFFFF;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .FNV-Landings.Electrician-Landings article section.FanvaranText1 .container .row p mark {
+    color: #40DDA9;
+    background-color: transparent;
+  }
+  .FNV-Landings.Electrician-Landings article section.FanvaranText2 {
+    padding: 2rem 0;
+  }
+  .FNV-Landings.Electrician-Landings article section.FanvaranText2 .container {
+    padding: 4rem;
+    border-radius: 20px;
+    background-color: #40DDA9;
+  }
+  .FNV-Landings.Electrician-Landings article section.FanvaranText2 .container .row p {
+    color: #FFFFFF;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .FNV-Landings.Electrician-Landings article section.FanvaranText2 .container .row p mark {
+    color: #223885;
+    background-color: transparent;
+  }
+  .FNV-Landings.Electrician-Landings article section.FanvaranText3 {
+    padding: 2rem 0;
+  }
+  .FNV-Landings.Electrician-Landings article section.FanvaranText3 .container {
+    padding: 8rem 4rem;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: top center;
+    background-image: url("/images/pages/landings/309/FanavaranPersian.webp");
+  }
+  .FNV-Landings.Electrician-Landings article section.FanvaranText3 .container .row p {
+    font-size: 35px;
+    font-weight: 700;
     color: #223885;
     margin-bottom: 2rem;
+    text-align: justify;
+  }
+  .FNV-Landings.Electrician-Landings article section.FanvaranText3 .container .row a {
+    width: 100%;
+    padding: 1rem;
+    display: block;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .FNV-Landings.Electrician-Landings article section.FanvaranText4 {
+    padding: 2rem 0;
+  }
+  .FNV-Landings.Electrician-Landings article section.FanvaranText4 .container {
+    padding: 8rem 4rem;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: top center;
+    background-image: url("/images/pages/landings/309/Experiences.webp");
+  }
+  .FNV-Landings.Electrician-Landings article section.FanvaranText4 .container .row p {
+    font-size: 35px;
+    font-weight: 700;
+    color: #223885;
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+  .FNV-Landings.Electrician-Landings article section.FanvaranText4 .container .row a {
+    width: 100%;
+    padding: 1rem;
+    display: block;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .FNV-Landings.Electrician-Landings article section.FanvaranText5 {
+    padding: 2rem 0;
+  }
+  .FNV-Landings.Electrician-Landings article section.FanvaranText5 .container {
+    padding: 8rem 4rem;
+    border-radius: 20px;
+    background-size: contain;
+    background-position: left center;
+    background-image: url("/images/pages/landings/309/Packages.webp");
+  }
+  .FNV-Landings.Electrician-Landings article section.FanvaranText5 .container .row p {
+    font-size: 35px;
+    font-weight: 700;
+    color: #223885;
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+  .FNV-Landings.Electrician-Landings article section.FanvaranText5 .container .row a {
+    width: 100%;
+    padding: 1rem;
+    display: block;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
   }
 }
 body[dir=ltr] .FNV-Product {
