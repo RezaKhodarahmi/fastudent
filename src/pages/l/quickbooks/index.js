@@ -5,7 +5,7 @@ import Link from 'next/link'
 // Logo
 import Logo from 'src/views/logoWhite'
 
-function PMP() {
+function Quickbooks() {
     return (
         <>
             <main className='FNV-Landings Electrician-Landings'>
@@ -184,6 +184,6 @@ function PMP() {
     )
 }
 
-PMP.guestGuard = true
+Quickbooks.guestGuard = true
 
-export default PMP
+export default Quickbooks

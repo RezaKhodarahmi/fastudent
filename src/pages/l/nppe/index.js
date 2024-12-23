@@ -5,7 +5,7 @@ import Link from 'next/link'
 // Logo
 import Logo from 'src/views/logoWhite'
 
-function PMP() {
+function NPPE() {
     return (
         <>
             <main className='FNV-Landings Electrician-Landings'>
@@ -184,6 +184,6 @@ function PMP() {
     )
 }
 
-PMP.guestGuard = true
+NPPE.guestGuard = true
 
-export default PMP
+export default NPPE
