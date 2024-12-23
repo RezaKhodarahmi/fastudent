@@ -134,7 +134,9 @@ function PMP() {
                     <section className='FanvaranClasses'>
                         <div className='container p-0'>
                             <div className='row'>
-                                <img src='/images/pages/landings/309/Classes.webp' className='img-fluid w-100' />
+                                <img src='/images/pages/landings/309/Classes.webp' className='img-fluid w-100 d-none d-md-block' />
+
+                                <img src='/images/pages/landings/309/Classes-mob.webp' className='img-fluid w-100 d-block d-md-none' />
                             </div>
                         </div>
                     </section>
