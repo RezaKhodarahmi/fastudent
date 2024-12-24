@@ -14616,7 +14616,7 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     border-radius: 40px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("/images/pages/landings/309/WhyFanavaran309-2.webp");
+    background-image: url("/images/pages/landings/qb/WhyFanavaran2.webp");
   }
   .FNV-Landings.QB-Landings article section.WhyFanavaran309-2 .container .col-12 h2 {
     padding: 1rem;
@@ -14691,7 +14691,12 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     border-radius: 20px;
     background-size: cover;
     background-position: top center;
-    background-image: url("/images/pages/landings/309/FanavaranPersian.webp");
+    background-image: url("/images/pages/landings/qb/qb-persian.webp");
+  }
+  .FNV-Landings.QB-Landings article section.FanvaranText3 .container .row h2 {
+    font-size: 35px;
+    color: #FFA600;
+    font-weight: 800;
   }
   .FNV-Landings.QB-Landings article section.FanvaranText3 .container .row p {
     font-size: 35px;

@@ -2702,7 +2702,7 @@
                             border-radius: 40px;
                             background-size: cover;
                             background-repeat: no-repeat;
-                            background-image: url('/images/pages/landings/309/WhyFanavaran309-2.webp');
+                            background-image: url('/images/pages/landings/qb/WhyFanavaran2.webp');
     
                             .col-12{
                                 h2{
@@ -2798,9 +2798,15 @@
                             border-radius: 20px;
                             background-size: cover;
                             background-position: top center;
-                            background-image: url('/images/pages/landings/309/FanavaranPersian.webp');
+                            background-image: url('/images/pages/landings/qb/qb-persian.webp');
 
                             .row{
+                                h2{
+                                    font-size: 35px;
+                                    color: $PrimaryTwo;
+                                    font-weight: 800;
+                                }
+
                                 p{
                                     font-size: 35px;
                                     font-weight: 700;
