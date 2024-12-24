@@ -3,12 +3,12 @@ import React from 'react'
 import Link from 'next/link'
 
 // Logo
-import Logo from 'src/views/logoWhite'
+import Logo from 'src/views/logoMain'
 
 function Quickbooks() {
     return (
         <>
-            <main className='FNV-Landings Electrician-Landings'>
+            <main className='FNV-Landings QB-Landings'>
                 <header>
                     <div className='container'>
                         <div className='row'>
@@ -18,9 +18,11 @@ function Quickbooks() {
                         </div>
 
                         <div className='row'>
-                            <div className='col-12 col-md-5'>
-                                <h1>دوره 309A</h1>
-                                <p>دوره برق فناوران، تنها دوره مورد تایید اسکیلد ترید انتاریو به زبان فارسی در کانادا</p>
+                            <div className='col-12 col-md-6'>
+                                <h1>کوییک بوکس چیست؟</h1>
+                                <p>
+                                    نرم افزار کوییک بوکس،‌ رایج‌ترین نرم‌افزار مورد نیاز برای امور حسابداری و مالی شرکت‌ها و بیزینس‌های مختلف در کانادا است. تسلط بر این نرم افزار، رزومه شما را پربارتر و قوی‌تر می‌کند.
+                                </p>
                                 <Link href="#" className='FNV-Badge SecondaryColor Large mb-4'>ثبت نام دوره جدید</Link>
                             </div>
                         </div>
@@ -32,29 +34,14 @@ function Quickbooks() {
                         <div className='container'>
                             <div className='row justify-content-center'>
                                 <div className='col-12 text-center'>
-                                    <img src='/images/pages/landings/309/redseal.webp' className='img-fluid' />
+                                    <img src='/images/pages/landings/qb/qb-logo.webp' className='img-fluid' />
                                 </div>
 
                                 <div className='col-12'>
-                                    <h3>چرا باید ردسیل برق بگیرید و چه موانعی وجود دارد؟</h3>
-                                    <p>برای فعالیت به عنوان برقکار در کانادا، باید لایسنس برقکاری (لایسنس نشنال Redseal یا استانی با مهر تایید Redseal) بگیرید. پیش‌نیازهای دریافت این لایسنس در اکثر استان‌ها ۹۰۰۰ ساعت (معادل ۵ سال) سابقه کار و پاس کردن آزمون Redseal است. بسیاری از نیوکامرها و ایرانیان در پاس کردن این آزمون با چالش مواجه می‌شوند.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section className='Why309'>
-                        <div className='container'>
-                            <div className='row'>
-                                <div className='col-12 col-md-6'>
+                                    <h3>آموزش به زبان فارسی</h3>
                                     <p>
-                                        در صورت داشتن سابقه کار برق، دوره فناوران کمک می‌کند تا مهارتهای لازم در زمینه کدبوک را آموزش ببینید و با تدریس فارسی و ترمینولوژی انگلیسی، واژگان تخصصی و اصطلاحات درست این پوزیشن شغلی را بیاموزید.
+                                        این دوره به زبان فارسی تدریس می‌شود و شرکت‌کنندگان به صورت مفهومی، عملی و کامل با بخش‌های مختلف و ابزارهای نرم افزار آشنا می‌شوند. از ویژگی‌های این دوره، دسترسی داشتن شرکت‌کنندگان به نرم افزار Quickbooks است تا بتوانند همراه با استاد تمرین کنند.
                                     </p>
-
-                                    <Link href="#" className='FNV-Badge SecondaryColor Large mb-4'>ثبت نام دوره جدید</Link>
-                                </div>
-                                <div className='col-12 col-md-6'>
-                                    <img src='/images/pages/landings/309/309Certificate.webp' className='img-fluid w-100' />
                                 </div>
                             </div>
                         </div>
