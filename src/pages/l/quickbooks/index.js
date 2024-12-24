@@ -20,8 +20,12 @@ function Quickbooks() {
                         <div className='row'>
                             <div className='col-12 col-md-6'>
                                 <h1>کوییک بوکس چیست؟</h1>
-                                <p>
+                                <p className='d-none d-md-block'>
                                     نرم افزار کوییک بوکس،‌ رایج‌ترین نرم‌افزار مورد نیاز برای امور حسابداری و مالی شرکت‌ها و بیزینس‌های مختلف در کانادا است. تسلط بر این نرم افزار، رزومه شما را پربارتر و قوی‌تر می‌کند.
+                                </p>
+
+                                <p className='d-block d-md-none'>
+                                    دوره جامع آموزش نرم‌افزار حسابداری کوییک بوکس (QuickBooks) به زبان فارسی در کانادا
                                 </p>
                                 <Link href="#" className='FNV-Badge SecondaryColor Large mb-4'>ثبت نام دوره جدید</Link>
                             </div>
@@ -42,6 +46,8 @@ function Quickbooks() {
                                     <p>
                                         این دوره به زبان فارسی تدریس می‌شود و شرکت‌کنندگان به صورت مفهومی، عملی و کامل با بخش‌های مختلف و ابزارهای نرم افزار آشنا می‌شوند. از ویژگی‌های این دوره، دسترسی داشتن شرکت‌کنندگان به نرم افزار Quickbooks است تا بتوانند همراه با استاد تمرین کنند.
                                     </p>
+
+                                    <Link href="#" className='FNV-Badge SecondaryColor Large mb-4'> همین حالا ثبت نام کنید</Link>
                                 </div>
                             </div>
                         </div>
