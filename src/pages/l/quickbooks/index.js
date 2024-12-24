@@ -124,9 +124,9 @@ function Quickbooks() {
                     <section className='FanvaranClasses'>
                         <div className='container p-0'>
                             <div className='row'>
-                                <img src='/images/pages/landings/309/Classes.webp' className='img-fluid w-100 d-none d-md-block' />
+                                <img src='/images/pages/landings/qb/OnlineClasses.webp' className='img-fluid w-100 d-none d-md-block' />
 
-                                <img src='/images/pages/landings/309/Classes-mob.webp' className='img-fluid w-100 d-block d-md-none' />
+                                <img src='/images/pages/landings/qb/OnlineClasses-mob.webp' className='img-fluid w-100 d-block d-md-none' />
                             </div>
                         </div>
                     </section>
@@ -134,25 +134,11 @@ function Quickbooks() {
                     <section className='FanvaranText4'>
                         <div className='container'>
                             <div className='row'>
-                                <div className='col-12 col-md-4'>
+                                <div className='col-12 col-md-5'>
                                     <p>
-                                        نگران تایید سابقه کار خود هستید؟ <br />
-                                        با خدمات نگارش سوابق کاری تکنسینی، متخصصان فناوران تا رسیدن به تاییدیه آزمون در کنار شما هستند.
+                                        دریافت سرتیفیکیت فناوران در انتهای دوره
                                     </p>
-                                    <Link href="#" className='FNV-Badge SecondaryColor Large mb-4'>خرید خدمات</Link>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section className='FanvaranText5'>
-                        <div className='container'>
-                            <div className='row'>
-                                <div className='col-12 col-md-4'>
-                                    <p>
-                                        با خرید پکیج ویژه برق، هم تاییدیه آزمون بگیرید، هم برای آزمون آماده شوید و هم سیو سود داشته باشید!
-                                    </p>
-                                    <Link href="#" className='FNV-Badge SecondaryColor Large mb-4'>خرید پکیج</Link>
+                                    <Link href="#" className='FNV-Badge SecondaryColor Large mb-4'>ثبت‌نام کنید</Link>
                                 </div>
                             </div>
                         </div>
