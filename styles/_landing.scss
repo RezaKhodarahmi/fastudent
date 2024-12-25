@@ -3780,10 +3780,11 @@
     
                         .container{
                             position: relative;
-                            padding: 5rem 10rem;
                             border-radius: 40px;
                             background-size: cover;
+                            padding: 10rem 5rem 20rem;
                             background-repeat: no-repeat;
+                            background-position: center center;
                             background-image: url('/images/pages/landings/nppe/OnlineClasses.webp');
     
                             .col-5{
@@ -3797,7 +3798,7 @@
                                 }
     
                                 p{
-                                    font-size: 30px;
+                                    font-size: 45px;
                                     font-weight: 600;
                                     color: $PrimaryOne;
                                     margin-bottom: 1rem;
