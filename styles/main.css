@@ -15396,7 +15396,7 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     position: relative;
   }
   .FNV-Landings.NPPE-Landings article section.WhatsCourse .container .text-center {
-    height: 100px;
+    height: 150px;
   }
   .FNV-Landings.NPPE-Landings article section.WhatsCourse .container h2 {
     padding: 2rem 0;
@@ -15432,30 +15432,67 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     background-color: rgba(240, 243, 251, 0.5019607843);
   }
   .FNV-Landings.NPPE-Landings article section.WhyCourse {
-    padding: 5rem 2rem;
+    padding: 2rem 0;
   }
-  .FNV-Landings.NPPE-Landings article section.WhyCourse .container .row .col-12 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+  .FNV-Landings.NPPE-Landings article section.WhyCourse .container {
+    position: relative;
+    padding: 12rem 5rem;
+    border-radius: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("/images/pages/landings/nppe/WhyCourse.webp");
   }
-  .FNV-Landings.NPPE-Landings article section.WhyCourse .container .row .col-12 p {
-    font-size: 30px;
+  .FNV-Landings.NPPE-Landings article section.WhyCourse .container .col-5 h2 {
+    padding: 1rem;
+    font-size: 35px;
     font-weight: 700;
-    line-height: 60px;
     color: #223885;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+  .FNV-Landings.NPPE-Landings article section.WhyCourse .container .col-5 p {
+    font-size: 30px;
+    font-weight: 600;
+    color: #223885;
+    margin-bottom: 1rem;
     text-align: justify;
   }
-  .FNV-Landings.NPPE-Landings article section.WhyCourse .container .row .col-12 p strong {
-    color: #F56322;
+  .FNV-Landings.NPPE-Landings article section.WhyCourse .container .col-5 p mark {
+    color: #FFA600;
+    background-color: transparent;
   }
-  .FNV-Landings.NPPE-Landings article section.WhyCourse .container .row .col-12 a {
+  .FNV-Landings.NPPE-Landings article section.OnlineClasses {
+    padding: 2rem 0;
+  }
+  .FNV-Landings.NPPE-Landings article section.OnlineClasses .container {
+    position: relative;
+    padding: 5rem 10rem;
+    border-radius: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("/images/pages/landings/nppe/OnlineClasses.webp");
+  }
+  .FNV-Landings.NPPE-Landings article section.OnlineClasses .container .col-5 h2 {
+    padding: 1rem;
+    font-size: 35px;
     font-weight: 700;
+    color: #223885;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+  .FNV-Landings.NPPE-Landings article section.OnlineClasses .container .col-5 p {
+    font-size: 30px;
+    font-weight: 600;
+    color: #223885;
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+  .FNV-Landings.NPPE-Landings article section.OnlineClasses .container .col-5 p mark {
+    color: #FFA600;
+    background-color: transparent;
   }
   .FNV-Landings.NPPE-Landings article section.WhyFanavaranCourse {
-    padding: 4rem 0;
+    padding: 2rem 0;
   }
   .FNV-Landings.NPPE-Landings article section.WhyFanavaranCourse .container {
     position: relative;
@@ -15490,6 +15527,42 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     direction: ltr;
   }
   .FNV-Landings.NPPE-Landings article section.WhyFanavaranCourse .container .col-12 a svg {
+    margin-right: 1rem;
+  }
+  .FNV-Landings.NPPE-Landings article section.WhyFanavaranCourse-2 {
+    padding: 2rem 0;
+  }
+  .FNV-Landings.NPPE-Landings article section.WhyFanavaranCourse-2 .container {
+    position: relative;
+    padding: 8rem 5rem;
+    border-radius: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("/images/pages/landings/nppe/WhatsFanavaran.webp");
+  }
+  .FNV-Landings.NPPE-Landings article section.WhyFanavaranCourse-2 .container .row {
+    justify-content: flex-end;
+  }
+  .FNV-Landings.NPPE-Landings article section.WhyFanavaranCourse-2 .container .row .col-12 h2 {
+    padding: 1rem;
+    font-size: 45px;
+    font-weight: 700;
+    color: #223885;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+  .FNV-Landings.NPPE-Landings article section.WhyFanavaranCourse-2 .container .row .col-12 ul li {
+    font-size: 30px;
+    font-weight: 500;
+    color: #223885;
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+  .FNV-Landings.NPPE-Landings article section.WhyFanavaranCourse-2 .container .row .col-12 a {
+    color: #FFFFFF;
+    direction: ltr;
+  }
+  .FNV-Landings.NPPE-Landings article section.WhyFanavaranCourse-2 .container .row .col-12 a svg {
     margin-right: 1rem;
   }
   .FNV-Landings.NPPE-Landings article section.WhyFanavaran309-2 {
@@ -15575,8 +15648,8 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     padding: 8rem 4rem;
     border-radius: 20px;
     background-size: cover;
-    background-position: top center;
-    background-image: url("/images/pages/landings/qb/qb-persian.webp");
+    background-position: center;
+    background-image: url("/images/pages/landings/nppe/CourseText3.webp");
   }
   .FNV-Landings.NPPE-Landings article section.FanvaranText3 .container .row h2 {
     font-size: 35px;
@@ -15584,15 +15657,16 @@ body[dir=ltr] .FNV-NewWebinars .container .row .col-md-5 .col-12 .d-flex .col-5 
     font-weight: 800;
   }
   .FNV-Landings.NPPE-Landings article section.FanvaranText3 .container .row p {
+    color: #FFFFFF;
     font-size: 35px;
     font-weight: 700;
-    color: #223885;
     margin-bottom: 2rem;
     text-align: justify;
   }
   .FNV-Landings.NPPE-Landings article section.FanvaranText3 .container .row a {
     width: 100%;
     padding: 1rem;
+    color: #FFFFFF;
     display: block;
     font-size: 35px;
     font-weight: 700;

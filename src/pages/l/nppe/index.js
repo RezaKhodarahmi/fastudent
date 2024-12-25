@@ -51,6 +51,33 @@ function NPPE() {
                         </div>
                     </section>
 
+                    <section className='WhyCourse'>
+                        <div className='container'>
+                            <div className='row'>
+                                <div className='col-5 d-flex flex-column align-items-start'>
+                                    <h2>چرا برای این آزمون به دوره نیاز است؟</h2>
+
+                                    <p>
+                                        آزمون NPPE یکی از سخت‌ترین آزمون‌های مهندسی در کانادا به ویژه برای متقاضیان بین‌المللی است. این آزمون مباحث حقوق و اخلاقی مهندسی بوده و برای متقاضیان بسیار چالش‌برانگیز است.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section className='FanvaranText3'>
+                        <div className='container'>
+                            <div className='row'>
+                                <div className='col-12 col-md-5'>
+                                    <p>
+                                        دوره آمادگی آزمون NPPE فناوران به نحوی طراحی شده تا مباحث کتاب‌های Law و Ethics، به عنوان منابع آزمون ساده‌سازی شده و متقاضیان به صورت مفهومی آموزش ببینند.
+                                    </p>
+                                    <Link href="#" className='FNV-Badge SecondaryColor Large mb-4'>همین حالا نام کنید</Link>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
                     <section className='WhyFanavaranCourse'>
                         <div className='container'>
                             <div className='row'>
@@ -77,72 +104,39 @@ function NPPE() {
                         </div>
                     </section>
 
-                    <section className='WhyFanavaran309-2'>
+                    <section className='WhyFanavaranCourse-2'>
                         <div className='container'>
                             <div className='row'>
-                                <div className='col-12 d-flex flex-column align-items-start'>
-                                    <h2>چرا دوره کوییک بوکس فناوران؟</h2>
+                                <div className='col-12 col-md-7 d-flex flex-column align-items-start'>
+                                    <h2>چرا دوره فناوران؟</h2>
 
                                     <ul>
-                                        <li>تدریس به زبان فارسی و ترمینولوژی انگلیسی تا کلمات تخصصی و اصطلاحات درست انگلیسی را بیاموزید</li>
-                                        <li>عملی و کاربردی - امکان دسترسی به نسخه لایو نرم افزار برای تمرین هم پای استاد</li>
-                                        <li>مقرون&zwnj;به&zwnj;صرفه در مقایسه با دوره&zwnj;های مشابه</li>
-                                        <li>پرداخت به صورت اقساط</li>
-                                        <li>دسترسی ۸ ماهه به ویدیوهای رکورد شده</li>
-                                        <li>مدرسین مجرب با سابقه کار چندین ساله در شرکت&zwnj;های مطرح کانادایی</li>
+                                        <li>تدریس به زبان فارسی و ترمینولوژی انگلیسی تا شرکت&zwnj;کنندگان لغات انگلیسی و اصطلاحات درست را آموزش ببینند</li>
+                                        <li>تدریس مفهومی و آموزش نحوه تحلیل مسائل مربوطه در آزمون</li>
+                                        <li>دسترسی ۸ ماهه به ویدیوهای رکورد شده تدریس</li>
+                                        <li>امکان پرداخت به صورت اقساط</li>
+                                        <li>برگزاری جلسات تست&zwnj;زنی برای آشنایی کامل با آزمون</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </section>
 
-                    <section className='FanvaranText1'>
-                        <div className='container'>
-                            <div className='row'>
-                                <h2>آیا می‌دانستید؟</h2>
-                                <p>برای شرکت در این دوره، <mark>نیاز نیست حتما حسابداری خوانده باشید!</mark> هرچند، دانش حسابداری در یادگیری تاثیر زیادی دارد.</p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section className='FanvaranText2'>
-                        <div className='container'>
-                            <div className='row'>
-                                <p>در این دوره، هم بخش جنرال نرم‌افزار و هم بخش پی رول را آموزش می‌بینید.</p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section className='FanvaranText3'>
-                        <div className='container'>
-                            <div className='row'>
-                                <div className='col-12 col-md-5'>
-                                    <h2>دوره کوییک بوکس فناوران عملی است</h2>
-                                    <p>شرکت‌کنندگان در این دوره به نرم‌افزار کوییک بوکس دسترسی خواهند داشت و می‌توانند پا به پای استاد و در ساعات غیر کلاسی با نرم افزار کار و تمرین کنند.</p>
-                                    <Link href="#" className='FNV-Badge SecondaryColor Large mb-4'>ثبت نام کنید</Link>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section className='FanvaranClasses'>
+                    <section className='FanvaranStudents'>
                         <div className='container p-0'>
                             <div className='row'>
-                                <img src='/images/pages/landings/qb/OnlineClasses.webp' className='img-fluid w-100 d-none d-md-block' />
-
-                                <img src='/images/pages/landings/qb/OnlineClasses-mob.webp' className='img-fluid w-100 d-block d-md-none' />
+                                <img src='/images/pages/landings/nppe/FanavaranStudents.webp' />
                             </div>
                         </div>
                     </section>
 
-                    <section className='FanvaranText4'>
+                    <section className='OnlineClasses'>
                         <div className='container'>
                             <div className='row'>
-                                <div className='col-12 col-md-5'>
+                                <div className='col-5 d-flex flex-column align-items-start'>
                                     <p>
-                                        دریافت سرتیفیکیت فناوران در انتهای دوره
+                                        برگزاری کلاس‌ها به صورت آنلاین به همراه دسترسی ۸ ماهه به ویدیوهای رکورد شده جلسات
                                     </p>
-                                    <Link href="#" className='FNV-Badge SecondaryColor Large mb-4'>ثبت‌نام کنید</Link>
                                 </div>
                             </div>
                         </div>

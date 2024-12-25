@@ -3695,7 +3695,7 @@
                             position: relative;
 
                             .text-center{
-                                height: 100px;
+                                height: 150px;
                             }
     
                             h2{
@@ -3737,33 +3737,75 @@
                             background-color: $PrimaryBackgroundThree;
                         }
                     }
-    
+
                     &.WhyCourse{
-                        padding: 5rem 2rem;
+                        padding: 2rem 0;
     
                         .container{
-                            .row{
-                                .col-12{ 
-                                    display: flex;
-                                    flex-direction: column;
-                                    justify-content: center;
-                                    align-items: flex-start;
-
-                                    p{
-                                        font-size: 30px;
-                                        font-weight: 700;
-                                        line-height: 60px;
-                                        color: $PrimaryOne;
-                                        margin-bottom: 2rem;
-                                        text-align: justify;
+                            position: relative;
+                            padding: 12rem 5rem;
+                            border-radius: 40px;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-image: url('/images/pages/landings/nppe/WhyCourse.webp');
     
-                                        strong{
-                                            color: $PrimaryNine;
-                                        }
-                                    }
+                            .col-5{
+                                h2{
+                                    padding: 1rem;
+                                    font-size: 35px;
+                                    font-weight: 700;
+                                    color: $PrimaryOne;
+                                    margin-bottom: 1rem;
+                                    display: inline-block;
+                                }
+    
+                                p{
+                                    font-size: 30px;
+                                    font-weight: 600;
+                                    color: $PrimaryOne;
+                                    margin-bottom: 1rem;
+                                    text-align: justify;
 
-                                    a{
-                                        font-weight: 700;
+                                    mark{
+                                        color: $PrimaryTwo;
+                                        background-color: transparent;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.OnlineClasses{
+                        padding: 2rem 0;
+    
+                        .container{
+                            position: relative;
+                            padding: 5rem 10rem;
+                            border-radius: 40px;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-image: url('/images/pages/landings/nppe/OnlineClasses.webp');
+    
+                            .col-5{
+                                h2{
+                                    padding: 1rem;
+                                    font-size: 35px;
+                                    font-weight: 700;
+                                    color: $PrimaryOne;
+                                    margin-bottom: 1rem;
+                                    display: inline-block;
+                                }
+    
+                                p{
+                                    font-size: 30px;
+                                    font-weight: 600;
+                                    color: $PrimaryOne;
+                                    margin-bottom: 1rem;
+                                    text-align: justify;
+
+                                    mark{
+                                        color: $PrimaryTwo;
+                                        background-color: transparent;
                                     }
                                 }
                             }
@@ -3771,7 +3813,7 @@
                     }
     
                     &.WhyFanavaranCourse{
-                        padding: 4rem 0;
+                        padding: 2rem 0;
     
                         .container{
                             position: relative;
@@ -3811,6 +3853,53 @@
 
                                     svg{
                                         margin-right: 1rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.WhyFanavaranCourse-2{
+                        padding: 2rem 0;
+    
+                        .container{
+                            position: relative;
+                            padding: 8rem 5rem;
+                            border-radius: 40px;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-image: url('/images/pages/landings/nppe/WhatsFanavaran.webp');
+    
+                            .row{
+                                justify-content: flex-end;
+
+                                .col-12{
+                                    h2{
+                                        padding: 1rem;
+                                        font-size: 45px;
+                                        font-weight: 700;
+                                        color: $PrimaryOne;
+                                        margin-bottom: 1rem;
+                                        display: inline-block;
+                                    }
+        
+                                    ul{
+                                        li{
+                                            font-size: 30px;
+                                            font-weight: 500;
+                                            color: $PrimaryOne;
+                                            margin-bottom: 1rem;
+                                            text-align: justify;
+                                        }
+                                    }
+    
+                                    a{
+                                        color: $White;
+                                        direction: ltr;
+    
+                                        svg{
+                                            margin-right: 1rem;
+                                        }
                                     }
                                 }
                             }
@@ -3921,8 +4010,8 @@
                             padding: 8rem 4rem;
                             border-radius: 20px;
                             background-size: cover;
-                            background-position: top center;
-                            background-image: url('/images/pages/landings/qb/qb-persian.webp');
+                            background-position: center;
+                            background-image: url('/images/pages/landings/nppe/CourseText3.webp');
 
                             .row{
                                 h2{
@@ -3932,9 +4021,9 @@
                                 }
 
                                 p{
+                                    color: $White;
                                     font-size: 35px;
                                     font-weight: 700;
-                                    color: $PrimaryOne;
                                     margin-bottom: 2rem;
                                     text-align: justify;
                                 }
@@ -3942,6 +4031,7 @@
                                 a{
                                     width: 100%;
                                     padding: 1rem;
+                                    color: $White;
                                     display: block;
                                     font-size: 35px;
                                     font-weight: 700;
