@@ -1272,14 +1272,16 @@
     
                         .container{
                             position: relative;
-                            border-radius: 40px;
+                            border-radius: 8px;
                             background-size: cover;
-                            padding: 10rem 5rem 20rem;
+                            padding: 2rem 1rem 15rem;
                             background-repeat: no-repeat;
                             background-position: center center;
-                            background-image: url('/images/pages/landings/nppe/OnlineClasses.webp');
+                            background-image: url('/images/pages/landings/nppe/OnlineClasses-mob.webp');
     
                             .col-5{
+                                width: 100%;
+                                
                                 h2{
                                     padding: 1rem;
                                     font-size: 35px;
@@ -1290,7 +1292,7 @@
                                 }
     
                                 p{
-                                    font-size: 45px;
+                                    font-size: 20px;
                                     font-weight: 600;
                                     color: $PrimaryOne;
                                     margin-bottom: 1rem;
