@@ -3,12 +3,12 @@ import React from 'react'
 import Link from 'next/link'
 
 // Logo
-import Logo from 'src/views/logoWhite'
+import Logo from 'src/views/logoBlue'
 
 function NPPE() {
     return (
         <>
-            <main className='FNV-Landings Electrician-Landings'>
+            <main className='FNV-Landings NPPE-Landings'>
                 <header>
                     <div className='container'>
                         <div className='row'>
@@ -19,8 +19,14 @@ function NPPE() {
 
                         <div className='row'>
                             <div className='col-12 col-md-5'>
-                                <h1>دوره 309A</h1>
-                                <p>دوره برق فناوران، تنها دوره مورد تایید اسکیلد ترید انتاریو به زبان فارسی در کانادا</p>
+                                <h1>دوره NPPE</h1>
+                                <p className='d-none d-md-block'>
+                                    کامل‌ترین دوره آمادگی آزمون NPPE به زبان فارسی در کانادا
+                                </p>
+
+                                <p className='d-block d-md-none'>
+                                    دوره جامع آموزش نرم‌افزار حسابداری کوییک بوکس (NPPE) به زبان فارسی در کانادا
+                                </p>
                                 <Link href="#" className='FNV-Badge SecondaryColor Large mb-4'>ثبت نام دوره جدید</Link>
                             </div>
                         </div>
@@ -28,39 +34,51 @@ function NPPE() {
                 </header>
 
                 <article>
-                    <section className='Whats309'>
+                    <section className='WhatsCourse'>
                         <div className='container'>
                             <div className='row justify-content-center'>
-                                <div className='col-12 text-center'>
-                                    <img src='/images/pages/landings/309/redseal.webp' className='img-fluid' />
-                                </div>
+                                <div className='col-12 text-center'></div>
 
                                 <div className='col-12'>
-                                    <h3>چرا باید ردسیل برق بگیرید و چه موانعی وجود دارد؟</h3>
-                                    <p>برای فعالیت به عنوان برقکار در کانادا، باید لایسنس برقکاری (لایسنس نشنال Redseal یا استانی با مهر تایید Redseal) بگیرید. پیش‌نیازهای دریافت این لایسنس در اکثر استان‌ها ۹۰۰۰ ساعت (معادل ۵ سال) سابقه کار و پاس کردن آزمون Redseal است. بسیاری از نیوکامرها و ایرانیان در پاس کردن این آزمون با چالش مواجه می‌شوند.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section className='Why309'>
-                        <div className='container'>
-                            <div className='row'>
-                                <div className='col-12 col-md-6'>
+                                    <h3>آزمون NPPE چیست؟</h3>
                                     <p>
-                                        در صورت داشتن سابقه کار برق، دوره فناوران کمک می‌کند تا مهارتهای لازم در زمینه کدبوک را آموزش ببینید و با تدریس فارسی و ترمینولوژی انگلیسی، واژگان تخصصی و اصطلاحات درست این پوزیشن شغلی را بیاموزید.
+                                        آزمون NPPE یک آزمون اجباری برای تمامی مهندسانی است که قصد دارند لایسنس P.Eng دریافت کنند و به صورت رسمی به عنوان <strong>«مهندس»</strong> در کانادا فعالیت کنند.
                                     </p>
 
-                                    <Link href="#" className='FNV-Badge SecondaryColor Large mb-4'>ثبت نام دوره جدید</Link>
-                                </div>
-                                <div className='col-12 col-md-6'>
-                                    <img src='/images/pages/landings/309/309Certificate.webp' className='img-fluid w-100' />
+                                    <Link href="#" className='FNV-Badge SecondaryColor Large mb-4'> همین حالا ثبت نام کنید</Link>
                                 </div>
                             </div>
                         </div>
                     </section>
 
-                    <section className='WhyFanavaran309'>
+                    <section className='WhyCourse'>
+                        <div className='container'>
+                            <div className='row'>
+                                <div className='col-5 d-flex flex-column align-items-start'>
+                                    <h2>چرا برای این آزمون به دوره نیاز است؟</h2>
+
+                                    <p>
+                                        آزمون NPPE یکی از سخت‌ترین آزمون‌های مهندسی در کانادا به ویژه برای متقاضیان بین‌المللی است. این آزمون مباحث حقوق و اخلاقی مهندسی بوده و برای متقاضیان بسیار چالش‌برانگیز است.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section className='FanvaranText3'>
+                        <div className='container'>
+                            <div className='row'>
+                                <div className='col-12 col-md-5'>
+                                    <p>
+                                        دوره آمادگی آزمون NPPE فناوران به نحوی طراحی شده تا مباحث کتاب‌های Law و Ethics، به عنوان منابع آزمون ساده‌سازی شده و متقاضیان به صورت مفهومی آموزش ببینند.
+                                    </p>
+                                    <Link href="#" className='FNV-Badge SecondaryColor Large mb-4'>همین حالا نام کنید</Link>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section className='WhyFanavaranCourse'>
                         <div className='container'>
                             <div className='row'>
                                 <div className='col-12 col-md-6 d-flex flex-column align-items-start'>
@@ -86,20 +104,18 @@ function NPPE() {
                         </div>
                     </section>
 
-                    <section className='WhyFanavaran309-2'>
+                    <section className='WhyFanavaranCourse-2'>
                         <div className='container'>
                             <div className='row'>
-                                <div className='col-12 d-flex flex-column align-items-start'>
-                                    <h2>چرا دوره برق فناوران؟</h2>
+                                <div className='col-12 col-md-7 d-flex flex-column align-items-start'>
+                                    <h2>چرا دوره فناوران؟</h2>
 
                                     <ul>
-                                        <li>مورد تایید Skilled Trade of Ontario</li>
-                                        <li>طراحی شده برای قبولی در آزمون مطابق با آخرین تغییرات کدبوک</li>
-                                        <li>اساتید مجرب لایسنس دار و Master با سابقه چندین ساله به عنوان تکنسین برق در کانادا</li>
-                                        <li>مقرون&zwnj;به&zwnj;صرفه در مقایسه با دوره&zwnj;های مشابه</li>
-                                        <li>پرداخت به صورت اقساط</li>
-                                        <li>امکان دسترسی به ویدوهای رکورد شده دوره&zwnj;ها به مدت ۸ ماه</li>
-                                        <li>تدریس به زبان فارسی و ترمینولوژی انگلیسی برای یادگیری واژگان و اصطلاحات درست برقکاری در کانادا</li>
+                                        <li>تدریس به زبان فارسی و ترمینولوژی انگلیسی تا شرکت&zwnj;کنندگان لغات انگلیسی و اصطلاحات درست را آموزش ببینند</li>
+                                        <li>تدریس مفهومی و آموزش نحوه تحلیل مسائل مربوطه در آزمون</li>
+                                        <li>دسترسی ۸ ماهه به ویدیوهای رکورد شده تدریس</li>
+                                        <li>امکان پرداخت به صورت اقساط</li>
+                                        <li>برگزاری جلسات تست&zwnj;زنی برای آشنایی کامل با آزمون</li>
                                     </ul>
                                 </div>
                             </div>
@@ -109,71 +125,18 @@ function NPPE() {
                     <section className='FanvaranStudents'>
                         <div className='container p-0'>
                             <div className='row'>
-                                <img src='/images/pages/landings/309/309Students.webp' />
+                                <img src='/images/pages/landings/nppe/FanavaranStudents.webp' />
                             </div>
                         </div>
                     </section>
 
-                    <section className='FanvaranText1'>
+                    <section className='OnlineClasses'>
                         <div className='container'>
                             <div className='row'>
-                                <h2>چرا سرتیفیکیت فناوران؟</h2>
-                                <p>متقاضیان لایسنس برق در <mark>استان انتاریو</mark> باید ۶ ماه سابقه کار کانادایی ارائه دهند. اگر ندارند، باید یک دوره اجباری CSA به قیمت +600 دلار ثبت‌نام کنند.</p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section className='FanvaranText2'>
-                        <div className='container'>
-                            <div className='row'>
-                                <p>با دریافت <mark>سرتیفیکیت پایان دوره فناوران</mark>، سابقه کار کانادایی یا دوره CSA را حذف می‌کنید.</p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section className='FanvaranClasses'>
-                        <div className='container p-0'>
-                            <div className='row'>
-                                <img src='/images/pages/landings/309/Classes.webp' className='img-fluid w-100 d-none d-md-block' />
-
-                                <img src='/images/pages/landings/309/Classes-mob.webp' className='img-fluid w-100 d-block d-md-none' />
-                            </div>
-                        </div>
-                    </section>
-
-                    <section className='FanvaranText3'>
-                        <div className='container'>
-                            <div className='row'>
-                                <div className='col-12 col-md-4'>
-                                    <p>آیا می‌دانستید که دوره برق فناوران، تنها دوره فارسی زبان در کانادا است که تکنیک‌های تست‌زنی را به شما آموزش می‌دهد؟</p>
-                                    <Link href="#" className='FNV-Badge SecondaryColor Large mb-4'>ثبت نام کنید</Link>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section className='FanvaranText4'>
-                        <div className='container'>
-                            <div className='row'>
-                                <div className='col-12 col-md-4'>
+                                <div className='col-5 d-flex flex-column align-items-start'>
                                     <p>
-                                        نگران تایید سابقه کار خود هستید؟ <br />
-                                        با خدمات نگارش سوابق کاری تکنسینی، متخصصان فناوران تا رسیدن به تاییدیه آزمون در کنار شما هستند.
+                                        برگزاری کلاس‌ها به صورت آنلاین به همراه دسترسی ۸ ماهه به ویدیوهای رکورد شده جلسات
                                     </p>
-                                    <Link href="#" className='FNV-Badge SecondaryColor Large mb-4'>خرید خدمات</Link>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section className='FanvaranText5'>
-                        <div className='container'>
-                            <div className='row'>
-                                <div className='col-12 col-md-4'>
-                                    <p>
-                                        با خرید پکیج ویژه برق، هم تاییدیه آزمون بگیرید، هم برای آزمون آماده شوید و هم سیو سود داشته باشید!
-                                    </p>
-                                    <Link href="#" className='FNV-Badge SecondaryColor Large mb-4'>خرید پکیج</Link>
                                 </div>
                             </div>
                         </div>

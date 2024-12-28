@@ -3,12 +3,12 @@ import React from 'react'
 import Link from 'next/link'
 
 // Logo
-import Logo from 'src/views/logoWhite'
+import Logo from 'src/views/logoMain'
 
 function Quickbooks() {
     return (
         <>
-            <main className='FNV-Landings Electrician-Landings'>
+            <main className='FNV-Landings QB-Landings'>
                 <header>
                     <div className='container'>
                         <div className='row'>
@@ -18,9 +18,15 @@ function Quickbooks() {
                         </div>
 
                         <div className='row'>
-                            <div className='col-12 col-md-5'>
-                                <h1>دوره 309A</h1>
-                                <p>دوره برق فناوران، تنها دوره مورد تایید اسکیلد ترید انتاریو به زبان فارسی در کانادا</p>
+                            <div className='col-12 col-md-6'>
+                                <h1>کوییک بوکس چیست؟</h1>
+                                <p className='d-none d-md-block'>
+                                    نرم افزار کوییک بوکس،‌ رایج‌ترین نرم‌افزار مورد نیاز برای امور حسابداری و مالی شرکت‌ها و بیزینس‌های مختلف در کانادا است. تسلط بر این نرم افزار، رزومه شما را پربارتر و قوی‌تر می‌کند.
+                                </p>
+
+                                <p className='d-block d-md-none'>
+                                    دوره جامع آموزش نرم‌افزار حسابداری کوییک بوکس (QuickBooks) به زبان فارسی در کانادا
+                                </p>
                                 <Link href="#" className='FNV-Badge SecondaryColor Large mb-4'>ثبت نام دوره جدید</Link>
                             </div>
                         </div>
@@ -32,29 +38,16 @@ function Quickbooks() {
                         <div className='container'>
                             <div className='row justify-content-center'>
                                 <div className='col-12 text-center'>
-                                    <img src='/images/pages/landings/309/redseal.webp' className='img-fluid' />
+                                    <img src='/images/pages/landings/qb/qb-logo.webp' className='img-fluid' />
                                 </div>
 
                                 <div className='col-12'>
-                                    <h3>چرا باید ردسیل برق بگیرید و چه موانعی وجود دارد؟</h3>
-                                    <p>برای فعالیت به عنوان برقکار در کانادا، باید لایسنس برقکاری (لایسنس نشنال Redseal یا استانی با مهر تایید Redseal) بگیرید. پیش‌نیازهای دریافت این لایسنس در اکثر استان‌ها ۹۰۰۰ ساعت (معادل ۵ سال) سابقه کار و پاس کردن آزمون Redseal است. بسیاری از نیوکامرها و ایرانیان در پاس کردن این آزمون با چالش مواجه می‌شوند.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section className='Why309'>
-                        <div className='container'>
-                            <div className='row'>
-                                <div className='col-12 col-md-6'>
+                                    <h3>آموزش به زبان فارسی</h3>
                                     <p>
-                                        در صورت داشتن سابقه کار برق، دوره فناوران کمک می‌کند تا مهارتهای لازم در زمینه کدبوک را آموزش ببینید و با تدریس فارسی و ترمینولوژی انگلیسی، واژگان تخصصی و اصطلاحات درست این پوزیشن شغلی را بیاموزید.
+                                        این دوره به زبان فارسی تدریس می‌شود و شرکت‌کنندگان به صورت مفهومی، عملی و کامل با بخش‌های مختلف و ابزارهای نرم افزار آشنا می‌شوند. از ویژگی‌های این دوره، دسترسی داشتن شرکت‌کنندگان به نرم افزار Quickbooks است تا بتوانند همراه با استاد تمرین کنند.
                                     </p>
 
-                                    <Link href="#" className='FNV-Badge SecondaryColor Large mb-4'>ثبت نام دوره جدید</Link>
-                                </div>
-                                <div className='col-12 col-md-6'>
-                                    <img src='/images/pages/landings/309/309Certificate.webp' className='img-fluid w-100' />
+                                    <Link href="#" className='FNV-Badge SecondaryColor Large mb-4'> همین حالا ثبت نام کنید</Link>
                                 </div>
                             </div>
                         </div>
@@ -90,26 +83,17 @@ function Quickbooks() {
                         <div className='container'>
                             <div className='row'>
                                 <div className='col-12 d-flex flex-column align-items-start'>
-                                    <h2>چرا دوره برق فناوران؟</h2>
+                                    <h2>چرا دوره کوییک بوکس فناوران؟</h2>
 
                                     <ul>
-                                        <li>مورد تایید Skilled Trade of Ontario</li>
-                                        <li>طراحی شده برای قبولی در آزمون مطابق با آخرین تغییرات کدبوک</li>
-                                        <li>اساتید مجرب لایسنس دار و Master با سابقه چندین ساله به عنوان تکنسین برق در کانادا</li>
+                                        <li>تدریس به زبان فارسی و ترمینولوژی انگلیسی تا کلمات تخصصی و اصطلاحات درست انگلیسی را بیاموزید</li>
+                                        <li>عملی و کاربردی - امکان دسترسی به نسخه لایو نرم افزار برای تمرین هم پای استاد</li>
                                         <li>مقرون&zwnj;به&zwnj;صرفه در مقایسه با دوره&zwnj;های مشابه</li>
                                         <li>پرداخت به صورت اقساط</li>
-                                        <li>امکان دسترسی به ویدوهای رکورد شده دوره&zwnj;ها به مدت ۸ ماه</li>
-                                        <li>تدریس به زبان فارسی و ترمینولوژی انگلیسی برای یادگیری واژگان و اصطلاحات درست برقکاری در کانادا</li>
+                                        <li>دسترسی ۸ ماهه به ویدیوهای رکورد شده</li>
+                                        <li>مدرسین مجرب با سابقه کار چندین ساله در شرکت&zwnj;های مطرح کانادایی</li>
                                     </ul>
                                 </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section className='FanvaranStudents'>
-                        <div className='container p-0'>
-                            <div className='row'>
-                                <img src='/images/pages/landings/309/309Students.webp' />
                             </div>
                         </div>
                     </section>
@@ -117,8 +101,8 @@ function Quickbooks() {
                     <section className='FanvaranText1'>
                         <div className='container'>
                             <div className='row'>
-                                <h2>چرا سرتیفیکیت فناوران؟</h2>
-                                <p>متقاضیان لایسنس برق در <mark>استان انتاریو</mark> باید ۶ ماه سابقه کار کانادایی ارائه دهند. اگر ندارند، باید یک دوره اجباری CSA به قیمت +600 دلار ثبت‌نام کنند.</p>
+                                <h2>آیا می‌دانستید؟</h2>
+                                <p>برای شرکت در این دوره، <mark>نیاز نیست حتما حسابداری خوانده باشید!</mark> هرچند، دانش حسابداری در یادگیری تاثیر زیادی دارد.</p>
                             </div>
                         </div>
                     </section>
@@ -126,17 +110,7 @@ function Quickbooks() {
                     <section className='FanvaranText2'>
                         <div className='container'>
                             <div className='row'>
-                                <p>با دریافت <mark>سرتیفیکیت پایان دوره فناوران</mark>، سابقه کار کانادایی یا دوره CSA را حذف می‌کنید.</p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section className='FanvaranClasses'>
-                        <div className='container p-0'>
-                            <div className='row'>
-                                <img src='/images/pages/landings/309/Classes.webp' className='img-fluid w-100 d-none d-md-block' />
-
-                                <img src='/images/pages/landings/309/Classes-mob.webp' className='img-fluid w-100 d-block d-md-none' />
+                                <p>در این دوره، هم بخش جنرال نرم‌افزار و هم بخش پی رول را آموزش می‌بینید.</p>
                             </div>
                         </div>
                     </section>
@@ -144,10 +118,21 @@ function Quickbooks() {
                     <section className='FanvaranText3'>
                         <div className='container'>
                             <div className='row'>
-                                <div className='col-12 col-md-4'>
-                                    <p>آیا می‌دانستید که دوره برق فناوران، تنها دوره فارسی زبان در کانادا است که تکنیک‌های تست‌زنی را به شما آموزش می‌دهد؟</p>
+                                <div className='col-12 col-md-5'>
+                                    <h2>دوره کوییک بوکس فناوران عملی است</h2>
+                                    <p>شرکت‌کنندگان در این دوره به نرم‌افزار کوییک بوکس دسترسی خواهند داشت و می‌توانند پا به پای استاد و در ساعات غیر کلاسی با نرم افزار کار و تمرین کنند.</p>
                                     <Link href="#" className='FNV-Badge SecondaryColor Large mb-4'>ثبت نام کنید</Link>
                                 </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section className='FanvaranClasses'>
+                        <div className='container p-0'>
+                            <div className='row'>
+                                <img src='/images/pages/landings/qb/OnlineClasses.webp' className='img-fluid w-100 d-none d-md-block' />
+
+                                <img src='/images/pages/landings/qb/OnlineClasses-mob.webp' className='img-fluid w-100 d-block d-md-none' />
                             </div>
                         </div>
                     </section>
@@ -155,25 +140,11 @@ function Quickbooks() {
                     <section className='FanvaranText4'>
                         <div className='container'>
                             <div className='row'>
-                                <div className='col-12 col-md-4'>
+                                <div className='col-12 col-md-5'>
                                     <p>
-                                        نگران تایید سابقه کار خود هستید؟ <br />
-                                        با خدمات نگارش سوابق کاری تکنسینی، متخصصان فناوران تا رسیدن به تاییدیه آزمون در کنار شما هستند.
+                                        دریافت سرتیفیکیت فناوران در انتهای دوره
                                     </p>
-                                    <Link href="#" className='FNV-Badge SecondaryColor Large mb-4'>خرید خدمات</Link>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section className='FanvaranText5'>
-                        <div className='container'>
-                            <div className='row'>
-                                <div className='col-12 col-md-4'>
-                                    <p>
-                                        با خرید پکیج ویژه برق، هم تاییدیه آزمون بگیرید، هم برای آزمون آماده شوید و هم سیو سود داشته باشید!
-                                    </p>
-                                    <Link href="#" className='FNV-Badge SecondaryColor Large mb-4'>خرید پکیج</Link>
+                                    <Link href="#" className='FNV-Badge SecondaryColor Large mb-4'>ثبت‌نام کنید</Link>
                                 </div>
                             </div>
                         </div>
