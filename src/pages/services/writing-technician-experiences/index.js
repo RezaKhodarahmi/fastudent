@@ -37,8 +37,9 @@ const caseOptions = [
 ]
 
 const coupons = [
-  { code: 'DISCOUNT10', discount: 10, expiration: '2024-12-31' },
-  { code: 'SAVE15', discount: 15, expiration: '2024-11-30' }
+  { code: 'S3DTBT6I6O', discount: 100, expiration: '2025-12-31' },
+  { code: 'NFSTYOI54Z', discount: 150, expiration: '2025-11-30' },
+  { code: 'XMPS6TPTW5', discount: 200, expiration: '2025-11-30' }
 ]
 
 const BookingForm = () => {
@@ -137,11 +138,21 @@ const BookingForm = () => {
   }
 
   const handleCouponApply = () => {
+    // Find the coupon with the entered code and ensure it hasn't expired
     const coupon = coupons.find(c => c.code === couponCode && new Date(c.expiration) >= new Date())
+
     if (coupon) {
-      const discount = (totalPrice * coupon.discount) / 100
-      setDiscountAmount(discount)
-      setDiscountedPrice(totalPrice - discount)
+      // Use the fixed discount value
+      const discount = coupon.discount
+
+      if (totalPrice - discount < 0) {
+        alert('Discount cannot exceed total price.')
+        setDiscountAmount(0)
+        setDiscountedPrice(totalPrice)
+      } else {
+        setDiscountAmount(discount)
+        setDiscountedPrice(totalPrice - discount)
+      }
     } else {
       alert('کد تخفیف معتبر نیست یا تاریخ آن گذشته است')
       setDiscountAmount(0)
@@ -287,11 +298,14 @@ const BookingForm = () => {
               <Box className='FNV-Form-Terms'>
                 <Typography variant='h3'>لطفاً شرایط زیر را بخوانید و با آن موافقت کنید:</Typography>
                 <Typography variant='body1'>
-                  ۱-  مدت زمان اخذ تاییدیه شرکت در ازمون از زمان دریافت نامه سوابق کاری ۲ الی ۴ ماه خواهد بود.
+                  ۱- مدت زمان اخذ تاییدیه شرکت در ازمون از زمان دریافت نامه سوابق کاری ۲ الی ۴ ماه خواهد بود.
                   <br />
-                  ۲- هزینه‌های دولتی اعم از تایید مدارک و هزینه آزمون و صدور لایسنس، بصورت جداگانه توسط متقاضی به سازمان‌های مربوطه پرداخت خواهد شد. <br />
-                  ۳- فناوران تنها براساس اطلاعات دریافتی از متقاضیان اقدام خواهد کرد، به این ترتیب، مسولیتی در قبال ارایه مدارک غیرواقعی و بیان اظهارات خلاف واقع نخواهد داشت. <br />
-                  ۴- در صورت تاخیر در روال انجام کار به دلیل عدم ارایه مدارک درخواست شده مطابق با استاندارد اعلام شده، مسئولیتی متوجه فناوران نخواهد بود.
+                  ۲- هزینه‌های دولتی اعم از تایید مدارک و هزینه آزمون و صدور لایسنس، بصورت جداگانه توسط متقاضی به
+                  سازمان‌های مربوطه پرداخت خواهد شد. <br />
+                  ۳- فناوران تنها براساس اطلاعات دریافتی از متقاضیان اقدام خواهد کرد، به این ترتیب، مسولیتی در قبال
+                  ارایه مدارک غیرواقعی و بیان اظهارات خلاف واقع نخواهد داشت. <br />
+                  ۴- در صورت تاخیر در روال انجام کار به دلیل عدم ارایه مدارک درخواست شده مطابق با استاندارد اعلام شده،
+                  مسئولیتی متوجه فناوران نخواهد بود.
                 </Typography>
               </Box>
 
